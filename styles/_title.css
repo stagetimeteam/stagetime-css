@@ -1,0 +1,10 @@
+.title {
+
+}
+
+.title--smallest {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #3B3B3B;
+}

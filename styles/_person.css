@@ -1,0 +1,47 @@
+.person {
+    width: 154px;
+    padding-top: 28px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+}
+    .person__photo {
+        padding-left: 27px;
+        padding-right: 27px;
+    }
+        .person__preview-link {
+            display: inline-block;
+            vertical-align: top;
+        }
+            .person__image {
+                vertical-align: top;
+                border-radius: 50%;
+                background-color: #C4C4C4;
+                box-shadow: 0 0 0 2px #F2F2F2
+            }
+
+    .person__data {
+        margin-top: 15px;
+        padding-left: 17px;
+        padding-right: 17px;
+        min-height: 64px; /* two lines of .person__name plus one life of .person__note */
+    }
+        .person__name {
+
+        }
+            .person__link {
+                padding-top: 8px; /* expand clickable area */
+                padding-bottom: 8px;
+                color: inherit;
+                text-decoration: none;
+            }
+
+        .person__note {
+            margin-top: 3px;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 18px;
+            text-transform: uppercase;
+            color: #9CB2BE;
+        }

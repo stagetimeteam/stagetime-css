@@ -1,0 +1,10 @@
+/* stylelint-disable property-no-unknown */
+.hide-scrollbar {
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* hide scrollbar in Edge */
+}
+/* stylelint-enable */
+
+.hide-scrollbar::-webkit-scrollbar { /* hide scrollbar in webkit based browsers */
+    display: none;
+}
