@@ -1,14 +1,14 @@
-.sort {
+.switch {
     display: flex;
     align-items: flex-start;
 }
 
-.sort:focus-within {
+.switch:focus-within {
     outline: auto;
     outline-offset: 4px;
 }
 
-    .sort__heading {
+    .switch__heading {
         display: inline-block;
         vertical-align: top;
         margin-top: 13px;
@@ -19,26 +19,26 @@
         text-transform: uppercase;
     }
 
-    .sort__body {
+    .switch__body {
         display: flex;
         align-items: flex-start;
         margin-left: 17px;
     }
 
-    .sort__body:first-child {
+    .switch__body:first-child {
         margin-left: 0;
     }
-        .sort__option {
+        .switch__option {
             margin-left: 15px;
             position: relative;
             display: inline-block;
             vertical-align: top;
         }
 
-        .sort__option:first-child {
+        .switch__option:first-child {
             margin-left: 0;
         }
-            .sort__widget {
+            .switch__widget {
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -46,7 +46,7 @@
                 pointer-events: none;
             }
 
-            .sort__label {
+            .switch__label {
                 display: block;
                 padding: 13px 20px;
                 min-width: 94px;
@@ -61,7 +61,7 @@
                 cursor: pointer;
             }
 
-            .sort__widget:checked ~ .sort__label {
+            .switch__widget:checked ~ .switch__label {
                 background-color: blue;
                 color: red;
                 cursor: default;
