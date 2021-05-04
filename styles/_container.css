@@ -5,10 +5,6 @@
 }
 
 
-.container--organization {
-    width: 1142px;
-}
-
 
 @media (max-width: 535px) {
     .container {

@@ -1,0 +1,47 @@
+.squared-person {
+    width: 208px;
+    padding-top: 31px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 22px;
+    color: #757575;
+    text-align: center;
+}
+    .squared-person__photo {
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+        .squared-person__preview-link {
+            display: inline-block;
+            vertical-align: top;
+        }
+            .squared-person__image {
+                vertical-align: top;
+                background-color: #C4C4C4;
+                box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
+                border-radius: 11px;
+            }
+
+    .squared-person__data {
+        margin-top: 18px;
+        padding-left: 31px;
+        padding-right: 31px;
+        min-height: 67px; /* two lines of .squared-person__name plus one line of .squared-person__note */
+    }
+        .squared-person__name {
+
+        }
+            .squared-person__link {
+                padding-top: 8px; /* expand clickable area */
+                padding-bottom: 8px;
+                color: inherit;
+                text-decoration: none;
+            }
+
+        .squared-person__note {
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 18px;
+        }
