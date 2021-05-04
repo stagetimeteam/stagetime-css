@@ -1,0 +1,27 @@
+.group {
+
+}
+    .group__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .group__control-panel {
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+        .group__control-panel::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 1px;
+            background-color: #C4C4C4;
+        }
+
+    .group__listing {
+
+    }
