@@ -3,7 +3,7 @@
     vertical-align: top;
     width: 72px;
     border: none;
-    padding: 4px 0 2px;
+    padding: 4px;
     background-color: transparent;
     font-weight: bold;
     font-size: 9px;
@@ -12,17 +12,59 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
+    cursor: pointer;
 }
-    /* icon */
-    .action::before {
-        content: "";
-        display: block;
-        width: 32px;
-        height: 32px;
+    .action__image {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 5px;
+        margin-bottom: 13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border: 1px solid currentColor;
+        border-radius: 50%;
+    }
+        .action__icon {
+            vertical-align: top;
+            fill: currentColor;
+        }
+
+
+
+
+.action--simplified {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+    .action--simplified .action__image {
+        margin: 0;
+        width: 28px;
+        height: 28px;
+    }
+        .action__icon {
+
+        }
+
+    .action--simplified .action__label {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
     }
 
-    .action--add::before  { background-image: url("../vectors/action-add.svg"); }
-    .action--edit::before { background-image: url("../vectors/action-edit.svg"); }
+
+.action--neutral {
+
+}
+    .action--neutral .action__image {
+        background-color: #C4C4C4;
+        border-color: transparent;
+    }
+
+    .action--neutral .action__icon {
+        fill: #FFFFFF;
+    }

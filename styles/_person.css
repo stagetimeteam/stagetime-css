@@ -28,7 +28,9 @@
         min-height: 64px; /* two lines of .person__name plus one life of .person__note */
     }
         .person__name {
-
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: inherit;
         }
             .person__link {
                 padding-top: 8px; /* expand clickable area */

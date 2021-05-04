@@ -1,7 +1,7 @@
 .squared-person {
     width: 208px;
-    padding-top: 31px;
-    padding-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 13px;
     font-weight: 600;
     font-size: 19px;
     line-height: 22px;
@@ -25,12 +25,14 @@
 
     .squared-person__data {
         margin-top: 18px;
-        padding-left: 31px;
-        padding-right: 31px;
+        padding-left: 10px;
+        padding-right: 10px;
         min-height: 67px; /* two lines of .squared-person__name plus one line of .squared-person__note */
     }
         .squared-person__name {
-
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: inherit;
         }
             .squared-person__link {
                 padding-top: 8px; /* expand clickable area */
