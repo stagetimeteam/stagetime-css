@@ -18,6 +18,11 @@
         margin-left: 0;
     }
 
+    .alt-nav__link:hover {
+        color: #aaaaaa;
+    }
+
     .alt-nav__link--current {
-        border-top-color: #C4C4C4;
+        border-top-color: #ffffff;
+        color: #ffffff;
     }
