@@ -43,7 +43,7 @@
 
         .squared-person__note {
             margin-top: 5px;
-            font-weight: bold;
+            font-weight: 600;
             font-size: 11px;
             line-height: 18px;
         }
