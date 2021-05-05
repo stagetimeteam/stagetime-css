@@ -11,7 +11,7 @@
     .switch__heading {
         display: inline-block;
         vertical-align: top;
-        margin-top: 13px;
+        margin-top: 7px;
         font-weight: bold;
         font-size: 10px;
         line-height: 14px;
@@ -22,14 +22,14 @@
     .switch__body {
         display: flex;
         align-items: flex-start;
-        margin-left: 17px;
+        margin-left: 16px;
     }
 
     .switch__body:first-child {
         margin-left: 0;
     }
         .switch__option {
-            margin-left: 15px;
+            margin-left: 12px;
             position: relative;
             display: inline-block;
             vertical-align: top;
@@ -48,8 +48,8 @@
 
             .switch__label {
                 display: block;
-                padding: 13px 20px;
-                min-width: 94px;
+                padding: 10px 15px;
+                min-width: 86px;
                 background-color: #E8E8E8;
                 border-radius: 20px;
                 font-weight: 600;

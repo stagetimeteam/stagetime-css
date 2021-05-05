@@ -1,11 +1,6 @@
 .group {
 
 }
-
-.group + .group {
-    margin-top: 3px;
-}
-
     .group__back {
         float: left;
         margin-top: 2px;
@@ -22,8 +17,8 @@
     .group__control-panel {
         position: relative;
         display: flex;
-        align-items: flex-start;
-        margin-top: 26px;
+        align-items: flex-end;
+        margin-top: 24px;
     }
         .group__control-panel::before {
             content: "";
@@ -39,13 +34,14 @@
         .group__sorting {
             position: relative;
             background-color: #FFFFFF;
+            padding-left: 5px;
             padding-right: 25px;
             padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
         }
 
         .group__filtering {
             margin-left: auto;
-            width: 278px;
+            width: 308px;
             padding-left: 30px;
             padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
             position: relative;
@@ -53,14 +49,13 @@
         }
 
     .group__body {
-        margin-top: 20px;
+        margin-top: 11px;
         position: relative;
     }
         .group__listing {
-            padding-left: 22px;
-            padding-right: 22px;
             display: flex;
             align-items: flex-start;
+            justify-content: center;
             flex-wrap: wrap;
         }
             .group__item {

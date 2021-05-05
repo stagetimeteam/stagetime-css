@@ -1,5 +1,5 @@
 .squared-person {
-    width: 208px;
+    width: 188px;
     padding-top: 20px;
     padding-bottom: 13px;
     font-weight: 600;
@@ -9,8 +9,8 @@
     text-align: center;
 }
     .squared-person__photo {
-        padding-left: 31px;
-        padding-right: 31px;
+        padding-left: 21px;
+        padding-right: 21px;
     }
         .squared-person__preview-link {
             display: inline-block;

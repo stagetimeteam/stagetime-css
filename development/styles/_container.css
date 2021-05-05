@@ -4,6 +4,9 @@
     margin-right: auto;
 }
 
+.container--organisation {
+    width: 1030px;
+}
 
 
 @media (max-width: 535px) {
