@@ -7,10 +7,15 @@
 }
     .alt-nav__link {
         margin-top: -2px;
+        margin-left: 40px;
         border-top: 4px solid transparent;
         padding: 23px 24px 28px;
         color: inherit;
         text-decoration: none;
+    }
+
+    .alt-nav__link:first-child {
+        margin-left: 0;
     }
 
     .alt-nav__link--current {
