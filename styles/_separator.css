@@ -1,0 +1,7 @@
+.separator {
+    height: 71px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

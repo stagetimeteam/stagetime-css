@@ -1,0 +1,16 @@
+.org-nav {
+    margin-top: -71px;
+}
+    .org-nav__wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+        .org-nav__menu {
+
+        }
+
+        .org-nav__social {
+            margin-top: 13px;
+        }
+
