@@ -19,3 +19,7 @@
             vertical-align: top;
             fill: #C4C4C4;
         }
+
+        .media__link:hover .media__icon {
+            fill: #757575;
+        }
