@@ -35,14 +35,14 @@
             position: relative;
             background-color: #FFFFFF;
             padding-left: 5px;
-            padding-right: 25px;
+            padding-right: 18px;
             padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
         }
 
         .group__filtering {
             margin-left: auto;
-            width: 308px;
-            padding-left: 30px;
+            width: 306px;
+            padding-left: 28px;
             padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
             position: relative;
             background-color: #FFFFFF;
@@ -64,6 +64,48 @@
 
         .group__more {
             position: absolute;
-            right: -65px;
+            right: 0;
             top: 73px;
+        }
+
+
+.group--preview .group {
+
+}
+    .group--preview .group__back {
+
+    }
+
+    .group--preview .group__heading {
+
+    }
+
+    .group--preview .group__control-panel {
+
+    }
+        .group--preview .group__control-panel::before {
+
+        }
+
+        .group--preview .group__sorting {
+
+        }
+
+        .group--preview .group__filtering {
+
+        }
+
+    .group--preview .group__body {
+        margin-top: 21px;
+    }
+        .group--preview .group__listing {
+            justify-content: flex-start;
+            margin-left: -6px;
+        }
+            .group--preview .group__item {
+
+            }
+
+        .group--preview .group__more {
+
         }
