@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     height: 467px;
-    padding-top: 26px;
+    padding-top: 22px;
     background-color: #2E2A29;
     color: #FFFFFF;
 }
@@ -16,9 +16,9 @@
         }
             .summary__logo {
                 flex-shrink: 0;
-                margin-right: 43px;
-                margin-top: 6px;
-                margin-bottom: 13px;
+                margin-right: 40px;
+                margin-top: 9px;
+                margin-bottom: 10px;
                 border-radius: 8px;
                 box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
             }
@@ -28,16 +28,16 @@
                 margin-top: 0;
                 margin-bottom: 0;
                 font-weight: 300;
-                font-size: 52px;
+                font-size: 50px;
                 line-height: 66px;
                 letter-spacing: -1.36px;
             }
 
         .summary__location {
-            margin-top: 35px;
+            margin-top: 38px;
             position: relative;
             font-weight: bold;
-            padding-left: 44px;
+            padding-left: 41px;
             font-size: 12px;
             line-height: 24px;
             letter-spacing: 3px;
@@ -45,7 +45,7 @@
         }
             .summary__map-pin {
                 position: absolute;
-                left: 2px;
+                left: -1px;
                 top: 0;
                 fill: currentColor;
                 vertical-align: top;
