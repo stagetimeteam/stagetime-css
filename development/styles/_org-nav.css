@@ -1,4 +1,5 @@
 .org-nav {
+    position: relative; /* to be over .summary */
     margin-top: -71px;
 }
     .org-nav__wrap {

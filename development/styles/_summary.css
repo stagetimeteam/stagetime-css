@@ -1,4 +1,5 @@
 .summary {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,8 +8,31 @@
     background-color: #2E2A29;
     color: #FFFFFF;
 }
-    .summary__wrap {
+    .summary__background {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+        /* Gradient overlay */
+        .summary__background::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-image: linear-gradient(64.12deg, rgba(51, 51, 51, 0.8) 34.6%, rgba(255, 255, 255, 0) 100%);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
 
+    .summary__wrap {
+        position: relative;
     }
         .summary__brand {
             display: flex;
