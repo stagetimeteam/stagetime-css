@@ -1,0 +1,116 @@
+.event-card {
+    position: relative;
+}
+    .event-card__link {
+        display: block;
+        text-decoration: none;
+        min-height: 161px;
+        padding: 26px 60px 24px 167px;
+        background-color: #F6F6F6;
+        border-radius: 20px;
+        color: #757575;
+    }
+        .event-card__date {
+            position: absolute;
+            left: 22px;
+            top: 22px;
+            width: 117px;
+            height: 117px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+        }
+            .event-card__month {
+                padding-top: 24px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                color: #AAAAAA;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            .event-card__day {
+                margin-top: 4px;
+                font-weight: 300;
+                font-size: 46px;
+                line-height: 46px;
+                color: #545454;
+                letter-spacing: -1px;
+                text-align: center;
+            }
+
+        .event-card__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: inherit;
+            font-size: 21px;
+            line-height: 24px;
+        }
+
+        .event-card__data {
+            margin-top: 19px;
+        }
+            .event-card__note {
+                margin-top: 6px;
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            .event-card__note:first-child {
+                margin-top: 0;
+            }
+                .event-card__author-photo {
+                    vertical-align: top;
+                    border-radius: 50%;
+                    margin-top: -9px; /* -5px is minimum! (maximum actually). Lower (negative higher value will make layout jump) */
+                    margin-right: 9px;
+                    float: left;
+                }
+
+                .event-card__author-photo {
+
+                }
+
+                .event-card__author-photo:hover {
+                    filter: brightness(1.1) contrast(1.1);
+                }
+
+                .event-card__author-name {
+                    display: inline;
+                    vertical-align: baseline;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                    font-weight: bold;
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+                .event-card__author-name:hover {
+                    text-decoration: underline;
+                }
+
+        .event-card__crowd {
+            position: absolute;
+            right: 13px;
+            top: 44px;
+            padding-top: 32px;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: 0.26px;
+            text-align: center;
+        }
+            .event-card__crowd-icon {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 4px;
+                fill: currentColor;
+            }
+
+    .event-card__actions {
+        position: absolute;
+        right: 7px;
+        top: 7px;
+    }
