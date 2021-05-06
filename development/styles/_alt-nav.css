@@ -19,10 +19,10 @@
     }
 
     .alt-nav__link:hover {
-        color: #aaaaaa;
+        color: #AAAAAA;
     }
 
     .alt-nav__link--current {
-        border-top-color: #ffffff;
-        color: #ffffff;
+        border-top-color: #FFFFFF;
+        color: #FFFFFF;
     }
