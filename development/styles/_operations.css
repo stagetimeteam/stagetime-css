@@ -1,5 +1,28 @@
 .operations {
-    width: 44px;
-    height: 44px;
-    background: purple;
+    position: relative;
 }
+    .operations__handler {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+        .operations__icon {
+            vertical-align: top;
+            fill: #545454;
+        }
+
+    .operations__dropdown {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        width: 244px;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
+        border-radius: 10px;
+    }

@@ -1,0 +1,18 @@
+.menu {
+
+}
+    .menu__link {
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 28px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #757575;
+        text-decoration: none;
+    }
+        .menu__icon {
+            vertical-align: top;
+            margin-right: 17px;
+            margin-top: -4px;
+            margin-bottom: -2px;
+        }
