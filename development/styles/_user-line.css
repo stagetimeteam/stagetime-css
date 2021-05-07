@@ -1,0 +1,26 @@
+.user-line {
+    padding-top: 9px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+}
+    .user-line__photo {
+        margin-top: -9px;
+        margin-right: 9px;
+        float: left;
+        cursor: pointer;
+    }
+
+    .user-line__photo:hover {
+        filter: brightness(1.1) contrast(1.1);
+    }
+        .user-line__image {
+            vertical-align: top;
+            border-radius: 50%;
+            background-color: var(--image-fallback);
+        }
+
+
+    .user-line .link {
+        font-weight: bold;
+    }

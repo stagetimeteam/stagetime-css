@@ -60,35 +60,10 @@
             .event-card__note:first-child {
                 margin-top: 0;
             }
-                .event-card__author-photo {
-                    vertical-align: top;
-                    border-radius: 50%;
-                    margin-top: -9px; /* -5px is minimum! (maximum actually). Lower (negative higher value will make layout jump) */
-                    margin-right: 9px;
-                    float: left;
-                }
 
-                .event-card__author-photo {
-
-                }
-
-                .event-card__author-photo:hover {
-                    filter: brightness(1.1) contrast(1.1);
-                }
-
-                .event-card__author-name {
-                    display: inline;
-                    vertical-align: baseline;
-                    padding-top: 4px;
-                    padding-bottom: 4px;
-                    font-weight: bold;
-                    color: inherit;
-                    text-decoration: none;
-                }
-
-                .event-card__author-name:hover {
-                    text-decoration: underline;
-                }
+            .event-card__author {
+                margin-top: -9px;
+            }
 
         .event-card__crowd {
             position: absolute;
@@ -115,5 +90,5 @@
         top: 17px;
     }
         .event-card__actions .operations__dropdown {
-            z-index: 10 ;
+            z-index: 10; /* make dropdown higher then .event-card itself, even higher than the following .event-card */
         }
