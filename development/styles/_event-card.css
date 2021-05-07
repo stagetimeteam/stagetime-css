@@ -114,3 +114,6 @@
         right: 7px;
         top: 17px;
     }
+        .event-card__actions .operations__dropdown {
+            z-index: 10 ;
+        }

@@ -1,7 +1,12 @@
 (function($) {
 
     $('.operations__handler').on('click', function () {
-        $(this).parents('.operations').toggleClass('operations--expanded');
+        if( ! $(this).parents('.operations').hasClass('operations--expanded')){
+            $('.operations').removeClass('operations--expanded'); /* close every other .operations */
+            $(this).parents('.operations').addClass('operations--expanded');
+        } else {
+            $(this).parents('.operations').removeClass('operations--expanded');
+        }
     });
 
 
