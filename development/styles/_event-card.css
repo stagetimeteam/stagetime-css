@@ -47,15 +47,17 @@
             font-weight: inherit;
             font-size: 21px;
             line-height: 24px;
+            letter-spacing: -0.3px;
         }
 
         .event-card__data {
-            margin-top: 19px;
+            margin-top: 23px;
         }
             .event-card__note {
                 margin-top: 6px;
                 font-size: 12px;
                 line-height: 16px;
+                letter-spacing: -0.2px;
             }
 
             .event-card__note:first-child {
@@ -69,7 +71,7 @@
         .event-card__crowd {
             position: absolute;
             right: 13px;
-            top: 44px;
+            top: 43px;
             padding-top: 32px;
             font-weight: bold;
             font-size: 13px;
@@ -81,7 +83,7 @@
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
-                margin-bottom: 4px;
+                margin-bottom: 6px;
                 fill: currentColor;
             }
 
