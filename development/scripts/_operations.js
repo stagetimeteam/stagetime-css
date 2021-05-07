@@ -22,7 +22,7 @@
     /* hide popup by Esc press */
 
     $(document).on('keyup', function(event) {
-        if (event.keyCode == 27) {
+        if (event.keyCode === 27) {
             $('.operations').removeClass('operations--expanded');
         }
     });
