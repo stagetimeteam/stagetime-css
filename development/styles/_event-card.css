@@ -5,7 +5,7 @@
         display: block;
         text-decoration: none;
         min-height: 161px;
-        padding: 26px 60px 24px 167px;
+        padding: 26px 44px 24px 167px;
         background-color: #F6F6F6;
         border-radius: 20px;
         color: #757575;
@@ -25,6 +25,7 @@
                 font-size: 14px;
                 line-height: 20px;
                 color: #AAAAAA;
+                padding-left: 5px;
                 letter-spacing: 5px;
                 text-transform: uppercase;
                 text-align: center;
