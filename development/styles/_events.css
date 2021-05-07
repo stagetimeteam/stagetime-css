@@ -1,0 +1,110 @@
+.events {
+    padding-top: 31px;
+    padding-bottom: 150px;
+}
+    .events__head {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+    }
+        .events__head::before {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 18px;
+            right: 0;
+            height: 1px;
+            background-color: #C4C4C4;
+        }
+
+        .events__heading {
+            position: relative;
+            margin-top: 6px;
+            margin-bottom: 0;
+            padding-bottom: 10px;
+            padding-right: 24px;
+            background-color: #FFFFFF;
+            color: #757575;
+        }
+
+        .events__filtering {
+            margin-left: auto;
+            width: var(--org-filtering-width);
+            padding-left: var(--org-filtering-left-margin);
+            padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
+            position: relative;
+            background-color: #FFFFFF;
+        }
+
+    .events__calendar {
+        margin-top: 11px;
+    }
+        .events__interval {
+            position: relative;
+            margin-top: 45px;
+            padding-left: 71px;
+            padding-right: 35px;
+        }
+
+        .events__interval:first-child {
+            margin-top: 0;
+        }
+
+            .events__interval::before {
+                content: "";
+                position: absolute;
+                left: 23px;
+                top: 88px;
+                bottom: 0;
+                width: 1px;
+                background-color: #C4C4C4;
+            }
+
+            .events__date {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 47px;
+                padding-top: 10px;
+                padding-bottom: 21px;
+                text-align: center;
+            }
+                .events__month {
+                    font-weight: bold;
+                    font-size: 19px;
+                    line-height: 30px;
+                    color: #545454;
+                    text-transform: uppercase;
+                }
+
+                .events__year {
+                    margin-top: 3px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #AAAAAA;
+                }
+
+        .events__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+            .events__item {
+                padding-left: 9px;
+                padding-right: 9px;
+                padding-top: 18px;
+                flex-shrink: 0;
+                width: 50%;
+            }
+
+
+
+
+
+
+
+
+
+
+
+

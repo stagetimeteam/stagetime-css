@@ -1,5 +1,7 @@
 .operations {
     position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
     .operations__handler {
         display: flex;
@@ -15,6 +17,10 @@
         .operations__icon {
             vertical-align: top;
             fill: #545454;
+        }
+
+        .operations__handler:hover .operations__icon {
+            fill: #333333;
         }
 
     .operations__dropdown {
@@ -35,6 +41,9 @@
     .operations--expanded .operations__handler {
 
     }
+        .operations--expanded .operations__icon {
+            fill: #333333;
+        }
 
     .operations--expanded .operations__dropdown {
         display: block;

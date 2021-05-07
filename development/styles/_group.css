@@ -41,8 +41,8 @@
 
         .group__filtering {
             margin-left: auto;
-            width: 306px;
-            padding-left: 28px;
+            width: var(--org-filtering-width);
+            padding-left: var(--org-filtering-left-margin);
             padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
             position: relative;
             background-color: #FFFFFF;
