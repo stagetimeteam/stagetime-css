@@ -10,6 +10,10 @@
         border-radius: 20px;
         color: #757575;
     }
+
+    .event-card:hover .event-card__link {
+        background-color: #E8E8E8;
+    }
         .event-card__date {
             position: absolute;
             left: 22px;
