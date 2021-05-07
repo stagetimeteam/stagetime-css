@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.user-line</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1620389026">
+    </head>
+    <body>
+
+
+
+        <div style="width: 800px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.user-line</h1>
+
+            <div class="user-line ellipsis">
+                <a class="user-line__photo" href="#">
+                    <img class="user-line__image"
+                         srcset="../temp/person-a-21x21@2x.jpg 2x"
+                         src="../temp/person-a-21x21.jpg"
+                         width="21"
+                         height="21"
+                         alt=""
+                    >
+                </a>
+                posted by <a class="link link--text-alike">Marika Yasuda</a>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Case inside of &lt;a&gt;</h2>
+            <p>
+                On <a href="../layouts/organization-events.html">events</a> page was
+                a case where we need this card inside of &lt;a&gt; tage. So we can't
+                use &lt;a&gt; on <b>.user-line__photo</b> and on the <b>.link</b> inside.
+                It's just not allowed to place one &lt;a&gt; inside of another &lt;a&gt;
+            </p>
+            <p>
+                In this case change tags on both of <b>.user-line__photo</b> and <b>.link</b>
+                to <b>&lt;span tabindex="0"&gt;</b> and catch clicks using JavaScript.
+            </p>
+
+            <div class="user-line ellipsis">
+                <span class="user-line__photo">
+                    <img class="user-line__image"
+                         srcset="../temp/person-a-21x21@2x.jpg 2x"
+                         src="../temp/person-a-21x21.jpg"
+                         width="21"
+                         height="21"
+                         alt=""
+                    >
+                </span>
+                posted by <span class="link link--text-alike">Marika Yasuda</span>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../scripts/_operations.js?1620389026"></script>
+
+
+    </body>
+</html>
+
+
+
