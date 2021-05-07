@@ -22,7 +22,20 @@
         right: 0;
         top: 100%;
         width: 244px;
+        display: none;
         background-color: #FFFFFF;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
         border-radius: 10px;
+    }
+
+
+.operations--expanded {
+
+}
+    .operations--expanded .operations__handler {
+
+    }
+
+    .operations--expanded .operations__dropdown {
+        display: block;
     }

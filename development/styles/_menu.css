@@ -1,6 +1,13 @@
 .menu {
 
 }
+
+.operations__dropdown.menu,
+.operations__dropdown .menu {
+    padding-top: 14px;
+    padding-bottom: 20px;
+}
+
     .menu__link {
         display: flex;
         align-items: flex-start;
@@ -10,9 +17,14 @@
         color: #757575;
         text-decoration: none;
     }
+
+    .menu__link:hover {
+        background-color: #F6F6F6;
+    }
         .menu__icon {
             vertical-align: top;
             margin-right: 17px;
             margin-top: -4px;
             margin-bottom: -2px;
+            fill: currentColor;
         }
