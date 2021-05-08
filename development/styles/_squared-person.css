@@ -15,12 +15,18 @@
         .squared-person__preview-link {
             display: inline-block;
             vertical-align: top;
+            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
+            border-radius: 11px;
+            overflow: hidden;
         }
             .squared-person__image {
                 vertical-align: top;
                 background-color: #C4C4C4;
-                box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
-                border-radius: 11px;
+                transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+            }
+
+            .squared-person__preview-link:hover .squared-person__image {
+                transform: scale(1.05);
             }
 
     .squared-person__data {
@@ -39,6 +45,10 @@
                 padding-bottom: 8px;
                 color: inherit;
                 text-decoration: none;
+            }
+            
+            .squared-person__link:hover {
+                color: #C4C4C4;
             }
 
         .squared-person__note {
