@@ -61,9 +61,14 @@
                 cursor: pointer;
             }
 
+            .switch__label:hover {
+                background-color: #C4C4C4;
+                color: #757575;
+            }
+
             .switch__widget:checked ~ .switch__label {
-                background-color: blue;
-                color: red;
+                background-color: #757575;
+                color: #FFFFFF;
                 cursor: default;
             }
 
