@@ -48,6 +48,12 @@
             background-color: #FFFFFF;
         }
 
+    .group__search-notice {
+        margin-top: 19px;
+        margin-left: 15px;
+        margin-bottom: -9px;
+    }
+
     .group__body {
         margin-top: 11px;
         position: relative;
