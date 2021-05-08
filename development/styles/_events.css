@@ -37,6 +37,12 @@
             background-color: #FFFFFF;
         }
 
+    .events__search-notice {
+        margin-top: 17px;
+        margin-left: 80px;
+        padding-bottom: 5px;
+    }
+
     .events__calendar {
         margin-top: 11px;
     }
