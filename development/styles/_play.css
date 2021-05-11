@@ -12,3 +12,12 @@
         vertical-align: top;
         fill: #C4C4C4;
     }
+
+    .play:hover,
+    .clip:hover .play {
+        background-color: rgba(196, 196, 196, 0.88);
+    }
+        .play:hover .play__icon,
+        .clip:hover .play__icon {
+            fill: #FFFFFF;
+        }

@@ -12,3 +12,13 @@
         vertical-align: top;
         fill: #FFFFFF;
     }
+
+
+.staple:hover,
+.clip:hover .staple {
+    background-color: rgba(196, 196, 196, 0.88);
+}
+.play:hover .staple__icon,
+.clip:hover .staple__icon {
+    fill: #FFFFFF;
+}

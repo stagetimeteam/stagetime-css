@@ -11,11 +11,17 @@
         position: relative;
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
         border-radius: var(--clip-radius);
+        overflow: hidden;
     }
         .clip__image {
             vertical-align: top;
             background-color: var(--image-fallback);
             border-radius: var(--clip-radius);
+            transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+        }
+
+        .clip:hover .clip__image {
+            transform: scale(1.05);
         }
 
         .clip__stage::after {
