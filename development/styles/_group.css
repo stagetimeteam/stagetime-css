@@ -1,117 +1,36 @@
 .group {
-
+    padding-top: 11px;
+    position: relative;
 }
-    .group__back {
-        float: left;
-        margin-top: 2px;
-        margin-right: 26px;
+    .group__listing {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+        .group__item {
+
+        }
+
+    .group__more {
+        position: absolute;
+        right: 0;
+        top: 84px;
+    }
+
+
+
+.group--preview {
+    border-top: 10px solid transparent; /* extra padding without changing padding edge (to not to change .group__more's coordinate) */
+}
+    .group--preview .group__listing {
+        justify-content: flex-start;
         margin-left: -6px;
     }
+        .group--preview .group__item {
 
-    .group__heading {
-        margin-top: 0;
-        margin-bottom: 0;
-        color: #757575;
-    }
-
-    .group__control-panel {
-        position: relative;
-        display: flex;
-        align-items: flex-end;
-        margin-top: 24px;
-    }
-        .group__control-panel::before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: 10px;
-            right: 0;
-            height: 1px;
-            background-color: #C4C4C4;
         }
 
-        .group__sorting {
-            position: relative;
-            background-color: #FFFFFF;
-            padding-left: 5px;
-            padding-right: 18px;
-            padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
-        }
-
-        .group__filtering {
-            margin-left: auto;
-            width: var(--org-filtering-width);
-            padding-left: var(--org-filtering-left-margin);
-            padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
-            position: relative;
-            background-color: #FFFFFF;
-        }
-
-    .group__search-notice {
-        margin-top: 19px;
-        margin-left: 15px;
-        margin-bottom: -9px;
-    }
-
-    .group__body {
-        margin-top: 11px;
-        position: relative;
-    }
-        .group__listing {
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-            .group__item {
-
-            }
-
-        .group__more {
-            position: absolute;
-            right: 0;
-            top: 73px;
-        }
-
-
-.group--preview .group {
-
-}
-    .group--preview .group__back {
+    .group--preview .group__more {
 
     }
-
-    .group--preview .group__heading {
-
-    }
-
-    .group--preview .group__control-panel {
-
-    }
-        .group--preview .group__control-panel::before {
-
-        }
-
-        .group--preview .group__sorting {
-
-        }
-
-        .group--preview .group__filtering {
-
-        }
-
-    .group--preview .group__body {
-        margin-top: 21px;
-    }
-        .group--preview .group__listing {
-            justify-content: flex-start;
-            margin-left: -6px;
-        }
-            .group--preview .group__item {
-
-            }
-
-        .group--preview .group__more {
-
-        }

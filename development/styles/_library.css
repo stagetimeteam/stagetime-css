@@ -1,5 +1,6 @@
 .library {
-
+    position: relative;
+    padding-top: 3px;
 }
     .library__listing {
         margin: -20px -10px 0;
@@ -11,3 +12,44 @@
             width: 350px;
             margin-top: 20px;
         }
+
+    .library__more {
+        position: absolute;
+        right: 0;
+        top: 111px;
+    }
+
+
+
+.library--preview  {
+
+}
+    .library__listing {
+
+    }
+        .library__item {
+
+        }
+
+        .library__listing:after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 264px;
+            background: linear-gradient(to right,
+                rgba(255, 255, 255, 0),
+                rgba(255, 255, 255, 0.7) 30%,
+                rgba(255, 255, 255, 1) 60%,
+                rgba(255, 255, 255, 1)
+           );
+        }
+
+
+    .library__more {
+
+    }
+
+
+
