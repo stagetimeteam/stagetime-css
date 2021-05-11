@@ -31,19 +31,21 @@
 
         }
 
-        .library--preview .library__listing:after {
+        .library--preview .library__listing::after {
             content: "";
             position: absolute;
             right: 0;
             top: 0;
             bottom: 0;
             width: 264px;
+            /* stylelint-disable */
             background: linear-gradient(to right,
                 rgba(255, 255, 255, 0),
                 rgba(255, 255, 255, 0.7) 30%,
                 rgba(255, 255, 255, 1) 60%,
                 rgba(255, 255, 255, 1)
-           );
+            );
+            /* stylelint-enable */
         }
 
     .library--preview .library__more {
