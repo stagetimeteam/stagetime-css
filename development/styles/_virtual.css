@@ -3,5 +3,9 @@
     padding-bottom: 119px;
 }
     .virtual__collection {
+        margin-top: 32px;
+    }
 
+    .virtual__collection:first-child {
+        margin-top: 0;
     }

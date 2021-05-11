@@ -27,7 +27,7 @@
 @import url("_ellipsis.css");
 @import url("_operations.css");
 @import url("_menu.css");
-@import url("_events.css");
+@import url("_timeline.css");
 @import url("_user-line.css");
 @import url("_link.css");
 @import url("_search-heading.css");
@@ -39,3 +39,4 @@
 @import url("_video-card.css");
 @import url("_virtual.css");
 @import url("_group.css");
+@import url("_events.css");
