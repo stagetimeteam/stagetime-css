@@ -1,5 +1,5 @@
 .virtual {
-    padding-top: var(--org-top-padding);
+    padding-top: var(--org-pages-top-padding);
     padding-bottom: 119px;
 }
     .virtual__collection {

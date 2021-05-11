@@ -1,5 +1,5 @@
 .people {
-    padding-top: var(--org-top-padding);
+    padding-top: var(--org-pages-top-padding);
     padding-bottom: 119px;
 }
     .people__department {

@@ -4,7 +4,7 @@
     .module-head__back {
         float: left;
         margin-top: 2px;
-        margin-right: 26px;
+        padding-right: 26px;
         margin-left: -6px;
     }
 
@@ -16,40 +16,82 @@
 
     .module-head__control-panel {
         position: relative;
-        display: flex;
-        align-items: flex-end;
-        margin-top: 24px;
+        margin-top: 25px;
+        height: 50px;
+        padding-bottom: 10px; /* line */
     }
-        .module-head__control-panel::before {
+        .module-head__control-panel::before { /* line */
             content: "";
             display: block;
             position: absolute;
             left: 0;
-            bottom: 10px;
             right: 0;
+            bottom: 10px; /* 10px instead of 0px to make sure things with white background will be over this line, even when zooming */
             height: 1px;
             background-color: #C4C4C4;
         }
 
-        .module-head__sorting {
-            position: relative;
+        .module-head__left-slot {
+            position: absolute;
+            left: 0;
+            bottom: 10px; /* 10px instead of 0px to make sure this is over bottom line, even while zooming */
+            padding-right: 20px;
             background-color: #FFFFFF;
-            padding-left: 5px;
-            padding-right: 18px;
-            padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
         }
 
-        .module-head__filtering {
-            margin-left: auto;
-            width: var(--org-filtering-width);
-            padding-left: var(--org-filtering-left-margin);
-            padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
-            position: relative;
+
+        .module-head__right-slot {
+            position: absolute;
+            right: 0;
+            bottom: 10px; /* 10px instead of 0px to make sure this is over bottom line, even while zooming */
+            width: 298px;
+            padding-left: 20px;
             background-color: #FFFFFF;
         }
 
     .module-head__search-notice {
         margin-top: 19px;
         margin-left: 15px;
-        margin-bottom: -9px;
+        padding-bottom: 10px;
+    }
+
+
+
+.module-head--based-on-heading .module-head {
+
+}
+    .module-head--based-on-heading .module-head__back {
+        position: relative;
+        z-index: 10;
+        background-color: #FFFFFF;
+    }
+
+    .module-head--based-on-heading .module-head__heading {
+        position: relative;
+        z-index: 10;
+        display: inline-block;
+        vertical-align: top;
+        padding-bottom: 10px;
+        padding-right: 20px;
+        background-color: #FFFFFF;
+    }
+
+    .module-head--based-on-heading .module-head__control-panel {
+        margin-top: -57px;
+    }
+        .module-head--based-on-heading .module-head__control-panel::before { /* line */
+
+        }
+
+        .module-head--based-on-heading .module-head__left-slot {
+
+        }
+
+
+        .module-head--based-on-heading .module-head__right-slot {
+
+        }
+
+    .module-head--based-on-heading .module-head__search-notice {
+
     }

@@ -1,5 +1,5 @@
 .group {
-    padding-top: 11px;
+    padding-top: 2px;
     position: relative;
 }
     .group__listing {
@@ -21,7 +21,7 @@
 
 
 .group--preview {
-    border-top: 10px solid transparent; /* extra padding without changing padding edge (to not to change .group__more's coordinate) */
+
 }
     .group--preview .group__listing {
         justify-content: flex-start;

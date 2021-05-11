@@ -1,48 +1,7 @@
 .events {
-    padding-top: var(--org-top-padding);
+    padding-top: var(--org-pages-top-padding);
     padding-bottom: 150px;
 }
-    .events__head {
-        position: relative;
-        display: flex;
-        align-items: flex-start;
-    }
-        .events__head::before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            bottom: 18px;
-            right: 0;
-            height: 1px;
-            background-color: #C4C4C4;
-        }
-
-        .events__heading {
-            position: relative;
-            margin-top: 0;
-            margin-bottom: 0;
-            padding-bottom: 10px;
-            padding-right: 24px;
-            background-color: #FFFFFF;
-            color: #757575;
-        }
-
-        .events__filtering {
-            margin-left: auto;
-            margin-top: -6px;
-            width: var(--org-filtering-width);
-            padding-left: var(--org-filtering-left-margin);
-            padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */
-            position: relative;
-            background-color: #FFFFFF;
-        }
-
-    .events__search-notice {
-        margin-top: 17px;
-        margin-left: 80px;
-        padding-bottom: 5px;
-    }
 
     .events__calendar {
         margin-top: 11px;

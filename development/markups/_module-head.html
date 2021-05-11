@@ -16,24 +16,32 @@
             <br>
             <br>
             <h1>.module-head</h1>
+            <p>
+                In default case it is expected to have:
+                <br><b>1)</b> Back button (optional)
+                <br><b>2)</b> Heading
+                <br><b>3)</b> Control panel with left and right slots
+                <br><b>4)</b> Search notifications (optional)
+            </p>
             <br>
             <br>
-
 
             <section class="module-head">
-                <a class="module-head__back action action--simplified action--neutral" href="organization-people.html">
-                    <span class="action__image">
-                        <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
-                    </span>
-                    <span class="action__label">
-                        Back
-                    </span>
-                </a>
+                <div class="module-head__back">
+                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Back
+                        </span>
+                    </a>
+                </div>
                 <h3 class="module-head__heading title title--heading-2">
                     Artists
                 </h3>
                 <div class="module-head__control-panel">
-                    <div class="module-head__sorting">
+                    <div class="module-head__left-slot">
                         <div class="switch">
                             <b class="switch__heading">
                                 Sort by
@@ -50,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="module-head__filtering">
+                    <div class="module-head__right-slot">
                         <input class="query" type="text" placeholder="Search Artists…">
                     </div>
                 </div>
@@ -64,8 +72,112 @@
                 </div>
             </section>
 
+            <br>
+            <br>
+            <p>
+                Control panel has static height of <b>40px</b>, so it's expected
+                that inside of <b>.module-head__left-slot</b> and <b>.module-head__rigth-slot</b>
+                will only be widgets of <b>40px</b> height or less. Note that both of them aligned to bottom. In the example above we have
+                34px tall <a href="_switch.html">.switch</a> component and 40px <a href="_query.html">.query</a> component.
+            </p>
+            <p>
+                Fixed height is needed for the case when right slots is missing. For example this components
+                can be used without search:<br>
+            </p>
+            <br>
+            <br>
 
+            <section class="module-head">
+                <div class="module-head__back">
+                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Back
+                        </span>
+                    </a>
+                </div>
+                <h3 class="module-head__heading title title--heading-2">
+                    Artists
+                </h3>
+                <div class="module-head__control-panel">
+                    <div class="module-head__left-slot">
+                        <div class="switch">
+                            <b class="switch__heading">
+                                Sort by
+                            </b>
+                            <div class="switch__body">
+                                <label class="switch__option">
+                                    <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
+                                    <span class="switch__label">Year</span>
+                                </label>
+                                <label class="switch__option">
+                                    <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
+                                    <span class="switch__label">Instrument</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="module-head__search-notice search-heading">
+                    <div class="search-heading__message">
+                        <i>Search page only:</i> You are viewing search results containing keyword <strong>“Sarah”</strong>
+                    </div>
+                    <button class="search-heading__cancel" type="button">
+                        <img class="search-heading__cross" src="../symbols/20-rounded-cross.svg" width="20" height="20" alt="">
+                    </button>
+                </div>
+            </section>
 
+            <p>Note that layout didn't change despite 6px of height are missing</p>
+            <p>
+                You can try to manually delete <b>.module-head__right-slot</b> from DOM in the develoepr tool
+                and you'll see page won't shift up by 6px.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>
+                .module-head--based-on-heading
+            </h2>
+            <p>
+                Unlike right slot, left one can't be easily remove from the DOM.
+                Many additional code is needed related. In fact it is kinda different layout
+                for the component based on header position. So in this case please use
+                <b>.module-head--based-on-heading</b> modifier.
+            </p>
+
+            <section class="module-head module-head--based-on-heading">
+                <div class="module-head__back">
+                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Back
+                        </span>
+                    </a>
+                </div>
+                <h3 class="module-head__heading title title--heading-2">
+                    Artists
+                </h3>
+                <div class="module-head__control-panel">
+                    <div class="module-head__right-slot">
+                        <input class="query" type="text" placeholder="Search Artists…">
+                    </div>
+                </div>
+                <div class="module-head__search-notice search-heading">
+                    <div class="search-heading__message">
+                        <i>Search page only:</i> You are viewing search results containing keyword <strong>“Sarah”</strong>
+                    </div>
+                    <button class="search-heading__cancel" type="button">
+                        <img class="search-heading__cross" src="../symbols/20-rounded-cross.svg" width="20" height="20" alt="">
+                    </button>
+                </div>
+            </section>
 
             <br>
             <br>

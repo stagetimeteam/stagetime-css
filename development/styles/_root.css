@@ -1,6 +1,4 @@
 :root {
-    --org-filtering-width: 306px;
-    --org-filtering-left-margin: 28px;
-    --org-top-padding: 34px;
+    --org-pages-top-padding: 35px;
     --image-fallback: #C4C4C4;
 }
