@@ -1,0 +1,15 @@
+.crowd {
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.26px;
+    text-align: center;
+    color: #C4C4C4;
+}
+    .crowd__icon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6px;
+        fill: currentColor;
+    }

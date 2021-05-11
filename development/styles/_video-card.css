@@ -1,0 +1,38 @@
+.video-card {
+    width: 350px;
+    padding: 20px;
+}
+    .video-card__preview {
+
+    }
+
+    .video-card__body {
+        position: relative;
+        margin-top: 25px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-left: 3px solid #C4C4C4;
+        padding-left: 18px;
+    }
+        .video-card__heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 23px;
+            letter-spacing: -0.26px;
+            color: #757575;
+        }
+
+        .video-card__note {
+            font-size: 12px;
+            line-height: 23px;
+            letter-spacing: -0.24px;
+            color: #AFAFAF;
+        }
+
+        .video-card__people {
+            position: absolute;
+            right: -3px;
+            top: -6px;
+        }

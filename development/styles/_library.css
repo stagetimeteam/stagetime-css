@@ -1,0 +1,8 @@
+.library {
+    margin: 0 -10px;
+    display: flex;
+    align-items: flex-start;
+}
+    .library__item {
+        width: 350px;
+    }

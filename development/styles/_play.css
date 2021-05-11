@@ -1,0 +1,14 @@
+.play {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    width: 70px;
+    height: 70px;
+    padding: 19px;
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 50%;
+}
+    .play__icon {
+        vertical-align: top;
+        fill: #C4C4C4;
+    }

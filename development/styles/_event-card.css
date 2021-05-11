@@ -72,24 +72,11 @@
                 margin-top: -9px;
             }
 
-        .event-card__crowd {
+        .event-card__people {
             position: absolute;
             right: 13px;
-            top: 43px;
-            padding-top: 32px;
-            font-weight: bold;
-            font-size: 13px;
-            line-height: 18px;
-            letter-spacing: 0.26px;
-            text-align: center;
+            top: 75px;
         }
-            .event-card__crowd-icon {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 6px;
-                fill: currentColor;
-            }
 
     .event-card__actions {
         position: absolute;
