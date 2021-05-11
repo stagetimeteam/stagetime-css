@@ -1,5 +1,5 @@
 .events {
-    padding-top: 31px;
+    padding-top: var(--org-top-padding);
     padding-bottom: 150px;
 }
     .events__head {
@@ -20,7 +20,7 @@
 
         .events__heading {
             position: relative;
-            margin-top: 6px;
+            margin-top: 0;
             margin-bottom: 0;
             padding-bottom: 10px;
             padding-right: 24px;
@@ -30,6 +30,7 @@
 
         .events__filtering {
             margin-left: auto;
+            margin-top: -6px;
             width: var(--org-filtering-width);
             padding-left: var(--org-filtering-left-margin);
             padding-bottom: 10px; /* to make sure this is over bottom line, even while zooming */

@@ -9,10 +9,8 @@
     .video-card__body {
         position: relative;
         margin-top: 25px;
-        padding-top: 3px;
-        padding-bottom: 3px;
         border-left: 3px solid #C4C4C4;
-        padding-left: 18px;
+        padding: 3px 40px 3px 18px;
     }
         .video-card__heading {
             margin-top: 0;
