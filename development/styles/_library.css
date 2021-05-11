@@ -24,14 +24,14 @@
 .library--preview  {
 
 }
-    .library__listing {
+    .library--preview .library__listing {
 
     }
-        .library__item {
+        .library--preview .library__item {
 
         }
 
-        .library__listing:after {
+        .library--preview .library__listing:after {
             content: "";
             position: absolute;
             right: 0;
@@ -46,8 +46,7 @@
            );
         }
 
-
-    .library__more {
+    .library--preview .library__more {
 
     }
 
