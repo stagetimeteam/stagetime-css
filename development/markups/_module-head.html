@@ -28,7 +28,7 @@
 
             <div class="module-head">
                 <div class="module-head__back">
-                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                    <a class="action action--simplified action--alternate" href="organization-people.html">
                         <span class="action__image">
                             <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
                         </span>
@@ -89,7 +89,7 @@
 
             <div class="module-head">
                 <div class="module-head__back">
-                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                    <a class="action action--simplified action--alternate" href="organization-people.html">
                         <span class="action__image">
                             <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
                         </span>
@@ -138,6 +138,52 @@
 
             <br>
             <br>
+            <hr>
+            <br>
+            <br>
+            <p>
+                If we still need to use components that are taller than 40px we can adjust them
+                using negative margins. For example these <a href="_action.html">.action</a>`s are
+                60px tall. So to compensate it we write something like:
+            </p>
+<pre>
+.module-head__right-slot .action {
+    margin-top: -12px;
+    margin-bottom: -8px;
+}
+</pre>
+            <p>
+                Here it is:
+            </p>
+
+            <div class="organization__head module-head module-head--based-on-heading">
+                <h2 class="module-head__heading title title--heading-2">
+                    Jacobs School of Music
+                </h2>
+                <div class="module-head__control-panel">
+                    <div class="module-head__right-slot">
+                        <a class="action action--alternate" href="#">
+                            <span class="action__image">
+                                <img class="action__icon" src="../symbols/16-plus.svg" width="16" height="16" alt="">
+                            </span>
+                            <span class="action__label">
+                                Follow
+                            </span>
+                        </a>
+                        <a class="action action--alternate" href="#">
+                            <span class="action__image">
+                                <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                            </span>
+                            <span class="action__label">
+                                Lorem
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
             <br>
             <br>
             <h2>
@@ -152,7 +198,7 @@
 
             <div class="module-head module-head--based-on-heading">
                 <div class="module-head__back">
-                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                    <a class="action action--simplified action--alternate" href="organization-people.html">
                         <span class="action__image">
                             <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
                         </span>

@@ -1,41 +1,87 @@
 .action {
     display: inline-block;
     vertical-align: top;
-    width: 72px;
+    width: 60px;
+    height: 60px;
     border: none;
-    padding: 4px;
+    padding: 4px 0 5px;
     background-color: transparent;
-    font-weight: bold;
-    font-size: 9px;
-    line-height: 12px;
-    color: #8B8B8B;
+    font-family: inherit;
     text-align: center;
-    text-transform: uppercase;
     text-decoration: none;
+    white-space: nowrap;
     cursor: pointer;
 }
     .action__image {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 13px;
+        margin-bottom: 7px;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 32px;
         height: 32px;
-        border: 1px solid currentColor;
+        border: 1px solid #8B8B8B;
         border-radius: 50%;
     }
         .action__icon {
             vertical-align: top;
-            fill: currentColor;
+            fill: #8B8B8B;
         }
 
+    .action__label {
+        display: block;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 12px;
+        color: #8B8B8B;
+        text-transform: uppercase;
+    }
+
+
+
+.action--alternate {
+
+}
+    .action--alternate .action__image {
+        margin-top: 2px;
+        margin-bottom: 9px;
+        width: 28px;
+        height: 28px;
+        background-color: #C4C4C4;
+        border-color: transparent;
+    }
+        .action--alternate .action__icon {
+            fill: #FFFFFF;
+        }
+
+    .action--alternate .action__label {
+        font-size: 8px;
+        color: #C4C4C4;
+    }
+
+
+
+
+
+.action--multi-line {
+    height: auto;
+}
+    .action--multi-line .action__image {
+
+    }
+        .action--multi-line .action__icon {
+
+        }
+
+    .action--multi-line .action__label {
+        padding-top: 6px;
+    }
 
 
 
 .action--simplified {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 40px;
@@ -43,8 +89,6 @@
 }
     .action--simplified .action__image {
         margin: 0;
-        width: 28px;
-        height: 28px;
     }
         .action__icon {
 
@@ -53,18 +97,5 @@
     .action--simplified .action__label {
         position: absolute;
         opacity: 0;
-        pointer-events: none;
-    }
-
-
-.action--neutral {
-
-}
-    .action--neutral .action__image {
-        background-color: #C4C4C4;
-        border-color: transparent;
-    }
-
-    .action--neutral .action__icon {
-        fill: #FFFFFF;
+        visibility: hidden;
     }
