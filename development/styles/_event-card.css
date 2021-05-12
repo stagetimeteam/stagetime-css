@@ -80,8 +80,8 @@
 
     .event-card__actions {
         position: absolute;
-        right: 7px;
-        top: 17px;
+        right: -3px;
+        top: 7px;
     }
         .event-card__actions .operations__dropdown {
             z-index: 10; /* make dropdown higher then .event-card itself, even higher than the following .event-card */

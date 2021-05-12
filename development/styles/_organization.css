@@ -3,7 +3,8 @@
     padding-bottom: 50px;
 }
     .organization__head {
-
+        position: relative;
+        z-index: 100; /* to make operations dropdown higher than the rest of the page */
     }
 
     .organization__about {
