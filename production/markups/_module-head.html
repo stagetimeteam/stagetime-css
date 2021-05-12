@@ -6,7 +6,7 @@
         <title>.module-head</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1620775993">
+        <link rel="stylesheet" href="../styles/style.css?1620792957">
     </head>
     <body>
 
@@ -26,12 +26,12 @@
             <br>
             <br>
 
-            <section class="module-head">
+            <div class="module-head">
                 <div class="module-head__back">
-                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                    <a class="action action--simplified action--alternate" href="organization-people.html">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1620775993#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1620792957#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -70,11 +70,11 @@
                     </div>
                     <button class="search-heading__cancel" type="button">
                         <svg class="search-heading__cross" width="20" height="20">
-                            <use xlink:href="../symbols/symbols.svg?1620775993#20-rounded-cross"></use>
+                            <use xlink:href="../symbols/symbols.svg?1620792957#20-rounded-cross"></use>
                         </svg>
                     </button>
                 </div>
-            </section>
+            </div>
 
             <br>
             <br>
@@ -91,12 +91,12 @@
             <br>
             <br>
 
-            <section class="module-head">
+            <div class="module-head">
                 <div class="module-head__back">
-                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                    <a class="action action--simplified action--alternate" href="organization-people.html">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1620775993#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1620792957#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -132,17 +132,67 @@
                     </div>
                     <button class="search-heading__cancel" type="button">
                         <svg class="search-heading__cross" width="20" height="20">
-                            <use xlink:href="../symbols/symbols.svg?1620775993#20-rounded-cross"></use>
+                            <use xlink:href="../symbols/symbols.svg?1620792957#20-rounded-cross"></use>
                         </svg>
                     </button>
                 </div>
-            </section>
+            </div>
 
             <p>Note that layout didn't change despite 6px of height are missing</p>
             <p>
                 You can try to manually delete <b>.module-head__right-slot</b> from DOM in the develoepr tool
                 and you'll see page won't shift up by 6px.
             </p>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+            <br>
+            <p>
+                If we still need to use components that are taller than 40px we can adjust them
+                using negative margins. For example these <a href="_action.html">.action</a>`s are
+                60px tall. So to compensate it we write something like:
+            </p>
+<pre>
+.module-head__right-slot .action {
+    margin-top: -12px;
+    margin-bottom: -8px;
+}
+</pre>
+            <p>
+                Here it is:
+            </p>
+
+            <div class="organization__head module-head module-head--based-on-heading">
+                <h2 class="module-head__heading title title--heading-2">
+                    Jacobs School of Music
+                </h2>
+                <div class="module-head__control-panel">
+                    <div class="module-head__right-slot">
+                        <a class="action action--alternate" href="#">
+                            <span class="action__image">
+                                <svg class="action__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1620792957#16-plus"></use>
+                                </svg>
+                            </span>
+                            <span class="action__label">
+                                Follow
+                            </span>
+                        </a>
+                        <a class="action action--alternate" href="#">
+                            <span class="action__image">
+                                <svg class="action__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1620792957#16-left"></use>
+                                </svg>
+                            </span>
+                            <span class="action__label">
+                                Lorem
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
             <br>
             <br>
@@ -158,12 +208,12 @@
                 <b>.module-head--based-on-heading</b> modifier.
             </p>
 
-            <section class="module-head module-head--based-on-heading">
+            <div class="module-head module-head--based-on-heading">
                 <div class="module-head__back">
-                    <a class="action action--simplified action--neutral" href="organization-people.html">
+                    <a class="action action--simplified action--alternate" href="organization-people.html">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1620775993#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1620792957#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -185,11 +235,11 @@
                     </div>
                     <button class="search-heading__cancel" type="button">
                         <svg class="search-heading__cross" width="20" height="20">
-                            <use xlink:href="../symbols/symbols.svg?1620775993#20-rounded-cross"></use>
+                            <use xlink:href="../symbols/symbols.svg?1620792957#20-rounded-cross"></use>
                         </svg>
                     </button>
                 </div>
-            </section>
+            </div>
 
             <br>
             <br>
@@ -209,7 +259,7 @@
         <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
-        <script src="../scripts/_operations.js?1620775993"></script>
+        <script src="../scripts/_operations.js?1620792957"></script>
 
 
     </body>
