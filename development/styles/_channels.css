@@ -1,0 +1,22 @@
+.channels {
+
+}
+    .channels__item {
+        position: relative;
+        margin-top: 17px;
+        padding-left: 49px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 22px;
+        color: #757575;
+    }
+
+    .channels__item:first-child {
+        margin-top: 0;
+    }
+        .channels__icon {
+            position: absolute;
+            left: 0;
+            top: -2px;
+            fill: #545454;
+        }

@@ -1,0 +1,11 @@
+.organization {
+    padding-top: var(--org-pages-top-padding);
+    padding-bottom: 50px;
+}
+    .organization__head {
+
+    }
+
+    .organization__about {
+        margin-top: 33px;
+    }
