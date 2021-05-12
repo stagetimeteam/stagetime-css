@@ -36,7 +36,6 @@
     .operations__dropdown {
         position: absolute;
         right: 10px;
-        top: 100%;
         top: calc(100% - 10px);
         width: 244px;
         display: none;
