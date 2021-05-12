@@ -52,6 +52,10 @@
         background-color: #C4C4C4;
         border-color: transparent;
     }
+
+    .action--alternate:hover .action__image {
+        background-color: #545454;
+    }
         .action--alternate .action__icon {
             fill: #FFFFFF;
         }
