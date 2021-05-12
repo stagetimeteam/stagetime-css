@@ -9,3 +9,19 @@
     .organization__about {
         margin-top: 33px;
     }
+
+    .organization__section {
+        margin-top: 45px;
+    }
+
+    .organization__about + .organization__section {
+        margin-top: 26px;
+    }
+
+        .organization__sub-head {
+
+        }
+
+        .organization__widget {
+            margin-top: 20px;
+        }

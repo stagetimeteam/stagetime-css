@@ -1,9 +1,9 @@
 .timeline {
-    margin-top: 11px;
+
 }
     .timeline__interval {
         position: relative;
-        margin-top: 45px;
+        margin-top: 63px;
         padding-left: 71px;
         padding-right: 35px;
     }
@@ -16,7 +16,7 @@
             content: "";
             position: absolute;
             left: 23px;
-            top: 91px;
+            top: 73px;
             bottom: 0;
             width: 1px;
             background-color: #C4C4C4;
@@ -25,9 +25,8 @@
         .timeline__date {
             position: absolute;
             left: 0;
-            top: 0;
+            top: -8px;
             width: 47px;
-            padding-top: 10px;
             padding-bottom: 21px;
             text-align: center;
         }
@@ -57,6 +56,50 @@
             flex-shrink: 0;
             width: 50%;
         }
+
+        .timeline__item:nth-child(1),
+        .timeline__item:nth-child(2) {
+            padding-top: 0;
+        }
+
+
+
+
+.timeline--simplified {
+
+}
+    .timeline--simplified .timeline__interval {
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+
+    .timeline--simplified .timeline__interval:first-child {
+
+    }
+
+        .timeline--simplified .timeline__interval::before {
+            display: none;
+        }
+
+        .timeline--simplified .timeline__date {
+
+        }
+            .timeline--simplified .timeline__month {
+
+            }
+
+            .timeline--simplified .timeline__year {
+
+            }
+
+    .timeline--simplified .timeline__list {
+
+    }
+        .timeline--simplified .timeline__item {
+
+        }
+
+
 
 
 
