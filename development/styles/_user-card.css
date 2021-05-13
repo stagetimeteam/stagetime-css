@@ -10,18 +10,6 @@
         left: 0;
         top: 0;
     }
-        .user-card__photo-link {
-            display: block;
-            border: none;
-            padding: 0;
-            background-color: transparent;
-            cursor: pointer;
-        }
-            .user-card__image {
-                vertical-align: top;
-                background-color: var(--image-fallback);
-                border-radius: 50%;
-            }
 
     .user-card__heading {
         font-weight: bold;

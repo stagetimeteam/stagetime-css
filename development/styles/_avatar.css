@@ -1,10 +1,16 @@
 .avatar {
-    display: inline-block;
+    display: inline-flex; /* inline-block could be enough but that one inherit line-height for images smaller than 24px */
     vertical-align: top;
+    padding: 0;
+    border: none;
+    background-color: transparent;
     border-radius: 50%;
     overflow: hidden;
+    cursor: pointer;
 }
     .avatar__image {
+        vertical-align: top;
+        background-color: var(--image-fallback);
         transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
     }
 
@@ -13,4 +19,18 @@
 }
     .avatar:hover .avatar__image {
         transform: scale(1.05);
+    }
+
+
+.avatar--squared {
+    border-radius: 11px;
+}
+
+
+.avatar--alt-hover {
+
+}
+    .avatar--alt-hover:hover .avatar__image {
+        transform: none;
+        filter: brightness(1.1) contrast(1.1);
     }
