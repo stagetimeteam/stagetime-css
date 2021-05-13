@@ -6,8 +6,9 @@
                          б) solves multi-link case problem when hovering between lines changes from pointer to arrow */
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid currentColor;
+    border-bottom: 1px solid transparent;
     font-family: inherit;
+    font-weight: bold;
     font-size: inherit;
     line-height: inherit;
     color: #9BB2BF;
@@ -16,7 +17,7 @@
 }
 
 .link:hover {
-    border-bottom-color: transparent;
+    border-bottom-color: currentColor;
 }
 
 .link:active {
@@ -24,12 +25,12 @@
 }
 
 
-.link--inverted {
-    border-bottom-color: transparent;
+.link--classic {
+    border-bottom-color: currentColor;
 }
 
-.link--inverted:hover {
-    border-bottom-color: currentColor;
+.link--classic:hover {
+    border-bottom-color: transparent;
 }
 
 
@@ -46,7 +47,8 @@
 
 
 
-.link--fake {
+.link--fake,
+.link--fake:hover {
     border-bottom-color: transparent;
     color: inherit;
 }
