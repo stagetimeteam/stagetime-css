@@ -1,4 +1,4 @@
-.squared-person {
+.user-card {
     width: 188px;
     padding-top: 20px;
     padding-bottom: 13px;
@@ -8,39 +8,33 @@
     color: #757575;
     text-align: center;
 }
-    .squared-person__photo {
-        padding-left: 21px;
-        padding-right: 21px;
+    .user-card__preview {
+        box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
     }
-        .avatar {
-            display: inline-block;
-            vertical-align: top;
-            box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
-        }
 
-    .squared-person__data {
+    .user-card__data {
         margin-top: 18px;
         padding-left: 10px;
         padding-right: 10px;
         min-height: 67px; /* two lines of .squared-person__name plus one line of .squared-person__note */
     }
-        .squared-person__name {
+        .user-card__name {
             margin-top: 0;
             margin-bottom: 0;
             font-weight: inherit;
         }
-            .squared-person__link {
+            .user-card__link {
                 padding-top: 8px; /* expand clickable area */
                 padding-bottom: 8px;
                 color: inherit;
                 text-decoration: none;
             }
 
-            .squared-person__link:hover {
+            .user-card__link:hover {
                 color: #C4C4C4;
             }
 
-        .squared-person__note {
+        .user-card__note {
             margin-top: 5px;
             font-weight: 600;
             font-size: 11px;
