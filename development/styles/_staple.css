@@ -2,49 +2,78 @@
     display: inline-block;
     vertical-align: top;
     border: none;
-    width: 70px;
-    height: 70px;
-    padding: 19px;
-    background-color: rgba(51, 51, 51, 0.58);
-    border-radius: 50%;
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.19);
+    border-radius: 11px;
     cursor: pointer;
 }
-    .staple__icon {
-        vertical-align: top;
-        fill: #FFFFFF;
+    .staple__frame {
+        height: 100%;
+        border: 2px solid #757575;
+        border-radius: 7px;
+        padding: 9px;
     }
+        .staple__icon {
+            vertical-align: top;
+            fill: #757575;
+            width: 18px;
+            height: 18px; /* ignore sizes in html */
+        }
 
 
-.staple:hover,
-.clip:hover .staple {
-    background-color: rgba(196, 196, 196, 0.88);
+.staple--larger {
+    width: 86px;
+    height: 86px;
+    padding: 19px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
 }
-.play:hover .staple__icon,
-.clip:hover .staple__icon {
-    fill: #FFFFFF;
+    .staple--larger .staple__frame {
+        padding: 13px;
+    }
+        .staple--larger .staple__icon {
+
+        }
+
+
+.staple--pale {
+    background-color: #C4C4C4;
+    border-radius: 50%;
 }
+    .staple--pale .staple__frame {
+        border-color: #FFFFFF;
+    }
+        .staple--pale .staple__icon {
+            fill: #FFFFFF;
+        }
+
+
 
 
 
 .staple--alternate {
-    width: 86px;
-    height: 86px;
+    background-color: rgba(51, 51, 51, 0.58);
+    box-shadow: none;
+    border-radius: 50%;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.19);
-    border-radius: 11px;
 }
-    .staple--alternate::before {
-        content: "";
-        display: block;
-        width: 46px;
-        height: 46px;
-        border: 2px solid #757575;
-        border-radius: 7px;
+    .staple--alternate .staple__frame {
+        border: none;
+        padding: 0;
     }
+        .staple--alternate .staple__icon {
+            width: 32px;
+            height: 32px;
+            fill: #FFFFFF;
+        }
 
-    .staple--alternate .staple__icon {
-        margin-top: -33px;
-        margin-left: 13px;
-        fill: #757575;
+.staple--alternate:hover,
+.clip:hover .staple--alternate {
+    background-color: rgba(196, 196, 196, 0.88);
+}
+    .staple--alternate:hover .staple__icon,
+    .clip:hover .staple__icon {
+        fill: #FFFFFF;
     }
