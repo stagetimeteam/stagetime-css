@@ -18,18 +18,20 @@
             <h1>.video-card</h1>
 
             <div class="video-card">
-                <a class="video-card__preview clip" href="organization-virtual-details.html">
-                    <div class="clip__stage">
-                        <img class="clip__image"
-                             srcset="../temp/clip-a@2x.jpg 2x"
-                             src="../temp/clip-a.jpg"
-                             alt=""
-                        >
-                    </div>
-                    <div class="clip__action play">
-                        <img class="play__icon" src="../symbols/32-play.svg" width="32" height="32" alt="">
-                    </div>
-                </a>
+                <div class="video-card__preview">
+                    <a class="clip" href="organization-virtual-details.html">
+                        <div class="clip__stage">
+                            <img class="clip__image"
+                                 srcset="../temp/clip-a@2x.jpg 2x"
+                                 src="../temp/clip-a.jpg"
+                                 alt=""
+                            >
+                        </div>
+                        <div class="clip__action play">
+                            <img class="play__icon" src="../symbols/32-play.svg" width="32" height="32" alt="">
+                        </div>
+                    </a>
+                </div>
                 <div class="video-card__body">
                     <h3 class="video-card__heading ellipsis">
                         <a class="link link--text-alike" href="#">La bohème</a>
@@ -40,9 +42,77 @@
                     <div class="video-card__note ellipsis">
                         Musical Arts Center, Bloomington, IN
                     </div>
-                    <div class="video-card__people crowd">
+                    <div class="video-card__people-counter crowd">
                         <img class="crowd__icon" src="../symbols/32-crowd.svg" width="32" height="32" alt="">
                         999
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.video-card--entry</h2>
+            <p>
+                This is variation of the card that meant to be used inside of feed post.
+                It adds plenty of small changes but what's more important it releases width
+                that by default was fixed.
+            </p>
+            <p>
+                Since width is fixed keep in mind context and load images of correct dimension
+                and set proper <b>width</b> and <b>height</b> attributes.
+            </p>
+            <p>
+                Please remove <b>.video-card__people-counter</b> and add <b>.video-card__people-summary</b>
+            </p>
+
+            <div class="video-card video-card--entry">
+                <div class="video-card__preview">
+                    <a class="clip" href="#">
+                        <div class="clip__stage">
+                            <img class="clip__image"
+                                 srcset="../temp/clip-entry@2x.jpg 2x"
+                                 src="../temp/clip-entry.jpg"
+                                 width="622"
+                                 height="238"
+                                 alt=""
+                            >
+                        </div>
+                        <div class="clip__action play play--larger">
+                            <img class="play__icon" src="../symbols/32-play.svg" width="38" height="38" alt="">
+                        </div>
+                    </a>
+                    <div class="video-card__people-summary party party--faded">
+                        <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                        <div class="party__list">
+                            <a class="party__item avatar avatar--alt-hover" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                     src="../temp/organization-a-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Indiana University"
+                                >
+                            </a>
+                            <a class="party__item avatar avatar--alt-hover" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                     src="../temp/organization-b-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Indiana University"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-card__body">
+                    <h3 class="video-card__heading">
+                        <a class="link link--text-alike" href="#">GNO 7 DEATHS OF MARIA CALLAS Trailer</a>
+                    </h3>
+                    <div class="video-card__note">
+                        Greek National Opera
                     </div>
                 </div>
             </div>

@@ -34,3 +34,26 @@
         color: #757575;
         text-decoration: none;
     }
+
+
+.party--faded {
+
+}
+    .party--faded .party__icon {
+        fill: #FFFFFF;
+    }
+
+    .party--faded .party__list {
+
+    }
+        .party--faded .party__item {
+
+        }
+
+        .party--faded .party__item:first-child {
+
+        }
+
+    .party--faded .party__more {
+
+    }

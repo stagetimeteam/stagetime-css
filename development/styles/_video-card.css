@@ -3,34 +3,63 @@
     padding: 20px;
 }
     .video-card__preview {
-
+        position: relative;
     }
+        .video-card__people-summary {
+            position: absolute;
+            left: 25px;
+            bottom: 24px;
+        }
 
     .video-card__body {
         position: relative;
         margin-top: 25px;
-        border-left: 3px solid #C4C4C4;
-        padding: 3px 40px 3px 18px;
+        border-left: 2px solid #C4C4C4;
+        padding: 2px 40px 3px 18px;
     }
         .video-card__heading {
             margin-top: 0;
             margin-bottom: 0;
+            padding-bottom: 1px;
             font-weight: bold;
             font-size: 13px;
-            line-height: 23px;
+            line-height: 18px;
             letter-spacing: -0.26px;
             color: #757575;
         }
 
         .video-card__note {
+            margin-top: 5px;
             font-size: 12px;
-            line-height: 23px;
+            line-height: 18px;
             letter-spacing: -0.24px;
             color: #AFAFAF;
         }
 
-        .video-card__people {
+        .video-card__people-counter {
             position: absolute;
             right: -3px;
             top: -6px;
+        }
+
+
+
+.video-card--entry {
+    width: auto;
+    padding: 0;
+}
+    .video-card--entry .video-card__preview {
+
+    }
+
+    .video-card--entry .video-card__body {
+        margin-top: 21px;
+        padding: 0 0 0 16px;
+    }
+        .video-card--entry .video-card__heading {
+
+        }
+
+        .video-card--entry .video-card__note {
+
         }
