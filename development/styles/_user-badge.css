@@ -1,34 +1,24 @@
-.user-bar {
+.user-badge {
     position: relative;
     padding-left: 76px;
     padding-top: 6px;
     padding-bottom: 12px;
     min-height: 56px;
 }
-    .user-bar__preview {
+    .user-badge__preview {
         position: absolute;
         left: 0;
         top: 0;
     }
 
-    .user-bar__heading {
+    .user-badge__heading {
         font-weight: bold;
         font-size: 12px;
         line-height: 16px;
         color: #757575;
     }
-        .user-bar__name-link {
-            padding-top: 4px;
-            padding-bottom: 4px;
-            color: inherit;
-            text-decoration: none;
-        }
 
-        .user-bar__name-link:hover {
-            text-decoration: underline;
-        }
-
-    .user-bar__note {
+    .user-badge__note {
         margin-top: 6px;
         font-size: 12px;
         line-height: 16px;
