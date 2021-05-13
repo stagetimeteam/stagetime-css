@@ -1,0 +1,16 @@
+.avatar {
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 50%;
+    overflow: hidden;
+}
+    .avatar__image {
+        transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+    }
+
+.avatar:hover {
+
+}
+    .avatar:hover .avatar__image {
+        transform: scale(1.05);
+    }

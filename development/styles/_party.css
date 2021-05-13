@@ -1,0 +1,19 @@
+.party {
+
+}
+    .party__icon {
+
+    }
+
+    .party__list {
+        display: flex;
+        align-items: flex-start;
+    }
+        .party__item {
+            flex-shrink: 0;
+            margin-left: 5px;
+        }
+
+        .party__item:first-child {
+            margin-left: 0;
+        }
