@@ -1,4 +1,5 @@
-.link {
+.link,
+.wysiwyg a {
     display: inline;
     vertical-align: baseline;
     padding: 4px 0 0; /* 4px solves two problems:
@@ -16,11 +17,13 @@
     cursor: pointer;
 }
 
-.link:hover {
+.link:hover,
+.wysiwyg a:hover {
     border-bottom-color: currentColor;
 }
 
-.link:active {
+.link:active,
+.wysiwyg a:active {
 
 }
 

@@ -124,12 +124,9 @@
 
 
 .wysiwyg a {
-    text-decoration: underline;
+    /* see .link component */
 }
 
-.wysiwyg a:hover {
-    text-decoration: none;
-}
 
 
 .wysiwyg b,

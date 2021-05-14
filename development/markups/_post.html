@@ -28,7 +28,7 @@
             </p>
 
 
-            <article class="activity-feed__item post">
+            <article class="post">
                 <div class="post__head user-badge">
                     <div class="user-badge__preview">
                         <a class="avatar avatar--alt-hover" href="#">
@@ -134,7 +134,7 @@
             </p>
 
 
-            <article class="activity-feed__item post">
+            <article class="post">
                 <div class="post__head user-badge">
                     <div class="user-badge__preview">
                         <a class="avatar avatar--alt-hover" href="#">
@@ -250,7 +250,7 @@
                 Please use <b>.post__attachment--outer</b> modifier to do so:
             </p>
 
-            <article class="activity-feed__item post">
+            <article class="post">
                 <div class="post__head user-badge">
                     <div class="user-badge__preview">
                         <a class="avatar avatar--alt-hover" href="#">
@@ -315,7 +315,7 @@
                 variation here.
             </p>
 
-            <article class="activity-feed__item post">
+            <article class="post">
                 <div class="post__head user-badge">
                     <div class="user-badge__preview">
                         <a class="avatar avatar--alt-hover" href="#">
@@ -423,7 +423,7 @@
                 <br><b>.party--faded</b> to change colors of .party compoennt inside
             </p>
 
-            <article class="activity-feed__item post">
+            <article class="post">
                 <div class="post__head user-badge">
                     <div class="user-badge__preview">
                         <a class="avatar avatar--alt-hover" href="#">
@@ -536,7 +536,7 @@
                 And, again, <b>.party--faded</b> variation.
             </p>
 
-            <article class="activity-feed__item post">
+            <article class="post">
                 <div class="post__head user-badge">
                     <div class="user-badge__preview">
                         <a class="avatar avatar--alt-hover" href="#">
@@ -661,7 +661,7 @@
                 cause it will mess up margins.
             </p>
 
-            <article class="activity-feed__item post">
+            <article class="post">
                 <div class="post__head user-badge">
                     <div class="user-badge__preview">
                         <a class="avatar avatar--alt-hover" href="#">
@@ -757,6 +757,115 @@
             </article>
 
 
+
+            <br>
+            <br>
+            <br>
+            <h2>Content and .wysiwyg</h2>
+            <p>
+                It is expected that we have only plain text as content, but anything else
+                from <a href="_wysiwyg.html">.wysiwyg</a> will work.
+            </p>
+            <p>
+                I think our minimum is:
+                <br><b>&lt;p&gt;</b> -- paragraph break.
+                <br><b>&lt;br&gt;</b> -- line break.
+                <br><b>&lt;a&gt;</b> -- links are ok.
+            </p>
+
+
+            <article class="post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Integer sit amet</a> mattis eros, ut laoreet ante. Curabitur pellentesque quis diam in consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        <br>⬅ Line break here, aliquet ut mollis vel, gravida a risus. Maecenas vel egestas velit. Maecenas sollicitudin semper convallis. Morbi commodo condimentum malesuada. Aliquam id nulla vitae ex scelerisque convallis vel vel risus. Aenean a massa egestas, blandit quam vitae, dignissim diam. Maecenas eget leo ut mauris dignissim tempus ac vitae urna. In faucibus lorem erat, eget convallis nisi rhoncus vitae. Integer aliquam, turpis sed molestie fringilla, sapien purus tempor eros, eu dictum diam sem id magna. Aenean posuere sapien id lectus ornare, id aliquet odio condimentum. Praesent ut est non tortor vulputate mollis. Nulla efficitur, lacus at rutrum mollis, dolor eros fringilla mauris, eu pulvinar tellus ante vitae nisl.
+                    </p>
+                    <p>
+                        ⬅ Starting new paragraph here. Donec id nibh a nisi auctor ullamcorper sed maximus mauris. Ut quis erat eget enim placerat auctor. Suspendisse tristique molestie scelerisque. Sed porta orci nisl, sit amet blandit odio ultricies ut. In a leo id nunc convallis consequat et id nulla. Etiam ut faucibus est, id sodales ipsum. Phasellus efficitur blandit vehicula. Quisque justo orci, interdum id volutpat in, consequat vel velit. Aliquam placerat felis id vehicula tempor. Fusce laoreet quis ante ut commodo. Proin sed metus non mi aliquam viverra. Curabitur tortor ex, fermentum commodo suscipit et, varius sit amet eros. Nunc molestie, libero sed gravida sodales, tellus enim porttitor justo, eu ornare eros erat at dui.
+                    </p>
+                </div>
+                <div class="post__people party">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                    <a class="party__more" href="#">
+                        + 6 more
+                    </a>
+                </div>
+            </article>
 
 
             <br>
