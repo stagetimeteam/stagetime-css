@@ -6,13 +6,13 @@
         <title>.clip</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1620794541">
+        <link rel="stylesheet" href="../styles/style.css?1620961808">
     </head>
     <body>
 
 
 
-        <div style="width: 800px; margin: 0 auto;">
+        <div style="width: 622px; margin: 0 auto;">
             <br>
             <br>
             <h1>.clip</h1>
@@ -25,12 +25,14 @@
                     <img class="clip__image"
                          srcset="../temp/clip-a@2x.jpg 2x"
                          src="../temp/clip-a.jpg"
+                         width="310"
+                         height="220"
                          alt=""
                     >
                 </div>
                 <div class="clip__action play">
                     <svg class="play__icon" width="32" height="32">
-                        <use xlink:href="../symbols/symbols.svg?1620794541#32-play"></use>
+                        <use xlink:href="../symbols/symbols.svg?1620961808#32-play"></use>
                     </svg>
                 </div>
             </a>
@@ -49,12 +51,43 @@
                     <img class="clip__image"
                          srcset="../temp/clip-a@2x.jpg 2x"
                          src="../temp/clip-a.jpg"
+                         width="310"
+                         height="220"
                          alt=""
                     >
                 </div>
-                <div class="clip__action staple">
-                    <svg class="staple__icon" width="32" height="32">
-                        <use xlink:href="../symbols/symbols.svg?1620794541#32-staple"></use>
+                <div class="clip__action staple staple--play-alike">
+                    <div class="staple__frame">
+                        <svg class="staple__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1620961808#32-staple"></use>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Activity feed case</h2>
+            <p>
+                Use larger version of <b>.play</b> here (<b>.play--larger</b> modifier and 38x38 icon size).
+            </p>
+
+            <a class="clip" href="#">
+                <div class="clip__stage">
+                    <img class="clip__image"
+                         srcset="../temp/clip-entry@2x.jpg 2x"
+                         src="../temp/clip-entry.jpg"
+                         width="622"
+                         height="238"
+                         alt=""
+                    >
+                </div>
+                <div class="clip__action play play--larger">
+                    <svg class="play__icon" width="38" height="38">
+                        <use xlink:href="../symbols/symbols.svg?1620961808#32-play"></use>
                     </svg>
                 </div>
             </a>
@@ -77,7 +110,7 @@
         <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
-        <script src="../scripts/_operations.js?1620794541"></script>
+        <script src="../scripts/_operations.js?1620961808"></script>
 
 
     </body>

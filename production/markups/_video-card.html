@@ -6,7 +6,7 @@
         <title>.video-card</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1620794541">
+        <link rel="stylesheet" href="../styles/style.css?1620961808">
     </head>
     <body>
 
@@ -18,20 +18,22 @@
             <h1>.video-card</h1>
 
             <div class="video-card">
-                <a class="video-card__preview clip" href="organization-virtual-details.html">
-                    <div class="clip__stage">
-                        <img class="clip__image"
-                             srcset="../temp/clip-a@2x.jpg 2x"
-                             src="../temp/clip-a.jpg"
-                             alt=""
-                        >
-                    </div>
-                    <div class="clip__action play">
-                        <svg class="play__icon" width="32" height="32">
-                            <use xlink:href="../symbols/symbols.svg?1620794541#32-play"></use>
-                        </svg>
-                    </div>
-                </a>
+                <div class="video-card__preview">
+                    <a class="clip" href="organization-virtual-details.html">
+                        <div class="clip__stage">
+                            <img class="clip__image"
+                                 srcset="../temp/clip-a@2x.jpg 2x"
+                                 src="../temp/clip-a.jpg"
+                                 alt=""
+                            >
+                        </div>
+                        <div class="clip__action play">
+                            <svg class="play__icon" width="32" height="32">
+                                <use xlink:href="../symbols/symbols.svg?1620961808#32-play"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
                 <div class="video-card__body">
                     <h3 class="video-card__heading ellipsis">
                         <a class="link link--text-alike" href="#">La bohème</a>
@@ -42,11 +44,58 @@
                     <div class="video-card__note ellipsis">
                         Musical Arts Center, Bloomington, IN
                     </div>
-                    <div class="video-card__people crowd">
+                    <div class="video-card__people-counter crowd">
                         <svg class="crowd__icon" width="32" height="32">
-                            <use xlink:href="../symbols/symbols.svg?1620794541#32-crowd"></use>
+                            <use xlink:href="../symbols/symbols.svg?1620961808#32-crowd"></use>
                         </svg>
                         999
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.video-card--entry</h2>
+            <p>
+                This is variation of the card that meant to be used inside of feed post.
+                It adds plenty of small changes but what's more important it releases width
+                that by default was fixed.
+            </p>
+            <p>
+                Since width is fixed keep in mind context and load images of correct dimension
+                and set proper <b>width</b> and <b>height</b> attributes.
+            </p>
+            <p>
+                Also remove <b>.video-card__people-counter</b>
+            </p>
+
+            <div class="video-card video-card--entry">
+                <div class="video-card__preview">
+                    <a class="clip" href="#">
+                        <div class="clip__stage">
+                            <img class="clip__image"
+                                 srcset="../temp/clip-entry@2x.jpg 2x"
+                                 src="../temp/clip-entry.jpg"
+                                 width="622"
+                                 height="238"
+                                 alt=""
+                            >
+                        </div>
+                        <div class="clip__action play play--larger">
+                            <svg class="play__icon" width="38" height="38">
+                                <use xlink:href="../symbols/symbols.svg?1620961808#32-play"></use>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-card__body">
+                    <h3 class="video-card__heading">
+                        <a class="link link--text-alike" href="#">GNO 7 DEATHS OF MARIA CALLAS Trailer</a>
+                    </h3>
+                    <div class="video-card__note">
+                        Greek National Opera
                     </div>
                 </div>
             </div>
@@ -77,7 +126,7 @@
         <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
-        <script src="../scripts/_operations.js?1620794541"></script>
+        <script src="../scripts/_operations.js?1620961808"></script>
 
 
     </body>
