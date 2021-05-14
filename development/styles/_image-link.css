@@ -1,0 +1,23 @@
+.image-link {
+    position: relative;
+    display: block;
+}
+    .image-link__image {
+        vertical-align: top;
+        background-color: var(--image-fallback);
+    }
+
+    .image-link__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .image-link__people-summary {
+        position: absolute;
+        left: 25px;
+        bottom: 24px;
+    }
