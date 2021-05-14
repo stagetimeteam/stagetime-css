@@ -6,6 +6,7 @@
 .wysiwyg {
     font-size: var(--wysiwyg-font);
     line-height: var(--wysiwyg-line);
+    word-wrap: break-word;
 }
 
 /* stylelint-disable function-parentheses-space-inside */
@@ -75,6 +76,7 @@
 .wysiwyg blockquote {
     margin-left: 40px;
     margin-right: 40px;
+    font-style: italic;
 }
 
 .wysiwyg hr {
@@ -84,11 +86,14 @@
 
 .wysiwyg img {
     vertical-align: top;
+    background-color: var(--image-fallback);
+    max-width: 100%;
+    height: auto;
 }
 
 .wysiwyg figure {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 0;
+    margin-right: 0;
 }
     .wysiwyg figcaption {
         margin-top: 4px;
