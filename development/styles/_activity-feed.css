@@ -1,9 +1,10 @@
 .activity-feed {
-    width: 670px;
-    background-color: #F6F6F6;
-    border-radius: 12px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
+    padding: 42px 40px 71px;
+    background-color: #F6F6F6;
+    border-radius: 12px;
 }
     .activity-feed__item {
         margin-top: 19px;

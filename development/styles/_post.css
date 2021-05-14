@@ -1,0 +1,68 @@
+:root {
+    --post-radius: 10px;
+}
+
+.post {
+    position: relative;
+    padding: 21px 24px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+}
+    .post__head {
+        margin-right: 43px; /* there are .post__actions */
+    }
+
+    .post__actions {
+        position: absolute;
+        right: -3px;
+        top: 7px;
+    }
+
+    .post__content {
+        margin-top: 15px;
+        color: #757575;
+    }
+
+    .post__attachment {
+        margin-top: 22px;
+    }
+
+    .post__content ~ .post__attachment {
+        margin-top: 24px;
+    }
+
+    .post__attachment--outer {
+        margin-left: -24px;
+        margin-right: -24px;
+        margin-bottom: -20px;
+    }
+        .post__attachment .image-preview,
+        .post__attachment .image-link__image {
+            border-bottom-left-radius: var(--post-radius);
+            border-bottom-right-radius: var(--post-radius);
+        }
+
+
+    .post__people {
+        margin-top: 11px;
+    }
+
+    .post__attachment ~ .post__people {
+        margin-top: 24px;
+    }
+
+    .post__people--overlap-image {
+        position: absolute;
+        left: 25px;
+        bottom: 24px;
+    }
+        .post__people--overlap-image .party__icon {
+            fill: #FFFFFF;
+        }
+
+    .post__people--overlap-video-card {
+        position: absolute;
+        left: 45px;
+        bottom: 104px;
+    }

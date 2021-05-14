@@ -9,6 +9,7 @@
 
     .brief__description {
         flex-shrink: 0;
+        margin-top: 1px;
         margin-left: 40px;
         width: 514px;
         color: #757575;

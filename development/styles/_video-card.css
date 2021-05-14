@@ -5,11 +5,6 @@
     .video-card__preview {
         position: relative;
     }
-        .video-card__people-summary {
-            position: absolute;
-            left: 25px;
-            bottom: 24px;
-        }
 
     .video-card__body {
         position: relative;
