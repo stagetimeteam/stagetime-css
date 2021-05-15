@@ -102,7 +102,10 @@
 
 
 .event-card--detailed {
-    width: 296px;
+    display: inline-block; /* to be used inside of .mfp */
+    vertical-align: top;
+    width: 296px; /* to be used inside of .mfp */
+    text-align: left;
 }
     .event-card--detailed .event-card__link {
         padding: 22px var(--event-card-h-padding) 24px;
