@@ -1,0 +1,33 @@
+.set {
+
+}
+    .set__heading {
+        display: flex;
+        align-items: flex-start;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 18px;
+        color: #757575;
+    }
+        .set__icon {
+            margin-left: -2px;
+            margin-top: -7px;
+            margin-right: 7px;
+            width: 26px;
+            height: 26px;
+            vertical-align: top;
+            fill: currentColor;
+        }
+
+    .set__list {
+        clear: left;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-left: -17px;
+        margin-top: -4px;
+    }
+        .set__item {
+            margin-left: 17px;
+            margin-top: 17px;
+        }

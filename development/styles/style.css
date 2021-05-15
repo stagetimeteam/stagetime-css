@@ -1,4 +1,5 @@
 @import url("../vendors/normalize/normalize.css");
+@import url("../vendors/magnific-popup/dist/magnific-popup.css");
 
 @import url("_root.css");
 @import url("_universal.css");
@@ -52,3 +53,5 @@
 @import url("_image-link.css");
 @import url("_post.css");
 @import url("_image-preview.css");
+@import url("_mfp.css");
+@import url("_set.css");

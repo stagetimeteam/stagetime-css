@@ -18,7 +18,7 @@
         margin-top: 18px;
         padding-left: 10px;
         padding-right: 10px;
-        min-height: 67px; /* two lines of .squared-person__name plus one line of .squared-person__note */
+        min-height: 67px; /* two lines of .user-card__name plus one line of .user-card__note */
     }
         .user-card__name {
             margin-top: 0;

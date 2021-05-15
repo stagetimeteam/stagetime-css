@@ -1,3 +1,7 @@
+:root {
+    --event-card-h-padding: 24px;
+}
+
 .event-card {
     position: relative;
 }
@@ -5,7 +9,7 @@
         display: block;
         text-decoration: none;
         min-height: 161px;
-        padding: 26px 44px 24px 167px;
+        padding: 20px 44px var(--event-card-h-padding) 167px;
         background-color: #F6F6F6;
         border-radius: 20px;
         color: #757575;
@@ -50,12 +54,12 @@
             margin-bottom: 0;
             font-weight: inherit;
             font-size: 21px;
-            line-height: 24px;
+            line-height: 37px;
             letter-spacing: -0.3px;
         }
 
-        .event-card__data {
-            margin-top: 23px;
+        .event-card__body {
+            margin-top: 16px;
         }
             .event-card__note {
                 margin-top: 6px;
@@ -86,4 +90,92 @@
     }
         .event-card__actions .operations__dropdown {
             z-index: 10; /* make dropdown higher then .event-card itself, even higher than the following .event-card */
+        }
+
+
+    .event-card__artists {
+        margin: 23px calc(-1 * var(--event-card-h-padding)) 0;
+        border-top: 1px solid #E8E8E8;
+        padding: 23px 34px 0;
+    }
+
+
+
+.event-card--detailed {
+    width: 296px;
+}
+    .event-card--detailed .event-card__link {
+        padding: 22px var(--event-card-h-padding) 24px;
+    }
+
+    /* canceling hover */
+    .event-card--detailed:hover .event-card__link {
+        background-color: #F6F6F6;
+    }
+        .event-card--detailed .event-card__date {
+            position: static;
+        }
+            .event-card--detailed .event-card__month {
+                /*padding-top: 24px;*/
+                /*font-weight: bold;*/
+                /*font-size: 14px;*/
+                /*line-height: 20px;*/
+                /*color: #AAAAAA;*/
+                /*padding-left: 5px;*/
+                /*letter-spacing: 5px;*/
+                /*text-transform: uppercase;*/
+                /*text-align: center;*/
+            }
+
+            .event-card--detailed .event-card__day {
+                /*margin-top: 4px;*/
+                /*font-weight: 300;*/
+                /*font-size: 46px;*/
+                /*line-height: 46px;*/
+                /*color: #545454;*/
+                /*letter-spacing: -1px;*/
+                /*text-align: center;*/
+            }
+
+        .event-card--detailed .event-card__heading {
+            margin-top: 18px;
+            /*margin-bottom: 0;*/
+            /*font-weight: inherit;*/
+            /*font-size: 21px;*/
+            /*line-height: 24px;*/
+            /*letter-spacing: -0.3px;*/
+        }
+
+        .event-card--detailed .event-card__body {
+            /*margin-top: 23px;*/
+        }
+            .event-card--detailed .event-card__note {
+                /*margin-top: 6px;*/
+                /*font-size: 12px;*/
+                /*line-height: 16px;*/
+                /*letter-spacing: -0.2px;*/
+            }
+
+            .event-card--detailed .event-card__note:first-child {
+                /*margin-top: 0;*/
+            }
+
+            .event-card--detailed .event-card__author {
+                /*margin-top: -9px;*/
+                /*margin-bottom: -2px;*/
+            }
+
+        .event-card--detailed .event-card__people {
+            /*position: absolute;*/
+            /*right: 13px;*/
+            /*top: 75px;*/
+        }
+
+    .event-card--detailed .event-card__actions {
+        /*position: absolute;*/
+        right: 1px;
+        top: 10px;
+    }
+        .event-card--detailed .event-card__actions .operations__dropdown {
+            /*z-index: 10; !* make dropdown higher then .event-card itself, even higher than the following .event-card *!*/
         }
