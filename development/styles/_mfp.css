@@ -17,12 +17,10 @@
 }
 
 .mfp-content {
-
     text-align: center;
 }
     .mfp-content::before, /* vertical */
-    .mfp-content::after  /* padding */
-    {
+    .mfp-content::after { /* padding */
         content: "";
         display: block;
         height: 8px;
