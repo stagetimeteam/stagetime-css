@@ -7,7 +7,9 @@
     line-height: 22px;
     color: #757575;
     text-align: center;
+    cursor: pointer;
 }
+
     .user-card__preview {
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
     }
@@ -30,6 +32,7 @@
                 text-decoration: none;
             }
 
+            .user-card:hover .user-card__link,
             .user-card__link:hover {
                 color: #C4C4C4;
             }

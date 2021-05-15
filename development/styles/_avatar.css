@@ -17,6 +17,7 @@
 .avatar:hover {
 
 }
+    .user-card:hover .avatar__image,
     .avatar:hover .avatar__image {
         transform: scale(1.05);
     }

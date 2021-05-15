@@ -36,24 +36,24 @@
     }
 
 
-.party--faded {
+.party--inverted {
 
 }
-    .party--faded .party__icon {
+    .party--inverted .party__icon {
         fill: #FFFFFF;
     }
 
-    .party--faded .party__list {
+    .party--inverted .party__list {
 
     }
-        .party--faded .party__item {
+        .party--inverted .party__item {
 
         }
 
-        .party--faded .party__item:first-child {
+        .party--inverted .party__item:first-child {
 
         }
 
-    .party--faded .party__more {
+    .party--inverted .party__more {
         color: #FFFFFF;
     }
