@@ -1,0 +1,11 @@
+.header-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+    .header-button__icon {
+        vertical-align: top;
+        fill: #545454;
+    }
