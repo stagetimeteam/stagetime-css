@@ -31,9 +31,20 @@
 .avatar--alt-hover {
 
 }
+    .profile__handler:hover .avatar__image,
+    .profile__link:hover .avatar__image,
     .avatar--alt-hover:hover .avatar__image {
         transform: none;
         filter: brightness(1.1) contrast(1.1);
+    }
+
+
+.avatar--fancy {
+    border: 1px solid #FFFFFF;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+    .avatar--fancy .avatar__image {
+
     }
 
 

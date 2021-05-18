@@ -2,14 +2,14 @@
     display: inline-block;
     vertical-align: top;
     border: none;
-    padding: 10px 20px;
+    padding: 9px 20px;
     background-color: #333333;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     font-family: inherit;
     font-weight: 600;
     font-size: 10px;
-    line-height: 14px;
+    line-height: 16px;
     color: #FFFFFF;
     letter-spacing: -0.1px;
     text-transform: uppercase;
@@ -28,6 +28,14 @@
     color: #333333;
     box-shadow: none;
 }
+    .button__icon {
+        vertical-align: top;
+    }
+
+    .button__icon--left {
+        margin-left: -8px;
+        margin-right: 4px;
+    }
 
 
 .button--faded {
@@ -41,4 +49,20 @@
 .button--faded:active {
     background-color: #C4C4C4;
     color: #757575;
+}
+
+
+.button--secondary {
+    background-color: #F4F4F4;
+    font-weight: bold;
+    color: #8B8B8B;
+    box-shadow: none;
+    text-transform: none;
+    letter-spacing: -0.1px;
+}
+
+.button--secondary:hover,
+.button--secondary:active {
+    background-color: #8B8B8B;
+    color: #F4F4F4;
 }
