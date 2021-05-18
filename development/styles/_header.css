@@ -19,6 +19,9 @@
         margin-top: 4px;
         margin-left: 38px;
     }
+        .header__search .search {
+            width: 256px;
+        }
 
     .header__private-area {
         margin-left: auto;
