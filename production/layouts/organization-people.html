@@ -6,13 +6,121 @@
         <title>Org People</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1621311180">
+        <link rel="stylesheet" href="../styles/style.css?1621313135">
     </head>
     <body>
 
-        <!-- temp -->
-        <img src="../temp/header-bar.png" alt="" style="width: 100%; vertical-align: top;">
-        <!--/temp -->
+        <header class="header">
+            <a class="header__branding logo" href="#">
+                STAGETIME
+            </a>
+            <div class="header__search">
+                <form class="search">
+                    <input class="search__widget" type="text" placeholder="Search Stagetime">
+                    <svg class="search__icon" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1621313135#16-magnifier"></use>
+                    </svg>
+                </form>
+            </div>
+            <div class="header__private-area">
+                <div class="header__greetings">
+                    Good afternoon, <a class="link" href="#">Jennie</a>.
+                </div>
+                <div class="header__menu">
+                    <a class="header__item header-button header-button--flagged" href="#">
+                        <svg class="header-button__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1621313135#32-envelope"></use>
+                        </svg>
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button" href="#">
+                        <svg class="header-button__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1621313135#32-crowd"></use>
+                        </svg>
+                        <span class="visuallyhidden">Collaborators</span>
+                    </a>
+                    <a class="header__item header-button header-button--flagged" href="#">
+                        <svg class="header-button__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1621313135#32-bell"></use>
+                        </svg>
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                </div>
+                <div class="header__user profile">
+                    <button class="profile__handler" type="button">
+                        <span class="avatar avatar--alt-hover avatar--fancy">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-26x26@2x.jpg 2x"
+                                 src="../temp/person-a-26x26.jpg"
+                                 width="26"
+                                 height="26"
+                                 alt=""
+                            >
+                        </span>
+                    </button>
+                    <div class="profile__dropdown">
+                        <a class="profile__link" href="#">
+                            <span class="profile__preview avatar avatar--alt-hover avatar--fancy">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-26x26@2x.jpg 2x"
+                                     src="../temp/person-a-26x26.jpg"
+                                     width="26"
+                                     height="26"
+                                     alt=""
+                                >
+                            </span>
+                            View Profile
+                        </a>
+                        <div class="profile__menu">
+                            <a class="icon-action" href="#">
+                                <svg class="icon-action__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1621313135#16-pencil"></use>
+                                </svg>
+                                Edit Profile
+                            </a>
+                            <a class="icon-action" href="#">
+                                <svg class="icon-action__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1621313135#16-envelope-outline"></use>
+                                </svg>
+                                <svg class="icon-action__sparkle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1621313135#16-sparkle"></use>
+                                </svg>
+                                Invite
+                                <span class="visuallyhidden">Explain meaning of sparkles here</span>
+                            </a>
+                            <a class="icon-action" href="#">
+                                <svg class="icon-action__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1621313135#16-question-spot"></use>
+                                </svg>
+                                Support
+                            </a>
+                            <a class="icon-action" href="#">
+                                <svg class="icon-action__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1621313135#16-cog"></use>
+                                </svg>
+                                Settings
+                            </a>
+                        </div>
+                        <a class="profile__organisation button button--secondary" href="#">
+                            <svg class="button__icon button__icon--left" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1621313135#16-city"></use>
+                            </svg>
+                            Create Organization
+                        </a>
+                        <a class="profile__logout icon-action" href="#">
+                            <svg class="icon-action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1621313135#16-logout"></use>
+                            </svg>
+                            Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <div class="summary">
             <div class="summary__background" role="presentation" aria-hidden="true">
@@ -53,7 +161,7 @@
                 </div>
                 <div class="summary__location">
                     <svg class="summary__map-pin" width="24" height="24">
-                        <use xlink:href="../symbols/symbols.svg?1621311180#24-location"></use>
+                        <use xlink:href="../symbols/symbols.svg?1621313135#24-location"></use>
                     </svg>
                     Bloomington, IN — USA
                 </div>
@@ -71,22 +179,22 @@
                 <div class="org-nav__social media">
                     <a class="media__link" href="#">
                         <svg class="media__icon" width="28" height="28">
-                            <use xlink:href="../symbols/symbols.svg?1621311180#28-media-instagram"></use>
+                            <use xlink:href="../symbols/symbols.svg?1621313135#28-media-instagram"></use>
                         </svg>
                     </a>
                     <a class="media__link" href="#">
                         <svg class="media__icon" width="28" height="28">
-                            <use xlink:href="../symbols/symbols.svg?1621311180#28-media-facebook"></use>
+                            <use xlink:href="../symbols/symbols.svg?1621313135#28-media-facebook"></use>
                         </svg>
                     </a>
                     <a class="media__link" href="#">
                         <svg class="media__icon" width="28" height="28">
-                            <use xlink:href="../symbols/symbols.svg?1621311180#28-media-twitter"></use>
+                            <use xlink:href="../symbols/symbols.svg?1621313135#28-media-twitter"></use>
                         </svg>
                     </a>
                     <a class="media__link" href="#">
                         <svg class="media__icon" width="28" height="28">
-                            <use xlink:href="../symbols/symbols.svg?1621311180#28-media-link"></use>
+                            <use xlink:href="../symbols/symbols.svg?1621313135#28-media-link"></use>
                         </svg>
                     </a>
                 </div>
@@ -101,7 +209,7 @@
                         <a class="action action--simplified action--alternate" href="organization-people.html">
                             <span class="action__image">
                                 <svg class="action__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1621311180#16-left"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1621313135#16-left"></use>
                                 </svg>
                             </span>
                             <span class="action__label">
@@ -141,7 +249,7 @@
                         </div>
                         <button class="search-heading__cancel" type="button">
                             <svg class="search-heading__cross" width="20" height="20">
-                                <use xlink:href="../symbols/symbols.svg?1621311180#20-rounded-cross"></use>
+                                <use xlink:href="../symbols/symbols.svg?1621313135#20-rounded-cross"></use>
                             </svg>
                         </button>
                     </div>
@@ -266,7 +374,7 @@
                         <a class="action action--simplified action--alternate" href="organization-people.html">
                             <span class="action__image">
                                 <svg class="action__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1621311180#16-left"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1621313135#16-left"></use>
                                 </svg>
                             </span>
                             <span class="action__label">
@@ -428,9 +536,9 @@
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
-        <script src="../scripts/_operations.js?1621311180"></script>
-        <script src="../scripts/_profile.js?1621311180"></script>
-        <script src="../scripts/_mfp.js?1621311180"></script>
+        <script src="../scripts/_operations.js?1621313135"></script>
+        <script src="../scripts/_profile.js?1621313135"></script>
+        <script src="../scripts/_mfp.js?1621313135"></script>
 
 
     </body>
