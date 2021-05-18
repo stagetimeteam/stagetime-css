@@ -28,7 +28,7 @@
 .icon-action:hover {
     color: #545454;
 }
-    .icon-action__icon {
+    .icon-action:hover .icon-action__icon {
         fill: #545454;
     }
 

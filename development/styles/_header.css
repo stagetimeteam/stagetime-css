@@ -52,3 +52,41 @@
         .header__user {
             margin-left: 22px;
         }
+
+
+.header--dark {
+    background-color: #333333;
+    box-shadow: none;
+}
+    .header--dark .header__branding {
+
+    }
+
+    .header--dark .header__search {
+
+    }
+        .header--dark .header__search .search {
+
+        }
+
+    .header--dark .header__private-area {
+
+    }
+        .header--dark .header__greetings {
+            color: #F2F2F2;
+        }
+
+        .header--dark .header__menu {
+
+        }
+            .header--dark .header__item {
+
+            }
+
+            .header--dark .header__item:first-child {
+
+            }
+
+        .header--dark .header__user {
+
+        }

@@ -24,12 +24,20 @@
     padding-right: 4px;
 }
     .header-button--flagged .header-button__icon {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
     }
 
     .header-button__updates {
         position: absolute;
         right: 4px;
         top: 4px;
+    }
+
+
+.header-button--dark {
+
+}
+    .header-button--dark .header-button__icon {
+        fill: #F2F2F2;
     }

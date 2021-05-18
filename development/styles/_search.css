@@ -38,3 +38,22 @@
         top: 9px;
         fill: #AAAAAA;
     }
+
+
+
+.search--dark {
+
+}
+    .search--dark .search__widget {
+        background-color: transparent;
+        border: 1px solid #AAAAAA;
+        color: #F2F2F2;
+    }
+
+    .search--dark .search__widget:hover {
+        background-color: #4E4E4E;
+    }
+
+    .search--dark .search__widget:focus {
+        background-color: transparent;
+    }

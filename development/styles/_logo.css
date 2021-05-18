@@ -11,3 +11,7 @@
     white-space: nowrap;
     overflow: hidden;
 }
+
+.logo--dark {
+    background-image: url("../images/logo-dark.svg");
+}
