@@ -46,7 +46,7 @@
 }
     .search--dark .search__widget {
         background-color: transparent;
-        border: 1px solid #AAAAAA;
+        border-color: #AAAAAA;
         color: #F2F2F2;
     }
 
