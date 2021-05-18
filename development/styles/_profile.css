@@ -21,7 +21,7 @@
         border-radius: 6px;
         opacity: 0;
         visibility: hidden;
-        transition: visibility var(--transition-show),
+        transition: visibility var(--t  ransition-show),
                     opacity var(--transition-show);
     }
 
