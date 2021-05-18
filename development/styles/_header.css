@@ -1,0 +1,51 @@
+.header {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: var(--header-height);
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+    .header__branding {
+
+    }
+
+    .header__search {
+        margin-top: 4px;
+        margin-left: 38px;
+    }
+
+    .header__private-area {
+        margin-left: auto;
+        margin-right: 19px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .header__greetings {
+            margin-top: 10px;
+            margin-right: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #757575;
+        }
+
+        .header__menu {
+            display: flex;
+            align-items: flex-start;
+        }
+            .header__item {
+                margin-left: 26px;
+            }
+
+            .header__item:first-child {
+                margin-left: 0;
+            }
+
+        .header__user {
+            margin-left: 22px;
+        }
