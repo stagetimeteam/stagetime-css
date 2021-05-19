@@ -22,3 +22,12 @@
 .query::-moz-placeholder          { font-style: normal; color: #B0B0B0; opacity: 1; }
 .query:-ms-input-placeholder      { font-style: normal; color: #B0B0B0; }
 /* stylelint-enable */
+
+
+.query:hover {
+    background-color: #F2F2F2;
+}
+
+.query:focus {
+    background-color: #FFFFFF;
+}
