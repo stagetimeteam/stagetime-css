@@ -28,7 +28,6 @@
     width: 86px;
     height: 86px;
     padding: 19px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
 }
     .staple--larger .staple__frame {
         padding: 13px;
@@ -40,6 +39,7 @@
 
 .staple--pale {
     background-color: #C4C4C4;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
 }
     .staple--pale .staple__frame {
         border-color: #FFFFFF;
@@ -54,7 +54,6 @@
 
 .staple--play-alike {
     background-color: rgba(51, 51, 51, 0.58);
-    box-shadow: none;
     border-radius: 50%;
     padding: 20px;
 }
