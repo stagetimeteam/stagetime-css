@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.nav</title>
+        <title>.nav-link</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../styles/style.css">
@@ -15,33 +15,40 @@
         <div style="width: 800px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.nav</h1>
+            <h1>.nav-link</h1>
             <p>
-                Meant to be used in context with 60px of spacing outside on the left and on the right.
-                Background line will stretch to -60px both sides.
+                Meant to be used in profile dropdown in header
             </p>
-            <br>
-            <br>
 
-            <nav class="nav">
-                <a class="nav__link nav__link--current" href="#">My Collaborators</a>
-                <a class="nav__link nav__link--updates" href="#">New Requests</a>
-                <a class="nav__link" href="#">Watch List</a>
-                <a class="nav__link" href="#">Discover</a>
-            </nav>
+            <a class="nav-link" href="#">
+                <img class="nav-link__icon" src="../symbols/16-house.svg" width="16" height="16" alt="">
+                Home
+            </a>
 
 
             <br>
             <br>
-            <br>
-            <h2>As &lt;button&gt;</h2>
+            <h2>.nav-link--larger</h2>
+            <p>
+                Larger version to use in sidebar:
+            </p>
 
-            <nav class="nav">
-                <button class="nav__link nav__link--current" type="button">My Collaborators</button>
-                <button class="nav__link nav__link--updates" type="button">New Requests</button>
-                <button class="nav__link" type="button">Watch List</button>
-                <button class="nav__link" type="button">Discover</button>
-            </nav>
+            <a class="nav-link nav-link--larger" href="#">
+                <img class="nav-link__icon" src="../symbols/16-house.svg" width="16" height="16" alt="">
+                Home
+            </a>
+
+            <br>
+            <br>
+            <h2>.nav-link--current</h2>
+            <p>
+                Larger version to use in sidebar:
+            </p>
+
+            <a class="nav-link nav-link--larger nav-link--current" href="#">
+                <img class="nav-link__icon" src="../symbols/16-house.svg" width="16" height="16" alt="">
+                Home
+            </a>
 
 
             <br>

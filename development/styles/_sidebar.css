@@ -1,0 +1,28 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    width: var(--sidebar-width);
+    border-right: 1px solid #F2F2F2;
+    overflow-y: auto;
+}
+    .sidebar__section {
+        margin-top: 30px;
+    }
+
+    .sidebar__section:first-child {
+        margin-top: 0;
+    }
+        .sidebar__sub-heading {
+            padding: 20px 20px 20px 37px;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 18px;
+            color: #AAAAAA;
+            text-transform: uppercase;
+        }
+
+        .sidebar__menu {
+
+        }

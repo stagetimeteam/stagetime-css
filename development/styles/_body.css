@@ -1,5 +1,6 @@
 body {
     padding-top: var(--header-height);
+    padding-left: var(--sidebar-width);
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;

@@ -67,8 +67,8 @@
             box-shadow: 0 -1px 0 #E8E8E8;
         }
 
-        .profile__logout.icon-action,
-        .profile__logout > .icon-action {
+        .profile__logout.nav-link,
+        .profile__logout > .nav-link {
             border-top: 9px solid transparent; /* expand clickable area */
             border-bottom: 9px solid transparent; /* expand clickable area */
         }
