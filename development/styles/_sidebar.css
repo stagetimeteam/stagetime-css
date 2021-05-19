@@ -4,7 +4,7 @@
     top: var(--header-height);
     bottom: 0;
     width: var(--sidebar-width);
-    border-right: 1px solid #F2F2F2;
+    box-shadow: inset -1px 0 0 #F2F2F2;
     overflow-y: auto;
 }
     .sidebar__section {
