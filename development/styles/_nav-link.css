@@ -34,21 +34,25 @@
 
     .nav-link__counter {
         margin-left: 4px;
-        fill: #9CB2BE;
+        color: var(--user-color);
     }
 
 
-.nav-link--larger {
+.nav-link--sidebar-ready {
     padding: 13px 20px 13px 37px;
 }
-    .nav-link--larger .nav-link__icon {
+    .nav-link--sidebar-ready .nav-link__icon {
         margin-right: 10px;
     }
 
 
 .nav-link--current {
-
+    color: #545454;
 }
+    .nav-link--current .nav-link__icon {
+        fill: #545454;
+    }
+
     .nav-link--current::after {
         content: "";
         position: absolute;

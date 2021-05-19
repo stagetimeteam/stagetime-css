@@ -21,7 +21,7 @@
         border-radius: 6px;
         opacity: 0;
         visibility: hidden;
-        transition: visibility var(--t  ransition-show),
+        transition: visibility var(--transition-show),
                     opacity var(--transition-show);
     }
 
@@ -31,29 +31,14 @@
     }
 
         .profile__link {
-            padding: 20px 20px 20px 27px;
-            border-bottom: 1px solid #E8E8E8;
-            margin-bottom: 13px;
-            display: flex;
-            align-items: flex-start;
-            font-weight: bold;
-            font-size: 10px;
-            line-height: 16px;
-            color: #8B8B8B;
-            text-decoration: none;
+            border-top: 10px solid transparent; /* expand clickable area */
+            border-bottom: 10px solid transparent; /* expand clickable area */
         }
-
-        .profile__link:hover {
-            color: #545454;
-        }
-            .profile__preview {
-                margin: -6px 13px -6px -6px;
-            }
-
 
 
         .profile__menu {
-
+            border-top: 1px solid #E8E8E8;
+            padding-top: 13px;
         }
 
         .profile__organisation {

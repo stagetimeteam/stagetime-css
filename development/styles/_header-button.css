@@ -41,3 +41,10 @@
     .header-button--dark .header-button__icon {
         fill: #F2F2F2;
     }
+
+.header-button--user-color {
+
+}
+    .header-button--user-color .header-button__icon {
+        fill: var(--user-color);
+    }

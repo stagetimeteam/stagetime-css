@@ -8,19 +8,17 @@
     overflow-y: auto;
 }
     .sidebar__section {
-        margin-top: 30px;
-    }
-
-    .sidebar__section:first-child {
-        margin-top: 0;
+        padding-top: 11px;
+        padding-bottom: 32px;
     }
         .sidebar__sub-heading {
-            padding: 20px 20px 20px 37px;
+            padding: 10px 20px 13px 37px;
             font-weight: bold;
             font-size: 10px;
             line-height: 18px;
-            color: #AAAAAA;
             text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #AAAAAA;
         }
 
         .sidebar__menu {
