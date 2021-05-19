@@ -46,3 +46,7 @@
         bottom: 0;
         margin: auto;
     }
+    .clip__action.play,
+    .clip__action.staple {
+        box-shadow: none;
+    }
