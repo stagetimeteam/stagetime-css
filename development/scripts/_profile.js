@@ -5,7 +5,7 @@
     });
 
 
-    /* hide profile dropdown by overlay click ( goo.gl/SJG2Hw ) */
+    /* hide profile dropdown by click outside ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.profile').length) {

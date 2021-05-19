@@ -1,9 +1,12 @@
 .user-badge {
     position: relative;
+    display: block;
     padding-left: 76px;
     padding-top: 6px;
     padding-bottom: 12px;
     min-height: 56px;
+    color: inherit;
+    text-decoration: none;
 }
     .user-badge__preview {
         position: absolute;
@@ -17,6 +20,11 @@
         line-height: 16px;
         color: #757575;
     }
+        .icon {
+            margin-top: -1px;
+            margin-right: 2px;
+            fill: #C5C5C5;
+        }
 
     .user-badge__note {
         margin-top: 6px;

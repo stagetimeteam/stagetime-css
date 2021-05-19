@@ -18,10 +18,8 @@
     .header__search {
         margin-top: 4px;
         margin-left: 38px;
+        width: 256px;
     }
-        .header__search .search {
-            width: 256px;
-        }
 
     .header__private-area {
         margin-left: auto;
@@ -97,9 +95,6 @@
     .header--dark .header__search {
 
     }
-        .header--dark .header__search .search {
-
-        }
 
     .header--dark .header__private-area {
 
@@ -136,3 +131,17 @@
                 background-color: #4E4E4E;
             }
 
+
+
+
+.header--centered-search {
+
+}
+    .header--centered-search .header__search {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header--centered-search .header__private-area {
+        margin-left: 0;
+    }

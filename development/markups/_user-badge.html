@@ -16,12 +16,15 @@
             <br>
             <br>
             <h1>.user-badge</h1>
+            <p>
+                Default case is being used in the feed. As a header of a post.
+            </p>
 
             <div class="user-badge">
                 <div class="user-badge__preview">
                     <a class="avatar avatar--alt-hover" href="#">
                         <img class="avatar__image"
-                             srcset="../temp/organization-a-56x56@2x.jpg"
+                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
                              src="../temp/organization-a-56x56.jpg"
                              width="56" height="56"
                              alt=""
@@ -37,6 +40,64 @@
                     <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
                 </div>
             </div>
+
+
+            <br>
+            <br>
+            <p>
+                Same card also used in search dropdown. Just replace text.<br> You may also want to use
+                <b>.avatar--non-clickable</b> and remove <b>.link</b>
+                from the text name:
+            </p>
+
+            <div class="user-badge">
+                <div class="user-badge__preview">
+                    <div class="avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-c-56x56@2x.jpg 2x"
+                             src="../temp/person-c-56x56.jpg"
+                             width="56" height="56"
+                             alt=""
+                        >
+                    </div>
+                </div>
+                <div class="user-badge__heading">
+                    Adelaide Boedecker
+                </div>
+                <div class="user-badge__note">
+                    Soprano, Houston, TX
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <p>
+                In case of organization please use <b>.avatar--squared</b> inside.<br>
+                Also add <b>.icon</b> with id: <b>16-city</b><br> right before the organization title.
+            </p>
+
+            <div class="user-badge">
+                <div class="user-badge__preview">
+                    <div class="avatar avatar--squared avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                             src="../temp/organization-a-56x56.jpg"
+                             width="56" height="56"
+                             alt=""
+                        >
+                    </div>
+                </div>
+                <div class="user-badge__heading">
+                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                    Indiana University
+                </div>
+                <div class="user-badge__note">
+                    Aspen, CO
+                </div>
+            </div>
+
+
+
 
             <br>
             <br>
@@ -60,6 +121,7 @@
         <script src="../scripts/_operations.js"></script>
         <script src="../scripts/_profile.js"></script>
         <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
 
 
     </body>
