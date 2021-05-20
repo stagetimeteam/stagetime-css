@@ -58,7 +58,7 @@
     }
 
     .user-card--smaller .user-card__data {
-        margin-top: 11px;
+        margin-top: 10px;
         padding-left: 5px;
         padding-right: 5px;
         min-height: 0; /* clear value */
@@ -67,19 +67,16 @@
             font-weight: bold;
         }
             .user-card--smaller .user-card__link {
-                /*padding-top: 8px; !* expand clickable area *!*/
-                /*padding-bottom: 8px;*/
+
             }
 
             .user-card--smaller .user-card:hover .user-card__link,
             .user-card--smaller .user-card__link:hover {
-                /*color: #C4C4C4;*/
+
             }
 
         .user-card--smaller .user-card__note {
             margin-top: 0;
-            /*font-size: 11px;*/
-            /*line-height: 18px;*/
             font-size: inherit;
             line-height: inherit;
         }

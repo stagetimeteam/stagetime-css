@@ -1,0 +1,32 @@
+.circles {
+
+}
+    .circles__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        color: #8B8B8B;
+    }
+
+    .circles__body {
+        margin-top: 20px;
+        padding: 12px 14px;
+        border: 1px solid #E8E8E8;
+        border-radius: 10px;
+    }
+        .circles__list {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+            .circles__item {
+
+            }
+
+    .circles__more {
+        margin-top: -4px;
+        margin-left: auto;
+        margin-right: auto;
+    }

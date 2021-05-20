@@ -1,5 +1,5 @@
 .action {
-    display: inline-block;
+    display: block;
     vertical-align: top;
     width: 60px;
     height: 60px;
@@ -86,7 +86,7 @@
 
 
 .action--simplified {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 40px;
