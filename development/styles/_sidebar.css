@@ -6,6 +6,6 @@
     bottom: 0;
     width: var(--sidebar-width);
     background-color: #FFFFFF;
-    box-shadow: inset -1px 0 0 #F2F2F2;
+    box-shadow: inset -1px 0 0 #E8E8E8;
     overflow-y: auto;
 }
