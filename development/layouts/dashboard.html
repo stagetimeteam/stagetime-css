@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html class="has-sidebar has-aside" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <a class="header__branding logo" href="#">
+                STAGETIME
+            </a>
+            <div class="header__search">
+                <form class="search">
+                    <input class="search__widget" type="text" placeholder="Search Stagetime">
+                    <img class="search__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                    <div class="search__dropdown">
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-56x56@2x.jpg 2x"
+                                             src="../temp/person-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Houston, TX
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-56x56@2x.jpg 2x"
+                                             src="../temp/person-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Marlen Nahas
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Washington, DC
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-c-56x56@2x.jpg 2x"
+                                             src="../temp/person-c-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Adelaide Boedecker
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Houston, TX
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                             src="../temp/organization-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-56x56@2x.jpg 2x"
+                                             src="../temp/person-d-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Shea Owens
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Salt Lake City, UT
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-56x56@2x.jpg 2x"
+                                             src="../temp/person-e-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Houston, TX
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-f-56x56@2x.jpg 2x"
+                                             src="../temp/person-f-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Adelaide Boedecker
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Washington, DC
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <div class="header__private-area">
+                <div class="header__greetings">
+                    Good afternoon, <a class="link" href="#">Jennie</a>.
+                </div>
+                <div class="header__menu">
+                    <a class="header__item header-button header-button--flagged" href="#">
+                        <img class="header-button__icon" src="../symbols/32-envelope.svg" width="32" height="32" alt="">
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--user-color" href="#">
+                        <img class="header-button__icon" src="../symbols/32-crowd.svg" width="32" height="32" alt="">
+                        <span class="visuallyhidden">Collaborators</span>
+                    </a>
+                    <a class="header__item header-button header-button--flagged" href="#">
+                        <img class="header-button__icon" src="../symbols/32-bell.svg" width="32" height="32" alt="">
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                </div>
+                <div class="header__user profile">
+                    <button class="profile__handler" type="button">
+                        <span class="avatar avatar--alt-hover avatar--fancy">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-26x26@2x.jpg 2x"
+                                 src="../temp/person-a-26x26.jpg"
+                                 width="26"
+                                 height="26"
+                                 alt=""
+                            >
+                        </span>
+                    </button>
+                    <div class="profile__dropdown">
+                        <a class="profile__link user-link" href="#">
+                            <span class="user-link__preview avatar avatar--alt-hover avatar--fancy">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-26x26@2x.jpg 2x"
+                                     src="../temp/person-a-26x26.jpg"
+                                     width="26"
+                                     height="26"
+                                     alt=""
+                                >
+                            </span>
+                            View Profile
+                        </a>
+                        <div class="profile__menu">
+                            <a class="nav-link" href="#">
+                                <img class="nav-link__icon" src="../symbols/16-pencil.svg" width="16" height="16" alt="">
+                                Edit Profile
+                            </a>
+                            <a class="nav-link" href="#">
+                                <img class="nav-link__icon" src="../symbols/16-envelope-outline.svg" width="16" height="16" alt="">
+                                <img class="nav-link__sparkle" src="../symbols/16-sparkle.svg" width="16" height="16" alt="">
+                                Invite
+                                <span class="visuallyhidden">Explain meaning of sparkles here</span>
+                            </a>
+                            <a class="nav-link" href="#">
+                                <img class="nav-link__icon" src="../symbols/16-question-spot.svg" width="16" height="16" alt="">
+                                Support
+                            </a>
+                            <a class="nav-link" href="#">
+                                <img class="nav-link__icon" src="../symbols/16-cog.svg" width="16" height="16" alt="">
+                                Settings
+                            </a>
+                        </div>
+                        <a class="profile__organisation button button--secondary" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                            Create Organization
+                        </a>
+                        <a class="profile__logout nav-link" href="#">
+                            <img class="nav-link__icon" src="../symbols/16-logout.svg" width="16" height="16" alt="">
+                            Log Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sidebar">
+            <div class="navigation">
+                <div class="navigation__section">
+                    <div class="navigation__sub-heading">
+                        Menu
+                    </div>
+                    <nav class="navigation__menu">
+                        <a class="user-link user-link--sidebar-ready user-link--user-color" href="#">
+                            <span class="user-link__preview avatar avatar--alt-hover">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-16x16@2x.jpg 2x"
+                                     src="../temp/person-a-16x16.jpg"
+                                     width="16"
+                                     height="16"
+                                     alt=""
+                                >
+                            </span>
+                            Ben Bliss
+                        </a>
+                        <a class="nav-link nav-link--sidebar-ready nav-link--current" href="#">
+                            <img class="nav-link__icon" src="../symbols/16-house.svg" width="16" height="16" alt="">
+                            Home
+                        </a>
+                        <a class="nav-link nav-link--sidebar-ready" href="#">
+                            <img class="nav-link__icon" src="../symbols/16-globe.svg" width="16" height="16" alt="">
+                            Explore
+                        </a>
+                        <a class="nav-link nav-link--sidebar-ready" href="#">
+                            <img class="nav-link__icon" src="../symbols/32-envelope.svg" width="16" height="16" alt="">
+                            Messages <span class="nav-link__counter">(4)</span>
+                        </a>
+                        <a class="nav-link nav-link--sidebar-ready" href="#">
+                            <img class="nav-link__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                            Collaborators
+                        </a>
+                    </nav>
+                </div>
+                <div class="navigation__section">
+                    <div class="navigation__sub-heading">
+                        Tools
+                    </div>
+                    <div class="navigation__menu">
+                        <a class="nav-link nav-link--sidebar-ready" href="#">
+                            <img class="nav-link__icon" src="../symbols/16-house.svg" width="16" height="16" alt="">
+                            Jobs
+                        </a>
+                        <a class="nav-link nav-link--sidebar-ready" href="#">
+                            <img class="nav-link__icon" src="../symbols/16-globe.svg" width="16" height="16" alt="">
+                            Collections
+                        </a>
+                    </div>
+                </div>
+                <div class="navigation__section">
+                    <div class="navigation__sub-heading">
+                        Page manager
+                    </div>
+                    <div class="navigation__menu">
+                        <a class="user-link user-link--sidebar-ready" href="#">
+                            <span class="user-link__preview avatar avatar--alt-hover">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-16x16@2x.jpg 2x"
+                                     src="../temp/person-a-16x16.jpg"
+                                     width="16"
+                                     height="16"
+                                     alt=""
+                                >
+                            </span>
+                            Stagetime
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="activity-feed">
+            <article class="activity-feed__item post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <div class="post__people party party--faded">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="activity-feed__item post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <div class="post__attachment post__attachment--outer">
+                    <div class="image-preview">
+                        <img class="image-preview__image"
+                             srcset="../temp/image-attachment@2x.jpg 2x"
+                             src="../temp/image-attachment.jpg"
+                             width="670"
+                             height="238"
+                             alt=""
+                        >
+                    </div>
+                </div>
+                <div class="post__people post__people--overlap-image party">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="activity-feed__item post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <div class="post__attachment">
+                    <div class="video-card video-card--entry">
+                        <div class="video-card__preview">
+                            <a class="clip" href="#">
+                                <div class="clip__stage">
+                                    <img class="clip__image"
+                                         srcset="../temp/clip-entry@2x.jpg 2x"
+                                         src="../temp/clip-entry.jpg"
+                                         width="622"
+                                         height="238"
+                                         alt=""
+                                    >
+                                </div>
+                                <div class="clip__action play play--larger">
+                                    <img class="play__icon" src="../symbols/32-play.svg" width="38" height="38" alt="">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-card__body">
+                            <h3 class="video-card__heading">
+                                <a class="link link--text-alike" href="#">GNO 7 DEATHS OF MARIA CALLAS Trailer</a>
+                            </h3>
+                            <div class="video-card__note">
+                                Greek National Opera
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__people post__people--overlap-video-card party">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="activity-feed__item post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <div class="post__attachment post__attachment--outer">
+                    <a class="image-link" href="#">
+                        <img class="image-link__image"
+                             srcset="../temp/image-link@2x.jpg 2x"
+                             src="../temp/image-link.jpg"
+                             width="670"
+                             height="238"
+                             alt=""
+                        >
+                        <div class="image-link__icon staple staple--larger">
+                            <div class="staple__frame">
+                                <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="post__people post__people--overlap-image party">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="activity-feed__item post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <div class="post__attachment">
+                    <a class="parsed-link" href="#">
+                        <div class="parsed-link__icon staple staple--pale">
+                            <div class="staple__frame">
+                                <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                            </div>
+                        </div>
+                        <div class="parsed-link__heading ellipsis">
+                            “What shall we do with this waiting time?” by Louisa Muller
+                        </div>
+                        <div class="parsed-link__url ellipsis">
+                            www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                        </div>
+                    </a>
+                </div>
+                <div class="post__people party party--faded">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="activity-feed__item post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__attachment post__attachment--outer">
+                    <div class="image-preview">
+                        <img class="image-preview__image"
+                             srcset="../temp/image-attachment@2x.jpg 2x"
+                             src="../temp/image-attachment.jpg"
+                             width="670"
+                             height="238"
+                             alt=""
+                        >
+                    </div>
+                </div>
+                <div class="post__people post__people--overlap-image party">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="aside">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis, consectetur dolor dolorem eos itaque iure labore nam nesciunt nulla possimus quo repellendus, vitae! Ab aliquid aperiam asperiores consectetur, consequuntur cupiditate dolore ea error fuga inventore ipsum magni maxime molestias necessitatibus nemo neque nobis placeat quaerat reiciendis sapiente tenetur velit voluptatum? Ad aliquid aut deleniti eum exercitationem fugit ipsum optio quo rem voluptatum. Animi autem dolores dolorum ex, expedita iusto laborum maxime modi, nam neque nostrum odit omnis placeat quasi sed similique sint tempora. Ab aperiam asperiores at, cum cumque deserunt dolorem ex ipsum iusto molestias nam nisi, numquam optio possimus quasi repellat voluptatum? Beatae ducimus earum enim eos minus obcaecati odio, soluta temporibus ullam. Accusamus aliquid aperiam aspernatur aut commodi cumque debitis dolor dolorum, eaque exercitationem, incidunt ipsam iusto laborum laudantium libero magnam magni minus modi, molestiae numquam perspiciatis placeat porro quas qui quisquam reprehenderit saepe sequi soluta suscipit tempore temporibus totam ut velit veniam vitae voluptas voluptatibus! A adipisci asperiores dicta distinctio ea eligendi eos, fuga illo ipsam laudantium maiores minus numquam perferendis perspiciatis porro possimus qui saepe sequi ut veritatis? Adipisci enim et labore nihil nisi quas quasi quidem, quos sapiente, temporibus totam vel voluptatibus? Exercitationem explicabo fuga in magnam natus nisi omnis optio quisquam repellendus sapiente! Atque dolor ducimus eaque earum error explicabo facere id mollitia numquam omnis provident qui quidem repudiandae saepe, voluptatibus. Assumenda consequuntur deleniti dicta ea fugiat, illum ipsum iste molestias, odio, perspiciatis praesentium quod similique tempore vero vitae. Delectus eligendi facere odit quam quod similique vel. Ad animi cumque porro ullam ut! A ad alias deleniti necessitatibus porro! Amet animi aperiam consectetur, corporis cum cumque, deserunt dolores doloribus eligendi esse est eum exercitationem explicabo hic id illum in inventore itaque labore laboriosam magnam modi mollitia natus nesciunt numquam obcaecati odit officiis perspiciatis quas qui quo sed sint tempora ullam vitae voluptas voluptatum. Ab, accusamus aspernatur aut autem consequatur culpa dicta doloremque, eaque expedita harum laudantium nostrum odio quod quos sint soluta voluptatem? Architecto doloremque libero porro quam quibusdam repellat soluta voluptate? Asperiores atque commodi consectetur deleniti deserunt dolore doloremque eos excepturi expedita facere ipsam mollitia nihil, pariatur perspiciatis repellat sed velit veniam. Deserunt dicta doloremque ducimus excepturi facere fugit impedit ipsam ipsum, porro quae, tempora voluptate! Aperiam autem beatae corporis cumque dolor doloribus expedita necessitatibus, nesciunt non quam quod rerum sapiente sit totam vel! A amet at autem consequatur cum dolores exercitationem explicabo in, iusto nemo nulla placeat quaerat quas quia quo reiciendis rem reprehenderit vero. Aut autem blanditiis deserunt facilis odit possimus sapiente tenetur unde? A amet, animi delectus laudantium odio quam temporibus ullam voluptates. Aperiam excepturi facere molestias officia officiis quam suscipit voluptatem. Animi asperiores modi nulla officiis velit? Ab aliquam ducimus error eveniet unde velit voluptate! Architecto eius esse fuga laborum molestiae neque numquam placeat quas sunt vel. Aperiam aut dolores iusto neque quo rem rerum soluta tempora. Ab aliquam autem deserunt dolorum eaque eum facilis ipsum iusto laboriosam, laudantium minus mollitia odio officia optio placeat possimus quam quasi quia, quos repellat reprehenderit saepe similique! Accusantium cupiditate debitis dicta distinctio dolore doloribus dolorum ea hic illum in magnam minus mollitia neque nihil porro quae quaerat quasi quibusdam quo quos, ratione repudiandae saepe sed sit tempora tempore ut. Alias animi culpa cum delectus dignissimos dolore dolorem eos eum, ex excepturi explicabo facere fugiat illo incidunt ipsum labore libero magnam magni molestiae molestias nemo nihil non nostrum nulla omnis placeat porro possimus quas quod reiciendis rerum sapiente sint sunt tempora voluptates voluptatibus voluptatum. Animi culpa cupiditate est iusto maiores maxime minima molestias quas quia quidem, quis rem repellat reprehenderit sit suscipit. A doloremque incidunt iure laudantium quam quibusdam ut voluptas voluptatem. Assumenda dicta eius esse eveniet explicabo fugiat iste magnam nisi, quisquam rem repellat sed sit! Aliquid deleniti dolor doloribus eius exercitationem facilis fugit hic illo inventore, maxime molestiae mollitia nemo nulla odit officiis optio quia quidem quod sit voluptatum? Ad assumenda blanditiis, consequuntur cupiditate distinctio doloremque ducimus eos error incidunt iste magni maiores modi obcaecati odit pariatur placeat quas quo repellendus rerum sapiente sint soluta tenetur! Alias asperiores aut deleniti eaque eius nobis reiciendis repellendus sapiente sequi voluptates? Amet, animi asperiores blanditiis consequatur dignissimos earum eius exercitationem incidunt ipsa itaque laudantium modi numquam, provident quas quia rem sapiente veritatis, voluptate. Adipisci aliquid deleniti, enim, exercitationem facilis hic necessitatibus nulla officia omnis perferendis quaerat quasi quia sed, sit voluptatibus. Alias beatae ipsam modi nihil odio perferendis quis repellendus? Ad animi assumenda cumque debitis dignissimos eos est ipsa, iusto, non obcaecati optio, praesentium quibusdam sint tenetur voluptatem. Amet animi atque commodi, ducimus et fugiat id itaque iure molestias quasi, quis quod repellat sint unde ut! Accusantium asperiores culpa dicta dignissimos doloribus, ea earum ex ipsam iure maxime minima obcaecati, perspiciatis provident quibusdam repudiandae sapiente similique voluptate? At consectetur culpa dolor ipsa iusto molestias nostrum obcaecati tempore voluptate voluptatum. Accusantium ad, adipisci, autem beatae blanditiis consequuntur delectus dicta dignissimos dolorem, doloribus dolorum ducimus enim error esse ex hic iure libero molestiae mollitia nam necessitatibus nobis nostrum nulla officiis placeat praesentium quia quis quod ratione rem repudiandae soluta suscipit totam? Aliquid architecto asperiores atque, aut blanditiis consequatur deleniti dicta distinctio dolor dolore ducimus ea eaque eligendi ipsum itaque maxime nobis nostrum omnis optio perferendis placeat provident quaerat quas quis recusandae reiciendis rem sequi sunt, vel veniam. Amet atque corporis cupiditate debitis doloribus ex excepturi facilis fugiat fugit harum hic id iusto magnam nam necessitatibus nemo neque non obcaecati perferendis possimus, praesentium quis quisquam tempore unde ut vero voluptas voluptatem! Aliquam impedit magni molestias neque provident, ullam voluptates? Accusamus, ad corporis dolor ducimus ea eius esse explicabo fuga illum ipsa laudantium, modi nihil quidem quis recusandae sequi temporibus tenetur! A amet aut beatae culpa dignissimos dolor dolores esse eveniet ex facere fuga illum ipsam ipsum itaque modi nisi nostrum pariatur placeat possimus quia repellendus rerum, sequi similique suscipit voluptates. Accusantium adipisci architecto, excepturi fuga fugiat impedit nisi quisquam quo ratione reiciendis rerum, saepe totam vitae voluptas voluptatibus. Cupiditate laboriosam magni modi officiis quasi sed voluptatem?
+        </div>
+
+
+        <!-- temp -->
+        <img src="../temp/footer.jpg" alt="" style="width: 100%; vertical-align: top;">
+        <!--/temp -->
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+
+
+    </body>
+</html>

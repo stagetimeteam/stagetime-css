@@ -1,0 +1,20 @@
+.navigation {
+
+}
+    .navigation__section {
+        padding-top: 11px;
+        padding-bottom: 32px;
+    }
+        .navigation__sub-heading {
+            padding: 10px 20px 13px 37px;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #AAAAAA;
+        }
+
+        .navigation__menu {
+
+        }

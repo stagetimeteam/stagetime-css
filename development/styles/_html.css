@@ -1,4 +1,19 @@
 html {
     min-width: 1120px;
     overflow-y: scroll;
+    padding-top: var(--header-height);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.has-aside {
+    padding-right: var(--aside-width);
+}
+
+
+.has-sidebar {
+    padding-left: var(--sidebar-width);
 }

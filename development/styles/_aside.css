@@ -1,11 +1,11 @@
-.sidebar {
+.aside {
     position: fixed;
     z-index: 500;
-    left: 0;
+    right: 0;
     top: var(--header-height);
     bottom: 0;
-    width: var(--sidebar-width);
+    width: var(--aside-width);
     background-color: #FFFFFF;
-    box-shadow: inset -1px 0 0 #F2F2F2;
+    box-shadow: inset 1px 0 0 #F2F2F2;
     overflow-y: auto;
 }
