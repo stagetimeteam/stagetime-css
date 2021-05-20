@@ -30,6 +30,7 @@
 }
     .button__icon {
         vertical-align: top;
+        fill: currentColor;
     }
 
     .button__icon--left {
