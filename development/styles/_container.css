@@ -5,8 +5,9 @@
 }
 
 .container--organisation {
-    width: 1030px;
-
+    width: 1110px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .container--feed {

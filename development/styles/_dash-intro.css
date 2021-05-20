@@ -1,0 +1,24 @@
+.dash-intro {
+    padding-top: 18px;
+    padding-bottom: 21px;
+    position: relative;
+    z-index: 100; /* make shadow overlap followign component */
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+    .dash-intro__wrap {
+
+    }
+        .dash-intro__greetings {
+            font-size: 14px;
+            line-height: 18px;
+            color: #757575;
+        }
+
+        .dash-intro__posting {
+            margin-top: 20px;
+        }
+
+        .dash-intro__media {
+            margin-top: 18px;
+        }
