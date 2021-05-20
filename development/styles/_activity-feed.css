@@ -1,22 +1,9 @@
 .activity-feed {
-    padding-top: 42px;
-    padding-bottom: 71px;
     background-color: #F6F6F6;
 }
-
-.activity-feed--as-column {
-    width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 12px;
-}
-
     .activity-feed__wrap {
-
-        margin-left: auto;
-        margin-right: auto;
+        padding-top: 42px;
+        padding-bottom: 71px;
     }
         .activity-feed__heading {
             margin-top: -25px;
@@ -37,3 +24,14 @@
             .activity-feed__item:first-child {
                 margin-top: 0;
             }
+
+
+
+
+.activity-feed--as-column {
+    background-color: transparent;
+}
+    .activity-feed--as-column .activity-feed__wrap {
+        background-color: #F6F6F6;
+        border-radius: 12px;
+    }
