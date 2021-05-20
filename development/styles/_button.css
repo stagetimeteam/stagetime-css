@@ -69,6 +69,7 @@
 
 
 .button--alternate {
+    text-transform: none;
     box-shadow: inset 0 0 0 1px #E8E8E8;
     background-color: transparent;
     color: #8B8B8B;

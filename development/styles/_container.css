@@ -8,11 +8,6 @@
     width: 1030px;
 }
 
-
-@media (max-width: 535px) {
-    .container {
-        width: 100%;
-        max-width: 420px;
-    }
+.container--feed {
+    width: 670px;
 }
-
