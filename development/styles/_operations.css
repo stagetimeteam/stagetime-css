@@ -36,7 +36,7 @@
     .operations__dropdown {
         position: absolute;
         right: 10px;
-        top: calc(100% - 10px);
+        top: calc(100% - 20px);
         width: 244px;
         display: none;
         background-color: #FFFFFF;
@@ -57,4 +57,30 @@
 
     .operations--expanded .operations__dropdown {
         display: block;
+    }
+
+
+
+.operations--simplified-handler {
+
+}
+    .operations--simplified-handler .operations__handler {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+        .operations--simplified-handler .operations__icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+    .operations__dropdown .operations__dropdown {
+        top: calc(100% + 11px);
     }

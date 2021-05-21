@@ -21,6 +21,11 @@
 
     .carousel__control {
         display: none; /* don't show at first */
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        font-family: inherit;
+        cursor: pointer;
     }
 
     .carousel--initialized .carousel__control {
@@ -46,7 +51,7 @@
         right: 0;
         top: 0;
         bottom: 0;
-        width: 264px;
+        width: 140px;
         /* stylelint-disable */
         background: linear-gradient(to right,
             rgba(255, 255, 255, 0),
@@ -71,15 +76,15 @@
     .carousel--media .carousel__control {
         position: absolute;
         z-index: 100;
-        right: 0;
+        right: -12px;
     }
 
     .carousel--media .carousel__control--prev {
-        top: 50px;
+        top: 64px;
     }
 
     .carousel--media .carousel__control--next {
-        top: 0;
+        top: 22px;
     }
 
     .carousel--media .carousel__control:hover {

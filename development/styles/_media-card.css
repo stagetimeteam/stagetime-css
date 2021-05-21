@@ -1,0 +1,32 @@
+.media-card {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .media-card__preview {
+
+    }
+
+    .media-card__heading {
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        bottom: 13px;
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 16px;
+        color: #FFFFFF;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .media-card__actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+        .media-card__actions .operations__icon {
+            fill: #FFFFFF;
+            transform: translateY(7px);
+        }
