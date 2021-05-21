@@ -1,0 +1,38 @@
+.type-toggler {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    cursor: pointer;
+}
+    .type-toggler__widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+    }
+
+    .type-toggler__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        fill: #C5C5C5;
+    }
+
+    .type-toggler__widget:focus ~ .type-toggler__icon {
+        outline: auto;
+        outline-offset: 5px;
+    }
+
+    .type-toggler__widget:checked ~ .type-toggler__icon {
+        fill: #545454;
+    }
+
+
+

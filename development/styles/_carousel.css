@@ -1,6 +1,7 @@
 .carousel {
     position: relative; /* for arrows */
 }
+    /* stylelint-disable */
     .carousel__container {
         overflow-x: auto; /* add scroll functionallity */
         -webkit-overflow-scrolling: touch; /* make it smooth on mobiles */
@@ -9,6 +10,7 @@
         display: flex;
         align-items: flex-start;
     }
+    /* stylelint-enable */
 
     .carousel__container::-webkit-scrollbar {
       display: none;
@@ -58,14 +60,12 @@
     .carousel--media .carousel__container {
 
     }
-        .carousel--media .carousel__ribbon {
-
-            padding-left: 0;
-            padding-right: 0;
+        .carousel--media .carousel__item {
+            margin-left: 12px;
         }
-            .carousel--media .carousel__item {
-
-            }
+        .carousel--media .carousel__item:first-child {
+            margin-left: 0;
+        }
 
 
     .carousel--media .carousel__control {
@@ -83,19 +83,5 @@
     }
 
     .carousel--media .carousel__control:hover {
-
-    }
-        .carousel--media .carousel__arrow {
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            fill: #ffffff;
-            filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
-        }
-
-    .carousel--media .carousel__control--disabled .carousel__arrow {
 
     }

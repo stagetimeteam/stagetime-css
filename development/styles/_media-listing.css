@@ -1,0 +1,31 @@
+.media-listing {
+    border: 1px solid #E8E8E8;
+    padding: 8px 22px 23px;
+    border-radius: 13px;
+}
+    .media-listing__head {
+        display: flex;
+        align-items: flex-start;
+    }
+        .media-listing__filters {
+            display: flex;
+            align-items: flex-start;
+            margin-left: -7px;
+        }
+
+        .media-listing__heading {
+            margin-top: 6px;
+            margin-left: 5px;
+            margin-bottom: 0;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 18px;
+            color: #8B8B8B;
+        }
+
+    .media-listing__body {
+        margin-top: 9px;
+    }
+        .carousel__item {
+
+        }
