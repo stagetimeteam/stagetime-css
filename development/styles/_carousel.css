@@ -52,6 +52,7 @@
         top: 0;
         bottom: 0;
         width: 140px;
+        pointer-events: none;
         /* stylelint-disable */
         background: linear-gradient(to right,
             rgba(255, 255, 255, 0),
