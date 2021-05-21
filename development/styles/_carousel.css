@@ -1,0 +1,101 @@
+.carousel {
+    position: relative; /* for arrows */
+}
+    .carousel__container {
+        overflow-x: auto; /* add scroll functionallity */
+        -webkit-overflow-scrolling: touch; /* make it smooth on mobiles */
+        scrollbar-width: none; /* hide scrollbar in Firefox */
+        -ms-overflow-style: none; /* hide scrollbar in Edge */
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .carousel__container::-webkit-scrollbar {
+      display: none;
+    }
+        .carousel__item {
+            flex-shrink: 0;
+        }
+
+    .carousel__control {
+        display: none; /* don't show at first */
+    }
+
+    .carousel--initialized .carousel__control {
+        display: block; /* show when initialized (enough content to scroll) */
+    }
+
+
+    .carousel__control--disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+
+
+
+
+
+.carousel--media {
+    position: relative;
+}
+    .carousel--media::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 264px;
+        /* stylelint-disable */
+        background: linear-gradient(to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.7) 30%,
+            rgba(255, 255, 255, 1) 60%,
+            rgba(255, 255, 255, 1)
+        );
+        /* stylelint-enable */
+    }
+
+    .carousel--media .carousel__container {
+
+    }
+        .carousel--media .carousel__ribbon {
+
+            padding-left: 0;
+            padding-right: 0;
+        }
+            .carousel--media .carousel__item {
+
+            }
+
+
+    .carousel--media .carousel__control {
+        position: absolute;
+        z-index: 100;
+        right: 0;
+    }
+
+    .carousel--media .carousel__control--prev {
+        top: 50px;
+    }
+
+    .carousel--media .carousel__control--next {
+        top: 0;
+    }
+
+    .carousel--media .carousel__control:hover {
+
+    }
+        .carousel--media .carousel__arrow {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            fill: #ffffff;
+            filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.1));
+        }
+
+    .carousel--media .carousel__control--disabled .carousel__arrow {
+
+    }
