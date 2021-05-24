@@ -1,5 +1,5 @@
 .player {
-    padding: 15px 26px 15px;
+    padding: 15px 26px;
     background-color: #9CB2BE;
     color: #FFFFFF;
     border-radius: 10px;
@@ -37,10 +37,20 @@
 
     .player__progress {
         margin-top: 9px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ABC0CC;
+        border-radius: 4px;
     }
 
     .player__controls {
         margin-top: 12px;
         height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #ABC0CC;
+        border-radius: 4px;
     }
