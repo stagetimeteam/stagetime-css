@@ -6,8 +6,8 @@ $(document).ready(function () {
         showCloseBtn: false, /* we will have our own cross button in .window component */
         callbacks: {
             open: function() {
-                $('.carousel').each(function () {
-                    initCarousel( $(this) );
+                $('.mfp-content .carousel').each(function () {
+                    initCarousel($(this));
                 });
             }
         }
