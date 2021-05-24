@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html class="has-sidebar has-aside" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+
+        <!-- temp -->
+        <a class="mfp-handler" href="#detailed-event-popup">
+            Show modal with <b>.event-card</b> inside
+        </a>
+        <!--/temp -->
+
+        <!-- Modal -->
+        <div class="mfp-hide org-card" id="detailed-event-popup">
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus ad consequuntur deleniti deserunt eaque esse eveniet ex expedita fugiat hic, illo ipsam labore natus nemo nostrum nulla optio vel.
+        </div>
+        <!--/Modal -->
+
+        <p>
+            Размеры лого
+        </p>
+        <p>
+            Убираем container container--organisation
+        </p>
+
+
+        <div class="org-card">
+            <div class="summary summary--as-card">
+                <div class="summary__background" role="presentation" aria-hidden="true">
+                    <style>
+                        .summary__background {
+                            background-image: url(../temp/summary-1440x467.jpg)
+                        }
+                        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                            .summary__background {
+                                background-image: url(../temp/summary-1440x467@2x.jpg);
+                            }
+                        }
+                    </style>
+                </div>
+                <div class="summary__wrap ">
+                    <div class="summary__brand">
+                        <img class="summary__logo"
+                             srcset="../temp/org-logo@2x.png 2x"
+                             src="../temp/org-logo.png"
+                             width="96"
+                             height="96"
+                             alt=""
+                        >
+                        <h1 class="summary__title">
+                            Indiana University
+                        </h1>
+                    </div>
+                    <div class="summary__location">
+                        <img class="summary__map-pin" src="../symbols/24-location.svg" width="24" height="24" alt="">
+                        Bloomington, IN — USA
+                    </div>
+                    <div class="summary__actions">
+                        <a class="action action--alternate action--inverted" href="#">
+                            <span class="action__image">
+                                <img class="action__icon" src="../symbols/16-plus.svg" width="16" height="16" alt="">
+                            </span>
+                            <span class="action__label">
+                                Follow
+                            </span>
+                        </a>
+                        <div class="operations operations--inverted">
+                            <button class="operations__handler" type="button">
+                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                More
+                            </button>
+                            <div class="operations__dropdown">
+                                <div class="menu">
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                        Add to Calendar
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                        Share
+                                    </a>
+                                    <a class="menu__link" href="#">
+                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                        Report
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+
+
+    </body>
+</html>

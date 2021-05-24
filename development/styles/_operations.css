@@ -81,6 +81,25 @@
             margin: auto;
         }
 
-    .operations__dropdown .operations__dropdown {
+    .operations--simplified-handler .operations__dropdown {
         top: calc(100% + 11px);
+    }
+
+
+.operations--inverted {
+
+}
+    .operations--inverted .operations__handler {
+        color: #FFFFFF;
+    }
+        .operations--inverted .operations__icon {
+            fill: #FFFFFF;
+        }
+
+        .operations--inverted .operations__handler:hover .operations__icon {
+            fill: #FFFFFF;
+        }
+
+    .operations--inverted .operations__dropdown {
+
     }
