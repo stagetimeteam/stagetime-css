@@ -1,0 +1,46 @@
+.player {
+    padding: 15px 26px 15px;
+    background-color: #9CB2BE;
+    color: #FFFFFF;
+    border-radius: 10px;
+    text-align: center;
+}
+    .player__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .player__preview {
+        margin-top: 15px;
+        border-radius: 10px;
+        background-color: #ABC0CC;
+        vertical-align: top;
+    }
+
+    .player__song {
+        margin-top: 9px;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+    .player__artist {
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .player__progress {
+        margin-top: 9px;
+    }
+
+    .player__controls {
+        margin-top: 12px;
+        height: 30px;
+        background-color: #ABC0CC;
+    }

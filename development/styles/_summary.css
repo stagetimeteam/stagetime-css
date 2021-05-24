@@ -85,6 +85,7 @@
     display: block;
     /*flex-direction: column;*/
     /*justify-content: center;*/
+    width: var(--org-card-width);
     height: 292px;
     padding-top: 0;
     padding-bottom: 0;
