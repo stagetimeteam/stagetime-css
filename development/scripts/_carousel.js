@@ -56,19 +56,6 @@ $(document).ready(function () {
     });
 });
 
-$(window).on('resize', function () {
-    $('.carousel__container').each(function () {
-        arrowsVisibility( $(this) );
-    })
-});
-
-$(document).ready(function () {
-    $('.carousel__container').each(function () {
-        arrowsVisibility( $(this) );
-    })
-});
-
-
 
 /* Init only when we have enough elements to scroll */
 
