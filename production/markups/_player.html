@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.image-preview</title>
+        <title>.player</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../styles/style.css?1621835708">
@@ -12,22 +12,35 @@
 
 
 
-        <div style="width: 800px; margin: 0 auto;">
+        <div style="width: 226px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.image-preview</h1>
+            <h1>.player</h1>
 
-            <div class="image-preview">
-                <img class="image-preview__image"
-                     srcset="../temp/image-attachment@2x.jpg 2x"
-                     src="../temp/image-attachment.jpg"
-                     width="670"
-                     height="238"
+            <section class="player">
+                <h2 class="player__heading">
+                    Now playing
+                </h2>
+                <img class="player__preview"
+                     srcset="../temp/player@2x.jpg 2x"
+                     src="../temp/player.jpg"
+                     width="174"
+                     height="99"
                      alt=""
                 >
-            </div>
-
-
+                <div class="player__song ellipsis">
+                    Brandon Bell
+                </div>
+                <div class="player__artist ellipsis">
+                    “When the air sings of summer” from The Old Maid and the Thief
+                </div>
+                <div class="player__progress">
+                    Wave Surfer
+                </div>
+                <div class="player__controls">
+                    Controls
+                </div>
+            </section>
 
             <br>
             <br>
