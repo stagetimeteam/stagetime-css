@@ -45,7 +45,7 @@
 .carousel--media {
     position: relative;
 }
-    .carousel--media::after {
+    .carousel--initialized.carousel--media::after {
         content: "";
         position: absolute;
         right: 0;
@@ -66,11 +66,8 @@
     .carousel--media .carousel__container {
 
     }
-        .carousel--media .carousel__item {
-            margin-left: 12px;
-        }
-        .carousel--media .carousel__item:first-child {
-            margin-left: 0;
+        .carousel__item {
+
         }
 
 

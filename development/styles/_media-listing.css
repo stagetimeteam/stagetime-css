@@ -26,6 +26,10 @@
     .media-listing__body {
         margin-top: 9px;
     }
-        .carousel__item {
+        .media-listing__body .carousel__item {
+            margin-left: 12px;
+        }
 
+        .media-listing__body .carousel__item:first-child {
+            margin-left: 0;
         }

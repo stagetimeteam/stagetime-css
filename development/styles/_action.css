@@ -95,7 +95,7 @@
     .action--simplified .action__image {
         margin: 0;
     }
-        .action__icon {
+        .action--simplified .action__icon {
 
         }
 
@@ -104,3 +104,38 @@
         opacity: 0;
         visibility: hidden;
     }
+
+
+
+
+.action--inverted {
+
+}
+    .action--inverted .action__image {
+        border-color: #FFFFFF;
+    }
+        .action--inverted .action__icon {
+            fill: #FFFFFF;
+        }
+
+    .action--inverted .action__label {
+        color: #FFFFFF;
+    }
+
+
+.action--inverted.action--alternate {
+
+}
+    .action--inverted.action--alternate .action__image {
+        border-color: transparent;
+        background-color: #FFFFFF;
+    }
+        .action--inverted.action--alternate .action__icon {
+            fill: #333333;
+        }
+
+    .action--inverted.action--alternate .action__label {
+        color: #FFFFFF;
+    }
+
+

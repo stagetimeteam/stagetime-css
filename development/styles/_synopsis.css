@@ -1,0 +1,69 @@
+.synopsis {
+    display: flex;
+    align-items: stretch;
+    padding: 29px 40px;
+}
+    .synopsis__about {
+        flex-shrink: 0;
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+        .synopsis__description {
+            padding-bottom: 20px;
+            color: #757575;
+        }
+
+        .synopsis__more {
+            margin-top: auto;
+            margin-bottom: 8px;
+        }
+
+        .synopsis__more.button,
+        .synopsis__more > .button {
+            width: 170px;
+        }
+
+    .synopsis__people {
+        flex-shrink: 0;
+        margin-top: 2px;
+        width: 342px;
+        margin-left: 46px;
+    }
+        .synopsis__group {
+            margin-top: 13px;
+        }
+
+        .synopsis__group:first-child {
+            margin-top: 0;
+        }
+            .synopsis__sub-heading {
+                display: flex;
+                align-items: flex-start;
+                margin-left: 5px;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 20px;
+                color: #757575;
+            }
+                .synopsis__sub-heading::after {
+                    content: "";
+                    flex-grow: 1;
+                    display: block;
+                    height: 1px;
+                    margin-left: 14px;
+                    margin-top: 14px;
+                    background-color: #E8E8E8;
+                }
+
+            .synopsis__listing {
+                margin-top: 15px;
+            }
+                .synopsis__listing .carousel__item {
+                    margin-left: 3px;
+                }
+
+                .synopsis__listing .carousel__item:first-child {
+                    margin-left: 0;
+                }
