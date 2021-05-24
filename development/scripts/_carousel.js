@@ -26,7 +26,8 @@ $(document).ready(function () {
 
 /* Disable arrows */
 
-function arrowsVisibility($carouselContainer) {
+function arrowsVisibility($carousel) {
+    $carouselContainer = $carousel.find('.carousel__container');
 
     /* backward */
     if( $carouselContainer.scrollLeft() === 0) {
@@ -52,7 +53,7 @@ function arrowsVisibility($carouselContainer) {
 
 $(document).ready(function () {
     $('.carousel__container').on('scroll', function () {
-        arrowsVisibility( $(this) );
+        arrowsVisibility($(this).parents('.carousel'));
     });
 });
 
@@ -73,18 +74,18 @@ function initCarousel($carousel) {
         $carousel.removeClass('carousel--initialized');
     }
 
-    arrowsVisibility( $carousel.find('.carousel__container') );
+    arrowsVisibility($carousel);
 }
 
 $(window).on('resize', function () {
     $('.carousel').each(function () {
-        initCarousel( $(this) );
+        initCarousel($(this));
     })
 });
 
 $(document).ready(function () {
     $('.carousel').each(function () {
-        initCarousel( $(this) );
+        initCarousel($(this));
     })
 });
 
