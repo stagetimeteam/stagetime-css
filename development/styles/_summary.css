@@ -168,6 +168,7 @@
 
         .summary--as-card .summary__actions {
             position: absolute;
+            z-index: 50;
             right: 26px;
             top: 48px;
             display: flex;

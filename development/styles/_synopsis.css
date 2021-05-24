@@ -1,7 +1,11 @@
 .synopsis {
+    margin-top: -42px;
+    position: relative;
     display: flex;
     align-items: stretch;
     padding: 29px 40px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
 }
     .synopsis__about {
         flex-shrink: 0;
