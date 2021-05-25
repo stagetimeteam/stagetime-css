@@ -264,7 +264,8 @@ gulp.task('styles', function() {
   ];
 
   return gulp.src([
-    'development/styles/style.css'
+     'development/styles/style.css',
+     'development/styles/responsiveness.css'
   ])
       .pipe(plumber())
       .pipe(cleanCSS({
