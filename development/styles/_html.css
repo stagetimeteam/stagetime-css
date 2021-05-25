@@ -1,7 +1,6 @@
 html {
-    min-width: 1200px; /* dashboard is widest page so far */
+    min-width: 1220px; /* dashboard is widest page so far: 1200px (plus 20px for scrollbar on the right */
     overflow-y: scroll;
-    padding-top: var(--header-height);
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 24px;
@@ -9,10 +8,15 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+@media (min-width: 1200px) {
+    .has-header {
+        padding-top: var(--header-height);
+    }
+}
+
 .has-aside {
     padding-right: var(--aside-width);
 }
-
 
 .has-sidebar {
     padding-left: var(--sidebar-width);
