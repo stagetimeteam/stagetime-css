@@ -1,0 +1,216 @@
+@media (max-width: 991px) {
+    .header__greetings {
+        display: none;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .header { /* This always stays on the page and reserves height for the header */
+        /*position: relative;*/
+        /*z-index: 1000;*/
+        /*height: var(--header-height);*/
+    }
+        .header__detachable-panel { /* This is inside of .header by default or can be position:fixed on 1240+ */
+            position: fixed; /* can be absolute to save vertical space */
+            /*left: 0;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            /*height: var(--header-height);*/
+            /*background: #FFFFFF;*/
+            box-shadow: none;
+            display: block;
+            /*align-items: flex-start;*/
+            padding: 0;
+        }
+            .header__top-bar {
+                position: relative;
+                z-index: 900; /* higher than dropdown */
+                height: var(--header-height);
+                padding: 10px 20px 10px 10px;
+                background-color: #FFFFFF;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+            }
+
+            .header__branding {
+                /*flex-shrink: 0;*/
+            }
+
+            .header__handlers {
+                /*display: none;*/
+            }
+                .header__search-handler {
+
+                }
+                    .header__magnifier {
+
+                    }
+
+                .header__profile-handler {
+
+                }
+
+            .header__dropdown {
+                position: absolute;
+                z-index: 800;
+                left: 0;
+                right: 0;
+                top: 100%;
+                background-color: #FFFFFF;
+                box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.11);
+                display: block;
+            }
+                .header__search {
+                    width: 100%;
+                    padding: 30px;
+                    margin-top: 0;
+                    margin-left: 0;
+                }
+
+                .header__private-area {
+                    /*flex-shrink: 0;*/
+                    /*margin-left: auto;*/
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                }
+                    .header__greetings {
+                        /*margin-top: 10px;*/
+                        /*margin-right: 20px;*/
+                        /*font-size: 14px;*/
+                        /*line-height: 20px;*/
+                        /*color: #757575;*/
+                    }
+
+                    .header__menu {
+                        display: none;
+                    }
+                        .header__item {
+                            /*margin-left: 26px;*/
+                        }
+
+                        .header__item:first-child {
+                            /*margin-left: 0;*/
+                        }
+
+                    .header__user {
+                        /*margin-left: 22px;*/
+                        /*margin-right: 9px;*/
+                    }
+
+                    .header__login {
+                        /*margin-top: 3px;*/
+                        /*padding: 7px 10px;*/
+                        /*display: inline-block;*/
+                        /*vertical-align: top;*/
+                        /*font-size: 13px;*/
+                        /*line-height: 20px;*/
+                        /*color: #AAAAAA;*/
+                        /*text-decoration: none;*/
+                    }
+
+                    .header__join {
+                        /*margin-top: 3px;*/
+                        /*margin-left: 22px;*/
+                        /*display: inline-block;*/
+                        /*vertical-align: top;*/
+                        /*border: 1px solid #E8E8E8;*/
+                        /*border-radius: 17px;*/
+                        /*height: 34px;*/
+                        /*padding: 6px 39px 8px;*/
+                        /*font-size: 10px;*/
+                        /*line-height: 20px;*/
+                        /*color: #AAAAAA;*/
+                        /*text-decoration: none;*/
+                    }
+
+                    .header__join:hover {
+                        /*border-color: #F2F2F2;*/
+                    }
+
+
+
+
+    .header--dark {
+
+    }
+        .header--dark .header__detachable-panel {
+            /*background-color: #333333;*/
+            /*box-shadow: none;*/
+        }
+            .header--dark .header__branding {
+
+            }
+
+            .header--dark .header__handlers {
+                /*display: none;*/
+            }
+                .header--dark .header__search-handler {
+
+                }
+                    .header--dark .header__magnifier {
+
+                    }
+
+                .header--dark .header__profile-handler {
+
+                }
+
+            .header--dark .header__dropdown {
+
+            }
+
+            .header--dark .header__search {
+
+            }
+
+            .header--dark .header__private-area {
+
+            }
+                .header--dark .header__greetings {
+                    color: #F2F2F2;
+                }
+
+                .header--dark .header__menu {
+
+                }
+                    .header--dark .header__item {
+
+                    }
+
+                    .header--dark .header__item:first-child {
+
+                    }
+
+                .header--dark .header__user {
+
+                }
+                    .header--dark .header__login {
+
+                    }
+
+                    .header--dark .header__join {
+                        /*background-color: transparent;*/
+                        /*border-color: #AAAAAA;*/
+                        /*color: #AAAAAA;*/
+                    }
+
+                    .header--dark .header__join:hover {
+                        /*background-color: #4E4E4E;*/
+                    }
+
+
+
+
+    .header--centered-search {
+
+    }
+        .header--centered-search .header__search {
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+        }
+
+        .header--centered-search .header__private-area {
+            /*margin-left: 0;*/
+        }
+}

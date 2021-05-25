@@ -77,4 +77,5 @@
 @import url("_org-card.css");
 @import url("_synopsis.css");
 @import url("_player.css");
-/*@import url("_header--responsivness.css");*/
+@import url("_html-responsivness.css");
+@import url("_header--responsivness.css");
