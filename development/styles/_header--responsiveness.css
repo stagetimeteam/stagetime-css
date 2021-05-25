@@ -60,6 +60,8 @@
                 background-color: #FFFFFF;
                 box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.11);
                 display: block;
+                max-height: calc(100vh - 100px);
+                overflow-y: auto;
             }
                 .header__search {
                     width: 100%;
