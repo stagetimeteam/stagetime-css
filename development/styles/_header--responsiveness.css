@@ -78,8 +78,7 @@
                     }
 
                 .header__profile-handler {
-                    margin-left: -2px;
-                    padding: 9px;
+                    padding: 9px 20px 9px 6px;
                     border: none;
                     background-color: transparent;
                     cursor: pointer;
