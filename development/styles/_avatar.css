@@ -31,6 +31,7 @@
 .avatar--alt-hover {
 
 }
+    .header__profile-handler:hover .avatar__image,
     .profile__handler:hover .avatar__image,
     .profile__link:hover .avatar__image,
     .avatar--alt-hover:hover .avatar__image {

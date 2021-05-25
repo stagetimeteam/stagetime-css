@@ -26,29 +26,63 @@
         }
             .header__top-bar {
                 position: relative;
+                display: flex;
+                align-items: flex-start;
                 z-index: 900; /* higher than dropdown */
                 height: var(--header-height);
-                padding: 10px 20px 10px 10px;
                 background-color: #FFFFFF;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
             }
 
             .header__branding {
-                /*flex-shrink: 0;*/
+                box-sizing: content-box;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
             }
 
             .header__handlers {
-                /*display: none;*/
+                display: flex;
+                align-items: flex-start;
+                margin-left: auto;
             }
                 .header__search-handler {
-
+                    position: relative;
+                    padding: 20px;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
                 }
-                    .header__magnifier {
+                    .header__search-handler::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        display: block;
+                        margin: auto;
+                        width: 42px;
+                        height: 42px;
+                        background-color: #E8E8E8;
+                        border-radius: 50%;
+                    }
 
+                    .header__magnifier {
+                        position: relative;
+                        vertical-align: top;
+                        width: 20px;
+                        height: 20px;
+                        fill: #AAAAAA;
                     }
 
                 .header__profile-handler {
-
+                    margin-left: -2px;
+                    padding: 9px;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
                 }
 
             .header__dropdown {
@@ -151,6 +185,10 @@
                 .header--dark .header__search-handler {
 
                 }
+                    .header--dark .header__search-handler::before {
+                        background-color: red;
+                    }
+
                     .header--dark .header__magnifier {
 
                     }
