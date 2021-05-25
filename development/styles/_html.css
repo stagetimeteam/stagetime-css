@@ -8,12 +8,6 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 1200px) {
-    .has-header {
-        padding-top: var(--header-height);
-    }
-}
-
 .has-aside {
     padding-right: var(--aside-width);
 }
