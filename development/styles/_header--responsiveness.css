@@ -69,6 +69,7 @@
                 }
 
                 .header__private-area {
+                    border-top: 1px solid #E8E8E8;
                     /*flex-shrink: 0;*/
                     /*margin-left: auto;*/
                     /*display: flex;*/
@@ -94,8 +95,8 @@
                         }
 
                     .header__user {
-                        /*margin-left: 22px;*/
-                        /*margin-right: 9px;*/
+                        margin-left: auto;
+                        margin-right: 0;
                     }
 
                     .header__login {
