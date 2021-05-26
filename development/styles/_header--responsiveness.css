@@ -33,19 +33,19 @@
                 background-color: #FFFFFF;
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
             }
+                .header__branding {
+                    box-sizing: content-box;
+                    border-top: 10px solid transparent; /* expand clickable area using borders */
+                    border-bottom: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                }
 
-            .header__branding {
-                box-sizing: content-box;
-                border-top: 10px solid transparent; /* expand clickable area using borders */
-                border-bottom: 10px solid transparent;
-                border-left: 10px solid transparent;
-                border-right: 10px solid transparent;
-            }
                 .header__search {
-                    width: 100%;
-                    padding: 30px;
                     margin-top: 0;
                     margin-left: 0;
+                    width: auto;
+                    display: none;
                 }
 
                 .header__handlers {
