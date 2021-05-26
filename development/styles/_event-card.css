@@ -131,7 +131,8 @@
         }
 
         .event-card--detailed .event-card__body {
-
+            position: relative;
+            padding-right: 40px;
         }
             .event-card--detailed .event-card__note {
 
@@ -144,6 +145,24 @@
             .event-card--detailed .event-card__author {
 
             }
+
+            .event-card--detailed .event-card__add-to-calendar {
+                position: absolute;
+                right: -7px;
+                bottom: -7px;
+                padding: 14px;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+                .event-card__calendar {
+                    vertical-align: top;
+                    fill: #757575;
+                }
+
+                .event-card__add-to-calendar:hover .event-card__calendar {
+                    fill: #C4C4C4;
+                }
 
         .event-card--detailed .event-card__people {
 
