@@ -57,15 +57,9 @@
         left: 24px;
         bottom: 24px;
     }
-        .post__people--overlap-image .party__icon {
-            fill: #FFFFFF;
-        }
 
     .post__people--overlap-video-card {
         position: absolute;
         left: 48px;
         bottom: 104px;
     }
-        .post__people--overlap-video-card .party__icon {
-            fill: #FFFFFF;
-        }
