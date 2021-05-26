@@ -29,14 +29,17 @@
 
 
 .avatar--alt-hover {
-
+    background-color: #FFFFFF; /* half white on hover */
 }
+    .avatar--alt-hover .avatar__image {
+        transform: none !important;
+    }
+
     .header__profile-handler:hover .avatar__image,
     .profile__handler:hover .avatar__image,
     .profile__link:hover .avatar__image,
     .avatar--alt-hover:hover .avatar__image {
-        transform: none;
-        filter: brightness(1.1) contrast(1.1);
+        opacity: 0.5; /* half white on hover */
     }
 
 
