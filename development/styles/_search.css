@@ -72,6 +72,17 @@
         .search__suggest:hover {
             background-color: #F6F6F6;
         }
+            .search__suggest .avatar {
+                box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.11);
+            }
+
+            .search__suggest .user-badge__heading {
+                color: #545454;
+            }
+
+            .user-badge__note {
+                color: #AAAAAA;
+            }
 
 .search--dark {
 
