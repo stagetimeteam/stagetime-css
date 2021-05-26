@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('.header__search-handler, .header__profile-handler').on('click', function () {
+    $('.header__profile-handler').on('click', function () {
         $('.header').toggleClass('header--expanded');
     });
 
@@ -8,7 +8,7 @@ $(document).ready(function () {
     /* click outside ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.header__dropdown, .header__search-handler, .header__profile-handler').length) {
+        if (!$(event.target).closest('.header__dropdown, .header__profile-handler').length) {
             $('.header').removeClass('header--expanded');
         }
     });

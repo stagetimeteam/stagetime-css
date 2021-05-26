@@ -103,3 +103,21 @@
     .operations--inverted .operations__dropdown {
 
     }
+
+.operations--inverted {
+
+}
+    .operations--inverted .operations__handler:hover {
+        color: #AAAAAA;
+    }
+        .operations--inverted:hover .operations__icon {
+            fill: #AAAAAA;
+        }
+
+        .operations--inverted:hover .operations__handler:hover .operations__icon {
+            fill: #AAAAAA;
+        }
+
+    .operations--inverted:hover .operations__dropdown {
+
+    }

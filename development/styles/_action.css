@@ -138,4 +138,18 @@
         color: #FFFFFF;
     }
 
+.action--inverted.action--alternate:hover {
+
+}
+    .action--inverted.action--alternate:hover .action__image {
+        border-color: transparent;
+        background-color: #AAAAAA;
+    }
+        .action--inverted.action--alternate:hover .action__icon {
+            fill: #FFFFFF;
+        }
+
+    .action--inverted.action--alternate:hover .action__label {
+        color: #AAAAAA;
+    }
 
