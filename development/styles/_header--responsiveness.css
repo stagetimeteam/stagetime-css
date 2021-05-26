@@ -132,6 +132,20 @@
                         /*border-color: #F2F2F2;*/
                     }
 
+                    @media (max-width: 359px) {
+
+                        .header__login {
+                            padding-left: 15px;
+                            padding-right: 15px;
+                        }
+
+                        .header__join {
+                            padding-right: 41px;
+                        }
+                            .header__join::after {
+                                right: 17px;
+                            }
+                    }
 
             .header__dropdown {
                 position: absolute;
