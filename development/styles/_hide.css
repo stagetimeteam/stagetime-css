@@ -1,0 +1,10 @@
+.hide {
+
+}
+
+@media (min-width: 768px) {
+
+    .hide--hide-on-desktop {
+        display: none !important; /* to override display flex or something like that */
+    }
+}
