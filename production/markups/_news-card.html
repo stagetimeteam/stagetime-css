@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.news-card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1622089561">
+    </head>
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.news-card</h1>
+            <p>
+                So far there are 3 cases for this card.
+                By default it is:<br>
+            </p>
+            <p>
+                <b>1) New Position</b> card
+            </p>
+
+            <div class="news-card">
+                <a class="news-card__org-preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-40x40@2x.jpg 2x"
+                         src="../temp/organization-a-40x40.jpg"
+                         width="40"
+                         height="40"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="news-card__user-preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-d-40x40@2x.jpg 2x"
+                         src="../temp/person-d-40x40.jpg"
+                         width="40"
+                         height="40"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="news-card__org-name org-bar" href="#">
+                    <svg class="org-bar__icon" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1622089561#16-city"></use>
+                    </svg>
+                    <span class="org-bar__title">Washington Concert Opera</span>
+                </a>
+                <a class="news-card__wrapping-link" href="#">
+                    <div class="news-card__summary">
+                        <div class="news-card__user-name">Tehvon Fowler‑Chapman</div>
+                        <div class="news-card__type">New Position</div>
+                    </div>
+                </a>
+                <div class="news-card__note">
+                    Executive Director
+                </div>
+                <div class="news-card__actions operations operations--simplified-handler">
+                    <button class="operations__handler" type="button">
+                        <svg class="operations__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1622089561#32-more"></use>
+                        </svg>
+                        More
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622089561#24-share"></use>
+                                </svg>
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622089561#24-report"></use>
+                                </svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <p>
+                <b>2) New Schedule</b> card -- change text and add <em><b>Così fan tutte</b></em> (wrapped in <b>&lt;em&gt;</b>)
+            </p>
+
+            <div class="news-card">
+                <a class="news-card__org-preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-40x40@2x.jpg 2x"
+                         src="../temp/organization-a-40x40.jpg"
+                         width="40"
+                         height="40"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="news-card__user-preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-d-40x40@2x.jpg 2x"
+                         src="../temp/person-d-40x40.jpg"
+                         width="40"
+                         height="40"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="news-card__org-name org-bar" href="#">
+                    <svg class="org-bar__icon" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1622089561#16-city"></use>
+                    </svg>
+                    <span class="org-bar__title">Washington Concert Opera</span>
+                </a>
+                <a class="news-card__wrapping-link" href="#">
+                    <div class="news-card__summary">
+                        <div class="news-card__user-name">Tehvon Fowler‑Chapman</div>
+                        <div class="news-card__type">New Schedule</div>
+                    </div>
+                </a>
+                <div class="news-card__note">
+                    Ferrando, <em>Così fan tutte</em>
+                </div>
+                <div class="news-card__actions operations operations--simplified-handler">
+                    <button class="operations__handler" type="button">
+                        <svg class="operations__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1622089561#32-more"></use>
+                        </svg>
+                        More
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622089561#24-share"></use>
+                                </svg>
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622089561#24-report"></use>
+                                </svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+            <p>
+                <b>3) New Article</b> card -- use <b>.link</b> component instead of text
+            </p>
+
+            <div class="news-card">
+                <a class="news-card__org-preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-40x40@2x.jpg 2x"
+                         src="../temp/organization-a-40x40.jpg"
+                         width="40"
+                         height="40"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="news-card__user-preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-d-40x40@2x.jpg 2x"
+                         src="../temp/person-d-40x40.jpg"
+                         width="40"
+                         height="40"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="news-card__org-name org-bar" href="#">
+                    <svg class="org-bar__icon" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1622089561#16-city"></use>
+                    </svg>
+                    <span class="org-bar__title">Washington Concert Opera</span>
+                </a>
+                <a class="news-card__wrapping-link" href="#">
+                    <div class="news-card__summary">
+                        <div class="news-card__user-name">Tehvon Fowler‑Chapman</div>
+                        <div class="news-card__type">New Article</div>
+                    </div>
+                </a>
+                <div class="news-card__note">
+                    <a class="link" href="#">www.stagetimearts.com/whatloremipsumdolorsit</a>
+                </div>
+                <div class="news-card__actions operations operations--simplified-handler">
+                    <button class="operations__handler" type="button">
+                        <svg class="operations__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1622089561#32-more"></use>
+                        </svg>
+                        More
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622089561#24-share"></use>
+                                </svg>
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622089561#24-report"></use>
+                                </svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Note</h2>
+            <p>
+                In names like <b>Tehvon Fowler‑Chapman</b> you may want to replace normal hyphen: -
+                <br>with non-breaking hyphen: ‑
+                <br>to prevent it be broken to different lines.
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../scripts/_operations.js?1622089561"></script>
+        <script src="../scripts/_profile.js?1622089561"></script>
+        <script src="../scripts/_mfp.js?1622089561"></script>
+        <script src="../scripts/_search.js?1622089561"></script>
+        <script src="../scripts/_carousel.js?1622089561"></script>
+
+
+    </body>
+</html>
+
+
+
