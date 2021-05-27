@@ -45,31 +45,3 @@
         box-shadow: none;
     }
 
-
-.clip--media-card {
-
-}
-    .clip--media-card .clip__stage {
-        /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);*/
-        border-radius: 10px;
-    }
-        .clip--media-card .clip__image {
-
-        }
-
-        .clip--media-card:hover .clip__image {
-
-        }
-
-        .clip--media-card .clip__stage::after {
-
-        }
-
-    .clip--media-card .clip__action {
-        position: absolute;
-        left: 16px;
-        top: 15px;
-        right: auto;
-        bottom: auto;
-        margin: 0;
-    }
