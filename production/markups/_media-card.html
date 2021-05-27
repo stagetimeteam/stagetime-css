@@ -6,7 +6,7 @@
         <title>.media-card</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1621999147">
+        <link rel="stylesheet" href="../styles/style.css?1622079898">
     </head>
     <body>
 
@@ -16,32 +16,53 @@
             <br>
             <br>
             <h1>.media-card</h1>
-
+            <p>
+                Image size is based on 128px of <b>height</b>. Width can have any value.
+            </p>
+            <p>
+                Default media card is made for video type. This one is simpler than following audio card.
+            </p>
 
             <div class="media-card">
-                <a class="media-card__preview clip clip--media-card" href="#">
-                    <div class="clip__stage">
-                        <img class="clip__image"
+                <a class="media-card__preview" href="#">
+                    <div class="media-card__stage">
+                        <img class="media-card__image"
                              srcset="../temp/media-card-a@2x.jpg 2x"
                              src="../temp/media-card-a.jpg"
                              width="181"
                              height="128"
                              alt=""
                         >
+                        <div class="media-card__overlay" role="presentation" aria-hidden="true"></div>
                     </div>
-                    <div class="clip__action type-handler">
+                    <div class="media-card__icon type-handler type-handler--no-hover">
                         <svg class="type-handler__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1621999147#16-cinema"></use>
+                            <use xlink:href="../symbols/symbols.svg?1622079898#16-cinema"></use>
                         </svg>
                     </div>
                 </a>
-                <div class="media-card__heading">
-                    "La fleur que tu m’avais jetée matte kudasai”
+                <div class="media-card__heading ellipsis">
+                    "La fleur que tu m’avais jetée dans ma prison, m'était restée”
                 </div>
+                <div class="media-card__duration">
+                    17h
+                </div>
+                <a class="media-card__photo avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                         src="../temp/person-a-44x44.jpg"
+                         width="44"
+                         height="44"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="media-card__name ellipsis link link--text-alike" href="#">
+                    Frederick Ballentine Konstantinopolsky
+                </a>
                 <div class="media-card__actions operations operations--simplified-handler">
                     <button class="operations__handler" type="button">
                         <svg class="operations__icon" width="32" height="32">
-                            <use xlink:href="../symbols/symbols.svg?1621999147#32-more"></use>
+                            <use xlink:href="../symbols/symbols.svg?1622079898#32-more"></use>
                         </svg>
                         More
                     </button>
@@ -49,13 +70,96 @@
                         <div class="menu">
                             <a class="menu__link" href="#">
                                 <svg class="menu__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1621999147#24-share"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-share"></use>
                                 </svg>
                                 Share
                             </a>
                             <a class="menu__link" href="#">
                                 <svg class="menu__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1621999147#24-report"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-report"></use>
+                                </svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>
+                .media-card--audio
+            </h2>
+            <p>
+                1) First use <b>.media-card--audio</b> modifier
+            </p>
+            <p>
+                2) Background image, again, can have any size based on <b>128px</b> height but in Figma it is set to <b>132x128</b>. Can be used as default value.
+            </p>
+            <p>
+                3) Change icon to <b>16-wave</b>
+            </p>
+            <p>
+                Generated background gradient based on user color. Format is:<br>
+                <small><b><i>background-image: linear-gradient(48.21deg, #BAC4B9 35.59%, rgba(186, 196, 185, 0) 100%);</i></b></small>
+            </p>
+
+            <div class="media-card">
+                <a class="media-card__preview" href="#">
+                    <div class="media-card__stage">
+                        <img class="media-card__image"
+                             srcset="../temp/media-card-b@2x.jpg 2x"
+                             src="../temp/media-card-b.jpg"
+                             width="132"
+                             height="128"
+                             alt=""
+                        >
+                        <div class="media-card__overlay" role="presentation" aria-hidden="true" style="background-image: linear-gradient(48.21deg, #9CB2BE 35.59%, rgba(156, 178, 190, 0) 100%);"></div>
+                    </div>
+                    <div class="media-card__icon type-handler type-handler--no-hover">
+                        <svg class="type-handler__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1622079898#16-wave"></use>
+                        </svg>
+                    </div>
+                </a>
+                <div class="media-card__heading ellipsis">
+                    "La fleur que tu m’avais jetée dans ma prison, m'était restée”
+                </div>
+                <div class="media-card__duration">
+                    17h
+                </div>
+                <a class="media-card__photo avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                         src="../temp/person-a-44x44.jpg"
+                         width="44"
+                         height="44"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="media-card__name ellipsis link link--text-alike" href="#">
+                    Frederick Ballentine Konstantinopolsky
+                </a>
+                <div class="media-card__actions operations operations--simplified-handler">
+                    <button class="operations__handler" type="button">
+                        <svg class="operations__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1622079898#32-more"></use>
+                        </svg>
+                        More
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-share"></use>
+                                </svg>
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-report"></use>
                                 </svg>
                                 Report
                             </a>
@@ -66,29 +170,45 @@
 
 
             <div class="media-card">
-                <a class="media-card__preview clip clip--media-card" href="#">
-                    <div class="clip__stage">
-                        <img class="clip__image"
-                             srcset="../temp/media-card-b@2x.jpg 2x"
-                             src="../temp/media-card-b.jpg"
-                             width="132"
+                <a class="media-card__preview" href="#">
+                    <div class="media-card__stage">
+                        <img class="media-card__image"
+                             srcset="../temp/media-card-f@2x.jpg 2x"
+                             src="../temp/media-card-f.jpg"
+                             width="131"
                              height="128"
                              alt=""
                         >
+                        <div class="media-card__overlay" role="presentation" aria-hidden="true" style="background-image: linear-gradient(48.21deg, #BAC4B9 35.59%, rgba(186, 196, 185, 0) 100%);"></div>
                     </div>
-                    <div class="clip__action type-handler">
+                    <div class="media-card__icon type-handler type-handler--no-hover">
                         <svg class="type-handler__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1621999147#16-wave"></use>
+                            <use xlink:href="../symbols/symbols.svg?1622079898#16-wave"></use>
                         </svg>
                     </div>
                 </a>
-                <div class="media-card__heading">
-                    "La fleur que tu m’avais jetée matte kudasai”
+                <div class="media-card__heading ellipsis">
+                    "La fleur que tu m’avais jetée dans ma prison, m'était restée”
                 </div>
+                <div class="media-card__duration">
+                    17h
+                </div>
+                <a class="media-card__photo avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                         src="../temp/person-a-44x44.jpg"
+                         width="44"
+                         height="44"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="media-card__name ellipsis link link--text-alike" href="#">
+                    Frederick Ballentine Konstantinopolsky
+                </a>
                 <div class="media-card__actions operations operations--simplified-handler">
                     <button class="operations__handler" type="button">
                         <svg class="operations__icon" width="32" height="32">
-                            <use xlink:href="../symbols/symbols.svg?1621999147#32-more"></use>
+                            <use xlink:href="../symbols/symbols.svg?1622079898#32-more"></use>
                         </svg>
                         More
                     </button>
@@ -96,13 +216,13 @@
                         <div class="menu">
                             <a class="menu__link" href="#">
                                 <svg class="menu__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1621999147#24-share"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-share"></use>
                                 </svg>
                                 Share
                             </a>
                             <a class="menu__link" href="#">
                                 <svg class="menu__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1621999147#24-report"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-report"></use>
                                 </svg>
                                 Report
                             </a>
@@ -110,6 +230,73 @@
                     </div>
                 </div>
             </div>
+
+
+            <div class="media-card">
+                <a class="media-card__preview" href="#">
+                    <div class="media-card__stage">
+                        <img class="media-card__image"
+                             srcset="../temp/media-card-e@2x.jpg 2x"
+                             src="../temp/media-card-e.jpg"
+                             width="131"
+                             height="128"
+                             alt=""
+                        >
+                        <div class="media-card__overlay" role="presentation" aria-hidden="true" style="background-image: linear-gradient(48.21deg, #E4CFC3 35.59%, rgba(228, 207, 195, 0) 100%);"></div>
+                    </div>
+                    <div class="media-card__icon type-handler type-handler--no-hover">
+                        <svg class="type-handler__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1622079898#16-wave"></use>
+                        </svg>
+                    </div>
+                </a>
+                <div class="media-card__heading ellipsis">
+                    "La fleur que tu m’avais jetée dans ma prison, m'était restée”
+                </div>
+                <div class="media-card__duration">
+                    17h
+                </div>
+                <a class="media-card__photo avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                         src="../temp/person-a-44x44.jpg"
+                         width="44"
+                         height="44"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <a class="media-card__name ellipsis link link--text-alike" href="#">
+                    Frederick Ballentine Konstantinopolsky
+                </a>
+                <div class="media-card__actions operations operations--simplified-handler">
+                    <button class="operations__handler" type="button">
+                        <svg class="operations__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1622079898#32-more"></use>
+                        </svg>
+                        More
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-share"></use>
+                                </svg>
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622079898#24-report"></use>
+                                </svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
 
 
             <br>
@@ -131,11 +318,11 @@
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
-        <script src="../scripts/_operations.js?1621999147"></script>
-        <script src="../scripts/_profile.js?1621999147"></script>
-        <script src="../scripts/_mfp.js?1621999147"></script>
-        <script src="../scripts/_search.js?1621999147"></script>
-        <script src="../scripts/_carousel.js?1621999147"></script>
+        <script src="../scripts/_operations.js?1622079898"></script>
+        <script src="../scripts/_profile.js?1622079898"></script>
+        <script src="../scripts/_mfp.js?1622079898"></script>
+        <script src="../scripts/_search.js?1622079898"></script>
+        <script src="../scripts/_carousel.js?1622079898"></script>
 
 
     </body>
