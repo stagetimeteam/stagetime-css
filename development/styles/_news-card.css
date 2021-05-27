@@ -1,0 +1,93 @@
+.news-card {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 226px; /* can be used in aside */
+    height: 155px;
+}
+    .news-card__org-preview {
+        position: absolute;
+        left: 20px;
+        top: 14px;
+    }
+    .news-card__org-preview.avatar,
+    .news-card__org-preview > .avatar {
+        border-radius: 7px;
+    }
+
+    .news-card__user-preview {
+        position: absolute;
+        left: 40px;
+        top: 34px;
+    }
+    .news-card__user-preview.avatar,
+    .news-card__user-preview > .avatar {
+        border-radius: 7px;
+    }
+
+    .news-card__org-name {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: 47px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .news-card__wrapping-link {
+        display: block;
+        height: 100%;
+        padding: 14px 20px;
+        background-color: #F6F6F6;
+        border-radius: 15px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+        color: inherit;
+        text-decoration: none;
+    }
+        .news-card__summary {
+            margin-left: 74px;
+            margin-right: 18px;
+            display: flex;
+            flex-direction: column;
+            height: 66px;
+            justify-content: center;
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: -0.24px;
+        }
+            .news-card__user-name  {
+                font-weight: bold;
+                color: #757575;
+            }
+            .news-card__user-name:hover {
+                color: #333333;
+            }
+
+            .news-card__type {
+                color: #B8B8B8;
+            }
+
+        .news-card__note {
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            bottom: 18px;
+            font-size: 11px;
+            line-height: 22px;
+            color: #757575;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+    .news-card__actions {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+        .news-card__actions .operations__icon {
+            fill: #FFFFFF;
+            transform: translateY(7px);
+        }
+
