@@ -1,19 +1,21 @@
 .dash-side {
-    padding: 20px 32px;
+    position: relative;
+    padding: 15px 32px 20px;
 }
     .dash-side__customize {
-
-    }
-
-    .dash-side__customize.button,
-    .dash-side__customize > .button {
-        width: 100%;
+        position: absolute;
+        right: 32px;
+        top: 8px;
     }
 
     .dash-side__people {
-        margin-top: 19px;
+        
     }
 
     .dash-side__music {
-        margin-top: 16px;
+        margin-top: 20px;
+    }
+
+    .dash-side__updates {
+        margin-top: 18px;
     }

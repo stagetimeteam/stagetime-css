@@ -1,5 +1,5 @@
 .circles {
-
+    padding-top: 3px; /* equal spacing to .happening */
 }
     .circles__heading {
         margin-top: 0;
