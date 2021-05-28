@@ -37,20 +37,28 @@
 
     .player__progress {
         margin-top: 9px;
-        height: 48px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #ABC0CC;
-        border-radius: 4px;
     }
 
     .player__controls {
         margin-top: 12px;
-        height: 30px;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #ABC0CC;
-        border-radius: 4px;
     }
+        .player__action {
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+            padding: 0;
+            border: 0;
+            cursor: pointer;
+        }
+
+        .player__action--highlight {
+            background-color: #ABC0CC;
+            border-radius: 4px;
+        }
+            .player__icon {
+                vertical-align: top;
+                fill: #FFFFFF;
+            }

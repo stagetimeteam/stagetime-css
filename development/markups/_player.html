@@ -12,7 +12,8 @@
 
 
 
-        <div style="width: 226px; margin: 0 auto;">
+<!--        <div style="width: 226px; margin: 0 auto;">-->
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
             <h1>.player</h1>
@@ -35,10 +36,18 @@
                     “When the air sings of summer” from The Old Maid and the Thief
                 </div>
                 <div class="player__progress">
-                    Wave Surfer
+
                 </div>
                 <div class="player__controls">
-                    Controls
+                    <button class="player__action" type="button" id="temp-backward">
+                        <img class="player__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
+                    </button>
+                    <button class="player__action player__action--highlight" type="button" id="temp-play">
+                        <img class="player__icon" src="../symbols/16-play-rounded.svg" width="16" height="16" alt="">
+                    </button>
+                    <button class="player__action" type="button" id="temp-forward">
+                        <img class="player__icon" src="../symbols/16-forward.svg" width="16" height="16" alt="">
+                    </button>
                 </div>
             </section>
 
@@ -61,11 +70,13 @@
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
         <script src="../scripts/_operations.js"></script>
         <script src="../scripts/_profile.js"></script>
         <script src="../scripts/_mfp.js"></script>
         <script src="../scripts/_search.js"></script>
         <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_wavesurfer.js"></script>
 
 
     </body>
