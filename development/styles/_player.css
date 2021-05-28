@@ -40,7 +40,13 @@
         position: relative;
         margin-top: 9px;
         height: 49px;
+        opacity: 0; /* by default hide remains of player */
     }
+
+    .player--init .player__progress {
+        opacity: 1;
+    }
+        /* horizontal line in the middle of a player */
         .player--init .player__progress::before {
             content: "";
             position: absolute;
