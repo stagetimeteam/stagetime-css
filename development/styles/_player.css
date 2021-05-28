@@ -1,6 +1,7 @@
 .player {
     padding: 15px 26px;
     background-color: #9CB2BE;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
     color: #FFFFFF;
     border-radius: 10px;
     text-align: center;
@@ -36,8 +37,19 @@
     }
 
     .player__progress {
+        position: relative;
         margin-top: 9px;
+        height: 49px;
     }
+        .player--init .player__progress::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 24px;
+            height: 1px;
+            background-color: #FFFFFF;
+        }
 
     .player__controls {
         margin-top: 12px;
@@ -62,3 +74,15 @@
                 vertical-align: top;
                 fill: #FFFFFF;
             }
+
+
+        .player__action--play {
+            opacity: 0.5;
+            cursor: default;
+        }
+
+        .player--init .player__action--play {
+            opacity: 1;
+            cursor: pointer;
+        }
+
