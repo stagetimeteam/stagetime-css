@@ -53,7 +53,9 @@
     wavesurfer.on('play', function () {
         var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play')
         $playButton.find('svg use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
-    }).on('pause', function () {
+    })
+
+    wavesurfer.on('pause', function () {
         var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play')
         $playButton.find('svg use').attr("xlink:href", "../symbols/symbols.svg#16-play-rounded");
     });
