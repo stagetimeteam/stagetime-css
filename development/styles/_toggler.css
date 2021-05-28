@@ -1,0 +1,76 @@
+.toggler {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+    .toggler__icon {
+        margin-left: 4px;
+        margin-right: 4px;
+        fill: #8B8B8B;
+    }
+
+    .toggler__icon:first-child {
+        margin-left: 0;
+    }
+
+    .toggler__icon:last-child {
+        margin-right: 0;
+    }
+
+    .toggler__label {
+        padding-bottom: 2px;
+        font-size: 10px;
+        line-height: 14px;
+        color: #8B8B8B;
+    }
+
+    .toggler__body {
+        position: relative;
+        margin-left: 6px;
+        margin-right: 6px;
+        width: 28px;
+        height: 16px;
+        background: #F4F4F4;
+        border: 1px solid #E8E8E8;
+        border-radius: 8px;
+    }
+        .toggler__widget {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            cursor: inherit;
+        }
+
+        .toggler__knob {
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            bottom: 1px;
+            display: block;
+            width: 12px;
+            height: 12px;
+            background-color: #C4C4C4;
+            border-radius: 50%;
+            transition: left 0.3s var(--ease-out-circ);
+        }
+
+        .toggler__widget:checked ~ .toggler__knob {
+            left: 13px;
+        }
+
+        .toggler__widget:focus ~ .toggler__knob {
+            outline: auto;
+            outline-offset: 4px;
+        }
+
+    .toggler__body:first-child {
+        margin-left: 0;
+    }
+
+    .toggler__body:last-child {
+        margin-right: 0;
+    }

@@ -7,4 +7,10 @@
     --aside-width: 290px;
     --user-color: #9CB2BE;
     --org-card-width: 688px;
+    --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes slide {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
 }
