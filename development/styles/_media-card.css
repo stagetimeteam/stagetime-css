@@ -27,10 +27,11 @@
                 background-image: linear-gradient(63.08deg, rgba(51, 51, 51, 0.48) 34.31%, rgba(255, 255, 255, 0) 98.36%); /* default for video, fallback for audio */
                 background-repeat: no-repeat;
                 background-position: center center;
+                transition: transform 0.3s ease;
             }
 
-            .media-card__overlay:hover .media-card__overlay {
-                background-image: linear-gradient(55.6deg, #333333 35.12%, rgba(51, 51, 51, 0.75) 65.57%);
+            .media-card:hover .media-card__overlay {
+                transform: translate(25%, -25%) scale(2);
             }
 
 
@@ -115,8 +116,7 @@
     }
 
     .media-card--audio .media-card__overlay {
-        /* custom gradients here */
-        transition: transform 0.3s ease;
+        /* custom gradients in html */
     }
 
 
@@ -134,7 +134,7 @@
             }
 
             .media-card:hover .media-card__overlay {
-                transform: translate(25%, -25%) scale(2);
+
             }
 
         .media-card:hover .media-card__icon {
