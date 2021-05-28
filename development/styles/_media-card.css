@@ -41,6 +41,8 @@
             right: auto;
             bottom: auto;
             margin: 0;
+            transition: visibility var(--transition-show),
+                        opacity var(--transition-show);
         }
 
     .media-card__heading {
@@ -52,6 +54,8 @@
         font-size: 10px;
         line-height: 16px;
         color: #FFFFFF;
+        transition: visibility var(--transition-show),
+                    opacity var(--transition-show);
     }
 
     .media-card__duration {
@@ -60,8 +64,11 @@
         bottom: 10px;
         font-size: 10px;
         line-height: 20px;
-        visibility: hidden;
         color: #AAAAAA;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility var(--transition-show),
+                    opacity var(--transition-show);
     }
 
     .media-card__photo {
@@ -69,6 +76,9 @@
         left: 15px;
         top: 15px;
         visibility: hidden;
+        opacity: 0;
+        transition: visibility var(--transition-show),
+                    opacity var(--transition-show);
     }
 
     .media-card__name {
@@ -81,6 +91,9 @@
         line-height: 16px;
         color: #FFFFFF;
         visibility: hidden;
+        opacity: 0;
+        transition: visibility var(--transition-show),
+                    opacity var(--transition-show);
     }
 
     .media-card__actions {
@@ -101,6 +114,10 @@
         color: #545454;
     }
 
+    .media-card--audio .media-card__overlay {
+        /* custom gradients here */
+        transition: transform 0.3s ease;
+    }
 
 
 .media-card:hover {
@@ -122,22 +139,27 @@
 
         .media-card:hover .media-card__icon {
             visibility: hidden;
+            opacity: 0;
         }
 
     .media-card:hover .media-card__heading {
         visibility: hidden;
+        opacity: 0;
     }
 
     .media-card:hover .media-card__duration {
         visibility: visible;
+        opacity: 1;
     }
 
     .media-card:hover .media-card__photo {
         visibility: visible;
+        opacity: 1;
     }
 
     .media-card:hover .media-card__name {
         visibility: visible;
+        opacity: 1;
     }
 
     .media-card:hover .media-card__actions {
