@@ -23,10 +23,13 @@
         height: 32px;
         border: 1px solid #8B8B8B;
         border-radius: 50%;
+        transition: background-color var(--transition-show),
+                    border-color var(--transition-show);
     }
         .action__icon {
             vertical-align: top;
             fill: #8B8B8B;
+            transition: fill var(--transition-show);
         }
 
     .action__label {
@@ -37,6 +40,7 @@
         letter-spacing: -0.1px;
         color: #8B8B8B;
         text-transform: uppercase;
+        transition: color var(--transition-show);
     }
 
 

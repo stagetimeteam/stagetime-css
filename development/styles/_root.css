@@ -2,6 +2,7 @@
     --org-pages-top-padding: 35px;
     --image-fallback: #C4C4C4;
     --transition-show: 0.1s ease;
+    --transition-hover: 0.1s ease;
     --header-height: 60px;
     --sidebar-width: 160px;
     --aside-width: 290px;
