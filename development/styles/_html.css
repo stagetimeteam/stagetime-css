@@ -7,11 +7,3 @@ html {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
 }
-
-.has-aside {
-    padding-right: var(--aside-width);
-}
-
-.has-sidebar {
-    padding-left: var(--sidebar-width);
-}
