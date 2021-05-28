@@ -58,31 +58,47 @@
         justify-content: center;
     }
         .player__action {
-            width: 32px;
-            height: 32px;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: transparent;
             padding: 0;
             border: 0;
             cursor: pointer;
         }
-
-        .player__action--highlight {
-            background-color: #ABC0CC;
-            border-radius: 4px;
-        }
             .player__icon {
+                position: relative;
                 vertical-align: top;
                 fill: #FFFFFF;
             }
 
+            /* play button background */
+            .player__action--play::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 32px;
+                height: 32px;
+                background-color: #ABC0CC;
+                border-radius: 8px;
+            }
 
-        .player__action--play {
-            opacity: 0.5;
-            cursor: default;
-        }
+    /* disabled until song loaded */
+    .player__action--play {
+        opacity: 0.5;
+        cursor: default;
+    }
 
-        .player--init .player__action--play {
-            opacity: 1;
-            cursor: pointer;
-        }
+    /* Active when song is ready */
+    .player--init .player__action--play {
+        opacity: 1;
+        cursor: pointer;
+    }
 
