@@ -31,10 +31,4 @@
     .happening__body {
         margin-top: 12px;
     }
-        .happening__body .carousel__item {
-            margin-left: 12px;
-        }
 
-        .happening__body .carousel__item:first-child {
-            margin-left: 0;
-        }
