@@ -1,0 +1,29 @@
+.updates {
+    border: 1px solid #E8E8E8;
+    padding: 13px 22px 23px;
+    border-radius: 13px;
+}
+    .updates__switch {
+
+    }
+
+    .updates__body {
+        position: relative;
+        height: 164px;
+    }
+        .updates__section {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .updates__section--media {
+
+        }
+
+        .updates__section--news {
+            visibility: hidden;
+            opacity: 0;
+        }
