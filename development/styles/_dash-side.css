@@ -1,6 +1,16 @@
 .dash-side {
     position: relative;
-    padding: 15px 32px 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+
+    /* or: */
+    /*padding-left: 32px;*/
+    /*padding-right: 32px;*/
+
+    /* or (this will be centered if aside scrollbar appears and it takes extra space): */
+    width: 226px;
+    margin-left: auto;
+    margin-right: auto;
 }
     .dash-side__customize {
         position: absolute;

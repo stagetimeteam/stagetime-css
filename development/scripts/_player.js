@@ -10,10 +10,10 @@
         cursorColor: '#FFFFFF'
     });
 
-    var current = 0;
+    var currentTrack = 0;
     var trackList = ['../temp/audio/epic.mp3', '../temp/audio/scream.mp3', '../temp/audio/reading.mp3'];
 
-    wavesurfer.load(trackList[current]);
+    wavesurfer.load(trackList[currentTrack]);
 
     $('#temp-play').on('click', function (){
         wavesurfer.playPause();
@@ -23,29 +23,38 @@
 
     /* When song is loaded, decoded and the waveform add class .player--init */
     wavesurfer.on('ready', function () {
-        $(wavesurfer.params.container).parents('.player').addClass('player--init')
+        var $player = $(wavesurfer.params.container).parents('.player');
+        $player.addClass('player--init');
+        $player.find('.player__action--play').removeClass('player__action--disabled');
     });
 
     /* Prev track */
     $('#temp-backward').on('click', function () {
-        $(wavesurfer.params.container).parents('.player').removeClass('player--init')
-        if (current > 0) {
-            current--;
+        var $player = $(wavesurfer.params.container).parents('.player');
+        $player.removeClass('player--init');
+        $player.find('.player__action--play').addClass('player__action--disabled');
+
+        if (currentTrack > 0) {
+            currentTrack--;
         } else {
-            current = trackList.length - 1;
+            currentTrack = trackList.length - 1;
         }
-        wavesurfer.load(trackList[current]);
+        wavesurfer.load(trackList[currentTrack]);
     });
 
     /* Next track */
     $('#temp-forward').on('click', function () {
-        $(wavesurfer.params.container).parents('.player').removeClass('player--init')
-        if (current < trackList.length - 1) {
-            current++;
+        var $player = $(wavesurfer.params.container).parents('.player');
+        $player.removeClass('player--init');
+        $player.find('.player__action--play').addClass('player__action--disabled');
+
+        $(wavesurfer.params.container).parents('.player').removeClass('player--init');
+        if (currentTrack < trackList.length - 1) {
+            currentTrack++;
         } else {
-            current = 0;
+            currentTrack = 0;
         }
-        wavesurfer.load(trackList[current]);
+        wavesurfer.load(trackList[currentTrack]);
     });
 
 

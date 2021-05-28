@@ -75,10 +75,22 @@
             border: 0;
             cursor: pointer;
         }
+
+        .player__action:hover {
+            fill: #C4D1D8;
+        }
             .player__icon {
                 position: relative;
                 vertical-align: top;
                 fill: #FFFFFF;
+            }
+
+
+        .player__action--play {
+
+        }
+            .player__action--play .player__icon {
+
             }
 
             /* play button background */
@@ -96,15 +108,30 @@
                 border-radius: 8px;
             }
 
-    /* disabled until song loaded */
-    .player__action--play {
-        opacity: 0.5;
-        cursor: default;
-    }
+        .player__action--play:hover {
 
-    /* Active when song is ready */
-    .player--init .player__action--play {
-        opacity: 1;
-        cursor: pointer;
-    }
+        }
+            .player__action--play:hover .player__icon {
+                fill: #9CB2BE;
+            }
+
+            .player__action--play:hover::before {
+                background-color: #E1E8EB;
+            }
+
+
+        /* disabled until song loaded */
+        .player__action--play.player__action--disabled {
+            cursor: default;
+            opacity: 0.1;
+        }
+            .player__action--play.player__action--disabled .player__icon,
+            .player__action--play.player__action--disabled:hover .player__icon {
+                background-color: #ABC0CC;
+            }
+
+            .player__action--play.player__action--disabled .player__icon,
+            .player__action--play.player__action--disabled:hover .player__icon {
+                fill: #BDCDD5;
+            }
 
