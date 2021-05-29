@@ -6,55 +6,162 @@
         <title>.player</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1622172377">
+        <link rel="stylesheet" href="../styles/style.css?1622260100">
     </head>
     <body>
 
 
 
-        <div style="width: 226px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
             <h1>.player</h1>
+            <br>
+            <br>
+            <div style="width: 226px; margin: 0 auto;">
 
-            <section class="player">
-                <h2 class="player__heading">
-                    Now playing
-                </h2>
-                <img class="player__preview"
-                     srcset="../temp/player@2x.jpg 2x"
-                     src="../temp/player.jpg"
-                     width="174"
-                     height="99"
-                     alt=""
-                >
-                <div class="player__song ellipsis">
-                    Brandon Bell
-                </div>
-                <div class="player__artist ellipsis">
-                    “When the air sings of summer” from The Old Maid and the Thief
-                </div>
-                <div class="player__progress">
 
-                </div>
-                <div class="player__controls">
-                    <button class="player__action" type="button" id="temp-backward">
-                        <svg class="player__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1622172377#16-backward"></use>
-                        </svg>
-                    </button>
-                    <button class="player__action player__action--play player__action--highlight" type="button" id="temp-play">
-                        <svg class="player__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1622172377#16-play-rounded"></use>
-                        </svg>
-                    </button>
-                    <button class="player__action" type="button" id="temp-forward">
-                        <svg class="player__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1622172377#16-forward"></use>
-                        </svg>
-                    </button>
-                </div>
-            </section>
+                <section class="player player--loading">
+                    <h2 class="player__heading">
+                        Now playing
+                    </h2>
+                    <img class="player__preview"
+                         srcset="../temp/player@2x.jpg 2x"
+                         src="../temp/player.jpg"
+                         width="174"
+                         height="99"
+                         alt=""
+                    >
+                    <div class="player__song ellipsis">
+                        Brandon Bell
+                    </div>
+                    <div class="player__artist ellipsis">
+                        “When the air sings of summer” from The Old Maid and the Thief
+                    </div>
+                    <div class="player__wave">
+                        <div class="player__indicator">
+                            <div class="loading loading--inverted">Loading</div>
+                        </div>
+                        <div class="player__progress">
+                            <!-- Wave Surf here -->
+                        </div>
+                    </div>
+                    <div class="player__controls">
+                        <button class="player__action player__action--bookmark" type="button">
+                            <svg class="player__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622260100#16-bookmark"></use>
+                            </svg>
+                        </button>
+                        <button class="player__action player__action--disabled player__action--backward" type="button">
+                            <svg class="player__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622260100#16-backward"></use>
+                            </svg>
+                        </button>
+                        <button class="player__action player__action--play player__action--disabled" type="button">
+                            <svg class="player__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622260100#16-play"></use>
+                            </svg>
+                        </button>
+                        <button class="player__action player__action--forward" type="button">
+                            <svg class="player__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622260100#16-forward"></use>
+                            </svg>
+                        </button>
+                        <button class="player__action player__action--shuffle" type="button">
+                            <svg class="player__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622260100#16-shuffle"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+
+
+            </div>
+
+
+            <br>
+            <h3>Wave</h3>
+            <p>
+                Use Wave Surf plugin: <a href="https://wavesurfer-js.org/">https://wavesurfer-js.org/</a> to create wave map
+            </p>
+            <br>
+            <h3>Init</h3>
+            <p>
+                Init it inside <b>.player__progress</b>
+            </p>
+            <p>
+                Init with following parameters:
+            </p>
+<pre>
+var wavesurfer = WaveSurfer.create({
+    container: '.player__progress',
+    barWidth: 1,
+    barGap: 2,
+    height: '49',
+    waveColor: '#FFFFFF',
+    progressColor: '#BFD7E3',
+    cursorColor: '#FFFFFF'
+});
+</pre>
+
+            <br>
+            <h3>Ready state</h3>
+            <p>
+                Once init start loading songs. When song is loaded parsed and the waveform created (on <b>event</b> event)
+                please add <b>.player--ready</b> class. This will show wave on the screen
+                because by default it was hidden via <b>opacity: 0</b>.
+            </p>
+            <p>
+                It has to be done because wave appears and disappears by itself anyway and does it uncontrollable.
+                To take control over the situation we just toggle opacity on the parental div. With it we can
+                add transition, horizontal background line (not a part of the player) and so on.
+            </p>
+
+
+            <br>
+            <h3>Loading state</h3>
+            <p>
+                When song (or library itself) are downloading please add <b>.player--loading</b>.
+                It will show loading indicator.
+            </p>
+            <p>
+                At some point it is opposite case to <b>.player--ready</b> but just in case I separate these
+                cases to two different classes. Maybe if you decide to cover downloading error you won't be needed
+                any of these classes.
+            </p>
+
+
+            <br>
+            <h3>Play/Pause</h3>
+
+            <p>
+                Swap icons <b>16-play</b> and <b>16-pause</b>. To do so just update <b>href</b> attribute of <b>use</b> tag inside of svg icon:
+                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-play")</b>
+                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-pause")</b>
+            </p>
+
+
+            <br>
+            <h3>Disabled player controls</h3>
+
+            <p>
+                Use <b>.player__action--disabled</b> to disable player controls when needed. For example when new track
+                is being loaded you should disable play button. When there are no tracks in the playlist you shold disable
+                next button. And so on.
+            </p>
+
+            <br>
+            <h3>Toggle bookmark and shuffle</h3>
+
+            <p>
+                When song is bookmarked please change:<br> <b>16-bookmark</b> to <b>16-bookmarked</b>
+                <br>And same for shuffle:
+                <br><b>16-shuffle</b> to <b>16-shuffled</b>
+            </p>
+
+
+
+
 
             <br>
             <br>
@@ -76,13 +183,14 @@
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
-        <script src="../scripts/_operations.js?1622172377"></script>
-        <script src="../scripts/_profile.js?1622172377"></script>
-        <script src="../scripts/_mfp.js?1622172377"></script>
-        <script src="../scripts/_search.js?1622172377"></script>
-        <script src="../scripts/_carousel.js?1622172377"></script>
-        <script src="../scripts/_wavesurfer.js?1622172377"></script>
-        <script src="../scripts/_updates.js?1622172377"></script>
+        <script src="../scripts/_operations.js?1622260100"></script>
+        <script src="../scripts/_profile.js?1622260100"></script>
+        <script src="../scripts/_mfp.js?1622260100"></script>
+        <script src="../scripts/_search.js?1622260100"></script>
+        <script src="../scripts/_carousel.js?1622260100"></script>
+        <script src="../scripts/_player.js?1622260100"></script>
+        <script src="../scripts/_updates.js?1622260100"></script>
+        <script src="../scripts/_dash-side.js?1622260100"></script>
 
 
     </body>
