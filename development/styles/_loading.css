@@ -1,0 +1,20 @@
+@keyframes loading {
+    from { transform: rotate(0); }
+    to { transform: rotate(360deg); }
+}
+
+.loading {
+    width: 16px;
+    height: 16px;
+    border: 2px solid #9CB2BF;
+    border-left-color: transparent !important;
+    border-radius: 50%;
+    animation: loading 0.4s linear infinite;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.loading--inverted {
+    border-color: #FFFFFF;
+}

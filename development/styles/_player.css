@@ -36,12 +36,36 @@
         line-height: 18px;
     }
 
-    .player__progress {
+    .player__wave {
         position: relative;
         margin-top: 9px;
         height: 49px;
-        opacity: 0; /* by default hide remains of player */
     }
+        .player__indicator {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .player--init .player__indicator {
+            opacity: 0;
+        }
+
+        .player__progress {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transition: opacity 0.1s ease;
+            opacity: 0; /* by default hide remains of player */
+        }
 
     .player--init .player__progress {
         opacity: 1;
