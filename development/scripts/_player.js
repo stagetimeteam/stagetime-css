@@ -43,7 +43,6 @@
             }
 
             if ( $(this).hasClass('player__action--forward') && currentTrack < trackList.length - 1) {
-                alert(currentTrack);
                 currentTrack++;
             }
 
@@ -83,7 +82,7 @@
 
     wavesurfer.on('pause', function () {
         var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play')
-        $playButton.find('svg use').attr("xlink:href", "../symbols/symbols.svg#16-play-rounded");
+        $playButton.find('svg use').attr("xlink:href", "../symbols/symbols.svg#16-play");
     });
 
 
