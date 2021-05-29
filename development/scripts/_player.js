@@ -15,7 +15,7 @@
 
     wavesurfer.load(trackList[currentTrack]);
 
-    $('#temp-play').on('click', function (){
+    $('.player__action--play').on('click', function () {
         wavesurfer.playPause();
     });
 
@@ -76,12 +76,12 @@
 
     /* Toggle Play/Pause icon */
     wavesurfer.on('play', function () {
-        var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play');
+        var $playButton = $(wavesurfer.params.container).parents('.player').find('.player__action--play');
         $playButton.find('use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
     })
 
     wavesurfer.on('pause', function () {
-        var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play');
+        var $playButton = $(wavesurfer.params.container).parents('.player').find('.player__action--play');
         $playButton.find('use').attr("xlink:href", "../symbols/symbols.svg#16-play");
     });
 
