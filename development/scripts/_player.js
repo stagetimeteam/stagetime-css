@@ -85,6 +85,14 @@
         $playButton.find('use').attr("xlink:href", "../symbols/symbols.svg#16-play");
     });
 
+    $('.player__action--bookmark').on('click', function (){
+        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-bookmarked");
+    });
+
+    $('.player__action--shuffle').on('click', function (){
+        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-shuffled");
+    });
+
 
 
 
