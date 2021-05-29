@@ -2,30 +2,60 @@
     position: relative;
     padding-top: 15px;
     padding-bottom: 20px;
-
-    /* or: */
-    /*padding-left: 32px;*/
-    /*padding-right: 32px;*/
-
-    /* or (this will be centered if aside scrollbar appears and it takes extra space): */
-    width: 226px;
-    margin-left: auto;
-    margin-right: auto;
 }
-    .dash-side__customize {
+    .dash-side__container {
+        width: 226px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .dash-side__show-customization {
+            position: absolute;
+            z-index: 200;
+            right: 26px;
+            top: 8px;
+        }
+
+        .dash-side__people {
+
+        }
+
+        .dash-side__audio {
+            margin-top: 20px;
+        }
+
+        .dash-side__updates {
+            margin-top: 18px;
+        }
+
+    .dash-side__customization-panel {
         position: absolute;
-        right: 32px;
-        top: 8px;
+        z-index: 200;
+        left: 1px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.97);
+        text-align: center;
     }
+        .dash-side__close-customization {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    .dash-side__people {
+        .dash-side__about-customization {
+            margin-top: 14px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 164px;
+            font-size: 11px;
+            line-height: 24px;
+            color: #757575;
+        }
 
-    }
-
-    .dash-side__music {
-        margin-top: 20px;
-    }
-
-    .dash-side__updates {
-        margin-top: 18px;
-    }
+        .ash-side__customize {
+            margin-top: 25px;
+        }
+        .ash-side__customize.button,
+        .ash-side__customize > .button {
+            width: 114px;
+        }

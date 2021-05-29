@@ -24,7 +24,7 @@
     }
 
     .button__icon--left {
-        margin-left: -8px;
+        margin-left: -4px;
         margin-right: 4px;
     }
 
@@ -53,21 +53,21 @@
 }
 
 
-.button--faded {
+.button--darker {
     background-color: #E8E8E8;
     color: #757575;
     box-shadow: none;
     text-transform: none;
 }
 
-.button--faded:hover,
-.button--faded:active {
+.button--darker:hover,
+.button--darker:active {
     background-color: #C4C4C4;
     color: #757575;
 }
 
 
-.button--secondary {
+.button--faded {
     background-color: #F4F4F4;
     font-weight: bold;
     color: #8B8B8B;
@@ -76,8 +76,8 @@
     letter-spacing: -0.1px;
 }
 
-.button--secondary:hover,
-.button--secondary:active {
+.button--faded:hover,
+.button--faded:active {
     background-color: #8B8B8B;
     color: #F4F4F4;
 }

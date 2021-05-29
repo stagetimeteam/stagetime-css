@@ -70,6 +70,31 @@
     }
 
 
+.action--faded {
+
+}
+    .action--faded .action__image {
+        margin-top: 2px;
+        margin-bottom: 9px;
+        width: 28px;
+        height: 28px;
+        background-color: #F4F4F4;
+        border-color: transparent;
+    }
+
+    .action--faded:hover .action__image {
+        background-color: #545454;
+    }
+        .action--faded .action__icon {
+            fill: #8B8B8B;
+        }
+
+    .action--faded .action__label {
+        font-size: 8px;
+        color: #8B8B8B;
+    }
+
+
 
 
 
