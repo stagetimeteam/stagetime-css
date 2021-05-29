@@ -28,34 +28,51 @@
         $player.find('.player__action--play').removeClass('player__action--disabled');
     });
 
-    /* Prev track */
-    $('#temp-backward').on('click', function () {
-        var $player = $(wavesurfer.params.container).parents('.player');
-        $player.removeClass('player--init');
-        $player.find('.player__action--play').addClass('player__action--disabled');
-
-        if (currentTrack > 0) {
-            currentTrack--;
-        } else {
-            currentTrack = trackList.length - 1;
-        }
-        wavesurfer.load(trackList[currentTrack]);
-    });
 
     /* Next track */
-    $('#temp-forward').on('click', function () {
-        var $player = $(wavesurfer.params.container).parents('.player');
-        $player.removeClass('player--init');
-        $player.find('.player__action--play').addClass('player__action--disabled');
+    $('.player__action--backward, .player__action--forward').on('click', function () {
 
-        $(wavesurfer.params.container).parents('.player').removeClass('player--init');
-        if (currentTrack < trackList.length - 1) {
-            currentTrack++;
-        } else {
-            currentTrack = 0;
+        /* if not disabled */
+        if( ! $(this).hasClass('player__action--disabled') ) {
+
+            var $player = $(wavesurfer.params.container).parents('.player');
+
+            /* Count new track id in array */
+            if ( $(this).hasClass('player__action--backward') && currentTrack > 0 ) {
+                currentTrack--;
+            }
+
+            if ( $(this).hasClass('player__action--forward') && currentTrack < trackList.length - 1) {
+                alert(currentTrack);
+                currentTrack++;
+            }
+
+
+            /* Start loading news track */
+
+            $player.removeClass('player--init');
+            $player.find('.player__action--play').addClass('player__action--disabled');
+            wavesurfer.load(trackList[currentTrack]);
+
+
+            /* Disable buttons */
+
+            if (currentTrack === trackList.length - 1) {
+                $player.find('.player__action--forward').addClass('player__action--disabled');
+            } else {
+                $player.find('.player__action--forward').removeClass('player__action--disabled');
+            }
+
+            if (currentTrack === 0) {
+                $player.find('.player__action--backward').addClass('player__action--disabled');
+            } else {
+                $player.find('.player__action--backward').removeClass('player__action--disabled');
+            }
+
         }
-        wavesurfer.load(trackList[currentTrack]);
     });
+
+
 
 
     /* Toggle Play/Pause icon */

@@ -75,14 +75,23 @@
             border: 0;
             cursor: pointer;
         }
-
-        .player__action:hover {
-            fill: #C4D1D8;
-        }
             .player__icon {
                 position: relative;
                 vertical-align: top;
                 fill: #FFFFFF;
+            }
+
+            .player__action:hover .player__icon {
+                fill: #C4D1D8;
+            }
+
+        .player__action--disabled,
+        .player__action--disabled:hover {
+            cursor: default;
+        }
+            .player__action--disabled .player__icon,
+            .player__action--disabled:hover .player__icon {
+                fill: #BDCDD5;
             }
 
 
@@ -121,9 +130,9 @@
 
 
         /* disabled until song loaded */
-        .player__action--play.player__action--disabled {
-            cursor: default;
-            opacity: 0.1;
+        .player__action--play.player__action--disabled,
+        .player__action--play.player__action--disabled:hover {
+
         }
             .player__action--play.player__action--disabled .player__icon,
             .player__action--play.player__action--disabled:hover .player__icon {
