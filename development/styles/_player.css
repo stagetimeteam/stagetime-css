@@ -50,37 +50,41 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: opacity 0.1s ease;
-        }
-
-        .player--init .player__indicator {
             opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.1s ease,
+                        visibility 0.1s ease;
         }
 
-    .player__progress {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        /* don't use transition here because wave will disappear immideately anyway */
-        opacity: 0; /* by default hide remains of player */
-    }
-        /* horizontal line in the middle of a player */
-        .player__progress::before {
-            content: "";
+        .player--loading .player__indicator {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .player__progress {
             position: absolute;
             left: 0;
-            right: 0;
-            top: 24px;
-            height: 1px;
-            background-color: #FFFFFF;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            /* don't use transition here because wave will disappear immideately anyway */
+            opacity: 0; /* by default hide remains of player */
         }
+            /* horizontal line in the middle of a player */
+            .player__progress::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 24px;
+                height: 1px;
+                background-color: #FFFFFF;
+            }
 
-        .player--init .player__progress {
-            opacity: 1;
-            transition: opacity 0.1s ease;
-        }
+            .player--ready .player__progress {
+                opacity: 1;
+                transition: opacity 0.1s ease;
+            }
 
 
     .player__controls {

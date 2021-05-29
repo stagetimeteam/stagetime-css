@@ -12,48 +12,128 @@
 
 
 
-        <div style="width: 226px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
             <h1>.player</h1>
+            <br>
+            <br>
+            <div style="width: 226px; margin: 0 auto;">
 
-            <section class="player">
-                <h2 class="player__heading">
-                    Now playing
-                </h2>
-                <img class="player__preview"
-                     srcset="../temp/player@2x.jpg 2x"
-                     src="../temp/player.jpg"
-                     width="174"
-                     height="99"
-                     alt=""
-                >
-                <div class="player__song ellipsis">
-                    Brandon Bell
-                </div>
-                <div class="player__artist ellipsis">
-                    “When the air sings of summer” from The Old Maid and the Thief
-                </div>
-                <div class="player__wave">
-                    <div class="player__indicator">
-                        <div class="loading loading--inverted">Loading</div>
+
+                <section class="player player--loading">
+                    <h2 class="player__heading">
+                        Now playing
+                    </h2>
+                    <img class="player__preview"
+                         srcset="../temp/player@2x.jpg 2x"
+                         src="../temp/player.jpg"
+                         width="174"
+                         height="99"
+                         alt=""
+                    >
+                    <div class="player__song ellipsis">
+                        Brandon Bell
                     </div>
-                    <div class="player__progress">
-                        <!-- Wave Surf here -->
+                    <div class="player__artist ellipsis">
+                        “When the air sings of summer” from The Old Maid and the Thief
                     </div>
-                </div>
-                <div class="player__controls">
-                    <button class="player__action player__action--disabled player__action--backward" type="button" id="temp-backward">
-                        <img class="player__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
-                    </button>
-                    <button class="player__action player__action--play player__action--disabled" type="button" id="temp-play">
-                        <img class="player__icon" src="../symbols/16-play.svg" width="16" height="16" alt="">
-                    </button>
-                    <button class="player__action player__action--forward" type="button" id="temp-forward">
-                        <img class="player__icon" src="../symbols/16-forward.svg" width="16" height="16" alt="">
-                    </button>
-                </div>
-            </section>
+                    <div class="player__wave">
+                        <div class="player__indicator">
+                            <div class="loading loading--inverted">Loading</div>
+                        </div>
+                        <div class="player__progress">
+                            <!-- Wave Surf here -->
+                        </div>
+                    </div>
+                    <div class="player__controls">
+                        <button class="player__action player__action--disabled player__action--backward" type="button" id="temp-backward">
+                            <img class="player__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
+                        </button>
+                        <button class="player__action player__action--play player__action--disabled" type="button" id="temp-play">
+                            <img class="player__icon" src="../symbols/16-play.svg" width="16" height="16" alt="">
+                        </button>
+                        <button class="player__action player__action--forward" type="button" id="temp-forward">
+                            <img class="player__icon" src="../symbols/16-forward.svg" width="16" height="16" alt="">
+                        </button>
+                    </div>
+                </section>
+
+
+            </div>
+
+
+            <p>
+                Use Wave search plugin: <a href="https://wavesurfer-js.org/">https://wavesurfer-js.org/</a>
+            </p>
+            <h3>Init</h3>
+            <p>
+                Init it inside <b>.player__progress</b>
+            </p>
+            <p>
+                Init with following parameters:
+            </p>
+<pre>
+var wavesurfer = WaveSurfer.create({
+    container: '.player__progress',
+    barWidth: 1,
+    barGap: 2,
+    height: '49',
+    waveColor: '#FFFFFF',
+    progressColor: '#BFD7E3',
+    cursorColor: '#FFFFFF'
+});
+</pre>
+
+            <br>
+            <h3>Ready state</h3>
+            <p>
+                Once init start loading songs. When song is loaded parsed and the waveform created (on <b>event</b> event)
+                please add <b>.player--ready</b> class. This will show wave on the screen
+                because by default it was hidden via <b>opacity: 0</b>.
+            </p>
+            <p>
+                It has to be done because wave appears and disappears by itself anyway and does it uncontrollable.
+                To take control over the situation we just toggle opacity on the parental div. With it we can
+                add transition, horizontal background line (not a part of the player) and so on.
+            </p>
+
+
+            <br>
+            <h3>Loading state</h3>
+            <p>
+                When song (or library itself) are downloading please add <b>.player--loading</b>.
+                It will show loading indicator.
+            </p>
+            <p>
+                At some point it is opposite case to <b>.player--ready</b> but just in case I separate these
+                cases to two different classes. Maybe if you decide to cover downloading error you won't be needed
+                any of these classes.
+            </p>
+
+
+            <br>
+            <h3>Play/Pause</h3>
+
+            <p>
+                Swap icons <b>16-play</b> and <b>16-pause</b>. To do so just update <b>href</b> attribute of <b>use</b> tag inside of svg icon:
+                <br><b>$('use').attr("xlink:href", "../symbols/symbols.svg#16-play")</b>
+                <br><b>$('use').attr("xlink:href", "../symbols/symbols.svg#16-pause")</b>
+            </p>
+
+
+            <br>
+            <h3>Disabled player controls</h3>
+
+            <p>
+                Use <b>.player__action--disabled</b> to disable player controls when needed. For example when new track
+                is being loaded you should disable play button. When there are no tracks in the playlist you shold disable
+                next button. And so on.
+            </p>
+
+
+
+
 
             <br>
             <br>

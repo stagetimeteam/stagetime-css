@@ -21,10 +21,10 @@
 
 
 
-    /* When song is loaded, decoded and the waveform add class .player--init */
+    /* When song is loaded, decoded and the waveform add class .player--ready (and remove player--loading) */
     wavesurfer.on('ready', function () {
         var $player = $(wavesurfer.params.container).parents('.player');
-        $player.addClass('player--init');
+        $player.addClass('player--ready').removeClass('player--loading');
         $player.find('.player__action--play').removeClass('player__action--disabled');
     });
 
@@ -49,7 +49,7 @@
 
             /* Start loading news track */
 
-            $player.removeClass('player--init');
+            $player.removeClass('player--ready').addClass('player--loading');
             $player.find('.player__action--play').addClass('player__action--disabled');
             wavesurfer.load(trackList[currentTrack]);
 
@@ -76,13 +76,13 @@
 
     /* Toggle Play/Pause icon */
     wavesurfer.on('play', function () {
-        var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play')
-        $playButton.find('svg use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
+        var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play');
+        $playButton.find('use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
     })
 
     wavesurfer.on('pause', function () {
-        var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play')
-        $playButton.find('svg use').attr("xlink:href", "../symbols/symbols.svg#16-play");
+        var $playButton = $(wavesurfer.params.container).parents('.player').find('#temp-play');
+        $playButton.find('use').attr("xlink:href", "../symbols/symbols.svg#16-play");
     });
 
 
