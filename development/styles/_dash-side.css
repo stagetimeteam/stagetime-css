@@ -34,9 +34,21 @@
         top: 0;
         right: 0;
         bottom: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
         background-color: rgba(255, 255, 255, 0.97);
         text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility var(--transition-show),
+                    opacity var(--transition-show);
     }
+
+    .dash-side--expanded .dash-side__customization-panel {
+        opacity: 1;
+        visibility: visible;
+    }
+
         .dash-side__close-customization {
             margin-left: auto;
             margin-right: auto;
@@ -59,3 +71,4 @@
         .ash-side__customize > .button {
             width: 114px;
         }
+
