@@ -1,5 +1,6 @@
 .updates {
     position: relative;
+    user-select: none; /* because clicking on switch often toggles selection */
 }
     .updates__switch {
         position: absolute;
