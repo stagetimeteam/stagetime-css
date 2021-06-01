@@ -3,10 +3,12 @@
     display: block;
     width: 30px;
     height: 30px;
+    border-radius: 3px;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
     cursor: pointer;
+    transition: background-color var(--transition-hover);
 }
     .type-toggler__widget {
         position: absolute;
