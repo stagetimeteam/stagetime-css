@@ -83,7 +83,7 @@
     }
 
     .action--faded:hover .action__image {
-        background-color: #545454;
+        background-color: #8B8B8B;
     }
         .action--faded .action__icon {
             fill: #8B8B8B;
