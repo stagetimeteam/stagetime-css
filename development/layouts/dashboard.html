@@ -2162,6 +2162,10 @@
                                 </div>
                             </div>
                             <section class="dash-side__audio player player--loading">
+                                <button class="player__handler" type="button">
+                                    <img class="player__angle" src="../symbols/16-angle-down.svg" width="16" height="16" alt="">
+                                    Expand
+                                </button>
                                 <h2 class="player__heading">
                                     Now playing
                                 </h2>
@@ -2193,8 +2197,16 @@
                                     <button class="player__action player__action--disabled player__action--backward" type="button">
                                         <img class="player__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
                                     </button>
-                                    <button class="player__action player__action--play player__action--disabled" type="button">
-                                        <img class="player__icon" src="../symbols/16-play.svg" width="16" height="16" alt="">
+                                    <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/brandon-bell-when-the-air.jpg);">
+                                        <img class="player__icon player__icon--play" src="../symbols/16-play.svg" width="16" height="16" alt="">
+                                        <img class="player__icon player__icon--pause" src="../symbols/16-pause.svg" width="16" height="16" alt="">
+                                        <div class="player__visualization playback">
+                                            <div class="playback__bar"></div>
+                                            <div class="playback__bar"></div>
+                                            <div class="playback__bar"></div>
+                                            <div class="playback__bar"></div>
+                                            <div class="playback__bar"></div>
+                                        </div>
                                     </button>
                                     <button class="player__action player__action--forward" type="button">
                                         <img class="player__icon" src="../symbols/16-forward.svg" width="16" height="16" alt="">
