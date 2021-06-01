@@ -196,6 +196,9 @@
                 bottom: 0;
                 margin: auto;
             }
+            .player__visualization.playback {
+                position: absolute;
+            }
 
         .player__action--disabled,
         .player__action--disabled:hover {
@@ -222,8 +225,7 @@
                 display: none;
             }
 
-            .player__visualization,
-            .player__visualization.playback {
+            .player__visualization {
                 display: none;
             }
 
@@ -390,13 +392,11 @@
                 display: none;
             }
 
-            .player--collapsed.player--playing .player__visualization,
-            .player--collapsed.player--playing .player__visualization.playback {
-                display: flex;
+            .player--collapsed.player--playing .player__visualization {
+                display: block;
             }
 
-            .player--collapsed.player--playing .player__action--play:hover .player__visualization,
-            .player--collapsed.player--playing .player__action--play:hover .player__visualization.playback {
+            .player--collapsed.player--playing .player__action--play:hover .player__visualization {
                 display: none;
             }
 
