@@ -27,6 +27,16 @@
             color: #333333;
         }
 
+
+        .updates__label--media {
+            pointer-events: none;
+        }
+
+        .updates__label--news {
+            pointer-events: auto;
+        }
+
+
         .updates__checkbox {
 
         }
@@ -60,6 +70,17 @@
 .updates--switched-to-news {
 
 }
+    .updates--switched-to-news .updates__switch {
+
+    }
+        .updates--switched-to-news .updates__label--media {
+            pointer-events: auto;
+        }
+
+        .updates--switched-to-news .updates__label--news {
+            pointer-events: none;
+        }
+
     .updates--switched-to-news .updates__body {
         height: 191px; /* default height for news */
     }
