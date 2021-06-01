@@ -107,6 +107,10 @@
 
     }
         .carousel--vertical .carousel__item {
+            margin-left: 12px;
+        }
+
+        .carousel--vertical .carousel__item:first-child {
             margin-left: 0;
         }
 
