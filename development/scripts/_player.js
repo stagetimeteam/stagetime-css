@@ -94,6 +94,16 @@
     });
 
 
+    /* Collapsed case */
 
+    $('.player__handler').on('click', function () {
+        $(this).parents('.player').toggleClass('player--collapsed');
+    });
+
+    $('.player').on('click', function () {
+        if (!$(event.target).closest('.player__handler, .player__action--play').length) {
+            $(this).removeClass('player--collapsed');
+        }
+    });
 
 })(jQuery);

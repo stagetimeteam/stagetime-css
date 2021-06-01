@@ -5,8 +5,18 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
     color: #FFFFFF;
     border-radius: 10px;
-    text-align: center;
 }
+    .player__handler:hover {
+
+    }
+        .player__handler:hover::before {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .player__handler:hover .player__angle {
+            fill: #9CB2BE
+        }
+
     .player__heading {
         margin-top: 0;
         margin-bottom: 0;
@@ -29,12 +39,14 @@
         font-weight: bold;
         font-size: 11px;
         line-height: 18px;
+        text-align: center;
     }
 
     .player__artist {
         font-weight: 600;
         font-size: 10px;
         line-height: 18px;
+        text-align: center;
     }
 
     .player__wave {
@@ -134,7 +146,7 @@
 
 
         .player__action--play {
-
+            background-size: 0 0;
         }
             .player__action--play .player__icon {
 
@@ -224,28 +236,81 @@
             margin: auto;
             vertical-align: top;
             fill: #FFFFFF;
+            transform: scaleY(-1);
             transition: fill var(--transition-hover),
                         transform var(--transition-show);
         }
 
-    .player__handler {
+
+
+.player--collapsed {
+    height: 65px;
+    cursor: pointer; /* Clicking on whole player expands it */
+}
+    .player--collapsed .player__handler {
 
     }
-        .player__handler:hover::before {
-            background-color: rgba(255, 255, 255, 0.7);
+        .player--collapsed .player__angle {
+            transform: scaleY(1);
         }
 
-        .player__handler:hover .player__angle {
-            fill: #9CB2BE
-        }
+    .player--collapsed .player__heading {
+        visibility: hidden;
+    }
 
-    .player--expanded {
+    .player--collapsed .player__preview {
+        visibility: hidden;
+    }
+
+    .player--collapsed .player__song {
+        position: absolute;
+        left: 65px;
+        right: 26px;
+        top: 5px;
+        text-align: left;
+    }
+
+    .player--collapsed .player__artist {
+        position: absolute;
+        left: 65px;
+        right: 26px;
+        top: 31px;
+        text-align: left;
+    }
+
+    .player--collapsed .player__wave {
+        visibility: hidden;
+    }
+
+    .player--collapsed .player__controls {
 
     }
-        .player--expanded::before {
-
+        .player--collapsed .player__action {
+            visibility: hidden;
         }
 
-        .player--expanded .player__angle {
-            transform: scaleY(-1);
+        .player--collapsed .player__action--play {
+            position: absolute;
+            left: 14px;
+            top: 12px;
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            visibility: visible;
+            border-radius: 5px;
         }
+            /* play button background */
+            .player--collapsed .player__action--play::before {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 0;*/
+                /*right: 0;*/
+                /*bottom: 0;*/
+                /*margin: auto;*/
+                width: auto;
+                height: auto;
+                background-color: rgba(51, 51, 51, 0.66) !important; /* override hover */
+                border-radius: 5px;
+                transition: none;
+            }

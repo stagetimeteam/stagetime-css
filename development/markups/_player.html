@@ -21,7 +21,11 @@
             <div style="width: 226px; margin: 0 auto;">
 
 
-                <section class="player player--loading player--expanded">
+                <section class="player player--loading player--collapsed">
+                    <button class="player__handler" type="button">
+                        <img class="player__angle" src="../symbols/16-angle-down.svg" width="16" height="16" alt="">
+                        Expand
+                    </button>
                     <h2 class="player__heading">
                         Now playing
                     </h2>
@@ -38,10 +42,6 @@
                     <div class="player__artist ellipsis">
                         “When the air sings of summer” from The Old Maid and the Thief
                     </div>
-                    <button class="player__handler" type="button">
-                        <img class="player__angle" src="../symbols/16-angle-down.svg" width="16" height="16" alt="">
-                        Expand
-                    </button>
                     <div class="player__wave">
                         <div class="player__indicator">
                             <div class="loading loading--inverted">Loading</div>
@@ -57,7 +57,7 @@
                         <button class="player__action player__action--disabled player__action--backward" type="button">
                             <img class="player__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
                         </button>
-                        <button class="player__action player__action--play player__action--disabled" type="button">
+                        <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/player.jpg);">
                             <img class="player__icon" src="../symbols/16-play.svg" width="16" height="16" alt="">
                         </button>
                         <button class="player__action player__action--forward" type="button">
