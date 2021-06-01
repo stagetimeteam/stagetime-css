@@ -1,5 +1,5 @@
 .toggler {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -73,4 +73,13 @@
 
     .toggler__body:last-child {
         margin-right: 0;
+    }
+
+
+
+.toggler:hover {
+
+}
+    .toggler:hover .toggler__knob {
+        background-color: #333333;
     }

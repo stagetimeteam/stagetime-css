@@ -7,7 +7,29 @@
         z-index: 50;
         right: 0;
         top: -6px;
+        display: flex;
+        align-items: flex-start;
     }
+        .updates__swap-icon {
+            margin-top: 11px;
+            margin-right: -2px;
+        }
+
+        .updates__label {
+            padding: 12px 7px 14px;
+            font-size: 10px;
+            line-height: 14px;
+            color: #8B8B8B;
+            cursor: pointer;
+        }
+
+        .updates__label:hover {
+            color: #333333;
+        }
+
+        .updates__checkbox {
+
+        }
 
     .updates__body {
         position: relative;
@@ -33,19 +55,6 @@
             opacity: 0;
         }
 
-        .updates__switch:hover .toggler__knob {
-            background-color: #333333;
-        }
-
-        /* left label */
-        .updates:not(.updates--switched-to-news) .updates__switch:hover .toggler__label {
-
-        }
-
-        /* right label */
-        .updates:not(.updates--switched-to-news) .updates__switch:hover .toggler__label ~ .toggler__label {
-            color: #333333;
-        }
 
 
 .updates--switched-to-news {
@@ -65,15 +74,6 @@
         }
 
 
-        /* left label */
-        .updates--switched-to-news .updates__switch:hover .toggler__label {
-            color: #333333;
-        }
-
-        /* right label */
-        .updates--switched-to-news .updates__switch:hover .toggler__label ~ .toggler__label {
-            color: #757575;
-        }
 
 
 .updates--sidebar {
