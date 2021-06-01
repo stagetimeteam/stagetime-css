@@ -5,6 +5,7 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
     color: #FFFFFF;
     border-radius: 10px;
+    overflow: hidden;
 }
     .player__handler:hover {
 
@@ -14,7 +15,7 @@
         }
 
         .player__handler:hover .player__angle {
-            fill: #9CB2BE
+            fill: #9CB2BE;
         }
 
     .player__heading {
@@ -146,7 +147,7 @@
 
 
         .player__action--play {
-            background-size: 0 0;
+            background-size: 0 0; /* hide background image */
         }
             .player__action--play .player__icon {
 
@@ -156,6 +157,7 @@
             .player__action--play::before {
                 content: "";
                 position: absolute;
+                z-index: 10;
                 left: 0;
                 top: 0;
                 right: 0;
@@ -168,8 +170,12 @@
                 transition: background-color var(--transition-hover);
             }
 
-            .player__action:active .player__action--play::before {
+            .player__action--play:active .player__action--play::before {
                 transition: none;
+            }
+
+            .player__action--play .player__icon {
+                z-index: 20;
             }
 
         .player__action--play:hover {
@@ -224,7 +230,7 @@
             height: 16px;
             background-color: rgba(221, 234, 241, 0.25);
             border-radius: 50%;
-            transition: background-color var(--transition-hover)
+            transition: background-color var(--transition-hover);
         }
 
         .player__angle {
@@ -295,22 +301,41 @@
             top: 12px;
             width: 40px;
             height: 40px;
-            background-size: cover;
+            background-size: cover; /* show hidden background image */
             visibility: visible;
             border-radius: 5px;
         }
-            /* play button background */
+            /* expand clickable area (override ::before) */
             .player--collapsed .player__action--play::before {
-                /*content: "";*/
-                /*position: absolute;*/
-                /*left: 0;*/
-                /*top: 0;*/
-                /*right: 0;*/
-                /*bottom: 0;*/
-                /*margin: auto;*/
+                left: -2px;
+                right: -2px;
+                top: -2px;
+                bottom: -2px;
+                margin: 0;
                 width: auto;
                 height: auto;
-                background-color: rgba(51, 51, 51, 0.66) !important; /* override hover */
-                border-radius: 5px;
-                transition: none;
+                background-color: transparent !important;
+                cursor: pointer;
             }
+
+            /* play button image background */
+            .player--collapsed .player__action--play::after {
+                content: "";
+                position: absolute;
+                z-index: 10;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                background-color: rgba(51, 51, 51, 0.66);
+                border-radius: 5px;
+                transition: background-color var(--transition-hover);
+            }
+
+            .player--collapsed .player__action--play:hover::after {
+                background-color: rgba(51, 51, 51, 0.5);
+            }
+                .player--collapsed .player__action--play .player__icon {
+                    fill: #FFFFFF;
+                }
