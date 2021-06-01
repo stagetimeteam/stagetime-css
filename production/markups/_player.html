@@ -6,7 +6,7 @@
         <title>.player</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1622260873">
+        <link rel="stylesheet" href="../styles/style.css?1622520304">
     </head>
     <body>
 
@@ -22,12 +22,18 @@
 
 
                 <section class="player player--loading">
+                    <button class="player__handler" type="button">
+                        <svg class="player__angle" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1622520304#16-angle-down"></use>
+                        </svg>
+                        Expand
+                    </button>
                     <h2 class="player__heading">
                         Now playing
                     </h2>
                     <img class="player__preview"
-                         srcset="../temp/player@2x.jpg 2x"
-                         src="../temp/player.jpg"
+                         srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
+                         src="../temp/brandon-bell-when-the-air.jpg"
                          width="174"
                          height="99"
                          alt=""
@@ -49,27 +55,37 @@
                     <div class="player__controls">
                         <button class="player__action player__action--bookmark" type="button">
                             <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1622260873#16-bookmark"></use>
+                                <use xlink:href="../symbols/symbols.svg?1622520304#16-bookmark"></use>
                             </svg>
                         </button>
                         <button class="player__action player__action--disabled player__action--backward" type="button">
                             <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1622260873#16-backward"></use>
+                                <use xlink:href="../symbols/symbols.svg?1622520304#16-backward"></use>
                             </svg>
                         </button>
-                        <button class="player__action player__action--play player__action--disabled" type="button">
-                            <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1622260873#16-play"></use>
+                        <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/brandon-bell-when-the-air.jpg);">
+                            <svg class="player__icon player__icon--play" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622520304#16-play"></use>
                             </svg>
+                            <svg class="player__icon player__icon--pause" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622520304#16-pause"></use>
+                            </svg>
+                            <div class="player__visualization playback">
+                                <div class="playback__bar"></div>
+                                <div class="playback__bar"></div>
+                                <div class="playback__bar"></div>
+                                <div class="playback__bar"></div>
+                                <div class="playback__bar"></div>
+                            </div>
                         </button>
                         <button class="player__action player__action--forward" type="button">
                             <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1622260873#16-forward"></use>
+                                <use xlink:href="../symbols/symbols.svg?1622520304#16-forward"></use>
                             </svg>
                         </button>
                         <button class="player__action player__action--shuffle" type="button">
                             <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1622260873#16-shuffle"></use>
+                                <use xlink:href="../symbols/symbols.svg?1622520304#16-shuffle"></use>
                             </svg>
                         </button>
                     </div>
@@ -107,7 +123,7 @@ var wavesurfer = WaveSurfer.create({
             <br>
             <h3>Ready state</h3>
             <p>
-                Once init start loading songs. When song is loaded parsed and the waveform created (on <b>event</b> event)
+                Once init it will start loading first song. When song is loaded parsed and the wave peaks created (on <b>ready</b> event)
                 please add <b>.player--ready</b> class. This will show wave on the screen
                 because by default it was hidden via <b>opacity: 0</b>.
             </p>
@@ -121,23 +137,25 @@ var wavesurfer = WaveSurfer.create({
             <br>
             <h3>Loading state</h3>
             <p>
-                When song (or library itself) are downloading please add <b>.player--loading</b>.
-                It will show loading indicator.
+                When song (or library itself) is being downloaded please add <b>.player--loading</b>.
+                It will show loading indicator. You want to load page with this class added by default.
             </p>
             <p>
-                At some point it is opposite case to <b>.player--ready</b> but just in case I separate these
-                cases to two different classes. Maybe if you decide to cover downloading error you won't be needed
-                any of these classes.
+                At some point of view this loading case is opposite to <b>.player--ready</b> and one of them could be enough.
+                You can use <b>ready</b> even to detect both cases.
+                But whole thing is quite complicated so lets just in case separate these cases to be more straightforward.
+                Many things in CSS relate to them.
             </p>
 
 
             <br>
-            <h3>Play/Pause</h3>
+            <h3>Play and Pause states</h3>
 
             <p>
-                Swap icons <b>16-play</b> and <b>16-pause</b>. To do so just update <b>href</b> attribute of <b>use</b> tag inside of svg icon:
-                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-play")</b>
-                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-pause")</b>
+                In addition to the pair of <b>.player--loading</b> and <b>.player--ready</b> we have another pair of classes:
+                <b>.player--playing</b> and <b>.player--paused</b>. Use <b>play</b> and <b>pause</b> events to catch related cases.
+                Again, one of them could be enough but just for simplicity lets have both. There is a complicated scheme
+                of icons swapping in CSS related to these classes.
             </p>
 
 
@@ -154,12 +172,52 @@ var wavesurfer = WaveSurfer.create({
             <h3>Toggle bookmark and shuffle</h3>
 
             <p>
-                When song is bookmarked please change:<br> <b>16-bookmark</b> to <b>16-bookmarked</b>
+                When song is bookmarked please change:<br>
+                <b>16-bookmark</b> to <b>16-bookmarked</b>
                 <br>And same for shuffle:
                 <br><b>16-shuffle</b> to <b>16-shuffled</b>
             </p>
 
+            <p>
+                You can swap icons in the sprite by updating <b>href</b> attribute of <b>use</b> tag inside of svg icon:
+                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-bookmark")</b>
+                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-bookmarked")</b>
+                <br>and:
+                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-shuffle")</b>
+                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-shuffled")</b>
+            </p>
 
+
+            <br>
+            <br>
+            <br>
+            <h2>Collapsed case</h2>
+            <p>
+                Just add <b>.player--collapsed</b> to change player layout. Some parts of player of it will be hidden
+                while another parts will be repositioned.
+            </p>
+            <p>
+                Most of complications will happen inside of play button. Please note that
+                is is still similar <b>.player__action--play</b> button that was at the bottom of the player.
+                So all JS events and other code pieces related to that button will work here too.
+                No actions required.
+            </p>
+            <p>
+                Only need to make sure play button has background image like so:
+                <b>style="background-image: url(../temp/brandon-bell-when-the-air.jpg);"</b>
+                from the very beginning. Don't need to provide retina version here or cut another sizes. Just
+                use same images as in the <b>.player__preview</b>. It's about the needed size.
+            </p>
+            <h3>Collapse when?</h3>
+            <p>
+                To add <b>.player--collapsed</b> class please catch a click on <b>.player__handler</b> button.
+            </p>
+            <p>
+                To remove <b>.player--collapsed</b> when player is already collapsed:
+                <br>1) Catch the same click on <b>.player__handler</b> button.
+                <br>2) Catch the click on whole player and check if:
+                <br><b>!$(event.target).closest('.player__handler, .player__action--play').length</b>
+            </p>
 
 
 
@@ -183,14 +241,14 @@ var wavesurfer = WaveSurfer.create({
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
-        <script src="../scripts/_operations.js?1622260873"></script>
-        <script src="../scripts/_profile.js?1622260873"></script>
-        <script src="../scripts/_mfp.js?1622260873"></script>
-        <script src="../scripts/_search.js?1622260873"></script>
-        <script src="../scripts/_carousel.js?1622260873"></script>
-        <script src="../scripts/_player.js?1622260873"></script>
-        <script src="../scripts/_updates.js?1622260873"></script>
-        <script src="../scripts/_dash-side.js?1622260873"></script>
+        <script src="../scripts/_operations.js?1622520304"></script>
+        <script src="../scripts/_profile.js?1622520304"></script>
+        <script src="../scripts/_mfp.js?1622520304"></script>
+        <script src="../scripts/_search.js?1622520304"></script>
+        <script src="../scripts/_carousel.js?1622520304"></script>
+        <script src="../scripts/_player.js?1622520304"></script>
+        <script src="../scripts/_updates.js?1622520304"></script>
+        <script src="../scripts/_dash-side.js?1622520304"></script>
 
 
     </body>

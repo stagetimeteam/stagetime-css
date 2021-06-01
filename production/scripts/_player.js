@@ -76,13 +76,11 @@
 
     /* Toggle Play/Pause icon */
     wavesurfer.on('play', function () {
-        var $playButton = $(wavesurfer.params.container).parents('.player').find('.player__action--play');
-        $playButton.find('use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
+        $(wavesurfer.params.container).parents('.player').addClass('player--playing').removeClass('player--paused');
     })
 
     wavesurfer.on('pause', function () {
-        var $playButton = $(wavesurfer.params.container).parents('.player').find('.player__action--play');
-        $playButton.find('use').attr("xlink:href", "../symbols/symbols.svg#16-play");
+        $(wavesurfer.params.container).parents('.player').addClass('player--paused').removeClass('player--playing');
     });
 
     $('.player__action--bookmark').on('click', function (){
@@ -94,6 +92,16 @@
     });
 
 
+    /* Collapsed case */
 
+    $('.player__handler').on('click', function () {
+        $(this).parents('.player').toggleClass('player--collapsed');
+    });
+
+    $('.player').on('click', function () {
+        if (!$(event.target).closest('.player__handler, .player__action--play').length) {
+            $(this).removeClass('player--collapsed');
+        }
+    });
 
 })(jQuery);
