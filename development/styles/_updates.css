@@ -13,6 +13,7 @@
         .updates__swap-icon {
             margin-top: 11px;
             margin-right: -2px;
+            fill: #8B8B8B;
         }
 
         .updates__label {
@@ -105,5 +106,5 @@
     }
 
     .updates--sidebar.updates--switched-to-news .updates__body {
-        height: 220px; /* height of news plus arrows */
+        height: 247px; /* height of news plus arrows */
     }
