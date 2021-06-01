@@ -38,7 +38,7 @@
 
 }
     .updates--switch-to-news .updates__body {
-        height: 191px;
+        height: 191px; /* default height for news */
     }
         .updates--switch-to-news .updates__section--media {
             visibility: hidden;
@@ -50,3 +50,16 @@
             opacity: 1;
         }
 
+
+
+.updates--sidebar {
+
+}
+    .updates--sidebar .updates__body {
+        height: 220px; /* height of media plus arrows */
+    }
+
+    .updates--sidebar.updates--switch-to-news .updates__body {
+        height: 220px; /* height of news plus arrows */
+
+    }

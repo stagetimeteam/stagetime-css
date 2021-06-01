@@ -39,13 +39,10 @@
     }
 
 
+.carousel--faded-right {
 
-
-
-.carousel--horizontal {
-    position: relative;
 }
-    .carousel--horizontal.carousel--initialized::after {
+    .carousel--faded-right::after {
         content: "";
         position: absolute;
         right: 0;
@@ -63,72 +60,103 @@
         /* stylelint-enable */
     }
 
-    .carousel--horizontal .carousel__container {
 
+
+
+.carousel--for-user-card {
+
+}
+    .carousel--for-user-card .carousel__item {
+        margin-right: 4px;
     }
-        .carousel--horizontal .carousel__item {
-            margin-left: 12px;
-        }
 
-        .carousel--horizontal .carousel__item:first-child {
-            margin-left: 0;
-        }
+    .carousel--for-user-card .carousel__item:last-child {
+        margin-right: 0;
+    }
 
 
-    .carousel--horizontal .carousel__control {
+    .carousel--for-user-card .carousel__control {
         position: absolute;
         z-index: 100;
         right: -12px;
     }
 
-    .carousel--horizontal .carousel__control--prev {
-        top: 64px;
+    .carousel--for-user-card .carousel__control--prev {
+        top: 48px;
     }
 
-    .carousel--horizontal .carousel__control--next {
-        top: 22px;
-    }
-
-    .carousel--horizontal .carousel__control:hover {
-
+    .carousel--for-user-card .carousel__control--next {
+        top: 10px;
     }
 
 
 
-.carousel--vertical {
+
+.carousel--for-updates {
+
+}
+    .carousel--for-updates .carousel__item {
+        margin-right: 4px;
+    }
+
+    .carousel--for-updates .carousel__item:last-child {
+        margin-right: 0;
+    }
+
+
+    .carousel--for-updates .carousel__control {
+        position: absolute;
+        z-index: 100;
+        top: 50%;
+        right: -12px;
+    }
+
+    .carousel--for-updates .carousel__control--prev {
+        margin-top: -42px;
+    }
+
+    .carousel--for-updates .carousel__control--next {
+        margin-top: 2px;
+    }
+
+
+
+
+.carousel--for-side-updates {
     position: relative;
     padding-bottom: 56px;
 }
-    .carousel--vertical.carousel--initialized::after {
+    .carousel--for-side-updates.carousel--initialized::after {
 
     }
 
-    .carousel--vertical .carousel__container {
+    .carousel--for-side-updates .carousel__container {
 
     }
-        .carousel--vertical .carousel__item {
-            margin-left: 12px;
+        .carousel--for-side-updates .carousel__item {
+            margin-right: 4px;
         }
 
-        .carousel--vertical .carousel__item:first-child {
-            margin-left: 0;
+        .carousel--for-side-updates .carousel__item:last-child {
+            margin-right: 0;
         }
 
 
-    .carousel--vertical .carousel__control {
+    .carousel--for-side-updates .carousel__control {
         position: absolute;
         z-index: 100;
+        left: 50%;
         bottom: 0;
     }
 
-    .carousel--vertical .carousel__control--prev {
-        left: 68px;
+    .carousel--for-side-updates .carousel__control--prev {
+        margin-left: -42px;
     }
 
-    .carousel--vertical .carousel__control--next {
-        right: 68px;
+    .carousel--for-side-updates .carousel__control--next {
+        margin-left: 2px;
     }
 
-    .carousel--vertical .carousel__control:hover {
+    .carousel--for-side-updates .carousel__control:hover {
 
     }

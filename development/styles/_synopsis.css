@@ -64,10 +64,4 @@
             .synopsis__listing {
                 margin-top: 15px;
             }
-                .synopsis__listing .carousel__item {
-                    margin-left: 3px;
-                }
 
-                .synopsis__listing .carousel__item:first-child {
-                    margin-left: 0;
-                }

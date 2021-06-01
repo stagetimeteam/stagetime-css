@@ -2,6 +2,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
+    padding: 8px 4px; /* because of shadow */
 }
     .media-card__preview {
 
@@ -10,7 +11,7 @@
             position: relative;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
         }
             .media-card__image {
                 vertical-align: top;
@@ -37,8 +38,8 @@
 
         .media-card__icon {
             position: absolute;
-            left: 15px;
-            top: 15px;
+            left: 19px;
+            top: 24px;
             right: auto;
             bottom: auto;
             margin: 0;
@@ -48,9 +49,9 @@
 
     .media-card__heading {
         position: absolute;
-        left: 15px;
-        right: 15px;
-        bottom: 13px;
+        left: 19px;
+        right: 19px;
+        bottom: 21px;
         font-weight: 600;
         font-size: 10px;
         line-height: 16px;
@@ -61,8 +62,8 @@
 
     .media-card__duration {
         position: absolute;
-        left: 15px;
-        bottom: 10px;
+        left: 19px;
+        bottom: 18px;
         font-size: 10px;
         line-height: 20px;
         color: #AAAAAA;
@@ -74,8 +75,8 @@
 
     .media-card__photo {
         position: absolute;
-        left: 15px;
-        top: 15px;
+        left: 19px;
+        top: 23px;
         visibility: hidden;
         opacity: 0;
         transition: visibility var(--transition-show),
@@ -84,9 +85,9 @@
 
     .media-card__name {
         position: absolute;
-        left: 15px;
-        max-width: calc(100% - 30px);
-        bottom: 28px;
+        left: 19px;
+        max-width: calc(100% - 38px);
+        bottom: 36px;
         font-weight: 600 !important; /* !important is to override font-weight in .link */
         font-size: 10px;
         line-height: 16px;
@@ -99,8 +100,8 @@
 
     .media-card__actions {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 4px;
+        top: 8px;
     }
         .media-card__actions .operations__icon {
             fill: #FFFFFF;

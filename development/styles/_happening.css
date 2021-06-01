@@ -29,6 +29,8 @@
 
 
     .happening__body {
-        margin-top: 12px;
+        margin-top: 4px;
+        margin-left: -4px;
+        margin-right: -4px;
     }
 
