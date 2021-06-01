@@ -33,23 +33,47 @@
             opacity: 0;
         }
 
+        .updates__switch:hover .toggler__knob {
+            background-color: #333333;
+        }
 
-.updates--switch-to-news {
+        /* left label */
+        .updates:not(.updates--switched-to-news) .updates__switch:hover .toggler__label {
+
+        }
+
+        /* right label */
+        .updates:not(.updates--switched-to-news) .updates__switch:hover .toggler__label ~ .toggler__label {
+            color: #333333;
+        }
+
+
+.updates--switched-to-news {
 
 }
-    .updates--switch-to-news .updates__body {
+    .updates--switched-to-news .updates__body {
         height: 191px; /* default height for news */
     }
-        .updates--switch-to-news .updates__section--media {
+        .updates--switched-to-news .updates__section--media {
             visibility: hidden;
             opacity: 0;
         }
 
-        .updates--switch-to-news .updates__section--news {
+        .updates--switched-to-news .updates__section--news {
             visibility: visible;
             opacity: 1;
         }
 
+
+        /* left label */
+        .updates--switched-to-news .updates__switch:hover .toggler__label {
+            color: #333333;
+        }
+
+        /* right label */
+        .updates--switched-to-news .updates__switch:hover .toggler__label ~ .toggler__label {
+            color: #757575;
+        }
 
 
 .updates--sidebar {
@@ -59,7 +83,7 @@
         height: 220px; /* height of media plus arrows */
     }
 
-    .updates--sidebar.updates--switch-to-news .updates__body {
+    .updates--sidebar.updates--switched-to-news .updates__body {
         height: 220px; /* height of news plus arrows */
 
     }

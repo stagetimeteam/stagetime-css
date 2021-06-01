@@ -3,9 +3,9 @@
 
     function updatesSwitch() {
         if ( $('.updates__switch .toggler__widget').prop('checked') ) {
-            $('.updates').addClass('updates--switch-to-news')
+            $('.updates').addClass('updates--switched-to-news')
         } else {
-            $('.updates').removeClass('updates--switch-to-news')
+            $('.updates').removeClass('updates--switched-to-news')
         }
     }
 
