@@ -181,6 +181,16 @@
                 transition: none;
             }
 
+            .player__visualization {
+                position: absolute;
+                z-index: 30;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+            }
+
         .player__action--disabled,
         .player__action--disabled:hover {
             cursor: default;
@@ -194,9 +204,32 @@
         .player__action--play {
             background-size: 0 0; /* hide background image */
         }
-            .player__action--play .player__icon {
+            .player__icon {
 
             }
+
+            .player__icon--play {
+
+            }
+
+            .player__icon--pause {
+                display: none;
+            }
+
+            .player__visualization,
+            .player__visualization.playback {
+                display: none;
+            }
+
+
+            .player--playing .player__icon--play  {
+                display: none;
+            }
+
+            .player--playing .player__icon--pause  {
+                display: block;
+            }
+
 
             /* play button background */
             .player__action--play::before {
@@ -341,3 +374,22 @@
                 .player--collapsed .player__action--play .player__icon {
                     fill: #FFFFFF;
                 }
+
+
+            .player--collapsed .player__icon {
+
+            }
+
+            .player--collapsed .player--playing .player__icon--play {
+                display: none; /* will be replaced with visualization */
+            }
+
+            .player--collapsed .player__icon--pause {
+                display: none;
+            }
+
+            .player--collapsed.player--playing .player__visualization,
+            .player--collapsed.player--playing .player__visualization.playback {
+                display: flex;
+            }
+

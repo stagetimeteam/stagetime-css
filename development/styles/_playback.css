@@ -1,7 +1,7 @@
 .playback {
     width: 15px;
     height: 14px;
-    display: inline-flex;
+    display: flex;
     align-items: flex-end;
 }
     .playback__bar {
