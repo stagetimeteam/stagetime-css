@@ -7,6 +7,51 @@
     border-radius: 10px;
     overflow: hidden;
 }
+    .player__handler {
+        position: absolute;
+        z-index: 50;
+        right: 0;
+        top: 0;
+        width: 36px;
+        height: 44px;
+        background-color: transparent;
+        border: none;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+    }
+        /* circle */
+        .player__handler::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 16px;
+            height: 16px;
+            background-color: rgba(221, 234, 241, 0.25);
+            border-radius: 50%;
+            transition: background-color var(--transition-hover);
+        }
+
+        /* angle icon */
+        .player__angle {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            vertical-align: top;
+            fill: #FFFFFF;
+            transform: scaleY(-1);
+            transition: fill var(--transition-hover),
+                        transform var(--transition-show);
+        }
+
     .player__handler:hover {
 
     }
@@ -204,49 +249,6 @@
             .player__action--play.player__action--disabled:hover .player__icon {
                 fill: #BDCDD5;
             }
-
-    .player__handler {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 36px;
-        height: 44px;
-        background-color: transparent;
-        border: none;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
-        cursor: pointer;
-    }
-        .player__handler::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: 16px;
-            height: 16px;
-            background-color: rgba(221, 234, 241, 0.25);
-            border-radius: 50%;
-            transition: background-color var(--transition-hover);
-        }
-
-        .player__angle {
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            vertical-align: top;
-            fill: #FFFFFF;
-            transform: scaleY(-1);
-            transition: fill var(--transition-hover),
-                        transform var(--transition-show);
-        }
-
 
 
 .player--collapsed {
