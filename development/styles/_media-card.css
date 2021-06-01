@@ -71,6 +71,7 @@
         opacity: 0;
         transition: visibility var(--transition-show),
                     opacity var(--transition-show);
+        pointer-events: none;
     }
 
     .media-card__photo {
@@ -88,14 +89,20 @@
         left: 19px;
         max-width: calc(100% - 38px);
         bottom: 36px;
-        font-weight: 600 !important; /* !important is to override font-weight in .link */
+        font-weight: 600;
         font-size: 10px;
         line-height: 16px;
         color: #FFFFFF;
+        text-decoration: none;
         visibility: hidden;
         opacity: 0;
         transition: visibility var(--transition-show),
-                    opacity var(--transition-show);
+                    opacity var(--transition-show),
+                    color var(--transition-hover);
+    }
+
+    .media-card__name:hover {
+        color: #AAAAAA;
     }
 
     .media-card__actions {
@@ -120,6 +127,9 @@
         /* custom gradients in html */
     }
 
+    .media-card--audio .media-card__name:hover {
+        color: #545454;
+    }
 
 .media-card:hover {
 
