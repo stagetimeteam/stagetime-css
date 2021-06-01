@@ -1,0 +1,57 @@
+.playback {
+    width: 15px;
+    height: 14px;
+    display: inline-flex;
+    align-items: flex-end;
+}
+    .playback__bar {
+        width: 1px;
+        height: 100%;
+        background-color: #FFFFFF;
+        margin-left: 1px;
+        margin-right: 1px;
+        transition: height 0.23s ease;
+    }
+
+    .playback__bar:nth-child(1) {
+        height: 20%;
+        animation: bapSoundBar 2.8s ease 0.2s infinite alternate;
+    }
+
+    .playback__bar:nth-child(2) {
+        height: 45%;
+        animation: bapSoundBar 2.2s ease 0.1s infinite alternate;
+    }
+
+    .playback__bar:nth-child(3) {
+        height: 8%;
+        animation: bapSoundBar 2.6s ease 0.1s infinite alternate;
+    }
+
+    .playback__bar:nth-child(4) {
+        height: 68%;
+        animation: bapSoundBar 2.7s ease 0.4s infinite alternate;
+    }
+
+    .playback__bar:nth-child(5) {
+        height: 48%;
+        animation: bapSoundBar 2.4s ease 0.1s infinite alternate;
+    }
+
+/* Keyframes from here: https://www.jqueryscript.net/demo/single-button-audio-player/ */
+/* stylelint-disable */
+@keyframes bapSoundBar {
+     0% { height:  20%; }
+    10% { height:  50%; }
+    20% { height:  20%; }
+    30% { height:  70%; }
+    40% { height:  10%; }
+    50% { height:  60%; }
+    60% { height:  40%; }
+    70% { height: 100%; }
+    80% { height:  20%; }
+    90% { height:  50%; }
+   100% { height: 100%; }
+}
+/* stylelint-enable */
+
