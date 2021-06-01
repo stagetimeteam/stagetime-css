@@ -70,6 +70,7 @@
     }
 
 
+
 .action--faded {
 
 }
@@ -81,18 +82,24 @@
         background-color: #F4F4F4;
         border-color: transparent;
     }
+        .action--faded .action__icon {
+            fill: #8B8B8B;
+        }
 
+        .action--faded .action__label {
+            font-size: 8px;
+            color: #8B8B8B;
+        }
+
+.action--faded:hover {
+
+}
     .action--faded:hover .action__image {
         background-color: #8B8B8B;
     }
-        .action--faded .action__icon {
+        .action--faded:hover .action__icon {
             fill: #FFFFFF;
         }
-
-    .action--faded .action__label {
-        font-size: 8px;
-        color: #8B8B8B;
-    }
 
 
 
