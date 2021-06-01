@@ -377,16 +377,8 @@
                 transition: background-color var(--transition-hover);
             }
 
-            .player--collapsed .player__action--play:hover::after {
-                background-color: rgba(51, 51, 51, 0.5);
-            }
-                .player--collapsed .player__action--play .player__icon {
-                    fill: #FFFFFF;
-                }
-
-
-            .player--collapsed .player__icon {
-
+            .player--collapsed .player__action--play .player__icon {
+                fill: #FFFFFF;
             }
 
             .player--collapsed .player__visualization {
@@ -396,12 +388,37 @@
             }
 
 
-            .player--collapsed .player--playing .player__icon--play {
-                opacity: 0;  /* will be replaced with visualization */
-                visibility: hidden;
+        .player--collapsed .player__action--play:hover {
+
+        }
+            .player--collapsed .player__action--play:hover::after {
+                background-color: rgba(51, 51, 51, 0.5);
             }
 
-            .player--collapsed .player__icon--pause {
+            .player--collapsed .player__action--play:hover .player__icon {
+
+            }
+
+        .player--collapsed .player__action--play.player__action--disabled {
+
+        }
+            .player--collapsed .player__action--play.player__action--disabled::after {
+                background-color: rgba(51, 51, 51, 0.5);
+            }
+
+            .player--collapsed .player__action--play.player__action--disabled .player__icon {
+                fill: #BDCDD5;
+            }
+
+
+
+        /* Replace pause icon with visualization */
+
+        .player--collapsed.player--playing {
+
+        }
+
+            .player--collapsed.player--playing .player__icon--pause {
                 opacity: 0;
                 visibility: hidden;
             }
@@ -411,13 +428,18 @@
                 visibility: visible;
             }
 
-            .player--collapsed.player--playing .player__action--play:hover .player__visualization {
-                opacity: 0;
-                visibility: hidden;
-            }
 
+        /* Show pause icon on hover */
 
+        .player--collapsed.player--playing .player__action--play:hover {
+
+        }
             .player--collapsed.player--playing .player__action--play:hover .player__icon--pause {
                 opacity: 1;
                 visibility: visible;
+            }
+
+            .player--collapsed.player--playing .player__action--play:hover .player__visualization {
+                opacity: 0;
+                visibility: hidden;
             }
