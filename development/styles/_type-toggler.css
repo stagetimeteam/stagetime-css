@@ -10,6 +10,11 @@
     cursor: pointer;
     transition: background-color var(--transition-hover);
 }
+
+.type-toggler:hover {
+    background-color: #F4F4F4;
+}
+
     .type-toggler__widget {
         position: absolute;
         left: 0;
