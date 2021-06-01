@@ -166,7 +166,13 @@
             user-select: none;
         }
             .player__icon {
-                position: relative;
+                position: absolute;
+                z-index: 30; /* higher than buttons background */
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
                 vertical-align: top;
                 fill: #FFFFFF;
                 transition: fill var(--transition-hover);
@@ -183,7 +189,7 @@
 
             .player__visualization {
                 position: absolute;
-                z-index: 30;
+                z-index: 30; /* higher than buttons background */
                 left: 0;
                 top: 0;
                 right: 0;
@@ -222,11 +228,11 @@
             }
 
 
-            .player--playing .player__icon--play  {
+            .player--playing .player__icon--play {
                 display: none;
             }
 
-            .player--playing .player__icon--pause  {
+            .player--playing .player__icon--pause {
                 display: block;
             }
 
@@ -235,7 +241,7 @@
             .player__action--play::before {
                 content: "";
                 position: absolute;
-                z-index: 10;
+                z-index: 10; /* lower than icon */
                 left: 0;
                 top: 0;
                 right: 0;
@@ -250,10 +256,6 @@
 
             .player__action--play:active .player__action--play::before {
                 transition: none;
-            }
-
-            .player__action--play .player__icon {
-                z-index: 20;
             }
 
         .player__action--play:hover {
@@ -393,3 +395,12 @@
                 display: flex;
             }
 
+            .player--collapsed.player--playing .player__action--play:hover .player__visualization,
+            .player--collapsed.player--playing .player__action--play:hover .player__visualization.playback {
+                display: none;
+            }
+
+
+            .player--collapsed.player--playing .player__action--play:hover .player__icon--pause {
+                display: block;
+            }
