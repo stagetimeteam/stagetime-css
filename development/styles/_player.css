@@ -1,4 +1,5 @@
 .player {
+    position: relative;
     padding: 15px 26px;
     background-color: #9CB2BE;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
@@ -186,3 +187,65 @@
                 fill: #BDCDD5;
             }
 
+    .player__handler {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 36px;
+        height: 44px;
+        background-color: transparent;
+        border: none;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+        cursor: pointer;
+    }
+        .player__handler::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 16px;
+            height: 16px;
+            background-color: rgba(221, 234, 241, 0.25);
+            border-radius: 50%;
+            transition: background-color var(--transition-hover)
+        }
+
+        .player__angle {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            vertical-align: top;
+            fill: #FFFFFF;
+            transition: fill var(--transition-hover),
+                        transform var(--transition-show);
+        }
+
+    .player__handler {
+
+    }
+        .player__handler:hover::before {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .player__handler:hover .player__angle {
+            fill: #9CB2BE
+        }
+
+    .player--expanded {
+
+    }
+        .player--expanded::before {
+
+        }
+
+        .player--expanded .player__angle {
+            transform: scaleY(-1);
+        }
