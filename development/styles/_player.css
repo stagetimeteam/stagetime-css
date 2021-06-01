@@ -175,7 +175,9 @@
                 margin: auto;
                 vertical-align: top;
                 fill: #FFFFFF;
-                transition: fill var(--transition-hover);
+                transition: fill var(--transition-hover),
+                            opacity var(--transition-show),
+                            visibility var(--transition-show);
                 user-select: none;
             }
 
@@ -195,6 +197,9 @@
                 right: 0;
                 bottom: 0;
                 margin: auto;
+                display: none; /* will be shown in collapsed case only */
+                transition: opacity var(--transition-show),    /* after we show it using dispaly:block in collapsed case, this line will be used to create transitions via opacity */
+                            visibility var(--transition-show);
             }
             .player__visualization.playback {
                 position: absolute;
@@ -213,33 +218,7 @@
         .player__action--play {
             background-size: 0 0; /* hide background image */
         }
-            .player__icon {
-
-            }
-
-            .player__icon--play {
-
-            }
-
-            .player__icon--pause {
-                display: none;
-            }
-
-            .player__visualization {
-                display: none;
-            }
-
-
-            .player--playing .player__icon--play {
-                display: none;
-            }
-
-            .player--playing .player__icon--pause {
-                display: block;
-            }
-
-
-            /* play button background */
+            /* play button background layer */
             .player__action--play::before {
                 content: "";
                 position: absolute;
@@ -258,6 +237,32 @@
 
             .player__action--play:active .player__action--play::before {
                 transition: none;
+            }
+
+
+            .player__icon {
+
+            }
+
+            .player__icon--play {
+                /* Play icon is visible by default. */
+                /* Play icon is also visible when .player--loading and .player--ready but disabled (see below) */
+            }
+
+            .player__icon--pause {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+
+            .player--playing .player__icon--play {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .player--playing .player__icon--pause {
+                opacity: 1;
+                visibility: visible;
             }
 
         .player__action--play:hover {
@@ -384,23 +389,35 @@
 
             }
 
+            .player--collapsed .player__visualization {
+                display: block; /* it was hidden by default but now this thing is part of the game */
+                opacity: 0;    /* it is still hidden by default but will be replacing play button */
+                visibility: hidden;
+            }
+
+
             .player--collapsed .player--playing .player__icon--play {
-                display: none; /* will be replaced with visualization */
+                opacity: 0;  /* will be replaced with visualization */
+                visibility: hidden;
             }
 
             .player--collapsed .player__icon--pause {
-                display: none;
+                opacity: 0;
+                visibility: hidden;
             }
 
             .player--collapsed.player--playing .player__visualization {
-                display: block;
+                opacity: 1;
+                visibility: visible;
             }
 
             .player--collapsed.player--playing .player__action--play:hover .player__visualization {
-                display: none;
+                opacity: 0;
+                visibility: hidden;
             }
 
 
             .player--collapsed.player--playing .player__action--play:hover .player__icon--pause {
-                display: block;
+                opacity: 1;
+                visibility: visible;
             }
