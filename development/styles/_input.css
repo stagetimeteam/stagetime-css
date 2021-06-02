@@ -1,5 +1,5 @@
 .input {
-
+    position: relative;
 }
     .input__widget {
         width: 100%;
@@ -112,4 +112,18 @@
 }
     .input--rounded .input__widget {
         border-radius: 20px;
+    }
+
+
+/* Icon */
+    .input__icon {
+        position: absolute;
+        left: 18px;
+        top: 50%;
+        margin-top: -8px;
+        pointer-events: none;
+    }
+
+    .input__icon ~ .input__widget {
+        padding-left: 44px;
     }
