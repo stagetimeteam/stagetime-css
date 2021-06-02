@@ -44,14 +44,25 @@
 
             <br>
             <br>
-            <br>
-            <h2>.input--extendable</h2>
+            <h3>.input--extendable</h3>
             <p>
                 Use simple script to extend this field while user is typing.
                 <br>See <a href="../scripts/_input.js">../scripts/_input.js</a> for sample.
             </p>
 
             <div class="input input--area input--extendable">
+                <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
+            </div>
+
+            <br>
+            <br>
+            <h3>.input--extendable-via-plugin</h3>
+            <p>
+                Alternatively you can use <a href="https://bgrins.github.io/ExpandingTextareas">this jQuery plugin</a> to do the same job.
+                If I understand correctly there is also vanilla JS version included in dist/ folder.
+            </p>
+
+            <div class="input input--area input--extendable-via-plugin">
                 <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
             </div>
 
@@ -91,6 +102,7 @@
         <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../scripts/_operations.js"></script>
         <script src="../scripts/_profile.js"></script>
         <script src="../scripts/_mfp.js"></script>

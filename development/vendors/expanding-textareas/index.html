@@ -1,0 +1,50 @@
+<!doctype html><html dl><head>
+<title>Expanding Textareas</title>
+<link rel="stylesheet" type="text/css" href="libs/homepage.css">
+<script type='text/javascript' src='libs/jquery-1.11.0.js'></script>
+<script type='text/javascript' src='dist/expanding.jquery.js'></script>
+<script type='text/javascript' src='libs/homepage.js'></script>
+</head>
+<body>
+
+<div id="demo">
+  <textarea class="expanding" spellcheck="false"></textarea>
+</div>
+
+<div id="downarrow">&caron;</div>
+<div id="narrative">
+<div class="top">
+  <h1>Expanding Textareas</h1>
+  <iframe src="http://ghbtns.com/github-btn.html?user=bgrins&amp;repo=ExpandingTextareas&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
+</div>
+
+
+  <h2>How do they work?</h2>
+  <p>Based on Neil Jenkins' work at <a href="www.alistapart.com/articles/expanding-text-areas-made-elegant/">alistapart</a>,
+  an invisible clone pre element is maintained behind your textarea.  Whenever
+  the height of this pre changes, the textarea is updated.</p>
+
+  <h2>Usage</h2>
+  <p>Include <code><a href="expanding.js">expanding.js</a></code> and jQuery in your page.  Any textareas with the
+    <code>expanding</code> class will then be transformed.</p>
+
+  <pre><code>&lt;script src='expanding.js'&gt;&lt;/script&gt;
+&lt;textarea class='expanding'&gt;&lt;/textarea&gt;</code></pre>
+
+  <textarea class="expanding">Try typing here...</textarea>
+
+  <p>Advanced usage details on the
+    <a href="https://github.com/bgrins/ExpandingTextareas">GitHub page</a>
+    (includes programmatic creation).</p>
+
+  <h2>Styling</h2>
+
+  <p>You can style the textarea however you like (including <code>max-height</code>).
+  This plugin has been tested in Chrome, Safari, Firefox, IE8, and mobile Safari.</p>
+
+  <p class="footer">made by <a href="http://github.com/bgrins">@bgrins</a>, <a href="http://github.com/domchristie">@domchristie</a>, and <a href="http://github.com/bgrins/ExpandingTextareas/graphs/contributors">contributors</a></p>
+
+</div>
+
+</body>
+</html>
