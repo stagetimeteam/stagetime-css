@@ -32,9 +32,9 @@
     }
 
     /* stylelint-disable block-opening-brace-space-before */
-    .input__widget::-webkit-input-placeholder { font-style: normal; color: #aaaaaa; }
-    .input__widget::-moz-placeholder          { font-style: normal; color: #aaaaaa; opacity: 1; }
-    .input__widget:-ms-input-placeholder      { font-style: normal; color: #aaaaaa; }
+    .input__widget::-webkit-input-placeholder { font-style: normal; color: #AAAAAA; }
+    .input__widget::-moz-placeholder          { font-style: normal; color: #AAAAAA; opacity: 1; }
+    .input__widget:-ms-input-placeholder      { font-style: normal; color: #AAAAAA; }
     /* stylelint-enable */
 
 
@@ -71,6 +71,13 @@
         box-shadow: none;
         border-color: #E8E8E8;
         outline: auto; /* for keyboard navigation */
+    }
+
+.input--placeholder-is-chosen {
+
+}
+    .input--placeholder-is-chosen .input__widget {
+        color: #AAAAAA;
     }
 
 @supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {

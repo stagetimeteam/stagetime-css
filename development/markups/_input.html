@@ -82,7 +82,31 @@
                 </select>
             </div>
 
+            <br>
+            <br>
+            <h3>.input--placeholder-is-chosen</h3>
+            <p>
+                There is a problem with default &lt;select&gt; tag.
+                It doesn't work with place <b>placeholder</b> attribute.
+                It make sense at some point: at least one value should always be selected.
+                On the other hand it looks out of place inside of a form with other
+                inputs that actually have placeholders. So lets fake it:
+            </p>
 
+            <div class="input input--select input--placeholder-is-chosen">
+                <select class="input__widget">
+                    <option value="placeholder">Country</option>
+                    <option>United States</option>
+                    <option>Russia</option>
+                    <option>Vietnam</option>
+                    <option>Thailand</option>
+                </select>
+            </div>
+
+            <p>
+                Here we assign one of the options as placeholder and when it's selected
+                we add <b>.input--placeholder-is-chosen</b> class. Please do the same.
+            </p>
 
             <br>
             <br>
