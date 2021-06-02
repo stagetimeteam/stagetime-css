@@ -63,11 +63,11 @@
             color: #757575;
         }
 
-        .ash-side__customize {
+        .dash-side__customize {
             margin-top: 25px;
         }
-        .ash-side__customize.button,
-        .ash-side__customize > .button {
+        .dash-side__customize.button,
+        .dash-side__customize > .button {
             width: 114px;
         }
 
