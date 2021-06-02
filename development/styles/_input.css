@@ -16,6 +16,9 @@
         font-size: 11px;
         line-height: 20px;
         color: #545454;
+        transition: background-color var(--transition-hover),
+                    border-color var(--transition-hover),
+                    box-shadow var(--transition-hover);
     }
 
     .input__widget:hover {
@@ -25,6 +28,7 @@
     .input__widget:focus {
         border-color: #757575;
         box-shadow: 0 0 0 1px #757575;
+        transition: none;
     }
 
     /* stylelint-disable block-opening-brace-space-before */
@@ -51,3 +55,46 @@
     .input--extendable .input__widget {
         resize: none;
     }
+
+
+.input--select {
+
+}
+
+    .input--select .input__widget:hover {
+        box-shadow: none;
+        background-color: #F2F2F2;
+        border-color: #E8E8E8;
+    }
+
+    .input--select .input__widget:focus {
+        box-shadow: none;
+        border-color: #E8E8E8;
+        outline: auto; /* for keyboard navigation */
+    }
+
+@supports (-webkit-appearance: none) or (-moz-appearance: none) or (appearance: none) {
+
+    .input--select {
+
+    }
+
+    .input--select .input__widget {
+        -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
+        padding-right: 44px;
+        background-image: url("../vectors/16-select.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: right 15px center;
+    }
+
+    .input--select:not(.input--disabled) .input__widget {
+        cursor: pointer;
+    }
+
+    .firefox .input--select .input__widget {
+        border-left-width: 15px;
+    }
+}
