@@ -25,3 +25,33 @@
         line-height: 18px;
         color: #C4C4C4;
     }
+
+
+
+.parsed-link--smaller {
+    /*position: relative;*/
+    /*display: block;*/
+    padding-left: 67px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    height: 46px;
+}
+    .parsed-link--smaller .parsed-link__icon {
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*top: 0;*/
+    }
+
+    .parsed-link--smaller .parsed-link__heading {
+        /*font-weight: bold;*/
+        /*font-size: 12px;*/
+        /*line-height: 18px;*/
+        /*color: #757575;*/
+    }
+
+    .parsed-link--smaller .parsed-link__url {
+        /*margin-top: 8px;*/
+        /*font-size: 12px;*/
+        /*line-height: 18px;*/
+        /*color: #C4C4C4;*/
+    }

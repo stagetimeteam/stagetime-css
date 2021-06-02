@@ -24,6 +24,10 @@
         color: #757575;
     }
 
+    .post__pre-attachment {
+        margin-top: 15px;
+    }
+
     .post__attachment {
         margin-top: 22px;
     }

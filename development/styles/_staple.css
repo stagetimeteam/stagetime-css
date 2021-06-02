@@ -37,6 +37,21 @@
         }
 
 
+
+.staple--smaller {
+    width: 46px;
+    height: 46px;
+    padding: 10px;
+}
+    .staple--smaller .staple__frame {
+        padding: 5px;
+    }
+        .staple--smaller .staple__icon {
+            width: 12px;
+            height: 12px;
+        }
+
+
 .staple--pale {
     background-color: #C4C4C4;
     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);
