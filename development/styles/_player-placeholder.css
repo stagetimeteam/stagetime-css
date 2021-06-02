@@ -15,7 +15,13 @@
     letter-spacing: -0.2px;
     text-align: left;
     cursor: pointer;
+    transition: background-color var(--transition-hover);
 }
+
+.player-placeholder:hover {
+    background-color: #C4C4C4;
+}
+
     .player-placeholder__play {
         position: absolute;
         left: 14px;
