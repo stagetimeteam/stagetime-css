@@ -112,11 +112,11 @@
     }
 
     .carousel--for-updates .carousel__control--prev {
-        margin-top: -42px;
+        margin-top: 2px;
     }
 
     .carousel--for-updates .carousel__control--next {
-        margin-top: 2px;
+        margin-top: -42px;
     }
 
 
