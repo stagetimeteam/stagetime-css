@@ -49,7 +49,7 @@
                 display: block;
                 padding: 10px 15px;
                 min-width: 100px;
-                background-color: #E8E8E8;
+                background-color: #F1F1F1;
                 border-radius: 20px;
                 font-weight: 600;
                 font-size: 10px;
@@ -58,6 +58,8 @@
                 text-align: center;
                 letter-spacing: -0.1px;
                 cursor: pointer;
+                transition: background-color var(--transition-hover),
+                            color var(--transition-hover);
             }
 
             .switch__label:hover {

@@ -17,6 +17,8 @@
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
+    transition: background-color var(--transition-hover),
+                color var(--transition-hover);
 }
     .button__icon {
         vertical-align: top;
@@ -53,19 +55,6 @@
 }
 
 
-.button--darker {
-    background-color: #E8E8E8;
-    color: #757575;
-    box-shadow: none;
-    text-transform: none;
-}
-
-.button--darker:hover,
-.button--darker:active {
-    background-color: #C4C4C4;
-    color: #757575;
-}
-
 
 .button--faded {
     background-color: #F4F4F4;
@@ -81,6 +70,39 @@
     background-color: #8B8B8B;
     color: #F4F4F4;
 }
+
+
+
+
+.button--lighter {
+    background-color: #F1F1F1;
+    color: #757575;
+    box-shadow: none;
+    text-transform: none;
+}
+
+.button--lighter:hover,
+.button--lighter:active {
+    background-color: #757575;
+    color: #F1F1F1;
+}
+
+
+
+.button--darker {
+    background-color: #E8E8E8;
+    color: #757575;
+    box-shadow: none;
+    text-transform: none;
+}
+
+.button--darker:hover,
+.button--darker:active {
+    background-color: #C4C4C4;
+    color: #757575;
+}
+
+
 
 
 .button--alternate {
