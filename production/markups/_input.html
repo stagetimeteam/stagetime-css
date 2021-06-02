@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.input</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1622615869">
+    </head>
+    <body>
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.input</h1>
+
+            <div class="input">
+                <input class="input__widget" type="text" placeholder="Video Title">
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input--area</h2>
+            <p>
+                By default this widget ships with the scrollbar:
+            </p>
+
+            <div class="input input--area">
+                <textarea class="input__widget" placeholder="Message" rows="2"></textarea>
+            </div>
+
+            <br>
+            <p>
+                To control size of it please use <b>rows="3"</b> attribute:
+            </p>
+
+            <div class="input input--area">
+                <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
+            </div>
+
+            <br>
+            <br>
+            <h3>.input--extendable</h3>
+            <p>
+                Use simple script to extend this field while user is typing.
+                <br>See <a href="../scripts/_input.js">../scripts/_input.js</a> for sample.
+            </p>
+
+            <div class="input input--area input--extendable">
+                <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
+            </div>
+
+            <br>
+            <br>
+            <h3>.input--extendable-via-plugin</h3>
+            <p>
+                Alternatively you can use <a href="https://bgrins.github.io/ExpandingTextareas">this jQuery plugin</a> to do the same job.
+                If I understand correctly there is also vanilla JS version included in dist/ folder.
+            </p>
+
+            <div class="input input--area input--extendable-via-plugin">
+                <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.input--select</h2>
+
+            <div class="input input--select">
+                <select class="input__widget">
+                    <option>United States</option>
+                    <option>Russia</option>
+                    <option>Vietnam</option>
+                    <option>Thailand</option>
+                </select>
+            </div>
+
+            <br>
+            <br>
+            <h3>.input--placeholder-is-chosen</h3>
+            <p>
+                There is a problem with default &lt;select&gt; tag.
+                It doesn't work with place <b>placeholder</b> attribute.
+                It make sense at some point: at least one value should always be selected.
+                On the other hand it looks out of place inside of a form with other
+                inputs that actually have placeholders. So lets fake it:
+            </p>
+
+            <div class="input input--select input--placeholder-is-chosen">
+                <select class="input__widget">
+                    <option value="placeholder">Country</option>
+                    <option>United States</option>
+                    <option>Russia</option>
+                    <option>Vietnam</option>
+                    <option>Thailand</option>
+                </select>
+            </div>
+
+            <p>
+                Here we assign one of the options as placeholder and when it's selected
+                we add <b>.input--placeholder-is-chosen</b> class. Please do the same.
+            </p>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.input--rounded</h2>
+
+
+            <div class="input input--select input--rounded input--placeholder-is-chosen">
+                <select class="input__widget">
+                    <option value="placeholder">Country</option>
+                    <option>United States</option>
+                    <option>Russia</option>
+                    <option>Vietnam</option>
+                    <option>Thailand</option>
+                </select>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.input__icon</h2>
+
+
+            <div class="input">
+                <svg class="input__icon" width="16" height="16">
+                    <use xlink:href="../symbols/symbols.svg?1622615869#16-globe-full"></use>
+                </svg>
+                <input class="input__widget" type="text" placeholder="Video Title">
+            </div>
+
+            <br>
+
+            <div class="input input--select input--rounded input--placeholder-is-chosen">
+                <svg class="input__icon" width="16" height="16">
+                    <use xlink:href="../symbols/symbols.svg?1622615869#16-globe-full"></use>
+                </svg>
+                <select class="input__widget">
+                    <option>Anyone</option>
+                    <option>Friends only</option>
+                    <option>Friends except...</option>
+                </select>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../scripts/_operations.js?1622615869"></script>
+        <script src="../scripts/_profile.js?1622615869"></script>
+        <script src="../scripts/_mfp.js?1622615869"></script>
+        <script src="../scripts/_search.js?1622615869"></script>
+        <script src="../scripts/_carousel.js?1622615869"></script>
+        <script src="../scripts/_player.js?1622615869"></script>
+        <script src="../scripts/_updates.js?1622615869"></script>
+        <script src="../scripts/_dash-side.js?1622615869"></script>
+        <script src="../scripts/_happening.js?1622615869"></script>
+        <script src="../scripts/_input.js?1622615869"></script>
+
+
+    </body>
+</html>
+
+
+
