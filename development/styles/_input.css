@@ -105,3 +105,11 @@
         border-left-width: 15px;
     }
 }
+
+
+.input--rounded {
+
+}
+    .input--rounded .input__widget {
+        border-radius: 20px;
+    }
