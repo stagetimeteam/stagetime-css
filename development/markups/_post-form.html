@@ -31,7 +31,44 @@
                     </button>
                 </div>
                 <div class="post-form__body">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto autem blanditiis culpa cupiditate dicta earum eius et eveniet ex explicabo facere fuga fugiat fugit impedit ipsam ipsum laboriosam, laborum molestias nam, natus nemo, nesciunt odio quibusdam quis quisquam ratione recusandae saepe tempore vel! Ad animi aspernatur corporis dolore doloremque est illum, incidunt ipsa, itaque iusto, quas qui repudiandae tempora totam voluptas voluptate voluptates. Accusantium cum et illo iure iusto non officiis quod suscipit! A consectetur consequatur consequuntur cum dolor, dolores earum, eius eos maiores minus nemo nisi sequi temporibus, veniam voluptatem. Corporis deserunt ipsum iusto labore quis reprehenderit veniam.
+                    <div class="post-form__screen">
+                        <div class="edit-post">
+                            <div class="edit-post__header">
+                                <a class="edit-post__person avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-40x40@2x.jpg 2x"
+                                         src="../temp/person-a-40x40.jpg"
+                                         width="40"
+                                         height="40"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <div class="edit-post__option input input--select input--rounded">
+                                    <img class="input__icon" src="../symbols/16-globe-full.svg" width="16" height="16" alt="">
+                                    <select class="input__widget">
+                                        <option>Ben Bliss</option>
+                                        <option>Mark Zuckerberg</option>
+                                        <option>Vladimir Putin</option>
+                                    </select>
+                                </div>
+                                <div class="edit-post__option input input--select input--rounded">
+                                    <img class="input__icon" src="../symbols/16-globe-full.svg" width="16" height="16" alt="">
+                                    <select class="input__widget">
+                                        <option>Anyone</option>
+                                        <option>Friends</option>
+                                        <option>Friends of Friends</option>
+                                        <option>Friends except...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="edit-post__body">
+                                <div class="edit-post__area">
+                                    <textarea class="edit-post__message edit-post__message--extendable-via-plugin" rows="3" placeholder="What do you want to talk about?">Things move a lot faster than they used to in terms of the implementation of Web Platform features, and this post is a round-up of news about CSS features that are making their way into the platform. If you are the sort of person who doesn’t like reading about things if you can’t use them now, then this article probably isn’t for you — we have many others for you to enjoy instead! However, if you like to know what is on the way and read more about the things you can play with in a beta version of a browser, read on! Gaps Let’s start with something that is implemented in the shipping version of one browser, and in beta in another. In CSS Grid, we can use the gap, column-gap and row-gap properties to define the gaps between rows and columns or both at the same time. The column-gap feature also appears in the Multi-column layout to create gaps between columns. While you can use margins to space out grid items, the nice thing about the gap feature is that you only get gaps between your items; you do not end up with additional space to account for at the start and end of the grid. Adding margins has typically been how we have created space between flex items. To create a regular space between flex items, we use a margin. If we do not want a margin at the start and end, we have to use a negative margin on the container to remove it. It would be really nice to have that gap feature in as well, wouldn’t it? The good news is that we do have — it’s already implemented in Firefox and is in the Beta version of Chrome.</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="post-form__footer">
                     <div class="post-form__menu">
@@ -99,6 +136,7 @@
         <script src="../scripts/_dash-side.js"></script>
         <script src="../scripts/_happening.js"></script>
         <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
 
 
     </body>

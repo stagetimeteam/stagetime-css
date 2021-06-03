@@ -22,9 +22,11 @@
         }
 
     .post-form__body {
-        overflow-y: auto;
-        max-height: calc(80vh - 67px - 73px); /* minu height of .post-form__header & .post-form__footer */
+
     }
+        .post-form__screen {
+
+        }
 
     .post-form__footer {
         display: flex;
