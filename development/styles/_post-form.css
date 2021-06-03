@@ -37,11 +37,11 @@
             display: flex;
             align-items: flex-start;
         }
-            .post-form__attach {
+            .post-form__item {
                 margin-left: 16px;
             }
 
-            .post-form__attach:first-child {
+            .post-form__item:first-child {
                 margin-left: 0;
             }
 
