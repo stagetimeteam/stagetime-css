@@ -71,6 +71,9 @@
 
 
 
+
+
+
 .action--faded {
 
 }
@@ -141,6 +144,29 @@
         visibility: hidden;
     }
 
+
+.action--flipped {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+    .action--flipped .action__image {
+        margin-top: 2px;
+        margin-bottom: 9px;
+        width: 36px;
+        height: 36px;
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .action--flipped:hover .action__image {
+        background-color: #E8E8E8;
+    }
+        .action--flipped .action__icon {
+            fill: #8B8B8B;
+        }
 
 
 
