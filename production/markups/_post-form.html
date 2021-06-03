@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US   ">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>.post-form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1622615869">
+        <link rel="stylesheet" href="../styles/style.css?1622691423">
     </head>
     <body>
 
@@ -20,7 +20,245 @@
 
 
             <div class="post-form">
+                <div class="post-form__header">
+                    <div class="post-form__heading">
+                        Create a post
+                    </div>
+                    <button class="post-form__close action action--flipped" type="button">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622691423#16-cross"></use>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="post-form__body">
+                    <div class="post-form__screen">
+                        <div class="edit-post">
+                            <div class="edit-post__header">
+                                <a class="edit-post__person avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-40x40@2x.jpg 2x"
+                                         src="../temp/person-a-40x40.jpg"
+                                         width="40"
+                                         height="40"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <div class="edit-post__option input input--select input--rounded">
+                                    <svg class="input__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1622691423#16-crowd"></use>
+                                    </svg>
+                                    <select class="input__widget">
+                                        <option>Ben Bliss</option>
+                                        <option>Mark Zuckerberg</option>
+                                        <option>Vladimir Putin</option>
+                                    </select>
+                                </div>
+                                <div class="edit-post__option input input--select input--rounded">
+                                    <svg class="input__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1622691423#16-globe-full"></use>
+                                    </svg>
+                                    <select class="input__widget">
+                                        <option>Anyone</option>
+                                        <option>Friends</option>
+                                        <option>Friends of Friends</option>
+                                        <option>Friends except...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="edit-post__content">
+                                <div class="edit-post__area">
+                                    <textarea class="edit-post__message edit-post__message--extendable-via-plugin" rows="3" placeholder="What do you want to talk about?">Things move a lot faster than they used to in terms of the implementation of Web Platform features, and this post is a round-up of news about CSS features that are making their way into the platform. If you are the sort of person who doesn’t like reading about things if you can’t use them now, then this article probably isn’t for you — we have many others for you to enjoy instead! However, if you like to know what is on the way and read more about the things you can play with in a beta version of a browser, read on! Gaps Let’s start with something that is implemented in the shipping version of one browser, and in beta in another. In CSS Grid, we can use the gap, column-gap and row-gap properties to define the gaps between rows and columns or both at the same time. The column-gap feature also appears in the Multi-column layout to create gaps between columns. While you can use margins to space out grid items, the nice thing about the gap feature is that you only get gaps between your items; you do not end up with additional space to account for at the start and end of the grid. Adding margins has typically been how we have created space between flex items. To create a regular space between flex items, we use a margin. If we do not want a margin at the start and end, we have to use a negative margin on the container to remove it. It would be really nice to have that gap feature in as well, wouldn’t it? The good news is that we do have — it’s already implemented in Firefox and is in the Beta version of Chrome.</textarea>
+                                </div>
+                                <div class="edit-post__attachment attachment">
+                                    <div class="attachment__preview">
+                                        <img class="attachment__image"
+                                             srcset="../temp/attachment--image@2x.jpg 2x"
+                                             src="../temp/attachment--image.jpg"
+                                             width="540"
+                                             height="470"
+                                             alt=""
+                                        >
+                                    </div>
+                                    <div class="attachment__operations">
+                                        <a class="attachment__action action action--white" href="#">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#16-cross"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
 
+                                <!-- temp -->
+                                <br>or:
+                                <!--/temp -->
+
+                                <div class="edit-post__attachment attachment">
+                                    <div class="attachment__preview">
+                                        <img class="attachment__image"
+                                             srcset="../temp/attachment--video@2x.jpg 2x"
+                                             src="../temp/attachment--video.jpg"
+                                             width="540"
+                                             height="316"
+                                             alt=""
+                                        >
+                                    </div>
+                                    <div class="attachment__title ellipsis">
+                                        CATS ARE JERKS! Try Not to Laugh - Hilarious Grumpy Cats Compilation April 2018 | Funny Pets Videos
+                                    </div>
+                                    <div class="attachment__sub-title ellipsis">
+                                        Hilarious Grumpy Cats Compilation April 2018 Hilarious Grumpy Cats Compilation April 2018
+                                    </div>
+                                    <div class="attachment__operations">
+                                        <a class="attachment__action action action--white" href="#">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#16-pencil-tiny"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a class="attachment__action action action--white" href="#">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#16-cross"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                <br>or:
+                                <!--/temp -->
+
+                                <div class="edit-post__attachment attachment attachment--link">
+                                    <a class="attachment__summary parsed-link parsed-link--smaller" href="#">
+                                        <div class="parsed-link__icon staple staple--smaller staple--pale">
+                                            <div class="staple__frame">
+                                                <svg class="staple__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#32-staple"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="parsed-link__heading ellipsis">
+                                            “What shall we do with this waiting time?” by Louisa Muller
+                                        </div>
+                                        <div class="parsed-link__url ellipsis">
+                                            www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                                        </div>
+                                    </a>
+                                    <div class="attachment__preview">
+                                        <img class="attachment__image"
+                                             srcset="../temp/attachment--link@2x.jpg 2x"
+                                             src="../temp/attachment--link.jpg"
+                                             width="540"
+                                             height="284"
+                                             alt=""
+                                        >
+                                    </div>
+                                    <div class="attachment__operations">
+                                        <a class="attachment__action action action--grey" href="#">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#16-pencil-tiny"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a class="attachment__action action action--grey" href="#">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#16-cross"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                <br>or:
+                                <!--/temp -->
+
+                                <div class="edit-post__attachment attachment attachment--link">
+                                    <a class="attachment__summary parsed-link" href="#">
+                                        <div class="parsed-link__icon staple staple--pale">
+                                            <div class="staple__frame">
+                                                <svg class="staple__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#32-staple"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="parsed-link__heading ellipsis">
+                                            “What shall we do with this waiting time?” by Louisa Muller
+                                        </div>
+                                        <div class="parsed-link__url ellipsis">
+                                            www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                                        </div>
+                                    </a>
+                                    <div class="attachment__operations">
+                                        <a class="attachment__action action action--grey" href="#">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#16-pencil-tiny"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a class="attachment__action action action--grey" href="#">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622691423#16-cross"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post-form__footer">
+                    <div class="post-form__menu">
+                        <a class="post-form__item action action--flipped" href="#">
+                            <span class="action__image">
+                                <svg class="action__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622691423#24-image"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="post-form__item action action--flipped" href="#">
+                            <span class="action__image">
+                                <svg class="action__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622691423#24-cinema"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="post-form__item action action--flipped" href="#">
+                            <span class="action__image">
+                                <svg class="action__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622691423#24-staple-horizontal"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a class="post-form__item action action--flipped" href="#">
+                            <span class="action__image">
+                                <svg class="action__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622691423#24-tag"></use>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="post-form__operations">
+                        <button class="post-form__action button button--secondary" type="button">
+                            Back
+                        </button>
+                        <button class="post-form__action button" type="button">
+                            Done
+                        </button>
+                    </div>
+                </div>
             </div>
 
 
@@ -45,16 +283,17 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
-        <script src="../scripts/_operations.js?1622615869"></script>
-        <script src="../scripts/_profile.js?1622615869"></script>
-        <script src="../scripts/_mfp.js?1622615869"></script>
-        <script src="../scripts/_search.js?1622615869"></script>
-        <script src="../scripts/_carousel.js?1622615869"></script>
-        <script src="../scripts/_player.js?1622615869"></script>
-        <script src="../scripts/_updates.js?1622615869"></script>
-        <script src="../scripts/_dash-side.js?1622615869"></script>
-        <script src="../scripts/_happening.js?1622615869"></script>
-        <script src="../scripts/_input.js?1622615869"></script>
+        <script src="../scripts/_operations.js?1622691423"></script>
+        <script src="../scripts/_profile.js?1622691423"></script>
+        <script src="../scripts/_mfp.js?1622691423"></script>
+        <script src="../scripts/_search.js?1622691423"></script>
+        <script src="../scripts/_carousel.js?1622691423"></script>
+        <script src="../scripts/_player.js?1622691423"></script>
+        <script src="../scripts/_updates.js?1622691423"></script>
+        <script src="../scripts/_dash-side.js?1622691423"></script>
+        <script src="../scripts/_happening.js?1622691423"></script>
+        <script src="../scripts/_input.js?1622691423"></script>
+        <script src="../scripts/_edit-post.js?1622691423"></script>
 
 
     </body>
