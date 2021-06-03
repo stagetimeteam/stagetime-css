@@ -122,6 +122,7 @@
         top: 50%;
         margin-top: -8px;
         pointer-events: none;
+        fill: #545454;
     }
 
     .input__icon ~ .input__widget {
