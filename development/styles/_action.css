@@ -151,10 +151,10 @@
     justify-content: center;
     width: 40px;
     height: 40px;
+    padding: 0;
 }
     .action--flipped .action__image {
-        margin-top: 2px;
-        margin-bottom: 9px;
+        margin: 0;
         width: 36px;
         height: 36px;
         background-color: transparent;
