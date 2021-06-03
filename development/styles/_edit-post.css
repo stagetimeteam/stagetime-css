@@ -20,7 +20,7 @@
             margin-right: 0;
         }
 
-    .edit-post__body {
+    .edit-post__content {
         margin-top: 22px;
         max-height: calc(100vh - 400px);
         overflow-y: auto;
@@ -56,3 +56,7 @@
             .edit-post__message--extendable-via-plugin {
 
             }
+
+    .edit-post__attachment {
+        margin-top: 24px;
+    }

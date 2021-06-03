@@ -106,6 +106,71 @@
 
 
 
+.action--grey {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+}
+    .action--grey .action__image {
+        margin: auto;
+        width: 28px;
+        height: 28px;
+        background-color: #AAAAAA;
+        border-color: transparent;
+    }
+        .action--grey .action__icon {
+            fill: #FFFFFF;
+        }
+
+        .action--grey .action__label {
+            font-size: 8px;
+            color: #FFFFFF;
+        }
+
+.action--grey:hover {
+
+}
+    .action--grey:hover .action__image {
+        background-color: #545454;
+    }
+        .action--grey:hover .action__icon {
+
+        }
+
+
+.action--white {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+}
+    .action--white .action__image {
+        margin: auto;
+        width: 28px;
+        height: 28px;
+        background-color: #FFFFFF;
+        border-color: transparent;
+    }
+        .action--white .action__icon {
+            fill: #AAAAAA;
+        }
+
+        .action--white .action__label {
+            font-size: 8px;
+            color: #FFFFFF;
+        }
+
+.action--white:hover {
+
+}
+    .action--white:hover .action__image {
+        background-color: #AAAAAA;
+    }
+        .action--white:hover .action__icon {
+            fill: #FFFFFF;
+        }
+
+
+
 
 
 .action--multi-line {

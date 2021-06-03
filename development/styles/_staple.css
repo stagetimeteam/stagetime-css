@@ -42,9 +42,11 @@
     width: 46px;
     height: 46px;
     padding: 10px;
+    border-radius: 7px;
 }
     .staple--smaller .staple__frame {
         padding: 5px;
+        border-radius: 5px;
     }
         .staple--smaller .staple__icon {
             width: 12px;

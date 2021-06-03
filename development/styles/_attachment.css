@@ -1,0 +1,64 @@
+.attachment {
+    position: relative;
+    width: 540px;
+}
+    .attachment__summary {
+        margin-bottom: 29px;
+        margin-right: 112px;
+    }
+
+    .attachment__preview {
+
+    }
+        .attachment__image {
+            border-radius: 10px;
+        }
+
+    .attachment__title {
+        position: absolute;
+        left: 20px;
+        right: 112px;
+        top: 17px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .attachment__sub-title {
+        position: absolute;
+        left: 20px;
+        right: 108px;
+        top: 47px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
+    .attachment__operations {
+        position: absolute;
+        right: 14px;
+        top: 14px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+
+
+.attachment--link {
+
+}
+    .attachment--link .attachment__summary {
+
+    }
+
+    .attachment--link .attachment__preview {
+
+    }
+        .attachment--link .attachment__image {
+
+        }
+
+    .attachment--link .attachment__operations {
+        top: -6px;
+    }

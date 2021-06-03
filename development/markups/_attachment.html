@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.attachment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body style="background-color: #F6F6F6;">
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.attachment</h1>
+
+            <p>
+                Single image is simplest case:
+            </p>
+
+            <div class="attachment">
+                <div class="attachment__preview">
+                    <img class="attachment__image"
+                         srcset="../temp/attachment--image@2x.jpg 2x"
+                         src="../temp/attachment--image.jpg"
+                         width="540"
+                         height="470"
+                         alt=""
+                    >
+                </div>
+                <div class="attachment__operations">
+                    <a class="attachment__action action action--white" href="#">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Case with a video</h2>
+            <p>
+                Add:
+            </p>
+            <ul>
+                <li><b>.attachment__title</b></li>
+                <li><b>.attachment__sub-title</b></li>
+                <li><b>.attachment__action</b> for editing</li>
+            </ul>
+            <br>
+
+            <div class="attachment">
+                <div class="attachment__preview">
+                    <img class="attachment__image"
+                         srcset="../temp/attachment--video@2x.jpg 2x"
+                         src="../temp/attachment--video.jpg"
+                         width="540"
+                         height="316"
+                         alt=""
+                    >
+                </div>
+                <div class="attachment__title ellipsis">
+                    CATS ARE JERKS! Try Not to Laugh - Hilarious Grumpy Cats Compilation April 2018 | Funny Pets Videos
+                </div>
+                <div class="attachment__sub-title ellipsis">
+                    Hilarious Grumpy Cats Compilation April 2018 Hilarious Grumpy Cats Compilation April 2018
+                </div>
+                <div class="attachment__operations">
+                    <a class="attachment__action action action--white" href="#">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                        </span>
+                    </a>
+                    <a class="attachment__action action action--white" href="#">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>Case with a link</h2>
+            <p>
+                Add:
+            </p>
+            <ul>
+                <li><b>.attachment--link</b> modifier</li>
+                <li><b>.attachment__summary</b> element with smaller version of <a href="_parsed-link.html"><b>.parsed-link</b></a> </li>
+                <li><b>.action--grey</b> modifier inside</li>
+            </ul>
+            <br>
+
+            <div class="attachment attachment--link">
+                <a class="attachment__summary parsed-link parsed-link--smaller" href="#">
+                    <div class="parsed-link__icon staple staple--smaller staple--pale">
+                        <div class="staple__frame">
+                            <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                        </div>
+                    </div>
+                    <div class="parsed-link__heading ellipsis">
+                        “What shall we do with this waiting time?” by Louisa Muller
+                    </div>
+                    <div class="parsed-link__url ellipsis">
+                        www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                    </div>
+                </a>
+                <div class="attachment__preview">
+                    <img class="attachment__image"
+                         srcset="../temp/attachment--link@2x.jpg 2x"
+                         src="../temp/attachment--link.jpg"
+                         width="540"
+                         height="284"
+                         alt=""
+                    >
+                </div>
+                <div class="attachment__operations">
+                    <a class="attachment__action action action--grey" href="#">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                        </span>
+                    </a>
+                    <a class="attachment__action action action--grey" href="#">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <p>
+                If we couldn't parse image then show only <b>.attachment__summary</b><br>
+                with default (not smaller) <a href="_parsed-link.html"><b>.parsed-link</b></a>
+            </p>
+
+            <div class="attachment attachment--link">
+                <a class="attachment__summary parsed-link" href="#">
+                    <div class="parsed-link__icon staple staple--pale">
+                        <div class="staple__frame">
+                            <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                        </div>
+                    </div>
+                    <div class="parsed-link__heading ellipsis">
+                        “What shall we do with this waiting time?” by Louisa Muller
+                    </div>
+                    <div class="parsed-link__url ellipsis">
+                        www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                    </div>
+                </a>
+                <div class="attachment__operations">
+                    <a class="attachment__action action action--grey" href="#">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                        </span>
+                    </a>
+                    <a class="attachment__action action action--grey" href="#">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_dash-side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+
+
+    </body>
+</html>
