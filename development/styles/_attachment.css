@@ -12,6 +12,8 @@
     }
         .attachment__image {
             border-radius: 10px;
+            background-color: var(--image-fallback);
+            vertical-align: top;
         }
 
     .attachment__title {
