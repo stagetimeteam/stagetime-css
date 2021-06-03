@@ -24,10 +24,6 @@
         color: #757575;
     }
 
-    .post__pre-attachment {
-        margin-top: 15px;
-    }
-
     .post__attachment {
         margin-top: 22px;
     }
@@ -45,6 +41,11 @@
         .post__attachment .image-link__image {
             border-bottom-left-radius: var(--post-radius);
             border-bottom-right-radius: var(--post-radius);
+        }
+
+        .post__attachment--outer .article-card__summary {
+            margin-left: 24px;
+            margin-right: 24px;
         }
 
 

@@ -122,10 +122,10 @@
             <h2>Attachments</h2>
             <p>
                 At the moment there are few components that can be attached to the post:
-                <br><a href="_parsed-link.html">.parsed-link</a>
-                <br><a href="_image-link.html">.image-link</a>
                 <br><a href="_image-preview.html">.image-preview</a>
                 <br><a href="_video-card.html">.video-card</a> (in <b>.video-card--entry</b> modification)
+                <br><a href="_article-card.html">.article-card</a>
+                <br><a href="_parsed-link.html">.parsed-link</a>
             </p>
 
             <p>
@@ -176,19 +176,7 @@
                     <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
                 </div>
                 <div class="post__attachment">
-                    <a class="parsed-link" href="#">
-                        <div class="parsed-link__icon staple staple--pale">
-                            <div class="staple__frame">
-                                <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
-                            </div>
-                        </div>
-                        <div class="parsed-link__heading ellipsis">
-                            “What shall we do with this waiting time?” by Louisa Muller
-                        </div>
-                        <div class="parsed-link__url ellipsis">
-                            www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
-                        </div>
-                    </a>
+                    ← Place one of those components here →
                 </div>
                 <div class="post__people party">
                     <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
@@ -241,10 +229,7 @@
             <br>
             <br>
             <p>
-                If attaching component is based on image such as:
-                <br><a href="_image-link.html">.image-link</a> (link with background)
-                <br><a href="_image-preview.html">.image-preview</a> (just an image itself)
-                <br>in this case we need to stretch out attachment slot.
+                If attaching component is based on image such as <a href="_image-preview.html">.image-preview</a> we need to stretch out attachment slot.
             </p>
             <p>
                 Please use <b>.post__attachment--outer</b> modifier to do so:
@@ -307,8 +292,8 @@
 
             <br>
             <p>
-                And this gives us another complication. We need to reposition
-                <b>.post__people</b>. Please use <b>.post__people--overlap-image</b> modifier, like below.
+                What gives us another complication. We need to reposition
+                <b>.post__people</b>. Please use <b>.post__people--overlap-image</b> modifier.
             </p>
             <p>
                 Also dark colors of <b>.party</b> component have to be changed. Please use <b>.party--inverted</b>
@@ -412,137 +397,6 @@
                     </a>
                 </div>
             </article>
-
-            <br>
-            <br>
-            <p>
-                Example with <a href="_image-link.html">.image-link</a> is pretty much same.
-                Again:
-                <br><b>.post__attachment--outer</b> to stretch attachment slot
-                <br><b>.post__people--overlap-image</b> to reposition collaborators
-                <br><b>.party--inverted</b> to change colors of .party compoennt inside
-            </p>
-            <p>
-                Also specifically for this link please add <b>.post__pre-attachment</b> with small <a href="_parsed-link.html">.parsed-link</a>
-                to show article's title and description.
-            </p>
-
-            <article class="post">
-                <div class="post__head user-badge">
-                    <div class="user-badge__preview">
-                        <a class="avatar avatar--alt-hover" href="#">
-                            <img class="avatar__image"
-                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
-                                 src="../temp/organization-a-56x56.jpg"
-                                 width="56" height="56"
-                                 alt=""
-                            >
-                        </a>
-                    </div>
-                    <div class="user-badge__heading">
-                        <a class="link link--text-alike" href="#">
-                            Indiana University
-                        </a>
-                    </div>
-                    <div class="user-badge__note">
-                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                    </div>
-                </div>
-                <div class="post__actions operations">
-                    <button class="operations__handler" type="button">
-                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                    </button>
-                    <div class="operations__dropdown">
-                        <div class="menu">
-                            <a class="menu__link" href="#">
-                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                Share
-                            </a>
-                            <a class="menu__link" href="#">
-                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
-                                Report
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="post__content wysiwyg">
-                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
-                </div>
-                <a class="post__pre-attachment parsed-link parsed-link--smaller" href="#">
-                    <div class="parsed-link__icon staple staple--smaller staple--pale">
-                        <div class="staple__frame">
-                            <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
-                        </div>
-                    </div>
-                    <div class="parsed-link__heading ellipsis">
-                        “What shall we do with this waiting time?” by Louisa Muller
-                    </div>
-                    <div class="parsed-link__url ellipsis">
-                        www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
-                    </div>
-                </a>
-                <div class="post__attachment post__attachment--outer">
-                    <a class="image-link" href="#">
-                        <img class="image-link__image"
-                             srcset="../temp/image-link@2x.jpg 2x"
-                             src="../temp/image-link.jpg"
-                             width="670"
-                             height="238"
-                             alt=""
-                        >
-                        <div class="image-link__icon staple staple--larger">
-                            <div class="staple__frame">
-                                <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="post__people post__people--overlap-image party party--inverted">
-                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
-                    <div class="party__list">
-                        <a class="party__item avatar avatar--alt-hover" href="#">
-                            <img class="avatar__image"
-                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
-                                 src="../temp/organization-a-24x24.jpg"
-                                 width="24"
-                                 height="24"
-                                 alt="Indiana University"
-                            >
-                        </a>
-                        <a class="party__item avatar avatar--alt-hover" href="#">
-                            <img class="avatar__image"
-                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
-                                 src="../temp/organization-b-24x24.jpg"
-                                 width="24"
-                                 height="24"
-                                 alt="Indiana University"
-                            >
-                        </a>
-                        <a class="party__item avatar avatar--alt-hover" href="#">
-                            <img class="avatar__image"
-                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
-                                 src="../temp/organization-a-24x24.jpg"
-                                 width="24"
-                                 height="24"
-                                 alt="Indiana University"
-                            >
-                        </a>
-                        <a class="party__item avatar avatar--alt-hover" href="#">
-                            <img class="avatar__image"
-                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
-                                 src="../temp/organization-b-24x24.jpg"
-                                 width="24"
-                                 height="24"
-                                 alt="Indiana University"
-                            >
-                        </a>
-                    </div>
-                    <a class="party__more" href="#">
-                        + 6 more
-                    </a>
-                </div>
-            </article>
-
 
             <br>
             <br>
@@ -667,6 +521,247 @@
                     </a>
                 </div>
             </article>
+
+
+
+            <br>
+            <br>
+            <p>
+                Example with <a href="_article-card.html">.article-card</a> is pretty much same to the case with basic image.
+                Again:
+                <br><b>.post__attachment--outer</b> to stretch attachment slot
+                <br><b>.post__people--overlap-image</b> to reposition collaborators
+                <br><b>.party--inverted</b> to change colors of .party compoennt inside
+            </p>
+
+            <article class="post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <div class="post__attachment post__attachment--outer">
+                    <div class="article-card">
+                        <a class="article-card__summary parsed-link parsed-link--smaller" href="#">
+                            <div class="parsed-link__icon staple staple--smaller staple--pale">
+                                <div class="staple__frame">
+                                    <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                                </div>
+                            </div>
+                            <div class="parsed-link__heading ellipsis">
+                                “What shall we do with this waiting time?” by Louisa Muller
+                            </div>
+                            <div class="parsed-link__url ellipsis">
+                                www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                            </div>
+                        </a>
+                        <a class="article-card__preview image-link" href="#">
+                            <img class="image-link__image"
+                                 srcset="../temp/image-link@2x.jpg 2x"
+                                 src="../temp/image-link.jpg"
+                                 width="670"
+                                 height="238"
+                                 alt=""
+                            >
+                            <div class="image-link__icon staple staple--larger">
+                                <div class="staple__frame">
+                                    <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="post__people post__people--overlap-image party party--inverted">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                    <a class="party__more" href="#">
+                        + 6 more
+                    </a>
+                </div>
+            </article>
+
+
+            <br>
+            <br>
+            <p>
+                If link was parsed without image use basic variation of <b>.parsed-link</b>
+            </p>
+
+
+            <article class="post">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <div class="post__attachment">
+                    <a class="parsed-link" href="#">
+                        <div class="parsed-link__icon staple staple--pale">
+                            <div class="staple__frame">
+                                <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                            </div>
+                        </div>
+                        <div class="parsed-link__heading ellipsis">
+                            “What shall we do with this waiting time?” by Louisa Muller
+                        </div>
+                        <div class="parsed-link__url ellipsis">
+                            www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                        </div>
+                    </a>
+                </div>
+                <div class="post__people party">
+                    <img class="party__icon" src="../symbols/32-crowd.svg" width="16" height="16" alt="">
+                    <div class="party__list">
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                 src="../temp/organization-a-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                        <a class="party__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                 src="../temp/organization-b-24x24.jpg"
+                                 width="24"
+                                 height="24"
+                                 alt="Indiana University"
+                            >
+                        </a>
+                    </div>
+                    <a class="party__more" href="#">
+                        + 6 more
+                    </a>
+                </div>
+            </article>
+
 
 
             <br>
