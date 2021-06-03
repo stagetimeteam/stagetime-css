@@ -45,6 +45,7 @@
     background-color: #E8E8E8;
     color: #333333;
     box-shadow: none;
+    transition: none !important;
 }
 
 .button--smaller {
