@@ -1,0 +1,16 @@
+.dash {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+    .dash__icon {
+        vertical-align: top;
+        fill: #8B8B8B;
+    }
+
+
+.dash:hover .dash__icon {
+    
+}
