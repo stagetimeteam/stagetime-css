@@ -13,6 +13,7 @@
             font-size: 22px;
             line-height: 26px;
             color: #757575;
+            cursor: default; /* somehow it feels like you can click and start typing in header */
         }
 
         .post-form__close {
