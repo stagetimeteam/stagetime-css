@@ -22,7 +22,7 @@
 
     .edit-post__content {
         margin-top: 22px;
-        max-height: calc(100vh - 400px);
+        max-height: calc(100vh - 300px);
         overflow-y: auto;
         padding-left: 28px;
         padding-right: 28px;

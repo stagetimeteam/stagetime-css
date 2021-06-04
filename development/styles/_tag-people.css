@@ -1,0 +1,26 @@
+.tag-people {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+    .tag-people__header {
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+        .tag-people__search {
+            margin-right: 14px;
+        }
+
+        .tag-people__selection {
+            margin-top: 20px;
+            margin-right: 12px;
+        }
+
+
+    .tag-people__content {
+        margin-top: 22px;
+        max-height: calc(100vh - 352px);
+        overflow-y: auto;
+        padding-left: 28px;
+        padding-right: 28px;
+    }
+
