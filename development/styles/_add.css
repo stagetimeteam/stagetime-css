@@ -1,0 +1,43 @@
+.add {
+    padding: 24px 28px 48px;
+    min-height: 265px;
+    display: flex;
+    align-items: flex-start;
+}
+    .add__visualisation {
+        width: 112px;
+        margin-right: 32px;
+        flex-shrink: 0;
+    }
+        .add__preview {
+
+        }
+
+        .add__note {
+            margin-top: 15px;
+            font-size: 11px;
+            line-height: 20px;
+            color: #8B8B8B;
+        }
+
+    .add__content {
+        flex-grow: 1;
+    }
+        .add__field {
+            margin-top: 25px;
+        }
+
+        .add__field:first-child {
+            margin-top: 0;
+        }
+
+        .add__sub-action {
+            margin-top: 21px;
+            margin-left: auto;
+            font-size: 11px;
+            line-height: 14px;
+            text-align: right;
+        }
+            .add__parse {
+
+            }

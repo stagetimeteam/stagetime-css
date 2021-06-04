@@ -1,5 +1,10 @@
 (function($) {
 
+    $('#temp-main-handler').on('click', function () {
+        $('.post-form__screen--current').removeClass('post-form__screen--current');
+        $('#temp-main-screen').addClass('post-form__screen--current');
+    });
+
     $('#temp-add-video-handler').on('click', function () {
         $('.post-form__screen--current').removeClass('post-form__screen--current');
         $('#temp-add-video-screen').addClass('post-form__screen--current');

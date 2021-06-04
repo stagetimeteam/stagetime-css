@@ -32,7 +32,7 @@
                 </div>
                 <div class="post-form__body">
 
-                    <div class="post-form__screen post-form__screen--current">
+                    <div class="post-form__screen post-form__screen--current" id="temp-main-screen">
                         <div class="edit-post">
                             <div class="edit-post__header">
                                 <a class="edit-post__person avatar" href="#">
@@ -196,18 +196,60 @@
                     </div>
 
                     <div class="post-form__screen" id="temp-add-video-screen">
-                        213
+                        <div class="add">
+                            <div class="add__visualisation">
+                                <button class="add__preview cover cover--clickable" type="button">
+                                    <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+                                </button>
+                                <div class="add__note">
+                                    Add a video cover image.
+                                </div>
+                            </div>
+                            <div class="add__content">
+                                <div class="add__field input">
+                                    <input class="input__widget" type="url" placeholder="Video Link">
+                                </div>
+                                <div class="add__field input">
+                                    <input class="input__widget" type="text" placeholder="Video Title">
+                                </div>
+                                <div class="add__field input">
+                                    <input class="input__widget" type="text" placeholder="Subtitle">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="post-form__screen" id="temp-add-link-screen">
-                        213
+                        <div class="add">
+                            <div class="add__visualisation">
+                                <button class="add__preview cover cover--clickable" type="button">
+                                    <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+                                </button>
+                                <div class="add__note">
+                                    Add an image with your link (optional).
+                                </div>
+                            </div>
+                            <div class="add__content">
+                                <div class="add__field input">
+                                    <input class="input__widget" type="url" placeholder="Link URL">
+                                </div>
+                                <div class="add__field input">
+                                    <input class="input__widget" type="text" placeholder="Link Title">
+                                </div>
+                                <div class="add__sub-action">
+                                    <button class="add__parse link link--classic" type="button">
+                                        Test this link
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
                 <div class="post-form__footer">
                     <div class="post-form__menu">
-                        <label class="post-form__item action action--flipped" for="image-upload">
+                        <label class="post-form__item action action--flipped" for="image-upload"><!-- If you can please use <button> here, it's easier to navigate via keyboard -->
                             <span class="action__image">
-                                <img class="action__icon" src="../symbols/24-image.svg" width="24" height="24" alt="">
+                                <img class="action__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
                             </span>
                             <input class="visuallyhidden" type="file" id="image-upload">
                         </label>
@@ -228,7 +270,7 @@
                         </button>
                     </div>
                     <div class="post-form__operations">
-                        <button class="post-form__action button button--secondary" type="button">
+                        <button class="post-form__action button button--secondary" type="button" id="temp-main-handler">
                             Back
                         </button>
                         <button class="post-form__action button" type="button">
