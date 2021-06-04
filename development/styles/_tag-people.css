@@ -17,10 +17,22 @@
 
 
     .tag-people__content {
-        margin-top: 22px;
+        margin-top: 10px;
         max-height: calc(100vh - 352px);
         overflow-y: auto;
-        padding-left: 28px;
-        padding-right: 28px;
     }
+        .tag-people__content {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+        }
+            .tag-people__suggest {
+                display: block;
+                padding: 12px 28px;
+                color: inherit;
+                text-decoration: none;
+            }
 
+            .tag-people__suggest:hover {
+                background-color: #F6F6F6;
+            }
