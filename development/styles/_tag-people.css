@@ -18,7 +18,7 @@
 
     .tag-people__content {
         margin-top: 10px;
-        max-height: calc(100vh - 352px);
+        max-height: calc(100vh - 340px);
         overflow-y: auto;
     }
         .tag-people__content {
