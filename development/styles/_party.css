@@ -2,6 +2,7 @@
     display: inline-flex;
     align-items: center;
     background-color: rgba(232, 232, 232, 0.57);
+    border: none;
     padding: 8px;
     border-radius: 20px;
     text-decoration: none;
