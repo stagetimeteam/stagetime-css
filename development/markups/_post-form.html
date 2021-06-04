@@ -31,7 +31,8 @@
                     </button>
                 </div>
                 <div class="post-form__body">
-                    <div class="post-form__screen">
+
+                    <div class="post-form__screen post-form__screen--current">
                         <div class="edit-post">
                             <div class="edit-post__header">
                                 <a class="edit-post__person avatar" href="#">
@@ -194,29 +195,37 @@
                         </div>
                     </div>
 
+                    <div class="post-form__screen" id="temp-add-video-screen">
+                        213
+                    </div>
+                    <div class="post-form__screen" id="temp-add-link-screen">
+                        213
+                    </div>
+
                 </div>
                 <div class="post-form__footer">
                     <div class="post-form__menu">
-                        <a class="post-form__item action action--flipped" href="#">
+                        <label class="post-form__item action action--flipped" for="image-upload">
                             <span class="action__image">
                                 <img class="action__icon" src="../symbols/24-image.svg" width="24" height="24" alt="">
                             </span>
-                        </a>
-                        <a class="post-form__item action action--flipped" href="#">
+                            <input class="visuallyhidden" type="file" id="image-upload">
+                        </label>
+                        <button class="post-form__item action action--flipped" type="button" id="temp-add-video-handler">
                             <span class="action__image">
                                 <img class="action__icon" src="../symbols/24-cinema.svg" width="24" height="24" alt="">
                             </span>
-                        </a>
-                        <a class="post-form__item action action--flipped" href="#">
+                        </button>
+                        <button class="post-form__item action action--flipped" type="button" id="temp-add-link-handler">
                             <span class="action__image">
                                 <img class="action__icon" src="../symbols/24-staple-horizontal.svg" width="24" height="24" alt="">
                             </span>
-                        </a>
-                        <a class="post-form__item action action--flipped" href="#">
+                        </button>
+                        <button class="post-form__item action action--flipped" type="button" id="temp-tag-person-handler">
                             <span class="action__image">
                                 <img class="action__icon" src="../symbols/24-tag.svg" width="24" height="24" alt="">
                             </span>
-                        </a>
+                        </button>
                     </div>
                     <div class="post-form__operations">
                         <button class="post-form__action button button--secondary" type="button">
@@ -262,6 +271,7 @@
         <script src="../scripts/_happening.js"></script>
         <script src="../scripts/_input.js"></script>
         <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
 
 
     </body>

@@ -27,7 +27,11 @@
 
     }
         .post-form__screen {
+            display: none;
+        }
 
+        .post-form__screen--current {
+            display: block;
         }
 
     .post-form__footer {
