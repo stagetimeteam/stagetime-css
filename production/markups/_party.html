@@ -6,7 +6,7 @@
         <title>.party</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1622691816">
+        <link rel="stylesheet" href="../styles/style.css?1622780353">
     </head>
     <body>
 
@@ -19,7 +19,37 @@
 
             <div class="party">
                 <svg class="party__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1622691816#32-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1622780353#32-crowd"></use>
+                </svg>
+                <div class="party__list">
+                    <a class="party__item avatar avatar--alt-hover" href="#">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                             src="../temp/organization-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                    </a>
+                    <a class="party__item avatar avatar--alt-hover" href="#">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                             src="../temp/organization-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                    </a>
+                </div>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div class="party">
+                <svg class="party__icon" width="16" height="16">
+                    <use xlink:href="../symbols/symbols.svg?1622780353#32-crowd"></use>
                 </svg>
                 <div class="party__list">
                     <a class="party__item avatar avatar--alt-hover" href="#">
@@ -74,7 +104,7 @@
 
                 <div class="party party--inverted">
                     <svg class="party__icon" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1622691816#32-crowd"></use>
+                        <use xlink:href="../symbols/symbols.svg?1622780353#32-crowd"></use>
                     </svg>
                     <div class="party__list">
                         <a class="party__item avatar avatar--alt-hover" href="#">
@@ -123,6 +153,565 @@
             </div>
 
 
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.party--tagging</h2>
+            <p>
+                Make whole thing as &lt;a&gt; that will trigger popup with people search.
+                All &lt;a&gt; change to &lt;div&gt;
+            </p>
+
+            <a class="party party--tagging" href="#">
+                <svg class="party__icon" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
+                </svg>
+                <div class="party__list">
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                             src="../temp/organization-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                             src="../temp/organization-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                             src="../temp/organization-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                             src="../temp/organization-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                    </div>
+                </div>
+                <div class="party__more">
+                    + 6 more
+                </div>
+            </a>
+
+            <p>
+                When no one is selected yet we actually can keep using this component:
+            </p>
+
+
+            <a class="party party--tagging" href="#">
+                <svg class="party__icon" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
+                </svg>
+            </a>
+
+
+            <p>
+                But alternative there is <a href="_action.html">.action</a> component that will do it better
+                with proper hover effect, disabled case and so on:
+            </p>
+
+            <button class="action action--flipped" type="button">
+                <span class="action__image">
+                    <svg class="action__icon" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
+                    </svg>
+                </span>
+            </button>
+
+            <button class="action action--flipped action--disabled" type="button" disabled>
+                <span class="action__image">
+                    <svg class="action__icon" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
+                    </svg>
+                </span>
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.party--browsing</h2>
+            <p>
+                Also add <b>.avatar__cancel</b> inside of avatar.
+            </p>
+
+            <div class="party party--browsing">
+                <svg class="party__icon" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
+                </svg>
+                <div class="party__list">
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                             src="../temp/organization-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                             src="../temp/organization-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-24x24@2x.jpg 2x"
+                             src="../temp/person-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-24x24@2x.jpg 2x"
+                             src="../temp/person-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-c-24x24@2x.jpg 2x"
+                             src="../temp/person-c-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-d-24x24@2x.jpg 2x"
+                             src="../temp/person-d-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-e-24x24@2x.jpg 2x"
+                             src="../temp/person-e-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-24x24@2x.jpg 2x"
+                             src="../temp/person-f-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                             src="../temp/organization-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                             src="../temp/organization-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-24x24@2x.jpg 2x"
+                             src="../temp/person-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-24x24@2x.jpg 2x"
+                             src="../temp/person-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-c-24x24@2x.jpg 2x"
+                             src="../temp/person-c-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-d-24x24@2x.jpg 2x"
+                             src="../temp/person-d-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-e-24x24@2x.jpg 2x"
+                             src="../temp/person-e-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-24x24@2x.jpg 2x"
+                             src="../temp/person-f-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                             src="../temp/organization-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                             src="../temp/organization-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-24x24@2x.jpg 2x"
+                             src="../temp/person-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-24x24@2x.jpg 2x"
+                             src="../temp/person-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-c-24x24@2x.jpg 2x"
+                             src="../temp/person-c-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-d-24x24@2x.jpg 2x"
+                             src="../temp/person-d-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-e-24x24@2x.jpg 2x"
+                             src="../temp/person-e-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-24x24@2x.jpg 2x"
+                             src="../temp/person-f-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                             src="../temp/organization-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                             src="../temp/organization-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-24x24@2x.jpg 2x"
+                             src="../temp/person-a-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-b-24x24@2x.jpg 2x"
+                             src="../temp/person-b-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-c-24x24@2x.jpg 2x"
+                             src="../temp/person-c-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-d-24x24@2x.jpg 2x"
+                             src="../temp/person-d-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-e-24x24@2x.jpg 2x"
+                             src="../temp/person-e-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="party__item avatar avatar--non-clickable">
+                        <img class="avatar__image"
+                             srcset="../temp/person-f-24x24@2x.jpg 2x"
+                             src="../temp/person-f-24x24.jpg"
+                             width="24"
+                             height="24"
+                             alt="Indiana University"
+                        >
+                        <button class="avatar__cancel" type="button">
+                            <svg class="avatar__cross" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
             <br>
             <br>
             <br>
@@ -144,17 +733,18 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
-        <script src="../scripts/_operations.js?1622691816"></script>
-        <script src="../scripts/_profile.js?1622691816"></script>
-        <script src="../scripts/_mfp.js?1622691816"></script>
-        <script src="../scripts/_search.js?1622691816"></script>
-        <script src="../scripts/_carousel.js?1622691816"></script>
-        <script src="../scripts/_player.js?1622691816"></script>
-        <script src="../scripts/_updates.js?1622691816"></script>
-        <script src="../scripts/_dash-side.js?1622691816"></script>
-        <script src="../scripts/_happening.js?1622691816"></script>
-        <script src="../scripts/_input.js?1622691816"></script>
-        <script src="../scripts/_edit-post.js?1622691816"></script>
+        <script src="../scripts/_operations.js?1622780353"></script>
+        <script src="../scripts/_profile.js?1622780353"></script>
+        <script src="../scripts/_mfp.js?1622780353"></script>
+        <script src="../scripts/_search.js?1622780353"></script>
+        <script src="../scripts/_carousel.js?1622780353"></script>
+        <script src="../scripts/_player.js?1622780353"></script>
+        <script src="../scripts/_updates.js?1622780353"></script>
+        <script src="../scripts/_dash-side.js?1622780353"></script>
+        <script src="../scripts/_happening.js?1622780353"></script>
+        <script src="../scripts/_input.js?1622780353"></script>
+        <script src="../scripts/_edit-post.js?1622780353"></script>
+        <script src="../scripts/_post-form.js?1622780353"></script>
 
 
     </body>

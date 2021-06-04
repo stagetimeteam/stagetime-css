@@ -6,7 +6,7 @@
         <title>.post-form</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1622691816">
+        <link rel="stylesheet" href="../styles/style.css?1622780353">
     </head>
     <body>
 
@@ -27,13 +27,14 @@
                     <button class="post-form__close action action--flipped" type="button">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1622691816#16-cross"></use>
+                                <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
                             </svg>
                         </span>
                     </button>
                 </div>
                 <div class="post-form__body">
-                    <div class="post-form__screen">
+
+                    <div class="post-form__screen post-form__screen--current" id="temp-main-screen">
                         <div class="edit-post">
                             <div class="edit-post__header">
                                 <a class="edit-post__person avatar" href="#">
@@ -47,7 +48,7 @@
                                 </a>
                                 <div class="edit-post__option input input--select input--rounded">
                                     <svg class="input__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1622691816#16-crowd"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1622780353#16-crowd"></use>
                                     </svg>
                                     <select class="input__widget">
                                         <option>Ben Bliss</option>
@@ -57,7 +58,7 @@
                                 </div>
                                 <div class="edit-post__option input input--select input--rounded">
                                     <svg class="input__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1622691816#16-globe-full"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1622780353#16-globe-full"></use>
                                     </svg>
                                     <select class="input__widget">
                                         <option>Anyone</option>
@@ -85,7 +86,7 @@
                                         <a class="attachment__action action action--white" href="#">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#16-cross"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
                                                 </svg>
                                             </span>
                                         </a>
@@ -116,14 +117,14 @@
                                         <a class="attachment__action action action--white" href="#">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#16-pencil-tiny"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-pencil-tiny"></use>
                                                 </svg>
                                             </span>
                                         </a>
                                         <a class="attachment__action action action--white" href="#">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#16-cross"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
                                                 </svg>
                                             </span>
                                         </a>
@@ -139,7 +140,7 @@
                                         <div class="parsed-link__icon staple staple--smaller staple--pale">
                                             <div class="staple__frame">
                                                 <svg class="staple__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#32-staple"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#32-staple"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -163,14 +164,14 @@
                                         <a class="attachment__action action action--grey" href="#">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#16-pencil-tiny"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-pencil-tiny"></use>
                                                 </svg>
                                             </span>
                                         </a>
                                         <a class="attachment__action action action--grey" href="#">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#16-cross"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
                                                 </svg>
                                             </span>
                                         </a>
@@ -186,7 +187,7 @@
                                         <div class="parsed-link__icon staple staple--pale">
                                             <div class="staple__frame">
                                                 <svg class="staple__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#32-staple"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#32-staple"></use>
                                                 </svg>
                                             </div>
                                         </div>
@@ -201,14 +202,14 @@
                                         <a class="attachment__action action action--grey" href="#">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#16-pencil-tiny"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-pencil-tiny"></use>
                                                 </svg>
                                             </span>
                                         </a>
                                         <a class="attachment__action action action--grey" href="#">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1622691816#16-cross"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
                                                 </svg>
                                             </span>
                                         </a>
@@ -218,40 +219,373 @@
                         </div>
                     </div>
 
+                    <div class="post-form__screen" id="temp-add-video-screen">
+                        <div class="add">
+                            <div class="add__visualisation">
+                                <button class="add__preview cover cover--clickable" type="button">
+                                    <svg class="cover__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1622780353#24-picture"></use>
+                                    </svg>
+                                </button>
+                                <div class="add__note">
+                                    Add a video cover image.
+                                </div>
+                            </div>
+                            <div class="add__content">
+                                <div class="add__field input">
+                                    <input class="input__widget" type="url" placeholder="Video Link">
+                                </div>
+                                <div class="add__field input">
+                                    <input class="input__widget" type="text" placeholder="Video Title">
+                                </div>
+                                <div class="add__field input">
+                                    <input class="input__widget" type="text" placeholder="Subtitle">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-form__screen" id="temp-add-link-screen">
+                        <div class="add">
+                            <div class="add__visualisation">
+                                <button class="add__preview cover cover--clickable" type="button">
+                                    <svg class="cover__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1622780353#24-picture"></use>
+                                    </svg>
+                                </button>
+                                <div class="add__note">
+                                    Add an image with your link (optional).
+                                </div>
+                            </div>
+                            <div class="add__content">
+                                <div class="add__field input">
+                                    <input class="input__widget" type="url" placeholder="Link URL">
+                                </div>
+                                <div class="add__field input">
+                                    <input class="input__widget" type="text" placeholder="Link Title">
+                                </div>
+                                <div class="add__sub-action">
+                                    <button class="add__parse link link--classic" type="button">
+                                        Test this link
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post-form__screen" id="temp-add-tag-screen">
+                        <div class="tag-people">
+                            <div class="tag-people__header">
+                                <div class="tag-people__search search-bar">
+                                    <input class="search-bar__widget" type="text" placeholder="Search to tag collaborators or organizations">
+                                    <svg class="search__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1622780353#16-magnifier"></use>
+                                    </svg>
+                                </div>
+                                <div class="tag-people__selection party party--browsing">
+                                    <svg class="party__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
+                                    </svg>
+                                    <div class="party__list">
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                                 src="../temp/organization-a-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                                 src="../temp/organization-b-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                 src="../temp/person-a-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-b-24x24@2x.jpg 2x"
+                                                 src="../temp/person-b-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-c-24x24@2x.jpg 2x"
+                                                 src="../temp/person-c-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-d-24x24@2x.jpg 2x"
+                                                 src="../temp/person-d-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-e-24x24@2x.jpg 2x"
+                                                 src="../temp/person-e-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="party__item avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-f-24x24@2x.jpg 2x"
+                                                 src="../temp/person-f-24x24.jpg"
+                                                 width="24"
+                                                 height="24"
+                                                 alt="Indiana University"
+                                            >
+                                            <button class="avatar__cancel" type="button">
+                                                <svg class="avatar__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1622780353#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-people__content">
+                                <a class="tag-people__suggest" href="#">
+                                    <div class="user-badge user-badge--search">
+                                        <div class="user-badge__preview">
+                                            <div class="avatar avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/person-a-56x56@2x.jpg 2x" src="../temp/person-a-56x56.jpg" width="56" height="56" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="user-badge__heading">
+                                            Elena Villalón
+                                        </div>
+                                        <div class="user-badge__note">
+                                            Soprano, Houston, TX
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tag-people__suggest" href="#">
+                                    <div class="user-badge user-badge--search">
+                                        <div class="user-badge__preview">
+                                            <div class="avatar avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/person-b-56x56@2x.jpg 2x" src="../temp/person-b-56x56.jpg" width="56" height="56" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="user-badge__heading">
+                                            Marlen Nahas
+                                        </div>
+                                        <div class="user-badge__note">
+                                            Soprano, Washington, DC
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tag-people__suggest" href="#">
+                                    <div class="user-badge user-badge--search">
+                                        <div class="user-badge__preview">
+                                            <div class="avatar avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/person-c-56x56@2x.jpg 2x" src="../temp/person-c-56x56.jpg" width="56" height="56" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="user-badge__heading">
+                                            Adelaide Boedecker
+                                        </div>
+                                        <div class="user-badge__note">
+                                            Soprano, Houston, TX
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tag-people__suggest" href="#">
+                                    <div class="user-badge user-badge--search">
+                                        <div class="user-badge__preview">
+                                            <div class="avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/organization-a-56x56@2x.jpg 2x" src="../temp/organization-a-56x56.jpg" width="56" height="56" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="user-badge__heading">
+                                            <svg class="icon" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1622780353#16-city"></use>
+                                            </svg>
+                                            Aspen Music Festival &amp; School
+                                        </div>
+                                        <div class="user-badge__note">
+                                            Aspen, CO
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tag-people__suggest" href="#">
+                                    <div class="user-badge user-badge--search">
+                                        <div class="user-badge__preview">
+                                            <div class="avatar avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/person-d-56x56@2x.jpg 2x" src="../temp/person-d-56x56.jpg" width="56" height="56" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="user-badge__heading">
+                                            Shea Owens
+                                        </div>
+                                        <div class="user-badge__note">
+                                            Soprano, Salt Lake City, UT
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tag-people__suggest" href="#">
+                                    <div class="user-badge user-badge--search">
+                                        <div class="user-badge__preview">
+                                            <div class="avatar avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/person-e-56x56@2x.jpg 2x" src="../temp/person-e-56x56.jpg" width="56" height="56" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="user-badge__heading">
+                                            Elena Villalón
+                                        </div>
+                                        <div class="user-badge__note">
+                                            Soprano, Houston, TX
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="tag-people__suggest" href="#">
+                                    <div class="user-badge user-badge--search">
+                                        <div class="user-badge__preview">
+                                            <div class="avatar avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/person-f-56x56@2x.jpg 2x" src="../temp/person-f-56x56.jpg" width="56" height="56" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="user-badge__heading">
+                                            Adelaide Boedecker
+                                        </div>
+                                        <div class="user-badge__note">
+                                            Soprano, Washington, DC
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="post-form__footer">
                     <div class="post-form__menu">
-                        <a class="post-form__item action action--flipped" href="#">
+                        <label class="post-form__item action action--flipped" for="image-upload"><!-- If you can please use <button> here, it's easier to navigate via keyboard -->
                             <span class="action__image">
                                 <svg class="action__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1622691816#24-image"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1622780353#24-picture"></use>
                                 </svg>
                             </span>
-                        </a>
-                        <a class="post-form__item action action--flipped" href="#">
+                            <input class="visuallyhidden" type="file" id="image-upload">
+                        </label>
+                        <button class="post-form__item action action--flipped" type="button" id="temp-add-video-handler">
                             <span class="action__image">
                                 <svg class="action__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1622691816#24-cinema"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1622780353#24-cinema"></use>
                                 </svg>
                             </span>
-                        </a>
-                        <a class="post-form__item action action--flipped" href="#">
+                        </button>
+                        <button class="post-form__item action action--flipped" type="button" id="temp-add-link-handler">
                             <span class="action__image">
                                 <svg class="action__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1622691816#24-staple-horizontal"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1622780353#24-staple-horizontal"></use>
                                 </svg>
                             </span>
-                        </a>
-                        <a class="post-form__item action action--flipped" href="#">
-                            <span class="action__image">
-                                <svg class="action__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1622691816#24-tag"></use>
+                        </button>
+                        <div class="post-form__item">
+                            <button class="action action--flipped" type="button" id="temp-add-tag-handler">
+                                <span class="action__image">
+                                    <svg class="action__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
+                                    </svg>
+                                </span>
+                            </button>
+
+                            <!-- temp -->
+                            or (also works as button):<br>
+                            <!--/temp -->
+
+                            <a class="party party--tagging" href="#" id="temp-add-tag-alternate-handler">
+                                <svg class="party__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1622780353#24-tag"></use>
                                 </svg>
-                            </span>
-                        </a>
+                                <div class="party__list">
+                                    <div class="party__item avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                             src="../temp/organization-a-24x24.jpg"
+                                             width="24"
+                                             height="24"
+                                             alt="Indiana University"
+                                        >
+                                    </div>
+                                    <div class="party__item avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                             src="../temp/organization-b-24x24.jpg"
+                                             width="24"
+                                             height="24"
+                                             alt="Indiana University"
+                                        >
+                                    </div>
+                                </div>
+                                <div class="party__more">
+                                    + 6 more
+                                </div>
+                            </a>
+
+                        </div>
                     </div>
                     <div class="post-form__operations">
-                        <button class="post-form__action button button--secondary" type="button">
+                        <button class="post-form__action button button--secondary" type="button" id="temp-main-handler">
                             Back
                         </button>
                         <button class="post-form__action button" type="button">
@@ -283,17 +617,18 @@
         <script src="../vendors/outline/outline.js"></script>
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
-        <script src="../scripts/_operations.js?1622691816"></script>
-        <script src="../scripts/_profile.js?1622691816"></script>
-        <script src="../scripts/_mfp.js?1622691816"></script>
-        <script src="../scripts/_search.js?1622691816"></script>
-        <script src="../scripts/_carousel.js?1622691816"></script>
-        <script src="../scripts/_player.js?1622691816"></script>
-        <script src="../scripts/_updates.js?1622691816"></script>
-        <script src="../scripts/_dash-side.js?1622691816"></script>
-        <script src="../scripts/_happening.js?1622691816"></script>
-        <script src="../scripts/_input.js?1622691816"></script>
-        <script src="../scripts/_edit-post.js?1622691816"></script>
+        <script src="../scripts/_operations.js?1622780353"></script>
+        <script src="../scripts/_profile.js?1622780353"></script>
+        <script src="../scripts/_mfp.js?1622780353"></script>
+        <script src="../scripts/_search.js?1622780353"></script>
+        <script src="../scripts/_carousel.js?1622780353"></script>
+        <script src="../scripts/_player.js?1622780353"></script>
+        <script src="../scripts/_updates.js?1622780353"></script>
+        <script src="../scripts/_dash-side.js?1622780353"></script>
+        <script src="../scripts/_happening.js?1622780353"></script>
+        <script src="../scripts/_input.js?1622780353"></script>
+        <script src="../scripts/_edit-post.js?1622780353"></script>
+        <script src="../scripts/_post-form.js?1622780353"></script>
 
 
     </body>

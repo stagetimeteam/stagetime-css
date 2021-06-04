@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.article-card</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../styles/style.css?1622780353">
+    </head>
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.article-card</h1>
+            <p>
+                This component make sense only if given link was parsed with image.
+                In this case we need, title, description and image and this component
+                combines it all together.
+            </p>
+            <p>
+                Otherwise (for link without image) use <a href="_parsed-link.html">.parsed-link</a>
+            </p>
+            <br>
+
+            <div class="article-card">
+                <a class="article-card__summary parsed-link parsed-link--smaller" href="#">
+                    <div class="parsed-link__icon staple staple--smaller staple--pale">
+                        <div class="staple__frame">
+                            <svg class="staple__icon" width="32" height="32">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#32-staple"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="parsed-link__heading ellipsis">
+                        “What shall we do with this waiting time?” by Louisa Muller
+                    </div>
+                    <div class="parsed-link__url ellipsis">
+                        www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                    </div>
+                </a>
+                <a class="article-card__preview image-link" href="#">
+                    <img class="image-link__image"
+                         srcset="../temp/image-link@2x.jpg 2x"
+                         src="../temp/image-link.jpg"
+                         width="670"
+                         height="238"
+                         alt=""
+                    >
+                    <div class="image-link__icon staple staple--larger">
+                        <div class="staple__frame">
+                            <svg class="staple__icon" width="32" height="32">
+                                <use xlink:href="../symbols/symbols.svg?1622780353#32-staple"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../scripts/_operations.js?1622780353"></script>
+        <script src="../scripts/_profile.js?1622780353"></script>
+        <script src="../scripts/_mfp.js?1622780353"></script>
+        <script src="../scripts/_search.js?1622780353"></script>
+        <script src="../scripts/_carousel.js?1622780353"></script>
+        <script src="../scripts/_player.js?1622780353"></script>
+        <script src="../scripts/_updates.js?1622780353"></script>
+        <script src="../scripts/_dash-side.js?1622780353"></script>
+        <script src="../scripts/_happening.js?1622780353"></script>
+        <script src="../scripts/_input.js?1622780353"></script>
+        <script src="../scripts/_edit-post.js?1622780353"></script>
+        <script src="../scripts/_post-form.js?1622780353"></script>
+
+
+    </body>
+</html>
+
+
+
