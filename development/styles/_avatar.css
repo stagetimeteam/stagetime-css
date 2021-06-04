@@ -1,4 +1,5 @@
 .avatar {
+    position: relative;
     display: inline-flex; /* inline-block could be enough but that one inherit line-height for images smaller than 24px */
     vertical-align: top;
     padding: 0;
@@ -13,6 +14,32 @@
         background-color: var(--image-fallback);
         transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
     }
+
+    .avatar__cancel {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(51, 51, 51, 0.5);
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
+
+    .avatar__cancel:hover {
+        background-color: rgba(51, 51, 51, 0.3);
+    }
+        .avatar__cross {
+            vertical-align: top;
+            fill: #FFFFFF;
+            width: 10px;
+            height: 10px;
+        }
 
 .avatar:hover {
 
