@@ -1,8 +1,8 @@
 .add {
     padding: 24px 28px 48px;
-    min-height: 265px;
     display: flex;
     align-items: flex-start;
+    min-height: var(--post-form-screen);
 }
     .add__visualisation {
         width: 112px;
