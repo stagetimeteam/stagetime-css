@@ -9,6 +9,7 @@
     --user-color: #9CB2BE;
     --org-card-width: 688px;
     --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+    --post-form-screen: 265px;
 }
 
 @keyframes slide {
