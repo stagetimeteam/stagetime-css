@@ -12,7 +12,15 @@
             position: absolute;
             z-index: 200;
             right: 26px;
-            top: 8px;
+            top: 11px;
+            box-shadow: -30px 0 11px #FFFFFF;
+        }
+
+        .dash-side__show-customization.button,
+        .dash-side__show-customization > .button,
+        .dash-side__show-customization.action,
+        .dash-side__show-customization > .action {
+            position: absolute;
         }
 
         .dash-side__people {
