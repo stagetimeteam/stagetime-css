@@ -1,0 +1,38 @@
+.post-handler {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 25px 18px 25px 21px;
+    background-color: #F6F6F6;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 13px;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    .post-handler__author-photo {
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .post-handler__select-author {
+        width: 132px;
+        margin-left: 9px;
+    }
+
+    .post-handler__message {
+        flex-grow: 1;
+        margin-left: 9px;
+    }
+
+    .post-handler__menu {
+        margin-left: 25px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .post-handler__item {
+            margin-left: 15px;
+        }
+
+        .post-handler__item:first-child {
+            margin-left: 0;
+        }
