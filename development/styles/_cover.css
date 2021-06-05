@@ -19,4 +19,9 @@
 
 .cover--clickable {
     cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.cover--clickable:hover {
+    background-color: #757575;
 }
