@@ -1,6 +1,7 @@
 .edit-post {
     padding-top: 22px;
     padding-bottom: 22px;
+    min-height: 265px;
 }
     .edit-post__header {
         padding-left: 28px;
