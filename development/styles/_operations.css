@@ -83,41 +83,49 @@
 
     .operations--simplified-handler .operations__dropdown {
         top: calc(100% + 11px);
+        border-radius: 6px;
     }
 
 
-.operations--inverted {
+
+.operations--for-player {
 
 }
-    .operations--inverted .operations__handler {
-        color: #FFFFFF;
-    }
-        .operations--inverted .operations__icon {
-            fill: #FFFFFF;
-        }
-
-        .operations--inverted .operations__handler:hover .operations__icon {
-            fill: #FFFFFF;
-        }
-
-    .operations--inverted .operations__dropdown {
+    .operations--for-player .operations__handler {
 
     }
+        .operations--for-player .operations__icon {
+            width: 22px;
+            height: 22px;
+        }
 
-.operations--inverted {
+    .operations--for-player .operations__dropdown {
+        top: calc(100% - 5px);
+        left: 18px;
+        width: 190px;
+    }
+
+
+
+
+.operations--white {
 
 }
-    .operations--inverted .operations__handler:hover {
+    .operations--white .operations__handler:hover {
         color: #AAAAAA;
     }
-        .operations--inverted:hover .operations__icon {
+        .operations--white:hover .operations__icon {
             fill: #AAAAAA;
         }
 
-        .operations--inverted:hover .operations__handler:hover .operations__icon {
+        .operations--white:hover .operations__handler:hover .operations__icon {
             fill: #AAAAAA;
         }
 
-    .operations--inverted:hover .operations__dropdown {
+    .operations--white:hover .operations__dropdown {
 
     }
+
+
+
+

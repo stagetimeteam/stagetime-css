@@ -5,8 +5,16 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
     color: #FFFFFF;
     border-radius: 10px;
-    overflow: hidden;
 }
+    .player__menu {
+        position: absolute;
+        left: 0;
+        top: 4px;
+    }
+    .player__menu.player {
+        position: absolute;
+    }
+
     .player__handler {
         position: absolute;
         z-index: 50;
@@ -295,8 +303,13 @@
 
 .player--collapsed {
     height: 65px;
+    overflow: hidden; /* Cut if anything left outside */
     cursor: pointer; /* Clicking on whole player expands it */
 }
+    .player--collapsed .player__menu {
+        display: none;
+    }
+
     .player--collapsed .player__handler {
 
     }
