@@ -17,7 +17,8 @@
             cursor: default; /* somehow it feels like you can click and start typing in header */
         }
 
-        .post-form__close {
+        .post-form__close,
+        .post-form__close.mfp-close {
             position: absolute;
             right: 20px;
             top: 13px;
