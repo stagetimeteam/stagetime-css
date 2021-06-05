@@ -6,9 +6,6 @@
     background-color: #F6F6F6;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     border-radius: 13px;
-    text-indent: 200%;
-    white-space: nowrap;
-    overflow: hidden;
 }
     .post-handler__author-photo {
         box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);

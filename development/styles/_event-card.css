@@ -102,8 +102,6 @@
 
 
 .event-card--detailed {
-    display: inline-block; /* to be used inside of .mfp */
-    vertical-align: top;
     width: 296px; /* to be used inside of .mfp */
     text-align: left;
 }

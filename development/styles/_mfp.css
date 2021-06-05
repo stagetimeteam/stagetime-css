@@ -26,6 +26,11 @@
         height: 8px;
     }
 
+.mfp-window {
+    display: inline-block;
+    vertical-align: top;
+}
+
 
 /* background color */
 .mfp-bg {
