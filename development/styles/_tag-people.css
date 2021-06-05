@@ -1,6 +1,7 @@
 .tag-people {
     padding-top: 22px;
     padding-bottom: 22px;
+    min-height: var(--post-form-screen);
 }
     .tag-people__header {
         padding-left: 28px;
