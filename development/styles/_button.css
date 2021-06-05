@@ -128,3 +128,28 @@
     background-color: #F1F1F1;
     color: #8B8B8B;
 }
+
+
+
+
+.button--expandable {
+    overflow: hidden;
+    transition: padding-left var(--transition-show),
+                padding-right var(--transition-show),
+                width var(--transition-show),
+                color var(--transition-show);
+}
+    .button--expandable .button__icon {
+        transition: margin-left var(--transition-show),
+                    margin-right var(--transition-show);
+    }
+
+.button--expandable:not(:hover) {
+    width: 34px !important;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: transparent;
+}
+    .button--expandable:not(:hover) .button__icon {
+        margin-left: 0;
+    }
