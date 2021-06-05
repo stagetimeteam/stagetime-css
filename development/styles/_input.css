@@ -1,5 +1,7 @@
 .input {
+    display: block;
     position: relative;
+    text-decoration: none;
 }
     .input__widget {
         width: 100%;

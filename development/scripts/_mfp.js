@@ -18,18 +18,18 @@ $(document).ready(function () {
 
     $('.mfp-handler').magnificPopup(options);
 
-
-    /* Init post-form popup by textarea focus and select click */
-
-    options.items = { src: '#post-form' };
-
-    $('.post-handler__message .input__widget').on('focus', function () {
-        $.magnificPopup.open(options);
-    });
-
-    $('.post-handler__select-author .input__widget').on('click', function (event) {
-        event.preventDefault();
-        $.magnificPopup.open(options);
-    });
+    //
+    // /* Init post-form popup by textarea focus and select click */
+    //
+    // options.items = { src: '#post-form' };
+    //
+    // $('.post-handler__message .input__widget').on('focus', function () {
+    //     $.magnificPopup.open(options);
+    // });
+    //
+    // $('.post-handler__select-author .input__widget').on('click', function (event) {
+    //     event.preventDefault();
+    //     $.magnificPopup.open(options);
+    // });
 
 });
