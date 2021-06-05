@@ -148,8 +148,8 @@
     width: 34px !important;
     padding-left: 9px;
     padding-right: 9px;
-    color: transparent;
 }
     .button--expandable:not(:hover) .button__icon {
         margin-left: 0;
+        margin-right: 6px;
     }
