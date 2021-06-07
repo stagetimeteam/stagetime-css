@@ -18,6 +18,7 @@
         font-size: 11px;
         line-height: 20px;
         color: #545454;
+        white-space: nowrap; /* in case of <div> */
         transition: background-color var(--transition-hover),
                     border-color var(--transition-hover),
                     box-shadow var(--transition-hover);
@@ -47,6 +48,7 @@
         vertical-align: top;
         height: auto; /* user rows="" attribute */
         min-height: 40px;
+        white-space: normal;
         resize: vertical;
         font-weight: inherit;
     }
@@ -130,3 +132,5 @@
     .input__icon ~ .input__widget {
         padding-left: 44px;
     }
+
+
