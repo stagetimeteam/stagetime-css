@@ -10,7 +10,7 @@
     border-radius: 10px;
 }
     .post__head {
-        margin-right: 43px; /* there are .post__actions */
+        margin-right: 30px; /* there are .post__actions */
     }
 
     .post__actions {
