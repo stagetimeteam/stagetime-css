@@ -1,0 +1,30 @@
+.quick-actions {
+
+}
+    .quick-actions__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: inherit;
+        font-size: 15px;
+        line-height: 18px;
+        color: #757575;
+    }
+
+    .quick-actions__list {
+        margin-top: 16px;
+        display: flex;
+        align-items: flex-end;
+        overflow-x: auto;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .quick-actions__item {
+            flex-shrink: 0;
+            margin-left: 6px;
+        }
+
+        .quick-actions__item:first-child {
+            margin-left: 0;
+        }
