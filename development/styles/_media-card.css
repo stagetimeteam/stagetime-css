@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
-    padding: 8px 4px; /* because of shadow */
+    padding: 8px 6px; /* because of shadow */
 }
     .media-card__preview {
 
@@ -11,7 +11,7 @@
             position: relative;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.09);
         }
             .media-card__image {
                 vertical-align: top;
@@ -38,7 +38,7 @@
 
         .media-card__icon {
             position: absolute;
-            left: 19px;
+            left: 21px;
             top: 24px;
             right: auto;
             bottom: auto;
@@ -49,8 +49,8 @@
 
     .media-card__heading {
         position: absolute;
-        left: 19px;
-        right: 19px;
+        left: 21px;
+        right: 21px;
         bottom: 21px;
         font-weight: 600;
         font-size: 10px;
@@ -62,7 +62,7 @@
 
     .media-card__duration {
         position: absolute;
-        left: 19px;
+        left: 21px;
         bottom: 18px;
         font-size: 10px;
         line-height: 20px;
@@ -76,7 +76,7 @@
 
     .media-card__photo {
         position: absolute;
-        left: 19px;
+        left: 21px;
         top: 23px;
         visibility: hidden;
         opacity: 0;
@@ -86,7 +86,7 @@
 
     .media-card__name {
         position: absolute;
-        left: 19px;
+        left: 21px;
         max-width: calc(100% - 38px);
         bottom: 36px;
         font-weight: 600;
@@ -107,7 +107,7 @@
 
     .media-card__actions {
         position: absolute;
-        right: 4px;
+        right: 6px;
         top: 8px;
     }
         .media-card__actions .operations__icon {

@@ -67,11 +67,11 @@
 
 }
     .carousel--for-user-card .carousel__item {
-        margin-right: 4px;
+
     }
 
     .carousel--for-user-card .carousel__item:last-child {
-        margin-right: 0;
+
     }
 
 
@@ -96,11 +96,11 @@
 
 }
     .carousel--for-updates .carousel__item {
-        margin-right: 4px;
+
     }
 
     .carousel--for-updates .carousel__item:last-child {
-        margin-right: 0;
+
     }
 
 
