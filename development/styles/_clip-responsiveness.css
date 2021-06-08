@@ -1,0 +1,27 @@
+.clip {
+
+}
+    .clip__stage {
+
+    }
+        .clip__image {
+            width: 100%;
+            height: auto;
+        }
+
+        .clip:hover .clip__image {
+
+        }
+
+        .clip__stage::after {
+
+        }
+
+    .clip__action {
+
+    }
+    .clip__action.play,
+    .clip__action.staple {
+
+    }
+

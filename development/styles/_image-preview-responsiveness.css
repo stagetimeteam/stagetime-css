@@ -1,0 +1,16 @@
+.image-preview {
+
+}
+    .image-preview__image {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+.image-preview:hover {
+
+}
+    .image-preview:hover .image-preview__image {
+
+    }
