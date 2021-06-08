@@ -18,10 +18,14 @@
         font-size: 11px;
         line-height: 20px;
         color: #545454;
-        white-space: nowrap; /* in case of <div> */
         transition: background-color var(--transition-hover),
                     border-color var(--transition-hover),
                     box-shadow var(--transition-hover);
+        /* in case of <div>: */
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .input__widget:hover {
