@@ -1,0 +1,27 @@
+.dash-intro {
+
+}
+    .dash-intro__wrap {
+
+    }
+        .dash-intro__greetings {
+
+        }
+
+        .dash-intro__posting {
+
+        }
+
+        .dash-intro__news {
+
+        }
+            .dash-intro__news .updates__switch {
+                right: 22px;
+                top: 7px;
+            }
+
+            @media (max-width: 359px) {
+                .dash-intro__news .updates__switch {
+                    right: 11px;
+                }
+            }

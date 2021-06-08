@@ -1,6 +1,3 @@
-@media (max-width: 767px) {
-
-    .hide--hide-on-smartphone {
-        display: none !important; /* to override display flex or something like that */
-    }
+.hide--hide-on-smartphone {
+    display: none !important; /* to override display flex or something like that */
 }

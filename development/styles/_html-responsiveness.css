@@ -1,5 +1,3 @@
-@media (max-width: 767px) {
-    html {
-        min-width: 0;
-    }
+html {
+    min-width: 0;
 }

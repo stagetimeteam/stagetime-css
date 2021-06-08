@@ -222,3 +222,10 @@
     .header--centered-search .header__private-area {
         /*margin-left: 0;*/
     }
+
+
+@media (max-width: 991px) {
+    .header__greetings {
+        display: none;
+    }
+}

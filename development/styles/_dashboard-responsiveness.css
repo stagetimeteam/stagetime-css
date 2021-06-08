@@ -1,34 +1,31 @@
-@media (max-width: 767px) {
-
-    .dashboard {
-        /*position: relative;*/
-        display: block;
-        /*align-items: stretch;*/
-    }
-        .dashboard__sidebar {
-            display: none;
-            /*flex-shrink: 0;*/
-            /*position: relative;*/
-            /*z-index: 500;*/
-            /*width: var(--sidebar-width);*/
-            /*background-color: #FFFFFF;*/
-            /*box-shadow: inset -1px 0 0 #E8E8E8;*/
-        }
-
-        .dashboard__content {
-            /*flex-grow: 1;*/
-        }
-
-        .dashboard__aside {
-            display: none;
-            /*flex-shrink: 0;*/
-            /*position: relative;*/
-            /*z-index: 500;*/
-            /*width: var(--aside-width);*/
-            /*background-color: #FFFFFF;*/
-            /*box-shadow: inset 1px 0 0 #E8E8E8;*/
-        }
+.dashboard {
+    /*position: relative;*/
+    display: block;
+    /*align-items: stretch;*/
 }
+    .dashboard__sidebar {
+        display: none;
+        /*flex-shrink: 0;*/
+        /*position: relative;*/
+        /*z-index: 500;*/
+        /*width: var(--sidebar-width);*/
+        /*background-color: #FFFFFF;*/
+        /*box-shadow: inset -1px 0 0 #E8E8E8;*/
+    }
+
+    .dashboard__content {
+        /*flex-grow: 1;*/
+    }
+
+    .dashboard__aside {
+        display: none;
+        /*flex-shrink: 0;*/
+        /*position: relative;*/
+        /*z-index: 500;*/
+        /*width: var(--aside-width);*/
+        /*background-color: #FFFFFF;*/
+        /*box-shadow: inset 1px 0 0 #E8E8E8;*/
+    }
 
 
 
