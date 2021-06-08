@@ -1,0 +1,32 @@
+.parsed-link:not(.parsed-link--smaller) {
+    padding-left: 90px;
+}
+    .parsed-link:not(.parsed-link--smaller) .parsed-link__icon {
+
+    }
+
+    .parsed-link:not(.parsed-link--smaller) .parsed-link__heading {
+        margin-top: -10px;
+        white-space: normal;
+    }
+
+    .parsed-link:not(.parsed-link--smaller) .parsed-link__url {
+        font-weight: bold;
+    }
+
+
+
+.parsed-link--smaller {
+
+}
+    .parsed-link--smaller .parsed-link__icon {
+
+    }
+
+    .parsed-link--smaller .parsed-link__heading {
+
+    }
+
+    .parsed-link--smaller .parsed-link__url {
+
+    }

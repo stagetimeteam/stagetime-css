@@ -1,0 +1,94 @@
+.staple {
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*border: none;*/
+    /*width: 72px;*/
+    /*height: 72px;*/
+    /*padding: 16px;*/
+    /*background-color: rgba(255, 255, 255, 0.8);*/
+    /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.19);*/
+    /*border-radius: 11px;*/
+    /*cursor: pointer;*/
+}
+    .staple__frame {
+        /*height: 100%;*/
+        /*border: 2px solid #757575;*/
+        /*border-radius: 7px;*/
+        /*padding: 9px;*/
+    }
+        .staple__icon {
+            /*vertical-align: top;*/
+            /*fill: #757575;*/
+            /*width: 18px;*/
+            /*height: 18px; !* ignore sizes in html *!*/
+        }
+
+
+.staple--larger {
+    width: 72px;
+    height: 72px;
+    padding: 16px;
+}
+    .staple--larger .staple__frame {
+        padding: 9px;
+    }
+        .staple--larger .staple__icon {
+
+        }
+
+
+
+.staple--smaller {
+    /*width: 46px;*/
+    /*height: 46px;*/
+    /*padding: 10px;*/
+    /*border-radius: 7px;*/
+}
+    .staple--smaller .staple__frame {
+        /*padding: 5px;*/
+        /*border-radius: 5px;*/
+    }
+        .staple--smaller .staple__icon {
+            /*width: 12px;*/
+            /*height: 12px;*/
+        }
+
+
+.staple--pale {
+    /*background-color: #C4C4C4;*/
+    /*box-shadow: 0 4px 9px rgba(0, 0, 0, 0.2);*/
+}
+    .staple--pale .staple__frame {
+        /*border-color: #FFFFFF;*/
+    }
+        .staple--pale .staple__icon {
+            /*fill: #FFFFFF;*/
+        }
+
+
+
+
+
+.staple--play-alike {
+    background-color: rgba(51, 51, 51, 0.58);
+    border-radius: 50%;
+    padding: 20px;
+}
+    .staple--play-alike .staple__frame {
+        border: none;
+        padding: 0;
+    }
+        .staple--play-alike .staple__icon {
+            width: 32px;
+            height: 32px;
+            fill: #FFFFFF;
+        }
+
+.staple--play-alike:hover,
+.clip:hover .staple--play-alike {
+    background-color: rgba(196, 196, 196, 0.88);
+}
+    .staple--play-alike:hover .staple__icon,
+    .clip:hover .staple--play-alike .staple__icon {
+        fill: #FFFFFF;
+    }
