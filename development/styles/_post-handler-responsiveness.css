@@ -1,15 +1,7 @@
 .post-handler {
-    /*position: relative;*/
-    /*display: flex;*/
-    /*align-items: flex-start;*/
-    /*padding: 25px 18px 25px 21px;*/
     padding-bottom: 77px;
-    /*background-color: #F6F6F6;*/
-    /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);*/
-    /*border-radius: 13px;*/
 }
     .post-handler__author-photo {
-        /*box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);*/
         flex-shrink: 0;
     }
 
@@ -17,8 +9,6 @@
         flex-grow: 1;
         width: auto;
         min-width: 0;
-        /*width: 132px;*/
-        /*margin-left: 9px;*/
     }
 
     .post-handler__message {
@@ -27,21 +17,17 @@
         bottom: 22px;
         right: 18px;
         margin-left: 0;
-        /*flex-grow: 1;*/
-        /*margin-left: 9px;*/
     }
 
     .post-handler__menu {
         margin-left: 10px;
-        /*display: flex;*/
-        /*align-items: flex-start;*/
     }
         .post-handler__item {
-            /*margin-left: 15px;*/
+
         }
 
         .post-handler__item:first-child {
-            /*margin-left: 0;*/
+
         }
             .post-handler__item {
 
