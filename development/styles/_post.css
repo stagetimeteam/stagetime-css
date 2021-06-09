@@ -15,6 +15,7 @@
 
     .post__actions {
         position: absolute;
+        z-index: 100;
         right: -3px;
         top: 7px;
     }
