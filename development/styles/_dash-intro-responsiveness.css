@@ -25,3 +25,8 @@
                     right: 11px;
                 }
             }
+
+
+        .dash-intro__related {
+            display: block;
+        }

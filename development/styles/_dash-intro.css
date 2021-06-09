@@ -32,4 +32,5 @@
 
         .dash-intro__related {
             margin-top: 22px;
+            display: none;
         }
