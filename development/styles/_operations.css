@@ -147,6 +147,25 @@
 
 
 
+.operations--for-news {
+
+}
+    .operations--for-news .operations__handler {
+
+    }
+        .operations--for-news .operations__icon {
+            width: 22px;
+            height: 22px;
+        }
+
+    .operations--for-news .operations__dropdown {
+        top: 12px;
+        right: 22px;
+        width: 147px;
+    }
+
+
+
 .operations--white {
 
 }
