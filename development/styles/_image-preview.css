@@ -13,7 +13,13 @@
         transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
     }
 
-
+    @supports (object-fit: cover) {
+        .image-preview__image {
+            object-fit: cover;
+            min-height: 238px;
+            max-height: 335px;
+        }
+    }
 
 .image-preview:hover {
 
