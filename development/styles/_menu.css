@@ -1,13 +1,7 @@
 .menu {
-
-}
-
-.operations__dropdown.menu,
-.operations__dropdown .menu {
     padding-top: 14px;
     padding-bottom: 20px;
 }
-
     .menu__link {
         display: flex;
         align-items: flex-start;
@@ -32,22 +26,17 @@
 
 
 .menu--smaller {
-
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
-
-.operations__dropdown.menu--smaller,
-.operations__dropdown .menu--smaller {
-    padding-top: 14px;
-    padding-bottom: 14px;
-}
-
     .menu--smaller .menu__link {
-        padding: 10px 20px 11px;
+        padding: 10px 18px 11px;
         font-weight: bold;
         font-size: 10px;
         line-height: 16px;
     }
         .menu--smaller .menu__icon {
+            margin-left: -1px;
             margin-right: 12px;
             margin-top: 0;
             width: 16px;

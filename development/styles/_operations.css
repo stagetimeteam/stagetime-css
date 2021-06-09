@@ -101,10 +101,49 @@
 
     .operations--for-player .operations__dropdown {
         top: calc(100% - 5px);
+        right: auto;
         left: 18px;
         width: 190px;
     }
 
+
+
+
+.operations--for-media-video {
+
+}
+    .operations--for-media-video .operations__handler {
+
+    }
+        .operations--for-media-video .operations__icon {
+            width: 22px;
+            height: 22px;
+        }
+
+    .operations--for-media-video .operations__dropdown {
+        top: 12px;
+        right: 22px;
+        width: 147px;
+    }
+
+
+
+.operations--for-media-audio {
+
+}
+    .operations--for-media-audio .operations__handler {
+
+    }
+        .operations--for-media-audio .operations__icon {
+            width: 22px;
+            height: 22px;
+        }
+
+    .operations--for-media-audio .operations__dropdown {
+        top: 12px;
+        right: 22px;
+        width: 116px;
+    }
 
 
 
