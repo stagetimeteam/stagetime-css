@@ -44,7 +44,7 @@
 
     .updates__body {
         position: relative;
-        height: 164px; /* default height for media */
+        height: 187px; /* default height for media */
         transition: height var(--transition-show);
     }
         .updates__section {
@@ -83,7 +83,7 @@
         }
 
     .updates--switched-to-news .updates__body {
-        height: 191px; /* default height for news */
+        height: 214px; /* default height for news */
     }
         .updates--switched-to-news .updates__section--media {
             visibility: hidden;

@@ -95,29 +95,32 @@
 .carousel--for-updates {
 
 }
-    .carousel--for-updates .carousel__item {
+    .carousel--for-updates .carousel__container {
 
     }
+        .carousel--for-updates .carousel__item {
+            padding-bottom: 23px;
+        }
 
-    .carousel--for-updates .carousel__item:last-child {
+        .carousel--for-updates .carousel__item:last-child {
 
-    }
+        }
 
 
-    .carousel--for-updates .carousel__control {
-        position: absolute;
-        z-index: 100;
-        top: 50%;
-        right: -12px;
-    }
+        .carousel--for-updates .carousel__control {
+            position: absolute;
+            z-index: 100;
+            top: 50%;
+            right: -12px;
+        }
 
-    .carousel--for-updates .carousel__control--prev {
-        margin-top: 2px;
-    }
+        .carousel--for-updates .carousel__control--prev {
+            margin-top: 2px;
+        }
 
-    .carousel--for-updates .carousel__control--next {
-        margin-top: -42px;
-    }
+        .carousel--for-updates .carousel__control--next {
+            margin-top: -42px;
+        }
 
 
 
