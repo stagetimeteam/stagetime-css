@@ -27,6 +27,10 @@
 
         }
 
+        .dash-side__show-audio {
+            margin-top: 20px;
+        }
+
         .dash-side__audio {
             margin-top: 20px;
         }

@@ -1,0 +1,47 @@
+.dash-side {
+    /*position: relative;*/
+    padding-top: 0;
+    padding-bottom: 0;
+}
+    .dash-side__container {
+        /*width: 226px;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
+        .dash-side__show-customization {
+            display: none;
+        }
+
+        .dash-side__people {
+            display: none;
+        }
+
+        .dash-side__show-audio {
+            display: none;
+        }
+
+        .dash-side__audio {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .dash-side__news {
+            display: none;
+        }
+
+    .dash-side__customization-panel {
+        display: none;
+    }
+        .dash-side__close-customization {
+
+        }
+
+        .dash-side__about-customization {
+
+        }
+
+        .dash-side__customize {
+
+        }

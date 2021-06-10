@@ -5,6 +5,7 @@
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
     color: #FFFFFF;
     border-radius: 10px;
+    text-align: center;
 }
     .player__menu {
         position: absolute;
@@ -70,6 +71,10 @@
         .player__handler:hover .player__angle {
             fill: #9CB2BE;
         }
+
+    .player__close {
+        display: none;
+    }
 
     .player__heading {
         margin-top: 0;
