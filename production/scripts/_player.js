@@ -104,4 +104,18 @@
         }
     });
 
+
+    /* Collapse on mobile */
+
+    function playerCollapseOnMobiles() {
+        if( mobileMediaQuery.matches ) {
+            $('.player').addClass('player--collapsed');
+        } else {
+            $('.player').removeClass('player--collapsed');
+        }
+    }
+
+    $(window).on('resize', playerCollapseOnMobiles);
+    $(document).ready(playerCollapseOnMobiles);
+
 })(jQuery);
