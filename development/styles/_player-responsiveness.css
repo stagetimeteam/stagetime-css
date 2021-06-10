@@ -14,11 +14,12 @@
         display: block;
         width: 36px;
         height: 44px;
+        padding: 0;
         align-items: center;
         justify-content: center;
         background-color: transparent;
         border: none;
-        text-indent: 200%;
+        text-indent: 300%;
         white-space: nowrap;
         overflow: hidden;
         cursor: pointer;
