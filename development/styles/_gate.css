@@ -1,0 +1,46 @@
+.gate {
+    display: table;
+    vertical-align: top;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #343434;
+}
+    .gate__cell {
+        display: table-cell;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+        .gate__wrap {
+            display: flex;
+            align-items: center;
+            padding-top: 60px;
+            padding-bottom: 90px;
+        }
+            .gate__intro {
+                padding-left: 27px;
+                padding-bottom: 156px;
+            }
+                .gate__branding {
+
+                }
+
+                .gate__slogan {
+                    margin-top: 24px;
+                    width: 286px;
+                    font-size: 18px;
+                    line-height: 29px;
+                    color: #8B8B8B;
+                }
+                    .gate__highlight {
+                        font-weight: inherit;
+                        color: #FFFFFF;
+                    }
+
+            .gate__form {
+                width: 356px;
+                margin-left: auto;
+            }

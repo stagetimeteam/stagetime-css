@@ -1,4 +1,5 @@
 html {
+    height: 100%;
     min-width: 1220px; /* dashboard is widest page so far: 1200px (plus 20px for scrollbar on the right */
     overflow-y: scroll;
     font-family: "Open Sans", sans-serif;

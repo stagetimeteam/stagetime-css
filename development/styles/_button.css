@@ -22,11 +22,17 @@
     .button__icon {
         vertical-align: top;
         fill: currentColor;
+        transition: fill var(--transition-hover);
     }
 
     .button__icon--left {
         margin-left: -4px;
         margin-right: 4px;
+    }
+
+    .button__icon--right {
+        margin-left: 4px;
+        margin-right: -4px;
     }
 
     .button__logo {
@@ -152,4 +158,51 @@
     .button--expandable:not(:hover) .button__icon {
         margin-left: 0;
         margin-right: 6px;
+    }
+
+
+
+.button--auth-primary {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    background-color: #757575;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+.button--auth-primary:hover {
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+}
+
+.button--auth-primary:active {
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+}
+
+
+
+.button--auth-secondary {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: #AFAFAF;
+}
+    .button--auth-secondary .button__icon {
+        fill: #545454;
+    }
+
+.button--auth-secondary:hover {
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+}
+    .button--auth-secondary:hover .button__icon {
+        fill: #757575;
     }
