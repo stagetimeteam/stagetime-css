@@ -45,7 +45,7 @@
     /* stylelint-enable */
 
     .input__widget[type="password"] {
-        font-family: Tahoma;
+        font-family: "Tahoma", sans-serif;
     }
 
 
