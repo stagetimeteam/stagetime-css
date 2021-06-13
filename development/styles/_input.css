@@ -44,6 +44,10 @@
     .input__widget:-ms-input-placeholder      { font-style: normal; color: #AAAAAA; }
     /* stylelint-enable */
 
+    .input__widget[type="password"] {
+        font-family: Tahoma;
+    }
+
 
 .input--area {
 
