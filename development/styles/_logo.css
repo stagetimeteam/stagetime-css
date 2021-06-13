@@ -15,9 +15,3 @@
 .logo--dark {
     background-image: url("../images/logo-dark.svg");
 }
-
-.logo--larger.logo--dark {
-    width: 375px;
-    height: 73px;
-    background-image: url("../images/logo-larger-dark.svg");
-}

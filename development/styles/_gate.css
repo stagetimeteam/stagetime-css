@@ -35,6 +35,11 @@
                     line-height: 29px;
                     color: #8B8B8B;
                 }
+
+                .gate__mobile-slogan {
+                    display: none;
+                }
+
                     .gate__highlight {
                         font-weight: inherit;
                         color: #FFFFFF;

@@ -1,0 +1,40 @@
+.auth-logo {
+/*    position: relative;*/
+    width: 202px;
+    height: 113px;
+/*    text-indent: 200%;*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+}
+    .auth-logo::before {
+/*        content: "";*/
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+/*        display: block;*/
+        width: 52px;
+        height: 52px;
+/*        background-image: url("../images/responsive-logo-emblem.svg");*/
+/*        background-size: cover;*/
+/*        background-repeat: no-repeat;*/
+/*        background-position: center center;*/
+    }
+
+    .auth-logo::after {
+/*        content: "";*/
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+/*        display: block;*/
+        width: 202px;
+        height: 53px;
+/*        background-image: url("../images/responsive-logo-title.svg");*/
+/*        background-size: cover;*/
+/*        background-repeat: no-repeat;*/
+/*        background-position: center center;*/
+    }

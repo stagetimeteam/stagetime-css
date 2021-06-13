@@ -6,13 +6,14 @@
     /*text-align: center;*/
 }
     .auth__heading {
+        display: none;
         /*font-size: 15px;*/
         /*line-height: 20px;*/
         /*color: #AFAFAF;*/
     }
 
     .auth__fieldset {
-        /*margin-top: 43px;*/
+        margin-top: 0;
     }
         .auth__field {
             /*margin-top: 20px;*/
