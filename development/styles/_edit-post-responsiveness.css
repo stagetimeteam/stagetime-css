@@ -1,0 +1,64 @@
+.edit-post {
+    /*padding-top: 22px;*/
+    /*padding-bottom: 22px;*/
+    /*min-height: var(--post-form-screen);*/
+}
+    .edit-post__header {
+        /*padding-left: 28px;*/
+        /*padding-right: 28px;*/
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+    }
+        .edit-post__person {
+            /*margin-right: 14px;*/
+        }
+
+        .edit-post__option {
+            /*margin-right: 12px;*/
+        }
+
+        .edit-post__option:last-child {
+            /*margin-right: 0;*/
+        }
+
+    .edit-post__content {
+        /*margin-top: 22px;*/
+        max-height: none;
+        overflow-y: visible;
+        /*padding-left: 28px;*/
+        /*padding-right: 28px;*/
+    }
+        .edit-post__area {
+
+        }
+            .edit-post__message {
+                /*width: 100%;*/
+                /*vertical-align: top;*/
+                /*border: none;*/
+                /*padding: 0;*/
+                /*outline: none;*/
+                /*font-family: inherit;*/
+                /*resize: none;*/
+                /*font-size: 12px;*/
+                /*line-height: 26px;*/
+                /*color: #545454;*/
+            }
+
+            /* stylelint-disable block-opening-brace-space-before */
+            /*.edit-post__message::-webkit-input-placeholder { font-style: normal; color: #A9A9A9; font-size: 17px; }*/
+            /*.edit-post__message::-moz-placeholder          { font-style: normal; color: #A9A9A9; font-size: 17px; opacity: 1; }*/
+            /*.edit-post__message:-ms-input-placeholder      { font-style: normal; color: #A9A9A9; font-size: 17px; }*/
+            /* stylelint-enable */
+
+            .edit-post__message--extendable {
+
+            }
+
+            .edit-post__message--extendable-via-plugin {
+
+            }
+
+
+    .edit-post__attachment {
+        /*margin-top: 24px;*/
+    }

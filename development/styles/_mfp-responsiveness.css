@@ -3,16 +3,17 @@
     /*height: auto;*/
     /*right: 0;*/
     /*bottom: 0;*/
-    /*overflow-x: auto !important; !* take back horizontal scrollbar *!*/
+    overflow: visible !important; /* take back horizontal scrollbar */
 }
 
 .mfp-container {
-    /*display: inline-block;*/
+    display: block;
     padding-left: 0;      /* horizontal */
     padding-right: 0;     /* padding */
     /*vertical-align: top;*/
     /*width: auto;*/
-    /*min-width: 100%;*/
+    height: auto;
+    min-width: 0;
     /*position: static;*/
 }
     .mfp-container:before {
@@ -20,6 +21,8 @@
     }
 
 .mfp-content {
+    display: block;
+    position: static;
     /*text-align: center;*/
 }
     .mfp-content::before, /* vertical */
@@ -61,6 +64,11 @@
 /* overlay animate out */
 .mfp-bg.mfp-removing {
     /*opacity: 0;*/
+}
+
+.mfp-wrap {
+    position: static;
+    overflow: visible !important;
 }
 
 /* content at start */

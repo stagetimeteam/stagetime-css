@@ -6,6 +6,8 @@ $(document).ready(function () {
         showCloseBtn: false, /* we will have our own cross button in .window component */
         callbacks: {
             open: function() {
+                /* Add */
+                $('html').addClass('modal-active');
                 /* On popup open re-init Carousels inside: */
                 $('.mfp-content .carousel').each(function () {
                     initCarousel($(this));
@@ -17,7 +19,8 @@ $(document).ready(function () {
     });
 
     $('.mfp-cancel').on('click', function () {
-        $.magnificPopup.close()
+        $.magnificPopup.close();
+        $('html').removeClass('modal-active');
     });
 
 

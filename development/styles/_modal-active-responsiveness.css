@@ -1,0 +1,11 @@
+.modal-active {
+    overflow: auto !important; /* override mfp's "overflow: hidden" */
+}
+
+.modal-active .header {
+    display: none;
+}
+
+.modal-active .page {
+    display: none;
+}
