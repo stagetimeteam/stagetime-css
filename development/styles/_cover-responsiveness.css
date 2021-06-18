@@ -1,0 +1,25 @@
+.cover-responsiveness {
+    /*position: relative;*/
+    /*width: 112px;*/
+    /*height: 112px;*/
+    /*background-color: #D2D2D2;*/
+    /*border: none;*/
+    /*padding: 0;*/
+    /*border-radius: 8px;*/
+}
+    .cover__icon {
+        /*vertical-align: top;*/
+        /*width: 32px;*/
+        /*height: 32px;*/
+        /*fill: #FFFFFF;*/
+    }
+
+
+.cover--full-width-on-smartphone {
+    width: auto;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+}
+    .cover--full-width-on-smartphone .cover__icon {
+
+    }

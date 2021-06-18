@@ -1,0 +1,50 @@
+.add {
+    padding: 36px 38px 48px;
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    /*min-height: var(--post-form-screen);*/
+    display: flex;
+    align-items: stretch;
+    flex-direction: column-reverse;
+}
+    .add__visualisation {
+        width: auto;
+        margin-right: 0;
+        margin-top: 25px;
+        /*flex-shrink: 0;*/
+        display: flex;
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
+        .add__preview {
+            margin-top: 15px;
+        }
+
+        .add__note {
+            margin-top: 0;
+            /*font-size: 11px;*/
+            /*line-height: 20px;*/
+            /*color: #8B8B8B;*/
+        }
+
+    .add__content {
+        /*flex-grow: 1;*/
+    }
+        .add__field {
+            /*margin-top: 25px;*/
+        }
+
+        .add__field:first-child {
+            /*margin-top: 0;*/
+        }
+
+        .add__sub-action {
+            margin-top: 10px;
+            /*margin-left: auto;*/
+            /*font-size: 11px;*/
+            /*line-height: 14px;*/
+            /*text-align: right;*/
+        }
+            .add__parse {
+
+            }

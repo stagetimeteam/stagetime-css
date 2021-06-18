@@ -1,4 +1,6 @@
 .parsed-link:not(.parsed-link--smaller) {
+    height: auto;
+    min-height: 72px;
     padding-left: 90px;
 }
     .parsed-link:not(.parsed-link--smaller) .parsed-link__icon {
@@ -17,7 +19,7 @@
 
 
 .parsed-link--smaller {
-
+    min-height: 46px;
 }
     .parsed-link--smaller .parsed-link__icon {
 

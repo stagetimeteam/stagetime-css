@@ -1,0 +1,74 @@
+.attachment {
+    /*position: relative;*/
+    width: auto;
+}
+    .attachment__summary {
+        /*margin-bottom: 29px;*/
+        /*margin-right: 112px;*/
+    }
+
+    .attachment__preview {
+
+    }
+        .attachment__image {
+            width: 100%;
+            height: auto;
+            /*border-radius: 10px;*/
+            /*background-color: var(--image-fallback);*/
+            /*vertical-align: top;*/
+        }
+
+    .attachment__title {
+        /*position: absolute;*/
+        /*left: 20px;*/
+        /*right: 112px;*/
+        /*top: 17px;*/
+        /*font-weight: bold;*/
+        /*font-size: 12px;*/
+        /*line-height: 20px;*/
+        /*color: #FFFFFF;*/
+    }
+
+    .attachment__sub-title {
+        /*position: absolute;*/
+        /*left: 20px;*/
+        /*right: 108px;*/
+        /*top: 47px;*/
+        /*font-size: 12px;*/
+        /*line-height: 20px;*/
+        /*color: #FFFFFF;*/
+    }
+
+    .attachment__operations {
+        /*position: absolute;*/
+        /*right: 14px;*/
+        /*top: 14px;*/
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+    }
+
+
+.attachment--link {
+
+}
+    .attachment--link .attachment__summary {
+        margin-right: 0;
+    }
+
+    .attachment--link .attachment__preview {
+
+    }
+        .attachment--link .attachment__image {
+
+        }
+
+    .attachment--link .attachment__operations {
+        /*top: -6px;*/
+        margin-top: 10px;
+        margin-left: -6px;
+        position: static;
+    }
+
+    .attachment--link .attachment__summary + .attachment__operations {
+        margin-top: -19px;
+    }

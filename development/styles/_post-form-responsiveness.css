@@ -1,4 +1,5 @@
 .post-form {
+    position: relative;
     /*width: 596px;*/
     width: auto;
     /*background-color: #FFFFFF;*/
@@ -9,6 +10,7 @@
         /*position: relative;*/
         /*height: 67px;*/
         /*padding: 20px 70px 20px 28px;*/
+        padding-left: 63px;
         /*border-bottom: 1px solid #E8E8E8;*/
     }
         .post-form__heading {
@@ -21,7 +23,7 @@
         .post-form__close,
         .post-form__close.mfp-close {
             /*position: absolute;*/
-            /*right: 20px;*/
+            right: 13px;
             /*top: 13px;*/
         }
 
@@ -42,6 +44,8 @@
         /*border-top: 1px solid #E8E8E8;*/
         /*height: 73px;*/
         /*padding: 16px 28px;*/
+        padding-left: 9px;
+        padding-right: 20px;
     }
         .post-form__menu {
             /*display: flex;*/
@@ -53,6 +57,12 @@
 
             .post-form__item:first-child {
                 /*margin-left: 0;*/
+            }
+
+            @media (max-width: 359px) {
+                .post-form__item {
+                    margin-left: 8px;
+                }
             }
 
         .post-form__operations {
@@ -73,4 +83,31 @@
 
             .post-form__action:first-child {
                 /*margin-left: 0;*/
+            }
+
+            .post-form__action--secondary {
+                position: absolute;
+                left: 14px;
+                top: 15px;
+            }
+
+            .post-form__action--secondary.button,
+            .post-form__action--secondary > .button {
+                width: 40px;
+                height: 40px;
+                padding: 0;
+                border: none;
+                box-shadow: none;
+                background-color: transparent;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                background-image: url("../vectors/post-form-back.svg");
+                background-size: 16px 16px;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .post-form__action--primary {
+
             }

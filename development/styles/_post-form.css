@@ -73,3 +73,11 @@
             .post-form__action:first-child {
                 margin-left: 0;
             }
+
+            .post-form__action--secondary {
+
+            }
+
+            .post-form__action--primary {
+
+            }

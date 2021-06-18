@@ -1,0 +1,142 @@
+.party {
+    /*display: inline-flex;*/
+    /*align-items: center;*/
+    /*background-color: rgba(232, 232, 232, 0.57);*/
+    /*border: none;*/
+    /*padding: 8px;*/
+    /*border-radius: 20px;*/
+    /*text-decoration: none;*/
+}
+    .party__icon {
+        /*margin-left: 3px;*/
+        /*flex-shrink: 0;*/
+        /*vertical-align: top;*/
+        /*fill: #BCBCBC;*/
+    }
+
+    .party__list {
+        /*margin-left: 1px;*/
+        /*margin-top: -5px;*/
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+    }
+
+
+        .party__item {
+            /*flex-shrink: 0;*/
+            /*margin-left: 5px;*/
+            /*margin-top: 5px;*/
+        }
+
+    .party__more {
+        /*margin-left: 6px;*/
+        /*margin-right: 6px;*/
+        /*font-weight: bold;*/
+        /*font-size: 9px;*/
+        /*color: #757575;*/
+        /*text-decoration: none;*/
+        /*white-space: nowrap;*/
+    }
+
+
+.party--inverted {
+
+}
+    .party--inverted .party__icon {
+        /*fill: #FFFFFF;*/
+    }
+
+    .party--inverted .party__list {
+
+    }
+        .party--inverted .party__item {
+
+        }
+
+        .party--inverted .party__item:first-child {
+
+        }
+
+    .party--inverted .party__more {
+        /*color: #FFFFFF;*/
+        /*text-shadow: 0 0 2px #333333;*/
+    }
+
+
+
+.party--tagging {
+    /*transition: background-color var(--transition-hover);*/
+}
+
+.party--tagging:hover {
+    /*background-color: #E0E0E0;*/
+}
+
+    .party--tagging .party__icon {
+        /*margin-left: 0;*/
+    }
+
+    .party--tagging .party__list {
+
+    }
+        .party--tagging .party__item {
+
+        }
+
+        .party--tagging .party__item:first-child {
+
+        }
+
+    .party--tagging .party__more {
+
+    }
+
+
+
+.party--browsing {
+
+}
+
+.party--browsing:hover {
+
+}
+
+    .party--browsing .party__icon {
+        /*margin-left: 0;*/
+    }
+
+    .party--browsing .party__list {
+        /*flex-wrap: wrap;*/
+    }
+        .party--browsing .party__item {
+
+        }
+
+        .party--browsing .party__item:first-child {
+
+        }
+
+    .party--browsing .party__more {
+
+    }
+
+
+
+
+@media (max-width: 479px) {
+
+    .party--on-smartphone-only-icon {
+
+    }
+        .party--on-smartphone-only-icon .party__icon {
+            margin-left: 0;
+        }
+
+        .party--on-smartphone-only-icon .party__list {
+            display: none;
+        }
+
+        .party--on-smartphone-only-icon .party__more {
+            display: none;
+        }
+}

@@ -131,6 +131,12 @@
         /*padding-left: 44px;*/
     }
 
+    .input--no-icon-on-320-smartphone .input__icon {
+        display: none;
+    }
+    .input--no-icon-on-320-smartphone .input__icon ~ .input__widget {
+        padding-left: 19px;
+    }
 
 .input--auth {
 
