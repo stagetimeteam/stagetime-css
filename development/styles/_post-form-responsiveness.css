@@ -1,0 +1,76 @@
+.post-form {
+    /*width: 596px;*/
+    width: auto;
+    /*background-color: #FFFFFF;*/
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+    /*border-radius: 8px;*/
+}
+    .post-form__header {
+        /*position: relative;*/
+        /*height: 67px;*/
+        /*padding: 20px 70px 20px 28px;*/
+        /*border-bottom: 1px solid #E8E8E8;*/
+    }
+        .post-form__heading {
+            /*font-size: 22px;*/
+            /*line-height: 26px;*/
+            /*color: #757575;*/
+            /*cursor: default; !* somehow it feels like you can click and start typing in header *!*/
+        }
+
+        .post-form__close,
+        .post-form__close.mfp-close {
+            /*position: absolute;*/
+            /*right: 20px;*/
+            /*top: 13px;*/
+        }
+
+    .post-form__body {
+
+    }
+        .post-form__screen {
+            /*display: none;*/
+        }
+
+        .post-form__screen--current {
+            /*display: block;*/
+        }
+
+    .post-form__footer {
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+        /*border-top: 1px solid #E8E8E8;*/
+        /*height: 73px;*/
+        /*padding: 16px 28px;*/
+    }
+        .post-form__menu {
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+            .post-form__item {
+                /*margin-left: 16px;*/
+            }
+
+            .post-form__item:first-child {
+                /*margin-left: 0;*/
+            }
+
+        .post-form__operations {
+            /*padding-top: 3px;*/
+            /*padding-bottom: 3px;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            /*margin-left: auto;*/
+        }
+            .post-form__action {
+                /*margin-left: 20px;*/
+            }
+
+            .post-form__action.button,
+            .post-form__action > .button {
+                /*width: 86px;*/
+            }
+
+            .post-form__action:first-child {
+                /*margin-left: 0;*/
+            }
