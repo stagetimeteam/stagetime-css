@@ -16,7 +16,7 @@
     min-width: 0;
     /*position: static;*/
 }
-    .mfp-container:before {
+    .mfp-container::before {
         display: none;
     }
 
