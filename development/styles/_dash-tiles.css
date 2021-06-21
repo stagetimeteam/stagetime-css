@@ -1,0 +1,40 @@
+.dash-tiles {
+
+}
+    .dash-tiles__summary {
+        padding: 15px 11px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .dash-tiles__links {
+
+        }
+
+        .dash-tiles__search {
+
+        }
+            .dash-tiles__sub-heading {
+                font-size: 12px;
+                line-height: 18px;
+                color: #757575;
+                text-align: center;
+            }
+
+            .dash-tiles__search-field {
+
+            }
+
+    .dash-tiles__gallery {
+
+    }
+
+    .dash-tiles__content {
+
+    }
+        .dash-tiles__next {
+
+        }
+
+        .dash-tiles__news {
+
+        }

@@ -1,0 +1,89 @@
+.shortcut {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.shortcut--highlight {
+    box-shadow: inset 0 0 0 1px #E8E8E8;
+}
+
+    .shortcut__body {
+        position: relative;
+        width: 93px;
+        height: 93px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
+        border-radius: 10px;
+    }
+        .shortcut__preview {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            background-color: rgba(255, 255, 255, 0.77);
+            border-radius: 8px;
+        }
+            .shortcut__preview .icon {
+                fill: #545454;
+            }
+
+        .shortcut__heading {
+            position: absolute;
+            right: 12px;
+            bottom: 8px;
+            left: 12px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 18px;
+            color: inherit;
+        }
+            .shortcut__logo {
+                vertical-align: top;
+                fill: currentColor;
+                margin-left: -7px;
+                margin-right: 1px;
+            }
+
+
+
+
+.shortcut--your-area {
+
+}
+    .shortcut--your-area .shortcut__body {
+        background-color: #9CB2BE;
+        color: #FFFFFF;
+    }
+
+
+.shortcut--for-you {
+
+}
+    .shortcut--for-you .shortcut__body {
+        background-color: #DDEAF1;
+        color: #545454;
+    }
+
+
+.shortcut--your-watchlist {
+
+}
+    .shortcut--your-watchlist .shortcut__body {
+        background-color: #F1F4F6;
+        color: #545454;
+    }
+
+
+.shortcut--favorites {
+
+}
+    .shortcut--favorites .shortcut__body {
+        background-color: #545454;
+        color: #FFFFFF;
+    }
