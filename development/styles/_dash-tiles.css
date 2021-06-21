@@ -44,16 +44,18 @@
 
     .dash-tiles__body {
         border-top: 1px solid #E8E8E8;
+        padding-top: 12px;
     }
         .dash-tiles__body-wrap {
 
         }
             .dash-tiles__gallery {
-
+                margin-left: -6px;
+                margin-right: -6px;
             }
 
             .dash-tiles__content {
-
+                
             }
                 .dash-tiles__next {
 
