@@ -55,12 +55,13 @@
             }
 
             .dash-tiles__content {
-                
+                display: flex;
+                align-items: flex-start;
             }
                 .dash-tiles__next {
-
+                    width: 50%;
                 }
 
                 .dash-tiles__news {
-
+                    width: 50%;
                 }
