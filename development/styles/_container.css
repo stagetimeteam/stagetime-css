@@ -16,6 +16,12 @@
     padding-right: 40px;
 }
 
+.container--explore {
+    width: 750px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .container--auth {
     width: 960px;
     padding-left: 40px;
