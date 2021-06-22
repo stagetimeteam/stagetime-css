@@ -1,0 +1,23 @@
+.hint {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+    .hint__dropdown {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease,
+                    visibility 0.3s ease,
+                    margin 0.3s ease;
+    }
+
+
+    .hint:hover .hint__dropdown {
+        opacity: 1;
+        visibility: visible;
+        margin-bottom: 8px;
+    }
