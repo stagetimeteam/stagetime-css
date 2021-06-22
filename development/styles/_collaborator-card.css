@@ -79,6 +79,10 @@
             text-decoration: none;
         }
 
+        .collaborator-card__action:first-child {
+            border-left: none;
+        }
+
         .collaborator-card__action--connect {
             color: #545454;
         }

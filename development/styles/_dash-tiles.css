@@ -2,7 +2,8 @@
 
 }
     .dash-tiles__summary {
-
+        position: relative;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
     }
         .dash-tiles__summary-wrap {
             padding-top: 15px;
@@ -43,8 +44,8 @@
                 }
 
     .dash-tiles__body {
-        border-top: 1px solid #E8E8E8;
         padding-top: 12px;
+        background-color: #F6F6F6;
     }
         .dash-tiles__body-wrap {
 

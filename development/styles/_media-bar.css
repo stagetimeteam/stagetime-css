@@ -1,0 +1,38 @@
+.media-bar {
+    position: relative;
+    display: block;
+    padding: 3px 20px 5px 87px;
+    text-decoration: none;
+}
+    .media-bar__image {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.11);
+        border-radius: 8px;
+    }
+
+    .media-bar__name {
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 16px;
+        color: #545454;
+    }
+
+    .media-bar__heading {
+        margin-top: 5px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .media-bar__type {
+            vertical-align: top;
+            margin-right: 8px;
+            fill: #AAAAAA;
+        }
+
+        .media-bar__title {
+            font-size: 11px;
+            line-height: 16px;
+            color: #AAAAAA;
+        }
+
