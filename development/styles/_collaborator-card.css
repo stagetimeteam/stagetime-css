@@ -1,0 +1,101 @@
+.collaborator-card {
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
+    border-radius: 7px;
+}
+    .collaborator-card__body {
+        padding: 18px 12px 20px 81px;
+    }
+        .collaborator-card__photo {
+            position: absolute;
+            left: 12px;
+            top: 12px;
+        }
+
+        .collaborator-card__name {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+            color: #757575;
+        }
+
+        .collaborator-card__note {
+            margin-top: 4px;
+            font-size: 12px;
+            line-height: 20px;
+            color: #AFAFAF;
+        }
+
+        .collaborator-card__crowd {
+            margin-top: 11px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .collaborator-card__crowd-icon {
+                fill: #757575;
+                margin-left: -3px;
+                margin-top: 2px;
+                width: 26px;
+                height: 26px;
+            }
+
+            .collaborator-card__list {
+                margin-left: 8px;
+                display: flex;
+                align-items: flex-start;
+            }
+                .collaborator-card__person {
+                    margin-left: 10px;
+                }
+
+                .collaborator-card__person:first-child {
+                    margin-left: 0;
+                }
+
+        .collaborator-card__connections {
+            font-size: 11px;
+            line-height: 18px;
+            color: #757575;
+        }
+
+    .collaborator-card__operations {
+        border-top: 1px solid #E8E8E8;
+        display: flex;
+        align-items: stretch;
+    }
+        .collaborator-card__action {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border-left: 1px solid #E8E8E8;
+            font-weight: bold;
+            font-size: 8px;
+            line-height: 14px;
+            color: #545454;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .collaborator-card__action--connect {
+            color: #545454;
+        }
+
+        .collaborator-card__action--message {
+            color: #9CB2BE;
+        }
+            .collaborator-card__action-preview {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 13px;
+                width: 28px;
+                height: 28px;
+                background-color: currentColor;
+                border-radius: 50%;
+            }
+                .collaborator-card__action-icon {
+                    fill: #FFFFFF;
+                }
