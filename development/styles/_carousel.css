@@ -122,11 +122,6 @@
     }
         .carousel--for-explore .carousel__item {
             padding-bottom: 23px;
-            margin-right: 3px;
-        }
-
-        .carousel--for-explore .carousel__item:last-child {
-            margin-right: 0;
         }
 
         .carousel--for-explore .carousel__item:last-child {

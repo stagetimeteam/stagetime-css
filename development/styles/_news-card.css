@@ -6,6 +6,11 @@
     height: 171px;
     padding: 8px 6px; /* because of shadow */
 }
+
+.news-card--full-width {
+    width: 100%;
+}
+
     .news-card__org-preview {
         position: absolute;
         left: 26px;
