@@ -8,6 +8,7 @@
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0); /* make transition works in safari: https://stackoverflow.com/questions/48470833/overflow-not-hidden-while-css-animation-in-safari */
 }
     .avatar__image {
         vertical-align: top;
