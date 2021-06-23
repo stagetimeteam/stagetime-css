@@ -4193,15 +4193,28 @@
                 <div class="quick-message__name">
                     <a class="link" href="#">Jonathan Bryan</a>
                 </div>
-                <div class="quick-message__subject input">
-                    <input class="input__widget" type="text" placeholder="Video Title">
+                <div class="quick-message__fieldset">
+                    <div class="quick-message__subject input">
+                        <input class="input__widget" type="text" placeholder="Video Title">
+                    </div>
+                    <div class="quick-message__body input input--area input--extendable-via-plugin">
+                        <textarea class="input__widget" placeholder="Message" rows="4"></textarea>
+                    </div>
+                    <button class="quick-message__submit button button--gray" type="submit">
+                        Send message
+                    </button>
                 </div>
-                <div class="quick-message__body input input--area input--extendable-via-plugin">
-                    <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
-                </div>
-                <button class="quick-message__submit button" type="submit">
-                    Send message
+                <button class="quick-message__cancel mfp-close" type="button">
+                    <img class="quick-message__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
                 </button>
+                <div class="quick-message__confirmation">
+                    <div class="quick-message__notification">
+                        Message sent.
+                    </div>
+                    <button class="quick-message__profile button button--larger" type="button">
+                        View profile
+                    </button>
+                </div>
             </form>
         </div>
 
@@ -4225,6 +4238,7 @@
         <script src="../scripts/_edit-post.js"></script>
         <script src="../scripts/_post-form.js"></script>
         <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
         <script src="../scripts/_header--responsiveness.js"></script>
 
 

@@ -60,6 +60,11 @@
     font-size: 9px;
 }
 
+.button--larger {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 
 
 .button--faded {
@@ -74,6 +79,22 @@
 .button--faded:active {
     background-color: #8B8B8B;
     color: #F4F4F4;
+}
+
+
+
+.button--gray {
+    background-color: #C4C4C4;
+    font-weight: bold;
+    color: #FFFFFF;
+    box-shadow: none;
+    letter-spacing: -0.1px;
+}
+
+.button--gray:hover,
+.button--gray:active {
+    background-color: #545454;
+    color: #FFFFFF;
 }
 
 
