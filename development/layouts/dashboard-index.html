@@ -1788,6 +1788,11 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <a class="post__message action action--gray mfp-handler" href="#message">
+                                        <span class="action__image">
+                                            <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
+                                        </span>
+                                    </a>
                                 </article>
                                 <article class="activity-feed__item post">
                                     <div class="post__head user-badge">
@@ -4169,6 +4174,35 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="mfp-hide mfp-window" id="message">
+            <form class="quick-message">
+                <h2 class="quick-message__heading">
+                    New Message
+                </h2>
+                <a class="quick-message__photo avatar" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-130x130@2x.jpg 2x"
+                         src="../temp/person-a-130x130.jpg"
+                         width="130"
+                         height="130"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <div class="quick-message__name">
+                    <a class="link" href="#">Jonathan Bryan</a>
+                </div>
+                <div class="quick-message__subject input">
+                    <input class="input__widget" type="text" placeholder="Video Title">
+                </div>
+                <div class="quick-message__body input input--area input--extendable-via-plugin">
+                    <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
+                </div>
+                <button class="quick-message__submit button" type="submit">
+                    Send message
+                </button>
+            </form>
         </div>
 
         <!-- Scripts -->

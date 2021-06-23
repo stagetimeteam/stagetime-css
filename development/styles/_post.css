@@ -69,3 +69,12 @@
         left: 48px;
         bottom: 104px;
     }
+
+    .post__message {
+        position: absolute;
+        right: 19px;
+        bottom: 19px;
+        width: 40px;
+        height: 40px;
+    }
+
