@@ -175,6 +175,10 @@
             margin-top: -52px;
         }
 
+.carousel--for-updates.carousel--faded-right::after {
+    margin-bottom: 10px;
+}
+
 
 
 
