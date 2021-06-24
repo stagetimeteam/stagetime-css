@@ -132,6 +132,19 @@
 }
 
 
+.button--alt-darker {
+    background-color: #E8E8E8;
+    color: #757575;
+    box-shadow: none;
+}
+
+.button--alt-darker:hover,
+.button--alt-darker:active {
+    background-color: #757575;
+    color: #E8E8E8;
+}
+
+
 
 
 .button--alternate {
