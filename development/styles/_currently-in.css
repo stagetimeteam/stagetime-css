@@ -1,0 +1,29 @@
+.currently-in {
+    padding-top: 4px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #E8E8E8;
+}
+    .currently-in__location {
+        margin-left: -11px;
+    }
+
+    .currently-in__list {
+        margin-top: 20px;
+    }
+        .currently-in__item {
+            margin-top: 13px;
+        }
+
+        .currently-in__item:first-child {
+            margin-top: 0;
+        }
+
+    .currently-in__more {
+        margin-top: 19px;
+        margin-left: auto;
+        margin-right: auto;
+    }
