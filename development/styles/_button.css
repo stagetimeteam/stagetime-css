@@ -54,6 +54,11 @@
     transition: none !important;
 }
 
+.button--small {
+    padding: 7px 16px;
+    font-size: 9px;
+}
+
 .button--smaller {
     padding-top: 6px;
     padding-bottom: 6px;
