@@ -22,6 +22,12 @@
             letter-spacing: -0.26px;
             color: #757575;
         }
+            .video-card__heading .link {
+                transition: color var(--transition-hover);
+            }
+            .video-card__heading .link:hover {
+                color: #AAAAAA;
+            }
 
         .video-card__note {
             margin-top: 5px;

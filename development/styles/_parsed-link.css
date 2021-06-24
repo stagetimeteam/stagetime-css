@@ -20,6 +20,11 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        transition: color var(--transition-hover);
+    }
+
+    .parsed-link:hover .parsed-link__heading {
+        color: #AAAAAA;
     }
 
     .parsed-link__url {

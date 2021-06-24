@@ -29,6 +29,13 @@
         color: #AFAFAF;
         text-align: right;
     }
+        .auth__password .link {
+            transition: color var(--transition-hover);
+        }
+        
+        .auth__password .link:hover {
+            color: #FFFFFF;
+        }
 
     .auth__submit {
         margin-top: 13px;

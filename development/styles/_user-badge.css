@@ -20,6 +20,14 @@
         line-height: 16px;
         color: #757575;
     }
+        .user-badge__heading .link:hover {
+            transition: opacity var(--transition-hover);
+        }
+
+        .user-badge__heading .link:hover {
+            opacity: 0.6;
+        }
+
         .user-badge__heading .icon {
             margin-top: -1px;
             margin-right: 2px;
