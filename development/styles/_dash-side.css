@@ -35,10 +35,17 @@
             margin-top: 20px;
         }
 
+        .dash-side__location + .dash-side__audio {
+            margin-top: 24px;
+        }
+
         .dash-side__news {
             margin-top: 18px;
         }
 
+        .dash-side__location {
+
+        }
 
     .dash-side__customization-panel {
         position: absolute;
