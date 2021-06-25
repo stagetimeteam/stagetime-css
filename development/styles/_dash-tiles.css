@@ -47,6 +47,10 @@
         padding-top: 12px;
         padding-bottom: 40px;
         background-color: #F6F6F6;
+        background-image: linear-gradient(#FFFFFF, #F6F6F6);
+        background-size: 100% 1000px;
+        background-repeat: no-repeat;
+        background-position: center top;
     }
         .dash-tiles__body-wrap {
 
