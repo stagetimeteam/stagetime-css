@@ -5,6 +5,7 @@
 }
     .hint__dropdown {
         position: absolute;
+        z-index: 500;
         left: 50%;
         transform: translateX(-50%);
         bottom: 100%;
