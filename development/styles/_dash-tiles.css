@@ -9,7 +9,7 @@
             padding-top: 15px;
             padding-bottom: 15px;
             display: flex;
-            align-items: flex-start;
+            align-items: stretch;
         }
             .dash-tiles__links {
                 margin-left: -8px;
@@ -18,12 +18,19 @@
                 align-items: flex-start;
                 width: 466px;
             }
+                .dash-tiles__open-search {
+                    display: none;
+                }
+                    .dash-tiles__magnifier {
+
+                    }
+
                 .dash-tiles__item {
-                    margin-left: 10px;
+                    margin-right: 10px;
                 }
 
-                .dash-tiles__item:first-child {
-                    margin-left: 0;
+                .dash-tiles__item:last-child {
+                    margin-right: 0;
                 }
 
             .dash-tiles__search {
@@ -41,6 +48,10 @@
 
                 .dash-tiles__search-field {
                     margin-top: 15px;
+                }
+
+                .dash-tiles__close-search {
+                    display: none;
                 }
 
     .dash-tiles__body {

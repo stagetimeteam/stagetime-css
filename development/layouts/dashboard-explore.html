@@ -336,7 +336,10 @@
                     <div class="dash-tiles">
                         <div class="dash-tiles__summary">
                             <div class="dash-tiles__summary-wrap container container--explore">
-                                <div class="dash-tiles__links">
+                                <div class="dash-tiles__links hide-scrollbar">
+                                    <button class="dash-tiles__open-search" type="button">
+                                        <img class="dash-tiles__magnifier" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                                    </button>
                                     <a class="dash-tiles__item shortcut shortcut--for-you shortcut--highlight" href="">
                                         <div class="shortcut__body">
                                             <div class="shortcut__preview">
@@ -398,6 +401,7 @@
                                         <input class="search-bar__widget" type="text" placeholder="Search to tag collaborators or organizations">
                                         <img class="search__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
                                     </div>
+                                    <button class="dash-tiles__close-search" type="button"></button>
                                 </div>
                             </div>
                         </div>
@@ -2286,6 +2290,7 @@
         <script src="../scripts/_post-form.js"></script>
         <script src="../scripts/_button.js"></script>
         <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_dash-tiles.js"></script>
         <script src="../scripts/_header--responsiveness.js"></script>
 
 
