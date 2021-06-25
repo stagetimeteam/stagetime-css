@@ -4,7 +4,7 @@
         $('.dash-tiles').addClass('dash-tiles--search-expanded');
     });
 
-    $('.dash-tiles__close').on('click', function () {
+    $('.dash-tiles__close-search').on('click', function () {
         $('.dash-tiles').removeClass('dash-tiles--search-expanded');
     });
 
