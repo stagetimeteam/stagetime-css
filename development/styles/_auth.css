@@ -32,7 +32,7 @@
         .auth__password .link {
             transition: color var(--transition-hover);
         }
-        
+
         .auth__password .link:hover {
             color: #FFFFFF;
         }
