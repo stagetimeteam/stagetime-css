@@ -61,7 +61,7 @@
                 width: auto;
                 padding-left: 0;
                 padding-right: 0;
-                padding-top: 20px;
+                padding-top: 32px;
                 opacity: 0;
                 visibility: hidden;
             }
@@ -71,11 +71,29 @@
                 visibility: visible;
             }
                 .dash-tiles__sub-heading {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     font-size: 13px;
                     line-height: 18px;
                     /*color: #757575;*/
                     /*text-align: center;*/
                 }
+                    .dash-tiles__close-search {
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 32px;
+                        height: 32px;
+                        margin: -6px 22px -8px -54px;
+                        padding: 0;
+                        border: none;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+                        .dash-tiles__arrow-back {
+                            vertical-align: top;
+                            fill: #545454;
+                        }
 
                 .dash-tiles__search-field {
                     margin-top: 18px;
@@ -103,23 +121,22 @@
 
         }
             .dash-tiles__gallery {
-                /*margin-left: -6px;*/
-                /*margin-right: -6px;*/
+                margin-left: 0;
+                margin-right: 0;
             }
 
             .dash-tiles__content {
-                /*display: flex;*/
-                /*align-items: stretch;*/
+                display: block;
             }
                 .dash-tiles__next {
-                    /*width: 396px;*/
+                    width: auto;
                     /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);*/
                     /*background-color: #FFFFFF;*/
                     /*border-radius: 10px;*/
                 }
 
                 .dash-tiles__news {
-                    /*width: 306px;*/
+                    width: auto;
                     /*margin-left: 12px;*/
                     /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);*/
                     /*background-color: #FFFFFF;*/

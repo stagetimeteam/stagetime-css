@@ -45,14 +45,14 @@
                     color: #757575;
                     text-align: center;
                 }
+                    .dash-tiles__close-search {
+                        display: none;
+                    }
 
                 .dash-tiles__search-field {
                     margin-top: 15px;
                 }
 
-                .dash-tiles__close-search {
-                    display: none;
-                }
 
     .dash-tiles__body {
         padding-top: 12px;
