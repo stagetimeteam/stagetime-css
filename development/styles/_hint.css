@@ -109,7 +109,18 @@
 
 
 
+.hint--activity-feed {
 
+}
+    .hint--activity-feed .hint__dropdown {
+        transform: none;
+        left: -37px;
+    }
+
+    /* peak */
+    .hint--activity-feed .hint__dropdown::after {
+        left: 65px;
+    }
 
 
 
