@@ -1,9 +1,7 @@
 .collaborator-card {
     width: 258px;
     position: relative;
-    background-color: #FFFFFF;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
-    border-radius: 7px;
+    text-align: left;
 }
     .collaborator-card__body {
         padding: 18px 12px 20px 81px;

@@ -5,20 +5,87 @@
 }
     .hint__dropdown {
         position: absolute;
-        z-index: 500;
         left: 50%;
         transform: translateX(-50%);
         bottom: 100%;
+        margin-bottom: 12px;
+        background-color: #FFFFFF;
+        border-radius: 7px;
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease,
                     visibility 0.3s ease,
                     margin 0.3s ease;
     }
+        .hint__dropdown::before {
+            content: "";
+            position: absolute;
+            z-index: 20;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
+            border-radius: 7px;
+        }
+
+        /* peak */
+        .hint__dropdown::after {
+            content: "";
+            position: absolute;
+            z-index: 20;
+            top: 100%;
+            left: 50%;
+            margin-left: -6px;
+            margin-top: -6px;
+            width: 12px;
+            height: 12px;
+            background-color: #FFFFFF;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
+            display: block;
+            transform: rotate(45deg);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease,
+                        visibility 0.3s ease,
+                        margin 0.3s ease;
+        }
+
+        .hint__bubble {
+            z-index: 30;
+            position: relative;
+            background-color: #FFFFFF;
+            border-radius: 7px;
+        }
+
 
 
     .hint:hover .hint__dropdown {
         opacity: 1;
         visibility: visible;
-        margin-bottom: 8px;
     }
+
+    .hint:hover .hint__dropdown::after {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+
+
+.dash-side__people .hint__dropdown {
+    bottom: auto;
+    top: 100%;
+}
+
+
+.dash-side__people .circles__item:nth-child(odd) .hint__dropdown {
+    transform: none;
+    left: -35px;
+}
+
+.dash-side__people .circles__item:nth-child(even) .hint__dropdown {
+    transform: none;
+    left: auto;
+    right: -35px;
+}
