@@ -1,30 +1,33 @@
+:root {
+    --hint-gap: 15px;
+}
+
 .hint {
     display: inline-block;
     vertical-align: top;
     position: relative;
 }
+    /* dropdown wrapper */
     .hint__dropdown {
         position: absolute;
+        z-index: 500;
         left: 50%;
         transform: translateX(-50%);
         bottom: 100%;
-        margin-bottom: 12px;
-        background-color: #FFFFFF;
-        border-radius: 7px;
+        padding-bottom: var(--hint-gap); /* gap in between bubble and target */
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.3s ease,
-                    visibility 0.3s ease,
-                    margin 0.3s ease;
+                    visibility 0.3s ease;
     }
+        /* bubble shadow */
         .hint__dropdown::before {
             content: "";
-            position: absolute;
-            z-index: 20;
+            position: absolute;  /* 1) Bubble shadow at the very bottom of Z axis */
             left: 0;
             top: 0;
             right: 0;
-            bottom: 0;
+            bottom: var(--hint-gap);
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
             border-radius: 7px;
         }
@@ -32,43 +35,80 @@
         /* peak */
         .hint__dropdown::after {
             content: "";
-            position: absolute;
-            z-index: 20;
+            position: absolute;/* 2) Bubble peak is higher than bubble shadow on Z axis */
             top: 100%;
             left: 50%;
             margin-left: -6px;
-            margin-top: -6px;
+            margin-top: calc(-1 * (var(--hint-gap) + 6px));
             width: 12px;
             height: 12px;
             background-color: #FFFFFF;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
             display: block;
             transform: rotate(45deg);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease,
-                        visibility 0.3s ease,
-                        margin 0.3s ease;
         }
 
         .hint__bubble {
-            z-index: 30;
             position: relative;
+            z-index: 10; /* 3) bubble background is higher than peak on Z-axis */
             background-color: #FFFFFF;
             border-radius: 7px;
         }
 
 
+    @keyframes hint-dropdown-show {
+        from { margin-bottom: -10px; }
+        to { margin-bottom: 0; }
+    }
 
     .hint:hover .hint__dropdown {
         opacity: 1;
         visibility: visible;
+        margin-bottom: 0;
+        animation: hint-dropdown-show 0.3s ease;
     }
 
-    .hint:hover .hint__dropdown::after {
-        opacity: 1;
-        visibility: visible;
+
+.hint--to-bottom {
+
+}
+    /* dropdown wrapper */
+    .hint--to-bottom .hint__dropdown {
+        bottom: auto;
+        top: 100%;
+        padding-bottom: 0;
+        padding-top: var(--hint-gap); /* gap in between bubble and target */
     }
+        /* bubble shadow */
+        .hint--to-bottom .hint__dropdown::before {
+            top: var(--hint-gap);
+            bottom: 0;
+        }
+
+        /* peak */
+        .hint--to-bottom .hint__dropdown::after {
+            top: auto;
+            bottom: 100%;
+            margin-top: 0;
+            margin-bottom: calc(-1 * (var(--hint-gap) + 6px));
+        }
+
+        .hint--to-bottom .hint__bubble {
+
+        }
+
+
+    @keyframes hint-dropdown-show-bottom {
+        from { margin-top: -10px; }
+        to { margin-top: 0; }
+    }
+
+    .hint--to-bottom:hover .hint__dropdown {
+        animation: hint-dropdown-show-bottom 0.3s ease;
+    }
+
+
+
 
 
 

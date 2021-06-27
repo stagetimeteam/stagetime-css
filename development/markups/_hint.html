@@ -17,35 +17,69 @@
             <br>
             <br>
             <h1>.hint</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <p>
+                This is the component that connects together static element
+                on the page and static bubble making them work together.
+                Take a <a href="_button.html">.button</a>, <a href="_avatar.html">.avatar</a>,
+                wrap it into <b>.hint</b> and add any other component inside of <b>.hint__bubble</b>.
+            </p>
+
 
             <div class="hint">
-                <a class="avatar" data-tooltip="mark-zuckerberg" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-a-24x24@2x.jpg 2x"
-                         src="../temp/person-a-24x24.jpg"
-                         width="24"
-                         height="24"
-                         alt="Mark Zuckerberg"
-                    >
-                </a>
+
+                <!-- temp -->
+                <button type="button">Hover me</button>
+                <!-- temp -->
+
                 <div class="hint__dropdown">
                     <div class="hint__bubble">
-                        <div class="collaborator-card" id="mark-zuckerberg">
+
+                        <!-- temp -->
+                        Lorem&nbsp;ipsum<br>dolor&nbsp;sit&nbsp;amet
+                        <!--/temp -->
+
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.hint--to-bottom</h2>
+            <p>
+                If we are close to the header or the top of the page we can drop it to the bottom:
+            </p>
+
+            <div class="hint hint--to-bottom">
+                <button type="button">
+                    Hover me
+                </button>
+                <div class="hint__dropdown">
+                    <div class="hint__bubble">
+                        Lorem&nbsp;ipsum<br>dolor&nbsp;sit&nbsp;amet
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Contains</h2>
+            <p>
+                We can place pretty much anything inside of a bubble. For example
+                <a href="_collaborator-card.html">.collaborator-card</a> component:
+            </p>
+
+            <div class="hint hint--to-top">
+                <button type="button">
+                    Hover me
+                </button>
+                <div class="hint__dropdown">
+                    <div class="hint__bubble">
+                        <div class="collaborator-card">
                             <div class="collaborator-card__body">
                                 <a class="collaborator-card__photo avatar" href="#">
                                     <img class="avatar__image"
@@ -111,6 +145,23 @@
 
 
             <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
             <br>
             <br>
             <br>
