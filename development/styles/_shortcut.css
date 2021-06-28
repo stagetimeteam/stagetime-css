@@ -91,3 +91,14 @@
         background-color: #545454;
         color: #FFFFFF;
     }
+
+.shortcut--organizations {
+
+}
+    .shortcut--organizations .shortcut__body {
+        background-color: #545454;
+        color: #FFFFFF;
+    }
+        .shortcut--organizations .shortcut__heading {
+            font-size: 10px;
+        }

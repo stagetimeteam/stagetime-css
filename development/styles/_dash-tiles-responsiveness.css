@@ -145,3 +145,8 @@
                     /*background-color: #FFFFFF;*/
                     /*border-radius: 10px;*/
                 }
+
+
+.explore-location-visible .dash-tiles__body {
+    display: none;
+}

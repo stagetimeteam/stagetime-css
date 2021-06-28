@@ -1,0 +1,7 @@
+.footer {
+
+}
+
+.explore-location-visible .footer {
+    display: none;
+}

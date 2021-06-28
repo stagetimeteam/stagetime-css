@@ -340,7 +340,7 @@
                                     <button class="dash-tiles__open-search" type="button">
                                         <img class="dash-tiles__magnifier" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
                                     </button>
-                                    <a class="dash-tiles__item shortcut shortcut--for-you shortcut--highlight" href="">
+                                    <a class="dash-tiles__item shortcut shortcut--for-you shortcut--highlight" href="#">
                                         <div class="shortcut__body">
                                             <div class="shortcut__preview">
                                                 <span class="avatar avatar--alt-hover avatar--fancy">
@@ -355,11 +355,22 @@
                                             </div>
                                             <div class="shortcut__heading">
                                                 <img class="shortcut__logo" src="../symbols/16-stagetime.svg" width="16" height="16" alt="">
-                                                <span class="hide hide--hide-on-desktop">Now Playing:</span> For you
+                                                For you
                                             </div>
                                         </div>
                                     </a>
-                                    <a class="dash-tiles__item shortcut shortcut--your-area" href="">
+                                    <a class="dash-tiles__item shortcut shortcut--organizations" href="#">
+                                        <div class="shortcut__body">
+                                            <div class="shortcut__preview">
+                                                <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                            </div>
+                                            <div class="shortcut__heading">
+                                                <img class="shortcut__logo" src="../symbols/16-stagetime.svg" width="16" height="16" alt="">
+                                                Organizations
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="dash-tiles__item shortcut shortcut--your-area" href="#">
                                         <div class="shortcut__body">
                                             <div class="shortcut__preview">
                                                 <img class="icon" src="../symbols/16-geo.svg" width="16" height="16" alt="">
@@ -370,7 +381,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a class="dash-tiles__item shortcut shortcut--your-watchlist" href="">
+                                    <a class="dash-tiles__item shortcut shortcut--your-watchlist" href="#">
                                         <div class="shortcut__body">
                                             <div class="shortcut__preview">
                                                 <img class="icon" src="../symbols/16-eye.svg" width="16" height="16" alt="">
@@ -381,7 +392,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <a class="dash-tiles__item shortcut shortcut--favorites" href="">
+                                    <a class="dash-tiles__item shortcut shortcut--favorites" href="#">
                                         <div class="shortcut__body">
                                             <div class="shortcut__preview">
                                                 <img class="icon" src="../symbols/16-bookmark.svg" width="16" height="16" alt="">
@@ -2070,9 +2081,11 @@
                         </div>
                     </div>
 
-                    <!-- temp -->
-                    <img src="../temp/footer.jpg" alt="" style="width: 100%; vertical-align: top;">
-                    <!--/temp -->
+                    <div class="footer">
+                        <!-- temp -->
+                        <img src="../temp/footer.jpg" alt="" style="width: 100%; vertical-align: top;">
+                        <!--/temp -->
+                    </div>
 
                 </div>
                 <div class="dashboard__aside">
@@ -2289,7 +2302,6 @@
         <script src="../scripts/_carousel.js"></script>
         <script src="../scripts/_player.js"></script>
         <script src="../scripts/_updates.js"></script>
-        <script src="../scripts/_explore-side.js"></script>
         <script src="../scripts/_happening.js"></script>
         <script src="../scripts/_input.js"></script>
         <script src="../scripts/_edit-post.js"></script>
@@ -2297,6 +2309,7 @@
         <script src="../scripts/_button.js"></script>
         <script src="../scripts/_quick-message.js"></script>
         <script src="../scripts/_dash-tiles.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
         <script src="../scripts/_header--responsiveness.js"></script>
 
 

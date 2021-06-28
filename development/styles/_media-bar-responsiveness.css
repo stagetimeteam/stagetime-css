@@ -6,6 +6,11 @@
     /*padding: 3px 20px 5px 87px;*/
     /*text-decoration: none;*/
 }
+
+.media-bar:hover {
+    background-color: transparent;
+}
+
     .media-bar__image {
         /*position: absolute;*/
         left: 0;

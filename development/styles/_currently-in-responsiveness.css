@@ -2,7 +2,7 @@
     margin-left: 0;
     margin-right: 0;
     /*padding: 4px 24px 7px;*/
-    /*border-bottom: 1px solid #E8E8E8;*/
+    border-bottom: none;
 }
     .currently-in__location {
         /*margin-left: -11px;*/
@@ -33,4 +33,5 @@
         /*margin-top: 19px;*/
         /*margin-left: auto;*/
         /*margin-right: auto;*/
+        display: none;
     }
