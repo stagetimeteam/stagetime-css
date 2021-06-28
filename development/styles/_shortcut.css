@@ -93,7 +93,7 @@
     }
 
 .shortcut--organizations {
-
+    display: none;
 }
     .shortcut--organizations .shortcut__body {
         background-color: #545454;
