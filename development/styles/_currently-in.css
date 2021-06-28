@@ -8,6 +8,10 @@
         margin-left: -11px;
     }
 
+    .currently-in__mobile-heading {
+        display: none;
+    }
+
     .currently-in__list {
         margin-top: 20px;
     }
