@@ -111,8 +111,8 @@
     .dash-tiles__body {
         /*padding-top: 12px;*/
         /*padding-bottom: 40px;*/
-        /*background-color: #F6F6F6;*/
-        /*background-image: linear-gradient(#FFFFFF, #F6F6F6);*/
+        background-color: #FFFFFF;
+        background-image: none;
         /*background-size: 100% 1000px;*/
         /*background-repeat: no-repeat;*/
         /*background-position: center top;*/
@@ -126,19 +126,22 @@
             }
 
             .dash-tiles__content {
-                display: block;
+                display: flex;
+                flex-direction: column-reverse;
             }
                 .dash-tiles__next {
+                    padding-top: 0;
                     width: auto;
-                    /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);*/
+                    box-shadow: none;
                     /*background-color: #FFFFFF;*/
                     /*border-radius: 10px;*/
                 }
 
                 .dash-tiles__news {
                     width: auto;
-                    /*margin-left: 12px;*/
-                    /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);*/
+                    margin-left: 0;
+                    box-shadow: none;
+                    padding: 0;
                     /*background-color: #FFFFFF;*/
                     /*border-radius: 10px;*/
                 }

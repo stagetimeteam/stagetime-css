@@ -28,6 +28,10 @@
         line-height: 18px;
         color: #9CB2BE;
     }
+        .up-next__now {
+            display: none;
+        }
+
         .up-next__you {
             margin-left: 12px;
             margin-top: -2px;
