@@ -3,6 +3,11 @@
     vertical-align: top;
     padding: 8px;
     border-radius: 10px;
+    transition: box-shadow var(--transition-hover);
+}
+
+.shortcut:hover {
+    box-shadow: inset 0 0 0 1px #E8E8E8;
 }
 
 .shortcut--highlight {
