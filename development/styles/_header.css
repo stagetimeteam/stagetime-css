@@ -4,7 +4,7 @@
     height: var(--header-height);
 }
     .header__detachable-panel { /* This is inside of .header by default or can be position:fixed on 1240+ */
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         right: 0;
@@ -16,11 +16,11 @@
         padding: 10px 20px 10px 10px;
     }
 
-    @media (min-width: 1240px) {
-        .header__detachable-panel {
-            position: fixed;
-        }
-    }
+    /*@media (min-width: 1240px) {*/
+    /*    .header__detachable-panel {*/
+    /*        position: fixed;*/
+    /*    }*/
+    /*}*/
         .header__top-bar {
             display: flex;
             align-items: flex-start;

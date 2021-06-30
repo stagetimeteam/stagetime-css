@@ -110,7 +110,7 @@
 
     .dash-tiles__body {
         /*padding-top: 12px;*/
-        /*padding-bottom: 40px;*/
+        padding-bottom: 12px;
         background-color: #FFFFFF;
         background-image: none;
         /*background-size: 100% 1000px;*/
@@ -146,6 +146,16 @@
                     /*background-color: #FFFFFF;*/
                     /*border-radius: 10px;*/
                 }
+
+                .dash-tiles__next,
+                .dash-tiles__news {
+                    max-height: none;
+                    overflow-y: visible;
+                }
+
+        .dash-tiles__body::after {
+            display: none;
+        }
 
 
 

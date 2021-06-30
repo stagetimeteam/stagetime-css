@@ -91,7 +91,6 @@
                 }
 
 
-                @media (min-height: 540px) {
                     .dash-tiles__body {
                         padding-bottom: 24px;
                     }
@@ -99,12 +98,12 @@
                     .dash-tiles__next,
                     .dash-tiles__news {
                         /*height: calc(100vh - 476px);*/
+                        /*max-height: calc(100vh - 100px);*/
                         max-height: 382px;
                         overflow-y: auto;
                         /*border-bottom-left-radius: 0;*/
                         /*border-bottom-right-radius: 0;*/
                     }
-                }
 
 
         .dash-tiles__body::after {

@@ -1,5 +1,9 @@
 .dashboard {
+    position: static;
     display: block;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 75px; /* under the player */
 }
     .dashboard__sidebar {
         display: none;
@@ -10,9 +14,18 @@
     }
 
     .dashboard__aside {
-        width: 100%;
+        position: static;
+        width: auto;
+        box-shadow: none;
+        overflow: visible;
     }
 
 
 
+.playlist-expanded {
+
+}
+    .playlist-expanded .dashboard {
+        padding-bottom: 0;
+    }
 
