@@ -104,6 +104,9 @@
     $('.player').on('click', function () {
         if (!$(event.target).closest('.player__handler, .player__action--play, .up-next').length) {
             $(this).removeClass('player--collapsed');
+            if ( $(document).find('.up-next').length ) {
+                $('html').toggleClass('playlist-expanded');
+            }
         }
     });
 
