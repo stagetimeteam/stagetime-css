@@ -17,6 +17,8 @@
     }
         .currently-in__item {
             margin-top: 13px;
+            margin-left: -2px;
+            margin-right: -2px;
         }
 
         .currently-in__item:first-child {
