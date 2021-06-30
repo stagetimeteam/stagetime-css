@@ -20,7 +20,7 @@
                 overflow-y: auto;
                 /*display: flex;*/
                 /*align-items: flex-start;*/
-                /*width: 466px;*/
+                width: auto;
             }
                 .dash-tiles__open-search {
                     margin-left: -20px;
