@@ -1,7 +1,10 @@
 .up-next {
-    /*position: relative;*/
-    /*padding-top: 66px;*/
-    /*padding-bottom: 20px;*/
+    position: static;
+    padding-top: 327px; /* Player's height */
+    padding-bottom: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
     .up-next__heading {
         display: none;
@@ -19,7 +22,7 @@
     .up-next__sub-heading {
         position: static;
         background-color: #DDEAF1;
-        margin: 0 -20px 26px;
+        margin: 0 -20px;
         padding: 12px 20px;
         /*right: 20px;*/
         /*top: 19px;*/

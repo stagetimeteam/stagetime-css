@@ -30,6 +30,9 @@
         line-height: 24px;
         color: #9CB2BE;
     }
+        .quick-message__name .link {
+            font-weight: 600;
+        }
 
     .quick-message__fieldset {
         margin-top: 23px;

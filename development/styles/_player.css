@@ -25,6 +25,7 @@
         height: 44px;
         background-color: transparent;
         border: none;
+        padding: 0;
         text-indent: 200%;
         white-space: nowrap;
         overflow: hidden;
@@ -461,3 +462,9 @@
                 opacity: 0;
                 visibility: hidden;
             }
+
+
+
+.playlist-expanded .player {
+    box-shadow: none;
+}

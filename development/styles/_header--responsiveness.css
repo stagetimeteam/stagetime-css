@@ -285,3 +285,9 @@
     .header--centered-search .header__private-area {
         /*margin-left: 0;*/
     }
+
+
+
+.playlist-expanded .header {
+    display: none;
+}

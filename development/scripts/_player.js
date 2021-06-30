@@ -96,10 +96,13 @@
 
     $('.player__handler').on('click', function () {
         $(this).parents('.player').toggleClass('player--collapsed');
+        if ( $(document).find('.up-next').length ) {
+            $('html').toggleClass('playlist-expanded');
+        }
     });
 
     $('.player').on('click', function () {
-        if (!$(event.target).closest('.player__handler, .player__action--play').length) {
+        if (!$(event.target).closest('.player__handler, .player__action--play, .up-next').length) {
             $(this).removeClass('player--collapsed');
         }
     });
@@ -108,7 +111,7 @@
     /* Collapse on mobile */
 
     function playerCollapseOnMobiles() {
-        if( mobileMediaQuery.matches ) {
+        if( mobileMediaQuery.matches && ! $('html').hasClass('playlist-expanded') ) {
             $('.player').addClass('player--collapsed');
         } else {
             $('.player').removeClass('player--collapsed');

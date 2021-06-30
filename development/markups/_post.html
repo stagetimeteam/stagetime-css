@@ -124,6 +124,62 @@
             <br>
             <br>
             <br>
+            <p>
+                <b>.post__people</b> can be removed. In this case we need to add <b>.post--no-collaborators</b> modifier to rewrite paddings.
+            </p>
+
+
+            <article class="post post--no-collaborators modifier">
+                <div class="post__head user-badge">
+                    <div class="user-badge__preview">
+                        <a class="avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                 src="../temp/organization-a-56x56.jpg"
+                                 width="56" height="56"
+                                 alt=""
+                            >
+                        </a>
+                    </div>
+                    <div class="user-badge__heading">
+                        <a class="link link--text-alike" href="#">
+                            Indiana University
+                        </a>
+                    </div>
+                    <div class="user-badge__note">
+                        <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                    </div>
+                </div>
+                <div class="post__actions operations">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post__content wysiwyg">
+                    <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
+                </div>
+                <a class="post__message action action--gray mfp-handler" href="#message">
+                    <span class="action__image">
+                        <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
+                    </span>
+                </a>
+            </article>
+
+            <br>
+            <br>
+            <br>
             <br>
             <h2>Attachments</h2>
             <p>
@@ -1060,10 +1116,10 @@
                 </div>
                 <div class="quick-message__fieldset">
                     <div class="quick-message__subject input">
-                        <input class="input__widget" type="text" placeholder="Video Title">
+                        <input class="input__widget" type="text" placeholder="Subject">
                     </div>
                     <div class="quick-message__body input input--area input--extendable-via-plugin">
-                        <textarea class="input__widget" placeholder="Message" rows="4"></textarea>
+                        <textarea class="input__widget" placeholder="Write a message…" rows="4"></textarea>
                     </div>
                     <button class="quick-message__submit button button--gray" type="submit">
                         Send message

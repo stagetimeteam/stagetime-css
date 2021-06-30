@@ -2,6 +2,18 @@
 
 }
 
-.explore-location-visible .footer {
-    display: none;
+
+.explore-location-visible {
+
 }
+    .explore-location-visible .footer {
+        display: none;
+    }
+
+
+.playlist-expanded {
+
+}
+    .playlist-expanded .footer {
+        display: none;
+    }

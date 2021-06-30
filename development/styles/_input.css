@@ -14,7 +14,7 @@
         background-clip: padding-box; /* reset iOS default shadow */
         border-radius: 5px; /* reset iOS default border-radius */
         font-family: inherit;
-        font-weight: bold;
+        font-weight: inherit;
         font-size: 11px;
         line-height: 20px;
         color: #545454;

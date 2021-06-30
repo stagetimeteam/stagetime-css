@@ -133,6 +133,7 @@
                     padding-top: 0;
                     width: auto;
                     box-shadow: none;
+                    display: none;
                     /*background-color: #FFFFFF;*/
                     /*border-radius: 10px;*/
                 }
@@ -147,6 +148,35 @@
                 }
 
 
-.explore-location-visible .dash-tiles__body {
-    display: none;
+
+.explore-location-visible {
+
 }
+    .explore-location-visible .dash-tiles__body {
+        display: none;
+    }
+
+
+.playlist-expanded {
+
+}
+    .playlist-expanded .dash-tiles__next {
+        display: block;
+    }
+
+    .playlist-expanded .dash-tiles__summary {
+        display: none;
+    }
+
+    .playlist-expanded .dash-tiles__gallery {
+        display: none;
+    }
+
+    .playlist-expanded .dash-tiles__news {
+        display: none;
+    }
+
+    .playlist-expanded .dash-tiles__body {
+        padding-top: 0;
+        padding-bottom: 0;
+    }

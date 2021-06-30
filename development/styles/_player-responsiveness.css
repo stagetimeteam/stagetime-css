@@ -8,9 +8,13 @@
     height: 75px;
 }
 
-    /*.player__handler {*/
-    /*    display: none;*/
-    /*}*/
+    /* Expand clickable area: */
+    .player__handler {
+        width: 72px;
+        height: 75px;
+        border-left: 36px solid transparent;
+        border-bottom: 31px solid transparent;
+    }
 
     /*.player__close {*/
     /*    position: absolute;*/
