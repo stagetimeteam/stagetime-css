@@ -78,3 +78,15 @@
         height: 40px;
     }
 
+
+
+.post--no-collaborators  {
+
+}
+    .post--no-collaborators .post__content {
+        margin-right: 40px;
+    }
+
+    .post--no-collaborators .video-card__body {
+        margin-right: 40px;
+    }
