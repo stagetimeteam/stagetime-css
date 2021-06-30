@@ -1,5 +1,5 @@
 .dash-tiles {
-
+    position: relative;
 }
     .dash-tiles__summary {
         position: relative;
@@ -118,4 +118,5 @@
             background-image: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 77.6%);
             background-repeat: no-repeat;
             background-position: center center;
+            pointer-events: none;
         }

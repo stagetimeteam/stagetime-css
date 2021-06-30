@@ -35,6 +35,16 @@
         margin-right: -4px;
     }
 
+    .button__icon--follow {
+        margin-left: -4px;
+        margin-right: -2px;
+    }
+
+    .button__icon--success {
+        margin-left: -8px;
+        margin-right: 2px;
+    }
+
     .button__logo {
         vertical-align: top;
         border-radius: 50%;
