@@ -105,3 +105,17 @@
                         /*border-bottom-right-radius: 0;*/
                     }
                 }
+
+
+        .dash-tiles__body::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            height: 99px;
+            background-image: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #F2F2F2 77.6%);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
