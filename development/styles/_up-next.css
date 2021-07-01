@@ -41,8 +41,26 @@
 
     }
         .up-next__item {
-            border-top: 1px solid #F2F2F2;
+            position: relative;
+            margin-top: -1px;
         }
+            .up-next__item::before {
+                content: "";
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                top: 0;
+                height: 1px;
+                background-color: #F2F2F2;
+            }
+
+            .up-next__item:first-child::before {
+                display: none;
+            }
+
+            .up-next__item:hover ~ .up-next__item::before {
+                background-color: #F6F6F6;
+            }
 
         .up-next__item:first-child {
             border-top: none;
