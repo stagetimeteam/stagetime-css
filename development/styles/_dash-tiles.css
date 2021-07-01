@@ -108,9 +108,9 @@
 
         .dash-tiles__body::after {
             content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
+            position: fixed;
+            left: var(--sidebar-width);
+            right: var(--aside-width);
             bottom: 0;
             display: block;
             height: 99px;
