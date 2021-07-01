@@ -53,6 +53,8 @@
             /*margin-top: 15px;*/
             /*border-top: 1px solid #F2F2F2;*/
             /*padding-top: 15px;*/
+            margin-left: -20px;
+            margin-right: -20px;
         }
 
         .up-next__item:first-child {

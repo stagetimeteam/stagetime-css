@@ -30,3 +30,18 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+
+.circles--simplified {
+    padding-top: 0;
+}
+    .circles--simplified .circles__heading {
+        text-align: center;
+    }
+
+    .circles--simplified .circles__body {
+        margin-top: 15px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-color: transparent;
+    }
