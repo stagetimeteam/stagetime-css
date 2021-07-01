@@ -1,0 +1,30 @@
+.org-card {
+    display: block;
+    /*vertical-align: top;*/
+    /*width: var(--org-card-width);*/
+    /*background-color: #FFFFFF;*/
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    /*border-radius: 15px;*/
+    /*text-align: left;*/
+    width: auto;
+}
+    .org-card__close {
+        position: absolute;
+        z-index: 50;
+        right: 0;
+        top: 0 !important;
+        width: 68px;
+        height: 68px;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+        .org-card__cross {
+            vertical-align: top;
+            fill: #FFFFFF;
+            pointer-events: none;
+        }

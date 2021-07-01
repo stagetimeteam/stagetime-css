@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -20,6 +21,9 @@
         <!-- Modal -->
         <div class="mfp-hide mfp-window" id="org-card-popup">
             <div class="org-card">
+                <button class="org-card__close mfp-close" type="button">
+                    <img class="org-card__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
                 <div class="summary summary--as-card">
                     <div class="summary__background" role="presentation" aria-hidden="true">
                         <style>
@@ -33,7 +37,7 @@
                             }
                         </style>
                     </div>
-                    <div class="summary__wrap ">
+                    <div class="summary__wrap">
                         <div class="summary__brand">
                             <img class="summary__logo"
                                  srcset="../temp/org-logo-96x96@2x.jpg 2x"
@@ -86,6 +90,9 @@
                 </div>
                 <div class="synopsis">
                     <div class="synopsis__about">
+                        <div class="synopsis__sub-heading synopsis__sub-heading--name">
+                            Jacobs School of Music
+                        </div>
                         <div class="synopsis__description wysiwyg wysiwyg--smaller">
                             <p>Founded in 1820, Indiana University Bloomington is the flagship campus of IU’s seven campuses and two regional centers statewide. Innovation, creativity, and academic freedom are hallmarks of our world-class contributions in research, music, and the arts. As one of the most comprehensive and acclaimed institutions for the study of music, the IU Jacobs School of Music plays a key role in educating performers, scholars, and music educators who influence music…</p>
                         </div>

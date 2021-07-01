@@ -92,19 +92,25 @@
 .carousel--for-user-card {
 
 }
-    .carousel--for-user-card .carousel__item {
-
+    .carousel--for-user-card .carousel__container {
+        padding-left: 20px;
+        padding-right: 15px;
     }
 
-    .carousel--for-user-card .carousel__item:last-child {
+        .carousel--for-user-card .carousel__item {
 
-    }
+        }
+
+        .carousel--for-user-card .carousel__item:last-child {
+
+        }
 
 
     .carousel--for-user-card .carousel__control {
         /*position: absolute;*/
         /*z-index: 100;*/
         /*right: -12px;*/
+        display: none;
     }
 
     .carousel--for-user-card .carousel__control--prev {
@@ -114,6 +120,10 @@
     .carousel--for-user-card .carousel__control--next {
         /*top: 10px;*/
     }
+
+.carousel--for-user-card.carousel--faded-right::after {
+    display: none;
+}
 
 
 
