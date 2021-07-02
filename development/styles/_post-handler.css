@@ -33,3 +33,13 @@
         .post-handler__item:first-child {
             margin-left: 0;
         }
+
+
+
+.post-handler--simplified {
+    padding-bottom: 25px;
+}
+    .post-handler--simplified .post-handler__message {
+        position: static;
+        margin-left: 14px;
+    }
