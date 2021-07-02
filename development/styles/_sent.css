@@ -1,0 +1,17 @@
+.sent {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 10px;
+    background-color: #E8E8E8;
+    border-radius: 14px;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 16px;
+    color: #757575;
+    text-align: center;
+}
+    .sent__icon {
+        vertical-align: top;
+        margin-right: 4px;
+    }

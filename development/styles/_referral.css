@@ -57,3 +57,15 @@
             line-height: 18px;
             color: #C4C4C4;
         }
+
+        .referral__list {
+            margin-top: 24px;
+            text-align: left;
+        }
+            .referral__item {
+                border-top: 1px solid #E8E8E8;
+            }
+
+            .referral__item:first-child {
+                border-top: none;
+            }

@@ -121,6 +121,22 @@
 
 
 
+.button--dark-gray {
+    background-color: #757575;
+    font-weight: bold;
+    color: #FFFFFF;
+    box-shadow: none;
+    letter-spacing: -0.1px;
+}
+
+.button--dark-gray:hover,
+.button--dark-gray:active {
+    background-color: #545454;
+    color: #FFFFFF;
+}
+
+
+
 
 .button--lighter {
     background-color: #F1F1F1;

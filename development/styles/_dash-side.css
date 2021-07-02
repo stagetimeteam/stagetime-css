@@ -27,6 +27,10 @@
 
         }
 
+        .dash-side__invite + .dash-side__people {
+            margin-top: 35px;
+        }
+
         .dash-side__show-audio {
             margin-top: 20px;
         }
