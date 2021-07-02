@@ -1,5 +1,7 @@
 .button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     vertical-align: top;
     border: none;
     padding: 9px 20px;
@@ -27,29 +29,34 @@
 
     .button__icon--left {
         margin-left: -4px;
-        margin-right: 4px;
+        margin-right: 8px;
     }
 
     .button__icon--right {
-        margin-left: 4px;
+        margin-left: 8px;
         margin-right: -4px;
     }
 
     .button__icon--follow {
         margin-left: -4px;
-        margin-right: -2px;
+        margin-right: 2px;
     }
 
     .button__icon--success {
         margin-left: -8px;
-        margin-right: 2px;
+        margin-right: 6px;
     }
 
     .button__logo {
         vertical-align: top;
         border-radius: 50%;
-        margin: 1px 4px 1px -8px;
+        margin: 1px 8px 1px -8px;
         box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.13);
+    }
+
+    .button__media {
+        margin: -4px 11px -4px -1px;
+        vertical-align: top;
     }
 
 
@@ -185,6 +192,25 @@
 }
 
 
+.button--volumetric {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+    color: #757575;
+}
+
+.button--volumetric:hover {
+    background-color: #E8E8E8;
+    color: #757575;
+}
+
+.button--volumetric:active {
+    background-color: #E8E8E8;
+    color: #757575;
+    box-shadow: none;
+}
+
+
 
 
 .button--expandable {
@@ -206,7 +232,7 @@
 }
     .button--expandable:not(:hover) .button__icon {
         margin-left: 0;
-        margin-right: 6px;
+        margin-right: 10px;
     }
 
 

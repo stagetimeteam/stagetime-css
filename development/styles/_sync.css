@@ -1,0 +1,17 @@
+.sync {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+    .sync__icon {
+        margin-top: 5px;
+    }
+
+    .sync__logo {
+        margin-left: 9px;
+        margin-top: 11px;
+    }
+
+    .sync__action {
+        margin-left: 28px;
+    }

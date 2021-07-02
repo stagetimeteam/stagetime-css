@@ -22,6 +22,12 @@
     padding-right: 20px;
 }
 
+.container--referral {
+    width: 720px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .container--auth {
     width: 960px;
     padding-left: 40px;
