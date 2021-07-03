@@ -1,5 +1,6 @@
 @import url("../vendors/normalize/normalize.css");
 @import url("../vendors/magnific-popup/dist/magnific-popup.css");
+@import url("../vendors/jquery-scrollbar/jquery.scrollbar.css");
 
 @import url("_root.css");
 @import url("_universal.css");
@@ -121,3 +122,4 @@
 @import url("_sent.css");
 @import url("_dummy.css");
 @import url("_ref-link.css");
+@import url("_scrollbar.css");

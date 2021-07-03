@@ -30,6 +30,4 @@
         right: 0;
         top: var(--header-height);
         bottom: 0;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
     }
