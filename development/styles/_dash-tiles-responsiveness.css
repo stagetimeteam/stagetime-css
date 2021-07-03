@@ -124,6 +124,16 @@
                 margin-left: 0;
                 margin-right: 0;
             }
+                .dash-tiles__gallery-heading {
+                    display: block;
+                    margin-top: 3px;
+                    margin-bottom: 7px;
+                    /*margin-left: 6px;*/
+                    font-weight: bold;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #757575;
+                }
 
             .dash-tiles__content {
                 display: flex;
@@ -152,6 +162,13 @@
                     max-height: none;
                     overflow-y: visible;
                 }
+
+                .dash-tiles__news {
+
+                }
+                    .dash-tiles__news .column-updates__icon {
+                        display: none;
+                    }
 
         .dash-tiles__body::after {
             display: none;

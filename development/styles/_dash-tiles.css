@@ -71,6 +71,9 @@
                 margin-right: -6px;
             }
 
+            .dash-tiles__gallery-heading {
+                display: none;
+            }
 
             .dash-tiles__content {
                 display: flex;
