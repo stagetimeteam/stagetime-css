@@ -126,6 +126,29 @@
 }
 
 
+@media (min-width: 376px) and (max-width: 420px) {
+
+    .carousel--for-user-card {
+
+    }
+        .carousel--for-user-card .carousel__item {
+            margin-right: 2px;
+        }
+
+        .carousel--for-user-card .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+            .carousel--for-user-card .carousel__item .user-card--smaller {
+                width: 108px;
+            }
+                .carousel--for-user-card .avatar__image {
+                    width: 98px;
+                    height: 98px;
+                }
+}
+
+
 
 
 .carousel--for-explore {
