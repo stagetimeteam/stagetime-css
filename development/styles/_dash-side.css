@@ -21,6 +21,7 @@
         .dash-side__show-customization.action,
         .dash-side__show-customization > .action {
             position: absolute;
+            justify-content: flex-start;
         }
 
         .dash-side__people {
