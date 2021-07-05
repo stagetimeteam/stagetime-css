@@ -129,10 +129,14 @@
     letter-spacing: -0.1px;
 }
 
-.button--dark-gray:hover,
+.button--dark-gray:hover {
+    background-color: #C4C4C4;
+    color: #545454;
+}
+
 .button--dark-gray:active {
-    background-color: #545454;
-    color: #FFFFFF;
+    background-color: #E8E8E8;
+    color: #757575;
 }
 
 
