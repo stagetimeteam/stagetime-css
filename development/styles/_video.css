@@ -1,0 +1,32 @@
+.video {
+    position: relative;
+    width: 100%;
+    background-color: #000000;
+}
+    .video__widget {
+        vertical-align: top;
+        border: none;
+    }
+
+
+.video--16x9 {
+    padding-bottom: 56.25%;
+}
+.video--4x3  {
+    padding-bottom: 75%;
+}
+.video--1x1  {
+    padding-bottom: 100%;
+}
+
+/* stylelint-disable block-opening-brace-space-before, selector-descendant-combinator-no-non-space */
+    .video--16x9 .video__widget,
+    .video--4x3  .video__widget,
+    .video--1x1  .video__widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+/* stylelint-enable */

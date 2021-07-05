@@ -94,6 +94,17 @@
         vertical-align: top;
     }
 
+
+    .player__window {
+        margin-top: 15px;
+        background-color: #ABC0CC;
+        vertical-align: top;
+    }
+        .player__window iframe {
+            vertical-align: top;
+            border: none;
+        }
+
     .player__song {
         margin-top: 9px;
         font-weight: bold;
@@ -328,6 +339,10 @@
     }
 
     .player--collapsed .player__preview {
+        visibility: hidden;
+    }
+
+    .player--collapsed .player__window {
         visibility: hidden;
     }
 

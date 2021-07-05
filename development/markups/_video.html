@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.video</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.video</h1>
+            <p>
+                Default video based just on <b>width=""</b> and <b>height=""</b>. Pretty straightforward but doesn't make
+                any sense in responsive layout.
+            </p>
+
+            <div class="video">
+                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div style="width: 50%; margin: 0 auto;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Ratio</h2>
+            <p>
+                What we need to do is to let video to stretch and to fill parental element completely while keeping it's ratio.
+                Unfortunately it is impossible via &lt;iframe&gt; or &lt;video&gt; tag. There are only two things
+                in CSS that can keep ratio why width is changing: &lt;img&gt; tag and vertical padding.
+            </p>
+            <p>
+                Using <b>padding-bottom</b> we can set up element ratio to this component.
+                So first you check upcoming video ratio and then choose one of following modifiers.
+            </p>
+            <p>
+                Change browser size to see how it works in different context.
+            </p>
+
+            <br>
+            <h3>.video--16x9</h3>
+
+            <div class="video video--16x9">
+                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <h3>.video--4x3</h3>
+
+            <div class="video video--4x3">
+                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/mM5_T-F1Yn4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <h3>.video--1x1</h3>
+
+            <div class="video video--1x1">
+                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/_PUUmb9EWFE" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>Any other ratio</h2>
+            <p>
+                Ratio can be set manually. Do calculation:<br>
+                <b>padding</b> = <b>height</b> / <b>width</b> * <b>100</b>
+            </p>
+            <p>
+                For example if we facing 21:9 vide calculations will be:<br>
+                <b>padding</b> = <b>9</b> / <b>21</b> * <b>100</b> = <b>42.8571</b>
+            </p>
+            <p>
+                Set this radio as: <b>style="padding-bottom: 42.8571%;"</b> to <b>.video</b><br>
+                Add these additional styles to <b>.video__widget</b>:<br> <b>style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"</b>
+            </p>
+
+            <div class="video" style="padding-bottom: 42.8571%;">
+                <iframe class="video__widget" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/BSjeSUUHWkw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_dash-side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_dash-tiles.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+
+
+    </body>
+</html>
