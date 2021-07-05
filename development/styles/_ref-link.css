@@ -27,3 +27,12 @@
             overflow: hidden;
             text-overflow: ellipsis;
         }
+
+
+    .ref-link__code {
+        display: none;
+    }
+
+    .ref-link__footer {
+        display: none;
+    }
