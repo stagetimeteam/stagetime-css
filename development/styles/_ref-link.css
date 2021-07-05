@@ -16,16 +16,8 @@
 
     .ref-link__link {
         margin-top: 16px;
-        width: 100%;
-        background-color: #F4F4F4;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
-        background-clip: padding-box; /* reset iOS default shadow */
-        border-radius: 40px;
-        border: none;
-        padding: 7px 18px 9px;
-        font-family: inherit;
-        font-weight: inherit;
-        font-size: 10px;
-        line-height: 18px;
-        color: #8B8B8B;
     }
+        .ref-link__link.button,
+        .ref-link__link > .button {
+            font-weight: inherit;
+        }
