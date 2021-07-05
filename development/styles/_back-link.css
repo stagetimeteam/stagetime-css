@@ -1,6 +1,7 @@
 .back-link {
     display: inline-flex;
     align-items: center;
+    padding: 20px;
     font-size: 12px;
     line-height: 18px;
     color: #757575;
