@@ -33,6 +33,7 @@
             font-size: 12px;
             line-height: 18px;
             color: #AFAFAF;
+            letter-spacing: -0.1px;
         }
 
         .user-bar__output {

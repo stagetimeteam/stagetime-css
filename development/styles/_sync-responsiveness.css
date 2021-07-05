@@ -1,0 +1,26 @@
+.sync {
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    /*justify-content: center;*/
+}
+    .sync__icon {
+        margin-top: 7px;
+    }
+
+    .sync__logo {
+        /*margin-left: 9px;*/
+        margin-top: 13px;
+    }
+
+    .sync__action {
+        margin-left: 22px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+
+    .sync__action.button,
+    .sync__action > .button {
+        width: 98px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+    }

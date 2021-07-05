@@ -1,0 +1,69 @@
+.user-bar {
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    padding: 22px 34px 22px 42px;
+    padding-left: 0;
+    padding-right: 0;
+}
+    .user-bar__preview {
+        /*flex-shrink: 0;*/
+        margin-right: 15px;
+    }
+
+    .user-bar__body {
+        /*flex-grow: 1;*/
+        /*margin-top: 5px;*/
+        /*margin-bottom: 5px;*/
+    }
+        .user-bar__name {
+            /*padding-top: 3px;*/
+            /*font-size: 12px;*/
+            /*line-height: 18px;*/
+            /*color: #757575;*/
+        }
+            .user-bar__name .link {
+                /*transition: opacity var(--transition-hover);*/
+            }
+
+            .user-bar__name .link:hover {
+                /*opacity: 0.6;*/
+            }
+
+        .user-bar__note {
+            /*margin-top: 5px;*/
+            /*padding-bottom: 2px;*/
+            /*font-size: 12px;*/
+            /*line-height: 18px;*/
+            /*color: #AFAFAF;*/
+        }
+
+        .user-bar__output {
+            /*font-weight: bold;*/
+            /*font-size: 12px;*/
+            /*line-height: 23px;*/
+            /*color: #757575;*/
+        }
+            .user-bar__notification {
+                /*font-weight: normal;*/
+                /*color: #AFAFAF;*/
+            }
+
+    .user-bar__action {
+        /*flex-shrink: 0;*/
+        /*margin-top: 14px;*/
+        margin-left: 15px;
+        /*width: 73px;*/
+    }
+        .user-bar__action.button,
+        .user-bar__action .button {
+            /*width: 73px;*/
+            padding-top: 9px;
+            padding-bottom: 9px;
+            font-size: 11px;
+        }
+
+        .user-bar__action.sent,
+        .user-bar__action > .sent {
+            padding-top: 9px;
+            padding-bottom: 9px;
+        }

@@ -1,0 +1,78 @@
+.quick-message {
+    border-top: 10vw solid transparent;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .quick-message__heading {
+
+    }
+
+    .quick-message__photo {
+
+    }
+
+    .quick-message__photo.avatar,
+    .quick-message__photo > .avatar {
+
+    }
+
+    .quick-message__name {
+
+    }
+        .quick-message__name .link {
+
+        }
+
+    .quick-message__fieldset {
+
+    }
+        .quick-message__subject {
+
+        }
+
+        .quick-message__body {
+
+        }
+
+        .quick-message__submit {
+
+        }
+
+        .quick-message__submit.button,
+        .quick-message__submit > .button {
+
+        }
+
+
+    .quick-message__cancel {
+
+    }
+        .quick-message__cross {
+
+        }
+
+        .quick-message__cancel:hover .quick-message__cross {
+
+        }
+
+
+    .quick-message__confirmation {
+
+    }
+
+    .quick-message__confirmation--visible {
+
+    }
+
+        .quick-message__notification {
+
+        }
+
+        .quick-message__profile {
+
+        }
+
+        .quick-message__profile.button,
+        .quick-message__profile > .button {
+
+        }

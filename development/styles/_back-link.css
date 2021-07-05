@@ -1,0 +1,13 @@
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+    text-decoration: none;
+}
+    .back-link__icon {
+        vertical-align: top;
+        fill: currentColor;
+        margin-right: 18px;
+    }
