@@ -104,6 +104,20 @@
 }
 
 
+.button--alt-faded {
+    background-color: #F4F4F4;
+    font-weight: bold;
+    color: #8B8B8B;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+}
+
+.button--alt-faded:hover,
+.button--alt-faded:active {
+    background-color: #757575;
+    color: #FFFFFF;
+}
+
+
 
 .button--gray {
     background-color: #C4C4C4;
