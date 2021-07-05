@@ -1,6 +1,6 @@
 .ref-link {
     padding-top: 32px;
-    padding-bottom: 80px;
+    padding-bottom: 60px;
     margin-left: -34px;
     margin-right: -34px;
     text-align: center;
@@ -49,6 +49,7 @@
     }
 
     .ref-link__footer {
-        margin-top: 41px;
+        margin-top: 21px;
+        display: block;
         text-align: center;
     }

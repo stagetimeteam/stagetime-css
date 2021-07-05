@@ -35,6 +35,11 @@
             /*fill: #9CB2BE;*/
         }
 
+    .referral__handler {
+        display: inline-flex;
+        align-items: flex-start;
+    }
+
     .referral__description {
         /*max-width: 474px;*/
         margin-top: 22px;
