@@ -84,5 +84,7 @@
         .org-edit__submit.button,
         .org-edit__submit .button {
             width: 100%;
+            padding-top: 12px;
+            padding-bottom: 12px;
             font-weight: bold;
         }

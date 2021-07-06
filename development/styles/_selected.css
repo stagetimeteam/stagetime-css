@@ -12,13 +12,39 @@
         border-radius: 5px;
         overflow: hidden;
     }
-        .selected__logo {
+        .selected__file {
             vertical-align: top;
             transition: transform var(--transition-hover);
+            border-radius: 5px;
         }
 
-        .selected__handler:hover .selected__logo {
+        .selected__handler:hover .selected__file {
             transform: scale(1.05);
+        }
+
+        .selected__overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(117, 117, 117, 0.71);
+            border-radius: 5px;
+        }
+
+        .selected__label {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 11px;
+            line-height: 18px;
+            color: #FFFFFF;
         }
 
     .selected__delete {

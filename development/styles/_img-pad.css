@@ -19,3 +19,10 @@
 .img-pad:hover {
     background-color: #F6F6F6;
 }
+
+
+
+.img-pad--cover {
+    width: 310px;
+    height: 177px;
+}
