@@ -346,6 +346,14 @@
                             <img class="media__icon" src="../symbols/28-media-link.svg" width="28" height="28" alt="">
                         </a>
                     </div>
+                    <a class="org-nav__edit action action--simplified action--faded mfp-handler" href="#edit-media">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Add to schedule
+                        </span>
+                    </a>
                 </div>
             </div>
             <div class="organization container container--organisation">
@@ -1527,6 +1535,7 @@
                 </div>
             </div>
         </div>
+
         <div class="mfp-hide mfp-window" id="edit-organization">
             <div class="org-edit">
                 <div class="org-edit__head">
@@ -1631,6 +1640,59 @@
                             Go back to finish editing your general info.
                         </span>
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mfp-hide mfp-window" id="edit-media">
+            <div class="org-edit">
+                <div class="org-edit__head">
+                    <div class="org-edit__preview">
+                        <img class="org-edit__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16">
+                    </div>
+                    <div class="org-edit__heading">
+                        Editing <span class="org-edit__info">social links</span>
+                    </div>
+                </div>
+                <div class="org-edit__body">
+                    <div class="edit-media">
+                        <div class="edit-media__note">
+                            All links are optional.
+                        </div>
+                        <div class="edit-media__item">
+                            <img class="edit-media__icon" src="../symbols/28-media-link.svg" alt="">
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Website">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <img class="edit-media__icon" src="../symbols/28-media-instagram.svg" alt="">
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Instagram">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <img class="edit-media__icon" src="../symbols/28-media-facebook.svg" alt="">
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Facebook">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <img class="edit-media__icon" src="../symbols/28-media-twitter.svg" alt="">
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Twitter">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <img class="edit-media__icon" src="../symbols/28-media-youtube.svg" alt="">
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="YouTube">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="org-edit__footer">
+                    <button class="org-edit__submit button" type="button">Save Changes</button>
                 </div>
             </div>
         </div>

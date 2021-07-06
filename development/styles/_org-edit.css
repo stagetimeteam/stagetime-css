@@ -36,6 +36,7 @@
     .org-edit__body {
         padding: 33px 38px;
     }
+
         .org-edit__fieldset {
             display: flex;
             align-items: flex-start;

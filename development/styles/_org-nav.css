@@ -5,13 +5,17 @@
     .org-nav__wrap {
         display: flex;
         align-items: flex-start;
-        justify-content: space-between;
     }
         .org-nav__menu {
-
+            margin-right: auto;
         }
 
         .org-nav__social {
             margin-top: 13px;
+        }
+
+        .org-nav__edit {
+            margin-top: 15px;
+            margin-left: 18px;
         }
 

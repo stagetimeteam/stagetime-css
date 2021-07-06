@@ -1,0 +1,29 @@
+.edit-media {
+
+}
+    .edit-media__note {
+        margin-top: -10px;
+        margin-bottom: 29px;
+        font-size: 11px;
+        line-height: 18px;
+        color: #757575;
+        text-align: center;
+    }
+
+    .edit-media__item {
+        margin-top: 17px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .edit-media__icon {
+        flex-shrink: 0;
+        margin-left: -2px;
+        margin-right: 19px;
+        margin-top: 6px;
+        fill: #949494;
+    }
+
+    .edit__field {
+        flex-grow: 1;
+    }
