@@ -1,0 +1,48 @@
+.selected {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .selected__handler {
+        vertical-align: top;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+        .selected__logo {
+            vertical-align: top;
+            transition: transform var(--transition-hover);
+        }
+
+        .selected__handler:hover .selected__logo {
+            transform: scale(1.05);
+        }
+
+    .selected__delete {
+        position: absolute;
+        right: -8px;
+        top: -8px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        border: none;
+        background-color: #E8E8E8;
+        border-radius: 50%;
+        padding: 0;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
+
+    .selected__delete:hover {
+        background-color: #757575;
+    }
+        .selected__cross {
+            width: 12px;
+            height: 12px;
+        }

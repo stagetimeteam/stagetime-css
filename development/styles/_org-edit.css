@@ -41,16 +41,22 @@
             align-items: flex-start;
         }
             .org-edit__logo {
-                width: 97px;
-                height: 97px;
+                width: 96px;
                 margin-right: 17px;
             }
+                .org-edit__upload-logo {
+                    display: block;
+                }
+
+                .org-edit__selected-logo {
+                    border-radius: 5px;
+                }
 
             .org-edit__naming {
                 width: 196px;
             }
                 .org-edit__field {
-                    margin-top: 17px;
+                    margin-top: 16px;
                 }
 
                 .org-edit__field:first-child {
