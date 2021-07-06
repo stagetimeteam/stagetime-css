@@ -1,0 +1,28 @@
+.viewer-role {
+    position: relative;
+    z-index: 300;
+    height: 80px;
+    margin-bottom: -80px;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+    .viewer-role__wrap {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+        .viewer-role__heading {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 18px;
+            color: #FFFFFF;
+        }
+
+        .viewer-role__action {
+
+        }
+
+        .viewer-role__action.button,
+        .viewer-role__action .button {
+            width: 169px;
+        }

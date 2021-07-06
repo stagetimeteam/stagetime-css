@@ -1,0 +1,82 @@
+.org-edit {
+    width: 386px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+    .org-edit__head {
+        border-bottom: 1px solid #E8E8E8;
+        display: flex;
+        padding: 28px 35px;
+    }
+        .org-edit__preview {
+            width: 32px;
+            height: 32px;
+            margin-right: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #8B8B8B;
+            border-radius: 50%;
+        }
+            .org-edit__icon {
+                vertical-align: top;
+                fill: #8B8B8B;
+            }
+
+        .org-edit__heading {
+            font-size: 22px;
+            line-height: 30px;
+            color: #C4C4C4;
+        }
+            .org-edit__info {
+                color: #757575;
+            }
+
+
+    .org-edit__body {
+        padding: 33px 38px;
+    }
+        .org-edit__fieldset {
+            display: flex;
+            align-items: flex-start;
+        }
+            .org-edit__logo {
+                width: 97px;
+                height: 97px;
+                margin-right: 17px;
+            }
+
+            .org-edit__naming {
+                width: 196px;
+            }
+                .org-edit__field {
+                    margin-top: 17px;
+                }
+
+                .org-edit__field:first-child {
+                    margin-top: 0;
+                }
+
+        .org-edit__cover-handler {
+            margin-top: 17px;
+        }
+
+        .org-edit__cover-handler.button,
+        .org-edit__cover-handler .button {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+    .org-edit__footer {
+        padding: 33px 38px;
+        border-top: 1px solid #E8E8E8;
+    }
+        .org-edit__submit {
+
+        }
+
+        .org-edit__submit.button,
+        .org-edit__submit .button {
+            width: 100%;
+            font-weight: bold;
+        }

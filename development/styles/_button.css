@@ -196,6 +196,20 @@
 }
 
 
+.button--another-darker {
+    background-color: #E8E8E8;
+    font-weight: bold;
+    color: #333333;
+    box-shadow: none;
+}
+
+.button--another-darker:hover,
+.button--another-darker:active {
+    background-color: #757575;
+    color: #E8E8E8;
+}
+
+
 
 
 .button--alternate {

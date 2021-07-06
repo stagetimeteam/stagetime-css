@@ -34,6 +34,12 @@
     .summary__wrap {
         position: relative;
     }
+        .summary__edit {
+            margin-top: -51px;
+            margin-bottom: 11px;
+            margin-left: -6px;
+        }
+
         .summary__brand {
             display: flex;
             align-items: flex-end;
