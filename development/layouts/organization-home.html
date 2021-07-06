@@ -363,36 +363,14 @@
                     </h2>
                     <div class="module-head__control-panel">
                         <div class="module-head__right-slot">
-                            <a class="action action--alternate" href="#">
+                            <a class="action action--simplified action--faded mfp-handler" href="#edit-contacts">
                                 <span class="action__image">
-                                    <img class="action__icon" src="../symbols/16-plus.svg" width="16" height="16" alt="">
+                                    <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
                                 </span>
                                 <span class="action__label">
-                                    Follow
+                                    Edit
                                 </span>
                             </a>
-                            <div class="operations">
-                                <button class="operations__handler" type="button">
-                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                    More
-                                </button>
-                                <div class="operations__dropdown">
-                                    <div class="menu">
-                                        <a class="menu__link" href="#">
-                                            <img class="menu__icon" src="../symbols/24-lock.svg" width="24" height="24" alt="">
-                                            Request Admin Access
-                                        </a>
-                                        <a class="menu__link" href="#">
-                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                            Share
-                                        </a>
-                                        <a class="menu__link" href="#">
-                                            <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
-                                            Report
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -1689,6 +1667,50 @@
                                 <input class="input__widget" type="text" placeholder="YouTube">
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="org-edit__footer">
+                    <button class="org-edit__submit button" type="button">Save Changes</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mfp-hide mfp-window" id="edit-contacts">
+            <div class="org-edit">
+                <div class="org-edit__head">
+                    <div class="org-edit__preview">
+                        <img class="org-edit__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16">
+                    </div>
+                    <div class="org-edit__heading">
+                        Editing <span class="org-edit__info">contact info</span>
+                    </div>
+                </div>
+                <div class="org-edit__body">
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Secondary Name (optional)">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Address Line 1">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Address Line 2">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Website">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Phone">
+                    </div>
+                    <div class="org-edit__field input input--select input--placeholder-is-chosen input--bold">
+                        <select class="input__widget">
+                            <option>Organization Type</option>
+                            <option>Russia</option>
+                            <option>Vietnam</option>
+                            <option>Thailand</option>
+                        </select>
+                    </div>
+                    <div class="org-edit__field input input--bold input--area input--extendable">
+                        <textarea class="input__widget" placeholder="Message" rows="2"></textarea>
                     </div>
                 </div>
                 <div class="org-edit__footer">
