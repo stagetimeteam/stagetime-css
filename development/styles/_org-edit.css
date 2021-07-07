@@ -6,7 +6,7 @@
     .org-edit__head {
         border-bottom: 1px solid #E8E8E8;
         display: flex;
-        padding: 28px 35px;
+        padding: 28px 34px;
     }
         .org-edit__preview {
             width: 32px;
