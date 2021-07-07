@@ -55,6 +55,10 @@
     border-radius: 10px;
 }
 
+.avatar--less-squared {
+    border-radius: 4px;
+}
+
 
 .avatar--alt-hover {
     background-color: #FFFFFF; /* half white on hover */
