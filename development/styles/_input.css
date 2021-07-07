@@ -4,6 +4,7 @@
     text-decoration: none;
 }
     .input__widget {
+        position: relative;
         width: 100%;
         height: 40px;
         vertical-align: top;
@@ -166,3 +167,41 @@
     .input--bold .input__widget {
         font-weight: bold;
     }
+
+
+
+
+.merge {
+
+}
+
+.merge .input + .input {
+    margin-top: -1px;
+}
+
+.merge .input__widget:hover {
+    z-index: 100;
+}
+
+/* potentional error inptuts */
+/*.merge .input--error {*/
+/*    z-index: 200;*/
+/*}*/
+
+.merge .input__widget:focus {
+    z-index: 300; /* more than hover cause case _focus + :hover and hover won */
+}
+
+.merge .input:first-child .input__widget {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.merge .input:not(:first-child):not(:last-child) .input__widget {
+    border-radius: 0;
+}
+
+.merge .input:last-child .input__widget {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
