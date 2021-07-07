@@ -14,6 +14,7 @@ $(document).ready(function () {
                 });
                 /* re-init Expanding Textareas: */
                 $('.mfp-content .edit-post__message--extendable-via-plugin').expanding();
+                $('.mfp-content .input--extendable-via-plugin .input__widget').expanding();
             }
         }
     });
