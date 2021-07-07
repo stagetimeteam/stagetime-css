@@ -1,0 +1,12 @@
+.tagging {
+    position: relative;
+}
+    .tagging__handler {
+
+    }
+
+    .tagging__dropdown {
+        position: absolute;
+        left: 0;
+        top: 100%;
+    }
