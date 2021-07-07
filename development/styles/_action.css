@@ -248,8 +248,8 @@
     justify-content: center;
     width: auto;
     height: 40px;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     border-radius: 4px;
 }
     .action--horizontal .action__image {
@@ -272,7 +272,6 @@
 .action--horizontal:hover {
     background-color: #F3F3F3;
     box-shadow: 0 0 0 4px #F3F3F3;
-
 }
 
 
