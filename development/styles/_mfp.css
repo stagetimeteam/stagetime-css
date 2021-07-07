@@ -27,6 +27,7 @@
     }
 
 .mfp-window {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     text-align: left;
