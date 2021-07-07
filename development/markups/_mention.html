@@ -19,7 +19,6 @@
             <h1>.mention</h1>
             <p>
                 This is static component without positioning.
-                For position see <a href="_tagging.html">.tagging</a>
             </p>
 
             <div class="mention">
@@ -108,6 +107,22 @@
                     </span>
                 </button>
             </div>
+
+
+            <br>
+            <br>
+            <p>
+                There are two ways to position it.
+            </p>
+            <p>
+                First see <a href="_tagging.html">.tagging</a> but it requires wrapping tag which is
+                impossible inside <b>&lt;textarea&gt;</b> because no tags could be used inside.
+                Will work inside <b>contenteditable="true"</b>.
+            </p>
+            <p>
+                Alternative way is just to use <b>position: fixed;</b> like so:
+                <br><b>&lt;div class="mention" style="position: fixed; left: 457px; top: 2593px;"&gt;</b>
+            </p>
 
 
             <br>
