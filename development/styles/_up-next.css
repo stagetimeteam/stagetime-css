@@ -38,8 +38,18 @@
         }
 
     .up-next__list {
-
+        height: 100%;
     }
+
+        .up-next__list .null__inner {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .null__inner {
+            height: 100%;
+        }
+
         .up-next__item {
             position: relative;
             margin-top: -1px;

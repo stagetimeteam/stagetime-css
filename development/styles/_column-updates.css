@@ -21,6 +21,11 @@
     .column-updates__list {
         margin-top: 12px;
     }
+
+        .column-updates__list .null__inner {
+
+        }
+
         .column-updates__item {
             margin-top: 4px;
         }

@@ -36,3 +36,7 @@
         .dash-intro__related {
             margin-top: 22px;
         }
+
+        .dash-tiles__gallery .null__inner {
+            margin: 8px 6px 21px;
+        }
