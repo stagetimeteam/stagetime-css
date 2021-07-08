@@ -74,12 +74,44 @@
 
         }
 
+    .auth__agreement {
+        max-width: 250px;
+        margin-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 10px;
+        line-height: 17px;
+        color: #AAAAAA;
+        text-align: center;
+    }
+        .auth__agreement .link {
+            font-weight: inherit;
+            white-space: normal;
+            color: inherit;
+        }
+
     .auth__alternative {
         margin-top: 38px;
         font-size: 15px;
         line-height: 20px;
         color: #AFAFAF;
     }
+
+    .auth__agreement + .auth__alternative {
+        margin-top: 24px;
+    }
+
         .auth__alternative .link {
             color: #FFFFFF;
         }
+
+
+    .auth__note {
+        margin-top: 16px;
+        padding-bottom: 3px;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 17px;
+        color: #C4C4C4;
+        text-align: center;
+    }
