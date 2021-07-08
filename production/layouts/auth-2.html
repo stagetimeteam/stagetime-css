@@ -28,54 +28,47 @@
 
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="gate">
+            <div class="gate gate--simpler">
                 <div class="gate__cell">
                     <div class="gate__wrap container container--auth">
-                        <div class="gate__intro">
-                            <div class="gate__branding auth-logo">
-                                STAGETIME
-                            </div>
-                            <div class="gate__slogan">
-                                the <strong class="gate__highlight">professional network</strong> for the performing arts
-                            </div>
-                            <div class="gate__mobile-slogan">
-                                Log in to your professional network
-                            </div>
-                        </div>
                         <form class="gate__form auth">
-                            <div class="auth__heading">
-                                Log in to your account
+                            <div class="auth__brand emblem">
+
                             </div>
+                            <h1 class="auth__welcome">
+                                Welcome to Stagetime!
+                            </h1>
                             <div class="auth__fieldset">
-                                <div class="auth__field input input--auth">
-                                    <input class="input__widget" type="email" placeholder="Email">
+                                <div class="auth__field input input--auth input--bold">
+                                    <input class="input__widget" type="email" placeholder="First Name">
                                 </div>
-                                <div class="auth__field input input--auth">
-                                    <input class="input__widget" type="password" placeholder="Password">
+                                <div class="auth__field input input--auth input--bold">
+                                    <input class="input__widget" type="password" placeholder="Last Name">
                                 </div>
-                            </div>
-                            <div class="auth__password">
-                                <a class="link link--text-alike" href="#">
-                                    Forgot password?
-                                </a>
+                                <div class="auth__field input input--auth input--bold input--select input--placeholder-is-chosen">
+                                    <select class="input__widget">
+                                        <option value="placeholder">What do you do?</option>
+                                        <option>Organization Type</option>
+                                        <option>Agency/Management</option>
+                                        <option>College Program</option>
+                                        <option>Conservatory</option>
+                                        <option>Dance Company</option>
+                                        <option>Opera</option>
+                                        <option>Orchestra</option>
+                                        <option>Podcast</option>
+                                        <option>PR Firm</option>
+                                        <option>Summer Festival</option>
+                                        <option>Theater</option>
+                                        <option>Training</option>
+                                        <option>Program</option>
+                                        <option>Vendor (Offers services/products for the arts)</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
                             </div>
                             <button class="auth__submit button button--auth-primary" type="submit">
-                                Log In
+                                Create Profile
                             </button>
-                            <div class="auth__separator bar">
-                                <div class="bar__label">or</div>
-                            </div>
-                            <div class="auth__social-networks">
-                                <a class="auth__net button button--auth-secondary" href="#">
-                                    Sign in with Google
-                                    <svg class="button__icon button__icon--right" width="20" height="20">
-                                        <use xlink:href="../symbols/symbols.svg?1625773523#google-auth"></use>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="auth__alternative">
-                                Don’t have an account? <a class="link link--text-alike" href="#">Sign up</a>.
-                            </div>
                         </form>
                     </div>
                 </div>
