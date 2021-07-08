@@ -49,3 +49,13 @@
                 width: 356px;
                 margin-left: auto;
             }
+
+
+
+.gate--simpler {
+
+}
+    .gate__form {
+        margin-left: auto;
+        margin-right: auto;
+    }

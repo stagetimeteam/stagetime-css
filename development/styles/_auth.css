@@ -11,9 +11,27 @@
         color: #AFAFAF;
     }
 
+    .auth__brand {
+        margin: -14px auto 20px;
+    }
+
+    .auth__welcome {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: inherit;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+    }
+
     .auth__fieldset {
         margin-top: 43px;
     }
+
+    .auth__welcome + .auth__fieldset {
+        margin-top: 29px;
+    }
+
         .auth__field {
             margin-top: 20px;
         }
@@ -39,6 +57,10 @@
 
     .auth__submit {
         margin-top: 13px;
+    }
+
+    .auth__fieldset + .auth__submit {
+        margin-top: 20px;
     }
 
     .auth__separator {
