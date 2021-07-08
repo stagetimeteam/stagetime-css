@@ -41,10 +41,19 @@
                 margin-right: auto;
                 background-color: #AAAAAA;
                 border-radius: 50%;
+                transition: background-color var(--transition-hover);
+            }
+
+            .start__link:hover .start__preview {
+                background-color: #FFFFFF;
             }
                 .start__icon {
                     vertical-align: top;
                     fill: #FFFFFF;
+                }
+
+                .start__link:hover .start__icon {
+                    fill: #545454;
                 }
 
             .start__label {
@@ -54,4 +63,9 @@
                 line-height: 21px;
                 color: #C4C4C4;
                 text-align: center;
+                transition: color var(--transition-hover);
+            }
+
+            .start__link:hover .start__label {
+                color: #FFFFFF;
             }
