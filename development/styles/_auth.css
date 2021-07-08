@@ -56,5 +56,8 @@
         margin-top: 38px;
         font-size: 15px;
         line-height: 20px;
-        color: #FFFFFF;
+        color: #AFAFAF;
     }
+        .auth__alternative .link {
+            color: #FFFFFF;
+        }
