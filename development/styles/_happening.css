@@ -27,10 +27,12 @@
             color: #8B8B8B;
         }
 
-
     .happening__body {
         margin-top: 4px;
         margin-left: -6px;
         margin-right: -6px;
     }
-
+        .happening__body .null__inner {
+            min-height: 128px;
+            margin-top: 8px;
+        }
