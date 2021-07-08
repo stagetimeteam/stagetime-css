@@ -1,5 +1,7 @@
 .gate {
     display: block;
+    height: auto;
+    min-height: 100%;
     /*width: auto;*/
     /*height: auto;*/
 }
