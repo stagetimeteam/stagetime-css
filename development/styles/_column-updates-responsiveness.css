@@ -1,8 +1,12 @@
 .column-updates {
     /*position: relative;*/
     /*padding: 19px 14px 20px;*/
+    padding: 19px 0 20px;
+    height: auto;
 }
     .column-updates__heading {
+        top: 0;
+        margin-left: -14px;
         /*display: flex;*/
         /*margin-left: 3px;*/
         /*align-items: flex-start;*/
@@ -28,6 +32,17 @@
         padding-left: 14px;
         padding-right: 14px;
     }
+
+    .column-updates__list.null,
+    .column-updates__list .null {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
         .column-updates__item {
             /*margin-top: 4px;*/
         }
