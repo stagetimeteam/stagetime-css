@@ -1,8 +1,12 @@
 .column-updates {
     position: relative;
-    padding: 19px 14px 20px;
+    height: 100%;
+    padding: 49px 14px 20px;
 }
     .column-updates__heading {
+        position: absolute;
+        left: 14px;
+        top: 19px;
         display: flex;
         margin-left: 3px;
         align-items: flex-start;
@@ -19,9 +23,8 @@
         }
 
     .column-updates__list {
-        margin-top: 12px;
+        height: 100%;
     }
-
         .column-updates__list .null__inner {
 
         }
