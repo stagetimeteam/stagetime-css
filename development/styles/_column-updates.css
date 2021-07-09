@@ -5,7 +5,7 @@
 }
     .column-updates__heading {
         position: absolute;
-        left: 14px;
+        left: 15px;
         top: 19px;
         display: flex;
         margin-left: 3px;
@@ -26,7 +26,8 @@
         height: 100%;
     }
         .column-updates__list .null__inner {
-
+            margin-left: 6px;
+            margin-right: 6px;
         }
 
         .column-updates__item {

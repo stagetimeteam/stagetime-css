@@ -6,7 +6,7 @@
 }
     .column-updates__heading {
         top: 0;
-        margin-left: -14px;
+        left: 0;
         /*display: flex;*/
         /*margin-left: 3px;*/
         /*align-items: flex-start;*/
@@ -35,13 +35,14 @@
 
     .column-updates__list.null,
     .column-updates__list .null {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 8px;
-        margin-bottom: 8px;
-        padding-left: 0;
-        padding-right: 0;
+        margin: 8px 0;
+        padding: 0;
     }
+
+        .column-updates__list .null__inner {
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .column-updates__item {
             /*margin-top: 4px;*/

@@ -49,6 +49,17 @@
     .up-next__list {
 
     }
+
+    .up-next__list.null,
+    .up-next__list > .null {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+        .up-next__list .null__inner {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
         .up-next__item {
             /*margin-top: 15px;*/
             /*border-top: 1px solid #F2F2F2;*/

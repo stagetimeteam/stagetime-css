@@ -147,6 +147,9 @@
                     /*background-color: #FFFFFF;*/
                     /*border-radius: 10px;*/
                 }
+                    .dash-tiles__next > .scrollbar {
+                        overflow: visible;
+                    }
 
                 .dash-tiles__news {
                     width: auto;
