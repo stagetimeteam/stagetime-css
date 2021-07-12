@@ -1,0 +1,46 @@
+.notification {
+    position: relative;
+    display: flex; /* flexbug #3 */
+    align-items: flex-start;
+    transition: background-color var(--transition-hover);
+}
+
+.notification:hover {
+    position: relative;
+    background-color: #F5F5F5;
+}
+    .notification__preview {
+        position: absolute;
+        left: 24px;
+        top: 21px;
+    }
+
+    .notification__wrapping-link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 84px; /* 40px without paddings, 2 lines of text */
+        padding: 22px 50px 22px 85px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #545454;
+        text-decoration: none;
+    }
+        .notification__body {
+
+        }
+            .notification__body .link--text-alike {
+                transition: opacity var(--transition-hover);
+            }
+            .notification__body .link--text-alike:hover {
+                opacity: 0.6;
+            }
+
+        .notification__time {
+            position: absolute;
+            right: 24px;
+            top: 24px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #AAAAAA;
+        }
