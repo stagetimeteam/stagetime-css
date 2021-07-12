@@ -1,6 +1,7 @@
 .notification {
     position: relative;
     display: flex; /* flexbug #3 */
+    flex-wrap: wrap;
     align-items: flex-start;
     transition: background-color var(--transition-hover);
 }
@@ -19,6 +20,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        width: 100%;
         min-height: 84px; /* 40px without paddings, 2 lines of text */
         padding: 22px 50px 22px 85px;
         font-size: 12px;
@@ -43,4 +45,24 @@
             font-size: 12px;
             line-height: 16px;
             color: #AAAAAA;
+        }
+
+    .notification__operations {
+        margin: -15px 19px 22px 80px;
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 1;
+    }
+        .notification__action {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .notification__action--50pct {
+            width: 50%;
+        }
+
+        /* in case but is inside (not on the same node) */
+        .notification__action .button {
+            width: 100%;
         }

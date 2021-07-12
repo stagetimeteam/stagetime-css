@@ -260,6 +260,44 @@
 
 
 
+.button--submit {
+    background-color: #545454;
+    border-radius: 7px;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.button--submit:hover {
+    background-color: #E8E8E8;
+    color: #757575;
+}
+
+.button--submit:active {
+    background-color: #E8E8E8;
+    color: #757575;
+    box-shadow: none;
+}
+
+
+
+.button--cancel {
+    background-color: #E1E1E1;
+    color: #545454;
+    box-shadow: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.button--cancel:hover,
+.button--cancel:active {
+    background-color: #757575;
+    color: #E8E8E8;
+}
+
+
 
 .button--expandable {
     overflow: hidden;
