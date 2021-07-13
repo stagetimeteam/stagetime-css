@@ -1,4 +1,4 @@
-.notification {
+.notice {
     position: relative;
     display: flex; /* flexbug #3 */
     flex-wrap: wrap;
@@ -6,18 +6,18 @@
     transition: background-color var(--transition-hover);
 }
 
-.notification:hover {
+.notice:hover {
     position: relative;
     background-color: #F5F5F5;
 }
-    .notification__preview {
+    .notice__preview {
         position: absolute;
         z-index: 10;
         left: 24px;
         top: 21px;
     }
 
-    .notification__wrapper {
+    .notice__wrapper {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -30,17 +30,17 @@
         color: #545454;
         text-decoration: none;
     }
-        .notification__body {
+        .notice__body {
             position: relative;
         }
-            .notification__body .link--text-alike {
+            .notice__body .link--text-alike {
                 transition: opacity var(--transition-hover);
             }
-            .notification__body .link--text-alike:hover {
+            .notice__body .link--text-alike:hover {
                 opacity: 0.6;
             }
 
-        .notification__bubble {
+        .notice__bubble {
             margin: 12px -26px 3px 0;
             position: relative;
             padding: 18px 22px 15px;
@@ -52,11 +52,11 @@
             transition: background-color var(--transition-hover);
         }
 
-        .notification:hover .notification__bubble {
+        .notice:hover .notice__bubble {
             background-color: #FFFFFF;
         }
 
-        .notification__time {
+        .notice__time {
             position: absolute;
             right: 24px;
             top: 24px;
@@ -65,50 +65,46 @@
             color: #AAAAAA;
         }
 
-    .notification__operations {
+    .notice__operations {
         margin: -15px 19px 22px 80px;
         position: relative;
         display: flex;
         align-items: flex-start;
         flex-grow: 1;
     }
-        .notification__action {
+        .notice__action {
             margin-left: 5px;
             margin-right: 5px;
         }
 
-        .notification__action--50pct {
+        .notice__action--50pct {
             width: 50%;
         }
 
-        .notification__action--grow {
+        .notice__action--grow {
             flex-grow: 1;
         }
 
-        .notification__action--shrink {
-
-        }
-
         /* in case but is inside (not on the same node) */
-        .notification__action .button {
+        .notice__action .button {
             width: 100%;
         }
 
 
 
-.notification--success {
+.notice--success {
 
 }
 
-.notification--success:hover {
+.notice--success:hover {
     background-color: transparent;
 }
-    .notification--success .notification__wrapper {
+    .notice--success .notice__wrapper {
         background-color: #F4F4F4;
         border-radius: 8px;
         margin: 22px 24px;
     }
-        .notification--success .notification__wrapper::after {
+        .notice--success .notice__wrapper::after {
             content: "";
             position: absolute;
             right: 10px;
@@ -123,24 +119,24 @@
         }
 
 
-    .notification--success .notification__preview {
+    .notice--success .notice__preview {
         margin-left: 24px;
         margin-top: 22px;
     }
 
 
 
-.notification__cancel {
+.notice__cancel {
 
 }
 
-.notification__cancel:hover {
+.notice__cancel:hover {
     background-color: transparent;
 }
-    .notification__cancel .notification__wrapper {
+    .notice__cancel .notice__wrapper {
 
     }
-        .notification__cancel .notification__body::after {
+        .notice__cancel .notice__body::after {
             content: "";
             display: inline-block;
             vertical-align: top;
@@ -154,6 +150,6 @@
         }
 
 
-    .notification__cancel .notification__preview {
+    .notice__cancel .notice__preview {
 
     }
