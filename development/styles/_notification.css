@@ -12,15 +12,17 @@
 }
     .notification__preview {
         position: absolute;
+        z-index: 10;
         left: 24px;
         top: 21px;
     }
 
-    .notification__wrapping-link {
+    .notification__wrapper {
+        position: relative;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 100%;
+        flex-grow: 1;
         min-height: 84px; /* 40px without paddings, 2 lines of text */
         padding: 22px 50px 22px 85px;
         font-size: 12px;
@@ -29,7 +31,7 @@
         text-decoration: none;
     }
         .notification__body {
-
+            position: relative;
         }
             .notification__body .link--text-alike {
                 transition: opacity var(--transition-hover);
@@ -40,6 +42,7 @@
 
         .notification__bubble {
             margin: 12px -26px 3px 0;
+            position: relative;
             padding: 18px 22px 15px;
             background-color: #F8F8F8;
             border-radius: 11px;
@@ -64,6 +67,7 @@
 
     .notification__operations {
         margin: -15px 19px 22px 80px;
+        position: relative;
         display: flex;
         align-items: flex-start;
         flex-grow: 1;
@@ -77,7 +81,79 @@
             width: 50%;
         }
 
+        .notification__action--grow {
+            flex-grow: 1;
+        }
+
+        .notification__action--shrink {
+
+        }
+
         /* in case but is inside (not on the same node) */
         .notification__action .button {
             width: 100%;
         }
+
+
+
+.notification--success {
+
+}
+
+.notification--success:hover {
+    background-color: transparent;
+}
+    .notification--success .notification__wrapper {
+        background-color: #F4F4F4;
+        border-radius: 8px;
+        margin: 22px 24px;
+    }
+        .notification--success .notification__wrapper::after {
+            content: "";
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-image: url("../vectors/notification-success.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+
+    .notification--success .notification__preview {
+        margin-left: 24px;
+        margin-top: 22px;
+    }
+
+
+
+.notification__cancel {
+
+}
+
+.notification__cancel:hover {
+    background-color: transparent;
+}
+    .notification__cancel .notification__wrapper {
+
+    }
+        .notification__cancel .notification__body::after {
+            content: "";
+            display: inline-block;
+            vertical-align: top;
+            width: 26px;
+            height: 26px;
+            margin: -3px 0 -3px 16px;
+            background-image: url("../vectors/notification-cancel.svg");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+
+    .notification__cancel .notification__preview {
+
+    }
