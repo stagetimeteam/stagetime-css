@@ -6,10 +6,40 @@
     transition: background-color var(--transition-hover);
 }
 
-.notice:hover {
-    position: relative;
+.notice {
+    margin-top: -1px;
+}
+
+.notice:first-child {
+    margin-top: 0;
+}
+
+.notice:not(.notice--success):not(.notice--cancel):hover {
     background-color: #F5F5F5;
 }
+    .notice::before {
+        content: "";
+        position: absolute;
+        left: 24px;
+        right: 24px;
+        top: 0;
+        height: 1px;
+        background-color: #E8E8E8;
+        transition: background-color var(--transition-hover);
+    }
+
+    .notice:first-child::before {
+        display: none;
+    }
+
+    .notice:not(.notice--success):not(.notice--cancel):hover::before {
+        background-color: transparent;
+    }
+
+    .notice:not(.notice--success):not(.notice--cancel):hover + .notice::before {
+        background-color: transparent;
+    }
+
     .notice__preview {
         position: absolute;
         z-index: 10;
@@ -97,7 +127,7 @@
 }
 
 .notice--success:hover {
-    background-color: transparent;
+
 }
     .notice--success .notice__wrapper {
         background-color: #F4F4F4;
@@ -126,17 +156,17 @@
 
 
 
-.notice__cancel {
+.notice--cancel {
 
 }
 
-.notice__cancel:hover {
-    background-color: transparent;
+.notice--cancel:hover {
+
 }
-    .notice__cancel .notice__wrapper {
+    .notice--cancel .notice__wrapper {
 
     }
-        .notice__cancel .notice__body::after {
+        .notice--cancel .notice__body::after {
             content: "";
             display: inline-block;
             vertical-align: top;
@@ -150,6 +180,8 @@
         }
 
 
-    .notice__cancel .notice__preview {
+    .notice--cancel .notice__preview {
 
     }
+
+

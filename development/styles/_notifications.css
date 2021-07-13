@@ -1,0 +1,23 @@
+.notifications {
+    position: fixed;
+    z-index: 2000;
+    right: 91px;
+    top: 45px;
+    width: 350px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    overflow: hidden; /* cut corners (hovers inside for example) */
+}
+    .notifications__scroll {
+        max-height: 75vh;
+    }
+        .notifications__item {
+            position: relative;
+            margin-top: -1px;
+        }
+
+        .notifications__item:first-child {
+            margin-top: 0;
+        }
+
