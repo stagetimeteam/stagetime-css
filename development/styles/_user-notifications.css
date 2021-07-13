@@ -2,13 +2,23 @@
     position: fixed;
     z-index: 2000;
     right: 91px;
-    top: 45px;
+    top: 47px;
     width: 350px;
     background-color: #FFFFFF;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     overflow: hidden; /* cut corners (hovers inside for example) */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-show),
+                visibility var(--transition-show);
 }
+
+.notifications-visible .user-notifications {
+    opacity: 1;
+    visibility: visible;
+}
+
     .user-notifications__scroll {
         max-height: 75vh;
     }

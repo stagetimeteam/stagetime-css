@@ -1,0 +1,7 @@
+.notifications-visible {
+
+}
+
+.notifications-visible .page {
+    display: none;
+}
