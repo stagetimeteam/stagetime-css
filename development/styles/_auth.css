@@ -71,7 +71,11 @@
         margin-top: 10px;
     }
         .auth__net {
+            margin-top: 16px;
+        }
 
+        .auth__net:first-child {
+            margin-top: 0;
         }
 
     .auth__agreement {
