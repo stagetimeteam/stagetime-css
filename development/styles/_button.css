@@ -300,6 +300,7 @@
 
 
 .button--expandable {
+    justify-content: flex-start;
     overflow: hidden;
     transition: padding-left var(--transition-show),
                 padding-right var(--transition-show),
