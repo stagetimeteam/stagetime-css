@@ -49,15 +49,6 @@
                     }
 
 
-.post-handler--simplified {
-    padding-bottom: 25px;
-}
-    .post-handler--simplified .post-handler__message {
-
-    }
-
-
-
 @media (max-width: 359px) {
 
     .post-handler {
@@ -77,3 +68,15 @@
             justify-content: flex-end;
         }
 }
+
+
+
+
+.post-handler--simplified {
+    padding-bottom: 25px;
+}
+.post-handler--simplified .post-handler__message {
+
+}
+
+
