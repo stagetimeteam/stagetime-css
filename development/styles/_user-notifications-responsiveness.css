@@ -10,14 +10,14 @@
     overflow: visible; /* cut corners (hovers inside for example) */
     opacity: 1;
     visibility: visible;
+    display: none;
     /*transition: opacity var(--transition-show),*/
     /*            visibility var(--transition-show);*/
 }
 
-/*.notifications-visible .user-notifications {*/
-/*    opacity: 1;*/
-/*    visibility: visible;*/
-/*}*/
+.notifications-visible .user-notifications {
+    display: block;
+}
     .user-notifications__scroll {
         max-height: none;
     }

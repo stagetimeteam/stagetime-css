@@ -1,15 +1,15 @@
 (function($) {
 
     $('.search__widget').on('focus', function () {
-        $(this).parents('.search').addClass('search--expanded');
+        $('html').addClass('search-expanded');
     });
 
 
     /* hide popup by click outside ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.search').length) {
-            $('.search').removeClass('search--expanded');
+        if (!$(event.target).closest('.search, .header__search-handler').length) {
+            $('html').removeClass('search-expanded');
         }
     });
 
@@ -18,8 +18,22 @@
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $('.search').removeClass('search--expanded');
+            $('html').removeClass('search-expanded');
         }
     });
+
+
+    /* mobile */
+
+    $('.header__search-handler').on('click', function () {
+        $('html').addClass('search-expanded');
+    });
+
+    $('.search__close').on('click', function() {
+        $('html').removeClass('search-expanded');
+    });
+
+
+
 
 })(jQuery);

@@ -96,6 +96,7 @@
         }
 
     .notification__operations {
+        width: calc(100% - 19px - 80px);
         margin: -15px 19px 22px 80px;
         position: relative;
         display: flex;

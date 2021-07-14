@@ -5,3 +5,7 @@
 .notifications-visible .page {
     display: none;
 }
+
+.notifications-visible .search {
+    display: none;
+}
