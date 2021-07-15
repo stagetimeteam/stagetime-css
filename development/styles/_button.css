@@ -119,6 +119,24 @@
 
 
 
+.button--another-faded {
+    padding: 7px 12px;
+    background-color: #F5F5F5;
+    box-shadow: none;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #545454;
+}
+
+.button--another-faded:hover,
+.button--another-faded:active {
+    background-color: #757575;
+    color: #FFFFFF;
+}
+
+
+
 .button--gray {
     background-color: #C4C4C4;
     font-weight: bold;

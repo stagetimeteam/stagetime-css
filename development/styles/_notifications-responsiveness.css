@@ -1,0 +1,38 @@
+.notifications {
+    position: static;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible; /* cut corners (hovers inside for example) */
+    opacity: 1;
+    visibility: visible;
+    display: none;
+}
+
+.notifications-visible .notifications {
+    display: block;
+}
+    .notifications__scroll {
+        max-height: none;
+    }
+        .notifications__separator {
+
+        }
+
+        .notifications__section {
+
+        }
+
+
+
+.notifications-visible {
+
+}
+
+.notifications-visible .page {
+    display: none;
+}
+
+.notifications-visible .search {
+    display: none;
+}

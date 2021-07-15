@@ -1,4 +1,5 @@
 .mfp-wrap {
+    z-index: 3000;
     width: auto;
     height: auto;
     right: 0;
@@ -36,6 +37,7 @@
 
 /* background color */
 .mfp-bg {
+    z-index: 3000;
     width: auto;
     height: auto;
     right: 0;

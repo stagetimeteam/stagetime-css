@@ -1,4 +1,4 @@
-.user-notifications {
+.notifications {
     position: fixed;
     z-index: 2000;
     right: 91px;
@@ -14,11 +14,18 @@
                 visibility var(--transition-show);
 }
 
-.notifications-visible .user-notifications {
+.notifications-visible .notifications {
     opacity: 1;
     visibility: visible;
 }
 
-    .user-notifications__scroll {
+    .notifications__scroll {
         max-height: 75vh;
     }
+        .notifications__separator {
+            padding-top: 5px;
+        }
+
+        .notifications__section {
+
+        }

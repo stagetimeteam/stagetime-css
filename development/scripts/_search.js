@@ -1,7 +1,7 @@
 (function($) {
 
     $('.search__widget').on('focus', function () {
-        $('html').addClass('search-expanded');
+        $('html').addClass('search-visible');
     });
 
 
@@ -9,7 +9,7 @@
 
     $(document).on('click', function(event) {
         if (!$(event.target).closest('.search, .header__search-handler').length) {
-            $('html').removeClass('search-expanded');
+            $('html').removeClass('search-visible');
         }
     });
 
@@ -18,7 +18,7 @@
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $('html').removeClass('search-expanded');
+            $('html').removeClass('search-visible');
         }
     });
 
@@ -26,11 +26,11 @@
     /* mobile */
 
     $('.header__search-handler').on('click', function () {
-        $('html').addClass('search-expanded');
+        $('html').addClass('search-visible');
     });
 
     $('.search__close').on('click', function() {
-        $('html').removeClass('search-expanded');
+        $('html').removeClass('search-visible');
     });
 
 

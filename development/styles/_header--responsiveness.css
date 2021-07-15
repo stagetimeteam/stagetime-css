@@ -32,13 +32,6 @@
                 border-right: 10px solid transparent;
             }
 
-            .header__search {
-                margin-top: 0;
-                margin-left: 0;
-                width: auto;
-                display: none;
-            }
-
             .header__handlers {
                 display: flex;
                 align-items: flex-start;
@@ -72,6 +65,19 @@
                         width: 20px;
                         height: 20px;
                         fill: #AAAAAA;
+                    }
+
+                .header__notifications-handler {
+                    position: relative;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    padding: 14px;
+                }
+                    .header__bell {
+                        position: relative;
+                        vertical-align: top;
+                        fill: #545454;
                     }
 
                 .header__profile-handler {
@@ -210,10 +216,6 @@
 
             }
 
-            .header--dark .header__search {
-
-            }
-
             .header--dark .header__handlers {
                 /*display: none;*/
             }
@@ -270,23 +272,6 @@
                 .header--dark .header__join:hover {
                     background-color: transparent;
                 }
-
-
-
-
-.header--centered-search {
-
-}
-    .header--centered-search .header__search {
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
-    }
-
-    .header--centered-search .header__private-area {
-        /*margin-left: 0;*/
-    }
-
-
 
 .playlist-expanded .header {
     display: none;

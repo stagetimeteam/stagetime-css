@@ -13,11 +13,19 @@
         background-color: #FFFFFF;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
     }
+
+    .search-centered .search__bar {
+        left: 0;
+        margin-left: 0;
+    }
+
         .search__close {
             position: absolute;
             left: 0;
             top: 0;
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             background-color: transparent;
             border: none;
             padding: 0;
@@ -53,6 +61,11 @@
         border-radius: 0;
         padding-top: var(--header-height);
     }
+
+    .search-centered .search__dropdown {
+        left: auto;
+        margin-left: 0;
+    }
         .search__scroll {
             max-height: none;
         }
@@ -87,17 +100,17 @@
     }
 
 
-.search-expanded {
+.search-visible {
 
 }
-    .search-expanded .search {
+    .search-visible .search {
         display: block;
     }
 
-    .search-expanded .header {
+    .search-visible .header {
         display: none;
     }
 
-    .search-expanded .page {
+    .search-visible .page {
         display: none;
     }
