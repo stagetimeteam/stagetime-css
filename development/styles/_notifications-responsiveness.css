@@ -14,7 +14,7 @@
 }
     .notifications__scroll {
         max-height: none;
-        padding-top: var(--header-height);
+        padding-top: calc(var(--header-height) - 1px); /* cut one pixel to hide top border of first notification under the header */
     }
         .notifications__head {
             position: fixed;

@@ -28,10 +28,6 @@
         transition: background-color var(--transition-hover);
     }
 
-    .notice:first-child::before {
-        display: none;
-    }
-
     .notice:not(.notice--success):not(.notice--cancel):hover::before {
         background-color: transparent;
     }
