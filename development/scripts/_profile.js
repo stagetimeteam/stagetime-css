@@ -1,15 +1,26 @@
 (function($) {
 
-    $('.profile__handler').on('click', function () {
-        $(this).parent('.profile').toggleClass('profile--expanded');
+    $('.profile-button').on('click', function () {
+        $('html').toggleClass('profile-visible');
     });
+
+    $('.header__profile-handler').on('click', function () {
+        $('html').toggleClass('profile-visible');
+    });
+
+    $('.profile__head .top-bar__close').on('click', function () {
+        $('html').removeClass('profile-visible');
+    });
+
+
+
 
 
     /* hide profile dropdown by click outside ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.profile').length) {
-            $('.profile').removeClass('profile--expanded');
+        if (!$(event.target).closest('.profile, .profile-button, .header__profile-handler').length) {
+            $('html').removeClass('profile-visible');
         }
     });
 
@@ -18,7 +29,7 @@
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
-            $('.profile').removeClass('profile--expanded');
+            $('html').removeClass('profile-visible');
         }
     });
 

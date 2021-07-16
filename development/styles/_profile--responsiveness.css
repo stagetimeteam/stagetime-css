@@ -1,39 +1,33 @@
 .profile {
-    /*position: relative;*/
-    /*display: inline-block;*/
-    /*vertical-align: top;*/
+    position: static;
+    width: auto;
+    box-shadow: none;
+    border-radius: 0;
+    overflow: visible;
+    opacity: 1;
+    visibility: visible;
+    display: none;
 }
-    .profile__handler {
-        display: none;
-        /*vertical-align: top;*/
-        /*padding: 6px;*/
-        /*background-color: transparent;*/
-        /*border: none;*/
-        /*cursor: pointer;*/
+
+.profile-visible .profile {
+    display: block;
+}
+    .profile__head {
+        position: fixed;
+        z-index: 200;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: block;
+        background-color: #FFFFFF;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
     }
 
-    .profile__dropdown {
-        position: static;
-        padding-top: 11px;
-        padding-bottom: 11px;
-        /*right: 0;*/
-        /*top: 100%;*/
-        /*background-color: #FFFFFF;*/
-        box-shadow: none;
-        /*border-radius: 6px;*/
-        opacity: 1;
-        visibility: visible;
+    .profile__body {
+        padding-top: var(--header-height);
     }
-
-    .profile--expanded .profile__dropdown {
-        /*opacity: 1;*/
-        /*visibility: visible;*/
-    }
-
         .profile__link {
             border: none;
-            /*border-top: 10px solid transparent; !* expand clickable area *!*/
-            /*border-bottom: 10px solid transparent; !* expand clickable area *!*/
         }
 
 
@@ -43,9 +37,6 @@
         }
 
         .profile__organisation {
-            /*margin-top: 6px;*/
-            /*margin-left: 21px;*/
-            /*margin-right: 21px;*/
             display: none;
         }
 
@@ -57,6 +48,21 @@
         .profile__logout.nav-link,
         .profile__logout > .nav-link {
             border: none;
-            /*border-top: 9px solid transparent; !* expand clickable area *!*/
-            /*border-bottom: 9px solid transparent; !* expand clickable area *!*/
         }
+
+
+
+.profile-visible {
+
+}
+    .profile-visible .header {
+        display: none;
+    }
+
+    .profile-visible .page {
+        display: none;
+    }
+
+    .profile-visible .search {
+        display: none;
+    }

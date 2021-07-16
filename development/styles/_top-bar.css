@@ -22,3 +22,6 @@
         border: none;
         cursor: pointer;
     }
+        .top-bar__cross {
+            vertical-align: top;
+        }

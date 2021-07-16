@@ -3,7 +3,7 @@
     width: auto;
     box-shadow: none;
     border-radius: 0;
-    overflow: visible; /* cut corners (hovers inside for example) */
+    overflow: visible;
     opacity: 1;
     visibility: visible;
     display: none;
@@ -40,15 +40,14 @@
 .notifications-visible {
 
 }
+    .notifications-visible .header {
+        display: none;
+    }
 
-.notifications-visible .header {
-    display: none;
-}
+    .notifications-visible .page {
+        display: none;
+    }
 
-.notifications-visible .page {
-    display: none;
-}
-
-.notifications-visible .search {
-    display: none;
-}
+    .notifications-visible .search {
+        display: none;
+    }

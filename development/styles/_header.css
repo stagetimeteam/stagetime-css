@@ -118,11 +118,6 @@
                         margin-left: 0;
                     }
 
-                .header__user {
-                    margin-left: 22px;
-                    margin-right: 9px;
-                }
-
 
 
 
@@ -187,9 +182,7 @@
 
                     }
 
-                .header--dark .header__user {
 
-                }
                     .header--dark .header__login {
 
                     }
