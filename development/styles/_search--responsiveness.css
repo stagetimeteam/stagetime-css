@@ -3,6 +3,7 @@
 }
     .search__bar {
         position: fixed;
+        z-index: 200;
         left: 0;
         top: 0;
         right: 0;
@@ -18,7 +19,6 @@
         left: 0;
         margin-left: 0;
     }
-
         .search__close {
             position: absolute;
             left: 0;

@@ -18,6 +18,9 @@
     opacity: 1;
     visibility: visible;
 }
+    .notifications__head {
+        display: none;
+    }
 
     .notifications__scroll {
         max-height: 75vh;

@@ -14,7 +14,19 @@
 }
     .notifications__scroll {
         max-height: none;
+        padding-top: var(--header-height);
     }
+        .notifications__head {
+            position: fixed;
+            z-index: 200;
+            left: 0;
+            top: 0;
+            right: 0;
+            display: block;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+        }
+
         .notifications__separator {
 
         }
@@ -27,6 +39,10 @@
 
 .notifications-visible {
 
+}
+
+.notifications-visible .header {
+    display: none;
 }
 
 .notifications-visible .page {
