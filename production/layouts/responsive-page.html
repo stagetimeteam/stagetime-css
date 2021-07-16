@@ -6,8 +6,8 @@
         <title>Responsive Page</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1626458651">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1626458651" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../styles/style.css?1626463518">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1626463518" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -18,6 +18,23 @@
                     <a class="header__branding logo" href="#">
                         STAGETIME
                     </a>
+                    <div class="header__handlers">
+                        <button class="header__search-handler" type="button">
+                            <svg class="header__magnifier">
+                                <use xlink:href="../symbols/symbols.svg?1626463518#16-magnifier"></use>
+                            </svg>
+                        </button>
+                        <button class="header__notifications-handler" type="button">
+                            <svg class="header__bell" width="32" height="32">
+                                <use xlink:href="../symbols/symbols.svg?1626463518#32-bell"></use>
+                            </svg>
+                        </button>
+                        <button class="header__profile-handler" type="button">
+                            <span class="avatar avatar--alt-hover avatar--fancy">
+                                <img class="avatar__image" srcset="../temp/person-a-40x40@2x.jpg 2x" src="../temp/person-a-40x40.jpg" width="40" height="40" alt="">
+                            </span>
+                        </button>
+                    </div>
                 </div>
                 <div class="header__dropdown">
                     <div class="header__private-area">
@@ -27,7 +44,7 @@
                         <div class="header__menu">
                             <a class="header__item header-button header-button--flagged" href="#">
                                 <svg class="header-button__icon" width="32" height="32">
-                                    <use xlink:href="../symbols/symbols.svg?1626458651#32-envelope"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1626463518#32-envelope"></use>
                                 </svg>
                                 <span class="visuallyhidden">Messages</span>
                                 <span class="visuallyhidden">New:</span>
@@ -35,13 +52,13 @@
                             </a>
                             <a class="header__item header-button header-button--user-color" href="#">
                                 <svg class="header-button__icon" width="32" height="32">
-                                    <use xlink:href="../symbols/symbols.svg?1626458651#32-crowd"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1626463518#32-crowd"></use>
                                 </svg>
                                 <span class="visuallyhidden">Collaborators</span>
                             </a>
                             <a class="header__item header-button header-button--flagged" href="#">
                                 <svg class="header-button__icon" width="32" height="32">
-                                    <use xlink:href="../symbols/symbols.svg?1626458651#32-bell"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1626463518#32-bell"></use>
                                 </svg>
                                 <span class="visuallyhidden">Notifications</span>
                                 <span class="visuallyhidden">New:</span>
@@ -79,42 +96,42 @@
                                 <div class="profile__menu">
                                     <a class="nav-link" href="#">
                                         <svg class="nav-link__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1626458651#16-pencil"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1626463518#16-pencil"></use>
                                         </svg>
                                         Edit Profile
                                     </a>
                                     <a class="nav-link" href="#">
                                         <svg class="nav-link__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1626458651#16-envelope-outline"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1626463518#16-envelope-outline"></use>
                                         </svg>
                                         <svg class="nav-link__sparkle" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1626458651#16-sparkle"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1626463518#16-sparkle"></use>
                                         </svg>
                                         Invite
                                         <span class="visuallyhidden">Explain meaning of sparkles here</span>
                                     </a>
                                     <a class="nav-link" href="#">
                                         <svg class="nav-link__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1626458651#16-question-spot"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1626463518#16-question-spot"></use>
                                         </svg>
                                         Support
                                     </a>
                                     <a class="nav-link" href="#">
                                         <svg class="nav-link__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1626458651#16-cog"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1626463518#16-cog"></use>
                                         </svg>
                                         Settings
                                     </a>
                                 </div>
                                 <a class="profile__organisation button button--faded" href="#">
                                     <svg class="button__icon button__icon--left" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1626458651#16-city"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1626463518#16-city"></use>
                                     </svg>
                                     Create Organization
                                 </a>
                                 <a class="profile__logout nav-link" href="#">
                                     <svg class="nav-link__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1626458651#16-logout"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1626463518#16-logout"></use>
                                     </svg>
                                     Log Out
                                 </a>
@@ -128,13 +145,13 @@
             <div class="search__bar">
                 <button class="search__close" type="button">
                     <svg class="search__arrow" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1626458651#16-left"></use>
+                        <use xlink:href="../symbols/symbols.svg?1626463518#16-left"></use>
                     </svg>
                 </button>
                 <div class="search__body">
                     <input class="search__widget" type="text" placeholder="Search Stagetime">
                     <svg class="search__icon" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1626458651#16-magnifier"></use>
+                        <use xlink:href="../symbols/symbols.svg?1626463518#16-magnifier"></use>
                     </svg>
                 </div>
             </div>
@@ -243,7 +260,7 @@
                                 </div>
                                 <div class="user-badge__heading">
                                     <svg class="icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1626458651#16-city"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1626463518#16-city"></use>
                                     </svg>
                                     Aspen Music Festival & School
                                 </div>
@@ -266,7 +283,7 @@
                                 </div>
                                 <div class="user-badge__heading">
                                     <svg class="icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1626458651#16-city"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1626463518#16-city"></use>
                                     </svg>
                                     Aspen Music Festival & School
                                 </div>
@@ -289,7 +306,7 @@
                                 </div>
                                 <div class="user-badge__heading">
                                     <svg class="icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1626458651#16-city"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1626463518#16-city"></use>
                                     </svg>
                                     Aspen Music Festival & School
                                 </div>
@@ -312,7 +329,7 @@
                                 </div>
                                 <div class="user-badge__heading">
                                     <svg class="icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1626458651#16-city"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1626463518#16-city"></use>
                                     </svg>
                                     Aspen Music Festival & School
                                 </div>
@@ -326,6 +343,16 @@
             </div>
         </form>
         <div class="notifications">
+            <div class="notifications__head top-bar">
+                <div class="top-bar__heading">
+                    Notifications
+                </div>
+                <button class="top-bar__close" type="button">
+                    <svg width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1626463518#16-cross"></use>
+                    </svg>
+                </button>
+            </div>
             <div class="notifications__scroll scrollbar scrollbar-macosx">
                 <div class="notice">
                     <a class="notice__preview avatar avatar--alt-hover" href="#">
@@ -690,28 +717,28 @@
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-        <script src="../scripts/_global.js?1626458651"></script>
-        <script src="../scripts/_operations.js?1626458651"></script>
-        <script src="../scripts/_profile.js?1626458651"></script>
-        <script src="../scripts/_mfp.js?1626458651"></script>
-        <script src="../scripts/_search.js?1626458651"></script>
-        <script src="../scripts/_carousel.js?1626458651"></script>
-        <script src="../scripts/_player.js?1626458651"></script>
-        <script src="../scripts/_updates.js?1626458651"></script>
-        <script src="../scripts/_dash-side.js?1626458651"></script>
-        <script src="../scripts/_happening.js?1626458651"></script>
-        <script src="../scripts/_input.js?1626458651"></script>
-        <script src="../scripts/_edit-post.js?1626458651"></script>
-        <script src="../scripts/_post-form.js?1626458651"></script>
-        <script src="../scripts/_button.js?1626458651"></script>
-        <script src="../scripts/_quick-message.js?1626458651"></script>
-        <script src="../scripts/_dash-tiles.js?1626458651"></script>
-        <script src="../scripts/_shortcut.js?1626458651"></script>
-        <script src="../scripts/_scrollbar.js?1626458651"></script>
-        <script src="../scripts/_referral.js?1626458651"></script>
-        <script src="../scripts/_overlay.js?1626458651"></script>
-        <script src="../scripts/_header.js?1626458651"></script>
-        <script src="../scripts/_header--responsiveness.js?1626458651"></script>
+        <script src="../scripts/_global.js?1626463518"></script>
+        <script src="../scripts/_operations.js?1626463518"></script>
+        <script src="../scripts/_profile.js?1626463518"></script>
+        <script src="../scripts/_mfp.js?1626463518"></script>
+        <script src="../scripts/_search.js?1626463518"></script>
+        <script src="../scripts/_carousel.js?1626463518"></script>
+        <script src="../scripts/_player.js?1626463518"></script>
+        <script src="../scripts/_updates.js?1626463518"></script>
+        <script src="../scripts/_dash-side.js?1626463518"></script>
+        <script src="../scripts/_happening.js?1626463518"></script>
+        <script src="../scripts/_input.js?1626463518"></script>
+        <script src="../scripts/_edit-post.js?1626463518"></script>
+        <script src="../scripts/_post-form.js?1626463518"></script>
+        <script src="../scripts/_button.js?1626463518"></script>
+        <script src="../scripts/_quick-message.js?1626463518"></script>
+        <script src="../scripts/_dash-tiles.js?1626463518"></script>
+        <script src="../scripts/_shortcut.js?1626463518"></script>
+        <script src="../scripts/_scrollbar.js?1626463518"></script>
+        <script src="../scripts/_referral.js?1626463518"></script>
+        <script src="../scripts/_overlay.js?1626463518"></script>
+        <script src="../scripts/_notifications.js?1626463518"></script>
+        <script src="../scripts/_header--responsiveness.js?1626463518"></script>
 
 
     </body>
