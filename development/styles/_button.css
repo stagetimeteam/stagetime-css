@@ -25,6 +25,7 @@
         vertical-align: top;
         fill: currentColor;
         transition: fill var(--transition-hover);
+        flex-shrink: 0;
     }
 
     .button__icon--left {
