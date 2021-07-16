@@ -1,12 +1,20 @@
 (function($) {
 
+    /* desktop handler */
     $('.header__item:nth-child(3)').on('click', function () {
         $('html').toggleClass('notifications-visible');
     });
 
+    /* mobile handler */
     $('.header__notifications-handler').on('click', function () {
         $('html').toggleClass('notifications-visible');
     });
+
+    /* cross button */
+    $('.notifications__head .top-bar__close').on('click', function () {
+        $('html').removeClass('notifications-visible');
+    });
+
 
     /* click outside ( goo.gl/SJG2Hw ) */
 
