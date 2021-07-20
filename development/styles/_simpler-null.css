@@ -1,0 +1,11 @@
+.simpler-null {
+    height: 361px;
+    padding: 40px 40px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 28px;
+    color: #545454;
+    text-align: center;
+}
