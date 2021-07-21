@@ -8,6 +8,7 @@
     line-height: 16px;
     color: #8B8B8B;
     text-decoration: none;
+    transition: color var(--transition-hover);
 }
     .nav-link__icon {
         vertical-align: top;
@@ -25,6 +26,12 @@
         pointer-events: none; /* don't overlay neighbours */
     }
 
+    .nav-link__counter {
+        margin-left: 4px;
+        color: var(--user-color);
+        transition: color var(--transition-hover);
+    }
+
 .nav-link:hover {
     color: #545454;
 }
@@ -32,16 +39,23 @@
         fill: #545454;
     }
 
-    .nav-link__counter {
-        margin-left: 4px;
-        color: var(--user-color);
+    .nav-link:hover .nav-link__counter {
+        color: inherit;
     }
+
+
 
 
 .nav-link--sidebar-ready {
     padding: 13px 22px 13px 28px;
     font-size: 12px;
     line-height: 20px;
+    transition: background-color var(--transition-hover);
+}
+
+.nav-link--sidebar-ready:hover {
+    background-color: #F4F4F4;
+    box-shadow: inset -1px 0 0 #E8E8E8;
 }
     .nav-link--sidebar-ready .nav-link__icon {
         margin-right: 12px;
