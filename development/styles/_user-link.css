@@ -17,12 +17,12 @@
     }
 
 .user-link--sidebar-ready {
-    padding-top: 13px;
-    padding-bottom: 13px;
-    padding-left: 36px;
+    padding: 13px 22px 13px 28px;
+    font-size: 12px;
+    line-height: 20px;
 }
     .user-link--sidebar-ready .user-link__preview {
-        margin: 0 9px 0 -1px;
+        margin: 2px 14px 2px 2px;
         box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
     }
 

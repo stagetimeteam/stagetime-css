@@ -39,10 +39,15 @@
 
 
 .nav-link--sidebar-ready {
-    padding: 13px 20px 13px 37px;
+    padding: 13px 22px 13px 28px;
+    font-size: 12px;
+    line-height: 20px;
 }
     .nav-link--sidebar-ready .nav-link__icon {
-        margin-right: 10px;
+        margin-right: 12px;
+        margin-left: 0;
+        width: 20px;
+        height: 20px;
     }
 
 
@@ -57,9 +62,10 @@
         content: "";
         position: absolute;
         right: 0;
-        top: 11px;
-        bottom: 11px;
+        top: 50%;
+        margin-top: -16px;
         width: 3px;
+        height: 32px;
         display: block;
         background-color: #545454;
     }
