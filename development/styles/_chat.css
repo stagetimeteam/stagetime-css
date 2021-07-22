@@ -27,9 +27,15 @@
         .chat__body {
             flex-grow: 1;
             overflow-y: auto;
-            padding-left: 30px;
-            padding-right: 30px;
         }
+            .chat__ribbon {
+                min-height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
 
         .chat__foot {
             flex-shrink: 0;
