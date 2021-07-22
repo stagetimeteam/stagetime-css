@@ -2,6 +2,7 @@
     position: relative;
     padding-left: var(--sidebar-width);
     padding-right: var(--aside-width);
+    height: 100%;
 }
     .dashboard__sidebar {
         position: fixed;
@@ -16,6 +17,7 @@
 
     .dashboard__content {
         flex-grow: 1;
+        height: 100%;
     }
 
     .dashboard__aside {
