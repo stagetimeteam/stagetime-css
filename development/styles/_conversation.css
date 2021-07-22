@@ -1,0 +1,72 @@
+.conversation {
+    position: relative;
+    display: block;
+    padding: 33px 45px 32px 96px;
+    text-decoration: none;
+    color: inherit;
+}
+    .conversation::before {
+        content: "";
+        position: absolute;
+        left: 13px;
+        right: 13px;
+        top: 11px;
+        bottom: 11px;
+        display: block;
+        border-radius: 10px;
+        transition: background-color var(--transition-hover);
+    }
+
+    .conversation__preview {
+        position: absolute;
+        left: 26px;
+        top: 25px;
+    }
+
+    .conversation__heading {
+        position: relative;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #545454;
+    }
+
+    .conversation__message {
+        margin-top: 5px;
+        position: relative;
+        font-size: 12px;
+        line-height: 18px;
+        color: #757575;
+    }
+
+.conversation:hover::before {
+    background-color: #E6E6E6;
+}
+
+
+.conversation--current {
+
+}
+    .conversation--current::before {
+        background-color: #E6E6E6;
+
+    }
+
+.conversation--unread {
+
+}
+    .conversation--unread .conversation__heading {
+        margin-right: 10px;
+    }
+
+    .conversation--unread::after {
+        content: "";
+        position: absolute;
+        right: 31px;
+        top: 36px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        background-color: #757575;
+        border-radius: 50%;
+    }

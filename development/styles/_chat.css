@@ -1,0 +1,16 @@
+.chat {
+    padding-left: 360px;
+}
+    .chat__list {
+        position: fixed;
+        left: var(--sidebar-width);
+        top: var(--header-height);
+        bottom: 0;
+        width: 360px;
+        background-color: #F9F9F9;
+        overflow-y: auto;
+    }
+
+    .chat__room {
+
+    }
