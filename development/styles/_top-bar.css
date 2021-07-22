@@ -15,8 +15,8 @@
         position: absolute;
         right: 0;
         top: 0;
-        width: 60px;
-        height: 60px;
+        width: var(--header-height);
+        height: var(--header-height);
         background-color: transparent;
         padding: 0;
         border: none;
