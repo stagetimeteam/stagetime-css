@@ -14,7 +14,7 @@
         .chat__crowd {
 
         }
-            .chat__dialogs-head {
+            .chat__sub-head {
                 position: relative;
                 padding: 27px 80px 22px 26px;
             }
@@ -54,7 +54,7 @@
                         fill: #545454;
                     }
 
-            .chat__dialogs-body {
+            .chat__dialogs {
 
             }
 
