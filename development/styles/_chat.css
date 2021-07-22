@@ -27,6 +27,8 @@
         .chat__body {
             flex-grow: 1;
             overflow-y: auto;
+            padding-left: 30px;
+            padding-right: 30px;
         }
 
         .chat__foot {
