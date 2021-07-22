@@ -2,6 +2,7 @@
     height: 361px;
     padding: 40px 40px 60px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 16px;
@@ -9,3 +10,20 @@
     color: #545454;
     text-align: center;
 }
+
+.simpler-null--fixed-height {
+
+}
+
+.simpler-null--full-height {
+    height: 100%;
+    padding-bottom: 140px;
+}
+    .simpler-null__action {
+        margin-top: 25px;
+    }
+
+    .simpler-null__action.button,
+    .simpler-null__action > .button {
+        font-size: 11px;
+    }
