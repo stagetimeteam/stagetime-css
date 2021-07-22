@@ -49,7 +49,6 @@
 }
     .conversation--current::before {
         background-color: #E6E6E6;
-
     }
 
 .conversation--unread {
