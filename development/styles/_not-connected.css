@@ -1,0 +1,21 @@
+.not-connected {
+    position: relative;
+    padding: 14px 30px;
+    background-color: #F4F4F4;
+    font-size: 12px;
+    line-height: 20px;
+    color: #545454;
+}
+    .not-connected .link--text-alike {
+        transition: opacity var(--transition-hover);
+    }
+
+    .not-connected .link--text-alike:hover {
+        opacity: 0.6;
+    }
+
+    .not-connected__action {
+        position: absolute;
+        right: 14px;
+        top: 4px;
+    }
