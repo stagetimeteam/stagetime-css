@@ -1,0 +1,70 @@
+.user-suggest {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    transition: background-color var(--transition-hover);
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.user-suggest:hover {
+    background-color: #E6E6E6;
+}
+    .user-suggest__preview {
+        flex-shrink: 0;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-right: 11px;
+    }
+        .user-suggest__preview.avatar,
+        .user-suggest__preview .avatar {
+            box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.11);
+        }
+
+    .user-suggest__name {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 20px;
+        color: #757575;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .user-suggest__delete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: none;
+        padding: 0;
+        margin-left: -1px;
+        margin-right: -9px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+        .user-suggest__cross {
+            vertical-align: top;
+            fill: #757575;
+        }
+
+        .user-suggest__delete:hover .user-suggest__cross {
+            fill: #333333;
+        }
+
+.user-suggest--selected {
+    display: inline-flex;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+}
+    .user-suggest--selected .user-suggest__preview.avatar,
+    .user-suggest--selected .user-suggest__preview .avatar {
+        box-shadow: none;
+    }
+
+.user-suggest--selected:hover {
+    background-color: #F4F4F4;
+}

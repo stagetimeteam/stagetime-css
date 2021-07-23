@@ -1,0 +1,52 @@
+/* This is component for single message.
+   We want to save bytes here because there
+   can be thousands of messages on the page
+   and longer selectors name can turn to megabytes
+*/
+
+.m {
+    margin-top: 15px;
+    max-width: 390px;
+    position: relative;
+    display: table;
+    vertical-align: top;
+    padding: 15px 63px 15px 22px;
+    background-color: #E8E8E8;
+    border-radius: 10px;
+    font-size: 13px;
+    line-height: 21px;
+}
+    .mt {
+        position: absolute;
+        right: 14px;
+        bottom: 12px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 18px;
+    }
+
+
+.mo {
+    background-color: #E8E8E8;
+    border-top-left-radius: 0;
+    color: #545454;
+}
+    .mo > .mt {
+        color: #757575;
+    }
+
+.ms {
+    margin-left: auto;
+    background-color: #545454;
+    border-top-right-radius: 0;
+    color: #FFFFFF;
+}
+    .ms > .mt {
+        color: #C4C4C4;
+    }
+
+
+.ms + .ms,
+.mo + .mo {
+    margin-top: 7px;
+}

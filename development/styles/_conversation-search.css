@@ -1,0 +1,23 @@
+.conversation-search {
+    padding: 22px 30px;
+    display: flex;
+    align-items: flex-start;
+}
+    .conversation-search__heading {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 16px;
+        flex-shrink: 0;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 20px;
+        color: #545454;
+    }
+
+    .conversation-search__find {
+        flex-grow: 1;
+    }
+
+    .conversation-search__found {
+
+    }

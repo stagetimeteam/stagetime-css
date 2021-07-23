@@ -1,0 +1,42 @@
+.conversation-bar {
+    position: relative;
+    display: block;
+    padding: 23px 45px 20px 96px;
+    text-decoration: none;
+    color: inherit;
+}
+    .conversation-bar__preview {
+        position: absolute;
+        left: 26px;
+        top: 14px;
+    }
+
+    .conversation-bar__heading {
+        position: relative;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #545454;
+    }
+        .conversation-bar__heading .link--text-alike {
+            transition: opacity var(--transition-hover);
+        }
+
+        .conversation-bar__heading .link--text-alike:hover {
+            opacity: 0.6;
+        }
+
+    .conversation-bar__note {
+        margin-top: 5px;
+        position: relative;
+        font-size: 12px;
+        line-height: 18px;
+        color: #757575;
+    }
+
+    .conversation-bar__actions {
+        position: absolute;
+        z-index: 100;
+        right: 12px;
+        top: 22px;
+    }

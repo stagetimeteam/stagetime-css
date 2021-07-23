@@ -1,0 +1,57 @@
+.enter {
+    position: relative;
+    padding: 15px 66px 15px 30px;
+}
+    .enter__message {
+        position: relative;
+        width: 100%;
+        vertical-align: top;
+        height: auto; /* user rows="" attribute */
+        min-height: 40px;
+        max-height: 256px;
+        padding: 8px 20px;
+        background-color: #F4F4F4;
+        border: none;
+        outline: none;
+        background-clip: padding-box; /* reset iOS default shadow */
+        border-radius: 20px; /* reset iOS default border-radius */
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: 13px;
+        line-height: 24px;
+        color: #757575;
+        transition: background-color var(--transition-hover),
+                border-color var(--transition-hover),
+                box-shadow var(--transition-hover);
+        resize: none;
+    }
+
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .enter__message::-webkit-input-placeholder { font-style: normal; color: #8B8B8B; }
+    .enter__message::-moz-placeholder          { font-style: normal; color: #8B8B8B; opacity: 1; }
+    .enter__message:-ms-input-placeholder      { font-style: normal; color: #8B8B8B; }
+    /* stylelint-enable */
+
+    .enter__send {
+        position: absolute;
+        right: 19px;
+        top: 15px;
+        width: 40px;
+        height: 40px;
+        background-color: #F4F4F4;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
+
+    .enter__send:hover {
+        background-color: #C4C4C4;
+    }
+
+        .enter__plane {
+            vertical-align: top;
+            fill: #757575;
+        }
