@@ -225,6 +225,13 @@
                         fill: #FFFFFF;
                     }
 
+                .header--dark .header__notifications-handler {
+
+                }
+                    .header--dark .header__bell {
+                        fill: #AAAAAA;
+                    }
+
                 .header--dark .header__profile-handler {
 
                 }
