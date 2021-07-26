@@ -47,6 +47,7 @@
 
 
 .nav-link--sidebar-ready {
+    border-right: 3px solid transparent;
     padding: 13px 22px 13px 28px;
     font-size: 12px;
     line-height: 20px;
@@ -66,21 +67,9 @@
 
 
 .nav-link--current {
+    border-right-color: #545454;
     color: #545454;
 }
     .nav-link--current .nav-link__icon {
         fill: #545454;
     }
-
-    .nav-link--current::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 50%;
-        margin-top: -16px;
-        width: 3px;
-        height: 32px;
-        display: block;
-        background-color: #545454;
-    }
-
