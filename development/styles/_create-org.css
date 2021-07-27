@@ -1,0 +1,49 @@
+.create-org {
+    padding-top: 31px;
+    padding-bottom: 92px;
+}
+    .create-org__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 4px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        color: #757575;
+        text-align: center;
+    }
+        .create-org__icon {
+            vertical-align: top;
+            fill: #C5C5C5;
+            width: 24px;
+            height: 24px;
+            margin-right: 4px;
+            margin-top: -4px;
+        }
+
+    .create-org__note {
+        margin-top: 34px;
+        font-size: 12px;
+        line-height: 24px;
+        color: #757575;
+        text-align: center;
+    }
+
+    .create-org__form {
+        max-width: 310px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+        .create-org__field {
+            margin-top: 16px;
+        }
+
+        .create-org__field:first-child {
+            margin-top: 0;
+        }
+
+        .create-org__submit {
+            margin-top: 40px;
+            width: 100%;
+        }
