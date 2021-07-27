@@ -11,22 +11,20 @@
     }
 
     .circles__body {
-        margin-top: 20px;
-        padding: 12px 14px 11px;
-        border: 1px solid #E8E8E8;
-        border-radius: 10px;
+        margin-top: 14px;
     }
         .circles__list {
             display: flex;
             align-items: flex-start;
             flex-wrap: wrap;
+            margin: 0 -9px;
         }
             .circles__item {
-
+                margin: 6px 9px;
             }
 
     .circles__more {
-        margin-top: -4px;
+        margin-top: -13px;
         margin-left: auto;
         margin-right: auto;
     }

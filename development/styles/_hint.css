@@ -128,12 +128,12 @@
 }
     .hint--sidebar-left .hint__dropdown {
         transform: none;
-        left: -35px;
+        left: -15px;
         margin-top: 0 !important;
     }
 
     .hint--sidebar-left .hint__dropdown::after {
-        left: 79px;
+        left: 67px;
     }
 
 
@@ -142,12 +142,12 @@
 }
     .hint--sidebar-right .hint__dropdown {
         transform: none;
-        left: -133px;
+        left: -138px;
         margin-top: 0 !important;
     }
 
     .hint--sidebar-right .hint__dropdown::after {
-        left: 179px;
+        left: 191px;
     }
 
 

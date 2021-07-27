@@ -47,6 +47,42 @@
 
 
 
+.user-card--side {
+    width: 104px;
+    padding: 0;
+    font-size: 10px;
+    line-height: 15px;
+}
+    .user-card--side .user-card__preview.avatar,
+    .user-card--side .user-card__preview .avatar {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
+    }
+
+    .user-card--side .user-card__data {
+        margin-top: 8px;
+        padding: 0;
+        min-height: 0; /* clear value */
+    }
+        .user-card--side .user-card__name {
+            font-weight: bold;
+        }
+            .user-card--side .user-card__link {
+                font-size: 11px;
+                line-height: 16px;
+            }
+
+            .user-card--side .user-card:hover .user-card__link,
+            .user-card--side .user-card__link:hover {
+
+            }
+
+        .user-card--side .user-card__note {
+            margin-top: 0;
+            font-size: 11px;
+            line-height: 16px;
+        }
+
+
 .user-card--smaller {
     width: 98px;
     padding-top: 5px;
