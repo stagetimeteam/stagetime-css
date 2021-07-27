@@ -1,6 +1,7 @@
 .create-org {
     padding-top: 31px;
     padding-bottom: 92px;
+    text-align: center;
 }
     .create-org__heading {
         margin-top: 0;
@@ -10,7 +11,6 @@
         font-size: 18px;
         line-height: 21px;
         color: #757575;
-        text-align: center;
     }
         .create-org__icon {
             vertical-align: top;
@@ -26,7 +26,6 @@
         font-size: 12px;
         line-height: 24px;
         color: #757575;
-        text-align: center;
     }
 
     .create-org__form {
@@ -45,5 +44,10 @@
 
         .create-org__submit {
             margin-top: 40px;
+            width: 100%;
+        }
+
+        .create-org__submit.button,
+        .create-org__submit > .button {
             width: 100%;
         }
