@@ -815,150 +815,43 @@
                     </div>
                 </div>
                 <div class="dashboard__content">
-                    <div class="referral container container--referral">
-                        <h1 class="referral__heading">
-                            <svg class="referral__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1627405279#16-envelope-outline"></use>
+                    <form class="create-org container container--org-creating">
+                        <h1 class="create-org__heading">
+                            <svg class="create-org__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1627405279#16-city"></use>
                             </svg>
-                            <svg class="referral__sparkle" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1627405279#16-sparkle"></use>
-                            </svg>
-                            Invite to Stagetime
+                            Create an Organization Page
                         </h1>
-                        <button class="referral__handler button button--alt-faded" type="button">
-                            Referral Link
-                        </button>
-                        <div class="referral__description">
-                            To grow your network, invite colleagues to join you on Stagetime by syncing your contacts or by sharing your referral link.
+                        <div class="create-org__note">
+                            You can request administrator access for pre-existing entries, or create a new organization if yours is not yet on Stagetime.
                         </div>
-                        <div class="referral__start-syncing sync">
-                            <svg class="sync__icon" width="24" height="24">
-                                <use xlink:href="../symbols/symbols.svg?1627405279#24-gmail-color"></use>
-                            </svg>
-                            <svg class="sync__logo" width="51" height="17">
-                                <use xlink:href="../symbols/symbols.svg?1627405279#google-color"></use>
-                            </svg>
-                            <a class="sync__action button button--alt-faded" href="#">Sync</a>
-                        </div>
-                        <!-- temp -->
-                        <br>or:
-                        <!-- temp -->
-                        <div class="referral__account">
-                            <button class="button button--volumetric" type="button">
-                                <svg class="button__media" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1627405279#24-gmail-color"></use>
-                                </svg>
-                                jennieemoser@gmail.com
+                        <div class="create-org__form">
+                            <div class="create-org__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Organization Name">
+                            </div>
+                            <div class="create-org__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Secondary Name (Optional)">
+                            </div>
+                            <div class="create-org__field input input--bold input--select input--placeholder-is-chosen">
+                                <select class="input__widget">
+                                    <option value="placeholder">Organization Type</option>
+                                    <option>United States</option>
+                                    <option>Russia</option>
+                                    <option>Vietnam</option>
+                                    <option>Thailand</option>
+                                </select>
+                            </div>
+                            <div class="create-org__field input input--bold">
+                                <input class="input__widget" type="url" placeholder="Website">
+                            </div>
+                            <div class="create-org__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Location (City, State, Country)">
+                            </div>
+                            <button class="create-org__submit button button--larger" type="submit">
+                                Create Organization
                             </button>
                         </div>
-                        <div class="referral__update">
-                            Last Updated: June 29, 2021
-                        </div>
-                        <div class="referral__list">
-                            <div class="referral__item user-bar">
-                                <a class="user-bar__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-56x56@2x.jpg 2x"
-                                         src="../temp/person-a-56x56.jpg"
-                                         width="56"
-                                         height="56"
-                                         alt="Mark Zuckerberg"
-                                    >
-                                </a>
-                                <div class="user-bar__body">
-                                    <div class="user-bar__name">
-                                        <a class="link link--text-alike" href="#">Alexandra Urquiola</a>
-                                    </div>
-                                    <div class="user-bar__note">
-                                        143 collaborators on Stagetime
-                                    </div>
-                                </div>
-                                <a class="user-bar__action button button--smaller button--dark-gray" href="#">
-                                    Invite
-                                </a>
-                            </div>
-                            <div class="referral__item user-bar">
-                                <a class="user-bar__preview" href="#">
-                                    <svg class="dummy" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
-                                    </svg>
-                                </a>
-                                <div class="user-bar__body">
-                                    <div class="user-bar__name">
-                                        <a class="link link--text-alike" href="#">Elena Villalón</a>
-                                    </div>
-                                    <div class="user-bar__note">
-                                        143 collaborators on Stagetime
-                                    </div>
-                                </div>
-                                <a class="user-bar__action button button--smaller button--dark-gray" href="#">
-                                    Invite
-                                </a>
-                            </div>
-                            <div class="referral__item user-bar">
-                                <a class="user-bar__preview" href="#">
-                                    <svg class="dummy" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">AU</text>
-                                    </svg>
-                                </a>
-                                <div class="user-bar__body">
-                                    <div class="user-bar__name">
-                                        <a class="link link--text-alike" href="#">Alexandra Urquiola</a>
-                                    </div>
-                                    <div class="user-bar__note">
-                                        143 collaborators on Stagetime
-                                    </div>
-                                </div>
-                                <a class="user-bar__action button button--smaller button--dark-gray" href="#">
-                                    Connect
-                                </a>
-                            </div>
-                            <div class="referral__item user-bar">
-                                <a class="user-bar__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-56x56@2x.jpg 2x"
-                                         src="../temp/person-c-56x56.jpg"
-                                         width="56"
-                                         height="56"
-                                         alt="Mark Zuckerberg"
-                                    >
-                                </a>
-                                <div class="user-bar__body">
-                                    <div class="user-bar__output">
-                                        Thanks for inviting Alexandra to Stagetime! <span class="user-bar__notification">We’ve sent them an email with instructions for creating a profile.</span>
-                                    </div>
-                                </div>
-                                <div class="user-bar__action sent">
-                                    <svg class="sent__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1627405279#16-success"></use>
-                                    </svg>
-                                    Sent
-                                </div>
-                            </div>
-                            <div class="referral__item user-bar">
-                                <a class="user-bar__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-d-56x56@2x.jpg 2x"
-                                         src="../temp/person-d-56x56.jpg"
-                                         width="56"
-                                         height="56"
-                                         alt="Mark Zuckerberg"
-                                    >
-                                </a>
-                                <div class="user-bar__body">
-                                    <div class="user-bar__name">
-                                        <a class="link link--text-alike" href="#">Elena Villalón</a>
-                                    </div>
-                                    <div class="user-bar__note">
-                                        143 collaborators on Stagetime
-                                    </div>
-                                </div>
-                                <a class="user-bar__action button button--smaller button--dark-gray" href="#">
-                                    Invite
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
                 <div class="dashboard__aside">
                     <div class="scrollbar scrollbar-macosx">
