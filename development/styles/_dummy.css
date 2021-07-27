@@ -1,30 +1,13 @@
 .dummy {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    vertical-align: top;
     background-color: #C4C4C4;
     border-radius: 50%;
     color: #FFFFFF;
     user-select: none;
-    text-decoration: none;
     transition: background-color var(--transition-hover);
+    cursor: pointer;
 }
 
 .dummy:hover {
     background-color: #545454;
-}
-
-.dummy--56x56 {
-    width: 56px;
-    height: 56px;
-    padding-bottom: 2px;
-    font-size: 22px;
-    line-height: 24px;
-}
-
-.dummy--26x26 {
-    width: 26px;
-    height: 26px;
-    font-size: 12px;
-    line-height: 16px;
 }
