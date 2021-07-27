@@ -8,6 +8,7 @@
         left: 0;
         top: 0;
         right: 0;
+        min-width: 1220px;
         height: var(--header-height);
         background: #FFFFFF;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);

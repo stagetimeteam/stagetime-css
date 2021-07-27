@@ -12,6 +12,7 @@
         /*background: #FFFFFF;*/
         box-shadow: none;
         display: block;
+        min-width: 0;
         /*align-items: flex-start;*/
         padding: 0;
     }
