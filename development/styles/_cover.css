@@ -1,5 +1,8 @@
 .cover {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 112px;
     height: 112px;
     background-color: #D2D2D2;
@@ -8,12 +11,6 @@
     border-radius: 8px;
 }
     .cover__icon {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
         vertical-align: top;
         width: 32px;
         height: 32px;
@@ -28,4 +25,25 @@
 
 .cover--clickable:hover {
     background-color: #757575;
+}
+
+
+.cover--input-alike {
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    color: #8B8B8B;
+    border-radius: 5px;
+}
+
+.cover--input-alike.cover--clickable:hover {
+    background-color: #F2F2F2;
+}
+
+.cover--bold {
+    font-weight: bold;
 }

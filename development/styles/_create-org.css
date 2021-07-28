@@ -42,8 +42,36 @@
             margin-top: 0;
         }
 
+        .create-org__field--images {
+            display: flex;
+            align-items: stretch;
+        }
+            .create-org__logo {
+                flex-shrink: 0;
+            }
+                .create-org__logo.cover,
+                .create-org__logo > .cover {
+                    width: 97px;
+                    height: 97px;
+                }
+
+            .create-org__cover-photo {
+                margin-left: 16px;
+                flex-grow: 1;
+            }
+                .create-org__cover-photo.cover,
+                .create-org__cover-photo > .cover {
+                    width: auto;
+                    height: 97px;
+                }
+
+        .create-org__agreement {
+            margin-top: 11px;
+            text-align: left;
+        }
+
         .create-org__submit {
-            margin-top: 40px;
+            margin-top: 39px;
             width: 100%;
         }
 
