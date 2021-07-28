@@ -56,3 +56,9 @@
     color: inherit;
 }
 
+
+.link--faded {
+    font-weight: normal;
+    color: #AAAAAA;
+}
+

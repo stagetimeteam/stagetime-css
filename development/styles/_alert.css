@@ -1,0 +1,33 @@
+.alert {
+    padding-top: 106px;
+    padding-bottom: 146px;
+    text-align: center;
+}
+    .alert__icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .alert__message {
+        margin-top: 18px;
+        margin-bottom: 0;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 34px;
+        color: #C4C4C4;
+    }
+
+    .alert__description {
+        margin-top: 30px;
+        font-size: 11px;
+        line-height: 22px;
+    }
+
+    .alert__action {
+        margin-top: 70px;
+    }
+
+    .alert__action.button,
+    .alert__action > .button {
+        width: 164px;
+    }
