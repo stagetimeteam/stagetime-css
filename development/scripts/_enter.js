@@ -7,4 +7,10 @@
         this.style.height = (this.scrollHeight) + 'px';
     });
 
+
+    $('.enter__message').on('keypress', function () {
+        $('.enter__send').removeClass('enter__send--disabled');
+    });
+
+
 })(jQuery);

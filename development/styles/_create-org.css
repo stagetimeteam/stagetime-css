@@ -50,9 +50,13 @@
                 flex-shrink: 0;
             }
                 .create-org__logo.cover,
-                .create-org__logo > .cover {
-                    width: 97px;
-                    height: 97px;
+                .create-org__logo > .cover,
+                .create-org__logo.img-pad,
+                .create-org__logo > .img-pad,
+                .create-org__logo.selected,
+                .create-org__logo > .selected {
+                    width: 96px;
+                    height: 96px;
                 }
 
             .create-org__cover-photo {
@@ -60,9 +64,13 @@
                 flex-grow: 1;
             }
                 .create-org__cover-photo.cover,
-                .create-org__cover-photo > .cover {
+                .create-org__cover-photo > .cover,
+                .create-org__cover-photo.img-pad,
+                .create-org__cover-photo > .img-pad,
+                .create-org__cover-photo.selected,
+                .create-org__cover-photo > .selected {
                     width: auto;
-                    height: 97px;
+                    height: 96px;
                 }
 
         .create-org__agreement {

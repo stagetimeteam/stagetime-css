@@ -7,3 +7,11 @@
     color: #AAAAAA;
     text-align: center;
 }
+
+.beginning--side {
+    padding-top: 12px;
+    margin-bottom: 23px;
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 16px;
+    color: #8B8B8B;
+}

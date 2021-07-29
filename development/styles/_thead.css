@@ -1,0 +1,29 @@
+.thead {
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    padding: 5px 10px;
+    background-color: #F2F2F2;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 20px;
+    color: #757575;
+    transition: background-color var(--transition-hover),
+                color var(--transition-hover);
+}
+    .thead__icon {
+        margin-right: 11px;
+        fill: currentColor;
+        margin-top: 2px;
+    }
+
+
+.thead--clickable {
+    cursor: pointer;
+}
+
+.thead--clickable:hover {
+    background-color: #8B8B8B;
+    color: #F4F4F4;
+}

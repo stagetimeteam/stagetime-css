@@ -3,39 +3,64 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.img-pad</title>
+        <title>.activity</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
     </head>
-    <body>
+    <body style="background-color: #F4F4F4">
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="max-width: 350px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.img-pad</h1>
-            <p>
-                Better use <a href="_cover.html">.cover</a> -- that component is more general.
-            </p>
-            <p>
-                Also see <a href="_selected.html">.selected</a>
-            </p>
+            <h1>.activity</h1>
 
-            <button class="img-pad" type="button">Upload Logo</button>
-
+            <div class="activity">
+                <a class="activity__preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-32x32@2x.jpg 2x"
+                         src="../temp/person-a-32x32.jpg"
+                         width="32"
+                         height="32"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <div class="activity__head">
+                    <span class="link link--text-alike">Allen Perriello</span>
+                    <span class="activity__time">10:12 AM</span>
+                </div>
+                <div class="activity__note">
+                    I’m liking this group a lot. How many mezzos are there so far?
+                </div>
+            </div>
 
             <br>
             <br>
+
+            <div class="activity activity--alternate">
+                <a class="activity__preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-32x32@2x.jpg 2x"
+                         src="../temp/person-a-32x32.jpg"
+                         width="32"
+                         height="32"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <div class="activity__head">
+                    <span class="link link--text-alike">Allen Perriello</span>
+                    added Brandon Bell to this collection
+                    <span class="activity__time">10:12 AM</span>
+                </div>
+            </div>
+
+
+
+
             <br>
-            <h2>.img-pad--cover</h2>
-
-            <button class="img-pad img-pad--cover" type="button">Click to change image</button>
-
-
-
             <br>
             <br>
             <br>

@@ -42,7 +42,7 @@
         background-color: #F4F4F4;
         padding: 0;
         border: none;
-        border-radius: 50%;
+        border-radius: 20px;
         cursor: pointer;
         transition: background-color var(--transition-hover);
     }
@@ -50,8 +50,61 @@
     .enter__send:hover {
         background-color: #C4C4C4;
     }
-
         .enter__plane {
             vertical-align: top;
             fill: #757575;
+        }
+
+
+    .enter__send--disabled,
+    .enter__send--disabled:hover {
+        background-color: #F2F2F2;
+        cursor: default;
+    }
+        .enter__send--disabled .enter__plane,
+        .enter__send--disabled:hover .enter__plane {
+            fill: #C4C4C4;
+        }
+
+
+
+.enter--side {
+    padding: 20px 28px;
+}
+    .enter--side .enter__message {
+        background-color: #FFFFFF;
+    }
+
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .enter--side .enter__message::-webkit-input-placeholder { color: #AAAAAA; }
+    .enter--side .enter__message::-moz-placeholder          { color: #AAAAAA; }
+    .enter--side .enter__message:-ms-input-placeholder      { color: #AAAAAA; }
+    /* stylelint-enable */
+
+    .enter--side .enter__send {
+        position: absolute;
+        right: 28px;
+        top: 20px;
+        width: 54px;
+        /*height: 40px;*/
+        background-color: transparent;
+    }
+
+    .enter--side .enter__send:hover {
+        background-color: transparent;
+    }
+        .enter--side .enter__plane {
+            fill: #C4C4C4;
+        }
+
+
+    .enter--side .enter__send--disabled,
+    .enter--side .enter__send--disabled:hover {
+        background-color: transparent;
+        cursor: default;
+    }
+        .enter--side .enter__send--disabled .enter__plane,
+        .enter--side .enter__send--disabled:hover .enter__plane {
+            fill: #E8E8E8;
         }

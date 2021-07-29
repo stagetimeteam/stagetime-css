@@ -5,6 +5,8 @@
 }
     .selected__handler {
         vertical-align: top;
+        width: 100%;
+        height: 100%;
         border: none;
         background-color: transparent;
         padding: 0;
@@ -14,6 +16,8 @@
     }
         .selected__file {
             vertical-align: top;
+            width: 100%;
+            height: 100%;
             transition: transform var(--transition-hover);
             border-radius: 5px;
         }

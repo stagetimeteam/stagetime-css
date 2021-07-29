@@ -1,0 +1,16 @@
+.side-chat {
+    display: flex;
+    flex-direction: column;
+}
+    .side-chat__body {
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+        .side-chat__ribbon {
+            padding-left: 17px;
+            padding-right: 17px;
+        }
+
+    .side-chat__foot {
+        flex-shrink: 0;
+    }
