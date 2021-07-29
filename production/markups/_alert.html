@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.venue</title>
+        <title>.alert</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../styles/style.css?1627552264">
@@ -13,40 +13,37 @@
 
 
 
-        <div style="width: 246px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.venue</h1>
+            <h1>.alert</h1>
+            <p>
+                See also <a href="_null.html">.null</a>
+            </p>
 
-            <div class="venue">
-                <img class="venue__background"
-                     srcset="../temp/venue-background-a@2x.jpg 2x"
-                     src="../temp/venue-background-a.jpg"
-                     width="100"
-                     height="100"
-                     alt=""
-                >
-                <img class="venue__logo"
-                     srcset="../temp/venue-logo-a@2x.jpg 2x"
-                     src="../temp/venue-logo-a.jpg"
-                     width="60"
-                     height="60"
-                     alt=""
-                >
-                <div class="venue__heading">
-                    The Metropolitan Opera
-                </div>
-                <div class="venue__note ellipsis">
-                    New York, NY
-                </div>
-                <a class="venue__follow button button--alt-darker button--small" href="#">
-                    <svg class="button__icon button__icon--follow" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1627552264#16-plus-micro"></use>
-                    </svg>
-                    Follow
-                </a>
+            <div class="alert">
+                <svg class="alert__icon" width="16" height="16">
+                    <use xlink:href="../symbols/symbols.svg?1627552264#16-success"></use>
+                </svg>
+                <h1 class="alert__message">Thank you!</h1>
+                <div class="alert__description">Thanks for requesting to create an organization page. Our team has received your request and will get back to you within 1-2 business days. Once approved, you’ll gain access to continue editing the page. If you have any questions in the meantime, reach out to <a class="link link--faded" href="mailto:support@stagetimearts.com">support@stagetimearts.com</a>.</div>
+                <a class="alert__action button button--larger" href="#">Home</a>
             </div>
 
+
+            <h2>With container</h2>
+            <p>
+                If this is the only content on the page it can be used with container, like so:
+            </p>
+
+            <div class="alert container container--org-creating">
+                <svg class="alert__icon" width="16" height="16">
+                    <use xlink:href="../symbols/symbols.svg?1627552264#16-success"></use>
+                </svg>
+                <h1 class="alert__message">Thank you!</h1>
+                <div class="alert__description">Thanks for requesting to create an organization page. Our team has received your request and will get back to you within 1-2 business days. Once approved, you’ll gain access to continue editing the page. If you have any questions in the meantime, reach out to <a class="link link--faded" href="mailto:support@stagetimearts.com">support@stagetimearts.com</a>.</div>
+                <a class="alert__action button button--larger" href="#">Home</a>
+            </div>
 
 
             <br>
