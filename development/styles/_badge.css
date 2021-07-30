@@ -1,0 +1,15 @@
+.badge {
+    min-width: 65px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 3px 10px;
+    border-radius: 18px;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+}
+    .badge--yes {
+        background-color: #94A2A3;
+        color: #FFFFFF;
+    }

@@ -1,0 +1,46 @@
+.candidate-card {
+    display: flex;
+    align-items: stretch;
+}
+    .candidate-card__data {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        padding: 24px 20px;
+    }
+        .candidate-card__preview {
+
+        }
+
+        .candidate-card__body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3px 0 3px 20px;
+            font-size: 12px;
+            line-height: 18px;
+            min-height: 60px;
+        }
+            .candidate-card__heading {
+                font-weight: bold;
+                color: #545454;
+            }
+                .candidate-card__heading .link {
+                    transition: opacity var(--transition-hover);
+                }
+                .candidate-card__heading .link:hover {
+                    opacity: 0.7;
+                }
+
+            .candidate-card__note {
+                color: #757575;
+            }
+
+    .candidate-card__status {
+        width: 124px;
+        flex-shrink: 0;
+        border-left: 1px solid #E8E8E8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
