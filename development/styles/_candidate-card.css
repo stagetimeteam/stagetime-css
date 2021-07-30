@@ -1,46 +1,72 @@
 .candidate-card {
-    display: flex;
-    align-items: stretch;
+    position: relative;
 }
-    .candidate-card__data {
-        flex-grow: 1;
+    .candidate-card__link {
         display: flex;
-        align-items: center;
-        padding: 24px 20px;
+        align-items: stretch;
+        text-decoration: none;
     }
-        .candidate-card__preview {
 
-        }
+    .candidate-card:hover {
+        background-color: #F9F9F9;
+    }
 
-        .candidate-card__body {
+        .candidate-card__data {
+            flex-grow: 1;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 3px 0 3px 20px;
-            font-size: 12px;
-            line-height: 18px;
-            min-height: 60px;
+            align-items: center;
+            padding: 24px 20px;
         }
-            .candidate-card__heading {
-                font-weight: bold;
-                color: #545454;
+            .candidate-card__preview {
+
             }
-                .candidate-card__heading .link {
-                    transition: opacity var(--transition-hover);
+
+            .candidate-card__body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 3px 0 3px 20px;
+                font-size: 12px;
+                line-height: 18px;
+                min-height: 60px;
+            }
+                .candidate-card__heading {
+                    font-weight: bold;
+                    color: #545454;
                 }
-                .candidate-card__heading .link:hover {
-                    opacity: 0.7;
+                    .candidate-card__heading .link {
+                        transition: opacity var(--transition-hover);
+                    }
+                    .candidate-card__heading .link:hover {
+                        opacity: 0.7;
+                    }
+
+                .candidate-card__note {
+                    color: #757575;
                 }
 
-            .candidate-card__note {
-                color: #757575;
-            }
+    .candidate-card::after {
+        content: "";
+        position: absolute;
+        right: 123px;
+        top: 0;
+        bottom: 0;
+        display: block;
+        width: 1px;
+        background-color: #E8E8E8;
+    }
 
     .candidate-card__status {
+        position: absolute;
+        right: 0;
         width: 124px;
-        flex-shrink: 0;
-        border-left: 1px solid #E8E8E8;
+        top: 50%;
+        margin-top: -18px;
         display: flex;
         align-items: center;
         justify-content: center;
+        pointer-events: none;
     }
+        .candidate-card__status .badge {
+            pointer-events: auto;
+        }
