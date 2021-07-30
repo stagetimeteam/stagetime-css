@@ -1,6 +1,11 @@
 .candidate-card {
     position: relative;
 }
+
+.candidate-card + .candidate-card {
+    border-top: 1px solid #E8E8E8;
+}
+
     .candidate-card__link {
         display: flex;
         align-items: stretch;
@@ -67,7 +72,10 @@
         justify-content: center;
         pointer-events: none;
     }
-        .candidate-card__status .badge {
+        .candidate-card__status .badge,
+        .candidate-card__status .input {
+            min-width: 65px;
+            max-width: 102px;
             pointer-events: auto;
         }
 

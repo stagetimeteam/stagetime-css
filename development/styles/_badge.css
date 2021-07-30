@@ -1,16 +1,17 @@
 .badge {
-    min-width: 65px;
     display: inline-block;
     vertical-align: top;
     padding: 3px 10px;
     border: none;
     border-radius: 18px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 11px;
     line-height: 20px;
     text-align: center;
     text-decoration: none;
     transition: opacity var(--transition-hover);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .badge:hover {
@@ -19,5 +20,15 @@
 
 .badge--yes {
     background-color: #94A2A3;
+    color: #FFFFFF;
+}
+
+.badge--no {
+    background-color: #D0DBE0;
+    color: #545454;
+}
+
+.badge--granted {
+    background-color: #C0A2A2;
     color: #FFFFFF;
 }

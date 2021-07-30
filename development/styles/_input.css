@@ -161,6 +161,13 @@
     }
 
 
+.input--semi-bold {
+
+}
+    .input--semi-bold .input__widget {
+        font-weight: 600;
+    }
+
 .input--bold {
 
 }
@@ -169,6 +176,22 @@
     }
 
 
+.input--badge-alike {
+
+}
+    .input--badge-alike .input__widget {
+        padding: 2px 10px;
+        height: 26px;
+        border-radius: 13px;
+        font-weight: 600;
+        border-color: #C4C4C4;
+    }
+
+    .input--badge-alike.input--select .input__widget {
+        padding-right: 26px;
+        background-image: url("../vectors/16-select-badge-alike.svg");
+        background-position: right 8px center;
+    }
 
 
 .merge {
