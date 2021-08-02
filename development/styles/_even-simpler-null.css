@@ -1,0 +1,15 @@
+.even-simpler-null {
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 21px;
+    color: #AAAAAA;
+    text-align: center;
+}
