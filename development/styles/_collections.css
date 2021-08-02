@@ -5,7 +5,7 @@
     margin-left: 83px;
 }
     .collections__wrapper {
-        flex-grow: 1;
+        width: calc(100% - 343px);
         display: flex;
         flex-direction: column;
     }
