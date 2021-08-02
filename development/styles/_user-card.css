@@ -118,3 +118,41 @@
             font-size: inherit;
             line-height: inherit;
         }
+
+
+
+.user-card--collection {
+    width: 98px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    line-height: 19px;
+}
+    .user-card--collection .user-card__preview.avatar,
+    .user-card--collection .user-card__preview .avatar {
+        box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    .user-card--collection .user-card__data {
+        margin-top: 14px;
+        padding-left: 5px;
+        padding-right: 5px;
+        min-height: 0; /* clear value */
+    }
+        .user-card--collection .user-card__name {
+            font-weight: bold;
+        }
+            .user-card--collection .user-card__link {
+
+            }
+
+            .user-card--collection .user-card:hover .user-card__link,
+            .user-card--collection .user-card__link:hover {
+
+            }
+
+        .user-card--collection .user-card__note {
+            margin-top: 0;
+            font-size: inherit;
+            line-height: inherit;
+        }
