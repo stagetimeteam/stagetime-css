@@ -3,9 +3,9 @@
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: -5px;
-    margin-right: -5px;
+    margin: -5px; /* compensate card paddings */
 }
     .collection-crowd__item {
-        margin-left: 13px;
+        margin-top: 5px;
+        margin-left: 12px;
     }

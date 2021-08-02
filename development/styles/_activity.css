@@ -4,6 +4,9 @@
     padding: 15px 16px 21px 60px;
     background-color: #FFFFFF;
     border-radius: 10px;
+    font-size: 12px;
+    line-height: 20px;
+    color: #545454;
 }
     .activity__preview {
         position: absolute;
@@ -13,9 +16,6 @@
 
     .activity__head {
         font-weight: normal;
-        font-size: 12px;
-        line-height: 20px;
-        color: #545454;
     }
         .activity__head .link {
             font-weight: bold;
@@ -74,3 +74,9 @@
         /*line-height: 20px;*/
         /*color: #545454;*/
     }
+
+
+.activity--dummy {
+    padding: 26px 36px;
+    text-align: center;
+}
