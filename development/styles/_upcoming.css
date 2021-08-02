@@ -1,0 +1,107 @@
+.upcoming {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px 24px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: background-color var(--transition-hover);
+}
+
+.upcoming:hover {
+    background-color: #F8F8F8;
+}
+
+.upcoming + .upcoming {
+    margin-top: 17px;
+}
+
+    .upcoming__preview {
+
+    }
+
+    .upcoming__body {
+        margin-left: 20px;
+        flex-grow: 1;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+        .upcoming__heading {
+            font-weight: bold;
+            color: #545454;
+        }
+
+        .upcoming__note {
+            margin-top: 4px;
+            color: #757575;
+        }
+
+        .upcoming__note {
+
+        }
+
+    .upcoming__schedule {
+        margin-left: 20px;
+        background-color: #FFFFFF;
+        padding: 8px 14px 12px;
+        border-radius: 8px;
+    }
+        .upcoming__date {
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+            color: #757575;
+        }
+            .upcoming__year {
+                color: #AAAAAA;
+            }
+
+        .upcoming__days {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 8px;
+        }
+            .upcoming__item {
+                display: inline-flex;
+                justify-content: center;
+                align-content: center;
+                margin-left: 5px;
+                width: 34px;
+                height: 34px;
+                padding: 4px 0;
+                background-color: #EBEBEB;
+                border: none;
+                border-radius: 3px;
+                font-family: inherit;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+                color: #545454;
+                text-decoration: none;
+                cursor: pointer;
+                transition: background-color var(--transition-hover);
+            }
+
+            .upcoming__item:first-child {
+                margin-left: 0;
+            }
+
+            .upcoming__item:hover {
+                background-color: #F8F8F8;
+            }
+
+            .upcoming__separator {
+                display: inline-block;
+                vertical-align: top;
+                margin-left: 5px;
+                margin-top: 15px;
+                width: 15px;
+                height: 1px;
+                background-color: #C4C4C4;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+            }

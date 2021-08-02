@@ -55,6 +55,10 @@
     border-radius: 10px;
 }
 
+.avatar--a-bit-squared {
+    border-radius: 6px;
+}
+
 .avatar--less-squared {
     border-radius: 4px;
 }
