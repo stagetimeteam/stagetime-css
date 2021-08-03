@@ -10,10 +10,26 @@
         flex-direction: column;
     }
         .collections__head {
+            position: relative;
+            z-index: 100; /* dropdowns inside of header should fly higher than page */
             flex-shrink: 0;
             height: 94px;
             border-bottom: 1px solid #E8E8E8;
+            padding: 0 0 0 16px;
+            display: flex;
+            align-items: center;
         }
+            .collections__back {
+
+            }
+
+            .collections__select {
+                margin-left: 15px;
+            }
+
+            .collections__share {
+                margin-left: 21px;
+            }
 
         .collections__body {
             flex-grow: 1;

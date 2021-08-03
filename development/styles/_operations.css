@@ -187,3 +187,39 @@
 
 
 
+.operations--select {
+
+}
+    .operations--select .operations__handler {
+        display: flex;
+        align-items: flex-start;
+        width: auto;
+        height: auto;
+        padding: 0;
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 40px;
+        text-transform: none;
+        letter-spacing: 0;
+        color: #696969;
+        transition: color var(--transition-hover);
+    }
+
+    .operations--select .operations__handler:hover {
+        color: #545454;
+    }
+
+        .operations--select .operations__icon {
+            margin-top: 13px;
+            margin-left: 14px;
+            fill: currentColor;
+        }
+
+    .operations--select .operations__dropdown {
+        top: 100%;
+        right: 0;
+    }
+
+
+
+
