@@ -15,21 +15,39 @@
             flex-shrink: 0;
             height: 94px;
             border-bottom: 1px solid #E8E8E8;
-            padding: 0 0 0 16px;
+            padding: 0 44px 0 16px;
             display: flex;
             align-items: center;
         }
-            .collections__back {
-
+            .collections__head-primary {
+                display: flex;
+                align-items: center;
             }
+                .collections__back {
 
-            .collections__select {
-                margin-left: 15px;
-            }
+                }
 
-            .collections__share {
-                margin-left: 21px;
+                .collections__select {
+                    margin-left: 15px;
+                }
+
+                .collections__share {
+                    margin-left: 21px;
+                }
+
+            .collections__head-secondary {
+                display: flex;
+                align-items: center;
+                margin-left: auto;
             }
+                .collections__sort {
+
+                }
+
+                .collections__add {
+                    margin-left: 30px;
+                }
+
 
         .collections__body {
             flex-grow: 1;
