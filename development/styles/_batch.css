@@ -1,0 +1,82 @@
+.batch {
+    position: relative;
+    transition: background-color var(--transition-hover);
+    border-radius: 15px;
+}
+
+.batch:hover {
+    background-color: #EEEEEE;
+}
+    .batch__link {
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        color: inherit;
+    }
+        .batch__gallery {
+            position: relative;
+        }
+            .batch__photo {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                transition: opacity var(--transition-hover);
+            }
+
+            .batch__photo-1st {
+                width: calc(72.4432% - 2px);
+                padding-bottom: 55.4%;
+                box-shadow: 2px 0 0 #FFFFFF;
+                border-top-left-radius: 13px;
+                border-bottom-left-radius: 13px;
+            }
+
+            .batch__photo-2nd {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 27.5568%;
+                padding-bottom: 27.415%;
+                box-shadow: 0 2px 0 #FFFFFF;
+                border-top-right-radius: 13px;
+            }
+
+            .batch__photo-3rd {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 27.5568%;
+                padding-bottom: 27.415%;
+                border-bottom-right-radius: 13px;
+            }
+
+            .batch__photo:hover {
+                opacity: 0.7;
+            }
+
+        .batch__body {
+            margin-top: 12px;
+            padding-right: 30px;
+            padding-left: 6px;
+            padding-bottom: 8px;
+        }
+            .batch__heading {
+                font-weight: 600;
+                font-size: 23px;
+                line-height: 30px;
+                color: #545454;
+            }
+
+            .batch__note {
+                margin-top: 6px;
+                font-weight: bold;
+                font-size: 11px;
+                line-height: 20px;
+                color: rgba(105, 105, 105, 0.7);
+            }
+
+    .batch__actions {
+        position: absolute;
+        right: 11px;
+        bottom: 43px;
+    }

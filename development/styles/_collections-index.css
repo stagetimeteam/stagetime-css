@@ -28,8 +28,23 @@
     .collections-index__body {
         display: flex;
         align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 24px 24px 60px;
     }
         .collections-index__item {
             width: 33.3333%;
-            padding: 4.1344%;
+            flex-shrink: 0;
+        }
+
+        @media (min-width: 1500px) {
+            .collections-index__item {
+                width: 25%;
+            }
+        }
+
+
+        @media (min-width: 1900px) {
+            .collections-index__item {
+                width: 20%;
+            }
         }
