@@ -63,6 +63,14 @@
                     overflow-y: auto;
                 }
 
+                .collections__content-body .simpler-null {
+                    max-width: 340px;
+                    height: auto;
+                    padding-top: 47px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
     .collections__aside {
         flex-shrink: 0;
         width: 343px;
