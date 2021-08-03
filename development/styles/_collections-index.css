@@ -31,6 +31,14 @@
         flex-wrap: wrap;
         padding: 24px 24px 60px;
     }
+        .collections-index__body .simpler-null {
+            width: 100%;
+        }
+            .collections-index__body .simpler-null__action,
+            .collections-index__body .simpler-null__action.button {
+                width: 342px;
+            }
+
         .collections-index__item {
             width: 33.3333%;
             flex-shrink: 0;
