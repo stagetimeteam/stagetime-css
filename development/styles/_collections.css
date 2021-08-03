@@ -1,7 +1,7 @@
 .collections {
     display: flex;
     align-items: stretch;
-    height: calc(100% - var(--header-height));
+    height: 100%;
     margin-left: 83px;
 }
     .collections__wrapper {

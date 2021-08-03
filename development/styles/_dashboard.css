@@ -31,3 +31,8 @@
         top: var(--header-height);
         bottom: 0;
     }
+
+
+.dashboard--no-aside {
+    padding-right: 0;
+}
