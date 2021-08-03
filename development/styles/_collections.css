@@ -82,6 +82,18 @@
                     flex-grow: 1;
                     overflow-y: auto;
                 }
+                    .collections__sidebar-body .simpler-null {
+                        height: auto;
+                        padding-top: 47px;
+                    }
+                        .collections__sidebar-body .simpler-null__action {
+                            padding-left: 25px;
+                            padding-right: 25px;
+                        }
+                            .collections__sidebar-body .simpler-null__action .button__icon {
+                                width: 16px;
+                                height: 16px;
+                            }
 
             .collections__content {
                 border-left: 1px solid #E8E8E8;
