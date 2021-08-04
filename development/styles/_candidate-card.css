@@ -3,7 +3,7 @@
     transition: background-color var(--transition-hover);
 }
 
-.candidate-card + .candidate-card {
+.candidate-card + .candidate-card .candidate-card__link {
     border-top: 1px solid #E8E8E8;
 }
 
@@ -59,6 +59,7 @@
         display: block;
         width: 1px;
         background-color: #E8E8E8;
+        pointer-events: none;
     }
 
     .candidate-card__status {

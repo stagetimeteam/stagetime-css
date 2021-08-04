@@ -1,9 +1,18 @@
 .navigation {
-
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
     .navigation__section {
         padding-top: 11px;
         padding-bottom: 32px;
+    }
+
+    .navigation__section:first-child {
+        margin-top: -12px;
+    }
+
+    .navigation__section:last-child {
+        margin-bottom: -12px;
     }
         .navigation__sub-heading {
             padding: 10px 20px 10px 28px;

@@ -47,7 +47,6 @@
 
 
 .nav-link--sidebar-ready {
-    border-right: 3px solid transparent;
     padding: 13px 22px 13px 28px;
     font-size: 12px;
     line-height: 20px;
@@ -66,10 +65,48 @@
     }
 
 
+
+.nav-link--collapsed-sidebar {
+    position: relative;
+    display: block;
+    height: 58px;
+    padding: 0;
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: background-color var(--transition-hover);
+}
+
+.nav-link--collapsed-sidebar:hover {
+    background-color: #F4F4F4;
+    box-shadow: inset -1px 0 0 #E8E8E8;
+}
+    .nav-link--collapsed-sidebar .nav-link__icon {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 28px;
+        height: 28px;
+    }
+
+
+
 .nav-link--current {
-    border-right-color: #545454;
     color: #545454;
 }
+    .nav-link--current::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: #545454;
+    }
+
     .nav-link--current .nav-link__icon {
         fill: #545454;
     }
