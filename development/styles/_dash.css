@@ -19,6 +19,7 @@
 
     .dash__icon {
         vertical-align: top;
+        fill: currentColor;
     }
 
     .dash__icon:first-child {
