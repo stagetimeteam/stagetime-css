@@ -2,7 +2,6 @@
     display: flex;
     align-items: stretch;
     height: 100%;
-    margin-left: 83px;
 }
     .collection__wrapper {
         width: calc(100% - 343px);

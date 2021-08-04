@@ -36,3 +36,10 @@
 .dashboard--no-aside {
     padding-right: 0;
 }
+
+.dashboard--collapsed-sidebar {
+    padding-left: var(--sidebar-collapsed-width);
+}
+    .dashboard--collapsed-sidebar .dashboard__sidebar {
+        width: var(--sidebar-collapsed-width);
+    }
