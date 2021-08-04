@@ -1,15 +1,15 @@
-.collections {
+.collection {
     display: flex;
     align-items: stretch;
     height: 100%;
     margin-left: 83px;
 }
-    .collections__wrapper {
+    .collection__wrapper {
         width: calc(100% - 343px);
         display: flex;
         flex-direction: column;
     }
-        .collections__head {
+        .collection__head {
             position: relative;
             z-index: 100; /* dropdowns inside of header should fly higher than page */
             flex-shrink: 0;
@@ -19,11 +19,11 @@
             display: flex;
             align-items: center;
         }
-            .collections__head-primary {
+            .collection__head-primary {
                 display: flex;
                 align-items: center;
             }
-                .collections__back {
+                .collection__back {
 
                 }
 
@@ -31,85 +31,85 @@
                     margin-left: 15px;
                 }
 
-                .collections__share {
+                .collection__share {
                     margin-left: 21px;
                 }
 
-            .collections__head-secondary {
+            .collection__head-secondary {
                 display: flex;
                 align-items: center;
                 margin-left: auto;
             }
-                .collections__sort {
+                .collection__sort {
 
                 }
 
-                .collections__add {
+                .collection__add {
                     margin-left: 30px;
                 }
 
 
-        .collections__body {
+        .collection__body {
             flex-grow: 1;
             overflow: hidden;
             display: flex;
             align-items: stretch;
         }
-            .collections__sidebar {
+            .collection__sidebar {
                 width: 42.5%;
                 flex-shrink: 0;
                 display: flex;
                 flex-direction: column;
             }
-                .collections__sidebar-head {
+                .collection__sidebar-head {
                     flex-shrink: 0;
                     display: flex;
                     align-items: flex-start;
                 }
-                    .collections__people-heading.thead,
-                    .collections__people-heading > .thead {
+                    .collection__people-heading.thead,
+                    .collection__people-heading > .thead {
                         flex-grow: 1;
                     }
 
-                    .collections__status-heading.thead,
-                    .collections__status-heading > .thead {
+                    .collection__status-heading.thead,
+                    .collection__status-heading > .thead {
                         flex-shrink: 0;
                         width: 124px;
                         border-left: 1px solid #E8E8E8;
                     }
 
-                .collections__sidebar-body {
+                .collection__sidebar-body {
                     flex-grow: 1;
                     overflow-y: auto;
                 }
-                    .collections__sidebar-body .simpler-null {
+                    .collection__sidebar-body .simpler-null {
                         height: auto;
                         padding-top: 47px;
                     }
-                        .collections__sidebar-body .simpler-null__action {
+                        .collection__sidebar-body .simpler-null__action {
                             padding-left: 25px;
                             padding-right: 25px;
                         }
-                            .collections__sidebar-body .simpler-null__action .button__icon {
+                            .collection__sidebar-body .simpler-null__action .button__icon {
                                 width: 16px;
                                 height: 16px;
                             }
 
-            .collections__content {
+            .collection__content {
                 border-left: 1px solid #E8E8E8;
                 width: 57.5%;
                 overflow: hidden;
             }
-                .collections__content-head {
+                .collection__content-head {
                     flex-shrink: 0;
                 }
 
-                .collections__content-body {
+                .collection__content-body {
                     flex-grow: 1;
                     overflow-y: auto;
                 }
 
-                .collections__content-body .simpler-null {
+                .collection__content-body .simpler-null {
                     max-width: 340px;
                     height: auto;
                     padding-top: 47px;
@@ -117,7 +117,7 @@
                     margin-right: auto;
                 }
 
-    .collections__aside {
+    .collection__aside {
         flex-shrink: 0;
         width: 343px;
         border-left: 1px solid #E8E8E8;
@@ -126,12 +126,12 @@
         flex-direction: column;
         overflow: hidden; /* just to cut shadow .collections__sub-nav */
     }
-        .collections__sub-nav {
+        .collection__sub-nav {
             display: flex;
             align-items: stretch;
             box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
         }
-            .collections__sub-link {
+            .collection__sub-link {
                 position: relative;
                 width: 50%;
                 border: none;
@@ -147,11 +147,11 @@
                 transition: color var(--transition-hover);
             }
 
-            .collections__sub-link:hover {
+            .collection__sub-link:hover {
                 color: #545454;
             }
 
-                .collections__sub-link::after {
+                .collection__sub-link::after {
                     content: "";
                     position: absolute;
                     left: 0;
@@ -162,20 +162,20 @@
                     transition: background-color var(--transition-hover);
                 }
 
-            .collections__sub-link--current {
+            .collection__sub-link--current {
                 color: #545454;
                 cursor: default;
             }
-                .collections__sub-link--current::after {
+                .collection__sub-link--current::after {
                     background-color: currentColor;
                 }
 
-        .collections__chat {
+        .collection__chat {
             flex-grow: 1;
             overflow: hidden;
         }
 
-        .collections__player {
+        .collection__player {
             padding: 25px 28px 52px;
             background-color: #FFFFFF;
         }
