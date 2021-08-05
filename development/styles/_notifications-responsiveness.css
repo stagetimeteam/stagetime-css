@@ -44,6 +44,10 @@
         display: none;
     }
 
+    .notifications-visible .sub-header {
+        display: none;
+    }
+
     .notifications-visible .page {
         display: none;
     }

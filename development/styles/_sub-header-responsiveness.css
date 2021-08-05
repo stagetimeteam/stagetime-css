@@ -1,0 +1,16 @@
+.sub-header {
+
+}
+    .sub-header__detachable-panel {
+
+    }
+        .sub-header__desktop-content {
+            display: none;
+        }
+            .sub-header__icon {
+
+            }
+
+        .sub-header__smartphone-content {
+            display: block;
+        }

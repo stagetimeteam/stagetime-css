@@ -145,6 +145,10 @@
         display: none;
     }
 
+    .search-visible .sub-header {
+        display: none;
+    }
+
     .search-visible .page {
         display: none;
     }

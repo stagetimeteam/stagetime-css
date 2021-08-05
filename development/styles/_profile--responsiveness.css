@@ -59,6 +59,10 @@
         display: none;
     }
 
+    .profile-visible .sub-header {
+        display: none;
+    }
+
     .profile-visible .page {
         display: none;
     }

@@ -1,3 +1,7 @@
 .page {
     height: calc(100% - var(--header-height));
 }
+
+.has-sub-header .page {
+    height: calc(100% - var(--header-height) - var(--sub-header-height));
+}

@@ -5,6 +5,7 @@
     --transition-show: 0.1s ease;
     --transition-hover: 0.1s ease;
     --header-height: 64px;
+    --sub-header-height: 32px;
     --sidebar-width: 192px;
     --sidebar-collapsed-width: 82px;
     --dialogs-width: 360px;
