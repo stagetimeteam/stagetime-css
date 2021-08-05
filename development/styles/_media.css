@@ -18,6 +18,7 @@
         .media__icon {
             vertical-align: top;
             fill: #C4C4C4;
+            transition: fill var(--transition-hover);
         }
 
         .media__link:hover .media__icon {
