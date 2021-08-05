@@ -39,7 +39,7 @@
         left: 0;
         top: 100%;
         margin-top: -6px;
-        width: 154px;
+        max-width: 300px;
         max-height: 190px;
         overflow-y: scroll;
         padding-top: 8px;
