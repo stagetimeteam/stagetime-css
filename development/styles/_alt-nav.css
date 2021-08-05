@@ -12,6 +12,7 @@
         line-height: 18px;
         color: #AAAAAA;
         text-decoration: none;
+        transition: color var(--transition-hover);
     }
 
     .alt-nav__link:first-child {

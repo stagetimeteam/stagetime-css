@@ -14,6 +14,7 @@
     line-height: 14px;
     text-align: right;
     color: #545454;
+    transition: background-color var(--transition-hover);
 }
 
 
@@ -30,4 +31,5 @@
 
 .query:focus {
     background-color: #FFFFFF;
+    transition: none;
 }

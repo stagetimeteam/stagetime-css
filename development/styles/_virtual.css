@@ -9,3 +9,13 @@
     .virtual__collection:first-child {
         margin-top: 0;
     }
+
+        /* Here was a problem with hovering on .search-heading__cancel (the button with cross).
+           It was overlapped by .library be cause of negative margin there.
+           Negative margin was needed to compensate margins between tiles.
+           The solution is put .module-head higher than .library on z axis
+        */
+        .virtual__collection .module-head {
+            position: relative;
+            z-index: 50;
+        }

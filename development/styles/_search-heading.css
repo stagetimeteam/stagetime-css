@@ -20,4 +20,9 @@
     }
         .search-heading__cross {
             fill: #757575;
+            transition: fill var(--transition-hover);
+        }
+
+        .search-heading__cancel:hover .search-heading__cross {
+            fill: #545454;
         }

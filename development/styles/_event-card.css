@@ -13,6 +13,7 @@
         background-color: #F6F6F6;
         border-radius: 20px;
         color: #757575;
+        transition: background-color var(--transition-hover);
     }
 
     .event-card:hover .event-card__link {

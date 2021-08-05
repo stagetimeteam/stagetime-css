@@ -20,3 +20,11 @@
             top: -2px;
             fill: #545454;
         }
+
+        .channels__item .link {
+            transition: opacity var(--transition-hover);
+        }
+
+        .channels__item .link:hover {
+            opacity: 0.7;
+        }
