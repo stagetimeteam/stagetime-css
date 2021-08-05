@@ -1,5 +1,5 @@
 .group {
-    padding-top: 2px;
+    padding-top: 10px;
     position: relative;
 }
     .group__listing {
@@ -21,7 +21,7 @@
 
 
 .group--preview {
-
+    padding-top: 20px;
 }
     .group--preview .group__listing {
         justify-content: flex-start;
