@@ -6,8 +6,8 @@
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../styles/style.css?1628234539">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1628234539" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../styles/style.css?1628275817">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1628275817" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -122,6 +122,45 @@
             <br>
             <br>
             <br>
+            <h2>.input--adjustable</h2>
+            <p>
+                Unfortunately there is no way to set width of &lt;input&gt; or &lt;select&gt; based on content inside.
+                Nothing like inline-block will work here. Browsers just give &lt;input&gt;'s default widths around 120px
+                (that we usually change to 100%) and that's it.
+                But in some cases we need this width to be changed dynamically based on text inside.
+                So we have to calculate width manually and set it as inline style.
+            </p>
+            <p>
+                What I suggest here is to create an invisible &lt;div&gt; (see <b>.size-checker</b> in the end of the page).
+                Then copy current text value (or placeholder value if empty) into it. Then copy similar styles to make sure it looks
+                similar. Then just check it <b>.outerWidth()</b> of that element and use it.
+                See sample in the <a href="../scripts/_input.js">../scripts/_input.js</a>
+            </p>
+            <p>
+                Try typing inside:
+            </p>
+
+
+            <div class="input input--adjustable">
+                <input class="input__widget" type="text" placeholder="Video Title">
+            </div>
+
+            <br>
+
+            <div class="input input--select input--placeholder-is-chosen input--adjustable">
+                <select class="input__widget">
+                    <option value="placeholder">Country</option>
+                    <option>United States</option>
+                    <option>Russia</option>
+                    <option>Vietnam</option>
+                    <option>Thailand</option>
+                </select>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
             <h2>.input--rounded</h2>
 
 
@@ -144,7 +183,7 @@
 
             <div class="input">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1628234539#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1628275817#16-globe-full"></use>
                 </svg>
                 <input class="input__widget" type="text" placeholder="Video Title">
             </div>
@@ -153,7 +192,7 @@
 
             <div class="input input--select input--rounded input--placeholder-is-chosen">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1628234539#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1628275817#16-globe-full"></use>
                 </svg>
                 <select class="input__widget">
                     <option>Anyone</option>
@@ -176,7 +215,7 @@
 
             <a class="input input--select input--rounded mfp-handler" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1628234539#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1628275817#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -185,6 +224,29 @@
 
             <a class="input input--rounded mfp-handler" href="#">
                 <div class="input__widget">What do you want to say?</div>
+            </a>
+
+
+            <br>
+            <br>
+            <p>
+                Can also be <b>.input--adjustable</b>. It doesn't make much sense since you can't type inside though.
+                But just to follow common scheme
+            </p>
+
+
+            <a class="input input--adjustable input--rounded" href="#">
+                <div class="input__widget">What do you want to say?</div>
+            </a>
+
+
+            <br>
+
+            <a class="input input--adjustable input--bold input--select input--rounded" href="#">
+                <svg class="input__icon" width="16" height="16">
+                    <use xlink:href="../symbols/symbols.svg?1628275817#16-crowd"></use>
+                </svg>
+                <div class="input__widget">Ben Bliss</div>
             </a>
 
 
@@ -248,7 +310,7 @@
             <br>
         </div>
 
-
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
 
         <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
@@ -257,29 +319,29 @@
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-        <script src="../scripts/_global.js?1628234539"></script>
-        <script src="../scripts/_operations.js?1628234539"></script>
-        <script src="../scripts/_profile.js?1628234539"></script>
-        <script src="../scripts/_mfp.js?1628234539"></script>
-        <script src="../scripts/_search.js?1628234539"></script>
-        <script src="../scripts/_carousel.js?1628234539"></script>
-        <script src="../scripts/_player.js?1628234539"></script>
-        <script src="../scripts/_updates.js?1628234539"></script>
-        <script src="../scripts/_dash-side.js?1628234539"></script>
-        <script src="../scripts/_happening.js?1628234539"></script>
-        <script src="../scripts/_input.js?1628234539"></script>
-        <script src="../scripts/_edit-post.js?1628234539"></script>
-        <script src="../scripts/_post-form.js?1628234539"></script>
-        <script src="../scripts/_button.js?1628234539"></script>
-        <script src="../scripts/_quick-message.js?1628234539"></script>
-        <script src="../scripts/_dash-tiles.js?1628234539"></script>
-        <script src="../scripts/_shortcut.js?1628234539"></script>
-        <script src="../scripts/_scrollbar.js?1628234539"></script>
-        <script src="../scripts/_referral.js?1628234539"></script>
-        <script src="../scripts/_overlay.js?1628234539"></script>
-        <script src="../scripts/_notifications.js?1628234539"></script>
-        <script src="../scripts/_enter.js?1628234539"></script>
-        <script src="../scripts/_suggesting.js?1628234539"></script>
+        <script src="../scripts/_global.js?1628275817"></script>
+        <script src="../scripts/_operations.js?1628275817"></script>
+        <script src="../scripts/_profile.js?1628275817"></script>
+        <script src="../scripts/_mfp.js?1628275817"></script>
+        <script src="../scripts/_search.js?1628275817"></script>
+        <script src="../scripts/_carousel.js?1628275817"></script>
+        <script src="../scripts/_player.js?1628275817"></script>
+        <script src="../scripts/_updates.js?1628275817"></script>
+        <script src="../scripts/_dash-side.js?1628275817"></script>
+        <script src="../scripts/_happening.js?1628275817"></script>
+        <script src="../scripts/_input.js?1628275817"></script>
+        <script src="../scripts/_edit-post.js?1628275817"></script>
+        <script src="../scripts/_post-form.js?1628275817"></script>
+        <script src="../scripts/_button.js?1628275817"></script>
+        <script src="../scripts/_quick-message.js?1628275817"></script>
+        <script src="../scripts/_dash-tiles.js?1628275817"></script>
+        <script src="../scripts/_shortcut.js?1628275817"></script>
+        <script src="../scripts/_scrollbar.js?1628275817"></script>
+        <script src="../scripts/_referral.js?1628275817"></script>
+        <script src="../scripts/_overlay.js?1628275817"></script>
+        <script src="../scripts/_notifications.js?1628275817"></script>
+        <script src="../scripts/_enter.js?1628275817"></script>
+        <script src="../scripts/_suggesting.js?1628275817"></script>
 
 
     </body>
