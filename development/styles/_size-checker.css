@@ -1,0 +1,6 @@
+.size-checker {
+    position: fixed;
+    right: 100%;
+    bottom: 100%;
+    white-space: nowrap;
+}

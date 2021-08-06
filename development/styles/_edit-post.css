@@ -22,6 +22,10 @@
             margin-right: 0;
         }
 
+        .edit-post__option {
+            max-width: calc((100% - 66px) / 2); /* 66px is total value of .edit-post__person width and all related margins */
+        }
+
     .edit-post__content {
         margin-top: 22px;
         max-height: calc(100vh - 300px);

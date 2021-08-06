@@ -122,6 +122,45 @@
             <br>
             <br>
             <br>
+            <h2>.input--adjustable</h2>
+            <p>
+                Unfortunately there is no way to set width of &lt;input&gt; or &lt;select&gt; based on content inside.
+                Nothing like inline-block will work here. Browsers just give &lt;input&gt;'s default widths around 120px
+                (that we usually change to 100%) and that's it.
+                But in some cases we need this width to be changed dynamically based on text inside.
+                So we have to calculate width manually and set it as inline style.
+            </p>
+            <p>
+                What I suggest here is to create an invisible &lt;div&gt; (see <b>.size-checker</b> in the end of the page).
+                Then copy current text value (or placeholder value if empty) into it. Then copy similar styles to make sure it looks
+                similar. Then just check it <b>.outerWidth()</b> of that element and use it.
+                See sample in the <a href="../scripts/_input.js">../scripts/_input.js</a>
+            </p>
+            <p>
+                Try typing inside:
+            </p>
+
+
+            <div class="input input--adjustable">
+                <input class="input__widget" type="text" placeholder="Video Title">
+            </div>
+
+            <br>
+
+            <div class="input input--select input--placeholder-is-chosen input--adjustable">
+                <select class="input__widget">
+                    <option value="placeholder">Country</option>
+                    <option>United States</option>
+                    <option>Russia</option>
+                    <option>Vietnam</option>
+                    <option>Thailand</option>
+                </select>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
             <h2>.input--rounded</h2>
 
 
@@ -179,6 +218,27 @@
 
             <a class="input input--rounded mfp-handler" href="#">
                 <div class="input__widget">What do you want to say?</div>
+            </a>
+
+
+            <br>
+            <br>
+            <p>
+                Can also be <b>.input--adjustable</b>. It doesn't make much sense since you can't type inside though.
+                But just to follow common scheme
+            </p>
+
+
+            <a class="input input--adjustable input--rounded" href="#">
+                <div class="input__widget">What do you want to say?</div>
+            </a>
+
+
+            <br>
+
+            <a class="input input--adjustable input--bold input--select input--rounded" href="#">
+                <img class="input__icon" src="../symbols/16-crowd.svg" width="16" height="16" alt="">
+                <div class="input__widget">Ben Bliss</div>
             </a>
 
 
@@ -242,7 +302,7 @@
             <br>
         </div>
 
-
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
 
         <!-- Scripts -->
         <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>

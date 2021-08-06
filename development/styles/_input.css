@@ -22,11 +22,13 @@
         transition: background-color var(--transition-hover),
                     border-color var(--transition-hover),
                     box-shadow var(--transition-hover);
-        /* in case of <div>: */
-        max-width: 100%;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+
+        /* in case of <div>: */
+        /* Also in case of .input--adjustable */
+        max-width: 100%;
     }
 
     .input__widget:hover {
@@ -102,7 +104,7 @@
         -webkit-appearance: none;
            -moz-appearance: none;
                 appearance: none;
-        padding-right: 34px;
+        padding-right: 40px;
         background-image: url("../vectors/16-select.svg");
         background-size: 16px 16px;
         background-repeat: no-repeat;
@@ -192,6 +194,14 @@
         padding-right: 26px;
         background-image: url("../vectors/16-select-badge-alike.svg");
         background-position: right 8px center;
+    }
+
+
+.input--adjustable {
+
+}
+    .input--adjustable select.input__widget {
+        transition: width 0.05s ease;
     }
 
 
