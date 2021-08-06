@@ -42,23 +42,35 @@
 .carousel--faded-right {
 
 }
-    .carousel--faded-right::after {
+    .carousel--faded-right::before {
         content: "";
         position: absolute;
+        z-index: 10;
         right: 0;
         top: 0;
         bottom: 0;
-        width: 140px;
+        width: 28px;
+        background-color: #FFFFFF;
+    }
+
+    .carousel--faded-right::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        right: 26px; /* 26px instead of 28px just to wrap potential bugs while on zooming */
+        top: 0;
+        bottom: 0;
+        width: 60px;
         pointer-events: none;
         /* stylelint-disable */
         background: linear-gradient(to right,
             rgba(255, 255, 255, 0),
             rgba(255, 255, 255, 0.7) 30%,
-            rgba(255, 255, 255, 1) 60%,
             rgba(255, 255, 255, 1)
         );
         /* stylelint-enable */
     }
+
 
 
 .carousel--faded-right-to-grey {
@@ -116,6 +128,20 @@
         top: 10px;
     }
 
+    .carousel--for-user-card::before {
+
+    }
+
+    .carousel--for-user-card::after {
+        width: 28px;
+        /* stylelint-disable */
+        background: linear-gradient(to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.8) 50%,
+            rgba(255, 255, 255, 1)
+        );
+        /* stylelint-enable */
+    }
 
 
 
@@ -180,6 +206,8 @@
             margin-top: -52px;
         }
 
+/* make gradients to not to overlap borders:  */
+.carousel--for-updates.carousel--faded-right::before,
 .carousel--for-updates.carousel--faded-right::after {
     margin-bottom: 10px;
 }
