@@ -15,16 +15,6 @@
         .dash-intro__news {
 
         }
-            .dash-intro__news .updates__switch {
-                right: 22px;
-                top: 7px;
-            }
-
-            @media (max-width: 359px) {
-                .dash-intro__news .updates__switch {
-                    right: 11px;
-                }
-            }
 
 
         .dash-intro__related {
