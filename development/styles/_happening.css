@@ -19,6 +19,10 @@
             line-height: 24px;
             color: #8B8B8B;
         }
+        
+        .happening__icon + .happening__heading {
+            margin-left: 10px;
+        }
 
         .happening__filters {
             display: flex;
