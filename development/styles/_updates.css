@@ -45,7 +45,7 @@
 
     .updates__body {
         position: relative;
-        height: 187px; /* default height for media */
+        height: 232px; /* default height for media */
         transition: height var(--transition-show);
     }
         .updates__section {
