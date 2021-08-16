@@ -43,4 +43,6 @@
     width: 100%;
     max-width: 1200px;
     min-width: 750px;
+    padding-left: 58px;
+    padding-right: 58px;
 }

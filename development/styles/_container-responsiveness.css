@@ -3,3 +3,7 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.container--dashboard {
+    min-width: 0;
+}

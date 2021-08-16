@@ -6,40 +6,41 @@
         position: absolute;
         z-index: 50;
         right: 0;
-        top: -6px;
+        top: -2px;
         display: flex;
         align-items: flex-start;
+        padding: 5px 11px;
+        min-width: 107px; /* so it won't jump on label change */
+        background-color: #B8B8B8;
+        border-radius: 14px;
+        cursor: pointer;
     }
         .updates__swap-icon {
-            margin-top: 11px;
-            margin-right: -2px;
-            fill: #8B8B8B;
+            margin-right: 3px;
+            fill: #FFFFFF;
+        }
+
+        .updates__checkbox {
+            margin-top: -12px;
+            margin-bottom: -12px;
+            margin-right: 7px;
         }
 
         .updates__label {
-            padding: 12px 7px 14px;
+            padding-top: 1px;
+            font-weight: bold;
             font-size: 10px;
             line-height: 14px;
-            color: #8B8B8B;
+            color: #FFFFFF;
             cursor: pointer;
         }
 
-        .updates__label:hover {
-            color: #333333;
-        }
-
-
         .updates__label--media {
-            pointer-events: none;
+            display: block;
         }
 
         .updates__label--news {
-            pointer-events: auto;
-        }
-
-
-        .updates__checkbox {
-
+            display: none;
         }
 
     .updates__body {
@@ -75,11 +76,11 @@
 
     }
         .updates--switched-to-news .updates__label--media {
-            pointer-events: auto;
+            display: none;
         }
 
         .updates--switched-to-news .updates__label--news {
-            pointer-events: none;
+            display: block;
         }
 
     .updates--switched-to-news .updates__body {

@@ -23,15 +23,8 @@
         }
 
         .dash-intro__news {
-            margin-top: 18px;
-            border: 1px solid #E8E8E8;
-            padding: 13px 22px 0;
-            border-radius: 13px;
+            margin-top: 20px;
         }
-            .dash-intro__news .updates__switch {
-                right: 22px;
-                top: 7px;
-            }
 
         .dash-intro__related {
             margin-top: 22px;
