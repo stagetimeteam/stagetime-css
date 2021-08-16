@@ -2,18 +2,16 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .container--organisation {
     width: 1110px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .container--feed {
     width: 750px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .container--explore {
@@ -24,26 +22,25 @@
 
 .container--referral {
     width: 750px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 .container--auth {
     width: 960px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 
 .container--welcome {
     width: 700px;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 
 .container--org-creating {
     width: 632px;
-    padding-left: 40px;
-    padding-right: 40px;
+}
+
+
+.container--dashboard {
+    width: 100%;
+    max-width: 1200px;
+    min-width: 750px;
 }
