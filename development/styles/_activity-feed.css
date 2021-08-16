@@ -17,6 +17,11 @@
         .activity-feed__list {
 
         }
+
+        .activity-feed__list:first-child {
+            margin-top: -12px;
+        }
+
             .activity-feed__item {
                 margin-top: 19px;
             }
