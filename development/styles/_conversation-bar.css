@@ -5,6 +5,10 @@
     text-decoration: none;
     color: inherit;
 }
+    .conversation-bar__back {
+        display: none;
+    }
+
     .conversation-bar__preview {
         position: absolute;
         left: 26px;

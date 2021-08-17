@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-sidebar has-aside" lang="en-US">
+<html class="has-sidebar has-aside hide-aside-on-smartphone" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -1090,6 +1091,11 @@
                             <!--/temp -->
                             <div class="chat__head">
                                 <div class="conversation-bar">
+                                    <a class="conversation-bar__back action action--flipped" href="#">
+                                        <span class="action__image">
+                                            <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                        </span>
+                                    </a>
                                     <a class="conversation-bar__preview avatar" href="#">
                                         <img class="avatar__image"
                                              srcset="../temp/person-e-56x56@2x.jpg 2x"
@@ -2401,6 +2407,7 @@
         <script src="../scripts/_notifications.js"></script>
         <script src="../scripts/_enter.js"></script>
         <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
         <script src="../scripts/_header--responsiveness.js"></script>
 
 
