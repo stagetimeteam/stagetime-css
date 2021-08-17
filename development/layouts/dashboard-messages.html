@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard</title>
+        <title>Chat</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../styles/style.css">
@@ -777,6 +777,16 @@
                                     </button>
                                 </div>
                                 <div class="chat__dialogs">
+                                    <div class="chat__empty-dialogs simpler-null simpler-null--full-height">
+                                        You currently have no messages.<br> Create a new message below.
+                                        <a class="simpler-null__action button" href="#">
+                                            <img class="button__icon button__icon--left" src="../symbols/20-write.svg" width="20" height="20" alt="">
+                                            New Message
+                                        </a>
+                                    </div>
+                                    <!-- temp -->
+                                    or:
+                                    <!--/temp -->
                                     <a class="conversation conversation--unread" href="#">
                                         <div class="conversation__preview avatar avatar--non-clickable">
                                             <img class="avatar__image"
@@ -917,7 +927,7 @@
                             </div>
                         </div>
                         <div class="chat__room">
-                            <div class="simpler-null simpler-null--full-height">
+                            <div class="chat__empty-room simpler-null simpler-null--full-height">
                                 Select a message or start a<br> new conversation.
                                 <a class="simpler-null__action button" href="#">
                                     <img class="button__icon button__icon--left" src="../symbols/20-write.svg" width="20" height="20" alt="">

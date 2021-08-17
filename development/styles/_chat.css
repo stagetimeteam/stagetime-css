@@ -55,8 +55,11 @@
                     }
 
             .chat__dialogs {
-
+                height: calc(100% - 73px); /* 73px is a height of .chat__sub-head */
             }
+                .chat__empty-dialogs {
+
+                }
 
     .chat__room {
         display: flex;

@@ -1,6 +1,6 @@
 (function($) {
 
-    $('.suggesting__widget').on('focus', function () {
+    $('.suggesting__widget').on('focus input', function () {
         $(this).parents('.suggesting').addClass('suggesting--expanded');
     });
 
