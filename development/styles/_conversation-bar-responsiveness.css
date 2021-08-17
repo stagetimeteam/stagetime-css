@@ -1,22 +1,26 @@
 .conversation-bar {
     /*position: relative;*/
     /*display: block;*/
-    /*padding: 23px 45px 20px 96px;*/
+    padding: 14px 45px 14px 100px;
     /*text-decoration: none;*/
     /*color: inherit;*/
 }
     .conversation-bar__back {
         display: block;
         position: absolute;
-        left: 0;
-        top: 20px;
+        left: 10px;
+        top: 15px;
     }
 
     .conversation-bar__preview {
         /*position: absolute;*/
-        /*left: 26px;*/
-        /*top: 14px;*/
+        left: 52px;
+        top: 15px;
     }
+        .conversation-bar__preview .avatar__image {
+            width: 34px;
+            height: 34px;
+        }
 
     .conversation-bar__heading {
         /*position: relative;*/
@@ -34,7 +38,7 @@
         }
 
     .conversation-bar__note {
-        /*margin-top: 5px;*/
+        margin-top: 0;
         /*position: relative;*/
         /*font-size: 12px;*/
         /*line-height: 18px;*/
@@ -45,5 +49,5 @@
         /*position: absolute;*/
         /*z-index: 100;*/
         /*right: 12px;*/
-        /*top: 22px;*/
+        top: 12px;
     }
