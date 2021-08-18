@@ -16,3 +16,12 @@
 .dummy--squared {
     border-radius: 10px;
 }
+
+.dummy--a-bit-squared {
+    border-radius: 6px;
+}
+
+
+.dummy--less-squared {
+    border-radius: 4px;
+}
