@@ -11,3 +11,8 @@
 .dummy:hover {
     background-color: #545454;
 }
+
+
+.dummy--squared {
+    border-radius: 10px;
+}
