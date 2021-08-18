@@ -1,0 +1,15 @@
+.modal {
+
+}
+    .modal::before,
+    .modal::after {
+        display: none;
+    }
+
+    .modal-dialog {
+        display: block;
+        width: auto;
+    }
+        .modal-content {
+
+        }

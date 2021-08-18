@@ -2,14 +2,11 @@
 
 }
     .modal-dialog {
-        width: 688px;
+        /* default width is 600px */
     }
 
-    @media (max-width: 767px) {
-
-        .modal-dialog {
-            width: auto;
-        }
+    .modal-dialog--688px {
+        width: 688px;
     }
         .modal-content {
             box-shadow: none;
