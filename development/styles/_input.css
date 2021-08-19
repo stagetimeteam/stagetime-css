@@ -2,6 +2,10 @@
     display: block;
     position: relative;
     text-decoration: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    text-align: left;
 }
     .input__widget {
         position: relative;
