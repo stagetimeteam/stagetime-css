@@ -3,7 +3,7 @@
 }
     .search__bar {
         position: fixed;
-        z-index: 2000;
+        z-index: 1020;
         left: 202px;
         top: 14px;
         width: 254px;
@@ -84,7 +84,7 @@
 
     .search__dropdown {
         position: fixed;
-        z-index: 2000;
+        z-index: 1020;
         top: 52px;
         left: 202px;
         width: 325px;
