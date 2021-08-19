@@ -802,7 +802,7 @@
                             <div class="timeline__list">
                                 <div class="timeline__item">
                                     <div class="event-card">
-                                        <a class="event-card__link mfp-handler" href="#detailed-event-popup">
+                                        <a class="event-card__link" data-toggle="modal" data-target="#detailed-event-popup">
                                             <div class="event-card__date">
                                                 <div class="event-card__month">May</div>
                                                 <div class="event-card__day">24</div>
@@ -849,7 +849,7 @@
                                 </div>
                                 <div class="timeline__item">
                                     <div class="event-card">
-                                        <a class="event-card__link mfp-handler" href="#detailed-event-popup">
+                                        <a class="event-card__link" data-toggle="modal" data-target="#detailed-event-popup">
                                             <div class="event-card__date">
                                                 <div class="event-card__month">May</div>
                                                 <div class="event-card__day">24</div>
@@ -898,7 +898,7 @@
                                 </div>
                                 <div class="timeline__item">
                                     <div class="event-card">
-                                        <a class="event-card__link mfp-handler" href="#detailed-event-popup">
+                                        <a class="event-card__link" data-toggle="modal" data-target="#detailed-event-popup">
                                             <div class="event-card__date">
                                                 <div class="event-card__month">May</div>
                                                 <div class="event-card__day">24</div>
@@ -947,7 +947,7 @@
                                 </div>
                                 <div class="timeline__item">
                                     <div class="event-card">
-                                        <a class="event-card__link mfp-handler" href="#detailed-event-popup">
+                                        <a class="event-card__link" data-toggle="modal" data-target="#detailed-event-popup">
                                             <div class="event-card__date">
                                                 <div class="event-card__month">May</div>
                                                 <div class="event-card__day">24</div>
@@ -1002,7 +1002,7 @@
                             <div class="timeline__list">
                                 <div class="timeline__item">
                                     <div class="event-card">
-                                        <a class="event-card__link mfp-handler" href="#detailed-event-popup">
+                                        <a class="event-card__link" data-toggle="modal" data-target="#detailed-event-popup">
                                             <div class="event-card__date">
                                                 <div class="event-card__month">Jun</div>
                                                 <div class="event-card__day">24</div>
@@ -1051,7 +1051,7 @@
                                 </div>
                                 <div class="timeline__item">
                                     <div class="event-card">
-                                        <a class="event-card__link mfp-handler" href="#detailed-event-popup">
+                                        <a class="event-card__link" data-toggle="modal" data-target="#detailed-event-popup">
                                             <div class="event-card__date">
                                                 <div class="event-card__month">Jun</div>
                                                 <div class="event-card__day">24</div>
@@ -1100,7 +1100,7 @@
                                 </div>
                                 <div class="timeline__item">
                                     <div class="event-card">
-                                        <a class="event-card__link mfp-handler" href="#detailed-event-popup">
+                                        <a class="event-card__link" data-toggle="modal" data-target="#detailed-event-popup">
                                             <div class="event-card__date">
                                                 <div class="event-card__month">Jun</div>
                                                 <div class="event-card__day">24</div>
@@ -1153,166 +1153,171 @@
         </div>
 
         <!-- 3/3 Modals: -->
-        <div class="mfp-hide mfp-window" id="detailed-event-popup">
-            <div class="event-card event-card--detailed">
-                <div class="event-card__link">
-                    <div class="event-card__date">
-                        <div class="event-card__month">May</div>
-                        <div class="event-card__day">11</div>
-                    </div>
-                    <h3 class="event-card__heading">
-                        Bethel Music’s Heaven Come Conference 2021
-                    </h3>
-                    <div class="event-card__body">
-                        <div class="event-card__note">
-                            University Orchestra and London Philharmonic Orchestra
+
+        <div class="modal modal--296px fade" id="detailed-event-popup" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="event-card event-card--detailed">
+                        <div class="event-card__link">
+                            <div class="event-card__date">
+                                <div class="event-card__month">May</div>
+                                <div class="event-card__day">11</div>
+                            </div>
+                            <h3 class="event-card__heading">
+                                Bethel Music’s Heaven Come Conference 2021
+                            </h3>
+                            <div class="event-card__body">
+                                <div class="event-card__note">
+                                    University Orchestra and London Philharmonic Orchestra
+                                </div>
+                                <div class="event-card__note">
+                                    Auer Hall
+                                </div>
+                                <div class="event-card__note">
+                                    <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                                </div>
+                                <button class="event-card__add-to-calendar" type="button">
+                                    <img class="event-card__calendar" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                </button>
+                            </div>
+                            <div class="event-card__artists set">
+                                <div class="set__heading">
+                                    <img class="set__icon" src="../symbols/32-crowd.svg" width="32" height="32" alt="">
+                                    Artists
+                                </div>
+                                <div class="set__list">
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                             src="../temp/person-a-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                             src="../temp/person-b-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                             src="../temp/person-c-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                             src="../temp/person-d-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                             src="../temp/person-e-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                             src="../temp/person-f-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                             src="../temp/person-a-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                             src="../temp/person-b-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                             src="../temp/person-c-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                             src="../temp/person-d-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                             src="../temp/person-e-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                             src="../temp/person-f-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="event-card__note">
-                            Auer Hall
-                        </div>
-                        <div class="event-card__note">
-                            <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                        </div>
-                        <button class="event-card__add-to-calendar" type="button">
-                            <img class="event-card__calendar" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
-                        </button>
-                    </div>
-                    <div class="event-card__artists set">
-                        <div class="set__heading">
-                            <img class="set__icon" src="../symbols/32-crowd.svg" width="32" height="32" alt="">
-                            Artists
-                        </div>
-                        <div class="set__list">
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
-                                     src="../temp/person-a-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-b-44x44@2x.jpg 2x"
-                                     src="../temp/person-b-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-c-44x44@2x.jpg 2x"
-                                     src="../temp/person-c-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-d-44x44@2x.jpg 2x"
-                                     src="../temp/person-d-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-e-44x44@2x.jpg 2x"
-                                     src="../temp/person-e-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-f-44x44@2x.jpg 2x"
-                                     src="../temp/person-f-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
-                                     src="../temp/person-a-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-b-44x44@2x.jpg 2x"
-                                     src="../temp/person-b-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-c-44x44@2x.jpg 2x"
-                                     src="../temp/person-c-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-d-44x44@2x.jpg 2x"
-                                     src="../temp/person-d-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-e-44x44@2x.jpg 2x"
-                                     src="../temp/person-e-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                            <a class="set__item avatar avatar--alt-hover" href="#">
-                                <img class="avatar__image"
-                                     srcset="../temp/person-f-44x44@2x.jpg 2x"
-                                     src="../temp/person-f-44x44.jpg"
-                                     width="44"
-                                     height="44"
-                                     alt=""
-                                >
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="event-card__actions">
-                    <div class="operations operations--simplified-handler">
-                        <button class="operations__handler" type="button">
-                            <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                        </button>
-                        <div class="operations__dropdown">
-                            <div class="menu">
-                                <a class="menu__link" href="#">
-                                    <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
-                                    Add to Calendar
-                                </a>
-                                <a class="menu__link" href="#">
-                                    <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                    Share
-                                </a>
-                                <a class="menu__link" href="#">
-                                    <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
-                                    Report
-                                </a>
+                        <div class="event-card__actions">
+                            <div class="operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                            Add to Calendar
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                            Report
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
