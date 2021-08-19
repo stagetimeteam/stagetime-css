@@ -134,12 +134,35 @@
             </div>
 
 
+            <br>
+            <br>
+            <br>
+            <h2>CSS conflicts</h2>
+            <p>
+                Make sure to grab only <b>modal</b> related styles from bootstrap. Don't take built in things like
+                normalize or helper classes and especially those code pieces that styles <b>&lt;a&gt;</b> and so on.
+                This is, unfortunately, still happens if you use web ui generator and choose only modal checkbox.
+                So styles have to be edited manually.
+            </p>
+
+
+
+
+            <br>
+            <br>
+            <h2>JS conflicts</h2>
+            <p>
+                When popup is open try to place <b>.modal-open</b> on <b>&lt;html&gt;</b> tag instead of <b>&lt;body&gt;</b>.
+                This will prevent page jumping to the top on modal open. There is conflict with <b>heigth: 100%</b> that was
+                set on <b>&lt;body&gt;</b> and necessary for layouting.
+            </p>
+
 
             <br>
             <br>
             <br>
             <br>
-            <h2>to do:</h2>
+            <h2>To do (Anton):</h2>
             <br>callback
             <br>Modals instead of page on mobiles
 
