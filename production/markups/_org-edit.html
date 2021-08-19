@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.org-edit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css?1629405633">
+        <link rel="stylesheet" href="../styles/style.css?1629405633">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1629405633" media="(max-width: 767px)">
+    </head>
+    <body>
+
+
+
+        <div style="width: 380px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.org-edit</h1>
+
+
+            <br>
+            <br>
+            <h2>
+                Variant 1:
+            </h2>
+
+            <div class="org-edit">
+                <div class="org-edit__head">
+                    <div class="org-edit__preview">
+                        <svg class="org-edit__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1629405633#16-pencil-tiny"></use>
+                        </svg>
+                    </div>
+                    <div class="org-edit__heading">
+                        Editing <span class="org-edit__info">contact info</span>
+                    </div>
+                </div>
+                <div class="org-edit__body">
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Secondary Name (optional)">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Address Line 1">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Address Line 2">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Website">
+                    </div>
+                    <div class="org-edit__field input input--bold">
+                        <input class="input__widget" type="text" placeholder="Phone">
+                    </div>
+                    <div class="org-edit__field merge">
+                        <div class="input input--select input--placeholder-is-chosen input--bold">
+                            <select class="input__widget">
+                                <option>Organization Type</option>
+                                <option>Agency/Management</option>
+                                <option>College Program</option>
+                                <option>Conservatory</option>
+                                <option>Dance Company</option>
+                                <option>Opera</option>
+                                <option>Orchestra</option>
+                                <option>Podcast</option>
+                                <option>PR Firm</option>
+                                <option>Summer Festival</option>
+                                <option>Theater</option>
+                                <option>Training</option>
+                                <option>Program</option>
+                                <option>Vendor (Offers services/products for the arts)</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="input input--bold">
+                            <input class="input__widget" type="text" placeholder="Enter Organization Type here">
+                        </div>
+                    </div>
+                    <div class="org-edit__field input input--bold input--area input--extendable-via-plugin">
+                        <textarea class="input__widget" placeholder="Description" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="org-edit__footer">
+                    <button class="org-edit__submit button" type="button">Save Changes</button>
+                </div>
+            </div>
+            <div class="overlay">
+                <svg class="overlay__icon" width="16" height="16">
+                    <use xlink:href="../symbols/symbols.svg?1629405633#16-success"></use>
+                </svg>
+                <div class="overlay__heading">
+                    Success!
+                </div>
+                <div class="overlay__description">
+                    Your organization page information has been<br> updated on the profile.
+                </div>
+            </div>
+
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edit-contacts">
+                Launch modal with <b>.modal--380px</b> modifier and <b>variant 1</b> of <b>.org-edit</b> inside
+            </button>
+
+
+            <div class="modal modal--380px fade" id="edit-contacts" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="org-edit">
+                            <div class="org-edit__head">
+                                <div class="org-edit__preview">
+                                    <svg class="org-edit__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1629405633#16-pencil-tiny"></use>
+                                    </svg>
+                                </div>
+                                <div class="org-edit__heading">
+                                    Editing <span class="org-edit__info">contact info</span>
+                                </div>
+                            </div>
+                            <div class="org-edit__body">
+                                <div class="org-edit__field input input--bold">
+                                    <input class="input__widget" type="text" placeholder="Secondary Name (optional)">
+                                </div>
+                                <div class="org-edit__field input input--bold">
+                                    <input class="input__widget" type="text" placeholder="Address Line 1">
+                                </div>
+                                <div class="org-edit__field input input--bold">
+                                    <input class="input__widget" type="text" placeholder="Address Line 2">
+                                </div>
+                                <div class="org-edit__field input input--bold">
+                                    <input class="input__widget" type="text" placeholder="Website">
+                                </div>
+                                <div class="org-edit__field input input--bold">
+                                    <input class="input__widget" type="text" placeholder="Phone">
+                                </div>
+                                <div class="org-edit__field merge">
+                                    <div class="input input--select input--placeholder-is-chosen input--bold">
+                                        <select class="input__widget">
+                                            <option>Organization Type</option>
+                                            <option>Agency/Management</option>
+                                            <option>College Program</option>
+                                            <option>Conservatory</option>
+                                            <option>Dance Company</option>
+                                            <option>Opera</option>
+                                            <option>Orchestra</option>
+                                            <option>Podcast</option>
+                                            <option>PR Firm</option>
+                                            <option>Summer Festival</option>
+                                            <option>Theater</option>
+                                            <option>Training</option>
+                                            <option>Program</option>
+                                            <option>Vendor (Offers services/products for the arts)</option>
+                                            <option>Other</option>
+                                        </select>
+                                    </div>
+                                    <div class="input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Enter Organization Type here">
+                                    </div>
+                                </div>
+                                <div class="org-edit__field input input--bold input--area input--extendable-via-plugin">
+                                    <textarea class="input__widget" placeholder="Description" rows="2"></textarea>
+                                </div>
+                            </div>
+                            <div class="org-edit__footer">
+                                <button class="org-edit__submit button" type="button">Save Changes</button>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <svg class="overlay__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#16-success"></use>
+                            </svg>
+                            <div class="overlay__heading">
+                                Success!
+                            </div>
+                            <div class="overlay__description">
+                                Your organization page information has been<br> updated on the profile.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>
+                Variant 2:
+            </h2>
+
+            <div class="org-edit">
+                <div class="org-edit__head">
+                    <div class="org-edit__preview">
+                        <svg class="org-edit__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1629405633#16-pencil-tiny"></use>
+                        </svg>
+                    </div>
+                    <div class="org-edit__heading">
+                        Editing <span class="org-edit__info">social links</span>
+                    </div>
+                </div>
+                <div class="org-edit__body">
+                    <div class="edit-media">
+                        <div class="edit-media__note">
+                            All links are optional.
+                        </div>
+                        <div class="edit-media__item">
+                            <svg class="edit-media__icon" width="28" height="28">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#28-media-link"></use>
+                            </svg>
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Website">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <svg class="edit-media__icon" width="28" height="28">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#28-media-instagram"></use>
+                            </svg>
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Instagram">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <svg class="edit-media__icon" width="28" height="28">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#28-media-facebook"></use>
+                            </svg>
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Facebook">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <svg class="edit-media__icon" width="28" height="28">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#28-media-twitter"></use>
+                            </svg>
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Twitter">
+                            </div>
+                        </div>
+                        <div class="edit-media__item">
+                            <svg class="edit-media__icon" width="28" height="28">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#28-media-youtube"></use>
+                            </svg>
+                            <div class="edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="YouTube">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="org-edit__footer">
+                    <button class="org-edit__submit button" type="button">Save Changes</button>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edit-media">
+                Launch modal with <b>.modal--380px</b> modifier and <b>variant 2</b> of <b>.org-edit</b> inside
+            </button>
+
+
+            <div class="modal modal--380px fade" id="edit-media" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="org-edit">
+                            <div class="org-edit__head">
+                                <div class="org-edit__preview">
+                                    <svg class="org-edit__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1629405633#16-pencil-tiny"></use>
+                                    </svg>
+                                </div>
+                                <div class="org-edit__heading">
+                                    Editing <span class="org-edit__info">social links</span>
+                                </div>
+                            </div>
+                            <div class="org-edit__body">
+                                <div class="edit-media">
+                                    <div class="edit-media__note">
+                                        All links are optional.
+                                    </div>
+                                    <div class="edit-media__item">
+                                        <svg class="edit-media__icon" width="28" height="28">
+                                            <use xlink:href="../symbols/symbols.svg?1629405633#28-media-link"></use>
+                                        </svg>
+                                        <div class="edit__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Website">
+                                        </div>
+                                    </div>
+                                    <div class="edit-media__item">
+                                        <svg class="edit-media__icon" width="28" height="28">
+                                            <use xlink:href="../symbols/symbols.svg?1629405633#28-media-instagram"></use>
+                                        </svg>
+                                        <div class="edit__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Instagram">
+                                        </div>
+                                    </div>
+                                    <div class="edit-media__item">
+                                        <svg class="edit-media__icon" width="28" height="28">
+                                            <use xlink:href="../symbols/symbols.svg?1629405633#28-media-facebook"></use>
+                                        </svg>
+                                        <div class="edit__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Facebook">
+                                        </div>
+                                    </div>
+                                    <div class="edit-media__item">
+                                        <svg class="edit-media__icon" width="28" height="28">
+                                            <use xlink:href="../symbols/symbols.svg?1629405633#28-media-twitter"></use>
+                                        </svg>
+                                        <div class="edit__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Twitter">
+                                        </div>
+                                    </div>
+                                    <div class="edit-media__item">
+                                        <svg class="edit-media__icon" width="28" height="28">
+                                            <use xlink:href="../symbols/symbols.svg?1629405633#28-media-youtube"></use>
+                                        </svg>
+                                        <div class="edit__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="YouTube">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="org-edit__footer">
+                                <button class="org-edit__submit button" type="button">Save Changes</button>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <svg class="overlay__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#16-success"></use>
+                            </svg>
+                            <div class="overlay__heading">
+                                Success!
+                            </div>
+                            <div class="overlay__description">
+                                Your organization page information has been<br> updated on the profile.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>
+                Variant 3:
+            </h2>
+
+            <div class="org-edit">
+                <div class="org-edit__head">
+                    <div class="org-edit__preview">
+                        <svg class="org-edit__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1629405633#16-pencil-tiny"></use>
+                        </svg>
+                    </div>
+                    <div class="org-edit__heading">
+                        Editing your <span class="org-edit__info">general info</span>
+                    </div>
+                </div>
+                <div class="org-edit__body">
+                    <div class="org-edit__fieldset">
+                        <div class="org-edit__logo">
+                            <button class="img-pad" type="button">Upload Logo</button>
+
+                            <!-- temp -->
+                            or:<br>
+                            <!--/temp -->
+
+                            <div class="selected">
+                                <button class="selected__handler" type="button">
+                                    <img class="selected__file"
+                                         srcset="../temp/org-logo-96x96@2x.jpg 2x"
+                                         src="../temp/org-logo-96x96.jpg"
+                                         width="96"
+                                         height="96"
+                                         alt=""
+                                    >
+                                </button>
+                                <button class="selected__delete">
+                                    <svg class="selected__cross" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1629405633#16-cross"></use>
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="org-edit__naming">
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Organization Name">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Location">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="org-edit__cover-handler button button--another-darker" type="submit">
+                        Change Cover Photo
+                    </button>
+
+                    <!-- temp -->
+                    <br>
+                    <br>
+                    <br>
+                    Another screen:
+                    <br>
+                    <br>
+                    <!--/temp -->
+
+                    <div class="org__cover">
+
+                        <button class="img-pad img-pad--cover" type="button">Click to change image</button>
+
+                        <!-- temp -->
+                        or:
+                        <!--/temp -->
+
+                        <div class="selected">
+                            <button class="selected__handler" type="button">
+                                <img class="selected__file"
+                                     srcset="../temp/selected-preview@2x.jpg 2x"
+                                     src="../temp/selected-preview.jpg"
+                                     width="310"
+                                     height="177"
+                                     alt=""
+                                >
+                                <span class="selected__overlay">
+
+                                </span>
+                                <span class="selected__label">
+                                    Click to change image
+                                </span>
+                            </button>
+                            <button class="selected__delete">
+                                <svg class="selected__cross" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1629405633#16-cross"></use>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="org-edit__footer">
+                    <button class="org-edit__submit button" type="button">Save Changes</button>
+
+                    <!-- temp -->
+                    <br><br>Another screen:<br><br>
+                    <!--/temp -->
+
+                    <a class="action action--horizontal" href="#">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#16-left"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Go back to finish editing your general info.
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#edit-organization">
+                Launch modal with <b>.modal--380px</b> modifier and <b>variant 3</b> of <b>.org-edit</b> inside
+            </button>
+
+
+            <div class="modal modal--380px fade" id="edit-organization" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="org-edit">
+                            <div class="org-edit__head">
+                                <div class="org-edit__preview">
+                                    <svg class="org-edit__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1629405633#16-pencil-tiny"></use>
+                                    </svg>
+                                </div>
+                                <div class="org-edit__heading">
+                                    Editing your <span class="org-edit__info">general info</span>
+                                </div>
+                            </div>
+                            <div class="org-edit__body">
+                                <div class="org-edit__fieldset">
+                                    <div class="org-edit__logo">
+                                        <button class="img-pad" type="button">Upload Logo</button>
+
+                                        <!-- temp -->
+                                        or:<br>
+                                        <!--/temp -->
+
+                                        <div class="selected">
+                                            <button class="selected__handler" type="button">
+                                                <img class="selected__file"
+                                                     srcset="../temp/org-logo-96x96@2x.jpg 2x"
+                                                     src="../temp/org-logo-96x96.jpg"
+                                                     width="96"
+                                                     height="96"
+                                                     alt=""
+                                                >
+                                            </button>
+                                            <button class="selected__delete">
+                                                <svg class="selected__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1629405633#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                    <div class="org-edit__naming">
+                                        <div class="org-edit__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Organization Name">
+                                        </div>
+                                        <div class="org-edit__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Location">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="org-edit__cover-handler button button--another-darker" type="submit">
+                                    Change Cover Photo
+                                </button>
+
+                                <!-- temp -->
+                                <br>
+                                <br>
+                                <br>
+                                Another screen:
+                                <br>
+                                <br>
+                                <!--/temp -->
+
+                                <div class="org__cover">
+
+                                    <button class="img-pad img-pad--cover" type="button">Click to change image</button>
+
+                                    <!-- temp -->
+                                    or:
+                                    <!--/temp -->
+
+                                    <div class="selected">
+                                        <button class="selected__handler" type="button">
+                                            <img class="selected__file"
+                                                 srcset="../temp/selected-preview@2x.jpg 2x"
+                                                 src="../temp/selected-preview.jpg"
+                                                 width="310"
+                                                 height="177"
+                                                 alt=""
+                                            >
+                                            <span class="selected__overlay">
+
+                                            </span>
+                                            <span class="selected__label">
+                                                Click to change image
+                                            </span>
+                                        </button>
+                                        <button class="selected__delete">
+                                            <svg class="selected__cross" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1629405633#16-cross"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="org-edit__footer">
+                                <button class="org-edit__submit button" type="button">Save Changes</button>
+
+                                <!-- temp -->
+                                <br><br>Another screen:<br><br>
+                                <!--/temp -->
+
+                                <a class="action action--horizontal" href="#">
+                                    <span class="action__image">
+                                        <svg class="action__icon" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1629405633#16-left"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="action__label">
+                                        Go back to finish editing your general info.
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="overlay">
+                            <svg class="overlay__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1629405633#16-success"></use>
+                            </svg>
+                            <div class="overlay__heading">
+                                Success!
+                            </div>
+                            <div class="overlay__description">
+                                Your organization page information has been<br> updated on the profile.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../scripts/_global.js?1629405633"></script>
+        <script src="../scripts/_operations.js?1629405633"></script>
+        <script src="../scripts/_profile.js?1629405633"></script>
+        <script src="../scripts/_mfp.js?1629405633"></script>
+        <script src="../scripts/_search.js?1629405633"></script>
+        <script src="../scripts/_carousel.js?1629405633"></script>
+        <script src="../scripts/_player.js?1629405633"></script>
+        <script src="../scripts/_updates.js?1629405633"></script>
+        <script src="../scripts/_dash-side.js?1629405633"></script>
+        <script src="../scripts/_happening.js?1629405633"></script>
+        <script src="../scripts/_input.js?1629405633"></script>
+        <script src="../scripts/_edit-post.js?1629405633"></script>
+        <script src="../scripts/_post-form.js?1629405633"></script>
+        <script src="../scripts/_button.js?1629405633"></script>
+        <script src="../scripts/_quick-message.js?1629405633"></script>
+        <script src="../scripts/_dash-tiles.js?1629405633"></script>
+        <script src="../scripts/_shortcut.js?1629405633"></script>
+        <script src="../scripts/_scrollbar.js?1629405633"></script>
+        <script src="../scripts/_referral.js?1629405633"></script>
+        <script src="../scripts/_overlay.js?1629405633"></script>
+        <script src="../scripts/_notifications.js?1629405633"></script>
+        <script src="../scripts/_enter.js?1629405633"></script>
+        <script src="../scripts/_suggesting.js?1629405633"></script>
+        <script src="../scripts/_chat.js?1629405633"></script>
+
+
+    </body>
+</html>
+
+
+
