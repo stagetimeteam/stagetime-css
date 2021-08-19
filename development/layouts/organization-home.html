@@ -806,7 +806,7 @@
                     </h2>
                     <div class="module-head__control-panel">
                         <div class="module-head__right-slot">
-                            <a class="action action--simplified action--grey mfp-handler" href="#edit-contacts">
+                            <a class="action action--simplified action--grey" data-toggle="modal" data-target="#edit-contacts">
                                 <span class="action__image">
                                     <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
                                 </span>
@@ -2150,71 +2150,75 @@
             </div>
         </div>
 
-        <div class="mfp-hide mfp-window" id="edit-contacts">
-            <div class="org-edit">
-                <div class="org-edit__head">
-                    <div class="org-edit__preview">
-                        <img class="org-edit__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16">
-                    </div>
-                    <div class="org-edit__heading">
-                        Editing <span class="org-edit__info">contact info</span>
-                    </div>
-                </div>
-                <div class="org-edit__body">
-                    <div class="org-edit__field input input--bold">
-                        <input class="input__widget" type="text" placeholder="Secondary Name (optional)">
-                    </div>
-                    <div class="org-edit__field input input--bold">
-                        <input class="input__widget" type="text" placeholder="Address Line 1">
-                    </div>
-                    <div class="org-edit__field input input--bold">
-                        <input class="input__widget" type="text" placeholder="Address Line 2">
-                    </div>
-                    <div class="org-edit__field input input--bold">
-                        <input class="input__widget" type="text" placeholder="Website">
-                    </div>
-                    <div class="org-edit__field input input--bold">
-                        <input class="input__widget" type="text" placeholder="Phone">
-                    </div>
-                    <div class="org-edit__field merge">
-                        <div class="input input--select input--placeholder-is-chosen input--bold">
-                            <select class="input__widget">
-                                <option>Organization Type</option>
-                                <option>Agency/Management</option>
-                                <option>College Program</option>
-                                <option>Conservatory</option>
-                                <option>Dance Company</option>
-                                <option>Opera</option>
-                                <option>Orchestra</option>
-                                <option>Podcast</option>
-                                <option>PR Firm</option>
-                                <option>Summer Festival</option>
-                                <option>Theater</option>
-                                <option>Training</option>
-                                <option>Program</option>
-                                <option>Vendor (Offers services/products for the arts)</option>
-                                <option>Other</option>
-                            </select>
+        <div class="modal modal--380px fade" id="edit-contacts" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="org-edit">
+                        <div class="org-edit__head">
+                            <div class="org-edit__preview">
+                                <img class="org-edit__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16">
+                            </div>
+                            <div class="org-edit__heading">
+                                Editing <span class="org-edit__info">contact info</span>
+                            </div>
                         </div>
-                        <div class="input input--bold">
-                            <input class="input__widget" type="text" placeholder="Enter Organization Type here">
+                        <div class="org-edit__body">
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Secondary Name (optional)">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Address Line 1">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Address Line 2">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Website">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Phone">
+                            </div>
+                            <div class="org-edit__field merge">
+                                <div class="input input--select input--placeholder-is-chosen input--bold">
+                                    <select class="input__widget">
+                                        <option>Organization Type</option>
+                                        <option>Agency/Management</option>
+                                        <option>College Program</option>
+                                        <option>Conservatory</option>
+                                        <option>Dance Company</option>
+                                        <option>Opera</option>
+                                        <option>Orchestra</option>
+                                        <option>Podcast</option>
+                                        <option>PR Firm</option>
+                                        <option>Summer Festival</option>
+                                        <option>Theater</option>
+                                        <option>Training</option>
+                                        <option>Program</option>
+                                        <option>Vendor (Offers services/products for the arts)</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="input input--bold">
+                                    <input class="input__widget" type="text" placeholder="Enter Organization Type here">
+                                </div>
+                            </div>
+                            <div class="org-edit__field input input--bold input--area input--extendable-via-plugin">
+                                <textarea class="input__widget" placeholder="Description" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="org-edit__footer">
+                            <button class="org-edit__submit button" type="button">Save Changes</button>
                         </div>
                     </div>
-                    <div class="org-edit__field input input--bold input--area input--extendable-via-plugin">
-                        <textarea class="input__widget" placeholder="Description" rows="2"></textarea>
+                    <div class="overlay">
+                        <img class="overlay__icon" src="../symbols/16-success.svg" width="16" height="16" alt="">
+                        <div class="overlay__heading">
+                            Success!
+                        </div>
+                        <div class="overlay__description">
+                            Your organization page information has been<br> updated on the profile.
+                        </div>
                     </div>
-                </div>
-                <div class="org-edit__footer">
-                    <button class="org-edit__submit button" type="button">Save Changes</button>
-                </div>
-            </div>
-            <div class="overlay">
-                <img class="overlay__icon" src="../symbols/16-success.svg" width="16" height="16" alt="">
-                <div class="overlay__heading">
-                    Success!
-                </div>
-                <div class="overlay__description">
-                    Your organization page information has been<br> updated on the profile.
                 </div>
             </div>
         </div>
