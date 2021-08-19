@@ -27,3 +27,8 @@
 .modal--688px .modal-dialog {
     width: 688px;
 }
+
+
+.modal--380px .modal-dialog {
+    width: 380px;
+}

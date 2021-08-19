@@ -115,7 +115,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -171,7 +171,7 @@
                 <div class="post__content wysiwyg">
                     <p>About a week ago, I virtually sat down with Stagetime & The Dallas Opera for a fun collab. I've loved exploring this new artist platform & reconnecting with past colleagues!</p>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -285,7 +285,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -355,7 +355,7 @@
                         >
                     </div>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -469,7 +469,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -598,7 +598,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -733,7 +733,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -848,7 +848,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -959,7 +959,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -1075,7 +1075,7 @@
                         + 6 more
                     </a>
                 </div>
-                <a class="post__message action action--gray mfp-handler" href="#message">
+                <a class="post__message action action--gray" data-toggle="modal" data-target="#message">
                     <span class="action__image">
                         <img class="action__icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                     </span>
@@ -1098,46 +1098,50 @@
 
 
 
-        <div class="mfp-hide mfp-window" id="message">
-            <form class="quick-message">
-                <h2 class="quick-message__heading">
-                    New Message
-                </h2>
-                <a class="quick-message__photo avatar" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-a-130x130@2x.jpg 2x"
-                         src="../temp/person-a-130x130.jpg"
-                         width="130"
-                         height="130"
-                         alt="Mark Zuckerberg"
-                    >
-                </a>
-                <div class="quick-message__name">
-                    <a class="link link--text-alike" href="#">Jonathan Bryan</a>
+        <div class="modal modal--380px fade" id="message" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form class="quick-message">
+                        <h2 class="quick-message__heading">
+                            New Message
+                        </h2>
+                        <a class="quick-message__photo avatar" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-130x130@2x.jpg 2x"
+                                 src="../temp/person-a-130x130.jpg"
+                                 width="130"
+                                 height="130"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="quick-message__name">
+                            <a class="link link--text-alike" href="#">Jonathan Bryan</a>
+                        </div>
+                        <div class="quick-message__fieldset">
+                            <div class="quick-message__subject input">
+                                <input class="input__widget" type="text" placeholder="Subject">
+                            </div>
+                            <div class="quick-message__body input input--area input--extendable-via-plugin">
+                                <textarea class="input__widget" placeholder="Write a message…" rows="4"></textarea>
+                            </div>
+                            <button class="quick-message__submit button button--gray" type="submit">
+                                Send message
+                            </button>
+                        </div>
+                        <button class="quick-message__cancel mfp-close" type="button">
+                            <img class="quick-message__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                        </button>
+                        <div class="quick-message__confirmation">
+                            <div class="quick-message__notification">
+                                Message sent.
+                            </div>
+                            <button class="quick-message__profile button button--larger" type="button">
+                                View profile
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="quick-message__fieldset">
-                    <div class="quick-message__subject input">
-                        <input class="input__widget" type="text" placeholder="Subject">
-                    </div>
-                    <div class="quick-message__body input input--area input--extendable-via-plugin">
-                        <textarea class="input__widget" placeholder="Write a message…" rows="4"></textarea>
-                    </div>
-                    <button class="quick-message__submit button button--gray" type="submit">
-                        Send message
-                    </button>
-                </div>
-                <button class="quick-message__cancel mfp-close" type="button">
-                    <img class="quick-message__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
-                </button>
-                <div class="quick-message__confirmation">
-                    <div class="quick-message__notification">
-                        Message sent.
-                    </div>
-                    <button class="quick-message__profile button button--larger" type="button">
-                        View profile
-                    </button>
-                </div>
-            </form>
+            </div>
         </div>
 
 
