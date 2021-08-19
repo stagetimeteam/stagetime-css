@@ -1,7 +1,7 @@
 @import url("../vendors/normalize/normalize.css");
 @import url("../vendors/magnific-popup/dist/magnific-popup.css");
 @import url("../vendors/jquery-scrollbar/jquery.scrollbar.css");
-@import url("../vendors/bootstrap/css/bootstrap.css");
+@import url("../vendors/bootstrap/bootstrap-modal-only.css");
 
 @import url("_root.css");
 @import url("_universal.css");

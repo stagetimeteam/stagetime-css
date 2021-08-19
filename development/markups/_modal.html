@@ -6,7 +6,7 @@
         <title>.modal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
-        <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
     </head>
@@ -142,7 +142,13 @@
                 Make sure to grab only <b>modal</b> related styles from bootstrap. Don't take built in things like
                 normalize or helper classes and especially those code pieces that styles <b>&lt;a&gt;</b> and so on.
                 This is, unfortunately, still happens if you use web ui generator and choose only modal checkbox.
-                So styles have to be edited manually.
+                So styles have to be edited manually:
+            </p>
+            <p>
+                <img src="../temp/bootstrap-modal-configure.png" alt="" style="max-width: 100%; height: auto;">
+            </p>
+            <p>
+                You can take this file <a href="../vendors/bootstrap/bootstrap-modal-only.css">../vendors/bootstrap/bootstrap-modal-only.css</a>
             </p>
 
 
@@ -195,7 +201,7 @@
         <script src="../vendors/wavesurfer/wavesurfer.js"></script>
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
-        <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
         <script src="../scripts/_global.js"></script>
         <script src="../scripts/_operations.js"></script>
         <script src="../scripts/_profile.js"></script>
