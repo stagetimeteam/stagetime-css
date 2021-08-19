@@ -8,6 +8,8 @@
 
     .modal-dialog {
         display: block;
+    }
+    .modal .modal-dialog { /* override classes such as .modal--688px .modal-dialog */
         width: auto;
     }
         .modal-content {
