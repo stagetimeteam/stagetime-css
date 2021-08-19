@@ -23,16 +23,25 @@
         }
 
 
+.modal--688px {
 
-.modal--688px .modal-dialog {
-    width: 688px;
 }
+    .modal--688px .modal-dialog {
+        width: 688px;
+    }
 
 
-.modal--296px .modal-dialog {
-    width: 296px;
+.modal--380px {
+
 }
+    .modal--380px .modal-dialog {
+        width: 380px;
+    }
 
-.modal--380px .modal-dialog {
-    width: 380px;
+
+.modal--296px {
+
 }
+    .modal--296px .modal-dialog {
+        width: 296px;
+    }
