@@ -79,7 +79,7 @@
 
     .batch__actions {
         position: absolute;
-        z-index: 10;
+        z-index: 100;
         right: 11px;
         bottom: 43px;
     }
