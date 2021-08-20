@@ -55,9 +55,13 @@
 
 }
     .menu--checklist .menu__link {
-
+        padding-left: 40px;
     }
 
     .menu__link--selected {
-
+        background-image: url("../vectors/16-check-grey.svg");
+        background-repeat: no-repeat;
+        background-position: 14px center;
+        background-color: #F6F6F6;
+        color: #545454;
     }
