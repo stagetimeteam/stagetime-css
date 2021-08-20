@@ -222,3 +222,43 @@
 
 
 
+
+.operations--sort {
+
+}
+    .operations--sort .operations__handler {
+        display: flex;
+        align-items: flex-start;
+        width: auto;
+        height: auto;
+        padding: 10px 17px 10px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 20px;
+        text-transform: none;
+        letter-spacing: 0;
+        color: #696969;
+        transition: background-color var(--transition-hover),
+                    color var(--transition-hover);
+    }
+
+    .operations--sort .operations__handler:hover {
+        background-color: #F2F2F2;
+        color: #545454;
+    }
+        .operations--sort .operations__icon {
+            margin-left: 0;
+            margin-right: 4px;
+            margin-bottom: 0;
+            fill: currentColor;
+        }
+
+    .operations--sort .operations__dropdown {
+        top: 100%;
+        right: 0;
+    }
+
+
+
+
