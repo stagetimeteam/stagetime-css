@@ -14,7 +14,7 @@
             flex-shrink: 0;
             height: 94px;
             border-bottom: 1px solid #E8E8E8;
-            padding: 0 44px 0 16px;
+            padding: 0 28px 0 16px;
             display: flex;
             align-items: center;
         }
@@ -44,7 +44,7 @@
                 }
 
                 .collection__add {
-                    margin-left: 30px;
+              
                 }
 
 

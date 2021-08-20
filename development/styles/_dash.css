@@ -1,8 +1,9 @@
 .dash {
     display: inline-flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 16px;
     background-color: transparent;
+    border-radius: 6px;
     border: none;
     font-family: inherit;
     font-weight: bold;
@@ -11,9 +12,12 @@
     color: #6C6C6C;
     text-decoration: none;
     cursor: pointer;
+    transition: background-color var(--transition-hover),
+                color var(--transition-hover);
 }
 
 .dash:hover {
+    background-color: #F2F2F2;
     color: #545454;
 }
 
