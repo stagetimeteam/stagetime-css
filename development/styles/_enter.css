@@ -98,6 +98,10 @@
             fill: #C4C4C4;
         }
 
+        .enter--side .enter__send:hover .enter__plane {
+            fill: #545454;
+        }
+
 
     .enter--side .enter__send--disabled,
     .enter--side .enter__send--disabled:hover {
