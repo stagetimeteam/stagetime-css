@@ -14,6 +14,7 @@
 
     .menu__link:hover {
         background-color: #F6F6F6;
+        color: #545454;
     }
         .menu__icon {
             vertical-align: top;
@@ -22,6 +23,12 @@
             margin-bottom: -2px;
             fill: currentColor;
         }
+
+
+.menu__link--disabled {
+    pointer-events: none;
+    color: #C5C5C5;
+}
 
 
 
