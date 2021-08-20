@@ -132,6 +132,7 @@
         }
             .collection__sub-link {
                 position: relative;
+                z-index: 10;
                 width: 50%;
                 border: none;
                 padding: 13px 20px 10px;
