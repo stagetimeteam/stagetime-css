@@ -1,5 +1,6 @@
 .activity {
     position: relative;
+    display: block;
     margin-top: 10px;
     padding: 15px 16px 21px 60px;
     background-color: #FFFFFF;
@@ -7,6 +8,8 @@
     font-size: 12px;
     line-height: 20px;
     color: #545454;
+    text-decoration: none;
+    transition: background-color var(--transition-hover);
 }
     .activity__preview {
         position: absolute;
@@ -79,4 +82,13 @@
 .activity--dummy {
     padding: 26px 36px;
     text-align: center;
+}
+
+
+.activity--clickable {
+
+}
+
+.activity--clickable:hover {
+    background-color: #E8E8E8;
 }
