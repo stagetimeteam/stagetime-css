@@ -1,0 +1,38 @@
+.added-person {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 8px;
+    background-color: #F4F4F4;
+    border-radius: 21px;
+}
+    .added-person__preview {
+        flex-shrink: 0;
+        margin-right: 10px;
+    }
+
+    .added-person__name {
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 18px;
+        color: #757575;
+    }
+
+    .added-person__delete {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+        border: none;
+        padding: 12px;
+        margin: -8px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+        .added-person__cross {
+            vertical-align: top;
+            fill: #757575;
+        }
+
+        .added-person__delete:hover .added-person__cross {
+            fill: #C4C4C4;
+        }

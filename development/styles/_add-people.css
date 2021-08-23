@@ -1,0 +1,62 @@
+.add-people {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+    .add-people__head {
+        display: flex;
+        align-items: flex-start;
+        padding: 29px 38px;
+        border-bottom: 1px solid #E8E8E8;
+    }
+        .add-people__icon {
+            margin-right: 20px;
+            fill: #8B8B8B;
+        }
+
+        .add-people__heading {
+            font-size: 28px;
+            line-height: 32px;
+            color: #757575;
+        }
+            .add-people__highlight {
+                color: #C4C4C4;
+            }
+
+    .add-people__body {
+        padding: 33px 38px;
+    }
+        .add-people__search {
+
+        }
+
+        .add-people__output {
+            margin-left: -16px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+            .add-people__item {
+                margin-left: 16px;
+                margin-top: 12px;
+            }
+
+    .add-people__foot {
+        border-top: 1px solid #E8E8E8;
+        padding: 35px 38px 32px;
+    }
+        .add-people__note {
+            font-size: 11px;
+            line-height: 16px;
+            color: #757575;
+            text-align: center;
+        }
+
+        .add-people__submit {
+            margin-top: 34px;
+        }
+
+        .add-people__submit.button,
+        .add-people__submit .button {
+            width: 100%;
+            font-size: 12px;
+            font-weight: bold;
+        }

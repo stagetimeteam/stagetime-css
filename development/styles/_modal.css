@@ -31,6 +31,14 @@
     }
 
 
+.modal--500px {
+
+}
+    .modal--500px .modal-dialog {
+        width: 500px;
+    }
+
+
 .modal--380px {
 
 }

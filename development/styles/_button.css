@@ -82,6 +82,15 @@
     transition: none !important;
 }
 
+
+.button--disabled,
+.button--disabled:hover,
+.button--disabled:active {
+    background-color: #E8E8E8;
+    color: #C4C4C4;
+    cursor: default;
+}
+
 .button--small {
     padding: 7px 16px;
     font-size: 9px;
