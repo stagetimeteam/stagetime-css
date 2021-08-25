@@ -4,7 +4,7 @@
     text-decoration: none;
     transition: background-color var(--transition-hover);
     padding-left: 13px;
-    padding-right: 13px;
+    padding-right: 20px;
 }
 
 .user-suggest:hover {
