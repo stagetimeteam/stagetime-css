@@ -410,10 +410,10 @@
     padding: 10px 20px;
     background-color: #FFFFFF;
     box-shadow: none;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 12px;
     line-height: 20px;
-    color: #AFAFAF;
+    color: #545454;
 }
     .button--auth-secondary .button__icon {
         fill: #545454;
