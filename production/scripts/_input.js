@@ -83,4 +83,26 @@
     });
 
 
+
+
+    /* Dropdowns */
+
+    $('.input__widget').on('click focus', function () {
+        $('.input').removeClass('input--expanded'); /* Закрываем другие выпадайки */
+        $(this).parents('.input').addClass('input--expanded');
+        $(this).parents('.input').find('.lookup__field').focus();
+    });
+
+    $(document).on('click touchstart', function(event) {
+        if (!$(event.target).closest('.input').length) {
+            $('.input').removeClass('input--expanded');
+        }
+    });
+
+    $(document).on('keyup', function(event) {
+        if (event.keyCode === 27) {
+            $('.input').removeClass('input--expanded');
+        }
+    });
+
 })(jQuery);

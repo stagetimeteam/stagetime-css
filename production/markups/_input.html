@@ -6,9 +6,9 @@
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1629881422">
-        <link rel="stylesheet" href="../styles/style.css?1629881422">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1629881422" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1629903990">
+        <link rel="stylesheet" href="../styles/style.css?1629903990">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1629903990" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -123,27 +123,25 @@
             <br>
             <br>
             <br>
-            <h2>Выпадайка и пикеры</h2>
+            <h2>Dropdowns</h2>
             <p>
-                Самопальная выпадайка -- это <b>.input__dropdown</b>, и, вообще говоря, она вполне самодостаточна.
-                Ну по крайней мере на уровне верстки. Её можно прикрутить к любому инпуту любого типа.
-                Показывается она в контексте класса <b>.input--expanded</b>. Запрограмиировать динамику
-                этого класса можно так чтобы появлялась при фокусе в поле или при вводе первого символа.
+                <b>.input__dropdown</b> is manually coded thing and it can be more flexible than dropdown
+                of &lt;select&gt;. Anything can be inside.
             </p>
             <p>
-                Для самых простых текстовых выборов тут проработаны <b>.input__options</b> с <b>.input__suggest</b>.
-                Ими можно заменять селект, выводить саггесты и т.д. Но ниже будут более сложные варианты
-                с чекбоксами, датапикером и т.д.
+                Please use <b>.input--expanded</b> to show it. This class can be added
+                on focus, or when first symbol was entered.
             </p>
             <p>
-                Смотрим:
+                In simplest case with text values you can use <b>.input__suggest</b>.
+                For more complex things like user search we will have additional things inside.
+                See that below. And this is default example of dropdown:
             </p>
 
-            <div class="input input--larger input--has-dropdown">
-                <input class="input__widget" type="text" placeholder="Выберите значение">
+            <div class="input input--larger">
+                <input class="input__widget" type="text" placeholder="Choose value">
                 <div class="input__dropdown">
                     <div class="input__options">
-                        <button class="input__suggest input__suggest--placeholder" type="button">Выберите значение</button>
                         <button class="input__suggest" type="button">Lorem</button>
                         <button class="input__suggest" type="button">Ipsum</button>
                         <button class="input__suggest" type="button">Dolor</button>
@@ -153,17 +151,12 @@
 
                     <!-- temp -->
                     <br>
-                    <br>
-                    или:
-                    <br>
+                    or:
                     <br>
                     <!--/temp -->
 
-                    <div class="input__no-matches nothing">
-                        <svg class="nothing__icon" width="32" height="32">
-                            <use xlink:href="../../global/symbols/symbols.svg?1629881422#search-no"></use>
-                        </svg>
-                        <div class="nothing__message">Нет совпадений</div>
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
                     </div>
                 </div>
             </div>
@@ -171,12 +164,12 @@
             <br>
             <h3>.input--content-width-dropdown</h3>
             <p>
-                Схлопываем выпадайку по ширине по содержимому. Понадобится, например,
-                для датапикера, который не должен тянуться до правого края самого виджета.
+                This modifier makes width of dropdown be based on contains inside.
+                It can be used with user search or potential datepicker for example.
             </p>
 
-            <div class="input input--larger input--has-dropdown input--content-width-dropdown">
-                <input class="input__widget" type="text" placeholder="Выберите значение">
+            <div class="input input--larger input--content-width-dropdown">
+                <input class="input__widget" type="text" placeholder="Choose value">
                 <div class="input__dropdown">
                     Lorem ipsum
                 </div>
@@ -184,33 +177,35 @@
 
             <br>
             <p>
-                Но все-таки это еще не готовый к работе виджет, а просто демонстрация выпадайки.
-                Есть детали, связаныне с пересечением классов заполнености и фокуса, есть разные
-                плейсхолдеры и т.д. Чтобы завершить это альтернативный селект делаем
-                пару новых виджетов <b>.input--scanner</b> и <b>.input--picker</b>.
+                There are two possible variations of this widget:
+                <br><b>.input--scanner</b> -- default one, where you can type into the field (imagine that text cursor is a scanner).
+                <br><b>.input--picker</b> -- where you can't type and only can click.
             </p>
 
             <br>
             <h3>
                 .input--scanner
             </h3>
-            <p>
-                Редактируемый инпут с выпадайкой. Пока что это просто дефолтный инпут
-                с дефолтной выпадайкой. Особенности проявятся ниже когда дойдем до
-                динамичных лейблов. Алсо это заготовка для датапикера в котором дату,
-                по-идее, можно печатать.
-            </p>
 
-            <div class="input input--larger input--has-dropdown input--scanner">
-                <input class="input__widget" type="text" placeholder="Выберите значение">
+            <div class="input input--larger input--scanner">
+                <input class="input__widget" type="text" placeholder="Choose value">
                 <div class="input__dropdown">
                     <div class="input__options">
-                        <button class="input__suggest input__suggest--placeholder" type="button">Выберите значение</button>
                         <button class="input__suggest" type="button">Lorem</button>
                         <button class="input__suggest" type="button">Ipsum</button>
                         <button class="input__suggest" type="button">Dolor</button>
                         <button class="input__suggest" type="button">Sit</button>
                         <button class="input__suggest" type="button">Amen</button>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
                     </div>
                 </div>
             </div>
@@ -220,23 +215,174 @@
                 .input--picker
             </h3>
             <p>
-                <b>Не</b>редактируемый инпут с выпадайкой. Добавляем атрибут <b>readonly</b>.
-                Курсор превратится в палец. По-сути у нас получается кастомный селект.
+                In addition to <b>.input--picker</b> please use <b>readonly</b> attribute
             </p>
 
-            <div class="input input--larger input--has-dropdown input--picker">
-                <input class="input__widget" type="text" placeholder="Выберите значение" readonly>
+            <div class="input input--larger input--picker">
+                <input class="input__widget" type="text" placeholder="Choose value" readonly>
                 <div class="input__dropdown">
                     <div class="input__options">
-                        <button class="input__suggest input__suggest--placeholder" type="button">Выберите значение</button>
                         <button class="input__suggest" type="button">Lorem</button>
                         <button class="input__suggest" type="button">Ipsum</button>
                         <button class="input__suggest" type="button">Dolor</button>
                         <button class="input__suggest" type="button">Sit</button>
                         <button class="input__suggest" type="button">Amen</button>
                     </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
                 </div>
             </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>User search</h2>
+            <p>
+                Instead of default <b>.input__suggest</b> please use <a href="_user-suggest.html"><b>.user-suggest</b></a> component:
+            </p>
+
+            <div class="input input--content-width-dropdown input--larger input--scanner">
+                <input class="input__widget" type="text" placeholder="Add team members by name or location...">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                     src="../temp/person-a-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Elena Villalón
+                            </div>
+                        </a>
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-24x24@2x.jpg 2x"
+                                     src="../temp/person-b-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Alexandra Urquiola
+                            </div>
+                        </a>
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-24x24@2x.jpg 2x"
+                                     src="../temp/person-c-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Konstantin Konstantinopolsky
+                            </div>
+                        </a>
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-d-24x24@2x.jpg 2x"
+                                     src="../temp/person-d-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Kunal Lahiry
+                            </div>
+                        </a>
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                     src="../temp/person-a-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Elena Villalón
+                            </div>
+                        </a>
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-24x24@2x.jpg 2x"
+                                     src="../temp/person-b-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Alexandra Urquiola
+                            </div>
+                        </a>
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-24x24@2x.jpg 2x"
+                                     src="../temp/person-c-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Konstantin Konstantinopolsky
+                            </div>
+                        </a>
+                        <a class="user-suggest" href="#">
+                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-d-24x24@2x.jpg 2x"
+                                     src="../temp/person-d-24x24.jpg"
+                                     width="24"
+                                     height="24"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="user-suggest__name">
+                                Kunal Lahiry
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
+                </div>
+            </div>
+
+
+
 
             <br>
             <br>
@@ -302,7 +448,7 @@
 
             <div class="input">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1629881422#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1629903990#16-globe-full"></use>
                 </svg>
                 <input class="input__widget" type="text" placeholder="Video Title">
             </div>
@@ -311,7 +457,7 @@
 
             <div class="input input--select input--rounded input--placeholder-is-chosen">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1629881422#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1629903990#16-globe-full"></use>
                 </svg>
                 <select class="input__widget">
                     <option>Anyone</option>
@@ -334,7 +480,7 @@
 
             <a class="input input--select input--rounded mfp-handler" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1629881422#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1629903990#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -363,7 +509,7 @@
 
             <a class="input input--adjustable input--bold input--select input--rounded" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1629881422#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1629903990#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -439,30 +585,30 @@
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1629881422"></script>
-        <script src="../scripts/_operations.js?1629881422"></script>
-        <script src="../scripts/_profile.js?1629881422"></script>
-        <script src="../scripts/_mfp.js?1629881422"></script>
-        <script src="../scripts/_search.js?1629881422"></script>
-        <script src="../scripts/_carousel.js?1629881422"></script>
-        <script src="../scripts/_player.js?1629881422"></script>
-        <script src="../scripts/_updates.js?1629881422"></script>
-        <script src="../scripts/_dash-side.js?1629881422"></script>
-        <script src="../scripts/_happening.js?1629881422"></script>
-        <script src="../scripts/_input.js?1629881422"></script>
-        <script src="../scripts/_edit-post.js?1629881422"></script>
-        <script src="../scripts/_post-form.js?1629881422"></script>
-        <script src="../scripts/_button.js?1629881422"></script>
-        <script src="../scripts/_quick-message.js?1629881422"></script>
-        <script src="../scripts/_dash-tiles.js?1629881422"></script>
-        <script src="../scripts/_shortcut.js?1629881422"></script>
-        <script src="../scripts/_scrollbar.js?1629881422"></script>
-        <script src="../scripts/_referral.js?1629881422"></script>
-        <script src="../scripts/_overlay.js?1629881422"></script>
-        <script src="../scripts/_notifications.js?1629881422"></script>
-        <script src="../scripts/_enter.js?1629881422"></script>
-        <script src="../scripts/_suggesting.js?1629881422"></script>
-        <script src="../scripts/_chat.js?1629881422"></script>
+        <script src="../scripts/_global.js?1629903990"></script>
+        <script src="../scripts/_operations.js?1629903990"></script>
+        <script src="../scripts/_profile.js?1629903990"></script>
+        <script src="../scripts/_mfp.js?1629903990"></script>
+        <script src="../scripts/_search.js?1629903990"></script>
+        <script src="../scripts/_carousel.js?1629903990"></script>
+        <script src="../scripts/_player.js?1629903990"></script>
+        <script src="../scripts/_updates.js?1629903990"></script>
+        <script src="../scripts/_dash-side.js?1629903990"></script>
+        <script src="../scripts/_happening.js?1629903990"></script>
+        <script src="../scripts/_input.js?1629903990"></script>
+        <script src="../scripts/_edit-post.js?1629903990"></script>
+        <script src="../scripts/_post-form.js?1629903990"></script>
+        <script src="../scripts/_button.js?1629903990"></script>
+        <script src="../scripts/_quick-message.js?1629903990"></script>
+        <script src="../scripts/_dash-tiles.js?1629903990"></script>
+        <script src="../scripts/_shortcut.js?1629903990"></script>
+        <script src="../scripts/_scrollbar.js?1629903990"></script>
+        <script src="../scripts/_referral.js?1629903990"></script>
+        <script src="../scripts/_overlay.js?1629903990"></script>
+        <script src="../scripts/_notifications.js?1629903990"></script>
+        <script src="../scripts/_enter.js?1629903990"></script>
+        <script src="../scripts/_suggesting.js?1629903990"></script>
+        <script src="../scripts/_chat.js?1629903990"></script>
 
 
     </body>
