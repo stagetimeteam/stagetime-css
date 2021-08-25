@@ -123,6 +123,116 @@
             <br>
             <br>
             <br>
+            <h2>Dropdowns</h2>
+            <p>
+                <b>.input__dropdown</b> is manually coded thing and it can be more flexible than dropdown
+                of &lt;select&gt;. Anything can be inside.
+            </p>
+            <p>
+                Please use <b>.input--expanded</b> to show it. This class can be added
+                on focus, or when first symbol was entered.
+            </p>
+            <p>
+                In simplest case with text values you can use <b>.input__suggest</b>.
+                For more complex things like user search we will have additional things inside.
+                See below
+            </p>
+
+            <div class="input input--larger input--has-dropdown">
+                <input class="input__widget" type="text" placeholder="Choose value">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <button class="input__suggest" type="button">Lorem</button>
+                        <button class="input__suggest" type="button">Ipsum</button>
+                        <button class="input__suggest" type="button">Dolor</button>
+                        <button class="input__suggest" type="button">Sit</button>
+                        <button class="input__suggest" type="button">Amen</button>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h3>.input--content-width-dropdown</h3>
+            <p>
+                This modifier makes width of dropdown be based on contains inside.
+                It can be used with datepicker for example.
+            </p>
+
+            <div class="input input--larger input--has-dropdown input--content-width-dropdown">
+                <input class="input__widget" type="text" placeholder="Choose value">
+                <div class="input__dropdown">
+                    Lorem ipsum
+                </div>
+            </div>
+
+            <br>
+            <p>
+
+                Но все-таки это еще не готовый к работе виджет, а просто демонстрация выпадайки.
+                Есть детали, связаныне с пересечением классов заполнености и фокуса, есть разные
+                плейсхолдеры и т.д. Чтобы завершить это альтернативный селект делаем
+                пару новых виджетов <b>.input--scanner</b> и <b>.input--picker</b>.
+            </p>
+
+            <br>
+            <h3>
+                .input--scanner
+            </h3>
+            <p>
+                Редактируемый инпут с выпадайкой. Пока что это просто дефолтный инпут
+                с дефолтной выпадайкой. Особенности проявятся ниже когда дойдем до
+                динамичных лейблов. Алсо это заготовка для датапикера в котором дату,
+                по-идее, можно печатать.
+            </p>
+
+            <div class="input input--larger input--has-dropdown input--scanner">
+                <input class="input__widget" type="text" placeholder="Choose value">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <button class="input__suggest" type="button">Lorem</button>
+                        <button class="input__suggest" type="button">Ipsum</button>
+                        <button class="input__suggest" type="button">Dolor</button>
+                        <button class="input__suggest" type="button">Sit</button>
+                        <button class="input__suggest" type="button">Amen</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <h3>
+                .input--picker
+            </h3>
+            <p>
+                <b>Не</b>редактируемый инпут с выпадайкой. Добавляем атрибут <b>readonly</b>.
+                Курсор превратится в палец. По-сути у нас получается кастомный селект.
+            </p>
+
+            <div class="input input--larger input--has-dropdown input--picker">
+                <input class="input__widget" type="text" placeholder="Choose value" readonly>
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <button class="input__suggest" type="button">Lorem</button>
+                        <button class="input__suggest" type="button">Ipsum</button>
+                        <button class="input__suggest" type="button">Dolor</button>
+                        <button class="input__suggest" type="button">Sit</button>
+                        <button class="input__suggest" type="button">Amen</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <br>
             <h2>.input--adjustable</h2>
             <p>
                 Unfortunately there is no way to set width of &lt;input&gt; or &lt;select&gt; based on content inside.

@@ -83,4 +83,29 @@
     });
 
 
+
+
+    /* Dropdowns */
+
+    /* Открываем выпадайку по клику и по фокусу в поле (только для случая кода выпадайка есть, класс .input--has-dropdown */
+    $('.input__widget').on('click focus', function () {
+        $('.input').removeClass('input--expanded'); /* Закрываем другие выпадайки */
+        $(this).parents('.input').addClass('input--expanded');
+        $(this).parents('.input').find('.lookup__field').focus();
+    });
+
+    /* Закрываем выпадайку по клику вне инпута. */
+    $(document).on('click touchstart', function(event) {
+        if (!$(event.target).closest('.input').length) {
+            $('.input--has-dropdown').removeClass('input--expanded');
+        }
+    });
+
+    /* Закрываем выпадайку по Esc */
+    $(document).on('keyup', function(event) {
+        if (event.keyCode === 27) {
+            $('.input--has-dropdown').removeClass('input--expanded');
+        }
+    });
+
 })(jQuery);
