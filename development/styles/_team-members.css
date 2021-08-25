@@ -47,17 +47,27 @@
                     cursor: pointer;
                     opacity: 0;
                     transition: opacity var(--transition-hover),
-                                visibility var(--transition-hover);
+                                visibility var(--transition-hover),
+                                background-color var(--transition-hover);
                 }
 
-                .team-members__delete:hover,
-                .team-members__delete:focus {
+                .team-members__item:hover .team-members__delete,
+                .team-members__item:focus-within .team-members__delete {
                     opacity: 1;
+                }
+
+                .team-members__delete:hover {
+                    background-color: #333333;
                 }
                     .team-members__bin {
                         width: 24px;
                         height: 24px;
                         fill: #757575;
+                        transition: fill var(--transition-hover);
+                    }
+
+                    .team-members__delete:hover .team-members__bin {
+                        fill: #FFFFFF;
                     }
 
             .team-members__body {
