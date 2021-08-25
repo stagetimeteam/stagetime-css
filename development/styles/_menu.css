@@ -17,6 +17,7 @@
         color: #545454;
     }
         .menu__icon {
+            flex-shrink: 0;
             vertical-align: top;
             margin-right: 17px;
             margin-top: -4px;
