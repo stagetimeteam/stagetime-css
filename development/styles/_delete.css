@@ -1,0 +1,28 @@
+.delete {
+    padding: 46px 40px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    text-align: center;
+}
+    .delete__icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .delete__message {
+        margin-top: 14px;
+        font-size: 24px;
+        line-height: 38px;
+        color: #C4C4C4;
+    }
+
+    .delete__submit {
+        margin-top: 30px;
+    }
+
+    .delete__submit.button,
+    .delete__submit .button {
+        width: 100%;
+        font-size: 12px;
+        font-weight: bold;
+    }

@@ -782,7 +782,7 @@
                                                     <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
                                                     Rename
                                                 </a>
-                                                <a class="menu__link menu__link--disabled" href="#" data-toggle="modal" data-target="#delete-collection">
+                                                <a class="menu__link" href="#" data-toggle="modal" data-target="#delete">
                                                     <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
                                                     Delete
                                                 </a>
@@ -3283,6 +3283,17 @@
                                 Create/Save Collection
                             </button>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--380px fade" id="delete" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="delete">
+                        <img class="delete__icon" src="../symbols/16-danger.svg" width="16" height="16" alt="">
+                        <div class="delete__message">Are you sure you want to delete this collection / remove this artist from your collection? This step cannot be undone.</div>
+                        <button class="delete__submit button button--larger" type="button">Delete / Remove</button>
                     </div>
                 </div>
             </div>
