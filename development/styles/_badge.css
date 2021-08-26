@@ -79,7 +79,7 @@
             .badge__item {
                 display: inline-block;
                 vertical-align: top;
-                padding: 3px 20px 3px;
+                padding: 3px 20px;
                 border-radius: 18px;
                 font-weight: 600;
                 font-size: 11px;
