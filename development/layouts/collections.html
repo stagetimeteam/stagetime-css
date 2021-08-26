@@ -770,7 +770,7 @@
                                         </button>
                                         <div class="operations__dropdown">
                                             <div class="menu">
-                                                <a class="menu__link" href="#">
+                                                <a class="menu__link menu__link--disabled" href="#">
                                                     <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
                                                     View
                                                 </a>
@@ -778,11 +778,11 @@
                                                     <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
                                                     Share
                                                 </a>
-                                                <a class="menu__link menu__link--disabled" href="#">
+                                                <a class="menu__link" href="#" data-toggle="modal" data-target="#edit-collection">
                                                     <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
                                                     Rename
                                                 </a>
-                                                <a class="menu__link menu__link--disabled" href="#">
+                                                <a class="menu__link menu__link--disabled" href="#" data-toggle="modal" data-target="#delete-collection">
                                                     <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
                                                     Delete
                                                 </a>
@@ -3259,6 +3259,30 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--500px fade" id="edit-collection" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="edit-collection">
+                        <div class="edit-collection__head">
+                            <img class="edit-collection__icon" src="../symbols/32-folder-person.svg" width="32" height="32" alt="">
+                            <div class="edit-collection__heading">
+                                <span class="edit-collection__highlight">Creating/Renaming a</span> collection
+                            </div>
+                        </div>
+                        <div class="edit-collection__body">
+                            <div class="input input--bold">
+                                <input class="input__widget" type="text" placeholder="Collection Title">
+                            </div>
+                        </div>
+                        <div class="edit-collection__foot">
+                            <button class="edit-collection__submit button button--larger button--disabled" type="button" disabled>
+                                Create/Save Collection
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

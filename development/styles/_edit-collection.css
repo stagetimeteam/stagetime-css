@@ -1,0 +1,43 @@
+.edit-collection {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+    .edit-collection__head {
+        display: flex;
+        align-items: flex-start;
+        padding: 29px 38px;
+        border-bottom: 1px solid #E8E8E8;
+    }
+        .edit-collection__icon {
+            margin-right: 20px;
+            fill: #8B8B8B;
+        }
+
+        .edit-collection__heading {
+            font-size: 28px;
+            line-height: 32px;
+            color: #757575;
+        }
+            .edit-collection__highlight {
+                color: #C4C4C4;
+            }
+
+    .edit-collection__body {
+        padding: 33px 38px;
+    }
+
+
+    .edit-collection__foot {
+        border-top: 1px solid #E8E8E8;
+        padding: 35px 38px 32px;
+    }
+        .edit-collection__submit {
+
+        }
+
+        .edit-collection__submit.button,
+        .edit-collection__submit .button {
+            width: 100%;
+            font-size: 12px;
+            font-weight: bold;
+        }
