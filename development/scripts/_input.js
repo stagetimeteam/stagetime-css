@@ -88,7 +88,7 @@
     /* Dropdowns */
 
     $('.input__widget').on('click focus', function () {
-        $('.input').removeClass('input--expanded'); /* Закрываем другие выпадайки */
+        $('.input').removeClass('input--expanded'); /* Close rest of dropdowns */
         $(this).parents('.input').addClass('input--expanded');
         $(this).parents('.input').find('.lookup__field').focus();
     });

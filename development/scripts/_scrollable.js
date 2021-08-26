@@ -1,6 +1,6 @@
 (function($) {
 
-    /* Начальные значения */
+    /* Default values */
 
     var $scrollable = $('.scrollable__container');
     var scrollLeftEdge;
@@ -16,7 +16,7 @@
 
 
 
-    /* Прокрутка */
+    /* Scrolling */
 
     function scrollEdges() {
         if( $scrollable.scrollLeft() === scrollLeftEdge) {
