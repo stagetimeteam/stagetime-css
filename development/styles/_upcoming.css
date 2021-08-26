@@ -54,6 +54,7 @@
 
     .upcoming__schedule {
         margin-left: 20px;
+        position: relative;
         background-color: #FFFFFF;
         padding: 8px 14px 12px;
         border-radius: 8px;
@@ -66,6 +67,21 @@
         }
             .upcoming__year {
                 color: #AAAAAA;
+            }
+
+        .upcoming__next {
+            position: absolute;
+            right: 6px;
+            top: 2px;
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            border: none;
+            background-color: transparent;
+        }
+            .upcoming__arrow {
+                vertical-align: top;
+                fill: #545454;
             }
 
         .upcoming__days {
