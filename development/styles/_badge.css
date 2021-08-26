@@ -17,18 +17,3 @@
 .badge:hover {
     opacity: 0.7;
 }
-
-.badge--yes {
-    background-color: #94A2A3;
-    color: #FFFFFF;
-}
-
-.badge--no {
-    background-color: #D0DBE0;
-    color: #545454;
-}
-
-.badge--granted {
-    background-color: #C0A2A2;
-    color: #FFFFFF;
-}
