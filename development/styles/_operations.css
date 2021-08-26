@@ -88,6 +88,14 @@
 
 
 
+.operations--smaller-dropdown {
+
+}
+    .operations--smaller-dropdown .operations__dropdown {
+        width: 191px;
+    }
+
+
 .operations--for-player {
 
 }
@@ -257,6 +265,7 @@
     .operations--sort .operations__dropdown {
         top: 100%;
         right: 0;
+        width: 191px;
     }
 
 
