@@ -18,7 +18,7 @@
 }
 
     .upcoming__preview {
-
+        flex-shrink: 0;
     }
 
     .upcoming__body {
@@ -41,6 +41,15 @@
 
         .upcoming__note {
 
+        }
+
+        .upcoming__alternate-date {
+            padding-left: 10px;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 18px;
+            color: #757575;
+            white-space: nowrap;
         }
 
     .upcoming__schedule {
