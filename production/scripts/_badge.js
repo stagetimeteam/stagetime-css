@@ -3,7 +3,7 @@
     /* Dropdowns */
 
     $('.badge__body').on('click', function () {
-        $('.badge').removeClass('badge--expanded'); /* Закрываем другие выпадайки */
+        $('.badge').removeClass('badge--expanded'); /* Close rest of dropdowns */
         $(this).parents('.badge').addClass('badge--expanded');
     });
 
