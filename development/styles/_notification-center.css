@@ -4,25 +4,22 @@
     left: 0;
     bottom: 0;
     max-height: calc(100vh - var(--header-height));
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    overflow-y: auto;
 }
-    .notification-center__scroll {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-end;
-        overflow-y: auto;
+    .notification-center__item {
+        margin: 11px 22px;
+        max-width: 483px;
     }
-        .notification-center__item {
-            margin: 11px 22px;
-            max-width: 483px;
-        }
 
-        .notification-center__item:first-child {
-            margin-top: 22px;
-        }
+    .notification-center__item:first-child {
+        margin-top: 22px;
+    }
 
-        .notification-center__item:last-child {
-            margin-bottom: 22px;
-        }
+    .notification-center__item:last-child {
+        margin-bottom: 22px;
+    }
 
