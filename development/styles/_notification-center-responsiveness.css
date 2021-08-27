@@ -1,0 +1,6 @@
+.notification-center {
+
+}
+    .notification-center__scroll {
+        justify-content: flex-end;
+    }

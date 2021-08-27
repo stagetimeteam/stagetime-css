@@ -1,0 +1,27 @@
+.notification-center {
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    top: var(--header-height);
+    bottom: 0;
+}
+    .notification-center__scroll {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        overflow-y: auto;
+    }
+        .notification-center__item {
+            margin: 11px 22px;
+            max-width: 483px;
+        }
+
+        .notification-center__item:first-child {
+            margin-top: 22px;
+        }
+
+        .notification-center__item:last-child {
+            margin-bottom: 22px;
+        }
+

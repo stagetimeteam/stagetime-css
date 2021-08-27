@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.notification-center</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+
+
+        <div style="width: 622px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.notification-center</h1>
+            <p>
+                This is wrapping component for set of <a href="_toast.html">.toast</a>'s.
+                It adds positioning and scrollbar
+            </p>
+            <p>
+                Place <b>.notification-center</b> after modals.
+            </p>
+            <p>
+                First two wrappers: <b>.notification-center</b> and <b>.notification-center__scroll</b>
+                can always be on the page. They won't overlap something. If there will be no toasts
+                inside height will be 0px.
+            </p>
+            <p>
+                Once notification comes add it using jQuery's fade in.
+            </p>
+            <p>
+                It seems that we can close notification by clicking on it anywhere inside.
+            </p>
+            <p>
+                See real use case on the <a href="../layouts/dashboard-notifications.html">dashboard-notifications.html</a> sample page
+            </p>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+        <div class="notification-center">
+            <div class="notification-center__scroll scrollbar scrollbar-macosx">
+                <div class="notification-center__item toast toast--danger">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto cupiditate deserunt, dolorem labore magnam molestiae natus nisi nulla quidem.
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--danger">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est labore minima perspiciatis quia, ratione sequi.
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--danger">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--info">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--info">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--info">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--success">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--success">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--success">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--danger">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto cupiditate deserunt, dolorem labore magnam molestiae natus nisi nulla quidem.
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--danger">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est labore minima perspiciatis quia, ratione sequi.
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--danger">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--info">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--info">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--info">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--success">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--success">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
+                    </div>
+                </div>
+                <div class="notification-center__item toast toast--success">
+                    <div class="toast__preview">
+                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
+                    </div>
+                    <div class="toast__message">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_dash-side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_dash-tiles.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_referral.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+
+
+    </body>
+</html>
