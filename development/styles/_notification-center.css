@@ -2,8 +2,8 @@
     position: fixed;
     z-index: 2000;
     left: 0;
-    top: var(--header-height);
     bottom: 0;
+    max-height: calc(100vh - var(--header-height));
 }
     .notification-center__scroll {
         height: 100%;
