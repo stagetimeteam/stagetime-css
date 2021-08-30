@@ -12,7 +12,7 @@
         text-decoration: none;
     }
 
-    .menu:first-child:last-child {
+    .menu__link:first-child:last-child {
         margin-top: -14px;
         margin-bottom: -20px;
     }
