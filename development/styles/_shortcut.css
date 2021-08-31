@@ -1,61 +1,62 @@
 .shortcut {
     display: inline-block;
     vertical-align: top;
-    padding: 8px;
-    border-radius: 10px;
-    transition: box-shadow var(--transition-hover);
+    width: 170px;
+    padding: 9px;
+    background-color: #F8F8F8;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color var(--transition-hover);
 }
 
-.shortcut:hover {
-    box-shadow: inset 0 0 0 1px #E8E8E8;
-}
 
 .shortcut--highlight {
-    box-shadow: inset 0 0 0 1px #E8E8E8;
+
 }
-    .shortcut__body {
-        position: relative;
-        width: 93px;
-        height: 93px;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
-        border-radius: 10px;
+    .shortcut__preview {
+        margin-bottom: 11px;
     }
-        .shortcut__preview {
-            position: absolute;
-            left: 12px;
-            top: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
-            background-color: rgba(255, 255, 255, 0.77);
-            border-radius: 8px;
+        .shortcut__image {
+            vertical-align: top;
+            border-radius: 2px;
+            background-color: var(--image-fallback);
         }
-            .shortcut__preview .icon {
-                fill: #545454;
-            }
 
-        .shortcut__heading {
-            position: absolute;
-            right: 12px;
-            bottom: 8px;
-            left: 12px;
-            text-align: right;
-            font-weight: bold;
-            font-size: 11px;
-            line-height: 18px;
-            color: inherit;
-        }
-            .shortcut__logo {
-                vertical-align: top;
-                fill: currentColor;
-                margin-left: -7px;
-                margin-right: 1px;
-            }
+    .shortcut__icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+        fill: #FFFFFF;
+    }
+
+    .shortcut__heading {
+        margin-left: 9px;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 19px;
+        color: #545454;
+        transition: color var(--transition-hover);
+    }
+
+    .shortcut__note {
+        margin-top: 4px;
+        margin-left: 9px;
+        font-size: 11px;
+        line-height: 16px;
+        color: #757575;
+        transition: color var(--transition-hover);
+    }
 
 
-
+.shortcut:hover {
+    background-color: #C4C4C4;
+}
+    .shortcut:hover .shortcut__heading {
+        color: #FFFFFF;
+    }
+    .shortcut:hover .shortcut__note {
+        color: #FFFFFF;
+    }
 
 .shortcut--your-area {
 
