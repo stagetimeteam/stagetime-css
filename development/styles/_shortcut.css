@@ -41,8 +41,10 @@
 
     .shortcut__icon {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 23px;
+        top: 19px;
+        width: 28px;
+        height: 28px;
         fill: #FFFFFF;
     }
 
