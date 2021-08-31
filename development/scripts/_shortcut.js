@@ -1,6 +1,6 @@
 (function($) {
 
-    $('.shortcut--organizations').on('click', function (event) {
+    $('.shortcut--your-area').on('click', function (event) {
         event.preventDefault();
         $('html').toggleClass('explore-location-visible');
     });

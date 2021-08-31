@@ -1,4 +1,5 @@
 .shortcut {
+    position: relative;
     display: inline-block;
     vertical-align: top;
     width: 170px;
@@ -15,11 +16,27 @@
 }
     .shortcut__preview {
         margin-bottom: 11px;
+        position: relative;
+        width: 152px;
+        height: 152px;
     }
         .shortcut__image {
             vertical-align: top;
-            border-radius: 2px;
             background-color: var(--image-fallback);
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
+            border-radius: 2px;
+        }
+
+        .shortcut__overlay {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+
+            border-radius: 2px;
         }
 
     .shortcut__icon {
@@ -58,13 +75,6 @@
         color: #FFFFFF;
     }
 
-.shortcut--your-area {
-
-}
-    .shortcut--your-area .shortcut__body {
-        background-color: #9CB2BE;
-        color: #FFFFFF;
-    }
 
 
 .shortcut--for-you {
@@ -73,6 +83,15 @@
     .shortcut--for-you .shortcut__body {
         background-color: #DDEAF1;
         color: #545454;
+    }
+
+
+.shortcut--your-area {
+
+}
+    .shortcut--your-area .shortcut__body {
+        background-color: #9CB2BE;
+        color: #FFFFFF;
     }
 
 
@@ -92,14 +111,3 @@
         background-color: #545454;
         color: #FFFFFF;
     }
-
-.shortcut--organizations {
-    display: none;
-}
-    .shortcut--organizations .shortcut__body {
-        background-color: #545454;
-        color: #FFFFFF;
-    }
-        .shortcut--organizations .shortcut__heading {
-            font-size: 10px;
-        }
