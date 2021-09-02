@@ -1,0 +1,34 @@
+.explore {
+
+}
+    .explore__wrap {
+
+    }
+        .explore__heading {
+
+        }
+
+        .explore__desktop-links {
+            display: flex;
+            align-items: flex-start;
+        }
+            .explore__desktop-item {
+                margin-left: 10px;
+            }
+
+            .explore__desktop-item:first-child {
+                margin-left: 0;
+            }
+
+
+        .explore__mobile-links {
+            display: flex;
+            align-items: flex-start;
+        }
+            .explore__mobile-item {
+                margin-left: 10px;
+            }
+
+            .explore__mobile-item:first-child {
+                margin-left: 0;
+            }
