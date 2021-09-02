@@ -137,7 +137,7 @@
         height: 16px;
     }
 
-    .shortcut__heading {
+    .shortcut--mobile .shortcut__heading {
         position: relative;
         font-weight: 600;
         font-size: 13px;

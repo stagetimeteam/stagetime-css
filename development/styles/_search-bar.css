@@ -5,7 +5,7 @@
         width: 100%;
         height: 32px;
         vertical-align: top;
-        padding: 12px 20px 12px 42px;
+        padding: 8px 20px 8px 42px;
         background-color: #FFFFFF;
         border: 1px solid #E8E8E8;
         outline: none;
@@ -16,6 +16,8 @@
         font-size: 10px;
         line-height: 14px;
         color: #545454;
+        transition: background-color var(--transition-hover),
+                    border-color var(--transition-hover);
     }
 
 
@@ -41,3 +43,35 @@
         fill: #AAAAAA;
         pointer-events: none;
     }
+
+
+
+.search-bar--alternate {
+
+}
+    .search-bar--alternate .search-bar__icon {
+        fill: #AAAAAA;
+    }
+
+    .search-bar--alternate .search-bar__widget {
+        height: 36px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #F4F4F4;
+        border-color: #F4F4F4;
+        color: #757575;
+    }
+
+    .search-bar--alternate .search-bar__widget:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #E8E8E8;
+    }
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .search-bar--alternate .search-bar__widget::-webkit-input-placeholder { font-style: normal; color: #757575; }
+    .search-bar--alternate .search-bar__widget::-moz-placeholder          { font-style: normal; color: #757575; opacity: 1; }
+    .search-bar--alternate .search-bar__widget:-ms-input-placeholder      { font-style: normal; color: #757575; }
+    /* stylelint-enable */
+
+
+
