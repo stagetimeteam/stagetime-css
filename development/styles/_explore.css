@@ -5,7 +5,11 @@
 
     }
         .explore__heading {
-
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 18px;
+            line-height: 20px;
+            color: #545454;
         }
 
         .explore__desktop-links {
@@ -24,6 +28,8 @@
         .explore__mobile-links {
             display: flex;
             align-items: flex-start;
+            padding-top: 24px;
+            padding-bottom: 22px;
         }
             .explore__mobile-item {
                 margin-left: 10px;
