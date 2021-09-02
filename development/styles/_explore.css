@@ -2,9 +2,13 @@
 
 }
     .explore__wrap {
-
+        position: relative;
+        height: 320px;
     }
         .explore__heading {
+            position: absolute;
+            left: 0;
+            top: 19px;
             margin-top: 0;
             margin-bottom: 0;
             font-size: 18px;
@@ -12,29 +16,66 @@
             color: #545454;
         }
 
-        .explore__desktop-links {
+        .explore__location {
+            position: absolute;
+            right: 0;
+            top: 14px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            font-size: 11px;
+            line-height: 16px;
+            color: #757575;
+        }
+            .explore__place {
+                margin: -7px 0 -7px 8px;
+                padding: 7px 15px 7px 13px;
+                display: inline-flex;
+                vertical-align: top;
+                align-items: center;
+                background-color: #545454;
+                border-radius: 15px;
+                font-weight: bold;
+                font-size: 11px;
+                line-height: 16px;
+                color: #FFFFFF;
+            }
+                .explore__point {
+                    vertical-align: top;
+                    margin-right: 7px;
+                    fill: #C5C5C5;
+                }
+
+        .explore__links {
+            position: absolute;
+            left: 0;
+            top: 56px;
             display: flex;
             align-items: flex-start;
         }
-            .explore__desktop-item {
+            .explore__item {
                 margin-left: 10px;
             }
 
-            .explore__desktop-item:first-child {
+            .explore__item:first-child {
                 margin-left: 0;
             }
 
 
-        .explore__mobile-links {
+        .explore__alternate-links {
+            position: absolute;
+            left: 0;
+            top: 56px;
             display: flex;
             align-items: flex-start;
-            padding-top: 24px;
-            padding-bottom: 22px;
         }
-            .explore__mobile-item {
-                margin-left: 10px;
+            .explore__alternate-item {
+                margin-left: 18px;
             }
 
-            .explore__mobile-item:first-child {
+            .explore__alternate-item:first-child {
                 margin-left: 0;
             }
+
+    .explore__show-search {
+
+    }
