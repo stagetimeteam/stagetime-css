@@ -1,0 +1,47 @@
+.news {
+    position: relative;
+    padding: 26px 0 23px 74px;
+}
+    .news__preview {
+        position: absolute;
+        left: 0;
+        top: 23px;
+    }
+
+    .news__heading {
+        font-size: 12px;
+        line-height: 19px;
+        color: #707070;
+    }
+        .news__heading .link {
+            font-weight: bold;
+        }
+
+        .news__heading .link--text-alike {
+            transition: opacity var(--transition-hover);
+        }
+
+        .news__heading:hover .link--text-alike {
+            opacity: 0.7;
+        }
+
+    .news__note {
+        margin-top: 2px;
+        font-size: 11px;
+        line-height: 23px;
+        color: #969696;
+    }
+
+    .news__organization {
+
+    }
+
+    .news__footer {
+
+    }
+
+    .news__actions {
+        position: absolute;
+        right: 0;
+        top: 13px;
+    }
