@@ -20,6 +20,13 @@
     padding-right: 0;
 }
 
+.container--updates {
+    width: 100%;
+    max-width: 958px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .container--referral {
     width: 750px;
 }
