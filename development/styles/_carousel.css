@@ -113,38 +113,6 @@
 
 
 
-
-.carousel--for-explore {
-
-}
-    .carousel--for-explore .carousel__container {
-
-    }
-        .carousel--for-explore .carousel__item {
-            padding-bottom: 13px;
-        }
-
-        .carousel--for-explore .carousel__item:last-child {
-
-        }
-
-
-        .carousel--for-explore .carousel__control {
-            position: absolute;
-            z-index: 100;
-            top: 50%;
-            right: -12px;
-        }
-
-        .carousel--for-explore .carousel__control--prev {
-            margin-top: -10px;
-        }
-
-        .carousel--for-explore .carousel__control--next {
-            margin-top: -52px;
-        }
-
-
 .carousel--for-updates {
 
 }

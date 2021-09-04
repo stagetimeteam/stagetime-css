@@ -151,46 +151,6 @@
 
 
 
-.carousel--for-explore {
-
-}
-
-.carousel--for-explore::after {
-    display: none;
-}
-
-    .carousel--for-explore .carousel__container {
-        margin-left: -20px;
-        margin-right: -20px;
-        padding-left: 14px;
-        padding-right: 14px;
-    }
-        .carousel--for-explore .carousel__item {
-            /*padding-bottom: 23px;*/
-        }
-
-        .carousel--for-explore .carousel__item:last-child {
-
-        }
-
-
-        .carousel--for-explore .carousel__control {
-            /*position: absolute;*/
-            /*z-index: 100;*/
-            /*top: 50%;*/
-            /*right: -12px;*/
-            display: none;
-        }
-
-        .carousel--for-explore .carousel__control--prev {
-            /*margin-top: -10px;*/
-        }
-
-        .carousel--for-explore .carousel__control--next {
-            /*margin-top: -52px;*/
-        }
-
-
 .carousel--for-updates {
 
 }
