@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.add</title>
+        <title>.org-panel</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1630836862">
@@ -14,68 +14,33 @@
 
 
 
-        <div style="width: 622px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.add</h1>
+            <h1>.org-panel</h1>
 
-            <div class="add">
-                <div class="add__visualisation">
-                    <button class="add__preview cover cover--clickable" type="button">
-                        <svg class="cover__icon" width="24" height="24">
-                            <use xlink:href="../symbols/symbols.svg?1630836862#24-picture"></use>
-                        </svg>
-                    </button>
-                    <div class="add__note">
-                        Add a video cover image.
-                    </div>
+
+            <a class="org-panel" href="#">
+                <div class="org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-40x40@2x.jpg 2x"
+                         src="../temp/organization-a-40x40.jpg"
+                         width="40"
+                         height="40"
+                         alt=""
+                    >
                 </div>
-                <div class="add__content">
-                    <div class="add__field input">
-                        <input class="input__widget" type="text" placeholder="Video Link">
-                    </div>
-                    <div class="add__field input">
-                        <input class="input__widget" type="text" placeholder="Video Title">
-                    </div>
-                    <div class="add__field input">
-                        <input class="input__widget" type="text" placeholder="Subtitle">
-                    </div>
+                <div class="org-panel__heading">
+                    <svg class="org-panel__icon" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1630836862#16-city"></use>
+                    </svg>
+                    Washington Concert Opera
                 </div>
-            </div>
-
-
-            <br>
-            <br>
-            <p>
-                Variation with the button to parse:
-            </p>
-
-
-            <div class="add">
-                <div class="add__visualisation">
-                    <button class="add__preview cover cover--clickable" type="button">
-                        <svg class="cover__icon" width="24" height="24">
-                            <use xlink:href="../symbols/symbols.svg?1630836862#24-picture"></use>
-                        </svg>
-                    </button>
-                    <div class="add__note">
-                        Add an image with your link (optional).
-                    </div>
+                <div class="org-panel__note">
+                    Executive Director
                 </div>
-                <div class="add__content">
-                    <div class="add__field input">
-                        <input class="input__widget" type="url" placeholder="Link URL">
-                    </div>
-                    <div class="add__field input">
-                        <input class="input__widget" type="text" placeholder="Link Title">
-                    </div>
-                    <div class="add__sub-action">
-                        <button class="add__parse link link--classic" type="button">
-                            Test this link
-                        </button>
-                    </div>
-                </div>
-            </div>
+            </a>
+
 
 
             <br>

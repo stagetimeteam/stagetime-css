@@ -1,11 +1,14 @@
 (function($) {
 
-    $('.dash-tiles__open-search').on('click', function () {
-        $('.dash-tiles').addClass('dash-tiles--search-expanded');
+    $('.dash-tiles__body > .scrollbar').on('scroll', function (){
+        if ( $(this).scrollTop() > 10 ) {
+            $('html').addClass('explore-collapsed');
+        }
     });
 
-    $('.dash-tiles__close-search').on('click', function () {
-        $('.dash-tiles').removeClass('dash-tiles--search-expanded');
+    $('.explore__show-search').on('click', function (){
+        $('html').addClass('explore-collapsed');
     });
 
+    
 })(jQuery);
