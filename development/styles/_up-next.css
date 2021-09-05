@@ -16,15 +16,15 @@
             border: none;
             width: 60px;
             height: 60px;
-            padding: 14px;
+            padding: 16px;
             background-color: #9CB2BE;
             border-radius: 50%;
             cursor: pointer;
         }
             .up-next__play-icon {
                 vertical-align: top;
-                width: 32px;
-                height: 32px;
+                width: 28px;
+                height: 28px;
                 fill: #FFFFFF;
             }
 

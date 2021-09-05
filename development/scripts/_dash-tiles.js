@@ -10,5 +10,5 @@
         $('html').addClass('explore-collapsed');
     });
 
-    
+
 })(jQuery);
