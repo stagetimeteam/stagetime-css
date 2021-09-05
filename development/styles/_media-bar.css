@@ -55,7 +55,13 @@
         width: 40px;
         height: 40px;
         cursor: pointer;
+        transition: transform var(--transition-long-hover);
     }
+
+    .media-bar__favorite:hover {
+        transform: scale(1.4);
+    }
+
         .media-bar__heart {
             vertical-align: top;
             position: absolute;
