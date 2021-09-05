@@ -1,11 +1,11 @@
-.media-bar {
+.media-bar__link {
     position: relative;
     /*display: block;*/
     /*padding: 3px 20px 5px 87px;*/
     /*text-decoration: none;*/
 }
 
-.media-bar:hover {
+.media-bar__link:hover {
     background-color: transparent;
 }
     .media-bar__image {

@@ -39,11 +39,6 @@
 
                     .dash-tiles__next,
                     .dash-tiles__news {
-                        height: 100%;
-                        /*height: calc(100vh - 476px);*/
-                        /*max-height: calc(100vh - 100px);*/
-                        /*max-height: 382px;*/
-                        /*border-bottom-left-radius: 0;*/
-                        /*border-bottom-right-radius: 0;*/
+
                     }
 
