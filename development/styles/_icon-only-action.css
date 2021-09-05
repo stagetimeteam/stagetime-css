@@ -1,0 +1,34 @@
+.icon-only-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.icon-only-action::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    right: 4px;
+    bottom: 4px;
+    border-radius: 3px;
+    transition: background-color var(--transition-hover);
+}
+
+.icon-only-action:hover::before {
+    background-color: #F2F2F2;
+}
+    .icon-only-action__icon {
+        position: relative;
+        vertical-align: top;
+        fill: #545454;
+        width: 16px;
+        height: 16px;
+    }

@@ -33,15 +33,25 @@
     }
 
     .news__organization {
-
+        margin-top: 21px;
     }
 
     .news__footer {
-
+        margin-top: 7px;
+        margin-left: -4px;
+        display: flex;
+        align-items: flex-start;
     }
+        .news__additional-action {
+            margin-left: 28px;
+        }
+
+        .news__additional-action:first-child {
+            margin-left: 0;
+        }
 
     .news__actions {
         position: absolute;
-        right: 0;
-        top: 13px;
+        right: -30px;
+        top: 16px;
     }

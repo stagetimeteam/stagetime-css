@@ -1,0 +1,39 @@
+.org-panel {
+    position: relative;
+    display: block;
+    padding: 13px 24px 13px 71px;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color var(--transition-hover);
+}
+
+.org-panel:hover {
+    background-color: #E0E0E0;
+}
+
+    .org-panel__preview {
+        position: absolute;
+        left: 14px;
+        top: 13px;
+    }
+
+    .org-panel__heading {
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 18px;
+        color: #757575;
+    }
+        .org-panel__icon {
+            vertical-align: top;
+            fill: #C5C5C5;
+            margin-right: 3px;
+        }
+
+    .org-panel__note {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #757575;
+    }
+
