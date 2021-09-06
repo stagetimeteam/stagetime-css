@@ -210,6 +210,11 @@
         text-align: center;
         /*transition: color var(--transition-hover);*/
     }
+
+    .shortcut--for-you .shortcut__heading {
+        margin-left: 0;
+    }
+
         .explore-collapsed .shortcut__your {
             display: none;
         }
