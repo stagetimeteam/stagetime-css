@@ -63,26 +63,6 @@
                 margin-left: 0;
             }
 
-
-        .explore__alternate-links {
-            position: absolute;
-            left: 0;
-            top: 56px;
-            display: flex;
-            align-items: flex-start;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity var(--transition-long-show),
-                        visibility var(--transition-long-show);
-        }
-            .explore__alternate-item {
-                margin-left: 18px;
-            }
-
-            .explore__alternate-item:first-child {
-                margin-left: 0;
-            }
-
     .explore__show-search {
         position: absolute;
         right: 20px;
@@ -127,7 +107,6 @@
 
 }
     .explore-collapsed .explore__wrap {
-        /*position: relative;*/
         height: 112px;
     }
         .explore-collapsed .explore__heading {
@@ -176,34 +155,18 @@
             /*top: 56px;*/
             /*display: flex;*/
             /*align-items: flex-start;*/
-            opacity: 0;
-            visibility: hidden;
+            /*opacity: 0;*/
+            /*visibility: hidden;*/
         }
             .explore-collapsed .explore__item {
-                /*margin-left: 40px;*/
+                margin-left: 18px;
             }
 
             .explore-collapsed .explore__item:first-child {
-                /*margin-left: 0;*/
+                margin-left: 0;
             }
 
 
-        .explore-collapsed .explore__alternate-links {
-            /*position: absolute;*/
-            /*left: 0;*/
-            /*top: 56px;*/
-            /*display: flex;*/
-            /*align-items: flex-start;*/
-            opacity: 1;
-            visibility: visible;
-        }
-            .explore-collapsed .explore__alternate-item {
-                /*margin-left: 18px;*/
-            }
-
-            .explore-collapsed .explore__alternate-item:first-child {
-                /*margin-left: 0;*/
-            }
 
     .explore-collapsed .explore__show-search {
         /*position: absolute;*/
