@@ -8,10 +8,10 @@
     border-radius: 4px;
     text-decoration: none;
     transition: background-color var(--transition-hover),
-                border-radius var(--transition-show),
-                box-shadow var(--transition-show),
-                width var(--transition-show),
-                padding var(--transition-show);
+                border-radius var(--transition-long-show),
+                box-shadow var(--transition-long-show),
+                width var(--transition-long-show),
+                padding var(--transition-long-show);
 }
 
 
@@ -26,8 +26,8 @@
         bottom: 0;
         border-radius: 4px;
         opacity: 0; /* will be visible when collapsed */
-        transition: border-radius var(--transition-show),
-                    opacity var(--transition-show);
+        transition: border-radius var(--transition-long-show),
+                    opacity var(--transition-long-show);
     }
 
     .shortcut__preview {
@@ -36,9 +36,9 @@
         width: 152px;
         height: 152px;
         overflow: hidden;
-        transition: height var(--transition-show),
-                    margin-bottom var(--transition-show),
-                    opacity var(--transition-show);
+        transition: height var(--transition-long-show),
+                    margin-bottom var(--transition-long-show),
+                    opacity var(--transition-long-show);
     }
         .shortcut__image {
             vertical-align: top;
@@ -75,7 +75,7 @@
         line-height: 19px;
         color: #545454;
         transition: color var(--transition-hover),
-                    font-size  var(--transition-show);
+                    font-size  var(--transition-long-show);
     }
         .shortcut__your {
 
@@ -89,8 +89,8 @@
         line-height: 16px;
         color: #757575;
         transition: color var(--transition-hover),
-                    height var(--transition-show),
-                    opacity var(--transition-show);
+                    height var(--transition-long-show),
+                    opacity var(--transition-long-show);
     }
 
 

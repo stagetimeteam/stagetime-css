@@ -1,12 +1,15 @@
 (function($) {
 
-    $('.dash-tiles__body > .scrollbar').on('scroll', function (){
-        if ( $(this).scrollTop() > 10 ) {
+    $(document).on('scroll', function (){
+        if ( $(document).scrollTop() > 200 ) {
             $('html').addClass('explore-collapsed');
+        }
+        if ( $(document).scrollTop() === 0 ) {
+            $('html').removeClass('explore-collapsed');
         }
     });
 
-    $('.explore__show-search').on('click', function (){
+    $('.explore__show-search').on('click', function () {
         $('html').addClass('explore-collapsed');
     });
 
