@@ -3,14 +3,22 @@
     padding-left: var(--dialogs-width);
 }
     .chat__list {
-        position: fixed;
+        position: absolute;
         left: var(--sidebar-width);
-        top: var(--header-height);
-        bottom: 0;
+        top: 0;
         width: var(--dialogs-width);
         background-color: #F9F9F9;
         overflow-y: auto;
     }
+
+    @media (min-width: 1240px) {
+        .chat__list {
+            position: fixed;
+            top: var(--header-height);
+            bottom: 0;
+        }
+    }
+
         .chat__crowd {
 
         }
