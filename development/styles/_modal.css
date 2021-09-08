@@ -17,13 +17,15 @@
     }
 
 
+.modal--skeleton {
 
-.modal-skeleton .modal-content {
-    box-shadow: none;
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
 }
+    .modal--skeleton .modal-content {
+        box-shadow: none;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+    }
 
 
 .modal--688px {
