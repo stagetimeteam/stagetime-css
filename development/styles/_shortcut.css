@@ -42,9 +42,19 @@
     }
         .shortcut__image {
             vertical-align: top;
+            width: 102px;
+            height: 102px;
             background-color: var(--image-fallback);
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
             border-radius: 2px;
+        }
+
+        @media (min-width: 1400px) {
+
+            .shortcut__image {
+                width: 152px;
+                height: 152px;
+            }
         }
 
         .shortcut__overlay {
@@ -92,6 +102,9 @@
                     height var(--transition-long-show),
                     opacity var(--transition-long-show);
     }
+
+
+
 
 
 .shortcut:hover {

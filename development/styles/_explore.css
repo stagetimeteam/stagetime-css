@@ -56,7 +56,13 @@
                         visibility var(--transition-long-show);
         }
             .explore__item {
-                margin-left: 40px;
+                margin-left: 20px;
+            }
+
+            @media (min-width: 1400px) {
+                .explore__item {
+                    margin-left: 40px;
+                }
             }
 
             .explore__item:first-child {
