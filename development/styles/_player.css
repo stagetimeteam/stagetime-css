@@ -9,6 +9,7 @@
 }
     .player__menu {
         position: absolute;
+        z-index: 10;
         left: 0;
         top: 4px;
     }
