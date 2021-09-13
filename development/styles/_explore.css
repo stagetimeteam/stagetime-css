@@ -97,8 +97,8 @@
     .explore__search {
         position: absolute;
         right: 0;
-        top: 52px;
-        width: 180px;
+        top: 51px;
+        width: 160px;
         opacity: 0;
         visibility: hidden;
         transition: opacity var(--transition-long-show),
@@ -175,11 +175,12 @@
 
         .explore__show-search {
             top: 154px;
-            right: 16px;
+            right: 0;
         }
 
         .explore__search {
-            width: 230px;
+            width: 210px;
+            top: 53px
         }
 }
 
@@ -195,7 +196,7 @@
     }
 
     .explore__show-search {
-        right: 20px;
+        right: 15px;
     }
 
     .explore__search {

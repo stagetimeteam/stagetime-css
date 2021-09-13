@@ -153,7 +153,7 @@
 
 .explore-collapsed .shortcut {
     width: 110px;
-    padding: 5px 10px 6px;
+    padding: 5px 10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
     border-radius: 15px;
 }
@@ -190,6 +190,7 @@
 
     .explore-collapsed .shortcut__heading {
         margin-left: 10px;
+        margin-top: 0;
         font-weight: 600;
         font-size: 11px;
         color: #FFFFFF;
@@ -230,7 +231,7 @@
 
     .shortcut {
         width: 170px;
-        padding: 9px;
+        padding: 9px 9px 11px;
     }
         .shortcut__preview {
             margin-bottom: 11px;
@@ -251,6 +252,7 @@
 
         .shortcut__heading {
             margin-left: 9px;
+            margin-top: 0;
             font-size: 15px;
             line-height: 19px;
         }
@@ -275,6 +277,7 @@
         .explore-collapsed .shortcut__heading {
             margin-left: 26px;
             font-size: 13px;
+            margin-bottom: 1px;
         }
 }
 
