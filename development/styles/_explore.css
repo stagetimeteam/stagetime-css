@@ -107,7 +107,7 @@
         @media (max-width: 1399px) {
             .explore__search .search-bar__widget {
                 padding-left: 38px;
-                padding-right: 14px;
+                padding-right: 12px;
             }
         }
 
@@ -185,7 +185,7 @@
         }
 
         .explore__search {
-            width: 210px;
+            width: 216px;
             top: 53px
         }
 }
