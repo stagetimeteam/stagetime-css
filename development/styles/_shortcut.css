@@ -35,6 +35,8 @@
         position: relative;
         width: 112px;
         height: 112px;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
+        border-radius: 2px;
         overflow: hidden;
         transition: height var(--transition-long-show),
                     margin-bottom var(--transition-long-show),
@@ -45,7 +47,6 @@
             width: 112px;
             height: 112px;
             background-color: var(--image-fallback);
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
             border-radius: 2px;
         }
 
