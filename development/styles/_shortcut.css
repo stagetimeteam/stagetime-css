@@ -222,92 +222,38 @@
 
 
 
-@media (min-width: 1400px) {
+
+
+
+
+@media (min-width: 1340px) {
 
     .shortcut {
-        /*position: relative;*/
-        /*display: inline-block;*/
-        /*vertical-align: top;*/
         width: 170px;
         padding: 9px;
-        /*background-color: #F8F8F8;*/
-        /*border-radius: 4px;*/
-        /*text-decoration: none;*/
-        /*transition: background-color var(--transition-hover),*/
-        /*            border-radius var(--transition-long-show),*/
-        /*            box-shadow var(--transition-long-show),*/
-        /*            width var(--transition-long-show),*/
-        /*            padding var(--transition-long-show);*/
     }
-
-
-    .shortcut--highlight {
-
-    }
-        .shortcut__background {
-            /*position: absolute;*/
-            /*left: 0;*/
-            /*top: 0;*/
-            /*right: 0;*/
-            /*bottom: 0;*/
-            /*border-radius: 4px;*/
-            /*opacity: 0; !* will be visible when collapsed *!*/
-            /*transition: border-radius var(--transition-long-show),*/
-            /*            opacity var(--transition-long-show);*/
-        }
-
         .shortcut__preview {
             margin-bottom: 11px;
-            /*position: relative;*/
             width: 152px;
             height: 152px;
-            /*overflow: hidden;*/
-            /*transition: height var(--transition-long-show),*/
-            /*            margin-bottom var(--transition-long-show),*/
-            /*            opacity var(--transition-long-show);*/
         }
             .shortcut__image {
-                /*vertical-align: top;*/
                 width: 152px;
                 height: 152px;
-                /*background-color: var(--image-fallback);*/
-                /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);*/
-                /*border-radius: 2px;*/
-            }
-
-            .shortcut__overlay {
-                /*content: "";*/
-                /*position: absolute;*/
-                /*left: 0;*/
-                /*top: 0;*/
-                /*right: 0;*/
-                /*bottom: 0;*/
-                /*display: block;*/
-                /*border-radius: 2px;*/
             }
 
         .shortcut__icon {
-            /*position: absolute;*/
             right: 23px;
             top: 19px;
             width: 28px;
             height: 28px;
-            /*fill: #FFFFFF;*/
         }
 
         .shortcut__heading {
             margin-left: 9px;
-            /*position: relative;*/
-            /*font-weight: bold;*/
             font-size: 15px;
             line-height: 19px;
-            /*color: #545454;*/
-            /*transition: color var(--transition-hover),*/
-            /*            font-size var(--transition-long-show);*/
         }
-            .shortcut__your {
-
-            }
 
         .shortcut__note {
             margin-top: 4px;
@@ -315,81 +261,20 @@
             height: 32px;
             font-size: 11px;
             line-height: 16px;
-            /*color: #757575;*/
-            /*transition: color var(--transition-hover),*/
-            /*            height var(--transition-long-show),*/
-            /*            opacity var(--transition-long-show);*/
         }
 
 
 
     .explore-collapsed .shortcut {
         width: 127px;
-        /*padding: 5px 10px 6px;*/
-        /*box-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);*/
-        /*border-radius: 15px;*/
     }
-
-
-    .explore-collapsed .shortcut--highlight {
-
-    }
-        .explore-collapsed .shortcut__background {
-            /*opacity: 1;*/
-            /*border-radius: 15px;*/
-        }
-
-        .explore-collapsed .shortcut__preview {
-            /*margin-bottom: 0;*/
-            /*width: 152px;*/
-            /*height: 0;*/
-            /*opacity: 0;*/
-        }
-            .explore-collapsed .shortcut__image {
-
-            }
-
-            .explore-collapsed .shortcut__overlay {
-
-            }
-
         .explore-collapsed .shortcut__icon {
             right: 90px;
-            /*top: 6px;*/
-            /*width: 16px;*/
-            /*height: 16px;*/
         }
 
         .explore-collapsed .shortcut__heading {
             margin-left: 26px;
-            /*font-weight: 600;*/
             font-size: 13px;
-            /*color: #FFFFFF;*/
-            /*text-align: center;*/
-        }
-
-        .explore-collapsed .shortcut--for-you .shortcut__heading {
-            /*margin-left: 0;*/
-        }
-            .explore-collapsed .shortcut__your {
-                /*display: none;*/
-            }
-
-        .explore-collapsed .shortcut__note {
-            /*margin-top: 0;*/
-            /*height: 0;*/
-            /*opacity: 0;*/
-        }
-
-
-    .explore-collapsed .shortcut:hover {
-
-    }
-        .explore-collapsed .shortcut:hover .shortcut__heading {
-
-        }
-        .explore-collapsed .shortcut:hover .shortcut__note {
-
         }
 }
 
