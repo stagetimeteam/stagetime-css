@@ -1,0 +1,34 @@
+.clearer {
+    position: relative;
+    display: inline-block;
+    vertical-align: baseline;
+    align-items: flex-start;
+    background-color: transparent;
+    padding: 10px 8px 10px 33px;
+    border: none;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.clearer:hover {
+    background-color: #F2F2F2;
+}
+    .clearer__icon {
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        fill: #C4C4C4;
+        transition: fill var(--transition-hover);
+    }
+
+
+.clearer:hover {
+    color: #545454;
+}
+    .clearer:hover .clearer__icon {
+        fill: #545454;
+    }

@@ -51,6 +51,9 @@
             line-height: 16px;
             color: #757575;
         }
+            .up-next__note .clearer {
+                margin: -10px -8px;
+            }
 
     .up-next__list {
         padding-top: 15px;
