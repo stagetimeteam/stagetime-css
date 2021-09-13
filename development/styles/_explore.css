@@ -104,6 +104,12 @@
         transition: opacity var(--transition-long-show),
                     visibility var(--transition-long-show);
     }
+        @media (max-width: 1399px) {
+            .explore__search .search-bar__widget {
+                padding-left: 38px;
+                padding-right: 14px;
+            }
+        }
 
 .explore-collapsed {
 
