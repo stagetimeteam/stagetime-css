@@ -2,8 +2,8 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
 }
 
 .container--organisation {
@@ -12,21 +12,15 @@
 
 .container--feed {
     width: 670px;
-    padding-left: 0;
-    padding-right: 0;
+    border-left: none;
+    border-right: none;
 }
 
 .container--explore {
-    width: 902px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.container--updates {
     width: 100%;
-    max-width: 958px;
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 950px;
+    border-left-width: 24px;
+    border-right-width: 24px;
 }
 
 .container--referral {
@@ -50,21 +44,22 @@
 
 .container--dashboard {
     width: 670px;
-    padding-left: 0;
-    padding-right: 0;
+    border-left-width: 0;
+    border-right-width: 0;
 }
+
     @media (min-width: 1240px) {
         .container--dashboard {
             width: 100%;
             max-width: 1200px;
-            padding-left: 40px;
-            padding-right: 40px;
+            border-left-width: 40px;
+            border-right-width: 40px;
         }
     }
 
     @media (min-width: 1300px) {
         .container--dashboard {
-            padding-left: 58px;
-            padding-right: 58px;
+            border-left-width: 58px;
+            border-right-width: 58px;
         }
     }
