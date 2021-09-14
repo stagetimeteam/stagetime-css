@@ -36,7 +36,7 @@
     }
         .venue__follow.button,
         .venue__follow .button {
-            padding: 7px 30px;
+            padding: 7px 30px 7px 22px;
             font-weight: bold;
             font-size: 11px;
         }
