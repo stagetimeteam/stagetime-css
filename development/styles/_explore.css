@@ -104,6 +104,7 @@
         transition: opacity var(--transition-long-show),
                     visibility var(--transition-long-show);
     }
+
         @media (max-width: 1399px) {
             .explore__search .search-bar__widget {
                 padding-left: 38px;
@@ -186,7 +187,7 @@
 
         .explore__search {
             width: 216px;
-            top: 53px
+            top: 53px;
         }
 }
 
