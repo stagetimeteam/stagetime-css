@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.crowd</title>
+        <title>.player2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1631650300">
@@ -14,19 +14,59 @@
 
 
 
-        <div style="width: 444px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.crowd</h1>
+            <h1>.player2</h1>
 
-            <div class="crowd">
-                <svg class="crowd__icon" width="32" height="32">
-                    <use xlink:href="../symbols/symbols.svg?1631650300#32-crowd"></use>
-                </svg>
-                999
+
+            <div class="player2">
+                <audio id="player2" preload="auto">
+                    <source src="../temp/audio/epic.mp3" type="audio/mp3">
+                </audio>
+                <div class="player2__controls">
+                    <button class="player__action player__action--bookmark" type="button">
+                        <svg class="player__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1631650300#16-bookmark"></use>
+                        </svg>
+                    </button>
+                    <button class="player__action player__action--disabled player__action--backward" type="button">
+                        <svg class="player__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1631650300#16-backward"></use>
+                        </svg>
+                    </button>
+                    <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/brandon-bell-when-the-air.jpg);">
+                        <svg class="player__icon player__icon--play" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1631650300#16-play"></use>
+                        </svg>
+                        <svg class="player__icon player__icon--pause" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1631650300#16-pause"></use>
+                        </svg>
+                        <div class="player__visualization playback">
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                        </div>
+                    </button>
+                    <button class="player__action player__action--forward" type="button">
+                        <svg class="player__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1631650300#16-forward"></use>
+                        </svg>
+                    </button>
+                    <button class="player__action player__action--shuffle" type="button">
+                        <svg class="player__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1631650300#16-shuffle"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="player2__overflow">
+                    <div class="player2__timeline">
+                        <div class="player2__playhead"></div>
+                    </div>
+                </div>
             </div>
-
-
 
 
             <br>
