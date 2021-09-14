@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.crowd</title>
+        <title>.player2</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -14,17 +14,47 @@
 
 
 
-        <div style="width: 444px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.crowd</h1>
+            <h1>.player2</h1>
 
-            <div class="crowd">
-                <img class="crowd__icon" src="../symbols/32-crowd.svg" width="32" height="32" alt="">
-                999
+
+            <div class="player2">
+                <audio id="player2" preload="auto">
+                    <source src="../temp/audio/epic.mp3" type="audio/mp3">
+                </audio>
+                <div class="player2__controls">
+                    <button class="player__action player__action--bookmark" type="button">
+                        <img class="player__icon" src="../symbols/16-bookmark.svg" width="16" height="16" alt="">
+                    </button>
+                    <button class="player__action player__action--disabled player__action--backward" type="button">
+                        <img class="player__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
+                    </button>
+                    <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/brandon-bell-when-the-air.jpg);">
+                        <img class="player__icon player__icon--play" src="../symbols/16-play.svg" width="16" height="16" alt="">
+                        <img class="player__icon player__icon--pause" src="../symbols/16-pause.svg" width="16" height="16" alt="">
+                        <div class="player__visualization playback">
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                            <div class="playback__bar"></div>
+                        </div>
+                    </button>
+                    <button class="player__action player__action--forward" type="button">
+                        <img class="player__icon" src="../symbols/16-forward.svg" width="16" height="16" alt="">
+                    </button>
+                    <button class="player__action player__action--shuffle" type="button">
+                        <img class="player__icon" src="../symbols/16-shuffle.svg" width="16" height="16" alt="">
+                    </button>
+                </div>
+                <div class="player2__overflow">
+                    <div class="player2__timeline">
+                        <div class="player2__playhead"></div>
+                    </div>
+                </div>
             </div>
-
-
 
 
             <br>
