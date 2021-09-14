@@ -44,7 +44,8 @@
         position: absolute;
         z-index: 30;
         left: 16px;
-        top: 13px;
+        top: 50%;
+        margin-top: -33px;
         border-radius: 6px;
     }
 
