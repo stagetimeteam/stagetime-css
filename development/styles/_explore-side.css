@@ -8,6 +8,11 @@
         margin-left: auto;
         margin-right: auto;
     }
+
+    .dashboard--enlarged-aside .explore-side__container {
+        width: 238px;
+    }
+
         .explore-side__location {
 
         }
