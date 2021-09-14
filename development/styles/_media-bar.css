@@ -74,21 +74,10 @@
 
         .media-bar__heart--outline {
             fill: #757575;
-            display: block;
         }
 
         .media-bar__heart--full {
             fill: #545454;
-            display: none;
-        }
-
-
-        .media-bar--favorite .media-bar__heart--outline {
-            display: none;
-        }
-
-        .media-bar--favorite .media-bar__heart--full {
-            display: block;
         }
 
 
