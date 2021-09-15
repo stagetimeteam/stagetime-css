@@ -18,19 +18,19 @@
     }
 
     function initProgressBar() {
-        jQuery(".player__action--play").empty().text("PAUSE");
+        jQuery(".player2 .player__action--play").empty().text("PAUSE");
         player1 = document.getElementById("player2");
         player1.addEventListener("timeupdate", timeCal);
-        var playBtn = jQuery(".player__action--play");
+        var playBtn = jQuery(".player2 .player__action--play");
         playBtn.click(function() {
             if (player1.paused === false) {
                 player1.pause();
                 isPlaying = false;
-                jQuery(".player__action--play").empty().text("PLAY");
+                jQuery(".player2 .player__action--play").empty().text("PLAY");
             } else {
                 player1.play();
                 isPlaying = true;
-                jQuery(".player__action--play").empty().text("PAUSE");
+                jQuery(".player2 .player__action--play").empty().text("PAUSE");
             }
         });
 
