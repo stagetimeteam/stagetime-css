@@ -216,6 +216,11 @@
             border-radius: 2px;
         }
 
+    .player3__menu {
+        position: absolute;
+        right: 20px;
+        bottom: 16px;
+    }
 
 .player3--collapsed {
 
