@@ -7,7 +7,7 @@
         position: relative;
         display: block;
         min-height: 90px;
-        padding: 23px 60px 25px 121px;
+        padding: 23px 24px 25px 121px;
         text-decoration: none;
     }
         .media-bar__image {
@@ -18,6 +18,7 @@
         }
 
         .media-bar__name {
+            margin-right: 30px; /* because of heart */
             font-weight: bold;
             font-size: 12px;
             line-height: 20px;
