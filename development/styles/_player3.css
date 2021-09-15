@@ -101,6 +101,106 @@
         }
 
 
+    .player3__controls {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 9px;
+    }
+        .player3__action {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            user-select: none;
+        }
+            .player3__icon {
+                position: absolute;
+                z-index: 30; /* higher than buttons background */
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                vertical-align: top;
+                fill: #FFFFFF;
+                transition: fill var(--transition-hover),
+                            opacity var(--transition-show),
+                            visibility var(--transition-show);
+                user-select: none;
+            }
+
+            .player3__action:hover .player3__icon {
+                fill: #C4D1D8;
+            }
+
+            .player3__action:active .player3__icon {
+                transition: none;
+            }
+
+        .player3__action--disabled,
+        .player3__action--disabled:hover {
+            cursor: default;
+        }
+            .player3__action--disabled .player3__icon,
+            .player3__action--disabled:hover .player3__icon {
+                fill: #757575;
+            }
+
+
+            /* play button background layer */
+            .player3__action--play::before {
+                content: "";
+                position: absolute;
+                z-index: 10; /* lower than icon */
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 28px;
+                height: 28px;
+                background-color: #5D6162;
+                border-radius: 50%;
+                transition: background-color var(--transition-hover);
+            }
+
+            .player3__action--play:active .player3__action--play::before {
+                transition: none;
+            }
+
+
+
+        .player3__action--play:hover .player3__icon {
+            fill: #9CB2BE;
+        }
+
+        .player3__action--play:hover::before {
+            background-color: #C2C2C2;
+        }
+
+
+        /* disabled until song loaded */
+        .player3__action--play.player3__action--disabled,
+        .player3__action--play.player3__action--disabled:hover {
+
+        }
+            .player3__action--play.player3__action--disabled::before,
+            .player3__action--play.player3__action--disabled:hover::before {
+                background-color: #ABC0CC;
+            }
+
+            .player3__action--play.player3__action--disabled .player3__icon,
+            .player3__action--play.player3__action--disabled:hover .player3__icon {
+                fill: #BDCDD5;
+            }
+
+
+
+
 .player3--collapsed {
 
 }
