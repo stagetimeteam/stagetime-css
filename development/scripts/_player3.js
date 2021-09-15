@@ -83,13 +83,18 @@
     //     $(wavesurfer.params.container).parents('.player').addClass('player--paused').removeClass('player--playing');
     // });
     //
-    // $('.player__action--bookmark').on('click', function (){
-    //     $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-bookmarked");
-    // });
-    //
-    // $('.player__action--shuffle').on('click', function (){
-    //     $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-shuffled");
-    // });
+
+    $('.player3__action--play').on('click', function () {
+        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
+    });
+
+    $('.player3__action--bookmark').on('click', function () {
+        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-small-heart");
+    });
+
+    $('.player__action--shuffle').on('click', function (){
+        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-shuffled");
+    });
     //
     //
 
