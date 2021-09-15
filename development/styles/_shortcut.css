@@ -13,11 +13,6 @@
                 width var(--transition-long-show),
                 padding var(--transition-long-show);
 }
-
-
-.shortcut--highlight {
-
-}
     .shortcut__background {
         position: absolute;
         left: 0;
@@ -70,8 +65,9 @@
             margin: auto;
             vertical-align: top;
             fill: #FFFFFF;
+            opacity: 0;
+            transition: opacity var(--transition-show);
         }
-
     .shortcut__icon {
         position: absolute;
         right: 19px;
@@ -160,6 +156,13 @@
     }
 
 
+
+.shortcut--highlight {
+    
+}
+    .shortcut--highlight .shortcut__wave {
+        opacity: 1;
+    }
 
 
 
