@@ -1,5 +1,7 @@
 (function($) {
 
+    var forwardButtonPressed = 0;
+
     // var wavesurfer = WaveSurfer.create({
     //     container: '.player__progress',
     //     barWidth: 1,
@@ -89,14 +91,20 @@
     });
 
     $('.player3__action--bookmark').on('click', function () {
-        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-small-heart");
+        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-smaller-heart");
     });
 
-    $('.player__action--shuffle').on('click', function (){
+    $('.player__action--shuffle').on('click', function () {
         $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-shuffled");
     });
-    //
-    //
+
+    $('.player3__action--forward').on('click', function () {
+        $('.player3__action--backward').removeClass('player3__action--disabled');
+        forwardButtonPressed++;
+        if(forwardButtonPressed === 3) {
+            $('.player3__action--forward').addClass('player3__action--disabled');
+        }
+    });
 
     /* Collapsed case */
 
