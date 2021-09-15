@@ -44,12 +44,12 @@
             justify-content: center;
         }
             .dash-tiles__news {
-                width: 50%;
+                width: 45%;
                 padding-right: 24px;
             }
 
             .dash-tiles__next {
-                width: 50%;
+                width: 55%;
                 border-left: 1px solid #E8E8E8;
                 padding-left: 24px;
             }
