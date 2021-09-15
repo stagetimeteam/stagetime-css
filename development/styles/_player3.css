@@ -116,3 +116,7 @@
         .player3--collapsed .player3__angle {
             transform: scaleY(-1);
         }
+
+    .player3--collapsed .player3__data {
+        left: 83px;
+    }
