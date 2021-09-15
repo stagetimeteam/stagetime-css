@@ -94,7 +94,7 @@
         $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-smaller-heart");
     });
 
-    $('.player__action--shuffle').on('click', function () {
+    $('.player3__action--shuffle').on('click', function () {
         $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-shuffled");
     });
 
