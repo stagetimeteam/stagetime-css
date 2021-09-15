@@ -61,6 +61,17 @@
             border-radius: 2px;
         }
 
+        .shortcut__wave {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            vertical-align: top;
+            fill: #FFFFFF;
+        }
+
     .shortcut__icon {
         position: absolute;
         right: 19px;
