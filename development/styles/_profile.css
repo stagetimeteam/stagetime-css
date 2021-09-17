@@ -3,10 +3,10 @@
     z-index: 1020;
     right: 20px;
     top: 47px;
-    width: 200px;
+    width: 191px;
     background-color: #FFFFFF;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+    border-radius: 6px;
     overflow: hidden; /* cut corners (hovers inside for example) */
     opacity: 0;
     visibility: hidden;
@@ -32,18 +32,18 @@
         }
 
         .profile__organisation {
-            margin-top: 6px;
+            margin-top: 8px;
             margin-left: 21px;
             margin-right: 21px;
         }
 
         .profile__logout {
-            margin-top: 26px;
+            margin-top: 23px;
             box-shadow: 0 -1px 0 #E8E8E8;
         }
 
         .profile__logout.nav-link,
         .profile__logout > .nav-link {
             border-top: 9px solid transparent; /* expand clickable area */
-            border-bottom: 9px solid transparent; /* expand clickable area */
+            border-bottom: 12px solid transparent; /* expand clickable area */
         }
