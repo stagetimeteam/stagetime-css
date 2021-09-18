@@ -3,6 +3,7 @@
     padding-bottom: 20px;
 }
     .menu__link {
+        position: relative;
         display: flex;
         align-items: flex-start;
         padding: 15px 28px;
