@@ -1,34 +1,32 @@
 .menu {
-    padding-top: 14px;
-    padding-bottom: 20px;
+
 }
     .menu__link {
         position: relative;
         display: flex;
         align-items: flex-start;
-        padding: 15px 28px;
-        font-size: 14px;
+        padding: 11px 23px;
+        font-weight: 600;
+        font-size: 13px;
         line-height: 18px;
-        color: #757575;
+        color: #545454;
         text-decoration: none;
-    }
-
-    .menu__link:first-child:last-child {
-        margin-top: -14px;
-        margin-bottom: -20px;
+        transition: color var(--transition-hover);
     }
 
     .menu__link:hover {
         background-color: #F6F6F6;
-        color: #545454;
     }
         .menu__icon {
             flex-shrink: 0;
             vertical-align: top;
-            margin-right: 17px;
-            margin-top: -4px;
+            margin-right: 23px;
+            margin-top: 0;
             margin-bottom: -2px;
-            fill: currentColor;
+            width: 16px;
+            height: 16px;
+            fill: #C5C5C5;
+            transition: fill var(--transition-hover);
         }
 
 
@@ -38,24 +36,6 @@
 }
 
 
-
-.menu--smaller {
-    padding-top: 12px;
-    padding-bottom: 12px;
-}
-    .menu--smaller .menu__link {
-        padding: 10px 18px 11px;
-        font-weight: bold;
-        font-size: 10px;
-        line-height: 16px;
-    }
-        .menu--smaller .menu__icon {
-            margin-left: -1px;
-            margin-right: 12px;
-            margin-top: 0;
-            width: 16px;
-            height: 16px;
-        }
 
 
 .menu--checklist {

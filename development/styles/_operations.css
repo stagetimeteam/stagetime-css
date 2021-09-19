@@ -44,6 +44,17 @@
         border-radius: 10px;
         overflow: hidden; /* cut hovers */
     }
+        .operations__dropdown {
+            padding-top: 14px;
+            padding-bottom: 20px;
+        }
+            .operations__dropdown .menu__link:first-child:last-child {
+                margin-top: -14px;
+                margin-bottom: -20px;
+            }
+
+
+
 
 
 .operations--expanded {

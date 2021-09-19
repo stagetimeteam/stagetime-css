@@ -28,22 +28,18 @@
 
         .profile__menu {
             border-top: 1px solid #E8E8E8;
-            padding-top: 13px;
+            padding-top: 10px;
+            padding-bottom: 10px;
         }
 
         .profile__organisation {
-            margin-top: 8px;
             margin-left: 21px;
             margin-right: 21px;
         }
 
         .profile__logout {
             margin-top: 23px;
-            box-shadow: 0 -1px 0 #E8E8E8;
-        }
-
-        .profile__logout.nav-link,
-        .profile__logout > .nav-link {
-            border-top: 9px solid transparent; /* expand clickable area */
-            border-bottom: 12px solid transparent; /* expand clickable area */
+            border-top: 1px solid #E8E8E8;
+            padding-top: 7px;
+            padding-bottom: 7px;
         }
