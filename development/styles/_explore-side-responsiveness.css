@@ -8,14 +8,6 @@
         /*margin-left: auto;*/
         /*margin-right: auto;*/
     }
-        .explore-side__location {
-            display: none; /* will be shown by .explore-location-visible */
-        }
-
-        .explore-location-visible .explore-side__location {
-            display: block;
-        }
-
         .explore-side__show-audio {
             display: none;
         }
