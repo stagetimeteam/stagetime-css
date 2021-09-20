@@ -13,6 +13,7 @@
         margin-left: 0;
     }
 
+    /* stylelint-disable */
     .snake__item:nth-child(1)  { z-index: 10; }
     .snake__item:nth-child(2)  { z-index:  9; }
     .snake__item:nth-child(3)  { z-index:  8; }
@@ -23,3 +24,4 @@
     .snake__item:nth-child(8)  { z-index:  3; }
     .snake__item:nth-child(9)  { z-index:  2; }
     .snake__item:nth-child(10) { z-index:  1; }
+    /* stylelint-enable */
