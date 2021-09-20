@@ -1,0 +1,76 @@
+.invite {
+    width: 588px;
+    background-color: #FFFFFF;
+    border-radius: 13px;
+}
+    .invite__head {
+        position: relative;
+        padding: 27px 33px 24px 162px;
+        border-bottom: 1px solid #E8E8E8;
+    }
+        .invite__photo {
+            position: absolute;
+            left: 33px;
+            top: 24px;
+        }
+
+        .invite__name {
+            font-weight: 600;
+            font-size: 21px;
+            color: #9CB2BE;
+        }
+            .invite__name .link--text-alike {
+                transition: opacity var(--transition-hover);
+            }
+
+            .invite__name .link--text-alike:hover {
+                opacity: 0.7;
+            }
+
+        .invite__calling {
+            margin-top: 9px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #545454;
+        }
+
+        .invite__note {
+            margin-top: 28px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #757575;
+        }
+
+        .invite__body {
+            padding: 16px 33px 26px;
+        }
+            .invite__field {
+                margin-top: 4px;
+            }
+
+            .invite__knowing {
+                margin-top: 27px;
+                font-size: 13px;
+                line-height: 20px;
+                color: #757575;
+            }
+
+        .invite__footer {
+            border-top: 1px solid #E8E8E8;
+            padding: 15px 33px 19px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+        }
+            .invite__action {
+                margin-left: 4px;
+            }
+
+            .invite__action:first-child {
+                margin-left: 0;
+            }
+
+            .invite__action.button,
+            .invite__action .button {
+                font-size: 16px;
+            }

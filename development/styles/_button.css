@@ -426,3 +426,34 @@
     .button--auth-secondary:hover .button__icon {
         fill: #757575;
     }
+
+
+.button--blue {
+    background-color: #9CB2BE;
+}
+
+.button--blue:hover {
+    background-color: #B1C9D7;
+}
+
+.button--blue:active {
+    background-color: #E6E6E6;
+}
+
+
+
+.button--link-alike {
+    background-color: transparent;
+    box-shadow: none;
+    color: #757575;
+}
+
+.button--link-alike:hover {
+    background-color: #E8E8E8;
+    color: #757575;
+}
+
+.button--link-alike:active {
+    background-color: #E8E8E8;
+    color: #757575;
+}
