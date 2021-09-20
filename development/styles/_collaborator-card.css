@@ -1,104 +1,93 @@
 .collaborator-card {
-    width: 258px;
+    width: 344px;
     position: relative;
     text-align: left;
 }
     .collaborator-card__body {
-        padding: 18px 12px 20px 81px;
+        padding: 16px 12px 21px 107px;
     }
         .collaborator-card__photo {
             position: absolute;
-            left: 12px;
-            top: 12px;
+            left: 16px;
+            top: 17px;
         }
 
         .collaborator-card__name {
             font-weight: bold;
-            font-size: 12px;
-            line-height: 18px;
-            color: #757575;
+            font-size: 14px;
+            line-height: 22px;
+            color: #545454;
         }
+            .collaborator-card__name .link--text-alike {
+                transition: opacity var(--transition-hover);
+            }
+
+            .collaborator-card__name .link--text-alike:hover {
+                opacity: 0.7;
+            }
 
         .collaborator-card__note {
-            margin-top: 4px;
-            font-size: 12px;
-            line-height: 20px;
-            color: #AFAFAF;
+            font-size: 14px;
+            line-height: 22px;
+            color: #545454;
         }
 
         .collaborator-card__crowd {
             margin-top: 11px;
-            display: flex;
-            align-items: flex-start;
+            position: relative;
+            padding-left: 36px;
         }
             .collaborator-card__crowd-icon {
-                fill: #757575;
-                margin-left: -3px;
-                margin-top: 2px;
-                width: 26px;
-                height: 26px;
+                position: absolute;
+                left: -4px;
+                top: -3px;
+                width: 32px;
+                height: 32px;
+                fill: #C5C5C5;
             }
+
+            .collaborator-card__connections {
+                font-size: 13px;
+                line-height: 20px;
+                color: #757575;
+            }
+                .collaborator-card__connections .link--text-alike {
+                    transition: opacity var(--transition-hover);
+                }
+
+                .collaborator-card__connections .link--text-alike:hover {
+                    opacity: 0.7;
+                }
 
             .collaborator-card__list {
-                margin-left: 8px;
-                display: flex;
-                align-items: flex-start;
+                margin-top: 12px;
+                margin-left: -1px;
             }
-                .collaborator-card__person {
-                    margin-left: 10px;
-                }
-
-                .collaborator-card__person:first-child {
-                    margin-left: 0;
-                }
-
-        .collaborator-card__connections {
-            font-size: 11px;
-            line-height: 18px;
-            color: #757575;
-        }
 
     .collaborator-card__operations {
-        border-top: 1px solid #E8E8E8;
         display: flex;
         align-items: stretch;
+        padding: 0 8px 15px;
     }
         .collaborator-card__action {
-            width: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px;
-            border-left: 1px solid #E8E8E8;
-            font-weight: bold;
-            font-size: 8px;
-            line-height: 14px;
-            color: #545454;
-            text-transform: uppercase;
-            text-decoration: none;
+            margin-left: 7px;
+            margin-right: 7px;
         }
 
-        .collaborator-card__action:first-child {
-            border-left: none;
+        .collaborator-card__action.button,
+        .collaborator-card__action .button {
+            border-radius: 5px;
+            padding-bottom: 11px;
+            flex-grow: 1;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
         }
-
-        .collaborator-card__action--connect {
-            color: #545454;
-        }
-
-        .collaborator-card__action--message {
-            color: #9CB2BE;
-        }
-            .collaborator-card__action-preview {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-left: 13px;
-                width: 28px;
-                height: 28px;
-                background-color: currentColor;
-                border-radius: 50%;
+            .collaborator-card__action .button__icon {
+                width: 24px;
+                height: 24px;
+                margin-top: -4px;
+                margin-bottom: -4px;
+                fill: rgba(255, 255, 255, 0.6);
             }
-                .collaborator-card__action-icon {
-                    fill: #FFFFFF;
-                }
+
