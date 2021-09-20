@@ -65,6 +65,11 @@
             .chat__dialogs {
                 height: calc(100% - 73px); /* 73px is a height of .chat__sub-head */
             }
+
+            .has-player3 .chat__dialogs {
+                padding-bottom: var(--player3-height);
+            }
+
                 .chat__empty-dialogs {
 
                 }
@@ -93,6 +98,10 @@
                 align-items: flex-start;
                 padding-left: 30px;
                 padding-right: 30px;
+            }
+
+            .has-player3 .chat__ribbon {
+                padding-bottom: var(--player3-height);
             }
 
         .chat__foot {

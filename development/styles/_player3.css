@@ -1,5 +1,6 @@
 .player3 {
     position: fixed;
+    z-index: 1000;
     left: 0;
     right: 0;
     bottom: 0;
@@ -226,23 +227,23 @@
         bottom: 16px;
     }
 
-.player3--collapsed {
+.player3-collapsed {
 
 }
-    .player3--collapsed .player3__preview {
+    .player3-collapsed .player3__preview {
         width: 48px;
         height: 48px;
     }
 
-    .player3--collapsed .player3__handler {
+    .player3-collapsed .player3__handler {
         left: 43px;
         bottom: 35px;
     }
-        .player3--collapsed .player3__angle {
+        .player3-collapsed .player3__angle {
             transform: scaleY(-1);
         }
 
-    .player3--collapsed .player3__data {
+    .player3-collapsed .player3__data {
         left: 83px;
         max-width: calc(50% - 241px);
     }

@@ -31,3 +31,9 @@
     .alert__action > .button {
         width: 164px;
     }
+
+
+
+.has-player3 .alert {
+    padding-bottom: calc(146px + var(--player3-height));
+}

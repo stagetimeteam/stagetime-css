@@ -3,6 +3,10 @@
     padding-bottom: 92px;
     text-align: center;
 }
+
+.has-player3 .create-org {
+    padding-bottom: calc(92px + var(--player3-height));
+}
     .create-org__heading {
         margin-top: 0;
         margin-bottom: 0;

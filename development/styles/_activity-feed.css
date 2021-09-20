@@ -44,3 +44,10 @@
         background-color: #F6F6F6;
         border-radius: 12px;
     }
+
+
+
+
+.has-player3 .activity-feed {
+    padding-bottom: var(--player3-height);
+}

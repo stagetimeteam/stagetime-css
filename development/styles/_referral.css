@@ -3,6 +3,11 @@
     padding-bottom: 80px;
     text-align: center;
 }
+
+.has-player3 .referral {
+    padding-bottom: calc(80px + var(--player3-height));
+}
+
     .referral__heading {
         position: relative;
         margin-top: 0;

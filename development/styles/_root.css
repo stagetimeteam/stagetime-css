@@ -17,7 +17,9 @@
     --org-card-width: 688px;
     --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
     --post-form-screen: 265px;
+    --player3-height: 72px;
 }
+
 
 @keyframes slide {
     from { opacity: 0; transform: translateY(-4px); }

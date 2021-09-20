@@ -63,3 +63,7 @@
 
                 }
 
+
+.has-player3 .dash-tiles {
+    padding-bottom: var(--player3-height);
+}
