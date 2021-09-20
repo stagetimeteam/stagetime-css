@@ -5,11 +5,12 @@
         position: relative;
         display: flex;
         align-items: flex-start;
-        padding: 11px 23px;
+        padding: 11px 32px 11px 23px;
         font-weight: 600;
         font-size: 13px;
         line-height: 18px;
         color: #545454;
+        white-space: nowrap;
         text-decoration: none;
         transition: color var(--transition-hover);
     }
