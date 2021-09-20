@@ -109,7 +109,7 @@
     /* Collapsed case */
 
     $('.player3__handler').on('click', function () {
-        $(this).parents('.player3').toggleClass('player3--collapsed');
+        $('html').toggleClass('player3-collapsed');
     });
 
     // $('.player').on('click', function () {
