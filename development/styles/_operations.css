@@ -100,14 +100,6 @@
 
 
 
-.operations--smaller-dropdown {
-
-}
-    .operations--smaller-dropdown .operations__dropdown {
-        width: 191px;
-    }
-
-
 .operations--for-player {
 
 }
@@ -115,10 +107,30 @@
 
     }
         .operations--for-player .operations__icon {
+            width: 22px;
+            height: 22px;
+        }
+
+        .operations--for-player .operations__dropdown {
+            top: calc(100% - 5px);
+            right: auto;
+            left: 18px;
+            width: 190px;
+        }
+
+
+
+.operations--for-player3 {
+
+}
+    .operations--for-player3 .operations__handler {
+
+    }
+        .operations--for-player3 .operations__icon {
 
         }
 
-    .operations--for-player .operations__dropdown {
+    .operations--for-player3 .operations__dropdown {
         top: auto;
         bottom: 0;
         right: 100%;
