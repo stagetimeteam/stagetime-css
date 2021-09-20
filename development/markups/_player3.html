@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html class="has-player3" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,8 +18,26 @@
             <br>
             <br>
             <h1>.player3</h1>
-            <br>
-            <br>
+            <p>
+                Place it inside of <b>.page</b>, at the very end.
+            </p>
+            <p>
+                Please add class <b>.has-player3</b> on the <b>&lt;html&gt;</b> tag if player is presented.
+            </p>
+            <p>
+                Clicking on <b>.player3__handler</b> collapses player. In this case please add <b>.player3__handler</b>
+                on the <b>&lt;html&gt;</b>.
+            </p>
+            <p>
+                Please switch icons like so to make player work:
+                <br><b>16-smaller-heart-outline</b> to <b>16-smaller-heart</b>
+                <br><b>16-play</b> to <b>16-pause</b>
+                <br><b>16-shuffle</b> to <b>16-shuffled</b>
+            </p>
+            <p>
+                <b>.player3__action--disabled</b> can be added to any action
+            </p>
+
             <div style="width: 226px; margin: 0 auto;">
 
 
@@ -27,8 +45,8 @@
                     <img class="player3__preview"
                          srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
                          src="../temp/brandon-bell-when-the-air.jpg"
-                         width="174"
-                         height="99"
+                         width="167"
+                         height="167"
                          alt=""
                     >
                     <button class="player3__handler" type="button">
@@ -47,7 +65,7 @@
                         <button class="player3__action player3__action--bookmark" type="button">
                             <img class="player3__icon" src="../symbols/16-smaller-heart-outline.svg" width="16" height="16" alt="">
                         </button>
-                        <button class="player3__action player3__action--disabled player3__action--backward" type="button">
+                        <button class="player3__action player3__action--backward player3__action--disabled" type="button">
                             <img class="player3__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
                         </button>
                         <button class="player3__action player3__action--play" type="button">
