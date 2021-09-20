@@ -84,6 +84,7 @@
         position: absolute;
         left: 202px;
         top: 14px;
+        max-width: calc(50% - 360px);
     }
         .player3__song {
             font-weight: bold;
@@ -98,6 +99,9 @@
             font-size: 12px;
             line-height: 20px;
             color: #C4C4C4;
+            max-width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
 
@@ -240,4 +244,5 @@
 
     .player3--collapsed .player3__data {
         left: 83px;
+        max-width: calc(50% - 241px);
     }
