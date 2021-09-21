@@ -1,0 +1,21 @@
+.currently-in {
+    text-align: center;
+}
+    .currently-in__list {
+        margin-left: -10px;
+        margin-right: -10px;
+        text-align: left;
+    }
+        .currently-in__item {
+            margin-top: 14px;
+        }
+
+        .currently-in__item:first-child {
+            margin-top: 0;
+        }
+
+    .currently-in__more {
+        margin-top: 5px;
+        margin-left: auto;
+        margin-right: auto;
+    }
