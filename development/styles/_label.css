@@ -1,4 +1,7 @@
 .label {
+    font-weight: inherit; /* bootstrap */
+    margin-bottom: 0; /* bootstrap */
+    padding: 0; /* bootstrap */
     display: table;
     vertical-align: top;
     border-bottom: 10px solid transparent;

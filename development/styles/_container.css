@@ -8,12 +8,16 @@
 
 .container--organisation {
     width: 1110px;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
 .container--feed {
     width: 670px;
     border-left: none;
     border-right: none;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
 .container--explore {
@@ -21,24 +25,34 @@
     max-width: 950px;
     border-left-width: 24px;
     border-right-width: 24px;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
 .container--referral {
     width: 750px;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
 .container--auth {
     width: 960px;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
 
 .container--welcome {
     width: 700px;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
 
 .container--org-creating {
     width: 632px;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
 
@@ -46,6 +60,8 @@
     width: 670px;
     border-left-width: 0;
     border-right-width: 0;
+    padding-left: 0;  /* override bootstrap */
+    padding-right: 0; /* override bootstrap */
 }
 
     @media (min-width: 1240px) {
