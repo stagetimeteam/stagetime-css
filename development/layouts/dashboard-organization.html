@@ -2192,13 +2192,22 @@
                 </div>
             </div>
             <section class="player3 player3--loading">
-                <img class="player3__preview"
-                     srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
-                     src="../temp/brandon-bell-when-the-air.jpg"
-                     width="174"
-                     height="99"
-                     alt=""
-                >
+                <div class="player3__viewport">
+                    <img class="player3__preview"
+                         srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
+                         src="../temp/brandon-bell-when-the-air.jpg"
+                         width="167"
+                         height="167"
+                         alt=""
+                    >
+                    <!-- or:
+                    <iframe class="player3__preview" width="167" height="94" src="https://www.youtube.com/embed/&#45;&#45;A_89lTuiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    -->
+                    <button class="player3__handler" type="button">
+                        <img class="player3__angle" src="../symbols/16-angle-down.svg" width="16" height="16" alt="">
+                        Expand
+                    </button>
+                </div>
                 <button class="player3__handler" type="button">
                     <img class="player3__angle" src="../symbols/16-angle-down.svg" width="16" height="16" alt="">
                     Expand

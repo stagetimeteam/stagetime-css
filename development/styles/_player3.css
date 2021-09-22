@@ -19,72 +19,71 @@
 .player3--loading {
 
 }
-    .player3__preview {
+    .player3__viewport {
         position: absolute;
         left: 13px;
         bottom: 12px;
-        width: 167px;
-        height: 167px;
-        vertical-align: top;
-        background-color: var(--image-fallback);
-        border-radius: 4px;
     }
-
-
-    .player3__handler {
-        position: absolute;
-        z-index: 50;
-        left: 136px;
-        bottom: 133px;
-        width: 36px;
-        height: 44px;
-        background-color: transparent;
-        border: none;
-        padding: 0;
-        text-indent: 200%;
-        white-space: nowrap;
-        overflow: hidden;
-        cursor: pointer;
-    }
-        /* circle */
-        .player3__handler::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-            width: 16px;
-            height: 16px;
-            background-color: #FFFFFF;
-            border-radius: 50%;
-            transition: background-color var(--transition-hover);
-        }
-
-        /* angle icon */
-        .player3__angle {
-            position: absolute;
-            left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
+        .player3__preview {
             vertical-align: top;
-            fill: #858585;
-            transition: fill var(--transition-hover);
+            background-color: var(--image-fallback);
+            border-radius: 4px;
         }
 
-    .player3__handler:hover {
-
-    }
-        .player3__handler:hover::before {
-            background-color: rgba(255, 255, 255, 0.7);
+        .player3__handler {
+            position: absolute;
+            z-index: 50;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            text-indent: 200%;
+            white-space: nowrap;
+            overflow: hidden;
+            cursor: pointer;
         }
+            /* circle */
+            .player3__handler::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                width: 16px;
+                height: 16px;
+                background-color: #FFFFFF;
+                border-radius: 50%;
+                transition: background-color var(--transition-hover);
+            }
 
-        .player3__handler:hover .player__angle {
-            fill: #9CB2BE;
+            /* angle icon */
+            .player3__angle {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                vertical-align: top;
+                fill: #858585;
+                transition: fill var(--transition-hover);
+            }
+
+        .player3__handler:hover {
+
         }
+            .player3__handler:hover::before {
+                background-color: rgba(255, 255, 255, 0.7);
+            }
+
+            .player3__handler:hover .player__angle {
+                fill: #9CB2BE;
+            }
 
 
     .player3__data {
@@ -242,8 +241,10 @@
     }
 
     .player3-collapsed .player3__handler {
-        left: 43px;
-        bottom: 35px;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        top: -7px
     }
         .player3-collapsed .player3__angle {
             transform: scaleY(-1);
