@@ -199,6 +199,25 @@
     }
 
 
+.input--alt-border {
+
+}
+    .input--alt-border .input__widget {
+        border-color: #C1C1C1;
+        box-shadow: 0 0 0 1px #C1C1C1;
+    }
+
+    .input--alt-border .input__widget:hover {
+        border-color: #A0A0A0;
+        box-shadow: 0 0 0 1px #A0A0A0;
+    }
+
+    .input--alt-border .input__widget:focus {
+        border-color: #757575;
+        box-shadow: 0 0 0 1px #757575;
+    }
+
+
 .input--badge-alike {
 
 }
