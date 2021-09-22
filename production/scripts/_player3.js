@@ -2,27 +2,11 @@
 
     var forwardButtonPressed = 0;
 
-    // var wavesurfer = WaveSurfer.create({
-    //     container: '.player__progress',
-    //     barWidth: 1,
-    //     barGap: 2,
-    //     height: '49',
-    //     waveColor: '#FFFFFF',
-    //     progressColor: '#BFD7E3',
-    //     cursorColor: '#FFFFFF'
-    // });
-    //
-    // var currentTrack = 0;
-    // var trackList = ['../temp/audio/epic.mp3', '../temp/audio/scream.mp3', '../temp/audio/reading.mp3'];
-    //
-    // wavesurfer.load(trackList[currentTrack]);
-    //
-    // $('.player__action--play').on('click', function () {
-    //     wavesurfer.playPause();
-    // });
-    //
-    //
-    //
+    var currentTrack = 0;
+    var trackList = ['../temp/audio/epic.mp3', '../temp/audio/scream.mp3', '../temp/audio/reading.mp3'];
+
+
+
     // /* When song is loaded, decoded and the waveform add class .player--ready (and remove player--loading) */
     // wavesurfer.on('ready', function () {
     //     var $player = $(wavesurfer.params.container).parents('.player');
@@ -87,7 +71,13 @@
     //
 
     $('.player3__action--play').on('click', function () {
-        $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
+        if( ! $('.player3__widget')[0].paused == false ) {
+            $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-pause");
+            $('.player3__widget')[0].play();
+        } else {
+            $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-play");
+            $('.player3__widget')[0].pause();
+        }
     });
 
     $('.player3__action--bookmark').on('click', function () {
@@ -111,28 +101,5 @@
     $('.player3__handler').on('click', function () {
         $('html').toggleClass('player3-collapsed');
     });
-
-    // $('.player').on('click', function () {
-    //     if (!$(event.target).closest('.player__handler, .player__action--play, .up-next').length) {
-    //         $(this).removeClass('player--collapsed');
-    //         if ( $(document).find('.up-next').length ) {
-    //             $('html').toggleClass('playlist-expanded');
-    //         }
-    //     }
-    // });
-    //
-    //
-    // /* Collapse on mobile */
-    //
-    // function playerCollapseOnMobiles() {
-    //     if( mobileMediaQuery.matches && ! $('html').hasClass('playlist-expanded') ) {
-    //         $('.player').addClass('player--collapsed');
-    //     } else {
-    //         $('.player').removeClass('player--collapsed');
-    //     }
-    // }
-    //
-    // $(window).on('resize', playerCollapseOnMobiles);
-    // $(document).ready(playerCollapseOnMobiles);
 
 })(jQuery);
