@@ -218,6 +218,15 @@
     }
 
 
+.input--larger-font {
+
+}
+    .input--larger-font .input__widget {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+
 .input--badge-alike {
 
 }
