@@ -2,7 +2,6 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: center;
     margin: -5px; /* compensate card paddings */
 }
     .collection-crowd__item {
