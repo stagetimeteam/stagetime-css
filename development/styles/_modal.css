@@ -15,6 +15,10 @@
         text-align: left;
         vertical-align: middle;
     }
+        .modal-content {
+            box-shadow: none; /* bootstrap */
+            border: none; /* bootstrap */
+        }
 
 
 .modal--skeleton {
@@ -34,7 +38,19 @@
     .modal--688px .modal-dialog {
         width: 688px;
     }
+        .modal--688px .modal-content {
+            background-color: transparent; /* bootstrap */
+        }
 
+.modal--588px {
+
+}
+    .modal--588px .modal-dialog {
+        width: 588px;
+    }
+        .modal--588px .modal-content {
+            background-color: transparent; /* bootstrap */
+        }
 
 .modal--500px {
 
@@ -50,7 +66,9 @@
     .modal--380px .modal-dialog {
         width: 380px;
     }
-
+        .modal--380px .modal-content {
+            background-color: transparent; /* bootstrap */
+        }
 
 .modal--296px {
 
@@ -58,3 +76,6 @@
     .modal--296px .modal-dialog {
         width: 296px;
     }
+        .modal--296px .modal-content {
+            background-color: transparent; /* bootstrap */
+        }
