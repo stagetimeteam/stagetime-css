@@ -1,29 +1,36 @@
 (function($) {
 
-    var forwardButtonPressed = 0;
-
-    var playerObject = $('.player3__widget')[0];
-    var playerPlayIcon = $('.player3__action--play use');
+    var $html = $('html');
+    var $playerPlayIcon = $('.player3__action--play use');
+    var $playerObject = $('.player3__widget');
     var playbackInterval;
 
 
-    $('[data-track]').on('click', function () {
-        playerPlay($(this).data('track'));
-    });
+
+    function playerCreate() {
+        if( ! $html.hasClass('has-player3') ) {
+            $html.addClass('has-player3');
+        }
+    }
+
+    function playerDestroy() {
+        $html.removeClass('has-player3');
+    }
+
 
 
     function playerPlay(newTrack) {
 
         if(newTrack) {
-            playerObject.setAttribute('src', newTrack);
-            playerObject.pause();
-            playerObject.load();
-            // possible change to: playerObject.oncanplaythrough = playerObject.play();
+            $playerObject[0].setAttribute('src', newTrack);
+            $playerObject[0].pause();
+            $playerObject[0].load();
+            // possible change to: playerJsObject.oncanplaythrough = playerJsObject.play();
             // or do file download indicator here
         }
 
-        playerObject.play();
-        playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-pause");
+        $playerObject[0].play();
+        $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-pause");
 
         playbackInterval = setInterval(function () {
             console.log($('.player3__widget')[0].currentTime);
@@ -32,8 +39,8 @@
     }
 
     function playerPause() {
-        playerObject.pause();
-        playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-play");
+        $playerObject[0].pause();
+        $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-play");
         clearInterval(playbackInterval);
     }
 
@@ -42,7 +49,7 @@
     /* Controls */
 
     $('.player3__action--play').on('click', function () {
-        if( ! playerObject.paused == false ) {
+        if( ! $playerObject[0].paused == false ) {
             playerPlay();
         } else {
             playerPause();
@@ -57,6 +64,7 @@
         $(this).find('use').attr("xlink:href", "../symbols/symbols.svg#16-shuffled");
     });
 
+    var forwardButtonPressed = 0;
     $('.player3__action--forward').on('click', function () {
         $('.player3__action--backward').removeClass('player3__action--disabled');
         forwardButtonPressed++;
@@ -66,11 +74,22 @@
     });
 
 
-    /* Collapsed case */
+    /* Inits */
 
     $('.player3__handler').on('click', function () {
         $('html').toggleClass('player3-collapsed');
     });
+
+    $('[data-track]').on('click', function () {
+        playerCreate();
+        playerPlay($(this).data('track'));
+    });
+
+    $('.menu__link--close-player').on('click', function () {
+        playerPause();
+        playerDestroy();
+    });
+
 
 
 })(jQuery);

@@ -8,17 +8,22 @@
     background-color: #333333;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    opacity: 0;
+    visibility: visible;
+    transition: opacity var(--transition-long-show),
+                visibility var(--transition-long-show);
 }
 
-.player3__widget {
-    position: fixed;
-    left: 0;
-    top: 0;
+.has-player3 .player3 {
+    opacity: 1;
+    visibility: visible;
 }
+    .player3__widget {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
 
-.player3--loading {
-
-}
     .player3__viewport {
         position: absolute;
         left: 13px;
