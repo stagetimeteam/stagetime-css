@@ -249,7 +249,7 @@
         width: 20px;
         height: 20px;
         right: -10px;
-        top: -7px
+        top: -7px;
     }
         .player3-collapsed .player3__angle {
             transform: scaleY(-1);
