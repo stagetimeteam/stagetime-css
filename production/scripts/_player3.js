@@ -3,9 +3,13 @@
     var $html = $('html');
     var $playerPlayIcon = $('.player3__action--play use');
     var $playerObject = $('.player3__widget');
+    var $playerBar = $('.player3__bar');
     var playbackInterval;
 
 
+    function playbackWidth() {
+        $playerBar.css('width', $playerObject[0].currentTime / $playerObject[0].duration * 100 + 'px');
+    }
 
     function playerCreate() {
         if( ! $html.hasClass('has-player3') ) {
@@ -22,6 +26,7 @@
     function playerPlay(newTrack) {
 
         if(newTrack) {
+            $playerBar.css('width', 0);
             $playerObject[0].setAttribute('src', newTrack);
             $playerObject[0].pause();
             $playerObject[0].load();
@@ -33,7 +38,7 @@
         $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-pause");
 
         playbackInterval = setInterval(function () {
-            console.log($('.player3__widget')[0].currentTime);
+            $playerBar.css('width', $playerObject[0].currentTime / $playerObject[0].duration * 100 + 'px');
         }, 1000);
 
     }
@@ -49,7 +54,7 @@
     /* Controls */
 
     $('.player3__action--play').on('click', function () {
-        if( ! $playerObject[0].paused == false ) {
+        if( ! $playerObject[0].paused === false ) {
             playerPlay();
         } else {
             playerPause();
