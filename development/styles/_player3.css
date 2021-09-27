@@ -241,8 +241,8 @@
 
 }
     .player3-collapsed .player3__preview {
-        width: 48px;
-        height: 48px;
+        width: 48px !important;
+        height: 48px !important;
     }
 
     .player3-collapsed .player3__handler {
