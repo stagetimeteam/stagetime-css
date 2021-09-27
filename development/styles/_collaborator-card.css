@@ -101,6 +101,7 @@
             .collaborator-card__action.button--disabled .button__icon,
             .collaborator-card__action .button--disabled .button__icon {
                 fill: currentColor;
+                margin-left: -8px;
             }
 
 
@@ -169,5 +170,11 @@
             .collaborator-card--smaller .collaborator-card__action .button__icon {
                 width: 18px;
                 height: 18px;
+            }
+
+            .collaborator-card--smaller .collaborator-card__action.button--disabled .button__icon,
+            .collaborator-card--smaller .collaborator-card__action .button--disabled .button__icon {
+                margin-left: -4px;
+                margin-right: 4px;
             }
 
