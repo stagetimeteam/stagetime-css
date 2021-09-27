@@ -66,29 +66,41 @@
 
     .collaborator-card__operations {
         display: flex;
-        align-items: stretch;
+        align-items: flex-start;
         padding: 0 8px 15px;
     }
         .collaborator-card__action {
             margin-left: 7px;
             margin-right: 7px;
+            width: calc(50% - 14px);
+            flex-shrink: 0;
         }
 
         .collaborator-card__action.button,
         .collaborator-card__action .button {
             border-radius: 5px;
             padding-bottom: 11px;
-            flex-grow: 1;
             font-weight: 600;
             font-size: 14px;
             line-height: 16px;
         }
+
+        .collaborator-card__action .button {
+            width: 100%;
+        }
+
+
             .collaborator-card__action .button__icon {
                 width: 22px;
                 height: 22px;
                 margin-top: -3px;
                 margin-bottom: -3px;
                 fill: rgba(255, 255, 255, 0.6);
+            }
+
+            .collaborator-card__action.button--disabled .button__icon,
+            .collaborator-card__action .button--disabled .button__icon {
+                fill: currentColor;
             }
 
 
