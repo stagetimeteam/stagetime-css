@@ -2,13 +2,14 @@
 
     var $html = $('html');
     var $playerPlayIcon = $('.player3__action--play use');
+    var $playerProgress = $('.player3__progress');
     var $playerObject = $('.player3__widget');
     var $playerBar = $('.player3__bar');
     var playbackInterval;
 
-
+    
     function playbackWidth() {
-        $playerBar.css('width', $playerObject[0].currentTime / $playerObject[0].duration * 100 + 'px');
+        $playerBar.css('width', $playerObject[0].currentTime / $playerObject[0].duration * 100 + '%');
     }
 
     function playerCreate() {
@@ -23,6 +24,9 @@
 
 
 
+    /* This function can be run with or without newTrack parameter.
+     * If run without newTrack just unpause current track.
+     * If run with newTrack then stop old one and start new one */
     function playerPlay(newTrack) {
 
         if(newTrack) {
@@ -37,18 +41,17 @@
         $playerObject[0].play();
         $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-pause");
 
-        playbackInterval = setInterval(function () {
-            $playerBar.css('width', $playerObject[0].currentTime / $playerObject[0].duration * 100 + 'px');
-        }, 1000);
-
+        clearInterval(playbackInterval);
+        playbackWidth();
+        playbackInterval = setInterval(playbackWidth, 1000);
     }
+
 
     function playerPause() {
         $playerObject[0].pause();
         $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-play");
         clearInterval(playbackInterval);
     }
-
 
 
     /* Controls */
@@ -96,5 +99,39 @@
     });
 
 
+
+
+    /* Clicking on bar */
+
+    var barLeft;
+    var barWidth;
+    var barClicked
+
+    function initBar() {
+        barLeft = $playerProgress.offset().left; /* left coordinates changes on window resize */
+        barWidth = $playerProgress.outerWidth(); /* bar width can be changed if player is smaller on smartphone, for example */
+    }
+
+    $(document).ready(initBar);
+    $(window).on('resize', initBar);
+
+    /* Jump to */
+
+    $playerProgress.on('click', function (event) {
+        barClicked = event.clientX - barLeft;  /* This is coordinate of click inside of bar. Somewhere in between [0 to barWidth] */
+
+        if (barClicked < 0) { /* Clicking on the left edge sometimes can give -1 value. */
+            barClicked = 0;
+        }
+        if (barClicked > barWidth) {
+            barClicked = barWidth;
+        }
+        $playerObject[0].currentTime = $playerObject[0].duration * barClicked / barWidth;
+
+        clearInterval(playbackInterval);
+        playbackWidth();
+        playbackInterval = setInterval(playbackWidth, 1000);
+
+    });
 
 })(jQuery);
