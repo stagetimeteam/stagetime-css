@@ -8,8 +8,7 @@
 }
 
     .candidate-card__link {
-        display: flex;
-        align-items: stretch;
+        display: block;
         text-decoration: none;
     }
 
@@ -17,20 +16,19 @@
         background-color: #F9F9F9;
     }
         .candidate-card__data {
-            flex-grow: 1;
-            display: flex;
-            align-items: center;
-            padding: 24px 148px 24px 20px;
+            padding: 24px 148px 24px 100px;
         }
             .candidate-card__preview {
-                flex-shrink: 0;
+                position: absolute;
+                left: 20px;
+                top: 24px;
             }
 
             .candidate-card__body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                padding: 3px 0 3px 20px;
+                padding: 3px 0 3px 0;
                 font-size: 12px;
                 line-height: 18px;
                 min-height: 60px;
