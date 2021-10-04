@@ -7,7 +7,7 @@
     var $playerBar = $('.player3__bar');
     var playbackInterval;
 
-    
+
     function playbackWidth() {
         $playerBar.css('width', $playerObject[0].currentTime / $playerObject[0].duration * 100 + '%');
     }
@@ -97,8 +97,6 @@
         playerPause();
         playerDestroy();
     });
-
-
 
 
     /* Clicking on bar */
