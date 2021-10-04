@@ -42,16 +42,32 @@
 .carousel--faded-right {
 
 }
-    .carousel--faded-right::after {
+
+
+    /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
+    .carousel--faded-right::before {
         content: "";
         position: absolute;
         z-index: 10;
         right: 0;
-        top: 0;
-        bottom: 0;
-        width: 28px;
+        top: -10px;    /* to cover tiles shadows */
+        bottom: -10px; /* if there are any */
+        width: 60px;
         background-color: #FFFFFF;
-        box-shadow: 0 0 10px 10px #FFFFFF;
+    }
+
+
+    /* this is gradient itself, you can click through and scroll over */
+    .carousel--faded-right::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        right: 60px;
+        top: -10px;     /* to cover tiles shadows */
+        bottom: -10px;  /* if there are any */
+        width: 152px;
+        background-image: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.48) 56.25%, rgba(255, 255, 255, 0) 100%);
+        pointer-events: none;
     }
 
 
@@ -132,7 +148,7 @@
             position: absolute;
             z-index: 100;
             top: 50%;
-            right: -12px;
+            right: 0;
         }
 
         .carousel--for-updates .carousel__control--prev {
@@ -143,7 +159,9 @@
             margin-top: -52px;
         }
 
+
 /* make gradients to not to overlap borders:  */
+.carousel--for-updates.carousel--faded-right::before,
 .carousel--for-updates.carousel--faded-right::after {
     margin-bottom: 32px;
 }
