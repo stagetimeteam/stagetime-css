@@ -69,3 +69,10 @@
         background-image: linear-gradient(202deg, #A8B1D5 4.69%, #DDEAF1 100%);
         border-radius: 50%;
     }
+
+    .conversation--unread .conversation__message {
+        font-weight: bold;
+        color: #545454;
+    }
+
+
