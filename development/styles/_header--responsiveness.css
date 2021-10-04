@@ -1,19 +1,11 @@
 .header {
-    /*position: relative;*/
-    /*z-index: 1000;*/
-    /*height: var(--header-height);*/
+
 }
     .header__detachable-panel {
         position: fixed;
-        /*left: 0;*/
-        /*top: 0;*/
-        /*right: 0;*/
-        /*height: var(--header-height);*/
-        /*background: #FFFFFF;*/
         box-shadow: none;
         display: block;
         min-width: 0;
-        /*align-items: flex-start;*/
         padding: 0;
     }
         .header__top-bar {
@@ -67,6 +59,25 @@
                         height: 20px;
                         fill: #AAAAAA;
                     }
+
+                .header__messages-link {
+                    position: relative;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    padding: 14px;
+                }
+                    .header__envelope {
+                        position: relative;
+                        vertical-align: top;
+                        fill: #545454;
+                    }
+
+                @media (max-width: 410px) {
+                    .header__messages-link {
+                        display: none;
+                    }
+                }
 
                 .header__notifications-handler {
                     position: relative;
