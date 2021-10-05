@@ -1,0 +1,16 @@
+.flyover {
+    position: fixed;
+    z-index: 1000;
+    right: 100%;
+    top: 0;
+    padding-top: 10px;
+    display: none;
+}
+
+.flyover:hover {
+    display: block !important;
+}
+    .flyover__body {
+        background-color: #FFFFFF;
+        box-shadow: 0 0 10px #000;
+    }
