@@ -4,9 +4,9 @@
     width: 154px;
     height: 40px;
     background-image: url("../images/logo.svg");
-    background-size: contain;
+    background-size: 154px 40px;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: left center;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
@@ -14,4 +14,11 @@
 
 .logo--dark {
     background-image: url("../images/logo-dark.svg");
+}
+
+
+@media (max-width: 413px) {
+    .logo {
+        width: 40px;
+    }
 }

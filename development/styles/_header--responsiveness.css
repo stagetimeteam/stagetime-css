@@ -19,8 +19,8 @@
         }
             .header__branding {
                 box-sizing: content-box;
-                border-top: 10px solid transparent; /* expand clickable area using borders */
-                border-bottom: 10px solid transparent;
+                border-top: 12px solid transparent; /* expand clickable area using borders */
+                border-bottom: 12px solid transparent;
                 border-left: 10px solid transparent;
                 border-right: 10px solid transparent;
             }
@@ -32,7 +32,7 @@
             }
                 .header__search-handler {
                     position: relative;
-                    padding: 20px;
+                    padding: 22px;
                     border: none;
                     background-color: transparent;
                     cursor: pointer;
@@ -72,12 +72,6 @@
                         vertical-align: top;
                         fill: #545454;
                     }
-
-                @media (max-width: 410px) {
-                    .header__messages-link {
-                        display: none;
-                    }
-                }
 
                 .header__notifications-handler {
                     position: relative;
