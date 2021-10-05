@@ -30,6 +30,14 @@
             transition: fill var(--transition-hover);
         }
 
+        .menu__sparkle {
+            position: absolute;
+            left: 32px;
+            top: 0;
+            vertical-align: top;
+            fill: #9CB2BE;
+            pointer-events: none; /* don't overlay neighbours */
+        }
 
 .menu__link--disabled {
     pointer-events: none;

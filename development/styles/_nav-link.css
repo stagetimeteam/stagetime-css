@@ -17,15 +17,6 @@
         margin-right: 13px;
     }
 
-    .nav-link__sparkle {
-        position: absolute;
-        left: 26px;
-        top: 0;
-        vertical-align: top;
-        fill: #9CB2BE;
-        pointer-events: none; /* don't overlay neighbours */
-    }
-
     .nav-link__counter {
         margin-left: 4px;
         color: var(--user-color);
