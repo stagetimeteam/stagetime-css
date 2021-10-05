@@ -1,8 +1,8 @@
 .profile {
     position: fixed;
     z-index: 1020;
-    right: 20px;
-    top: 47px;
+    right: 24px;
+    top: 54px;
     width: 250px;
     background-color: #FFFFFF;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
@@ -21,12 +21,17 @@
     .profile__head {
         display: none;
     }
+
+    .profile__body {
+        padding-top: 7px;
+    }
         .profile__link {
-            border-top: 10px solid transparent; /* expand clickable area */
-            border-bottom: 10px solid transparent; /* expand clickable area */
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
         }
 
         .profile__menu {
+            margin-top: 7px;
             border-top: 1px solid #E8E8E8;
             padding-top: 10px;
             padding-bottom: 10px;

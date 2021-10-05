@@ -24,14 +24,14 @@
     }
 
     .profile__body {
-        padding-top: var(--header-height);
+        padding-top: calc(var(--header-height) + 7px);
     }
         .profile__link {
-            border: none;
+
         }
 
-
         .profile__menu {
+            margin-top: 0;
             border-top: none;
             padding-top: 0;
         }

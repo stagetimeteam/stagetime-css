@@ -1,20 +1,22 @@
 .user-link {
     display: flex;
     align-items: flex-start;
-    padding: 10px 22px 10px 27px;
+    padding: 11px 32px 11px 23px;
     font-weight: 600;
     font-size: 13px;
     line-height: 18px;
-    color: #8B8B8B;
+    color: #545454;
     text-decoration: none;
-    transition: color var(--transition-hover);
+    /*transition: background-image var(--transition-hover);*/
+    /*background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 4px, #F6F6F6 4px, #F6F6F6 54px, rgba(0,0,0,0) 54px, rgba(0,0,0,0));*/
+
 }
 
 .user-link:hover {
-    color: #545454;
+    background-color: #F6F6F6;
 }
     .user-link__preview {
-        margin: -6px 15px -6px -5px;
+        margin: -6px 15px -6px -6px;
     }
 
 
