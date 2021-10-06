@@ -58,8 +58,9 @@
             }
 
         .header__greetings {
-            margin-top: 10px;
-            margin-right: 20px;
+            position: absolute;
+            right: 210px;
+            top: 20px;
             font-size: 14px;
             line-height: 20px;
             color: #757575;

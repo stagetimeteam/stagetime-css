@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-sidebar has-aside search-centered has-player3" lang="en-US">
+<html class="has-sidebar has-aside has-player3" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,55 +14,47 @@
 
         <header class="header">
             <div class="header__detachable-panel">
-                <div class="header__top-bar">
-                    <a class="header__branding logo" href="#">
-                        STAGETIME
-                    </a>
-                    <div class="header__handlers">
-                        <button class="header__search-handler" type="button">
-                            <img class="header__magnifier" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
-                        </button>
-                        <button class="header__messages-link" type="button">
-                            <img class="header__envelope" src="../symbols/32-envelope.svg" width="32" height="32" alt="">
-                        </button>
-                        <button class="header__notifications-handler" type="button">
-                            <img class="header__bell" src="../symbols/32-bell.svg" width="32" height="32" alt="">
-                        </button>
-                        <button class="header__profile-handler" type="button">
-                            <span class="avatar avatar--alt-hover avatar--fancy">
-                                <img class="avatar__image" srcset="../temp/person-a-40x40@2x.jpg 2x" src="../temp/person-a-40x40.jpg" width="40" height="40" alt="">
-                            </span>
-                        </button>
-                    </div>
+                <a class="header__branding logo" href="#">
+                    STAGETIME
+                </a>
+
+                <div class="header__greetings">
+                    Good afternoon, <strong class="user-color">Jennie</strong>.
                 </div>
-                <div class="header__dropdown">
-                    <div class="header__private-area">
-                        <div class="header__menu">
-                            <a class="header__item header-button header-button--flagged" href="#">
-                                <img class="header-button__icon" src="../symbols/32-envelope.svg" width="32" height="32" alt="">
-                                <span class="visuallyhidden">Messages</span>
-                                <span class="visuallyhidden">New:</span>
-                                <span class="header-button__updates counter counter--danger">4</span>
-                            </a>
-                            <a class="header__item header-button header-button--flagged" href="#">
-                                <img class="header-button__icon" src="../symbols/32-bell.svg" width="32" height="32" alt="">
-                                <span class="visuallyhidden">Notifications</span>
-                                <span class="visuallyhidden">New:</span>
-                                <span class="header-button__updates counter counter--danger">4</span>
-                            </a>
-                            <a class="header__item profile-button" href="#">
-                                <span class="avatar avatar--alt-hover avatar--fancy">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-26x26@2x.jpg 2x"
-                                         src="../temp/person-a-26x26.jpg"
-                                         width="26"
-                                         height="26"
-                                         alt=""
-                                    >
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+
+                <!-- optional:
+                <div class="header__auth">
+                    <a class="header__login" href="#">Log In</a>
+                    <a class="header__join" href="#">Join <span class="hide hide--hide-on-smartphone">Stagetime</span></a>
+                </div>
+                -->
+                <div class="header__menu">
+                    <button class="header__item search-button" type="button">
+                        <img class="search-button__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                    </button>
+                    <a class="header__item header-button header-button--messages header-button--flagged" href="#">
+                        <img class="header-button__icon" src="../symbols/32-envelope.svg" width="32" height="32" alt="">
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--notifications header-button--flagged" href="#">
+                        <img class="header-button__icon" src="../symbols/32-bell.svg" width="32" height="32" alt="">
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item profile-button" href="#">
+                        <span class="avatar avatar--alt-hover avatar--fancy">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-26x26@2x.jpg 2x"
+                                 src="../temp/person-a-26x26.jpg"
+                                 width="26"
+                                 height="26"
+                                 alt=""
+                            >
+                        </span>
+                    </a>
                 </div>
             </div>
         </header>
@@ -649,23 +641,22 @@
                     </span>
                     View Profile
                 </a>
-                <div class="profile__menu">
-                    <a class="nav-link" href="#">
-                        <img class="nav-link__icon" src="../symbols/16-pencil.svg" width="16" height="16" alt="">
+                <div class="profile__menu menu">
+                    <a class="menu__link" href="#">
+                        <img class="menu__icon" src="../symbols/20.svg" width="16" height="16" alt="">
                         Edit Profile
                     </a>
-                    <a class="nav-link" href="#">
-                        <img class="nav-link__icon" src="../symbols/16-envelope-outline.svg" width="16" height="16" alt="">
+                    <a class="menu__link" href="#">
+                        <img class="menu__icon" src="../symbols/16-envelope-outline.svg" width="16" height="16" alt="">
                         <img class="menu__sparkle" src="../symbols/16-sparkle.svg" width="16" height="16" alt="">
                         Invite
-                        <span class="visuallyhidden">Explain meaning of sparkles here</span>
                     </a>
-                    <a class="nav-link" href="#">
-                        <img class="nav-link__icon" src="../symbols/16-question-spot.svg" width="16" height="16" alt="">
+                    <a class="menu__link" href="#">
+                        <img class="menu__icon" src="../symbols/19.svg" width="16" height="16" alt="">
                         Support
                     </a>
-                    <a class="nav-link" href="#">
-                        <img class="nav-link__icon" src="../symbols/16-cog.svg" width="16" height="16" alt="">
+                    <a class="menu__link" href="#">
+                        <img class="menu__icon" src="../symbols/18.svg" width="16" height="16" alt="">
                         Settings
                     </a>
                 </div>
@@ -673,10 +664,12 @@
                     <img class="button__icon button__icon--left" src="../symbols/16-city.svg" width="16" height="16" alt="">
                     Create Organization
                 </a>
-                <a class="profile__logout nav-link" href="#">
-                    <img class="nav-link__icon" src="../symbols/16-logout.svg" width="16" height="16" alt="">
-                    Log Out
-                </a>
+                <div class="profile__logout menu">
+                    <a class="menu__link" href="#">
+                        <img class="menu__icon" src="../symbols/17.svg" width="16" height="16" alt="">
+                        Log Out
+                    </a>
+                </div>
             </div>
         </div>
         <div class="page">
@@ -2852,58 +2845,82 @@
                                                             <div class="collaborator-card__body">
                                                                 <a class="collaborator-card__photo avatar" href="#">
                                                                     <img class="avatar__image"
-                                                                         srcset="../temp/person-a-56x56@2x.jpg 2x"
-                                                                         src="../temp/person-a-56x56.jpg"
-                                                                         width="56"
-                                                                         height="56"
+                                                                         srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                                         src="../temp/person-a-72x72.jpg"
+                                                                         width="72"
+                                                                         height="72"
                                                                          alt="Mark Zuckerberg"
                                                                     >
                                                                 </a>
                                                                 <div class="collaborator-card__name">
-                                                                    Andres Acosta
+                                                                    <a class="link link--text-alike" href="#">Andres Acosta</a>
                                                                 </div>
                                                                 <div class="collaborator-card__note">
                                                                     Tenor, San Diego, CA
                                                                 </div>
                                                                 <div class="collaborator-card__crowd">
                                                                     <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
-                                                                    <div class="collaborator-card__list">
-                                                                        <a class="collaborator-card__person avatar" href="#">
+                                                                    <div class="collaborator-card__connections">
+                                                                        16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
+                                                                    </div>
+                                                                    <div class="collaborator-card__list snake">
+                                                                        <!-- 5 avatars maximum -->
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
                                                                             <img class="avatar__image"
-                                                                                 srcset="../temp/person-a-21x21@2x.jpg 2x"
-                                                                                 src="../temp/person-a-21x21.jpg"
-                                                                                 width="21"
-                                                                                 height="21"
+                                                                                 srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-a-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
                                                                                  alt="Mark Zuckerberg"
                                                                             >
                                                                         </a>
-                                                                        <a class="collaborator-card__person avatar" href="#">
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
                                                                             <img class="avatar__image"
-                                                                                 srcset="../temp/person-b-21x21@2x.jpg 2x"
-                                                                                 src="../temp/person-b-21x21.jpg"
-                                                                                 width="21"
-                                                                                 height="21"
+                                                                                 srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-b-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
+                                                                                 alt="Mark Zuckerberg"
+                                                                            >
+                                                                        </a>
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                                            <img class="avatar__image"
+                                                                                 srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-c-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
+                                                                                 alt="Mark Zuckerberg"
+                                                                            >
+                                                                        </a>
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                                            <img class="avatar__image"
+                                                                                 srcset="../temp/person-d-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-d-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
+                                                                                 alt="Mark Zuckerberg"
+                                                                            >
+                                                                        </a>
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                                            <img class="avatar__image"
+                                                                                 srcset="../temp/person-e-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-e-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
                                                                                  alt="Mark Zuckerberg"
                                                                             >
                                                                         </a>
                                                                     </div>
-                                                                </div>
-                                                                <div class="collaborator-card__connections">
-                                                                    16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
                                                                 </div>
                                                             </div>
                                                             <div class="collaborator-card__operations">
-                                                                <a class="collaborator-card__action collaborator-card__action--connect" href="#">
+                                                                <a class="collaborator-card__action button" href="#">
+                                                                    <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
                                                                     Connect
-                                                                    <div class="collaborator-card__action-preview">
-                                                                        <img class="collaborator-card__action-icon" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
-                                                                    </div>
                                                                 </a>
-                                                                <a class="collaborator-card__action collaborator-card__action--message" href="#">
+                                                                <a class="collaborator-card__action button button--blue" href="#">
+                                                                    <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                                                                     Message
-                                                                    <div class="collaborator-card__action-preview">
-                                                                        <img class="collaborator-card__action-icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
-                                                                    </div>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3001,58 +3018,82 @@
                                                             <div class="collaborator-card__body">
                                                                 <a class="collaborator-card__photo avatar" href="#">
                                                                     <img class="avatar__image"
-                                                                         srcset="../temp/person-a-56x56@2x.jpg 2x"
-                                                                         src="../temp/person-a-56x56.jpg"
-                                                                         width="56"
-                                                                         height="56"
+                                                                         srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                                         src="../temp/person-a-72x72.jpg"
+                                                                         width="72"
+                                                                         height="72"
                                                                          alt="Mark Zuckerberg"
                                                                     >
                                                                 </a>
                                                                 <div class="collaborator-card__name">
-                                                                    Andres Acosta
+                                                                    <a class="link link--text-alike" href="#">Andres Acosta</a>
                                                                 </div>
                                                                 <div class="collaborator-card__note">
                                                                     Tenor, San Diego, CA
                                                                 </div>
                                                                 <div class="collaborator-card__crowd">
                                                                     <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
-                                                                    <div class="collaborator-card__list">
-                                                                        <a class="collaborator-card__person avatar" href="#">
+                                                                    <div class="collaborator-card__connections">
+                                                                        16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
+                                                                    </div>
+                                                                    <div class="collaborator-card__list snake">
+                                                                        <!-- 5 avatars maximum -->
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
                                                                             <img class="avatar__image"
-                                                                                 srcset="../temp/person-a-21x21@2x.jpg 2x"
-                                                                                 src="../temp/person-a-21x21.jpg"
-                                                                                 width="21"
-                                                                                 height="21"
+                                                                                 srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-a-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
                                                                                  alt="Mark Zuckerberg"
                                                                             >
                                                                         </a>
-                                                                        <a class="collaborator-card__person avatar" href="#">
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
                                                                             <img class="avatar__image"
-                                                                                 srcset="../temp/person-b-21x21@2x.jpg 2x"
-                                                                                 src="../temp/person-b-21x21.jpg"
-                                                                                 width="21"
-                                                                                 height="21"
+                                                                                 srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-b-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
+                                                                                 alt="Mark Zuckerberg"
+                                                                            >
+                                                                        </a>
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                                            <img class="avatar__image"
+                                                                                 srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-c-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
+                                                                                 alt="Mark Zuckerberg"
+                                                                            >
+                                                                        </a>
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                                            <img class="avatar__image"
+                                                                                 srcset="../temp/person-d-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-d-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
+                                                                                 alt="Mark Zuckerberg"
+                                                                            >
+                                                                        </a>
+                                                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                                            <img class="avatar__image"
+                                                                                 srcset="../temp/person-e-28x28@2x.jpg 2x"
+                                                                                 src="../temp/person-e-28x28.jpg"
+                                                                                 width="28"
+                                                                                 height="28"
                                                                                  alt="Mark Zuckerberg"
                                                                             >
                                                                         </a>
                                                                     </div>
-                                                                </div>
-                                                                <div class="collaborator-card__connections">
-                                                                    16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
                                                                 </div>
                                                             </div>
                                                             <div class="collaborator-card__operations">
-                                                                <a class="collaborator-card__action collaborator-card__action--connect" href="#">
+                                                                <a class="collaborator-card__action button" href="#">
+                                                                    <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
                                                                     Connect
-                                                                    <div class="collaborator-card__action-preview">
-                                                                        <img class="collaborator-card__action-icon" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
-                                                                    </div>
                                                                 </a>
-                                                                <a class="collaborator-card__action collaborator-card__action--message" href="#">
+                                                                <a class="collaborator-card__action button button--blue" href="#">
+                                                                    <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
                                                                     Message
-                                                                    <div class="collaborator-card__action-preview">
-                                                                        <img class="collaborator-card__action-icon" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
-                                                                    </div>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -3131,8 +3172,8 @@
                                     <div class="circles__body">
                                         <div class="circles__list">
                                             <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview hint hint--to-bottom hint--sidebar-left">
-                                                    <a class="avatar avatar--squared" href="#">
+                                                <div class="user-card__preview">
+                                                    <a class="avatar avatar--squared" href="#" data-flyover="#mlmkbewoyl">
                                                         <img class="avatar__image"
                                                              srcset="../temp/person-a-104x104@2x.jpg 2x"
                                                              src="../temp/person-a-104x104.jpg"
@@ -3141,93 +3182,6 @@
                                                              alt=""
                                                         >
                                                     </a>
-                                                    <div class="hint__dropdown">
-                                                        <div class="hint__bubble">
-                                                            <div class="collaborator-card collaborator-card--smaller">
-                                                                <div class="collaborator-card__body">
-                                                                    <a class="collaborator-card__photo avatar" href="#">
-                                                                        <img class="avatar__image"
-                                                                             srcset="../temp/person-a-72x72@2x.jpg 2x"
-                                                                             src="../temp/person-a-72x72.jpg"
-                                                                             width="72"
-                                                                             height="72"
-                                                                             alt="Mark Zuckerberg"
-                                                                        >
-                                                                    </a>
-                                                                    <div class="collaborator-card__name">
-                                                                        <a class="link link--text-alike" href="#">Andres Acosta</a>
-                                                                    </div>
-                                                                    <div class="collaborator-card__note">
-                                                                        Tenor, San Diego, CA
-                                                                    </div>
-                                                                    <div class="collaborator-card__crowd">
-                                                                        <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
-                                                                        <div class="collaborator-card__connections">
-                                                                            16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
-                                                                        </div>
-                                                                        <div class="collaborator-card__list snake">
-                                                                            <!-- 5 avatars maximum -->
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-a-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-a-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-b-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-b-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-c-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-c-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-d-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-d-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-e-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-e-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="collaborator-card__operations">
-                                                                    <a class="collaborator-card__action button" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
-                                                                        Connect
-                                                                    </a>
-                                                                    <a class="collaborator-card__action button button--blue" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
-                                                                        Message
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <div class="user-card__data">
                                                     <h4 class="user-card__name">
@@ -3241,8 +3195,8 @@
                                                 </div>
                                             </div>
                                             <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview hint hint--to-bottom hint--sidebar-right">
-                                                    <a class="avatar avatar--squared" href="#">
+                                                <div class="user-card__preview">
+                                                    <a class="avatar avatar--squared" href="#" data-flyover="#owgksbzgfn">
                                                         <img class="avatar__image"
                                                              srcset="../temp/person-b-104x104@2x.jpg 2x"
                                                              src="../temp/person-b-104x104.jpg"
@@ -3251,93 +3205,6 @@
                                                              alt=""
                                                         >
                                                     </a>
-                                                    <div class="hint__dropdown">
-                                                        <div class="hint__bubble">
-                                                            <div class="collaborator-card collaborator-card--smaller">
-                                                                <div class="collaborator-card__body">
-                                                                    <a class="collaborator-card__photo avatar" href="#">
-                                                                        <img class="avatar__image"
-                                                                             srcset="../temp/person-a-72x72@2x.jpg 2x"
-                                                                             src="../temp/person-a-72x72.jpg"
-                                                                             width="72"
-                                                                             height="72"
-                                                                             alt="Mark Zuckerberg"
-                                                                        >
-                                                                    </a>
-                                                                    <div class="collaborator-card__name">
-                                                                        <a class="link link--text-alike" href="#">Andres Acosta</a>
-                                                                    </div>
-                                                                    <div class="collaborator-card__note">
-                                                                        Tenor, San Diego, CA
-                                                                    </div>
-                                                                    <div class="collaborator-card__crowd">
-                                                                        <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
-                                                                        <div class="collaborator-card__connections">
-                                                                            16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
-                                                                        </div>
-                                                                        <div class="collaborator-card__list snake">
-                                                                            <!-- 5 avatars maximum -->
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-a-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-a-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-b-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-b-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-c-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-c-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-d-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-d-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-e-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-e-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="collaborator-card__operations">
-                                                                    <a class="collaborator-card__action button" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
-                                                                        Connect
-                                                                    </a>
-                                                                    <a class="collaborator-card__action button button--blue" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
-                                                                        Message
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <div class="user-card__data">
                                                     <h4 class="user-card__name">
@@ -3351,8 +3218,8 @@
                                                 </div>
                                             </div>
                                             <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview hint hint--to-bottom hint--sidebar-left">
-                                                    <a class="avatar avatar--squared" href="#">
+                                                <div class="user-card__preview">
+                                                    <a class="avatar avatar--squared" href="#" data-flyover="#sahrndodxx">
                                                         <img class="avatar__image"
                                                              srcset="../temp/person-c-104x104@2x.jpg 2x"
                                                              src="../temp/person-c-104x104.jpg"
@@ -3361,93 +3228,6 @@
                                                              alt=""
                                                         >
                                                     </a>
-                                                    <div class="hint__dropdown">
-                                                        <div class="hint__bubble">
-                                                            <div class="collaborator-card collaborator-card--smaller">
-                                                                <div class="collaborator-card__body">
-                                                                    <a class="collaborator-card__photo avatar" href="#">
-                                                                        <img class="avatar__image"
-                                                                             srcset="../temp/person-a-72x72@2x.jpg 2x"
-                                                                             src="../temp/person-a-72x72.jpg"
-                                                                             width="72"
-                                                                             height="72"
-                                                                             alt="Mark Zuckerberg"
-                                                                        >
-                                                                    </a>
-                                                                    <div class="collaborator-card__name">
-                                                                        <a class="link link--text-alike" href="#">Andres Acosta</a>
-                                                                    </div>
-                                                                    <div class="collaborator-card__note">
-                                                                        Tenor, San Diego, CA
-                                                                    </div>
-                                                                    <div class="collaborator-card__crowd">
-                                                                        <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
-                                                                        <div class="collaborator-card__connections">
-                                                                            16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
-                                                                        </div>
-                                                                        <div class="collaborator-card__list snake">
-                                                                            <!-- 5 avatars maximum -->
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-a-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-a-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-b-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-b-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-c-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-c-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-d-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-d-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-e-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-e-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="collaborator-card__operations">
-                                                                    <a class="collaborator-card__action button" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
-                                                                        Connect
-                                                                    </a>
-                                                                    <a class="collaborator-card__action button button--blue" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
-                                                                        Message
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <div class="user-card__data">
                                                     <h4 class="user-card__name">
@@ -3461,8 +3241,8 @@
                                                 </div>
                                             </div>
                                             <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview hint hint--to-bottom hint--sidebar-right">
-                                                    <a class="avatar avatar--squared" href="#">
+                                                <div class="user-card__preview">
+                                                    <a class="avatar avatar--squared" href="#" data-flyover="#mhlocburgf">
                                                         <img class="avatar__image"
                                                              srcset="../temp/person-d-104x104@2x.jpg 2x"
                                                              src="../temp/person-d-104x104.jpg"
@@ -3471,93 +3251,6 @@
                                                              alt=""
                                                         >
                                                     </a>
-                                                    <div class="hint__dropdown">
-                                                        <div class="hint__bubble">
-                                                            <div class="collaborator-card collaborator-card--smaller">
-                                                                <div class="collaborator-card__body">
-                                                                    <a class="collaborator-card__photo avatar" href="#">
-                                                                        <img class="avatar__image"
-                                                                             srcset="../temp/person-a-72x72@2x.jpg 2x"
-                                                                             src="../temp/person-a-72x72.jpg"
-                                                                             width="72"
-                                                                             height="72"
-                                                                             alt="Mark Zuckerberg"
-                                                                        >
-                                                                    </a>
-                                                                    <div class="collaborator-card__name">
-                                                                        <a class="link link--text-alike" href="#">Andres Acosta</a>
-                                                                    </div>
-                                                                    <div class="collaborator-card__note">
-                                                                        Tenor, San Diego, CA
-                                                                    </div>
-                                                                    <div class="collaborator-card__crowd">
-                                                                        <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
-                                                                        <div class="collaborator-card__connections">
-                                                                            16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
-                                                                        </div>
-                                                                        <div class="collaborator-card__list snake">
-                                                                            <!-- 5 avatars maximum -->
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-a-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-a-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-b-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-b-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-c-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-c-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-d-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-d-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                            <a class="snake__item avatar avatar--alt-hover" href="#">
-                                                                                <img class="avatar__image"
-                                                                                     srcset="../temp/person-e-28x28@2x.jpg 2x"
-                                                                                     src="../temp/person-e-28x28.jpg"
-                                                                                     width="28"
-                                                                                     height="28"
-                                                                                     alt="Mark Zuckerberg"
-                                                                                >
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="collaborator-card__operations">
-                                                                    <a class="collaborator-card__action button" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
-                                                                        Connect
-                                                                    </a>
-                                                                    <a class="collaborator-card__action button button--blue" href="#">
-                                                                        <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
-                                                                        Message
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <div class="user-card__data">
                                                     <h4 class="user-card__name">
@@ -3581,93 +3274,6 @@
                                         </a>
                                     </div>
                                 </div>
-                                <button class="dash-side__show-audio player-placeholder" type="button">
-                                    <span class="player-placeholder__play">
-                                        <img class="player-placeholder__icon" src="../symbols/16-play.svg" width="16" height="16" alt="">
-                                    </span>
-                                    Select media to begin listening or press play for a recommendation.
-                                </button>
-                                <section class="dash-side__audio player player--loading">
-                                    <div class="player__menu operations operations--simplified-handler operations--for-player">
-                                        <button class="operations__handler" type="button">
-                                            <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                            More
-                                        </button>
-                                        <div class="operations__dropdown">
-                                            <div class="menu">
-                                                <a class="menu__link" href="#">
-                                                    <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                                    Share
-                                                </a>
-                                                <a class="menu__link" href="#">
-                                                    <img class="menu__icon" src="../symbols/24-bookmark.svg" width="24" height="24" alt="">
-                                                    Favorite
-                                                </a>
-                                                <a class="menu__link" href="#">
-                                                    <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
-                                                    Report
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="player__handler" type="button">
-                                        <img class="player__angle" src="../symbols/16-angle-down.svg" width="16" height="16" alt="">
-                                        Expand
-                                    </button>
-                                    <button class="player__close" type="button">
-                                        <img class="player__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                                        CLose
-                                    </button>
-                                    <h2 class="player__heading">
-                                        Now playing
-                                    </h2>
-                                    <img class="player__preview"
-                                         srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
-                                         src="../temp/brandon-bell-when-the-air.jpg"
-                                         width="174"
-                                         height="99"
-                                         alt=""
-                                    >
-                                    <div class="player__song ellipsis">
-                                        Brandon Bell
-                                    </div>
-                                    <div class="player__artist ellipsis">
-                                        “When the air sings of summer” from The Old Maid and the Thief
-                                    </div>
-                                    <div class="player__wave">
-                                        <div class="player__indicator">
-                                            <div class="loading loading--inverted">Loading</div>
-                                        </div>
-                                        <div class="player__progress">
-                                            <!-- Wave Surf here -->
-                                        </div>
-                                    </div>
-                                    <div class="player__controls">
-                                        <button class="player__action player__action--bookmark" type="button">
-                                            <img class="player__icon" src="../symbols/16-bookmark.svg" width="16" height="16" alt="">
-                                        </button>
-                                        <button class="player__action player__action--disabled player__action--backward" type="button">
-                                            <img class="player__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
-                                        </button>
-                                        <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/brandon-bell-when-the-air.jpg);">
-                                            <img class="player__icon player__icon--play" src="../symbols/16-play.svg" width="16" height="16" alt="">
-                                            <img class="player__icon player__icon--pause" src="../symbols/16-pause.svg" width="16" height="16" alt="">
-                                            <div class="player__visualization playback">
-                                                <div class="playback__bar"></div>
-                                                <div class="playback__bar"></div>
-                                                <div class="playback__bar"></div>
-                                                <div class="playback__bar"></div>
-                                                <div class="playback__bar"></div>
-                                            </div>
-                                        </button>
-                                        <button class="player__action player__action--forward" type="button">
-                                            <img class="player__icon" src="../symbols/16-forward.svg" width="16" height="16" alt="">
-                                        </button>
-                                        <button class="player__action player__action--shuffle" type="button">
-                                            <img class="player__icon" src="../symbols/16-shuffle.svg" width="16" height="16" alt="">
-                                        </button>
-                                    </div>
-                                </section>
                                 <div class="dash-side__news updates updates--sidebar updates--switched-to-news">
                                     <div class="updates__body">
                                         <section class="updates__section updates__section--media happening">
@@ -4548,6 +4154,364 @@
                     </div>
                 </div>
             </section>
+
+        </div>
+
+
+        <!-- 3/3 Flyovers-->
+
+        <!-- Tooltips -->
+
+        <div class="flyover" id="mlmkbewoyl">
+            <div class="flyover__body">
+                <div class="collaborator-card">
+                    <div class="collaborator-card__body">
+                        <a class="collaborator-card__photo avatar" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                 src="../temp/person-a-72x72.jpg"
+                                 width="72"
+                                 height="72"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="collaborator-card__name">
+                            <a class="link link--text-alike" href="#">Kunal Lahiry</a>
+                        </div>
+                        <div class="collaborator-card__note">
+                            Tenor, San Diego, CA
+                        </div>
+                        <div class="collaborator-card__crowd">
+                            <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
+                            <div class="collaborator-card__connections">
+                                16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
+                            </div>
+                            <div class="collaborator-card__list snake">
+                                <!-- 5 avatars maximum -->
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                         src="../temp/person-a-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                         src="../temp/person-b-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                         src="../temp/person-c-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-d-28x28@2x.jpg 2x"
+                                         src="../temp/person-d-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-e-28x28@2x.jpg 2x"
+                                         src="../temp/person-e-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collaborator-card__operations">
+                        <a class="collaborator-card__action button" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
+                            Connect
+                        </a>
+                        <a class="collaborator-card__action button button--blue" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
+                            Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flyover" id="owgksbzgfn">
+            <div class="flyover__body">
+                <div class="collaborator-card">
+                    <div class="collaborator-card__body">
+                        <a class="collaborator-card__photo avatar" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-72x72@2x.jpg 2x"
+                                 src="../temp/person-b-72x72.jpg"
+                                 width="72"
+                                 height="72"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="collaborator-card__name">
+                            <a class="link link--text-alike" href="#">Austin Lewellen</a>
+                        </div>
+                        <div class="collaborator-card__note">
+                            Tenor, San Diego, CA
+                        </div>
+                        <div class="collaborator-card__crowd">
+                            <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
+                            <div class="collaborator-card__connections">
+                                16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
+                            </div>
+                            <div class="collaborator-card__list snake">
+                                <!-- 5 avatars maximum -->
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                         src="../temp/person-a-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                         src="../temp/person-b-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                         src="../temp/person-c-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-d-28x28@2x.jpg 2x"
+                                         src="../temp/person-d-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-e-28x28@2x.jpg 2x"
+                                         src="../temp/person-e-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collaborator-card__operations">
+                        <a class="collaborator-card__action button" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
+                            Connect
+                        </a>
+                        <a class="collaborator-card__action button button--blue" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
+                            Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flyover" id="sahrndodxx">
+            <div class="flyover__body">
+                <div class="collaborator-card">
+                    <div class="collaborator-card__body">
+                        <a class="collaborator-card__photo avatar" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-72x72@2x.jpg 2x"
+                                 src="../temp/person-c-72x72.jpg"
+                                 width="72"
+                                 height="72"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="collaborator-card__name">
+                            <a class="link link--text-alike" href="#">Leah Hawkins</a>
+                        </div>
+                        <div class="collaborator-card__note">
+                            Tenor, San Diego, CA
+                        </div>
+                        <div class="collaborator-card__crowd">
+                            <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
+                            <div class="collaborator-card__connections">
+                                16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
+                            </div>
+                            <div class="collaborator-card__list snake">
+                                <!-- 5 avatars maximum -->
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                         src="../temp/person-a-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                         src="../temp/person-b-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                         src="../temp/person-c-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-d-28x28@2x.jpg 2x"
+                                         src="../temp/person-d-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-e-28x28@2x.jpg 2x"
+                                         src="../temp/person-e-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collaborator-card__operations">
+                        <a class="collaborator-card__action button" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
+                            Connect
+                        </a>
+                        <a class="collaborator-card__action button button--blue" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
+                            Message
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flyover" id="mhlocburgf">
+            <div class="flyover__body">
+                <div class="collaborator-card">
+                    <div class="collaborator-card__body">
+                        <a class="collaborator-card__photo avatar" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-72x72@2x.jpg 2x"
+                                 src="../temp/person-d-72x72.jpg"
+                                 width="72"
+                                 height="72"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="collaborator-card__name">
+                            <a class="link link--text-alike" href="#">Peter Volpe</a>
+                        </div>
+                        <div class="collaborator-card__note">
+                            Tenor, San Diego, CA
+                        </div>
+                        <div class="collaborator-card__crowd">
+                            <img class="collaborator-card__crowd-icon" src="../symbols/16-crowd.svg" alt="">
+                            <div class="collaborator-card__connections">
+                                16 mutual collaborators including <a class="link link--text-alike" href="#">Alexandra Smither</a> and <a class="link link--text-alike" href="#">Elena Villalón</a>
+                            </div>
+                            <div class="collaborator-card__list snake">
+                                <!-- 5 avatars maximum -->
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                         src="../temp/person-a-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                         src="../temp/person-b-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                         src="../temp/person-c-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-d-28x28@2x.jpg 2x"
+                                         src="../temp/person-d-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <a class="snake__item avatar avatar--alt-hover" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-e-28x28@2x.jpg 2x"
+                                         src="../temp/person-e-28x28.jpg"
+                                         width="28"
+                                         height="28"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collaborator-card__operations">
+                        <a class="collaborator-card__action button" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-add-member.svg" width="16" height="16" alt="">
+                            Connect
+                        </a>
+                        <a class="collaborator-card__action button button--blue" href="#">
+                            <img class="button__icon button__icon--left" src="../symbols/16-envelope.svg" width="16" height="16" alt="">
+                            Message
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- 3/3 Modals: -->
@@ -5556,189 +5520,6 @@
             </div>
         </div>
 
-        <div class="notification-center">
-            <div class="notification-center__item">
-                <div class="toast toast--danger">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto cupiditate deserunt, dolorem labore magnam molestiae natus nisi nulla quidem.
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--danger">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est labore minima perspiciatis quia, ratione sequi.
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--danger">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--info">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--info">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--info">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--success">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--success">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--success">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--danger">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto cupiditate deserunt, dolorem labore magnam molestiae natus nisi nulla quidem.
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--danger">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est labore minima perspiciatis quia, ratione sequi.
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--danger">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-cross.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--info">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--info">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--info">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-info.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--success">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--success">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do e
-                    </div>
-                </div>
-            </div>
-            <div class="notification-center__item">
-                <div class="toast toast--success">
-                    <div class="toast__preview">
-                        <img class="toast__icon" src="../symbols/round-check.svg" width="16" height="16" alt="">
-                    </div>
-                    <div class="toast__message">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, s
-                    </div>
-                </div>
-            </div>
-        </div>
-
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
 
@@ -5778,6 +5559,7 @@
         <script src="../scripts/_chat.js"></script>
         <script src="../scripts/_badge.js"></script>
         <script src="../scripts/_media-bar.js"></script>
+        <script src="../scripts/_flyover.js"></script>
 
 
     </body>
