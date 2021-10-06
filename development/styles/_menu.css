@@ -12,7 +12,7 @@
         color: #545454;
         white-space: nowrap;
         text-decoration: none;
-        transition: color var(--transition-hover);
+        transition: background-color var(--transition-hover);
     }
 
     .menu__link:hover {

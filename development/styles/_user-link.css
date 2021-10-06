@@ -7,9 +7,7 @@
     line-height: 18px;
     color: #545454;
     text-decoration: none;
-    /*transition: background-image var(--transition-hover);*/
-    /*background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 4px, #F6F6F6 4px, #F6F6F6 54px, rgba(0,0,0,0) 54px, rgba(0,0,0,0));*/
-
+    transition: background-color var(--transition-hover);
 }
 
 .user-link:hover {

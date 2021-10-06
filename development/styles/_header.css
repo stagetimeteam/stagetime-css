@@ -35,7 +35,7 @@
                 display: inline-block;
                 vertical-align: top;
                 height: 64px;
-                padding: 22px 22px;
+                padding: 22px;
                 font-size: 12px;
                 line-height: 20px;
                 color: #AAAAAA;
@@ -44,7 +44,6 @@
                 .header__login::before {
                     content: "";
                     position: absolute;
-                    z-index: -1;
                     left: 6px;
                     right: 6px;
                     top: 50%;
@@ -73,19 +72,22 @@
                 .header__join::before {
                     content: "";
                     position: absolute;
-                    z-index: -1;
                     left: 6px;
                     right: 22px;
                     top: 50%;
                     margin-top: -18px;
                     height: 36px;
-                    border: 1px solid #F2F2F2;
+                    border: 1px solid #E8E8E8;
                     border-radius: 18px;
                     display: block;
                 }
 
                 .header__join:hover::before {
                     background-color: #F2F2F2;
+                }
+
+                .header__label {
+                    position: relative;
                 }
 
         .header__greetings {
@@ -122,74 +124,64 @@
         background-color: #333333;
         box-shadow: none;
     }
-        .header--dark .header__top-bar {
+
+
+        .header--dark .header__greetings {
+            color: #F2F2F2;
+        }
+
+
+
+        .header--dark .header__auth {
 
         }
-            .header--dark .header__branding {
+            .header--dark .header__login {
 
             }
 
-            .header--dark .header__handlers {
+            .header--dark .header__join {
 
             }
-                .header--dark .header__search-handler {
-
-                }
-                    .header--dark .header__magnifier {
-
-                    }
-
-                .header--dark .header__profile-handler {
+                .header__label {
 
                 }
 
-            .header--dark .header__auth {
 
-            }
-                .header--dark .header__login {
-
-                }
-
-                .header--dark .header__join {
-
-                }
-
-            .header--dark .header__dropdown {
+        .header--dark .header__login {
+            color: #AAAAAA;
+        }
+            .header--dark .header__login::before {
 
             }
 
-            .header--dark .header__private-area {
+        .header--dark .header__login:hover {
+
+        }
+            .header--dark .header__login:hover::before {
+                background-color: #4E4E4E;
+            }
+
+        .header--dark .header__join {
+            color: #AAAAAA;
+        }
+            .header--dark .header__join::before {
+                border-color: #AAAAAA;
+            }
+
+        .header--dark .header__join:hover {
+
+        }
+            .header--dark .header__join:hover::before {
+                background-color: #4E4E4E;
+            }
+
+
+        .header--dark .header__menu {
+
+        }
+            .header--dark .header__item {
 
             }
-                .header--dark .header__greetings {
-                    color: #F2F2F2;
-                }
-
-                .header--dark .header__menu {
-
-                }
-                    .header--dark .header__item {
-
-                    }
-
-                    .header--dark .header__item:first-child {
-
-                    }
-
-
-                    .header--dark .header__login {
-
-                    }
-
-                    .header--dark .header__join {
-                        background-color: transparent;
-                        border-color: #AAAAAA;
-                        color: #AAAAAA;
-                    }
-
-                    .header--dark .header__join:hover {
-                        background-color: #4E4E4E;
-                    }
 
 
 @media (max-width: 991px) {
