@@ -22,40 +22,68 @@
 
         .header__auth {
             position: absolute; /* take it away from .header__top-bar */
-            right: 20px;
-            top: 10px;
+            right: 0;
+            top: 0;
             display: flex;
             align-items: flex-start;
         }
             .header__login {
-                margin-top: 3px;
-                padding: 7px 10px;
+                position: relative;
                 display: inline-block;
                 vertical-align: top;
-                font-size: 13px;
+                height: 64px;
+                padding: 22px 22px;
+                font-size: 12px;
                 line-height: 20px;
                 color: #AAAAAA;
                 text-decoration: none;
             }
+                .header__login::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    left: 6px;
+                    right: 6px;
+                    top: 50%;
+                    margin-top: -18px;
+                    height: 36px;
+                    border-radius: 18px;
+                    display: block;
+                }
+
+                .header__login:hover::before {
+                    background-color: #F2F2F2;
+                }
 
             .header__join {
-                margin-top: 3px;
-                margin-left: 22px;
+                position: relative;
                 display: inline-block;
                 vertical-align: top;
-                border: 1px solid #E8E8E8;
-                border-radius: 17px;
-                height: 34px;
-                padding: 6px 39px 8px;
-                font-size: 10px;
+                height: 64px;
+                padding: 22px 50px 22px 34px;
+                font-size: 12px;
                 line-height: 20px;
                 color: #AAAAAA;
+                text-align: center;
                 text-decoration: none;
             }
+                .header__join::before {
+                    content: "";
+                    position: absolute;
+                    z-index: -1;
+                    left: 6px;
+                    right: 22px;
+                    top: 50%;
+                    margin-top: -18px;
+                    height: 36px;
+                    border: 1px solid #F2F2F2;
+                    border-radius: 18px;
+                    display: block;
+                }
 
-            .header__join:hover {
-                border-color: #F2F2F2;
-            }
+                .header__join:hover::before {
+                    background-color: #F2F2F2;
+                }
 
         .header__greetings {
             position: absolute;
