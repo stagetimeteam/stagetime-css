@@ -14,58 +14,47 @@
         <!-- 1/3: .header, .search, .notifications -->
         <header class="header">
             <div class="header__detachable-panel">
-                <div class="header__top-bar">
-                    <a class="header__branding logo" href="#">
-                        STAGETIME
-                    </a>
-                    <div class="header__handlers">
-                        <button class="header__search-handler" type="button">
-                            <img class="header__magnifier" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
-                        </button>
-                        <button class="header__messages-link" type="button">
-                            <img class="header__envelope" src="../symbols/32-envelope.svg" width="32" height="32" alt="">
-                        </button>
-                        <button class="header__notifications-handler" type="button">
-                            <img class="header__bell" src="../symbols/32-bell.svg" width="32" height="32" alt="">
-                        </button>
-                        <button class="header__profile-handler" type="button">
-                            <span class="avatar avatar--alt-hover avatar--fancy">
-                                <img class="avatar__image" srcset="../temp/person-a-40x40@2x.jpg 2x" src="../temp/person-a-40x40.jpg" width="40" height="40" alt="">
-                            </span>
-                        </button>
-                    </div>
+                <a class="header__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <!-- optional:
+                <div class="header__greetings">
+                    Good afternoon, <strong class="user-color">Jennie</strong>.
                 </div>
-                <div class="header__dropdown">
-                    <div class="header__private-area">
-                        <div class="header__greetings">
-                            Good afternoon, <strong class="user-color">Jennie</strong>.
-                        </div>
-                        <div class="header__menu">
-                            <a class="header__item header-button header-button--flagged" href="#">
-                                <img class="header-button__icon" src="../symbols/32-envelope.svg" width="32" height="32" alt="">
-                                <span class="visuallyhidden">Messages</span>
-                                <span class="visuallyhidden">New:</span>
-                                <span class="header-button__updates counter counter--danger">4</span>
-                            </a>
-                            <a class="header__item header-button header-button--flagged" href="#">
-                                <img class="header-button__icon" src="../symbols/32-bell.svg" width="32" height="32" alt="">
-                                <span class="visuallyhidden">Notifications</span>
-                                <span class="visuallyhidden">New:</span>
-                                <span class="header-button__updates counter counter--danger">4</span>
-                            </a>
-                            <a class="header__item profile-button" href="#">
-                                <span class="avatar avatar--alt-hover avatar--fancy">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-26x26@2x.jpg 2x"
-                                         src="../temp/person-a-26x26.jpg"
-                                         width="26"
-                                         height="26"
-                                         alt=""
-                                    >
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+                -->
+                <!-- optional:
+                <div class="header__auth">
+                    <a class="header__login" href="#">Log In</a>
+                    <a class="header__join" href="#">Join <span class="hide hide--hide-on-smartphone">Stagetime</span></a>
+                </div>
+                -->
+                <div class="header__menu">
+                    <button class="header__item search-button" type="button">
+                        <img class="search-button__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                    </button>
+                    <a class="header__item header-button header-button--messages header-button--flagged" href="#">
+                        <img class="header-button__icon" src="../symbols/32-envelope.svg" width="32" height="32" alt="">
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--notifications header-button--flagged" href="#">
+                        <img class="header-button__icon" src="../symbols/32-bell.svg" width="32" height="32" alt="">
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item profile-button" href="#">
+                        <span class="avatar avatar--alt-hover avatar--fancy">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-26x26@2x.jpg 2x"
+                                 src="../temp/person-a-26x26.jpg"
+                                 width="26"
+                                 height="26"
+                                 alt=""
+                            >
+                        </span>
+                    </a>
                 </div>
             </div>
         </header>
