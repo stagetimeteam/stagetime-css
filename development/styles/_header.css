@@ -14,10 +14,13 @@
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
         display: flex;
         align-items: flex-start;
-        padding: 12px 27px 12px 10px;
     }
         .header__branding {
-
+            box-sizing: content-box;
+            border-top: 12px solid transparent; /* expand clickable area using borders */
+            border-bottom: 12px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
         }
 
         .header__auth {
