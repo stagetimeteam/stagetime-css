@@ -10,8 +10,15 @@
     }
 
     .search-centered .search__bar {
-        left: 50%;
-        margin-left: -177px;
+        left: 493px;
+    }
+
+
+    @media (min-width: 1240px) {
+        .search-centered .search__bar {
+            left: 50%;
+            margin-left: -127px;
+        }
     }
         .search__close {
             display: none;
