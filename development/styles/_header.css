@@ -16,108 +16,69 @@
         align-items: flex-start;
         padding: 12px 27px 12px 10px;
     }
+        .header__branding {
 
-    /*@media (min-width: 1240px) {*/
-    /*    .header__detachable-panel {*/
-    /*        position: fixed;*/
-    /*    }*/
-    /*}*/
-        .header__top-bar {
-            display: flex;
-            align-items: flex-start;
-            flex-grow: 1;
         }
-            .header__branding {
-                flex-shrink: 0;
-            }
 
-            .header__handlers {
-                display: none;
-            }
-                .header__search-handler {
-
-                }
-                    .header__magnifier {
-
-                    }
-
-                .header__notifications-handler {
-
-                }
-                    .header__bell {
-
-                    }
-
-                .header__profile-handler {
-
-                }
-
-            .header__auth {
-                position: absolute; /* take it away from .header__top-bar */
-                right: 20px;
-                top: 10px;
-                display: flex;
-                align-items: flex-start;
-            }
-                .header__login {
-                    margin-top: 3px;
-                    padding: 7px 10px;
-                    display: inline-block;
-                    vertical-align: top;
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: #AAAAAA;
-                    text-decoration: none;
-                }
-
-                .header__join {
-                    margin-top: 3px;
-                    margin-left: 22px;
-                    display: inline-block;
-                    vertical-align: top;
-                    border: 1px solid #E8E8E8;
-                    border-radius: 17px;
-                    height: 34px;
-                    padding: 6px 39px 8px;
-                    font-size: 10px;
-                    line-height: 20px;
-                    color: #AAAAAA;
-                    text-decoration: none;
-                }
-
-                .header__join:hover {
-                    border-color: #F2F2F2;
-                }
-
-        .header__dropdown {
+        .header__auth {
+            position: absolute; /* take it away from .header__top-bar */
+            right: 20px;
+            top: 10px;
             display: flex;
             align-items: flex-start;
         }
-            .header__private-area {
-                flex-shrink: 0;
-                margin-left: auto;
-                display: flex;
-                align-items: flex-start;
+            .header__login {
+                margin-top: 3px;
+                padding: 7px 10px;
+                display: inline-block;
+                vertical-align: top;
+                font-size: 13px;
+                line-height: 20px;
+                color: #AAAAAA;
+                text-decoration: none;
             }
-                .header__greetings {
-                    margin-top: 10px;
-                    margin-right: 20px;
-                    font-size: 14px;
-                    line-height: 20px;
-                    color: #757575;
-                }
 
-                .header__menu {
-                    display: flex;
-                    align-items: flex-start;
-                }
-                    .header__item {
-                        margin-left: 26px;
-                    }
+            .header__join {
+                margin-top: 3px;
+                margin-left: 22px;
+                display: inline-block;
+                vertical-align: top;
+                border: 1px solid #E8E8E8;
+                border-radius: 17px;
+                height: 34px;
+                padding: 6px 39px 8px;
+                font-size: 10px;
+                line-height: 20px;
+                color: #AAAAAA;
+                text-decoration: none;
+            }
 
-                    .header__item:first-child {
-                        margin-left: 0;
-                    }
+            .header__join:hover {
+                border-color: #F2F2F2;
+            }
+
+        .header__greetings {
+            margin-top: 10px;
+            margin-right: 20px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #757575;
+        }
+
+        .header__menu {
+            position: absolute;
+            right: 15px;
+            top: 0;
+            display: flex;
+            align-items: flex-start;
+        }
+            .header__item {
+
+            }
+
+            .header__item:first-child {
+                margin-left: 0;
+            }
 
 
 

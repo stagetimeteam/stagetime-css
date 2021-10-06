@@ -1,13 +1,12 @@
 .header-button {
     position: relative;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     background-color: transparent;
     border: none;
-    padding: 0;
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
     font-family: inherit;
     color: inherit;
     cursor: pointer;
@@ -15,23 +14,15 @@
 }
     .header-button__icon {
         vertical-align: top;
-        fill: #545454;
-    }
-
-
-.header-button--flagged {
-    padding-top: 4px;
-    padding-right: 4px;
-}
-    .header-button--flagged .header-button__icon {
         width: 24px;
         height: 24px;
+        fill: #545454;
     }
 
     .header-button__updates {
         position: absolute;
-        right: 4px;
-        top: 4px;
+        right: 14px;
+        top: 14px;
     }
 
 

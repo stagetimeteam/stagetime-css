@@ -1,7 +1,9 @@
 .profile-button {
-    display: inline-block;
-    vertical-align: top;
-    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
     background-color: transparent;
     border: none;
     cursor: pointer;
