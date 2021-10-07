@@ -12,7 +12,27 @@
     cursor: pointer;
     text-decoration: none;
 }
+    /* hover: */
+    .header-button::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: background-color var(--transition-hover);
+    }
+
+    .header-button:hover::before {
+        background-color: #F4F4F4;
+    }
+
     .header-button__icon {
+        position: relative;
         vertical-align: top;
         width: 24px;
         height: 24px;
