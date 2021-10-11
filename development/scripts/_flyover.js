@@ -10,9 +10,8 @@
 
         if( target.hasClass('flyover--organization-feed') ) {
             target.css({
-                'top': $(this)[0].getBoundingClientRect().top - target.height(),
-                'left': $(this)[0].getBoundingClientRect().left - 37,
-                'transform': 'translateY(-15px)'
+                'top': $(this)[0].getBoundingClientRect().top - target.height() - 15,
+                'left': $(this)[0].getBoundingClientRect().left - 37
             });
             peak.css({
                 'bottom': '6px',
@@ -22,9 +21,8 @@
 
         if( target.hasClass('flyover--side-card') ) {
             target.css({
-                'top': $(this)[0].getBoundingClientRect().top + $(this).height(),
-                'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - $(this).outerWidth(),
-                'transform': 'translateY(15px)'
+                'top': $(this)[0].getBoundingClientRect().top + $(this).height() + 15,
+                'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - $(this).outerWidth()
             });
             peak.css({
                 'top': '-6px',
@@ -39,7 +37,7 @@
     });
 
 
-    /* to reload on hext hover */
+    /* to reload on next hover */
     $(window).on('scroll', function () {
         $('.flyover').removeClass('flyover--visible');
     });

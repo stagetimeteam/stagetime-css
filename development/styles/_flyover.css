@@ -5,12 +5,10 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity var(--transition-show),
-                visibility var(--transition-show),
-                transform var(--transition-show);
+                visibility var(--transition-show);
 }
 
-.flyover--visible,
-.flyover:hover {
+.flyover--visible {
     opacity: 1;
     visibility: visible;
 }
