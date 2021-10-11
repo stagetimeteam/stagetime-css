@@ -1,14 +1,14 @@
 .flyover {
     position: fixed;
     z-index: 1050; /* higher than header (same as bootstrap) */
-    padding-bottom: 10px;
     opacity: 0;
     visibility: hidden;
     transition: opacity var(--transition-show),
                 visibility var(--transition-show);
 }
 
-.flyover--visible {
+.flyover--visible,
+.flyover:hover {
     opacity: 1;
     visibility: visible;
 }
@@ -19,6 +19,7 @@
         width: 12px;
         height: 12px;
         transform: rotate(45deg);
+        transform-origin: center center;
     }
 
     .flyover__peak--shadow {

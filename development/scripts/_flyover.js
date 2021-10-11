@@ -10,22 +10,24 @@
 
         if( target.hasClass('flyover--organization-feed') ) {
             target.css({
-                'top': $(this)[0].getBoundingClientRect().top - target.height() - 15,
-                'left': $(this)[0].getBoundingClientRect().left - 37
+                'bottom': $(window).outerHeight() - $(this)[0].getBoundingClientRect().top,
+                'left': $(this)[0].getBoundingClientRect().left - 37,
+                'padding-bottom': '15px'
             });
             peak.css({
-                'bottom': '6px',
+                'bottom': '9px',
                 'left': '60px'
             })
         }
 
         if( target.hasClass('flyover--side-card') ) {
             target.css({
-                'top': $(this)[0].getBoundingClientRect().top + $(this).height() + 15,
-                'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - $(this).outerWidth()
+                'top': $(this)[0].getBoundingClientRect().top + $(this).height(),
+                'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - $(this).outerWidth(),
+                'padding-top': '15px'
             });
             peak.css({
-                'top': '-6px',
+                'top': '9px',
                 'right': '46px'
             })
         }
