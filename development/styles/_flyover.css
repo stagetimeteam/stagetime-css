@@ -1,6 +1,6 @@
 .flyover {
     position: fixed;
-    z-index: 1000;
+    z-index: 1050; /* higher than header (same as bootstrap) */
     padding-bottom: 10px;
     opacity: 0;
     visibility: hidden;
@@ -24,19 +24,16 @@
     }
 
     .flyover__peak--shadow {
-        z-index: 10; /* lowest on Z-axis */
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
     }
 
     .flyover__peak--background {
-        z-index: 30; /* highest on Z-axis */
         background-color: #FFFFFF;
     }
 
 
     .flyover__bubble {
         position: relative;
-        z-index: 20; /* in the middle on Z-axis */
         background-color: #FFFFFF;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
         border-radius: 7px;

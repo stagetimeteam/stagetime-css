@@ -1,6 +1,7 @@
 .collaborator-card {
-    width: 344px;
     position: relative;
+    z-index: 10; /* higher than .flyover__peak */
+    width: 344px;
     text-align: left;
 }
     .collaborator-card__body {
