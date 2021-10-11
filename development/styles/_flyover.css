@@ -18,27 +18,21 @@
     }
 
     .flyover__peak--shadow {
-        z-index: 10; /* 1) Bubble shadow at the very bottom of Z axis */
+        z-index: 10; /* lowest on Z-axis */
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
     }
 
     .flyover__peak--background {
-        z-index: 30; /* 2) Bubble peak is higher than bubble shadow on Z axis */
+        z-index: 30; /* highest on Z-axis */
         background-color: #FFFFFF;
     }
 
+
     .flyover__bubble {
         position: relative;
-        z-index: 20; /* 3) bubble background is higher than peak on Z-axis */
+        z-index: 20; /* in the middle on Z-axis */
         background-color: #FFFFFF;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
         border-radius: 7px;
     }
-
-
-
-/*.flyover--side-card {*/
-/*    padding-bottom: 0;*/
-/*    padding-top: 10px;*/
-/*}*/
 
