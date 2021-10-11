@@ -7,7 +7,6 @@
 
         target = $($(this).attr('data-flyover'));
         peak = target.find('.flyover__peak');
-        peakShadow = target.find('.flyover__peak-shadow');
 
         if( target.hasClass('flyover--side-card') ) {
             target.css({
@@ -19,15 +18,6 @@
                 'top': '9px',
                 'right': '46px'
             })
-            peakShadow.css({
-                'top': '9px',
-                'right': '46px'
-            })
-        } else {
-            // top = $(this)[0].getBoundingClientRect().top + $(this).outerHeight();
-            // right = $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - $(this).outerWidth();
-            // bottom = 'auto';
-            // left = 'auto';
         }
 
         target.css({

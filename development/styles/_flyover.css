@@ -8,26 +8,23 @@
 .flyover:hover {
     display: block !important;
 }
-    /* bubble shadow */
-    .flyover__peak-shadow {
-        position: absolute;  /* 1) Bubble shadow at the very bottom of Z axis */
-        z-index: 10;
+    /* peak */
+    .flyover__peak {
+        position: absolute;
         display: block;
         width: 12px;
         height: 12px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
         transform: rotate(45deg);
     }
 
-    /* peak */
-    .flyover__peak {
-        position: absolute;/* 2) Bubble peak is higher than bubble shadow on Z axis */
-        z-index: 30;
-        display: block;
-        width: 12px;
-        height: 12px;
+    .flyover__peak--shadow {
+        z-index: 10; /* 1) Bubble shadow at the very bottom of Z axis */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.11);
+    }
+
+    .flyover__peak--background {
+        z-index: 30; /* 2) Bubble peak is higher than bubble shadow on Z axis */
         background-color: #FFFFFF;
-        transform: rotate(45deg);
     }
 
     .flyover__bubble {
