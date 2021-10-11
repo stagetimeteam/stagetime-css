@@ -11,16 +11,16 @@
 
         if( target.hasClass('flyover--side-card') ) {
             target.css({
-                'padding-top': '10px',
+                'padding-top': '15px',
                 'top': $(this)[0].getBoundingClientRect().top + $(this).outerHeight(),
                 'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - $(this).outerWidth(),
             });
             peak.css({
-                'top': '4px',
+                'top': '9px',
                 'right': '46px'
             })
             peakShadow.css({
-                'top': '4px',
+                'top': '9px',
                 'right': '46px'
             })
         } else {
