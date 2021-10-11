@@ -2,11 +2,17 @@
     position: fixed;
     z-index: 1000;
     padding-bottom: 10px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--transition-show),
+                visibility var(--transition-show),
+                transform var(--transition-show);
 }
 
+.flyover--visible,
 .flyover:hover {
-    display: block !important;
+    opacity: 1;
+    visibility: visible;
 }
     /* peak */
     .flyover__peak {
