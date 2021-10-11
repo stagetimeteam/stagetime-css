@@ -38,4 +38,13 @@
         target.removeClass('flyover--visible');
     });
 
+
+    /* to reload on hext hover */
+    $(window).on('scroll', function () {
+        $('.flyover').removeClass('flyover--visible');
+    });
+    $('.scrollbar').on('scroll', function () {
+        $('.flyover').removeClass('flyover--visible');
+    });
+
 })(jQuery);
