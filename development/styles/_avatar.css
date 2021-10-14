@@ -72,7 +72,6 @@
         transform: none !important;
     }
 
-    .header__profile-handler:hover .avatar__image,
     .profile-button:hover .avatar__image,
     .avatar--alt-hover:hover .avatar__image {
         opacity: 0.5; /* half white on hover */

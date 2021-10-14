@@ -79,7 +79,7 @@
 @import url("_org-card.css");
 @import url("_synopsis.css");
 @import url("_player.css");
-@import url("_hide.css");
+@import url("_hide-on-desktop.css");
 @import url("_org-bar.css");
 @import url("_news-card.css");
 @import url("_updates.css");
@@ -195,3 +195,8 @@
 @import url("_currently-in.css");
 @import url("_flyover.css");
 @import url("_search-button.css");
+@import url("_network.css");
+@import url("_panel.css");
+@import url("_connection-card.css");
+@import url("_back-panel.css");
+@import url("_bolder-null.css");

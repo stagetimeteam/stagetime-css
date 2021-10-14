@@ -55,31 +55,6 @@
 
             }
 
-            .header--dark .header__handlers {
-                /*display: none;*/
-            }
-                .header--dark .header__search-handler {
-
-                }
-                    .header--dark .header__search-handler::before {
-                        background-color: #AAAAAA;
-                    }
-
-                    .header--dark .header__magnifier {
-                        fill: #FFFFFF;
-                    }
-
-                .header--dark .header__notifications-handler {
-
-                }
-                    .header--dark .header__bell {
-                        fill: #AAAAAA;
-                    }
-
-                .header--dark .header__profile-handler {
-
-                }
-
         .header--dark .header__dropdown {
 
         }

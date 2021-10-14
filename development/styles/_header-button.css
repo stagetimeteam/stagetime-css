@@ -76,12 +76,3 @@
     .header-button--dark:hover .header-button__updates {
 
     }
-
-
-
-.header-button--user-color {
-
-}
-    .header-button--user-color .header-button__icon {
-        fill: var(--user-color);
-    }

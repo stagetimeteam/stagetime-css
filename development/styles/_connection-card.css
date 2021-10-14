@@ -1,0 +1,48 @@
+.connection-card {
+    position: relative;
+}
+    .connection-card__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 110px;
+        padding: 18px 50px 18px 126px;
+        text-decoration: none;
+        transition: background-color var(--transition-hover);
+    }
+
+    .connection-card:hover .connection-card__link {
+        background-color: #F4F4F4;
+    }
+        .connection-card__preview {
+            position: absolute;
+            left: 27px;
+            top: 18px;
+        }
+            .connection-card__preview.avatar,
+            .connection-card__preview .avatar {
+                box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
+            }
+
+        .connection-card__heading {
+            position: relative;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: #545454;
+        }
+
+        .connection-card__note {
+            position: relative;
+            margin-top: 1px;
+            font-size: 13px;
+            line-height: 22px;
+            color: #757575;
+        }
+
+        .connection-card__actions,
+        .connection-card__actions.operations {
+            position: absolute;
+            right: 22px;
+            top: 23px;
+        }

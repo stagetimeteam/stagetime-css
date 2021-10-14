@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="has-sub-header" lang="en-US">
+<html class="has-player3 search-centered" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Org People Details</title>
+        <title>Network</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -17,9 +17,11 @@
                 <a class="header__branding logo" href="#">
                     STAGETIME
                 </a>
+                <!-- optional:
                 <div class="header__greetings">
                     Good afternoon, <strong class="user-color">Jennie</strong>.
                 </div>
+                -->
                 <!-- optional:
                 <div class="header__auth">
                     <a class="header__login" href="#"><span class="header__label">Log In</span></a>
@@ -56,18 +58,6 @@
                 </div>
             </div>
         </header>
-        <div class="sub-header">
-            <div class="sub-header__detachable-panel">
-                <div class="sub-header__desktop-content">
-                    <img class="sub-header__icon" src="../symbols/16-globe-half.svg" width="16" height="16" alt="">
-                    You are viewing <a class="link link--text-alike" href="#">Nate Fearing</a>’s public Stagetime profile. To access the network and connect with Nate, <a class="link link--text-alike" href="#">join Stagetime here</a>.
-                </div>
-                <div class="sub-header__smartphone-content">
-                    <img class="sub-header__icon" src="../symbols/16-globe-half.svg" width="16" height="16" alt="">
-                    <a class="link link--text-alike" href="#">Join Stagetime</a> to access network.
-                </div>
-            </div>
-        </div>
         <form class="search">
             <div class="search__bar">
                 <button class="search__close" type="button">
@@ -695,451 +685,421 @@
         </div>
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="summary">
-                <div class="summary__background" role="presentation" aria-hidden="true">
-                    <style>
-                        .summary__background {
-                            background-image: url(../temp/summary-1440x467.jpg)
-                        }
-                        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-                            .summary__background {
-                                background-image: url(../temp/summary-1440x467@2x.jpg);
-                            }
-                        }
-
-                        @media (max-width: 900px) {
-                            .summary__background {
-                                background-image: url(../temp/summary-768x467.jpg)
-                            }
-                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-                                .summary__background {
-                                    background-image: url(../temp/summary-768x467@2x.jpg);
-                                }
-                            }
-                        }
-                    </style>
-                </div>
-                <div class="summary__wrap container container--organisation">
-                    <div class="summary__brand">
-                        <img class="summary__logo"
-                             srcset="../temp/org-logo-113x113@2x.jpg 2x"
-                             src="../temp/org-logo-113x113.jpg"
-                             width="113"
-                             height="113"
-                             alt=""
-                        >
-                        <h1 class="summary__title">
-                            Indiana University
-                        </h1>
-                    </div>
-                    <div class="summary__location">
-                        <img class="summary__map-pin" src="../symbols/24-location.svg" width="24" height="24" alt="">
-                        Bloomington, IN — USA
-                    </div>
-                </div>
-            </div>
-            <div class="separator org-nav">
-                <div class="org-nav__wrap container container--organisation">
-                    <div class="org-nav__menu alt-nav">
-                        <a class="alt-nav__link" href="organization-home.html">Home</a>
-                        <a class="alt-nav__link alt-nav__link--current" href="organization-people.html">People</a>
-                        <a class="alt-nav__link" href="organization-events.html">Events</a>
-                        <a class="alt-nav__link" href="organization-virtual.html">Virtual</a>
-                        <a class="alt-nav__link" href="#">Jobs</a>
-                    </div>
-                    <div class="org-nav__social media">
-                        <a class="media__link" href="#">
-                            <img class="media__icon" src="../symbols/28-media-instagram.svg" width="28" height="28" alt="">
-                        </a>
-                        <a class="media__link" href="#">
-                            <img class="media__icon" src="../symbols/28-media-facebook.svg" width="28" height="28" alt="">
-                        </a>
-                        <a class="media__link" href="#">
-                            <img class="media__icon" src="../symbols/28-media-twitter.svg" width="28" height="28" alt="">
-                        </a>
-                        <a class="media__link" href="#">
-                            <img class="media__icon" src="../symbols/28-media-link.svg" width="28" height="28" alt="">
-                        </a>
+            <div class="dashboard dashboard--no-aside dashboard--collapsed-sidebar">
+                <div class="dashboard__sidebar">
+                    <div class="scrollbar scrollbar-macosx">
+                        <nav class="navigation">
+                            <div class="navigation__menu">
+                                <a class="user-link user-link--collapsed-sidebar" href="#">
+                                    <span class="user-link__preview avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-20x20@2x.jpg 2x"
+                                             src="../temp/person-a-20x20.jpg"
+                                             width="20"
+                                             height="20"
+                                             alt=""
+                                        >
+                                    </span>
+                                    Ben Bliss
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar nav-link--current" href="#">
+                                    <img class="nav-link__icon" src="../symbols/20-nav-house.svg" width="20" height="20" alt="">
+                                    Home
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <img class="nav-link__icon" src="../symbols/20-nav-globe.svg" width="20" height="20" alt="">
+                                    Explore
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <img class="nav-link__icon" src="../symbols/20-nav-envelope.svg" width="20" height="20" alt="">
+                                    Messages <span class="nav-link__counter">(4)</span>
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <img class="nav-link__icon" src="../symbols/20-nav-crowd.svg" width="20" height="20" alt="">
+                                    Collaborators
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <img class="nav-link__icon" src="../symbols/20-nav-house.svg" width="20" height="20" alt="">
+                                    Jobs
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <img class="nav-link__icon" src="../symbols/20-nav-collections.svg" width="20" height="20" alt="">
+                                    Collections
+                                </a>
+                                <a class="user-link user-link--collapsed-sidebar" href="#">
+                                    <span class="user-link__preview avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-20x20@2x.jpg 2x"
+                                             src="../temp/organization-a-20x20.jpg"
+                                             width="20"
+                                             height="20"
+                                             alt=""
+                                        >
+                                    </span>
+                                    Stagetime
+                                </a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </div>
-            <div class="people container container--organisation">
-                <section class="people__department">
-                    <div class="module-head">
-                        <div class="module-head__back">
-                            <a class="action action--simplified action--alternate" href="organization-people.html">
-                                <span class="action__image">
-                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
-                                </span>
-                                <span class="action__label">
-                                    Back
-                                </span>
-                            </a>
+                <div class="dashboard__content">
+                    <div class="network">
+                        <div class="network__menu panel">
+                            1
                         </div>
-                        <h3 class="module-head__heading title title--heading-2">
-                            Artists <i>&nbsp;or:&nbsp;</i> Staff
-                        </h3>
-                        <div class="module-head__control-panel">
-                            <div class="module-head__left-slot">
-                                <div class="switch">
-                                    <b class="switch__heading">
-                                        Sort by
-                                    </b>
-                                    <div class="switch__body">
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Year</span>
-                                        </label>
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Instrument</span>
-                                        </label>
+                        <div class="network__content">
+                            <div class="network__section panel">
+                                <a class="network__back back-panel" href="#">
+                                    <img class="back-panel__icon" src="../symbols/24-back-tiny.svg" width="24" height="24" alt="">
+                                    287 Connections
+                                </a>
+                                <div class="network__connections">
+                                    <div class="bolder-null">
+                                        Looks like you aren’t following anyone yet. Follow people you’d like to keep up with but who aren’t in your personal network.
+                                    </div>
+                                    <!-- temp -->or:<!--/temp -->
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="module-head__right-slot">
-                                <input class="query" type="text" placeholder="Search Staff…">
-                            </div>
                         </div>
-                        <div class="module-head__search-notice search-heading">
-                            <div class="search-heading__message">
-                                <i>Search page only:</i> You are viewing search results containing keyword <strong>“Sarah”</strong>
-                            </div>
-                            <button class="search-heading__cancel" type="button">
-                                <img class="search-heading__cross" src="../symbols/20-rounded-cross.svg" width="20" height="20" alt="">
-                            </button>
+                        <div class="network__aside panel">
+                            3
                         </div>
                     </div>
-                    <div class="group">
-                        <div class="group__listing">
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
-                                         src="../temp/person-b-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Alyssa Dessoye
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
-                                         src="../temp/person-c-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Konstantin Konstantinopolsky
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Tenor
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
-                                         src="../temp/person-b-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Alyssa Dessoye
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
-                                         src="../temp/person-b-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Alyssa Dessoye
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
-                                         src="../temp/person-c-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Konstantin Konstantinopolsky
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Tenor
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
-                                         src="../temp/person-c-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Andres Acosta
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Tenor
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
-                                         src="../temp/person-c-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Andres Acosta
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Tenor
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
-                                         src="../temp/person-c-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Andres Acosta
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Tenor
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item user-card">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="user-card__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- optional:
-                        <a class="group__more button button--darker" href="organization-people-details.html">
-                            See More
-                        </a>
-                        -->
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
 
-        <!-- 3/3 Modals: -->
-        <!-- No modal windows on this page -->
+
+
+
 
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
