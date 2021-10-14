@@ -1,18 +1,21 @@
 .network {
     position: relative;
+    display: flex;
+    align-self: stretch;
     min-height: 100%;
-    padding: 24px 298px 56px 240px;
+    padding: 24px;
     background-color: #F2F2F2;
 }
     .network__menu {
-        position: absolute;
-        left: 24px;
-        top: 24px;
+        flex-shrink: 0;
         width: 194px;
+        align-self: flex-start;
     }
 
     .network__content {
-
+        margin-left: 24px;
+        margin-right: 24px;
+        width: calc(100% - 194px - 48px - 250px);
     }
         .network__section {
 
@@ -23,12 +26,57 @@
 
             .network__connections {
                 padding-top: 8px;
-                padding-bottom: 8px;
+                padding-bottom: 28px;
             }
 
     .network__aside {
-        position: absolute;
-        right: 24px;
-        top: 24px;
         width: 250px;
+        flex-shrink: 0;
     }
+
+
+
+@media (min-width: 1240px) {
+
+    .network {
+        /*position: relative;*/
+        display: block;
+        /*align-self: stretch;*/
+        /*min-height: 100%;*/
+        /*padding: 24px 24px 56px 24px;*/
+        /*background-color: #F2F2F2;*/
+        padding-left: 242px;
+        padding-right: 298px;
+    }
+        .network__menu {
+            position: fixed;
+            top: 88px;
+            left: 106px;
+        }
+
+        .network__content {
+            margin-left: 0;
+            margin-right: 0;
+            width: auto;
+        }
+            .network__section {
+
+            }
+                .network__back {
+
+                }
+
+                .network__connections {
+                    /*padding-top: 8px;*/
+                    /*padding-bottom: 28px;*/
+                }
+
+        .network__aside {
+            position: fixed;
+            top: 88px;
+            right: 24px;
+            bottom: 24px;
+            /*width: 250px;*/
+            /*flex-shrink: 0;*/
+        }
+}
