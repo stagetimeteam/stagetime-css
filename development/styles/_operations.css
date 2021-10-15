@@ -37,7 +37,7 @@
         position: absolute;
         right: 10px;
         top: calc(100% - 20px);
-        width: 250px;
+        min-width: 250px;
         background-color: #FFFFFF;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.06);
         border-radius: 10px;
