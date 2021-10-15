@@ -1,17 +1,17 @@
-.followers {
+.media-consumption {
     position: relative;
     padding: 12px 20px 18px;
     background-color: #F6F6F6;
     border-radius: 4px;
 }
-    .followers__heading {
+    .media-consumption__heading {
         font-weight: 600;
         font-size: 15px;
         line-height: 20px;
         color: #545454;
     }
 
-    .followers__add {
+    .media-consumption__add {
         position: absolute;
         right: 9px;
         top: 6px;
@@ -24,30 +24,31 @@
         cursor: pointer;
     }
 
-    .followers__add:hover {
+    .media-consumption__add:hover {
         background-color: red;
     }
-        .followers__plus {
+        .media-consumption__plus {
             vertical-align: top;
             fill: #9CB2BE;
         }
 
-    .followers__value {
-        margin-top: 7px;
-        font-size: 41px;
-        line-height: 41px;
-        color: #333333;
+    .media-consumption__widget {
+        margin-top: 11px;
     }
 
-    .followers__stats {
+    .media-consumption__stats {
         margin-top: 6px;
         font-size: 13px;
         line-height: 20px;
         color: #545454;
     }
-        .followers__growth {
+        .media-consumption__growth {
             margin-right: 11px;
             margin-top: -1px;
             float: left;
             fill: #9CB2BE;
+        }
+
+        .media-consumption__highlight {
+            font-weight: 600;
         }

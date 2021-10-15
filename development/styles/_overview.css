@@ -1,5 +1,5 @@
 .overview {
-    padding: 14px 21px;
+    padding: 14px 21px 19px;
 }
     .overview__updated {
         position: relative;
@@ -74,3 +74,15 @@
         text-align: center;
         background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 18px, #E8E8E8 18px, #E8E8E8 19px, rgba(0, 0, 0, 0) 19px, rgba(0, 0, 0, 0));
     }
+
+    .overview__section {
+        margin-top: 16px;
+    }
+
+    .overview__alt-handler {
+        margin-top: 16px;
+    }
+        .overview__alt-handler.button,
+        .overview__alt-handler .button {
+            width: 100%;
+        }
