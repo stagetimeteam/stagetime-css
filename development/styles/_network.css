@@ -15,7 +15,7 @@
     .network__content {
         margin-left: 24px;
         margin-right: 24px;
-        width: calc(100% - 194px - 48px - 250px);
+        width: calc(100% - 194px - 48px - 274px);
     }
         .network__section {
 
@@ -30,7 +30,7 @@
             }
 
     .network__aside {
-        width: 250px;
+        width: 274px;
         flex-shrink: 0;
     }
 
@@ -46,7 +46,7 @@
         /*padding: 24px 24px 56px 24px;*/
         /*background-color: #F2F2F2;*/
         padding-left: 242px;
-        padding-right: 298px;
+        padding-right: 322px;
     }
         .network__menu {
             position: fixed;

@@ -1,0 +1,32 @@
+.followers {
+    position: relative;
+    padding: 12px 20px 18px;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+}
+    .followers__heading {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #545454;
+    }
+
+    .followers__add {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+        .followers__plus {
+            fill: #9CB2BE;
+        }
+
+    .followers__value {
+
+    }
+
+    .followers__stats {
+
+    }
