@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="has-sub-header" lang="en-US">
+<html class="has-player3 search-centered" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Org Virtual Details</title>
+        <title>Network</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1634330295">
@@ -17,9 +17,11 @@
                 <a class="header__branding logo" href="#">
                     STAGETIME
                 </a>
+                <!-- optional:
                 <div class="header__greetings">
                     Good afternoon, <strong class="user-color">Jennie</strong>.
                 </div>
+                -->
                 <!-- optional:
                 <div class="header__auth">
                     <a class="header__login" href="#"><span class="header__label">Log In</span></a>
@@ -62,22 +64,6 @@
                 </div>
             </div>
         </header>
-        <div class="sub-header">
-            <div class="sub-header__detachable-panel">
-                <div class="sub-header__desktop-content">
-                    <svg class="sub-header__icon" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1634330295#16-globe-half"></use>
-                    </svg>
-                    You are viewing <a class="link link--text-alike" href="#">Nate Fearing</a>’s public Stagetime profile. To access the network and connect with Nate, <a class="link link--text-alike" href="#">join Stagetime here</a>.
-                </div>
-                <div class="sub-header__smartphone-content">
-                    <svg class="sub-header__icon" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1634330295#16-globe-half"></use>
-                    </svg>
-                    <a class="link link--text-alike" href="#">Join Stagetime</a> to access network.
-                </div>
-            </div>
-        </div>
         <form class="search">
             <div class="search__bar">
                 <button class="search__close" type="button">
@@ -735,384 +721,661 @@
         </div>
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="summary">
-                <div class="summary__background" role="presentation" aria-hidden="true">
-                    <style>
-                        .summary__background {
-                            background-image: url(../temp/summary-1440x467.jpg)
-                        }
-                        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-                            .summary__background {
-                                background-image: url(../temp/summary-1440x467@2x.jpg);
-                            }
-                        }
-
-                        @media (max-width: 900px) {
-                            .summary__background {
-                                background-image: url(../temp/summary-768x467.jpg)
-                            }
-                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-                                .summary__background {
-                                    background-image: url(../temp/summary-768x467@2x.jpg);
-                                }
-                            }
-                        }
-                    </style>
-                </div>
-                <div class="summary__wrap container container--organisation">
-                    <div class="summary__brand">
-                        <img class="summary__logo"
-                             srcset="../temp/org-logo-113x113@2x.jpg 2x"
-                             src="../temp/org-logo-113x113.jpg"
-                             width="113"
-                             height="113"
-                             alt=""
-                        >
-                        <h1 class="summary__title">
-                            Indiana University
-                        </h1>
-                    </div>
-                    <div class="summary__location">
-                        <svg class="summary__map-pin" width="24" height="24">
-                            <use xlink:href="../symbols/symbols.svg?1634330295#24-location"></use>
-                        </svg>
-                        Bloomington, IN — USA
-                    </div>
-                </div>
-            </div>
-            <div class="separator org-nav">
-                <div class="org-nav__wrap container container--organisation">
-                    <div class="org-nav__menu alt-nav">
-                        <a class="alt-nav__link" href="organization-home.html">Home</a>
-                        <a class="alt-nav__link" href="organization-people.html">People</a>
-                        <a class="alt-nav__link" href="organization-events.html">Events</a>
-                        <a class="alt-nav__link alt-nav__link--current" href="organization-virtual.html">Virtual</a>
-                        <a class="alt-nav__link" href="#">Jobs</a>
-                    </div>
-                    <div class="org-nav__social media">
-                        <a class="media__link" href="#">
-                            <svg class="media__icon" width="28" height="28">
-                                <use xlink:href="../symbols/symbols.svg?1634330295#28-media-instagram"></use>
-                            </svg>
-                        </a>
-                        <a class="media__link" href="#">
-                            <svg class="media__icon" width="28" height="28">
-                                <use xlink:href="../symbols/symbols.svg?1634330295#28-media-facebook"></use>
-                            </svg>
-                        </a>
-                        <a class="media__link" href="#">
-                            <svg class="media__icon" width="28" height="28">
-                                <use xlink:href="../symbols/symbols.svg?1634330295#28-media-twitter"></use>
-                            </svg>
-                        </a>
-                        <a class="media__link" href="#">
-                            <svg class="media__icon" width="28" height="28">
-                                <use xlink:href="../symbols/symbols.svg?1634330295#28-media-link"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="virtual container container--organisation">
-                <section class="virtual__collection">
-                    <div class="module-head">
-                        <div class="module-head__back">
-                            <a class="action action--simplified action--alternate" href="organization-virtual.html">
-                                <span class="action__image">
-                                    <svg class="action__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1634330295#16-left"></use>
+            <div class="dashboard dashboard--no-aside dashboard--collapsed-sidebar">
+                <div class="dashboard__sidebar">
+                    <div class="scrollbar scrollbar-macosx">
+                        <nav class="navigation">
+                            <div class="navigation__menu">
+                                <a class="user-link user-link--collapsed-sidebar" href="#">
+                                    <span class="user-link__preview avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-20x20@2x.jpg 2x"
+                                             src="../temp/person-a-20x20.jpg"
+                                             width="20"
+                                             height="20"
+                                             alt=""
+                                        >
+                                    </span>
+                                    Ben Bliss
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar nav-link--current" href="#">
+                                    <svg class="nav-link__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-nav-house"></use>
                                     </svg>
-                                </span>
-                                <span class="action__label">
-                                    Back
-                                </span>
-                            </a>
+                                    Home
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <svg class="nav-link__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-nav-globe"></use>
+                                    </svg>
+                                    Explore
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <svg class="nav-link__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-nav-envelope"></use>
+                                    </svg>
+                                    Messages <span class="nav-link__counter">(4)</span>
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <svg class="nav-link__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-nav-crowd"></use>
+                                    </svg>
+                                    Collaborators
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <svg class="nav-link__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-nav-house"></use>
+                                    </svg>
+                                    Jobs
+                                </a>
+                                <a class="nav-link nav-link--collapsed-sidebar" href="#">
+                                    <svg class="nav-link__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-nav-collections"></use>
+                                    </svg>
+                                    Collections
+                                </a>
+                                <a class="user-link user-link--collapsed-sidebar" href="#">
+                                    <span class="user-link__preview avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-20x20@2x.jpg 2x"
+                                             src="../temp/organization-a-20x20.jpg"
+                                             width="20"
+                                             height="20"
+                                             alt=""
+                                        >
+                                    </span>
+                                    Stagetime
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="dashboard__content">
+                    <div class="network">
+                        <div class="network__menu panel">
+                            <div class="conn-menu">
+                                <div class="conn-menu__heading">
+                                    My Network
+                                </div>
+                                <a class="conn-menu__link" href="#">
+                                    <svg class="conn-menu__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-conn-connections"></use>
+                                    </svg>
+                                    <span class="conn-menu__label">Connections</span>
+                                </a>
+                                <a class="conn-menu__link conn-menu__link--current" href="#">
+                                    <svg class="conn-menu__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-conn-following"></use>
+                                    </svg>
+                                    <span class="conn-menu__label">Following</span>
+                                </a>
+                                <a class="conn-menu__link" href="#">
+                                    <svg class="conn-menu__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-conn-organizations"></use>
+                                    </svg>
+                                    <span class="conn-menu__label">Organizations</span>
+                                </a>
+                                <a class="conn-menu__link" href="#">
+                                    <svg class="conn-menu__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-conn-watching"></use>
+                                    </svg>
+                                    <span class="conn-menu__label">Watching</span>
+                                </a>
+                                <a class="conn-menu__link" href="#">
+                                    <svg class="conn-menu__icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#20-conn-contacts"></use>
+                                    </svg>
+                                    <span class="conn-menu__label">Contacts</span>
+                                </a>
+                            </div>
                         </div>
-                        <h3 class="module-head__heading title title--heading-2">
-                            Upcoming <i>&nbsp;or:&nbsp;</i> Library
-                        </h3>
-                        <div class="module-head__control-panel">
-                            <div class="module-head__left-slot">
-                                <div class="switch">
-                                    <b class="switch__heading">
-                                        Sort by
-                                    </b>
-                                    <div class="switch__body">
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Year</span>
-                                        </label>
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Instrument</span>
-                                        </label>
+                        <div class="network__content">
+                            <div class="network__section panel">
+                                <a class="network__back back-panel" href="#">
+                                    <svg class="back-panel__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1634330295#24-back-tiny"></use>
+                                    </svg>
+                                    287 Connections
+                                </a>
+                                <div class="network__connections">
+                                    <div class="bolder-null">
+                                        Looks like you aren’t following anyone yet. Follow people you’d like to keep up with but who aren’t in your personal network.
+                                    </div>
+                                    <!-- temp -->or:<!--/temp -->
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-72x72@2x.jpg 2x"
+                                                     src="../temp/organization-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="connection-card">
+                                        <a class="connection-card__link" href="#">
+                                            <div class="connection-card__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-72x72@2x.jpg 2x"
+                                                     src="../temp/person-a-72x72.jpg"
+                                                     width="72"
+                                                     height="72"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="connection-card__heading">
+                                                Wallis Giunta
+                                            </div>
+                                            <div class="connection-card__note">
+                                                Mezzo-soprano, Canada
+                                            </div>
+                                        </a>
+                                        <div class="connection-card__actions operations operations--simplified-handler">
+                                            <button class="operations__handler" type="button">
+                                                <svg class="operations__icon" width="32" height="32">
+                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-more"></use>
+                                                </svg>
+                                                More
+                                            </button>
+                                            <div class="operations__dropdown">
+                                                <div class="menu">
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-calendar"></use>
+                                                        </svg>
+                                                        Add to Calendar
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-share"></use>
+                                                        </svg>
+                                                        Share
+                                                    </a>
+                                                    <a class="menu__link" href="#">
+                                                        <svg class="menu__icon" width="24" height="24">
+                                                            <use xlink:href="../symbols/symbols.svg?1634330295#24-report"></use>
+                                                        </svg>
+                                                        Report
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="module-head__right-slot">
-                                <input class="query" type="text" placeholder="Search Library…">
-                            </div>
                         </div>
-                        <div class="module-head__search-notice search-heading">
-                            <div class="search-heading__message">
-                                <i>Search page only:</i> You are viewing search results containing keyword <strong>“Sarah”</strong>
+                        <div class="network__aside panel">
+                            <div class="network__summary scrollbar scrollbar-macosx">
+                                <div class="overview">
+                                    <div class="overview__updated">
+                                        <div class="overview__updates-icon">
+                                            <svg class="overview__bell" width="20" height="20">
+                                                <use xlink:href="../symbols/symbols.svg?1634330295#20-updates-bell"></use>
+                                            </svg>
+                                        </div>
+                                        Your profile was last updated on July 16, 2021 at 10:15am.
+                                    </div>
+                                    <a class="overview__photo" href="#">
+                                        <img class="overview__image"
+                                             srcset="../temp/overview@2x.jpg 2x"
+                                             src="../temp/overview.jpg"
+                                             width="232"
+                                             height="232"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <div class="overview__name">
+                                        <a class="overview__link" href="#">
+                                            Wm Clay Thompson
+                                        </a>
+                                    </div>
+                                    <div class="overview__note">
+                                        Bass
+                                    </div>
+                                    <div class="overview__handler">
+                                        <a class="button button--fancy" href="#">
+                                            <img class="button__icon"
+<svg>
+    <use xlink:href="../symbols/symbols.svg?1634330295#24-insights"></use>
+</svg>
+                                                 width="24"
+                                                 height="24"
+                                                 alt=""
+                                            >
+                                            My Stagetime
+                                        </a>
+                                    </div>
+                                    <div class="overview__section followers">
+                                        <b class="followers__heading">
+                                            Your Followers
+                                        </b>
+                                        <a class="followers__add" href="#">
+                                            <svg class="followers__plus" width="16" height="16">
+                                                <use xlink:href="../symbols/symbols.svg?1634330295#16-wide-plus"></use>
+                                            </svg>
+                                        </a>
+                                        <div class="followers__value">
+                                            445
+                                        </div>
+                                        <div class="followers__stats">
+                                            <svg class="followers__growth">
+                                                <use xlink:href="../symbols/symbols.svg?1634330295#24-trending-up"></use>
+                                            </svg>
+                                                 width="24"
+                                                 height="24"
+                                                 alt=""
+                                            >
+                                            + 2% vs. Oct 4 - Oct 10
+                                        </div>
+                                    </div>
+                                    <div class="overview__section profile-views">
+                                        <b class="profile-views__heading">
+                                            Profile Views
+                                        </b>
+                                        <div class="profile-views__widget">
+                                            <!-- temp -->
+                                            <!-- Use 192px wide graph here -->
+                                            <img src="../temp/profile-views.jpg" width="192" height="106" alt="">
+                                            <!--/temp -->
+                                        </div>
+                                    </div>
+                                    <div class="overview__section media-views">
+                                        <b class="media-views__heading">
+                                            Weekly Media Views
+                                        </b>
+                                        <svg class="media-views__icon" width="20" height="20">
+                                            <use xlink:href="../symbols/symbols.svg?1634330295#20-play-shifted"></use>
+                                        </svg>
+                                        <div class="media-views__value">
+                                            18
+                                        </div>
+                                        <div class="media-views__stats">
+                                            <svg class="media-views__growth">
+                                                <use xlink:href="../symbols/symbols.svg?1634330295#24-trending-up"></use>
+                                            </svg>
+                                                 width="24"
+                                                 height="24"
+                                                 alt=""
+                                            >
+                                            + 18% vs. Oct 4 - Oct 10
+                                        </div>
+                                    </div>
+                                    <div class="overview__section media-consumption">
+                                        <b class="media-consumption__heading">
+                                            Media Consumption
+                                        </b>
+                                        <div class="media-consumption__widget">
+                                            <!-- temp -->
+                                            <!-- Use 192px wide graph here -->
+                                            <img src="../temp/profile-views.jpg" width="192" height="106" alt="">
+                                            <!--/temp -->
+                                        </div>
+                                        <div class="media-consumption__stats">
+                                            <svg class="media-consumption__growth">
+                                                <use xlink:href="../symbols/symbols.svg?1634330295#24-trending-up"></use>
+                                            </svg>
+                                                 width="24"
+                                                 height="24"
+                                                 alt=""
+                                            >
+                                            <span class="media-consumption__highlight">“Madamina catologo e...”</span>
+                                            <br>Most viewed media
+                                        </div>
+                                    </div>
+                                    <a class="overview__alt-handler button button--fancy" href="#">
+                                        <img class="button__icon"
+<svg>
+    <use xlink:href="../symbols/symbols.svg?1634330295#24-insights"></use>
+</svg>
+                                             width="24"
+                                             height="24"
+                                             alt=""
+                                        >
+                                        Go to My Stagetime
+                                    </a>
+                                </div>
                             </div>
-                            <button class="search-heading__cancel" type="button">
-                                <svg class="search-heading__cross" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1634330295#20-rounded-cross"></use>
-                                </svg>
-                            </button>
                         </div>
                     </div>
-                    <div class="library">
-                        <div class="library__listing">
-                            <div class="library__item">
-                                <div class="video-card">
-                                    <div class="video-card__preview">
-                                        <a class="clip" href="organization-virtual-details.html">
-                                            <div class="clip__stage">
-                                                <img class="clip__image"
-                                                     srcset="../temp/clip-a@2x.jpg 2x"
-                                                     src="../temp/clip-a.jpg"
-                                                     width="310"
-                                                     height="220"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="clip__action play">
-                                                <svg class="play__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-play"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="video-card__body">
-                                        <h3 class="video-card__heading ellipsis">
-                                            <a class="link link--text-alike" href="#">La bohème</a>
-                                        </h3>
-                                        <div class="video-card__note ellipsis">
-                                            <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                                        </div>
-                                        <div class="video-card__note ellipsis">
-                                            Musical Arts Center, Bloomington, IN
-                                        </div>
-                                        <div class="video-card__people-counter crowd">
-                                            <svg class="crowd__icon" width="32" height="32">
-                                                <use xlink:href="../symbols/symbols.svg?1634330295#32-crowd"></use>
-                                            </svg>
-                                            999
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="library__item">
-                                <div class="video-card">
-                                    <div class="video-card__preview">
-                                        <a class="clip" href="organization-virtual-details.html">
-                                            <div class="clip__stage">
-                                                <img class="clip__image"
-                                                     srcset="../temp/clip-b@2x.jpg 2x"
-                                                     src="../temp/clip-b.jpg"
-                                                     width="310"
-                                                     height="220"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="clip__action play">
-                                                <svg class="play__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-play"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="video-card__body">
-                                        <h3 class="video-card__heading ellipsis">
-                                            <a class="link link--text-alike" href="#">New Music Ensemble</a>
-                                        </h3>
-                                        <div class="video-card__note ellipsis">
-                                            <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                                        </div>
-                                        <div class="video-card__note ellipsis">
-                                            Musical Arts Center, Bloomington, IN
-                                        </div>
-                                        <div class="video-card__people-counter crowd">
-                                            <svg class="crowd__icon" width="32" height="32">
-                                                <use xlink:href="../symbols/symbols.svg?1634330295#32-crowd"></use>
-                                            </svg>
-                                            999
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="library__item">
-                                <div class="video-card">
-                                    <div class="video-card__preview">
-                                        <a class="clip" href="organization-virtual-details.html">
-                                            <div class="clip__stage">
-                                                <img class="clip__image"
-                                                     srcset="../temp/clip-c@2x.jpg 2x"
-                                                     src="../temp/clip-c.jpg"
-                                                     width="310"
-                                                     height="220"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="clip__action play">
-                                                <svg class="play__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-play"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="video-card__body">
-                                        <h3 class="video-card__heading ellipsis">
-                                            <a class="link link--text-alike" href="#">La bohème</a>
-                                        </h3>
-                                        <div class="video-card__note ellipsis">
-                                            <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                                        </div>
-                                        <div class="video-card__note ellipsis">
-                                            Ford Hall, Bloomington, IN
-                                        </div>
-                                        <div class="video-card__people-counter crowd">
-                                            <svg class="crowd__icon" width="32" height="32">
-                                                <use xlink:href="../symbols/symbols.svg?1634330295#32-crowd"></use>
-                                            </svg>
-                                            999
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="library__item">
-                                <div class="video-card">
-                                    <div class="video-card__preview">
-                                        <a class="clip" href="organization-virtual-details.html">
-                                            <div class="clip__stage">
-                                                <img class="clip__image"
-                                                     srcset="../temp/clip-c@2x.jpg 2x"
-                                                     src="../temp/clip-c.jpg"
-                                                     width="310"
-                                                     height="220"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="clip__action play">
-                                                <svg class="play__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-play"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="video-card__body">
-                                        <h3 class="video-card__heading ellipsis">
-                                            <a class="link link--text-alike" href="#">La bohème</a>
-                                        </h3>
-                                        <div class="video-card__note ellipsis">
-                                            <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                                        </div>
-                                        <div class="video-card__note ellipsis">
-                                            Ford Hall, Bloomington, IN
-                                        </div>
-                                        <div class="video-card__people-counter crowd">
-                                            <svg class="crowd__icon" width="32" height="32">
-                                                <use xlink:href="../symbols/symbols.svg?1634330295#32-crowd"></use>
-                                            </svg>
-                                            999
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="library__item">
-                                <div class="video-card">
-                                    <div class="video-card__preview">
-                                        <a class="clip" href="organization-virtual-details.html">
-                                            <div class="clip__stage">
-                                                <img class="clip__image"
-                                                     srcset="../temp/clip-a@2x.jpg 2x"
-                                                     src="../temp/clip-a.jpg"
-                                                     width="310"
-                                                     height="220"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="clip__action play">
-                                                <svg class="play__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-play"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="video-card__body">
-                                        <h3 class="video-card__heading ellipsis">
-                                            <a class="link link--text-alike" href="#">La bohème</a>
-                                        </h3>
-                                        <div class="video-card__note ellipsis">
-                                            <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                                        </div>
-                                        <div class="video-card__note ellipsis">
-                                            Musical Arts Center, Bloomington, IN
-                                        </div>
-                                        <div class="video-card__people-counter crowd">
-                                            <svg class="crowd__icon" width="32" height="32">
-                                                <use xlink:href="../symbols/symbols.svg?1634330295#32-crowd"></use>
-                                            </svg>
-                                            999
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="library__item">
-                                <div class="video-card">
-                                    <div class="video-card__preview">
-                                        <a class="clip" href="organization-virtual-details.html">
-                                            <div class="clip__stage">
-                                                <img class="clip__image"
-                                                     srcset="../temp/clip-b@2x.jpg 2x"
-                                                     src="../temp/clip-b.jpg"
-                                                     width="310"
-                                                     height="220"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="clip__action play">
-                                                <svg class="play__icon" width="32" height="32">
-                                                    <use xlink:href="../symbols/symbols.svg?1634330295#32-play"></use>
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="video-card__body">
-                                        <h3 class="video-card__heading ellipsis">
-                                            <a class="link link--text-alike" href="#">New Music Ensemble</a>
-                                        </h3>
-                                        <div class="video-card__note ellipsis">
-                                            <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                                        </div>
-                                        <div class="video-card__note ellipsis">
-                                            Musical Arts Center, Bloomington, IN
-                                        </div>
-                                        <div class="video-card__people-counter crowd">
-                                            <svg class="crowd__icon" width="32" height="32">
-                                                <use xlink:href="../symbols/symbols.svg?1634330295#32-crowd"></use>
-                                            </svg>
-                                            999
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- optional:
-                        <a class="library__more button button--darker" href="organization-virtual-details.html">
-                            See More
-                        </a>
-                        -->
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
 
-        <!-- 3/3 Modals: -->
-        <!-- No modal windows on this page -->
+
+
 
 
 
