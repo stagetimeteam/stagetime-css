@@ -33,12 +33,15 @@
         }
 
         .user-panel__name {
+            margin-top: 13px;
             font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             color: #545454;
         }
             .user-panel__link {
+                padding-top: 4px;
+                padding-bottom: 4px;
                 color: inherit;
                 text-decoration: none;
                 transition: color var(--transition-hover);
@@ -49,7 +52,54 @@
             }
 
         .user-panel__note {
+            margin-top: 1px;
             font-size: 13px;
             line-height: 20px;
             color: #757575;
+        }
+
+        .user-panel__work {
+            margin-top: 12px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+            .user-panel__organisation {
+                margin-left: 12px;
+            }
+
+            .user-panel__organisation:first-child {
+                margin-left: 0;
+            }
+
+        .user-panel__friend {
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 20px;
+            color: #757575;
+        }
+            .user-panel__crowd {
+                vertical-align: top;
+                margin-right: 5px;
+                margin-top: -3px;
+                fill: #C4C4C4;
+            }
+
+            .user-panel__friend .link--text-alike {
+                transition: opacity var(--transition-hover);
+            }
+
+            .user-panel__friend .link--text-alike:hover {
+                opacity: 0.7;
+            }
+
+
+        .user-panel__connect {
+            margin-top: 11px;
+        }
+
+        .user-panel__connect.button,
+        .user-panel__connect .button {
+            width: 100%;
         }

@@ -498,3 +498,11 @@
     background-color: #333333;
     color: #F2F2F2;
 }
+
+
+.button--card-submit {
+    padding: 6px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 24px;
+}
