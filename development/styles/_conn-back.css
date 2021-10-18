@@ -1,0 +1,39 @@
+.conn-back {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+    .conn-back::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        margin: auto;
+        width: 36px;
+        height: 36px;
+        background-color: #F4F4F4;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity var(--transition-hover);
+    }
+
+    .conn-back__icon {
+        position: relative;
+        vertical-align: top;
+        fill: #545454;
+    }
+
+.conn-back:hover {
+
+}
+    .conn-back:hover::before {
+        opacity: 1;
+    }
