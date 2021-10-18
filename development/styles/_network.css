@@ -60,7 +60,11 @@
             width: auto;
         }
             .network__section {
+                margin-top: 24px;
+            }
 
+            .network__section:first-child {
+                margin-top: 0;
             }
                 .network__back {
 

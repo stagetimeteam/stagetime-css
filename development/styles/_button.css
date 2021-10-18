@@ -476,3 +476,25 @@
     .button--fancy .button__icon {
         margin-right: 8px;
     }
+
+
+.button--panel {
+    padding: 6px 20px 8px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #757575;
+}
+
+.button--panel:hover {
+    background-color: #757575;
+    color: #F2F2F2;
+}
+
+.button--panel:active {
+    background-color: #333333;
+    color: #F2F2F2;
+}

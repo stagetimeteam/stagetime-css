@@ -1,0 +1,38 @@
+.connections {
+
+}
+    .connections__head {
+        padding: 25px 40px;
+        display: flex;
+        align-items: center;
+    }
+        .connections__emblem {
+            margin-right: 18px;
+        }
+
+        .connections__heading {
+            font-size: 15px;
+            line-height: 20px;
+            color: #545454;
+        }
+            .connections__you {
+                font-weight: bold;
+            }
+
+        .connections__details {
+            margin-left: auto;
+            margin-right: -16px;
+        }
+
+    .connections__body {
+        border-top: 1px solid #F3F3F3;
+    }
+        .connections__list {
+            padding: 30px 40px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .connections__item {
+                width: 33.3333%;
+                padding: 9px;
+            }
