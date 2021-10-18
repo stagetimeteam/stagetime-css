@@ -51,10 +51,11 @@
             padding-bottom: 6px;
             text-decoration: none;
             color: inherit;
+            transition: color var(--transition-hover);
         }
 
         .overview__link:hover {
-            text-decoration: underline;
+            color: #C4C4C4;
         }
 
     .overview__note {

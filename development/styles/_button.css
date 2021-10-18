@@ -301,6 +301,28 @@
 }
 
 
+.button--alt-volumetric {
+    padding: 12px 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #545454;
+}
+
+.button--alt-volumetric:hover {
+    background-color: #E8E8E8;
+    color: #757575;
+}
+
+.button--alt-volumetric:active {
+    background-color: #E8E8E8;
+    color: #757575;
+    box-shadow: none;
+}
+
+
 
 .button--submit {
     background-color: #545454;

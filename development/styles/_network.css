@@ -39,12 +39,7 @@
 @media (min-width: 1240px) {
 
     .network {
-        /*position: relative;*/
         display: block;
-        /*align-self: stretch;*/
-        /*min-height: 100%;*/
-        /*padding: 24px 24px 56px 24px;*/
-        /*background-color: #F2F2F2;*/
         padding-left: 242px;
         padding-right: 322px;
     }
@@ -71,8 +66,7 @@
                 }
 
                 .network__connections {
-                    /*padding-top: 8px;*/
-                    /*padding-bottom: 28px;*/
+
                 }
 
         .network__aside {
@@ -80,7 +74,5 @@
             top: 88px;
             right: 24px;
             bottom: 24px;
-            /*width: 250px;*/
-            /*flex-shrink: 0;*/
         }
 }

@@ -57,6 +57,22 @@
                 }
             }
 
+        .connections__sync {
+            display: flex;
+            align-items: flex-start;
+            padding: 24px 40px 32px;
+        }
+            .connections__note {
+                font-size: 13px;
+                line-height: 24px;
+                color: #757575;
+            }
+
+            .connections__submit {
+                margin-left: 40px;
+                margin-right: -16px;
+            }
+
 
 .connections--limited {
 

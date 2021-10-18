@@ -22,10 +22,11 @@
         padding: 8px;
         border-radius: 50%;
         cursor: pointer;
+        transition: background-color var(--transition-hover);
     }
 
     .followers__add:hover {
-        background-color: red;
+        background-color: #CCCCCC;
     }
         .followers__plus {
             vertical-align: top;
