@@ -69,6 +69,18 @@
             line-height: 24px;
             color: #545454;
         }
+            .request__more {
+                padding-top: 4px;
+                padding-bottom: 4px;
+                font-weight: bold;
+                color: #AAAAAA;
+                text-decoration: none;
+                transition: color var(--transition-hover);
+            }
+
+            .request__more:hover {
+                color: #333333;
+            }
 
         .request__reply {
             margin-top: 3px;
@@ -81,9 +93,9 @@
             line-height: 20px;
             color: #757575;
             text-decoration: none;
-            transition: opacity var(--transition-hover);
+            transition: color var(--transition-hover);
         }
 
         .request__reply:hover {
-            opacity: 0.7;
+            color: #333333;
         }
