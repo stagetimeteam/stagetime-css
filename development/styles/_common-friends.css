@@ -1,0 +1,21 @@
+.common-friends {
+    max-width: 100%;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 20px;
+    color: #757575;
+}
+    .common-friends__icon {
+        vertical-align: top;
+        margin-right: 5px;
+        margin-top: -3px;
+        fill: #C4C4C4;
+    }
+
+    .user-panel__friend .link--text-alike {
+        transition: opacity var(--transition-hover);
+    }
+
+    .user-panel__friend .link--text-alike:hover {
+        opacity: 0.7;
+    }

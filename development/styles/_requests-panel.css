@@ -2,20 +2,30 @@
 
 }
     .requests-panel__head {
-
+        display: flex;
+        align-items: flex-start;
+        padding: 14px 24px;
     }
         .requests-panel__heading {
-            margin-top: 0;
+            margin-top: 6px;
             margin-bottom: 0;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 20px;
+            color: #757575;
         }
 
         .requests-panel__details {
-
+            margin-left: auto;
         }
 
     .requests-panel__lists {
-
+        border-top: 1px solid #F3F3F3;
     }
         .requests-panel__item {
+            border-top: 1px solid #F3F3F3;
+        }
 
+        .requests-panel__item:first-child {
+            border-top: none;
         }

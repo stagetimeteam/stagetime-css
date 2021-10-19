@@ -528,3 +528,23 @@
     font-size: 14px;
     line-height: 24px;
 }
+
+
+.button--large-submit {
+    padding: 6px 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.button--large-secondary {
+    padding: 6px 20px;
+    background-color: transparent;
+    box-shadow: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #757575;
+}
+
+.button--large-secondary:hover {
+    background-color: #E8E8E8;
+}
