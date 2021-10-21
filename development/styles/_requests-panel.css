@@ -6,6 +6,10 @@
         align-items: flex-start;
         padding: 14px 24px;
     }
+        .requests-panel__back {
+            margin: -5px 5px -5px -9px;
+        }
+
         .requests-panel__heading {
             margin-top: 6px;
             margin-bottom: 0;
