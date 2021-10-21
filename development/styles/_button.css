@@ -542,6 +542,7 @@
 
 .button--card-submit {
     padding: 6px 20px;
+    box-shadow: none;
     border-radius: 6px;
     font-size: 14px;
     line-height: 24px;
