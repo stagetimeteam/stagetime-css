@@ -485,16 +485,24 @@
 }
 
 
-.button--fancy,
-.button--fancy:hover,
-.button--fancy:active {
+.button--fancy {
     padding: 8px 20px 9px;
-    background: linear-gradient(135deg, #9CB2BE 20.83%, #B3BEB2 100%);
+    background-color: transparent;
+    background-image: linear-gradient(135deg, #9CB2BE, #B1BDB4);
+    box-shadow: none;
     border-radius: 19px;
     font-weight: 600;
     font-size: 15px;
     line-height: 20px;
+    color: #FFFFFF;
 }
+
+.button--fancy:hover,
+.button--fancy:active {
+    background: linear-gradient(135deg, #7D8E97, #8E978F);
+    color: #FFFFFF;
+}
+
     .button--fancy .button__icon {
         margin-right: 8px;
     }

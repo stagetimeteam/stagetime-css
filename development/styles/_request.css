@@ -57,6 +57,21 @@
                 }
 
 
+            .request__output {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-size: 16px;
+                line-height: 20px;
+                color: #333333;
+            }
+                .request__status {
+                    margin-left: 12px;
+                    margin-top: -5px;
+                    margin-bottom: -5px;
+                    vertical-align: top;
+                }
+
+
 
     .request__body {
         margin-top: 20px;
