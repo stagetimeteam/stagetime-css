@@ -31,9 +31,7 @@
 @media (min-width: 1240px) {
 
     .network {
-        display: block;
         padding-left: 242px;
-        padding-right: 322px;
     }
         .network__menu {
             position: fixed;
@@ -62,9 +60,6 @@
                 }
 
         .network__aside {
-            position: fixed;
-            top: 88px;
-            right: 24px;
-            bottom: 24px;
+            margin-left: 24px;
         }
 }
