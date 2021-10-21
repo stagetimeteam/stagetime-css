@@ -522,6 +522,16 @@
 }
 
 
+.button--submit-panel {
+    padding: 6px 15px 8px;
+    border-radius: 4px;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
 .button--card-submit {
     padding: 6px 20px;
     border-radius: 6px;

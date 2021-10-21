@@ -23,6 +23,20 @@
             margin-left: auto;
         }
 
+    .requests-panel__options {
+        padding: 23px 24px;
+        border-top: 1px solid #F3F3F3;
+        display: flex;
+        align-items: flex-start;
+    }
+        .requests-panel__filter {
+            margin-left: 19px;
+        }
+
+        .requests-panel__filter:first-child {
+            margin-left: 0;
+        }
+
     .requests-panel__lists {
         border-top: 1px solid #F3F3F3;
     }
