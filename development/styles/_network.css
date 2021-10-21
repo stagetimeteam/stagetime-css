@@ -20,14 +20,6 @@
         .network__section {
 
         }
-            .network__back {
-
-            }
-
-            .network__connections {
-                padding-top: 8px;
-                padding-bottom: 28px;
-            }
 
     .network__aside {
         width: 274px;
@@ -65,7 +57,7 @@
 
                 }
 
-                .network__connections {
+                .following-panel__list {
 
                 }
 

@@ -198,7 +198,6 @@
 @import url("_network.css");
 @import url("_panel.css");
 @import url("_connection-card.css");
-@import url("_back-panel.css");
 @import url("_bolder-null.css");
 @import url("_conn-menu.css");
 @import url("_overview.css");
@@ -213,3 +212,4 @@
 @import url("_requests-panel.css");
 @import url("_request.css");
 @import url("_common-friends.css");
+@import url("_following-panel.css");
