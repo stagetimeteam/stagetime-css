@@ -3,9 +3,8 @@
 }
     .menu__link {
         position: relative;
-        display: flex;
-        align-items: flex-start;
-        padding: 11px 32px 11px 23px;
+        display: block;
+        padding: 11px 32px 11px 56px;
         font-weight: 600;
         font-size: 13px;
         line-height: 18px;
@@ -21,9 +20,9 @@
         .menu__icon {
             flex-shrink: 0;
             vertical-align: top;
-            margin-right: 23px;
-            margin-top: 0;
-            margin-bottom: -2px;
+            position: absolute;
+            left: 23px;
+            top: 12px;
             width: 16px;
             height: 16px;
             fill: #C5C5C5;
@@ -33,10 +32,19 @@
         .menu__sparkle {
             position: absolute;
             left: 32px;
-            top: 0;
+            top: 1px;
             vertical-align: top;
             fill: #9CB2BE;
             pointer-events: none; /* don't overlay neighbours */
+        }
+
+        .menu__note {
+            margin-top: 3px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #757575;
+            white-space: normal;
         }
 
 .menu__link--disabled {
@@ -44,6 +52,18 @@
     color: #C5C5C5;
 }
 
+.menu__link--panel {
+
+}
+    .menu__link--panel {
+        background-color: #F4F4F4;
+        border-radius: 4px;
+        margin: 4px 22px;
+    }
+
+    .menu__link--panel:hover {
+        background-color: #E4E4E4;
+    }
 
 
 
