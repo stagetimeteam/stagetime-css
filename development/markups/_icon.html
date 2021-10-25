@@ -156,12 +156,13 @@
                 /* output icons to page */
 
                 var $output;
+                var timestamp = Math.round(new Date().getTime() / 1000);
 
                 $output = $('#brief');
 
                 for( i = 0; i < ids.length; i++ ) {
                     $output.append('<svg width="16" height="16">\n' +
-                                   '    <use xlink:href="' + spriteUrl + '?1635169079#'+ ids[i] +'"></use>\n' +
+                                   '    <use xlink:href="' + spriteUrl + '?' + timestamp + '#'+ ids[i] +'"></use>\n' +
                                    '</svg>\n'
                     );
                 }
@@ -171,7 +172,7 @@
 
                 for( i = 0; i < ids.length; i++ ) {
                     $output.append('<svg width="16" height="16">\n' +
-                                   '    <use xlink:href="' + spriteUrl + '?1635169079#'+ ids[i] +'"></use>\n' +
+                                   '    <use xlink:href="' + spriteUrl + '?' + timestamp + '#'+ ids[i] +'"></use>\n' +
                                    '</svg>\n'
                     );
                     $output.append('<span class="icon-doc-arrow">←</span>\n');
