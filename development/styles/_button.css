@@ -551,6 +551,7 @@
 
 .button--large-submit {
     padding: 6px 20px;
+    box-shadow: none;
     font-size: 14px;
     line-height: 24px;
 }
