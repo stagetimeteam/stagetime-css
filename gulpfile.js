@@ -86,7 +86,7 @@ function symbolsImgToSpriteSvg(content) {
 
     source.forEach(function (line) {
 
-        if( line.indexOf('symbols/') !== -1 ) {
+        if( line.indexOf('symbols/') !== -1  &&  line.indexOf('var spriteUrl') === -1 ) { /* if string contains 'symbols/' and doesn't contain 'var spriteUrl' (which means JavaScript in one specific file) */
 
             /* get indent */
 
@@ -301,8 +301,19 @@ gulp.task('lint', function() {
 });
 
 
+// Library: build symbols preview
+
+gulp.task('library', function() {
+    return gulp.src('development/layouts/')
+        .pipe(plumber())
+        .pipe(change(symbolsImgToSpriteSvg))
+        .pipe(gulp.dest('production/layouts/'))
+        ;
+});
+
+
 gulp.task('default', function (fn) {
-  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', fn);
+  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', 'library', fn);
 });
 
 

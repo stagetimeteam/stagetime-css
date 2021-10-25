@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.icon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+
+
+        <div style="width: 622px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.icon</h1>
+            <p>
+                This is the simplest component that only does <b>vertical-align: top</b> to SVG icon.
+                It can be used anywhere where just only icon needed.
+            </p>
+            <p>
+                Example:
+            </p>
+
+            <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+
+
+            <br>
+            <br>
+            <br>
+            <p>
+                Also here is the list of all icons we have in symbols sprite:
+            </p>
+
+            <div id="brief">
+
+            </div>
+
+
+            <br>
+            <br>
+            <h2>With names</h2>
+
+            <style>
+                .icon-doc-arrow {
+                    vertical-align: top;
+                    position: relative;
+                    top: -2px;
+                    opacity: 0.5;
+                    margin: 0 10px;
+                }
+                .icon-doc-name {
+                    vertical-align: top;
+                    position: relative;
+                    top: -2px;
+                }
+            </style>
+
+            <div id="names">
+
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player.js"></script>
+        <script src="../scripts/_player2.js"></script>
+        <script src="../scripts/_player3.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_dash-side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_explore.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_referral.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+        <script src="../scripts/_media-bar.js"></script>
+
+
+        <script>
+
+            var spriteUrl = '../symbols/symbols.svg';
+
+            $.get(spriteUrl, function(data) {
+
+                var sprite = Array.from(data);
+
+
+                /* build ids array */
+
+                var ids = [];
+                var tempId = '';
+                var i = 0;
+                var j = 0;
+
+                for( i = 0; i < sprite.length - 4; i++ ) {
+                    if( sprite[i] === 'i' &&
+                        sprite[i+1] === 'd' &&
+                        sprite[i+2] === '=' &&
+                        sprite[i+3] === '"' )
+                    {
+                        tempId = '';
+                        for( j = i+4; sprite[j] !== '"'; j++ ) {
+                            tempId += sprite[j];
+                        }
+                        ids.push(tempId);
+                        i = j;
+                    }
+                }
+
+
+                /* output icons to page */
+
+                var $output;
+
+                $output = $('#brief');
+
+                for( i = 0; i < ids.length; i++ ) {
+                    $output.append('<svg width="16" height="16">\n' +
+                                   '    <use xlink:href="' + spriteUrl + '?1635169079#'+ ids[i] +'"></use>\n' +
+                                   '</svg>\n'
+                    );
+                }
+
+
+                $output = $('#names');
+
+                for( i = 0; i < ids.length; i++ ) {
+                    $output.append('<svg width="16" height="16">\n' +
+                                   '    <use xlink:href="' + spriteUrl + '?1635169079#'+ ids[i] +'"></use>\n' +
+                                   '</svg>\n'
+                    );
+                    $output.append('<span class="icon-doc-arrow">←</span>\n');
+                    $output.append('<code class="icon-doc-name">' + ids[i] + '</code>\n');
+                    $output.append('<br>');
+                }
+
+            }, 'text');
+
+
+        </script>
+
+    </body>
+</html>
