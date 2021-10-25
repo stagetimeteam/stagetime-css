@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.nav-link</title>
+        <title>.icon</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1635171930">
@@ -14,49 +14,57 @@
 
 
 
-        <div style="width: 800px; margin: 0 auto;">
+        <div style="width: 622px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.nav-link</h1>
+            <h1>.icon</h1>
             <p>
-                Meant to be used in profile dropdown in header
+                This is the simplest component that only does <b>vertical-align: top</b> to SVG icon.
+                It can be used anywhere where just only icon needed.
+            </p>
+            <p>
+                Example:
             </p>
 
-            <a class="nav-link" href="#">
-                <svg class="nav-link__icon" width="20" height="20">
-                    <use xlink:href="../symbols/symbols.svg?1635171930#20-nav-house"></use>
-                </svg>
-                Home
-            </a>
+            <svg class="icon" width="16" height="16">
+                <use xlink:href="../symbols/symbols.svg?1635171930#16-city"></use>
+            </svg>
 
 
             <br>
             <br>
-            <h2>.nav-link--sidebar-ready</h2>
+            <br>
             <p>
-                Spacings specifically for sidebar
+                Also here is the list of all icons we have in symbols sprite:
             </p>
 
-            <a class="nav-link nav-link--sidebar-ready" href="#">
-                <svg class="nav-link__icon" width="20" height="20">
-                    <use xlink:href="../symbols/symbols.svg?1635171930#20-nav-house"></use>
-                </svg>
-                Home
-            </a>
+            <div id="brief">
+
+            </div>
+
 
             <br>
             <br>
-            <h2>.nav-link--current</h2>
-            <p>
-                Larger version to use in sidebar:
-            </p>
+            <h2>With names</h2>
 
-            <a class="nav-link nav-link--sidebar-ready nav-link--current" href="#">
-                <svg class="nav-link__icon" width="20" height="20">
-                    <use xlink:href="../symbols/symbols.svg?1635171930#20-nav-house"></use>
-                </svg>
-                Home
-            </a>
+            <style>
+                .icon-doc-arrow {
+                    vertical-align: top;
+                    position: relative;
+                    top: -2px;
+                    opacity: 0.5;
+                    margin: 0 10px;
+                }
+                .icon-doc-name {
+                    vertical-align: top;
+                    position: relative;
+                    top: -2px;
+                }
+            </style>
+
+            <div id="names">
+
+            </div>
 
 
             <br>
@@ -114,6 +122,65 @@
         <script src="../scripts/_badge.js?1635171930"></script>
         <script src="../scripts/_media-bar.js?1635171930"></script>
 
+
+        <script>
+
+            var spriteUrl = '../symbols/symbols.svg';
+
+            $.get(spriteUrl, function(data) {
+
+                var sprite = Array.from(data);
+
+                var ids = [];
+                var tempId = '';
+                var i = 0;
+                var j = 0;
+
+                for( i = 0; i < sprite.length - 4; i++ ) {
+                    if( sprite[i] === 'i' &&
+                        sprite[i+1] === 'd' &&
+                        sprite[i+2] === '=' &&
+                        sprite[i+3] === '"' )
+                    {
+                        tempId = '';
+                        for( j = i+4; sprite[j] !== '"'; j++ ) {
+                            tempId += sprite[j];
+                        }
+                        ids.push(tempId);
+                        i = j;
+                    }
+                }
+
+
+
+                var $output;
+
+                $output = $('#brief');
+
+                for( i = 0; i < ids.length; i++ ) {
+                    $output.append('<svg width="16" height="16">\n' +
+                                   '    <use xlink:href="' + spriteUrl + '?1635169079#'+ ids[i] +'"></use>\n' +
+                                   '</svg>\n'
+                    );
+                }
+
+
+                $output = $('#names');
+
+                for( i = 0; i < ids.length; i++ ) {
+                    $output.append('<svg width="16" height="16">\n' +
+                                   '    <use xlink:href="' + spriteUrl + '?1635169079#'+ ids[i] +'"></use>\n' +
+                                   '</svg>\n'
+                    );
+                    $output.append('<span class="icon-doc-arrow">←</span>\n');
+                    $output.append('<code class="icon-doc-name">' + ids[i] + '</code>\n');
+                    $output.append('<br>');
+                }
+
+            }, 'text');
+
+
+        </script>
 
     </body>
 </html>
