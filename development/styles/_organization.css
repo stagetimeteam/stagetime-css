@@ -29,4 +29,7 @@
 
         .organization__posting {
             margin-bottom: 20px;
+            width: 750px;
+            margin-left: auto;
+            margin-right: auto;
         }

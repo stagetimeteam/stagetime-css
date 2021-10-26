@@ -38,8 +38,17 @@
 
 
 .activity-feed--as-column {
-    background-color: transparent;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #F6F6F6;
+    border-radius: 12px;
 }
+.organization .activity-feed--as-column {
+    margin-bottom: -50px;
+}
+
+
     .activity-feed--as-column .activity-feed__wrap {
         background-color: #F6F6F6;
         border-radius: 12px;
