@@ -1,0 +1,16 @@
+.form {
+
+}
+    .form__item {
+        margin-top: 13px;
+    }
+
+    .form__item:first-child {
+        margin-top: 0;
+    }
+
+
+
+.form--contacts {
+    max-width: 400px;
+}

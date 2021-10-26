@@ -191,6 +191,15 @@
         font-weight: 600;
     }
 
+
+.input--semi-bold {
+
+}
+    .input--semi-bold .input__widget {
+        font-weight: 600;
+    }
+
+
 .input--bold {
 
 }

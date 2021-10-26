@@ -1,0 +1,12 @@
+.split {
+    display: flex;
+    align-items: flex-start;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+    .split__item {
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }

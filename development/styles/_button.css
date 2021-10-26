@@ -540,6 +540,22 @@
 }
 
 
+.button--submit-form {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #545454;
+    font-size: 14px;
+}
+
+.button--update-form {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #E8E8E8;
+    box-shadow: none;
+    font-size: 14px;
+    color: #757575;
+}
+
 .button--card-submit {
     padding: 6px 20px;
     box-shadow: none;

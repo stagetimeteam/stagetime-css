@@ -53,3 +53,38 @@
                 font-size: 13px;
                 color: #8B8B8B;
             }
+
+        .settings__item {
+            position: relative;
+        }
+            .settings__handler {
+
+            }
+
+            .settings__update {
+                position: absolute;
+                right: 0;
+                top: 30px;
+            }
+
+            .settings__update.button,
+            .settings__update .button {
+                width: 120px;
+            }
+
+            .settings__dropdown {
+
+            }
+
+                .settings__save {
+                    position: absolute;
+                    right: 0;
+                    top: 100px;
+                    width: 120px;
+                }
+
+                .settings__save.button,
+                .settings__save .button {
+                    width: 120px;
+                    box-shadow: none;
+                }
