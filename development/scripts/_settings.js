@@ -1,6 +1,6 @@
 (function($) {
 
-    $('.settings__update').on('click', function () {
+    $('.settings__update:not(.settings__update--external), .settings__handler:not(.settings__handler--external)').on('click', function () {
         var $settingsItem = $(this).parents('.settings__item');
         $settingsItem.toggleClass('settings__item--expanded');
 

@@ -141,3 +141,14 @@
         width: 100%;
     }
 
+
+.choice--alternate {
+
+}
+    .choice--alternate .choice__label {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 13px;
+        line-height: 26px;
+        color: #545454;
+    }
