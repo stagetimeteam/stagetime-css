@@ -145,7 +145,7 @@
                     text-decoration: none;
                 }
 
-                .search__suggest:hover {
+                .search__suggest--highlight {
                     background-color: #F6F6F6;
                 }
 
