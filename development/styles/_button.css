@@ -566,8 +566,8 @@
 
 .button--update-form:hover,
 .button--update-form:active {
-    background-color: #8B8B8B;
-    color: #F4F4F4;
+    background-color: #AAAAAA;
+    color: #FFFFFF;
 }
 
 .button--card-submit {
