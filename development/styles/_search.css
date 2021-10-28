@@ -144,8 +144,8 @@
                     color: inherit;
                     text-decoration: none;
                 }
-
-                .search__suggest--highlight {
+                
+                .search__suggest:hover {
                     background-color: #F6F6F6;
                 }
 
