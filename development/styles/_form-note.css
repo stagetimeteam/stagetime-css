@@ -1,0 +1,9 @@
+.form-note {
+    padding-top: 13px;
+    padding-bottom: 3px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 20px;
+    color: #757575;
+}

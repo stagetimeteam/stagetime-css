@@ -1,6 +1,12 @@
 .form {
-
+    max-width: var(--form-width);
 }
+    .form__description {
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
     .form__item {
         margin-top: 13px;
     }
@@ -11,6 +17,3 @@
 
 
 
-.form--contacts {
-    max-width: 400px;
-}
