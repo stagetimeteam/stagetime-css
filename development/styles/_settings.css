@@ -58,13 +58,22 @@
             position: relative;
         }
             .settings__handler {
-
+                padding: 10px;
+                margin-left: -10px;
+                border: none;
+                background-color: transparent;
+                font-family: inherit;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                color: #545454;
+                cursor: pointer;
             }
 
             .settings__update {
                 position: absolute;
                 right: 0;
-                top: 30px;
+                top: 2px;
             }
 
             .settings__update.button,
@@ -75,12 +84,12 @@
             .settings__dropdown {
 
             }
-
                 .settings__save {
                     position: absolute;
                     right: 0;
-                    top: 100px;
-                    width: 120px;
+                    top: 2px;
+                    opacity: 0;
+                    visibility: hidden;
                 }
 
                 .settings__save.button,
@@ -88,3 +97,17 @@
                     width: 120px;
                     box-shadow: none;
                 }
+
+
+        .settings__item--expanded {
+
+        }
+            .settings__item--expanded .settings__update {
+                opacity: 0;
+                visibility: hidden;
+            }
+
+            .settings__item--expanded .settings__save {
+                opacity: 1;
+                visibility: visible;
+            }

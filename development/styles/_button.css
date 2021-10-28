@@ -72,7 +72,7 @@
 
 
 .button:hover {
-    background: #757575;
+    background-color: #757575;
 }
 
 .button:active {
@@ -544,8 +544,16 @@
     padding-top: 12px;
     padding-bottom: 12px;
     background-color: #545454;
+    color: #FFFFFF;
     font-size: 14px;
 }
+
+
+.button--submit-form:hover {
+    background-color: #757575;
+    color: #FFFFFF;
+}
+
 
 .button--update-form {
     padding-top: 12px;
@@ -554,6 +562,12 @@
     box-shadow: none;
     font-size: 14px;
     color: #757575;
+}
+
+.button--update-form:hover,
+.button--update-form:active {
+    background-color: #8B8B8B;
+    color: #F4F4F4;
 }
 
 .button--card-submit {
