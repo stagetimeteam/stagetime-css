@@ -14,7 +14,7 @@
         position: relative;
         margin-bottom: 28px;
         border: 1px solid #E8E8E8;
-        padding: 36px 40px 40px 106px;
+        padding: 36px 40px 38px 106px;
         box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.03);
         border-radius: 10px;
     }
@@ -56,7 +56,13 @@
 
         .settings__item {
             position: relative;
+            margin-top: 17px;
         }
+
+        .settings__item:first-child {
+            margin-top: 0;
+        }
+
             .settings__handler {
                 padding: 10px;
                 margin-left: -10px;
@@ -82,7 +88,8 @@
             }
 
             .settings__dropdown {
-
+                padding-bottom: 2px;
+                display: none;
             }
                 .settings__save {
                     position: absolute;
