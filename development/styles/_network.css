@@ -42,8 +42,7 @@
         .network__content {
             margin-left: 0;
             margin-right: 0;
-            width: auto;
-            flex-grow: 1;
+            width: calc(100% - 194px - 48px);
         }
             .network__section {
                 margin-top: 24px;
