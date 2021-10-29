@@ -93,10 +93,25 @@
                 padding-bottom: 2px;
                 display: none;
             }
-                .settings__save {
+                .settings__cancel {
                     position: absolute;
                     right: 0;
                     top: 2px;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+
+                .settings__cancel.button,
+                .settings__cancel .button {
+                    width: 120px;
+                    box-shadow: none;
+                }
+
+
+                .settings__save {
+                    position: absolute;
+                    right: 0;
+                    top: 50px;
                     opacity: 0;
                     visibility: hidden;
                 }
@@ -114,6 +129,11 @@
             .settings__item--expanded .settings__update {
                 opacity: 0;
                 visibility: hidden;
+            }
+
+            .settings__item--expanded .settings__cancel {
+                opacity: 1;
+                visibility: visible;
             }
 
             .settings__item--expanded .settings__save {
