@@ -41,6 +41,7 @@
         .settings__sub-heading {
             margin-top: 0;
             margin-bottom: 0;
+            margin-right: 150px;
             font-weight: bold;
             font-size: 20px;
             line-height: 40px;
@@ -66,6 +67,7 @@
                 display: inline-block;
                 vertical-align: top;
                 padding: 10px;
+                margin-right: 150px;
                 margin-left: -10px;
                 border: none;
                 background-color: transparent;
@@ -82,6 +84,8 @@
                 position: absolute;
                 right: 0;
                 top: 2px;
+                transition: opacity var(--transition-show),
+                            visibility var(--transition-show);
             }
 
             .settings__update.button,
@@ -90,6 +94,7 @@
             }
 
             .settings__dropdown {
+                margin-right: 150px;
                 padding-bottom: 2px;
                 display: none;
             }
@@ -99,6 +104,8 @@
                     top: 2px;
                     opacity: 0;
                     visibility: hidden;
+                    transition: opacity var(--transition-show),
+                                visibility var(--transition-show);
                 }
 
                 .settings__cancel.button,
@@ -114,6 +121,8 @@
                     top: 50px;
                     opacity: 0;
                     visibility: hidden;
+                    transition: opacity var(--transition-show),
+                                visibility var(--transition-show);
                 }
 
                 .settings__save.button,
@@ -140,3 +149,163 @@
                 opacity: 1;
                 visibility: visible;
             }
+
+
+@media (max-width: 639px) {
+
+    .settings {
+        /*padding-top: 19px;*/
+        /*padding-bottom: 60px;*/
+    }
+        .settings__heading {
+            /*margin-bottom: 28px;*/
+            /*font-weight: 600;*/
+            /*font-size: 20px;*/
+            /*line-height: 24px;*/
+            /*color: #8B8B8B;*/
+        }
+
+        .settings__section {
+            /*position: relative;*/
+            /*margin-bottom: 28px;*/
+            /*border: 1px solid #E8E8E8;*/
+            padding: 19px 20px 38px 20px;
+            /*border-radius: 10px;*/
+        }
+
+        .settings__section:last-child {
+            /*margin-bottom: 0;*/
+        }
+            .settings__preview {
+                /*position: absolute;*/
+                left: 20px;
+                top: 20px;
+                /*display: flex;*/
+                /*align-items: center;*/
+                /*justify-content: center;*/
+                width: 25px;
+                height: 25px;
+                /*background-color: #9CB2BE;*/
+                /*border-radius: 50%;*/
+            }
+                .settings__icon {
+                    /*vertical-align: top;*/
+                    /*fill: #FFFFFF;*/
+                    width: 14px;
+                }
+
+            .settings__sub-heading {
+                margin-left: 34px;
+                margin-right: 0;
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: bold;*/
+                font-size: 16px;
+                line-height: 28px;
+                /*color: #545454;*/
+            }
+                .settings__note {
+                    /*margin-left: 4px;*/
+                    /*font-weight: normal;*/
+                    /*font-size: 13px;*/
+                    /*color: #8B8B8B;*/
+                }
+
+            .settings__item {
+                /*position: relative;*/
+                margin-top: 15px;
+            }
+
+            .settings__item:first-child {
+                /*margin-top: 0;*/
+            }
+
+                .settings__handler {
+                    /*display: inline-block;*/
+                    /*vertical-align: top;*/
+                    /*padding: 10px;*/
+                    /*margin-left: -10px;*/
+                    margin-right: 120px;
+                    /*border: none;*/
+                    /*background-color: transparent;*/
+                    /*font-family: inherit;*/
+                    /*font-weight: 600;*/
+                    font-size: 12px;
+                    line-height: 18px;
+                    /*color: #545454;*/
+                    /*text-decoration: none;*/
+                    /*cursor: pointer;*/
+                }
+
+                .settings__update {
+                    /*position: absolute;*/
+                    /*right: 0;*/
+                    /*top: 2px;*/
+                }
+
+                .settings__update.button,
+                .settings__update .button {
+                    width: 90px;
+                }
+
+                .settings__dropdown {
+                    margin-right: 0;
+                    /*display: none;*/
+                }
+                    .settings__cancel {
+                        /*position: absolute;*/
+                        /*right: 0;*/
+                        /*top: 2px;*/
+                        /*opacity: 0;*/
+                        /*visibility: hidden;*/
+                    }
+
+                    .settings__cancel.button,
+                    .settings__cancel .button {
+                        /*width: 90px;*/
+                        display: none;
+                    }
+
+
+                    .settings__save {
+                        /*position: absolute;*/
+                        /*right: 0;*/
+                        top: 0;
+                        /*opacity: 0;*/
+                        /*visibility: hidden;*/
+                    }
+
+                    .settings__save.button,
+                    .settings__save .button {
+                        width: 90px;
+                        /*box-shadow: none;*/
+                    }
+
+                    .settings__dropdown .form-note {
+                        margin-right: 0 !important;
+                    }
+
+
+            .settings__item--expanded {
+
+            }
+
+                .settings__item--expanded .settings__handler {
+                    margin-bottom: 20px;
+                }
+
+                .settings__item--expanded .settings__update {
+                    /*opacity: 0;*/
+                    /*visibility: hidden;*/
+                }
+
+                .settings__item--expanded .settings__cancel {
+                    /*opacity: 1;*/
+                    /*visibility: visible;*/
+                }
+
+                .settings__item--expanded .settings__save {
+                    /*opacity: 1;*/
+                    /*visibility: visible;*/
+                }
+}

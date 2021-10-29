@@ -9,9 +9,13 @@
         } else {
             $settingsItem.find('.settings__dropdown').slideUp();
         }
-
     });
 
+    $('.settings__cancel').on('click', function () {
+        var $settingsItem = $(this).parents('.settings__item');
+        $settingsItem.removeClass('settings__item--expanded');
+        $settingsItem.find('.settings__dropdown').slideUp();
+    });
 
 
 
