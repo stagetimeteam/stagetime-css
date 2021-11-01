@@ -26,11 +26,27 @@
             max-width: var(--form-width);
         }
 
-    .close-account__submit {
+    .close-account__footer {
         margin-top: 23px;
+        display: flex;
+        align-self: flex-start;
     }
+        .close-account__submit {
 
-    .close-account__submit.button,
-    .close-account__submit .button {
-        width: 205px;
-    }
+        }
+
+        .close-account__submit.button,
+        .close-account__submit .button {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .close-account__cancel {
+            margin-left: 16px;
+        }
+
+        .close-account__cancel.button,
+        .close-account__cancel .button {
+            padding-left: 35px;
+            padding-right: 35px;
+        }

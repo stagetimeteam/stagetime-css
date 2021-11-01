@@ -62,7 +62,6 @@
         .settings__item:first-child {
             margin-top: 0;
         }
-
             .settings__handler {
                 display: inline-block;
                 vertical-align: top;
@@ -80,7 +79,7 @@
                 cursor: pointer;
             }
 
-            .settings__update {
+            .settings__edit {
                 position: absolute;
                 right: 0;
                 top: 2px;
@@ -88,67 +87,39 @@
                             visibility var(--transition-show);
             }
 
-            .settings__update.button,
-            .settings__update .button {
+            .settings__edit.button,
+            .settings__edit .button {
                 width: 120px;
             }
 
             .settings__dropdown {
                 margin-right: 150px;
-                padding-bottom: 2px;
+                border-top: 20px solid transparent; /* instead of padding because padding is buggy when dropdown is being animated */
+                border-bottom: 2px solid transparent;
                 display: none;
             }
-                .settings__cancel {
+                .settings__close {
                     position: absolute;
                     right: 0;
-                    top: 2px;
+                    top: 0;
                     opacity: 0;
                     visibility: hidden;
                     transition: opacity var(--transition-show),
                                 visibility var(--transition-show);
                 }
-
-                .settings__cancel.button,
-                .settings__cancel .button {
-                    width: 120px;
-                    box-shadow: none;
-                }
-
-
-                .settings__save {
-                    position: absolute;
-                    right: 0;
-                    top: 50px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: opacity var(--transition-show),
-                                visibility var(--transition-show);
-                }
-
-                .settings__save.button,
-                .settings__save .button {
-                    width: 120px;
-                    box-shadow: none;
-                }
-
 
         .settings__item--expanded {
 
         }
-            .settings__item--expanded .settings__update {
+            .settings__item--expanded .settings__edit {
                 opacity: 0;
                 visibility: hidden;
             }
-
-            .settings__item--expanded .settings__cancel {
+            .settings__item--expanded .settings__close {
                 opacity: 1;
                 visibility: visible;
             }
 
-            .settings__item--expanded .settings__save {
-                opacity: 1;
-                visibility: visible;
-            }
 
 
 @media (max-width: 639px) {
@@ -237,14 +208,14 @@
                     /*cursor: pointer;*/
                 }
 
-                .settings__update {
+                .settings__edit {
                     /*position: absolute;*/
                     /*right: 0;*/
                     /*top: 2px;*/
                 }
 
-                .settings__update.button,
-                .settings__update .button {
+                .settings__edit.button,
+                .settings__edit .button {
                     width: 90px;
                 }
 
@@ -291,10 +262,10 @@
             }
 
                 .settings__item--expanded .settings__handler {
-                    margin-bottom: 20px;
+
                 }
 
-                .settings__item--expanded .settings__update {
+                .settings__item--expanded .settings__edit {
                     /*opacity: 0;*/
                     /*visibility: hidden;*/
                 }

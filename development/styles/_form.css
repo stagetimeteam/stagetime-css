@@ -15,5 +15,27 @@
         margin-top: 0;
     }
 
+    .form__footer {
+        margin-top: 23px;
+        display: flex;
+        align-self: flex-start;
+    }
+        .form__submit {
 
+        }
 
+        .form__submit.button,
+        .form__submit .button {
+            padding-left: 45px;
+            padding-right: 45px;
+        }
+
+        .form__cancel {
+            margin-left: 16px;
+        }
+
+        .form__cancel.button,
+        .form__cancel .button {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
