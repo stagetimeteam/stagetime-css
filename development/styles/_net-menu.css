@@ -1,0 +1,15 @@
+.net-menu {
+    overflow-x: auto;
+}
+    .net-menu__ribbon {
+        display: inline-flex;
+        align-items: flex-start;
+        padding: 20px;
+    }
+        .net-menu__item {
+            margin-left: 20px;
+        }
+
+        .net-menu__item:first-child {
+            margin-left: 0;
+        }

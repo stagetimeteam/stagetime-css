@@ -1,0 +1,118 @@
+.request {
+    /*position: relative;*/
+    padding: 16px 24px 68px 73px;
+    /*min-height: 140px;*/
+}
+    .request__photo {
+        /*position: absolute;*/
+        left: 20px;
+        top: 16px;
+    }
+        .request__photo .avatar__image {
+            width: 40px;
+            height: 40px;
+        }
+
+    .request__head {
+        position: static;
+        padding-right: 0;
+    }
+        .request__name {
+            /*font-weight: 600;*/
+            font-size: 13px;
+            line-height: 22px;
+            /*color: #545454;*/
+        }
+
+        .request__note {
+            font-size: 11px;
+            line-height: 16px;
+            /*color: #757575;*/
+        }
+
+        .request__operations {
+            position: absolute;
+            left: 73px;
+            bottom: 16px;
+            right: auto;
+            top: auto;
+            /*right: 0;*/
+            /*top: 3px;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+            .request__ignore {
+                margin-left: 6px;
+            }
+                .request__ignore.button,
+                .request__ignore .button {
+                    /*min-width: 90px;*/
+                }
+
+            .request__accept {
+                margin-left: 0;
+                order: -1;
+            }
+                .request__accept.button,
+                .request__accept .button {
+                    min-width: 90px;
+                }
+
+
+            .request__output {
+                /*padding-top: 5px;*/
+                /*padding-bottom: 5px;*/
+                /*font-size: 16px;*/
+                /*line-height: 20px;*/
+                /*color: #333333;*/
+            }
+                .request__status {
+                    /*margin-left: 12px;*/
+                    /*margin-top: -5px;*/
+                    /*margin-bottom: -5px;*/
+                    /*vertical-align: top;*/
+                }
+
+
+
+    .request__body {
+        margin-top: 17px;
+        padding: 6px 13px 4px;
+        /*border: 2px solid #E8E8E8;*/
+        /*border-radius: 6px;*/
+    }
+        .request__message {
+            font-size: 12px;
+            line-height: 23px;
+            /*color: #545454;*/
+        }
+            .request__more {
+                /*padding-top: 4px;*/
+                /*padding-bottom: 4px;*/
+                /*font-weight: bold;*/
+                /*color: #AAAAAA;*/
+                /*text-decoration: none;*/
+                /*transition: color var(--transition-hover);*/
+            }
+
+            .request__more:hover {
+                /*color: #333333;*/
+            }
+
+        .request__reply {
+            /*margin-top: 3px;*/
+            /*display: inline-block;*/
+            /*vertical-align: top;*/
+            /*padding-top: 4px;*/
+            /*padding-bottom: 4px;*/
+            /*font-weight: bold;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #757575;*/
+            /*text-decoration: none;*/
+            /*transition: color var(--transition-hover);*/
+        }
+
+        .request__reply:hover {
+            /*color: #333333;*/
+        }

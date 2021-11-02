@@ -1,0 +1,36 @@
+.tile-connections {
+    display: inline-block;
+    vertical-align: top;
+    width: 124px;
+    padding: 12px 12px 15px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.09);
+    border-radius: 5px;
+    text-decoration: none;
+}
+    .tile-connections__summary {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 22px;
+        color: #545454;
+        text-align: center;
+    }
+        .tile-connections__icon {
+            vertical-align: top;
+            fill: #8B8B8B;
+            margin-left: 2px;
+            margin-right: 2px;
+            margin-top: 1px;
+        }
+
+        .tile-connections__icon[height="24"] {
+            margin: -2px 0;
+        }
+
+    .tile-connections__label {
+        margin-top: 1px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #545454;
+        text-align: center;
+    }

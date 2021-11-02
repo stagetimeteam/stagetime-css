@@ -12,6 +12,10 @@
         align-self: flex-start;
     }
 
+    .network__mobile-menu {
+        display: none;
+    }
+
     .network__content {
         margin-left: 24px;
         margin-right: 24px;

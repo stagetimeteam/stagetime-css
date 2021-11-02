@@ -72,6 +72,9 @@
                 }
 
 
+    .request__friend {
+        margin-top: 10px;
+    }
 
     .request__body {
         margin-top: 20px;

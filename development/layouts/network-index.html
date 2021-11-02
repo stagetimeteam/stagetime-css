@@ -8,6 +8,7 @@
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -744,6 +745,35 @@
                 </div>
                 <div class="dashboard__content">
                     <div class="network">
+                        <div class="network__mobile-menu net-menu hide-scrollbar">
+                            <div class="net-menu__ribbon">
+                                <a class="net-menu__item tile-connections" href="#">
+                                    <div class="tile-connections__summary">
+                                        <img class="tile-connections__icon" src="../symbols/20-crowd-full.svg" width="20" height="20" alt="">
+                                        287
+                                    </div>
+                                    <div class="tile-connections__label">
+                                        Connections
+                                    </div>
+                                </a>
+                                <a class="net-menu__item tile-connections" href="#">
+                                    <div class="tile-connections__summary">
+                                        <img class="tile-connections__icon" src="../symbols/24-google-color.svg" width="24" height="24" alt="">
+                                    </div>
+                                    <div class="tile-connections__label">
+                                        Add Contacts
+                                    </div>
+                                </a>
+                                <a class="net-menu__item tile-connections" href="#">
+                                    <div class="tile-connections__summary">
+                                        <img class="tile-connections__icon" src="../symbols/24-insights-color.svg" width="24" height="24" alt="">
+                                    </div>
+                                    <div class="tile-connections__label">
+                                        My Stats
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                         <div class="network__menu panel">
                             <div class="conn-menu">
                                 <div class="conn-menu__heading">
@@ -850,7 +880,7 @@
                                                 <button class="request__accept button button--large-submit" type="button">Accept</button>
                                             </div>
                                         </div>
-                                        <div class="user-panel__friend common-friends ellipsis">
+                                        <div class="request__friend common-friends ellipsis">
                                             <img class="common-friends__icon" src="../symbols/20-half-crowd.svg" width="20" height="20" alt="">
                                             <a class="link link--text-alike" href="#">Nathan Fearing</a> and 1 other
                                         </div>

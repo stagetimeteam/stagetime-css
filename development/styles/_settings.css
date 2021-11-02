@@ -80,7 +80,7 @@
                 cursor: pointer;
             }
 
-            .settings__edit {
+                .settings__edit {
                 position: absolute;
                 right: 0;
                 top: 2px;

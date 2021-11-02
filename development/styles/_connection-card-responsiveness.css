@@ -1,0 +1,63 @@
+.connection-card {
+    /*position: relative;*/
+}
+    .connection-card__link {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
+        min-height: 80px;
+        padding: 3px 40px 3px 99px;
+        /*text-decoration: none;*/
+        /*transition: background-color var(--transition-hover);*/
+    }
+
+    .connection-card:hover .connection-card__link {
+        /*background-color: #F4F4F4;*/
+    }
+        .connection-card__preview {
+            /*position: absolute;*/
+            left: 20px;
+            top: 12px;
+        }
+            .connection-card__preview.avatar,
+            .connection-card__preview .avatar {
+                /*box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);*/
+            }
+
+            .connection-card__preview .avatar__image {
+                width: 56px;
+                height: 56px;
+            }
+
+        .connection-card__heading {
+            /*position: relative;*/
+            /*font-weight: 600;*/
+            font-size: 12px;
+            line-height: 18px;
+            /*color: #545454;*/
+        }
+
+        .connection-card__note {
+            /*position: relative;*/
+            margin-top: 3px;
+            font-size: 12px;
+            line-height: 18px;
+            /*color: #757575;*/
+        }
+
+        .connection-card__actions,
+        .connection-card__actions.operations {
+            /*position: absolute;*/
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 58px;
+        }
+            .connection-card__actions .operations__icon {
+                width: 24px;
+                height: 24px;
+            }
+
+            .connection-card__actions .operations__dropdown {
+                top: 56px;
+            }

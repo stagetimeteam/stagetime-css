@@ -1,0 +1,27 @@
+.network {
+    display: block;
+    min-height: auto;
+    padding: 0;
+}
+    .network__menu {
+        display: none;
+    }
+
+    .network__mobile-menu {
+        display: block;
+    }
+
+    .network__content {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+        .network__section {
+
+        }
+
+    .network__aside {
+        display: none;
+    }

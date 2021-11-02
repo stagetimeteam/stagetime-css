@@ -33,6 +33,9 @@
 .dashboard--no-aside {
     padding-right: 0;
 }
+    .dashboard--no-aside .dashboard__content {
+        box-shadow: none;
+    }
 
 
 
