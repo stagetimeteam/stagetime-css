@@ -1,4 +1,4 @@
-.tile-connections {
+.tile {
     display: inline-block;
     vertical-align: top;
     width: 124px;
@@ -8,14 +8,14 @@
     border-radius: 5px;
     text-decoration: none;
 }
-    .tile-connections__summary {
+    .tile__summary {
         font-weight: 600;
         font-size: 20px;
         line-height: 22px;
         color: #545454;
         text-align: center;
     }
-        .tile-connections__icon {
+        .tile__icon {
             vertical-align: top;
             fill: #8B8B8B;
             margin-left: 2px;
@@ -23,11 +23,11 @@
             margin-top: 1px;
         }
 
-        .tile-connections__icon[height="24"] {
+        .tile__icon[height="24"] {
             margin: -2px 0;
         }
 
-    .tile-connections__label {
+    .tile__label {
         margin-top: 1px;
         font-size: 13px;
         line-height: 18px;
