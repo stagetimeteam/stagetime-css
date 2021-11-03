@@ -3,7 +3,6 @@
     display: block;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 75px; /* under the player */
 }
     .dashboard__sidebar {
         display: none;

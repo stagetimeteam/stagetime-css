@@ -1,0 +1,91 @@
+.overview {
+    /*padding: 14px 21px 19px;*/
+}
+    .overview__updated {
+        /*position: relative;*/
+        /*padding: 11px 9px 12px 62px;*/
+        /*margin-bottom: 10px;*/
+        /*background-image: linear-gradient(45.58deg, #EAC7B3 20.86%, #BB9AA5 66.71%);*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: center center;*/
+        /*border-radius: 3px;*/
+        /*font-weight: 600;*/
+        /*font-size: 13px;*/
+        /*line-height: 19px;*/
+        /*color: #FFFFFF;*/
+    }
+        .overview__updates-icon {
+            /*position: absolute;*/
+            /*left: 17px;*/
+            /*top: 14px;*/
+            /*width: 28px;*/
+            /*height: 28px;*/
+            /*padding: 4px;*/
+            /*background-color: rgba(255, 255, 255, 0.87);*/
+            /*border-radius: 50%;*/
+        }
+            .overview__bell {
+                /*vertical-align: top;*/
+                /*fill: #333333;*/
+            }
+
+    .overview__photo {
+        /*display: block;*/
+    }
+        .overview__image {
+            width: 100%;
+            height: auto;
+            /*vertical-align: top;*/
+            /*background-position: var(--image-fallback);*/
+            /*border-radius: 3px;*/
+        }
+
+    .overview__name {
+        /*margin-top: 15px;*/
+        /*font-weight: 600;*/
+        /*font-size: 20px;*/
+        /*line-height: 30px;*/
+        /*color: #545454;*/
+        /*text-align: center;*/
+    }
+        .overview__link {
+            /*padding-top: 6px;*/
+            /*padding-bottom: 6px;*/
+            /*text-decoration: none;*/
+            /*color: inherit;*/
+            /*transition: color var(--transition-hover);*/
+        }
+
+        .overview__link:hover {
+            /*color: #C4C4C4;*/
+        }
+
+    .overview__note {
+        /*margin-top: 3px;*/
+        /*font-weight: 600;*/
+        /*font-size: 13px;*/
+        /*line-height: 20px;*/
+        /*color: #757575;*/
+        /*text-align: center;*/
+        /*text-decoration: none;*/
+    }
+
+    .overview__handler {
+        /*margin-top: 15px;*/
+        /*margin-left: -21px;*/
+        /*margin-right: -21px;*/
+        /*text-align: center;*/
+        /*background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 18px, #E8E8E8 18px, #E8E8E8 19px, rgba(0, 0, 0, 0) 19px, rgba(0, 0, 0, 0));*/
+    }
+
+    .overview__section {
+        /*margin-top: 16px;*/
+    }
+
+    .overview__alt-handler {
+        /*margin-top: 16px;*/
+    }
+        .overview__alt-handler.button,
+        .overview__alt-handler .button {
+            /*width: 100%;*/
+        }
