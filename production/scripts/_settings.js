@@ -1,6 +1,6 @@
 (function($) {
 
-    $('.settings__update:not(.settings__update--external), .settings__handler:not(.settings__handler--external)').on('click', function () {
+    $('.settings__edit:not(.settings__edit--external), .settings__handler:not(.settings__handler--external)').on('click', function () {
         var $settingsItem = $(this).parents('.settings__item');
         $settingsItem.toggleClass('settings__item--expanded');
 
@@ -11,7 +11,7 @@
         }
     });
 
-    $('.settings__cancel').on('click', function () {
+    $('.settings__close, .form__cancel, .close-account__cancel').on('click', function () {
         var $settingsItem = $(this).parents('.settings__item');
         $settingsItem.removeClass('settings__item--expanded');
         $settingsItem.find('.settings__dropdown').slideUp();
