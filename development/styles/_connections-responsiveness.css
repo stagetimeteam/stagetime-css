@@ -2,35 +2,31 @@
 
 }
     .connections__head {
-        /*padding: 25px 40px;*/
-        /*display: flex;*/
-        /*align-items: center;*/
+        padding: 25px 20px;
     }
         .connections__back {
-            /*margin-left: -25px;*/
-            /*margin-right: 5px;*/
-            /*transition: background-color var(--transition-hover);*/
+            margin-left: -10px;
+            margin-top: -12px;
+            margin-bottom: -12px;
         }
 
         .connections__emblem {
-            /*margin-right: 18px;*/
+            display: none;
         }
 
         .connections__heading {
-            /*margin-top: 0;*/
-            /*margin-bottom: 0;*/
-            /*font-weight: inherit;*/
-            /*font-size: 15px;*/
-            /*line-height: 20px;*/
-            /*color: #545454;*/
+            font-weight: bold;
         }
             .connections__highlight {
-                /*font-weight: bold;*/
+
+            }
+
+            .connections__from {
+                display: none;
             }
 
         .connections__details {
-            /*margin-left: auto;*/
-            /*margin-right: -16px;*/
+            display: none;
         }
 
     .connections__body {
