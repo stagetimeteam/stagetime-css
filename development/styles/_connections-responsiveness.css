@@ -42,11 +42,16 @@
             .connections__item {
                 width: auto;
                 padding: 0;
+                border-top: 1px solid #F3F3F3;
+            }
+
+            .connections__item:first-child {
+                border-top: none;
             }
 
         .connections__sync {
             display: block;
-            padding: 0;
+            padding: 20px;
         }
             .connections__note {
                 /*font-size: 13px;*/
@@ -55,6 +60,7 @@
             }
 
             .connections__submit {
+                margin-top: 20px;
                 margin-left: 0;
                 margin-right: 0;
             }
