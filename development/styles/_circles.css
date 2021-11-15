@@ -4,10 +4,10 @@
     .circles__heading {
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 18px;
-        color: #8B8B8B;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 24px;
+        color: #545454;
     }
 
     .circles__body {

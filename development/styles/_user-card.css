@@ -24,6 +24,7 @@
             margin-top: 0;
             margin-bottom: 0;
             font-weight: inherit;
+            color: #545454;
         }
             .user-card__link {
                 padding-top: 8px; /* expand clickable area */
@@ -43,7 +44,7 @@
             font-weight: 600;
             font-size: 11px;
             line-height: 18px;
-            color: #AAAAAA;
+            color: #757575;
         }
 
 

@@ -1,80 +1,91 @@
 .referral {
-    padding-top: 40px;
+    min-height: 100%;
+    padding-top: 28px;
     padding-bottom: 80px;
-    text-align: center;
+    background-color: #F2F2F2;
 }
 
 .has-player3 .referral {
     padding-bottom: calc(80px + var(--player3-height));
 }
-
-    .referral__heading {
-        position: relative;
-        margin-top: 0;
-        margin-bottom: 0;
+    .referral__wrap {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: inherit;
-        font-size: 18px;
-        line-height: 22px;
-        color: #757575;
+        align-items: flex-start;
+        text-align: center;
     }
-        .referral__icon {
-            margin-top: 1px;
-            vertical-align: top;
-            width: 20px;
-            height: 20px;
-            fill: #8B8B8B;
+        .referral__panel {
+            padding: 32px 29px 39px;
+            width: 338px;
+            flex-shrink: 0;
+            margin-right: 28px;
         }
+            .referral__heading {
+                position: relative;
+                margin-top: 0;
+                margin-bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: inherit;
+                font-size: 15px;
+                line-height: 18px;
+                color: #545454;
+            }
+                .referral__icon {
+                    margin-top: 2px;
+                    vertical-align: top;
+                    width: 18px;
+                    height: 18px;
+                    fill: #8B8B8B;
+                }
 
-        .referral__sparkle {
-            margin-left: -10px;
-            margin-top: -17px;
-            margin-right: 10px;
-            width: 22px;
-            height: 22px;
-            fill: #9CB2BE;
+                .referral__sparkle {
+                    margin-left: -8px;
+                    margin-top: -15px;
+                    margin-right: 4px;
+                    width: 19px;
+                    height: 19px;
+                    fill: #9CB2BE;
+                }
+
+            .referral__handler {
+                display: none;
+            }
+
+            .referral__description {
+                max-width: 474px;
+                margin-top: 16px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 13px;
+                line-height: 23px;
+                color: #545454;
+            }
+
+            .referral__start-syncing {
+                margin-top: 30px;
+            }
+
+            .referral__account {
+                margin-top: 19px;
+            }
+
+            .referral__update {
+                margin-top: 21px;
+                font-size: 13px;
+                line-height: 18px;
+                color: #757575;
+            }
+
+        .referral__list {
+            text-align: left;
+            flex-grow: 1;
+            flex-basis: 0;
         }
+            .referral__item {
+                border-top: 1px solid #E8E8E8;
+            }
 
-    .referral__handler {
-        display: none;
-    }
-
-    .referral__description {
-        max-width: 474px;
-        margin-top: 32px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 12px;
-        line-height: 23px;
-        color: #757575;
-    }
-
-    .referral__start-syncing {
-        margin-top: 30px;
-    }
-
-    .referral__account {
-        margin-top: 24px;
-    }
-
-    .referral__update {
-        margin-top: 17px;
-        font-weight: bold;
-        font-size: 10px;
-        line-height: 18px;
-        color: #C4C4C4;
-    }
-
-    .referral__list {
-        margin-top: 24px;
-        text-align: left;
-    }
-        .referral__item {
-            border-top: 1px solid #E8E8E8;
-        }
-
-        .referral__item:first-child {
-            border-top: none;
-        }
+            .referral__item:first-child {
+                border-top: none;
+            }

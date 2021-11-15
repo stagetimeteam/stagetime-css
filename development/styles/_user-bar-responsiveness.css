@@ -37,17 +37,6 @@
             /*color: #AFAFAF;*/
         }
 
-        .user-bar__output {
-            /*font-weight: bold;*/
-            /*font-size: 12px;*/
-            /*line-height: 23px;*/
-            /*color: #757575;*/
-        }
-            .user-bar__notification {
-                /*font-weight: normal;*/
-                /*color: #AFAFAF;*/
-            }
-
     .user-bar__action {
         /*flex-shrink: 0;*/
         /*margin-top: 14px;*/
@@ -57,13 +46,11 @@
         .user-bar__action.button,
         .user-bar__action .button {
             /*width: 73px;*/
-            padding-top: 9px;
-            padding-bottom: 9px;
-            font-size: 11px;
+
         }
 
         .user-bar__action.sent,
-        .user-bar__action > .sent {
-            padding-top: 9px;
-            padding-bottom: 9px;
+        .user-bar__action .sent {
+            padding-top: 10px;
+            padding-bottom: 10px;
         }

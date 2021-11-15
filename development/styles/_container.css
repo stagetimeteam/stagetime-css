@@ -30,7 +30,10 @@
 }
 
 .container--referral {
-    width: 750px;
+    width: auto;
+    max-width: 1200px;
+    border-left-width: 28px;
+    border-right-width: 28px;
     padding-left: 0;  /* override bootstrap */
     padding-right: 0; /* override bootstrap */
 }

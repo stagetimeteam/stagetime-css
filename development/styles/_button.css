@@ -130,8 +130,9 @@
 
 .button--alt-faded {
     background-color: #F4F4F4;
-    font-weight: bold;
-    color: #8B8B8B;
+    font-weight: normal;
+    font-size: 13px;
+    color: #757575;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
 }
 
@@ -285,18 +286,19 @@
 .button--volumetric {
     background-color: #FFFFFF;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
-    font-weight: bold;
-    color: #757575;
+    font-weight: normal;
+    font-size: 13px;
+    color: #545454;
 }
 
 .button--volumetric:hover {
     background-color: #E8E8E8;
-    color: #757575;
+    color: #545454;
 }
 
 .button--volumetric:active {
     background-color: #E8E8E8;
-    color: #757575;
+    color: #545454;
     box-shadow: none;
 }
 

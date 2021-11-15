@@ -14,20 +14,6 @@
         text-align: center;
     }
 
-    .referral__handler {
-        margin-top: 20px;
-        margin-bottom: -5px;
-    }
-
-    .referral__handler.button,
-    .referral__handler > .button {
-        width: 163px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 12px;
-        padding-bottom: 12px;
-    }
-
     .ref-link__description {
 
     }
@@ -40,16 +26,3 @@
             padding-top: 12px;
             padding-bottom: 12px;
         }
-
-    .ref-link__code {
-        margin-top: 41px;
-        display: inline-block;
-        vertical-align: top;
-        max-width: 100%;
-    }
-
-    .ref-link__footer {
-        margin-top: 21px;
-        display: block;
-        text-align: center;
-    }
