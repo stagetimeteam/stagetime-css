@@ -1,0 +1,87 @@
+.invite {
+    width: auto;
+    max-width: 588px;
+    /*background-color: #FFFFFF;*/
+    /*border-radius: 13px;*/
+}
+    .invite__head {
+        padding: 21px 84px 8px;
+        border-bottom: none;
+    }
+        .invite__photo {
+            /*position: absolute;*/
+            left: 20px;
+            top: 17px;
+        }
+            .invite__photo .avatar__image {
+                width: 46px;
+                height: 46px;
+            }
+
+        .invite__name {
+            display: none;
+            /*font-weight: 600;*/
+            /*font-size: 21px;*/
+            /*color: #9CB2BE;*/
+        }
+            .invite__name .link--text-alike {
+                /*transition: opacity var(--transition-hover);*/
+            }
+
+            .invite__name .link--text-alike:hover {
+                /*opacity: 0.7;*/
+            }
+
+        .invite__calling {
+            /*margin-top: 9px;*/
+            /*font-size: 16px;*/
+            /*line-height: 20px;*/
+            /*color: #545454;*/
+        }
+
+        .invite__note {
+            margin-top: 31px;
+            border-top: 1px solid #E8E8E8;
+            margin-left: -84px;
+            margin-right: -84px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 17px;
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #757575;*/
+        }
+
+    .invite__body {
+        padding: 0 20px 26px;
+    }
+        .invite__field {
+            /*margin-top: 4px;*/
+        }
+
+        .invite__knowing {
+            margin-top: 19px;
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #757575;*/
+        }
+
+    .invite__footer {
+        /*border-top: 1px solid #E8E8E8;*/
+        padding: 18px 20px 22px;
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+        /*justify-content: flex-end;*/
+    }
+        .invite__action {
+            /*margin-left: 8px;*/
+        }
+
+        .invite__action:first-child {
+            /*margin-left: 0;*/
+        }
+
+        .invite__action.button,
+        .invite__action .button {
+            /*font-size: 16px;*/
+        }
