@@ -54,6 +54,8 @@
         bottom: -10px; /* if there are any */
         width: 60px;
         background-color: #FFFFFF;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
     }
 
 
@@ -68,6 +70,8 @@
         width: 152px;
         background-image: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.48) 56.25%, rgba(255, 255, 255, 0) 100%);
         pointer-events: none;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
     }
 
 
@@ -104,13 +108,16 @@
 .carousel--for-user-card {
 
 }
-    .carousel--for-user-card .carousel__item {
-
+    .carousel--for-user-card .carousel__container {
+        padding-right: 40px;
     }
+        .carousel--for-user-card .carousel__item {
 
-    .carousel--for-user-card .carousel__item:last-child {
+        }
 
-    }
+        .carousel--for-user-card .carousel__item:last-child {
+
+        }
 
 
     .carousel--for-user-card .carousel__control {
@@ -125,6 +132,12 @@
 
     .carousel--for-user-card .carousel__control--next {
         top: 10px;
+    }
+
+    .carousel--for-user-card.carousel--scrolled-to-right::before,
+    .carousel--for-user-card.carousel--scrolled-to-right::after {
+        opacity: 0;
+        visibility: hidden;
     }
 
 
