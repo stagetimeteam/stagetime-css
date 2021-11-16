@@ -1,27 +1,36 @@
 .user-bar {
+    position: relative;
     /*display: flex;*/
     /*align-items: flex-start;*/
-    padding: 22px 34px 22px 42px;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 22px 22px 82px 22px;
 }
     .user-bar__preview {
         /*flex-shrink: 0;*/
-        margin-right: 15px;
+        /*margin-right: 22px;*/
     }
+        .user-bar__preview.avatar,
+        .user-bar__preview .avatar,
+        .user-bar__preview.dummy,
+        .user-bar__preview .dummy {
+            /*box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);*/
+        }
 
     .user-bar__body {
         /*flex-grow: 1;*/
-        /*margin-top: 5px;*/
-        /*margin-bottom: 5px;*/
+        /*align-self: stretch;*/
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
     }
         .user-bar__name {
             /*padding-top: 3px;*/
-            /*font-size: 12px;*/
-            /*line-height: 18px;*/
-            /*color: #757575;*/
+            /*font-weight: normal;*/
+            /*font-size: 15px;*/
+            /*line-height: 22px;*/
+            /*color: #545454;*/
         }
             .user-bar__name .link {
+                /*font-weight: inherit;*/
                 /*transition: opacity var(--transition-hover);*/
             }
 
@@ -35,22 +44,32 @@
             /*font-size: 12px;*/
             /*line-height: 18px;*/
             /*color: #AFAFAF;*/
+            /*letter-spacing: -0.1px;*/
+        }
+
+        .user-bar__output {
+            /*font-weight: bold;*/
+            /*font-size: 12px;*/
+            /*line-height: 23px;*/
+            /*color: #757575;*/
         }
 
     .user-bar__action {
+        position: absolute;
+        left: 0;
+        bottom: 22px;
         /*flex-shrink: 0;*/
-        /*margin-top: 14px;*/
-        margin-left: 15px;
-        /*width: 73px;*/
+        /*margin-top: 18px;*/
+        /*margin-left: 20px;*/
     }
         .user-bar__action.button,
-        .user-bar__action .button {
-            /*width: 73px;*/
-
-        }
-
+        .user-bar__action .button,
         .user-bar__action.sent,
         .user-bar__action .sent {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            width: calc(100% - 44px);
+            /*padding-top: 10px;*/
+            /*padding-bottom: 10px;*/
+            /*font-weight: normal;*/
+            /*font-size: 14px;*/
+            /*border-radius: 18px;*/
         }

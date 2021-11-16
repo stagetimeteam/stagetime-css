@@ -6,10 +6,6 @@
     text-align: center;
     display: none;
 }
-
-.referral-expanded .ref-link {
-    display: block;
-}
     .ref-link__heading {
         text-align: center;
     }

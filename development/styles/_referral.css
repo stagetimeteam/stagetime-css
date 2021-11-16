@@ -48,10 +48,6 @@
                     fill: #9CB2BE;
                 }
 
-            .referral__handler {
-                display: none;
-            }
-
             .referral__description {
                 max-width: 474px;
                 margin-top: 16px;
