@@ -23,7 +23,7 @@
     }
         .user-bar__name {
             padding-top: 3px;
-            font-weight: normal;
+            font-weight: 600;
             font-size: 15px;
             line-height: 22px;
             color: #545454;
@@ -40,9 +40,9 @@
         .user-bar__note {
             margin-top: 5px;
             padding-bottom: 2px;
-            font-size: 12px;
+            font-size: 13px;
             line-height: 18px;
-            color: #AFAFAF;
+            color: #757575;
             letter-spacing: -0.1px;
         }
 
