@@ -32,8 +32,10 @@ function arrowsVisibility($carousel) {
     /* backward */
     if( $carouselContainer.scrollLeft() === 0) {
         $carouselContainer.siblings('.carousel__control--prev').addClass('carousel__control--disabled');
+        $carousel.addClass('carousel--scrolled-to-left');
     } else {
         $carouselContainer.siblings('.carousel__control--prev').removeClass('carousel__control--disabled');
+        $carousel.removeClass('carousel--scrolled-to-left');
     }
 
     /* forward */
@@ -45,8 +47,10 @@ function arrowsVisibility($carousel) {
 
     if( $carouselContainer.scrollLeft() >= Math.ceil(RibbonWidth - $carouselContainer.outerWidth() ) - 1 ) {
         $carouselContainer.siblings('.carousel__control--next').addClass('carousel__control--disabled');
+        $carousel.addClass('carousel--scrolled-to-right');
     } else {
         $carouselContainer.siblings('.carousel__control--next').removeClass('carousel__control--disabled');
+        $carousel.removeClass('carousel--scrolled-to-right');
     }
 }
 
