@@ -1,0 +1,48 @@
+/* .ellipsis */
+
+.multiline-ellipsis {
+    position: relative;
+    overflow: hidden;
+}
+    .multiline-ellipsis__inner {
+        margin-right: -10000px;
+    }
+        .multiline-ellipsis__inner::before {
+            content: "";
+            float: right;
+            height: 48px; /* line-height × ( rows amount - 1) */
+            width: 10000px;
+        }
+
+    .multiline-ellipsis::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 24px;
+        height: 24px;
+        background-image: radial-gradient(
+                24px 48px ellipse at 100% 100%, /* depends on line-height */
+                rgba(255, 255, 255, 1),
+                rgba(255, 255, 255, 1) 50%,
+                rgba(255, 255, 255, 0)
+        );
+    }
+
+
+
+.multiline-ellipsis--3x15 {
+
+}
+    .multiline-ellipsis--3x15 .multiline-ellipsis__inner::before {
+        height: 30px;
+    }
+
+    .multiline-ellipsis--3x15::after {
+        background-image: radial-gradient(
+                15px 30px ellipse at 100% 100%, /* depends on line-height */
+                rgba(255, 255, 255, 1),
+                rgba(255, 255, 255, 1) 50%,
+                rgba(255, 255, 255, 0)
+        );
+    }

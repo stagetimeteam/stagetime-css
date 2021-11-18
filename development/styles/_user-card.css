@@ -2,11 +2,7 @@
     width: 188px;
     padding-top: 20px;
     padding-bottom: 13px;
-    font-weight: 600;
-    font-size: 19px;
-    line-height: 22px;
-    color: #757575;
-    text-align: center;
+    text-align: center; /* align photo to center (card itself is larger than photo) */
     cursor: pointer;
 }
     .user-card__preview.avatar,
@@ -23,8 +19,10 @@
         .user-card__name {
             margin-top: 0;
             margin-bottom: 0;
-            font-weight: inherit;
-            color: #545454;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 22px;
+            color: #757575;
         }
             .user-card__link {
                 padding-top: 8px; /* expand clickable area */
@@ -67,6 +65,7 @@
     }
         .user-card--side .user-card__name {
             font-weight: bold;
+            color: #545454;
         }
             .user-card--side .user-card__link {
                 font-size: 12px;
@@ -83,43 +82,49 @@
             font-weight: normal;
             font-size: 12px;
             line-height: 16px;
+            color: #757575;
         }
 
 
-.user-card--smaller {
+.user-card--org-card {
     width: 98px;
     padding-top: 5px;
     padding-bottom: 10px;
     font-size: 10px;
     line-height: 15px;
 }
-    .user-card--smaller .user-card__preview.avatar,
-    .user-card--smaller .user-card__preview .avatar {
+    .user-card--org-card .user-card__preview.avatar,
+    .user-card--org-card .user-card__preview .avatar {
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
     }
 
-    .user-card--smaller .user-card__data {
+    .user-card--org-card .user-card__data {
         margin-top: 10px;
         padding-left: 5px;
         padding-right: 5px;
         min-height: 0; /* clear value */
     }
-        .user-card--smaller .user-card__name {
+        .user-card--org-card .user-card__name {
             font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            color: #757575;
         }
-            .user-card--smaller .user-card__link {
+            .user-card--org-card .user-card__link {
 
             }
 
-            .user-card--smaller .user-card:hover .user-card__link,
-            .user-card--smaller .user-card__link:hover {
+            .user-card--org-card .user-card:hover .user-card__link,
+            .user-card--org-card .user-card__link:hover {
 
             }
 
-        .user-card--smaller .user-card__note {
+        .user-card--org-card .user-card__note {
             margin-top: 0;
-            font-size: inherit;
-            line-height: inherit;
+            font-weight: normal;
+            font-size: 11px;
+            line-height: 15px;
+            color: #AAAAAA;
         }
 
 
@@ -128,8 +133,6 @@
     width: 98px;
     padding-top: 5px;
     padding-bottom: 10px;
-    font-size: 12px;
-    line-height: 19px;
 }
     .user-card--collection .user-card__preview.avatar,
     .user-card--collection .user-card__preview .avatar {
@@ -137,13 +140,16 @@
     }
 
     .user-card--collection .user-card__data {
-        margin-top: 14px;
+        margin-top: 10px;
         padding-left: 5px;
         padding-right: 5px;
         min-height: 0; /* clear value */
     }
         .user-card--collection .user-card__name {
             font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            color: #545454;
         }
             .user-card--collection .user-card__link {
 
@@ -156,6 +162,8 @@
 
         .user-card--collection .user-card__note {
             margin-top: 0;
-            font-size: inherit;
-            line-height: inherit;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            color: #757575;
         }

@@ -141,6 +141,19 @@
     }
 
 
+    /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
+    .carousel--faded-right::before {
+        width: 24px;
+    }
+
+    /* this is gradient itself, you can click through and scroll over */
+    .carousel--for-user-card.carousel--faded-right::after {
+        right: 24px;
+        width: 144px;
+        background-image: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.48) 56.25%, rgba(255, 255, 255, 0) 100%);
+    }
+
+
 
 .carousel--for-updates {
 
