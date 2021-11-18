@@ -142,7 +142,7 @@
 
 
     /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
-    .carousel--faded-right::before {
+    .carousel--for-user-card.carousel--faded-right::before {
         width: 24px;
     }
 
