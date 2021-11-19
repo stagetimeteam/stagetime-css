@@ -7,7 +7,19 @@ $(document).ready(function () {
         var $carousel = $(this).parents('.carousel');
         var $scrollContainer = $carousel.find('.carousel__container');
         var scrolled = $scrollContainer.scrollLeft();
-        var toScroll = $scrollContainer.outerWidth(); /* by default just 100% of width */
+        var toScroll = $scrollContainer.outerWidth(); /* 1) simple default value. just 100% of parental width */
+
+        /* 2) more complex calculation to find next tile to scroll (next tile after last visible)  */
+        if( $(this).hasClass('carousel__control--next') ) {
+            $carousel.find('.carousel__item').each(function () {
+                if( $(this).offset().left + scrolled - $carousel.offset().left > $carousel.outerWidth() ) {
+                    return false;
+                } else {
+                    toScroll = $(this).offset().left + scrolled - $carousel.offset().left;
+                }
+            });
+        }
+
         var scrollCoordinate = $(this).hasClass('carousel__control--next') ? scrolled + toScroll : scrolled - toScroll;
 
         $carousel.addClass('carousel--being-scrolled-by-arrow'); /* during animation */
