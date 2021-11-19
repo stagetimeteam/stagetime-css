@@ -10,7 +10,8 @@ $(document).ready(function () {
         var toScroll = $scrollContainer.outerWidth(); /* by default just 100% of width */
         var scrollCoordinate = $(this).hasClass('carousel__control--next') ? scrolled + toScroll : scrolled - toScroll;
 
-        $carousel.addClass('carousel--being-scrolled-by-arrow');
+        $carousel.addClass('carousel--being-scrolled-by-arrow'); /* during animation */
+        $carousel.addClass('carousel--last-scroll-was-made-by-arrow'); /* until scroll by wheel/touchpad */
 
         $scrollContainer.animate({
             scrollLeft: scrollCoordinate
@@ -20,6 +21,15 @@ $(document).ready(function () {
         });
     });
 
+});
+
+
+/* Scroll by wheel/touchpad */
+
+$(document).ready(function () {
+    $('.carousel__container').on('wheel', function () {
+        $(this).parents('.carousel').removeClass('carousel--last-scroll-was-made-by-arrow');
+    });
 });
 
 

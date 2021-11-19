@@ -9,14 +9,16 @@
         -ms-overflow-style: none; /* hide scrollbar in Edge */
         display: flex;
         align-items: flex-start;
+        scroll-snap-type: x proximity;
     }
     /* stylelint-enable */
 
     .carousel__container::-webkit-scrollbar {
-      display: none;
+        display: none;
     }
         .carousel__item {
             flex-shrink: 0;
+            scroll-snap-align: start;
         }
 
     .carousel__control {
@@ -39,11 +41,26 @@
     }
 
 
-.carousel--faded-right {
+/* during animation */
+.carousel--being-scrolled-by-arrow {
 
 }
 
 
+/* Disable scroll snapping when scrolled by arrows */
+.carousel--last-scroll-was-made-by-arrow {
+    scroll-snap-type: none;
+}
+    .carousel--last-scroll-was-made-by-arrow .carousel__item {
+        scroll-snap-align: none;
+    }
+
+
+
+
+.carousel--faded-right {
+
+}
     /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
     .carousel--faded-right::before {
         content: "";
