@@ -8,6 +8,7 @@ $(document).ready(function () {
         var $scrollContainer = $carousel.find('.carousel__container');
         var scrolled = $scrollContainer.scrollLeft();
         var toScroll = $scrollContainer.outerWidth(); /* 1) simple default value. just 100% of parental width */
+        var scrollCoordinate = 0;
 
         /* 2) more complex calculation to find next tile to scroll (next tile after last visible)  */
         if( $(this).hasClass('carousel__control--next') ) {
@@ -15,12 +16,23 @@ $(document).ready(function () {
                 if( $(this).offset().left + scrolled - $carousel.offset().left > $carousel.outerWidth() ) {
                     return false;
                 } else {
-                    toScroll = $(this).offset().left + scrolled - $carousel.offset().left;
+                    scrollCoordinate = $(this).offset().left - $carousel.offset().left + 2*scrolled;
+                }
+            });
+        }
+        if( $(this).hasClass('carousel__control--prev') ) {
+            $carousel.find('.carousel__item').each(function () {
+
+                console.log( $(this).offset().left + scrolled - $carousel.offset().left, scrolled - $carousel.outerWidth() )
+
+                if( $(this).offset().left + scrolled - $carousel.offset().left > scrolled - $carousel.outerWidth() ) {
+                    return false;
+                } else {
+                    scrollCoordinate = $(this).offset().left - $carousel.offset().left + scrolled;
                 }
             });
         }
 
-        var scrollCoordinate = $(this).hasClass('carousel__control--next') ? scrolled + toScroll : scrolled - toScroll;
 
         $carousel.addClass('carousel--being-scrolled-by-arrow'); /* during animation */
         $carousel.addClass('carousel--last-scroll-was-made-by-arrow'); /* until scroll by wheel/touchpad */
