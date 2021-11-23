@@ -22,9 +22,6 @@ $(document).ready(function () {
         }
         if( $(this).hasClass('carousel__control--prev') ) {
             $carousel.find('.carousel__item').each(function () {
-
-                console.log( $(this).offset().left + scrolled - $carousel.offset().left, scrolled - $carousel.outerWidth() )
-
                 if( $(this).offset().left + scrolled - $carousel.offset().left > scrolled - $carousel.outerWidth() ) {
                     return false;
                 } else {
@@ -32,7 +29,6 @@ $(document).ready(function () {
                 }
             });
         }
-
 
         $carousel.addClass('carousel--being-scrolled-by-arrow'); /* during animation */
         $carousel.addClass('carousel--last-scroll-was-made-by-arrow'); /* until scroll by wheel/touchpad */
