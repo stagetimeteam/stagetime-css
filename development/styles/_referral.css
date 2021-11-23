@@ -69,6 +69,10 @@
                 color: #757575;
             }
 
+        .referral__mobile-invite {
+            display: none;
+        }
+
         .referral__list {
             text-align: left;
             flex-grow: 1;

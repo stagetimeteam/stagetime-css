@@ -69,6 +69,11 @@
             /*color: #C4C4C4;*/
         }
 
+    .referral__mobile-invite {
+        display: block;
+        margin-top: 28px;
+    }
+
     .referral__list {
         margin-top: 28px;
         /*text-align: left;*/

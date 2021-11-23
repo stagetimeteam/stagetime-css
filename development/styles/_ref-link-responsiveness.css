@@ -1,13 +1,11 @@
 .ref-link {
-    padding-top: 32px;
-    padding-bottom: 60px;
-    margin-left: -34px;
-    margin-right: -34px;
-    text-align: center;
-    display: none;
+    /*padding-top: 32px;*/
+    /*padding-bottom: 60px;*/
+    width: auto;
+    padding: 28px;
 }
     .ref-link__heading {
-        text-align: center;
+        /*text-align: center;*/
     }
 
     .ref-link__description {
@@ -15,10 +13,10 @@
     }
 
     .ref-link__link {
-        margin-top: 31px;
+        /*margin-top: 31px;*/
     }
         .ref-link__link.button,
         .ref-link__link > .button {
-            padding-top: 12px;
-            padding-bottom: 12px;
+            /*padding-top: 12px;*/
+            /*padding-bottom: 12px;*/
         }

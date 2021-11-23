@@ -48,14 +48,6 @@
 
 
 
-.dashboard--enlarged-aside {
-    padding-right: var(--aside-enlarged-width);
-}
-    .dashboard--enlarged-aside .dashboard__aside {
-        width: var(--aside-enlarged-width);
-    }
-
-
 
 
 @media (min-width: 1240px) {

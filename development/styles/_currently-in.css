@@ -1,10 +1,10 @@
 .currently-in {
-    text-align: center;
+    width: 258px;
+    margin-left: auto;
+    margin-right: auto;
 }
     .currently-in__list {
-        margin-left: -10px;
-        margin-right: -10px;
-        text-align: left;
+
     }
         .currently-in__item {
             margin-top: 14px;

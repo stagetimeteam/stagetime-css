@@ -100,7 +100,9 @@
 
 
 .updates--sidebar {
-
+    width: 226px;
+    margin-left: auto;
+    margin-right: auto;
 }
     .updates--sidebar .updates__body {
         height: 220px; /* height of media plus arrows */

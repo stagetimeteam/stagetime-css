@@ -21,11 +21,7 @@
                 background-color: #FFFFFF;
                 top: var(--header-height);
                 left: var(--sidebar-width);
-                right: var(--aside-enlarged-width);
-            }
-
-            .dashboard--enlarged-aside .dash-tiles__summary {
-                right: var(--aside-enlarged-width);
+                right: var(--aside-width);
             }
     }
 

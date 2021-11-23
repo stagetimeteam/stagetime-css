@@ -13,10 +13,12 @@
     }
 
     .dashboard__aside {
-        position: static;
-        width: auto;
-        box-shadow: none;
-        overflow: visible;
+        display: none;
+        /* if you still need dashboard on smartphone: */
+        /*position: static;*/
+        /*width: auto;*/
+        /*box-shadow: none;*/
+        /*overflow: visible;*/
     }
 
 

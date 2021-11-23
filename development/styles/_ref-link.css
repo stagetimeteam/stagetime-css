@@ -1,5 +1,8 @@
 .ref-link {
     padding-top: 8px;
+    width: 258px;
+    margin-left: auto;
+    margin-right: auto;
 }
     .ref-link__heading {
         font-size: 15px;

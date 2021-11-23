@@ -1,9 +1,12 @@
 .circles {
-    padding-top: 3px; /* equal spacing to .happening */
+    width: 226px;
+    margin-left: auto;
+    margin-right: auto;
 }
     .circles__heading {
         margin-top: 0;
         margin-bottom: 0;
+        padding-top: 3px; /* equal spacing to .happening */
         font-weight: normal;
         font-size: 15px;
         line-height: 24px;
@@ -27,19 +30,4 @@
         margin-top: -9px;
         margin-left: auto;
         margin-right: auto;
-    }
-
-
-.circles--simplified {
-    padding-top: 0;
-}
-    .circles--simplified .circles__heading {
-        text-align: center;
-    }
-
-    .circles--simplified .circles__body {
-        margin-top: 15px;
-        padding-top: 0;
-        padding-bottom: 0;
-        border-color: transparent;
     }
