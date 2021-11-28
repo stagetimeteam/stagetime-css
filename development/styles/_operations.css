@@ -58,7 +58,7 @@
 
 
 .operations--expanded {
-    z-index: 100;
+    z-index: 1000; /* originally was 100, but on back-end it was changed to 1000 */
 }
     .operations--expanded .operations__handler {
 
