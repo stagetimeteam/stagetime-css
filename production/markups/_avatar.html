@@ -6,9 +6,9 @@
         <title>.avatar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1637704175">
-        <link rel="stylesheet" href="../styles/style.css?1637704175">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1637704175" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1638131436">
+        <link rel="stylesheet" href="../styles/style.css?1638131436">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1638131436" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -34,6 +34,21 @@
             </a>
 
 
+            <br>
+            <br>
+            <br>
+            <p>
+                <a href="_dummy.html">.dummy</a> component can be used in case no photo found:
+            </p>
+
+
+            <a class="avatar" href="#">
+                <svg class="avatar__image dummy" width="146" height="146" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+            </a>
+
+
 
             <br>
             <br>
@@ -55,7 +70,17 @@
                 >
             </a>
 
+            <br>
+            <br>
+            <p>
+                Same works for <a href="_dummy.html">.dummy</a> component inside:
+            </p>
 
+            <a class="avatar" href="#">
+                <svg class="avatar__image dummy" width="100" height="100" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+            </a>
 
             <br>
             <br>
@@ -65,7 +90,7 @@
                 If we still need square instead of circle we have <b>.avatar--squared</b> modifier.
                 Rounding of corners is set to <b>11px</b> so it is not flexible in terms of image size.
                 Smaller images may need less rounding. But this is unclear at this point what
-                images of which sizes will be used. So for now we gonna live with default 11px:
+                images of which sizes will be used. So for now it's default 10px:
             </p>
 
 
@@ -78,6 +103,15 @@
                      alt="Mark Zuckerberg"
                 >
             </a>
+
+
+            <a class="avatar avatar--squared" href="#">
+                <svg class="avatar__image dummy" width="146" height="146" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+            </a>
+
+
 
 
             <br>
@@ -95,6 +129,13 @@
             </a>
 
 
+            <a class="avatar avatar--a-bit-squared" href="#">
+                <svg class="avatar__image dummy" width="80" height="80" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+            </a>
+
+
             <br>
             <br>
             <h2>.avatar--less-squared (4px)</h2>
@@ -107,6 +148,12 @@
                      height="25"
                      alt="Mark Zuckerberg"
                 >
+            </a>
+
+            <a class="avatar avatar--less-squared" href="#">
+                <svg class="avatar__image dummy" width="25" height="25" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="26px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
             </a>
 
 
@@ -131,13 +178,22 @@
 
             <a class="avatar avatar--alt-hover" href="#">
                 <img class="avatar__image"
-                     srcset="../temp/person-a-21x21@2x.jpg 2x"
-                     src="../temp/person-a-21x21.jpg"
-                     width="21"
-                     height="21"
+                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                     src="../temp/person-a-24x24.jpg"
+                     width="24"
+                     height="24"
                      alt=""
                 >
             </a>
+
+            <a class="avatar avatar--alt-hover" href="#">
+                <svg class="avatar__image dummy" width="24" height="24" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="26px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+            </a>
+
+
+
 
 
 
@@ -157,6 +213,13 @@
                      height="21"
                      alt=""
                 >
+            </a>
+
+
+            <a class="avatar avatar--fancy" href="#">
+                <svg class="avatar__image dummy" width="21" height="21" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="27px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
             </a>
 
 
@@ -181,6 +244,12 @@
                 >
             </div>
 
+            <div class="avatar avatar--non-clickable">
+                <svg class="avatar__image dummy" width="146" height="146" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+            </div>
+
 
 
 
@@ -200,7 +269,18 @@
                 >
                 <button class="avatar__cancel" type="button">
                     <svg class="avatar__cross" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1637704175#16-cross"></use>
+                        <use xlink:href="../symbols/symbols.svg?1638131436#16-cross"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="avatar avatar--non-clickable">
+                <svg class="avatar__image dummy" width="24" height="24" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="26px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+                <button class="avatar__cancel" type="button">
+                    <svg class="avatar__cross" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1638131436#16-cross"></use>
                     </svg>
                 </button>
             </div>
@@ -222,6 +302,12 @@
                 >
             </a>
 
+            <a class="avatar avatar--squared avatar--shadow" href="#">
+                <svg class="avatar__image dummy" width="120" height="120" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
+            </a>
+
 
             <br>
             <br>
@@ -236,6 +322,12 @@
                      height="36"
                      alt="Mark Zuckerberg"
                 >
+            </a>
+
+            <a class="avatar avatar--panel" href="#">
+                <svg class="avatar__image dummy" width="36" height="36" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                </svg>
             </a>
 
 
@@ -265,34 +357,34 @@
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1637704175"></script>
-        <script src="../scripts/_operations.js?1637704175"></script>
-        <script src="../scripts/_profile.js?1637704175"></script>
-        <script src="../scripts/_mfp.js?1637704175"></script>
-        <script src="../scripts/_search.js?1637704175"></script>
-        <script src="../scripts/_carousel.js?1637704175"></script>
-        <script src="../scripts/_player.js?1637704175"></script>
-        <script src="../scripts/_player2.js?1637704175"></script>
-        <script src="../scripts/_player3.js?1637704175"></script>
-        <script src="../scripts/_updates.js?1637704175"></script>
-        <script src="../scripts/_side.js?1637704175"></script>
-        <script src="../scripts/_happening.js?1637704175"></script>
-        <script src="../scripts/_input.js?1637704175"></script>
-        <script src="../scripts/_edit-post.js?1637704175"></script>
-        <script src="../scripts/_post-form.js?1637704175"></script>
-        <script src="../scripts/_button.js?1637704175"></script>
-        <script src="../scripts/_quick-message.js?1637704175"></script>
-        <script src="../scripts/_explore.js?1637704175"></script>
-        <script src="../scripts/_shortcut.js?1637704175"></script>
-        <script src="../scripts/_scrollbar.js?1637704175"></script>
-        <script src="../scripts/_overlay.js?1637704175"></script>
-        <script src="../scripts/_notifications.js?1637704175"></script>
-        <script src="../scripts/_enter.js?1637704175"></script>
-        <script src="../scripts/_suggesting.js?1637704175"></script>
-        <script src="../scripts/_chat.js?1637704175"></script>
-        <script src="../scripts/_badge.js?1637704175"></script>
-        <script src="../scripts/_media-bar.js?1637704175"></script>
-        <script src="../scripts/_settings.js?1637704175"></script>
+        <script src="../scripts/_global.js?1638131436"></script>
+        <script src="../scripts/_operations.js?1638131436"></script>
+        <script src="../scripts/_profile.js?1638131436"></script>
+        <script src="../scripts/_mfp.js?1638131436"></script>
+        <script src="../scripts/_search.js?1638131436"></script>
+        <script src="../scripts/_carousel.js?1638131436"></script>
+        <script src="../scripts/_player.js?1638131436"></script>
+        <script src="../scripts/_player2.js?1638131436"></script>
+        <script src="../scripts/_player3.js?1638131436"></script>
+        <script src="../scripts/_updates.js?1638131436"></script>
+        <script src="../scripts/_side.js?1638131436"></script>
+        <script src="../scripts/_happening.js?1638131436"></script>
+        <script src="../scripts/_input.js?1638131436"></script>
+        <script src="../scripts/_edit-post.js?1638131436"></script>
+        <script src="../scripts/_post-form.js?1638131436"></script>
+        <script src="../scripts/_button.js?1638131436"></script>
+        <script src="../scripts/_quick-message.js?1638131436"></script>
+        <script src="../scripts/_explore.js?1638131436"></script>
+        <script src="../scripts/_shortcut.js?1638131436"></script>
+        <script src="../scripts/_scrollbar.js?1638131436"></script>
+        <script src="../scripts/_overlay.js?1638131436"></script>
+        <script src="../scripts/_notifications.js?1638131436"></script>
+        <script src="../scripts/_enter.js?1638131436"></script>
+        <script src="../scripts/_suggesting.js?1638131436"></script>
+        <script src="../scripts/_chat.js?1638131436"></script>
+        <script src="../scripts/_badge.js?1638131436"></script>
+        <script src="../scripts/_media-bar.js?1638131436"></script>
+        <script src="../scripts/_settings.js?1638131436"></script>
 
 
     </body>
