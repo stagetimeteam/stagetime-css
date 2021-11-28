@@ -64,21 +64,20 @@
     }
 
     .user-panel__work {
-        margin-top: 12px;
+        margin: 6px -6px -6px;
         display: flex;
         align-items: flex-start;
         justify-content: center;
+        flex-wrap: wrap;
+        min-height: 20px;
     }
         .user-panel__organisation {
-            margin-left: 12px;
-        }
-
-        .user-panel__organisation:first-child {
-            margin-left: 0;
+            margin: 6px;
         }
 
     .user-panel__friend {
         margin-top: 15px;
+        min-height: 20px;
     }
 
     .user-panel__connect {

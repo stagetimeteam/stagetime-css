@@ -28,14 +28,3 @@
     .playlist-expanded .dashboard {
         padding-bottom: 0;
     }
-
-
-
-
-.hide-aside-on-smartphone .dashboard {
-    padding-bottom: 0;
-}
-
-.hide-aside-on-smartphone .dashboard__aside {
-    display: none;
-}

@@ -149,10 +149,3 @@
     .hint--sidebar-right .hint__dropdown::after {
         left: 191px;
     }
-
-
-/*.dash-side__people .circles__item:nth-child(even) .hint__dropdown {*/
-/*    transform: none;*/
-/*    left: auto;*/
-/*    right: -35px;*/
-/*}*/

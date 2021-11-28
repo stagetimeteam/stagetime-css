@@ -1,27 +1,7 @@
 .dummy {
     vertical-align: top;
     background-color: #C4C4C4;
-    border-radius: 50%;
     color: #FFFFFF;
     user-select: none;
     transition: background-color var(--transition-hover);
-    cursor: pointer;
-}
-
-.dummy:hover {
-    background-color: #545454;
-}
-
-
-.dummy--squared {
-    border-radius: 10px;
-}
-
-.dummy--a-bit-squared {
-    border-radius: 6px;
-}
-
-
-.dummy--less-squared {
-    border-radius: 4px;
 }

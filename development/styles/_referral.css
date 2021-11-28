@@ -11,13 +11,13 @@
     .referral__wrap {
         display: flex;
         align-items: flex-start;
-        text-align: center;
     }
         .referral__panel {
             padding: 32px 29px 39px;
             width: 338px;
             flex-shrink: 0;
             margin-right: 28px;
+            text-align: center;
         }
             .referral__heading {
                 position: relative;
