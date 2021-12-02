@@ -79,6 +79,7 @@ function symbolsImgToSpriteSvg(content) {
     var widthString;
     var heightString;
     var titleString;
+    var fillString;
     var srcString;
     var pathString;
     var nameString;
@@ -102,12 +103,14 @@ function symbolsImgToSpriteSvg(content) {
             widthString  = line.match( 'width[ \t]*=[ \t]*"[^"]+"');
             heightString = line.match('height[ \t]*=[ \t]*"[^"]+"');
             titleString  = line.match( 'title[ \t]*=[ \t]*"[^"]+"');
+            fillString   = line.match( 'fill[ \t]*=[ \t]*"[^"]+"');
 
             classString  = classString  ? classString[0]  : null;
             idString     = idString     ? idString[0]     : null;
             widthString  = widthString  ? widthString[0]  : null;
             heightString = heightString ? heightString[0] : null;
             titleString  = titleString  ? titleString[0]  : null;
+            fillString   = fillString   ? fillString[0]  : null;
 
 
             /* get path and name */
@@ -125,7 +128,7 @@ function symbolsImgToSpriteSvg(content) {
 
             /* write down results */
 
-            outputLine[0] = indentString + '<svg' + ( classString ? ' ' + classString : '') + ( idString ? ' ' + idString : '') + ( widthString ? ' ' + widthString : '') + ( heightString ? ' ' + heightString : '') + '>';
+            outputLine[0] = indentString + '<svg' + ( classString ? ' ' + classString : '') + ( idString ? ' ' + idString : '') + ( widthString ? ' ' + widthString : '') + ( heightString ? ' ' + heightString : '') + ( titleString ? ' ' + titleString : '') + ( fillString ? ' ' + fillString : '') + '>';
             outputLine[1] = indentString + '    ' +  '<use xlink:href="' + pathString + 'symbols.svg?' + timestamp + '#' + nameString + '"></use>';
             outputLine[2] = indentString + '</svg>';
 
