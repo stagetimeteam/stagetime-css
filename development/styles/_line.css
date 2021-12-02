@@ -1,30 +1,37 @@
 .line {
     margin-top: 15px;
     width: 100%;
-    position: relative;
     text-align: center;
     height: 18px;
+    overflow: hidden;
 }
-    .line::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 50%;
-        display: block;
-        height: 1px;
-        background-color: #DCDCDC;
-    }
-
     .line__heading {
         position: relative;
         display: inline-block;
         vertical-align: top;
-        padding-left: 15px;
-        padding-right: 15px;
-        background-color: #FFFFFF;
         font-weight: 600;
         font-size: 11px;
         line-height: 18px;
         color: #AAAAAA;
+    }
+
+    .line__heading::before,
+    .line__heading::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: block;
+        width: 1000px;
+        height: 1px;
+        background-color: #DCDCDC;
+    }
+
+    .line__heading::before {
+        right: 100%;
+        margin-right: 15px;
+    }
+
+    .line__heading::after {
+        left: 100%;
+        margin-left: 15px;
     }
