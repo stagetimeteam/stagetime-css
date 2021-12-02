@@ -1,39 +1,42 @@
-.media-views {
+.stat {
     position: relative;
     padding: 12px 20px 18px;
     background-color: #F6F6F6;
     border-radius: 4px;
 }
-    .media-views__heading {
+    .stat__heading {
         font-weight: 600;
         font-size: 15px;
         line-height: 20px;
         color: #545454;
     }
 
-    .media-views__icon {
+    .stat__icon {
         position: absolute;
         right: 18px;
         top: 13px;
-        fill: #E4CFC3;
     }
 
-    .media-views__value {
+    .stat__value {
         margin-top: 7px;
         font-size: 41px;
         line-height: 41px;
         color: #333333;
     }
+        .stat__period {
+            font-size: 12px;
+            line-height: 15px;
+            color: #545454;
+        }
 
-    .media-views__stats {
-        margin-top: 6px;
+    .stat__total {
+        margin-top: 9px;
         font-size: 13px;
         line-height: 20px;
         color: #545454;
     }
-        .media-views__growth {
+        .stat__growth {
             margin-right: 11px;
             margin-top: -1px;
             float: left;
-            fill: #E4CFC3;
         }
