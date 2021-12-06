@@ -99,6 +99,25 @@
     }
 
 
+.operations--darkened {
+
+}
+    .operations--darkened .operations__handler {
+
+    }
+        .operations--darkened .operations__icon {
+            fill: #757575;
+        }
+
+        .operations--darkened .operations__handler:hover .operations__icon {
+            fill: red;
+        }
+
+    .operations--darkened .operations__dropdown {
+
+    }
+
+
 
 .operations--for-player {
 

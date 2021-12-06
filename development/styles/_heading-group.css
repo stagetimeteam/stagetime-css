@@ -14,6 +14,10 @@
         color: var(--blue-primary);
         letter-spacing: -0.8px;
     }
+        .heading-group__heading .verified {
+            margin-left: 3px;
+            margin-top: 13px;
+        }
 
     .heading-group__addition {
         margin-left: auto;

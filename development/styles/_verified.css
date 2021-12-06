@@ -1,0 +1,7 @@
+.verified {
+    display: inline-block;
+    vertical-align: top;
+}
+    .verified__icon {
+        vertical-align: top;
+    }
