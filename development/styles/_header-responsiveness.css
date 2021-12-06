@@ -47,13 +47,9 @@
         /*background-color: #333333;*/
         /*box-shadow: none;*/
     }
-        .header--dark .header__top-bar {
-            background-color: #333333;
-            box-shadow: none;
-        }
-            .header--dark .header__branding {
+        .header--dark .header__branding {
 
-            }
+        }
 
         .header--dark .header__dropdown {
 

@@ -34,10 +34,10 @@
             margin-top: 7px;
             border-top: 1px solid #E8E8E8;
             padding-top: 10px;
-            padding-bottom: 10px;
         }
 
         .profile__organisation {
+            margin-top: 10px;
             margin-left: 21px;
             margin-right: 21px;
         }
@@ -47,4 +47,9 @@
             border-top: 1px solid #E8E8E8;
             padding-top: 7px;
             padding-bottom: 7px;
+        }
+
+
+        .profile__menu + .profile__logout {
+            margin-top: 10px;
         }

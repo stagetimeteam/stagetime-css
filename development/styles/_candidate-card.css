@@ -78,6 +78,10 @@
             pointer-events: auto;
         }
 
+    .candidate-card__status--bulk {
+        color: #C4C4C4;
+    }
+
     .candidate-card__bookmark {
         position: absolute;
         right: 137px;

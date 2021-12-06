@@ -24,7 +24,7 @@
         }
 
         .header__auth {
-            position: absolute; /* take it away from .header__top-bar */
+            position: absolute; /* take it away from .header__top-bar(which is gone?) */
             right: 0;
             top: 0;
             display: flex;
