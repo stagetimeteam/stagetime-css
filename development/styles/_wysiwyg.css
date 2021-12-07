@@ -4,6 +4,9 @@
 
     --wysiwyg-smaller-font: 11px;
     --wysiwyg-smaller-line: 24px;
+
+    --wysiwyg-larger-font: 13px;
+    --wysiwyg-larger-line: 24px;
 }
 
 .wysiwyg {
@@ -15,6 +18,11 @@
 .wysiwyg--smaller {
     font-size: var(--wysiwyg-smaller-font);
     line-height: var(--wysiwyg-smaller-line);
+}
+
+.wysiwyg--larger {
+    font-size: var(--wysiwyg-larger-font);
+    line-height: var(--wysiwyg-larger-line);
 }
 
 /* stylelint-disable function-parentheses-space-inside */
