@@ -1,0 +1,31 @@
+.manager-card {
+    display: flex;
+    align-items: flex-start;
+}
+    .manager-card__preview {
+        margin-right: 16px;
+        flex-shrink: 0;
+    }
+
+    .manager-card__preview + .manager-card__preview {
+        margin-left: -3px;
+    }
+
+
+        .manager-card__image {
+
+        }
+
+
+    .manager-card__content {
+        font-size: 13px;
+        line-height: 16px;
+        color: #545454;
+    }
+        .manager-card__about {
+
+        }
+
+        .manager-card__note {
+            margin-top: 8px;
+        }

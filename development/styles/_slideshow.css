@@ -1,0 +1,126 @@
+.slideshow {
+
+}
+    .slideshow__content {
+        position: relative;
+    }
+        .slideshow__item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity var(--transition-show),
+                        visibility var(--transition-show);
+        }
+
+        .slideshow__item--current {
+            position: static;
+            opacity: 1;
+            visibility: visible;
+        }
+
+    .slideshow__counter {
+
+    }
+
+
+    .slideshow__control {
+        cursor: pointer;
+    }
+
+    .slideshow__control--disabled {
+        cursor: default;
+    }
+
+    .slideshow__control--prev {
+
+    }
+
+    .slideshow__control--next {
+
+    }
+        .slideshow__arrow {
+
+        }
+
+
+
+.slideshow--management {
+    text-align: right;
+}
+    .slideshow--management .slideshow__content {
+        margin-top: 5px;
+        text-align: left;
+    }
+        .slideshow--management .slideshow__item {
+
+        }
+
+        .slideshow--management .slideshow__item--current {
+
+        }
+
+    .slideshow--management .slideshow__counter {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #545454;
+    }
+
+
+    .slideshow--management .slideshow__control {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .slideshow--management .slideshow__control--disabled {
+
+    }
+
+    .slideshow--management .slideshow__control--prev {
+        margin-right: -4px;
+    }
+
+    .slideshow--management .slideshow__control--next {
+        margin-left: -4px;
+    }
+        .slideshow--management .slideshow__control::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 28px;
+            height: 28px;
+            background-color: #F2F2F2;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity var(--transition-hover);
+        }
+
+        .slideshow--management .slideshow__control:not(.slideshow__control--disabled):hover::before {
+            opacity: 1;
+        }
+
+        .slideshow--management .slideshow__arrow {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
