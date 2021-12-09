@@ -1,0 +1,34 @@
+.all-connections {
+
+}
+    .all-connections__head {
+        display: flex;
+        align-items: flex-start;
+    }
+        .all-connections__icon {
+            margin-left: -2px;
+            width: 32px;
+            height: 32px;
+            fill: #545454;
+        }
+
+        .all-connections__heading {
+            margin-left: 6px;
+            margin-top: 9px;
+        }
+
+    .all-connections__body {
+        margin-top: 13px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .all-connections__people {
+            margin-top: 1px;
+        }
+
+        .all-connections__description {
+            margin-left: 15px;
+            font-size: 11px;
+            line-height: 18px;
+            color: #545454;
+        }
