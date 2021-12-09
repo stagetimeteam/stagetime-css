@@ -83,10 +83,11 @@
         text-indent: 200%;
         white-space: nowrap;
         overflow: hidden;
+        transition: opacity var(--transition-show);
     }
 
     .slideshow--management .slideshow__control--disabled {
-
+        opacity: 0;
     }
 
     .slideshow--management .slideshow__control--prev {
