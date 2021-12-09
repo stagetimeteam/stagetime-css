@@ -1,0 +1,38 @@
+.alt-org-panel {
+    position: relative;
+    display: block;
+    padding: 13px 24px 13px 74px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color var(--transition-hover);
+}
+
+.alt-org-panel:hover {
+    background-color: #F2F2F2;
+}
+    .alt-org-panel__preview {
+        position: absolute;
+        left: 14px;
+        top: 13px;
+    }
+    .alt-org-panel__preview.avatar,
+    .alt-org-panel__preview .avatar {
+        border: 1px solid #F2F2F2;
+    }
+
+    .alt-org-panel__heading {
+        margin-top: -2px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--blue-primary);
+    }
+
+    .alt-org-panel__note {
+        margin-top: 4px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: #545454;
+    }
+
