@@ -1,0 +1,88 @@
+.performing {
+
+}
+    .performing__heading {
+
+    }
+
+    .performing__panel {
+        background-color: #F2F2F2;
+        border-radius: 5px;
+    }
+        .performing__body {
+            margin-top: 15px;
+            position: relative;
+            padding: 14px 16px 16px 104px;
+            min-height: 96px;
+        }
+            .performing__preview {
+                position: absolute;
+                left: 16px;
+                top: 16px;
+            }
+
+            .performing__sub-heading {
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 20px;
+                color: #545454;
+            }
+
+            .performing__note {
+                margin-top: 9px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                color: #545454;
+            }
+
+            .performing__note + .performing__note {
+                margin-top: 4px;
+            }
+
+        .performing__footer {
+            display: flex;
+            align-items: flex-start;
+            border-top: 1px solid #E8E8E8;
+            padding: 12px 16px;
+        }
+            .performing__dates {
+                margin-top: 6px;
+
+                font-size: 11px;
+                line-height: 16px;
+                color: #545454;
+            }
+                .performing__main-date {
+                    font-weight: 600;
+                }
+
+            .performing__add {
+                margin-left: auto;
+                margin-right: -4px;
+                display: inline-flex;
+                align-items: flex-start;
+                vertical-align: top;
+                border: 1px solid #E8E8E8;
+                border-radius: 15px;
+                padding: 6px 20px;
+                background-color: #FFFFFF;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 16px;
+                color: #545454;
+                text-decoration: none;
+            }
+
+            .performing__add:hover {
+                background-color: #FAFAFA;
+            }
+
+            .performing__add:active {
+                background-color: #F5F5F5;
+            }
+                .performing__calendar-icon {
+                    margin-right: 6px;
+                    margin-left: -4px;
+                    fill: currentColor;
+                }
