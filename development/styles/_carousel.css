@@ -172,6 +172,53 @@
 
 
 
+.carousel--for-profile-summary {
+
+}
+    .carousel--for-profile-summary .carousel__container {
+        border-radius: 6px;
+    }
+        .carousel--for-profile-summary .carousel__item {
+            margin-right: 25px;
+        }
+
+        .carousel--for-profile-summary .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel--for-profile-summary .carousel__item:last-child {
+
+        }
+
+
+        .carousel--for-profile-summary .carousel__control {
+            position: absolute;
+            z-index: 100;
+            top: 50%;
+            right: 0;
+        }
+
+        .carousel--for-profile-summary .carousel__control--prev {
+            margin-top: 5px;
+        }
+
+        .carousel--for-profile-summary .carousel__control--next {
+            margin-top: -45px;
+        }
+
+
+/* make gradients to not to overlap borders:  */
+.carousel--for-profile-summary.carousel--faded-right::before {
+    background-color: #EBF0F2;
+}
+
+.carousel--for-profile-summary.carousel--faded-right::after {
+    background-image: linear-gradient(to left, #EBF0F2 0%, rgba(235, 240, 242, 0.9) 25%, rgba(235, 240, 242, 0.48) 56.25%, rgba(235, 240, 242, 0) 100%);
+}
+
+
+
+
 .carousel--for-updates {
 
 }

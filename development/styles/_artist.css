@@ -38,12 +38,6 @@
                 width: 280px;
                 margin-right: 60px;
             }
-
-            @media (min-width: 1240px) {
-                .artist__sidebar {
-                    margin-right: 86px;
-                }
-            }
                 .artist__connections {
 
                 }
@@ -62,7 +56,7 @@
 
             .artist__content {
                 margin-top: 4px;
-                flex-grow: 1;
+                width: calc(100% - 280px - 60px);
             }
                 .artist__description {
 
@@ -70,8 +64,10 @@
 
                 .artist__gallery {
                     margin-top: 24px;
-                    height: 261px;
+                    height: 262px;
+                    padding: 18px;
                     background-color: #EBF0F2;
+                    border-radius: 5px;
                 }
 
                 .artist__footer {
@@ -91,3 +87,16 @@
                         padding-top: 25px;
                         flex-grow: 1;
                     }
+
+
+
+
+@media (min-width: 1240px) {
+    .artist__sidebar {
+        margin-right: 86px;
+    }
+
+    .artist__content {
+        width: calc(100% - 280px - 86px);
+    }
+}
