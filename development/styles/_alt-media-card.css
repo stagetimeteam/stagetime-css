@@ -24,7 +24,8 @@
                 right: 0;
                 bottom: 0;
                 display: block;
-                background-image: linear-gradient(32.38deg, rgba(51, 51, 51, 0.89) 25.89%, rgba(51, 51, 51, 0.4094) 42.15%, rgba(255, 255, 255, 0) 71.61%);            background-repeat: no-repeat;
+                background-image: linear-gradient(32.38deg, rgba(51, 51, 51, 0.89) 25.89%, rgba(51, 51, 51, 0.4094) 42.15%, rgba(255, 255, 255, 0) 71.61%);
+                background-repeat: no-repeat;
                 background-position: center center;
                 transition: transform 0.3s ease;
             }
