@@ -92,36 +92,6 @@
     }
 
 
-
-.carousel--faded-right-to-grey {
-
-}
-    .carousel--faded-right-to-grey::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        width: 140px;
-        pointer-events: none;
-        background-image: linear-gradient(#FFFFFF, #F6F6F6);
-        /*-webkit-mask-image: -webkit-gradient(linear, right 90%, right left, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))*/
-        -webkit-mask-image: linear-gradient(to right, transparent, #000000);
-
-
-        /*!* stylelint-disable *!*/
-        /*background: linear-gradient(to right,*/
-        /*    rgba(246, 246, 246, 0),*/
-        /*    rgba(246, 246, 246, 0.7) 30%,*/
-        /*    rgba(246, 246, 246, 1) 60%,*/
-        /*    rgba(246, 246, 246, 1)*/
-        /*);*/
-        /*!* stylelint-enable *!*/
-    }
-
-
-
-
 .carousel--for-user-card {
 
 }
