@@ -8,7 +8,7 @@
         align-items: flex-start;
     }
         .case__preview {
-            margin-left: -3px;
+            margin-left: -2px;
             margin-right: 24px;
             flex-shrink: 0;
             padding: 3px;
@@ -32,13 +32,15 @@
 
     .case__body {
         margin-top: 27px;
-        color: #545454;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
     }
+        .case__text {
+            color: #545454;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
 
     .case__details {
         margin-top: 10px;
@@ -46,11 +48,14 @@
         display: inline-block;
         vertical-align: top;
         padding: 8px 14px;
+        border: none;
+        background-color: transparent;
         border-radius: 4px;
         font-weight: bold;
         font-size: 13px;
         line-height: 20px;
         color: #757575;
+        cursor: pointer;
         text-decoration: none;
         transition: background-color var(--transition-hover);
     }
@@ -59,8 +64,56 @@
         background-color: var(--panel-hover);
     }
 
-
     .case__details:active {
         background-color: var(--panel-active);
         transition: none;
+    }
+
+
+
+.case--horizontal {
+    padding: 0;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+}
+    .case--horizontal .case__head {
+
+    }
+        .case--horizontal .case__preview {
+            margin-left: 7px;
+            margin-top: -8px;
+        }
+
+        .case--horizontal .case__data {
+            margin-top: 0;
+            width: 146px;
+            margin-right: 40px;
+        }
+            .case--horizontal .case__heading {
+
+            }
+
+            .case--horizontal .case__note {
+
+            }
+
+
+    .case--horizontal .case__body {
+        margin-top: 0;
+    }
+        .case--horizontal .case__text {
+            -webkit-line-clamp: 4;
+        }
+
+    .case--horizontal .case__details {
+
+    }
+
+    .case--horizontal .case__details:hover {
+
+    }
+
+    .case--horizontal .case__details:active {
+
     }
