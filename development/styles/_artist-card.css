@@ -1,3 +1,55 @@
 .artist-card {
-
+    position: relative;
+    height: 467px;
 }
+    .artist__preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+        object-fit: cover;
+    }
+
+    .artist-card__content {
+        position: relative;
+        padding: 31px 52px 51px;
+    }
+        .artist-card__heading {
+            margin-left: -4px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 300;
+            font-size: 68px;
+            line-height: 81px;
+            letter-spacing: -1.5px;
+            color: #FFFFFF;
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .artist-card__position {
+            margin-top: 30px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 7px 20px;
+            background-image: linear-gradient(91.95deg, #E3EDF3 5.46%, #9CB2BE 95.95%);
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 16px;
+            color: #181A30;
+        }
+
+        .artist-card__last-updated {
+            position: absolute;
+            right: 43px;
+            top: 37px;
+            padding: 6px 29px;
+            background-color: #181A30;
+            border-radius: 15px;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 18px;
+            color: #9CB2BE;
+        }

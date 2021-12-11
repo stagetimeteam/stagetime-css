@@ -2,45 +2,24 @@
 
 }
     .bio__content {
+        margin-bottom: 12px;
         overflow: hidden;
         text-overflow: ellipsis;
         display: -webkit-box;
-        -webkit-line-clamp: 9;
+        -webkit-line-clamp: 4;
         -webkit-box-orient: vertical;
         color: #545454;
     }
 
     .bio__handler {
-        margin-top: 25px;
         font-size: 12px;
         line-height: 18px;
     }
-        .bio__read-more {
-
-        }
-
-        .bio__close {
-            display: none;
-        }
 
 
-
-.bio--expanded {
+.bio--9-rows {
 
 }
-    .bio--expanded .bio__content {
-        -webkit-line-clamp: unset;
+    .bio--9-rows .bio__content {
+        -webkit-line-clamp: 9;
     }
-
-    .bio--expanded .bio__handler {
-        margin-top: 25px;
-        font-size: 12px;
-        line-height: 18px;
-    }
-        .bio--expanded .bio__read-more {
-            display: none;
-        }
-
-        .bio--expanded .bio__close {
-            display: inline;
-        }

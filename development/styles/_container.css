@@ -87,3 +87,8 @@
 .container-settings {
     width: 1080px;
 }
+
+.container--profile {
+    width: 100%;
+    max-width: 1306px;
+}

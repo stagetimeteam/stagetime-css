@@ -1,3 +1,93 @@
 .artist {
-
+    position: relative;
+    padding-top: 20px;
 }
+    .artist::before {
+        content: "";
+        position: absolute;
+        z-index: 30;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 20px;
+        background-color: #9CB2BE;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+    }
+
+    .artist__jumbotron {
+        position: relative;
+        z-index: 20;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .artist__summary {
+        padding-top: 32px;
+        padding-bottom: 50px;
+    }
+        .artist__header {
+
+        }
+
+        .artist__data {
+            margin-top: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .artist__sidebar {
+                flex-shrink: 0;
+                width: 280px;
+                margin-right: 60px;
+            }
+
+            @media (min-width: 1240px) {
+                .artist__sidebar {
+                    margin-right: 86px;
+                }
+            }
+                .artist__connections {
+
+                }
+
+                .artist__performing {
+                    margin-top: 31px;
+                    border-top: 1px solid #F2F2F2;
+                    padding-top: 20px;
+                }
+
+                .artist__highlights {
+                    margin-top: 26px;
+                    border-top: 1px solid #F2F2F2;
+                    padding-top: 21px;
+                }
+
+            .artist__content {
+                margin-top: 4px;
+                flex-grow: 1;
+            }
+                .artist__description {
+
+                }
+
+                .artist__gallery {
+                    margin-top: 24px;
+                    height: 261px;
+                    background-color: #EBF0F2;
+                }
+
+                .artist__footer {
+                    margin-top: 32px;
+                    display: flex;
+                    align-items: flex-start;
+                }
+                    .artist__management {
+                        width: 308px;
+                        border-top: 1px solid #F2F2F2;
+                        padding-top: 25px;
+                    }
+
+                    .artist__social {
+                        margin-left: 58px;
+                        border-top: 1px solid #F2F2F2;
+                        padding-top: 25px;
+                        flex-grow: 1;
+                    }
