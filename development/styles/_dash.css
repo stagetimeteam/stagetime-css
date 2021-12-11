@@ -17,8 +17,14 @@
 }
 
 .dash:hover {
-    background-color: #F2F2F2;
+    background-color: var(--panel-hover);
     color: #545454;
+}
+
+.dash:active {
+    background-color: var(--panel-active);
+    color: #545454;
+    transition: none;
 }
 
     .dash__icon {

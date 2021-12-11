@@ -9,16 +9,19 @@
     .schedule__engagements {
         margin-top: 31px;
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
     }
         .schedule__timeline {
             flex-shrink: 0;
             width: var(--profile-sidebar);
             margin-right: var(--profile-gap);
+            background-image: linear-gradient(to right, #E3EDF3, #E3EDF3 1px, rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 0));
         }
             .schedule__background-sub-heading {
                 margin-top: 0;
                 margin-bottom: 0;
+                background-color: #FFFFFF;
+                padding-bottom: 15px;
             }
 
         .schedule__calendar {
@@ -42,5 +45,40 @@
                 }
 
     .schedule__highlights {
-
+        margin-top: 49px;
+        display: flex;
+        align-items: flex-start;
     }
+        .schedule__highlights-sidebar {
+            margin-top: 10px;
+            flex-shrink: 0;
+            width: var(--profile-sidebar);
+            margin-right: var(--profile-gap);
+        }
+            .schedule__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+        .schedule__period {
+            flex-shrink: 0;
+            width: calc(100% - var(--profile-gap) - var(--profile-sidebar));
+        }
+            .schedule__years-list {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-left: -32px;
+                margin-top: -20px;
+            }
+                .schedule__year {
+                    margin-left: 32px;
+                    margin-top: 20px;
+                }
+
+                .schedule__year.button,
+                .schedule__year .button {
+                    width: 130px;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                }
