@@ -1,6 +1,7 @@
 .artist {
     position: relative;
     padding-top: 20px;
+    border-bottom: 26px solid #EDF1F3;
 }
     .artist::before {
         content: "";
@@ -43,7 +44,7 @@
 
                 }
 
-                .artist__performing {
+                .artist__event {
                     margin-top: 31px;
                     border-top: 1px solid #F2F2F2;
                     padding-top: 20px;

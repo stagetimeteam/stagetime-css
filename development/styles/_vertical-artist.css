@@ -3,6 +3,7 @@
     display: flex;
     align-items: stretch;
     padding-top: 20px;
+    border-bottom: 26px solid #EDF1F3;
 }
     .vertical-artist::before {
         content: "";

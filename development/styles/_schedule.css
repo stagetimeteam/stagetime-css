@@ -1,0 +1,46 @@
+.schedule {
+    padding-top: 52px;
+    padding-bottom: 53px;
+}
+    .schedule__heading {
+
+    }
+
+    .schedule__engagements {
+        margin-top: 31px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .schedule__timeline {
+            flex-shrink: 0;
+            width: var(--profile-sidebar);
+            margin-right: var(--profile-gap);
+        }
+            .schedule__background-sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+        .schedule__calendar {
+            margin-top: 4px;
+            flex-shrink: 0;
+            width: calc(100% - var(--profile-gap) - var(--profile-sidebar));
+        }
+            .schedule__list {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-left: -10px;
+                margin-right: -10px;
+                margin-top: -20px;
+            }
+                .schedule__event {
+                    width: 33.3333%;
+                    margin-top: 20px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+    .schedule__highlights {
+
+    }
