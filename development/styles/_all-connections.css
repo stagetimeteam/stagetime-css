@@ -28,6 +28,11 @@
 
         .all-connections__description {
             margin-left: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
             font-size: 11px;
             line-height: 18px;
             color: #545454;

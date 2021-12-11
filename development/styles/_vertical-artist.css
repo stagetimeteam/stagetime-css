@@ -1,0 +1,83 @@
+.vertical-artist {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    padding-top: 20px;
+}
+    .vertical-artist::before {
+        content: "";
+        position: absolute;
+        z-index: 30;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: 20px;
+        background-color: #9CB2BE;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
+    }
+
+    .vertical-artist__left {
+        width: 50%;
+        flex-shrink: 0;
+    }
+
+    .vertical-artist__right {
+        width: 50%;
+        flex-shrink: 0;
+    }
+        .vertical-artist__gallery {
+            border: 18px solid transparent;
+            background-color: #EBF0F2;
+        }
+
+        .vertical-artist__body {
+            padding: 27px 36px 29px;
+        }
+            .vertical-artist__header {
+
+            }
+
+            .vertical-artist__content {
+                margin-top: 4px;
+                display: flex;
+                align-items: flex-start;
+            }
+                .vertical-artist__primary {
+                    margin-top: 5px;
+                    width: 48.44%;
+                }
+                    .vertical-artist__description {
+
+                    }
+
+                    .vertical-artist__management {
+                        margin-top: 32px;
+                        border-top: 1px solid #F2F2F2;
+                        padding-top: 25px;
+                    }
+
+                    .vertical-artist__social {
+                        margin-top: 32px;
+                        border-top: 1px solid #F2F2F2;
+                        padding-top: 25px;
+                    }
+
+                .vertical-artist__secondary {
+                    width: 43.48%;
+                    margin-left: auto;
+                }
+                    .vertical-artist__connections {
+
+                    }
+
+                    .vertical-artist__performing {
+                        margin-top: 31px;
+                        border-top: 1px solid #F2F2F2;
+                        padding-top: 21px;
+                    }
+
+                    .vertical-artist__highlights {
+                        margin-top: 26px;
+                        border-top: 1px solid #F2F2F2;
+                        padding-top: 21px;
+                    }

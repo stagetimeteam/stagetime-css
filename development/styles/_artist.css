@@ -17,6 +17,7 @@
     .artist__jumbotron {
         position: relative;
         z-index: 20;
+        height: 467px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
 
@@ -65,7 +66,7 @@
                 .artist__gallery {
                     margin-top: 24px;
                     height: 262px;
-                    padding: 18px;
+                    border: 18px solid transparent;
                     background-color: #EBF0F2;
                     border-radius: 5px;
                 }

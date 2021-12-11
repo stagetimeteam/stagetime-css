@@ -21,5 +21,6 @@
 
 }
     .bio--9-rows .bio__content {
+        margin-bottom: 22px;
         -webkit-line-clamp: 9;
     }

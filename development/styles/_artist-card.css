@@ -1,6 +1,6 @@
 .artist-card {
     position: relative;
-    height: 467px;
+    height: 100%;
 }
     .artist__preview {
         position: absolute;
@@ -14,6 +14,7 @@
 
     .artist-card__content {
         position: relative;
+        height: 100%;
         padding: 31px 52px 51px;
     }
         .artist-card__heading {
@@ -52,4 +53,31 @@
             font-size: 11px;
             line-height: 18px;
             color: #9CB2BE;
+        }
+
+
+
+.artist-card--alternate {
+
+}
+    .artist-card--alternate .artist__preview {
+
+    }
+
+    .artist-card--alternate .artist-card__content {
+
+    }
+        .artist-card--alternate .artist-card__heading {
+
+        }
+
+        .artist-card--alternate .artist-card__position {
+
+        }
+
+        .artist-card--alternate .artist-card__last-updated {
+            right: auto;
+            top: auto;
+            left: 49px;
+            bottom: 51px;
         }
