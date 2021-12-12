@@ -6,7 +6,7 @@
     }
 
     .biography__body {
-        margin-top: 55px;
+        margin-top: 49px;
         display: flex;
         align-items: flex-start;
     }
@@ -14,6 +14,7 @@
             flex-shrink: 0;
             width: var(--profile-sidebar);
             margin-right: var(--profile-gap);
+            margin-top: 1px;
         }
             .biography__sub-heading {
                 margin-top: 0;
