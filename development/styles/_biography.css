@@ -1,0 +1,43 @@
+.biography {
+
+}
+    .biography__heading {
+
+    }
+
+    .biography__body {
+        margin-top: 55px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .biography__sidebar {
+            flex-shrink: 0;
+            width: var(--profile-sidebar);
+            margin-right: var(--profile-gap);
+        }
+            .biography__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+        .biography__content {
+            flex-shrink: 0;
+            width: calc(100% - var(--profile-sidebar) - var(--profile-gap));
+        }
+            .biography__wrapper {
+                display: flex;
+                align-items: flex-start;
+            }
+                .biography__about {
+                    width: 484px;
+                    margin-right: 64px;
+                    color: #545454;
+                }
+
+                .biography__comments {
+
+                }
+
+            .biography__footer {
+
+            }
