@@ -41,5 +41,20 @@
                 }
 
             .biography__footer {
-
+                margin-top: 48px;
+                display: flex;
+                align-items: flex-start;
             }
+                .biography__action {
+                    flex-grow: 1;
+                    flex-basis: 0;
+                    margin-left: 77px;
+                }
+
+                .biography__action:first-child {
+                    margin-left: 0;
+                }
+                    .biography__action.button,
+                    .biography__action .button {
+                        font-size: 12px;
+                    }
