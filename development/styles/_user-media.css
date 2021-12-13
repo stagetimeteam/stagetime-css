@@ -1,0 +1,26 @@
+.user-media {
+    padding-top: 57px;
+}
+    .user-media__heading {
+
+    }
+
+    .user-media__body {
+        margin-top: 45px;
+
+    }
+        .user-media__section {
+            margin-top: 32px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .user-media__sidebar {
+                flex-shrink: 0;
+                width: var(--profile-sidebar);
+                margin-right: var(--profile-gap);
+            }
+
+            .user-media__content {
+                flex-shrink: 0;
+                width: calc(100% - var(--profile-gap) - var(--profile-sidebar));
+            }

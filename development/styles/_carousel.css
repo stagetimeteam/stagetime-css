@@ -141,6 +141,57 @@
     }
 
 
+.carousel--for-user-media {
+
+}
+    .carousel--for-user-media .carousel__container {
+        padding-right: 40px;
+    }
+        .carousel--for-user-media .carousel__item {
+            margin-right: 56px;
+        }
+
+        .carousel--for-user-media .carousel__item:last-child {
+
+        }
+
+
+    .carousel--for-user-media .carousel__control {
+        position: absolute;
+        z-index: 100;
+        right: -12px;
+    }
+
+    .carousel--for-user-media .carousel__control--prev {
+        top: 50%;
+        margin-top: 5px;
+    }
+
+    .carousel--for-user-media .carousel__control--next {
+        top: 50%;
+        margin-top: -45px;
+    }
+
+    .carousel--for-user-media.carousel--scrolled-to-right::before,
+    .carousel--for-user-media.carousel--scrolled-to-right::after {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+
+    /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
+    .carousel--for-user-media.carousel--faded-right::before {
+        width: 24px;
+    }
+
+    /* this is gradient itself, you can click through and scroll over */
+    .carousel--for-user-media.carousel--faded-right::after {
+        right: 24px;
+        width: 144px;
+        background-image: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.48) 56.25%, rgba(255, 255, 255, 0) 100%);
+    }
+
+
 
 .carousel--for-profile-summary {
 
