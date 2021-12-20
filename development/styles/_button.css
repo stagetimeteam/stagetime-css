@@ -657,10 +657,10 @@
 }
 
 .button--gradient:hover {
-    filter: contrast(1.075);
+    /*filter: contrast(1.075);*/
 }
 
 .button--gradient:active {
-    filter: contrast(0.9);
+    /*filter: contrast(0.9);*/
     transition: none;
 }
