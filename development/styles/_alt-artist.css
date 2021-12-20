@@ -35,6 +35,7 @@
             }
                 .alt-artist__photo {
                     border: 3px solid #EDF1F3;
+                    background-color: var(--image-fallback);
                     box-sizing: content-box;
                     border-radius: 4px;
                 }
