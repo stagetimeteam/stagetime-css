@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html class="has-sidebar search-centered" lang="en-US">
+<html lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Chat</title>
+        <title>Profile</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1639969842">
         <link rel="stylesheet" href="../styles/style.css?1639969842">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1639969842" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -18,11 +17,9 @@
                 <a class="header__branding logo" href="#">
                     STAGETIME
                 </a>
-                <!-- optional:
                 <div class="header__greetings">
                     Good afternoon, <strong class="user-color">Jennie</strong>.
                 </div>
-                -->
                 <!-- optional:
                 <div class="header__auth">
                     <a class="header__login" href="#"><span class="header__label">Log In</span></a>
@@ -720,477 +717,337 @@
                 </a>
             </div>
         </div>
+        <!-- 2/3: .page -->
         <div class="page">
-            <div class="dashboard">
-                <div class="dashboard__sidebar">
-                    <div class="scrollbar scrollbar-macosx">
-                        <div class="navigation">
-                            <div class="navigation__section">
-                                <div class="navigation__sub-heading">
-                                    Menu
-                                </div>
-                                <nav class="navigation__menu">
-                                    <a class="user-link user-link--sidebar-ready user-link--user-color" href="#">
-                                        <span class="user-link__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-a-16x16@2x.jpg 2x"
-                                                 src="../temp/person-a-16x16.jpg"
-                                                 width="16"
-                                                 height="16"
-                                                 alt=""
-                                            >
-                                        </span>
-                                        Ben Bliss
-                                    </a>
-                                    <a class="nav-link nav-link--sidebar-ready nav-link--current" href="#">
-                                        <svg class="nav-link__icon" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#20-nav-house"></use>
-                                        </svg>
-                                        Home
-                                    </a>
-                                    <a class="nav-link nav-link--sidebar-ready" href="#">
-                                        <svg class="nav-link__icon" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#20-nav-globe"></use>
-                                        </svg>
-                                        Explore
-                                    </a>
-                                    <a class="nav-link nav-link--sidebar-ready" href="#">
-                                        <svg class="nav-link__icon" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#20-nav-envelope"></use>
-                                        </svg>
-                                        Messages <span class="nav-link__counter">(4)</span>
-                                    </a>
-                                    <a class="nav-link nav-link--sidebar-ready" href="#">
-                                        <svg class="nav-link__icon" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#20-nav-crowd"></use>
-                                        </svg>
-                                        Collaborators
-                                    </a>
-                                </nav>
-                            </div>
-                            <div class="navigation__section">
-                                <div class="navigation__sub-heading">
-                                    Tools
-                                </div>
-                                <div class="navigation__menu">
-                                    <a class="nav-link nav-link--sidebar-ready" href="#">
-                                        <svg class="nav-link__icon" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#20-nav-house"></use>
-                                        </svg>
-                                        Jobs
-                                    </a>
-                                    <a class="nav-link nav-link--sidebar-ready" href="#">
-                                        <svg class="nav-link__icon" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#20-nav-collections"></use>
-                                        </svg>
-                                        Collections
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="navigation__section">
-                                <div class="navigation__sub-heading">
-                                    Page manager
-                                </div>
-                                <div class="navigation__menu">
-                                    <a class="user-link user-link--sidebar-ready" href="#">
-                                        <span class="user-link__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-a-16x16@2x.jpg 2x"
-                                                 src="../temp/person-a-16x16.jpg"
-                                                 width="16"
-                                                 height="16"
-                                                 alt=""
-                                            >
-                                        </span>
-                                        Stagetime
-                                    </a>
+            <div class="alt-artist">
+                <div class="alt-artist__wrap container container--alt-profile">
+                    <div class="alt-artist__header heading-group">
+                        <div class="heading-group__heading">
+                            Anh Le
+                            <span class="verified" title="This profile has been verified">
+                                <svg class="verified__icon" width="16" height="17">
+                                    <use xlink:href="../symbols/symbols.svg?1639969842#verified"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="heading-group__addition">
+                            <a class="heading-group__action button button--info" href="#">Connect</a>
+                            <a class="heading-group__action button button--alt-secondary" href="#">Message</a>
+                            <div class="heading-group__dropdown-actions operations operations--simplified-handler operations--darkened">
+                                <button class="operations__handler" type="button">
+                                    <svg class="operations__icon" width="32" height="32">
+                                        <use xlink:href="../symbols/symbols.svg?1639969842#32-more"></use>
+                                    </svg>
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <svg class="menu__icon" width="24" height="24">
+                                                <use xlink:href="../symbols/symbols.svg?1639969842#24-calendar"></use>
+                                            </svg>
+                                            Add&nbsp;to&nbsp;Calendar
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <svg class="menu__icon" width="24" height="24">
+                                                <use xlink:href="../symbols/symbols.svg?1639969842#24-share"></use>
+                                            </svg>
+                                            Share
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <svg class="menu__icon" width="24" height="24">
+                                                <use xlink:href="../symbols/symbols.svg?1639969842#24-report"></use>
+                                            </svg>
+                                            Report
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="dashboard__content">
-                    <div class="chat">
-                        <div class="chat__list">
-                            <div class="chat__crowd scrollbar scrollbar-macosx">
-                                <div class="chat__sub-head">
-                                    <h1 class="chat__heading">
-                                        Messages
-                                    </h1>
-                                    <button class="chat__new" type="button">
-                                        <svg class="chat__pencil" width="24" height="24">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#24-write"></use>
-                                        </svg>
-                                    </button>
+                    <div class="alt-artist__body">
+                        <div class="alt-artist__sidebar">
+                            <img class="alt-artist__photo" srcset="../temp/alt-artist@2x.jpg 2x"
+                                 src="../temp/alt-artist.jpg"
+                                 width="274"
+                                 height="274"
+                                 alt=""
+                            >
+                            <a class="alt-artist__career alt-org-panel" href="#">
+                                <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                    <img class="avatar__image" srcset="../temp/organization-b-42x42@2x.jpg 2x" src="../temp/organization-b-42x42.jpg" width="42" height="42" alt="">
                                 </div>
-                                <div class="chat__dialogs">
-                                    <a class="conversation conversation--unread" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
+                                <div class="alt-org-panel__heading ellipsis">
+                                    Washington Concert Opera
+                                </div>
+                                <div class="alt-org-panel__note">
+                                    Executive Director
+                                </div>
+                            </a>
+                            <div class="alt-artist__connections all-connections">
+                                <div class="all-connections__head">
+                                    <svg class="all-connections__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1639969842#16-crowd"></use>
+                                    </svg>
+                                    <div class="all-connections__heading title title--smaller">
+                                        345 Connections
+                                    </div>
+                                </div>
+                                <div class="all-connections__body">
+                                    <div class="all-connections__people snake snake--larger-border">
+                                        <a class="snake__item avatar avatar--alt-hover" href="#">
                                             <img class="avatar__image"
-                                                 srcset="../temp/person-a-56x56@2x.jpg 2x"
-                                                 src="../temp/person-a-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
+                                                 srcset="../temp/person-a-30x30@2x.jpg 2x"
+                                                 src="../temp/person-a-30x30.jpg"
+                                                 width="30"
+                                                 height="30"
                                                  alt="Mark Zuckerberg"
                                             >
+                                        </a>
+                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-b-30x30@2x.jpg 2x"
+                                                 src="../temp/person-b-30x30.jpg"
+                                                 width="30"
+                                                 height="30"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-c-30x30@2x.jpg 2x"
+                                                 src="../temp/person-c-30x30.jpg"
+                                                 width="30"
+                                                 height="30"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                    </div>
+                                    <div class="all-connections__description multiline-ellipsis">
+                                        You and Ben both know Lachlan Glen, Madison Leonard, and <a class="link" href="#">58&nbsp;more</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alt-artist__tags">
+                                <div class="environment">
+                                    <div class="environment__heading title title--smaller">
+                                        Industry and Specialty
+                                    </div>
+                                    <div class="environment__list">
+                                        <a class="environment__item tag" href="#">Opera</a>
+                                        <a class="environment__item tag" href="#">Marketing</a>
+                                        <a class="environment__item tag" href="#">Public Relations</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alt-artist__highlights career-highlights">
+                                <div class="career-highlights__heading title title--smaller">
+                                    Education
+                                </div>
+                                <div class="career-highlights__list">
+                                    <a class="career-highlights__item alt-org-panel" href="#">
+                                        <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                            <img class="avatar__image" srcset="../temp/organization-a-42x42@2x.jpg 2x" src="../temp/organization-a-42x42.jpg" width="42" height="42" alt="">
                                         </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Alexandra Urquiola
+                                        <div class="alt-org-panel__heading ellipsis">
+                                            Washington Concert Opera
                                         </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
+                                        <div class="alt-org-panel__note">
+                                            Executive Director
                                         </div>
                                     </a>
-                                    <a class="conversation conversation--current" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-b-56x56@2x.jpg 2x"
-                                                 src="../temp/person-b-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
-                                                 alt="Mark Zuckerberg"
-                                            >
+                                    <a class="career-highlights__item alt-org-panel" href="#">
+                                        <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                            <img class="avatar__image" srcset="../temp/organization-b-42x42@2x.jpg 2x" src="../temp/organization-b-42x42.jpg" width="42" height="42" alt="">
                                         </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Alexandra Urquiola
+                                        <div class="alt-org-panel__heading ellipsis">
+                                            Washington Concert Opera
                                         </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
-                                        </div>
-                                    </a>
-                                    <a class="conversation conversation--unread" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-c-56x56@2x.jpg 2x"
-                                                 src="../temp/person-c-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
-                                                 alt="Mark Zuckerberg"
-                                            >
-                                        </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Konstantin Konstantinovich Konstantinopolsky
-                                        </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
-                                        </div>
-                                    </a>
-                                    <a class="conversation conversation--unread" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-d-56x56@2x.jpg 2x"
-                                                 src="../temp/person-d-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
-                                                 alt="Mark Zuckerberg"
-                                            >
-                                        </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Alexandra Urquiola
-                                        </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
-                                        </div>
-                                    </a>
-                                    <a class="conversation" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-a-56x56@2x.jpg 2x"
-                                                 src="../temp/person-a-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
-                                                 alt="Mark Zuckerberg"
-                                            >
-                                        </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Alexandra Urquiola
-                                        </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
-                                        </div>
-                                    </a>
-                                    <a class="conversation" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-b-56x56@2x.jpg 2x"
-                                                 src="../temp/person-b-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
-                                                 alt="Mark Zuckerberg"
-                                            >
-                                        </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Alexandra Urquiola
-                                        </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
-                                        </div>
-                                    </a>
-                                    <a class="conversation" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-c-56x56@2x.jpg 2x"
-                                                 src="../temp/person-c-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
-                                                 alt="Mark Zuckerberg"
-                                            >
-                                        </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Alexandra Urquiola
-                                        </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
-                                        </div>
-                                    </a>
-                                    <a class="conversation" href="#">
-                                        <div class="conversation__preview avatar avatar--non-clickable">
-                                            <img class="avatar__image"
-                                                 srcset="../temp/person-d-56x56@2x.jpg 2x"
-                                                 src="../temp/person-d-56x56.jpg"
-                                                 width="56"
-                                                 height="56"
-                                                 alt="Mark Zuckerberg"
-                                            >
-                                        </div>
-                                        <div class="conversation__heading ellipsis">
-                                            Alexandra Urquiola
-                                        </div>
-                                        <div class="conversation__message ellipsis">
-                                            Did you hear about rehearsal on Tuesday
+                                        <div class="alt-org-panel__note">
+                                            Executive Director
                                         </div>
                                     </a>
                                 </div>
+                            </div>
+                            <div class="alt-artist__social media media--less-airy media--light-blue">
+                                <div class="media__heading title title--smaller">
+                                    Social
+                                </div>
+                                <a class="media__link" href="#">
+                                    <svg class="media__icon" width="28" height="28">
+                                        <use xlink:href="../symbols/symbols.svg?1639969842#28-media-instagram"></use>
+                                    </svg>
+                                </a>
+                                <a class="media__link" href="#">
+                                    <svg class="media__icon" width="28" height="28">
+                                        <use xlink:href="../symbols/symbols.svg?1639969842#28-media-facebook"></use>
+                                    </svg>
+                                </a>
+                                <a class="media__link" href="#">
+                                    <svg class="media__icon" width="28" height="28">
+                                        <use xlink:href="../symbols/symbols.svg?1639969842#28-media-twitter"></use>
+                                    </svg>
+                                </a>
+                                <a class="media__link" href="#">
+                                    <svg class="media__icon" width="28" height="28">
+                                        <use xlink:href="../symbols/symbols.svg?1639969842#28-media-link"></use>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
-                        <div class="chat__room">
-                            <div class="chat__head">
-                                <div class="conversation-bar">
-                                    <a class="conversation-bar__back action action--flipped" href="#">
-                                        <span class="action__image">
-                                            <svg class="action__icon" width="16" height="16">
-                                                <use xlink:href="../symbols/symbols.svg?1639969842#16-left"></use>
-                                            </svg>
-                                        </span>
-                                    </a>
-                                    <a class="conversation-bar__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-e-56x56@2x.jpg 2x"
-                                             src="../temp/person-e-56x56.jpg"
-                                             width="56"
-                                             height="56"
-                                             alt="Mark Zuckerberg"
-                                        >
-                                    </a>
-                                    <div class="conversation-bar__heading ellipsis">
-                                        <a class="link link--text-alike" href="#">Alexandra Urquiola</a>
+                        <div class="alt-artist__content">
+                            <div class="alt-artist__description expandable-bio">
+                                <div class="expandable-bio__content">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Anh is the Director of Marketing & PR at <strong>Opera Theatre of Saint Louis</strong> (OTSL), overseeing all sales campaigns, audience development initiatives, and media relations while providing key collaborative and strategic support on company-wide community engagement efforts. In addition to her duties at OTSL, Anh has spoken about issues of diversity and inclusion at OPERA America's 2017 Opera Conference, served on OPERA America's Civic Action Forum, and participated in the inaugural administrative class of The Dallas Opera’s Hart Institut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur doloribus dolorum eligendi enim id in incidunt, laudantium maiores natus, necessitatibus numquam odio odit quae suscipit veritatis vitae voluptatem? Accusantium, id ipsam laudantium non nulla quos voluptate? Accusantium aut consequatur cum debitis dicta error et ex excepturi in maiores natus necessitatibus nisi non obcaecati quidem sapiente, totam unde. Aliquam consequatur excepturi fuga illum. A animi at, aut consequatur cumque deleniti dignissimos dolor est eveniet fuga fugit itaque mollitia nesciunt nobis nulla omnis quia sequi, tempore! Dolorem ipsam natus sapiente similique velit? Blanditiis dolorum ipsam molestiae provident quo repudiandae tempora tenetur.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur doloribus dolorum eligendi enim id in incidunt, laudantium maiores natus, necessitatibus numquam odio odit quae suscipit veritatis vitae voluptatem? Accusantium, id ipsam laudantium non nulla quos voluptate? Accusantium aut consequatur cum debitis dicta error et ex excepturi in maiores natus necessitatibus nisi non obcaecati quidem sapiente, totam unde. Aliquam consequatur excepturi fuga illum. A animi at, aut consequatur cumque deleniti dignissimos dolor est eveniet fuga fugit itaque mollitia nesciunt nobis nulla omnis quia sequi, tempore! Dolorem ipsam natus sapiente similique velit? Blanditiis dolorum ipsam molestiae provident quo repudiandae tempora tenetur.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur doloribus dolorum eligendi enim id in incidunt, laudantium maiores natus, necessitatibus numquam odio odit quae suscipit veritatis vitae voluptatem? Accusantium, id ipsam laudantium non nulla quos voluptate? Accusantium aut consequatur cum debitis dicta error et ex excepturi in maiores natus necessitatibus nisi non obcaecati quidem sapiente, totam unde. Aliquam consequatur excepturi fuga illum. A animi at, aut consequatur cumque deleniti dignissimos dolor est eveniet fuga fugit itaque mollitia nesciunt nobis nulla omnis quia sequi, tempore! Dolorem ipsam natus sapiente similique velit? Blanditiis dolorum ipsam molestiae provident quo repudiandae tempora tenetur.</p>
                                     </div>
-                                    <div class="conversation-bar__note ellipsis">
-                                        Piano, Berlin, Germany
-                                    </div>
-                                    <div class="conversation-bar__actions operations operations--simplified-handler">
-                                        <button class="operations__handler" type="button">
-                                            <svg class="operations__icon" width="32" height="32">
-                                                <use xlink:href="../symbols/symbols.svg?1639969842#32-more"></use>
-                                            </svg>
-                                            More
-                                        </button>
-                                        <div class="operations__dropdown">
-                                            <div class="menu">
-                                                <a class="menu__link" href="#">
-                                                    <svg class="menu__icon" width="24" height="24">
-                                                        <use xlink:href="../symbols/symbols.svg?1639969842#24-calendar"></use>
-                                                    </svg>
-                                                    Add to Calendar
+                                </div>
+                                <button class="expandable-bio__handler link" type="button">
+                                    <span class="expandable-bio__read-more">Read More</span>
+                                    <span class="visuallyhidden">or</span>
+                                    <span class="expandable-bio__close">Close</span>
+                                </button>
+                            </div>
+                            <div class="alt-artist__employment-history experience">
+                                <div class="experience__heading">
+                                    Experience
+                                </div>
+                                <div class="experience__body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis dignissimos dolor, facilis quaerat quas reprehenderit. Atque maiores nihil numquam sapiente veniam? Amet consectetur cupiditate eius eligendi eum expedita fugiat iure iusto modi necessitatibus, nihil nisi nobis quod reprehenderit ullam? Aliquid facere ipsa possimus? Aliquam autem cum dignissimos dolore ea eos, eum facere fugit inventore laboriosam laborum porro, quo rerum saepe soluta ut voluptate voluptates? Ad architecto corporis cupiditate, dicta est hic incidunt laborum libero minus nesciunt non officia quasi quis repudiandae, tenetur velit voluptas. Architecto ducimus eum ex ipsam iusto laborum maxime nam repellat, ut velit? Ab, dolor veniam.
+                                </div>
+                            </div>
+                            <div class="alt-artist__gallery projects-and-media">
+                                <div class="projects-and-media__heading title title--smaller">
+                                    Projects and Media
+                                </div>
+                                <div class="projects-and-media__body carousel carousel--faded-right carousel--for-profile-summary">
+                                    <div class="carousel__container">
+                                        <div class="carousel__item">
+                                            <div class="alt-media-card">
+                                                <a class="alt-media-card__link" href="#">
+                                                    <div class="alt-media-card__stage">
+                                                        <img class="alt-media-card__image"
+                                                             srcset="../temp/alt-media-card-a@2x.jpg 2x"
+                                                             src="../temp/alt-media-card-a.jpg"
+                                                             width="642"
+                                                             height="226"
+                                                             alt=""
+                                                        >
+                                                        <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                                    </div>
+                                                    <div class="alt-media-card__content">
+                                                        <div class="alt-media-card__type">
+                                                            <svg class="alt-media-card__icon" width="24" height="24">
+                                                                <use xlink:href="../symbols/symbols.svg?1639969842#24-heart-volume"></use>
+                                                            </svg>
+                                                            Video
+                                                        </div>
+                                                        <div class="alt-media-card__heading ellipsis">
+                                                            Cheri Cheri Lady
+                                                        </div>
+                                                        <div class="alt-media-card__name">
+                                                            Modern Talking
+                                                        </div>
+                                                    </div>
                                                 </a>
-                                                <a class="menu__link" href="#">
-                                                    <svg class="menu__icon" width="24" height="24">
-                                                        <use xlink:href="../symbols/symbols.svg?1639969842#24-share"></use>
-                                                    </svg>
-                                                    Share
+                                                <a class="alt-media-card__skip button" href="#">
+                                                    Skip to Artist Highlight
                                                 </a>
-                                                <a class="menu__link" href="#">
-                                                    <svg class="menu__icon" width="24" height="24">
-                                                        <use xlink:href="../symbols/symbols.svg?1639969842#24-report"></use>
-                                                    </svg>
-                                                    Report
+                                            </div>
+                                        </div>
+                                        <div class="carousel__item">
+                                            <div class="alt-media-card">
+                                                <a class="alt-media-card__link" href="#">
+                                                    <div class="alt-media-card__stage">
+                                                        <img class="alt-media-card__image"
+                                                             srcset="../temp/alt-media-card-b@2x.jpg 2x"
+                                                             src="../temp/alt-media-card-b.jpg"
+                                                             width="642"
+                                                             height="226"
+                                                             alt=""
+                                                        >
+                                                        <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                                    </div>
+                                                    <div class="alt-media-card__content">
+                                                        <div class="alt-media-card__type">
+                                                            <svg class="alt-media-card__icon" width="24" height="24">
+                                                                <use xlink:href="../symbols/symbols.svg?1639969842#24-heart-volume"></use>
+                                                            </svg>
+                                                            Audio
+                                                        </div>
+                                                        <div class="alt-media-card__heading ellipsis">
+                                                            Cheri Cheri Lady
+                                                        </div>
+                                                        <div class="alt-media-card__name">
+                                                            Modern Talking
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="alt-media-card__skip button" href="#">
+                                                    Skip to Artist Highlight
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel__item">
+                                            <div class="alt-media-card">
+                                                <a class="alt-media-card__link" href="#">
+                                                    <div class="alt-media-card__stage">
+                                                        <img class="alt-media-card__image"
+                                                             srcset="../temp/alt-media-card-c@2x.jpg 2x"
+                                                             src="../temp/alt-media-card-c.jpg"
+                                                             width="642"
+                                                             height="226"
+                                                             alt=""
+                                                        >
+                                                        <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                                    </div>
+                                                    <div class="alt-media-card__content">
+                                                        <div class="alt-media-card__type">
+                                                            <svg class="alt-media-card__icon" width="24" height="24">
+                                                                <use xlink:href="../symbols/symbols.svg?1639969842#24-heart-volume"></use>
+                                                            </svg>
+                                                            Project
+                                                        </div>
+                                                        <div class="alt-media-card__heading ellipsis">
+                                                            Cheri Cheri Lady
+                                                        </div>
+                                                        <div class="alt-media-card__name">
+                                                            Modern Talking
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="alt-media-card__skip button" href="#">
+                                                    Skip to Artist Highlight
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="chat__body scrollbar scrollbar-macosx">
-                                <div class="chat__ribbon">
-                                    <!-- .m = .message
-                                         .mt = message__time
-                                         .ms = .message--self
-                                         .mo = .message--opponent
-                                    -->
-                                    <div class="beginning">
-                                        This is the beginning of your conversation with Kunal.
-                                        <br>June 13, 2021
-                                    </div>
-                                    <div class="m ms">
-                                        Hey Kunal! What was the name of the studio in Berlin you mentioned last week at rehearsal?
-                                        <div class="mt">1:11pm</div>
-                                    </div>
-                                    <div class="m mo">
-                                        Hey! That was an awesome rehearsal, so glad we both get to work on the Schubert. Let me find it.
-                                        <div class="mt">1:13pm</div>
-                                    </div>
-                                    <div class="m mo">
-                                        Okay, it’s in on the south side. Here’s the address.
-                                        <br>
-                                        <br>Lorem ipsum
-                                        <br>1234 55th
-                                        <br>Berlin, DE
-                                        <div class="mt">1:13pm</div>
-                                    </div>
-                                    <div class="m ms">
-                                        This place looks awesome
-                                        <div class="mt">1:14pm</div>
-                                    </div>
-                                    <div class="line">
-                                        <div class="line__heading">Today</div>
-                                    </div>
-                                    <div class="m mo">
-                                        It is. Sound is great
-                                        <div class="mt">1:14pm</div>
-                                    </div>
-                                    <div class="m mo">
-                                        What were you thinking about for the program? If we do mostly Schubert that’s probably 75% of the music. What other lied have you sung?
-                                        <div class="mt">1:14pm</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="chat__foot">
-                                <div class="enter">
-                                    <textarea class="enter__message" rows="1" placeholder="Aa"></textarea>
-                                    <button class="enter__send enter__send--disabled" type="button" disabled>
-                                        <svg class="enter__plane" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1639969842#20-paper-plane"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dashboard__aside">
-                    <div class="scrollbar scrollbar-macosx">
-                        <div class="side">
-                            <div class="side__people">
-                                <div class="circles circles--simplified">
-                                    <h2 class="circles__heading">
-                                        People you may know
-                                    </h2>
-                                    <div class="circles__body">
-                                        <div class="circles__list">
-                                            <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview">
-                                                    <a class="avatar avatar--squared" href="#" data-flyover="#mlmkbewoyl">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-a-104x104@2x.jpg 2x"
-                                                             src="../temp/person-a-104x104.jpg"
-                                                             width="104"
-                                                             height="104"
-                                                             alt=""
-                                                        >
-                                                    </a>
-                                                </div>
-                                                <div class="user-card__data">
-                                                    <h4 class="user-card__name">
-                                                        <a class="user-card__link" href="#">
-                                                            Kunal Lahiry
-                                                        </a>
-                                                    </h4>
-                                                    <div class="user-card__note">
-                                                        Pianist
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview">
-                                                    <a class="avatar avatar--squared" href="#" data-flyover="#owgksbzgfn">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-b-104x104@2x.jpg 2x"
-                                                             src="../temp/person-b-104x104.jpg"
-                                                             width="104"
-                                                             height="104"
-                                                             alt=""
-                                                        >
-                                                    </a>
-                                                </div>
-                                                <div class="user-card__data">
-                                                    <h4 class="user-card__name">
-                                                        <a class="user-card__link" href="#">
-                                                            Austin Lewellen
-                                                        </a>
-                                                    </h4>
-                                                    <div class="user-card__note">
-                                                        Double Bassist
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview">
-                                                    <a class="avatar avatar--squared" href="#" data-flyover="#sahrndodxx">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-c-104x104@2x.jpg 2x"
-                                                             src="../temp/person-c-104x104.jpg"
-                                                             width="104"
-                                                             height="104"
-                                                             alt=""
-                                                        >
-                                                    </a>
-                                                </div>
-                                                <div class="user-card__data">
-                                                    <h4 class="user-card__name">
-                                                        <a class="user-card__link" href="#">
-                                                            Leah Hawkins
-                                                        </a>
-                                                    </h4>
-                                                    <div class="user-card__note">
-                                                        Soprano
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="circles__item user-card user-card--side">
-                                                <div class="user-card__preview">
-                                                    <a class="avatar avatar--squared" href="#" data-flyover="#mhlocburgf">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-d-104x104@2x.jpg 2x"
-                                                             src="../temp/person-d-104x104.jpg"
-                                                             width="104"
-                                                             height="104"
-                                                             alt=""
-                                                        >
-                                                    </a>
-                                                </div>
-                                                <div class="user-card__data">
-                                                    <h4 class="user-card__name">
-                                                        <a class="user-card__link" href="#">
-                                                            Peter Volpe
-                                                        </a>
-                                                    </h4>
-                                                    <div class="user-card__note">
-                                                        Bass
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a class="circles__more action action--simplified action--faded" href="#">
+                                    <button class="carousel__control carousel__control--prev" type="button">
+                                        <span class="action action--simplified action--faded">
                                             <span class="action__image">
                                                 <svg class="action__icon" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1639969842#16-down"></use>
+                                                    <use xlink:href="../symbols/symbols.svg?1639969842#16-left"></use>
                                                 </svg>
                                             </span>
                                             <span class="action__label">
-                                                See more
+                                                Lorem ipsum
                                             </span>
-                                        </a>
-                                    </div>
+                                        </span>
+                                    </button>
+                                    <button class="carousel__control carousel__control--next" type="button">
+                                        <span class="action action--simplified action--faded">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1639969842#16-right"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="action__label">
+                                                Lorem ipsum
+                                            </span>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -1200,8 +1057,7 @@
         </div>
 
         <!-- 3/3 Modals: -->
-
-
+        <!-- No modal windows on this page -->
 
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
