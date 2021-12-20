@@ -70,7 +70,7 @@
 
 
             .alt-artist__content {
-                width: 894px;
+                width: calc(100% - 330px);
                 flex-shrink: 0;
                 box-shadow: -2px 0 0 #EDF1F3;
                 padding-left: 48px;
