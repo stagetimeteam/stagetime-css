@@ -9,4 +9,9 @@
     line-height: 18px;
     color: #545454;
     text-decoration: none;
+    transition: background-color var(--transition-hover);
+}
+
+.tag:hover {
+    background-color: #D9E1E4;
 }

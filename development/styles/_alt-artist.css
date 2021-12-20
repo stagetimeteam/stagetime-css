@@ -1,6 +1,7 @@
 .alt-artist {
     position: relative;
     padding-top: 20px;
+    padding-bottom: 60px;
 }
     .alt-artist::before {
         content: "";
@@ -45,30 +46,30 @@
                 .alt-artist__connections {
                     margin-top: 17px;
                     border-top: 1px solid #F2F2F2;
-                    padding-top: 10px;
+                    padding-top: 24px;
                 }
 
                 .alt-artist__tags {
-                    margin-top: 17px;
+                    margin-top: 31px;
                     border-top: 1px solid #F2F2F2;
-                    padding-top: 10px;
+                    padding-top: 26px;
                 }
 
                 .alt-artist__highlights {
-                    margin-top: 17px;
+                    margin-top: 29px;
                     border-top: 1px solid #F2F2F2;
-                    padding-top: 10px;
+                    padding-top: 21px;
                 }
 
                 .alt-artist__social {
-                    margin-top: 17px;
+                    margin-top: 27px;
                     border-top: 1px solid #F2F2F2;
-                    padding-top: 10px;
+                    padding-top: 20px;
                 }
 
 
             .alt-artist__content {
-                width: 910px;
+                width: 894px;
                 flex-shrink: 0;
                 box-shadow: -2px 0 0 #EDF1F3;
             }
