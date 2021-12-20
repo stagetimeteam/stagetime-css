@@ -1,0 +1,12 @@
+.tag {
+    padding: 6px 18px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: #EBF0F2;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #545454;
+    text-decoration: none;
+}

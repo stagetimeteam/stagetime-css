@@ -10,6 +10,7 @@
         height: 100%;
         vertical-align: top;
         object-fit: cover;
+        background-color: var(--image-fallback);
     }
 
     .artist-card__content {
