@@ -267,6 +267,39 @@
 
 
 
+.operations--action {
+
+}
+    .operations--action .operations__handler {
+        display: flex;
+        align-items: flex-start;
+        width: auto;
+        height: auto;
+        padding: 9px 12px;
+        font-weight: bold;
+        font-size: 11px;
+        line-height: 16px;
+        text-transform: none;
+        letter-spacing: 0;
+        color: #545454;
+        transition: color var(--transition-hover);
+    }
+
+    .operations--action .operations__handler:hover {
+        color: #545454;
+    }
+        .operations--action .operations__icon {
+            margin: 0 8px 0 0;
+            fill: currentColor;
+        }
+
+    .operations--action .operations__dropdown {
+        top: 100%;
+        right: 0;
+    }
+
+
+
 
 
 .operations--sort {
