@@ -72,4 +72,16 @@
                 width: 894px;
                 flex-shrink: 0;
                 box-shadow: -2px 0 0 #EDF1F3;
+                padding-left: 48px;
             }
+                .alt-artist__description {
+                    margin-top: -4px;
+                }
+
+                .alt-artist__employment-history {
+                    margin-top: 31px;
+                }
+
+                .alt-artist__gallery {
+                    margin-top: 34px;
+                }

@@ -1,0 +1,21 @@
+.experience {
+
+}
+    .experience__heading {
+        padding: 5px 24px;
+        background-color: #EDF1F3;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #545454;
+    }
+
+    .experience__body {
+        border: 1px solid #EDF1F3;
+        padding: 25px 23px 32px;
+        border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }

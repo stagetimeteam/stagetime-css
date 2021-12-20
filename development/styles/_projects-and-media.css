@@ -1,0 +1,14 @@
+.projects-and-media {
+
+}
+    .projects-and-media__heading {
+
+    }
+
+    .projects-and-media__body {
+        margin-top: 23px;
+        height: 262px;
+        border: 18px solid transparent;
+        background-color: #EBF0F2;
+        border-radius: 5px;
+    }
