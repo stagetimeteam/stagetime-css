@@ -91,10 +91,10 @@
             }
 
             .endorsements__details:hover {
-                /*filter: contrast(1.075);*/
+                filter: contrast(1.075);
             }
 
             .endorsements__details:active {
-                /*filter: contrast(0.9);*/
+                filter: contrast(0.9);
                 transition: none;
             }
