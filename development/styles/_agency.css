@@ -1,0 +1,48 @@
+.agency {
+    display: flex;
+    align-items: flex-start;
+}
+    .agency__preview {
+        flex-shrink: 0;
+        margin-top: 3px;
+        margin-right: 16px;
+        border: 1px solid #F2F2F2;
+        border-radius: 4px;
+        padding: 3px;
+    }
+
+    .agency__data {
+        margin-right: auto;
+        padding-right: 20px;
+    }
+        .agency__heading {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .agency__note {
+            margin-top: 6px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 18px;
+            color: #545454;
+        }
+
+    .agency__profile {
+        margin-top: 5px;
+    }
+
+    .agency__team-heading {
+        margin-left: 22px;
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .agency__team-list {
+        margin-top: 9px;
+        margin-left: 23px;
+    }

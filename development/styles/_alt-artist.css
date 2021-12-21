@@ -79,6 +79,16 @@
                     margin-top: -4px;
                 }
 
+                .alt-artist__summary {
+                    margin-top: 28px;
+                    border-top: 1px solid #F2F2F2;
+                    padding-top: 25px;
+                }
+
+                .alt-artist__people {
+                    margin-top: 32px;
+                }
+
                 .alt-artist__employment-history {
                     margin-top: 31px;
                 }
