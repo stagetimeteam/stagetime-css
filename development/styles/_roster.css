@@ -4,8 +4,8 @@
     .roster__head {
         display: flex;
         align-items: flex-start;
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 21px;
+        padding-right: 14px;
         background-color: #EDF1F3;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
@@ -24,8 +24,27 @@
 
     .roster__body {
         border: 1px solid #EDF1F3;
-        padding: 25px 23px 32px;
+        padding: 25px 20px 30px;
         border-top: none;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
+        text-align: center;
     }
+        .roster__list {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+            .roster__item {
+                width: 25%;
+                padding-bottom: 27px;
+            }
+
+        .roster__more {
+            margin-top: 5px;
+        }
+
+        .roster__more.button,
+        .roster__more .button {
+            width: 188px;
+        }

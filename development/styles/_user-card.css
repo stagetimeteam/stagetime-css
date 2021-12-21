@@ -167,3 +167,44 @@
             line-height: 16px;
             color: #757575;
         }
+
+
+
+.user-card--roster {
+    width: auto;
+    padding: 0 20px;
+}
+    .user-card--roster .user-card__preview.avatar,
+    .user-card--roster .user-card__preview .avatar {
+        box-shadow: none;
+    }
+
+    .user-card--roster .user-card__data {
+        margin-top: 14px;
+        padding-left: 0;
+        padding-right: 0;
+        min-height: 0; /* clear value */
+    }
+        .user-card--roster .user-card__name {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 24px;
+            color: #545454;
+        }
+            .user-card--roster .user-card__link {
+
+            }
+
+            .user-card--roster .user-card:hover .user-card__link,
+            .user-card--roster .user-card__link:hover {
+
+            }
+
+        .user-card--roster .user-card__note {
+            margin-top: 4px;
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 16px;
+            text-transform: uppercase;
+            color: #9CB2BE;
+        }
