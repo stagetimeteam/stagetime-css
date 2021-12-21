@@ -1,18 +1,28 @@
-.experience {
+.roster {
 
 }
-    .experience__heading {
-        padding: 5px 24px;
+    .roster__head {
+        display: flex;
+        align-items: flex-start;
+        padding-left: 24px;
+        padding-right: 24px;
         background-color: #EDF1F3;
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 24px;
-        color: #545454;
     }
+        .roster__heading {
+            margin-top: 5px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            color: #545454;
+        }
 
-    .experience__body {
+        .roster__operations {
+            margin-left: auto;
+        }
+
+    .roster__body {
         border: 1px solid #EDF1F3;
         padding: 25px 23px 32px;
         border-top: none;
