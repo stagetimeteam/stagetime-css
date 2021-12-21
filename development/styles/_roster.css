@@ -38,6 +38,7 @@
             .roster__item {
                 width: 25%;
                 padding-bottom: 27px;
+                text-align: center;
             }
 
         .roster__more {

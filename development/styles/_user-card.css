@@ -171,8 +171,10 @@
 
 
 .user-card--roster {
-    width: auto;
-    padding: 0 20px;
+    width: 148px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
     .user-card--roster .user-card__preview.avatar,
     .user-card--roster .user-card__preview .avatar {

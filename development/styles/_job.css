@@ -1,0 +1,31 @@
+.job {
+
+}
+    .job__head {
+
+    }
+
+    .job__list {
+        margin-top: 28px;
+    }
+        .job__item {
+            margin-top: 40px;
+        }
+
+        .job__item:first-child {
+            margin-top: 0;
+        }
+
+    .job__more {
+        margin-top: 7px;
+        margin-left: 59px;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+        text-decoration: none;
+    }

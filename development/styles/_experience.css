@@ -1,0 +1,42 @@
+.experience {
+
+}
+    .experience__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 5px 21px;
+        background-color: #EDF1F3;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #545454;
+    }
+
+    .experience__body {
+        border: 1px solid #EDF1F3;
+        padding: 25px 28px 30px;
+        border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+        .experience__list {
+
+        }
+            .experience__item {
+                margin-top: 40px;
+            }
+
+            .experience__item:first-child {
+                margin-top: 0;
+            }
+
+        .experience__more {
+            margin-top: 13px;
+        }
+
+        .experience__more.button,
+        .experience__more .button {
+            width: 188px;
+        }
