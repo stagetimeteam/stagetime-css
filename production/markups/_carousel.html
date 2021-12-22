@@ -6,15 +6,15 @@
         <title>.carousel</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1640075481">
-        <link rel="stylesheet" href="../styles/style.css?1640075481">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1640075481" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1640141627">
+        <link rel="stylesheet" href="../styles/style.css?1640141627">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1640141627" media="(max-width: 767px)">
     </head>
     <body>
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="width: 800px; margin: 0 auto;">
             <br>
             <br>
             <h1>.carousel</h1>
@@ -84,7 +84,7 @@
             <br>
             <h2>Arrows via .action</h2>
             <p>
-                We can use <a href="_action.html">.action</a> inside of <b>.carousel__control</b> like so:
+                We can use <a href="_action.html">.action</a> (with <b>.action--faded</b> modifier) inside of <b>.carousel__control</b>:
             </p>
 
             <div class="carousel">
@@ -144,11 +144,11 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
-                            Lorem ipsum
+                            Prev
                         </span>
                     </span>
                 </button>
@@ -156,15 +156,106 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-right"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
                             </svg>
                         </span>
                         <span class="action__label">
-                            Lorem ipsum
+                            Next
                         </span>
                     </span>
                 </button>
             </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--arrows-on-top</h2>
+            <p>
+                This meant to be used with <b>.action--transparent</b> and <b>16-slim-left</b>/<b>16-slim-right</b> icons
+            </p>
+
+
+            <div class="carousel carousel--arrows-on-top">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-slim-left"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Prev
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-slim-right"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Next
+                        </span>
+                    </span>
+                </button>
+            </div>
+
 
 
             <br>
@@ -533,7 +624,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -545,7 +636,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-right"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -585,7 +676,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-cinema"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-cinema"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -610,7 +701,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -618,19 +709,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -654,7 +745,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -679,7 +770,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -687,19 +778,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -723,7 +814,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -748,7 +839,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -756,19 +847,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -792,7 +883,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -817,7 +908,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -825,19 +916,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -861,7 +952,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-cinema"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-cinema"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -886,7 +977,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -894,19 +985,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -930,7 +1021,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -955,7 +1046,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -963,19 +1054,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -999,7 +1090,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1024,7 +1115,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1032,19 +1123,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1068,7 +1159,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1093,7 +1184,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1101,19 +1192,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1137,7 +1228,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-cinema"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-cinema"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1162,7 +1253,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1170,19 +1261,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1206,7 +1297,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1231,7 +1322,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1239,19 +1330,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1275,7 +1366,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1300,7 +1391,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1308,19 +1399,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1344,7 +1435,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -1369,7 +1460,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1377,19 +1468,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1403,7 +1494,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -1415,7 +1506,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-right"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -1454,7 +1545,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1470,7 +1561,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1478,19 +1569,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1521,7 +1612,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1537,7 +1628,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1545,19 +1636,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1588,7 +1679,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1604,7 +1695,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1612,19 +1703,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1655,7 +1746,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1671,7 +1762,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1679,19 +1770,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1722,7 +1813,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1738,7 +1829,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1746,14 +1837,14 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
 
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1784,7 +1875,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1800,7 +1891,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1808,19 +1899,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1851,7 +1942,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1867,7 +1958,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1875,19 +1966,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1918,7 +2009,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -1934,7 +2025,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -1942,19 +2033,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -1985,7 +2076,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -2001,7 +2092,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2009,19 +2100,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2035,7 +2126,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -2047,7 +2138,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-right"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -2086,7 +2177,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-cinema"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-cinema"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2111,7 +2202,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2119,19 +2210,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2155,7 +2246,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2180,7 +2271,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2188,19 +2279,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2224,7 +2315,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2249,7 +2340,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2257,19 +2348,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2293,7 +2384,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2318,7 +2409,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2326,19 +2417,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2362,7 +2453,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-cinema"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-cinema"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2387,7 +2478,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2395,19 +2486,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2431,7 +2522,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2456,7 +2547,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2464,19 +2555,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2500,7 +2591,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2525,7 +2616,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2533,19 +2624,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2569,7 +2660,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2594,7 +2685,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2602,19 +2693,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2638,7 +2729,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-cinema"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-cinema"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2663,7 +2754,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2671,19 +2762,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2707,7 +2798,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2732,7 +2823,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2740,19 +2831,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2776,7 +2867,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2801,7 +2892,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2809,19 +2900,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2845,7 +2936,7 @@
                                 </div>
                                 <div class="media-card__icon type-handler type-handler--no-hover">
                                     <svg class="type-handler__icon" width="16" height="16">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#16-wave"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#16-wave"></use>
                                     </svg>
                                 </div>
                             </a>
@@ -2870,7 +2961,7 @@
                             <div class="media-card__actions operations operations--simplified-handler operations--for-media-audio">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2878,19 +2969,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -2904,7 +2995,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -2916,7 +3007,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-right"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -2954,7 +3045,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -2970,7 +3061,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -2978,19 +3069,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3021,7 +3112,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3037,7 +3128,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3045,19 +3136,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3088,7 +3179,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3104,7 +3195,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3112,19 +3203,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3155,7 +3246,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3171,7 +3262,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3179,19 +3270,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3222,7 +3313,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3238,7 +3329,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3246,19 +3337,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3289,7 +3380,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3305,7 +3396,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3313,19 +3404,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3356,7 +3447,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3372,7 +3463,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3380,19 +3471,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3423,7 +3514,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3439,7 +3530,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3447,19 +3538,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3490,7 +3581,7 @@
                             </a>
                             <a class="news-card__org-name org-bar" href="#">
                                 <svg class="org-bar__icon" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1640075481#16-city"></use>
+                                    <use xlink:href="../symbols/symbols.svg?1640141627#16-city"></use>
                                 </svg>
                                 <span class="org-bar__title">Washington Concert Opera</span>
                             </a>
@@ -3506,7 +3597,7 @@
                             <div class="news-card__actions operations operations--simplified-handler operations--for-news">
                                 <button class="operations__handler" type="button">
                                     <svg class="operations__icon" width="32" height="32">
-                                        <use xlink:href="../symbols/symbols.svg?1640075481#32-more"></use>
+                                        <use xlink:href="../symbols/symbols.svg?1640141627#32-more"></use>
                                     </svg>
                                     More
                                 </button>
@@ -3514,19 +3605,19 @@
                                     <div class="menu">
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-share"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-share"></use>
                                             </svg>
                                             Share
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-bookmark"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-bookmark"></use>
                                             </svg>
                                             Favorite
                                         </a>
                                         <a class="menu__link" href="#">
                                             <svg class="menu__icon" width="24" height="24">
-                                                <use xlink:href="../symbols/symbols.svg?1640075481#24-report"></use>
+                                                <use xlink:href="../symbols/symbols.svg?1640141627#24-report"></use>
                                             </svg>
                                             Report
                                         </a>
@@ -3540,7 +3631,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-left"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -3552,7 +3643,7 @@
                     <span class="action action--simplified action--faded">
                         <span class="action__image">
                             <svg class="action__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1640075481#16-right"></use>
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
                             </svg>
                         </span>
                         <span class="action__label">
@@ -3564,6 +3655,658 @@
 
 
 
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-profile-media</h2>
+
+            <div class="carousel carousel--for-profile-media carousel--faded-right">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-176x176@2x.jpg 2x"
+                                     src="../temp/person-a-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-176x176@2x.jpg 2x"
+                                     src="../temp/person-b-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-176x176@2x.jpg 2x"
+                                     src="../temp/person-c-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-d-176x176@2x.jpg 2x"
+                                     src="../temp/person-d-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-e-176x176@2x.jpg 2x"
+                                     src="../temp/person-e-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-176x176@2x.jpg 2x"
+                                     src="../temp/person-a-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-176x176@2x.jpg 2x"
+                                     src="../temp/person-b-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-176x176@2x.jpg 2x"
+                                     src="../temp/person-c-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-d-176x176@2x.jpg 2x"
+                                     src="../temp/person-d-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-e-176x176@2x.jpg 2x"
+                                     src="../temp/person-e-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-profile-projects</h2>
+
+            <div class="carousel carousel--faded-right carousel--for-profile-projects">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-a@2x.jpg 2x"
+                                         src="../temp/alt-media-card-a.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <svg class="alt-media-card__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1640141627#24-heart-volume"></use>
+                                        </svg>
+                                        Video
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-b@2x.jpg 2x"
+                                         src="../temp/alt-media-card-b.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <svg class="alt-media-card__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1640141627#24-heart-volume"></use>
+                                        </svg>
+                                        Audio
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-c@2x.jpg 2x"
+                                         src="../temp/alt-media-card-c.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <svg class="alt-media-card__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1640141627#24-heart-volume"></use>
+                                        </svg>
+                                        Project
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-left"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-right"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-alt-profile-projects</h2>
+
+            <div class="carousel carousel--faded-right carousel--for-alt-profile-projects carousel--arrows-on-top">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-a@2x.jpg 2x"
+                                         src="../temp/alt-media-card-a.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <svg class="alt-media-card__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1640141627#24-heart-volume"></use>
+                                        </svg>
+                                        Video
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-b@2x.jpg 2x"
+                                         src="../temp/alt-media-card-b.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <svg class="alt-media-card__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1640141627#24-heart-volume"></use>
+                                        </svg>
+                                        Audio
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-c@2x.jpg 2x"
+                                         src="../temp/alt-media-card-c.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <svg class="alt-media-card__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1640141627#24-heart-volume"></use>
+                                        </svg>
+                                        Project
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-slim-left"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Prev
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-slim-right"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Next
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-profile-activity</h2>
+
+            <div class="carousel carousel--faded-right carousel--arrows-on-top carousel--for-profile-activity">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-slim-left"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Prev
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <svg class="action__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1640141627#16-slim-right"></use>
+                            </svg>
+                        </span>
+                        <span class="action__label">
+                            Next
+                        </span>
+                    </span>
+                </button>
+            </div>
 
 
             <br>
@@ -3592,36 +4335,36 @@
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1640075481"></script>
-        <script src="../scripts/_operations.js?1640075481"></script>
-        <script src="../scripts/_profile.js?1640075481"></script>
-        <script src="../scripts/_mfp.js?1640075481"></script>
-        <script src="../scripts/_search.js?1640075481"></script>
-        <script src="../scripts/_carousel.js?1640075481"></script>
-        <script src="../scripts/_player.js?1640075481"></script>
-        <script src="../scripts/_player2.js?1640075481"></script>
-        <script src="../scripts/_player3.js?1640075481"></script>
-        <script src="../scripts/_updates.js?1640075481"></script>
-        <script src="../scripts/_side.js?1640075481"></script>
-        <script src="../scripts/_happening.js?1640075481"></script>
-        <script src="../scripts/_input.js?1640075481"></script>
-        <script src="../scripts/_edit-post.js?1640075481"></script>
-        <script src="../scripts/_post-form.js?1640075481"></script>
-        <script src="../scripts/_button.js?1640075481"></script>
-        <script src="../scripts/_quick-message.js?1640075481"></script>
-        <script src="../scripts/_explore.js?1640075481"></script>
-        <script src="../scripts/_shortcut.js?1640075481"></script>
-        <script src="../scripts/_scrollbar.js?1640075481"></script>
-        <script src="../scripts/_overlay.js?1640075481"></script>
-        <script src="../scripts/_notifications.js?1640075481"></script>
-        <script src="../scripts/_enter.js?1640075481"></script>
-        <script src="../scripts/_suggesting.js?1640075481"></script>
-        <script src="../scripts/_chat.js?1640075481"></script>
-        <script src="../scripts/_badge.js?1640075481"></script>
-        <script src="../scripts/_media-bar.js?1640075481"></script>
-        <script src="../scripts/_settings.js?1640075481"></script>
-        <script src="../scripts/_slideshow.js?1640075481"></script>
-        <script src="../scripts/_expandable-bio.js?1640075481"></script>
+        <script src="../scripts/_global.js?1640141627"></script>
+        <script src="../scripts/_operations.js?1640141627"></script>
+        <script src="../scripts/_profile.js?1640141627"></script>
+        <script src="../scripts/_mfp.js?1640141627"></script>
+        <script src="../scripts/_search.js?1640141627"></script>
+        <script src="../scripts/_carousel.js?1640141627"></script>
+        <script src="../scripts/_player.js?1640141627"></script>
+        <script src="../scripts/_player2.js?1640141627"></script>
+        <script src="../scripts/_player3.js?1640141627"></script>
+        <script src="../scripts/_updates.js?1640141627"></script>
+        <script src="../scripts/_side.js?1640141627"></script>
+        <script src="../scripts/_happening.js?1640141627"></script>
+        <script src="../scripts/_input.js?1640141627"></script>
+        <script src="../scripts/_edit-post.js?1640141627"></script>
+        <script src="../scripts/_post-form.js?1640141627"></script>
+        <script src="../scripts/_button.js?1640141627"></script>
+        <script src="../scripts/_quick-message.js?1640141627"></script>
+        <script src="../scripts/_explore.js?1640141627"></script>
+        <script src="../scripts/_shortcut.js?1640141627"></script>
+        <script src="../scripts/_scrollbar.js?1640141627"></script>
+        <script src="../scripts/_overlay.js?1640141627"></script>
+        <script src="../scripts/_notifications.js?1640141627"></script>
+        <script src="../scripts/_enter.js?1640141627"></script>
+        <script src="../scripts/_suggesting.js?1640141627"></script>
+        <script src="../scripts/_chat.js?1640141627"></script>
+        <script src="../scripts/_badge.js?1640141627"></script>
+        <script src="../scripts/_media-bar.js?1640141627"></script>
+        <script src="../scripts/_settings.js?1640141627"></script>
+        <script src="../scripts/_slideshow.js?1640141627"></script>
+        <script src="../scripts/_expandable-bio.js?1640141627"></script>
 
 
     </body>
