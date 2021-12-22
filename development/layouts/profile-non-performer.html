@@ -686,12 +686,12 @@
             <div class="alt-artist">
                 <div class="alt-artist__wrap container container--alt-profile">
                     <div class="alt-artist__header heading-group">
-                        <div class="heading-group__heading">
+                        <h1 class="heading-group__heading">
                             Anh Le
                             <span class="verified" title="This profile has been verified">
                                 <img class="verified__icon" src="../symbols/verified.svg" width="16" height="17">
                             </span>
-                        </div>
+                        </h1>
                         <div class="heading-group__addition">
                             <a class="heading-group__action button button--info" href="#">Connect</a>
                             <a class="heading-group__action button button--alt-secondary" href="#">Message</a>
@@ -841,6 +841,7 @@
                         </div>
                         <div class="alt-artist__content">
                             <div class="alt-artist__description expandable-bio">
+                                <h2 class="visuallyhidden">Biography</h2>
                                 <div class="expandable-bio__content">
                                     <div class="wysiwyg wysiwyg--larger">
                                         <p>Anh is the Director of Marketing & PR at <strong>Opera Theatre of Saint Louis</strong> (OTSL), overseeing all sales campaigns, audience development initiatives, and media relations while providing key collaborative and strategic support on company-wide community engagement efforts. In addition to her duties at OTSL, Anh has spoken about issues of diversity and inclusion at OPERA America's 2017 Opera Conference, served on OPERA America's Civic Action Forum, and participated in the inaugural administrative class of The Dallas Opera’s Hart Institut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consequuntur doloribus dolorum eligendi enim id in incidunt, laudantium maiores natus, necessitatibus numquam odio odit quae suscipit veritatis vitae voluptatem? Accusantium, id ipsam laudantium non nulla quos voluptate? Accusantium aut consequatur cum debitis dicta error et ex excepturi in maiores natus necessitatibus nisi non obcaecati quidem sapiente, totam unde. Aliquam consequatur excepturi fuga illum. A animi at, aut consequatur cumque deleniti dignissimos dolor est eveniet fuga fugit itaque mollitia nesciunt nobis nulla omnis quia sequi, tempore! Dolorem ipsam natus sapiente similique velit? Blanditiis dolorum ipsam molestiae provident quo repudiandae tempora tenetur.</p>
@@ -855,6 +856,7 @@
                                 </button>
                             </div>
                             <div class="alt-artist__summary agency">
+                                <h2 class="visuallyhidden">Agency</h2>
                                 <div class="agency__preview">
                                     <a class="avatar avatar--alt-hover avatar--less-squared" href="#">
                                         <img class="avatar__image"
@@ -1289,10 +1291,10 @@
                                 </div>
                             </div>
                             <div class="alt-artist__gallery projects-and-media">
-                                <div class="projects-and-media__heading title title--smaller">
+                                <h2 class="projects-and-media__heading title title--smaller">
                                     Projects and Media
-                                </div>
-                                <div class="projects-and-media__body carousel carousel--faded-right carousel--for-profile-summary">
+                                </h2>
+                                <div class="projects-and-media__body carousel carousel--faded-right carousel--for-alt-profile-projects carousel--arrows-on-top">
                                     <div class="carousel__container">
                                         <div class="carousel__item">
                                             <div class="alt-media-card">
@@ -1389,68 +1391,259 @@
                                         </div>
                                     </div>
                                     <button class="carousel__control carousel__control--prev" type="button">
-                                        <span class="action action--simplified action--faded">
+                                        <span class="action action--simplified action--transparent">
                                             <span class="action__image">
-                                                <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                                <img class="action__icon" src="../symbols/16-slim-left.svg" width="16" height="16" alt="">
                                             </span>
                                             <span class="action__label">
-                                                Lorem ipsum
+                                                Prev
                                             </span>
                                         </span>
                                     </button>
                                     <button class="carousel__control carousel__control--next" type="button">
-                                        <span class="action action--simplified action--faded">
+                                        <span class="action action--simplified action--transparent">
                                             <span class="action__image">
-                                                <img class="action__icon" src="../symbols/16-right.svg" width="16" height="16" alt="">
+                                                <img class="action__icon" src="../symbols/16-slim-right.svg" width="16" height="16" alt="">
                                             </span>
                                             <span class="action__label">
-                                                Lorem ipsum
+                                                Next
                                             </span>
                                         </span>
                                     </button>
                                 </div>
                             </div>
-                            <div class="alt-artists__schedule full-schedule">
-                                <h3 class="full-schedule__heading title title--smaller">
+                            <div class="alt-artist__schedule full-schedule">
+                                <h2 class="full-schedule__heading title title--smaller">
                                     Schedule
-                                </h3>
-                                <div class="full-schedule__carousel">
-                                    <div class="performance">
-                                        <div class="performance__body">
-                                            <a class="performance__preview avatar avatar--less-squared" href="#">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/organization-a-64x64@2x.jpg 2x"
-                                                     src="../temp/organization-a-64x64.jpg"
-                                                     width="64"
-                                                     height="64"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </a>
-                                            <div class="performance__sub-heading">
-                                                Così fan tutte
+                                </h2>
+                                <div class="carousel carousel--faded-right carousel--for-schedule carousel--arrows-on-top">
+                                    <div class="full-schedule__list">
+                                        <div class="carousel__container">
+                                            <div class="carousel__item">
+                                                <div class="performance">
+                                                    <div class="performance__body">
+                                                        <a class="performance__preview avatar avatar--less-squared" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/organization-a-64x64@2x.jpg 2x"
+                                                                 src="../temp/organization-a-64x64.jpg"
+                                                                 width="64"
+                                                                 height="64"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
+                                                    </div>
+                                                    <div class="performance__footer">
+                                                        <div class="performance__dates">
+                                                            <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        </div>
+                                                        <a class="performance__add" href="#">
+                                                            <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
+                                                            Add&nbsp;to&nbsp;Cal
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="performance__note">
-                                                Ferrando
+                                            <div class="carousel__item">
+                                                <div class="performance">
+                                                    <div class="performance__body">
+                                                        <a class="performance__preview avatar avatar--less-squared" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/organization-a-64x64@2x.jpg 2x"
+                                                                 src="../temp/organization-a-64x64.jpg"
+                                                                 width="64"
+                                                                 height="64"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
+                                                    </div>
+                                                    <div class="performance__footer">
+                                                        <div class="performance__dates">
+                                                            <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        </div>
+                                                        <a class="performance__add" href="#">
+                                                            <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
+                                                            Add&nbsp;to&nbsp;Cal
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="performance__note">
-                                                Lyric Opera of Chicago
+                                            <div class="carousel__item">
+                                                <div class="performance">
+                                                    <div class="performance__body">
+                                                        <a class="performance__preview avatar avatar--less-squared" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/organization-a-64x64@2x.jpg 2x"
+                                                                 src="../temp/organization-a-64x64.jpg"
+                                                                 width="64"
+                                                                 height="64"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
+                                                    </div>
+                                                    <div class="performance__footer">
+                                                        <div class="performance__dates">
+                                                            <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        </div>
+                                                        <a class="performance__add" href="#">
+                                                            <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
+                                                            Add&nbsp;to&nbsp;Cal
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel__item">
+                                                <div class="performance">
+                                                    <div class="performance__body">
+                                                        <a class="performance__preview avatar avatar--less-squared" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/organization-a-64x64@2x.jpg 2x"
+                                                                 src="../temp/organization-a-64x64.jpg"
+                                                                 width="64"
+                                                                 height="64"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
+                                                    </div>
+                                                    <div class="performance__footer">
+                                                        <div class="performance__dates">
+                                                            <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        </div>
+                                                        <a class="performance__add" href="#">
+                                                            <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
+                                                            Add&nbsp;to&nbsp;Cal
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel__item">
+                                                <div class="performance">
+                                                    <div class="performance__body">
+                                                        <a class="performance__preview avatar avatar--less-squared" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/organization-a-64x64@2x.jpg 2x"
+                                                                 src="../temp/organization-a-64x64.jpg"
+                                                                 width="64"
+                                                                 height="64"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
+                                                    </div>
+                                                    <div class="performance__footer">
+                                                        <div class="performance__dates">
+                                                            <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        </div>
+                                                        <a class="performance__add" href="#">
+                                                            <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
+                                                            Add&nbsp;to&nbsp;Cal
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel__item">
+                                                <div class="performance">
+                                                    <div class="performance__body">
+                                                        <a class="performance__preview avatar avatar--less-squared" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/organization-a-64x64@2x.jpg 2x"
+                                                                 src="../temp/organization-a-64x64.jpg"
+                                                                 width="64"
+                                                                 height="64"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
+                                                    </div>
+                                                    <div class="performance__footer">
+                                                        <div class="performance__dates">
+                                                            <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        </div>
+                                                        <a class="performance__add" href="#">
+                                                            <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
+                                                            Add&nbsp;to&nbsp;Cal
+                                                        </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="performance__footer">
-                                            <div class="performance__dates">
-                                                <span class="performance__main-date">June 1, 2021</span> and 6 more
-                                            </div>
-                                            <a class="performance__add" href="#">
-                                                <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
-                                                Add&nbsp;to&nbsp;Cal
-                                            </a>
-                                        </div>
+                                        <button class="carousel__control carousel__control--prev" type="button">
+                                            <span class="action action--simplified action--transparent">
+                                                <span class="action__image">
+                                                    <img class="action__icon" src="../symbols/16-slim-left.svg" width="16" height="16" alt="">
+                                                </span>
+                                                <span class="action__label">
+                                                    Prev
+                                                </span>
+                                            </span>
+                                        </button>
+                                        <button class="carousel__control carousel__control--next" type="button">
+                                            <span class="action action--simplified action--transparent">
+                                                <span class="action__image">
+                                                    <img class="action__icon" src="../symbols/16-slim-right.svg" width="16" height="16" alt="">
+                                                </span>
+                                                <span class="action__label">
+                                                    Next
+                                                </span>
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="full-schedule__highlights">
-                                    <h4 class="full-schedule__sub-heading title title--smaller">
+                                    <h3 class="full-schedule__sub-heading title title--smaller">
                                         Recent Highlights
-                                    </h4>
+                                    </h3>
                                     <div class="full-schedule__period">
                                         <button class="schedule__year button button--big-secondary" type="button">
                                             2021
@@ -1462,6 +1655,215 @@
                                             2019
                                         </button>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="alt-artist__activity full-activity">
+                                <h2 class="full-activity__heading title title--smaller">
+                                    Activity
+                                </h2>
+                                <div class="full-activity__body carousel carousel--faded-right carousel--arrows-on-top carousel--for-profile-activity">
+                                    <div class="carousel__container">
+                                        <div class="carousel__item">
+                                            <div class="case">
+                                                <div class="case__head">
+                                                    <div class="case__preview">
+                                                        <a class="avatar" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                                                 src="../temp/person-a-60x60.jpg"
+                                                                 width="60"
+                                                                 height="60"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                    </div>
+                                                    <div class="case__data">
+                                                        <b class="case__heading title title--smaller ellipsis">
+                                                            Madison Leonard
+                                                        </b>
+                                                        <div class="case__note">
+                                                            Dec 1, 2021, 11:32 am
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="case__body">
+                                                    <div class="case__text">
+                                                        <div class="wysiwyg wysiwyg--larger">
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                        </div>
+                                                    </div>
+                                                    <a class="case__details" href="#">
+                                                        See more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel__item">
+                                            <div class="case">
+                                                <div class="case__head">
+                                                    <div class="case__preview">
+                                                        <a class="avatar" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                                                 src="../temp/person-a-60x60.jpg"
+                                                                 width="60"
+                                                                 height="60"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                    </div>
+                                                    <div class="case__data">
+                                                        <b class="case__heading title title--smaller ellipsis">
+                                                            Madison Leonard
+                                                        </b>
+                                                        <div class="case__note">
+                                                            Dec 1, 2021, 11:32 am
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="case__body">
+                                                    <div class="case__text">
+                                                        <div class="wysiwyg wysiwyg--larger">
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                        </div>
+                                                    </div>
+                                                    <a class="case__details" href="#">
+                                                        See more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel__item">
+                                            <div class="case">
+                                                <div class="case__head">
+                                                    <div class="case__preview">
+                                                        <a class="avatar" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                                                 src="../temp/person-a-60x60.jpg"
+                                                                 width="60"
+                                                                 height="60"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                    </div>
+                                                    <div class="case__data">
+                                                        <b class="case__heading title title--smaller ellipsis">
+                                                            Madison Leonard
+                                                        </b>
+                                                        <div class="case__note">
+                                                            Dec 1, 2021, 11:32 am
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="case__body">
+                                                    <div class="case__text">
+                                                        <div class="wysiwyg wysiwyg--larger">
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                        </div>
+                                                    </div>
+                                                    <a class="case__details" href="#">
+                                                        See more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel__item">
+                                            <div class="case">
+                                                <div class="case__head">
+                                                    <div class="case__preview">
+                                                        <a class="avatar" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                                                 src="../temp/person-a-60x60.jpg"
+                                                                 width="60"
+                                                                 height="60"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                    </div>
+                                                    <div class="case__data">
+                                                        <b class="case__heading title title--smaller ellipsis">
+                                                            Madison Leonard
+                                                        </b>
+                                                        <div class="case__note">
+                                                            Dec 1, 2021, 11:32 am
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="case__body">
+                                                    <div class="case__text">
+                                                        <div class="wysiwyg wysiwyg--larger">
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                        </div>
+                                                    </div>
+                                                    <a class="case__details" href="#">
+                                                        See more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel__item">
+                                            <div class="case">
+                                                <div class="case__head">
+                                                    <div class="case__preview">
+                                                        <a class="avatar" href="#">
+                                                            <img class="avatar__image"
+                                                                 srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                                                 src="../temp/person-a-60x60.jpg"
+                                                                 width="60"
+                                                                 height="60"
+                                                                 alt="Mark Zuckerberg"
+                                                            >
+                                                        </a>
+                                                    </div>
+                                                    <div class="case__data">
+                                                        <b class="case__heading title title--smaller ellipsis">
+                                                            Madison Leonard
+                                                        </b>
+                                                        <div class="case__note">
+                                                            Dec 1, 2021, 11:32 am
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="case__body">
+                                                    <div class="case__text">
+                                                        <div class="wysiwyg wysiwyg--larger">
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                            <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                                        </div>
+                                                    </div>
+                                                    <a class="case__details" href="#">
+                                                        See more
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel__control carousel__control--prev" type="button">
+                                        <span class="action action--simplified action--transparent">
+                                            <span class="action__image">
+                                                <img class="action__icon" src="../symbols/16-slim-left.svg" width="16" height="16" alt="">
+                                            </span>
+                                            <span class="action__label">
+                                                Prev
+                                            </span>
+                                        </span>
+                                    </button>
+                                    <button class="carousel__control carousel__control--next" type="button">
+                                        <span class="action action--simplified action--transparent">
+                                            <span class="action__image">
+                                                <img class="action__icon" src="../symbols/16-slim-right.svg" width="16" height="16" alt="">
+                                            </span>
+                                            <span class="action__label">
+                                                Next
+                                            </span>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </div>

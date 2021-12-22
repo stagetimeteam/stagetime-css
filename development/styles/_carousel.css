@@ -92,6 +92,35 @@
     }
 
 
+
+.carousel--arrows-on-top {
+
+}
+    .carousel--arrows-on-top .carousel__control {
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: 10px;
+    }
+
+    .carousel--arrows-on-top .carousel__control--prev {
+        right: 29px;
+    }
+
+    .carousel--arrows-on-top .carousel__control--next {
+        right: -11px;
+    }
+
+    /* since there are no arrows on the right we can decrease size of fading gradient */
+    .carousel--arrows-on-top.carousel--faded-right::before {
+        width: 15px;
+    }
+
+    .carousel--arrows-on-top.carousel--faded-right::after {
+        right: 15px;
+        width: 124px;
+    }
+
+
 .carousel--for-user-card {
 
 }
@@ -141,51 +170,51 @@
     }
 
 
-.carousel--for-user-media {
+.carousel--for-profile-media {
 
 }
-    .carousel--for-user-media .carousel__container {
+    .carousel--for-profile-media .carousel__container {
         padding-right: 40px;
     }
-        .carousel--for-user-media .carousel__item {
+        .carousel--for-profile-media .carousel__item {
             margin-right: 56px;
         }
 
-        .carousel--for-user-media .carousel__item:last-child {
+        .carousel--for-profile-media .carousel__item:last-child {
 
         }
 
 
-    .carousel--for-user-media .carousel__control {
+    .carousel--for-profile-media .carousel__control {
         position: absolute;
         z-index: 100;
         right: -12px;
     }
 
-    .carousel--for-user-media .carousel__control--prev {
+    .carousel--for-profile-media .carousel__control--prev {
         top: 50%;
         margin-top: 5px;
     }
 
-    .carousel--for-user-media .carousel__control--next {
+    .carousel--for-profile-media .carousel__control--next {
         top: 50%;
         margin-top: -45px;
     }
 
-    .carousel--for-user-media.carousel--scrolled-to-right::before,
-    .carousel--for-user-media.carousel--scrolled-to-right::after {
+    .carousel--for-profile-media.carousel--scrolled-to-right::before,
+    .carousel--for-profile-media.carousel--scrolled-to-right::after {
         opacity: 0;
         visibility: hidden;
     }
 
 
     /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
-    .carousel--for-user-media.carousel--faded-right::before {
+    .carousel--for-profile-media.carousel--faded-right::before {
         width: 24px;
     }
 
     /* this is gradient itself, you can click through and scroll over */
-    .carousel--for-user-media.carousel--faded-right::after {
+    .carousel--for-profile-media.carousel--faded-right::after {
         right: 24px;
         width: 144px;
         background-image: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.48) 56.25%, rgba(255, 255, 255, 0) 100%);
@@ -193,49 +222,95 @@
 
 
 
-.carousel--for-profile-summary {
 
+
+.carousel--for-profile-projects {
+    padding: 18px;
+    background-color: #EBF0F2;
 }
-    .carousel--for-profile-summary .carousel__container {
+    .carousel--for-profile-projects .carousel__container {
         border-radius: 6px;
     }
-        .carousel--for-profile-summary .carousel__item {
+        .carousel--for-profile-projects .carousel__item {
             margin-right: 25px;
         }
 
-        .carousel--for-profile-summary .carousel__item:last-child {
+        .carousel--for-profile-projects .carousel__item:last-child {
             margin-right: 0;
         }
 
-        .carousel--for-profile-summary .carousel__item:last-child {
+        .carousel--for-profile-projects .carousel__item:last-child {
 
         }
 
-
-        .carousel--for-profile-summary .carousel__control {
+        .carousel--for-profile-projects .carousel__control {
             position: absolute;
             z-index: 100;
             top: 50%;
-            right: 0;
+            right: 18px;
         }
 
-        .carousel--for-profile-summary .carousel__control--prev {
+        .carousel--for-profile-projects .carousel__control--prev {
             margin-top: 5px;
         }
 
-        .carousel--for-profile-summary .carousel__control--next {
+        .carousel--for-profile-projects .carousel__control--next {
             margin-top: -45px;
         }
 
+    .carousel--for-profile-projects.carousel--faded-right::before {
+        background-color: #EBF0F2;
+        top: 0;
+        bottom: 0;
+    }
 
-/* make gradients to not to overlap borders:  */
-.carousel--for-profile-summary.carousel--faded-right::before {
+    .carousel--for-profile-projects.carousel--faded-right::after {
+        top: 0;
+        bottom: 0;
+        background-image: linear-gradient(to left, #EBF0F2 0%, rgba(235, 240, 242, 0.9) 25%, rgba(235, 240, 242, 0.48) 56.25%, rgba(235, 240, 242, 0) 100%);
+    }
+
+
+
+.carousel--for-alt-profile-projects {
+    padding: 18px;
     background-color: #EBF0F2;
+    border-radius: 5px;
 }
+    .carousel--for-alt-profile-projects .carousel__container {
+        border-radius: 6px;
+    }
+        .carousel--for-alt-profile-projects .carousel__item {
+            margin-right: 25px;
+        }
 
-.carousel--for-profile-summary.carousel--faded-right::after {
-    background-image: linear-gradient(to left, #EBF0F2 0%, rgba(235, 240, 242, 0.9) 25%, rgba(235, 240, 242, 0.48) 56.25%, rgba(235, 240, 242, 0) 100%);
+        .carousel--for-alt-profile-projects .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel--for-alt-profile-projects .carousel__item:last-child {
+
+        }
+
+
+
+
+
+.carousel--for-schedule {
+
 }
+    .carousel--for-schedule .carousel__container {
+
+    }
+        .carousel--for-schedule .carousel__item {
+            margin-right: 20px;
+            width: 335px;
+        }
+
+        .carousel--for-schedule .carousel__item:last-child {
+            margin-right: 0;
+        }
+
 
 
 
@@ -318,3 +393,21 @@
     .carousel--for-side-updates .carousel__control:hover {
 
     }
+
+
+.carousel--for-profile-activity {
+
+}
+    .carousel--for-profile-activity .carousel__container {
+
+    }
+        .carousel--for-profile-activity .carousel__item {
+            width: 480px;
+            margin-right: 32px;
+        }
+
+        .carousel--for-side-updates .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+

@@ -94,10 +94,16 @@
                 }
 
                 .alt-artist__gallery {
-                    margin-top: 34px;
+                    margin-top: 43px;
                 }
 
-                .alt-artists__schedule {
+                .alt-artist__schedule {
+                    margin-top: 43px;
+                    border-top: 1px solid #E3EDF3;
+                    padding-top: 35px;
+                }
+
+                .alt-artist__activity {
                     margin-top: 43px;
                     border-top: 1px solid #E3EDF3;
                     padding-top: 35px;

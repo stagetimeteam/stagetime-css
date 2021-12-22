@@ -106,6 +106,50 @@
 
 
 
+.action--transparent {
+
+}
+    .action--transparent .action__image {
+        margin-top: 2px;
+        margin-bottom: 9px;
+        width: 28px;
+        height: 28px;
+        background-color: transparent;
+        border-color: transparent;
+    }
+        .action--transparent .action__icon {
+            fill: #545454;
+        }
+
+        .action--transparent .action__label {
+            font-size: 8px;
+            color: #8B8B8B;
+        }
+
+.action--transparent:hover {
+
+}
+    .action--transparent:hover .action__image {
+        background-color: var(--panel-hover);
+    }
+        .action--transparent:hover .action__icon {
+            fill: #545454;
+        }
+
+.action--transparent:active {
+
+}
+    .action--transparent:active .action__image {
+        background-color: var(--panel-active);
+        transition: none;
+    }
+        .action--transparent:active .action__icon {
+            fill: #545454;
+            transition: none;
+        }
+
+
+
 .action--gray {
 
 }

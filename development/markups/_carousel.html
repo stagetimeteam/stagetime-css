@@ -14,7 +14,7 @@
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="width: 800px; margin: 0 auto;">
             <br>
             <br>
             <h1>.carousel</h1>
@@ -84,7 +84,7 @@
             <br>
             <h2>Arrows via .action</h2>
             <p>
-                We can use <a href="_action.html">.action</a> inside of <b>.carousel__control</b> like so:
+                We can use <a href="_action.html">.action</a> (with <b>.action--faded</b> modifier) inside of <b>.carousel__control</b>:
             </p>
 
             <div class="carousel">
@@ -146,7 +146,7 @@
                             <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
                         </span>
                         <span class="action__label">
-                            Lorem ipsum
+                            Prev
                         </span>
                     </span>
                 </button>
@@ -156,11 +156,98 @@
                             <img class="action__icon" src="../symbols/16-right.svg" width="16" height="16" alt="">
                         </span>
                         <span class="action__label">
-                            Lorem ipsum
+                            Next
                         </span>
                     </span>
                 </button>
             </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--arrows-on-top</h2>
+            <p>
+                This meant to be used with <b>.action--transparent</b> and <b>16-slim-left</b>/<b>16-slim-right</b> icons
+            </p>
+
+
+            <div class="carousel carousel--arrows-on-top">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                    <div class="carousel__item">
+                        <!-- temp -->
+                        <div style="width: 200px; height: 200px; background: linear-gradient(45deg, red, blue);"></div>
+                        <!--/temp -->
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-slim-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Prev
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-slim-right.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Next
+                        </span>
+                    </span>
+                </button>
+            </div>
+
 
 
             <br>
@@ -3122,6 +3209,630 @@
 
 
 
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-profile-media</h2>
+
+            <div class="carousel carousel--for-profile-media carousel--faded-right">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-176x176@2x.jpg 2x"
+                                     src="../temp/person-a-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-176x176@2x.jpg 2x"
+                                     src="../temp/person-b-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-176x176@2x.jpg 2x"
+                                     src="../temp/person-c-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-d-176x176@2x.jpg 2x"
+                                     src="../temp/person-d-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-e-176x176@2x.jpg 2x"
+                                     src="../temp/person-e-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-176x176@2x.jpg 2x"
+                                     src="../temp/person-a-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-176x176@2x.jpg 2x"
+                                     src="../temp/person-b-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-176x176@2x.jpg 2x"
+                                     src="../temp/person-c-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-d-176x176@2x.jpg 2x"
+                                     src="../temp/person-d-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="user-pane">
+                            <a class="avatar avatar--a-bit-squared" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-e-176x176@2x.jpg 2x"
+                                     src="../temp/person-e-176x176.jpg"
+                                     width="176"
+                                     height="176"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-right.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-profile-projects</h2>
+
+            <div class="carousel carousel--faded-right carousel--for-profile-projects">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-a@2x.jpg 2x"
+                                         src="../temp/alt-media-card-a.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <img class="alt-media-card__icon" src="../symbols/24-heart-volume.svg" width="24" height="24" alt="">
+                                        Video
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-b@2x.jpg 2x"
+                                         src="../temp/alt-media-card-b.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <img class="alt-media-card__icon" src="../symbols/24-heart-volume.svg" width="24" height="24" alt="">
+                                        Audio
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-c@2x.jpg 2x"
+                                         src="../temp/alt-media-card-c.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <img class="alt-media-card__icon" src="../symbols/24-heart-volume.svg" width="24" height="24" alt="">
+                                        Project
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--faded">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-right.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Lorem ipsum
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-alt-profile-projects</h2>
+
+            <div class="carousel carousel--faded-right carousel--for-alt-profile-projects carousel--arrows-on-top">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-a@2x.jpg 2x"
+                                         src="../temp/alt-media-card-a.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <img class="alt-media-card__icon" src="../symbols/24-heart-volume.svg" width="24" height="24" alt="">
+                                        Video
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-b@2x.jpg 2x"
+                                         src="../temp/alt-media-card-b.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <img class="alt-media-card__icon" src="../symbols/24-heart-volume.svg" width="24" height="24" alt="">
+                                        Audio
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="alt-media-card">
+                            <a class="alt-media-card__link" href="#">
+                                <div class="alt-media-card__stage">
+                                    <img class="alt-media-card__image"
+                                         srcset="../temp/alt-media-card-c@2x.jpg 2x"
+                                         src="../temp/alt-media-card-c.jpg"
+                                         width="642"
+                                         height="226"
+                                         alt=""
+                                    >
+                                    <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
+                                </div>
+                                <div class="alt-media-card__content">
+                                    <div class="alt-media-card__type">
+                                        <img class="alt-media-card__icon" src="../symbols/24-heart-volume.svg" width="24" height="24" alt="">
+                                        Project
+                                    </div>
+                                    <div class="alt-media-card__heading ellipsis">
+                                        Cheri Cheri Lady
+                                    </div>
+                                    <div class="alt-media-card__name">
+                                        Modern Talking
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="alt-media-card__skip button" href="#">
+                                Skip to Artist Highlight
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-slim-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Prev
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-slim-right.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Next
+                        </span>
+                    </span>
+                </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.carousel--for-profile-activity</h2>
+
+            <div class="carousel carousel--faded-right carousel--arrows-on-top carousel--for-profile-activity">
+                <div class="carousel__container">
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel__item">
+                        <div class="case">
+                            <div class="case__head">
+                                <div class="case__preview">
+                                    <a class="avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-60x60@2x.jpg 2x"
+                                             src="../temp/person-a-60x60.jpg"
+                                             width="60"
+                                             height="60"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="case__data">
+                                    <b class="case__heading title title--smaller ellipsis">
+                                        Madison Leonard
+                                    </b>
+                                    <div class="case__note">
+                                        Dec 1, 2021, 11:32 am
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="case__body">
+                                <div class="case__text">
+                                    <div class="wysiwyg wysiwyg--larger">
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                        <p>Ben Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and pBen Bliss began his 2019-2020 season with Lyric Opera of Kansas City in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago.</p>
+                                    </div>
+                                </div>
+                                <a class="case__details" href="#">
+                                    See more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel__control carousel__control--prev" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-slim-left.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Prev
+                        </span>
+                    </span>
+                </button>
+                <button class="carousel__control carousel__control--next" type="button">
+                    <span class="action action--simplified action--transparent">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-slim-right.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Next
+                        </span>
+                    </span>
+                </button>
+            </div>
 
 
             <br>
