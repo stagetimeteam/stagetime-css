@@ -1,0 +1,41 @@
+.full-schedule {
+
+}
+    .full-schedule__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .full-schedule__carousel {
+        margin-top: 23px;
+    }
+
+    .full-schedule__highlights {
+        margin-top: 40px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .full-schedule__sub-heading {
+            margin-top: 10px;
+            margin-bottom: 0;
+            margin-right: 27px;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .full-schedule__period {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-left: -32px;
+            margin-top: -20px;
+        }
+            .full-schedule__year {
+                margin-left: 32px;
+                margin-top: 20px;
+            }
+
+            .full-schedule__year.button,
+            .full-schedule__year .button {
+                width: 130px;
+            }
