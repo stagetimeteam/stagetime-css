@@ -1,0 +1,11 @@
+.parallax-photo {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+    .parallax-photo__file {
+        width: 100%;
+        height: calc(100% + 150px);
+        vertical-align: top;
+        object-fit: cover;
+    }
