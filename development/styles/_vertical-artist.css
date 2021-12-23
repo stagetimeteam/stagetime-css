@@ -30,6 +30,11 @@
 
         }
 
+        .vertical-artist__gallery.carousel--for-profile-projects,
+        .vertical-artist__gallery .carousel--for-profile-projects {
+            border-radius: 0;
+        }
+
         .vertical-artist__body {
             padding: 27px 36px 29px;
         }

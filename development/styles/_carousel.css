@@ -227,6 +227,7 @@
 .carousel--for-profile-projects {
     padding: 18px;
     background-color: #EBF0F2;
+    border-radius: 5px;
 }
     .carousel--for-profile-projects .carousel__container {
         border-radius: 6px;

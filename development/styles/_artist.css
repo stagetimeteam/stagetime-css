@@ -67,9 +67,6 @@
                 .artist__gallery {
                     margin-top: 24px;
                     height: 262px;
-                    border: 18px solid transparent;
-                    background-color: #EBF0F2;
-                    border-radius: 5px;
                 }
 
                 .artist__footer {

@@ -3,9 +3,9 @@
     height: 100%;
     overflow: hidden;
 }
-    .parallax-photo__file {
+    .parallax-photo__image {
         width: 100%;
-        height: calc(100% + 150px);
+        height: calc(100% + 150px); /* 150px -- must be same to shift variable in parallax-photo script */
         vertical-align: top;
         object-fit: cover;
     }

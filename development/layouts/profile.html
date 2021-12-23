@@ -686,13 +686,17 @@
             <div class="artist">
                 <div class="artist__jumbotron">
                     <div class="artist-card">
-                        <img class="artist__preview"
-                             srcset="../temp/artist-card@2x.jpg 2x"
-                             src="../temp/artist-card.jpg"
-                             width="1440"
-                             height="467"
-                             alt=""
-                        >
+                        <div class="artist__preview">
+                            <div class="parallax-photo">
+                                <img class="parallax-photo__image"
+                                     srcset="../temp/artist-card@2x.jpg 2x"
+                                     src="../temp/artist-card.jpg"
+                                     width="1440"
+                                     height="467"
+                                     alt=""
+                                >
+                            </div>
+                        </div>
                         <div class="artist-card__content">
                             <h1 class="artist-card__heading">
                                 Ben<br>
@@ -2288,6 +2292,7 @@
         <script src="../scripts/_settings.js"></script>
         <script src="../scripts/_slideshow.js"></script>
         <script src="../scripts/_expandable-bio.js"></script>
+        <script src="../scripts/_parallax-photo.js"></script>
 
 
     </body>

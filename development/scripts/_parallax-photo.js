@@ -1,23 +1,20 @@
 (function($) {
 
-    var container = $('.parallax-photo').outerHeight();
-    var shift = 150;
+    var $container = $('.parallax-photo');
+    var $image = $('.parallax-photo__image');
+    var height = $container.outerHeight();
+    var offset = $container.offset().top - $('.header').outerHeight();
+    var shift = 150; /* 150px -- must be same to height value in .parallax-photo__image */
     var scrolled;
     var newValue;
-    var $image = $('.parallax-photo__file');
-
-    var imageOffset = $('.parallax-photo').offset().top - $('.header').outerHeight();
+    var normalizedValue;
 
 
     $(window).on('scroll', function () {
-
-        scrolled = $(this).scrollTop() - imageOffset;
-        newValue = Math.max( 0, Math.min(shift, scrolled / container * shift) ); /* value in between 0 or shift */
-
-        // if ( scrolled >= 0 && scrolled <= container ) {
-            $image.css('transform', 'translateY(-' + newValue + 'px)')
-        // }
-
+        scrolled = $(this).scrollTop() - offset;
+        newValue = scrolled / height * shift;
+        normalizedValue = Math.max( 0, Math.min(shift, newValue ) ); /* value in between [0, shift] */
+        $image.css('transform', 'translateY(-' + normalizedValue + 'px)')
     });
 
 })(jQuery);
