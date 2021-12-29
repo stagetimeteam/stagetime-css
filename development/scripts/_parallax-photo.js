@@ -9,12 +9,14 @@
     var newValue;
     var normalizedValue;
 
-
-    $(window).on('scroll', function () {
+    function parallax() {
         scrolled = $(this).scrollTop() - offset;
         newValue = scrolled / height * shift;
         normalizedValue = Math.max( 0, Math.min(shift, newValue ) ); /* value in between [0, shift] */
         $image.css('transform', 'translateY(-' + normalizedValue + 'px)')
-    });
+    }
+
+    $(window).on('scroll', parallax);
+    $(document).ready(parallax);
 
 })(jQuery);
