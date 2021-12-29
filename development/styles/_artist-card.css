@@ -2,7 +2,7 @@
     position: relative;
     height: 100%;
 }
-    .artist__preview {
+    .artist-card__preview {
         position: absolute;
         left: 0;
         top: 0;
@@ -59,7 +59,7 @@
 .artist-card--alternate {
 
 }
-    .artist-card--alternate .artist__preview {
+    .artist-card--alternate .artist-card__preview {
 
     }
 
