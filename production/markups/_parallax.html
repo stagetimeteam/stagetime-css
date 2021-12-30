@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.parallax</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1640854979">
+        <link rel="stylesheet" href="../styles/style.css?1640854979">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1640854979" media="(max-width: 767px)">
+    </head>
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.parallax</h1>
+            <p>See also <a href="_simple-parallax.html">.simple-parallax</a></p>
+            <p>
+                In this default version scrollable area is itself and one screen before the image.
+                So all the time when you see image or part of it is parallaxing. This works well
+                for images deeper down to the page like if it was a landing page showing some features.
+            </p>
+            <p>
+                <img src="../temp/parallax.png" width="100%" alt="" style="vertical-align: top;">
+            </p>
+            <p>
+                Unfortunately this method cuts a significant part of image. 300px by default. And this can be
+                critical to people's photo. Also, half of this cut is never being seen if image is place on
+                top of the page because there is no whitespace of window height above it.
+                This is why on pages like <a href="../layouts/profile.html">profile page</a> we gonna use alternative
+                <a href="_simple-parallax.html">.simple-parallax</a> component.
+            </p>
+            <p>
+                This <b>.parallax</b> component remains unused. Maybe until landing page or something. See demo:
+            </p>
+
+            <div style="height: 700px;">
+
+
+                <div class="parallax">
+                    <img class="parallax__image"
+                         srcset="../temp/artist-card-vertical@2x.jpg 2x"
+                         src="../temp/artist-card-vertical.jpg"
+                         width="720"
+                         height="918"
+                         alt=""
+                    >
+                </div>
+
+
+            </div>
+
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
+            </p>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../scripts/_global.js?1640854979"></script>
+        <script src="../scripts/_operations.js?1640854979"></script>
+        <script src="../scripts/_profile.js?1640854979"></script>
+        <script src="../scripts/_mfp.js?1640854979"></script>
+        <script src="../scripts/_search.js?1640854979"></script>
+        <script src="../scripts/_carousel.js?1640854979"></script>
+        <script src="../scripts/_player.js?1640854979"></script>
+        <script src="../scripts/_player2.js?1640854979"></script>
+        <script src="../scripts/_player3.js?1640854979"></script>
+        <script src="../scripts/_updates.js?1640854979"></script>
+        <script src="../scripts/_side.js?1640854979"></script>
+        <script src="../scripts/_happening.js?1640854979"></script>
+        <script src="../scripts/_input.js?1640854979"></script>
+        <script src="../scripts/_edit-post.js?1640854979"></script>
+        <script src="../scripts/_post-form.js?1640854979"></script>
+        <script src="../scripts/_button.js?1640854979"></script>
+        <script src="../scripts/_quick-message.js?1640854979"></script>
+        <script src="../scripts/_explore.js?1640854979"></script>
+        <script src="../scripts/_shortcut.js?1640854979"></script>
+        <script src="../scripts/_scrollbar.js?1640854979"></script>
+        <script src="../scripts/_overlay.js?1640854979"></script>
+        <script src="../scripts/_notifications.js?1640854979"></script>
+        <script src="../scripts/_enter.js?1640854979"></script>
+        <script src="../scripts/_suggesting.js?1640854979"></script>
+        <script src="../scripts/_chat.js?1640854979"></script>
+        <script src="../scripts/_badge.js?1640854979"></script>
+        <script src="../scripts/_media-bar.js?1640854979"></script>
+        <script src="../scripts/_settings.js?1640854979"></script>
+        <script src="../scripts/_slideshow.js?1640854979"></script>
+        <script src="../scripts/_expandable-bio.js?1640854979"></script>
+        <script src="../scripts/_parallax.js?1640854979"></script>
+        <script src="../scripts/_simple-parallax.js?1640854979"></script>
+
+
+    </body>
+</html>
+
+
+
