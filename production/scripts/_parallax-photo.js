@@ -1,20 +1,41 @@
 (function($) {
 
-    var $container = $('.parallax-photo');
-    var $image = $('.parallax-photo__image');
-    var height = $container.outerHeight();
-    var offset = $container.offset().top - $('.header').outerHeight();
-    var shift = 150; /* 150px -- must be same to height value in .parallax-photo__image */
+    var data = [];
+    var headerHeight;
+    var windowHeight;
+    var shift;
     var scrolled;
     var newValue;
     var normalizedValue;
 
+    function init() {
+        headerHeight = $('.header').outerHeight();
+        windowHeight = $(window).outerHeight() - headerHeight;
+        shift = 300; /* 300px -- must be same to height value in .parallax-photo__image */
 
-    $(window).on('scroll', function () {
-        scrolled = $(this).scrollTop() - offset;
-        newValue = scrolled / height * shift;
-        normalizedValue = Math.max( 0, Math.min(shift, newValue ) ); /* value in between [0, shift] */
-        $image.css('transform', 'translateY(-' + normalizedValue + 'px)')
-    });
+        $('.parallax-photo').each(function (i) {
+            data.push({
+                '$container': $(this),
+                '$image': $(this).find('.parallax-photo__image'),
+                'height': $(this).outerHeight() + windowHeight,
+                'offset': $(this).offset().top - headerHeight,
+            });
+        });
+    }
+
+    function parallax() {
+        data.forEach(function (current) {
+            scrolled = $(document).scrollTop() - current.offset + windowHeight; /* this set the are of [window + photo], in other words is some whitespace before photo plus photo itself */
+            newValue = scrolled / current.height * shift;
+            normalizedValue = Math.max( 0, Math.min(shift, newValue ) ); /* value in between [0, shift] */
+            current.$image.css('transform', 'translateY(-' + normalizedValue + 'px)')
+        });
+    }
+
+    $(document).ready(init);
+    $(window).on('scroll', init);
+
+    $(document).ready(parallax);
+    $(window).on('scroll', parallax);
 
 })(jQuery);
