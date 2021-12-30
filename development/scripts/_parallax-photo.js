@@ -1,5 +1,6 @@
 (function($) {
 
+    var $header = $('.header');
     var data = [];
     var headerHeight;
     var windowHeight;
@@ -9,7 +10,8 @@
     var normalizedValue;
 
     function init() {
-        headerHeight = $('.header').outerHeight();
+        data = [];
+        headerHeight = $header.length ? $header.outerHeight() : 0;
         windowHeight = $(window).outerHeight() - headerHeight;
         shift = 300; /* 300px -- must be same to height value in .parallax-photo__image */
 
