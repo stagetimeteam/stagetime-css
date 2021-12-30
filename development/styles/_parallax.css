@@ -1,0 +1,11 @@
+.parallax {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+    .parallax__image {
+        width: 100%;
+        height: calc(100% + 300px); /* 300px -- must be same to shift variable in parallax script */
+        vertical-align: top;
+        object-fit: cover;
+    }

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.parallax-photo</title>
+        <title>.parallax</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -17,19 +17,32 @@
         <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.parallax-photo</h1>
+            <h1>.parallax</h1>
+            <p>See also <a href="_simple-parallax.html">.simple-parallax</a></p>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias atque, blanditiis consectetur distinctio doloribus ducimus eos est et eveniet facilis illum ipsum laborum minus mollitia nihil optio perspiciatis porro provident quis quo quod recusandae repudiandae, sed similique tenetur voluptas voluptate. Accusamus aliquid animi asperiores aspernatur, aut dignissimos dolores ea eligendi eos illum incidunt ipsa iste laborum, maiores maxime necessitatibus nostrum provident quae quod ratione, rem sed suscipit totam ullam unde veniam voluptatem voluptatum. Accusantium ad asperiores debitis, doloribus eum excepturi id iste laborum libero minima neque nisi omnis perferendis porro quas quibusdam repellat reprehenderit rerum sequi, suscipit voluptate voluptatem?
+                In this default version scrollable area is itself and one screen before the image.
+                So all the time when you see image or part of it is parallaxing. This works well
+                for images deeper down to the page like if it was a landing page showing some features.
+            </p>
+            <p>
+                <img src="../temp/parallax.png" width="100%" alt="" style="vertical-align: top;">
+            </p>
+            <p>
+                Unfortunately this method cuts a significant part of image. 300px by default. And this can be
+                critical to people's photo. Also, half of this cut is never being seen if image is place on
+                top of the page because there is no whitespace of window height above it.
+                This is why on pages like <a href="../layouts/profile.html">profile page</a> we gonna use alternative
+                <a href="_simple-parallax.html">.simple-parallax</a> component.
+            </p>
+            <p>
+                This <b>.parallax</b> component remains unused. Maybe until landing page or something. See demo:
             </p>
 
             <div style="height: 700px;">
 
 
-                <div class="parallax-photo">
-                    <img class="parallax-photo__image"
+                <div class="parallax">
+                    <img class="parallax__image"
                          srcset="../temp/artist-card-vertical@2x.jpg 2x"
                          src="../temp/artist-card-vertical.jpg"
                          width="720"
@@ -106,7 +119,8 @@
         <script src="../scripts/_settings.js"></script>
         <script src="../scripts/_slideshow.js"></script>
         <script src="../scripts/_expandable-bio.js"></script>
-        <script src="../scripts/_parallax-photo.js"></script>
+        <script src="../scripts/_parallax.js"></script>
+        <script src="../scripts/_simple-parallax.js"></script>
 
 
     </body>
