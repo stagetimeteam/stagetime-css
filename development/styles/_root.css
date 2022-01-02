@@ -6,6 +6,7 @@
     --transition-long-show: 0.3s ease;
     --transition-hover: 0.1s ease;
     --transition-long-hover: 0.2s ease;
+    --transition-slide: 0.5s ease;
     --header-height: 64px;
     --sub-header-height: 32px;
     --sidebar-width: 192px;

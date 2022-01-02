@@ -11,8 +11,8 @@
             right: 0;
             opacity: 0;
             visibility: hidden;
-            transition: opacity 0.5s ease,
-                        visibility 0.5s ease;
+            transition: opacity var(--transition-slide),
+                        visibility var(--transition-slide);
         }
 
         .slideshow__item--current {
@@ -176,8 +176,8 @@
             height: 10px;
             border-radius: 50%;
             border: 1px solid #757575;
-            transition: background-color var(--transition-show),
-                        border-color var(--transition-show);
+            transition: background-color var(--transition-slide),
+                        border-color var(--transition-slide);
         }
 
         .slideshow--feedback .slideshow__dot:hover::before {
