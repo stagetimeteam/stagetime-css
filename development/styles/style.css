@@ -242,7 +242,6 @@
 @import url("_review.css");
 @import url("_user-media.css");
 @import url("_user-pane.css");
-@import url("_alt-artist.css");
 @import url("_tag.css");
 @import url("_environment.css");
 @import url("_expandable-bio.css");
@@ -258,3 +257,5 @@
 @import url("_full-endorsements.css");
 @import url("_parallax.css");
 @import url("_simple-parallax.css");
+@import url("_performer.css");
+@import url("_non-performer.css");

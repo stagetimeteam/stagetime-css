@@ -1,9 +1,9 @@
-.alt-artist {
+.non-performer {
     position: relative;
     padding-top: 20px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
-    .alt-artist::before {
+    .non-performer::before {
         content: "";
         position: absolute;
         z-index: 30;
@@ -15,101 +15,101 @@
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
     }
 
-    .alt-artist__wrap {
+    .non-performer__wrap {
         padding-top: 31px;
     }
-        .alt-artist__header {
+        .non-performer__header {
 
         }
 
-        .alt-artist__body {
+        .non-performer__body {
             margin-top: 14px;
             display: flex;
             align-items: flex-start;
         }
-            .alt-artist__sidebar {
+            .non-performer__sidebar {
                 width: 330px;
                 flex-shrink: 0;
                 box-shadow: inset -2px 0 0 #EDF1F3;
                 padding-right: 48px;
             }
-                .alt-artist__photo {
+                .non-performer__photo {
                     border: 3px solid #EDF1F3;
                     background-color: var(--image-fallback);
                     box-sizing: content-box;
                     border-radius: 4px;
                 }
 
-                .alt-artist__career {
+                .non-performer__career {
                     margin: 22px -24px 0 -16px;
                 }
 
-                .alt-artist__connections {
+                .non-performer__connections {
                     margin-top: 17px;
                     border-top: 1px solid #F2F2F2;
                     padding-top: 24px;
                 }
 
-                .alt-artist__tags {
+                .non-performer__tags {
                     margin-top: 31px;
                     border-top: 1px solid #F2F2F2;
                     padding-top: 26px;
                 }
 
-                .alt-artist__highlights {
+                .non-performer__highlights {
                     margin-top: 29px;
                     border-top: 1px solid #F2F2F2;
                     padding-top: 21px;
                 }
 
-                .alt-artist__social {
+                .non-performer__social {
                     margin-top: 27px;
                     border-top: 1px solid #F2F2F2;
                     padding-top: 20px;
                 }
 
 
-            .alt-artist__content {
+            .non-performer__content {
                 width: calc(100% - 330px);
                 flex-shrink: 0;
                 box-shadow: -2px 0 0 #EDF1F3;
                 padding-left: 48px;
             }
-                .alt-artist__description {
+                .non-performer__description {
                     margin-top: -4px;
                 }
 
-                .alt-artist__summary {
+                .non-performer__summary {
                     margin-top: 28px;
                     border-top: 1px solid #F2F2F2;
                     padding-top: 25px;
                 }
 
-                .alt-artist__people {
+                .non-performer__people {
                     margin-top: 32px;
                 }
 
-                .alt-artist__employment-history {
+                .non-performer__employment-history {
                     margin-top: 31px;
                 }
 
-                .alt-artist__gallery {
+                .non-performer__gallery {
                     margin-top: 43px;
                 }
 
-                .alt-artist__schedule {
-                    margin-top: 43px;
-                    border-top: 1px solid #E3EDF3;
-                    padding-top: 35px;
-                }
-
-                .alt-artist__activity {
+                .non-performer__schedule {
                     margin-top: 43px;
                     border-top: 1px solid #E3EDF3;
                     padding-top: 35px;
                 }
 
-                .alt-artist__recommendations {
+                .non-performer__activity {
+                    margin-top: 43px;
+                    border-top: 1px solid #E3EDF3;
+                    padding-top: 35px;
+                }
+
+                .non-performer__recommendations {
                     margin-top: 43px;
                     border-top: 1px solid #E3EDF3;
                     padding-top: 35px;
