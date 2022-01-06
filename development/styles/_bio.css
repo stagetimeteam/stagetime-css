@@ -3,11 +3,6 @@
 }
     .bio__content {
         margin-bottom: 12px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
         color: #545454;
     }
 
@@ -16,11 +11,3 @@
         line-height: 18px;
     }
 
-
-.bio--9-rows {
-
-}
-    .bio--9-rows .bio__content {
-        margin-bottom: 22px;
-        -webkit-line-clamp: 9;
-    }
