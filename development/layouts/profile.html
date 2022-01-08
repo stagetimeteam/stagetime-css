@@ -1644,6 +1644,12 @@
                     <div class="biography" id="bio">
                         <h2 class="biography__heading underlined-title">
                             <span class="underlined-title__inner">Biography</span>
+                            <span class="underlined-title__addition">
+                                <a class="underlined-title__action button button--alt-secondary" data-toggle="modal" data-target="#edit">
+                                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                    Edit Materials
+                                </a>
+                            </span>
                         </h2>
                         <div class="biography__body">
                             <div class="biography__sidebar">
@@ -2254,7 +2260,38 @@
         </div>
 
         <!-- 3/3 Modals: -->
-        <!-- No modal windows on this page -->
+        <div class="modal modal--skeleton modal--688px fade" id="edit" tabindex="-1" style="display: block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="post-form">
+                        <div class="post-form__header">
+                            <div class="post-form__heading">
+                                Edit info
+                            </div>
+                            <button class="post-form__close action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="post-form__body">
+
+                            123213
+
+                        </div>
+                        <div class="post-form__footer">
+                            <div class="post-form__operations">
+                                <button class="post-form__action button" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
