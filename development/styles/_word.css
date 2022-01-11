@@ -1,0 +1,40 @@
+.word {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    background-color: #DACCC5;
+    background-image: linear-gradient(to right, #F4EEEB, #C6B1A6);
+    border-radius: 15px;
+    padding: 7px 28px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+}
+    .word__delete {
+        display: inline-block;
+        vertical-align: top;
+        padding: 7px;
+        border: none;
+        background-color: transparent;
+        margin: -7px -1px -7px -10px;
+        cursor: pointer;
+    }
+        .word__cross {
+            vertical-align: top;
+            fill: transparent;
+            color: #ADADAD;
+            transition: fill var(--transition-hover),
+                        color var(--transition-hover);
+        }
+
+        .word__delete:hover .word__cross {
+            fill: #999999;
+            color: #FFFFFF;
+        }
+
+        .word__delete:active .word__cross {
+            fill: #333333;
+            color: #FFFFFF;
+            transition: none;
+        }

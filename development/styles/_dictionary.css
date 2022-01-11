@@ -1,0 +1,12 @@
+.dictionary {
+    margin-top: -11px;
+    margin-left: -11px;
+    padding-top: 27px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+    .dictionary__item {
+        margin-top: 11px;
+        margin-left: 11px;
+    }

@@ -360,7 +360,16 @@
 
         .input__suggest--location {
             padding-left: 42px;
-            background-image: url("../vectors/input-location.svg");
+            background-image: url("../vectors/input-suggest-location.svg");
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            background-position: 20px center;
+        }
+
+
+        .input__suggest--add {
+            padding-left: 48px;
+            background-image: url("../vectors/input-suggest-add.svg");
             background-size: 16px 16px;
             background-repeat: no-repeat;
             background-position: 20px center;
