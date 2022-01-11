@@ -105,4 +105,17 @@
         }
     });
 
+    $('.input__suggest').on('click', function () {
+        var value;
+
+        if ( ! $(this).hasClass('input__suggest--placeholder')  ) {
+            value = $(this).text();
+        } else {
+            value = '';
+        }
+
+        $(this).parents('.input').removeClass('input--expanded');
+        $(this).parents('.input').find('.input__widget').val(value);
+    });
+
 })(jQuery);

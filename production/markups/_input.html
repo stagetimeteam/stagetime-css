@@ -6,9 +6,9 @@
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1641437081">
-        <link rel="stylesheet" href="../styles/style.css?1641437081">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1641437081" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1641900460">
+        <link rel="stylesheet" href="../styles/style.css?1641900460">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1641900460" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -29,6 +29,14 @@
 
             <div class="input input--bold">
                 <input class="input__widget" type="text" placeholder="Video Title">
+            </div>
+
+            <br>
+            <br>
+            <h2>.input--larger-font</h2>
+
+            <div class="input input--larger-font">
+                <input class="input__widget" type="text" placeholder="First name">
             </div>
 
 
@@ -177,7 +185,7 @@
                 It can be used with user search or potential datepicker for example.
             </p>
 
-            <div class="input input--larger input--content-width-dropdown">
+            <div class="input input--content-width-dropdown">
                 <input class="input__widget" type="text" placeholder="Choose value">
                 <div class="input__dropdown">
                     Lorem ipsum
@@ -196,7 +204,7 @@
                 .input--scanner
             </h3>
 
-            <div class="input input--larger input--scanner">
+            <div class="input input--scanner">
                 <input class="input__widget" type="text" placeholder="Choose value">
                 <div class="input__dropdown">
                     <div class="input__options">
@@ -224,13 +232,19 @@
                 .input--picker
             </h3>
             <p>
-                In addition to <b>.input--picker</b> please use <b>readonly</b> attribute
+                In addition to <b>.input--picker</b> please use <b>readonly</b> attribute.
+            </p>
+            <p>
+                Since this field is not editable we can't focus in and clear it using backspace.
+                We should add the ability to clear it manually, in the dropdown. By default
+                I suggest to use <b>.input__suggest--placeholder</b> class same as in select widget.
             </p>
 
-            <div class="input input--larger input--picker">
+            <div class="input input--picker">
                 <input class="input__widget" type="text" placeholder="Choose value" readonly>
                 <div class="input__dropdown">
                     <div class="input__options">
+                        <button class="input__suggest input__suggest--placeholder" type="button">Choose value</button>
                         <button class="input__suggest" type="button">Lorem</button>
                         <button class="input__suggest" type="button">Ipsum</button>
                         <button class="input__suggest" type="button">Dolor</button>
@@ -251,6 +265,44 @@
             </div>
 
 
+            <br>
+            <br>
+            <br>
+            <h2>Location search</h2>
+            <p>
+                It is hard to draw the line between where we should start using custom components
+                inside of dropdown ot keep using <b>.input__suggest</b>.
+            </p>
+            <p>
+                For simple cases like location search I think we can just go with<br>
+                <b>.input__suggest--location</b> modifier, like so:
+            </p>
+
+
+            <div class="input input--scanner">
+                <input class="input__widget" type="text" placeholder="Add team members by name or location...">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
+                </div>
+            </div>
+
 
             <br>
             <br>
@@ -260,7 +312,7 @@
                 Instead of default <b>.input__suggest</b> please use <a href="_user-suggest.html"><b>.user-suggest</b></a> component:
             </p>
 
-            <div class="input input--content-width-dropdown input--larger input--scanner">
+            <div class="input input--content-width-dropdown input--scanner">
                 <input class="input__widget" type="text" placeholder="Add team members by name or location...">
                 <div class="input__dropdown">
                     <div class="input__options">
@@ -396,6 +448,52 @@
             <br>
             <br>
             <br>
+            <br>
+            <h2>With .dictionary and .word`s</h2>
+
+
+            <div class="input input--scanner">
+                <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <a class="input__suggest" href="#">Bass</a>
+                        <a class="input__suggest" href="#">Bass-baritone</a>
+                        <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
+                        <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dictionary">
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <svg class="word__cross" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1641900460#close-square"></use>
+                        </svg>
+                    </button>
+                    Tenor
+                </div>
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <svg class="word__cross" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1641900460#close-square"></use>
+                        </svg>
+                    </button>
+                    Pianist
+                </div>
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <svg class="word__cross" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1641900460#close-square"></use>
+                        </svg>
+                    </button>
+                    Bass
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
             <h2>.input--adjustable</h2>
             <p>
                 Unfortunately there is no way to set width of &lt;input&gt; or &lt;select&gt; based on content inside.
@@ -457,7 +555,7 @@
 
             <div class="input">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641437081#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1641900460#16-globe-full"></use>
                 </svg>
                 <input class="input__widget" type="text" placeholder="Video Title">
             </div>
@@ -466,7 +564,7 @@
 
             <div class="input input--select input--rounded input--placeholder-is-chosen">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641437081#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1641900460#16-globe-full"></use>
                 </svg>
                 <select class="input__widget">
                     <option>Anyone</option>
@@ -489,7 +587,7 @@
 
             <a class="input input--select input--rounded mfp-handler" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641437081#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1641900460#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -518,7 +616,7 @@
 
             <a class="input input--adjustable input--bold input--select input--rounded" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641437081#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1641900460#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -594,39 +692,39 @@
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1641437081"></script>
-        <script src="../scripts/_operations.js?1641437081"></script>
-        <script src="../scripts/_profile.js?1641437081"></script>
-        <script src="../scripts/_mfp.js?1641437081"></script>
-        <script src="../scripts/_search.js?1641437081"></script>
-        <script src="../scripts/_carousel.js?1641437081"></script>
-        <script src="../scripts/_player.js?1641437081"></script>
-        <script src="../scripts/_player2.js?1641437081"></script>
-        <script src="../scripts/_player3.js?1641437081"></script>
-        <script src="../scripts/_updates.js?1641437081"></script>
-        <script src="../scripts/_side.js?1641437081"></script>
-        <script src="../scripts/_happening.js?1641437081"></script>
-        <script src="../scripts/_input.js?1641437081"></script>
-        <script src="../scripts/_edit-post.js?1641437081"></script>
-        <script src="../scripts/_post-form.js?1641437081"></script>
-        <script src="../scripts/_button.js?1641437081"></script>
-        <script src="../scripts/_quick-message.js?1641437081"></script>
-        <script src="../scripts/_explore.js?1641437081"></script>
-        <script src="../scripts/_shortcut.js?1641437081"></script>
-        <script src="../scripts/_scrollbar.js?1641437081"></script>
-        <script src="../scripts/_overlay.js?1641437081"></script>
-        <script src="../scripts/_notifications.js?1641437081"></script>
-        <script src="../scripts/_enter.js?1641437081"></script>
-        <script src="../scripts/_suggesting.js?1641437081"></script>
-        <script src="../scripts/_chat.js?1641437081"></script>
-        <script src="../scripts/_badge.js?1641437081"></script>
-        <script src="../scripts/_media-bar.js?1641437081"></script>
-        <script src="../scripts/_settings.js?1641437081"></script>
-        <script src="../scripts/_slideshow.js?1641437081"></script>
-        <script src="../scripts/_expandable-bio.js?1641437081"></script>
-        <script src="../scripts/_parallax.js?1641437081"></script>
-        <script src="../scripts/_simple-parallax.js?1641437081"></script>
-        <script src="../scripts/_anchor.js?1641437081"></script>
+        <script src="../scripts/_global.js?1641900460"></script>
+        <script src="../scripts/_operations.js?1641900460"></script>
+        <script src="../scripts/_profile.js?1641900460"></script>
+        <script src="../scripts/_mfp.js?1641900460"></script>
+        <script src="../scripts/_search.js?1641900460"></script>
+        <script src="../scripts/_carousel.js?1641900460"></script>
+        <script src="../scripts/_player.js?1641900460"></script>
+        <script src="../scripts/_player2.js?1641900460"></script>
+        <script src="../scripts/_player3.js?1641900460"></script>
+        <script src="../scripts/_updates.js?1641900460"></script>
+        <script src="../scripts/_side.js?1641900460"></script>
+        <script src="../scripts/_happening.js?1641900460"></script>
+        <script src="../scripts/_input.js?1641900460"></script>
+        <script src="../scripts/_edit-post.js?1641900460"></script>
+        <script src="../scripts/_post-form.js?1641900460"></script>
+        <script src="../scripts/_button.js?1641900460"></script>
+        <script src="../scripts/_quick-message.js?1641900460"></script>
+        <script src="../scripts/_explore.js?1641900460"></script>
+        <script src="../scripts/_shortcut.js?1641900460"></script>
+        <script src="../scripts/_scrollbar.js?1641900460"></script>
+        <script src="../scripts/_overlay.js?1641900460"></script>
+        <script src="../scripts/_notifications.js?1641900460"></script>
+        <script src="../scripts/_enter.js?1641900460"></script>
+        <script src="../scripts/_suggesting.js?1641900460"></script>
+        <script src="../scripts/_chat.js?1641900460"></script>
+        <script src="../scripts/_badge.js?1641900460"></script>
+        <script src="../scripts/_media-bar.js?1641900460"></script>
+        <script src="../scripts/_settings.js?1641900460"></script>
+        <script src="../scripts/_slideshow.js?1641900460"></script>
+        <script src="../scripts/_expandable-bio.js?1641900460"></script>
+        <script src="../scripts/_parallax.js?1641900460"></script>
+        <script src="../scripts/_simple-parallax.js?1641900460"></script>
+        <script src="../scripts/_anchor.js?1641900460"></script>
 
 
     </body>
