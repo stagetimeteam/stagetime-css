@@ -104,6 +104,11 @@
 
 }
     .input--picker .input__widget {
+        padding-right: 40px;
+        background-image: url("../vectors/16-select.svg");
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+        background-position: right 15px center;
         cursor: pointer;
     }
 
@@ -231,6 +236,7 @@
 
 }
     .input--larger-font .input__widget {
+        font-weight: 600;
         font-size: 13px;
         line-height: 20px;
     }
@@ -336,12 +342,12 @@
             width: 100%;
             background: none;
             border: none;
-            padding: 3px 20px 2px;
+            padding: 8px 20px;
             font-family: inherit;
-            font-weight: bold;
-            font-size: 15px;
-            line-height: 25px;
-            color: #757575;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 18px;
+            color: #545454;
             text-decoration: none;
             text-align: left;
             cursor: pointer;
@@ -349,6 +355,15 @@
 
         .input__suggest:hover {
             background-color: #F4F4F4;
+        }
+
+
+        .input__suggest--location {
+            padding-left: 42px;
+            background-image: url("../vectors/input-location.svg");
+            background-size: 16px 16px;
+            background-repeat: no-repeat;
+            background-position: 20px center;
         }
 
 

@@ -8,7 +8,7 @@
 }
 
 .user-suggest:hover {
-    background-color: #E6E6E6;
+    background-color: #F4F4F4;
 }
     .user-suggest__preview {
         flex-shrink: 0;

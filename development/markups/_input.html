@@ -31,6 +31,14 @@
                 <input class="input__widget" type="text" placeholder="Video Title">
             </div>
 
+            <br>
+            <br>
+            <h2>.input--larger-font</h2>
+
+            <div class="input input--larger-font">
+                <input class="input__widget" type="text" placeholder="First name">
+            </div>
+
 
             <br>
             <br>
@@ -177,7 +185,7 @@
                 It can be used with user search or potential datepicker for example.
             </p>
 
-            <div class="input input--larger input--content-width-dropdown">
+            <div class="input input--content-width-dropdown">
                 <input class="input__widget" type="text" placeholder="Choose value">
                 <div class="input__dropdown">
                     Lorem ipsum
@@ -196,7 +204,7 @@
                 .input--scanner
             </h3>
 
-            <div class="input input--larger input--scanner">
+            <div class="input input--scanner">
                 <input class="input__widget" type="text" placeholder="Choose value">
                 <div class="input__dropdown">
                     <div class="input__options">
@@ -224,13 +232,19 @@
                 .input--picker
             </h3>
             <p>
-                In addition to <b>.input--picker</b> please use <b>readonly</b> attribute
+                In addition to <b>.input--picker</b> please use <b>readonly</b> attribute.
+            </p>
+            <p>
+                Since this field is not editable we can't focus in and clear it using backspace.
+                We should add the ability to clear it manually, in the dropdown. By default
+                I suggest to use <b>.input__suggest--placeholder</b> class same as in select widget.
             </p>
 
-            <div class="input input--larger input--picker">
+            <div class="input input--picker">
                 <input class="input__widget" type="text" placeholder="Choose value" readonly>
                 <div class="input__dropdown">
                     <div class="input__options">
+                        <button class="input__suggest input__suggest--placeholder" type="button">Choose value</button>
                         <button class="input__suggest" type="button">Lorem</button>
                         <button class="input__suggest" type="button">Ipsum</button>
                         <button class="input__suggest" type="button">Dolor</button>
@@ -251,6 +265,44 @@
             </div>
 
 
+            <br>
+            <br>
+            <br>
+            <h2>Location search</h2>
+            <p>
+                It is hard to draw the line between where we should start using custom components
+                inside of dropdown ot keep using <b>.input__suggest</b>.
+            </p>
+            <p>
+                For simple cases like location search I think we can just go with<br>
+                <b>.input__suggest--location</b> modifier, like so:
+            </p>
+
+
+            <div class="input input--scanner">
+                <input class="input__widget" type="text" placeholder="Add team members by name or location...">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                        <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
+                </div>
+            </div>
+
 
             <br>
             <br>
@@ -260,7 +312,7 @@
                 Instead of default <b>.input__suggest</b> please use <a href="_user-suggest.html"><b>.user-suggest</b></a> component:
             </p>
 
-            <div class="input input--content-width-dropdown input--larger input--scanner">
+            <div class="input input--content-width-dropdown input--scanner">
                 <input class="input__widget" type="text" placeholder="Add team members by name or location...">
                 <div class="input__dropdown">
                     <div class="input__options">
@@ -389,6 +441,8 @@
                     </div>
                 </div>
             </div>
+
+
 
 
 

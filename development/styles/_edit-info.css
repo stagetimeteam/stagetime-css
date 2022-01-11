@@ -1,0 +1,10 @@
+.edit-info {
+    padding: 24px 33px;
+}
+    .edit-info__item {
+        margin-top: 20px;
+    }
+
+    .edit-info__item:first-child {
+        margin-top: 0;
+    }
