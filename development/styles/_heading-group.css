@@ -40,3 +40,12 @@
             margin-bottom: -5px;
             margin-right: -18px;
         }
+
+        .heading-group__large-action {
+            margin-top: -10px;
+        }
+
+        .heading-group__large-action.button,
+        .heading-group__large-action .button {
+            padding: 12px 24px;
+        }
