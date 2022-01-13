@@ -1,6 +1,21 @@
 .management {
-
+    position: relative;
+    padding: 24px 34px 34px;
 }
     .management__heading {
-        margin-bottom: -30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: #545454;
+    }
+
+    .management__limit {
+        position: absolute;
+        right: 34px;
+        top: 24px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #757575;
     }
