@@ -1007,7 +1007,7 @@
                                     </button>
                                 </div>
                                 <div class="artist__footer">
-                                    <div class="artist__management management">
+                                    <div class="artist__management management-preview">
                                         <div class="management-preview__heading title title--smaller" data-toggle="modal" data-target="#edit-management">
                                             Management
                                         </div>
@@ -1297,8 +1297,8 @@
                                             Read More
                                         </a>
                                     </div>
-                                    <div class="vertical-artist__management management">
-                                        <div class="management-preview__heading title title--smaller">
+                                    <div class="vertical-artist__management management-preview">
+                                        <div class="management-preview__heading title title--smaller" data-toggle="modal" data-target="#edit-management">
                                             Management
                                         </div>
                                         <div class="slideshow slideshow--management">
@@ -2382,7 +2382,7 @@
 
 
         <!-- 3/3 Modals: -->
-        <div class="modal modal--skeleton fade" id="edit-management" tabindex="-1" style="display: block;">
+        <div class="modal modal--skeleton fade" id="edit-management" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
 
@@ -2518,199 +2518,199 @@
 
                             </div>
 
-<!--                            when clicked to edit:-->
+                            when clicked to edit:
 
-<!--                            <div class="edit-manager-row">-->
-<!--                                <div class="edit-manager-row__item">-->
-<!--                                    <div class="input input&#45;&#45;larger-font input&#45;&#45;scanner">-->
-<!--                                        <input class="input__widget" type="text" placeholder="Agency *">-->
-<!--                                        <div class="input__dropdown">-->
-<!--                                            <div class="input__options">-->
-<!--                                                <a class="management-suggest" href="#">-->
-<!--                                                    <div class="management-suggest__preview avatar avatar&#45;&#45;a-bit-squared avatar&#45;&#45;non-clickable">-->
-<!--                                                        <img class="avatar__image"-->
-<!--                                                             srcset="../temp/organization-a-44x44@2x.jpg 2x"-->
-<!--                                                             src="../temp/organization-a-44x44.jpg"-->
-<!--                                                             width="44"-->
-<!--                                                             height="44"-->
-<!--                                                             alt="Mark Zuckerberg"-->
-<!--                                                        >-->
-<!--                                                    </div>-->
-<!--                                                    <div class="management-suggest__name">-->
-<!--                                                        <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime-->
-<!--                                                    </div>-->
-<!--                                                </a>-->
-<!--                                                <a class="management-suggest" href="#">-->
-<!--                                                    <div class="management-suggest__preview avatar avatar&#45;&#45;a-bit-squared avatar&#45;&#45;non-clickable">-->
-<!--                                                        <img class="avatar__image"-->
-<!--                                                             srcset="../temp/organization-b-44x44@2x.jpg 2x"-->
-<!--                                                             src="../temp/organization-b-44x44.jpg"-->
-<!--                                                             width="44"-->
-<!--                                                             height="44"-->
-<!--                                                             alt="Mark Zuckerberg"-->
-<!--                                                        >-->
-<!--                                                    </div>-->
-<!--                                                    <div class="management-suggest__name">-->
-<!--                                                        <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime-->
-<!--                                                    </div>-->
-<!--                                                </a>-->
-<!--                                                <a class="management-suggest" href="#">-->
-<!--                                                    <div class="management-suggest__preview avatar avatar&#45;&#45;a-bit-squared avatar&#45;&#45;non-clickable">-->
-<!--                                                        <img class="avatar__image"-->
-<!--                                                             srcset="../temp/organization-c-44x44@2x.jpg 2x"-->
-<!--                                                             src="../temp/organization-c-44x44.jpg"-->
-<!--                                                             width="44"-->
-<!--                                                             height="44"-->
-<!--                                                             alt="Mark Zuckerberg"-->
-<!--                                                        >-->
-<!--                                                    </div>-->
-<!--                                                    <div class="management-suggest__name">-->
-<!--                                                        <strong>Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime-->
-<!--                                                    </div>-->
-<!--                                                </a>-->
-<!--                                            </div>-->
+                            <div class="edit-manager-row">
+                                <div class="edit-manager-row__item">
+                                    <div class="input input--larger-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Agency *">
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                                             src="../temp/organization-a-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/organization-b-44x44@2x.jpg 2x"
+                                                             src="../temp/organization-b-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/organization-c-44x44@2x.jpg 2x"
+                                                             src="../temp/organization-c-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                            </div>
 
-<!--                                            &lt;!&ndash; temp &ndash;&gt;-->
-<!--                                            <br>-->
-<!--                                            or:-->
-<!--                                            <br>-->
-<!--                                            &lt;!&ndash;/temp &ndash;&gt;-->
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
 
-<!--                                            <div class="input__no-matches even-simpler-null">-->
-<!--                                                Nothing is found-->
-<!--                                            </div>-->
-<!--                                            <div class="input__alt-matches null-join">-->
-<!--                                                <div class="null-join__message">-->
-<!--                                                    <strong>Don’t see who you’re looking for?</strong> Add this organization to Stagetime.-->
-<!--                                                </div>-->
-<!--                                                <button class="null-join__action button button&#45;&#45;modal-submit" type="button">-->
-<!--                                                    <img class="button__icon" src="../symbols/16-plus-tiny.svg" width="16" height="16" alt="">-->
-<!--                                                    Add-->
-<!--                                                </button>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="edit-manager-row__item">-->
-<!--                                    <div class="input input&#45;&#45;larger-font input&#45;&#45;scanner">-->
-<!--                                        <input class="input__widget" type="text" placeholder="Manager">-->
-<!--                                        <div class="input__dropdown">-->
-<!--                                            <div class="input__options">-->
-<!--                                                <a class="management-suggest" href="#">-->
-<!--                                                    <div class="management-suggest__preview avatar avatar&#45;&#45;non-clickable">-->
-<!--                                                        <img class="avatar__image"-->
-<!--                                                             srcset="../temp/person-a-44x44@2x.jpg 2x"-->
-<!--                                                             src="../temp/person-a-44x44.jpg"-->
-<!--                                                             width="44"-->
-<!--                                                             height="44"-->
-<!--                                                             alt="The Dallas Opera"-->
-<!--                                                        >-->
-<!--                                                    </div>-->
-<!--                                                    <div class="management-suggest__name">-->
-<!--                                                        <strong>Ben Bliss</strong>, Associate Manager-->
-<!--                                                    </div>-->
-<!--                                                </a>-->
-<!--                                                <a class="management-suggest" href="#">-->
-<!--                                                    <div class="management-suggest__preview avatar avatar&#45;&#45;non-clickable">-->
-<!--                                                        <img class="avatar__image"-->
-<!--                                                             srcset="../temp/person-b-44x44@2x.jpg 2x"-->
-<!--                                                             src="../temp/person-b-44x44.jpg"-->
-<!--                                                             width="44"-->
-<!--                                                             height="44"-->
-<!--                                                             alt="The Dallas Opera"-->
-<!--                                                        >-->
-<!--                                                    </div>-->
-<!--                                                    <div class="management-suggest__name">-->
-<!--                                                        <strong>Madison Leonard</strong>, Associate Manager-->
-<!--                                                    </div>-->
-<!--                                                </a>-->
-<!--                                                <a class="management-suggest" href="#">-->
-<!--                                                    <div class="management-suggest__preview avatar avatar&#45;&#45;non-clickable">-->
-<!--                                                        <img class="avatar__image"-->
-<!--                                                             srcset="../temp/person-c-44x44@2x.jpg 2x"-->
-<!--                                                             src="../temp/person-c-44x44.jpg"-->
-<!--                                                             width="44"-->
-<!--                                                             height="44"-->
-<!--                                                             alt="Mark Zuckerberg"-->
-<!--                                                        >-->
-<!--                                                    </div>-->
-<!--                                                    <div class="management-suggest__name">-->
-<!--                                                        <strong>Cicely Parnas</strong>, Associate Manager-->
-<!--                                                    </div>-->
-<!--                                                </a>-->
-<!--                                            </div>-->
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
+                                            </div>
+                                            <div class="input__alt-matches null-join">
+                                                <div class="null-join__message">
+                                                    <strong>Don’t see who you’re looking for?</strong> Add this organization to Stagetime.
+                                                </div>
+                                                <button class="null-join__action button button--modal-submit" type="button">
+                                                    <img class="button__icon" src="../symbols/16-plus-tiny.svg" width="16" height="16" alt="">
+                                                    Add
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-manager-row__item">
+                                    <div class="input input--larger-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Manager">
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                             src="../temp/person-a-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="The Dallas Opera"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>Ben Bliss</strong>, Associate Manager
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                                             src="../temp/person-b-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="The Dallas Opera"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>Madison Leonard</strong>, Associate Manager
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                                             src="../temp/person-c-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>Cicely Parnas</strong>, Associate Manager
+                                                    </div>
+                                                </a>
+                                            </div>
 
-<!--                                            &lt;!&ndash; temp &ndash;&gt;-->
-<!--                                            <br>-->
-<!--                                            or:-->
-<!--                                            <br>-->
-<!--                                            &lt;!&ndash;/temp &ndash;&gt;-->
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
 
-<!--                                            <div class="input__no-matches even-simpler-null">-->
-<!--                                                Nothing is found-->
-<!--                                            </div>-->
-<!--                                            <div class="input__alt-matches null-join">-->
-<!--                                                <div class="null-join__message">-->
-<!--                                                    <strong>Don’t see who you’re looking for?</strong> Invite your manager to join Stagetime.-->
-<!--                                                </div>-->
-<!--                                                <button class="null-join__action button button&#45;&#45;modal-submit" type="button">-->
-<!--                                                    <img class="button__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">-->
-<!--                                                    Invite-->
-<!--                                                </button>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-
-
-<!--                            when selected:-->
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
+                                            </div>
+                                            <div class="input__alt-matches null-join">
+                                                <div class="null-join__message">
+                                                    <strong>Don’t see who you’re looking for?</strong> Invite your manager to join Stagetime.
+                                                </div>
+                                                <button class="null-join__action button button--modal-submit" type="button">
+                                                    <img class="button__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">
+                                                    Invite
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-<!--                            <div class="edit-manager-row">-->
-<!--                                <div class="edit-manager-row__item">-->
-<!--                                    <div class="management-suggest management-suggest&#45;&#45;selected">-->
-<!--                                        <div class="management-suggest__preview avatar avatar&#45;&#45;a-bit-squared avatar&#45;&#45;non-clickable">-->
-<!--                                            <img class="avatar__image"-->
-<!--                                                 srcset="../temp/organization-a-44x44@2x.jpg 2x"-->
-<!--                                                 src="../temp/organization-a-44x44.jpg"-->
-<!--                                                 width="44"-->
-<!--                                                 height="44"-->
-<!--                                                 alt="Mark Zuckerberg"-->
-<!--                                            >-->
-<!--                                        </div>-->
-<!--                                        <div class="management-suggest__name">-->
-<!--                                            <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime-->
-<!--                                        </div>-->
-<!--                                        <button class="management-suggest__delete action action&#45;&#45;flipped" type="button">-->
-<!--                                            <span class="action__image">-->
-<!--                                                <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">-->
-<!--                                            </span>-->
-<!--                                        </button>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                                <div class="edit-manager-row__item">-->
-<!--                                    <div class="management-suggest management-suggest&#45;&#45;selected">-->
-<!--                                        <div class="management-suggest__preview avatar avatar&#45;&#45;non-clickable">-->
-<!--                                            <img class="avatar__image"-->
-<!--                                                 srcset="../temp/person-a-44x44@2x.jpg 2x"-->
-<!--                                                 src="../temp/person-a-44x44.jpg"-->
-<!--                                                 width="44"-->
-<!--                                                 height="44"-->
-<!--                                                 alt="The Dallas Opera"-->
-<!--                                            >-->
-<!--                                        </div>-->
-<!--                                        <div class="management-suggest__name">-->
-<!--                                            <strong>Ben Bliss</strong>, Associate Manager-->
-<!--                                        </div>-->
-<!--                                        <button class="management-suggest__delete action action&#45;&#45;flipped" type="button">-->
-<!--                                            <span class="action__image">-->
-<!--                                                <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">-->
-<!--                                            </span>-->
-<!--                                        </button>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
+                            when selected:
+
+
+                            <div class="edit-manager-row">
+                                <div class="edit-manager-row__item">
+                                    <div class="management-suggest management-suggest--selected">
+                                        <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                                 src="../temp/organization-a-44x44.jpg"
+                                                 width="44"
+                                                 height="44"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </div>
+                                        <div class="management-suggest__name">
+                                            <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                        </div>
+                                        <button class="management-suggest__delete action action--flipped" type="button">
+                                            <span class="action__image">
+                                                <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="edit-manager-row__item">
+                                    <div class="management-suggest management-suggest--selected">
+                                        <div class="management-suggest__preview avatar avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                 src="../temp/person-a-44x44.jpg"
+                                                 width="44"
+                                                 height="44"
+                                                 alt="The Dallas Opera"
+                                            >
+                                        </div>
+                                        <div class="management-suggest__name">
+                                            <strong>Ben Bliss</strong>, Associate Manager
+                                        </div>
+                                        <button class="management-suggest__delete action action--flipped" type="button">
+                                            <span class="action__image">
+                                                <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                         <div class="post-form__footer">
