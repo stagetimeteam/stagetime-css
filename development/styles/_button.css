@@ -24,7 +24,8 @@
     .button__icon {
         vertical-align: top;
         fill: currentColor;
-        transition: fill var(--transition-hover);
+        transition: fill var(--transition-hover),
+                    color var(--transition-hover);
         flex-shrink: 0;
     }
 
@@ -81,6 +82,9 @@
     box-shadow: none;
     transition: none !important;
 }
+    .button:active .button__icon {
+        transition: none;
+    }
 
 
 .button--disabled,
@@ -579,6 +583,25 @@
     font-size: 14px;
     line-height: 24px;
 }
+
+.button--modal-submit {
+    padding: 12px 18px;
+    box-shadow: none;
+    border-radius: 4px;
+    font-size: 13px;
+    line-height: 16px;
+}
+    .button--modal-submit .button__icon {
+        margin-left: -3px;
+        margin-right: 8px;
+        fill: #FFFFFF;
+        color: rgba(255, 255, 255, 0.4);
+    }
+
+    .button--modal-submit:active .button__icon {
+        fill: currentColor;
+        color: currentColor;
+    }
 
 
 .button--large-submit {

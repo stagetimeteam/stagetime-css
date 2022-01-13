@@ -1008,7 +1008,7 @@
                                 </div>
                                 <div class="artist__footer">
                                     <div class="artist__management management">
-                                        <div class="management__heading title title--smaller">
+                                        <div class="management__heading title title--smaller" data-toggle="modal" data-target="#edit-management">
                                             Management
                                         </div>
                                         <div class="slideshow slideshow--management">
@@ -2364,6 +2364,57 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                        </div>
+                        <div class="post-form__footer">
+                            <div class="post-form__operations">
+                                <button class="post-form__action button" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3/3 Modals: -->
+        <div class="modal modal--skeleton fade" id="edit-management" tabindex="-1" style="display: block;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="post-form">
+                        <div class="post-form__header">
+                            <div class="post-form__heading">
+                                Editing Inquiries & Management
+                            </div>
+                            <button class="post-form__close action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="post-form__body">
+
+                            <div class="edit-management">
+
+
+
+                                <button class="button button--modal-submit" type="button">
+                                    <img class="button__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">
+                                    Invite
+                                </button>
+
+                                or:
+
+                                <button class="button button--modal-submit" type="button">
+                                    <img class="button__icon" src="../symbols/16-plus-tiny.svg" width="16" height="16" alt="">
+                                    Add
+                                </button>
+
                             </div>
 
                         </div>
