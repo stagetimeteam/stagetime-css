@@ -1,0 +1,20 @@
+.null-join {
+    display: flex;
+    align-items: center;
+    padding: 11px 11px 11px 22px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #545454;
+}
+    .null-join__message {
+        padding-right: 20px;
+    }
+
+    .null-join__action {
+        margin-left: auto;
+    }
+
+    .null-join__action,
+    .null-join__action.button {
+        width: 98px;
+    }
