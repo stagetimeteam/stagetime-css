@@ -6,9 +6,9 @@
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1641900460">
-        <link rel="stylesheet" href="../styles/style.css?1641900460">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1641900460" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1642084090">
+        <link rel="stylesheet" href="../styles/style.css?1642084090">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1642084090" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -448,9 +448,163 @@
             <br>
             <br>
             <br>
+            <h2>Organization and management search</h2>
+            <p>
+                Use <a href="_management-suggest.html">.management-suggest</a> without modifier.
+            </p>
+            <p>
+                When user select organization or person replace whole input component with <b>.management-suggest--selected</b> modifier.
+            </p>
+
+            <div class="input input--larger-font input--scanner">
+                <input class="input__widget" type="text" placeholder="Agency* or Manager">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                     src="../temp/organization-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-b-44x44@2x.jpg 2x"
+                                     src="../temp/organization-b-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-c-44x44@2x.jpg 2x"
+                                     src="../temp/organization-c-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="The Dallas Opera"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="The Dallas Opera"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Cicely Parnas</strong>, Associate Manager
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Ben Bliss</strong>, Associate Manager
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
+                    <div class="input__alt-matches null-join">
+                        <div class="null-join__message">
+                            <strong>Don’t see who you’re looking for?</strong> Add this organization to Stagetime.
+                        </div>
+                        <button class="null-join__action button button--modal-submit" type="button">
+                            <svg class="button__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1642084090#16-plus-tiny"></use>
+                            </svg>
+                            Add
+                        </button>
+                    </div>
+                    <div class="input__alt-matches null-join">
+                        <div class="null-join__message">
+                            <strong>Don’t see who you’re looking for?</strong> Invite your manager to join Stagetime.
+                        </div>
+                        <button class="null-join__action button button--modal-submit" type="button">
+                            <svg class="button__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1642084090#24-envelope"></use>
+                            </svg>
+                            Invite
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <br>
+            <br>
+            <br>
             <br>
             <h2>With .dictionary and .word`s</h2>
-
+            <p>
+                When user selected something add <a href="_dictionary.html">.dictionary</a>
+            </p>
 
             <div class="input input--scanner">
                 <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
@@ -467,7 +621,7 @@
                 <div class="dictionary__item word">
                     <button class="word__delete" type="button">
                         <svg class="word__cross" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1641900460#close-square"></use>
+                            <use xlink:href="../symbols/symbols.svg?1642084090#close-square"></use>
                         </svg>
                     </button>
                     Tenor
@@ -475,7 +629,7 @@
                 <div class="dictionary__item word">
                     <button class="word__delete" type="button">
                         <svg class="word__cross" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1641900460#close-square"></use>
+                            <use xlink:href="../symbols/symbols.svg?1642084090#close-square"></use>
                         </svg>
                     </button>
                     Pianist
@@ -483,7 +637,7 @@
                 <div class="dictionary__item word">
                     <button class="word__delete" type="button">
                         <svg class="word__cross" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1641900460#close-square"></use>
+                            <use xlink:href="../symbols/symbols.svg?1642084090#close-square"></use>
                         </svg>
                     </button>
                     Bass
@@ -555,7 +709,7 @@
 
             <div class="input">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641900460#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642084090#16-globe-full"></use>
                 </svg>
                 <input class="input__widget" type="text" placeholder="Video Title">
             </div>
@@ -564,7 +718,7 @@
 
             <div class="input input--select input--rounded input--placeholder-is-chosen">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641900460#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642084090#16-globe-full"></use>
                 </svg>
                 <select class="input__widget">
                     <option>Anyone</option>
@@ -587,7 +741,7 @@
 
             <a class="input input--select input--rounded mfp-handler" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641900460#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642084090#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -616,7 +770,7 @@
 
             <a class="input input--adjustable input--bold input--select input--rounded" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1641900460#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642084090#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -692,39 +846,39 @@
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1641900460"></script>
-        <script src="../scripts/_operations.js?1641900460"></script>
-        <script src="../scripts/_profile.js?1641900460"></script>
-        <script src="../scripts/_mfp.js?1641900460"></script>
-        <script src="../scripts/_search.js?1641900460"></script>
-        <script src="../scripts/_carousel.js?1641900460"></script>
-        <script src="../scripts/_player.js?1641900460"></script>
-        <script src="../scripts/_player2.js?1641900460"></script>
-        <script src="../scripts/_player3.js?1641900460"></script>
-        <script src="../scripts/_updates.js?1641900460"></script>
-        <script src="../scripts/_side.js?1641900460"></script>
-        <script src="../scripts/_happening.js?1641900460"></script>
-        <script src="../scripts/_input.js?1641900460"></script>
-        <script src="../scripts/_edit-post.js?1641900460"></script>
-        <script src="../scripts/_post-form.js?1641900460"></script>
-        <script src="../scripts/_button.js?1641900460"></script>
-        <script src="../scripts/_quick-message.js?1641900460"></script>
-        <script src="../scripts/_explore.js?1641900460"></script>
-        <script src="../scripts/_shortcut.js?1641900460"></script>
-        <script src="../scripts/_scrollbar.js?1641900460"></script>
-        <script src="../scripts/_overlay.js?1641900460"></script>
-        <script src="../scripts/_notifications.js?1641900460"></script>
-        <script src="../scripts/_enter.js?1641900460"></script>
-        <script src="../scripts/_suggesting.js?1641900460"></script>
-        <script src="../scripts/_chat.js?1641900460"></script>
-        <script src="../scripts/_badge.js?1641900460"></script>
-        <script src="../scripts/_media-bar.js?1641900460"></script>
-        <script src="../scripts/_settings.js?1641900460"></script>
-        <script src="../scripts/_slideshow.js?1641900460"></script>
-        <script src="../scripts/_expandable-bio.js?1641900460"></script>
-        <script src="../scripts/_parallax.js?1641900460"></script>
-        <script src="../scripts/_simple-parallax.js?1641900460"></script>
-        <script src="../scripts/_anchor.js?1641900460"></script>
+        <script src="../scripts/_global.js?1642084090"></script>
+        <script src="../scripts/_operations.js?1642084090"></script>
+        <script src="../scripts/_profile.js?1642084090"></script>
+        <script src="../scripts/_mfp.js?1642084090"></script>
+        <script src="../scripts/_search.js?1642084090"></script>
+        <script src="../scripts/_carousel.js?1642084090"></script>
+        <script src="../scripts/_player.js?1642084090"></script>
+        <script src="../scripts/_player2.js?1642084090"></script>
+        <script src="../scripts/_player3.js?1642084090"></script>
+        <script src="../scripts/_updates.js?1642084090"></script>
+        <script src="../scripts/_side.js?1642084090"></script>
+        <script src="../scripts/_happening.js?1642084090"></script>
+        <script src="../scripts/_input.js?1642084090"></script>
+        <script src="../scripts/_edit-post.js?1642084090"></script>
+        <script src="../scripts/_post-form.js?1642084090"></script>
+        <script src="../scripts/_button.js?1642084090"></script>
+        <script src="../scripts/_quick-message.js?1642084090"></script>
+        <script src="../scripts/_explore.js?1642084090"></script>
+        <script src="../scripts/_shortcut.js?1642084090"></script>
+        <script src="../scripts/_scrollbar.js?1642084090"></script>
+        <script src="../scripts/_overlay.js?1642084090"></script>
+        <script src="../scripts/_notifications.js?1642084090"></script>
+        <script src="../scripts/_enter.js?1642084090"></script>
+        <script src="../scripts/_suggesting.js?1642084090"></script>
+        <script src="../scripts/_chat.js?1642084090"></script>
+        <script src="../scripts/_badge.js?1642084090"></script>
+        <script src="../scripts/_media-bar.js?1642084090"></script>
+        <script src="../scripts/_settings.js?1642084090"></script>
+        <script src="../scripts/_slideshow.js?1642084090"></script>
+        <script src="../scripts/_expandable-bio.js?1642084090"></script>
+        <script src="../scripts/_parallax.js?1642084090"></script>
+        <script src="../scripts/_simple-parallax.js?1642084090"></script>
+        <script src="../scripts/_anchor.js?1642084090"></script>
 
 
     </body>
