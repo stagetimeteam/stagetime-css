@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.user-suggest</title>
+        <title>.dictionary</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -14,64 +14,34 @@
 
 
 
-        <div style="width: 444px; margin: 0 auto;">
+        <div style="width: 800px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.user-suggest</h1>
+            <h1>.dictionary</h1>
             <p>
-                See also <a href="_management-suggest.html">.management-suggest</a>
-            </p>
-            <p>
-                Can be used in dropdown to search for user:
+                Normally used right below <a href="_input.html">.input</a> when something is selected
             </p>
 
-            <a class="user-suggest" href="#">
-                <div class="user-suggest__preview avatar avatar--non-clickable">
-                    <img class="avatar__image"
-                         srcset="../temp/person-d-24x24@2x.jpg 2x"
-                         src="../temp/person-d-24x24.jpg"
-                         width="24"
-                         height="24"
-                         alt="Mark Zuckerberg"
-                    >
+            <div class="dictionary">
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                    </button>
+                    Tenor
                 </div>
-                <div class="user-suggest__name">
-                    Kunal Lahiry
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                    </button>
+                    Pianist
                 </div>
-            </a>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>.user-suggest--selected</h2>
-            <p>
-                When user was found add <b>.user-suggest__delete</b>
-                and use this <b>.user-suggest--selected</b> modifier.
-            </p>
-            <p>
-                Also change link tag to div. And since the bar isn't clickable anymore
-                we can make avatar inside clickable. Just in case user wants to preview opponent.
-            </p>
-
-            <div class="user-suggest user-suggest--selected">
-                <a class="user-suggest__preview avatar avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-b-24x24@2x.jpg 2x"
-                         src="../temp/person-b-24x24.jpg"
-                         width="24"
-                         height="24"
-                         alt="Mark Zuckerberg"
-                    >
-                </a>
-                <div class="user-suggest__name">
-                    Alexandra Urquiola
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                    </button>
+                    Bass
                 </div>
-                <button class="user-suggest__delete" type="button">
-                    <img class="user-suggest__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                </button>
             </div>
-
 
 
 

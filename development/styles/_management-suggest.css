@@ -25,37 +25,17 @@
     }
 
     .management-suggest__delete {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border: none;
-        padding: 0;
-        margin-left: -1px;
+        margin-left: auto;
         margin-right: -9px;
-        background-color: transparent;
-        cursor: pointer;
+        flex-shrink: 0;
     }
-        .management-suggest__cross {
-            vertical-align: top;
-            fill: #757575;
-        }
-
-        .management-suggest__delete:hover .management-suggest__cross {
-            fill: #333333;
-        }
 
 .management-suggest--selected {
-    display: inline-flex;
-    border-radius: 20px;
-    background-color: #F4F4F4;
+    width: 344px;
+    padding: 6px 0;
+    background-color: transparent;
 }
-    .management-suggest--selected .management-suggest__preview.avatar,
-    .management-suggest--selected .management-suggest__preview .avatar {
-        box-shadow: none;
-    }
 
 .management-suggest--selected:hover {
-    background-color: #F4F4F4;
+    background-color: transparent;
 }

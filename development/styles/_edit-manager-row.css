@@ -1,0 +1,10 @@
+.edit-manager-row {
+    padding: 20px 34px 34px;
+}
+    .edit-manager-row__item {
+        margin-top: 20px;
+    }
+
+    .edit-manager-row__item:first-child {
+        margin-top: 0;
+    }
