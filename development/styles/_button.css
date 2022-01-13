@@ -604,6 +604,14 @@
     }
 
 
+.button--submit-bar {
+    padding: 8px 20px;
+    border-radius: 4px;
+    box-shadow: none;
+    font-size: 13px;
+    line-height: 24px;
+}
+
 .button--large-submit {
     padding: 6px 20px;
     box-shadow: none;

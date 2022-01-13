@@ -1,21 +1,59 @@
 .management {
     position: relative;
-    padding: 24px 34px 34px;
+    padding: 22px 34px 34px;
 }
     .management__heading {
         margin-top: 0;
         margin-bottom: 0;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        color: #545454;
     }
 
     .management__limit {
         position: absolute;
         right: 34px;
-        top: 24px;
+        top: 25px;
         font-size: 12px;
         line-height: 20px;
         color: #757575;
+    }
+
+    .management__list {
+        margin-top: 24px;
+    }
+        .management__item {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .management__item:first-child {
+            margin-top: 0;
+        }
+            .management__index {
+                margin-right: 17px;
+                flex-shrink: 0;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 20px;
+                color: #757575;
+            }
+
+            .management__bar {
+                flex-grow: 1;
+                display: block;
+                border: 1px solid #E8E8E8;
+                border-radius: 5px;
+                padding: 18px;
+                text-decoration: none;
+            }
+
+    .management__add {
+        margin-top: 24px;
+    }
+        .management__add.button,
+        .management__add .button {
+            width: 250px;
+        }
+
+    .management__inquiry {
+        margin-top: 40px;
     }

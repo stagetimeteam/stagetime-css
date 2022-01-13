@@ -1,0 +1,20 @@
+.inquiry {
+
+}
+    .inquiry__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .inquiry__list {
+        margin-top: 20px;
+        padding-left: 20px;
+        border-left: 2px solid #E8E8E8;
+    }
+        .inquiry__channel {
+
+        }
+
+    .inquiry__display {
+        margin-top: 14px;
+    }
