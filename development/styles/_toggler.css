@@ -48,7 +48,8 @@
             height: 18px;
             background-color: #C4C4C4;
             border-radius: 50%;
-            transition: left 0.3s var(--ease-out-circ);
+            transition: left 0.3s var(--ease-out-circ),
+                        background-color var(--transition-hover);
         }
 
         .toggler__widget:checked ~ .toggler__knob {

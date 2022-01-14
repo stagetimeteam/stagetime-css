@@ -2399,7 +2399,6 @@
                         </div>
                         <div class="post-form__body">
 
-
                             <div class="management">
                                 <h3 class="management__heading title title--smaller">
                                     Management (2)
@@ -2413,7 +2412,7 @@
                                             1
                                         </b>
                                         <a class="management__bar" href="#">
-                                            <div class="manager-card">
+                                            <div class="management__entry manager-card">
                                                 <div class="manager-card__preview avatar avatar--less-squared avatar--non-clickable">
                                                     <img class="avatar__image"
                                                          srcset="../temp/organization-a-40x40@2x.jpg 2x"
@@ -2437,6 +2436,10 @@
                                                     <div class="manager-card__note ellipsis">Sam Snook</div>
                                                 </div>
                                             </div>
+                                            <div class="management__edit button button--inner">
+                                                <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                                Edit
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="management__item">
@@ -2444,7 +2447,7 @@
                                             2
                                         </b>
                                         <a class="management__bar" href="#">
-                                            <div class="manager-card">
+                                            <div class="management__entry manager-card">
                                                 <div class="manager-card__preview avatar avatar--non-clickable">
                                                     <img class="avatar__image"
                                                          srcset="../temp/person-a-40x40@2x.jpg 2x"
@@ -2460,6 +2463,10 @@
                                                     <div class="manager-card__note ellipsis">Sam Snook</div>
                                                 </div>
                                             </div>
+                                            <div class="management__edit button button--inner">
+                                                <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                                Edit
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="management__item">
@@ -2467,13 +2474,17 @@
                                             3
                                         </b>
                                         <a class="management__bar" href="#">
-                                            <div class="manager-card">
+                                            <div class="management__entry manager-card">
                                                 <div class="manager-card__content">
                                                     <div class="manager-card__about ellipsis">
                                                         <strong>IMG Artists</strong>, New York, NY
                                                     </div>
                                                     <div class="manager-card__note ellipsis">Sam Snook</div>
                                                 </div>
+                                            </div>
+                                            <div class="management__edit button button--inner">
+                                                <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                                Edit
                                             </div>
                                         </a>
                                     </div>
@@ -2485,35 +2496,41 @@
                                     <h3 class="inquiry__heading title title--smaller">
                                         Inquiry Information
                                     </h3>
-                                    <div class="inquiry__list">
-                                        <div class="inquiry__channel">
-                                            <label class="media-toggler">
-                                                <span class="media-toggler__body">
-                                                    <input class="media-toggler__widget" type="checkbox">
-                                                    <i class="media-toggler__knob"></i>
-                                                </span>
-                                                <span class="media-toggler__label">
-                                                    Stagetime Message
-                                                </span>
-                                            </label>
+                                    <div class="inquiry__body">
+                                        <div class="inquiry__preview">
+                                            <div class="inquiry__description">
+                                                This artist is accepting inquiries via Stagetime message.
+                                            </div>
+                                            <div class="inquiry__operations">
+                                                <div class="inquiry__action-sample">Stagetime</div>
+                                                <div class="inquiry__action-sample">Email</div>
+                                            </div>
                                         </div>
-                                        <div class="inquiry__channel">
-                                            <label class="inquiry__channel media-toggler">
-                                                <span class="media-toggler__body">
-                                                    <input class="media-toggler__widget" type="checkbox">
-                                                    <i class="media-toggler__knob"></i>
-                                                </span>
-                                                <span class="media-toggler__label">
-                                                    Email
-                                                </span>
-                                            </label>
+                                        <div class="inquiry__list">
+                                            <div class="inquiry__channel">
+                                                <label class="toggler">
+                                                    <span class="toggler__body">
+                                                        <input class="toggler__widget" type="checkbox">
+                                                        <i class="toggler__knob"></i>
+                                                    </span>
+                                                    <span class="toggler__label">
+                                                        Stagetime Message
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="inquiry__channel">
+                                                <label class="inquiry__channel toggler">
+                                                    <span class="toggler__body">
+                                                        <input class="toggler__widget" type="checkbox">
+                                                        <i class="toggler__knob"></i>
+                                                    </span>
+                                                    <span class="toggler__label">
+                                                        Email
+                                                    </span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <label class="inquiry__display choice choice--checkbox">
-                                        <input class="choice__widget" type="checkbox">
-                                        <i class="choice__icon" role="presentation"></i>
-                                        <span class="choice__label">Displaying on profile</span>
-                                    </label>
                                 </div>
 
                             </div>

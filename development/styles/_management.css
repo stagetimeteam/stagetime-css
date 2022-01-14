@@ -39,7 +39,8 @@
 
             .management__bar {
                 flex-grow: 1;
-                display: block;
+                display: flex;
+                align-items: center;
                 border: 1px solid #E8E8E8;
                 border-radius: 5px;
                 padding: 18px;
@@ -58,6 +59,15 @@
                 border-color: var(--panel-active);
                 transition: none;
             }
+                .management__entry{
+                    padding-right: 20px;
+                }
+
+                .management__edit {
+                    margin-left: auto;
+                }
+
+
 
     .management__add {
         margin-top: 24px;

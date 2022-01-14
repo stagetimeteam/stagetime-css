@@ -6,15 +6,53 @@
         margin-bottom: 0;
     }
 
-    .inquiry__list {
+    .inquiry__body {
+        display: flex;
+        align-items: flex-start;
         margin-top: 20px;
-        padding-left: 20px;
-        border-left: 2px solid #E8E8E8;
     }
-        .inquiry__channel {
-
+        .inquiry__preview {
+            padding-bottom: 3px;
+            padding-left: 20px;
+            border-left: 2px solid #E8E8E8;
+            width: 440px;
         }
+            .inquiry__description {
+                margin-top: -3px;
+                width: 202px;
+                font-size: 13px;
+                line-height: 24px;
+                color: #545454;
+            }
 
-    .inquiry__display {
-        margin-top: 14px;
-    }
+            .inquiry__operations {
+                margin-top: 17px;
+                display: flex;
+                align-items: flex-end;
+            }
+                .inquiry__action-sample {
+                    margin-left: 13px;
+                    width: 111px;
+                    height: 30px;
+                    padding: 6px;
+                    border: 1px solid #E8E8E8;
+                    border-radius: 15px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #545454;
+                    text-align: center;
+                }
+
+                .inquiry__action-sample:first-child {
+                    margin-left: 0;
+                }
+
+        .inquiry__list {
+            margin-top: -10px;
+            margin-left: 20px;
+        }
+            .inquiry__channel {
+
+            }
+
