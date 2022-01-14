@@ -1,4 +1,4 @@
-.toggler {
+.media-toggler {
     display: inline-flex;
     align-items: center;
     padding-top: 12px;
@@ -6,28 +6,28 @@
     cursor: pointer;
 }
 
-    .toggler__icon {
+    .media-toggler__icon {
         margin-left: 4px;
         margin-right: 4px;
         fill: #8B8B8B;
     }
 
-    .toggler__icon:first-child {
+    .media-toggler__icon:first-child {
         margin-left: 0;
     }
 
-    .toggler__icon:last-child {
+    .media-toggler__icon:last-child {
         margin-right: 0;
     }
 
-    .toggler__label {
+    .media-toggler__label {
         padding-bottom: 2px;
         font-size: 10px;
         line-height: 14px;
         color: #8B8B8B;
     }
 
-    .toggler__body {
+    .media-toggler__body {
         position: relative;
         margin-left: 6px;
         margin-right: 6px;
@@ -37,7 +37,7 @@
         border: 1px solid #E8E8E8;
         border-radius: 8px;
     }
-        .toggler__widget {
+        .media-toggler__widget {
             position: absolute;
             left: 0;
             top: 0;
@@ -45,7 +45,7 @@
             cursor: inherit;
         }
 
-        .toggler__knob {
+        .media-toggler__knob {
             position: absolute;
             left: 1px;
             top: 1px;
@@ -58,28 +58,28 @@
             transition: left 0.3s var(--ease-out-circ);
         }
 
-        .toggler__widget:checked ~ .toggler__knob {
+        .media-toggler__widget:checked ~ .media-toggler__knob {
             left: 13px;
         }
 
-        .toggler__widget:focus ~ .toggler__knob {
+        .media-toggler__widget:focus ~ .media-toggler__knob {
             outline: auto;
             outline-offset: 4px;
         }
 
-    .toggler__body:first-child {
+    .media-toggler__body:first-child {
         margin-left: 0;
     }
 
-    .toggler__body:last-child {
+    .media-toggler__body:last-child {
         margin-right: 0;
     }
 
 
 
-.toggler:hover {
+.media-toggler:hover {
 
 }
-    .toggler:hover .toggler__knob {
+    .media-toggler:hover .media-toggler__knob {
         background-color: #333333;
     }
