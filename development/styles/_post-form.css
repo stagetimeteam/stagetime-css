@@ -11,11 +11,19 @@
 
     .post-form__header {
         position: relative;
+        display: flex;
+        align-items: flex-start;
         height: 67px;
         padding: 20px 70px 20px 28px;
         border-bottom: 1px solid #E8E8E8;
     }
+        .post-form__back {
+            margin: -7px 10px -7px -13px;
+        }
+
         .post-form__heading {
+            margin-top: -1px;
+            margin-bottom: 1px;
             font-size: 22px;
             line-height: 26px;
             color: #757575;
