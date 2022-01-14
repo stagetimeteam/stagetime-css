@@ -4,11 +4,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
-
-.post-form--wide {
-    width: 748px;
-}
-
     .post-form__header {
         position: relative;
         display: flex;

@@ -32,6 +32,17 @@
     }
 
 
+.modal--748px {
+
+}
+    .modal--748px .modal-dialog {
+        width: 748px;
+    }
+        .modal--748px .modal-content {
+            background-color: transparent; /* bootstrap */
+        }
+
+
 .modal--688px {
 
 }
@@ -42,6 +53,18 @@
             background-color: transparent; /* bootstrap */
         }
 
+
+.modal--600px {
+
+}
+    .modal--600px .modal-dialog {
+        width: 600px;
+    }
+        .modal--600px .modal-content {
+            background-color: transparent; /* bootstrap */
+        }
+
+
 .modal--588px {
 
 }
@@ -51,6 +74,7 @@
         .modal--588px .modal-content {
             background-color: transparent; /* bootstrap */
         }
+
 
 .modal--500px {
 
