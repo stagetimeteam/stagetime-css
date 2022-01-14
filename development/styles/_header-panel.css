@@ -1,0 +1,23 @@
+.header-panel {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    height: 67px;
+    padding: 24px 70px 24px 28px;
+    border-bottom: 1px solid #E8E8E8;
+}
+    .header-panel__back {
+        margin: -7px 10px -7px -13px;
+    }
+
+    .header-panel__heading {
+        margin-top: -1px;
+        margin-bottom: 1px;
+        cursor: default; /* somehow it feels like you can click and start typing in header */
+    }
+
+    .header-panel__close {
+        position: absolute;
+        right: 20px;
+        top: 13px;
+    }

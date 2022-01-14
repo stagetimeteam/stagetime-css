@@ -1,0 +1,13 @@
+.footer-panel {
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 30px;
+    border-top: 1px solid #E8E8E8;
+}
+    .footer-panel__addition {
+
+    }
+
+    .footer-panel__operations {
+        margin-left: auto;
+    }
