@@ -6,9 +6,9 @@
         <title>.input</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1642154603">
-        <link rel="stylesheet" href="../styles/style.css?1642154603">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1642154603" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1642430193">
+        <link rel="stylesheet" href="../styles/style.css?1642430193">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1642430193" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -443,17 +443,60 @@
             </div>
 
 
-
-
             <br>
             <br>
             <br>
-            <h2>Organization and management search</h2>
+            <br>
+            <h2>With .dictionary and .word`s</h2>
             <p>
-                Use <a href="_management-suggest.html">.management-suggest</a> without modifier.
+                When user selected something add <a href="_dictionary.html">.dictionary</a>
             </p>
+
+            <div class="input input--scanner">
+                <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <a class="input__suggest" href="#">Bass</a>
+                        <a class="input__suggest" href="#">Bass-baritone</a>
+                        <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
+                        <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dictionary">
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <svg class="word__cross" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#close-square"></use>
+                        </svg>
+                    </button>
+                    Tenor
+                </div>
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <svg class="word__cross" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#close-square"></use>
+                        </svg>
+                    </button>
+                    Pianist
+                </div>
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <svg class="word__cross" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#close-square"></use>
+                        </svg>
+                    </button>
+                    Bass
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Organization / person search</h2>
             <p>
-                When user select organization or person replace whole input component with <b>.management-suggest--selected</b> modifier.
+                In dropdown please use <a href="_management-suggest.html">.management-suggest</a> without modifier.
             </p>
 
             <div class="input input--larger-font input--scanner">
@@ -575,7 +618,7 @@
                         </div>
                         <button class="null-join__action button button--dropdown-submit" type="button">
                             <svg class="button__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1642154603#16-plus-tiny"></use>
+                                <use xlink:href="../symbols/symbols.svg?1642430193#16-plus-tiny"></use>
                             </svg>
                             Add
                         </button>
@@ -586,63 +629,305 @@
                         </div>
                         <button class="null-join__action button button--dropdown-submit" type="button">
                             <svg class="button__icon" width="24" height="24">
-                                <use xlink:href="../symbols/symbols.svg?1642154603#24-envelope"></use>
+                                <use xlink:href="../symbols/symbols.svg?1642430193#24-envelope"></use>
                             </svg>
                             Invite
                         </button>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>With .dictionary and .word`s</h2>
             <p>
-                When user selected something add <a href="_dictionary.html">.dictionary</a>
+                If only one item needs to be selected (one person or one organization), just
+                replace whole input component with <b>.management-suggest--selected</b> modifier:
             </p>
 
-            <div class="input input--scanner">
-                <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
+            <div class="management-suggest management-suggest--selected">
+                <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                         src="../temp/organization-a-44x44.jpg"
+                         width="44"
+                         height="44"
+                         alt="Mark Zuckerberg"
+                    >
+                </div>
+                <div class="management-suggest__name">
+                    <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                </div>
+                <button class="management-suggest__delete action action--flipped" type="button">
+                    <span class="action__image">
+                        <svg class="action__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-cross"></use>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+
+            <p>
+                (this example can be seen in <b>Editing Inquiries & Management</b> modal)
+            </p>
+
+
+            <br>
+            <br>
+            <p>
+                If multiple items can be selected add <a href="_tagged.html">.tagged</a> right after input:
+            </p>
+
+            <div class="input input--larger-font input--scanner">
+                <input class="input__widget" type="text" placeholder="Tag people or organizations in this photo">
                 <div class="input__dropdown">
                     <div class="input__options">
-                        <a class="input__suggest" href="#">Bass</a>
-                        <a class="input__suggest" href="#">Bass-baritone</a>
-                        <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
-                        <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                     src="../temp/organization-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-b-44x44@2x.jpg 2x"
+                                     src="../temp/organization-b-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-c-44x44@2x.jpg 2x"
+                                     src="../temp/organization-c-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="The Dallas Opera"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="The Dallas Opera"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Cicely Parnas</strong>, Associate Manager
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Ben Bliss</strong>, Associate Manager
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
+                    <div class="input__alt-matches null-join">
+                        <div class="null-join__message">
+                            <strong>Don’t see who you’re looking for?</strong> Add this organization to Stagetime.
+                        </div>
+                        <button class="null-join__action button button--dropdown-submit" type="button">
+                            <svg class="button__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1642430193#16-plus-tiny"></use>
+                            </svg>
+                            Add
+                        </button>
+                    </div>
+                    <div class="input__alt-matches null-join">
+                        <div class="null-join__message">
+                            <strong>Don’t see who you’re looking for?</strong> Invite your manager to join Stagetime.
+                        </div>
+                        <button class="null-join__action button button--dropdown-submit" type="button">
+                            <svg class="button__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1642430193#24-envelope"></use>
+                            </svg>
+                            Invite
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="dictionary">
-                <div class="dictionary__item word">
-                    <button class="word__delete" type="button">
-                        <svg class="word__cross" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1642154603#close-square"></use>
+            <div class="tagged">
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-34x34@2x.jpg 2x"
+                         src="../temp/organization-a-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
                         </svg>
                     </button>
-                    Tenor
                 </div>
-                <div class="dictionary__item word">
-                    <button class="word__delete" type="button">
-                        <svg class="word__cross" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1642154603#close-square"></use>
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-b-34x34@2x.jpg 2x"
+                         src="../temp/organization-b-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
                         </svg>
                     </button>
-                    Pianist
                 </div>
-                <div class="dictionary__item word">
-                    <button class="word__delete" type="button">
-                        <svg class="word__cross" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1642154603#close-square"></use>
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-c-34x34@2x.jpg 2x"
+                         src="../temp/organization-c-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
                         </svg>
                     </button>
-                    Bass
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-d-34x34@2x.jpg 2x"
+                         src="../temp/organization-d-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/person-b-34x34@2x.jpg 2x"
+                         src="../temp/person-b-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/person-c-34x34@2x.jpg 2x"
+                         src="../temp/person-c-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/person-d-34x34@2x.jpg 2x"
+                         src="../temp/person-d-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <svg class="avatar__image dummy" width="34" height="34" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                    </svg>
+                    <button class="avatar__delete" type="button">
+                        <svg class="avatar__bin" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1642430193#16-bin"></use>
+                        </svg>
+                    </button>
                 </div>
             </div>
+
+            <p>
+                (this example can be seen in <b>Editing Press Photo</b> modal)
+            </p>
+
+
+
 
 
             <br>
@@ -709,7 +994,7 @@
 
             <div class="input">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1642154603#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642430193#16-globe-full"></use>
                 </svg>
                 <input class="input__widget" type="text" placeholder="Video Title">
             </div>
@@ -718,7 +1003,7 @@
 
             <div class="input input--select input--rounded input--placeholder-is-chosen">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1642154603#16-globe-full"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642430193#16-globe-full"></use>
                 </svg>
                 <select class="input__widget">
                     <option>Anyone</option>
@@ -741,7 +1026,7 @@
 
             <a class="input input--select input--rounded mfp-handler" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1642154603#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642430193#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -770,7 +1055,7 @@
 
             <a class="input input--adjustable input--bold input--select input--rounded" href="#">
                 <svg class="input__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1642154603#16-crowd"></use>
+                    <use xlink:href="../symbols/symbols.svg?1642430193#16-crowd"></use>
                 </svg>
                 <div class="input__widget">Ben Bliss</div>
             </a>
@@ -846,39 +1131,39 @@
         <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1642154603"></script>
-        <script src="../scripts/_operations.js?1642154603"></script>
-        <script src="../scripts/_profile.js?1642154603"></script>
-        <script src="../scripts/_mfp.js?1642154603"></script>
-        <script src="../scripts/_search.js?1642154603"></script>
-        <script src="../scripts/_carousel.js?1642154603"></script>
-        <script src="../scripts/_player.js?1642154603"></script>
-        <script src="../scripts/_player2.js?1642154603"></script>
-        <script src="../scripts/_player3.js?1642154603"></script>
-        <script src="../scripts/_updates.js?1642154603"></script>
-        <script src="../scripts/_side.js?1642154603"></script>
-        <script src="../scripts/_happening.js?1642154603"></script>
-        <script src="../scripts/_input.js?1642154603"></script>
-        <script src="../scripts/_edit-post.js?1642154603"></script>
-        <script src="../scripts/_post-form.js?1642154603"></script>
-        <script src="../scripts/_button.js?1642154603"></script>
-        <script src="../scripts/_quick-message.js?1642154603"></script>
-        <script src="../scripts/_explore.js?1642154603"></script>
-        <script src="../scripts/_shortcut.js?1642154603"></script>
-        <script src="../scripts/_scrollbar.js?1642154603"></script>
-        <script src="../scripts/_overlay.js?1642154603"></script>
-        <script src="../scripts/_notifications.js?1642154603"></script>
-        <script src="../scripts/_enter.js?1642154603"></script>
-        <script src="../scripts/_suggesting.js?1642154603"></script>
-        <script src="../scripts/_chat.js?1642154603"></script>
-        <script src="../scripts/_badge.js?1642154603"></script>
-        <script src="../scripts/_media-bar.js?1642154603"></script>
-        <script src="../scripts/_settings.js?1642154603"></script>
-        <script src="../scripts/_slideshow.js?1642154603"></script>
-        <script src="../scripts/_expandable-bio.js?1642154603"></script>
-        <script src="../scripts/_parallax.js?1642154603"></script>
-        <script src="../scripts/_simple-parallax.js?1642154603"></script>
-        <script src="../scripts/_anchor.js?1642154603"></script>
+        <script src="../scripts/_global.js?1642430193"></script>
+        <script src="../scripts/_operations.js?1642430193"></script>
+        <script src="../scripts/_profile.js?1642430193"></script>
+        <script src="../scripts/_mfp.js?1642430193"></script>
+        <script src="../scripts/_search.js?1642430193"></script>
+        <script src="../scripts/_carousel.js?1642430193"></script>
+        <script src="../scripts/_player.js?1642430193"></script>
+        <script src="../scripts/_player2.js?1642430193"></script>
+        <script src="../scripts/_player3.js?1642430193"></script>
+        <script src="../scripts/_updates.js?1642430193"></script>
+        <script src="../scripts/_side.js?1642430193"></script>
+        <script src="../scripts/_happening.js?1642430193"></script>
+        <script src="../scripts/_input.js?1642430193"></script>
+        <script src="../scripts/_edit-post.js?1642430193"></script>
+        <script src="../scripts/_post-form.js?1642430193"></script>
+        <script src="../scripts/_button.js?1642430193"></script>
+        <script src="../scripts/_quick-message.js?1642430193"></script>
+        <script src="../scripts/_explore.js?1642430193"></script>
+        <script src="../scripts/_shortcut.js?1642430193"></script>
+        <script src="../scripts/_scrollbar.js?1642430193"></script>
+        <script src="../scripts/_overlay.js?1642430193"></script>
+        <script src="../scripts/_notifications.js?1642430193"></script>
+        <script src="../scripts/_enter.js?1642430193"></script>
+        <script src="../scripts/_suggesting.js?1642430193"></script>
+        <script src="../scripts/_chat.js?1642430193"></script>
+        <script src="../scripts/_badge.js?1642430193"></script>
+        <script src="../scripts/_media-bar.js?1642430193"></script>
+        <script src="../scripts/_settings.js?1642430193"></script>
+        <script src="../scripts/_slideshow.js?1642430193"></script>
+        <script src="../scripts/_expandable-bio.js?1642430193"></script>
+        <script src="../scripts/_parallax.js?1642430193"></script>
+        <script src="../scripts/_simple-parallax.js?1642430193"></script>
+        <script src="../scripts/_anchor.js?1642430193"></script>
 
 
     </body>
