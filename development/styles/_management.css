@@ -1,6 +1,6 @@
 .management {
     position: relative;
-    padding: 22px 34px 34px;
+    padding: 22px var(--modal-padding) 34px;
 }
     .management__heading {
         margin-top: 0;
@@ -9,7 +9,7 @@
 
     .management__limit {
         position: absolute;
-        right: 34px;
+        right: var(--modal-padding);
         top: 25px;
         font-size: 12px;
         line-height: 20px;

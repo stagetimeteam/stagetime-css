@@ -26,7 +26,7 @@
         transition: background-color var(--transition-hover),
                     border-color var(--transition-hover),
                     box-shadow var(--transition-hover);
-        overflow: hidden;
+        /*overflow: hidden;  why? */
         text-overflow: ellipsis;
         white-space: nowrap;
 

@@ -443,17 +443,54 @@
             </div>
 
 
-
-
             <br>
             <br>
             <br>
-            <h2>Organization and management search</h2>
+            <br>
+            <h2>With .dictionary and .word`s</h2>
             <p>
-                Use <a href="_management-suggest.html">.management-suggest</a> without modifier.
+                When user selected something add <a href="_dictionary.html">.dictionary</a>
             </p>
+
+            <div class="input input--scanner">
+                <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
+                <div class="input__dropdown">
+                    <div class="input__options">
+                        <a class="input__suggest" href="#">Bass</a>
+                        <a class="input__suggest" href="#">Bass-baritone</a>
+                        <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
+                        <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                    </div>
+                </div>
+            </div>
+            <div class="dictionary">
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                    </button>
+                    Tenor
+                </div>
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                    </button>
+                    Pianist
+                </div>
+                <div class="dictionary__item word">
+                    <button class="word__delete" type="button">
+                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                    </button>
+                    Bass
+                </div>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Organization / person search</h2>
             <p>
-                When user select organization or person replace whole input component with <b>.management-suggest--selected</b> modifier.
+                In dropdown please use <a href="_management-suggest.html">.management-suggest</a> without modifier.
             </p>
 
             <div class="input input--larger-font input--scanner">
@@ -589,50 +626,276 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>With .dictionary and .word`s</h2>
             <p>
-                When user selected something add <a href="_dictionary.html">.dictionary</a>
+                If only one item needs to be selected (one person or one organization), just
+                replace whole input component with <b>.management-suggest--selected</b> modifier:
             </p>
 
-            <div class="input input--scanner">
-                <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
+            <div class="management-suggest management-suggest--selected">
+                <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                         src="../temp/organization-a-44x44.jpg"
+                         width="44"
+                         height="44"
+                         alt="Mark Zuckerberg"
+                    >
+                </div>
+                <div class="management-suggest__name">
+                    <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                </div>
+                <button class="management-suggest__delete action action--flipped" type="button">
+                    <span class="action__image">
+                        <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                    </span>
+                </button>
+            </div>
+
+            <p>
+                (this example can be seen in <b>Editing Inquiries & Management</b> modal)
+            </p>
+
+
+            <br>
+            <br>
+            <p>
+                If multiple items can be selected add <a href="_tagged.html">.tagged</a> right after input:
+            </p>
+
+            <div class="input input--larger-font input--scanner">
+                <input class="input__widget" type="text" placeholder="Tag people or organizations in this photo">
                 <div class="input__dropdown">
                     <div class="input__options">
-                        <a class="input__suggest" href="#">Bass</a>
-                        <a class="input__suggest" href="#">Bass-baritone</a>
-                        <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
-                        <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                     src="../temp/organization-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-b-44x44@2x.jpg 2x"
+                                     src="../temp/organization-b-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/organization-c-44x44@2x.jpg 2x"
+                                     src="../temp/organization-c-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="The Dallas Opera"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="The Dallas Opera"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Cicely Parnas</strong>, Associate Manager
+                            </div>
+                        </a>
+                        <a class="management-suggest" href="#">
+                            <div class="management-suggest__preview avatar avatar--non-clickable">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                     src="../temp/person-a-44x44.jpg"
+                                     width="44"
+                                     height="44"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </div>
+                            <div class="management-suggest__name">
+                                <strong>Ben Bliss</strong>, Associate Manager
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- temp -->
+                    <br>
+                    or:
+                    <br>
+                    <!--/temp -->
+
+                    <div class="input__no-matches even-simpler-null">
+                        Nothing is found
+                    </div>
+                    <div class="input__alt-matches null-join">
+                        <div class="null-join__message">
+                            <strong>Don’t see who you’re looking for?</strong> Add this organization to Stagetime.
+                        </div>
+                        <button class="null-join__action button button--dropdown-submit" type="button">
+                            <img class="button__icon" src="../symbols/16-plus-tiny.svg" width="16" height="16" alt="">
+                            Add
+                        </button>
+                    </div>
+                    <div class="input__alt-matches null-join">
+                        <div class="null-join__message">
+                            <strong>Don’t see who you’re looking for?</strong> Invite your manager to join Stagetime.
+                        </div>
+                        <button class="null-join__action button button--dropdown-submit" type="button">
+                            <img class="button__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">
+                            Invite
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="dictionary">
-                <div class="dictionary__item word">
-                    <button class="word__delete" type="button">
-                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+            <div class="tagged">
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-a-34x34@2x.jpg 2x"
+                         src="../temp/organization-a-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
                     </button>
-                    Tenor
                 </div>
-                <div class="dictionary__item word">
-                    <button class="word__delete" type="button">
-                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-b-34x34@2x.jpg 2x"
+                         src="../temp/organization-b-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
                     </button>
-                    Pianist
                 </div>
-                <div class="dictionary__item word">
-                    <button class="word__delete" type="button">
-                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-c-34x34@2x.jpg 2x"
+                         src="../temp/organization-c-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
                     </button>
-                    Bass
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                    <img class="avatar__image"
+                         srcset="../temp/organization-d-34x34@2x.jpg 2x"
+                         src="../temp/organization-d-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/person-b-34x34@2x.jpg 2x"
+                         src="../temp/person-b-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/person-c-34x34@2x.jpg 2x"
+                         src="../temp/person-c-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <img class="avatar__image"
+                         srcset="../temp/person-d-34x34@2x.jpg 2x"
+                         src="../temp/person-d-34x34.jpg"
+                         width="34"
+                         height="34"
+                         alt="Indiana University"
+                    >
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                    </button>
+                </div>
+                <div class="tagged__item avatar avatar--non-clickable">
+                    <svg class="avatar__image dummy" width="34" height="34" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                    </svg>
+                    <button class="avatar__delete" type="button">
+                        <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                    </button>
                 </div>
             </div>
+
+            <p>
+                (this example can be seen in <b>Editing Press Photo</b> modal)
+            </p>
+
+
+
 
 
             <br>

@@ -1,0 +1,97 @@
+.galleries {
+    padding-top: 26px;
+    padding-bottom: 54px;
+}
+    .galleries__note {
+        padding-left: var(--modal-padding);
+        padding-right: var(--modal-padding);
+        margin-bottom: 23px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .galleries__section {
+        padding-left: var(--modal-padding);
+        padding-right: var(--modal-padding);
+    }
+
+    .galleries__section + .galleries__section {
+        margin-top: 32px;
+        border-top: 1px solid #E8E8E8;
+        padding-top: 32px;
+    }
+        .galleries__sub-heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: -1px;
+        }
+
+        .galleries__sub-note {
+            margin-top: 18px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #757575;
+        }
+
+        .galleries__initial-add {
+            margin-top: 21px;
+        }
+
+        .galleries__initial-add.button--alt-secondary,
+        .galleries__initial-add .button--alt-secondary {
+            padding: 12px 24px;
+        }
+
+        .galleries__body {
+            margin-top: 21px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .galleries__list {
+                display: flex;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                margin-left: -31px;
+                margin-top: -31px;
+                width: 605px;
+            }
+                .galleries__item {
+                    margin-left: 31px;
+                    margin-top: 31px;
+                }
+                    .galleries__item.avatar,
+                    .galleries__item .avatar {
+                        box-shadow: var(--user-pane-shadow);
+                    }
+
+            .galleries__add {
+                margin-left: 49px;
+                margin-top: 24px;
+                flex-shrink: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 42px;
+                height: 42px;
+                background-color: #E8E8E8;
+                border: none;
+                border-radius: 4px;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+                color: #333333;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .galleries__add:hover {
+                background-color: var(--panel-hover);
+            }
+
+
+            .galleries__add:active {
+                background-color: var(--panel-active);
+            }

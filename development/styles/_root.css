@@ -24,6 +24,8 @@
     --profile-gap: 26px;
     --panel-hover: #F2F2F2;
     --panel-active: #EAEAEA;
+    --user-pane-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    --modal-padding: 34px;
 }
 
 

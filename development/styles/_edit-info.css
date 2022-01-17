@@ -1,5 +1,5 @@
 .edit-info {
-    padding: 24px 34px 34px;
+    padding: 24px var(--modal-padding) 34px;
 }
     .edit-info__item {
         margin-top: 20px;

@@ -1743,7 +1743,15 @@
                     <div class="user-media">
                         <h2 class="user-media__heading underlined-title">
                             <span class="underlined-title__inner">Media</span>
+                            <span class="underlined-title__addition">
+                                <a class="underlined-title__action button button--alt-secondary" data-toggle="modal" data-target="#publication">
+                                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                    Edit Gallery
+                                </a>
+                            </span>
                         </h2>
+
+
                         <div class="user-media__body">
                             <div class="user-media__section">
                                 <div class="user-media__sidebar">
@@ -2275,7 +2283,7 @@
 
                     <div class="modal-window">
                         <div class="header-panel">
-                            <div class="header-panel__heading">
+                            <div class="header-panel__heading title title--small">
                                 Edit info
                             </div>
                             <button class="header-panel__close action action--flipped" type="button">
@@ -2375,8 +2383,6 @@
             </div>
         </div>
 
-
-        <!-- 3/3 Modals: -->
         <div class="modal modal--748px modal--skeleton fade" id="edit-management" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -2722,6 +2728,473 @@
                                             <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
                                         </span>
                                     </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-panel">
+                            <div class="footer-panel__addition">
+                                <button class="button button--modal-secondary" type="button">
+                                    Delete
+                                </button>
+                            </div>
+                            <div class="footer-panel__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--748px modal--skeleton fade" id="publication" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="header-panel">
+                            <button class="header-panel__back action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                            <div class="header-panel__heading title title--small">
+                                Editing Press Photo
+                            </div>
+                            <button class="header-panel__close action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="galleries">
+                            <div class="galleries__section">
+                                <h3 class="galleries__sub-heading title title--small">
+                                    Press
+                                </h3>
+                                <div class="galleries__sub-note">
+                                    Add a press quote. Add up to five.
+                                </div>
+                                <a class="galleries__initial-add button button--alt-secondary" data-toggle="modal" data-target="#edit-info">
+                                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                    Edit Press Photos
+                                </a>
+                            </div>
+                            <div class="galleries__section">
+                                <h3 class="galleries__sub-heading title title--small">
+                                    Production
+                                </h3>
+                                <div class="galleries__sub-note">
+                                    Add a press quote. Add up to five.
+                                </div>
+                                <a class="galleries__initial-add button button--alt-secondary" data-toggle="modal" data-target="#edit-info">
+                                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                    Edit Production Photos
+                                </a>
+                            </div>
+                        </div>
+
+                        <p>
+                            When at least on photo added (use same .galleries component):
+                        </p>
+
+                        <div class="galleries">
+                            <div class="galleries__note">
+                                Drag to reorder or click on a photo to edit or delete.
+                            </div>
+                            <div class="galleries__section">
+                                <h3 class="galleries__sub-heading title title--small">
+                                    Press
+                                </h3>
+                                <div class="galleries__body">
+                                    <div class="galleries__list">
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-b-90x90@2x.jpg 2x"
+                                                 src="../temp/person-b-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-c-90x90@2x.jpg 2x"
+                                                 src="../temp/person-c-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-d-90x90@2x.jpg 2x"
+                                                 src="../temp/person-d-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-e-90x90@2x.jpg 2x"
+                                                 src="../temp/person-e-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-f-90x90@2x.jpg 2x"
+                                                 src="../temp/person-f-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                    </div>
+                                    <a class="galleries__add" href="#">
+                                        +
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="galleries__section">
+                                <h3 class="galleries__sub-heading title title--small">
+                                    Production
+                                </h3>
+                                <div class="galleries__body">
+                                    <div class="galleries__list">
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-a-90x90@2x.jpg 2x"
+                                                 src="../temp/person-a-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-b-90x90@2x.jpg 2x"
+                                                 src="../temp/person-b-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-c-90x90@2x.jpg 2x"
+                                                 src="../temp/person-c-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-d-90x90@2x.jpg 2x"
+                                                 src="../temp/person-d-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-e-90x90@2x.jpg 2x"
+                                                 src="../temp/person-e-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-f-90x90@2x.jpg 2x"
+                                                 src="../temp/person-f-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-d-90x90@2x.jpg 2x"
+                                                 src="../temp/person-d-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <a class="galleries__item avatar avatar--a-bit-squared" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-e-90x90@2x.jpg 2x"
+                                                 src="../temp/person-e-90x90.jpg"
+                                                 width="90"
+                                                 height="90"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                    </div>
+                                    <a class="galleries__add" href="#">
+                                        +
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        When adding/editing:
+
+                        <div class="publication">
+                            <div class="publication__note">
+                                To upload a new file, click on the photo.
+                            </div>
+                            <div class="publication__body">
+                                <a class="publication__preview avatar avatar--a-bit-squared" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-176x176@2x.jpg 2x"
+                                         src="../temp/person-a-176x176.jpg"
+                                         width="176"
+                                         height="176"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                                <div class="publication__description">
+                                    <div class="input input--area">
+                                        <textarea class="input__widget" placeholder="Write a description of this photo" rows="8"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="publication__tags">
+                                <div class="input input--larger-font input--scanner">
+                                    <input class="input__widget" type="text" placeholder="Tag people or organizations in this photo">
+                                    <div class="input__dropdown">
+                                        <div class="input__options">
+                                            <a class="management-suggest" href="#">
+                                                <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                                         src="../temp/organization-a-44x44.jpg"
+                                                         width="44"
+                                                         height="44"
+                                                         alt="Mark Zuckerberg"
+                                                    >
+                                                </div>
+                                                <div class="management-suggest__name">
+                                                    <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                </div>
+                                            </a>
+                                            <a class="management-suggest" href="#">
+                                                <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/organization-b-44x44@2x.jpg 2x"
+                                                         src="../temp/organization-b-44x44.jpg"
+                                                         width="44"
+                                                         height="44"
+                                                         alt="Mark Zuckerberg"
+                                                    >
+                                                </div>
+                                                <div class="management-suggest__name">
+                                                    <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                </div>
+                                            </a>
+                                            <a class="management-suggest" href="#">
+                                                <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/organization-c-44x44@2x.jpg 2x"
+                                                         src="../temp/organization-c-44x44.jpg"
+                                                         width="44"
+                                                         height="44"
+                                                         alt="Mark Zuckerberg"
+                                                    >
+                                                </div>
+                                                <div class="management-suggest__name">
+                                                    <strong>Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                                                </div>
+                                            </a>
+                                            <a class="management-suggest" href="#">
+                                                <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                         src="../temp/person-a-44x44.jpg"
+                                                         width="44"
+                                                         height="44"
+                                                         alt="The Dallas Opera"
+                                                    >
+                                                </div>
+                                                <div class="management-suggest__name">
+                                                    <strong>The Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                                                </div>
+                                            </a>
+                                            <a class="management-suggest" href="#">
+                                                <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                         src="../temp/person-a-44x44.jpg"
+                                                         width="44"
+                                                         height="44"
+                                                         alt="The Dallas Opera"
+                                                    >
+                                                </div>
+                                                <div class="management-suggest__name">
+                                                    <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                </div>
+                                            </a>
+                                            <a class="management-suggest" href="#">
+                                                <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                         src="../temp/person-a-44x44.jpg"
+                                                         width="44"
+                                                         height="44"
+                                                         alt="Mark Zuckerberg"
+                                                    >
+                                                </div>
+                                                <div class="management-suggest__name">
+                                                    <strong>Cicely Parnas</strong>, Associate Manager
+                                                </div>
+                                            </a>
+                                            <a class="management-suggest" href="#">
+                                                <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                         src="../temp/person-a-44x44.jpg"
+                                                         width="44"
+                                                         height="44"
+                                                         alt="Mark Zuckerberg"
+                                                    >
+                                                </div>
+                                                <div class="management-suggest__name">
+                                                    <strong>Ben Bliss</strong>, Associate Manager
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <!-- temp -->
+                                        <br>
+                                        or:
+                                        <br>
+                                        <!--/temp -->
+
+                                        <div class="input__no-matches even-simpler-null">
+                                            Nothing is found
+                                        </div>
+                                        <div class="input__alt-matches null-join">
+                                            <div class="null-join__message">
+                                                <strong>Don’t see who you’re looking for?</strong> Add this organization to Stagetime.
+                                            </div>
+                                            <button class="null-join__action button button--dropdown-submit" type="button">
+                                                <img class="button__icon" src="../symbols/16-plus-tiny.svg" width="16" height="16" alt="">
+                                                Add
+                                            </button>
+                                        </div>
+                                        <div class="input__alt-matches null-join">
+                                            <div class="null-join__message">
+                                                <strong>Don’t see who you’re looking for?</strong> Invite your manager to join Stagetime.
+                                            </div>
+                                            <button class="null-join__action button button--dropdown-submit" type="button">
+                                                <img class="button__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">
+                                                Invite
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tagged">
+                                    <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-34x34@2x.jpg 2x"
+                                             src="../temp/organization-a-34x34.jpg"
+                                             width="34"
+                                             height="34"
+                                             alt="Indiana University"
+                                        >
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-b-34x34@2x.jpg 2x"
+                                             src="../temp/organization-b-34x34.jpg"
+                                             width="34"
+                                             height="34"
+                                             alt="Indiana University"
+                                        >
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-c-34x34@2x.jpg 2x"
+                                             src="../temp/organization-c-34x34.jpg"
+                                             width="34"
+                                             height="34"
+                                             alt="Indiana University"
+                                        >
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="tagged__item avatar avatar--non-clickable avatar--less-squared">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-d-34x34@2x.jpg 2x"
+                                             src="../temp/organization-d-34x34.jpg"
+                                             width="34"
+                                             height="34"
+                                             alt="Indiana University"
+                                        >
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="tagged__item avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-34x34@2x.jpg 2x"
+                                             src="../temp/person-b-34x34.jpg"
+                                             width="34"
+                                             height="34"
+                                             alt="Indiana University"
+                                        >
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="tagged__item avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-c-34x34@2x.jpg 2x"
+                                             src="../temp/person-c-34x34.jpg"
+                                             width="34"
+                                             height="34"
+                                             alt="Indiana University"
+                                        >
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="tagged__item avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-34x34@2x.jpg 2x"
+                                             src="../temp/person-d-34x34.jpg"
+                                             width="34"
+                                             height="34"
+                                             alt="Indiana University"
+                                        >
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="tagged__item avatar avatar--non-clickable">
+                                        <svg class="avatar__image dummy" width="34" height="34" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <text x="28" y="36" font-size="22px" fill="#FFFFFF" text-anchor="middle">EV</text>
+                                        </svg>
+                                        <button class="avatar__delete" type="button">
+                                            <img class="avatar__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>

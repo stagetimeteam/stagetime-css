@@ -1,0 +1,36 @@
+.publication {
+    padding: 18px 34px 29px;
+}
+    .publication__note {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .publication__body {
+        margin-top: 22px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .publication__preview {
+            width: 176px;
+        }
+            .publication__preview.avatar,
+            .publication__preview .avatar {
+                box-shadow: var(--user-pane-shadow);
+            }
+
+
+        .publication__description {
+            margin-left: 38px;
+            width: 466px;
+        }
+            .publication__description .input__widget {
+                height: 176px; /* basic height (overriding amount of rows) */
+                min-height: 176px; /* don't let user resize to make it small */
+            }
+
+    .publication__tags {
+        margin-top: 26px;
+    }

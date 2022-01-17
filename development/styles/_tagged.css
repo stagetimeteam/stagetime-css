@@ -1,0 +1,11 @@
+.tagged {
+    padding-top: 6px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: -11px;
+}
+    .tagged__item {
+        margin-left: 11px;
+        margin-top: 11px;
+    }
