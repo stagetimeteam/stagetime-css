@@ -2,16 +2,6 @@
     padding-top: 26px;
     padding-bottom: 54px;
 }
-    .galleries__note {
-        padding-left: var(--modal-padding);
-        padding-right: var(--modal-padding);
-        margin-bottom: 23px;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 20px;
-        color: #757575;
-    }
-
     .galleries__section {
         padding-left: var(--modal-padding);
         padding-right: var(--modal-padding);
