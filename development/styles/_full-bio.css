@@ -1,6 +1,32 @@
 .full-bio {
-
+    padding: 23px var(--modal-padding);
 }
     .full-bio__heading {
-
+        margin-top: 0;
+        margin-bottom: 0;
     }
+
+    .full-bio__note {
+        margin-top: 12px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .full-bio__field {
+        margin-top: 22px;
+    }
+
+    .full-bio__footer {
+        margin-top: 21px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .full-bio__download {
+            margin-left: 40px;
+        }
+
+        .full-bio__download:first-child {
+            margin-left: 0;
+        }

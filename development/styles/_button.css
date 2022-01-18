@@ -115,6 +115,13 @@
     padding-bottom: 12px;
 }
 
+.button--alt-large {
+    padding: 12px 47px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+
 
 
 .button--faded {
@@ -245,15 +252,19 @@
 
 .button--another-darker {
     background-color: #E8E8E8;
-    font-weight: bold;
+    font-weight: 600;
     color: #333333;
     box-shadow: none;
 }
 
-.button--another-darker:hover,
-.button--another-darker:active {
+.button--another-darker:hover {
     background-color: #757575;
     color: #E8E8E8;
+}
+
+.button--another-darker:active {
+    background-color: #545454;
+    color: #FFFFFF;
 }
 
 
