@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.modal</title>
+        <title>.mobile-body</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -17,70 +17,20 @@
         <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.modal</h1>
+            <h1>.mobile-body</h1>
+
             <p>
-                This is <a href="https://getbootstrap.com/docs/3.4/">Bootstrap 3.4.1. modals</a> with additional
-                overriding styles in here: <a href="../styles/_modal.css">../styles/_modal.css</a>.
-                White background and shadows were removed in the context of <b>.modal--skeleton</b> so this update
-                won't hurt all original modals from legacy code.
-                Vertical alignment was added to all modals including modals in legacy code.
+                This is a single-div wrapper that set max-height and scrollbar inside of modal.
+                Normally we would avoid making additional scrollbar inside of modal because
+                it already has one somewhere in bootstrap but in some cases we want
+                <a href="_modal-head.html">.modal-head</a> and <a href="_modal-foot.html">.modal-foot</a>
+                always be visible on the page. For example big form where save button always need to be visible.
+            </p>
+            <p>
+                See example:
             </p>
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-                Launch modal skeleton (plain text inside)
-            </button>
 
-            <!-- Modal -->
-            <div class="modal modal--skeleton fade" id="myModal" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- temp -->
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut exercitationem expedita fuga fugiat officiis perferendis, ratione sint velit voluptas. Accusamus ad architecto deserunt dignissimos distinctio enim est eveniet ex illum, in ipsum iusto, magni minus necessitatibus odit officia praesentium qui, quia quo recusandae suscipit totam ullam voluptatibus. Aperiam architecto consequatur deserunt ea fugiat in itaque molestias optio porro, sapiente soluta tempore vitae voluptatibus? Optio, pariatur, repellendus? At enim iusto mollitia quibusdam. Adipisci, animi atque dolores natus perspiciatis repellendus? Animi architecto at cupiditate delectus dolorum enim, fugit mollitia nemo non numquam odit pariatur porro praesentium reiciendis repudiandae sapiente sequi sint.
-                        <!--/temp -->
-
-                    </div>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>Parts</h2>
-            <p>
-                There are few related components. First of all <a href="_modal-window.html">.modal-window</a>
-                -- simple wrapper with background and rounded corners
-            </p>
-
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-width-window">
-                Launch modal with <b>.modal-window</b> inside
-            </button>
-
-            <!-- Modal -->
-            <div class="modal modal--skeleton fade" id="modal-width-window" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-window">
-                            <!-- temp -->
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut exercitationem expedita fuga fugiat officiis perferendis, ratione sint velit voluptas. Accusamus ad architecto deserunt dignissimos distinctio enim est eveniet ex illum, in ipsum iusto, magni minus necessitatibus odit officia praesentium qui, quia quo recusandae suscipit totam ullam voluptatibus. Aperiam architecto consequatur deserunt ea fugiat in itaque molestias optio porro, sapiente soluta tempore vitae voluptatibus? Optio, pariatur, repellendus? At enim iusto mollitia quibusdam. Adipisci, animi atque dolores natus perspiciatis repellendus? Animi architecto at cupiditate delectus dolorum enim, fugit mollitia nemo non numquam odit pariatur porro praesentium reiciendis repudiandae sapiente sequi sint.
-                            <!--/temp -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <br>
-            <p>
-                And then three of
-                <a href="_modal-head.html">.modal-head</a>,
-                <a href="_modal-body.html">.modal-body</a>,
-                <a href="_modal-foot.html">.modal-foot</a>
-                normally used together (can be used separately though).
-            </p>
 
             <!-- Button trigger modal -->
             <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-width-parts">
@@ -135,136 +85,6 @@
                     </div>
                 </div>
             </div>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Widths</h2>
-            <p>
-                Default bootstrap width is <b>600px</b>. And it matches
-                with some of our modals like <a href="_post-form.html">.post-form</a>
-                for example. For other options need modifiers. And so far it is unclear
-                what sizes we will have.
-            </p>
-
-            <br>
-            <h3>.modal--688px</h3>
-            <p>
-                This size is being used with <a href="_org-card.html">.org-card</a> and <a href="_org-edit.html">.org-edit</a>
-            </p>
-
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-688-test">
-                Launch modal with <b>.modal--688px</b> modifier
-            </button>
-
-            <!-- Modal -->
-            <div class="modal modal--skeleton modal--688px fade" id="modal-688-test" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- temp -->
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut exercitationem expedita fuga fugiat officiis perferendis, ratione sint velit voluptas. Accusamus ad architecto deserunt dignissimos distinctio enim est eveniet ex illum, in ipsum iusto, magni minus necessitatibus odit officia praesentium qui, quia quo recusandae suscipit totam ullam voluptatibus. Aperiam architecto consequatur deserunt ea fugiat in itaque molestias optio porro, sapiente soluta tempore vitae voluptatibus? Optio, pariatur, repellendus? At enim iusto mollitia quibusdam. Adipisci, animi atque dolores natus perspiciatis repellendus? Animi architecto at cupiditate delectus dolorum enim, fugit mollitia nemo non numquam odit pariatur porro praesentium reiciendis repudiandae sapiente sequi sint.
-                        <!--/temp -->
-
-                    </div>
-                </div>
-            </div>
-
-            <br>
-            <br>
-            <h3>.modal--380px</h3>
-            <p>
-                This size is being used with <a href="_quick-message.html">.quick-message</a>
-            </p>
-
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-380-test">
-                Launch modal with <b>.modal--380px</b> modifier
-            </button>
-
-            <!-- Modal -->
-            <div class="modal modal--skeleton modal--380px fade" id="modal-380-test" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- temp -->
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut exercitationem expedita fuga fugiat officiis perferendis, ratione sint velit voluptas. Accusamus ad architecto deserunt dignissimos distinctio enim est eveniet ex illum, in ipsum iusto, magni minus necessitatibus odit officia praesentium qui, quia quo recusandae suscipit totam ullam voluptatibus. Aperiam architecto consequatur deserunt ea fugiat in itaque molestias optio porro, sapiente soluta tempore vitae voluptatibus? Optio, pariatur, repellendus? At enim iusto mollitia quibusdam. Adipisci, animi atque dolores natus perspiciatis repellendus? Animi architecto at cupiditate delectus dolorum enim, fugit mollitia nemo non numquam odit pariatur porro praesentium reiciendis repudiandae sapiente sequi sint.
-                        <!--/temp -->
-
-                    </div>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-            <h3>.modal--296px</h3>
-            <p>
-                This size is being used with <a href="_event-card.html">.event-card</a>
-            </p>
-
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modal-296-test">
-                Launch modal with <b>.modal--296px</b> modifier
-            </button>
-
-            <!-- Modal -->
-            <div class="modal modal--skeleton modal--296px fade" id="modal-296-test" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- temp -->
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut exercitationem expedita fuga fugiat officiis perferendis, ratione sint velit voluptas. Accusamus ad architecto deserunt dignissimos distinctio enim est eveniet ex illum, in ipsum iusto, magni minus necessitatibus odit officia praesentium qui, quia quo recusandae suscipit totam ullam voluptatibus. Aperiam architecto consequatur deserunt ea fugiat in itaque molestias optio porro, sapiente soluta tempore vitae voluptatibus? Optio, pariatur, repellendus? At enim iusto mollitia quibusdam. Adipisci, animi atque dolores natus perspiciatis repellendus? Animi architecto at cupiditate delectus dolorum enim, fugit mollitia nemo non numquam odit pariatur porro praesentium reiciendis repudiandae sapiente sequi sint.
-                        <!--/temp -->
-
-                    </div>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>CSS conflicts</h2>
-            <p>
-                Make sure to grab only <b>modal</b> related styles from bootstrap. Don't take built in things like
-                normalize or helper classes and especially those code pieces that styles <b>&lt;a&gt;</b> and so on.
-                This is, unfortunately, still happens if you use web ui generator and choose only modal checkbox.
-                So styles have to be edited manually:
-            </p>
-            <p>
-                <img src="../temp/bootstrap-modal-configure.png" alt="" style="max-width: 100%; height: auto;">
-            </p>
-            <p>
-                You can take this file <a href="../vendors/bootstrap/bootstrap-modal-only.css">../vendors/bootstrap/bootstrap-modal-only.css</a>
-            </p>
-
-
-
-
-            <br>
-            <br>
-            <h2>JS conflicts</h2>
-            <p>
-                When popup is open try to place <b>.modal-open</b> on <b>&lt;html&gt;</b> tag instead of <b>&lt;body&gt;</b>.
-                This will prevent page jumping to the top on modal open. There is conflict with <b>heigth: 100%</b> that was
-                set on <b>&lt;body&gt;</b> and necessary for layouting.
-            </p>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>To do (Anton):</h2>
-            <br>callback
-            <br>Modals instead of page on mobiles
-            <br>modal-open instead of modal-active
-
-
 
 
 

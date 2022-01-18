@@ -792,3 +792,14 @@
     color: #545454;
 }
 
+
+
+
+.button--modal-action {
+    /* backgrounds, colors and shadows are similar to default button */
+    padding: 12px 26px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}

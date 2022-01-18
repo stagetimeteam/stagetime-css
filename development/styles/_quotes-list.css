@@ -1,0 +1,18 @@
+.quotes-list {
+    padding: 26px var(--modal-padding) 24px;
+}
+    .quotes-list__note {
+        margin-bottom: -2px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .quotes-list__item {
+        margin-top: 24px;
+    }
+
+    .quotes-list__item:first-child {
+        margin-top: 0;
+    }

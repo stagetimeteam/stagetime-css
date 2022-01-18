@@ -1,13 +1,13 @@
-.footer-panel {
+.modal-foot {
     display: flex;
     align-items: flex-start;
     padding: 24px 30px;
     border-top: 1px solid #E8E8E8;
 }
-    .footer-panel__addition {
+    .modal-foot__addition {
 
     }
 
-    .footer-panel__operations {
+    .modal-foot__operations {
         margin-left: auto;
     }

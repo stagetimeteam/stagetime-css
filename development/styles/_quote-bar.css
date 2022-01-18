@@ -1,0 +1,18 @@
+.quote-bar {
+    padding: 21px 29px;
+    background-color: #F7F7F7;
+    border-radius: 7px;
+}
+    .quote-bar__body {
+        font-size: 17px;
+        line-height: 29px;
+        color: #545454;
+    }
+
+    .quote-bar__author {
+        margin-top: 13px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        color: #545454;
+    }
