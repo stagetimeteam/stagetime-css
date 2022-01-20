@@ -837,7 +837,7 @@
                                     </div>
                                 </div>
                                 <div class="artist__highlights career-highlights">
-                                    <div class="career-highlights__heading title title--smaller">
+                                    <div class="career-highlights__heading title title--smaller" data-toggle="modal" data-target="#edit-career">
                                         Career Highlights
                                     </div>
                                     <div class="career-highlights__list">
@@ -1469,7 +1469,7 @@
                                         </div>
                                     </div>
                                     <div class="vertical-artist__highlights career-highlights">
-                                        <div class="career-highlights__heading title title--smaller">
+                                        <div class="career-highlights__heading title title--smaller" data-toggle="modal" data-target="#edit-career">
                                             Career Highlights
                                         </div>
                                         <div class="career-highlights__list">
@@ -2294,80 +2294,164 @@
                         </div>
                         <div class="modal-body">
                             <div class="edit-info">
-                                <div class="edit-info__item input input--larger-font">
-                                    <input class="input__widget" type="text" placeholder="First name *">
-                                </div>
-                                <div class="edit-info__item input input--larger-font">
-                                    <input class="input__widget" type="text" placeholder="Last name *">
-                                </div>
-                                <div class="edit-info__item input input--larger-font input--scanner">
-                                    <input class="input__widget" type="text" placeholder="Location">
-                                    <div class="input__dropdown">
-                                        <div class="input__options">
-                                            <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
-                                            <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
-                                            <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
-                                            <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
-                                            <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
-                                            <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
-                                        </div>
-
-                                        <!-- temp -->
-                                        <br>
-                                        or:
-                                        <br>
-                                        <!--/temp -->
-
-                                        <div class="input__no-matches even-simpler-null">
-                                            Nothing is found
-                                        </div>
+                                <div class="edit-info__summary">
+                                    <div class="edit-info__item input input--larger-font">
+                                        <input class="input__widget" type="text" placeholder="First name *">
                                     </div>
-                                </div>
-                                <div class="edit-info__item input input--larger-font input--picker">
-                                    <input class="input__widget" type="text" placeholder="Pronouns">
-                                    <div class="input__dropdown">
-                                        <div class="input__options">
-                                            <button class="input__suggest input__suggest--placeholder" type="button">Pronouns</button>
-                                            <button class="input__suggest" type="button">She/Her</button>
-                                            <button class="input__suggest" type="button">He/Him</button>
-                                            <button class="input__suggest" type="button">They/Them</button>
-                                            <button class="input__suggest" type="button">Custom</button>
-                                        </div>
+                                    <div class="edit-info__item input input--larger-font">
+                                        <input class="input__widget" type="text" placeholder="Last name *">
                                     </div>
-                                </div>
-                                <div class="edit-info__item input input--larger-font">
-                                    <input class="input__widget" type="text" placeholder="Enter custom pronouns">
-                                </div>
-                                <div class="edit-info__item">
-                                    <div class="input input--larger-font input--scanner">
-                                        <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
+                                    <div class="edit-info__item input input--larger-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Location">
                                         <div class="input__dropdown">
                                             <div class="input__options">
-                                                <a class="input__suggest" href="#">Bass</a>
-                                                <a class="input__suggest" href="#">Bass-baritone</a>
-                                                <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
-                                                <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                                                <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                                                <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                                                <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                                                <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                                                <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                                                <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                                            </div>
+
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
+
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="dictionary">
-                                        <div class="dictionary__item word">
-                                            <button class="word__delete" type="button">
-                                                <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
-                                            </button>
-                                            Tenor
+                                    <div class="edit-info__item input input--larger-font input--picker">
+                                        <input class="input__widget" type="text" placeholder="Pronouns" readonly>
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <button class="input__suggest input__suggest--placeholder" type="button">Pronouns</button>
+                                                <button class="input__suggest" type="button">She/Her</button>
+                                                <button class="input__suggest" type="button">He/Him</button>
+                                                <button class="input__suggest" type="button">They/Them</button>
+                                                <button class="input__suggest" type="button">Custom</button>
+                                            </div>
                                         </div>
-                                        <div class="dictionary__item word">
-                                            <button class="word__delete" type="button">
-                                                <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
-                                            </button>
-                                            Pianist
+                                    </div>
+                                    <div class="edit-info__item input input--larger-font">
+                                        <input class="input__widget" type="text" placeholder="Enter custom pronouns">
+                                    </div>
+                                    <div class="edit-info__item">
+                                        <div class="input input--larger-font input--scanner">
+                                            <input class="input__widget" type="text" placeholder="Instrument or Discipline (add up to 3)">
+                                            <div class="input__dropdown">
+                                                <div class="input__options">
+                                                    <a class="input__suggest" href="#">Bass</a>
+                                                    <a class="input__suggest" href="#">Bass-baritone</a>
+                                                    <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
+                                                    <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="dictionary__item word">
-                                            <button class="word__delete" type="button">
-                                                <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
-                                            </button>
-                                            Bass
+                                        <div class="dictionary">
+                                            <div class="dictionary__item word">
+                                                <button class="word__delete" type="button">
+                                                    <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                                                </button>
+                                                Tenor
+                                            </div>
+                                            <div class="dictionary__item word">
+                                                <button class="word__delete" type="button">
+                                                    <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                                                </button>
+                                                Pianist
+                                            </div>
+                                            <div class="dictionary__item word">
+                                                <button class="word__delete" type="button">
+                                                    <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                                                </button>
+                                                Bass
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-info__section">
+                                    <h3 class="edit-info__sub-heading title title--small">
+                                        Short Biography
+                                    </h3>
+                                    <div class="edit-info__row">
+                                        <div class="edit-info__note">
+                                            Limit to 80 words and type @ to tag organizations referenced in your biography.
+                                        </div>
+                                        <div class="edit-info__field input input--area">
+                                            <textarea class="input__widget" placeholder="Write a description of this photo" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-info__section">
+                                    <h3 class="edit-info__sub-heading title title--small">
+                                        Industry & Specialty Tags
+                                    </h3>
+                                    <div class="edit-info__row">
+                                        <div class="edit-info__note">
+                                            What is your industry? Select up to two.
+                                        </div>
+                                        <div class="edit-info__field">
+                                            <div class="input input--larger-font input--picker">
+                                                <input class="input__widget" type="text" placeholder="Industry" readonly>
+                                                <div class="input__dropdown">
+                                                    <div class="input__options">
+                                                        <button class="input__suggest input__suggest--placeholder" type="button">Industry</button>
+                                                        <button class="input__suggest" type="button">Theater</button>
+                                                        <button class="input__suggest" type="button">Opera</button>
+                                                        <button class="input__suggest" type="button">Custom</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dictionary">
+                                                <div class="dictionary__item word">
+                                                    <button class="word__delete" type="button">
+                                                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                    Theater
+                                                </div>
+                                                <div class="dictionary__item word">
+                                                    <button class="word__delete" type="button">
+                                                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                    Opera
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edit-info__row">
+                                        <div class="edit-info__note">
+                                            What is your role, specialty, or area? Select up to two.
+                                        </div>
+                                        <div class="edit-info__field">
+                                            <div class="input input--larger-font input--scanner">
+                                                <input class="input__widget" type="text" placeholder="Role, specialty, or area">
+                                                <div class="input__dropdown">
+                                                    <div class="input__options">
+                                                        <a class="input__suggest" href="#">Bass</a>
+                                                        <a class="input__suggest" href="#">Bass-baritone</a>
+                                                        <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
+                                                        <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dictionary">
+                                                <div class="dictionary__item word">
+                                                    <button class="word__delete" type="button">
+                                                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                    Lead singer
+                                                </div>
+                                                <div class="dictionary__item word">
+                                                    <button class="word__delete" type="button">
+                                                        <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                    Concerts
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -2412,13 +2496,13 @@
                                 <div class="management__limit">
                                     You have reached the maximum number of agents. Click on management to edit or delete.
                                 </div>
-                                <div class="management__list">
-                                    <div class="management__item">
-                                        <b class="management__index">
+                                <div class="management__list relations">
+                                    <div class="relations__item">
+                                        <b class="relations__index">
                                             1
                                         </b>
-                                        <a class="management__bar" href="#">
-                                            <div class="management__entry manager-card">
+                                        <a class="relations__bar" href="#">
+                                            <div class="relations__entry manager-card">
                                                 <div class="manager-card__preview avatar avatar--less-squared avatar--non-clickable">
                                                     <img class="avatar__image"
                                                          srcset="../temp/organization-a-40x40@2x.jpg 2x"
@@ -2442,18 +2526,18 @@
                                                     <div class="manager-card__note ellipsis">Sam Snook</div>
                                                 </div>
                                             </div>
-                                            <div class="management__edit button button--inner">
+                                            <div class="relations__edit button button--inner">
                                                 <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
                                                 Edit
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="management__item">
-                                        <b class="management__index">
+                                    <div class="relations__item">
+                                        <b class="relations__index">
                                             2
                                         </b>
-                                        <a class="management__bar" href="#">
-                                            <div class="management__entry manager-card">
+                                        <a class="relations__bar" href="#">
+                                            <div class="relations__entry manager-card">
                                                 <div class="manager-card__preview avatar avatar--non-clickable">
                                                     <img class="avatar__image"
                                                          srcset="../temp/person-a-40x40@2x.jpg 2x"
@@ -2469,18 +2553,18 @@
                                                     <div class="manager-card__note ellipsis">Sam Snook</div>
                                                 </div>
                                             </div>
-                                            <div class="management__edit button button--inner">
+                                            <div class="relations__edit button button--inner">
                                                 <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
                                                 Edit
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="management__item">
-                                        <b class="management__index">
+                                    <div class="relations__item">
+                                        <b class="relations__index">
                                             3
                                         </b>
-                                        <a class="management__bar" href="#">
-                                            <div class="management__entry manager-card">
+                                        <a class="relations__bar" href="#">
+                                            <div class="relations__entry manager-card">
                                                 <div class="manager-card__content">
                                                     <div class="manager-card__about ellipsis">
                                                         <strong>IMG Artists</strong>, New York, NY
@@ -2488,7 +2572,7 @@
                                                     <div class="manager-card__note ellipsis">Sam Snook</div>
                                                 </div>
                                             </div>
-                                            <div class="management__edit button button--inner">
+                                            <div class="relations__edit button button--inner">
                                                 <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
                                                 Edit
                                             </div>
@@ -3225,6 +3309,229 @@
         </div>
 
         <div class="modal modal--748px modal--skeleton fade" id="edit-materials" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <button class="modal-head__back action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                            <div class="modal-head__heading title title--small">
+                                Edit Biography
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="materials">
+                                <div class="materials__section">
+                                    <h3 class="materials__sub-heading title title--small">
+                                        Full biography
+                                    </h3>
+                                    <div class="materials__sub-note">
+                                        Limit to 300 words and type ‘@’ to tag organizations or people referenced in your biography.
+                                    </div>
+                                    <a class="materials__initial-add button button--alt-secondary" href="#">
+                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                        Edit Biography
+                                    </a>
+                                </div>
+                                <div class="materials__section">
+                                    <h3 class="materials__sub-heading title title--small">
+                                        Press quotes
+                                    </h3>
+                                    <div class="materials__sub-note">
+                                        Add a press quote. Add up to five.
+                                    </div>
+                                    <a class="materials__initial-add button button--alt-secondary" href="#">
+                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                        Edit Press Quotes
+                                    </a>
+                                </div>
+                                <div class="materials__section">
+                                    <h3 class="materials__sub-heading title title--small">
+                                        Supplementary materials
+                                    </h3>
+                                    <div class="materials__sub-note">
+                                        Add your resume, artistic statement, or repertoire list.
+                                    </div>
+                                    <a class="materials__initial-add button button--alt-secondary" href="#">
+                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                        Edit Supplementary Materials
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                            <p><br><br>Editing Biography:</p>
+
+                            <div class="full-bio">
+                                <h3 class="full-bio__heading title title--small">
+                                    Full biography
+                                </h3>
+                                <div class="full-bio__note">
+                                    Type ‘@’ to tag organizations or people referenced in your biography.
+                                </div>
+                                <div class="full-bio__field input input--area">
+                                    <textarea class="input__widget" placeholder="Start writing or paste your biography" rows="12"></textarea>
+                                </div>
+                                <div class="full-bio__footer">
+                                    <a class="full-bio__download button button--alt-large button--another-darker" href="#">
+                                        <img class="button__icon button__icon--left" src="../symbols/24-download.svg" width="24" height="24" alt="">
+                                        Download as .pdf
+                                    </a>
+                                    <a class="full-bio__download button button--alt-large button--another-darker" href="#">
+                                        <img class="button__icon button__icon--left" src="../symbols/24-download.svg" width="24" height="24" alt="">
+                                        Download as .docx
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p><br><br>Edit Quotes:</p>
+
+                            <div class="quotes-list">
+                                <div class="quotes-list__note">
+                                    Drag to reorder or click on a card to edit or delete an entry.
+                                </div>
+                                <div class="quotes-list__item quote-bar">
+                                    <div class="quote-bar__body">
+                                        “Ben Bliss is perhaps the finest Mozart tenor that has graced the Lyric stage in the past years.”
+                                    </div>
+                                    <div class="quote-bar__author">
+                                        — Fra Noi
+                                    </div>
+                                </div>
+                                <div class="quotes-list__item quote-bar">
+                                    <div class="quote-bar__body">
+                                        “Ben Bliss is perhaps the finest Mozart tenor that has graced the Lyric stage in the past years.”
+                                    </div>
+                                    <div class="quote-bar__author">
+                                        — Fra Noi
+                                    </div>
+                                </div>
+                                <div class="quotes-list__item quote-bar">
+                                    <div class="quote-bar__body">
+                                        “Ben Bliss is perhaps the finest Mozart tenor that has graced the Lyric stage in the past years.”
+                                    </div>
+                                    <div class="quote-bar__author">
+                                        — Fra Noi
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p><br><br>Edit single quote:</p>
+
+                            <div class="edit-quote">
+                                <div class="edit-quote__body input">
+                                    <input class="input__widget" type="text" placeholder="Start writing or paste your quote.">
+                                </div>
+                                <div class="edit-quote__author input input--area">
+                                    <textarea class="input__widget" placeholder="Publication" rows="3"></textarea>
+                                </div>
+                            </div>
+
+
+                            <p><br><br>Edit Supplementary materials:</p>
+
+                            <div class="edit-files">
+                                <div class="edit-files__note">
+                                    Add your resume, artistic statement, or repertoire/credit list as a .pdf file.
+                                </div>
+                                <div class="edit-files__uploaded-list">
+                                    <a class="edit-files__item resume-bar" href="#">
+                                        <div class="resume-bar__action button button--gradient button--larger">Resume</div>
+                                        <div class="resume-bar__body">
+                                            <div class="resume-bar__filename ellipsis">foo.pdf</div>
+                                            <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
+                                        </div>
+                                        <button class="resume-bar__edit button button--inner" type="button">
+                                            <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                            Edit
+                                        </button>
+                                    </a>
+                                    <a class="edit-files__item resume-bar" href="#">
+                                        <div class="resume-bar__action button button--gradient button--larger">
+                                            Artistic Statement
+                                        </div>
+                                        <div class="resume-bar__body">
+                                            <div class="resume-bar__filename ellipsis">bar.pdf</div>
+                                            <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
+                                        </div>
+                                        <button class="resume-bar__edit button button--inner" type="button">
+                                            <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                            Edit
+                                        </button>
+                                    </a>
+                                    <a class="edit-files__item resume-bar" href="#">
+                                        <div class="resume-bar__action button button--gradient button--larger">Repertoire</div>
+                                        <div class="resume-bar__body">
+                                            <div class="resume-bar__filename ellipsis">baz.pdf</div>
+                                            <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
+                                        </div>
+                                        <button class="resume-bar__edit button button--inner" type="button">
+                                            <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                            Edit
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="edit-files__to-be-uploaded">
+                                    <a class="edit-files__handler button button--modal-action" href="#">
+                                        + Add Repertoire/Credits
+                                    </a>
+                                    <a class="edit-files__handler button button--modal-action" href="#">
+                                        + Add Artistic Statement
+                                    </a>
+                                    <a class="edit-files__handler button button--modal-action" href="#">
+                                        + Add Artistic Statement
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p><br><br>Edit single material: use <b>.upload-bar</b> and also make visible <b>Delete</b> button at the corner:</p>
+
+                            <div class="edit-files">
+                                <div class="edit-files__note">
+                                    Add your resume, artistic statement, or repertoire/credit list as a .pdf file.
+                                </div>
+                                <button class="edit-files__item upload-bar" type="button">
+                                    <img class="upload-bar__icon" src="../symbols/24-upload.svg" width="24" height="24" alt="">
+                                    Upload
+                                </button>
+                            </div>
+                        </div>
+
+
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-secondary" type="button">
+                                    Delete
+                                </button>
+
+                                when edit quotes:
+
+                                <button class="button button--modal-action" type="button">
+                                    + Add new quote
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--748px modal--skeleton fade" id="edit-career" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-window">
