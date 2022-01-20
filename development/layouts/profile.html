@@ -3353,56 +3353,69 @@
                             </div>
 
 
-                            <p><br><br>Edit resume:</p>
+                            <p><br><br>Edit Supplementary materials:</p>
 
-                            <div class="edit-file">
-                                <div class="edit-file__note">
+                            <div class="edit-files">
+                                <div class="edit-files__note">
                                     Add your resume, artistic statement, or repertoire/credit list as a .pdf file.
                                 </div>
-                                <a class="edit-file__action resume-bar" href="#">
-                                    <div class="resume-bar__action button button--gradient button--larger">Resume</div>
-                                    <div class="resume-bar__body">
-                                        <div class="resume-bar__filename ellipsis">foo.pdf</div>
-                                        <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
-                                    </div>
-                                    <button class="resume-bar__edit button button--inner" type="button">
-                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
-                                        Edit
-                                    </button>
-                                </a>
-                                <a class="edit-file__action resume-bar" href="#">
-                                    <div class="resume-bar__action button button--gradient button--larger">
-                                        Artistic Statement
-                                    </div>
-                                    <div class="resume-bar__body">
-                                        <div class="resume-bar__filename ellipsis">bar.pdf</div>
-                                        <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
-                                    </div>
-                                    <button class="resume-bar__edit button button--inner" type="button">
-                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
-                                        Edit
-                                    </button>
-                                </a>
-                                <a class="edit-file__action resume-bar" href="#">
-                                    <div class="resume-bar__action button button--gradient button--larger">Repertoire</div>
-                                    <div class="resume-bar__body">
-                                        <div class="resume-bar__filename ellipsis">baz.pdf</div>
-                                        <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
-                                    </div>
-                                    <button class="resume-bar__edit button button--inner" type="button">
-                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
-                                        Edit
-                                    </button>
-                                </a>
+                                <div class="edit-files__uploaded-list">
+                                    <a class="edit-files__item resume-bar" href="#">
+                                        <div class="resume-bar__action button button--gradient button--larger">Resume</div>
+                                        <div class="resume-bar__body">
+                                            <div class="resume-bar__filename ellipsis">foo.pdf</div>
+                                            <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
+                                        </div>
+                                        <button class="resume-bar__edit button button--inner" type="button">
+                                            <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                            Edit
+                                        </button>
+                                    </a>
+                                    <a class="edit-files__item resume-bar" href="#">
+                                        <div class="resume-bar__action button button--gradient button--larger">
+                                            Artistic Statement
+                                        </div>
+                                        <div class="resume-bar__body">
+                                            <div class="resume-bar__filename ellipsis">bar.pdf</div>
+                                            <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
+                                        </div>
+                                        <button class="resume-bar__edit button button--inner" type="button">
+                                            <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                            Edit
+                                        </button>
+                                    </a>
+                                    <a class="edit-files__item resume-bar" href="#">
+                                        <div class="resume-bar__action button button--gradient button--larger">Repertoire</div>
+                                        <div class="resume-bar__body">
+                                            <div class="resume-bar__filename ellipsis">baz.pdf</div>
+                                            <div class="resume-bar__uploaded">Uploaded on March 19, 2021 at 1:04pm</div>
+                                        </div>
+                                        <button class="resume-bar__edit button button--inner" type="button">
+                                            <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                            Edit
+                                        </button>
+                                    </a>
+                                </div>
+                                <div class="edit-files__to-be-uploaded">
+                                    <a class="edit-files__handler button button--modal-action" href="#">
+                                        + Add Repertoire/Credits
+                                    </a>
+                                    <a class="edit-files__handler button button--modal-action" href="#">
+                                        + Add Artistic Statement
+                                    </a>
+                                    <a class="edit-files__handler button button--modal-action" href="#">
+                                        + Add Artistic Statement
+                                    </a>
+                                </div>
                             </div>
 
-                            <p><br><br>When editing a single resume change <b>.resume-bar</b> to <b>.upload-bar</b>, and also make visible Delete button at the corner:</p>
+                            <p><br><br>Edit single material: use <b>.upload-bar</b> and also make visible <b>Delete</b> button at the corner:</p>
 
-                            <div class="edit-file">
-                                <div class="edit-file__note">
+                            <div class="edit-files">
+                                <div class="edit-files__note">
                                     Add your resume, artistic statement, or repertoire/credit list as a .pdf file.
                                 </div>
-                                <button class="edit-file__action upload-bar" type="button">
+                                <button class="edit-files__item upload-bar" type="button">
                                     <img class="upload-bar__icon" src="../symbols/24-upload.svg" width="24" height="24" alt="">
                                     Upload
                                 </button>

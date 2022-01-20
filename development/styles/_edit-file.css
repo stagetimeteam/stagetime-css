@@ -1,13 +1,33 @@
-.edit-file {
+.edit-files {
     padding: 26px var(--modal-padding) var(--modal-padding);
 }
-    .edit-file__note {
+    .edit-files__note {
         font-weight: 600;
         font-size: 13px;
         line-height: 20px;
         color: #757575;
     }
 
-    .edit-file__action {
+    .edit-files__uploaded-list {
         margin-top: 22px;
     }
+        .edit-files__item {
+            margin-top: 20px;
+        }
+
+        .edit-files__item:first-child {
+            margin-top: 0;
+        }
+
+    .edit-files__to-be-uploaded {
+        display: flex;
+        align-items: flex-start;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+        .edit-files__handler {
+            width: calc(33.3333% - 20px);
+            margin-top: 27px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
