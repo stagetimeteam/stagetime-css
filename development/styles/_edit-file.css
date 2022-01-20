@@ -1,0 +1,13 @@
+.edit-file {
+    padding: 26px var(--modal-padding) var(--modal-padding);
+}
+    .edit-file__note {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .edit-file__action {
+        margin-top: 22px;
+    }

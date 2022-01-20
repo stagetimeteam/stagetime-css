@@ -1,0 +1,26 @@
+.upload-bar {
+    width: 100%;
+    padding: 22px 40px;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #545454;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.upload-bar:hover {
+    background-color: #EAEAEA;
+}
+
+.upload-bar:active {
+    background-color: #E0E0E0;
+    transition: none;
+}
+
+    .upload-bar__icon {
+        vertical-align: top;
+        fill: currentColor;
+    }
