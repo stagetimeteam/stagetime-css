@@ -1,0 +1,14 @@
+.edit-career {
+    position: relative;
+    padding: 26px var(--modal-padding) 34px;
+}
+    .edit-career__note {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .edit-career__list {
+        margin-top: 24px;
+    }

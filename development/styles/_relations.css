@@ -1,0 +1,51 @@
+.relations {
+
+}
+    .relations__item {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    .relations__item:first-child {
+        margin-top: 0;
+    }
+        .relations__index {
+            margin-right: 17px;
+            flex-shrink: 0;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #757575;
+        }
+
+        .relations__bar {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            border: 1px solid #E8E8E8;
+            border-radius: 5px;
+            padding: 18px;
+            text-decoration: none;
+            transition: background-color var(--transition-hover),
+                        border-color var(--transition-hover);
+        }
+
+        .relations__bar:hover {
+            background-color: var(--panel-hover);
+            border-color: var(--panel-hover);
+        }
+
+        .relations__bar:active {
+            background-color: var(--panel-active);
+            border-color: var(--panel-active);
+            transition: none;
+        }
+            .relations__entry {
+                padding-right: 20px;
+            }
+
+            .relations__edit {
+                margin-left: auto;
+            }
+

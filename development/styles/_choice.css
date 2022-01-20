@@ -152,3 +152,19 @@
         line-height: 26px;
         color: #545454;
     }
+
+
+
+
+.choice--larger-font {
+
+}
+    .choice--larger-font .choice__icon {
+        margin-top: 1px;
+    }
+
+    .choice--larger-font .choice__label {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+    }

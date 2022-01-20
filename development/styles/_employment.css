@@ -1,0 +1,27 @@
+.employment {
+    padding: 32px var(--modal-padding) 34px;
+}
+    .employment__row {
+        margin-top: 20px;
+    }
+
+    .employment__row:first-child {
+        margin-top: 0;
+    }
+
+    .employment__row--has-checkboxes {
+        margin-top: 10px;
+        margin-bottom: -10px;
+    }
+
+    .employment__row--has-columns {
+        display: flex;
+        align-items: flex-start;
+        margin-left: -11px;
+        margin-right: -11px;
+    }
+        .employment__col {
+            width: calc(50% + 22px);
+            margin-left: 11px;
+            margin-right: 11px;
+        }
