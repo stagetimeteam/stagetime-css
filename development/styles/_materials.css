@@ -30,11 +30,6 @@
             margin-top: 21px;
         }
 
-        .materials__initial-add.button--alt-secondary,
-        .materials__initial-add .button--alt-secondary {
-            padding: 12px 24px;
-        }
-
         .materials__body {
             margin-top: 21px;
             display: flex;

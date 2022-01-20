@@ -30,11 +30,6 @@
             margin-top: 21px;
         }
 
-        .galleries__initial-add.button--alt-secondary,
-        .galleries__initial-add .button--alt-secondary {
-            padding: 12px 24px;
-        }
-
         .galleries__body {
             margin-top: 21px;
             display: flex;

@@ -34,6 +34,10 @@
         .heading-group__action:first-child {
             margin-left: 0;
         }
+            .heading-group__action.button,
+            .heading-group__action .button {
+                padding: 7px 18px;
+            }
 
         .heading-group__dropdown-actions {
             margin-top: -5px;
@@ -43,9 +47,4 @@
 
         .heading-group__large-action {
             margin-top: -10px;
-        }
-
-        .heading-group__large-action.button,
-        .heading-group__large-action .button {
-            padding: 12px 24px;
         }

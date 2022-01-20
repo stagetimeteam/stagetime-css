@@ -1,0 +1,10 @@
+.edit-quote {
+    padding: var(--modal-padding);
+}
+    .edit-quote__body {
+
+    }
+
+    .edit-quote__author {
+        margin-top: 18px;
+    }

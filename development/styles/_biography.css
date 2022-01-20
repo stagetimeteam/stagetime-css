@@ -54,7 +54,3 @@
                 .biography__action:first-child {
                     margin-left: 0;
                 }
-                    .biography__action.button,
-                    .biography__action .button {
-                        font-size: 12px;
-                    }
