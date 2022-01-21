@@ -37,6 +37,7 @@ if (typeof jQuery === 'undefined') {
   var Modal = function (element, options) {
     this.options = options
     this.$body = $(document.body)
+    this.$html = $(document.html)
     this.$element = $(element)
     this.$dialog = this.$element.find('.modal-dialog')
     this.$backdrop = null
@@ -82,7 +83,7 @@ if (typeof jQuery === 'undefined') {
 
     this.checkScrollbar()
     this.setScrollbar()
-    this.$body.addClass('modal-open')
+    this.$html.addClass('modal-open')
 
     this.escape()
     this.resize()
@@ -192,7 +193,7 @@ if (typeof jQuery === 'undefined') {
     var that = this
     this.$element.hide()
     this.backdrop(function () {
-      that.$body.removeClass('modal-open')
+      that.$html.removeClass('modal-open')
       that.resetAdjustments()
       that.resetScrollbar()
       that.$element.trigger('hidden.bs.modal')
