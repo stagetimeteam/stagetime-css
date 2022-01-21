@@ -55,6 +55,16 @@
         font-family: "Tahoma", sans-serif;
     }
 
+    .input__counter {
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        margin-bottom: 22px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
 
 .input--area {
 

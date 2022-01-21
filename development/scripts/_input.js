@@ -118,4 +118,12 @@
         $(this).parents('.input').find('.input__widget').val(value);
     });
 
+
+    /* Counter sample */
+    $('.input--area .input__widget').on('keyup', function () {
+        var counter = $(this).val().trim().length;
+        console.log(counter);
+        $(this).parents('.input').find('.input__counter').text(counter + '/80');
+    });
+
 })(jQuery);
