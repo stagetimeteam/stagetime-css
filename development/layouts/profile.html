@@ -1082,7 +1082,7 @@
                                         </div>
                                     </div>
                                     <div class="artist__social media media--less-airy media--light-blue">
-                                        <div class="media__heading title title--smaller">
+                                        <div class="media__heading title title--smaller" data-toggle="modal" data-target="#edit-social">
                                             Social
                                         </div>
                                         <a class="media__link" href="#">
@@ -1372,7 +1372,7 @@
                                         </div>
                                     </div>
                                     <div class="vertical-artist__social media media--less-airy media--light-blue">
-                                        <div class="media__heading title title--smaller">
+                                        <div class="media__heading title title--smaller" data-toggle="modal" data-target="#edit-social">
                                             Social
                                         </div>
                                         <a class="media__link" href="#">
@@ -3552,7 +3552,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="edit-career">
-                                <div class="edit-career__note title title--smaller">
+                                <div class="edit-career__note">
                                     Drag to reorder or click on a card to edit or delete an entry.
                                 </div>
                                 <div class="edit-career__list relations">
@@ -3779,6 +3779,113 @@
                                     Delete
                                 </button>
                             </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--748px modal--skeleton fade" id="edit-social" tabindex="-1" style="display: block">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <button class="modal-head__back action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                            <div class="modal-head__heading title title--small">
+                                Edit Social Media
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="edit-social">
+                                <div class="edit-social__note">
+                                    Drag to reorder or click on a card to edit or delete an entry.
+                                </div>
+                                <div class="edit-social__list">
+                                    <div class="edit-social__item">
+                                        <img class="edit-social__icon" src="../symbols/28-media-instagram.svg" width="28" height="28" alt="">
+                                        <div class="edit-social__field input input--larger-font">
+                                            <input class="input__widget" type="text" placeholder="Instagram">
+                                        </div>
+                                        <label class="edit-social__visibility choice choice--checkbox choice--hidden-label">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Show on my profile page</span>
+                                        </label>
+                                    </div>
+                                    <div class="edit-social__item">
+                                        <img class="edit-social__icon" src="../symbols/28-media-link.svg" width="28" height="28" alt="">
+                                        <div class="edit-social__field input input--larger-font">
+                                            <input class="input__widget" type="text" placeholder="Website">
+                                        </div>
+                                        <label class="edit-social__visibility choice choice--checkbox choice--hidden-label">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Show on my profile page</span>
+                                        </label>
+                                    </div>
+                                    <div class="edit-social__item">
+                                        <img class="edit-social__icon" src="../symbols/28-media-facebook.svg" width="28" height="28" alt="">
+                                        <div class="edit-social__field input input--larger-font">
+                                            <input class="input__widget" type="text" placeholder="Facebook">
+                                        </div>
+                                        <label class="edit-social__visibility choice choice--checkbox choice--hidden-label">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Show on my profile page</span>
+                                        </label>
+                                    </div>
+                                    <div class="edit-social__item">
+                                        <img class="edit-social__icon" src="../symbols/28-media-spotify.svg" width="28" height="28" alt="">
+                                        <div class="edit-social__field input input--larger-font">
+                                            <input class="input__widget" type="text" placeholder="Spotify">
+                                        </div>
+                                        <label class="edit-social__visibility choice choice--checkbox choice--hidden-label">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Show on my profile page</span>
+                                        </label>
+                                    </div>
+                                    <div class="edit-social__item">
+                                        <img class="edit-social__icon" src="../symbols/28-media-twitter.svg" width="28" height="28" alt="">
+                                        <div class="edit-social__field input input--larger-font">
+                                            <input class="input__widget" type="text" placeholder="Twitter">
+                                        </div>
+                                        <label class="edit-social__visibility choice choice--checkbox choice--hidden-label">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Show on my profile page</span>
+                                        </label>
+                                    </div>
+                                    <div class="edit-social__item">
+                                        <img class="edit-social__icon" src="../symbols/28-media-youtube.svg" width="28" height="28" alt="">
+                                        <div class="edit-social__field input input--larger-font">
+                                            <input class="input__widget" type="text" placeholder="YouTube">
+                                        </div>
+                                        <label class="edit-social__visibility choice choice--checkbox choice--hidden-label">
+                                            <input class="choice__widget" type="checkbox">
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">Show on my profile page</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-foot">
                             <div class="modal-foot__operations">
                                 <button class="button button--modal-submit" type="button">
                                     Save

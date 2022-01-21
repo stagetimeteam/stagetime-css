@@ -1,0 +1,43 @@
+.edit-social {
+    position: relative;
+    padding: 26px var(--modal-padding) 34px;
+}
+    .edit-social__note {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .edit-social__list {
+        margin: 17px -22px 0;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+        .edit-social__item {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            width: calc(50% - 44px);
+            margin: 11px 22px 0;
+        }
+            .edit-social__icon {
+                flex-shrink: 0;
+                margin-left: -2px;
+                margin-right: 14px;
+                margin-top: 4px;
+                width: 30px;
+                height: 30px;
+                fill: #9CB2BE;
+            }
+
+            .edit-social__field {
+                flex-grow: 1;
+            }
+
+            .edit-social__visibility {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
