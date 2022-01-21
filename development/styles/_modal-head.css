@@ -3,7 +3,7 @@
     display: flex;
     align-items: flex-start;
     height: 67px;
-    padding: 24px 70px 24px 28px;
+    padding: 24px 70px 24px var(--modal-padding);
     border-bottom: 1px solid #E8E8E8;
 }
     .modal-head__back {
