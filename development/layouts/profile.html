@@ -3926,7 +3926,7 @@
             </div>
         </div>
 
-        <div class="modal modal--748px modal--skeleton fade" id="edit-schedule" tabindex="-1" style="display: block;">
+        <div class="modal modal--748px modal--skeleton fade" id="edit-schedule" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-window">
@@ -3946,7 +3946,6 @@
                             </button>
                         </div>
                         <div class="modal-body">
-
                             <div class="edit-schedule">
                                 <div class="edit-schedule__description">
                                     Click on a schedule card to edit or delete. Engagements with a current or future date are displayed
@@ -4005,6 +4004,10 @@
                                 </div>
                             </div>
 
+                            <p>
+                                When editing single event:
+                            </p>
+
                             <div class="edit-event">
                                 <div class="edit-event__field input input--larger-font">
                                     <input class="input__widget" type="text" placeholder="Organization *">
@@ -4015,19 +4018,23 @@
                                 <div class="edit-event__field input input--larger-font">
                                     <input class="input__widget" type="text" placeholder="Role or Composer *">
                                 </div>
-                                <label class="edit-event__option choice choice--checkbox choice--larger-font">
-                                    <input class="choice__widget" type="checkbox">
-                                    <i class="choice__icon" role="presentation"></i>
-                                    <span class="choice__label">This event doesn’t have performance dates announced yet.</span>
-                                </label>
-                                <label class="edit-event__option choice choice--checkbox choice--larger-font">
-                                    <input class="choice__widget" type="checkbox">
-                                    <i class="choice__icon" role="presentation"></i>
-                                    <span class="choice__label">Display this as the event at which I am <strong>Currently Performing</strong> (only one event can be listed here).</span>
-                                </label>
                                 <div class="edit-event__schedule">
-                                    <div class="edit-event__body">
+                                    <label class="edit-event__option choice choice--checkbox choice--slim">
+                                        <input class="choice__widget" type="checkbox">
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label">This event doesn’t have performance dates announced yet.</span>
+                                    </label>
+                                    <label class="edit-event__option choice choice--checkbox choice--slim">
+                                        <input class="choice__widget" type="checkbox">
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label"><span>Display this as the event at which I am <strong>Currently Performing</strong> (only one event can be listed here).</span></span>
+                                    </label>
+                                    <div class="edit-event__by-day">
                                         <div class="edit-event__calendar">
+
+                                            <!-- temp -->
+                                            <div style="height: 206px; background: purple; color: white; display: flex; align-items: center; justify-content: center;">Calendar widget</div>
+                                            <!--/temp -->
 
                                         </div>
                                         <div class="edit-event__notes">
@@ -4035,33 +4042,92 @@
                                                 Schedule Dates
                                             </div>
                                             <div class="edit-event__description">
-                                                Schedule Dates
+                                                Display this as the event at which I am <strong>Currently Performing</strong> (only one event can be listed here).
                                             </div>
-                                            <button class="edit-event__addition" type="button">
+                                            <button class="edit-event__add-by-day button button--modal-submit" type="button">
                                                 Add by month and year
                                             </button>
                                         </div>
                                     </div>
+
+                                    <p>or:</p>
+
+                                    <div class="edit-event__by-year">
+                                        <div class="edit-event__row">
+                                            <div class="edit-event__tile input input--select input--larger-font">
+                                                <select class="input__widget">
+                                                    <option value="placeholder">Start day</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>...</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                            <div class="edit-event__tile input input--select input--larger-font">
+                                                <select class="input__widget">
+                                                    <option value="placeholder">Start month *</option>
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>...</option>
+                                                    <option>December</option>
+                                                </select>
+                                            </div>
+                                            <div class="edit-event__tile input input--select input--larger-font">
+                                                <select class="input__widget">
+                                                    <option value="placeholder">Start year *</option>
+                                                    <option>2022</option>
+                                                    <option>2021</option>
+                                                    <option>...</option>
+                                                    <option>2000</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="edit-event__row">
+                                            <div class="edit-event__tile input input--select input--larger-font">
+                                                <select class="input__widget">
+                                                    <option value="placeholder">End day</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>...</option>
+                                                    <option>3</option>
+                                                </select>
+                                            </div>
+                                            <div class="edit-event__tile input input--select input--larger-font">
+                                                <select class="input__widget">
+                                                    <option value="placeholder">End month *</option>
+                                                    <option>January</option>
+                                                    <option>February</option>
+                                                    <option>...</option>
+                                                    <option>December</option>
+                                                </select>
+                                            </div>
+                                            <div class="edit-event__tile input input--select input--larger-font">
+                                                <select class="input__widget">
+                                                    <option value="placeholder">End year *</option>
+                                                    <option>2022</option>
+                                                    <option>2021</option>
+                                                    <option>...</option>
+                                                    <option>2000</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <button class="edit-event__add-by-year button button--modal-submit" type="button">
+                                            Add by month and year
+                                        </button>
+                                    </div>
                                     <div class="edit-event__passing">
                                         Once the event passes, it will be moved to your Recent Highlights.
                                     </div>
-                                    <div class="edit-event__sharing input input--select">
-                                        <select class="input__widget">
-                                            <option>United States</option>
-                                            <option>Russia</option>
-                                            <option>Vietnam</option>
-                                            <option>Thailand</option>
-                                        </select>
-                                    </div>
                                 </div>
-
-
-
-
-
-
+                                <div class="edit-event__sharing input input--select input--larger-font">
+                                    <select class="input__widget">
+                                        <option>Anything else you’d like to share about this event?</option>
+                                        <option>Anything else you’d like to share about this event?</option>
+                                        <option>Anything else you’d like to share about this event?</option>
+                                        <option>Anything else you’d like to share about this event?</option>
+                                    </select>
+                                </div>
                             </div>
-
                         </div>
                         <div class="modal-foot">
 

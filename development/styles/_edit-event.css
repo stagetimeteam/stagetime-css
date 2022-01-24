@@ -2,13 +2,98 @@
     padding: 24px var(--modal-padding) 30px;
 }
     .edit-event__field {
-
+        margin-top: 20px;
     }
 
-    .edit-event__option {
-
+    .edit-event__field:first-child {
+        margin-top: 0;
     }
 
     .edit-event__schedule {
-        
+        margin-top: 16px;
+    }
+        .edit-event__option {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .edit-event__by-day {
+            margin-top: 26px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .edit-event__calendar {
+                margin-top: 3px;
+                width: 228px;
+                flex-shrink: 0;
+                margin-right: 50px;
+            }
+
+            .edit-event__notes {
+
+            }
+                .edit-event__sub-heading {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #545454;
+                }
+
+                .edit-event__description {
+                    margin-top: 20px;
+                    font-size: 13px;
+                    line-height: 22px;
+                    color: #545454;
+                }
+
+                .edit-event__add-by-day {
+                    margin-top: 25px;
+                }
+
+                .edit-event__add-by-day.button,
+                .edit-event__add-by-day .button {
+                    min-width: 266px;
+                }
+
+        .edit-event__by-year {
+            margin-top: 20px;
+        }
+            .edit-event__row {
+                margin-top: 20px;
+                display: flex;
+                align-items: flex-start;
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+            .edit-event__row:first-child {
+                margin-top: 0;
+            }
+                .edit-event__tile {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    flex-grow: 1;
+                }
+
+            .edit-event__add-by-year {
+                margin-top: 32px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+        .edit-event__passing {
+            margin-top: 23px;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #545454;
+        }
+
+    .edit-event__sharing {
+        margin-top: 23px;
     }

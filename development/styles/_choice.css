@@ -167,6 +167,19 @@
 
 
 
+.choice--slim {
+
+}
+    .choice--slim .choice__icon {
+        margin-top: 1px;
+    }
+
+    .choice--slim .choice__label {
+        font-size: 13px;
+        line-height: 20px;
+        color: #545454;
+    }
+
 .choice--larger-font {
 
 }
