@@ -671,7 +671,7 @@
 
 .button--alt-secondary {
     padding: 12px 24px;
-    background-color: transparent;
+    background-color: #FFFFFF;
     box-shadow: inset 0 0 0 1px #E3EDF3;
     font-weight: 600;
     font-size: 13px;
@@ -688,6 +688,30 @@
 .button--alt-secondary:active {
     background-color: #F5F5F5;
     box-shadow: inset 0 0 0 1px #E3EDF3;
+    color: #181F30;
+}
+
+
+
+.button--dark-secondary {
+    padding: 12px 24px;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 0 1px #D9D9D9;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333;
+}
+
+.button--dark-secondary:hover {
+    background-color: #FCFCFC;
+    box-shadow: inset 0 0 0 1px #D1D1D1;
+    color: #181F30;
+}
+
+.button--dark-secondary:active {
+    background-color: #FAFAFA;
+    box-shadow: inset 0 0 0 1px #C8C8C8;
     color: #181F30;
 }
 

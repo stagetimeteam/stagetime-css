@@ -1538,6 +1538,12 @@
                     <div class="schedule">
                         <h2 class="schedule__heading underlined-title">
                             <span class="underlined-title__inner">Schedule</span>
+                            <span class="underlined-title__addition">
+                                <a class="underlined-title__action button button--alt-secondary" data-toggle="modal" data-target="#edit-schedule">
+                                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                    Edit Schedule
+                                </a>
+                            </span>
                         </h2>
                         <div class="schedule__engagements">
                             <div class="schedule__timeline">
@@ -3908,6 +3914,114 @@
                             </div>
                         </div>
                         <div class="modal-foot">
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit button--disabled" type="button" disabled>
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--748px modal--skeleton fade" id="edit-schedule" tabindex="-1" style="display: block;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <button class="modal-head__back action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                            <div class="modal-head__heading title title--small">
+                                Editing Schedule
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="edit-schedule">
+                                <div class="edit-schedule__description">
+                                    Click on a schedule card to edit or delete. Engagements with a current or future date are displayed
+                                    in your Current Schedule. Engagements with a past date are automatically moved to your Recent Highlights.
+                                </div>
+                                <div class="edit-schedule__navigation">
+                                    <a class="edit-schedule__interval edit-schedule__interval--current" href="#">Current Schedule</a>
+                                    <a class="edit-schedule__interval" href="#">2020</a>
+                                    <a class="edit-schedule__interval" href="#">2019</a>
+                                </div>
+                                <div class="edit-schedule__current">
+                                    <div class="icon-bar">
+                                        <div class="icon-bar__preview">
+                                            <img class="icon-bar__image" src="../symbols/24-ticket-star.svg" width="24" height="24" alt="">
+                                        </div>
+                                        <div class="icon-bar__body">
+                                            <div class="icon-bar__heading">
+                                                Currently Performing
+                                            </div>
+                                        </div>
+                                        <div class="icon-bar__note">
+                                            I am currently rehearsing and performing this engagement.
+                                        </div>
+                                    </div>
+                                    <div class="performance">
+                                        <div class="performance__body">
+                                            <a class="performance__preview avatar avatar--less-squared" href="#">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-64x64@2x.jpg 2x"
+                                                     src="../temp/organization-a-64x64.jpg"
+                                                     width="64"
+                                                     height="64"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </a>
+                                            <div class="performance__sub-heading">
+                                                Così fan tutte
+                                            </div>
+                                            <div class="performance__note">
+                                                Ferrando
+                                            </div>
+                                            <div class="performance__note">
+                                                Lyric Opera of Chicago
+                                            </div>
+                                        </div>
+                                        <div class="performance__footer">
+                                            <div class="performance__dates">
+                                                <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                            </div>
+                                            <a class="performance__action button button--dark-secondary">
+                                                <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                                Edit
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="edit-event">
+
+                            </div>
+
+                        </div>
+                        <div class="modal-foot">
+
+                            <button class="button button--modal-action" type="button">
+                                + Add Schedule
+                            </button>
+
+                            When editing:
+
+                            <button class="button button--modal-secondary" type="button">
+                                Delete
+                            </button>
+
                             <div class="modal-foot__operations">
                                 <button class="button button--modal-submit button--disabled" type="button" disabled>
                                     Save

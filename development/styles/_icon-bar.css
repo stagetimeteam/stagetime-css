@@ -1,0 +1,38 @@
+.icon-bar {
+    display: flex;
+    align-items: center;
+    padding: 18px;
+}
+    .icon-bar__preview {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+        background-color: #EDF1F3;
+        border-radius: 4px;
+    }
+        .icon-bar__image {
+            vertical-align: top;
+            fill: #333333;
+        }
+
+
+    .icon-bar__body {
+
+    }
+        .icon-bar__heading {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: #333333;
+        }
+
+
+    .icon-bar__note {
+        margin-left: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #333333;
+    }

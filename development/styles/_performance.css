@@ -34,7 +34,7 @@
 
     .performance__footer {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         border-top: 1px solid #E8E8E8;
         padding: 12px 16px;
     }
@@ -78,3 +78,8 @@
                 margin-left: -4px;
                 fill: currentColor;
             }
+
+
+        .performance__action {
+            margin-left: auto;
+        }
