@@ -26,7 +26,6 @@
     .media__link:last-child {
         margin-right: -8px;
     }
-
         .media__icon {
             vertical-align: top;
             fill: #C4C4C4;
@@ -35,6 +34,14 @@
 
         .media__link:hover .media__icon {
             fill: #757575;
+        }
+
+    .media__footer {
+        margin-top: 30px;
+        width: 100%;
+    }
+        .media__edit {
+
         }
 
 
