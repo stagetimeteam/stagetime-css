@@ -20,7 +20,7 @@
 
 
     .icon-bar__body {
-
+        padding-right: 20px;
     }
         .icon-bar__heading {
             font-weight: 600;
@@ -29,10 +29,27 @@
             color: #333333;
         }
 
+        .icon-bar__description {
+            margin-top: 1px;
+            margin-bottom: -1px;
+            font-size: 12px;
+            line-height: 20px;
+            color: #545454;
+        }
+
 
     .icon-bar__note {
-        margin-left: 20px;
+        margin-left: auto;
         font-size: 12px;
         line-height: 20px;
         color: #333333;
     }
+
+    .icon-bar__action {
+        margin-left: auto;
+    }
+        .icon-bar__action.button,
+        .icon-bar__action .button {
+            padding-left: 35px;
+            padding-right: 35px;
+        }

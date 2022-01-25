@@ -66,8 +66,13 @@
 
                 .artist__gallery {
                     margin-top: 24px;
-                    height: 262px;
+                    border: 1px solid #E8E8E8;
+                    border-radius: 6px;
+                    /*height: 262px; this has become troublesome when Edit button appeared */
                 }
+                    .artist__gallery .icon-bar {
+                        border: 7px solid transparent;
+                    }
 
                 .artist__footer {
                     margin-top: 32px;
