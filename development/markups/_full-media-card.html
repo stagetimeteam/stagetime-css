@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.alt-media-card</title>
+        <title>.full-media-card</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -17,38 +17,75 @@
         <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.alt-media-card</h1>
+            <h1>.full-media-card</h1>
             <p>
-                See also <a href="_media-card.html">.media-card</a>, <a href="_full-media-card.html">.full-media-card</a>
+                See also <a href="_alt-media-card.html">.alt-media-card</a>, <a href="_media-card.html">.media-card</a>
             </p>
 
-            <div class="alt-media-card">
-                <a class="alt-media-card__link" href="#">
-                    <div class="alt-media-card__stage">
-                        <img class="alt-media-card__image"
+            <div class="full-media-card">
+                <a class="full-media-card__link" href="#">
+                    <div class="full-media-card__stage">
+                        <img class="full-media-card__image"
                              srcset="../temp/alt-media-card-a@2x.jpg 2x"
                              src="../temp/alt-media-card-a.jpg"
                              width="642"
                              height="226"
                              alt=""
                         >
-                        <div class="alt-media-card__overlay" role="presentation" aria-hidden="true"></div>
-                    </div>
-                    <div class="alt-media-card__content">
-                        <div class="alt-media-card__type">
-                            <img class="alt-media-card__icon" src="../symbols/24-heart-volume.svg" width="24" height="24" alt="">
-                            Video
+                        <div class="full-media-card__upload" role="presentation" aria-hidden="true">
+                            <div class="full-media-card__circle">
+                                <img class="full-media-card__arrow" src="../symbols/24-upload.svg" width="24" height="24" alt="">
+                            </div>
                         </div>
-                        <div class="alt-media-card__heading ellipsis">
+                    </div>
+                    <div class="full-media-card__content">
+                        <div class="full-media-card__heading ellipsis">
                             Cheri Cheri Lady
                         </div>
-                        <div class="alt-media-card__name">
+                        <div class="full-media-card__name">
                             Modern Talking
                         </div>
                     </div>
                 </a>
-                <a class="alt-media-card__skip button" href="#">
-                    Skip to Artist Highlight
+                <a class="full-media-card__crop button button--alt-secondary" href="#">
+                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                    Crop
+                </a>
+            </div>
+
+
+
+            <div class="full-media-card">
+                <a class="full-media-card__link" href="#">
+                    <div class="full-media-card__stage">
+                        <img class="full-media-card__image"
+                             srcset="../temp/alt-media-card-a@2x.jpg 2x"
+                             src="../temp/alt-media-card-a.jpg"
+                             width="642"
+                             height="226"
+                             alt=""
+                        >
+                        <div class="full-media-card__upload" role="presentation" aria-hidden="true">
+                            <div class="full-media-card__circle">
+                                <img class="full-media-card__arrow" src="../symbols/24-upload.svg" width="24" height="24" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="full-media-card__playback">
+                        Play/Pause
+                    </button>
+                    <div class="full-media-card__content">
+                        <div class="full-media-card__heading ellipsis">
+                            Cheri Cheri Lady
+                        </div>
+                        <div class="full-media-card__name">
+                            Modern Talking
+                        </div>
+                    </div>
+                </a>
+                <a class="full-media-card__crop button button--alt-secondary" href="#">
+                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                    Crop
                 </a>
             </div>
 
