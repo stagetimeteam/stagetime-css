@@ -1,0 +1,19 @@
+.connected-people {
+    display: flex;
+    align-items: center;
+}
+    .connected-people__counter {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 20px;
+        color: #545454;
+    }
+
+    .connected-people__icon {
+        margin-left: 14px;
+        fill: #545454;
+    }
+
+    .connected-people__list {
+        margin-left: 14px;
+    }

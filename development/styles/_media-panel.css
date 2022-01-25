@@ -1,0 +1,48 @@
+.media-panel {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+    .media-panel__preview {
+        margin-right: 22px;
+    }
+        .media-panel__image {
+            vertical-align: top;
+            background-color: var(--image-fallback);
+            border-radius: 3px;
+        }
+
+    .media-panel__body {
+        margin-right: auto;
+    }
+        .media-bar__type {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 18px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #545454;
+        }
+
+        .media-bar__name {
+            margin-top: 4px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #545454;
+        }
+
+        .media-bar__note {
+            margin-top: 4px;
+            padding-bottom: 2px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #545454;
+        }
+
+    .media-panel__people {
+        margin-left: 20px;
+    }
+
+    .media-panel__edit {
+        margin-left: 23px;
+    }
