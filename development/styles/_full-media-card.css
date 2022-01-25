@@ -2,6 +2,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
+    text-align: left;
 }
     .full-media-card__link {
         position: relative;

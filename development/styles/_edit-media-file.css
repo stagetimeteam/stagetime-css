@@ -1,0 +1,23 @@
+.edit-media-file {
+    padding: 22px var(--modal-padding) 42px;
+}
+    .edit-media-file__description {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #545454;
+    }
+
+    .edit-media-file__cover {
+        margin-top: 19px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .edit-media-file__field {
+        margin-top: 20px;
+    }
+
+    .edit-media-file__field:first-child {
+        margin-top: 0;
+    }

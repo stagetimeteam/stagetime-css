@@ -336,6 +336,17 @@
     visibility: visible;
 }
 
+/* This dropdown conflicts with scrollbar of .modal-body if inside */
+.modal-body .input__dropdown {
+    display: none;
+}
+
+.input--expanded .input__dropdown {
+    display: block;
+}
+
+
+
 .input--content-width-dropdown .input__dropdown {
     right: auto;
 }
