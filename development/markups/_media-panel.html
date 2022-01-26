@@ -92,6 +92,9 @@
             <br>
             <br>
             <h2>.media-panel--audio</h2>
+            <p>
+                Also add <b>.media-panel--playing</b> when song is playing:
+            </p>
 
             <div class="media-panel media-panel--audio">
                 <div class="media-panel__preview">
@@ -102,6 +105,18 @@
                          height="70"
                          alt=""
                     >
+                    <div class="media-panel__bars">
+                        <div class="alt-playback">
+                            <div class="alt-playback__bar"></div>
+                            <div class="alt-playback__bar"></div>
+                            <div class="alt-playback__bar"></div>
+                            <div class="alt-playback__bar"></div>
+                        </div>
+                    </div>
+                    <button class="media-panel__playback" type="button">
+                        <img class="media-panel__play" src="../symbols/32-play-circle.svg" width="32" height="32" alt="">
+                        <img class="media-panel__pause" src="../symbols/32-pause-circle.svg" width="32" height="32" alt="">
+                    </button>
                 </div>
                 <div class="media-panel__body">
                     <div class="media-bar__type">
@@ -219,6 +234,7 @@
         <script src="../scripts/_anchor.js"></script>
         <script src="../scripts/_modal.js"></script>
         <script src="../scripts/_full-media-card.js"></script>
+        <script src="../scripts/_media-panel.js"></script>
 
 
     </body>
