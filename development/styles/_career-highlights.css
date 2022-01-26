@@ -17,3 +17,7 @@
         .career-highlights__item:first-child {
             margin-top: 0;
         }
+
+    .career-highlights__edit {
+        margin-top: 29px;
+    }
