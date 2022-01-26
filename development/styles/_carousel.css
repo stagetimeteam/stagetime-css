@@ -171,24 +171,24 @@
 
 
 .carousel--for-profile-media {
-
+    padding-right: 144px;
 }
     .carousel--for-profile-media .carousel__container {
-        padding-right: 40px;
+
     }
         .carousel--for-profile-media .carousel__item {
             margin-right: 56px;
         }
 
         .carousel--for-profile-media .carousel__item:last-child {
-
+            margin-right: 0;
         }
 
 
     .carousel--for-profile-media .carousel__control {
         position: absolute;
         z-index: 100;
-        right: -12px;
+        right: 60px;
     }
 
     .carousel--for-profile-media .carousel__control--prev {
