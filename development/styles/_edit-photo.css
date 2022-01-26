@@ -1,0 +1,37 @@
+.edit-photo {
+    width: 84px;
+    height: 84px;
+    background-color: rgba(0, 0, 0, 0.53);
+    padding: 16px;
+    border: none;
+    border-top-left-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+    user-select: none;
+}
+
+.edit-photo:hover {
+    background-color: rgba(0, 0, 0, 0.66);
+}
+
+.edit-photo:active {
+    background-color: rgba(0, 0, 0, 0.75);
+    transition: none;
+}
+
+    .edit-photo__icon {
+        vertical-align: top;
+        fill: #FFFFFF;
+    }
+
+    .edit-photo__label {
+        display: block;
+        margin-top: 3px;
+        padding-bottom: 1px;
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
