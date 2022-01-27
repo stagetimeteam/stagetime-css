@@ -61,3 +61,27 @@
     border: 1px solid #E8E8E8;
     border-radius: 5px;
 }
+
+.icon-bar--vertical {
+    display: flex;
+    flex-direction: column;
+}
+    .icon-bar--vertical .icon-bar__body {
+        margin-top: -4px;
+        padding-right: 0;
+        width: 100%;
+    }
+        .icon-bar--vertical .icon-bar__heading {
+
+        }
+
+        .icon-bar--vertical .icon-bar__description {
+            margin-top: 6px;
+            margin-bottom: 0;
+        }
+
+    .icon-bar--vertical .icon-bar__action {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+    }

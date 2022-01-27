@@ -8,6 +8,10 @@
         margin-bottom: 13px;
     }
 
+    .media__null {
+        margin-top: 15px;
+    }
+
     .media__link {
         flex-shrink: 0;
         margin-left: 16px;
