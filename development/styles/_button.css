@@ -596,6 +596,17 @@
     line-height: 24px;
 }
 
+.button--alt-submit {
+    padding: 8px 20px;
+    box-shadow: none;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 24px;
+}
+    .button--alt-submit .button__icon--left {
+        margin-left: -10px;
+    }
+
 .button--dropdown-submit {
     padding: 12px 18px;
     box-shadow: none;

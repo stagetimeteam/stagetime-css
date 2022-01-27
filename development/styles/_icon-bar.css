@@ -57,6 +57,7 @@
 
 
 .icon-bar--framed {
+    width: 100%;
     padding: 24px;
     border: 1px solid #E8E8E8;
     border-radius: 5px;
@@ -67,7 +68,7 @@
     flex-direction: column;
 }
     .icon-bar--vertical .icon-bar__body {
-        margin-top: -4px;
+        margin-top: 0;
         padding-right: 0;
         width: 100%;
     }
@@ -76,8 +77,13 @@
         }
 
         .icon-bar--vertical .icon-bar__description {
-            margin-top: 6px;
+            margin-top: 0;
             margin-bottom: 0;
+            min-height: 40px;
+        }
+
+        .icon-bar--vertical .icon-bar__heading + .icon-bar__description {
+            margin-top: 6px;
         }
 
     .icon-bar--vertical .icon-bar__action {
