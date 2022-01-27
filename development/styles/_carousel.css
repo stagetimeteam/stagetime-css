@@ -407,8 +407,43 @@
             margin-right: 32px;
         }
 
-        .carousel--for-side-updates .carousel__item:last-child {
+        .carousel--for-profile-activity .carousel__item:last-child {
             margin-right: 0;
         }
+
+
+
+
+
+.carousel--for-profile-schedule {
+
+}
+    .carousel--for-profile-schedule .carousel__container {
+
+    }
+        .carousel--for-profile-schedule .carousel__item {
+            width: 336px;
+            margin-right: 20px;
+        }
+
+        .carousel--for-profile-schedule .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+
+    .carousel--for-profile-schedule::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        margin-bottom: 38px;
+        width: 100px;
+        height: 10px;
+        background-color: #FFFFFF;
+    }
+
+    .carousel--for-profile-schedule .carousel__control {
+        margin-bottom: 23px;
+    }
 
 
