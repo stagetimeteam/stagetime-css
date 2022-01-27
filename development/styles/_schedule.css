@@ -5,6 +5,10 @@
 
     }
 
+    .schedule__null {
+        margin-top: 24px;
+    }
+
     .schedule__engagements {
         margin-top: 31px;
         display: flex;

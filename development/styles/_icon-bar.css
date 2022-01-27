@@ -53,3 +53,11 @@
             padding-left: 35px;
             padding-right: 35px;
         }
+
+
+
+.icon-bar--framed {
+    padding: 24px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}

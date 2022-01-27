@@ -5,6 +5,10 @@
 
     }
 
+    .biography__null {
+        margin-top: 24px;
+    }
+
     .biography__body {
         margin-top: 49px;
         display: flex;

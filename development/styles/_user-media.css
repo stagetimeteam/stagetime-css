@@ -5,6 +5,10 @@
 
     }
 
+    .user-media__null {
+        margin-top: 24px;
+    }
+
     .user-media__body {
         margin-top: 45px;
     }

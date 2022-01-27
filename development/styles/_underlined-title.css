@@ -12,6 +12,11 @@
     background-repeat: no-repeat;
     background-position: top center;
 }
+
+.underlined-title--empty {
+    background-image: none;
+}
+
     .underlined-title__inner {
         display: inline-block;
         vertical-align: top;
