@@ -31,7 +31,7 @@
         }
 
         .artist__data {
-            margin-top: 15px;
+            margin-top: 21px;
             display: flex;
             align-items: flex-start;
         }
@@ -57,7 +57,6 @@
                 }
 
             .artist__content {
-                margin-top: 4px;
                 width: calc(100% - 280px - 60px);
             }
                 .artist__description {
@@ -92,6 +91,23 @@
                         flex-grow: 1;
                     }
 
+                .artist__edits {
+                    margin-top: 29px;
+                    display: flex;
+                }
+                    .artist__editing-handler {
+                        margin-left: 30px;
+                    }
+
+                    .artist__editing-handler:first-child {
+                        margin-left: 0;
+                    }
+
+                    .artist__editing-handler.button,
+                    .artist__editing-handler .button {
+                        padding-left: 40px;
+                        padding-right: 40px;
+                    }
 
 
 
