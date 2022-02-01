@@ -43,12 +43,14 @@
             }
 
             .vertical-artist__content {
-                margin-top: 4px;
+                margin-top: 6px;
                 display: flex;
                 align-items: flex-start;
             }
                 .vertical-artist__primary {
-                    width: 48.44%;
+                    flex-basis: 48.44%;
+                    flex-shrink: 0;
+                    margin-right: 8.08%;
                 }
                     .vertical-artist__description {
 
@@ -67,11 +69,15 @@
                     }
 
                 .vertical-artist__secondary {
-                    width: 43.48%;
-                    margin-left: auto;
+                    flex-grow: 1;
+                    flex-basis: 0;
                 }
                     .vertical-artist__connections {
 
+                    }
+
+                    .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {
+                        margin-top: 10px;
                     }
 
                     .vertical-artist__performing {
@@ -85,3 +91,23 @@
                         border-top: 1px solid #F2F2F2;
                         padding-top: 21px;
                     }
+
+            .vertical-artist__edits {
+                margin-top: 24px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+                .vertical-artist__editing-handler {
+                    margin-top: 24px;
+                }
+
+                .vertical-artist__editing-handler:first-child {
+                    margin-top: 0;
+                }
+
+                .vertical-artist__edits.button,
+                .vertical-artist__edits .button {
+                    padding-left: 40px;
+                    padding-right: 40px;
+                }
