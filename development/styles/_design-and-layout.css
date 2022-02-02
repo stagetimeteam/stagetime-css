@@ -1,0 +1,41 @@
+.design-and-layout {
+}
+    .design-and-layout__head {
+        position: relative;
+        padding-left: 63px;
+    }
+        .design-and-layout__preview {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding: 8px;
+            background-color: #EDF1F3;
+            border-radius: 4px;
+        }
+            .design-and-layout__icon {
+                vertical-align: top;
+                fill: #333333;
+            }
+
+        .design-and-layout__heading {
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 18px;
+            color: #545454;
+        }
+
+        .design-and-layout__description {
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 16px;
+            color: #545454;
+        }
+
+    .design-and-layout__save {
+        margin-top: 20px;
+    }
+
+    .design-and-layout__save.button,
+    .design-and-layout__save .button {
+        width: 100%;
+    }

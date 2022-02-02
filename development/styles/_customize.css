@@ -1,35 +1,52 @@
 .customize {
-    padding: 16px;
+    padding: 18px 16px 16px;
 }
     .customize__head {
-
+        display: flex;
+        align-items: flex-start;
     }
         .customize__greetings {
-
+            margin-top: 10px;
+            margin-left: 29px;
+            margin-right: auto;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 24px;
+            color: #545454;
         }
 
         .customize__updated {
-
+            margin-top: 13px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #757575;
         }
+            .customize__time {
+                font-weight: bold;
+                color: #545454;
+            }
 
         .customize__viewer {
-
+            margin-left: 27px;
         }
 
     .customize__progress {
-
+        margin-top: 18px;
     }
 
     .customize__options {
         margin-top: 18px;
         display: flex;
         align-items: flex-start;
+        justify-content: space-between;
         border: 1px solid #E8E8E8;
-        padding: 17px 16px 20px 31px;
+        padding: 17px 16px 20px;
         border-radius: 5px;
     }
         .customize__section {
-
+            margin-left: 10px;
+            margin-right: 10px;
         }
             .customize__head {
 
@@ -52,3 +69,4 @@
             .customize__save {
 
             }
+

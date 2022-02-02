@@ -838,3 +838,23 @@
     font-size: 14px;
     line-height: 16px;
 }
+
+
+.button--design-submit {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 5px;
+    background-color: #9CB2BE;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    box-shadow: none;
+}
+
+.button--design-submit:hover {
+    background-color: #AEC5D2;
+}
+
+.button--design-submit:active {
+    background-color: #8FA3AE;
+}
