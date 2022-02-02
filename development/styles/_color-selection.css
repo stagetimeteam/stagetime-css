@@ -83,12 +83,12 @@
                 }
 
                 .color-selection__item:hover {
-                    border: 5px solid rgba(255, 255, 255, 0.5);
+                    border: 5px solid rgba(255, 255, 255, 0.85);
                 }
 
                 .color-selection__item--current,
                 .color-selection__item--current:hover {
-                    border: 5px solid rgba(255, 255, 255, 0.5);
+                    border: 5px solid rgba(255, 255, 255, 0.7);
                 }
                     .color-selection__gradient {
                         position: absolute;
