@@ -55,7 +55,7 @@
                 slide($slideshow, current + 1);
             }
         });
-    }, 10000);
+    }, 5000);
 
 
 
