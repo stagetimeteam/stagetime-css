@@ -1,0 +1,69 @@
+.full-connections {
+
+}
+    .full-connections__item {
+        position: relative;
+        border-top: 1px solid #E8E8E8;
+        padding: 27px 169px 24px 118px;
+    }
+
+    .full-connections__item:first-child {
+        border-top: none;
+    }
+        .full-connections__preview {
+            position: absolute;
+            left: 33px;
+            top: 29px
+        }
+
+        .full-connections__heading {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 22px;
+            color: #333333;
+        }
+
+        .full-connections__instrument {
+            margin-top: 2px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #333333;
+        }
+            .full-connections__instrument strong {
+                font-weight: bold;
+            }
+
+        .full-connections__location {
+            margin-top: 2px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #757575;
+        }
+
+        .full-connections__circles {
+            margin-top: 11px;
+            font-size: 11px;
+            line-height: 18px;
+            color: #757575;
+        }
+            .full-connections__crowd-icon {
+                margin-left: -2px;
+                margin-top: -2px;
+                margin-right: 4px;
+                width: 20px;
+                height: 20px;
+                vertical-align: top;
+                fill: #757575;
+            }
+
+
+    .full-connections__actions {
+        position: absolute;
+        right: 30px;
+        top: 27px;
+    }
+
+    .full-connections__actions.button,
+    .full-connections__actions .button {
+        padding: 7px 18px;
+    }

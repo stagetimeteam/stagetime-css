@@ -4,6 +4,8 @@
     .all-connections__head {
         display: flex;
         align-items: flex-start;
+        text-decoration: none;
+        color: inherit;
     }
         .all-connections__icon {
             margin-left: -2px;
@@ -22,6 +24,7 @@
         margin-top: 13px;
         display: flex;
         align-items: flex-start;
+        text-decoration: none;
     }
         .all-connections__people {
             margin-top: 1px;
