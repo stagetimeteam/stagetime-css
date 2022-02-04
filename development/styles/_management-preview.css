@@ -13,6 +13,23 @@
 
     }
 
+    .management-preview__operations {
+        margin-top: 17px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .management-preview__action {
+            margin-left: 13px;
+        }
+
+        .management-preview__action:first-child {
+            margin-left: 0;
+        }
+        .management-preview__action.button,
+        .management-preview__action .button {
+            width: 111px;
+            padding: 7px;
+        }
     .management-preview__edit {
         margin-top: 32px;
     }
