@@ -32,6 +32,18 @@
     }
 
 
+.modal--430px {
+
+}
+    .modal--430px .modal-dialog {
+        width: 430px;
+    }
+        .modal--430px .modal-content {
+            background-color: transparent; /* bootstrap */
+        }
+
+
+
 .modal--748px {
 
 }

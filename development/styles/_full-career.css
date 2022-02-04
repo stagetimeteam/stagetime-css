@@ -1,0 +1,22 @@
+.full-career {
+    position: relative;
+    padding: 21px 30px 30px;
+}
+    .full-career__heading {
+
+    }
+
+    .full-career__close {
+        position: absolute;
+        right: 19px;
+        top: 14px;
+    }
+
+    .full-career__list {
+        margin-top: 22px;
+        margin-left: -14px;
+        margin-right: -14px;
+    }
+        .full-career__list {
+
+        }
