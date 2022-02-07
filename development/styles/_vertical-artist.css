@@ -68,6 +68,12 @@
                         padding-top: 25px;
                     }
 
+                    .vertical-artist__register {
+                        margin-top: 30px;
+                        border-top: 1px solid #F2F2F2;
+                        padding-top: 30px;
+                    }
+
                 .vertical-artist__secondary {
                     flex-grow: 1;
                     flex-basis: 0;

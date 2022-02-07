@@ -91,6 +91,10 @@
                         flex-grow: 1;
                     }
 
+                .artist__register {
+                    margin-top: 37px;
+                }
+
                 .artist__edits {
                     margin-top: 29px;
                     display: flex;

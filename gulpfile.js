@@ -263,7 +263,8 @@ gulp.task('styles', function() {
     sprites(spritesOptions),
     cssnext({
         features: {
-            filter: false
+            filter: false,
+            customProperties: false
         },
         'browsers': 'last 2 versions' // for autoprefixer and features list
     })

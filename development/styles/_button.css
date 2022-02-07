@@ -659,22 +659,31 @@
 
 .button--info {
     padding: 7px 18px;
-    background-color: #9CB2BE;
+    background-color: var(--user-color);
     box-shadow: none;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
     color: #181F30;
+    transition: filter var(--transition-hover);
 }
 
 .button--info:hover {
-    background-color: #B4CDDB;
+    background-color: var(--user-color);
     color: #181F30;
+    filter: brightness(1.1);
+    /* default color (legacy): */
+    /*background-color: #B4CDDB;*/
+    /*color: #181F30;*/
 }
 
 .button--info:active {
-    background-color: #8497A2;
-    color: #FFFFFF;
+    background-color: var(--user-color);
+    color: #181F30;
+    filter: brightness(0.9);
+    /* default color (legacy): */
+    /*background-color: #8497A2;*/
+    /*color: #FFFFFF;/*/
 }
 
 
@@ -844,17 +853,26 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 5px;
-    background-color: #9CB2BE;
+    background-color: var(--user-color);
     font-weight: 600;
     font-size: 14px;
     color: #333333;
     box-shadow: none;
+    transition: filter var(--transition-hover);
 }
 
 .button--design-submit:hover {
-    background-color: #AEC5D2;
+    background-color: var(--user-color);
+    color: #333333;
+    filter: brightness(1.1);
+    /* default (legacy): */
+    /*background-color: #AEC5D2;*/
 }
 
 .button--design-submit:active {
-    background-color: #8FA3AE;
+    background-color: var(--user-color);
+    color: #333333;
+    filter: brightness(0.9);
+    /* default (legacy): */
+    /*background-color: #8FA3AE;*/
 }
