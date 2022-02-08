@@ -1,5 +1,6 @@
 .customize {
-    padding: 18px 16px 16px;
+    padding-top: 18px;
+    padding-bottom: 16px;
 }
     .customize__head {
         display: flex;
