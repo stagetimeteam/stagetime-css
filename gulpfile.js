@@ -181,6 +181,16 @@ gulp.task('images', function() {
 });
 
 
+// Themes: copy
+
+gulp.task('themes', function() {
+  return gulp.src('development/themes/**/*')
+      .pipe(plumber())
+      .pipe(gulp.dest('production/themes/'))
+  ;
+});
+
+
 // Markups: copy and change symbols <img> to sprite <svg>
 
 gulp.task('markups', function() {
@@ -320,7 +330,7 @@ gulp.task('library', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'temp', 'content', 'images', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', 'library', fn);
+  run('clean', 'temp', 'content', 'images', 'themes', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', 'library', fn);
 });
 
 
