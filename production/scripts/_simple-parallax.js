@@ -11,7 +11,7 @@
     function init() {
         data = [];
         headerHeight = $header.length ? $header.outerHeight() : 0;
-        shift = 150; /* 150px -- must be same to height value in .simple-parallax__image */
+        shift = 300;
 
         $('.simple-parallax').each(function (i) {
             data.push({
