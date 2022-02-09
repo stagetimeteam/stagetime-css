@@ -1,0 +1,42 @@
+{
+  "blue-theme": {
+    "user-base-background": "blue",
+    "user-base-text": "black",
+    "user-hover-background": "lightblue",
+    "user-hover-text": "black",
+    "user-press-background": "darkblue",
+    "user-press-text": "white",
+    "user-gradient-beginning": "cyan",
+    "user-gradient-end": "magenta"
+  },
+  "brown-theme": {
+    "user-base-background": "#B87333",
+    "user-base-text": "black",
+    "user-hover-background": "#AA6C39",
+    "user-hover-text": "black",
+    "user-press-background": "#806517",
+    "user-press-text": "white",
+    "user-gradient-beginning": "#966F33",
+    "user-gradient-end": "#827B60"
+  },
+  "red-theme": {
+    "user-base-background": "red",
+    "user-base-text": "black",
+    "user-hover-background": "pink",
+    "user-hover-text": "black",
+    "user-press-background": "purple",
+    "user-press-text": "white",
+    "user-gradient-beginning": "brown",
+    "user-gradient-end": "maroon"
+  },
+  "black-theme": {
+    "user-base-background": "#413839",
+    "user-base-text": "white",
+    "user-hover-background": "#3B3131",
+    "user-hover-text": "white",
+    "user-press-background": "#000000",
+    "user-press-text": "white",
+    "user-gradient-beginning": "#5C5858",
+    "user-gradient-end": "#0C090A"
+  }
+}
