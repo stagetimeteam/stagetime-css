@@ -83,13 +83,18 @@
                     margin-left: 0;
                 }
 
-                .color-selection__item:hover {
+                .color-selection__item:not(.color-selection__item--disabled):hover {
                     border: 5px solid rgba(255, 255, 255, 0.85);
+                }
+
+                .color-selection__item--disabled {
+                    cursor: default;
                 }
 
                 .color-selection__item--current,
                 .color-selection__item--current:hover {
                     border: 5px solid rgba(255, 255, 255, 0.7);
+                    cursor: default;
                 }
                     .color-selection__gradient {
                         position: absolute;

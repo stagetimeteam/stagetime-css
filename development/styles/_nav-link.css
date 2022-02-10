@@ -20,7 +20,7 @@
 
     .nav-link__counter {
         margin-left: 4px;
-        color: var(--user-color);
+        color: var(--user-background-base);
         transition: color var(--transition-hover);
     }
 

@@ -659,26 +659,26 @@
 
 .button--info {
     padding: 7px 18px;
-    background-color: var(--user-base-background);
+    background-color: var(--user-background-base);
     box-shadow: none;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: var(--user-base-text);
+    color: var(--user-text-base);
     transition: filter var(--transition-hover);
 }
 
 .button--info:hover {
-    background-color: var(--user-hover-background);
-    color: var(--user-hover-text);
+    background-color: var(--user-background-hover);
+    color: var(--user-text-hover);
     /* default color (legacy): */
     /*background-color: #B4CDDB;*/
     /*color: #181F30;*/
 }
 
 .button--info:active {
-    background-color: var(--user-press-background);
-    color: var(--user-press-text);
+    background-color: var(--user-background-press);
+    color: var(--user-text-press);
     /* default color (legacy): */
     /*background-color: #8497A2;*/
     /*color: #FFFFFF;/*/
@@ -851,24 +851,24 @@
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 5px;
-    background-color: var(--user-base-background);
+    background-color: var(--user-background-base);
     font-weight: 600;
     font-size: 14px;
-    color: var(--user-base-text);
+    color: var(--user-text-base);
     box-shadow: none;
     transition: filter var(--transition-hover);
 }
 
 .button--design-submit:hover {
-    background-color: var(--user-hover-background);
-    color: var(--user-hover-text);
+    background-color: var(--user-background-hover);
+    color: var(--user-text-hover);
     /* default (legacy): */
     /*background-color: #AEC5D2;*/
 }
 
 .button--design-submit:active {
-    background-color: var(--user-press-background);
-    color: var(--user-press-text);
+    background-color: var(--user-background-press);
+    color: var(--user-text-press);
     /* default (legacy): */
     /*background-color: #8FA3AE;*/
 }
