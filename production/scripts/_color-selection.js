@@ -22,12 +22,15 @@
     }
 
 
-    $(document).ready(function () {
-        changeTheme($('.color-selection__item--current').data('theme'));
-    });
 
     $('.color-selection__item').on('click', function () {
-        changeTheme($(this).data('theme'));
+        if( ! $(this).hasClass('color-selection__item--disabled') ) {
+            changeTheme($(this).data('theme'));
+        }
     });
+
+    /* Not on document ready, but immediately when loaded. Preferable even on back-end. */
+    var currentTheme = $('.color-selection__item--current').data('theme') ? $('.color-selection__item--current').data('theme') : 'thank-you-five'
+    changeTheme(currentTheme);
 
 })(jQuery);

@@ -1,42 +1,46 @@
 {
-  "blue-theme": {
-    "user-base-background": "blue",
-    "user-base-text": "black",
-    "user-hover-background": "lightblue",
-    "user-hover-text": "black",
-    "user-press-background": "darkblue",
-    "user-press-text": "white",
-    "user-gradient-beginning": "cyan",
-    "user-gradient-end": "magenta"
+  "thank-you-five": {
+    "user-background-base": "#C6B1A6",
+    "user-background-hover": "#F4EEEB",
+    "user-background-press": "#1F1F1F",
+    "user-text-base": "rgba(51, 51, 51, 0.6)",
+    "user-text-hover": "rgba(51, 51, 51, 0.6)",
+    "user-text-press": "rgba(255, 255, 2555, 0.6)",
+    "user-gradient-beginning": "#F4EEEB",
+    "user-gradient-end": "#C6B1A6",
+    "user-gradient-text": "#1F1F1F"
   },
-  "brown-theme": {
-    "user-base-background": "#B87333",
-    "user-base-text": "black",
-    "user-hover-background": "#AA6C39",
-    "user-hover-text": "black",
-    "user-press-background": "#806517",
-    "user-press-text": "white",
-    "user-gradient-beginning": "#966F33",
-    "user-gradient-end": "#827B60"
+  "in-your-habitat": {
+    "user-background-base": "#ADB7AC",
+    "user-background-hover": "#E3E7E3",
+    "user-background-press": "#0F1D13",
+    "user-text-base": "rgba(51, 51, 51, 0.6)",
+    "user-text-hover": "rgba(51, 51, 51, 0.6)",
+    "user-text-press": "rgba(255, 255, 2555, 0.6)",
+    "user-gradient-beginning": "#E3E7E3",
+    "user-gradient-end": "#ADB7AC",
+    "user-gradient-text": "#0F1D13"
   },
-  "red-theme": {
-    "user-base-background": "red",
-    "user-base-text": "black",
-    "user-hover-background": "pink",
-    "user-hover-text": "black",
-    "user-press-background": "purple",
-    "user-press-text": "white",
-    "user-gradient-beginning": "brown",
-    "user-gradient-end": "maroon"
+  "swim-test": {
+    "user-background-base": "#9CB2BE",
+    "user-background-hover": "#DDEAF1",
+    "user-background-press": "#181A30",
+    "user-text-base": "rgba(51, 51, 51, 0.6)",
+    "user-text-hover": "rgba(51, 51, 51, 0.6)",
+    "user-text-press": "rgba(255, 255, 2555, 0.6)",
+    "user-gradient-beginning": "#DDEAF1",
+    "user-gradient-end": "#9CB2BE",
+    "user-gradient-text": "#181A30"
   },
-  "black-theme": {
-    "user-base-background": "#413839",
-    "user-base-text": "white",
-    "user-hover-background": "#3B3131",
-    "user-hover-text": "white",
-    "user-press-background": "#000000",
-    "user-press-text": "white",
-    "user-gradient-beginning": "#5C5858",
-    "user-gradient-end": "#0C090A"
+  "and-scene": {
+    "user-background-base": "#1F1F1F",
+    "user-background-hover": "#E8E8E8",
+    "user-background-press": "#1F1F1F",
+    "user-text-base": "rgba(255, 255, 2555, 0.6)",
+    "user-text-hover": "rgba(51, 51, 51, 0.6)",
+    "user-text-press": "rgba(255, 255, 2555, 0.6)",
+    "user-gradient-beginning": "#272727",
+    "user-gradient-end": "#254547",
+    "user-gradient-text": "#FFFFFF"
   }
 }
