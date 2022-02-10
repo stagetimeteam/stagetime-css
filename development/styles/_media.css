@@ -62,13 +62,17 @@
     }
 
 
-.media--light-blue {
+.media--user-color {
 
 }
-    .media--light-blue .media__icon {
-        fill: #9CB2BE;
+    .media--user-color .media__icon {
+        fill: var(--user-background-base);
     }
 
-    .media--light-blue .media__link:hover .media__icon {
-        fill: #818181;
+    .media--user-color .media__link:hover .media__icon {
+        fill: var(--user-background-hover);
+    }
+
+    .media--user-color .media__link:active .media__icon {
+        fill: var(--user-background-press);
     }

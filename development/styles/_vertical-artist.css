@@ -13,7 +13,7 @@
         top: 0;
         right: 0;
         height: 20px;
-        background-color: #9CB2BE;
+        background-color: var(--user-background-base);
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
     }
 

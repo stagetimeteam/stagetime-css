@@ -38,7 +38,7 @@
             display: inline-block;
             vertical-align: top;
             padding: 7px 20px;
-            background-image: linear-gradient(to right, var(--user-gradient-beginning), var(--user-gradient-end));
+            background-image: linear-gradient(106deg, var(--user-gradient-beginning), var(--user-gradient-end));
             border-radius: 15px;
             font-weight: 600;
             font-size: 14px;
