@@ -664,25 +664,20 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: var(--user-text-base);
+    color: var(--user-text);
     transition: filter var(--transition-hover);
 }
 
 .button--info:hover {
     background-color: var(--user-background-hover);
-    color: var(--user-text-hover);
-    /* default color (legacy): */
-    /*background-color: #B4CDDB;*/
-    /*color: #181F30;*/
+    color: var(--user-text);
 }
 
 .button--info:active {
     background-color: var(--user-background-press);
-    color: var(--user-text-press);
-    /* default color (legacy): */
-    /*background-color: #8497A2;*/
-    /*color: #FFFFFF;/*/
+    color: var(--user-text);
 }
+
 
 
 
@@ -780,19 +775,19 @@
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    color: var(--user-gradient-text);
+    color: var(--user-text);
     transition: filter var(--transition-hover);
 }
 
 .button--gradient:hover {
     background-image: linear-gradient(106deg, var(--user-gradient-beginning), var(--user-gradient-end));
-    color: var(--user-gradient-text);
+    color: var(--user-text);
     filter: contrast(1.075);
 }
 
 .button--gradient:active {
     background-image: linear-gradient(106deg, var(--user-gradient-beginning), var(--user-gradient-end));
-    color: var(--user-gradient-text);
+    color: var(--user-text);
     filter: contrast(0.9);
     transition: none;
 }
@@ -858,21 +853,18 @@
     background-color: var(--user-background-base);
     font-weight: 600;
     font-size: 14px;
-    color: var(--user-text-base);
+    color: var(--user-text);
     box-shadow: none;
     transition: filter var(--transition-hover);
 }
 
 .button--design-submit:hover {
     background-color: var(--user-background-hover);
-    color: var(--user-text-hover);
-    /* default (legacy): */
-    /*background-color: #AEC5D2;*/
+    color: var(--user-text);
 }
 
 .button--design-submit:active {
     background-color: var(--user-background-press);
-    color: var(--user-text-press);
-    /* default (legacy): */
-    /*background-color: #8FA3AE;*/
+    color: var(--user-text);
 }
+

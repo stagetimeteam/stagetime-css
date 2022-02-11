@@ -43,7 +43,7 @@
             font-weight: 600;
             font-size: 14px;
             line-height: 16px;
-            color: var(--user-gradient-text);
+            color: var(--user-text);
         }
 
         .artist-card__last-updated {

@@ -93,7 +93,7 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 20px;
-                color: var(--user-gradient-text);
+                color: var(--user-text);
                 cursor: pointer;
                 transition: filter var(--transition-hover);
             }
