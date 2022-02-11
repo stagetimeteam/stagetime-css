@@ -38,12 +38,12 @@
             display: inline-block;
             vertical-align: top;
             padding: 7px 20px;
-            background-image: linear-gradient(106deg, var(--user-gradient-beginning), var(--user-gradient-end));
+            background-image: linear-gradient(106deg, var(--theme-light), var(--theme-main));
             border-radius: 15px;
             font-weight: 600;
             font-size: 14px;
             line-height: 16px;
-            color: var(--user-text);
+            color: var(--theme-text);
         }
 
         .artist-card__last-updated {

@@ -1,34 +1,30 @@
 {
   "thank-you-five": {
-    "user-background-base": "#C6B1A6",
-    "user-background-hover": "#E3C5B6",
-    "user-background-press": "#B8A79E",
-    "user-gradient-beginning": "#F4EEEB",
-    "user-gradient-end": "#C6B1A6",
-    "user-text": "#1F1F1F"
+    "theme-main": "#C6B1A6",
+    "theme-main-hover": "#E3C5B6",
+    "theme-main-press": "#B8A79E",
+    "theme-light": "#F4EEEB",
+    "theme-text": "#1F1F1F"
   },
   "in-your-habitat": {
-    "user-background-base": "#ADB7AC",
-    "user-background-hover": "#BBC8BB",
-    "user-background-press": "#A2A9A2",
-    "user-gradient-beginning": "#E3E7E3",
-    "user-gradient-end": "#ADB7AC",
-    "user-text": "#0F1D13"
+    "theme-main": "#ADB7AC",
+    "theme-main-hover": "#BBC8BB",
+    "theme-main-press": "#A2A9A2",
+    "theme-light": "#E3E7E3",
+    "theme-text": "#0F1D13"
   },
   "swim-test": {
-    "user-background-base": "#9CB2BE",
-    "user-background-hover": "#A5C1D2",
-    "user-background-press": "#96A8B3",
-    "user-gradient-beginning": "#DDEAF1",
-    "user-gradient-end": "#9CB2BE",
-    "user-text": "#181A30"
+    "theme-main": "#9CB2BE",
+    "theme-main-hover": "#A5C1D2",
+    "theme-main-press": "#96A8B3",
+    "theme-light": "#DDEAF1",
+    "theme-text": "#181A30"
   },
   "and-scene": {
-    "user-background-base": "#1F1F1F",
-    "user-background-hover": "#444444",
-    "user-background-press": "#000000",
-    "user-gradient-beginning": "#555555",
-    "user-gradient-end": "#1F1F1F",
-    "user-text": "#FFFFFF"
+    "theme-main": "#1F1F1F",
+    "theme-main-hover": "#444444",
+    "theme-main-press": "#000000",
+    "theme-light": "#555555",
+    "theme-text": "#FFFFFF"
   }
 }

@@ -66,13 +66,13 @@
 
 }
     .media--user-color .media__icon {
-        fill: var(--user-background-base);
+        fill: var(--theme-main);
     }
 
     .media--user-color .media__link:hover .media__icon {
-        fill: var(--user-background-hover);
+        fill: var(--theme-main-hover);
     }
 
     .media--user-color .media__link:active .media__icon {
-        fill: var(--user-background-press);
+        fill: var(--theme-main-press);
     }

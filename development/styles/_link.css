@@ -64,5 +64,5 @@
 
 
 .link--user-color {
-    color: var(--user-background-base);
+    color: var(--theme-main);
 }
