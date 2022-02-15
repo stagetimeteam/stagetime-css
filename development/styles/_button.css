@@ -782,13 +782,11 @@
 .button--gradient:hover {
     background-image: linear-gradient(106deg, var(--theme-light), var(--theme-main-hover));
     color: var(--theme-text);
-    filter: contrast(1.075);
 }
 
 .button--gradient:active {
     background-image: linear-gradient(106deg, var(--theme-light), var(--theme-main-press));
     color: var(--theme-text);
-    filter: contrast(0.9);
     transition: none;
 }
 
