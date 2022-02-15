@@ -3,7 +3,7 @@
     vertical-align: top;
     border: none;
     background-color: #DACCC5;
-    background-image: linear-gradient(to right, #F4EEEB, #C6B1A6);
+    background-image: linear-gradient(106, var(--theme-light), var(--theme-main));
     border-radius: 15px;
     padding: 7px 28px;
     font-weight: 600;
