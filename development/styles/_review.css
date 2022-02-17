@@ -4,7 +4,7 @@
     .review__icon {
         vertical-align: top;
         margin-bottom: 30px;
-        fill: #9CB2BF;
+        fill: var(--theme-main);
     }
 
     .review__message {

@@ -8,11 +8,11 @@
 }
 
 .alt-org-panel:hover {
-    background-color: var(--panel-hover);
+    background-color: var(--theme-light);
 }
 
 .alt-org-panel:active {
-    background-color: var(--panel-active);
+    background-color: var(--theme-light);
     transition: none;
 }
     .alt-org-panel__preview {
