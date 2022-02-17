@@ -58,6 +58,7 @@
 .all-connections--faded {
 
 }
+    /* stylelint-disable */
     .all-connections--faded .all-connections__people {
         filter: blur(3px);
         /* blur performance hack: */
@@ -70,6 +71,8 @@
         transform: translate3d(0,0,0);
         transform: translateZ(0);
     }
+    /* stylelint-enable */
+
 
     .all-connections--faded .all-connections__description .link {
         font-weight: bold;

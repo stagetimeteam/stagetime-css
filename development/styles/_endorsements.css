@@ -109,7 +109,7 @@
 
 
 
-
+/* stylelint-disable */
 .endorsements--faded {
     filter: blur(3px);
     /* blur performance hack: */
@@ -122,6 +122,8 @@
     transform: translate3d(0,0,0);
     transform: translateZ(0);
 }
+/* stylelint-enable */
+
     .endorsements--faded::after {
         content: "";
         position: absolute;
