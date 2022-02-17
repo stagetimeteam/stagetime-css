@@ -12,7 +12,7 @@
             margin-right: 24px;
             flex-shrink: 0;
             padding: 3px;
-            background-color: var(--blue-primary);
+            background-color: var(--theme-main);
             border-radius: 50%;
         }
 
