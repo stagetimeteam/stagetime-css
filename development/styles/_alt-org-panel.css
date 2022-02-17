@@ -30,7 +30,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        color: var(--blue-primary);
+        color: var(--theme-main);
     }
 
     .alt-org-panel__note {

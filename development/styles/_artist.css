@@ -46,13 +46,13 @@
 
                 .artist__event {
                     margin-top: 31px;
-                    border-top: 1px solid #F2F2F2;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 20px;
                 }
 
                 .artist__highlights {
                     margin-top: 26px;
-                    border-top: 1px solid #F2F2F2;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 21px;
                 }
 
@@ -65,7 +65,7 @@
 
                 .artist__gallery {
                     margin-top: 24px;
-                    border: 1px solid #E8E8E8;
+                    border: 1px solid var(--theme-light);
                     border-radius: 6px;
                     /*height: 262px; this has become troublesome when Edit button appeared */
                 }
@@ -80,13 +80,13 @@
                 }
                     .artist__management {
                         width: 308px;
-                        border-top: 1px solid #F2F2F2;
+                        border-top: 1px solid var(--theme-light);
                         padding-top: 25px;
                     }
 
                     .artist__social {
                         margin-left: 58px;
-                        border-top: 1px solid #F2F2F2;
+                        border-top: 1px solid var(--theme-light);
                         padding-top: 25px;
                         flex-grow: 1;
                     }

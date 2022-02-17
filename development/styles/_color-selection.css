@@ -58,7 +58,7 @@
             }
 
             .color-selection__section--premium .color-selection__list {
-                border-color: #E4CFC3;
+                border-color: var(--theme-light);
             }
                 .color-selection__item {
                     position: relative;

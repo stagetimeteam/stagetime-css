@@ -7,8 +7,8 @@
     font-size: 32px;
     line-height: 38px;
     letter-spacing: -0.8px;
-    color: var(--blue-primary);
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, #E3EDF3 30px, #E3EDF3 31px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0));
+    color: var(--theme-main);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 30px, var(--theme-light) 30px, var(--theme-light) 31px, rgba(0, 0, 0, 0) 31px, rgba(0, 0, 0, 0));
     background-repeat: no-repeat;
     background-position: top center;
 }

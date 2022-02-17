@@ -1,3 +1,3 @@
 .user-color {
-    color: var(--theme-main);
+    color: var(--theme-main) !important; /* !important is to override color of another selector if mixing */
 }

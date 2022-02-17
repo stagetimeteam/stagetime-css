@@ -1,6 +1,6 @@
 .case {
     padding: 32px 44px 24px;
-    border: 1px solid #E3EDF3;
+    border: 1px solid var(--theme-light);
     border-radius: 5px;
 }
     .case__head {

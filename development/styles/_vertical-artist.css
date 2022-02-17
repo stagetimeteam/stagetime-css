@@ -58,13 +58,13 @@
 
                     .vertical-artist__management {
                         margin-top: 32px;
-                        border-top: 1px solid #F2F2F2;
+                        border-top: 1px solid var(--theme-light);
                         padding-top: 25px;
                     }
 
                     .vertical-artist__social {
                         margin-top: 32px;
-                        border-top: 1px solid #F2F2F2;
+                        border-top: 1px solid var(--theme-light);
                         padding-top: 25px;
                     }
 
@@ -88,13 +88,13 @@
 
                     .vertical-artist__performing {
                         margin-top: 31px;
-                        border-top: 1px solid #F2F2F2;
+                        border-top: 1px solid var(--theme-light);
                         padding-top: 21px;
                     }
 
                     .vertical-artist__highlights {
                         margin-top: 26px;
-                        border-top: 1px solid #F2F2F2;
+                        border-top: 1px solid var(--theme-light);
                         padding-top: 21px;
                     }
 

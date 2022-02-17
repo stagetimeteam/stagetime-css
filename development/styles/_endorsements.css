@@ -65,7 +65,7 @@
             width: calc(100% - var(--profile-gap) - var(--profile-sidebar));
         }
             .endorsements__list {
-                border: 1px solid #E3EDF3;
+                border: 1px solid var(--theme-light);
                 border-bottom: none;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
@@ -73,7 +73,7 @@
                 padding-right: 32px;
             }
                 .endorsements__item {
-                    border-top: 1px solid #E3EDF3;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 42px;
                     padding-bottom: 22px;
                 }
