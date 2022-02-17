@@ -24,7 +24,7 @@
     "theme-main": "#1F1F1F",
     "theme-main-hover": "#444444",
     "theme-main-press": "#000000",
-    "theme-light": "#555555",
+    "theme-light": "#EDF4F4",
     "theme-text": "#FFFFFF"
   }
 }
