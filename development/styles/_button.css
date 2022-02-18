@@ -689,19 +689,19 @@
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: var(--theme-text);
+    color: #333333;
 }
 
 .button--alt-secondary:hover {
     background-color: var(--theme-light);
     box-shadow: inset 0 0 0 1px var(--theme-light);
-    color: var(--theme-text);
+    color: #333333;
 }
 
 .button--alt-secondary:active {
     background-color: var(--theme-main-press);
     box-shadow: inset 0 0 0 1px var(--theme-main-press);
-    color: var(--theme-text);
+    color: #333333;
 }
 
 
