@@ -51,12 +51,12 @@
             right: 43px;
             top: 37px;
             padding: 6px 29px;
-            background-color: #181A30;
+            background-color: var(--theme-text);
             border-radius: 15px;
             font-weight: 600;
             font-size: 11px;
             line-height: 18px;
-            color: #9CB2BE;
+            color: var(--theme-main);
         }
 
 
