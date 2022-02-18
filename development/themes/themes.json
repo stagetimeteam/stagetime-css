@@ -20,7 +20,14 @@
     "theme-light": "#DDEAF1",
     "theme-text": "#181A30"
   },
-  "and-scene": {
+  "light-grey": {
+    "theme-main": "#C4C4C4",
+    "theme-main-hover": "#DBDBDB",
+    "theme-main-press": "#A8A8A8",
+    "theme-light": "#E8E8E8",
+    "theme-text": "#1F1F1F"
+  },
+  "and-scene": { /* Can't be used for now (see chat with Nate from Feb 18th) */
     "theme-main": "#1F1F1F",
     "theme-main-hover": "#444444",
     "theme-main-press": "#000000",
