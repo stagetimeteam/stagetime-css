@@ -261,7 +261,7 @@
         }
 
     .carousel--for-profile-projects.carousel--faded-right::before {
-        background-color: #EBF0F2;
+        background-color: var(--theme-light);
         top: 0;
         bottom: 0;
     }
@@ -269,7 +269,7 @@
     .carousel--for-profile-projects.carousel--faded-right::after {
         top: 0;
         bottom: 0;
-        background-image: linear-gradient(to left, #EBF0F2 0%, rgba(235, 240, 242, 0.9) 25%, rgba(235, 240, 242, 0.48) 56.25%, rgba(235, 240, 242, 0) 100%);
+        background-image: linear-gradient(to left, rgba(var(--theme-light-rgb), 1) 0%, rgba(var(--theme-light-rgb), 0.9) 25%, rgba(var(--theme-light-rgb), 0.48) 56.25%, rgba(var(--theme-light-rgb), 0) 100%);
     }
 
 

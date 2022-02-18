@@ -4,6 +4,7 @@
     "theme-main-hover": "#E3C5B6",
     "theme-main-press": "#B8A79E",
     "theme-light": "#F4EEEB",
+    "theme-light-rgb": "244, 238, 235",
     "theme-text": "#1F1F1F"
   },
   "in-your-habitat": {
@@ -11,6 +12,7 @@
     "theme-main-hover": "#BBC8BB",
     "theme-main-press": "#A2A9A2",
     "theme-light": "#E3E7E3",
+    "theme-light-rgb": "227, 231, 227",
     "theme-text": "#0F1D13"
   },
   "swim-test": {
@@ -18,6 +20,7 @@
     "theme-main-hover": "#A5C1D2",
     "theme-main-press": "#96A8B3",
     "theme-light": "#DDEAF1",
+    "theme-light-rgb": "221, 234, 241",
     "theme-text": "#181A30"
   },
   "light-grey": {
@@ -25,6 +28,7 @@
     "theme-main-hover": "#DBDBDB",
     "theme-main-press": "#A8A8A8",
     "theme-light": "#E8E8E8",
+    "theme-light-rgb": "232, 232, 232",
     "theme-text": "#1F1F1F"
   },
   "and-scene": {
@@ -32,6 +36,7 @@
     "theme-main-hover": "#444444",
     "theme-main-press": "#000000",
     "theme-light": "#EDF4F4",
+    "theme-light-rgb": "237, 244, 244",
     "theme-text": "#FFFFFF"
   }
 }
