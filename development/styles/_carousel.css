@@ -448,3 +448,13 @@
     }
 
 
+.carousel--arrows-under-edit-button {
+
+}
+    .carousel--for-profile-schedule.carousel--arrows-under-edit-button .carousel__control {
+        margin-bottom: 0;
+    }
+
+    .carousel--for-profile-schedule.carousel--arrows-under-edit-button::before {
+        display: none;
+    }
