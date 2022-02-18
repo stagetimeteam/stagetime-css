@@ -27,7 +27,7 @@
     "theme-light": "#E8E8E8",
     "theme-text": "#1F1F1F"
   },
-  "and-scene": { /* Can't be used for now (see chat with Nate from Feb 18th) */
+  "and-scene": {
     "theme-main": "#1F1F1F",
     "theme-main-hover": "#444444",
     "theme-main-press": "#000000",
