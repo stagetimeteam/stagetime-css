@@ -3,7 +3,7 @@
     var themesData = {};
 
     $.ajax({
-        url: '../themes/themes.json',
+        url: '../themes/themes.json?' + Math.round(new Date().getTime() / 1000),
         dataType: 'json',
         async: false,
         success: function(data) {
