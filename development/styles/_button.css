@@ -842,3 +842,9 @@
     color: var(--theme-text);
 }
 
+.button--design-submit.button--disabled,
+.button--design-submit.button--disabled:hover,
+.button--design-submit.button--disabled:active {
+    background-color: var(--theme-light);
+    color: var(--theme-main);
+}
