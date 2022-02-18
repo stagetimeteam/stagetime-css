@@ -1,7 +1,7 @@
 .artist {
     position: relative;
     padding-top: 20px;
-    border-bottom: 26px solid #EDF1F3;
+    border-bottom: 26px solid var(--theme-light);
 }
     .artist::before {
         content: "";
