@@ -6,9 +6,9 @@
         <title>.sortable</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1645416244">
-        <link rel="stylesheet" href="../styles/style.css?1645416244">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1645416244" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1645417073">
+        <link rel="stylesheet" href="../styles/style.css?1645417073">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1645417073" media="(max-width: 767px)">
     </head>
     <body style="background-color: #F6F6F6;">
 
@@ -18,33 +18,45 @@
             <br>
             <br>
             <h1>.sortable</h1>
+            <p>
+                Let's use <b>Sortable</b>:<br>
+                <a href="http://sortablejs.github.io/Sortable/">http://sortablejs.github.io/Sortable/</a>
+            </p>
+            <p>
+                This is surprisingly well witten library, and it works just as is and covers all possible cases:
+                it works with any tags, any styling, any margins around items, it works for both vertical and
+                horizontal cases, and it works inside popups. No HTML or CSS adjustments required.
+            </p>
+            <p>
+                We need only <b>Sortable.min.js</b> file and it's initialization.
+                In this project I initialize this plugin on <b>.sortable</b> class here:
+                <a href="../scripts/_sortable.js">../scripts/_sortable.js</a>
+                so just adding this class to any node in DOM is enough.
+            </p>
+            <p>
+                As for options I suggest to use:
+                <br><b><i>animation: 150,</i></b>
+                <br><b><i>ghostClass: 'sortable-ghost'</i></b>
+                <br>so it looks better when sorting tiles with photo or something like that.
+            </p>
+            <p>
+                Try dragging items in this list:
+            </p>
 
 
-            <div class="galleries__list sortable">
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-a-90x90@2x.jpg 2x" src="../temp/person-a-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-b-90x90@2x.jpg 2x" src="../temp/person-b-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-c-90x90@2x.jpg 2x" src="../temp/person-c-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-d-90x90@2x.jpg 2x" src="../temp/person-d-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-e-90x90@2x.jpg 2x" src="../temp/person-e-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-f-90x90@2x.jpg 2x" src="../temp/person-f-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-d-90x90@2x.jpg 2x" src="../temp/person-d-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-e-90x90@2x.jpg 2x" src="../temp/person-e-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
+            <div class="sortable">
+                <div style="float: left; padding: 40px; background: purple; color: white;">1</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">2</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">3</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">4</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">5</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">6</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">7</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">8</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">9</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">10</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">11</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">12</div>
             </div>
 
 
@@ -75,45 +87,45 @@
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/sortable/Sortable.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1645416244"></script>
-        <script src="../scripts/_operations.js?1645416244"></script>
-        <script src="../scripts/_profile.js?1645416244"></script>
-        <script src="../scripts/_mfp.js?1645416244"></script>
-        <script src="../scripts/_search.js?1645416244"></script>
-        <script src="../scripts/_carousel.js?1645416244"></script>
-        <script src="../scripts/_player.js?1645416244"></script>
-        <script src="../scripts/_player2.js?1645416244"></script>
-        <script src="../scripts/_player3.js?1645416244"></script>
-        <script src="../scripts/_updates.js?1645416244"></script>
-        <script src="../scripts/_side.js?1645416244"></script>
-        <script src="../scripts/_happening.js?1645416244"></script>
-        <script src="../scripts/_input.js?1645416244"></script>
-        <script src="../scripts/_edit-post.js?1645416244"></script>
-        <script src="../scripts/_post-form.js?1645416244"></script>
-        <script src="../scripts/_button.js?1645416244"></script>
-        <script src="../scripts/_quick-message.js?1645416244"></script>
-        <script src="../scripts/_explore.js?1645416244"></script>
-        <script src="../scripts/_shortcut.js?1645416244"></script>
-        <script src="../scripts/_scrollbar.js?1645416244"></script>
-        <script src="../scripts/_overlay.js?1645416244"></script>
-        <script src="../scripts/_notifications.js?1645416244"></script>
-        <script src="../scripts/_enter.js?1645416244"></script>
-        <script src="../scripts/_suggesting.js?1645416244"></script>
-        <script src="../scripts/_chat.js?1645416244"></script>
-        <script src="../scripts/_badge.js?1645416244"></script>
-        <script src="../scripts/_media-bar.js?1645416244"></script>
-        <script src="../scripts/_settings.js?1645416244"></script>
-        <script src="../scripts/_slideshow.js?1645416244"></script>
-        <script src="../scripts/_expandable-bio.js?1645416244"></script>
-        <script src="../scripts/_parallax.js?1645416244"></script>
-        <script src="../scripts/_simple-parallax.js?1645416244"></script>
-        <script src="../scripts/_anchor.js?1645416244"></script>
-        <script src="../scripts/_modal.js?1645416244"></script>
-        <script src="../scripts/_full-media-card.js?1645416244"></script>
-        <script src="../scripts/_media-panel.js?1645416244"></script>
-        <script src="../scripts/_color-selection.js?1645416244"></script>
-        <script src="../scripts/_layout-type.js?1645416244"></script>
-        <script src="../scripts/_sortable.js?1645416244"></script>
+        <script src="../scripts/_global.js?1645417073"></script>
+        <script src="../scripts/_operations.js?1645417073"></script>
+        <script src="../scripts/_profile.js?1645417073"></script>
+        <script src="../scripts/_mfp.js?1645417073"></script>
+        <script src="../scripts/_search.js?1645417073"></script>
+        <script src="../scripts/_carousel.js?1645417073"></script>
+        <script src="../scripts/_player.js?1645417073"></script>
+        <script src="../scripts/_player2.js?1645417073"></script>
+        <script src="../scripts/_player3.js?1645417073"></script>
+        <script src="../scripts/_updates.js?1645417073"></script>
+        <script src="../scripts/_side.js?1645417073"></script>
+        <script src="../scripts/_happening.js?1645417073"></script>
+        <script src="../scripts/_input.js?1645417073"></script>
+        <script src="../scripts/_edit-post.js?1645417073"></script>
+        <script src="../scripts/_post-form.js?1645417073"></script>
+        <script src="../scripts/_button.js?1645417073"></script>
+        <script src="../scripts/_quick-message.js?1645417073"></script>
+        <script src="../scripts/_explore.js?1645417073"></script>
+        <script src="../scripts/_shortcut.js?1645417073"></script>
+        <script src="../scripts/_scrollbar.js?1645417073"></script>
+        <script src="../scripts/_overlay.js?1645417073"></script>
+        <script src="../scripts/_notifications.js?1645417073"></script>
+        <script src="../scripts/_enter.js?1645417073"></script>
+        <script src="../scripts/_suggesting.js?1645417073"></script>
+        <script src="../scripts/_chat.js?1645417073"></script>
+        <script src="../scripts/_badge.js?1645417073"></script>
+        <script src="../scripts/_media-bar.js?1645417073"></script>
+        <script src="../scripts/_settings.js?1645417073"></script>
+        <script src="../scripts/_slideshow.js?1645417073"></script>
+        <script src="../scripts/_expandable-bio.js?1645417073"></script>
+        <script src="../scripts/_parallax.js?1645417073"></script>
+        <script src="../scripts/_simple-parallax.js?1645417073"></script>
+        <script src="../scripts/_anchor.js?1645417073"></script>
+        <script src="../scripts/_modal.js?1645417073"></script>
+        <script src="../scripts/_full-media-card.js?1645417073"></script>
+        <script src="../scripts/_media-panel.js?1645417073"></script>
+        <script src="../scripts/_color-selection.js?1645417073"></script>
+        <script src="../scripts/_layout-type.js?1645417073"></script>
+        <script src="../scripts/_sortable.js?1645417073"></script>
 
 
     </body>
