@@ -18,33 +18,45 @@
             <br>
             <br>
             <h1>.sortable</h1>
+            <p>
+                Let's use <b>Sortable</b>:<br>
+                <a href="http://sortablejs.github.io/Sortable/">http://sortablejs.github.io/Sortable/</a>
+            </p>
+            <p>
+                This is surprisingly well witten library, and it works just as is and covers all possible cases:
+                it works with any tags, any styling, any margins around items, it works for both vertical and
+                horizontal cases, and it works inside popups. No HTML or CSS adjustments required.
+            </p>
+            <p>
+                We need only <b>Sortable.min.js</b> file and it's initialization.
+                In this project I initialize this plugin on <b>.sortable</b> class here:
+                <a href="../scripts/_sortable.js">../scripts/_sortable.js</a>
+                so just adding this class to any node in DOM is enough.
+            </p>
+            <p>
+                As for options I suggest to use:
+                <br><b><i>animation: 150,</i></b>
+                <br><b><i>ghostClass: 'sortable-ghost'</i></b>
+                <br>so it looks better when sorting tiles with photo or something like that.
+            </p>
+            <p>
+                Try dragging items in this list:
+            </p>
 
 
-            <div class="galleries__list sortable">
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-a-90x90@2x.jpg 2x" src="../temp/person-a-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-b-90x90@2x.jpg 2x" src="../temp/person-b-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-c-90x90@2x.jpg 2x" src="../temp/person-c-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-d-90x90@2x.jpg 2x" src="../temp/person-d-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-e-90x90@2x.jpg 2x" src="../temp/person-e-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-f-90x90@2x.jpg 2x" src="../temp/person-f-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-d-90x90@2x.jpg 2x" src="../temp/person-d-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
-                <a class="galleries__item avatar avatar--a-bit-squared" href="#">
-                    <img class="avatar__image" srcset="../temp/person-e-90x90@2x.jpg 2x" src="../temp/person-e-90x90.jpg" width="90" height="90" alt="Mark Zuckerberg">
-                </a>
+            <div class="sortable">
+                <div style="float: left; padding: 40px; background: purple; color: white;">1</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">2</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">3</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">4</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">5</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">6</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">7</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">8</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">9</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">10</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">11</div>
+                <div style="float: left; padding: 40px; background: purple; color: white;">12</div>
             </div>
 
 
