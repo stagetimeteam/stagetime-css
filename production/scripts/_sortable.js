@@ -4,7 +4,8 @@ $(document).ready(function () {
 
     [].forEach.call(el, function (item) {
         Sortable.create(item, {
-            animation: 150
+            animation: 150,
+            ghostClass: 'sortable-ghost'
         });
     });
 
