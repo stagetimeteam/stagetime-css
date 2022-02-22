@@ -42,7 +42,7 @@
         line-height: 22px;
         text-align: left;
         text-transform: none; /* если внутри кнопки */
-        color: #ffffff;
+        color: #FFFFFF;
         white-space: nowrap;
     }
 
@@ -158,16 +158,16 @@
 }
     .bubble--white .bubble__body {
         background-color: #FFFFFF;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1),
-                    0 3px 7px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.1);
         color: #333333;
     }
 
+    /* stylelint-disable */
     .bubble--white.bubble--top    .bubble__peak  { border-top-color: #FFFFFF; }
     .bubble--white.bubble--right  .bubble__peak  { border-right-color: #FFFFFF; }
     .bubble--white.bubble--bottom .bubble__peak  { border-bottom-color: #FFFFFF; }
     .bubble--white.bubble--left   .bubble__peak  { border-left-color: #FFFFFF; }
-
+    /* stylelint-enable */
 
 
 
