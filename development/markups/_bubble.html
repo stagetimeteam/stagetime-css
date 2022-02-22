@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.bubble</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+
+
+        <div style="width: 444px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.bubble</h1>
+            <p>
+                Default bubble:
+            </p>
+
+            <div class="bubble bubble--visible">
+                <div class="bubble__body">
+                    Lorem ipsum
+                </div>
+                <i class="bubble__peak"></i>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <h2>Line breaks</h2>
+            <p>
+                By default we are not letting text in bubbles to break to new line.
+                It is because inside of <b>position: absolute</b> line break will happen after
+                each word.
+            </p>
+            <p>
+                So we assume default bubbles are meant to be used with short text like one above.
+                If long text will appear inside of a bubble it will look like so:
+            </p>
+
+            <div class="bubble bubble--visible">
+                <div class="bubble__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor tortor, tempor ac ipsum a, porttitor vestibulum orci. Fusce efficitur aliquet rutrum. Nulla massa lectus, fringilla ac orci a, efficitur luctus lacus.
+                </div>
+                <i class="bubble__peak"></i>
+            </div>
+
+            <br>
+            <br>
+            <h3>br`s</h3>
+            <p>
+                In case of long text we can add line breaks manually, using &lt;br&gt;`s:
+            </p>
+
+            <div class="bubble bubble--visible">
+                <div class="bubble__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+                    Donec dolor tortor, tempor ac ipsum a, porttitor vestibulum orci.<br>
+                    Fusce efficitur aliquet rutrum. Nulla massa lectus,<br>
+                    fringilla ac orci a, efficitur luctus lacus.
+                </div>
+                <i class="bubble__peak"></i>
+            </div>
+
+
+            <br>
+            <br>
+            <h3>.bubble--normal-wrap</h3>
+            <p>
+                Alternatively we can disable this no line breaks feature by adding
+                <b>.bubble--normal-wrap</b> class and adding width manually.
+                Like so <b>style="width: 412px;"</b>:
+            </p>
+
+            <div class="bubble bubble--visible bubble--normal-wrap" style="width: 412px;">
+                <div class="bubble__body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Donec dolor tortor, tempor ac ipsum a, porttitor vestibulum orci.
+                    Fusce efficitur aliquet rutrum. Nulla massa lectus,
+                    fringilla ac orci a, efficitur luctus lacus.
+                </div>
+                <i class="bubble__peak"></i>
+            </div>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Positioning</h2>
+            <p>
+                Pick one of these modifiers:
+                <br><b>.bubble--left</b>
+                <br><b>.bubble--right</b>
+                <br><b>.bubble--top</b>
+                <br><b>.bubble--bottom</b>
+            </p>
+
+            <br>
+            <br>
+
+            <button style="position: relative" type="button">
+                Random button
+                <span class="bubble bubble--left bubble--visible">
+                    <span class="bubble__body">
+                        Lorem Ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </button>
+
+            <br>
+            <br>
+            <br>
+
+            <button style="position: relative" type="button">
+                Random button
+                <span class="bubble bubble--right bubble--visible">
+                    <span class="bubble__body">
+                        Lorem Ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <button style="position: relative" type="button">
+                Random button
+                <span class="bubble bubble--top bubble--visible">
+                    <span class="bubble__body">
+                        Lorem Ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </button>
+
+            <br>
+            <br>
+            <br>
+
+            <button style="position: relative" type="button">
+                Random button
+                <span class="bubble bubble--bottom bubble--visible">
+                    <span class="bubble__body">
+                        Lorem Ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.bubble--white</h2>
+            <br>
+            <br>
+
+            <button style="position: relative" type="button">
+                Random bubble
+                <span class="bubble bubble--top bubble--white bubble--visible">
+                    <span class="bubble__body">
+                        Lorem ipsum dolor sit<br> consectetur adipisicing
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </button>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Show/hide using .bubble-trigger</h2>
+            <p>
+                By default bubble is hidden using CSS. Basic way to show it is to place
+                it into the context of <b>.bubble-trigger</b> class.
+                Hovering this class (or tabbing inside) will shows the bubble.
+            </p>
+
+            <button class="bubble-trigger" type="button" style="position: relative">
+                Random button
+                <span class="bubble bubble--top">
+                    <span class="bubble__body">
+                        Lorem ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </button>
+
+            <br>
+            <br>
+
+            <a class="bubble-trigger" href="https://www.google.com" style="position: relative">
+                Link as &lt;a&gt; tag:
+                <span class="bubble bubble--top">
+                    <span class="bubble__body">
+                        Lorem ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </a>
+
+            <br>
+            <br>
+
+            <span class="bubble-trigger" tabindex="0" style="position: relative">
+                &lt;span&gt; with tabindex="0"
+                <span class="bubble bubble--top">
+                    <span class="bubble__body">
+                        Lorem ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </span>
+
+            <br>
+            <br>
+
+
+            <span class="bubble-trigger" style="position: relative">
+                Simple &lt;span&gt; element
+                <span class="bubble bubble--top">
+                    <span class="bubble__body">
+                        Lorem ipsum
+                    </span>
+                    <i class="bubble__peak"></i>
+                </span>
+            </span>
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player.js"></script>
+        <script src="../scripts/_player2.js"></script>
+        <script src="../scripts/_player3.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_explore.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+        <script src="../scripts/_media-bar.js"></script>
+        <script src="../scripts/_settings.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_expandable-bio.js"></script>
+        <script src="../scripts/_parallax.js"></script>
+        <script src="../scripts/_simple-parallax.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_modal.js"></script>
+        <script src="../scripts/_full-media-card.js"></script>
+        <script src="../scripts/_media-panel.js"></script>
+        <script src="../scripts/_color-selection.js"></script>
+        <script src="../scripts/_layout-type.js"></script>
+        <script src="../scripts/_sortable.js"></script>
+
+
+    </body>
+</html>

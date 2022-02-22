@@ -39,6 +39,7 @@
         padding: 12px 16px;
     }
         .performance__dates {
+            position: relative;
             padding: 6px 6px 8px 0;
             font-size: 11px;
             line-height: 16px;

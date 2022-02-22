@@ -1,0 +1,173 @@
+.bubble {
+    display: inline-block;
+    vertical-align: top;
+    pointer-events: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease,    /* hide */
+                visibility 0.1s ease; /* without delay */
+}
+
+.bubble-trigger:hover .bubble {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.1s ease 0.1s,    /* show */
+                visibility 0.1s ease 0.1s; /* with delay */
+}
+
+.bubble-trigger:focus-within .bubble {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.1s ease 0.1s,    /* show */
+                visibility 0.1s ease 0.1s; /* with delay */
+}
+
+.bubble--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.1s ease 0.1s,    /* show */
+                visibility 0.1s ease 0.1s; /* with delay */
+}
+
+    .bubble__body {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 16px;
+        background-color: rgba(51, 51, 51, 0.9);
+        border-radius: 3px;
+        font-family: inherit;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: left;
+        text-transform: none; /* если внутри кнопки */
+        color: #ffffff;
+        white-space: nowrap;
+    }
+
+.bubble--normal-wrap {
+
+}
+    .bubble--normal-wrap .bubble__body {
+        white-space: normal;
+    }
+
+
+
+.bubble--top {
+    position: absolute;
+    z-index: 4000;
+    right: 50%;
+    bottom: 100%;
+    transform: translateX(50%);
+    margin-bottom: 5px;
+}
+    .bubble--top .bubble__body {
+
+    }
+        .bubble--top .bubble__peak {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            margin-left: -5px;
+            border-top: 5px solid rgba(51, 62, 67, 0.9);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+
+
+
+.bubble--right {
+    position: absolute;
+    z-index: 90;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    margin-left: 5px;
+}
+    .bubble--right .bubble__body {
+
+    }
+        .bubble--right .bubble__peak {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: 100%;
+            margin-top: -5px;
+            border-right: 5px solid rgba(51, 62, 67, 0.9);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+
+.bubble--bottom {
+    position: absolute;
+    z-index: 90;
+    right: 50%;
+    top: 100%;
+    transform: translateX(50%);
+    margin-top: 5px;
+}
+    .bubble--bottom .bubble__body {
+
+    }
+        .bubble--bottom .bubble__peak {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            margin-left: -6px;
+            border-bottom: 5px solid rgba(51, 62, 67, 0.9);
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+        }
+
+
+.bubble--left {
+    position: absolute;
+    z-index: 90;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+    margin-right: 5px;
+}
+    .bubble--left .bubble__body {
+
+    }
+        .bubble--left .bubble__peak {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            margin-top: -5px;
+            border-left: 5px solid rgba(51, 62, 67, 0.9);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+        }
+
+
+
+.bubble--white {
+
+}
+    .bubble--white .bubble__body {
+        background-color: #FFFFFF;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1),
+                    0 3px 7px rgba(0, 0, 0, 0.1);
+        color: #333333;
+    }
+
+    .bubble--white.bubble--top    .bubble__peak  { border-top-color: #FFFFFF; }
+    .bubble--white.bubble--right  .bubble__peak  { border-right-color: #FFFFFF; }
+    .bubble--white.bubble--bottom .bubble__peak  { border-bottom-color: #FFFFFF; }
+    .bubble--white.bubble--left   .bubble__peak  { border-left-color: #FFFFFF; }
+
+
+
+
