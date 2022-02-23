@@ -25,8 +25,6 @@
     .button__icon {
         vertical-align: top;
         fill: currentColor;
-        transition: fill var(--transition-hover),
-                    color var(--transition-hover);
         flex-shrink: 0;
     }
 
