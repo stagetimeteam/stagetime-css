@@ -43,7 +43,7 @@
             }
 
             .vertical-artist__content {
-                margin-top: 6px;
+                margin-top: 16px;
                 display: flex;
                 align-items: flex-start;
             }
