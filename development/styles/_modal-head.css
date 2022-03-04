@@ -3,16 +3,16 @@
     display: flex;
     align-items: flex-start;
     height: 67px;
-    padding: 24px 70px 24px var(--modal-padding);
+    padding: 13px 70px 13px var(--modal-padding);
     border-bottom: 1px solid #E8E8E8;
 }
     .modal-head__back {
-        margin: -7px 10px -7px -13px;
+        margin: 0 13px 0 -13px;
     }
 
     .modal-head__heading {
-        margin-top: -1px;
-        margin-bottom: 1px;
+        margin-top: 6px;
+        margin-bottom: 0;
         cursor: default; /* somehow it feels like you can click and start typing in header */
     }
 

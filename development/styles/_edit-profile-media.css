@@ -12,13 +12,13 @@
         margin-top: 19px;
         display: flex;
         align-items: flex-start;
-        margin-left: -14px;
-        margin-right: -14px;
+        margin-left: -8px;
+        margin-right: -8px;
     }
         .edit-profile-media__link {
-            margin-left: 12px;
-            margin-right: 12px;
-            flex-grow: 1;
+            margin-left: 6px;
+            margin-right: 6px;
+            min-width: 132px;
         }
 
     .edit-profile-media__list {

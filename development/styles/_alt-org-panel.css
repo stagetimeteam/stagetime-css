@@ -1,7 +1,7 @@
 .alt-org-panel {
     position: relative;
     display: block;
-    padding: 13px 24px 13px 74px;
+    padding: 13px 20px 13px 74px;
     border-radius: 10px;
     text-decoration: none;
     transition: background-color var(--transition-hover);
