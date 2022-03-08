@@ -50,24 +50,10 @@
         }
 
             .all-connections__description {
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
                 font-size: 11px;
                 line-height: 18px;
                 color: #545454;
             }
-                .all-connections__description .link {
-                    font-weight: normal;
-                }
-
-            .all-connections__more {
-                font-size: 11px;
-                line-height: 18px;
-            }
-
 
 
 .all-connections--faded {
@@ -87,8 +73,3 @@
         transform: translateZ(0);
     }
     /* stylelint-enable */
-
-
-    .all-connections--faded .all-connections__description .link {
-        font-weight: bold;
-    }
