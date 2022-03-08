@@ -1,6 +1,7 @@
 .simple-parallax {
     width: 100%;
-    height: 100%;
+    height: calc(100% + 20px); /* move .simple-parallax a bit up */
+    margin-top: -20px;         /* to be under the top bar */
     overflow: hidden;
 }
     .simple-parallax__image {
