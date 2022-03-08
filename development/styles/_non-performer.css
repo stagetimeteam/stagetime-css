@@ -49,6 +49,9 @@
                     border-top: 1px solid #F2F2F2;
                     padding-top: 24px;
                 }
+                    .non-performer__connections .all-connections {
+                        margin: -10px -13px;
+                    }
 
                 .non-performer__tags {
                     margin-top: 31px;

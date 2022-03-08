@@ -1,5 +1,19 @@
 .all-connections {
+    display: block;
+    padding: 10px 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color var(--transition-hover);
+    cursor: pointer;
+}
 
+.all-connections:hover {
+    background-color: var(--panel-hover);
+}
+
+.all-connections:active {
+    background-color: var(--panel-active);
+    transition: none;
 }
     .all-connections__head {
         display: flex;
@@ -9,7 +23,8 @@
     }
         .all-connections__icon {
             margin-left: -2px;
-            margin-top: -6px;
+            margin-top: -4px;
+            margin-bottom: -2px;
             width: 32px;
             height: 32px;
             fill: #545454;
@@ -21,7 +36,7 @@
         }
 
     .all-connections__body {
-        margin-top: 13px;
+        margin-top: 10px;
         display: flex;
         align-items: flex-start;
         text-decoration: none;

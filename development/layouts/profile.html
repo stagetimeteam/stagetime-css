@@ -851,14 +851,14 @@
                         </div>
                         <div class="artist__data">
                             <div class="artist__sidebar">
-                                <div class="artist__connections all-connections">
-                                    <a class="all-connections__head" href="#" data-toggle="modal" data-target="#connections">
+                                <a class="artist__connections all-connections" href="#" data-toggle="modal" data-target="#connections">
+                                    <div class="all-connections__head">
                                         <img class="all-connections__icon" src="../symbols/16-crowd.svg" width="16" height="16" alt="">
                                         <div class="all-connections__heading title title--smaller">
                                             345 Connections
                                         </div>
-                                    </a>
-                                    <a class="all-connections__body" href="#" data-toggle="modal" data-target="#connections">
+                                    </div>
+                                    <div class="all-connections__body">
                                         <div class="all-connections__people snake snake--larger-border">
                                             <div class="snake__item avatar avatar--alt-hover">
                                                 <img class="avatar__image"
@@ -892,12 +892,12 @@
                                             <div class="all-connections__description">
                                                 You and Ben both know Lachlan Glen, Madison Leonard, and
                                             </div>
-                                            <div class="all-connections__more link link--user-color">
+                                            <span class="all-connections__more link link--user-color">
                                                 58&nbsp;more
-                                            </div>
+                                            </span>
                                         </div>
-                                    </a>
-                                </div>
+                                    </div>
+                                </a>
                                 <div class="artist__event performing">
                                     <div class="performing__heading title title--smaller">
                                         Currently Performing
@@ -913,19 +913,49 @@
                                                      alt="Mark Zuckerberg"
                                                 >
                                             </a>
-                                            <div class="performance__sub-heading">
-                                                Così fan tutte
-                                            </div>
-                                            <div class="performance__note">
-                                                Ferrando
-                                            </div>
-                                            <div class="performance__note">
-                                                Lyric Opera of Chicago
+                                            <div class="performance__content">
+                                                <div class="performance__sub-heading">
+                                                    Così fan tutte
+                                                </div>
+                                                <div class="performance__note">
+                                                    Ferrando
+                                                </div>
+                                                <div class="performance__note">
+                                                    Lyric Opera of Chicago
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="performance__footer">
-                                            <div class="performance__dates">
+                                            <div class="performance__dates bubble-trigger">
                                                 <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                <span class="bubble bubble--top bubble--white">
+                                                    <span class="bubble__body">
+                                                        <div class="dates-list">
+                                                            <div class="dates-list__column">
+                                                                June 1, 2021<br>
+                                                                June 2, 2021<br>
+                                                                June 3, 2021<br>
+                                                                June 4, 2021<br>
+                                                                June 5, 2021
+                                                            </div>
+                                                            <div class="dates-list__column">
+                                                                June 6, 2021<br>
+                                                                June 7, 2021<br>
+                                                                June 8, 2021<br>
+                                                                June 9, 2021<br>
+                                                                June 10, 2021
+                                                            </div>
+                                                            <div class="dates-list__column">
+                                                                June 11, 2021<br>
+                                                                June 12, 2021<br>
+                                                                June 13, 2021<br>
+                                                                June 14, 2021<br>
+                                                                192 dates
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                    <i class="bubble__peak"></i>
+                                                </span>
                                             </div>
                                             <a class="performance__add" href="#">
                                                 <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1584,7 +1614,7 @@
                                     </div>
                                 </div>
                                 <div class="vertical-artist__secondary">
-                                    <div class="vertical-artist__connections all-connections">
+                                    <a class="vertical-artist__connections all-connections" href="#" data-toggle="modal" data-target="#connections">
                                         <div class="all-connections__head">
                                             <img class="all-connections__icon" src="../symbols/16-crowd.svg" width="16" height="16" alt="">
                                             <div class="all-connections__heading title title--smaller">
@@ -1593,7 +1623,7 @@
                                         </div>
                                         <div class="all-connections__body">
                                             <div class="all-connections__people snake snake--larger-border">
-                                                <a class="snake__item avatar avatar--alt-hover" data-toggle="modal" data-target="#connections" href="#">
+                                                <div class="snake__item avatar avatar--alt-hover">
                                                     <img class="avatar__image"
                                                          srcset="../temp/person-a-30x30@2x.jpg 2x"
                                                          src="../temp/person-a-30x30.jpg"
@@ -1601,8 +1631,8 @@
                                                          height="30"
                                                          alt="Mark Zuckerberg"
                                                     >
-                                                </a>
-                                                <a class="snake__item avatar avatar--alt-hover" data-toggle="modal" data-target="#connections" href="#">
+                                                </div>
+                                                <div class="snake__item avatar avatar--alt-hover">
                                                     <img class="avatar__image"
                                                          srcset="../temp/person-b-30x30@2x.jpg 2x"
                                                          src="../temp/person-b-30x30.jpg"
@@ -1610,8 +1640,8 @@
                                                          height="30"
                                                          alt="Mark Zuckerberg"
                                                     >
-                                                </a>
-                                                <a class="snake__item avatar avatar--alt-hover" data-toggle="modal" data-target="#connections" href="#">
+                                                </div>
+                                                <div class="snake__item avatar avatar--alt-hover">
                                                     <img class="avatar__image"
                                                          srcset="../temp/person-c-30x30@2x.jpg 2x"
                                                          src="../temp/person-c-30x30.jpg"
@@ -1619,20 +1649,20 @@
                                                          height="30"
                                                          alt="Mark Zuckerberg"
                                                     >
-                                                </a>
+                                                </div>
                                             </div>
                                             <div class="all-connections__details">
                                                 <div class="all-connections__description">
                                                     You and Ben both know
-                                                    <a class="link link--text-alike" href="#" data-toggle="modal" data-target="#connections">Lachlan Glen</a>,
-                                                    <a class="link link--text-alike" href="#" data-toggle="modal" data-target="#connections">Madison Leonard</a>
+                                                    <span class="link link--text-alike">Lachlan Glen</span>,
+                                                    <span class="link link--text-alike">Madison Leonard</span>
                                                 </div>
-                                                <a class="all-connections__more link link--user-color" data-toggle="modal" data-target="#connections">
+                                                <span class="all-connections__more link link--user-color">
                                                     58&nbsp;more
-                                                </a>
+                                                </span>
                                             </div>
                                         </div>
-                                    </div>
+                                    </a>
                                     <div class="vertical-artist__performing performing">
                                         <div class="performing__heading title title--smaller">
                                             Currently Performing
@@ -1648,19 +1678,49 @@
                                                          alt="Mark Zuckerberg"
                                                     >
                                                 </a>
-                                                <div class="performance__sub-heading">
-                                                    Così fan tutte
-                                                </div>
-                                                <div class="performance__note">
-                                                    Ferrando
-                                                </div>
-                                                <div class="performance__note">
-                                                    Lyric Opera of Chicago
+                                                <div class="performance__content">
+                                                    <div class="performance__sub-heading">
+                                                        Così fan tutte
+                                                    </div>
+                                                    <div class="performance__note">
+                                                        Ferrando
+                                                    </div>
+                                                    <div class="performance__note">
+                                                        Lyric Opera of Chicago
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="performance__footer">
-                                                <div class="performance__dates">
+                                                <div class="performance__dates bubble-trigger">
                                                     <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                    <span class="bubble bubble--top bubble--white">
+                                                        <span class="bubble__body">
+                                                            <div class="dates-list">
+                                                                <div class="dates-list__column">
+                                                                    June 1, 2021<br>
+                                                                    June 2, 2021<br>
+                                                                    June 3, 2021<br>
+                                                                    June 4, 2021<br>
+                                                                    June 5, 2021
+                                                                </div>
+                                                                <div class="dates-list__column">
+                                                                    June 6, 2021<br>
+                                                                    June 7, 2021<br>
+                                                                    June 8, 2021<br>
+                                                                    June 9, 2021<br>
+                                                                    June 10, 2021
+                                                                </div>
+                                                                <div class="dates-list__column">
+                                                                    June 11, 2021<br>
+                                                                    June 12, 2021<br>
+                                                                    June 13, 2021<br>
+                                                                    June 14, 2021<br>
+                                                                    192 dates
+                                                                </div>
+                                                            </div>
+                                                        </span>
+                                                        <i class="bubble__peak"></i>
+                                                    </span>
                                                 </div>
                                                 <a class="performance__add" href="#">
                                                     <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1754,19 +1814,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1787,19 +1877,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1820,19 +1940,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1853,19 +2003,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1886,19 +2066,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1919,19 +2129,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1952,19 +2192,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -1985,19 +2255,49 @@
                                                              alt="Mark Zuckerberg"
                                                         >
                                                     </a>
-                                                    <div class="performance__sub-heading">
-                                                        Così fan tutte
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Ferrando
-                                                    </div>
-                                                    <div class="performance__note">
-                                                        Lyric Opera of Chicago
+                                                    <div class="performance__content">
+                                                        <div class="performance__sub-heading">
+                                                            Così fan tutte
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Ferrando
+                                                        </div>
+                                                        <div class="performance__note">
+                                                            Lyric Opera of Chicago
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="performance__footer">
-                                                    <div class="performance__dates">
+                                                    <div class="performance__dates bubble-trigger">
                                                         <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                        <span class="bubble bubble--top bubble--white">
+                                                            <span class="bubble__body">
+                                                                <div class="dates-list">
+                                                                    <div class="dates-list__column">
+                                                                        June 1, 2021<br>
+                                                                        June 2, 2021<br>
+                                                                        June 3, 2021<br>
+                                                                        June 4, 2021<br>
+                                                                        June 5, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 6, 2021<br>
+                                                                        June 7, 2021<br>
+                                                                        June 8, 2021<br>
+                                                                        June 9, 2021<br>
+                                                                        June 10, 2021
+                                                                    </div>
+                                                                    <div class="dates-list__column">
+                                                                        June 11, 2021<br>
+                                                                        June 12, 2021<br>
+                                                                        June 13, 2021<br>
+                                                                        June 14, 2021<br>
+                                                                        192 dates
+                                                                    </div>
+                                                                </div>
+                                                            </span>
+                                                            <i class="bubble__peak"></i>
+                                                        </span>
                                                     </div>
                                                     <a class="performance__add" href="#">
                                                         <img class="performing__calendar-icon" src="../symbols/16-calendar-rounded.svg" width="16" height="16" alt="">
@@ -3792,30 +4092,30 @@
                                 <div class="quotes-list__note">
                                     Drag to reorder or click on a card to edit or delete an entry.
                                 </div>
-                                <div class="quotes-list__item quote-bar">
+                                <a class="quotes-list__item quote-bar" href="#">
                                     <div class="quote-bar__body">
                                         “Ben Bliss is perhaps the finest Mozart tenor that has graced the Lyric stage in the past years.”
                                     </div>
                                     <div class="quote-bar__author">
                                         — Fra Noi
                                     </div>
-                                </div>
-                                <div class="quotes-list__item quote-bar">
+                                </a>
+                                <a class="quotes-list__item quote-bar" href="#">
                                     <div class="quote-bar__body">
                                         “Ben Bliss is perhaps the finest Mozart tenor that has graced the Lyric stage in the past years.”
                                     </div>
                                     <div class="quote-bar__author">
                                         — Fra Noi
                                     </div>
-                                </div>
-                                <div class="quotes-list__item quote-bar">
+                                </a>
+                                <a class="quotes-list__item quote-bar" href="#">
                                     <div class="quote-bar__body">
                                         “Ben Bliss is perhaps the finest Mozart tenor that has graced the Lyric stage in the past years.”
                                     </div>
                                     <div class="quote-bar__author">
                                         — Fra Noi
                                     </div>
-                                </div>
+                                </a>
                             </div>
 
                             <p><br><br>Edit single quote:</p>
@@ -4037,14 +4337,14 @@
 
                             <div class="employment">
                                 <div class="employment__row employment__row--has-columns employment__row--has-checkboxes">
-                                    <div class="employment__col">
+                                    <div class="employment__col employment__col--narrow">
                                         <label class="employment__option choice choice--radio choice--larger-font choice--full-width">
                                             <input class="choice__widget" type="radio" name="career-or-education">
                                             <i class="choice__icon" role="presentation"></i>
                                             <span class="choice__label">Career Highlight</span>
                                         </label>
                                     </div>
-                                    <div class="employment__col">
+                                    <div class="employment__col employment__col--narrow">
                                         <label class="employment__option choice choice--radio choice--larger-font choice--full-width">
                                             <input class="choice__widget" type="radio" name="career-or-education">
                                             <i class="choice__icon" role="presentation"></i>
@@ -4346,19 +4646,49 @@
                                                      alt="Mark Zuckerberg"
                                                 >
                                             </a>
-                                            <div class="performance__sub-heading">
-                                                Così fan tutte
-                                            </div>
-                                            <div class="performance__note">
-                                                Ferrando
-                                            </div>
-                                            <div class="performance__note">
-                                                Lyric Opera of Chicago
+                                            <div class="performance__content">
+                                                <div class="performance__sub-heading">
+                                                    Così fan tutte
+                                                </div>
+                                                <div class="performance__note">
+                                                    Ferrando
+                                                </div>
+                                                <div class="performance__note">
+                                                    Lyric Opera of Chicago
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="performance__footer">
-                                            <div class="performance__dates">
+                                            <div class="performance__dates bubble-trigger">
                                                 <span class="performance__main-date">June 1, 2021</span> and 6 more
+                                                <span class="bubble bubble--top bubble--white">
+                                                    <span class="bubble__body">
+                                                        <div class="dates-list">
+                                                            <div class="dates-list__column">
+                                                                June 1, 2021<br>
+                                                                June 2, 2021<br>
+                                                                June 3, 2021<br>
+                                                                June 4, 2021<br>
+                                                                June 5, 2021
+                                                            </div>
+                                                            <div class="dates-list__column">
+                                                                June 6, 2021<br>
+                                                                June 7, 2021<br>
+                                                                June 8, 2021<br>
+                                                                June 9, 2021<br>
+                                                                June 10, 2021
+                                                            </div>
+                                                            <div class="dates-list__column">
+                                                                June 11, 2021<br>
+                                                                June 12, 2021<br>
+                                                                June 13, 2021<br>
+                                                                June 14, 2021<br>
+                                                                192 dates
+                                                            </div>
+                                                        </div>
+                                                    </span>
+                                                    <i class="bubble__peak"></i>
+                                                </span>
                                             </div>
                                             <a class="performance__action button button--dark-secondary">
                                                 <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">

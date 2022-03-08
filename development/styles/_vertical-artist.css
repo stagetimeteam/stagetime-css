@@ -43,7 +43,6 @@
             }
 
             .vertical-artist__content {
-                margin-top: 16px;
                 display: flex;
                 align-items: flex-start;
             }
@@ -51,6 +50,7 @@
                     flex-basis: 48.44%;
                     flex-shrink: 0;
                     margin-right: 8.08%;
+                    padding-top: 16px;
                 }
                     .vertical-artist__description {
 
@@ -82,9 +82,10 @@
                     margin-right: -13px;
                     padding-left: 13px;
                     padding-right: 13px;
+                    padding-top: 16px;
                 }
                     .vertical-artist__connections {
-
+                        margin: -10px -13px;
                     }
 
                     .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {

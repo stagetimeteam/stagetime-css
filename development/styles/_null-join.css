@@ -12,6 +12,7 @@
 
     .null-join__action {
         margin-left: auto;
+        flex-shrink: 0;
     }
 
     .null-join__action,

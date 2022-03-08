@@ -417,10 +417,10 @@
 
 
 .carousel--for-profile-schedule {
-
+    margin-top: -42px; /* because of bubble inside of .performance__dates */
 }
     .carousel--for-profile-schedule .carousel__container {
-
+        padding-top: 42px; /* because of bubble inside of .performance__dates */
     }
         .carousel--for-profile-schedule .carousel__item {
             width: 336px;
@@ -452,7 +452,7 @@
 
 }
     .carousel--for-profile-schedule.carousel--arrows-under-edit-button .carousel__control {
-        margin-bottom: 0;
+        margin-bottom: -42px; /* because of bubble inside of .performance__dates */
     }
 
     .carousel--for-profile-schedule.carousel--arrows-under-edit-button::before {

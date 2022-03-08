@@ -4,33 +4,36 @@
 }
     .performance__body {
         position: relative;
-        padding: 14px 16px 16px 104px;
-        min-height: 96px;
+        padding: 14px 16px 16px;
+        display: flex;
+        align-items: flex-end;
     }
         .performance__preview {
-            position: absolute;
-            left: 16px;
-            top: 16px;
+            margin-right: 24px;
+            flex-shrink: 0;
         }
 
-        .performance__sub-heading {
-            font-weight: bold;
-            font-size: 13px;
-            line-height: 20px;
-            color: #545454;
-        }
+        .performance__content {
 
-        .performance__note {
-            margin-top: 9px;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 16px;
-            color: #545454;
         }
+            .performance__sub-heading {
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 20px;
+                color: #545454;
+            }
 
-        .performance__note + .performance__note {
-            margin-top: 4px;
-        }
+            .performance__note {
+                margin-top: 9px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                color: #545454;
+            }
+
+            .performance__note + .performance__note {
+                margin-top: 4px;
+            }
 
     .performance__footer {
         display: flex;
@@ -48,6 +51,15 @@
             .performance__main-date {
                 font-weight: 600;
             }
+
+            .performance__dates .bubble {
+                left: 0;
+                right: auto;
+                transform: translate(0);
+            }
+                .performance__dates .bubble .bubble__peak {
+                    left: 17px;
+                }
 
         .performance__add {
             margin-left: auto;

@@ -25,3 +25,9 @@
             margin-left: 11px;
             margin-right: 11px;
         }
+
+        .employment__col--narrow {
+            width: calc(25% + 22px);
+        }
+
+

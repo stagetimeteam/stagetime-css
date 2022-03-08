@@ -1,0 +1,14 @@
+.dates-list {
+    display: flex;
+    align-items: flex-start;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 20px;
+}
+    .dates-list__column {
+        margin-left: 12px;
+    }
+
+    .dates-list__column:first-child {
+        margin-left: 0;
+    }
