@@ -51,10 +51,15 @@
                 margin-bottom: 10px;
                 width: 113px;  /* 109px of image + 2px of border */
                 height: 113px;  /* 109px of image + 2px of border */
-                border: 2px solid #CACACA;
+                padding: 2px; /* border */
+                background-color: #CACACA;
                 box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
                 border-radius: 8px;
             }
+                .summary__emblem {
+                    vertical-align: top;
+                    border-radius: 6px;
+                }
 
             .summary__title {
                 width: 308px;
@@ -149,6 +154,9 @@
                 /*border-radius: 8px;*/
                 /*box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);*/
             }
+                .summary--as-card .summary__emblem {
+
+                }
 
             .summary--as-card .summary__title {
                 /*width: 308px;*/
