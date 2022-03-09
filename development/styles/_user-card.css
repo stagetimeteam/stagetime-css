@@ -208,5 +208,5 @@
             font-size: 11px;
             line-height: 16px;
             text-transform: uppercase;
-            color: #9CB2BE;
+            color: var(--theme-main);
         }
