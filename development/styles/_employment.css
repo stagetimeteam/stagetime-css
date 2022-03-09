@@ -1,6 +1,27 @@
 .employment {
     padding: 32px var(--modal-padding) 34px;
 }
+    .employment__hints {
+        margin-top: -10px;
+        font-size: 13px;
+        line-height: 24px;
+        color: #545454;
+    }
+        .employment__note {
+
+        }
+
+    .employment__list {
+        margin-top: 16px;
+    }
+        .employment__item {
+            margin-top: 20px;
+        }
+
+        .employment__item:first-child {
+            margin-top: 0;
+        }
+
     .employment__row {
         margin-top: 20px;
     }

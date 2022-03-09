@@ -1186,6 +1186,10 @@
                             <div class="non-performer__employment-history experience">
                                 <h2 class="experience__heading">
                                     Experience
+                                    <a class="experience__edit button button--alt-secondary" href="#" data-toggle="modal" data-target="#edit-experience">
+                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                        Edit Experience
+                                    </a>
                                 </h2>
                                 <div class="experience__body">
                                     <div class="experience__list">
@@ -1991,7 +1995,180 @@
 
         <!-- 3/3 Modals: -->
         <!-- No modal windows on this page -->
+        <div class="modal modal--748px modal--skeleton fade" id="edit-experience" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <div class="modal-head__heading title title--small">
+                                Editing Experience
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="employment">
+                                <div class="employment__hints">
+                                    <div class="employment__note">
+                                        Add your experience.
+                                    </div>
+                                    <div class="employment__note">
+                                        Second line of text.
+                                    </div>
+                                </div>
+                                <div class="employment__list">
+                                    <a class="employment__item org-edit-card" href="">
+                                        <div class="org-edit-card__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                                 src="../temp/organization-a-44x44.jpg"
+                                                 width="44"
+                                                 height="44"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="org-edit-card__body">
+                                            <div class="org-edit-card__head">
+                                                <div class="org-edit-card__summary">
+                                                    <div class="org-edit-card__heading">
+                                                        The Metropolitan Opera
+                                                    </div>
+                                                    <div class="org-edit-card__post">
+                                                        Director of Marketing & PR
+                                                    </div>
+                                                    <div class="org-edit-card__note">
+                                                        Mar 2019 - present
+                                                    </div>
+                                                </div>
+                                                <div class="org-edit-card__edit button button--inner">
+                                                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                                    Edit
+                                                </div>
+                                            </div>
+                                            <div class="org-edit-card__description">
+                                                Anh is the Director of Marketing & PR at Opera Theatre of Saint Louis (OTSL), overseeing all sales campaigns, audience development initiatives, and media relations while providing key
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="employment__item org-edit-card" href="">
+                                        <div class="org-edit-card__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                                 src="../temp/organization-a-44x44.jpg"
+                                                 width="44"
+                                                 height="44"
+                                                 alt=""
+                                            >
+                                        </div>
+                                        <div class="org-edit-card__body">
+                                            <div class="org-edit-card__head">
+                                                <div class="org-edit-card__summary">
+                                                    <div class="org-edit-card__heading">
+                                                        The Metropolitan Opera
+                                                    </div>
+                                                    <div class="org-edit-card__post">
+                                                        Director of Marketing & PR
+                                                    </div>
+                                                    <div class="org-edit-card__note">
+                                                        Mar 2019 - present
+                                                    </div>
+                                                </div>
+                                                <div class="org-edit-card__edit button button--inner">
+                                                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                                    Edit
+                                                </div>
+                                            </div>
+                                            <div class="org-edit-card__description">
+                                                Anh is the Director of Marketing & PR at Opera Theatre of Saint Louis (OTSL), overseeing all sales campaigns, audience development initiatives, and media relations while providing key
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="employment__row">
+                                    <div class="input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Organization *">
+                                    </div>
+                                </div>
+                                <div class="employment__row">
+                                    <div class="input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Title *">
+                                    </div>
+                                </div>
+                                <div class="employment__row employment__row--has-checkboxes">
+                                    <label class="choice choice--checkbox choice--larger-font">
+                                        <input class="choice__widget" type="checkbox">
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label">I am currently working in this role.</span>
+                                    </label>
+                                </div>
+                                <div class="employment__row employment__row--has-columns">
+                                    <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
+                                        <select class="input__widget">
+                                            <option value="placeholder">Start month</option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>...</option>
+                                            <option>December</option>
+                                        </select>
+                                    </div>
+                                    <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
+                                        <select class="input__widget" required>
+                                            <option value="placeholder">Start year *</option>
+                                            <option>1950</option>
+                                            <option>1951</option>
+                                            <option>...</option>
+                                            <option>2021</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="employment__row employment__row--has-columns">
+                                    <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
+                                        <select class="input__widget">
+                                            <option value="placeholder">End month (or expected)</option>
+                                            <option>January</option>
+                                            <option>February</option>
+                                            <option>...</option>
+                                            <option>December</option>
+                                        </select>
+                                    </div>
+                                    <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
+                                        <select class="input__widget" required>
+                                            <option value="placeholder">Start year *</option>
+                                            <option>1950</option>
+                                            <option>1951</option>
+                                            <option>...</option>
+                                            <option>2021</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="employment__row">
+                                    <div class="input input--area">
+                                        <textarea class="input__widget" placeholder="Description" rows="5"></textarea>
+                                    </div>
+                                </div>
 
+
+                            </div>
+                        </div>
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-action" type="button">
+                                    + Add Experience
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit button--disabled" type="button" disabled="">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
 
