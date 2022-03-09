@@ -5,7 +5,7 @@
         margin-top: 0;
         margin-bottom: 0;
         padding: 5px 21px;
-        background-color: #EDF1F3;
+        background-color: var(--theme-light);
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         font-weight: 600;
@@ -15,7 +15,7 @@
     }
 
     .experience__body {
-        border: 1px solid #EDF1F3;
+        border: 1px solid var(--theme-light);
         padding: 25px 28px 30px;
         border-top: none;
         border-bottom-left-radius: 5px;

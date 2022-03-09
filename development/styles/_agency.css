@@ -6,7 +6,7 @@
         flex-shrink: 0;
         margin-top: 3px;
         margin-right: 16px;
-        border: 1px solid #F2F2F2;
+        border: 1px solid var(--theme-light);
         border-radius: 4px;
         padding: 3px;
     }

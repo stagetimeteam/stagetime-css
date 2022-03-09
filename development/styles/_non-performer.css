@@ -30,11 +30,11 @@
             .non-performer__sidebar {
                 width: 330px;
                 flex-shrink: 0;
-                box-shadow: inset -2px 0 0 #EDF1F3;
+                box-shadow: inset -2px 0 0 var(--theme-light);
                 padding-right: 48px;
             }
                 .non-performer__photo {
-                    border: 3px solid #EDF1F3;
+                    border: 3px solid var(--theme-light);
                     background-color: var(--image-fallback);
                     box-sizing: content-box;
                     border-radius: 4px;
@@ -46,7 +46,7 @@
 
                 .non-performer__connections {
                     margin-top: 17px;
-                    border-top: 1px solid #F2F2F2;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 24px;
                 }
                     .non-performer__connections .all-connections {
@@ -55,19 +55,19 @@
 
                 .non-performer__tags {
                     margin-top: 31px;
-                    border-top: 1px solid #F2F2F2;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 26px;
                 }
 
                 .non-performer__highlights {
                     margin-top: 29px;
-                    border-top: 1px solid #F2F2F2;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 21px;
                 }
 
                 .non-performer__social {
                     margin-top: 27px;
-                    border-top: 1px solid #F2F2F2;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 20px;
                 }
 
@@ -75,7 +75,7 @@
             .non-performer__content {
                 width: calc(100% - 330px);
                 flex-shrink: 0;
-                box-shadow: -2px 0 0 #EDF1F3;
+                box-shadow: -2px 0 0 var(--theme-light);
                 padding-left: 48px;
             }
                 .non-performer__description {
@@ -84,7 +84,7 @@
 
                 .non-performer__summary {
                     margin-top: 28px;
-                    border-top: 1px solid #F2F2F2;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 25px;
                 }
 
@@ -102,18 +102,18 @@
 
                 .non-performer__schedule {
                     margin-top: 43px;
-                    border-top: 1px solid #E3EDF3;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 35px;
                 }
 
                 .non-performer__activity {
                     margin-top: 43px;
-                    border-top: 1px solid #E3EDF3;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 35px;
                 }
 
                 .non-performer__recommendations {
                     margin-top: 43px;
-                    border-top: 1px solid #E3EDF3;
+                    border-top: 1px solid var(--theme-light);
                     padding-top: 35px;
                 }

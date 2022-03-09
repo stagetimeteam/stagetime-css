@@ -18,7 +18,7 @@
             top: 6px;
             bottom: 4px;
             width: 3px;
-            background-color: #9CB2BE;
+            background-color: var(--theme-light);
         }
 
     .position__note {
@@ -42,5 +42,5 @@
             top: -4px;
             bottom: 0;
             width: 2px;
-            background-color: #EDF1F3;
+            background-color: var(--theme-light);
         }

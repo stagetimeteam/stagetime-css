@@ -58,7 +58,10 @@
             }
                 .summary__emblem {
                     vertical-align: top;
+                    width: 100%;
+                    height: 100%;
                     border-radius: 6px;
+                    background-color: var(--image-fallback);
                 }
 
             .summary__title {

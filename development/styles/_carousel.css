@@ -276,7 +276,7 @@
 
 .carousel--for-alt-profile-projects {
     padding: 18px;
-    background-color: #EBF0F2;
+    background-color: var(--theme-light);
     border-radius: 5px;
 }
     .carousel--for-alt-profile-projects .carousel__container {

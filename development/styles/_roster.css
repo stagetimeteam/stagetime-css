@@ -6,7 +6,7 @@
         align-items: flex-start;
         padding-left: 21px;
         padding-right: 14px;
-        background-color: #EDF1F3;
+        background-color: var(--theme-light);
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
@@ -24,7 +24,7 @@
         }
 
     .roster__body {
-        border: 1px solid #EDF1F3;
+        border: 1px solid var(--theme-light);
         padding: 25px 20px 30px;
         border-top: none;
         border-bottom-left-radius: 5px;

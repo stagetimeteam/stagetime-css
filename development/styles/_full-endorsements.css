@@ -10,7 +10,7 @@
         margin-top: 34px;
         display: flex;
         align-items: flex-start;
-        background-color: #EDF1F3;
+        background-color: var(--theme-light);
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
     }
@@ -40,13 +40,13 @@
         }
 
     .full-endorsements__list {
-        border-left: 1px solid #E3EDF3;
-        border-right: 1px solid #E3EDF3;
+        border-left: 1px solid var(--theme-light);
+        border-right: 1px solid var(--theme-light);
         padding-left: 32px;
         padding-right: 32px;
     }
         .full-endorsements__item {
-            border-top: 1px solid #E3EDF3;
+            border-top: 1px solid var(--theme-light);
             padding-top: 42px;
             padding-bottom: 22px;
         }
