@@ -66,6 +66,19 @@
         color: #757575;
     }
 
+    .input__hint {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px 19px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: #757575;
+        white-space: nowrap;
+        pointer-events: none;
+    }
+
 .input--area {
 
 }

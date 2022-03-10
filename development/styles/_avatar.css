@@ -79,6 +79,54 @@
             height: 20px;
         }
 
+    .avatar__re-upload {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity var(--transition-hover);
+    }
+
+    .avatar__re-upload:hover {
+        opacity: 1;
+    }
+
+    .avatar__re-upload:active {
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+        .avatar__re-upload::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 40px;
+            height: 40px;
+            background-color: #333333;
+            border-radius: 50%;
+        }
+
+        .avatar__arrow-up {
+            position: relative;
+            vertical-align: top;
+            fill: #FFFFFF;
+            width: 20px;
+            height: 20px;
+        }
+
+
 .avatar:not(.avatar--non-clickable):hover {
 
 }

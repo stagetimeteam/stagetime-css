@@ -1,0 +1,70 @@
+.edit-artist {
+    padding: 21px var(--modal-padding) 40px;
+}
+    .edit-artist__intro {
+        font-size: 13px;
+        line-height: 24px;
+        color: #545454;
+    }
+
+    .edit-artist__upload {
+        margin-top: 19px;
+    }
+
+    .edit-artist__body {
+        display: flex;
+        align-items: flex-start;
+    }
+        .edit-artist__sidebar {
+            width: 158px;
+            margin-right: 24px;
+            text-align: center;
+        }
+            .edit-artist__preview {
+
+            }
+
+            .edit-artist__name {
+                margin-top: 18px;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 24px;
+                color: #545454;
+            }
+
+            .edit-artist__note {
+                margin-top: 4px;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: var(--theme-main);
+            }
+
+            .edit-artist__crop {
+                margin-top: 16px;
+            }
+
+            .edit-artist__crop.button,
+            .edit-artist__crop .button {
+                width: 114px;
+            }
+
+        .edit-artist__content {
+            flex-grow: 1;
+        }
+            .edit-artist__field {
+                margin-top: 20px;
+            }
+
+            .edit-artist__field:first-child {
+                margin-top: 0;
+            }
+
+            .edit-artist__invite {
+                margin-top: 10px;
+            }
+
+            .edit-artist__invite .choice__label {
+                font-weight: normal;
+            }
