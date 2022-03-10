@@ -126,4 +126,15 @@
         $(this).parents('.input').find('.input__counter').text(counter + '/80');
     });
 
+
+    /* padding under .input__hint */
+
+    var inputHintPadding;
+
+    $('.input__hint').each(function () {
+        var inputHintPadding = $(this).outerWidth();
+        $(this).parents('.input').find('.input__widget').css('padding-right', inputHintPadding);
+    });
+
+
 })(jQuery);
