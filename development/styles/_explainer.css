@@ -1,0 +1,17 @@
+.explainer {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .explainer__icon {
+        vertical-align: top;
+    }
+
+    .explainer .bubble--top {
+        margin-bottom: 10px;
+    }
+
+
+    .explainer .bubble--leaf {
+        margin-bottom: 3px;
+    }

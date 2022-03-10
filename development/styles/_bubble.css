@@ -171,3 +171,20 @@
 
 
 
+.bubble--leaf {
+    position: absolute;
+    z-index: 4000;
+    left: 13px;
+    bottom: 11px;
+}
+    .bubble--leaf .bubble__body {
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+        border-radius: 20px 20px 20px 0;
+        font-size: 13px;
+        line-height: 18px;
+        color: #545454;
+    }
+        .bubble--leaf .bubble__peak {
+            display: none;
+        }

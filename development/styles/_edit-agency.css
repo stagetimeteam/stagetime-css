@@ -1,0 +1,50 @@
+.edit-agency {
+    padding: 21px var(--modal-padding) 40px;
+}
+    .edit-agency__intro {
+        font-size: 13px;
+        line-height: 24px;
+        color: #545454;
+    }
+
+    .edit-agency__widget {
+        margin-top: 20px;
+    }
+
+    .edit-agency__bar {
+        border: 1px solid #E8E8E8;
+        border-radius: 5px;
+        padding: 18px 18px 20px 20px;
+        text-decoration: none;
+        color: inherit;
+        transition: background-color var(--transition-hover),
+                    border-color var(--transition-hover);
+    }
+
+    .edit-agency__bar:hover {
+        background-color: var(--panel-hover);
+        border-color: var(--panel-hover);
+    }
+
+    .edit-agency__bar:active {
+        background-color: var(--panel-active);
+        border-color: var(--panel-active);
+        transition: none;
+    }
+
+    .edit-agency__artist-note {
+        margin-top: 28px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 13px;
+        line-height: 24px;
+        color: #545454;
+    }
+
+    .edit-agency__artist-search {
+        margin-top: 15px;
+    }
+
+    .edit-agency__listing {
+        margin-top: 36px;
+    }

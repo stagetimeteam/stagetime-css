@@ -12,7 +12,7 @@
     }
         .roster__heading {
             margin-top: 5px;
-            margin-bottom: 0;
+            margin-bottom: 5px;
             font-weight: 600;
             font-size: 14px;
             line-height: 24px;
@@ -23,14 +23,32 @@
             margin-left: auto;
         }
 
+    .roster__sub-head {
+        border-left: 1px solid var(--theme-light);
+        border-right: 1px solid var(--theme-light);
+        border-bottom: 1px solid var(--theme-light);
+        padding: 17px 20px;
+    }
+        .roster__note {
+            font-size: 13px;
+            line-height: 24px;
+            color: #545454;
+        }
+
     .roster__body {
         border: 1px solid var(--theme-light);
-        padding: 25px 20px 30px;
+        padding: 18px 20px 20px;
         border-top: none;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
         text-align: center;
     }
+
+    .edit-agency .roster__body {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
         .roster__list {
             display: flex;
             align-items: flex-start;
@@ -38,12 +56,14 @@
         }
             .roster__item {
                 width: 25%;
+                padding-top: 13px;
                 padding-bottom: 27px;
                 text-align: center;
             }
 
         .roster__more {
             margin-top: 5px;
+            margin-bottom: 15px;
         }
 
         .roster__more.button,

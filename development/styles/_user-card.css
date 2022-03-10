@@ -1,10 +1,22 @@
 .user-card {
+    position: relative;
     width: 188px;
     padding-top: 20px;
     padding-bottom: 13px;
     text-align: center; /* align photo to center (card itself is larger than photo) */
     cursor: pointer;
 }
+    .user-card__hint {
+        position: absolute;
+        left: -3px;
+        top: -3px;
+    }
+
+    .user-card__hint.explainer {
+        position: absolute;
+    }
+
+
     .user-card__preview.avatar,
     .user-card__preview .avatar {
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
@@ -45,6 +57,23 @@
             color: #757575;
         }
 
+    .user-card__operations {
+        margin: 18px auto 0;
+        display: flex;
+        align-items: flex-start;
+        width: 132px;
+    }
+        .user-card__action {
+            margin-left: 2px;
+            margin-right: 2px;
+            flex-grow: 1;
+        }
+
+        .user-card__action.button,
+        .user-card__action .button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
 
 
 .user-card--side {
