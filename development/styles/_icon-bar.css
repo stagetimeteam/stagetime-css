@@ -48,13 +48,6 @@
     .icon-bar__action {
         margin-left: auto;
     }
-        .icon-bar__action.button,
-        .icon-bar__action .button {
-            padding-left: 35px;
-            padding-right: 35px;
-        }
-
-
 
 .icon-bar--framed {
     width: 100%;

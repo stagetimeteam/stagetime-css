@@ -31,14 +31,26 @@
                 width: 330px;
                 flex-shrink: 0;
                 box-shadow: inset -2px 0 0 var(--theme-light);
-                padding-right: 48px;
+                padding-right: 50px;
             }
-                .non-performer__photo {
-                    border: 3px solid var(--theme-light);
-                    background-color: var(--image-fallback);
-                    box-sizing: content-box;
+                .non-performer__preview {
+                    position: relative;
+                    width: 280px;
+                    height: 280px;
+                    padding: 3px;
+                    background-color: var(--theme-light);
                     border-radius: 4px;
                 }
+                    .non-performer__photo {
+                        vertical-align: top;
+                        background-color: var(--image-fallback);
+                    }
+
+                    .non-performer__upload-photo {
+                        position: absolute;
+                        right: 3px;
+                        bottom: 3px;
+                    }
 
                 .non-performer__career {
                     margin: 22px -24px 0 -16px;

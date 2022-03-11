@@ -298,6 +298,7 @@
 
 
 
+
 .carousel--for-schedule {
 
 }
@@ -457,4 +458,14 @@
 
     .carousel--for-profile-schedule.carousel--arrows-under-edit-button::before {
         display: none;
+    }
+
+
+
+
+.carousel--arrows-behind-edit-button {
+
+}
+    .carousel--arrows-behind-edit-button .carousel__control {
+        margin-right: 190px;
     }

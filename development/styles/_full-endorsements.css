@@ -2,9 +2,16 @@
 
 }
     .full-endorsements__heading {
+        display: flex;
+        align-items: flex-start;
         margin-top: 0;
         margin-bottom: 0;
     }
+        .full-endorsements__edit {
+            margin-left: auto;
+            margin-top: -11px;
+            margin-bottom: -9px;
+        }
 
     .full-endorsements__operations {
         margin-top: 34px;

@@ -846,3 +846,13 @@
     background-color: var(--theme-light);
     color: var(--theme-main);
 }
+
+
+
+.button--edit {
+    min-width: 164px;
+}
+
+.button--recommend {
+    min-width: 188px;
+}
