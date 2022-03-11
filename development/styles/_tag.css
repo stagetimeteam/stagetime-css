@@ -2,16 +2,21 @@
     padding: 6px 18px;
     display: inline-block;
     vertical-align: top;
-    background-color: #EBF0F2;
+    background-color: var(--theme-light);
     border-radius: 15px;
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
-    color: #545454;
+    color: var(--theme-text);
     text-decoration: none;
     transition: background-color var(--transition-hover);
 }
 
 .tag:hover {
-    background-color: #D9E1E4;
+    background-color: var(--theme-main-hover);
+}
+
+
+.tag:active {
+    background-color: var(--theme-main-press);
 }

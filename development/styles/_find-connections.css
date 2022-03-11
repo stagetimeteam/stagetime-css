@@ -1,6 +1,6 @@
 .find-connections {
     padding: 16px 24px 24px;
-    background-color: #F2F2F2;
+    background-color: var(--theme-light);
     border-radius: 4px;
 }
     .find-connections__body  {
@@ -13,7 +13,7 @@
             .find-connections__icon {
                 margin-left: -2px;
                 margin-right: 11px;
-                fill: #545454;
+                fill: var(--theme-text);
             }
 
             .find-connections__heading {
@@ -21,14 +21,14 @@
                 font-weight: 600;
                 font-size: 14px;
                 line-height: 22px;
-                color: #545454;
+                color: var(--theme-text);
             }
 
         .find-connections__description {
             margin-top: 9px;
             font-size: 13px;
             line-height: 25px;
-            color: #545454;
+            color: var(--theme-text);
         }
 
     .find-connections__action {

@@ -48,9 +48,17 @@
 
                     .non-performer__upload-photo {
                         position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        border-bottom-right-radius: 4px;
+                    }
+
+                    .non-performer__photo ~ .non-performer__upload-photo {
                         right: 3px;
                         bottom: 3px;
+                        border-bottom-right-radius: 0;
                     }
+
 
                 .non-performer__career {
                     margin: 22px -24px 0 -16px;
@@ -83,6 +91,21 @@
                     padding-top: 20px;
                 }
 
+                .non-performer__add-info {
+                    margin-bottom: 30px;
+                }
+
+                .non-performer__add-connections {
+                    margin-top: 30px;
+                }
+
+                .non-performer__add-highlight {
+                    margin-top: 30px;
+                }
+
+                .non-performer__add-social {
+                    margin-top: 20px;
+                }
 
             .non-performer__content {
                 width: calc(100% - 330px);
@@ -128,4 +151,12 @@
                     margin-top: 43px;
                     border-top: 1px solid var(--theme-light);
                     padding-top: 35px;
+                }
+
+                .non-performer__null {
+                    margin-top: 24px;
+                }
+
+                .non-performer__null:first-child {
+                    margin-top: 0;
                 }
