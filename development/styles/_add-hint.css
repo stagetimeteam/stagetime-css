@@ -1,0 +1,31 @@
+.add-hint {
+    position: relative;
+    padding-left: 64px;
+}
+    .add-hint__preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 40px;
+        height: 40px;
+        padding: 8px;
+        background-color: #FFFFFF;
+        border-radius: 4px;
+    }
+        .add-hint__icon {
+            vertical-align: top;
+        }
+
+    .add-hint__heading {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 20px;
+        color: #545454;
+    }
+
+    .add-hint__note {
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #545454;
+    }
