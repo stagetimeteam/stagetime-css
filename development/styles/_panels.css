@@ -1,0 +1,37 @@
+.panels {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+    .panels__item {
+        position: relative;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+        .panels__cancel {
+            position: absolute;
+            right: -5px;
+            top: -10px;
+            width: 24px;
+            height: 24px;
+            border: none;
+            padding: 0;
+            background-color: #FFFFFF;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .panels__cancel:hover {
+            background-color: var(--panel-hover);
+        }
+
+        .panels__cancel:active {
+            background-color: var(--panel-active);
+        }
+
+            .panels__cross {
+                vertical-align: top;
+                fill: #333333;
+            }

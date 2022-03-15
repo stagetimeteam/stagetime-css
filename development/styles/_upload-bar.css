@@ -24,3 +24,8 @@
         vertical-align: top;
         fill: currentColor;
     }
+
+    .upload-bar__addition {
+        font-size: 13px;
+        line-height: 20px;
+    }
