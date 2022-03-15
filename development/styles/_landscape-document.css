@@ -7,7 +7,18 @@
     border-radius: 5px;
     padding: 15px 20px 15px 12px;
     text-decoration: none;
+    transition: background-color var(--transition-hover);
 }
+
+.landscape-document:hover {
+    background-color: var(--panel-hover);
+}
+
+.landscape-document:active {
+    background-color: var(--panel-active);
+    transition: none;
+}
+
     .landscape-document__icon {
         margin-right: 9px;
     }
