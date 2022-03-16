@@ -1,52 +1,59 @@
 .resume-bar {
-    display: flex;
-    align-items: flex-start;
-    padding: 17px;
-    background-color: transparent;
-    border: 1px solid #E8E8E8;
-    border-radius: 8px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color var(--transition-hover);
+    position: relative;
 }
-
-.resume-bar:hover {
-    background-color: var(--panel-hover);
-    border-color: var(--panel-hover);
-}
-
-.resume-bar:active {
-    background-color: var(--panel-active);
-    border-color: var(--panel-active);
-    transition: none;
-}
-
-    .resume-bar__action {
-        margin-right: 24px;
-        flex-shrink: 0;
-        width: 182px;
+    .resume-bar__link {
+        display: flex;
+        align-items: flex-start;
+        padding: 17px 17px 17px 223px;
+        background-color: transparent;
+        border: 1px solid #E8E8E8;
+        border-radius: 8px;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
     }
-        .resume-bar__action .button {
-            width: 100%;
-        }
 
-    .resume-bar__body {
-        margin-top: -2px;
-        margin-bottom: -2px;
-        padding-right: 24px;
-        font-size: 13px;
-        line-height: 20px;
-        color: #545454;
+    .resume-bar__link:hover {
+        background-color: var(--panel-hover);
+        border-color: var(--panel-hover);
     }
-        .resume-bar__filename {
-            font-weight: 600;
+
+    .resume-bar__link:active {
+        background-color: var(--panel-active);
+        border-color: var(--panel-active);
+        transition: none;
+    }
+        .resume-bar__body {
+            margin-top: -2px;
+            margin-bottom: -2px;
+            padding-right: 24px;
+            font-size: 13px;
+            line-height: 20px;
+            color: #545454;
+        }
+            .resume-bar__filename {
+                font-weight: 600;
+            }
+
+            .resume-bar__uploaded {
+                margin-top: 4px;
+            }
+
+        .resume-bar__edit {
+            flex-shrink: 0;
+            margin-left: auto;
         }
 
-        .resume-bar__uploaded {
-            margin-top: 4px;
-        }
 
-    .resume-bar__edit {
-        flex-shrink: 0;
-        margin-left: auto;
+.resume-bar__action {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    margin-top: -20px;
+    margin-right: 24px;
+    flex-shrink: 0;
+    width: 182px;
+}
+    .resume-bar__action .button {
+        width: 100%;
     }
