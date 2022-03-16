@@ -48,13 +48,11 @@
                 margin-top: 48px;
                 display: flex;
                 align-items: flex-start;
+                margin-left: -38px;
+                margin-right: -38px;
             }
                 .biography__action {
-                    flex-grow: 1;
-                    flex-basis: 0;
-                    margin-left: 77px;
-                }
-
-                .biography__action:first-child {
-                    margin-left: 0;
+                    width: calc(33.3333% - 76px);
+                    margin-left: 38px;
+                    margin-right: 38px;
                 }
