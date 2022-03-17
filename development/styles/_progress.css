@@ -5,7 +5,8 @@
 }
     .progress__panel {
         position: relative;
-        height: 7px;
+        height: 8px;
+        border-bottom: 1px solid var(--theme-light);
     }
         .progress__panel::before {
             content: "";
@@ -24,16 +25,16 @@
             right: 0;
             bottom: 0;
             background-color: #FFFFFF;
+            transition: transform 0.3s var(--easeOutCirc);
         }
 
 
     .progress__body {
         position: relative;
-        padding: 22px 28px 20px;
-        background-color: #F2F2F2;
     }
         .progress__head {
             display: flex;
+            padding: 24px 28px;
             font-weight: 600;
             font-size: 12px;
             line-height: 18px;
@@ -42,6 +43,19 @@
             strong {
                 font-weight: bold;
                 color: #545454;
+            }
+
+            .progress__percents {
+                width: 50px;
+                margin-top: -5px;
+                margin-bottom: -5px;
+                margin-left: -4px;
+                margin-right: 20px;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 28px;
+                color: #545454;
+                text-align: center;
             }
 
             .progress__status {
@@ -54,9 +68,10 @@
             }
 
         .progress__content {
-            margin-top: 29px;
             display: flex;
             align-items: flex-start;
+            padding: 22px 28px 20px;
+            background-color: var(--theme-light);
         }
             .progress__hint {
                 padding-right: 20px;
