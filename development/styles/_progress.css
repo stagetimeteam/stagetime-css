@@ -47,10 +47,7 @@
 
             .progress__percents {
                 width: 50px;
-                margin-top: -5px;
-                margin-bottom: -5px;
-                margin-left: -4px;
-                margin-right: 20px;
+                margin: -5px 20px -5px -4px;
                 font-weight: normal;
                 font-size: 18px;
                 line-height: 28px;
