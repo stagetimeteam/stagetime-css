@@ -12,59 +12,78 @@
         color: #545454;
     }
 
-    .toggler__body {
+    .toggler__control {
         position: relative;
         margin-left: 20px;
         margin-right: 20px;
-        width: 44px;
-        height: 24px;
-        background-color: #F4F4F4;
-        border: 1px solid #E8E8E8;
-        border-radius: 12px;
+        display: inline-flex;
+        align-items: center;
     }
 
-    .toggler__body:first-child {
+    .toggler__control:first-child {
         margin-left: 0;
     }
 
-    .toggler__body:last-child {
+    .toggler__control:last-child {
         margin-right: 0;
     }
-        .toggler__widget {
-            position: absolute;
-            left: 0;
-            top: 0;
-            opacity: 0;
-            cursor: inherit;
+        .toggler__body {
+            position: relative;
+            width: 44px;
+            height: 24px;
+            background-color: #F4F4F4;
+            border: 1px solid #E8E8E8;
+            border-radius: 12px;
+            transition: background-color var(--transition-hover);
         }
+            .toggler__widget {
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                cursor: inherit;
+            }
 
-        .toggler__knob {
-            position: absolute;
-            left: 2px;
-            top: 2px;
-            bottom: 2px;
-            display: block;
-            width: 18px;
-            height: 18px;
-            background-color: #C4C4C4;
-            border-radius: 50%;
-            transition: left 0.3s var(--ease-out-circ),
-                        background-color var(--transition-hover);
-        }
-
-        .toggler__widget:checked ~ .toggler__knob {
-            left: 20px;
-        }
-
-        .toggler__widget:focus ~ .toggler__knob {
-            outline: auto;
-            outline-offset: 4px;
-        }
-
+            .toggler__knob {
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                bottom: 2px;
+                display: block;
+                width: 18px;
+                height: 18px;
+                background-color: #C4C4C4;
+                border-radius: 50%;
+                transition: left 0.3s var(--ease-out-circ),
+                            background-color var(--transition-hover);
+            }
 
 .toggler:hover {
 
 }
-    .toggler:hover .toggler__knob {
-        background-color: #333333;
+    .toggler:hover .toggler__body {
+        background-color: #EAEAEA;
+    }
+
+
+.toggler__widget:checked {
+
+}
+    .toggler__widget:checked ~ .toggler__body {
+        background-color: #545454;
+    }
+        .toggler__widget:checked ~ .toggler__body .toggler__knob {
+            left: 20px;
+            background-color: #E6E6E6;
+        }
+
+    .toggler:hover .toggler__widget:checked ~ .toggler__body {
+        background-color: #404040;
+    }
+
+
+
+    .toggler__widget:focus ~ .toggler__body .toggler__knob {
+        outline: auto;
+        outline-offset: 4px;
     }
