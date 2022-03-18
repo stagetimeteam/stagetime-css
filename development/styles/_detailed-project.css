@@ -1,0 +1,25 @@
+.detailed-project {
+
+}
+    .detailed-project__body {
+        padding: 23px 53px;
+    }
+
+    .detailed-project__footer {
+        border-top: 1px solid #E8E8E8;
+        padding: 20px 53px;
+    }
+        .detailed-project__summary {
+
+        }
+
+        .detailed-project__description {
+            margin-top: 22px;
+        }
+
+    .detailed-project__footer {
+
+    }
+        .detailed-project__people {
+            margin-left: -2px;
+        }

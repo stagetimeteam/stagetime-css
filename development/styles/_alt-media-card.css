@@ -9,7 +9,7 @@
     }
         .alt-media-card__stage {
             position: relative;
-            border-radius: 6px;
+            border-radius: 5px;
             overflow: hidden;
         }
             .alt-media-card__image {

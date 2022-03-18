@@ -10,7 +10,7 @@
     }
         .full-media-card__stage {
             position: relative;
-            border-radius: 6px;
+            border-radius: 5px; /* same as modals */
             overflow: hidden;
         }
             .full-media-card__image {
@@ -134,6 +134,12 @@
             right: 26px;
             bottom: 25px;
         }
+            .full-media-card__company {
+                position: absolute;
+                left: 3px;
+                top: 24px;
+            }
+
             .full-media-card__heading {
                 margin-top: 18px;
                 font-weight: bold;
@@ -200,7 +206,7 @@
             }
 
 
-.full-media-card__crop {
+    .full-media-card__crop {
         position: absolute;
         right: 25px;
         bottom: 25px;
@@ -212,7 +218,22 @@
         }
 
 
+    .full-media-card__info {
+        position: absolute;
+        right: 29px;
+        bottom: 35px;
+    }
+        .full-media-card__info.button,
+        .full-media-card__info .button {
+            padding-left: 28px;
+            padding-right: 28px;
+        }
 
+    .full-media-card__actions {
+        position: absolute;
+        right: 5px;
+        top: 15px;
+    }
 
 .full-media-card--audio {
 
@@ -225,4 +246,28 @@
 
     .full-media-card--audio .full-media-card__content {
         left: 81px;
+    }
+
+
+.full-media-card--project {
+
+}
+    .full-media-card--project .full-media-card__stage {
+        width: 642px;
+        height: 226px;
+        background-color: #9CB2BE;
+    }
+
+    .full-media-card--project .full-media-card__content {
+        padding-left: 51px;
+    }
+
+
+.full-media-card--popup {
+    display: block;
+}
+    .full-media-card--popup .full-media-card__stage {
+        width: 100%;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
