@@ -1,0 +1,72 @@
+.biography {
+    padding-top: 22px;
+
+}
+    .biography__heading {
+        display: none;
+    }
+
+    .biography__mobile-heading {
+
+    }
+
+    .biography__mobile-footer {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+        .biography__mobile-action {
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .biography__mobile-action.button {
+            padding: 9px 30px;
+        }
+
+    .biography__null {
+        /*margin-top: 24px;*/
+    }
+
+    .biography__body {
+        margin-top: 20px;
+        display: block;
+    }
+        .biography__sidebar {
+            display: none;
+            width: auto;
+            margin-right: 0;
+        }
+
+        .biography__content {
+            /*flex-shrink: 0;*/
+            width: auto;
+        }
+            .biography__wrapper {
+                display: block;
+                /*align-items: flex-start;*/
+            }
+                .biography__about {
+                    width: auto;
+                    margin-right: 0;
+                    /*color: #545454;*/
+                }
+
+                .biography__comments {
+                    /*margin-top: 4px;*/
+                    width: auto;
+                }
+
+            .biography__footer {
+                /*margin-top: 48px;*/
+                display: block;
+                /*align-items: flex-start;*/
+                margin-left: 0;
+                margin-right: 0;
+            }
+                .biography__action {
+                    width: auto;
+                    margin-left: 0;
+                    margin-right: 0;
+                }

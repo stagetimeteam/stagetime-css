@@ -1,24 +1,18 @@
 .user-media {
     padding-top: 0;
-    border-top: var(--profile-mobile-border);
-    margin-left: calc(-1 * var(--container-mobile-padding));
-    margin-right: calc(-1 * var(--container-mobile-padding));
-    padding-left: var(--container-mobile-padding);
-    padding-right: var(--container-mobile-padding);
 }
     .user-media__heading {
         display: none;
     }
 
     .user-media__null {
-        /*margin-top: 24px;*/
+
     }
 
     .user-media__body {
         margin-top: 0;
     }
         .user-media__section {
-            /*margin-top: 32px;*/
             display: block;
         }
             .user-media__sidebar {

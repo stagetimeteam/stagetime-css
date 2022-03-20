@@ -1,0 +1,8 @@
+/* it works on smartphones only */
+.mobile-separator {
+    border-top: var(--profile-mobile-border);
+    margin-left: calc(-1 * var(--container-mobile-padding));
+    margin-right: calc(-1 * var(--container-mobile-padding));
+    padding-left: var(--container-mobile-padding);
+    padding-right: var(--container-mobile-padding);
+}
