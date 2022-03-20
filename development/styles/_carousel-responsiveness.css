@@ -2,7 +2,7 @@
 
 }
     .carousel__container {
-
+        scroll-snap-type: none;
     }
 
     .carousel__container::-webkit-scrollbar {
@@ -163,3 +163,60 @@
     .carousel--for-side-updates .carousel__control:hover {
 
     }
+
+
+
+
+.carousel--for-profile-media {
+    margin-left: calc(-1 * var(--container-mobile-padding));
+    margin-right: calc(-1 * var(--container-mobile-padding));
+    padding-right: 0;
+}
+    .carousel--for-profile-media.carousel--initialized::before,
+    .carousel--for-profile-media.carousel--initialized::after {
+        display: none;
+    }
+
+    .carousel--for-profile-media .carousel__container {
+        padding-left: calc(var(--container-mobile-padding) - 4px);
+        padding-right: calc(var(--container-mobile-padding) - 4px);
+    }
+        .carousel--for-profile-media .carousel__item {
+            margin-right: 35px;
+        }
+
+        @media (max-width: 374px) {
+            .carousel--for-profile-media .carousel__item {
+                margin-right: 20px;
+            }
+        }
+
+        @media (max-width: 359px) {
+            .carousel--for-profile-media .carousel__item {
+                margin-right: 12px;
+            }
+        }
+
+        .carousel--for-profile-media .carousel__item:last-child {
+
+        }
+
+
+    .carousel--for-profile-media .carousel__control {
+        display: none;
+    }
+
+    .carousel--for-profile-media .carousel__control--prev {
+
+    }
+
+    .carousel--for-profile-media .carousel__control--next {
+
+    }
+
+    .carousel--for-profile-media .carousel__control:hover {
+
+    }
+
+
+

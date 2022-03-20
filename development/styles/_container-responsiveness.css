@@ -1,7 +1,7 @@
 .container {
     width: auto;
-    border-left-width: 20px;
-    border-right-width: 20px;
+    border-left-width: var(--container-mobile-padding);
+    border-right-width: var(--container-mobile-padding);
 }
 
 .container--dashboard {

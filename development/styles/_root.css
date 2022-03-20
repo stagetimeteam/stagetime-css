@@ -21,10 +21,12 @@
     --form-width: 408px;
     --profile-sidebar: 152px;
     --profile-gap: 26px;
+    --profile-mobile-border: 10px solid #EDF1F3;
     --panel-hover: #F2F2F2;
     --panel-active: #EAEAEA;
     --user-pane-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     --modal-padding: 34px;
+    --container-mobile-padding: 20px;
 }
 
 

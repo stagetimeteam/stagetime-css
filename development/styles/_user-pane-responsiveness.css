@@ -1,0 +1,7 @@
+.user-pane {
+
+}
+    .user-pane .avatar__image {
+        width: 120px;
+        height: 120px;
+    }
