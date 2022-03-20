@@ -9,17 +9,6 @@
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
-        <style>
-            /* default theme (generate this on back-end) */
-            :root {
-                --theme-main: #C6B1A6;
-                --theme-main-hover: #E3C5B6;
-                --theme-main-press: #B8A79E;
-                --theme-light: #F4EEEB;
-                --theme-light-rgb: "244, 238, 235";
-                --theme-text: #1F1F1F;
-            }
-        </style>
     </head>
     <body>
 
@@ -1933,6 +1922,24 @@
                                 </a>
                             </span>
                         </h2>
+                        <div class="schedule__mobile-heading title title--smaller" role="presentation">
+                            Schedule
+                        </div>
+                        <div class="schedule__mobile-year operations operations--button">
+                            <button class="operations__handler" type="button">
+                                Year
+                                <img class="operations__icon" src="../symbols/16-down-angle.svg" width="16" height="16" alt="">
+                            </button>
+                            <div class="operations__dropdown">
+                                <div class="menu menu--checklist">
+                                    <a class="menu__link" href="#">All</a>
+                                    <a class="menu__link menu__link--selected" href="#">2025</a>
+                                    <a class="menu__link" href="#">2024</a>
+                                    <a class="menu__link" href="#">2023</a>
+                                    <a class="menu__link" href="#">2022</a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="schedule__engagements">
                             <div class="schedule__timeline">
                                 <h3 class="schedule__background-sub-heading title title--smaller">
@@ -1940,7 +1947,7 @@
                                 </h3>
                             </div>
                             <div class="schedule__calendar">
-                                <div class="schedule__list carousel carousel--arrows-on-top carousel--arrows-under-edit-button carousel--for-profile-schedule">
+                                <div class="schedule__list carousel carousel--arrows-on-top carousel--arrows-under-edit-button carousel--for-profile-schedule carousel--disable-on-smartphone">
                                     <div class="carousel__container">
                                         <div class="carousel__item">
                                             <div class="performance">
@@ -2491,7 +2498,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="biography" id="bio">
+                    <div class="biography mobile-separator" id="bio">
                         <h2 class="biography__heading underlined-title">
                             <span class="underlined-title__inner">Biography</span>
                             <span class="underlined-title__addition">
@@ -2501,6 +2508,14 @@
                                 </a>
                             </span>
                         </h2>
+                        <div class="biography__mobile-heading title title--smaller" role="presentation">
+                            Biography
+                        </div>
+                        <div class="biography__mobile-footer">
+                            <a class="biography__mobile-action button button--alt-secondary" href="#">Headshot</a>
+                            <a class="biography__mobile-action button button--alt-secondary" href="#">Resume</a>
+                            <a class="biography__mobile-action button button--alt-secondary" href="#">Artistic Statement</a>
+                        </div>
                         <div class="biography__body">
                             <div class="biography__sidebar">
                                 <h3 class="biography__sub-heading title title--smaller">
@@ -2581,7 +2596,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="user-media">
+                    <div class="user-media mobile-separator">
                         <h2 class="user-media__heading underlined-title">
                             <span class="underlined-title__inner">Media</span>
                             <span class="underlined-title__addition">
@@ -2591,8 +2606,6 @@
                                 </a>
                             </span>
                         </h2>
-
-
                         <div class="user-media__body">
                             <div class="user-media__section">
                                 <div class="user-media__sidebar">

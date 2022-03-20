@@ -5,6 +5,14 @@
 
     }
 
+    .schedule__mobile-heading {
+        display: none;
+    }
+
+    .schedule__mobile-year {
+        visibility: hidden;
+    }
+
     .schedule__null {
         margin-top: 24px;
     }

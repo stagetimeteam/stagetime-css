@@ -300,6 +300,52 @@
 
 
 
+.operations--button {
+
+}
+    .operations--button .operations__handler {
+        display: flex;
+        align-items: flex-start;
+        width: auto;
+        height: auto;
+        padding: 9px 18px;
+        background-color: #FFFFFF;
+        box-shadow: inset 0 0 0 1px var(--theme-light);
+        border-radius: 17px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: #333333;
+        text-transform: none;
+        letter-spacing: 0;
+        transition: box-shadow var(--transition-hover),
+                    background-color var(--transition-hover),
+                    color var(--transition-hover);
+    }
+
+    .operations--button .operations__handler:hover {
+        background-color: var(--theme-light);
+        box-shadow: inset 0 0 0 1px var(--theme-light);
+        color: #333333;
+    }
+
+    .operations--button .operations__handler:active {
+        background-color: var(--theme-main-press);
+        box-shadow: inset 0 0 0 1px var(--theme-main-press);
+        color: #333333;
+    }
+        .operations--button .operations__icon {
+            margin: 0 -6px 0 6px;
+            fill: currentColor;
+        }
+
+    .operations--button .operations__dropdown {
+        top: 100%;
+        right: 0;
+    }
+
+
+
 
 
 .operations--sort {

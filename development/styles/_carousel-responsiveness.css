@@ -26,6 +26,27 @@
     }
 
 
+
+.carousel--disable-on-smartphone {
+    padding-right: 0;
+}
+    .carousel--disable-on-smartphone::before,
+    .carousel--disable-on-smartphone::after {
+        display: none;
+    }
+
+    .carousel--disable-on-smartphone .carousel__container {
+        overflow: visible;
+        display: block;
+    }
+
+    .carousel--disable-on-smartphone .carousel__control {
+        display: none;
+    }
+
+
+
+
 .carousel--faded-right {
 
 }
@@ -220,3 +241,15 @@
 
 
 
+.carousel--for-profile-schedule {
+
+}
+    .carousel--for-profile-schedule .carousel__item {
+        margin-top: 20px;
+        width: auto;
+        margin-right: 0;
+    }
+
+    .carousel--for-profile-schedule .carousel__item:first-child {
+        margin-top: 0;
+    }
