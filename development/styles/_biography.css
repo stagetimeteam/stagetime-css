@@ -39,10 +39,17 @@
                     color: #545454;
                 }
 
+                .biography__expand {
+                    display: none;
+                }
+
                 .biography__comments {
                     margin-top: 4px;
                     width: calc(100% - 484px - 64px);
                 }
+                    .biography__comments-heading {
+                        display: none;
+                    }
 
             .biography__footer {
                 margin-top: 48px;

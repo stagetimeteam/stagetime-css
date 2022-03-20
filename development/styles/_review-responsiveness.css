@@ -1,0 +1,19 @@
+.review {
+    text-align: left;
+}
+    .review__icon {
+        margin-bottom: 15px;
+        width: 19px;
+        height: 15px;
+    }
+
+    .review__message {
+        font-size: 25px;
+        line-height: 42px;
+    }
+
+    .review__author {
+        margin-top: 9px;
+        font-size: 13px;
+        line-height: 24px;
+    }

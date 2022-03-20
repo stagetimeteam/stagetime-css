@@ -1,6 +1,5 @@
 .biography {
     padding-top: 22px;
-
 }
     .biography__heading {
         display: none;
@@ -49,24 +48,56 @@
             }
                 .biography__about {
                     width: auto;
+                    padding-bottom: 23px;
                     margin-right: 0;
-                    /*color: #545454;*/
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
                 }
+
+                .biography--expanded .biography__about {
+                    -webkit-line-clamp: inherit;
+                }
+
+                .biography__expand {
+                    margin-top: 18px;
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 100%;
+                    border: none;
+                    background-color: transparent;
+                    border-top: 1px solid var(--theme-light);
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 16px;
+                    color: var(--theme-main);
+                    cursor: pointer;
+                }
+
+                .biography--expanded .biography__expand {
+                    display: none;
+                }
+
 
                 .biography__comments {
-                    /*margin-top: 4px;*/
+                    margin-top: 0;
+                    padding-top: 22px;
+                    padding-bottom: 23px;
                     width: auto;
                 }
+                    .biography__comments-heading {
+                        display: block;
+                        margin-top: 0;
+                        margin-bottom: 20px;
+                    }
 
             .biography__footer {
-                /*margin-top: 48px;*/
-                display: block;
-                /*align-items: flex-start;*/
-                margin-left: 0;
-                margin-right: 0;
+               display: none;
             }
                 .biography__action {
-                    width: auto;
-                    margin-left: 0;
-                    margin-right: 0;
+
                 }
