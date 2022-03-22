@@ -1,0 +1,15 @@
+.profile-media {
+
+}
+    .profile-media__mobile-heading {
+        display: block;
+        padding: 16px var(--container-mobile-padding);
+    }
+
+    .profile-media__edit {
+        display: none;
+    }
+
+    .profile-media__data {
+
+    }

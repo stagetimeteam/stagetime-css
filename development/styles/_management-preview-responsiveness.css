@@ -1,0 +1,32 @@
+.management-preview {
+
+}
+    .management-preview__heading {
+
+    }
+
+    .management-preview__null {
+
+    }
+
+    .management-preview__body {
+
+    }
+
+    .management-preview__operations {
+
+    }
+        .management-preview__action {
+
+        }
+
+        .management-preview__action:first-child {
+
+        }
+        .management-preview__action.button,
+        .management-preview__action .button {
+
+        }
+    .management-preview__edit {
+        display: none;
+    }

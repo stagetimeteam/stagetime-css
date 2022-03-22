@@ -1,0 +1,37 @@
+.career-highlights {
+
+}
+    .career-highlights__heading {
+
+    }
+
+    .career-highlights__details {
+        right: var(--container-mobile-padding);
+    }
+
+    .career-highlights__details:hover {
+
+    }
+
+    .career-highlights__details:active {
+
+    }
+
+    .career-highlights__null {
+
+    }
+
+    .career-highlights__list {
+
+    }
+        .career-highlights__item {
+
+        }
+
+        .career-highlights__item:first-child {
+
+        }
+
+    .career-highlights__edit {
+        display: none;
+    }
