@@ -1,7 +1,9 @@
 .schedule {
     position: relative;
-    padding-top: 26px;
-    padding-bottom: 20px;
+    margin-left: calc(-1 * var(--container-mobile-padding));
+    margin-right: calc(-1 * var(--container-mobile-padding));
+    padding: 26px var(--container-mobile-padding) 20px;
+
 }
     .schedule__heading {
         display: none;

@@ -5,6 +5,14 @@
 
     }
 
+    .biography__mobile-heading {
+        display: none;
+    }
+
+    .biography__mobile-footer {
+        display: none;
+    }
+
     .biography__null {
         margin-top: 24px;
     }

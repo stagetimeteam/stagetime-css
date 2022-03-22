@@ -253,3 +253,21 @@
     .carousel--for-profile-schedule .carousel__item:first-child {
         margin-top: 0;
     }
+
+
+
+.carousel--for-profile-projects {
+    padding: 0;
+}
+    .carousel--for-profile-projects .carousel__container {
+        scroll-snap-type: x proximity;
+        border-radius: 0;
+    }
+        .carousel--for-profile-projects .carousel__item {
+            width: 100%;
+            margin-right: 0;
+        }
+
+        .carousel--for-profile-projects .carousel__control {
+            display: none;
+        }

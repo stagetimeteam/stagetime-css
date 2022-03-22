@@ -6,7 +6,7 @@
     }
 
     .biography__mobile-heading {
-
+        display: block;
     }
 
     .biography__mobile-footer {

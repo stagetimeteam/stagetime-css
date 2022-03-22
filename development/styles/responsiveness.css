@@ -77,6 +77,13 @@
 @import url("_performer-responsiveness.css");
 @import url("_schedule-responsiveness.css");
 @import url("_biography-responsiveness.css");
-@import url("_mobile-separator.css");
+@import url("_mobile-separator-responsiveness.css");
 @import url("_review-responsiveness.css");
 @import url("_slideshow-responsiveness.css");
+@import url("_vertical-artist-responsiveness.css");
+@import url("_career-highlights-responsiveness.css");
+@import url("_media-responsiveness.css");
+@import url("_management-preview-responsiveness.css");
+@import url("_profile-media-responsiveness.css");
+@import url("_full-media-card-responsiveness.css");
+@import url("_alt-media-card-responsiveness.css");
