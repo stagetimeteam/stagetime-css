@@ -2,6 +2,9 @@
     border: 1px solid var(--theme-light);
     border-radius: 5px;
     overflow: hidden;
+    height: auto; /* bootstrap conflict */
+    margin-bottom: 0; /* bootstrap conflict */
+    box-shadow: none; /* bootstrap conflict */
 }
     .progress__panel {
         position: relative;
