@@ -258,7 +258,13 @@
 
 .carousel--for-profile-projects {
     padding: 0;
+    border-radius: 0;
 }
+    .carousel--for-profile-projects.carousel--faded-right::before,
+    .carousel--for-profile-projects.carousel--faded-right::after {
+        display: none;
+    }
+
     .carousel--for-profile-projects .carousel__container {
         scroll-snap-type: x proximity;
         border-radius: 0;

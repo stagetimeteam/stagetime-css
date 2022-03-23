@@ -1,0 +1,121 @@
+.artist {
+    /*position: relative;*/
+    /*padding-top: 20px;*/
+    /*border-bottom: 26px solid var(--theme-light);*/
+}
+    .artist::before {
+        /*content: "";*/
+        /*position: absolute;*/
+        /*z-index: 30;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*right: 0;*/
+        /*height: 20px;*/
+        /*background-color: var(--theme-main);*/
+        /*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);*/
+    }
+
+    .artist__jumbotron {
+        /*position: relative;*/
+        /*z-index: 20;*/
+        /*height: 567px;*/
+        /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    }
+
+    .artist__summary {
+        /*padding-top: 32px;*/
+        padding-bottom: 0;
+    }
+        .artist__header {
+
+        }
+
+        .artist__data {
+            /*margin-top: 21px;*/
+            display: block;
+            /*align-items: flex-start;*/
+        }
+            .artist__sidebar {
+                /*flex-shrink: 0;*/
+                width: auto;
+                margin-right: 0;
+            }
+                .artist__connections {
+                    /*margin: -10px -13px;*/
+                    padding-top: 10px;
+                }
+
+                .artist__event {
+                    /*margin-top: 31px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 20px;*/
+                }
+
+                .artist__highlights {
+                    /*margin-top: 26px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 21px;*/
+                }
+
+            .artist__content {
+                width: auto;
+            }
+                .artist__description {
+
+                }
+
+                .artist__gallery {
+                    /*margin-top: 24px;*/
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: none;
+                    padding-left: 0;
+                    padding-right: 0;
+                    border-radius: 0;
+                }
+                    .artist__gallery .icon-bar {
+                        /*border: 7px solid transparent;*/
+                    }
+
+                .artist__footer {
+                    /*margin-top: 32px;*/
+                    display: block;
+                    /*align-items: flex-start;*/
+                }
+                    .artist__management {
+                        width: auto;
+                        /*border-top: 1px solid var(--theme-light);*/
+                        /*padding-top: 25px;*/
+                    }
+
+                    .artist__social {
+                        margin-top: 32px;
+                        /*margin-left: 58px;*/
+                        /*border-top: 1px solid var(--theme-light);*/
+                        /*padding-top: 25px;*/
+                        /*flex-grow: 1;*/
+                    }
+
+                .artist__register {
+                    /*margin-top: 37px;*/
+                }
+
+                .artist__edits {
+                    /*margin-top: 29px;*/
+                    /*display: flex;*/
+                }
+                    .artist__editing-handler {
+                        /*margin-left: 30px;*/
+                    }
+
+                    .artist__editing-handler:first-child {
+                        /*margin-left: 0;*/
+                    }
+
+                    .artist__editing-handler.button,
+                    .artist__editing-handler .button {
+                        /*padding-left: 40px;*/
+                        /*padding-right: 40px;*/
+                    }
+
+

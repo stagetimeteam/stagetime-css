@@ -63,21 +63,11 @@
 
                     .vertical-artist__management {
                         /*margin-top: 32px;*/
-                        border-top: var(--profile-mobile-border);
-                        margin-left: calc(-1 * var(--container-mobile-padding));
-                        margin-right: calc(-1 * var(--container-mobile-padding));
-                        padding-left: var(--container-mobile-padding);
-                        padding-right: var(--container-mobile-padding)
                         /*padding-top: 25px;*/
                     }
 
                     .vertical-artist__social {
                         /*margin-top: 32px;*/
-                        border-top: var(--profile-mobile-border);
-                        margin-left: calc(-1 * var(--container-mobile-padding));
-                        margin-right: calc(-1 * var(--container-mobile-padding));
-                        padding-left: var(--container-mobile-padding);
-                        padding-right: var(--container-mobile-padding)
                         /*padding-top: 25px;*/
                     }
 
@@ -99,11 +89,6 @@
                 }
                     .vertical-artist__connections {
                         /*margin: -10px -13px;*/
-                        border-top: var(--profile-mobile-border);
-                        margin-left: calc(-1 * var(--container-mobile-padding));
-                        margin-right: calc(-1 * var(--container-mobile-padding));
-                        padding-left: calc(var(--container-mobile-padding) - 13px);
-                        padding-right: calc(var(--container-mobile-padding) - 13px);
                         padding-top: 10px;
                     }
 
@@ -113,22 +98,11 @@
 
                     .vertical-artist__performing {
                         /*margin-top: 31px;*/
-                        border-top: var(--profile-mobile-border);
-                        margin-left: calc(-1 * var(--container-mobile-padding));
-                        margin-right: calc(-1 * var(--container-mobile-padding));
-                        padding-left: var(--container-mobile-padding);
-                        padding-right: var(--container-mobile-padding)
                         /*padding-top: 21px;*/
                     }
 
                     .vertical-artist__highlights {
-                        /*margin-top: 26px;*/
-                        border-top: var(--profile-mobile-border);
-                        margin-left: calc(-1 * var(--container-mobile-padding));
-                        margin-right: calc(-1 * var(--container-mobile-padding));
-                        padding-left: var(--container-mobile-padding);
-                        padding-right: var(--container-mobile-padding);
-                        /*padding-top: 21px;*/
+
                     }
 
             .vertical-artist__edits {
