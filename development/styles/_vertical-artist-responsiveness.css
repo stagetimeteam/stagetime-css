@@ -48,12 +48,12 @@
             .vertical-artist__content {
                 display: flex;
                 flex-direction: column;
-                /*align-items: flex-start;*/
+                align-items: stretch;
             }
                 .vertical-artist__primary {
                     /*flex-basis: 48.44%;*/
                     /*flex-shrink: 0;*/
-                    margin-right: auto;
+                    margin-right: 0;
                     /*padding-top: 16px;*/
                 }
                     .vertical-artist__description {
