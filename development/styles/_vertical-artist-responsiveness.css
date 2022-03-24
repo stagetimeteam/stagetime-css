@@ -29,6 +29,7 @@
     }
         .vertical-artist__body {
             /*padding: 27px 36px 29px;*/
+            padding-bottom: 0;
             padding-left: var(--container-mobile-padding);
             padding-right: var(--container-mobile-padding);
         }
@@ -54,7 +55,7 @@
                     /*flex-basis: 48.44%;*/
                     /*flex-shrink: 0;*/
                     margin-right: 0;
-                    /*padding-top: 16px;*/
+                    padding-top: 0;
                 }
                     .vertical-artist__description {
                         display: none;
@@ -85,10 +86,11 @@
                     margin-right: 0;
                     padding-left: 0;
                     padding-right: 0;
-                    /*padding-top: 16px;*/
+                    padding-top: 0;
                 }
                     .vertical-artist__connections {
                         /*margin: -10px -13px;*/
+                        margin-top: 0;
                         padding-top: 10px;
                     }
 
