@@ -1,5 +1,6 @@
 .modal-body {
     padding: 0; /* bootstrap conflict */
+    min-height: 200px;
     max-height: calc(100vh - 176px); /* 176 = .modal-head + .modal-foot + top and bottom margins of bootstrap popup */
     overflow-y: auto;
 }
@@ -10,4 +11,9 @@
     .modal-body {
         max-height: calc(100vh - 216px); /* 216px = .modal-head + .modal-foot + top and bottom margins of bootstrap popup */
     }
+}
+
+
+.modal-body--no-overflow {
+    overflow-y: visible;
 }

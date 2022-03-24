@@ -370,6 +370,10 @@
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
+
+    .modal .input__options {
+        max-height: 40vh; /* because modal is vertically centered there is a less space under input bar */
+    }
         .input__suggest {
             display: inline-block;
             vertical-align: top;

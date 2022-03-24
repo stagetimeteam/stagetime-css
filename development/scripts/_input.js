@@ -87,14 +87,25 @@
 
     /* Dropdowns */
 
-    $('.input__widget').on('click focus', function () {
+    $('.input__widget').on('click', function () {
+
+        /* Remove overflow if inside of modal window.
+           See "markups/_modal.html" for details
+           Add back in: (1) */
+        var $modalBody = $(this).parents('.modal-body');
+        if( $modalBody[0].scrollHeight <= $modalBody.outerHeight()  ) {
+            $modalBody.addClass('modal-body--no-overflow');
+        }
+
         $('.input').removeClass('input--expanded'); /* Close rest of dropdowns */
         $(this).parents('.input').addClass('input--expanded');
         $(this).parents('.input').find('.lookup__field').focus();
+
     });
 
     $(document).on('click touchstart', function(event) {
         if (!$(event.target).closest('.input').length) {
+            $('.modal-body').removeClass('modal-body--no-overflow'); /* (1) */
             $('.input').removeClass('input--expanded');
         }
     });
