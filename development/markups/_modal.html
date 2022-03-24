@@ -77,7 +77,7 @@
             <p>
                 And then three of
                 <a href="_modal-head.html"><b>.modal-head</b></a>,
-                <b>.modal-body</b>,
+                <a href="_modal-body.html"><b>.modal-body</b></a>,
                 <a href="_modal-foot.html"><b>.modal-foot</b></a>
                 normally used together.
             </p>
@@ -163,6 +163,12 @@
             </p>
             <p>
                 See sample in <a href="../scripts/_input.js">../scripts/_input.js</a> (search for $modalBody)
+            </p>
+            <p>
+                Also note that to run these calculations correctly you must run this script <b>before</b>
+                dropdown appearing on the screen because dropdown can stretch partental scrolling area.
+                So pay attention to scripts order and do <b>not</b> run it on input focus as it used to be.
+                Run it on click only.
             </p>
             <p>
                 Demo:
