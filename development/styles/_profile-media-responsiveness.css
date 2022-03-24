@@ -1,5 +1,6 @@
 .profile-media {
-
+    margin-left: 0; /* disable .mobile-separator margin */
+    margin-right: 0; /* disable .mobile-separator margin */
 }
     .profile-media__mobile-heading {
         display: block;

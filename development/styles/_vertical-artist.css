@@ -23,23 +23,28 @@
     }
 
     .vertical-artist__right {
+        position: relative;
+        padding-top: 338px;
         width: 50%;
         flex-shrink: 0;
     }
-        .vertical-artist__gallery {
-
-        }
-
-        .vertical-artist__gallery.carousel--for-profile-projects,
-        .vertical-artist__gallery .carousel--for-profile-projects {
-            border-radius: 0;
-        }
-
         .vertical-artist__body {
             padding: 27px 36px 29px;
         }
             .vertical-artist__header {
 
+            }
+
+            .vertical-artist__gallery {
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+            }
+
+            .vertical-artist__gallery.carousel--for-profile-projects,
+            .vertical-artist__gallery .carousel--for-profile-projects {
+                border-radius: 0;
             }
 
             .vertical-artist__content {

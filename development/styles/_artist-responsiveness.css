@@ -31,6 +31,8 @@
         }
 
         .artist__data {
+            position: relative; /* gallery comes here via absolute positioning   */
+            padding-top: 288px;
             /*margin-top: 21px;*/
             display: block;
             /*align-items: flex-start;*/
@@ -61,11 +63,16 @@
                 width: auto;
             }
                 .artist__description {
-
+                    display: none;
                 }
 
                 .artist__gallery {
-                    /*margin-top: 24px;*/
+                    margin-top: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+
                     border-left: none;
                     border-right: none;
                     border-bottom: none;
