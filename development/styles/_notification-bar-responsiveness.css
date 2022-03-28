@@ -1,0 +1,51 @@
+.notification-bar {
+    position: relative;
+    padding-bottom: 78px;
+}
+    .notification-bar__preview {
+
+    }
+        .notification-bar__icon {
+
+        }
+
+    .notification-bar__message {
+
+    }
+        .notification-bar__intro {
+
+        }
+
+    .notification-bar__action {
+
+    }
+
+    .notification-bar__action.button,
+    .notification-bar__action .button {
+        position: absolute;
+        left: 55px;
+        right: 55px;
+        bottom: 26px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        width: auto;
+    }
+
+    .notification-bar__close {
+
+    }
+        .notification-bar__close::before {
+
+        }
+
+        .notification-bar__close:hover::before {
+
+        }
+
+        .notification-bar__close:active::before {
+
+        }
+
+        .notification-bar__cross {
+
+        }

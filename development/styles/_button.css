@@ -857,3 +857,26 @@
 .button--recommend {
     min-width: 188px;
 }
+
+
+.button--notification {
+    padding: 3px 10px 5px;
+    background-color: #1D4451;
+    color: #FFFFFF;
+    box-shadow: none;
+    border-radius: 2px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.button--notification:hover {
+    background-color: #235262;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.button--notification:active {
+    background-color: #183643;
+    color: #FFFFFF;
+    box-shadow: none;
+}
