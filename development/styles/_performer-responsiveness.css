@@ -5,6 +5,13 @@
         border-bottom: none;
     }
 
+    .performer__page-ownership {
+        left: 20px;
+        right: 20px;
+        margin-left: 0;
+        width: auto;
+    }
+
     .performer__body {
         padding-bottom: 60px;
         display: flex; /* to reorder components inside */

@@ -1,8 +1,17 @@
 .performer {
-
+    position: relative;
 }
     .performer__head {
 
+    }
+
+    .performer__page-ownership {
+        position: absolute !important; /* !important is to override position related if conflicted */
+        z-index: 100;
+        left: 50%;
+        top: 36px;
+        width: 760px;
+        margin-left: -380px;
     }
 
     .performer__body {
