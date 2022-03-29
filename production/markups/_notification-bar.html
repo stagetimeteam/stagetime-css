@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.header-button</title>
+        <title>.notification-bar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1648494704">
@@ -14,34 +14,30 @@
 
 
 
-        <div style="width: 444px; margin: 0 auto;">
+        <div style="max-width: 760px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.header-button</h1>
-
-            <a class="header-button" href="#">
-                <svg class="header-button__icon" width="32" height="32">
-                    <use xlink:href="../symbols/symbols.svg?1648494704#32-bell"></use>
-                </svg>
-                <span class="visuallyhidden">Notifications</span>
-            </a>
+            <h1>.notification-bar</h1>
 
 
-            <br>
-            <br>
-            <br>
-            <h2>With counter</h2>
-
-            <a class="header-button" href="#">
-                <svg class="header-button__icon" width="32" height="32">
-                    <use xlink:href="../symbols/symbols.svg?1648494704#32-bell"></use>
-                </svg>
-                <span class="visuallyhidden">Notifications</span>
-                <span class="visuallyhidden">New:</span>
-                <span class="header-button__updates counter counter--danger">4</span>
-            </a>
-
-
+            <div class="notification-bar">
+                <div class="notification-bar__preview">
+                    <svg class="notification-bar__icon" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1648494704#24-notification"></use>
+                    </svg>
+                </div>
+                <div class="notification-bar__message">
+                    <span class="notification-bar__intro">Is this your profile?</span> Verify your account now.
+                </div>
+                <a class="notification-bar__action button button--notification" href="#">
+                    Claim Account
+                </a>
+                <button class="notification-bar__close" type="button">
+                    <svg class="notification-bar__cross" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1648494704#16-close"></use>
+                    </svg>
+                </button>
+            </div>
 
             <br>
             <br>
@@ -55,8 +51,6 @@
             <br>
             <br>
         </div>
-
-
 
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
