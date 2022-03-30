@@ -1,31 +1,17 @@
 .vertical-artist {
-    /*position: relative;*/
     display: block;
-    /*align-items: stretch;*/
-    /*padding-top: 20px;*/
     border-bottom: none;
 }
     .vertical-artist::before {
-        /*content: "";*/
-        /*position: absolute;*/
-        /*z-index: 30;*/
-        /*left: 0;*/
-        /*top: 0;*/
-        /*right: 0;*/
-        /*height: 20px;*/
-        /*background-color: var(--theme-main);*/
-        /*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);*/
+
     }
 
     .vertical-artist__left {
         width: auto;
-        /*flex-shrink: 0;*/
     }
 
     .vertical-artist__mobile-bio {
         display: block;
-        position: relative;
-        margin-top: -117px;
     }
 
     .vertical-artist__right {

@@ -1,5 +1,7 @@
 .mobile-profile {
-
+    position: relative;
+    z-index: 50;
+    margin-top: -117px;
 }
     .mobile-profile__data-wrap {
 
@@ -67,7 +69,7 @@
                 }
 
                 .mobile-profile__dropdown {
-                    width: 40px;
+                    width: 34px;
                     margin-left: 6px;
                     margin-right: 6px;
                     flex-shrink: 0;

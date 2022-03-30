@@ -1,36 +1,26 @@
 .artist-card {
-    /*position: relative;*/
     height: 100vh;
     max-height: 600px;
 }
     .artist-card__preview {
-        /*position: absolute;*/
-        /*left: 0;*/
-        /*top: 0;*/
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*background-color: var(--image-fallback);*/
+
     }
         .artist-card__edit {
-            /*position: absolute;*/
-            /*right: 0;*/
-            /*bottom: 0;*/
+            display: none;
         }
 
     .artist-card__content {
-        /*position: relative;*/
-        /*height: 100%;*/
-        /*padding: 31px 52px 51px;*/
+        display: none;
     }
         .artist-card__heading {
-            display: none;
+
         }
 
         .artist-card__position {
-            display: none;
+
         }
 
         .artist-card__last-updated {
-            display: none;
+
         }
 
