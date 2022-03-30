@@ -1,0 +1,93 @@
+.mobile-profile {
+
+}
+    .mobile-profile__data-wrap {
+
+    }
+        .mobile-profile__data {
+            padding-top: 28px;
+            background-image: linear-gradient(180deg, rgba(156, 178, 190, 0.66) 0%, #9CB2BE 33.33%);
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+
+        }
+            .mobile-profile__heading {
+                font-size: 27px;
+                line-height: 28px;
+                color: #333333;
+            }
+                .mobile-profile__heading .verified {
+                    margin-left: 10px;
+                    margin-top: 8px;
+                }
+
+            .mobile-profile__position {
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
+            .mobile-profile__summary {
+                margin-top: 26px;
+                display: flex;
+                align-items: flex-start;
+            }
+                .mobile-profile__stat {
+                    margin-left: 34px;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+
+                .mobile-profile__stat:first-child {
+                    margin-left: 0;
+                }
+                    .mobile-profile__icon {
+                        margin-left: -2px;
+                        margin-right: 4px;
+                        vertical-align: top;
+                        fill: currentColor;
+                    }
+
+            .mobile-profile__operations {
+                margin-top: 16px;
+                height: 34px;
+                margin-left: -6px;
+                margin-right: -6px;
+                display: flex;
+                align-items: flex-start;
+            }
+                .mobile-profile__action {
+                    margin-left: 6px;
+                    margin-right: 6px;
+                    flex-grow: 1;
+                    flex-basis: 0;
+                }
+
+                .mobile-profile__dropdown {
+                    width: 40px;
+                    margin-left: 6px;
+                    margin-right: 6px;
+                    flex-shrink: 0;
+                }
+
+    .mobile-profile__bio {
+        padding-top: 19px;
+        padding-bottom: 46px;
+        background-color: #9DB3BF;
+    }
+        .mobile-profile__wrap {
+
+        }
+            .mobile-profile__bio {
+                font-size: 13px;
+                line-height: 24px;
+                color: #1F1F1F;
+            }
+
+            .mobile-profile__bio strong {
+                font-weight: 600;
+                color: #FFFFFF;
+            }

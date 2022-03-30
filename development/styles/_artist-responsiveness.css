@@ -19,21 +19,21 @@
         /*position: relative;*/
         /*z-index: 20;*/
         /*height: 567px;*/
-        /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+        box-shadow: none;
     }
 
     .artist__summary {
-        /*padding-top: 32px;*/
+        padding-top: 0;
         padding-bottom: 0;
     }
         .artist__header {
-
+            display: none;
         }
 
         .artist__data {
             position: relative; /* gallery comes here via absolute positioning   */
             padding-top: 288px;
-            /*margin-top: 21px;*/
+            margin-top: 0;
             display: block;
             /*align-items: flex-start;*/
         }

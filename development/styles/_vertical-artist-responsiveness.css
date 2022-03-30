@@ -22,19 +22,22 @@
         /*flex-shrink: 0;*/
     }
 
+    .vertical-artist__mobile-bio {
+        display: block;
+        position: relative;
+        margin-top: -117px;
+    }
+
     .vertical-artist__right {
         width: auto;
         position: static;
         padding-top: 0;
     }
         .vertical-artist__body {
-            /*padding: 27px 36px 29px;*/
-            padding-bottom: 0;
-            padding-left: var(--container-mobile-padding);
-            padding-right: var(--container-mobile-padding);
+            padding: 0 var(--container-mobile-padding);
         }
             .vertical-artist__header {
-
+                display: none;
             }
 
             .vertical-artist__gallery {

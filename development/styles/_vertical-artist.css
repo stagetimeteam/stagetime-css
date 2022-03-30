@@ -22,6 +22,10 @@
         flex-shrink: 0;
     }
 
+    .vertical-artist__mobile-bio {
+        display: none;
+    }
+
     .vertical-artist__right {
         position: relative;
         padding-top: 338px;
