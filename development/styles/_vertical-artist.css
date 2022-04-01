@@ -28,10 +28,15 @@
 
     .vertical-artist__right {
         position: relative;
-        padding-top: 338px;
         width: 50%;
         flex-shrink: 0;
+        padding-top: 262px;
     }
+
+    .vertical-artist__right--padding-for-editable-media {
+        padding-top: 338px;
+    }
+
         .vertical-artist__body {
             padding: 27px 36px 29px;
         }
