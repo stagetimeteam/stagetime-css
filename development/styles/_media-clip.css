@@ -1,0 +1,79 @@
+.media-clip {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .media-clip__background {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        transition: box-shadow var(--transition-hover);
+    }
+        .media-clip__image {
+            vertical-align: top;
+            background-color: var(--image-fallback);
+        }
+
+        .media-clip__background::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            background-image: linear-gradient(334.69deg, #9CB2BE 17.33%, rgba(156, 178, 190, 0.52) 38.69%, rgba(198, 177, 166, 0.52) 64.54%, #C6B1A6 88.01%);
+            opacity: 0;
+            transition: opacity var(--transition-hover);
+        }
+
+    .media-clip__bar {
+        position: absolute;
+        left: 9px;
+        right: 9px;
+        bottom: 9px;
+        padding: 8px 46px 10px 15px;
+        background-color: rgba(20, 20, 20, 0.61);
+        border-radius: 0 14px 14px 14px;
+    }
+        .media-clip__name {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+
+        .media-clip__title {
+            margin-top: 1px;
+            font-size: 11px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+
+        .media-clip__playback {
+            position: absolute;
+            right: 12px;
+            top: 11px;
+            width: 28px;
+            height: 28px;
+            padding: 2px;
+            border: 2px solid #FFFFFF;
+            background-color: #9CB2BE;
+            border-radius: 50%;
+        }
+            .media-clip__icon {
+                vertical-align: top;
+                fill: #FFFFFF;
+            }
+
+
+.media-clip:hover {
+
+}
+    .media-clip:hover .media-clip__background {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .media-clip:hover .media-clip__background::after {
+        opacity: 1;
+    }
