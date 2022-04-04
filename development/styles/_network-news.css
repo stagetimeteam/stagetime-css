@@ -1,0 +1,26 @@
+.network-news {
+
+}
+    .network-news__heading {
+        margin-top: 0;
+        margin-bottom: 26px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #333333;
+        text-align: center;
+    }
+        .network-news__icon {
+            margin-right: 5px;
+            margin-top: -2px;
+            margin-bottom: -2px;
+            vertical-align: top;
+            fill: currentColor;
+        }
+
+    .network-news__list {
+
+    }
+        .network-news__item {
+
+        }
