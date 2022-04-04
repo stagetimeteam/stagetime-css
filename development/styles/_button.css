@@ -284,6 +284,25 @@
 }
 
 
+.button--purple {
+    box-shadow: none;
+    background-color: #1D4451;
+    color: #FFFFFF;
+}
+
+.button--purple:hover {
+    box-shadow: none;
+    background-color: #285F72;
+    color: #FFFFFF;
+}
+
+.button--purple:active {
+    box-shadow: none;
+    background-color: #1A3D4A;
+    color: #FFFFFF;
+}
+
+
 .button--secondary {
     box-shadow: inset 0 0 0 1px #757575;
     background-color: transparent;
@@ -925,5 +944,26 @@
 .button--white-outline:active {
     background-color: #DDDDDD;
     color: #181F30;
+    box-shadow: none;
+}
+
+
+
+.button--refresh {
+    width: 64px;
+    height: 32px;
+    padding: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.button--refresh:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button--refresh:active {
     box-shadow: none;
 }

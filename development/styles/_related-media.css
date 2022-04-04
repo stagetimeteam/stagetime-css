@@ -1,0 +1,16 @@
+.related-media {
+    text-align: center;
+}
+    .related-media__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 24px;
+    }
+        .related-media__item {
+
+        }
+
+    .related-media__refresh {
+        margin-top: 24px;
+    }
