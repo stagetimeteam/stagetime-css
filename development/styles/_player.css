@@ -1,0 +1,44 @@
+.player {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 24px;
+    flex-wrap: wrap;
+}
+    .player__list {
+        margin-top: -2px; /* because of cards backgrounds inside */
+        margin-bottom: -2px; /* because of cards backgrounds inside */
+    }
+
+    .player__viewport {
+
+    }
+        .player__strut {
+            position: relative;
+        }
+            .player__background {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+                .player__image {
+                    width: 100%;
+                    height: 100%;
+                    background-color: var(--image-fallback);
+                    object-fit: cover;
+                }
+
+                .player__background::after {
+                    background-color: rgba(51, 51, 51, 0.2);
+                }
+
+    .player__refresh {
+
+    }
+
+    .player__footer {
+
+    }
