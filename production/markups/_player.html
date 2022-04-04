@@ -6,369 +6,90 @@
         <title>.player</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1648792880">
-        <link rel="stylesheet" href="../styles/style.css?1648792880">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1648792880" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1649056075">
+        <link rel="stylesheet" href="../styles/style.css?1649056075">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1649056075" media="(max-width: 767px)">
     </head>
     <body>
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="width: 760px; margin: 0 auto;">
             <br>
             <br>
             <h1>.player</h1>
-            <p>
-                This is outdated player. See <a href="_player3.html">.player3</a>
-            </p>
-            <br>
-            <br>
-            <div style="width: 226px; margin: 0 auto;">
 
-
-                <section class="player player--loading">
-                    <div class="player__menu operations operations--simplified-handler operations--for-player">
-                        <button class="operations__handler" type="button">
-                            <svg class="operations__icon" width="32" height="32">
-                                <use xlink:href="../symbols/symbols.svg?1648792880#32-more"></use>
-                            </svg>
-                            More
-                        </button>
-                        <div class="operations__dropdown">
-                            <div class="menu">
-                                <a class="menu__link" href="#">
-                                    <svg class="menu__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1648792880#24-share"></use>
-                                    </svg>
-                                    Share
-                                </a>
-                                <a class="menu__link" href="#">
-                                    <svg class="menu__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1648792880#24-bookmark"></use>
-                                    </svg>
-                                    Favorite
-                                </a>
-                                <a class="menu__link" href="#">
-                                    <svg class="menu__icon" width="24" height="24">
-                                        <use xlink:href="../symbols/symbols.svg?1648792880#24-report"></use>
-                                    </svg>
-                                    Report
-                                </a>
-                            </div>
+            <div class="player">
+                <div class="player__list">
+                    <a class="media-row" href="#">
+                        <img class="media-row__image"
+                             srcset="../temp/media-row-a@2x.jpg 2x"
+                             src="../temp/media-row-a.jpg"
+                             width="80"
+                             height="42"
+                             alt=""
+                        >
+                        <div class="media-row__name">Sergey Tkachenko</div>
+                        <div class="media-row__title ellipsis">Piano concerto No. 2 in Lorem Ipsum dolor sit amen</div>
+                        <div class="media-row__time ellipsis">3:16</div>
+                    </a>
+                    <a class="media-row media-row--current" href="#">
+                        <img class="media-row__image"
+                             srcset="../temp/media-row-b@2x.jpg 2x"
+                             src="../temp/media-row-b.jpg"
+                             width="80"
+                             height="42"
+                             alt=""
+                        >
+                        <div class="media-row__name">Sergey Tkachenko</div>
+                        <div class="media-row__title ellipsis">Piano concerto No. 2 in Lorem Ipsum dolor sit amen</div>
+                        <div class="media-row__time ellipsis">3:16</div>
+                    </a>
+                    <a class="media-row" href="#">
+                        <img class="media-row__image"
+                             srcset="../temp/media-row-c@2x.jpg 2x"
+                             src="../temp/media-row-c.jpg"
+                             width="80"
+                             height="42"
+                             alt=""
+                        >
+                        <div class="media-row__name">Sergey Tkachenko</div>
+                        <div class="media-row__title ellipsis">Piano concerto No. 2 in Lorem Ipsum dolor sit amen</div>
+                        <div class="media-row__time ellipsis">3:16</div>
+                    </a>
+                    <a class="media-row" href="#">
+                        <img class="media-row__image"
+                             srcset="../temp/media-row-d@2x.jpg 2x"
+                             src="../temp/media-row-d.jpg"
+                             width="80"
+                             height="42"
+                             alt=""
+                        >
+                        <div class="media-row__name">Sergey Tkachenko</div>
+                        <div class="media-row__title ellipsis">Piano concerto No. 2 in Lorem Ipsum dolor sit amen</div>
+                        <div class="media-row__time ellipsis">3:16</div>
+                    </a>
+                </div>
+                <div class="player__viewport">
+                    <div class="player__strut" style="padding-bottom: 56.25%">
+                        <div class="player__background">
+                            <img class="player__image"
+                                 srcset="../temp/player@2x.jpg 2x"
+                                 src="../temp/player.jpg"
+                                 width="425"
+                                 height="262"
+                                 alt=""
+                            >
                         </div>
                     </div>
-                    <button class="player__handler" type="button">
-                        <svg class="player__angle" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#16-angle-down"></use>
-                        </svg>
-                        Expand
-                    </button>
-                    <button class="player__close" type="button">
-                        <svg class="player__cross" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#12-cross"></use>
-                        </svg>
-                        Expand
-                    </button>
-                    <h2 class="player__heading">
-                        Now playing
-                    </h2>
-                    <img class="player__preview"
-                         srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
-                         src="../temp/brandon-bell-when-the-air.jpg"
-                         width="174"
-                         height="99"
-                         alt=""
-                    >
-                    <div class="player__song ellipsis">
-                        Brandon Bell
-                    </div>
-                    <div class="player__artist ellipsis">
-                        “When the air sings of summer” from The Old Maid and the Thief
-                    </div>
-                    <div class="player__wave">
-                        <div class="player__indicator">
-                            <div class="loading loading--inverted">Loading</div>
-                        </div>
-                        <div class="player__progress">
-                            <!-- Wave Surf here -->
-                        </div>
-                    </div>
-                    <div class="player__controls">
-                        <button class="player__action player__action--bookmark" type="button">
-                            <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1648792880#16-bookmark"></use>
-                            </svg>
-                        </button>
-                        <button class="player__action player__action--disabled player__action--backward" type="button">
-                            <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1648792880#16-backward"></use>
-                            </svg>
-                        </button>
-                        <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/brandon-bell-when-the-air.jpg);">
-                            <svg class="player__icon player__icon--play" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1648792880#16-play"></use>
-                            </svg>
-                            <svg class="player__icon player__icon--pause" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1648792880#16-pause"></use>
-                            </svg>
-                            <div class="player__visualization playback">
-                                <div class="playback__bar"></div>
-                                <div class="playback__bar"></div>
-                                <div class="playback__bar"></div>
-                                <div class="playback__bar"></div>
-                                <div class="playback__bar"></div>
-                            </div>
-                        </button>
-                        <button class="player__action player__action--forward" type="button">
-                            <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1648792880#16-forward"></use>
-                            </svg>
-                        </button>
-                        <button class="player__action player__action--shuffle" type="button">
-                            <svg class="player__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1648792880#16-shuffle"></use>
-                            </svg>
-                        </button>
-                    </div>
-                </section>
-
-
+                </div>
+                <div class="player__refresh">
+3
+                </div>
+                <div class="player__footer">
+4
+                </div>
             </div>
-
-
-            <br>
-            <h3>Wave</h3>
-            <p>
-                Use Wave Surf plugin: <a href="https://wavesurfer-js.org/">https://wavesurfer-js.org/</a> to create wave map
-            </p>
-            <br>
-            <h3>Init</h3>
-            <p>
-                Init it inside <b>.player__progress</b>
-            </p>
-            <p>
-                Init with following parameters:
-            </p>
-<pre>
-var wavesurfer = WaveSurfer.create({
-    container: '.player__progress',
-    barWidth: 1,
-    barGap: 2,
-    height: '49',
-    waveColor: '#FFFFFF',
-    progressColor: '#BFD7E3',
-    cursorColor: '#FFFFFF'
-});
-</pre>
-
-            <br>
-            <h3>Ready state</h3>
-            <p>
-                Once init it will start loading first song. When song is loaded parsed and the wave peaks created (on <b>ready</b> event)
-                please add <b>.player--ready</b> class. This will show wave on the screen
-                because by default it was hidden via <b>opacity: 0</b>.
-            </p>
-            <p>
-                It has to be done because wave appears and disappears by itself anyway and does it uncontrollable.
-                To take control over the situation we just toggle opacity on the parental div. With it we can
-                add transition, horizontal background line (not a part of the player) and so on.
-            </p>
-
-
-            <br>
-            <h3>Loading state</h3>
-            <p>
-                When song (or library itself) is being downloaded please add <b>.player--loading</b>.
-                It will show loading indicator. You want to load page with this class added by default.
-            </p>
-            <p>
-                At some point of view this loading case is opposite to <b>.player--ready</b> and one of them could be enough.
-                You can use <b>ready</b> even to detect both cases.
-                But whole thing is quite complicated so lets just in case separate these cases to be more straightforward.
-                Many things in CSS relate to them.
-            </p>
-
-
-            <br>
-            <h3>Play and Pause states</h3>
-
-            <p>
-                In addition to the pair of <b>.player--loading</b> and <b>.player--ready</b> we have another pair of classes:
-                <b>.player--playing</b> and <b>.player--paused</b>. Use <b>play</b> and <b>pause</b> events to catch related cases.
-                Again, one of them could be enough but just for simplicity lets have both. There is a complicated scheme
-                of icons swapping in CSS related to these classes.
-            </p>
-
-
-            <br>
-            <h3>Disabled player controls</h3>
-
-            <p>
-                Use <b>.player__action--disabled</b> to disable player controls when needed. For example when new track
-                is being loaded you should disable play button. When there are no tracks in the playlist you shold disable
-                next button. And so on.
-            </p>
-
-            <br>
-            <h3>Toggle bookmark and shuffle</h3>
-
-            <p>
-                When song is bookmarked please change:<br>
-                <b>16-bookmark</b> to <b>16-bookmarked</b>
-                <br>And same for shuffle:
-                <br><b>16-shuffle</b> to <b>16-shuffled</b>
-            </p>
-
-            <p>
-                You can swap icons in the sprite by updating <b>href</b> attribute of <b>use</b> tag inside of svg icon:
-                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-bookmark")</b>
-                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-bookmarked")</b>
-                <br>and:
-                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-shuffle")</b>
-                <br><b>$('use').attr("xlink:href", "path/to/symbols.svg#16-shuffled")</b>
-            </p>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>Collapsed case</h2>
-            <p>
-                Just add <b>.player--collapsed</b> to change player layout. Some parts of player of it will be hidden
-                while another parts will be repositioned.
-            </p>
-            <p>
-                Most of complications will happen inside of play button. Please note that
-                is is still similar <b>.player__action--play</b> button that was at the bottom of the player.
-                So all JS events and other code pieces related to that button will work here too.
-                No actions required.
-            </p>
-            <p>
-                Only need to make sure play button has background image like so:
-                <b>style="background-image: url(../temp/brandon-bell-when-the-air.jpg);"</b>
-                from the very beginning. Don't need to provide retina version here or cut another sizes. Just
-                use same images as in the <b>.player__preview</b>. It's about the needed size.
-            </p>
-            <h3>Collapse when?</h3>
-            <p>
-                To add <b>.player--collapsed</b> class please catch a click on <b>.player__handler</b> button.
-            </p>
-            <p>
-                To remove <b>.player--collapsed</b> when player is already collapsed:
-                <br>1) Catch the same click on <b>.player__handler</b> button.
-                <br>2) Catch the click on whole player and check if:
-                <br><b>!$(event.target).closest('.player__handler, .player__action--play').length</b>
-            </p>
-
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Static player with video inside</h2>
-            <p>
-                - Delete <b>.player__wave</b>.
-                <br>- Use <b>.player__window</b> instead <b>.player__preview</b>
-                <br>- Use <a href="_video.html"><b>.video</b></a> component inside
-            </p>
-
-            <section class="player">
-                <div class="player__menu operations operations--simplified-handler operations--for-player">
-                    <button class="operations__handler" type="button">
-                        <svg class="operations__icon" width="32" height="32">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#32-more"></use>
-                        </svg>
-                        More
-                    </button>
-                    <div class="operations__dropdown">
-                        <div class="menu">
-                            <a class="menu__link" href="#">
-                                <svg class="menu__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1648792880#24-share"></use>
-                                </svg>
-                                Share
-                            </a>
-                            <a class="menu__link" href="#">
-                                <svg class="menu__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1648792880#24-bookmark"></use>
-                                </svg>
-                                Favorite
-                            </a>
-                            <a class="menu__link" href="#">
-                                <svg class="menu__icon" width="24" height="24">
-                                    <use xlink:href="../symbols/symbols.svg?1648792880#24-report"></use>
-                                </svg>
-                                Report
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <button class="player__handler" type="button">
-                    <svg class="player__angle" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1648792880#16-angle-down"></use>
-                    </svg>
-                    Expand
-                </button>
-                <button class="player__close" type="button">
-                    <svg class="player__cross" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1648792880#12-cross"></use>
-                    </svg>
-                    Expand
-                </button>
-                <h2 class="player__heading">
-                    Now playing
-                </h2>
-                <div class="player__window">
-                    <div class="video video--16x9">
-                        <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/WUgvvPRH7Oc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class="player__song ellipsis">
-                    Brandon Bell
-                </div>
-                <div class="player__artist ellipsis">
-                    “When the air sings of summer” from The Old Maid and the Thief
-                </div>
-                <div class="player__controls">
-                    <button class="player__action player__action--bookmark" type="button">
-                        <svg class="player__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#16-bookmark"></use>
-                        </svg>
-                    </button>
-                    <button class="player__action player__action--disabled player__action--backward" type="button">
-                        <svg class="player__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#16-backward"></use>
-                        </svg>
-                    </button>
-                    <button class="player__action player__action--play player__action--disabled" type="button" style="background-image: url(../temp/brandon-bell-when-the-air.jpg);">
-                        <svg class="player__icon player__icon--play" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#16-play"></use>
-                        </svg>
-                        <svg class="player__icon player__icon--pause" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#16-pause"></use>
-                        </svg>
-                        <div class="player__visualization playback">
-                            <div class="playback__bar"></div>
-                            <div class="playback__bar"></div>
-                            <div class="playback__bar"></div>
-                            <div class="playback__bar"></div>
-                            <div class="playback__bar"></div>
-                        </div>
-                    </button>
-                    <button class="player__action player__action--forward" type="button">
-                        <svg class="player__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#16-forward"></use>
-                        </svg>
-                    </button>
-                    <button class="player__action player__action--shuffle" type="button">
-                        <svg class="player__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1648792880#16-shuffle"></use>
-                        </svg>
-                    </button>
-                </div>
-            </section>
-
 
             <br>
             <br>
@@ -397,46 +118,44 @@ var wavesurfer = WaveSurfer.create({
         <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
         <script src="../vendors/sortable/Sortable.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
-        <script src="../scripts/_global.js?1648792880"></script>
-        <script src="../scripts/_operations.js?1648792880"></script>
-        <script src="../scripts/_profile.js?1648792880"></script>
-        <script src="../scripts/_mfp.js?1648792880"></script>
-        <script src="../scripts/_search.js?1648792880"></script>
-        <script src="../scripts/_carousel.js?1648792880"></script>
-        <script src="../scripts/_player.js?1648792880"></script>
-        <script src="../scripts/_player2.js?1648792880"></script>
-        <script src="../scripts/_player3.js?1648792880"></script>
-        <script src="../scripts/_updates.js?1648792880"></script>
-        <script src="../scripts/_side.js?1648792880"></script>
-        <script src="../scripts/_happening.js?1648792880"></script>
-        <script src="../scripts/_input.js?1648792880"></script>
-        <script src="../scripts/_edit-post.js?1648792880"></script>
-        <script src="../scripts/_post-form.js?1648792880"></script>
-        <script src="../scripts/_button.js?1648792880"></script>
-        <script src="../scripts/_quick-message.js?1648792880"></script>
-        <script src="../scripts/_explore.js?1648792880"></script>
-        <script src="../scripts/_shortcut.js?1648792880"></script>
-        <script src="../scripts/_scrollbar.js?1648792880"></script>
-        <script src="../scripts/_overlay.js?1648792880"></script>
-        <script src="../scripts/_notifications.js?1648792880"></script>
-        <script src="../scripts/_enter.js?1648792880"></script>
-        <script src="../scripts/_suggesting.js?1648792880"></script>
-        <script src="../scripts/_chat.js?1648792880"></script>
-        <script src="../scripts/_badge.js?1648792880"></script>
-        <script src="../scripts/_media-bar.js?1648792880"></script>
-        <script src="../scripts/_settings.js?1648792880"></script>
-        <script src="../scripts/_slideshow.js?1648792880"></script>
-        <script src="../scripts/_expandable-bio.js?1648792880"></script>
-        <script src="../scripts/_parallax.js?1648792880"></script>
-        <script src="../scripts/_simple-parallax.js?1648792880"></script>
-        <script src="../scripts/_anchor.js?1648792880"></script>
-        <script src="../scripts/_modal.js?1648792880"></script>
-        <script src="../scripts/_full-media-card.js?1648792880"></script>
-        <script src="../scripts/_media-panel.js?1648792880"></script>
-        <script src="../scripts/_color-selection.js?1648792880"></script>
-        <script src="../scripts/_layout-type.js?1648792880"></script>
-        <script src="../scripts/_sortable.js?1648792880"></script>
-        <script src="../scripts/_biography.js?1648792880"></script>
+        <script src="../scripts/_global.js?1649056075"></script>
+        <script src="../scripts/_operations.js?1649056075"></script>
+        <script src="../scripts/_profile.js?1649056075"></script>
+        <script src="../scripts/_mfp.js?1649056075"></script>
+        <script src="../scripts/_search.js?1649056075"></script>
+        <script src="../scripts/_carousel.js?1649056075"></script>
+        <script src="../scripts/_player3.js?1649056075"></script>
+        <script src="../scripts/_updates.js?1649056075"></script>
+        <script src="../scripts/_side.js?1649056075"></script>
+        <script src="../scripts/_happening.js?1649056075"></script>
+        <script src="../scripts/_input.js?1649056075"></script>
+        <script src="../scripts/_edit-post.js?1649056075"></script>
+        <script src="../scripts/_post-form.js?1649056075"></script>
+        <script src="../scripts/_button.js?1649056075"></script>
+        <script src="../scripts/_quick-message.js?1649056075"></script>
+        <script src="../scripts/_explore.js?1649056075"></script>
+        <script src="../scripts/_shortcut.js?1649056075"></script>
+        <script src="../scripts/_scrollbar.js?1649056075"></script>
+        <script src="../scripts/_overlay.js?1649056075"></script>
+        <script src="../scripts/_notifications.js?1649056075"></script>
+        <script src="../scripts/_enter.js?1649056075"></script>
+        <script src="../scripts/_suggesting.js?1649056075"></script>
+        <script src="../scripts/_chat.js?1649056075"></script>
+        <script src="../scripts/_badge.js?1649056075"></script>
+        <script src="../scripts/_media-bar.js?1649056075"></script>
+        <script src="../scripts/_settings.js?1649056075"></script>
+        <script src="../scripts/_slideshow.js?1649056075"></script>
+        <script src="../scripts/_expandable-bio.js?1649056075"></script>
+        <script src="../scripts/_parallax.js?1649056075"></script>
+        <script src="../scripts/_simple-parallax.js?1649056075"></script>
+        <script src="../scripts/_anchor.js?1649056075"></script>
+        <script src="../scripts/_modal.js?1649056075"></script>
+        <script src="../scripts/_full-media-card.js?1649056075"></script>
+        <script src="../scripts/_media-panel.js?1649056075"></script>
+        <script src="../scripts/_color-selection.js?1649056075"></script>
+        <script src="../scripts/_layout-type.js?1649056075"></script>
+        <script src="../scripts/_sortable.js?1649056075"></script>
+        <script src="../scripts/_biography.js?1649056075"></script>
 
 
     </body>
