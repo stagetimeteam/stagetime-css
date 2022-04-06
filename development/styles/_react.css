@@ -1,0 +1,15 @@
+.react {
+    display: inline-block;
+    vertical-align: top;
+    padding: 4px 11px 4px 9px;
+    background-color: #F6F6F6;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333333;
+}
+    .react__icon {
+        vertical-align: top;
+        margin-top: 2px;
+        margin-right: 3px;
+    }
