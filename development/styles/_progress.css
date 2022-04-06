@@ -43,7 +43,7 @@
             line-height: 18px;
             color: #757575;
         }
-            strong {
+            .progress__head strong {
                 font-weight: bold;
                 color: #545454;
             }

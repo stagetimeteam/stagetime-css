@@ -57,5 +57,6 @@
             line-height: 12px;
             color: #FFFFFF;
             text-align: center;
+            cursor: default;
             transition: left 0.1s linear;
         }

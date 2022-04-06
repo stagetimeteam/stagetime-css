@@ -1,0 +1,38 @@
+.user-side {
+
+}
+    .user-side__photo {
+        vertical-align: top;
+        width: 316px;
+        height: 316px;
+        border-radius: 4px;
+    }
+
+    .user-side__body {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+        .user-side__heading {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #333333;
+            text-align: center;
+        }
+
+        .user-side__features {
+            margin-top: 16px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+            .user-side__stat {
+                margin-left: 12px;
+                margin-right: 12px;
+                vertical-align: top;
+                fill: #757575;
+            }
+
+    .user-side__action {
+        margin-top: 15px;
+    }

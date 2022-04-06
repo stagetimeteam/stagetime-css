@@ -1,0 +1,99 @@
+.home {
+    position: relative;
+    padding-left: var(--home-sidebar);
+    padding-right: var(--home-aside);
+}
+    .home__sidebar {
+        position: absolute;
+        z-index: 500;
+        width: var(--home-sidebar);
+        background-color: #FFFFFF;
+        box-shadow: inset -1px 0 0 #E8E8E8;
+        left: 0;
+        top: 0;
+    }
+
+    .home__content {
+        box-shadow: -1px 0 0 #E8E8E8,
+                    1px 0 0 #E8E8E8;
+        padding: var(--home-padding-desktop);
+    }
+
+    .home__aside {
+        flex-shrink: 0;
+        position: absolute;
+        z-index: 500;
+        width: var(--home-aside);
+        background-color: #FFFFFF;
+        box-shadow: inset 1px 0 0 #E8E8E8;
+        right: 0;
+        top: 0;
+    }
+        .home__summary {
+            padding: var(--home-padding-desktop);
+        }
+            .home__smartphone-access,
+            .home__smartphone-access.access-panel {
+                display: none;
+            }
+
+
+/*.home--no-aside {*/
+/*    padding-right: 0;*/
+/*}*/
+/*    .home--no-aside .home__content {*/
+/*        box-shadow: none;*/
+/*    }*/
+
+
+
+/*.home--collapsed-sidebar {*/
+/*    padding-left: var(--sidebar-collapsed-width);*/
+/*}*/
+/*    .home--collapsed-sidebar .home__sidebar {*/
+/*        width: var(--sidebar-collapsed-width);*/
+/*    }*/
+
+
+
+
+
+@media (min-width: 1240px) {
+
+    .home {
+        height: 100%;
+    }
+        .home__sidebar {
+            position: fixed;
+            bottom: 0;
+            top: var(--header-height);
+        }
+
+        .home__content {
+            height: 100%;
+        }
+
+        .home__aside {
+            position: fixed;
+            bottom: 0;
+            top: var(--header-height);
+        }
+}
+
+
+
+
+.has-player3 {
+
+}
+    .has-player3 .home__sidebar {
+        padding-bottom: 179px;
+    }
+
+    .has-player3.player3-collapsed .home__sidebar {
+        padding-bottom: var(--player3-height);
+    }
+
+    .has-player3 .home__aside {
+        padding-bottom: var(--player3-height);
+    }
