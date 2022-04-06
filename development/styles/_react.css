@@ -3,10 +3,22 @@
     vertical-align: top;
     padding: 4px 11px 4px 9px;
     background-color: #F6F6F6;
+    border-radius: 2px;
     font-weight: 600;
     font-size: 12px;
     line-height: 20px;
     color: #333333;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.react:hover {
+    background-color: #F0F0F0;
+}
+
+.react:active {
+    background-color: #EAEAEA;
+    transition: none;
 }
     .react__icon {
         vertical-align: top;
