@@ -89,38 +89,16 @@
 
             <br>
             <br>
-            <br>
-            <br>
-            <h2>.media-panel--audio</h2>
-            <p>
-                Also add <b>.media-panel--playing</b> when song is playing:
-            </p>
+            <h2>Audio card</h2>
 
-            <div class="media-panel media-panel--audio">
+            <div class="media-panel">
                 <div class="media-panel__preview">
-                    <img class="media-panel__image"
-                         srcset="../temp/media-panel-a@2x.jpg 2x"
-                         src="../temp/media-panel-a.jpg"
-                         width="70"
-                         height="70"
-                         alt=""
-                    >
-                    <div class="media-panel__bars">
-                        <div class="alt-playback">
-                            <div class="alt-playback__bar"></div>
-                            <div class="alt-playback__bar"></div>
-                            <div class="alt-playback__bar"></div>
-                            <div class="alt-playback__bar"></div>
-                        </div>
-                    </div>
-                    <button class="media-panel__playback" type="button">
-                        <img class="media-panel__play" src="../symbols/32-play-circle.svg" width="32" height="32" alt="">
-                        <img class="media-panel__pause" src="../symbols/32-pause-circle.svg" width="32" height="32" alt="">
-                    </button>
+                    <div class="media-panel__gradient"></div>
+                    <img class="media-panel__icon" src="../symbols/32-play-circle.svg" width="32" height="32" alt="">
                 </div>
                 <div class="media-panel__body">
                     <div class="media-bar__type">
-                        Video
+                        Audio
                     </div>
                     <div class="media-bar__name">
                         Cherry Cherry Lady
@@ -162,6 +140,34 @@
                                  alt="Mark Zuckerberg"
                             >
                         </div>
+                    </div>
+                </div>
+                <div class="media-panel__edit button button--inner">
+                    <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                    Edit
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <h2>Project card</h2>
+
+            <div class="media-panel">
+                <div class="media-panel__preview">
+                    <div class="media-panel__gradient"></div>
+                    <img class="media-panel__icon" src="../symbols/24-document.svg" width="32" height="32" alt="">
+                </div>
+                <div class="media-panel__body">
+                    <div class="media-bar__type">
+                        Project
+                    </div>
+                    <div class="media-bar__name">
+                        Panel on Civic Inclusion
+                    </div>
+                    <div class="media-bar__note">
+                        OPERA America
                     </div>
                 </div>
                 <div class="media-panel__edit button button--inner">
@@ -233,7 +239,6 @@
         <script src="../scripts/_anchor.js"></script>
         <script src="../scripts/_modal.js"></script>
         <script src="../scripts/_full-media-card.js"></script>
-        <script src="../scripts/_media-panel.js"></script>
         <script src="../scripts/_color-selection.js"></script>
         <script src="../scripts/_layout-type.js"></script>
         <script src="../scripts/_sortable.js"></script>
