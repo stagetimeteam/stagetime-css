@@ -1,0 +1,45 @@
+.user-side {
+
+}
+    .user-side__data {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 15px;
+    }
+        .user-side__photo {
+            flex-shrink: 0;
+            width: 88px;
+            height: 88px;
+            margin-right: 24px;
+        }
+
+        .user-side__body {
+            margin-top: 11px;
+        }
+            .user-side__heading {
+                font-size: 18px;
+                line-height: 24px;
+                text-align: left;
+            }
+
+            .user-side__features {
+                margin-left: -2px;
+                margin-top: 15px;
+                justify-content: flex-start;
+            }
+                .user-side__stat {
+                    margin-left: 20px;
+                    margin-right: 0;
+                }
+
+                .user-side__stat:first-child {
+                    margin-left: 0;
+                }
+
+    .user-side__profile-completeness {
+        display: none;
+    }
+
+    .user-side__share {
+        /*margin-top: 15px;*/
+    }

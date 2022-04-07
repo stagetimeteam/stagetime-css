@@ -1,8 +1,7 @@
 .player {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: calc(40% - 12px) calc(60% - 12px);
     column-gap: 24px;
-    flex-wrap: wrap;
 }
     .player__list {
         margin-top: -2px; /* because of cards backgrounds inside */

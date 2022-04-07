@@ -1,0 +1,73 @@
+.access-panel {
+    position: relative;
+    display: block;
+    /*align-items: flex-start;*/
+    padding: 13px 55px 26px;
+    /*background-color: #EBEFF4;*/
+    /*border-radius: 5px;*/
+}
+    .access-panel__preview {
+        position: absolute;
+        left: 14px;
+        top: 13px;
+        /*width: 28px;*/
+        /*height: 28px;*/
+        /*padding: 6px;*/
+        /*background-color: #FFFFFF;*/
+        /*border-radius: 2px;*/
+    }
+        .access-panel__icon {
+            /*vertical-align: top;*/
+            /*width: 16px;*/
+            /*height: 16px;*/
+            /*fill: #39606C;*/
+        }
+
+    .access-panel__message {
+        /*flex-grow: 1;*/
+        margin-right: -18px;
+        padding: 0;
+        font-size: 14px;
+        line-height: 24px;
+        /*color: #333333;*/
+    }
+        .access-panel__message strong {
+            /*font-weight: 600;*/
+        }
+
+    .access-panel__action {
+        margin-top: 13px;
+    }
+        .access-panel__action.button,
+        .access-panel__action .button {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 14px;
+        }
+
+    .access-panel__close {
+        margin: 0;
+        position: absolute;
+        right: 8px;
+        top: 11px
+        /*padding: 6px;*/
+        /*width: 28px;*/
+        /*height: 28px;*/
+        /*border: none;*/
+        /*background-color: transparent;*/
+        /*cursor: pointer;*/
+        /*border-radius: 2px;*/
+    }
+
+    .access-panel__close:hover {
+        /*background-color: rgba(255, 255, 255, 0.6);*/
+    }
+
+    .access-panel__close:active {
+        /*background-color: #FFFFFF*/
+    }
+        .access-panel__cross {
+            /*vertical-align: top;*/
+            /*fill: #545454;*/
+        }

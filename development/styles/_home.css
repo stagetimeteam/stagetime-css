@@ -8,18 +8,31 @@
         z-index: 500;
         width: var(--home-sidebar);
         background-color: #FFFFFF;
-        box-shadow: inset -1px 0 0 #E8E8E8;
         left: 0;
         top: 0;
+        border-right: 2px solid #E8E8E8;
     }
 
     .home__content {
-        box-shadow: -1px 0 0 #E8E8E8,
-                    1px 0 0 #E8E8E8,
-                    inset -1px 0 0 #E8E8E8,
-                    inset 1px 0 0 #E8E8E8;
-        padding: 24px;
+        box-shadow: -2px 0 0 #E8E8E8,
+                     2px 0 0 #E8E8E8;
+        padding: 24px 6.72%;
     }
+        .home__desktop-access {
+
+        }
+
+        .home__stats {
+            margin-top: 22px;
+        }
+
+        .home__player {
+            margin-top: 32px;
+            border-top: 2px solid #F6F6F6;
+            padding-top: 32px;
+        }
+
+
 
     .home__aside {
         flex-shrink: 0;
@@ -27,9 +40,9 @@
         z-index: 500;
         width: var(--home-aside);
         background-color: #FFFFFF;
-        box-shadow: inset 1px 0 0 #E8E8E8;
         right: 0;
         top: 0;
+        border-left: 2px solid #E8E8E8;
     }
         .home__summary {
             padding: 24px;
