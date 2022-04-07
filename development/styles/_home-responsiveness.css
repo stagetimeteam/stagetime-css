@@ -28,13 +28,13 @@
 
         .home__player {
             /*margin-top: 32px;*/
-            /*border-top: 2px solid #F6F6F6;*/
+            border-top-width: 4px;
             /*padding-top: 32px;*/
         }
 
         .home__feeds {
             /*margin-top: 32px;*/
-            /*border-top: 2px solid #F6F6F6;*/
+            border-top-width: 4px;
             /*padding-top: 32px;*/
             /*padding-bottom: 80px;*/
             display: block;
@@ -48,7 +48,7 @@
 
             .home__media {
                 margin-top: 32px;
-                border-top: 2px solid #F6F6F6;
+                border-top: 4px solid #F6F6F6;
                 padding-top: 32px;
                 width: auto;
             }
@@ -63,6 +63,14 @@
         .home__summary {
             padding: 20px 30px 40px;
         }
+
+        @media (max-width: 359px) {
+            .home__summary {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+        }
+
             .home__smartphone-access,
             .home__smartphone-access.access-panel {
                 display: block;
@@ -70,6 +78,12 @@
 
             .home__user {
                 margin-top: 40px;
+            }
+
+            @media (max-width: 359px) {
+                .home__user {
+                    margin-top: 30px;
+                }
             }
 
         .home__people {

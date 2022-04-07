@@ -1,7 +1,7 @@
 .media-row {
     /*position: relative;*/
     /*display: block;*/
-    /*padding: 13px 57px 13px 108px;*/
+    padding: 13px 64px 13px 127px;
     /*text-decoration: none;*/
 }
     .media-row::before {
@@ -26,7 +26,7 @@
 
     .media-row__image {
         /*position: absolute;*/
-        /*left: 12px;*/
+        left: 30px;
         /*top: 14px;*/
         /*background-color: var(--image-fallback);*/
         /*border-radius: 3px;*/
@@ -52,7 +52,7 @@
 
     .media-row__time {
         /*position: absolute;*/
-        /*right: 14px;*/
+        right: 29px;
         /*top: 33px;*/
         /*font-weight: 600;*/
         /*font-size: 11px;*/
@@ -70,3 +70,15 @@
         /*background-color: #E8E8E8;*/
         /*transition: none;*/
     }
+
+
+
+@media (max-width: 359px) {
+
+    .media-row {
+        padding-left: 117px;
+    }
+        .media-row__image {
+            left: 20px;
+        }
+}
