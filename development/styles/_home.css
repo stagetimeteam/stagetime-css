@@ -32,7 +32,23 @@
             padding-top: 32px;
         }
 
+        .home__feeds {
+            margin-top: 32px;
+            border-top: 2px solid #F6F6F6;
+            padding-top: 32px;
+            padding-bottom: 80px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .home__updates {
+                width: calc(100% - 352px);
+                padding-right: 24px;
+                margin-top: 2px;
+            }
 
+            .home__media {
+                width: 352px;
+            }
 
     .home__aside {
         flex-shrink: 0;
@@ -55,14 +71,6 @@
         .home__people {
 
         }
-
-
-/*.home--no-aside {*/
-/*    padding-right: 0;*/
-/*}*/
-/*    .home--no-aside .home__content {*/
-/*        box-shadow: none;*/
-/*    }*/
 
 
 

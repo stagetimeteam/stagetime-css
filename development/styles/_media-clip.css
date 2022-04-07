@@ -6,11 +6,17 @@
 }
     .media-clip__background {
         position: relative;
+        padding-bottom: 100%;
         border-radius: 16px;
         overflow: hidden;
         transition: box-shadow var(--transition-hover);
     }
         .media-clip__image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
             vertical-align: top;
             background-color: var(--image-fallback);
         }
@@ -22,10 +28,9 @@
             top: 0;
             right: 0;
             bottom: 0;
-            display: block;
             background-image: linear-gradient(334.69deg, #9CB2BE 17.33%, rgba(156, 178, 190, 0.52) 38.69%, rgba(198, 177, 166, 0.52) 64.54%, #C6B1A6 88.01%);
             opacity: 0;
-            transition: opacity var(--transition-hover);
+            transition: opacity var(--transition-show);
         }
 
     .media-clip__bar {
@@ -42,6 +47,7 @@
             font-size: 12px;
             line-height: 16px;
             color: #FFFFFF;
+            text-align: left;
         }
 
         .media-clip__title {
@@ -49,6 +55,7 @@
             font-size: 11px;
             line-height: 16px;
             color: #FFFFFF;
+            text-align: left;
         }
 
         .media-clip__playback {
@@ -67,14 +74,45 @@
                 fill: #FFFFFF;
             }
 
+            .media-clip__icon--play {
+
+            }
+
+            .media-clip__icon--pause {
+                display: none;
+            }
+
+.media-clip:hover {
+
+}
+
 
 .media-clip:hover {
 
 }
     .media-clip:hover .media-clip__background {
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    }
+        .media-clip:hover .media-clip__background::after {
+            opacity: 0.5;
+        }
+
+.media-clip--playing {
+
+}
+    .media-clip--playing .media-clip__background,
+    .media-clip--playing:hover .media-clip__background {
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     }
+        .media-clip--playing .media-clip__background::after,
+        .media-clip--playing:hover .media-clip__background::after {
+            opacity: 1;
+        }
 
-    .media-clip:hover .media-clip__background::after {
-        opacity: 1;
+    .media-clip--playing .media-clip__icon--play {
+        display: none;
+    }
+
+    .media-clip--playing .media-clip__icon--pause {
+        display: block;
     }

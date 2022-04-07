@@ -1,7 +1,7 @@
 .event {
     position: relative;
     display: block;
-    padding: 15px 22px 15px 90px;
+    padding: 17px 22px 15px 90px;
     text-decoration: none;
     border-radius: 8px;
     transition: background-color var(--transition-hover);
@@ -40,7 +40,7 @@
     .event__preview.avatar {
         position: absolute;
         left: 22px;
-        top: 15px;
+        top: 19px;
     }
 
     .event__head {

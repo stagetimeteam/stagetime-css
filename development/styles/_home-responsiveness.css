@@ -22,7 +22,36 @@
             display: none;
         }
 
+        .home__stats {
+            /*margin-top: 22px;*/
+        }
 
+        .home__player {
+            /*margin-top: 32px;*/
+            /*border-top: 2px solid #F6F6F6;*/
+            /*padding-top: 32px;*/
+        }
+
+        .home__feeds {
+            /*margin-top: 32px;*/
+            /*border-top: 2px solid #F6F6F6;*/
+            /*padding-top: 32px;*/
+            /*padding-bottom: 80px;*/
+            display: block;
+            /*align-items: flex-start;*/
+        }
+            .home__updates {
+                width: auto;
+                padding-right: 0;
+                margin-top: 0;
+            }
+
+            .home__media {
+                margin-top: 32px;
+                border-top: 2px solid #F6F6F6;
+                padding-top: 32px;
+                width: auto;
+            }
 
 
     .home__aside {
