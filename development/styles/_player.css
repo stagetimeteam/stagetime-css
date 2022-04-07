@@ -1,68 +1,68 @@
 .player {
-    display: grid;
-    grid-template-columns: calc(40% - 12px) calc(60% - 12px);
-    column-gap: 24px;
+    display: flex;
+    align-items: flex-start;
 }
-    .player__list {
-        margin-top: -2px; /* because of cards backgrounds inside */
-        margin-bottom: -2px; /* because of cards backgrounds inside */
+    .player__tracks {
+        width: 40%;
+        flex-shrink: 0;
+        padding-right: 24px;
     }
+        .player__list {
+            margin-top: -2px; /* because of cards backgrounds inside */
+            margin-bottom: -2px; /* because of cards backgrounds inside */
+        }
+
+        .player__refresh {
+            margin-top: 15px;
+            display: flex;
+            align-items: flex-start;
+            padding: 0 12px;
+        }
+            .player__re-load {
+
+            }
+
+            .player__discover {
+                margin-left: 16px;
+                margin-top: 5px;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 21px;
+                color: #1D4451;
+            }
 
     .player__viewport {
-
+        width: 60%;
+        flex-shrink: 0;
     }
-        .player__strut {
+        .player__background {
             position: relative;
+            border-radius: 4px;
+            overflow: hidden;
         }
-            .player__background {
-                position: absolute;
-                left: 0;
-                top: 0;
+            .player__image {
+                vertical-align: top;
                 width: 100%;
-                height: 100%;
-                border-radius: 4px;
-                overflow: hidden;
+                height: 268px;
+                background-color: var(--image-fallback);
+                object-fit: cover;
             }
-                .player__image {
-                    width: 100%;
-                    height: 100%;
-                    background-color: var(--image-fallback);
-                    object-fit: cover;
-                }
 
-                .player__background::after {
-                    background-color: rgba(51, 51, 51, 0.2);
-                }
+            .player__background::after {
+                background-color: rgba(51, 51, 51, 0.2);
+            }
 
-    .player__refresh {
-        margin-top: 16px;
-        display: flex;
-        align-items: flex-start;
-        padding: 0 12px;
-    }
-        .player__re-load {
 
+        .player__navigation {
+            margin-top: 18px;
+            display: flex;
+            align-items: flex-start;
         }
+            .player__bar {
+                flex-grow: 1;
+            }
 
-        .player__discover {
-            margin-left: 16px;
-            margin-top: 5px;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 21px;
-            color: #1D4451;
-        }
-
-    .player__footer {
-        margin-top: 8px;
-        display: flex;
-        align-items: flex-start;
-    }
-        .player__bar {
-            flex-grow: 1;
-        }
-
-        .player__like {
-            margin-left: 16px;
-            flex-shrink: 0;
-        }
+            .player__like {
+                margin-left: 16px;
+                flex-shrink: 0;
+            }

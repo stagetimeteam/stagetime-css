@@ -1,7 +1,7 @@
 .alt-icon-bar {
     border: 1px solid #E8E8E8;
     border-radius: 5px;
-    overflow: hidden; /* cut progress bar corners */
+    overflow: hidden; /* cut progress bar */
 }
     .alt-icon-bar__progress {
         height: 9px;
@@ -36,7 +36,7 @@
 
 
     .alt-icon-bar__content {
-
+        overflow: hidden; /* cut progress bar corners */
     }
         .alt-icon-bar__heading {
             font-size: 13px;
@@ -49,7 +49,8 @@
             font-weight: 600;
             font-size: 13px;
             line-height: 20px;
-            color: #ADB7AC
+            color: #ADB7AC;
+            overflow: hidden;
         }
             .alt-icon-bar__description .link {
                 font-weight: 600;

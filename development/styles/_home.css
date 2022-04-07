@@ -1,7 +1,7 @@
 .home {
     position: relative;
     padding-left: var(--home-sidebar);
-    padding-right: var(--home-aside);
+    padding-right: var(--home-aside-shortened);
 }
     .home__sidebar {
         position: absolute;
@@ -16,7 +16,7 @@
     .home__content {
         box-shadow: -2px 0 0 #E8E8E8,
                      2px 0 0 #E8E8E8;
-        padding: 24px 6.72%;
+        padding: 24px;
     }
         .home__desktop-access {
 
@@ -38,7 +38,7 @@
         flex-shrink: 0;
         position: absolute;
         z-index: 500;
-        width: var(--home-aside);
+        width: var(--home-aside-shortened);
         background-color: #FFFFFF;
         right: 0;
         top: 0;
@@ -81,21 +81,25 @@
 
     .home {
         height: 100%;
+        padding-right: var(--home-aside-full);
     }
         .home__sidebar {
             position: fixed;
-            bottom: 0;
             top: var(--header-height);
+            bottom: 0;
         }
 
         .home__content {
             height: 100%;
+            padding-left: 6.72%;  /* there was small 24px padding */
+            padding-right: 6.72%; /* and now it is big */
         }
 
         .home__aside {
             position: fixed;
-            bottom: 0;
             top: var(--header-height);
+            bottom: 0;
+            width: var(--home-aside-full);
         }
 }
 

@@ -490,15 +490,15 @@
     }
 
 
-.button--blue {
+.button--swim-test {
     background-color: #9CB2BE;
 }
 
-.button--blue:hover {
+.button--swim-test:hover {
     background-color: #B1C9D7;
 }
 
-.button--blue:active {
+.button--swim-test:active {
     background-color: #E6E6E6;
 }
 

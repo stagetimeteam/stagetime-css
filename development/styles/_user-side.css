@@ -6,10 +6,17 @@
     }
         .user-side__photo {
             vertical-align: top;
-            width: 316px;
-            height: 270px;
+            width: 246px;
+            height: 210px;
             object-fit: cover;
             border-radius: 4px;
+        }
+
+        @media (min-width: 1240px) {
+            .user-side__photo {
+                width: 316px;
+                height: 270px;
+            }
         }
 
         .user-side__body {
