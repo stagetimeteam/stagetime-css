@@ -4,7 +4,8 @@
     .user-side__photo {
         vertical-align: top;
         width: 316px;
-        height: 316px;
+        height: 270px;
+        object-fit: cover;
         border-radius: 4px;
     }
 

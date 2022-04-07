@@ -18,7 +18,7 @@
                     1px 0 0 #E8E8E8,
                     inset -1px 0 0 #E8E8E8,
                     inset 1px 0 0 #E8E8E8;
-        padding: var(--home-padding-desktop);
+        padding: 24px;
     }
 
     .home__aside {
@@ -32,12 +32,16 @@
         top: 0;
     }
         .home__summary {
-            padding: var(--home-padding-desktop);
+            padding: 24px;
         }
             .home__smartphone-access,
             .home__smartphone-access.access-panel {
                 display: none;
             }
+
+        .home__people {
+
+        }
 
 
 /*.home--no-aside {*/
