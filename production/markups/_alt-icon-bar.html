@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.media-toggler</title>
+        <title>.alt-icon-bar</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1649316271">
@@ -14,85 +14,59 @@
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="width: 444px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.media-toggler</h1>
-
-
-            <label class="media-toggler">
-                <span class="media-toggler__body">
-                    <input class="media-toggler__widget" type="checkbox">
-                    <i class="media-toggler__knob"></i>
-                </span>
-                <span class="media-toggler__label">
-                    Show people
-                </span>
-            </label>
-
-            <br>
-            <br>
+            <h1>.alt-icon-bar</h1>
             <p>
-                Label can be on the left:
-            </p>
-
-            <label class="media-toggler">
-                <span class="media-toggler__label">
-                    Show people:
-                </span>
-                <span class="media-toggler__body">
-                    <input class="media-toggler__widget" type="checkbox">
-                    <i class="media-toggler__knob"></i>
-                </span>
-            </label>
-
-
-
-            <br>
-            <br>
-            <p>
-                Inside of label 16x16 icon can be placed
+                See also <a href="_icon-bar.html">.icon-bar</a>
             </p>
 
 
-            <label class="media-toggler">
-                <svg class="media-toggler__icon" width="16" height="16">
-                    <use xlink:href="../symbols/symbols.svg?1649316271#16-swap"></use>
-                </svg>
-                <span class="media-toggler__label">
-                    Show people:
-                </span>
-                <span class="media-toggler__body">
-                    <input class="media-toggler__widget" type="checkbox">
-                    <i class="media-toggler__knob"></i>
-                </span>
-            </label>
-
-
+            <div class="alt-icon-bar">
+                <div class="alt-icon-bar__body">
+                    <div class="alt-icon-bar__preview">
+                        <svg class="alt-icon-bar__image" width="28" height="28">
+                            <use xlink:href="../symbols/symbols.svg?1649316271#24-globe"></use>
+                        </svg>
+                    </div>
+                    <div class="alt-icon-bar__content">
+                        <div class="alt-icon-bar__heading">
+                            Share my public profile
+                        </div>
+                        <div class="alt-icon-bar__description">
+                            stagetime.com/jenniemoser
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <br>
             <br>
-            <p>
-                There can be two labels but this cases is very specific and probably won't be used this way.
-                In this case you need to make different labels to have different clicks and so on.
-            </p>
+            <br>
+            <h2>.alt-icon-bar--swim-test</h2>
 
-
-            <label class="media-toggler">
-                <span class="media-toggler__label">
-                    Media
-                </span>
-                <span class="media-toggler__body">
-                    <input class="media-toggler__widget" type="checkbox">
-                    <i class="media-toggler__knob"></i>
-                </span>
-                <span class="media-toggler__label">
-                    News
-                </span>
-            </label>
-
-
+            <div class="alt-icon-bar alt-icon-bar--swim-test">
+                <div class="alt-icon-bar__progress" role="presentation" aria-hidden="true">
+                    <div class="alt-icon-bar__value" style="width: 70%;"></div>
+                </div>
+                <div class="alt-icon-bar__body">
+                    <div class="alt-icon-bar__preview">
+                        <svg class="alt-icon-bar__image" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1649316271#24-edit"></use>
+                        </svg>
+                    </div>
+                    <div class="alt-icon-bar__content">
+                        <div class="alt-icon-bar__heading">
+                            Profile progress: Intermediate (70%)
+                        </div>
+                        <div class="alt-icon-bar__description">
+                            <a class="link" href="#">Edit your profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <br>
             <br>
