@@ -33,6 +33,10 @@
                 fill: #757575;
             }
 
-    .user-side__action {
+    .user-side__profile-completeness {
+        margin-top: 15px;
+    }
+
+    .user-side__share {
         margin-top: 15px;
     }

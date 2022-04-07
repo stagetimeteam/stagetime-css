@@ -1,10 +1,23 @@
 .alt-icon-bar {
-    display: flex;
-    align-items: center;
-    padding: 18px;
     border: 1px solid #E8E8E8;
     border-radius: 5px;
+    overflow: hidden; /* cut progress bar corners */
 }
+    .alt-icon-bar__progress {
+        height: 9px;
+        background-color: #F0F1F2;
+    }
+        .alt-icon-bar__value {
+            height: 100%;
+            background-color: #ADB7AC;
+        }
+
+    .alt-icon-bar__body {
+        display: flex;
+        align-items: center;
+        padding: 18px 12px 18px 16px;
+    }
+
     .alt-icon-bar__preview {
         flex-shrink: 0;
         display: flex;
@@ -12,7 +25,7 @@
         justify-content: center;
         width: 40px;
         height: 40px;
-        margin-right: 20px;
+        margin-right: 18px;
         background-color: var(--theme-light);
         border-radius: 4px;
     }
@@ -22,72 +35,48 @@
         }
 
 
-    .alt-icon-bar__body {
-        padding-right: 20px;
+    .alt-icon-bar__content {
+
     }
         .alt-icon-bar__heading {
-            font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             line-height: 20px;
             color: #333333;
         }
 
         .alt-icon-bar__description {
-            margin-top: 1px;
-            margin-bottom: -1px;
-            font-size: 12px;
+            margin-top: 2px;
+            font-weight: 600;
+            font-size: 13px;
             line-height: 20px;
-            color: #545454;
+            color: #ADB7AC
         }
+            .alt-icon-bar__description .link {
+                font-weight: 600;
+            }
 
 
-    .alt-icon-bar__note {
-        margin-left: auto;
-        font-size: 12px;
-        line-height: 20px;
-        color: #333333;
-    }
+.alt-icon-bar--blue {
 
-    .alt-icon-bar__action {
-        margin-left: auto;
-    }
-
-.alt-icon-bar--framed {
-    width: 100%;
-    padding: 24px;
-    border: 1px solid var(--theme-light);
-    border-radius: 5px;
 }
+    .alt-icon-bar--blue .alt-icon-bar__progress {
 
-.alt-icon-bar--bottom-frame {
-    border-bottom: 1px solid #E8E8E8;
-}
-
-.alt-icon-bar--vertical {
-    display: flex;
-    flex-direction: column;
-}
-    .alt-icon-bar--vertical .alt-icon-bar__body {
-        margin-top: 0;
-        padding-right: 0;
-        width: 100%;
     }
-        .alt-icon-bar--vertical .alt-icon-bar__heading {
-
+        .alt-icon-bar--blue .alt-icon-bar__value {
+            background-color: #9CB2BE;
         }
 
-        .alt-icon-bar--vertical .alt-icon-bar__description {
-            margin-top: 0;
-            margin-bottom: 0;
-            min-height: 40px;
-        }
-
-        .alt-icon-bar--vertical .alt-icon-bar__heading + .alt-icon-bar__description {
-            margin-top: 6px;
-        }
-
-    .alt-icon-bar--vertical .alt-icon-bar__action {
-        margin-top: 20px;
-        margin-left: 0;
-        width: 100%;
+    .alt-icon-bar--blue .alt-icon-bar__preview {
+        background-color: #EDF1F3;
     }
+
+    .alt-icon-bar--blue .alt-icon-bar__content {
+
+    }
+        .alt-icon-bar--blue .alt-icon-bar__heading {
+
+        }
+
+        .alt-icon-bar--blue .alt-icon-bar__description {
+            color: #9CB2BE;
+        }

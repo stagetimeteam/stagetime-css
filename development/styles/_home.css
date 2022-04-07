@@ -15,7 +15,9 @@
 
     .home__content {
         box-shadow: -1px 0 0 #E8E8E8,
-                    1px 0 0 #E8E8E8;
+                    1px 0 0 #E8E8E8,
+                    inset -1px 0 0 #E8E8E8,
+                    inset 1px 0 0 #E8E8E8;
         padding: var(--home-padding-desktop);
     }
 
