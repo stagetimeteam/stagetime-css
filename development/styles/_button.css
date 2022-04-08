@@ -967,3 +967,28 @@
 .button--refresh:active {
     box-shadow: none;
 }
+
+
+
+.button--add-people {
+    width: 64px;
+    height: 32px;
+    padding: 4px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.button--add-people:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button--add-people:active {
+    box-shadow: none;
+}
+    .button--add-people .button__icon {
+        width: 20px;
+        height: 20px;
+    }

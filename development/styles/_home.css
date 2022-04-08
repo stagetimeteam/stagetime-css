@@ -16,7 +16,7 @@
     .home__content {
         box-shadow: -2px 0 0 #E8E8E8,
                      2px 0 0 #E8E8E8;
-        padding: 24px;
+        padding: 24px 24px 80px;
     }
         .home__desktop-access {
 
@@ -36,7 +36,6 @@
             margin-top: 32px;
             border-top: 2px solid #F6F6F6;
             padding-top: 32px;
-            padding-bottom: 80px;
             display: flex;
             align-items: flex-start;
         }
@@ -68,8 +67,13 @@
                 display: none;
             }
 
-        .home__people {
+            .home__user {
 
+            }
+
+        .home__people {
+            padding-top: 38px;
+            padding-bottom: 80px;
         }
 
 
@@ -98,7 +102,7 @@
         }
 
         .home__content {
-            height: 100%;
+            min-height: 100%;
             padding-left: 6.72%;  /* there was small 24px padding */
             padding-right: 6.72%; /* and now it is big */
         }

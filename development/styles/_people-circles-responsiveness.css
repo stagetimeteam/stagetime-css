@@ -1,0 +1,25 @@
+.people-circles {
+
+}
+    .people-circles__heading {
+        text-align: left;
+    }
+
+    .people-circles__list {
+        margin-top: 30px;
+        width: auto;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+        .people-circles__item {
+            padding-top: 0;
+            flex-shrink: 0;
+        }
+
+    .people-circles__details {
+        display: none;
+    }

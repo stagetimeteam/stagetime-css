@@ -239,3 +239,52 @@
             text-transform: uppercase;
             color: var(--theme-main);
         }
+
+
+
+.user-card--home {
+    width: 140px;
+    padding: 0
+}
+    .user-card--home .user-card__preview.avatar,
+    .user-card--home .user-card__preview .avatar {
+        box-shadow: none;
+    }
+
+    .user-card--home .user-card__data {
+        margin-top: 9px;
+        padding-left: 4px;
+        padding-right: 4px;
+        min-height: 48px;
+    }
+        .user-card--home .user-card__name {
+            font-size: 13px;
+            line-height: 16px;
+            color: #333333;
+        }
+            .user-card--home .user-card__link {
+
+            }
+
+            .user-card--home .user-card:hover .user-card__link,
+            .user-card--home .user-card__link:hover {
+
+            }
+
+        .user-card--home .user-card__note {
+            margin-top: 0;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+        }
+
+    .user-card--home .user-card__add {
+        margin-top: 14px;
+    }
+
+    @media (min-width: 768px) {
+
+        .user-card--home .user-card__add {
+            display: none;
+        }
+    }

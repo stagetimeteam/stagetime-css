@@ -1,0 +1,16 @@
+.user-card--home {
+    padding-bottom: 10px;
+}
+    .user-card--home .user-card__data {
+        min-height: 60px;
+    }
+        .user-card--home .user-card__name {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .user-card--home .user-card__note {
+            font-size: 13px;
+            line-height: 20px;
+        }
+
