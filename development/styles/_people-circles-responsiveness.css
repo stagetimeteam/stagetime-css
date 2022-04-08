@@ -2,6 +2,8 @@
 
 }
     .people-circles__heading {
+        padding-left: 30px;
+        padding-right: 30px;
         text-align: left;
     }
 
@@ -23,3 +25,27 @@
     .people-circles__details {
         display: none;
     }
+
+
+@media (max-width: 359px) {
+
+    .people-circles {
+
+    }
+        .people-circles__heading {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .people-circles__list {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+            .people-circles__item {
+
+            }
+
+        .people-circles__details {
+
+        }
+}

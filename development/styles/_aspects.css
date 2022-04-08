@@ -1,0 +1,85 @@
+.aspects {
+    display: flex;
+    align-items: flex-start;
+}
+    .aspects__item {
+        flex-shrink: 0;
+        width: 33.3333%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        .aspects__heading {
+            position: relative;
+            padding-left: 30px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #333333;
+        }
+            .aspects__icon {
+                position: absolute;
+                left: -2px;
+                top: -2px;
+                vertical-align: top;
+                fill: #C4C4C4;
+            }
+
+            .aspects__icon--smaller {
+                width: 20px;
+                height: 20px;
+                left: 0;
+                top: 0;
+            }
+
+        .aspects__graph {
+            margin-top: 10px;
+        }
+
+        .aspects__footer {
+            margin-top: 10px;
+            position: relative;
+            padding-left: 36px;
+            white-space: nowrap;
+        }
+            .aspects__activity {
+                position: absolute;
+                left: -4px;
+                top: 0;
+                vertical-align: top;
+                fill: #9CB2BE;
+            }
+
+            .aspects__value {
+                font-size: 13px;
+                line-height: 20px;
+                color: #8B8B8B;
+            }
+                .aspects__value strong {
+                    font-weight: 600;
+                    color: #333333;
+                }
+
+
+.aspects__item--swim-test {
+
+}
+    .aspects__item--swim-test .aspects__icon,
+    .aspects__item--swim-test .aspects__activity {
+        fill: #C4C4C4;
+    }
+
+.aspects__item--thank-you-five {
+
+}
+    .aspects__item--thank-you-five .aspects__icon,
+    .aspects__item--thank-you-five .aspects__activity {
+        fill: #C6B1A6;
+    }
+
+.aspects__item--in-your-habitat {
+
+}
+    .aspects__item--in-your-habitat .aspects__icon,
+    .aspects__item--in-your-habitat .aspects__activity {
+        fill: #ADB7AC;
+    }

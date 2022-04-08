@@ -1,0 +1,80 @@
+.aspects {
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+    .aspects__item {
+        width: 264px;
+        margin-right: 21px;
+        padding: 20px 30px;
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+    }
+
+    .aspects__item:last-child {
+        margin-right: 0;
+    }
+        .aspects__heading {
+            /*position: relative;*/
+            /*padding-left: 30px;*/
+            /*font-weight: 600;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #333333;*/
+        }
+            .aspects__icon {
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 0;*/
+                /*vertical-align: top;*/
+                /*margin: -2px 15px -2px -2px;*/
+                /*fill: #C4C4C4;*/
+            }
+
+            .aspects__icon--smaller {
+                /*width: 20px;*/
+                /*height: 20px;*/
+                /*margin: 0 13px 0 0;*/
+            }
+
+        .aspects__graph {
+            /*margin-top: 10px;*/
+        }
+
+        .aspects__footer {
+            /*margin-top: 10px;*/
+            /*position: relative;*/
+            /*padding-left: 36px;*/
+        }
+            .aspects__activity {
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 0;*/
+                /*vertical-align: top;*/
+                /*fill: #9CB2BE;*/
+            }
+
+            .aspects__value {
+                /*font-size: 13px;*/
+                /*line-height: 20px;*/
+                /*color: #8B8B8B;*/
+            }
+                .aspects__value strong {
+                    /*font-weight: 600;*/
+                    /*color: #333333;*/
+                }
+
+@media (max-width: 359px) {
+    .aspects {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .aspects__item {
+            width: 244px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+}
