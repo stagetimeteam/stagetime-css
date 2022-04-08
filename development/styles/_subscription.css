@@ -1,0 +1,132 @@
+.subscription {
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    .subscription__body {
+
+    }
+        .subscription__field {
+
+        }
+
+        .subscription__submit {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .subscription__terms {
+            margin-top: 10px;
+            font-size: 11px;
+            line-height: 14px;
+            color: var(--brand_grey);
+            text-align: center;
+        }
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    .subscription {
+        width: 200px;
+    }
+}
+
+@media (min-width: 1340px) {
+
+    .subscription {
+        width: 340px;
+    }
+        .subscription__body {
+            display: flex;
+        }
+            .subscription__field {
+                flex-grow: 1;
+                margin-right: -4px;
+            }
+
+            .subscription__submit {
+                flex-shrink: 0;
+                width: auto;
+                margin-top: 0;
+            }
+}
+
+
+
+
+
+
+
+.subscription_full {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+
+    .subscription_full {
+
+    }
+        .subscription_full .subscription__body {
+            display: flex;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+            .subscription_full .subscription__field {
+                flex-grow: 1;
+                margin-right: -5px;
+            }
+
+            .subscription_full .subscription__submit {
+                margin-top: 0;
+                flex-shrink: 0;
+                min-width: 300px;
+                width: auto;
+            }
+}
+
+
+
+
+
+.subscription_vertical {
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+}
+    .subscription_vertical .subscription__body {
+        display: block;
+    }
+        .subscription_vertical .subscription__field {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 300px;
+        }
+
+        .subscription_vertical .subscription__submit {
+            margin-top: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .subscription_vertical .subscription__terms {
+
+        }
+
+@media (min-width: 768px) {
+
+    .subscription_vertical {
+
+    }
+        .subscription_vertical .subscription__body {
+
+        }
+            .subscription_vertical .subscription__field {
+
+            }
+
+            .subscription_vertical .subscription__submit {
+
+            }
+}

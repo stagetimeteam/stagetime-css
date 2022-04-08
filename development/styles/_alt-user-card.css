@@ -1,0 +1,77 @@
+.alt-user-card {
+    /*position: relative;*/
+    width: 140px;
+    /*padding-top: 20px;*/
+    /*padding-bottom: 13px;*/
+    /*text-align: center; !* align photo to center (card itself is larger than photo) *!*/
+    /*cursor: pointer;*/
+}
+    .alt-user-card__hint {
+        /*position: absolute;*/
+        /*left: -3px;*/
+        /*top: -3px;*/
+    }
+
+    .alt-user-card__hint.explainer {
+        /*position: absolute;*/
+    }
+
+
+    .alt-user-card__preview.avatar,
+    .alt-user-card__preview .avatar {
+        /*box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);*/
+    }
+
+    .alt-user-card__data {
+        /*margin-top: 18px;*/
+        /*padding-left: 10px;*/
+        /*padding-right: 10px;*/
+        /*min-height: 67px; !* two lines of .alt-user-card__name plus one line of .alt-user-card__note *!*/
+    }
+        .alt-user-card__name {
+            /*margin-top: 0;*/
+            /*margin-bottom: 0;*/
+            /*font-weight: 600;*/
+            /*font-size: 19px;*/
+            /*line-height: 22px;*/
+            /*color: #757575;*/
+        }
+            .alt-user-card__link {
+                /*padding-top: 8px; !* expand clickable area *!*/
+                /*padding-bottom: 8px;*/
+                /*color: inherit;*/
+                /*text-decoration: none;*/
+                /*transition: color var(--transition-hover);*/
+            }
+
+            .alt-user-card:hover .alt-user-card__link,
+            .alt-user-card__link:hover {
+                /*color: #C4C4C4;*/
+            }
+
+        .alt-user-card__note {
+            /*margin-top: 5px;*/
+            /*font-weight: 600;*/
+            /*font-size: 12px;*/
+            /*line-height: 18px;*/
+            /*color: #757575;*/
+        }
+
+    .alt-user-card__operations {
+        /*margin: 18px auto 0;*/
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+        /*width: 132px;*/
+    }
+        .alt-user-card__action {
+            /*margin-left: 2px;*/
+            /*margin-right: 2px;*/
+            /*flex-grow: 1;*/
+        }
+
+        .alt-user-card__action.button,
+        .alt-user-card__action .button {
+            /*padding-top: 10px;*/
+            /*padding-bottom: 10px;*/
+        }
+
