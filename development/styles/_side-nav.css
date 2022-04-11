@@ -1,0 +1,17 @@
+.side-nav {
+
+}
+    .side-nav__section {
+        position: relative;
+    }
+        .side-nav__section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 24px;
+            right: 24px;
+            display: block;
+            height: 2px;
+            background-color: #E8E8E8;
+        }
+

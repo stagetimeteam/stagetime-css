@@ -1,0 +1,104 @@
+.pic-link {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    padding: 11px 20px 10px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #545454;
+    text-decoration: none;
+    transition: color var(--transition-hover);
+}
+    .pic-link__icon {
+        vertical-align: top;
+        fill: #C5C5C5;
+        margin-left: -2px;
+        margin-right: 13px;
+        flex-shrink: 0;
+    }
+
+    .pic-link__counter {
+        margin-left: 4px;
+        color: var(--theme-main);
+        transition: color var(--transition-hover);
+    }
+
+/*.pic-link:hover {*/
+/*    color: #545454;*/
+/*}*/
+/*    .pic-link:hover .pic-link__icon {*/
+/*        fill: #545454;*/
+/*    }*/
+
+/*    .pic-link:hover .pic-link__counter {*/
+/*        color: inherit;*/
+/*    }*/
+
+
+
+
+/*.pic-link--sidebar-ready {*/
+/*    padding: 13px 22px 13px 28px;*/
+/*    font-size: 12px;*/
+/*    line-height: 20px;*/
+/*    transition: background-color var(--transition-hover);*/
+/*}*/
+
+/*.pic-link--sidebar-ready:hover {*/
+/*    background-color: #F4F4F4;*/
+/*    box-shadow: inset -1px 0 0 #E8E8E8;*/
+/*}*/
+/*    .pic-link--sidebar-ready .pic-link__icon {*/
+/*        margin-right: 12px;*/
+/*        margin-left: 0;*/
+/*        width: 20px;*/
+/*        height: 20px;*/
+/*    }*/
+
+
+
+/*.pic-link--collapsed-sidebar {*/
+/*    position: relative;*/
+/*    display: block;*/
+/*    height: 58px;*/
+/*    padding: 0;*/
+/*    text-indent: 200%;*/
+/*    white-space: nowrap;*/
+/*    overflow: hidden;*/
+/*    transition: background-color var(--transition-hover);*/
+/*}*/
+
+/*.pic-link--collapsed-sidebar:hover {*/
+/*    background-color: #F4F4F4;*/
+/*    box-shadow: inset -1px 0 0 #E8E8E8;*/
+/*}*/
+/*    .pic-link--collapsed-sidebar .pic-link__icon {*/
+/*        position: absolute;*/
+/*        left: 0;*/
+/*        top: 0;*/
+/*        right: 0;*/
+/*        bottom: 0;*/
+/*        margin: auto;*/
+/*        width: 28px;*/
+/*        height: 28px;*/
+/*    }*/
+
+
+
+/*.pic-link--current {*/
+/*    color: #545454;*/
+/*}*/
+/*    .pic-link--current::after {*/
+/*        content: "";*/
+/*        position: absolute;*/
+/*        right: 0;*/
+/*        top: 0;*/
+/*        bottom: 0;*/
+/*        width: 3px;*/
+/*        background-color: #545454;*/
+/*    }*/
+
+/*    .pic-link--current .pic-link__icon {*/
+/*        fill: #545454;*/
+/*    }*/
