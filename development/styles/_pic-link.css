@@ -34,6 +34,7 @@
 }
 
     .pic-link__icon {
+        position: relative;
         vertical-align: top;
         fill: #545454;
         margin: 2px 9px 2px 0;
@@ -45,9 +46,10 @@
     }
 
     .pic-link__counter {
-        margin-left: 4px;
-        color: var(--theme-main);
-        transition: color var(--transition-hover);
+        position: absolute;
+        left: 45px;
+        top: 7px;
+        box-shadow: 0 0 0 1px #FFFFFF;
     }
 
 
