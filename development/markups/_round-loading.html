@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>.round-loading</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+
+
+        <div style="width: 600px; margin: 0 auto;">
+            <br>
+            <br>
+            <h1>.round-loading</h1>
+            <br>
+            <br>
+
+            <h2>TL;DR</h2>
+Use this piece of code and dynamically change <b>stroke-dashoffset</b><br> from <b>188.5</b> to <b>0</b> to animate progress:
+<pre style="margin: 0"><code>
+&lt;svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
+     &lt;circle stroke="#333333" stroke-dashoffset="<b>141.375</b>" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30" transform="rotate(-90)" transform-origin="32 32"&gt;&lt;/circle&gt;
+&lt;/svg&gt;
+</code></pre>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>Details</h2>
+
+            <p>
+                What we want to do is to draw a full circle. Radius is <b>30px</b>. And unlike any other SVG's in the project
+                we fill it with <b>stroke</b>:
+            </p>
+
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle stroke="#333333" stroke-width="3" cx="32" cy="32" r="30"></circle>
+            </svg>
+
+            <br>
+            <br>
+            <p>
+                Next we want to start cutting pieces from it making arcs. It can be done using
+                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dasharray"><b>stroke-dasharray</b></a>.
+                In this example we cut 10px long dashes:
+            </p>
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle stroke="#333333" stroke-dasharray="10" stroke-width="3" cx="32" cy="32" r="30"></circle>
+            </svg>
+
+            <p>
+                Unfortunately we can't just pick one of these dashes and remove others. They will always fill circle completely.
+                This is how <b>stroke-dasharray</b> works.
+            </p>
+            <p>
+                What we want to do instead is to make one dash that will be 100% long or in other words 360deg wide and then we will hide part of it.
+                To make such long dash we need to find its width first. We need this formula: <b>L</b> = <b>πrα / 180°</b>, where:
+            </p>
+
+            <p><img src="../temp/arc-length.jpg" width="200" alt=""></p>
+
+
+
+            <p>
+                So <b>L</b> = <b>π * 30 * 360 / 180</b> = <b>188.5</b> and here it is:
+            </p>
+
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle stroke="#333333" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30"></circle>
+            </svg>
+
+            <p>
+                Visually it looks like a normal circle, but technically it is one of those dashed and it is <b>188.5px</b> long.
+            </p>
+            <p>
+                Now we can apply
+                <a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/stroke-dashoffset"><b>stroke-dashoffset</b></a> on it.
+                It is kinda moving rendered dash back to the void. Let's move it back by <b>20px</b>:
+            </p>
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle stroke="#333333" stroke-dashoffset="20" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30"></circle>
+            </svg>
+
+            <p>
+                And this is pretty much it! The exact value of pixels for <b>stroke-dashoffset</b> is value in between <b>0</b> and <b>188.5</b>,
+                where <b>0</b> is 100% of the progress:
+            </p>
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle stroke="#333333" stroke-dashoffset="0" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30"></circle>
+            </svg>
+
+            <p>
+                and <b>188.5</b> is 0%:
+            </p>
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle stroke="#333333" stroke-dashoffset="188.5" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30"></circle>
+            </svg>
+
+
+            <p>
+                (can't see anything above, because, well, it is on 0%)
+            </p>
+
+
+            <br>
+            <br>
+            <p>
+                Running formula backwards it will be:<br> <b>dashoffset</b> = <b>188.5 * (100 - progress) / 100</b>;
+            </p>
+            <p>
+                Let's say we need an indicator that progress to 25%. Calculation will be:
+                <br>dashoffset = 188.5 * (100 - 25) / 100 = 141,37 and here is the result:
+            </p>
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle stroke="#333333" stroke-dashoffset="141.375" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30"></circle>
+            </svg>
+
+
+            <br>
+            <br>
+            <p>
+                One final touch is to rotate whole image a little so the beginning of progress bar is always on top.
+                Transforms are being added to the circle:
+            </p>
+
+            <svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                 <circle stroke="#333333" stroke-dashoffset="141.375" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30" transform="rotate(-90)" transform-origin="32 32"></circle>
+            </svg>
+
+            <p>and this is final code:</p>
+<pre><code>
+&lt;svg class="round-loading" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;
+     &lt;circle stroke="#333333" stroke-dashoffset="141.375" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30" transform="rotate(-90)" transform-origin="32 32"&gt;&lt;/circle&gt;
+&lt;/svg&gt;
+</code></pre>
+
+
+            <br>
+            <br>
+            <h2>Animation</h2>
+            <p>
+                What you want to do is dynamically change value in <b>stroke-dashoffset</b> via JS.
+            </p>
+
+            <br>
+            <h3>CSS animation</h3>
+            <p>
+                Depending on the way you load data you may want to do animation using CSS.
+                For example if you load something in pieces and they come once in few seconds,
+                you have to change value rarely. In this cass CSS will do the trick.
+            </p>
+            <p>
+                Please add <b>.round-loading--animated</b> and all changes will be transitioned:
+            </p>
+
+
+            <svg class="round-loading round-loading--animated" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="random-offset" stroke="#333333" stroke-dashoffset="141.375" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30" transform="rotate(-90)" transform-origin="32 32"></circle>
+            </svg>
+
+            <br>
+            <br>
+            <button id="set-random-value">
+                Set random value
+            </button>
+
+
+
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player3.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_explore.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+        <script src="../scripts/_media-bar.js"></script>
+        <script src="../scripts/_settings.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_expandable-bio.js"></script>
+        <script src="../scripts/_parallax.js"></script>
+        <script src="../scripts/_simple-parallax.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_modal.js"></script>
+        <script src="../scripts/_full-media-card.js"></script>
+        <script src="../scripts/_color-selection.js"></script>
+        <script src="../scripts/_layout-type.js"></script>
+        <script src="../scripts/_sortable.js"></script>
+        <script src="../scripts/_biography.js"></script>
+        <script src="../scripts/_media-clip.js"></script>
+
+
+
+        <script>
+            $('#set-random-value').on('click', function (){
+                $('#random-offset').attr('stroke-dashoffset', Math.random() * 188.5)
+            });
+        </script>
+
+
+    </body>
+</html>
