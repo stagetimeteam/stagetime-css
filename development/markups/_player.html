@@ -81,15 +81,21 @@
                     </div>
                 </div>
                 <div class="player__viewport">
-                    <div class="player__background">
-                        <img class="player__image"
-                             srcset="../temp/player@2x.jpg 2x"
-                             src="../temp/player.jpg"
-                             width="425"
-                             height="262"
-                             alt=""
-                        >
-                    </div>
+                    <button class="player__scene" type="button">
+                        <span class="player__background">
+                            <img class="player__image"
+                                 srcset="../temp/player@2x.jpg 2x"
+                                 src="../temp/player.jpg"
+                                 width="425"
+                                 height="262"
+                                 alt=""
+                            >
+                        </span>
+                        <img class="player__grid" src="../symbols/grid.svg" width="32" height="32" alt="">
+                        <svg class="player__progress round-loading round-loading--animated" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle id="random-offset" stroke="#FFFFFF" stroke-dashoffset="47.15" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30" transform="rotate(-90)" transform-origin="32 32"></circle>
+                        </svg>
+                    </button>
                     <div class="player__navigation">
                         <div class="player__bar playthrough">
                             <div class="playthrough__time">
