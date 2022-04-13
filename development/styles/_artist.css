@@ -89,6 +89,7 @@
                     }
 
                     .artist__social {
+                        margin-top: 0; /* bootstrap conflict */
                         margin-left: 58px;
                         border-top: 1px solid var(--theme-light);
                         padding-top: 25px;
