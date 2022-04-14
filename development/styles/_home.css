@@ -36,6 +36,7 @@
             margin-top: 32px;
             border-top: 2px solid #F6F6F6;
             padding-top: 32px;
+            padding-bottom: 80px;
             display: flex;
             align-items: flex-start;
         }
@@ -77,18 +78,6 @@
         }
 
 
-
-/*.home--collapsed-sidebar {*/
-/*    padding-left: var(--sidebar-collapsed-width);*/
-/*}*/
-/*    .home--collapsed-sidebar .home__sidebar {*/
-/*        width: var(--sidebar-collapsed-width);*/
-/*    }*/
-
-
-
-
-
 @media (min-width: 1240px) {
 
     .home {
@@ -121,14 +110,8 @@
 .has-player3 {
 
 }
-    .has-player3 .home__sidebar {
-        padding-bottom: 179px;
-    }
-
-    .has-player3.player3-collapsed .home__sidebar {
-        padding-bottom: var(--player3-height);
-    }
-
+    .has-player3 .home__sidebar,
+    .has-player3 .home__content,
     .has-player3 .home__aside {
         padding-bottom: var(--player3-height);
     }

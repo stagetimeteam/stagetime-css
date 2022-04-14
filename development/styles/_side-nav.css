@@ -7,14 +7,14 @@
         padding-bottom: 20px;
     }
 
-    @media (min-height: 600px) {
+    @media (min-height: 680px) {
         .side-nav__section {
             padding-top: 25px;
             padding-bottom: 25px;
         }
     }
 
-    @media (min-height: 700px) {
+    @media (min-height: 780px) {
         .side-nav__section {
             padding-top: 30px;
             padding-bottom: 30px;

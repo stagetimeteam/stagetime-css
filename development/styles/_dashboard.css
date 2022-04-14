@@ -82,10 +82,6 @@
         padding-bottom: 179px;
     }
 
-    .has-player3.player3-collapsed .dashboard__sidebar {
-        padding-bottom: var(--player3-height);
-    }
-
     .has-player3 .dashboard__aside {
         padding-bottom: var(--player3-height);
     }

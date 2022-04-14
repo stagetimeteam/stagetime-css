@@ -4,9 +4,10 @@
 
         var $html = $('html');
         var $playerPlayIcon = $('.player3__action--play use');
-        var $playerProgress = $('.player3__progress');
         var $playerObject = $('.player3__widget');
-        var $playerBar = $('.player3__bar');
+        var $playerProgress = $('.player3 .playthrough__bar');
+        var $playerBar = $('.player3 .playthrough__progress');
+
         var playbackInterval;
 
 
@@ -41,7 +42,7 @@
             }
 
             $playerObject[0].play();
-            $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-pause");
+            $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-pause-2");
 
             clearInterval(playbackInterval);
             playbackWidth();
@@ -51,7 +52,7 @@
 
         function playerPause() {
             $playerObject[0].pause();
-            $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-play");
+            $playerPlayIcon.attr("xlink:href", "../symbols/symbols.svg#16-play-2");
             clearInterval(playbackInterval);
         }
 
@@ -85,10 +86,6 @@
 
 
         /* Inits */
-
-        $('.player3__handler').on('click', function () {
-            $('html').toggleClass('player3-collapsed');
-        });
 
         $('[data-track]').on('click', function () {
             playerCreate();

@@ -71,3 +71,77 @@
             .playthrough__reactions.hearts {
                 position: absolute;
             }
+
+
+
+.playthrough--full-width {
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    padding-left: 9px;
+    padding-right: 9px;
+}
+    .playthrough--full-width .playthrough__time {
+        /*margin-top: 5px;*/
+        width: 44px;
+        color: #333333;
+    }
+
+    .playthrough--full-width .playthrough__bar {
+        /*position: relative;*/
+        /*flex-grow: 1;*/
+        /*margin-left: 9px;*/
+        /*margin-right: 9px;*/
+        /*height: 28px;*/
+    }
+        .playthrough--full-width .playthrough__bar::before {
+            /*content: "";*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            top: 12px;
+            /*width: 100%;*/
+            height: 4px;
+            /*background-color: #D8D8D8;*/
+            border-radius: 2px;
+        }
+
+        .playthrough--full-width .playthrough__progress {
+            margin-top: 12px;
+            /*position: relative;*/
+            height: 4px;
+            /*background-color: #333333;*/
+            border-radius: 2px;
+            /*transition: width 0.1s linear;*/
+        }
+
+        .playthrough--full-width .playthrough__likes {
+            /*position: absolute;*/
+            /*top: 50%;*/
+            /*width: 20px;*/
+            /*height: 20px;*/
+            /*padding-bottom: 2px;*/
+            /*transform: translate(-50%, -50%);*/
+            /*border: 1px solid #FFFFFF;*/
+            /*background-color: #333333;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            /*border-radius: 50%;*/
+            /*font-weight: bold;*/
+            /*font-size: 9px;*/
+            /*line-height: 12px;*/
+            /*color: #FFFFFF;*/
+            /*text-align: center;*/
+            /*cursor: default;*/
+            /*transition: left 0.1s linear;*/
+        }
+
+        .playthrough--full-width .playthrough__reactions {
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*bottom: 100%;*/
+            /*margin: auto;*/
+        }
+            .playthrough--full-width .playthrough__reactions.hearts {
+                /*position: absolute;*/
+            }

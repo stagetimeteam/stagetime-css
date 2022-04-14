@@ -11,7 +11,7 @@
     transition: background-color var(--transition-hover);
 }
 
-@media (min-height: 600px) {
+@media (min-height: 680px) {
 
     .pic-link {
         padding-top: 14px;
@@ -22,7 +22,7 @@
         }
 }
 
-@media (min-height: 700px) {
+@media (min-height: 780px) {
 
     .pic-link {
         padding-top: 14px;
