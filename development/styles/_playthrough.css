@@ -60,3 +60,14 @@
             cursor: default;
             transition: left 0.1s linear;
         }
+
+        .playthrough__reactions {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 100%;
+            margin: auto;
+        }
+            .playthrough__reactions.hearts {
+                position: absolute;
+            }

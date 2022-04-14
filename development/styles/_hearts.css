@@ -1,0 +1,86 @@
+.hearts {
+    position: relative;
+    height: 100px;
+}
+    .hearts__item {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        margin-left: -8px;
+        opacity: 0;
+        fill: #EB5757;
+    }
+
+
+
+
+@keyframes hearts-translate {
+      0% { bottom: 0; }
+    100% { bottom: 100%; }
+}
+
+@keyframes hearts-opacity {
+      0% { opacity: 0; }
+     10% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes hearts-movement-a {
+       0% { transform: translateX(0); }
+      50% { transform: translateX(-10px); }
+     100% { transform: translateX(0); }
+}
+
+@keyframes hearts-movement-b {
+       0% { transform: translateX(0); }
+      50% { transform: translateX(10px); }
+     100% { transform: translateX(20px); }
+}
+
+@keyframes hearts-movement-c {
+       0% { transform: translateX(0); }
+      50% { transform: translateX(5px); }
+     100% { transform: translateX(-5px); }
+}
+
+@keyframes hearts-movement-d {
+       0% { transform: translateX(0); }
+      50% { transform: translateX(-5px); }
+     100% { transform: translateX(10px); }
+}
+
+@keyframes hearts-movement-e {
+       0% { transform: translateX(0); }
+      50% { transform: translateX(10px); }
+     100% { transform: translateX(-5px); }
+}
+
+.hearts__item--a {
+    animation: hearts-translate 2s linear 3s forwards,
+               hearts-opacity 2s linear 3s forwards,
+               hearts-movement-a 2s linear 3s forwards;
+}
+
+.hearts__item--b {
+    animation: hearts-translate 2s linear 3.5s forwards,
+               hearts-opacity 2s linear 3.5s forwards,
+               hearts-movement-b 2s linear 3.5s forwards;
+}
+
+.hearts__item--c {
+    animation: hearts-translate 2s linear 4s forwards,
+               hearts-opacity 2s linear 4s forwards,
+               hearts-movement-c 2s linear 4s forwards;
+}
+
+.hearts__item--d {
+    animation: hearts-translate 2s linear 4.5s forwards,
+               hearts-opacity 2s linear 4.5s forwards,
+               hearts-movement-d 2s linear 4.5s forwards;
+}
+
+.hearts__item--e {
+    animation: hearts-translate 2s linear 5s forwards,
+               hearts-opacity 2s linear 5s forwards,
+               hearts-movement-e 2s linear 5s forwards;
+}
