@@ -161,8 +161,20 @@
                 }
 
 
+        .player3__like {
+            position: absolute;
+            right: 68px;
+            top: 21px;
+        }
+        .player3__like.react,
+        .player3__like .react {
+            width: 116px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
         .player3__menu {
             position: absolute;
-            right: 20px;
-            bottom: 16px;
+            right: 14px;
+            top: 18px;
         }

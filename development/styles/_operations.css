@@ -144,14 +144,34 @@
     .operations--for-player3 .operations__handler {
 
     }
-        .operations--for-player3 .operations__icon {
+        .operations--for-player3 .operations__handler::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 34px;
+            height: 34px;
+            border-radius: 4px;
+            transition: background-color var(--transition-hover);
+        }
 
+        .operations--for-player3 .operations__handler:hover::before  {
+            background-color: #5D6162;
+        }
+
+        .operations--for-player3 .operations__icon,
+        .operations--for-player3 .operations__handler:hover .operations__icon,
+        .operations--for-player3.operations--expanded .operations__icon {
+            fill: #FFFFFF;
         }
 
     .operations--for-player3 .operations__dropdown {
         top: auto;
-        bottom: 0;
-        right: 100%;
+        bottom: 100%;
+        right: 0;
     }
 
 
