@@ -1,0 +1,110 @@
+.performance {
+    /*background-color: #F2F2F2;*/
+    /*border-radius: 5px;*/
+}
+    .performance__body {
+        /*position: relative;*/
+        /*padding: 14px 16px 16px;*/
+        /*display: flex;*/
+        /*align-items: flex-end;*/
+    }
+        .performance__preview {
+            /*margin-right: 24px;*/
+            /*flex-shrink: 0;*/
+        }
+
+        .performance__content {
+
+        }
+            .performance__sub-heading {
+                /*font-weight: bold;*/
+                /*font-size: 13px;*/
+                /*line-height: 20px;*/
+                /*color: #545454;*/
+            }
+
+            .performance__note {
+                /*margin-top: 9px;*/
+                /*font-weight: 600;*/
+                /*font-size: 12px;*/
+                /*line-height: 16px;*/
+                /*color: #545454;*/
+            }
+
+            .performance__note + .performance__note {
+                /*margin-top: 4px;*/
+            }
+
+    .performance__footer {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*border-top: 1px solid #E8E8E8;*/
+        /*padding: 12px 16px;*/
+    }
+        .performance__dates {
+            /*position: relative;*/
+            /*padding: 6px 6px 8px 0;*/
+            /*font-size: 11px;*/
+            /*line-height: 16px;*/
+            /*color: #545454;*/
+        }
+            .performance__main-date {
+                /*font-weight: 600;*/
+            }
+
+            .performance__dates .bubble {
+                /*left: 0;*/
+                /*right: auto;*/
+                /*transform: translate(0);*/
+            }
+                .performance__dates .bubble .bubble__peak {
+                    /*left: 17px;*/
+                }
+
+                @media (max-width: 359px) {
+
+                    .performance__dates .bubble {
+                        left: -13px;
+                        /*right: auto;*/
+                        /*transform: translate(0);*/
+                    }
+                        .performance__dates .bubble .bubble__peak {
+                            left: 30px;
+                        }
+                }
+
+        .performance__add {
+            /*margin-left: auto;*/
+            /*margin-right: -4px;*/
+            /*display: inline-flex;*/
+            /*align-items: flex-start;*/
+            /*vertical-align: top;*/
+            /*border: 1px solid #E8E8E8;*/
+            /*border-radius: 15px;*/
+            /*padding: 6px 20px;*/
+            /*background-color: #FFFFFF;*/
+            /*font-weight: 600;*/
+            /*font-size: 11px;*/
+            /*line-height: 16px;*/
+            /*color: #545454;*/
+            /*text-decoration: none;*/
+            /*transition: background-color var(--transition-hover);*/
+        }
+
+        .performance__add:hover {
+            /*background-color: #FAFAFA;*/
+        }
+
+        .performance__add:active {
+            /*background-color: #F5F5F5;*/
+        }
+            .performing__calendar-icon {
+                /*margin-right: 6px;*/
+                /*margin-left: -4px;*/
+                /*fill: currentColor;*/
+            }
+
+
+        .performance__action {
+            /*margin-left: auto;*/
+        }
