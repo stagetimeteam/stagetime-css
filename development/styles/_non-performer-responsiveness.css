@@ -1,0 +1,177 @@
+.non-performer {
+    /*position: relative;*/
+    /*padding-top: 20px;*/
+    /*padding-bottom: 100px;*/
+}
+    .non-performer::before {
+        /*content: "";*/
+        /*position: absolute;*/
+        /*z-index: 30;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*right: 0;*/
+        /*height: 20px;*/
+        /*background-color: var(--theme-main);*/
+        /*box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);*/
+    }
+
+    .non-performer__wrap {
+        /*padding-top: 31px;*/
+    }
+        .non-performer__header {
+
+        }
+
+        .non-performer__page-ownership {
+            /*position: absolute !important; !* !important is to override position related if conflicted *!*/
+            /*z-index: 100;*/
+            /*left: 50%;*/
+            /*top: 54px;*/
+            /*width: 760px;*/
+            /*margin-left: -380px;*/
+        }
+
+        .non-performer__body {
+            /*margin-top: 14px;*/
+            display: block;
+            /*align-items: flex-start;*/
+        }
+            .non-performer__sidebar {
+                width: auto;
+                /*flex-shrink: 0;*/
+                box-shadow: none;
+                padding-right: 0;
+            }
+                .non-performer__preview {
+                    /*position: relative;*/
+                    /*width: 280px;*/
+                    /*height: 280px;*/
+                    /*padding: 3px;*/
+                    /*background-color: var(--theme-light);*/
+                    /*border-radius: 4px;*/
+                }
+                    .non-performer__photo {
+                        /*vertical-align: top;*/
+                        /*background-color: var(--image-fallback);*/
+                    }
+
+                    .non-performer__upload-photo {
+                        /*position: absolute;*/
+                        /*right: 0;*/
+                        /*bottom: 0;*/
+                        /*border-bottom-right-radius: 4px;*/
+                    }
+
+                    .non-performer__photo ~ .non-performer__upload-photo {
+                        /*right: 3px;*/
+                        /*bottom: 3px;*/
+                        /*border-bottom-right-radius: 0;*/
+                    }
+
+
+                .non-performer__career {
+                    /*margin: 22px -24px 0 -16px;*/
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+
+                .non-performer__connections {
+                    /*margin-top: 17px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 24px;*/
+                }
+                    .non-performer__connections .all-connections {
+                        /*margin: -10px -13px;*/
+                    }
+
+                .non-performer__tags {
+                    /*margin-top: 31px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 26px;*/
+                }
+
+                .non-performer__highlights {
+                    /*margin-top: 29px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 21px;*/
+                }
+
+                .non-performer__social {
+                    /*margin-top: 27px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 20px;*/
+                }
+
+                .non-performer__add-info {
+                    /*margin-bottom: 30px;*/
+                }
+
+                .non-performer__add-connections {
+                    /*margin-top: 30px;*/
+                }
+
+                .non-performer__add-highlight {
+                    /*margin-top: 30px;*/
+                }
+
+                .non-performer__add-social {
+                    /*margin-top: 20px;*/
+                }
+
+            .non-performer__content {
+                width: auto;
+                /*flex-shrink: 0;*/
+                box-shadow: none;
+                padding-left: 0;
+            }
+                .non-performer__description {
+                    /*margin-top: -4px;*/
+                }
+
+                .non-performer__register {
+                    /*margin-top: 22px;*/
+                }
+
+                .non-performer__summary {
+                    /*margin-top: 28px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 25px;*/
+                }
+
+                .non-performer__people {
+                    /*margin-top: 32px;*/
+                }
+
+                .non-performer__employment-history {
+                    /*margin-top: 31px;*/
+                }
+
+                .non-performer__gallery {
+                    /*margin-top: 43px;*/
+                }
+
+                .non-performer__schedule {
+                    /*margin-top: 43px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 35px;*/
+                }
+
+                .non-performer__activity {
+                    /*margin-top: 43px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 35px;*/
+                }
+
+                .non-performer__recommendations {
+                    /*margin-top: 43px;*/
+                    /*border-top: 1px solid var(--theme-light);*/
+                    /*padding-top: 35px;*/
+                }
+
+                .non-performer__null {
+                    /*margin-top: 24px;*/
+                }
+
+                .non-performer__null:first-child {
+                    /*margin-top: 0;*/
+                }

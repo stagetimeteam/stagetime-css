@@ -17,11 +17,13 @@
         .org-head__heading {
             margin-top: 0;
             margin-bottom: 0;
+            font-weight: 600;
             font-size: 16px;
             line-height: 20px;
             color: #545454;
         }
             .org-head__heading .link--text-alike {
+                font-weight: inherit;
                 transition: opacity var(--transition-hover);
             }
 
