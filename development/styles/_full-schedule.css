@@ -13,6 +13,14 @@
             margin-bottom: -3px;
         }
 
+    .full-schedule__mobile-year {
+        visibility: hidden;
+        position: absolute;
+        top: 31px;
+        right: var(--container-mobile-padding);
+    }
+
+
     .full-schedule__list {
         margin-top: 23px;
     }

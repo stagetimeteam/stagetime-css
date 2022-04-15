@@ -1,0 +1,62 @@
+.full-schedule {
+    position: relative;
+}
+    .full-schedule__heading {
+        /*margin-top: 0;*/
+        /*margin-bottom: 0;*/
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+    }
+        .full-schedule__edit {
+            display: none;
+        }
+
+    .full-schedule__background-sub-heading {
+        margin-top: 3px;
+        margin-bottom: 0;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 24px;
+        color: #757575;
+    }
+
+
+    .full-schedule__mobile-year {
+        visibility: visible;
+    }
+
+
+    .full-schedule__list {
+        /*margin-top: 23px;*/
+    }
+
+    .full-schedule__highlights {
+        display: none;
+        /*margin-top: 40px;*/
+        /*display: flex;*/
+        /*align-items: flex-start;*/
+    }
+        .full-schedule__sub-heading {
+            /*margin-top: 10px;*/
+            /*margin-bottom: 0;*/
+            /*margin-right: 27px;*/
+            /*flex-shrink: 0;*/
+            /*white-space: nowrap;*/
+        }
+
+        .full-schedule__period {
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            /*flex-wrap: wrap;*/
+            /*margin-left: -32px;*/
+            /*margin-top: -20px;*/
+        }
+            .full-schedule__year {
+                /*margin-left: 32px;*/
+                /*margin-top: 20px;*/
+            }
+
+            .full-schedule__year.button,
+            .full-schedule__year .button {
+                /*width: 130px;*/
+            }

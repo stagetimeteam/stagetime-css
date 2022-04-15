@@ -295,3 +295,18 @@
     .carousel--arrows-behind-edit-button .carousel__control {
         margin-right: 0;
     }
+
+
+
+.carousel--for-schedule {
+
+}
+    .carousel--for-schedule .carousel__item {
+        margin-top: 20px;
+        margin-right: 0;
+        width: auto;
+    }
+
+    .carousel--for-schedule .carousel__item:first-child {
+        margin-top: 0;
+    }
