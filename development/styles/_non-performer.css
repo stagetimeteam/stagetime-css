@@ -126,6 +126,10 @@
                     margin-top: -4px;
                 }
 
+                .non-performer__register {
+                    margin-top: 22px;
+                }
+
                 .non-performer__summary {
                     margin-top: 28px;
                     border-top: 1px solid var(--theme-light);

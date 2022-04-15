@@ -40,6 +40,15 @@
                 padding: 7px 18px;
             }
 
+            .heading-group__join {
+
+            }
+
+            .heading-group__join.button,
+            .heading-group__join .button {
+                width: 201px;
+            }
+
         .heading-group__dropdown-actions {
             margin-top: -5px;
             margin-bottom: -5px;
