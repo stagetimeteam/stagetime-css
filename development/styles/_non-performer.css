@@ -22,6 +22,15 @@
 
         }
 
+        .non-performer__page-ownership {
+            position: absolute !important; /* !important is to override position related if conflicted */
+            z-index: 100;
+            left: 50%;
+            top: 54px;
+            width: 760px;
+            margin-left: -380px;
+        }
+
         .non-performer__body {
             margin-top: 14px;
             display: flex;
