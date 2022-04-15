@@ -1,0 +1,70 @@
+.agency {
+    position: relative;
+    padding-left: 80px;
+    display: block;
+    /*align-items: flex-start;*/
+}
+    .agency__preview {
+        position: absolute;
+        left: 20px;
+        top: 24px;
+        /*flex-shrink: 0;*/
+        /*margin-top: 3px;*/
+        /*margin-right: 16px;*/
+        /*border: 1px solid var(--theme-light);*/
+        /*border-radius: 4px;*/
+        /*padding: 3px;*/
+    }
+
+    .agency__data {
+        /*margin-right: auto;*/
+        /*padding-right: 20px;*/
+    }
+        .agency__heading {
+            /*font-weight: 600;*/
+            /*font-size: 16px;*/
+            /*line-height: 24px;*/
+        }
+            .agency__heading .link {
+                /*font-weight: 600;*/
+            }
+
+        .agency__note {
+            margin-top: 2px;
+            /*font-weight: 600;*/
+            /*font-size: 13px;*/
+            /*line-height: 18px;*/
+            /*color: #545454;*/
+        }
+
+    .agency__profile {
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        /*margin-top: 5px;*/
+        /*margin-right: 22px;*/
+    }
+
+    .agency__team-heading {
+        margin-top: 10px;
+        /*font-weight: 600;*/
+        /*font-size: 14px;*/
+        /*line-height: 20px;*/
+        /*white-space: nowrap;*/
+        /*color: #757575;*/
+        text-align: right;
+    }
+
+    .agency__team-list {
+        margin-top: 6px;
+        margin-left: 0;
+    }
+
+    .agency__team-list.snake,
+    .agency__team-list .snake {
+        justify-content: flex-end;
+    }
+
+    .agency__edit {
+        display: none;
+    }
