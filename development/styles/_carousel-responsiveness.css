@@ -285,3 +285,13 @@
     .carousel--for-profile-schedule .carousel__container {
         padding-top: 0;
     }
+
+
+
+
+.carousel--arrows-behind-edit-button {
+
+}
+    .carousel--arrows-behind-edit-button .carousel__control {
+        margin-right: 0;
+    }
