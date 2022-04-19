@@ -1,0 +1,57 @@
+.expandable-bio {
+    margin-top: 21px;
+    padding-top: 21px;
+}
+    .expandable-bio__heading {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 14px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #545454;
+    }
+
+    .expandable-bio__content {
+        /*overflow: hidden;*/
+        /*text-overflow: ellipsis;*/
+        /*display: -webkit-box;*/
+        /*-webkit-line-clamp: 4;*/
+        /*-webkit-box-orient: vertical;*/
+        /*color: #545454;*/
+    }
+
+    .expandable-bio__handler {
+        /*margin-top: 13px;*/
+        /*font-size: 12px;*/
+        /*line-height: 18px;*/
+    }
+        .expandable-bio__read-more {
+
+        }
+
+        .expandable-bio__close {
+            /*display: none;*/
+        }
+
+
+
+.expandable-bio--expanded {
+
+}
+    .expandable-bio--expanded .expandable-bio__content {
+        /*-webkit-line-clamp: unset;*/
+    }
+
+    .expandable-bio--expanded .expandable-bio__handler {
+        /*margin-top: 25px;*/
+        /*font-size: 12px;*/
+        /*line-height: 18px;*/
+    }
+        .expandable-bio--expanded .expandable-bio__read-more {
+            /*display: none;*/
+        }
+
+        .expandable-bio--expanded .expandable-bio__close {
+            /*display: inline;*/
+        }

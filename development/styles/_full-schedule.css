@@ -13,6 +13,10 @@
             margin-bottom: -3px;
         }
 
+    .full-schedule__background-sub-heading {
+        display: none;
+    }
+
     .full-schedule__mobile-year {
         visibility: hidden;
         position: absolute;

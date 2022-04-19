@@ -1,5 +1,5 @@
 .non-performer {
-    padding-bottom: 68px;
+    padding-bottom: 47px;
 }
     .non-performer::before {
         /*content: "";*/
@@ -14,6 +14,8 @@
     }
 
     .non-performer__wrap {
+        position: relative;
+        padding-bottom: 339px;
         padding-top: 20px;
     }
         .non-performer__header {
@@ -80,25 +82,37 @@
                     margin-right: -20px;
                 }
 
+                .non-performer__mobile-career-heading {
+                    display: block;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-top: 20px;
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #333333;
+                }
+
                 .non-performer__career {
-                    /*margin: 22px -24px 0 -16px;*/
-                    margin-left: 0;
-                    margin-right: 0;
+                    margin: 10px -20px 0 -16px;
                 }
 
                 .non-performer__connections {
-                    /*margin-top: 17px;*/
-                    /*border-top: 1px solid var(--theme-light);*/
-                    /*padding-top: 24px;*/
+                    margin-top: 49px;
+                    border-top: 0;
+                    padding-top: 0;
                 }
                     .non-performer__connections .all-connections {
                         /*margin: -10px -13px;*/
                     }
 
                 .non-performer__tags {
-                    /*margin-top: 31px;*/
-                    /*border-top: 1px solid var(--theme-light);*/
-                    /*padding-top: 26px;*/
+                    position: absolute; /* move it to the bottom of the page */
+                    left: 0;
+                    bottom: 129px;
+                    right: 0;
+                    padding-bottom: 35px;
+                    border-bottom: 1px solid #F2F2F2;
                 }
 
                 .non-performer__highlights {
@@ -108,9 +122,13 @@
                 }
 
                 .non-performer__social {
-                    /*margin-top: 27px;*/
-                    /*border-top: 1px solid var(--theme-light);*/
-                    /*padding-top: 20px;*/
+                    position: absolute; /* move it to the bottom of the page */
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin-top: 0;
+                    border-top: none;
+                    padding-top: 0;
                 }
 
                 .non-performer__add-info {

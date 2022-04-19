@@ -1,6 +1,10 @@
 .expandable-bio {
 
 }
+    .expandable-bio__heading {
+        display: none;
+    }
+
     .expandable-bio__content {
         overflow: hidden;
         text-overflow: ellipsis;

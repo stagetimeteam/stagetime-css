@@ -72,6 +72,10 @@
                     display: none;
                 }
 
+                .non-performer__mobile-career-heading {
+                    display: none;
+                }
+
                 .non-performer__career {
                     margin: 22px -24px 0 -16px;
                 }
