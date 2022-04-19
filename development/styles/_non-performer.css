@@ -68,6 +68,9 @@
                         border-bottom-right-radius: 0;
                     }
 
+                .non-performer__mobile-bio {
+                    display: none;
+                }
 
                 .non-performer__career {
                     margin: 22px -24px 0 -16px;

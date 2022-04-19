@@ -1,6 +1,6 @@
 .artist-card {
     height: 100vh;
-    max-height: 600px;
+    max-height: var(--artist-photo-mobile-height)
 }
     .artist-card__preview {
 
