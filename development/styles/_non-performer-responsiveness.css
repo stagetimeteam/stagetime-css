@@ -52,6 +52,7 @@
                     margin: -20px -20px 0;
                     width: auto;
                     height: auto;
+                    min-height: 400px;
                     padding: 0;
                     border-radius: 0;
                 }
