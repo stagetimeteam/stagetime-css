@@ -1,37 +1,27 @@
 .auth {
-    padding: 39px 28px 43px;
-    background-color: #545454;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.14);
-    border-radius: 17px;
-    text-align: center;
+    padding: 40px 44px 46px;
+    background-color: #FFFFFF;
 }
     .auth__heading {
-        font-size: 15px;
-        line-height: 20px;
-        color: #AFAFAF;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 28px;
+        color: #333333;
     }
 
-    .auth__brand {
-        margin: -14px auto 20px;
+    .auth__alternative {
+        margin-top: 9px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #333333;
     }
-
-    .auth__welcome {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: inherit;
-        font-size: 15px;
-        line-height: 20px;
-        color: #FFFFFF;
-    }
+        .auth__alternative .link {
+            color: inherit;
+        }
 
     .auth__fieldset {
-        margin-top: 43px;
+        margin-top: 42px;
     }
-
-    .auth__welcome + .auth__fieldset {
-        margin-top: 29px;
-    }
-
         .auth__field {
             margin-top: 20px;
         }
@@ -40,23 +30,20 @@
             margin-top: 0;
         }
 
-    .auth__password {
-        margin-top: 12px;
-        font-size: 10px;
+    .auth__forgot-password {
+        margin-top: 18px;
+        font-weight: 600;
+        font-size: 12px;
         line-height: 18px;
-        color: #AFAFAF;
+        color: #333333;
         text-align: right;
     }
-        .auth__password .link {
-            transition: color var(--transition-hover);
-        }
-
-        .auth__password .link:hover {
-            color: #FFFFFF;
+        .auth__forgot-password .link {
+            font-weight: inherit;
         }
 
     .auth__submit {
-        margin-top: 13px;
+        margin-top: 18px;
     }
 
     .auth__fieldset + .auth__submit {
@@ -94,20 +81,6 @@
             color: inherit;
         }
 
-    .auth__alternative {
-        margin-top: 38px;
-        font-size: 15px;
-        line-height: 20px;
-        color: #AFAFAF;
-    }
-
-    .auth__agreement + .auth__alternative {
-        margin-top: 24px;
-    }
-
-        .auth__alternative .link {
-            color: #FFFFFF;
-        }
 
 
     .auth__note {

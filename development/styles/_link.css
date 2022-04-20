@@ -66,3 +66,14 @@
 .link--user-color {
     color: var(--theme-main);
 }
+
+
+.link--fading {
+    color: inherit;
+    transition: opacity;
+}
+
+.link--fading:hover {
+    opacity: 0.7;
+    border-bottom-color: transparent;
+}
