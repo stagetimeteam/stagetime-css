@@ -39,7 +39,7 @@
 }
 
 .container--auth {
-    width: 960px;
+    width: 1060px;
     padding-left: 0;  /* override bootstrap */
     padding-right: 0; /* override bootstrap */
 }

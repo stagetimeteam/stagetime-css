@@ -1,7 +1,7 @@
 .auth-logo {
     position: relative;
-    width: 375px;
-    height: 73px;
+    width: 274px;
+    height: 53px;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
@@ -12,10 +12,10 @@
         left: 0;
         top: 0;
         display: block;
-        width: 73px;
-        height: 73px;
+        width: 53px;
+        height: 53px;
         background-image: url("../images/responsive-logo-emblem.svg");
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
     }
@@ -26,10 +26,10 @@
         right: 0;
         top: 0;
         display: block;
-        width: 279px;
-        height: 73px;
+        width: 203px;
+        height: 53px;
         background-image: url("../images/responsive-logo-title.svg");
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
     }
