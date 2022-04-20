@@ -6,11 +6,13 @@
         /*margin-bottom: 0;*/
         /*display: flex;*/
         /*align-items: flex-start;*/
+        padding-left: var(--container-mobile-padding);
+        padding-right: var(--container-mobile-padding);
     }
         .projects-and-media__edit {
             display: none;
         }
 
     .projects-and-media__body {
-        margin-top: 23px;
+        margin-top: 20px;
     }

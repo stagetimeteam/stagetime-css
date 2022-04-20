@@ -149,7 +149,6 @@
 
             .non-performer__content {
                 width: auto;
-                /*flex-shrink: 0;*/
                 box-shadow: none;
                 padding-left: 0;
             }
@@ -177,12 +176,11 @@
 
                 .non-performer__gallery {
                     margin-top: 30px;
-                    padding-top: 28px;
+                    padding: 20px 0 0;
                 }
 
                 .non-performer__schedule {
-                    margin-top: 43px;
-                    /*border-top: 1px solid var(--theme-light);*/
+                    margin-top: 0;
                     padding-top: 27px;
                 }
 
@@ -195,9 +193,9 @@
                 }
 
                 .non-performer__null {
-                    /*margin-top: 24px;*/
+
                 }
 
                 .non-performer__null:first-child {
-                    /*margin-top: 0;*/
+
                 }
