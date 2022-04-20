@@ -5,7 +5,7 @@
     justify-content: center;
     background-color: transparent;
     border: none;
-    width: 64px;
+    width: 50px;
     height: 64px;
     font-family: inherit;
     color: inherit;
@@ -21,8 +21,9 @@
         right: 0;
         bottom: 0;
         margin: auto;
-        width: 40px;
-        height: 40px;
+        width: 34px;
+        height: 34px;
+        border: 1px solid #EAEAEA;
         border-radius: 50%;
         transition: background-color var(--transition-hover);
     }
@@ -39,15 +40,25 @@
     .header-button__icon {
         position: relative;
         vertical-align: top;
-        width: 24px;
-        height: 24px;
-        fill: #545454;
+        fill: #000000;
     }
+
+    .header-button--messages .header-button__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header-button--notifications .header-button__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+
 
     .header-button__updates {
         position: absolute;
-        right: 14px;
-        top: 14px;
+        right: 9px;
+        top: 12px;
     }
 
 

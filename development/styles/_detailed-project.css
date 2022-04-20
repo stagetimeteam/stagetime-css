@@ -17,6 +17,10 @@
             margin-top: 22px;
         }
 
+        .detailed-project__close {
+            display: none;
+        }
+
     .detailed-project__footer {
 
     }

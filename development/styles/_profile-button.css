@@ -2,9 +2,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 64px;
+    width: 50px;
     height: 64px;
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
+    .profile-button .avatar {
+        box-shadow: 0 0 0 1px #EAEAEA;
+    }

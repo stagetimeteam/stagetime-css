@@ -18,6 +18,16 @@
         flex-shrink: 0;
     }
 
+    .nav-link__sparkle {
+        position: absolute;
+        right: 32px;
+        top: 1px;
+        vertical-align: top;
+        fill: #9CB2BE;
+        pointer-events: none; /* don't overlay neighbours */
+    }
+
+
     .nav-link__counter {
         margin-left: 4px;
         color: var(--theme-main);

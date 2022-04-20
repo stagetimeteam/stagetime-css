@@ -31,7 +31,7 @@
             transition: fill var(--transition-hover);
         }
 
-        .menu__sparkle {
+        .nav-link__sparkle {
             position: absolute;
             left: 32px;
             top: 1px;

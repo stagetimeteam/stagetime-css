@@ -40,6 +40,7 @@
                 position: absolute;
                 right: 30px;
                 top: 15px;
+                display: block;
             }
 
             .detailed-project__close.button,
