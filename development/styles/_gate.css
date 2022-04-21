@@ -6,7 +6,7 @@
     width: 100%;
     height: 100%;
     background-color: #333333;
-    background-image: url("../images/gate-desktop.jpg");
+    background-image: url("../temp/gate-desktop.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -14,7 +14,7 @@
 
 @media (min-resolution: 2dppx) {
     .gate {
-        background-image: url("../images/gate-desktop@2x.jpg");
+        background-image: url("../temp/gate-desktop@2x.jpg");
     }
 }
     .gate__cell {
