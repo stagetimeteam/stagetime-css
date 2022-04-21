@@ -1,6 +1,7 @@
 .bar {
     position: relative;
     height: 20px;
+    text-align: center;
 }
     .bar::before {
         content: "";
@@ -10,7 +11,7 @@
         top: 10px;
         display: block;
         height: 1px;
-        background-color: #7D7D7D;
+        background-color: #E8E8E8;
     }
 
     .bar__label {
@@ -19,7 +20,8 @@
         vertical-align: top;
         padding-right: 17px;
         padding-left: 17px;
-        background-color: #545454;
+        background-color: #FFFFFF;
+        font-weight: bold;
         font-size: 12px;
         line-height: 20px;
         color: #C4C4C4;

@@ -450,19 +450,15 @@
     font-weight: bold;
     font-size: 12px;
     line-height: 20px;
-    background-color: #757575;
     box-shadow: none;
     color: #FFFFFF;
 }
 
 .button--auth-primary:hover {
-    background-color: #2F2F2F;
-    color: #FFFFFF;
 }
 
 .button--auth-primary:active {
-    background-color: #2F2F2F;
-    color: #FFFFFF;
+
 }
 
 
@@ -471,23 +467,25 @@
     width: 100%;
     padding: 10px 20px;
     background-color: #FFFFFF;
-    box-shadow: none;
-    font-weight: 600;
+    box-shadow: inset 0 0 0 1px #E8E8E8;
     font-size: 12px;
     line-height: 20px;
-    color: #545454;
+    color: #333333;
 }
     .button--auth-secondary .button__icon {
         fill: #545454;
     }
 
 .button--auth-secondary:hover {
-    background-color: #2F2F2F;
-    color: #FFFFFF;
+    background-color: var(--panel-hover);
+    box-shadow: inset 0 0 0 1px #E4E4E4;
 }
-    .button--auth-secondary:hover .button__icon {
-        fill: #757575;
-    }
+
+.button--auth-secondary:active {
+    background-color: var(--panel-active);
+    box-shadow: inset 0 0 0 1px #E1E1E1;
+}
+
 
 
 .button--swim-test {
