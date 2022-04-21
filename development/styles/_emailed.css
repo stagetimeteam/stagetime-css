@@ -1,0 +1,48 @@
+.emailed {
+    padding: 40px 44px 46px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+}
+    .emailed__icon {
+        vertical-align: top;
+        fill: #757575;
+    }
+
+    .emailed__heading {
+        margin-top: 15px;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 28px;
+        color: #333333;
+    }
+
+    .emailed__description {
+        margin-top: 6px;
+        font-size: 12px;
+        line-height: 24px;
+        color: #333333;
+    }
+
+    .emailed__check {
+        margin-top: 38px;
+    }
+
+    .emailed__resend {
+        margin-top: 50px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #333333;
+    }
+
+    .emailed__footer {
+        margin-top: 20px;
+        border-top: 1px solid #E8E8E8;
+        padding-top: 21px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #333333;
+    }
+        .emailed__footer .link {
+            font-weight: 600;
+        }

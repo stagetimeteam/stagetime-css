@@ -1,6 +1,7 @@
 .auth {
     padding: 40px 44px 46px;
     background-color: #FFFFFF;
+    border-radius: 4px;
 }
     .auth__heading {
         font-weight: 600;
@@ -34,6 +35,14 @@
             margin-top: 0;
         }
 
+        .auth__note {
+            margin-top: 14px;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 16px;
+            color: #757575;
+        }
+
     .auth__forgot-password {
         margin-top: 18px;
         font-weight: 600;
@@ -48,10 +57,6 @@
 
     .auth__submit {
         margin-top: 18px;
-    }
-
-    .auth__fieldset + .auth__submit {
-        margin-top: 20px;
     }
 
     .auth__separator {
@@ -81,18 +86,24 @@
     }
         .auth__agreement .link {
             font-weight: inherit;
-            white-space: normal;
             color: inherit;
+            border-bottom-color: currentColor;
+            white-space: nowrap;
+        }
+
+        .auth__agreement .link:hover {
+            border-bottom-color: transparent;
         }
 
 
-
-    .auth__note {
-        margin-top: 16px;
-        padding-bottom: 3px;
-        font-weight: bold;
-        font-size: 10px;
-        line-height: 17px;
-        color: #C4C4C4;
-        text-align: center;
+    .auth__footer {
+        margin-top: 64px;
+        border-top: 1px solid #E8E8E8;
+        padding-top: 21px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #333333;
     }
+        .auth__footer .link {
+            font-weight: 600;
+        }

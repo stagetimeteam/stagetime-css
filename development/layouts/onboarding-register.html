@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Sign in</title>
+        <title>Sign up for Stagetime</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -25,10 +25,10 @@
                     </div>
                     <form class="gate__form auth">
                         <div class="auth__heading">
-                            Sign in
+                            Sign up for Stagetime
                         </div>
                         <div class="auth__alternative">
-                            Don’t have an account? <a class="auth__alt-action link link--fading" href="#">Sign up</a><span class="auth__dot">.</span>
+                            Already have an account? <a class="auth__alt-action link link--fading" href="#">Sign in</a><span class="auth__dot">.</span>
                         </div>
                         <div class="auth__fieldset">
                             <div class="auth__field input input--auth">
@@ -37,11 +37,12 @@
                             <div class="auth__field input input--auth">
                                 <input class="input__widget" type="password" placeholder="Password">
                             </div>
-                        </div>
-                        <div class="auth__forgot-password">
-                            <a class="link link--fading" href="#">
-                                Forgot password?
-                            </a>
+                            <div class="auth__field input input--auth">
+                                <input class="input__widget" type="password" placeholder="Confirm Password">
+                            </div>
+                            <div class="auth__note">
+                                Passwords must be at least 8 characters and contain at least one uppercase letter and one number.
+                            </div>
                         </div>
                         <button class="auth__submit button button--auth-primary" type="submit">
                             Continue
@@ -58,6 +59,9 @@
                                 <img class="button__icon button__icon--left" src="../symbols/24-apple-color.svg" width="20" height="20" alt="">
                                 Continue with Apple
                             </a>
+                        </div>
+                        <div class="auth__agreement">
+                            By signing up, you are agreeing to Stagetime’s <a class="link" href="#">Privacy Policy</a> and <a class="link" href="#">Terms of Use</a>.
                         </div>
                     </form>
                 </div>
