@@ -1,12 +1,12 @@
 .gate {
-    display: block;
+    /*display: block;*/
     /*vertical-align: top;*/
     /*border-collapse: collapse;*/
     /*table-layout: fixed;*/
     /*width: 100%;*/
     /*height: 100%;*/
     /*background-color: #333333;*/
-    /*background-image: url("../images/gate-desktop.jpg");*/
+    background-image: url("../images/gate-mobile.jpg");
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
     /*background-position: center center;*/
@@ -14,26 +14,22 @@
 
 @media (min-resolution: 2dppx) {
     .gate {
-        /*background-image: url("../images/gate-desktop@2x.jpg");*/
+        background-image: url("../images/gate-mobile@2x.jpg");
     }
 }
     .gate__cell {
         /*position: relative;*/
-        display: block;
+        /*display: block;*/
         /*padding: 0;*/
         /*width: 100%;*/
         /*height: 100%;*/
-        /*vertical-align: middle;*/
+        vertical-align: bottom;
         /*background-color: rgba(51, 51, 51, 0.8); !* over image *!*/
     }
         .gate__wrap {
-            display: flex;
-            flex-direction: column;
-            min-height: 100%;
-            align-items: stretch;
-            justify-content: flex-start;
+            display: block;
             /*padding-top: 60px;*/
-            /*padding-bottom: 60px;*/
+            padding-bottom: 0;
         }
             .gate__intro {
                 padding-bottom: 0;
@@ -56,7 +52,6 @@
                     }
 
             .gate__form {
-                flex-grow: 1;
                 width: auto;
                 margin-top: 50px;
                 max-width: 380px;

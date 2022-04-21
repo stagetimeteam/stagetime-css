@@ -15,8 +15,12 @@
         line-height: 18px;
         color: #333333;
     }
-        .auth__alternative .link {
-            color: inherit;
+        .auth__alt-action {
+
+        }
+
+        .auth__dot {
+
         }
 
     .auth__fieldset {

@@ -9,12 +9,31 @@
     }
 
     .auth__alternative {
-        margin-top: auto;
+        margin-top: 68px;
         order: 100;
+        margin-left: calc(-1 * var(--container-mobile-padding));
+        margin-right: calc(-1 * var(--container-mobile-padding));
         background-color: #FFFFFF;
+        padding: 23px var(--container-mobile-padding) 34px;
+        text-align: center;
     }
-        .auth__alternative .link {
-            /*color: inherit;*/
+        .auth__alt-action,
+        .auth__alt-action:hover,
+        .auth__alt-action:active {
+            display: block;
+            margin-top: 18px;
+            padding: 10px 20px;
+            background-color: #333333;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #FFFFFF;
+            opacity: 1;
+        }
+
+        .auth__dot {
+            display: none;
         }
 
     .auth__fieldset {
