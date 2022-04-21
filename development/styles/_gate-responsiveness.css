@@ -1,23 +1,41 @@
 .gate {
     display: block;
-    height: auto;
-    min-height: 100%;
-    /*width: auto;*/
-    /*height: auto;*/
+    /*vertical-align: top;*/
+    /*border-collapse: collapse;*/
+    /*table-layout: fixed;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background-color: #333333;*/
+    /*background-image: url("../images/gate-desktop.jpg");*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center center;*/
+}
+
+@media (min-resolution: 2dppx) {
+    .gate {
+        /*background-image: url("../images/gate-desktop@2x.jpg");*/
+    }
 }
     .gate__cell {
+        /*position: relative;*/
         display: block;
-        /*width: auto;*/
-        /*height: auto;*/
+        /*padding: 0;*/
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*vertical-align: middle;*/
+        /*background-color: rgba(51, 51, 51, 0.8); !* over image *!*/
     }
         .gate__wrap {
-            display: block;
-            padding-top: 40px;
-            /*padding-bottom: 90px;*/
-            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            min-height: 100%;
+            align-items: stretch;
+            justify-content: flex-start;
+            /*padding-top: 60px;*/
+            /*padding-bottom: 60px;*/
         }
             .gate__intro {
-                padding-left: 0;
                 padding-bottom: 0;
             }
                 .gate__branding {
@@ -26,31 +44,33 @@
                 }
 
                 .gate__slogan {
-                    display: none;
-                    /*margin-top: 24px;*/
-                    /*width: 286px;*/
-                    /*font-size: 18px;*/
-                    /*line-height: 29px;*/
-                    /*color: #8B8B8B;*/
-                }
-
-                .gate__mobile-slogan {
-                    display: block;
-                    margin-top: 13px;
-                    font-size: 17px;
-                    line-height: 20px;
-                    color: #AFAFAF;
+                    margin: 19px 0 0;
                     text-align: center;
+                    width: auto;
+                    /*font-size: 12px;*/
+                    /*line-height: 20px;*/
+                    /*color: #FFFFFF;*/
                 }
-
                     .gate__highlight {
-                        /*font-weight: inherit;*/
-                        /*color: #FFFFFF;*/
+                        /*font-weight: bold;*/
                     }
 
             .gate__form {
-                margin-top: 49px;
+                flex-grow: 1;
                 width: auto;
-                padding: 0;
-                background-color: transparent;
+                margin-top: 50px;
+                max-width: 380px;
             }
+
+        .gate__credits {
+            display: none;
+        }
+
+
+.gate--simpler {
+
+}
+    .gate--simpler .gate__form {
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }

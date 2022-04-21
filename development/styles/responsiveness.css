@@ -17,7 +17,6 @@
 @import url("_parsed-link-responsiveness.css");
 @import url("_auth-responsiveness.css");
 @import url("_gate-responsiveness.css");
-@import url("_auth-logo-responsiveness.css");
 @import url("_bar-responsiveness.css");
 @import url("_button-responsiveness.css");
 @import url("_input-responsiveness.css");
@@ -117,3 +116,5 @@
 @import url("_detailed-project-responsiveness.css");
 @import url("_panels-responsiveness.css");
 @import url("_user-link-responsiveness.css");
+@import url("_bar-responsiveness.css");
+@import url("_gate-responsiveness.css");

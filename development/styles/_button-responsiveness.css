@@ -162,53 +162,33 @@
 
 
 
-.button--auth-primary {
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border-radius: 27px;
-    /*font-weight: bold;*/
-    font-size: 14px;
-    line-height: 20px;
-    /*background-color: #757575;*/
-    /*box-shadow: none;*/
-    /*color: #FFFFFF;*/
-}
-
-.button--auth-primary:hover {
-    background-color: #545454;
-    /*color: #FFFFFF;*/
-}
-
+.button--auth-primary,
+.button--auth-primary:hover,
 .button--auth-primary:active {
-    /*background-color: #2F2F2F;*/
-    /*color: #FFFFFF;*/
+    background-color: #8B8B8B;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #FFFFFF;
 }
 
 
-
-.button--auth-secondary {
-    padding-top: 17px;
-    padding-bottom: 17px;
-    border-radius: 27px;
-    /*background-color: #FFFFFF;*/
-    /*box-shadow: none;*/
+.button--auth-secondary,
+.button--auth-secondary:hover,
+.button--auth-secondary:active {
+    background-color: #FFFFFF;
+    box-shadow: none;
+    border-radius: 4px;
     /*font-weight: bold;*/
-    font-size: 14px;
-    line-height: 20px;
+    /*font-size: 14px;*/
+    /*line-height: 20px;*/
     /*color: #AFAFAF;*/
 }
     .button--auth-secondary .button__icon {
-        width: 28px;
-        height: 28px;
-        margin-top: -4px;
-        margin-bottom: -4px;
+        /*width: 28px;*/
+        /*height: 28px;*/
+        /*margin-top: -4px;*/
+        /*margin-bottom: -4px;*/
         /*fill: #545454;*/
-    }
-
-.button--auth-secondary:hover {
-    background-color: #545454;
-    /*color: #FFFFFF;*/
-}
-    .button--auth-secondary:hover .button__icon {
-        /*fill: #757575;*/
     }

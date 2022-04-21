@@ -1,55 +1,92 @@
 .auth {
-    /*padding: 39px 28px 43px;*/
-    /*background-color: #545454;*/
-    box-shadow: none;
-    /*border-radius: 17px;*/
-    /*text-align: center;*/
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
 }
-
-.auth__heading {
+    .auth__heading {
         display: none;
-        /*font-size: 15px;*/
-        /*line-height: 20px;*/
-        /*color: #AFAFAF;*/
     }
+
+    .auth__alternative {
+        margin-top: auto;
+        order: 100;
+        background-color: #FFFFFF;
+    }
+        .auth__alternative .link {
+            /*color: inherit;*/
+        }
 
     .auth__fieldset {
         margin-top: 0;
     }
         .auth__field {
-            margin-top: 15px;
+            /*margin-top: 20px;*/
         }
 
         .auth__field:first-child {
             /*margin-top: 0;*/
         }
 
-    .auth__password {
-        margin-top: 14px;
-        font-size: 11px;
+    .auth__forgot-password {
+        /*margin-top: 18px;*/
+        /*font-weight: 600;*/
+        /*font-size: 12px;*/
         /*line-height: 18px;*/
-        /*color: #AFAFAF;*/
+        color: #FFFFFF;
         /*text-align: right;*/
     }
+        .auth__forgot-password .link {
+            /*font-weight: inherit;*/
+        }
 
     .auth__submit {
-        margin-top: 21px;
+        /*margin-top: 18px;*/
+    }
+
+    .auth__fieldset + .auth__submit {
+        /*margin-top: 20px;*/
     }
 
     .auth__separator {
-        margin-top: 7px;
+        /*margin-top: 33px;*/
     }
 
     .auth__social-networks {
-        margin-top: 8px;
+        /*margin-top: 28px;*/
     }
         .auth__net {
-
+            /*margin-top: 16px;*/
         }
 
-    .auth__alternative {
-        /*margin-top: 38px;*/
-        font-size: 17px;
-        line-height: 24px;
-        /*color: #FFFFFF;*/
+        .auth__net:first-child {
+            /*margin-top: 0;*/
+        }
+
+    .auth__agreement {
+        /*max-width: 250px;*/
+        /*margin-top: 12px;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+        /*font-size: 10px;*/
+        /*line-height: 17px;*/
+        /*color: #AAAAAA;*/
+        /*text-align: center;*/
+    }
+        .auth__agreement .link {
+            /*font-weight: inherit;*/
+            /*white-space: normal;*/
+            /*color: inherit;*/
+        }
+
+
+
+    .auth__note {
+        /*margin-top: 16px;*/
+        /*padding-bottom: 3px;*/
+        /*font-weight: bold;*/
+        /*font-size: 10px;*/
+        /*line-height: 17px;*/
+        /*color: #C4C4C4;*/
+        /*text-align: center;*/
     }

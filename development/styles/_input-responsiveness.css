@@ -142,19 +142,22 @@
 
 }
     .input--auth .input__widget {
-        height: 56px;
-        padding-top: 17px;
-        padding-bottom: 17px;
-        /*border-color: transparent;*/
-        font-size: 14px;
-        /*border-radius: 8px;*/
+        background-color: transparent;
+        border-color: #E8E8E8;
+        color: #FFFFFF;
     }
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .input--auth .input__widget::-webkit-input-placeholder { font-style: normal; color: #FFFFFF; }
+    .input--auth .input__widget::-moz-placeholder          { font-style: normal; color: #FFFFFF; }
+    .input--auth .input__widget:-ms-input-placeholder      { font-style: normal; color: #FFFFFF; }
+    /* stylelint-enable */
 
     .input--auth .input__widget:hover {
         /*border-color: transparent;*/
     }
 
     .input--auth .input__widget:focus {
-        /*border-color: #9BB2BF;*/
-        /*box-shadow: 0 0 0 1px #9BB2BF;*/
+        border-color: #FFFFFF;
+        box-shadow: 0 0 0 1px #FFFFFF;
     }

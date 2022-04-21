@@ -3,15 +3,23 @@
     height: 20px;
     text-align: center;
 }
-    .bar::before {
+    .bar::before,
+    .bar::after {
         content: "";
         position: absolute;
-        left: 0;
-        right: 0;
+        width: calc(50% - 30px);
         top: 10px;
         display: block;
         height: 1px;
         background-color: #E8E8E8;
+    }
+
+    .bar::before {
+        left: 8px;
+    }
+
+    .bar::after {
+        right: 8px;
     }
 
     .bar__label {
@@ -20,7 +28,6 @@
         vertical-align: top;
         padding-right: 17px;
         padding-left: 17px;
-        background-color: #FFFFFF;
         font-weight: bold;
         font-size: 12px;
         line-height: 20px;
