@@ -10,8 +10,9 @@
     }
 
     .auth__alternative {
-        margin-top: 68px;
         order: 100;
+        margin-top: 68px;
+        margin-bottom: -60px;
         margin-left: calc(-1 * var(--container-mobile-padding));
         margin-right: calc(-1 * var(--container-mobile-padding));
         background-color: #FFFFFF;
