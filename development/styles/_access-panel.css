@@ -56,5 +56,7 @@
 
         .access-panel__cross {
             vertical-align: top;
+            width: 16px;
+            height: 16px;
             fill: #545454;
         }
