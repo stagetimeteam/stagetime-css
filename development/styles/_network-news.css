@@ -3,7 +3,7 @@
 }
     .network-news__heading {
         margin-top: 0;
-        margin-bottom: 26px;
+        margin-bottom: 24px;
         font-weight: 600;
         font-size: 13px;
         line-height: 20px;
@@ -18,6 +18,8 @@
 
     .network-news__list {
         margin-top: 2px;
+        max-height: 310px;
+        overflow-y: auto;
     }
         .network-news__item {
 

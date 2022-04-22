@@ -43,7 +43,6 @@
             .home__updates {
                 width: calc(100% - 352px);
                 padding-right: 24px;
-                margin-top: 2px;
             }
 
             .home__media {
