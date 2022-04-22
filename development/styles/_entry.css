@@ -36,5 +36,12 @@
     }
 
     .entry__addition {
-
+        margin-top: 15px;
     }
+        .entry__photo {
+
+        }
+            .entry__image {
+                vertical-align: top;
+                border-radius: 2px;
+            }
