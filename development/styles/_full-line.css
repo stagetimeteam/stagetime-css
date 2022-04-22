@@ -1,0 +1,27 @@
+.full-line {
+    position: relative;
+    text-align: center;
+}
+    .full-line::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 14px;
+        display: block;
+        height: 1px;
+        background-color: #EFF1F4;
+    }
+
+    .full-line__heading {
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding: 6px 22px 7px;
+        background-color: #EFF1F4;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        color: #333333;
+    }

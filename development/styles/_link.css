@@ -79,8 +79,25 @@
     border-bottom-color: transparent;
 }
 
-
 .link--inherit {
     font-weight: inherit;
     color: inherit;
+}
+
+
+.link--mention {
+    font-weight: 600;
+    color: #23282C;
+    transition: opacity;
+}
+
+.link--mention:hover {
+    opacity: 0.7;
+    border-bottom-color: transparent;
+}
+
+
+.link--url {
+    font-weight: 600;
+    color: #325F84;
 }
