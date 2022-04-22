@@ -1,0 +1,213 @@
+.typing {
+    position: relative;
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+}
+    .typing__message {
+        width: 100%;
+        vertical-align: top;
+        height: auto; /* user rows="" attribute */
+        min-height: 114px;
+        max-height: 256px;
+        padding: 16px 20px 74px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        background-clip: padding-box; /* reset iOS default shadow */
+        border-radius: 6px; /* reset iOS default border-radius */
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: 14px;
+        line-height: 24px;
+        color: #1F1F1F;
+        transition: box-shadow var(--transition-hover);
+        resize: none;
+    }
+
+    .typing__message:hover {
+        box-shadow: 0 0 0 1px #C0C0C0;
+    }
+
+    .typing__message:focus {
+        box-shadow: 0 0 0 2px #757575;
+    }
+
+
+    /* stylelint-disable block-opening-brace-space-before */
+    .typing__message::-webkit-input-placeholder { font-style: normal; color: #6C727A; }
+    .typing__message::-moz-placeholder          { font-style: normal; color: #6C727A; opacity: 1; }
+    .typing__message:-ms-input-placeholder      { font-style: normal; color: #6C727A; }
+    /* stylelint-enable */
+
+    .typing__attachment {
+
+    }
+
+    .typing__operations {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+        .typing__attach {
+            position: relative;
+            width: 62px;
+            height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+        }
+            .typing__attach::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                margin: auto;
+                width: 32px;
+                height: 32px;
+                border-radius: 16px;
+                transition: background-color var(--transition-hover);
+            }
+
+            .typing__attach:hover::before {
+                background-color: #EAEAEA;
+            }
+
+            .typing__attach:hover:active::before {
+                background-color: #E1E1E1;
+                transition: none;
+            }
+
+            .typing__landscape {
+                position: relative;
+                vertical-align: top;
+                fill: #6C727A;
+            }
+
+            .typing__attach::after {
+                content: "";
+                position: absolute;
+                right: 2px;
+                top: 14px;
+                width: 2px;
+                height: 32px;
+                background-color: #6C727A;
+                border-radius: 1px;
+            }
+
+        .typing__send {
+            position: relative;
+            /*position: absolute;*/
+            /*right: 19px;*/
+            /*top: 15px;*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 92px;
+            height: 62px;
+            background-color: transparent;
+            padding: 0;
+            border: none;
+            /*border-radius: 20px;*/
+            cursor: pointer;
+            /*transition: background-color var(--transition-hover);*/
+        }
+
+        .typing__send:hover {
+            /*background-color: #C4C4C4;*/
+        }
+            .typing__send::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                margin: auto;
+                width: 64px;
+                height: 32px;
+                background-color: #EEF0F3;
+                border-radius: 16px;
+                transition: background-color var(--transition-hover);
+            }
+
+            .typing__send:hover::before {
+                background-color: #EAEAEA;
+            }
+
+            .typing__send:hover:active::before {
+                background-color: #E1E1E1;
+                transition: none;
+            }
+
+            .typing__plane {
+                position: relative;
+                vertical-align: top;
+                fill: #6C727A;
+            }
+
+
+    .typing__send--disabled,
+    .typing__send--disabled:hover {
+        /*background-color: #F2F2F2;*/
+        /*cursor: default;*/
+    }
+        .typing__send--disabled .typing__plane,
+        .typing__send--disabled:hover .typing__plane {
+            /*fill: #C4C4C4;*/
+        }
+
+
+
+.typing--side {
+    /*padding: 20px 28px;*/
+}
+    .typing--side .typing__message {
+        /*background-color: #FFFFFF;*/
+    }
+
+
+    /* stylelint-disable block-opening-brace-space-before */
+    /*.typing--side .typing__message::-webkit-input-placeholder { color: #AAAAAA; }*/
+    /*.typing--side .typing__message::-moz-placeholder          { color: #AAAAAA; }*/
+    /*.typing--side .typing__message:-ms-input-placeholder      { color: #AAAAAA; }*/
+    /* stylelint-enable */
+
+    .typing--side .typing__send {
+        /*position: absolute;*/
+        /*right: 28px;*/
+        /*top: 20px;*/
+        /*width: 54px;*/
+        /*background-color: transparent;*/
+    }
+
+    .typing--side .typing__send:hover {
+        /*background-color: transparent;*/
+    }
+        .typing--side .typing__plane {
+            /*fill: #C4C4C4;*/
+        }
+
+        .typing--side .typing__send:hover .typing__plane {
+            /*fill: #545454;*/
+        }
+
+
+    .typing--side .typing__send--disabled,
+    .typing--side .typing__send--disabled:hover {
+        /*background-color: transparent;*/
+        /*cursor: default;*/
+    }
+        .typing--side .typing__send--disabled .typing__plane,
+        .typing--side .typing__send--disabled:hover .typing__plane {
+            /*fill: #E8E8E8;*/
+        }
