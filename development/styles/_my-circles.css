@@ -10,6 +10,8 @@
     .my-circles__aside {
         width: 431px;
         border-left: 1px solid #E1E3E6;
+        display: flex;
+        flex-direction: column;
     }
         .my-circles__tabs {
             position: relative;
@@ -110,6 +112,7 @@
         .my-circles__listing {
             position: relative;
             padding-top: 20px;
+            flex-grow: 1;
         }
             .my-circles__listing::before {
                 content: "";
@@ -126,6 +129,7 @@
             }
 
             .my-circles__panel {
+                height: 100%;
                 display: none;
             }
 

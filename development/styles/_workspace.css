@@ -1,0 +1,37 @@
+.workspace {
+    padding: 35px 42px;
+    height: 100%;
+}
+    .workspace__edit {
+        margin: -25px -18px 20px;
+    }
+
+    .workspace__content {
+
+    }
+
+    .workspace__footer {
+        margin-top: 22px;
+        position: relative;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        text-align: right;
+    }
+        .workspace__footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -21px;
+            right: -21px;
+            height: 1px;
+            background-color: #E1E3E6;
+        }
+
+        .workspace__save {
+
+        }
+
+        .workspace__save.button,
+        .workspace__save .button {
+            width: 142px;
+        }

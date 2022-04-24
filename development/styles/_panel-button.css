@@ -1,0 +1,35 @@
+.panel-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #23282C;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.panel-button:hover {
+    background-color: var(--panel-hover);
+}
+
+.panel-button:active {
+    background-color: var(--panel-active);
+    transition: none;
+}
+
+    .panel-button__icon {
+        vertical-align: top;
+        margin-right: 6px;
+        fill: currentColor;
+    }
+
+    .panel-button__label {
+
+    }

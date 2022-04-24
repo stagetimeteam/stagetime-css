@@ -58,18 +58,18 @@
 
 .wysiwyg ul {
     padding-left: 40px;
-    list-style: none;
+    /*list-style: none;*/
 }
-    .wysiwyg ul li {
-        position: relative;
-    }
-        .wysiwyg ul li::before {
-            position: absolute;
-            right: 100%;
-            margin-right: 5px;
-            top: 0;
-            content: "—";
-        }
+    /*.wysiwyg ul li {*/
+    /*    position: relative;*/
+    /*}*/
+    /*    .wysiwyg ul li::before {*/
+    /*        position: absolute;*/
+    /*        right: 100%;*/
+    /*        margin-right: 5px;*/
+    /*        top: 0;*/
+    /*        content: "—";*/
+    /*    }*/
 
 .wysiwyg ol {
     counter-reset: wysiwyg-ordered-list;
@@ -154,3 +154,13 @@
 .wysiwyg strong {
 
 }
+
+
+
+.wysiwyg--side {
+
+}
+    .wysiwyg--side ul,
+    .wysiwyg--side ol {
+        padding-left: 20px;
+    }
