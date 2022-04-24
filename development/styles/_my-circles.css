@@ -1,0 +1,14 @@
+.my-circles {
+    display: flex;
+    align-items: flex-start;
+}
+    .my-circles__feed {
+        width: 713px;
+    }
+
+    .my-circles__aside {
+        width: 431px;
+    }
+        .my-circles__tabs {
+
+        }
