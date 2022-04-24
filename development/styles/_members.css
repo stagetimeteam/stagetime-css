@@ -1,0 +1,11 @@
+.members {
+    padding: 15px 42px 40px;
+}
+    .members__edit {
+        margin: -5px -21px 18px;
+    }
+
+    .members__list {
+        margin-left: -21px;
+        margin-right: -21px;
+    }

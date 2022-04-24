@@ -1,0 +1,27 @@
+.panel-invite {
+    padding: 28px 30px 31px;
+    background-color: #EEF0F3;
+    border-radius: 4px;
+    text-align: center;
+}
+    .panel-invite__heading {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #333333;
+    }
+
+    .panel-invite__note {
+        margin-top: 8px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #545454;
+    }
+
+    .panel-invite__submit {
+        margin-top: 16px;
+    }
+        .panel-invite__submit.button,
+        .panel-invite__submit .button {
+            width: 228px;
+        }

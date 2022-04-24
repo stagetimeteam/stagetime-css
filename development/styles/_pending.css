@@ -1,0 +1,12 @@
+.pending {
+    display: inline-flex;
+    align-items: flex-start;
+    padding: 4px 0 4px 14px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #44474A;
+}
+    .pending__icon {
+        margin: -3px -2px -3px 16px;
+    }

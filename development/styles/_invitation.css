@@ -1,0 +1,32 @@
+.invitation {
+    display: flex;
+    align-items: center;
+    padding: 12px 21px;
+}
+    .invitation__preview {
+        flex-shrink: 0;
+        align-self: flex-start;
+        margin-right: 18px;
+    }
+
+    .invitation__body {
+        flex-grow: 1;
+    }
+        .invitation__heading {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #1F1F1F;
+        }
+
+        .invitation__note {
+            margin-top: 2px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #545454;
+        }
+
+    .invitation__status {
+        margin-left: 18px;
+        flex-shrink: 0;
+    }
