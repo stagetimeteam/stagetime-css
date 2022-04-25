@@ -1,9 +1,9 @@
 .workspace {
-    padding: 35px 42px;
+    padding: 15px 42px 40px;
     height: 100%;
 }
     .workspace__edit {
-        margin: -25px -18px 20px;
+        margin: -5px -21px 20px;
     }
 
     .workspace__content {

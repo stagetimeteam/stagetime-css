@@ -866,6 +866,29 @@
 }
 
 
+.button--accept {
+    padding: 4px 14px;
+    border-radius: 2px;
+    background-color: #44474A;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+    box-shadow: none;
+}
+
+.button--accept:hover {
+    background-color: #585C60;
+    color: #FFFFFF;
+}
+
+.button--accept:active {
+    background-color: #3D4043;
+    color: #FFFFFF;
+}
+
+
+
 
 .button--edit {
     min-width: 164px;
