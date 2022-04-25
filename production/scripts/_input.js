@@ -93,14 +93,15 @@
            See "markups/_modal.html" for details
            Add back in: (1) */
         var $modalBody = $(this).parents('.modal-body');
-        if( $modalBody[0].scrollHeight <= $modalBody.outerHeight()  ) {
-            $modalBody.addClass('modal-body--no-overflow');
+        if ($modalBody.length) {
+            if( $modalBody[0].scrollHeight <= $modalBody.outerHeight()  ) {
+                $modalBody.addClass('modal-body--no-overflow');
+            }
         }
 
         $('.input').removeClass('input--expanded'); /* Close rest of dropdowns */
         $(this).parents('.input').addClass('input--expanded');
         $(this).parents('.input').find('.lookup__field').focus();
-
     });
 
     $(document).on('click touchstart', function(event) {
