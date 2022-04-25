@@ -188,6 +188,11 @@
         fill: #545454;
     }
 
+    .input__icon[width="24"] {
+        margin-left: -4px;
+        margin-top: -12px;
+    }
+
     .input__icon ~ .input__widget {
         padding-left: 44px;
     }

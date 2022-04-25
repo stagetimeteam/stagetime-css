@@ -33,3 +33,31 @@
         .panel-invite__submit--limited .button {
             width: 228px;
         }
+
+        .panel-invite__alternative {
+            margin-top: 10px;
+            padding: 5px 12px 7px;
+            background-color: transparent;
+            border: none;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            color: #44474A;
+            cursor: pointer;
+        }
+
+        .panel-invite__alternative:hover {
+            background-color: #FAFAFA;
+        }
+
+        .panel-invite__alternative:active {
+            background-color: #FFFFFF;
+        }
+
+            .panel-invite__alternative-icon {
+                margin: -1px 8px -3px -2px;
+                vertical-align: top;
+                fill: currentColor;
+            }
+
