@@ -1,0 +1,34 @@
+.add-resource {
+
+}
+    .add-resource__upload {
+
+    }
+
+
+    .add-resource__files {
+        margin-top: 8px;
+        margin-left: -12px;
+    }
+        .add-resource__attachment {
+            margin-top: 12px;
+            margin-left: 12px;
+        }
+
+    .add-resource__description {
+        margin-top: 20px;
+    }
+
+    .add-resource__operations {
+        margin-top: 20px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+        .add-resource__action {
+            margin-left: 18px;
+        }
+
+        .add-resource__action:first-child {
+            margin-left: 0;
+        }

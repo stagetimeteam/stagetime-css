@@ -7,7 +7,7 @@
     }
 
     .resources__list {
-
+        padding-top: 11px;
     }
         .resources__item {
             position: relative;
@@ -15,12 +15,27 @@
             padding-top: 38px;
         }
 
-        .resources__item::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -21px;
-            right: -21px;
-            height: 1px;
-            background-color: #E1E3E6;
+        .resources__item:first-child {
+            margin-top: 0;
+            padding-top: 0;
         }
+            .resources__item::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -21px;
+                right: -21px;
+                height: 1px;
+                background-color: #E1E3E6;
+            }
+
+            .resources__item:first-child::before {
+                display: none;
+            }
+
+
+    .resources__form {
+        margin-top: -5px;
+        margin-bottom: 20px;
+    }
+

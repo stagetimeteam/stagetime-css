@@ -182,8 +182,7 @@
         position: absolute;
         z-index: 10;
         left: 18px;
-        top: 50%;
-        margin-top: -8px;
+        top: 12px;
         pointer-events: none;
         fill: #545454;
     }
@@ -193,10 +192,29 @@
         margin-top: -12px;
     }
 
+    .input__icon[width="34"] {
+        margin-left: -4px;
+        margin-top: -12px;
+    }
+
     .input__icon ~ .input__widget {
         padding-left: 44px;
     }
 
+
+/* Author */
+    .input__author {
+        position: absolute;
+        z-index: 10;
+        left: 18px;
+        top: 13px;
+        pointer-events: none;
+        fill: #545454;
+    }
+
+    .input__author ~ .input__widget {
+        padding-left: 68px;
+    }
 
 .input--auth {
 
