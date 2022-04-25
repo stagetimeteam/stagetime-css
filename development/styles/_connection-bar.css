@@ -1,0 +1,38 @@
+.connection-bar {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 30px 10px 20px;
+    text-decoration: none;
+}
+
+.connection-bar:hover {
+    background-color: var(--panel-hover);
+}
+
+.connection-bar:active {
+    background-color: var(--panel-active);
+}
+
+    .connection-bar__preview {
+        flex-shrink: 0;
+        margin-right: 20px;
+    }
+
+    .connection-bar__body {
+
+    }
+        .connection-bar__heading {
+            font-size: 12px;
+            line-height: 20px;
+            color: #44474A;
+        }
+            .connection-bar__name {
+                font-weight: 600;
+                color: #23282C;
+            }
+
+        .connection-bar__note {
+            font-size: 12px;
+            line-height: 20px;
+            color: #44474A;
+        }

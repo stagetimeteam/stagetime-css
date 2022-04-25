@@ -1,5 +1,5 @@
 .panel-invite {
-    padding: 28px 30px 31px;
+    padding: 28px 48px 31px;
     background-color: #EEF0F3;
     border-radius: 4px;
     text-align: center;
@@ -18,10 +18,18 @@
         color: #545454;
     }
 
-    .panel-invite__submit {
+    .panel-invite__search {
         margin-top: 16px;
     }
-        .panel-invite__submit.button,
-        .panel-invite__submit .button {
+        .panel-invite__search .input__widget {
+            border-radius: 10px;
+        }
+
+    .panel-invite__submit {
+        margin-top: 16px;
+        width: 100%;
+    }
+        .panel-invite__submit--limited.button,
+        .panel-invite__submit--limited .button {
             width: 228px;
         }

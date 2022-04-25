@@ -350,3 +350,6 @@
 @import url("_invitation.css");
 @import url("_pending.css");
 @import url("_panel-invite.css");
+@import url("_connection-bar.css");
+@import url("_circles-suggest.css");
+@import url("_circles-results.css");

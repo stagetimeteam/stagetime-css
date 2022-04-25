@@ -1,0 +1,12 @@
+.circles-results {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+    .circles-results__item {
+        margin-top: 12px;
+    }
+
+    .circles-results__item:first-child {
+        margin-top: 0;
+    }

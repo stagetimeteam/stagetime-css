@@ -263,6 +263,16 @@
         line-height: 20px;
     }
 
+.input--classic-font {
+
+}
+    .input--classic-font .input__widget {
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        color: #23282C;
+    }
+
 
 .input--badge-alike {
 
