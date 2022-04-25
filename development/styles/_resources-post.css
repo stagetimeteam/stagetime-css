@@ -1,0 +1,35 @@
+.resources-post {
+
+}
+    .resources-post__head {
+        position: relative;
+        padding: 2px 0 2px 36px;
+        font-size: 12px;
+        line-height: 18px;
+        color: #545454;
+    }
+        .resources-post__author {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .resources-post__head .link {
+            font-weight: 600;
+            color: #1F1F1F;
+        }
+
+    .resources-post__content {
+        margin-top: 18px;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .resources-post__footer {
+        margin-top: 8px;
+        margin-left: -12px;
+    }
+        .resources-post__attachment {
+            margin-top: 12px;
+            margin-left: 12px;
+        }

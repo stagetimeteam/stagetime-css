@@ -1,0 +1,38 @@
+.file {
+    display: inline-flex;
+    align-items: center;
+    min-height: 70px;
+    padding: 14px 16px 14px 12px;
+    background-color: transparent;
+    border: 1px solid #E1E3E6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.file:hover {
+    background-color: var(--panel-hover);
+}
+
+.file:active {
+    background-color: var(--panel-active);
+    transition: none;
+}
+
+    .file__icon {
+        margin-right: 9px;
+        flex-shrink: 0;
+        fill: #333333;
+    }
+
+    .file__label {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        font-size: 13px;
+        line-height: 20px;
+        color: #333333;
+        text-align: left;
+    }
