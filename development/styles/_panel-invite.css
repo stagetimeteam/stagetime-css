@@ -11,6 +11,11 @@
         color: #333333;
     }
 
+    .panel-invite__heading--airy {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
     .panel-invite__note {
         margin-top: 8px;
         font-size: 12px;
@@ -23,6 +28,24 @@
     }
         .panel-invite__search .input__widget {
             border-radius: 10px;
+        }
+
+    .panel-invite__area {
+        margin-bottom: 40px;
+    }
+
+    .panel-invite__confirmation {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+        .panel-invite__item {
+            margin-top: 10px;
+            width: 100%;
+            word-break: break-all;
+        }
+
+        .panel-invite__item:first-child {
+            margin-top: 0;
         }
 
     .panel-invite__submit {
