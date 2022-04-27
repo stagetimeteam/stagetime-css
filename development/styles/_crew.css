@@ -1,154 +1,167 @@
 .crew {
-    margin-right: var(--crew-aside-width);
+    height: 100%;
+    display: flex;
+    align-items: stretch;
 }
-    .crew__head {
-        position: fixed;
-        z-index: 30;
-        left: 0;
-        right: 0;
-        top: var(--header-height);
-        height: var(--crew-head-height);
-        background-color: #23282C;
+    .crew__sidebar {
+        width: var(--crew-sidebar-width);
+        flex-shrink: 0;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
-    .crew__tabs {
-        position: fixed;
-        right: 0;
-        top: calc(var(--header-height) + var(--crew-head-height));
-        width: var(--crew-aside-width);
-        display: flex;
-        align-items: stretch;
-        padding-left: 20px;
-        padding-right: 20px;
+    .crew__content {
+        width: calc(100% - var(--crew-sidebar-width));
     }
-        .crew__tag {
+        .crew__head {
+            height: var(--crew-head-height);
+            background-color: #23282C;
+        }
+
+        .crew__body {
             position: relative;
-            background-color: transparent;
-            flex-grow: 1;
-            flex-basis: 0;
-            border: none;
-            padding: 15px 10px;
-            text-align: center;
-            font-weight: 600;
-            font-size: 12px;
-            line-height: 18px;
-            color: #76797C;
-            cursor: pointer;
-            transition: color var(--transition-hover);
+            padding-right: var(--crew-aside-width);
+            height: calc(100% - var(--crew-head-height));
         }
-
-        .crew__tag:hover {
-            color: #23282C;
-        }
-
-        .crew__tag:active {
-            color: #23282C;
-            transition: none;
-        }
-
-            /* hover background */
-            .crew__tag::before {
-                content: "";
+            .crew__tabs {
                 position: absolute;
-                left: 0;
+                right: 0;
                 top: 0;
-                right: 0;
-                bottom: 0;
-                width: 100px;
-                height: 64px;
-                margin: auto;
-                display: block;
-                border-radius: 8px;
-                transition: background-color var(--transition-hover);
+                width: var(--crew-aside-width);
+                display: flex;
+                align-items: stretch;
+                padding-left: 20px;
+                padding-right: 20px;
             }
+                .crew__tag {
+                    position: relative;
+                    background-color: transparent;
+                    flex-grow: 1;
+                    flex-basis: 0;
+                    border: none;
+                    padding: 15px 10px;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #76797C;
+                    cursor: pointer;
+                    transition: color var(--transition-hover);
+                }
 
-            .crew__tag:hover::before {
-                background-color: var(--panel-hover);
-            }
+                .crew__tag:hover {
+                    color: #23282C;
+                }
 
-            .crew__tag:active::before {
-                background-color: var(--panel-active);
-                transition: none;
-            }
+                .crew__tag:active {
+                    color: #23282C;
+                    transition: none;
+                }
 
-            .crew__icon {
-                position: relative;
-                width: 20px;
-                height: 20px;
-                fill: currentColor;
-            }
+                    /* hover background */
+                    .crew__tag::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        width: 100px;
+                        height: 64px;
+                        margin: auto;
+                        display: block;
+                        border-radius: 8px;
+                        transition: background-color var(--transition-hover);
+                    }
 
-            .crew__label {
-                position: relative;
-                display: block;
-                margin-top: 4px;
-            }
+                    .crew__tag:hover::before {
+                        background-color: var(--panel-hover);
+                    }
 
-            /* line */
-            .crew__tag::after {
-                content: "";
+                    .crew__tag:active::before {
+                        background-color: var(--panel-active);
+                        transition: none;
+                    }
+
+                    .crew__icon {
+                        position: relative;
+                        width: 20px;
+                        height: 20px;
+                        fill: currentColor;
+                    }
+
+                    .crew__label {
+                        position: relative;
+                        display: block;
+                        margin-top: 4px;
+                    }
+
+                    /* line */
+                    .crew__tag::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -2px;
+                        left: 50%;
+                        width: 52px;
+                        height: 4px;
+                        display: block;
+                        margin-left: -26px;
+                        border-radius: 2px;
+                    }
+
+
+                .crew__tag--chat {
+                    display: none; /* no need for this on desktop */
+                }
+
+                .crew__tag--current {
+                    color: #23282C;
+                }
+                    .crew__tag--current::before {
+                        display: none;
+                    }
+
+                    .crew__tag--current::after {
+                        background-color: currentColor;
+                    }
+
+            .crew__panel {
                 position: absolute;
-                bottom: -2px;
-                left: 50%;
-                width: 52px;
-                height: 4px;
-                display: block;
-                margin-left: -26px;
-                border-radius: 2px;
-            }
-
-
-        .crew__tag--current {
-            color: #23282C;
-        }
-            .crew__tag--current::before {
-                display: none;
-            }
-
-            .crew__tag--current::after {
-                background-color: currentColor;
-            }
-
-        .crew__bodies {
-            position: relative;
-            padding-top: 20px;
-            flex-grow: 1;
-        }
-            .crew__body {
-                height: 100%;
-                display: none;
-            }
-
-            .crew__body--visible {
-                display: block;
-            }
-
-            .crew__body:not(.crew__body--chat) {
-                position: fixed;
                 right: 0;
-                top: calc(var(--header-height) + var(--crew-head-height) + var(--crew-tabs-height));
+                top: var(--crew-tabs-height);
                 bottom: 0;
                 width: var(--crew-aside-width);
+                display: none;
                 overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
             }
 
-            .crew__body--chat {
-                margin-top: var(--crew-head-height);
+            .crew__panel--visible {
+                display: block;
             }
 
+            .crew__panel--chat {
+                display: block; /* always show on desktop */
+                position: static;
+                width: auto;
+                height: 100%;
+                border-right: 1px solid #E1E3E6;
+            }
+                .crew__feed {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                    .crew__messages {
+                        flex-grow: 1;
+                        overflow-y: auto;
+                        -webkit-overflow-scrolling: touch;
+                    }
+
+                    .crew__form {
+                        flex-shrink: 0;
+                        padding: 24px 36px;
+                    }
 
 
 
-
-
-
-
-@media (min-width: 768px) {
-    .crew__tag--chat {
-        display: none;
-    }
-
-    .crew__body--chat {
-        display: block;
-    }
-}
