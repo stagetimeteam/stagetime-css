@@ -31,6 +31,9 @@
     --home-aside-shortened: 296px;
     --home-aside-full: 366px;
     --artist-photo-mobile-height: 562px;
+    --crew-aside-width: 430px;
+    --crew-tabs-height: 75px;
+    --crew-head-height: 106px;
 
     /* default theme: */
     --theme-main: #C6B1A6;
