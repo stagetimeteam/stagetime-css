@@ -1,0 +1,151 @@
+.crew {
+    display: flex;
+    align-items: stretch;
+}
+    .crew__feed {
+        margin-left: auto;
+        width: 713px;
+    }
+
+    .crew__aside {
+        width: 431px;
+        border-left: 1px solid #E1E3E6;
+        display: flex;
+        flex-direction: column;
+    }
+        .crew__tabs {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            align-items: stretch;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+            .crew__tag {
+                position: relative;
+                background-color: transparent;
+                flex-grow: 1;
+                flex-basis: 0;
+                border: none;
+                padding: 15px 10px;
+                text-align: center;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #76797C;
+                cursor: pointer;
+                transition: color var(--transition-hover);
+            }
+
+            .crew__tag:hover {
+                color: #23282C;
+            }
+
+            .crew__tag:active {
+                color: #23282C;
+                transition: none;
+            }
+
+                /* hover background */
+                .crew__tag::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 100px;
+                    height: 64px;
+                    margin: auto;
+                    display: block;
+                    border-radius: 8px;
+                    transition: background-color var(--transition-hover);
+                }
+
+                .crew__tag:hover::before {
+                    background-color: var(--panel-hover);
+                }
+
+                .crew__tag:active::before {
+                    background-color: var(--panel-active);
+                    transition: none;
+                }
+
+                .crew__icon {
+                    position: relative;
+                    width: 20px;
+                    height: 20px;
+                    fill: currentColor;
+                }
+
+                .crew__label {
+                    position: relative;
+                    display: block;
+                    margin-top: 4px;
+                }
+
+                /* line */
+                .crew__tag::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -2px;
+                    left: 50%;
+                    width: 52px;
+                    height: 4px;
+                    display: block;
+                    margin-left: -26px;
+                    border-radius: 2px;
+                }
+
+
+            .crew__tag--current {
+                color: #23282C;
+            }
+                .crew__tag--current::before {
+                    display: none;
+                }
+
+                .crew__tag--current::after {
+                    background-color: currentColor;
+                }
+
+        .crew__listing {
+            position: relative;
+            padding-top: 20px;
+            flex-grow: 1;
+        }
+            .crew__listing::before {
+                content: "";
+                position: absolute;
+                left: -1px;
+                top: 0;
+                right: 0;
+                height: 30px;
+                border-top: 1px solid #E8E8E8;
+                border-left: 1px solid #E8E8E8;
+                border-right: 1px solid #E8E8E8;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
+            }
+
+            .crew__panel {
+                height: 100%;
+                display: none;
+            }
+
+            .crew__panel--visible {
+                display: block;
+            }
+
+
+
+
+@media (min-width: 768px) {
+    .crew__tag--chat {
+        display: none;
+    }
+
+    .crew__panel--chat {
+        display: block;
+    }
+}
