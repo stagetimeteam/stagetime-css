@@ -1,41 +1,45 @@
 .resources {
-    padding: 15px 42px 40px;
     height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
-    .resources__edit {
-        margin: -5px -21px 20px;
+    .resources__inner {
+        padding: 0 40px var(--padding-under-chat);
     }
-
-    .resources__list {
-        padding-top: 11px;
-    }
-        .resources__item {
-            position: relative;
-            margin-top: 38px;
-            padding-top: 38px;
+        .resources__edit {
+            margin: 0 -20px 18px;
         }
 
-        .resources__item:first-child {
-            margin-top: 0;
-            padding-top: 0;
+        .resources__list {
+            padding-top: 11px;
         }
-            .resources__item::before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: -21px;
-                right: -21px;
-                height: 1px;
-                background-color: #E1E3E6;
+            .resources__item {
+                position: relative;
+                margin-top: 38px;
+                padding-top: 38px;
             }
 
-            .resources__item:first-child::before {
-                display: none;
+            .resources__item:first-child {
+                margin-top: 0;
+                padding-top: 0;
             }
+                .resources__item::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -20px;
+                    right: -20px;
+                    height: 1px;
+                    background-color: #E1E3E6;
+                }
+
+                .resources__item:first-child::before {
+                    display: none;
+                }
 
 
-    .resources__form {
-        margin-top: -5px;
-        margin-bottom: 20px;
-    }
+        .resources__form {
+            margin-top: -5px;
+            margin-bottom: 20px;
+        }
 

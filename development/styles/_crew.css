@@ -27,12 +27,28 @@
                 position: absolute;
                 right: 0;
                 top: 0;
+                padding-bottom: 30px;
                 width: var(--crew-aside-width);
                 display: flex;
                 align-items: stretch;
                 padding-left: 20px;
                 padding-right: 20px;
+                overflow: hidden; /* to cut (1) and prevent horizontal scrollbar */
             }
+                .crew__tabs::before {
+                    content: "";
+                    position: absolute;
+                    left: -1px;
+                    bottom: 0;
+                    right: -1px; /* (1) */
+                    height: 30px;
+                    border-top-left-radius: 30px;
+                    border-top-right-radius: 30px;
+                    border-left: 1px solid #E1E3E6;
+                    border-top: 1px solid #E1E3E6;
+                    border-right: 1px solid #E1E3E6;
+                }
+
                 .crew__tag {
                     position: relative;
                     background-color: transparent;
@@ -103,7 +119,7 @@
                         bottom: -2px;
                         left: 50%;
                         width: 52px;
-                        height: 4px;
+                        height: 3px;
                         display: block;
                         margin-left: -26px;
                         border-radius: 2px;
@@ -116,6 +132,7 @@
 
                 .crew__tag--current {
                     color: #23282C;
+                    cursor: default;
                 }
                     .crew__tag--current::before {
                         display: none;
@@ -132,8 +149,6 @@
                 bottom: 0;
                 width: var(--crew-aside-width);
                 display: none;
-                overflow-y: auto;
-                -webkit-overflow-scrolling: touch;
             }
 
             .crew__panel--visible {
@@ -160,7 +175,8 @@
 
                     .crew__form {
                         flex-shrink: 0;
-                        padding: 24px 36px;
+                        padding: var(--padding-under-chat) 36px;
+                        border-top: 1px solid #E1E3E6;
                     }
 
 

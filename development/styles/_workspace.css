@@ -1,27 +1,35 @@
 .workspace {
-    padding: 15px 42px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
-    .workspace__edit {
-        margin: -5px -21px 20px;
+    .workspace__body {
+        flex-grow: 1;
     }
+        .workspace__inner {
+            padding: 0 40px var(--padding-under-chat);
+        }
+            .workspace__edit {
+                margin: 0 -20px 20px;
+            }
 
-    .workspace__content {
+            .workspace__content {
 
-    }
+            }
 
     .workspace__footer {
+        flex-shrink: 0;
         margin-top: 22px;
         position: relative;
-        padding-top: 22px;
-        padding-bottom: 22px;
+        padding: 22px 20px;
         text-align: right;
     }
         .workspace__footer::before {
             content: "";
             position: absolute;
             top: 0;
-            left: -21px;
-            right: -21px;
+            left: 0;
+            right: 0;
             height: 1px;
             background-color: #E1E3E6;
         }

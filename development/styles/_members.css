@@ -1,26 +1,31 @@
 .members {
-    padding: 15px 42px 40px;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
-    .members__edit {
-        margin: -5px -21px 18px;
+    .members__inner {
+        padding: 0 40px var(--padding-under-chat);
     }
-
-    .members__emptiness {
-        padding: 24px;
-        text-align: center;
-    }
-        .members__rings {
-            margin-bottom: 16px;
-            fill: #23282C;
+        .members__edit {
+            margin: 0 -20px 18px;
         }
 
-        .members__emptiness-text {
-            font-size: 13px;
-            line-height: 22px;
-            color: #23282C;
+        .members__emptiness {
+            padding: 24px;
+            text-align: center;
         }
+            .members__rings {
+                margin-bottom: 16px;
+                fill: #23282C;
+            }
 
-    .members__list {
-        margin-left: -21px;
-        margin-right: -21px;
-    }
+            .members__emptiness-text {
+                font-size: 13px;
+                line-height: 22px;
+                color: #23282C;
+            }
+
+        .members__list {
+            margin-left: -20px;
+            margin-right: -20px;
+        }
