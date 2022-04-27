@@ -1,8 +1,9 @@
 .crew {
-
+    margin-right: var(--crew-aside-width);
 }
     .crew__head {
         position: fixed;
+        z-index: 30;
         left: 0;
         right: 0;
         top: var(--header-height);
@@ -11,6 +12,10 @@
     }
 
     .crew__tabs {
+        position: fixed;
+        right: 0;
+        top: calc(var(--header-height) + var(--crew-head-height));
+        width: var(--crew-aside-width);
         display: flex;
         align-items: stretch;
         padding-left: 20px;
@@ -118,137 +123,20 @@
                 display: block;
             }
 
-
-
-
-@media (min-width: 768px) {
-
-    .crew {
-        margin-right: var(--crew-aside-width);
-    }
-        .crew__tabs {
-            position: fixed;
-            right: 0;
-            top: calc(var(--header-height) + var(--crew-head-height));
-            width: var(--crew-aside-width);
-            /*position: relative;*/
-            /*z-index: 10;*/
-            /*display: flex;*/
-            /*align-items: stretch;*/
-            /*padding-left: 20px;*/
-            /*padding-right: 20px;*/
-        }
-            .crew__tag {
-                /*position: relative;*/
-                /*background-color: transparent;*/
-                /*flex-grow: 1;*/
-                /*flex-basis: 0;*/
-                /*border: none;*/
-                /*padding: 15px 10px;*/
-                /*text-align: center;*/
-                /*font-weight: 600;*/
-                /*font-size: 12px;*/
-                /*line-height: 18px;*/
-                /*color: #76797C;*/
-                /*cursor: pointer;*/
-                /*transition: color var(--transition-hover);*/
+            .crew__body:not(.crew__body--chat) {
+                position: fixed;
+                right: 0;
+                top: calc(var(--header-height) + var(--crew-head-height) + var(--crew-tabs-height));
+                bottom: 0;
+                width: var(--crew-aside-width);
+                overflow-y: auto;
             }
 
-            .crew__tag:hover {
-                /*color: #23282C;*/
+            .crew__body--chat {
+                margin-top: var(--crew-head-height);
             }
 
-            .crew__tag:active {
-                /*color: #23282C;*/
-                /*transition: none;*/
-            }
 
-                /* hover background */
-                .crew__tag::before {
-                    /*content: "";*/
-                    /*position: absolute;*/
-                    /*left: 0;*/
-                    /*top: 0;*/
-                    /*right: 0;*/
-                    /*bottom: 0;*/
-                    /*width: 100px;*/
-                    /*height: 64px;*/
-                    /*margin: auto;*/
-                    /*display: block;*/
-                    /*border-radius: 8px;*/
-                    /*transition: background-color var(--transition-hover);*/
-                }
-
-                .crew__tag:hover::before {
-                    /*background-color: var(--panel-hover);*/
-                }
-
-                .crew__tag:active::before {
-                    /*background-color: var(--panel-active);*/
-                    /*transition: none;*/
-                }
-
-                .crew__icon {
-                    /*position: relative;*/
-                    /*width: 20px;*/
-                    /*height: 20px;*/
-                    /*fill: currentColor;*/
-                }
-
-                .crew__label {
-                    /*position: relative;*/
-                    /*display: block;*/
-                    /*margin-top: 4px;*/
-                }
-
-                /* line */
-                .crew__tag::after {
-                    /*content: "";*/
-                    /*position: absolute;*/
-                    /*bottom: -2px;*/
-                    /*left: 50%;*/
-                    /*width: 52px;*/
-                    /*height: 4px;*/
-                    /*display: block;*/
-                    /*margin-left: -26px;*/
-                    /*border-radius: 2px;*/
-                }
-
-
-            .crew__tag--current {
-                /*color: #23282C;*/
-            }
-                .crew__tag--current::before {
-                    /*display: none;*/
-                }
-
-                .crew__tag--current::after {
-                    /*background-color: currentColor;*/
-                }
-
-            .crew__bodies {
-                /*position: relative;*/
-                /*padding-top: 20px;*/
-                /*flex-grow: 1;*/
-            }
-                .crew__body {
-                    /*height: 100%;*/
-                    /*display: none;*/
-                }
-
-                .crew__body:not(.crew__body--chat) {
-                    position: fixed;
-                    right: 0;
-                    top: calc(var(--header-height) + var(--crew-head-height) + var(--crew-tabs-height));
-                    bottom: 0;
-                    width: var(--crew-aside-width);
-                    overflow-y: auto;
-                }
-
-                .crew__body--visible {
-                    /*display: block;*/
-                }
-}
 
 
 
