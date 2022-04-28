@@ -249,6 +249,7 @@
     .user-card--home .user-card__preview.avatar,
     .user-card--home .user-card__preview .avatar {
         box-shadow: none;
+        border-radius: 5px;
     }
 
     .user-card--home .user-card__data {
@@ -272,10 +273,11 @@
             }
 
         .user-card--home .user-card__note {
-            margin-top: 0;
+            margin-top: 1;
             font-weight: normal;
             font-size: 12px;
             line-height: 16px;
+            color: #545454;
         }
 
     .user-card--home .user-card__add {
