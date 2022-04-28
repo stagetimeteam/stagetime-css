@@ -1,16 +1,17 @@
 .workspace {
-    height: auto;
-    display: block;
+    /*height: auto;*/
+    /*display: block;*/
     /*flex-direction: column;*/
 }
     .workspace__body {
         /*flex-grow: 1;*/
-        overflow-y: visible;
+        /*overflow-y: visible;*/
     }
         .workspace__inner {
             /*padding: 0 40px var(--padding-under-chat);*/
             padding-left: 20px;
             padding-right: 20px;
+            padding-top: 20px;
         }
             .workspace__edit {
                 /*margin: 0 -20px 20px;*/

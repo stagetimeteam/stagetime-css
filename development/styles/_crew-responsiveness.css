@@ -1,6 +1,6 @@
 .crew {
     position: relative;
-    /*height: 100%;*/
+    height: 100%;
     display: block;
     /*align-items: stretch;*/
 }
@@ -8,6 +8,7 @@
         position: absolute;
         z-index: 90;
         right: 100%;
+        margin-right: 11px;
         top: 0;
         bottom: 0;
         width: 260px;
@@ -21,6 +22,7 @@
     }
         .crew__side-head {
             /*padding: 35px 0 0 76px;*/
+            padding-right: 56px;
             /*height: var(--crew-head-height);*/
             /*background-color: #44474A;*/
             /*background-image: url("../images/rings.svg");*/
@@ -41,6 +43,40 @@
                 /*line-height: 16px;*/
                 /*color: #FFFFFF;*/
             }
+
+            .crew__close-sidebar {
+                position: absolute;
+                right: 14px;
+                top: 31px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 44px;
+                height: 44px;
+                padding: 0;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+            }
+                .crew__close-sidebar::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    display: block;
+                    width: 32px;
+                    height: 32px;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 50%;
+                }
+
+                .crew__cross {
+                    vertical-align: top;
+                    fill: #FFFFFF;
+                }
 
         .crew__navigation {
             /*height: calc(100% - var(--crew-head-height));*/
@@ -85,13 +121,17 @@
 
     .crew__content {
         width: auto;
+        height: 100%;
     }
         .crew__head {
+            padding: 20px 20px 20px 74px;
             /*height: var(--crew-head-height);*/
             /*background-color: #23282C;*/
         }
             .crew__show-sidebar {
-                position: relative;
+                position: absolute;
+                left: 0;
+                top: 0;
                 display: block;
                 width: 72px;
                 height: 76px;
@@ -119,10 +159,21 @@
                     border-radius: 50%;
                 }
 
+            .crew__heading {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            .crew__note {
+                margin-top: 4px;
+                font-size: 11px;
+                line-height: 18px;
+            }
+
         .crew__body {
             /*position: relative;*/
             padding-right: 0;
-            height: auto;
+            height: calc(100% - var(--crew-head-height));
         }
             .crew__tabs {
                 position: static;
@@ -252,6 +303,7 @@
                 /*top: var(--crew-tabs-height);*/
                 /*bottom: 0;*/
                 width: auto;
+                height: calc(100% - var(--crew-tabs-mobile-height));
                 display: none; /* hide all panels again because .crew__panel--chat was always visible on desktop */
             }
 
@@ -266,19 +318,13 @@
                 /*height: 100%;*/
                 border-right: none;
             }
-
-            .crew__panel:not(.crew__panel--chat) {
-                padding-top: 20px;
-            }
-
                 .crew__feed {
-                    height: auto;
-                    display: block;
+                    /*display: block;*/
                     /*flex-direction: column;*/
                 }
                     .crew__messages {
                         /*flex-grow: 1;*/
-                        overflow-y: visible;
+                        /*overflow-y: visible;*/
                         /*-webkit-overflow-scrolling: touch;*/
                     }
 

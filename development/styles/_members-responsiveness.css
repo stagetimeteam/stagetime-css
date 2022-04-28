@@ -1,12 +1,13 @@
 .members {
-    height: auto;
-    overflow-y: visible;
+    /*height: auto;*/
+    /*overflow-y: visible;*/
     /*-webkit-overflow-scrolling: touch;*/
 }
     .members__inner {
         /*padding: 0 40px var(--padding-under-chat);*/
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
         .members__edit {
             /*margin: 0 -20px 18px;*/

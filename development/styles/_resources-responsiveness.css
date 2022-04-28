@@ -1,12 +1,13 @@
 .resources {
-    height: auto;
-    overflow-y: visible;
+    /*height: auto;*/
+    /*overflow-y: visible;*/
     /*-webkit-overflow-scrolling: touch;*/
 }
     .resources__inner {
         /*padding: 0 40px var(--padding-under-chat);*/
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 20px;
     }
         .resources__edit {
             margin-left: 0;
