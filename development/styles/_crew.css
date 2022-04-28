@@ -6,9 +6,47 @@
     .crew__sidebar {
         width: var(--crew-sidebar-width);
         flex-shrink: 0;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
     }
+        .crew__side-head {
+            padding: 35px 0 0 76px;
+            height: var(--crew-head-height);
+            background-color: #44474A;
+            background-image: url("../images/rings.svg");
+            background-size: 30px 30px;
+            background-repeat: no-repeat;
+            background-position: 28px 37px;
+        }
+            .crew__circles {
+                display: block;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #FFFFFF;
+            }
+
+            .crew__updated {
+                font-size: 11px;
+                line-height: 16px;
+                color: #FFFFFF;
+            }
+
+        .crew__navigation {
+            height: calc(100% - var(--crew-head-height));
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            background-color: #EEF0F3;
+        }
+            .crew__latch {
+                padding: 24px 20px;
+            }
+                .crew__pending {
+
+                }
+
+                .crew__pending.button,
+                .crew__pending .button {
+                    width: 100%;
+                }
 
     .crew__content {
         width: calc(100% - var(--crew-sidebar-width));

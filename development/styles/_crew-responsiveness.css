@@ -31,7 +31,6 @@
                 padding-bottom: 0;
                 width: auto;
                 border-bottom: 1px solid #E1E3E6;
-                margin-bottom: 20px;
                 /*display: flex;*/
                 /*align-items: stretch;*/
                 padding-left: 0;
@@ -167,6 +166,11 @@
                 /*height: 100%;*/
                 border-right: none;
             }
+
+            .crew__panel:not(.crew__panel--chat) {
+                padding-top: 20px;
+            }
+
                 .crew__feed {
                     height: auto;
                     display: block;
