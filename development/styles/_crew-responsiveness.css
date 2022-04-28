@@ -1,15 +1,87 @@
 .crew {
+    position: relative;
     /*height: 100%;*/
     display: block;
     /*align-items: stretch;*/
 }
     .crew__sidebar {
-        width: auto;
-        display: block;
-        /*flex-shrink: 0;*/
+        position: absolute;
+        z-index: 90;
+        right: 100%;
+        top: 0;
+        bottom: 0;
+        width: 260px;
         overflow-y: visible;
-        /*-webkit-overflow-scrolling: touch;*/
+        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+        transition: margin-right var(--transition-long-show);
     }
+
+    .crew--expanded .crew__sidebar {
+        margin-right: -260px;
+    }
+        .crew__side-head {
+            /*padding: 35px 0 0 76px;*/
+            /*height: var(--crew-head-height);*/
+            /*background-color: #44474A;*/
+            /*background-image: url("../images/rings.svg");*/
+            /*background-size: 30px 30px;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: 28px 37px;*/
+        }
+            .crew__circles {
+                /*display: block;*/
+                /*font-weight: 600;*/
+                /*font-size: 12px;*/
+                /*line-height: 18px;*/
+                /*color: #FFFFFF;*/
+            }
+
+            .crew__updated {
+                /*font-size: 11px;*/
+                /*line-height: 16px;*/
+                /*color: #FFFFFF;*/
+            }
+
+        .crew__navigation {
+            /*height: calc(100% - var(--crew-head-height));*/
+            /*overflow-y: auto;*/
+            /*-webkit-overflow-scrolling: touch;*/
+            /*background-color: #EEF0F3;*/
+        }
+            .crew__latch {
+                /*padding-top: 14px;*/
+                /*padding-bottom: 40px;*/
+            }
+                .crew__pending {
+                    /*position: relative;*/
+                    /*margin: 14px 20px;*/
+                }
+                    .crew__pending .button {
+                        /*width: 100%;*/
+                    }
+
+                    .crew__pending-counter {
+                        /*position: absolute;*/
+                        /*right: -8px;*/
+                        /*top: -8px;*/
+                        /*box-shadow: 0 0 0 1px #FFFFFF;*/
+                        /*font-weight: bold;*/
+                        /*pointer-events: none;*/
+                    }
+
+            .crew__list {
+
+            }
+
+            .crew__add {
+                /*margin-top: 12px;*/
+                /*margin-left: 20px;*/
+            }
+            .crew__add.button,
+            .crew__add .button {
+                /*box-shadow: none;*/
+            }
+
 
     .crew__content {
         width: auto;
@@ -18,6 +90,34 @@
             /*height: var(--crew-head-height);*/
             /*background-color: #23282C;*/
         }
+            .crew__show-sidebar {
+                position: relative;
+                display: block;
+                width: 72px;
+                height: 76px;
+                border: none;
+                padding: 0;
+                background-color: transparent;
+                background-image: url("../images/rings.svg");
+                background-size: 30px 30px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                text-indent: 200%;
+                white-space: nowrap;
+                overflow: hidden;
+                cursor: pointer;
+            }
+                .crew__show-sidebar--has-updates::after {
+                    content: "";
+                    position: absolute;
+                    right: 15px;
+                    top: 19px;
+                    display: block;
+                    width: 8px;
+                    height: 8px;
+                    background-color: #EB5757;
+                    border-radius: 50%;
+                }
 
         .crew__body {
             /*position: relative;*/

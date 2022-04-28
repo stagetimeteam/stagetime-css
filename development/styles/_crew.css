@@ -78,6 +78,9 @@
             height: var(--crew-head-height);
             background-color: #23282C;
         }
+            .crew__show-sidebar {
+                display: none;
+            }
 
         .crew__body {
             position: relative;
