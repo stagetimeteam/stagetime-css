@@ -12,6 +12,6 @@
 }
 
 .counter--danger {
-    background-color: #EA4524;
+    background-color: var(--red);
     color: #FFFFFF;
 }

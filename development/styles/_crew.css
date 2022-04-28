@@ -37,16 +37,39 @@
             background-color: #EEF0F3;
         }
             .crew__latch {
-                padding: 24px 20px;
+                padding-top: 14px;
+                padding-bottom: 40px;
             }
                 .crew__pending {
-
+                    position: relative;
+                    margin: 14px 20px;
                 }
+                    .crew__pending .button {
+                        width: 100%;
+                    }
 
-                .crew__pending.button,
-                .crew__pending .button {
-                    width: 100%;
-                }
+                    .crew__pending-counter {
+                        position: absolute;
+                        right: -8px;
+                        top: -8px;
+                        box-shadow: 0 0 0 1px #FFFFFF;
+                        font-weight: bold;
+                        pointer-events: none;
+                    }
+
+                    .crew__list {
+
+                    }
+
+                    .crew__add {
+                        margin-top: 12px;
+                        margin-left: 20px;
+                    }
+                        .crew__add.button,
+                        .crew__add .button {
+                            box-shadow: none;
+                        }
+
 
     .crew__content {
         width: calc(100% - var(--crew-sidebar-width));
