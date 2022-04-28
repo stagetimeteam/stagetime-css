@@ -1,0 +1,190 @@
+.crew {
+    /*height: 100%;*/
+    display: block;
+    /*align-items: stretch;*/
+}
+    .crew__sidebar {
+        width: auto;
+        display: block;
+        /*flex-shrink: 0;*/
+        overflow-y: visible;
+        /*-webkit-overflow-scrolling: touch;*/
+    }
+
+    .crew__content {
+        width: auto;
+    }
+        .crew__head {
+            /*height: var(--crew-head-height);*/
+            /*background-color: #23282C;*/
+        }
+
+        .crew__body {
+            /*position: relative;*/
+            padding-right: 0;
+            height: auto;
+        }
+            .crew__tabs {
+                position: static;
+                /*right: 0;*/
+                /*top: 0;*/
+                padding-bottom: 0;
+                width: auto;
+                border-bottom: 1px solid #E1E3E6;
+                margin-bottom: 20px;
+                /*display: flex;*/
+                /*align-items: stretch;*/
+                padding-left: 0;
+                padding-right: 0;
+                overflow: visible; /* to cut (1) and prevent horizontal scrollbar */
+            }
+                .crew__tabs::before {
+                    display: none;
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*left: -1px;*/
+                    /*bottom: 0;*/
+                    /*right: -1px; !* (1) *!*/
+                    /*height: 30px;*/
+                    /*border-top-left-radius: 30px;*/
+                    /*border-top-right-radius: 30px;*/
+                    /*border-left: 1px solid #E1E3E6;*/
+                    /*border-top: 1px solid #E1E3E6;*/
+                    /*border-right: 1px solid #E1E3E6;*/
+                }
+
+                .crew__tag {
+                    /*position: relative;*/
+                    /*background-color: transparent;*/
+                    /*flex-grow: 1;*/
+                    /*flex-basis: 0;*/
+                    /*border: none;*/
+                    /*padding: 15px 10px;*/
+                    /*text-align: center;*/
+                    /*font-weight: 600;*/
+                    /*font-size: 12px;*/
+                    /*line-height: 18px;*/
+                    /*color: #76797C;*/
+                    /*cursor: pointer;*/
+                    /*transition: color var(--transition-hover);*/
+                }
+
+                .crew__tag:hover {
+                    /*color: #23282C;*/
+                }
+
+                .crew__tag:active {
+                    /*color: #23282C;*/
+                    /*transition: none;*/
+                }
+
+                    /* hover background */
+                    .crew__tag::before {
+                        display: none;
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: 0;*/
+                        /*top: 0;*/
+                        /*right: 0;*/
+                        /*bottom: 0;*/
+                        /*width: 100px;*/
+                        /*height: 64px;*/
+                        /*margin: auto;*/
+                        /*display: block;*/
+                        /*border-radius: 8px;*/
+                        /*transition: background-color var(--transition-hover);*/
+                    }
+
+                    .crew__tag:hover::before {
+                        /*background-color: var(--panel-hover);*/
+                    }
+
+                    .crew__tag:active::before {
+                        /*background-color: var(--panel-active);*/
+                        /*transition: none;*/
+                    }
+
+                    .crew__icon {
+                        /*position: relative;*/
+                        /*width: 20px;*/
+                        /*height: 20px;*/
+                        /*fill: currentColor;*/
+                    }
+
+                    .crew__label {
+                        /*position: relative;*/
+                        /*display: block;*/
+                        /*margin-top: 4px;*/
+                    }
+
+                    /* line */
+                    .crew__tag::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*bottom: -2px;*/
+                        /*left: 50%;*/
+                        /*width: 52px;*/
+                        /*height: 3px;*/
+                        /*display: block;*/
+                        /*margin-left: -26px;*/
+                        /*border-radius: 2px;*/
+                    }
+
+
+                .crew__tag--chat {
+                    display: block; /* was hidden on desktop */
+                }
+
+                .crew__tag--current {
+                    /*color: #23282C;*/
+                    /*cursor: default;*/
+                }
+                    .crew__tag--current::before {
+                        /*display: none;*/
+                    }
+
+                    .crew__tag--current::after {
+                        /*background-color: currentColor;*/
+                    }
+
+            .crew__panel {
+                position: static;
+                /*right: 0;*/
+                /*top: var(--crew-tabs-height);*/
+                /*bottom: 0;*/
+                width: auto;
+                display: none; /* hide all panels again because .crew__panel--chat was always visible on desktop */
+            }
+
+            .crew__panel--visible {
+                display: block;
+            }
+
+            .crew__panel--chat {
+                /*display: block; !* always show on desktop *!*/
+                /*position: static;*/
+                /*width: auto;*/
+                /*height: 100%;*/
+                border-right: none;
+            }
+                .crew__feed {
+                    height: auto;
+                    display: block;
+                    /*flex-direction: column;*/
+                }
+                    .crew__messages {
+                        /*flex-grow: 1;*/
+                        overflow-y: visible;
+                        /*-webkit-overflow-scrolling: touch;*/
+                    }
+
+                    .crew__form {
+                        /*flex-shrink: 0;*/
+                        /*padding: var(--padding-under-chat) 36px;*/
+                        padding-left: 20px;
+                        padding-right: 20px;
+                        /*border-top: 1px solid #E1E3E6;*/
+                    }
+
+
+

@@ -11,12 +11,14 @@
 
     .invitation__body {
         flex-grow: 1;
+        overflow: hidden;
     }
         .invitation__heading {
             font-weight: 600;
             font-size: 13px;
             line-height: 20px;
             color: #1F1F1F;
+            word-wrap: break-word;
         }
 
         .invitation__note {

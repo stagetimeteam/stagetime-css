@@ -1,0 +1,49 @@
+.workspace {
+    height: auto;
+    display: block;
+    /*flex-direction: column;*/
+}
+    .workspace__body {
+        /*flex-grow: 1;*/
+        overflow-y: visible;
+    }
+        .workspace__inner {
+            /*padding: 0 40px var(--padding-under-chat);*/
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+            .workspace__edit {
+                /*margin: 0 -20px 20px;*/
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .workspace__content {
+
+            }
+
+    .workspace__footer {
+        /*flex-shrink: 0;*/
+        /*margin-top: 22px;*/
+        /*position: relative;*/
+        /*padding: 22px 20px;*/
+        /*text-align: right;*/
+    }
+        .workspace__footer::before {
+            /*content: "";*/
+            /*position: absolute;*/
+            /*top: 0;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*height: 1px;*/
+            /*background-color: #E1E3E6;*/
+        }
+
+        .workspace__save {
+
+        }
+
+        .workspace__save.button,
+        .workspace__save .button {
+            /*width: 142px;*/
+        }

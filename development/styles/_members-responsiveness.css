@@ -1,0 +1,33 @@
+.members {
+    height: auto;
+    overflow-y: visible;
+    /*-webkit-overflow-scrolling: touch;*/
+}
+    .members__inner {
+        /*padding: 0 40px var(--padding-under-chat);*/
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+        .members__edit {
+            /*margin: 0 -20px 18px;*/
+            margin-top: -20px;
+        }
+
+        .members__emptiness {
+            /*padding: 24px;*/
+            /*text-align: center;*/
+        }
+            .members__rings {
+                /*margin-bottom: 16px;*/
+                /*fill: #23282C;*/
+            }
+
+            .members__emptiness-text {
+                /*font-size: 13px;*/
+                /*line-height: 22px;*/
+                /*color: #23282C;*/
+            }
+
+        .members__list {
+
+        }
