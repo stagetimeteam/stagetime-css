@@ -11,3 +11,6 @@
     .modal-foot__operations {
         margin-left: auto;
     }
+        .modal-foot__operations .button {
+            min-width: 100px;
+        }

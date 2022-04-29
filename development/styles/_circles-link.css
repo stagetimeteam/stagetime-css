@@ -8,10 +8,10 @@
 }
 
 .circles-link:hover {
-    background-color: #DFDFDF;
+    background-color: var(--grey-panel-hover);
 }
 .circles-link:active {
-    background-color: #D4D4D4;
+    background-color: var(--grey-panel-active);
     transition: none;
 }
 

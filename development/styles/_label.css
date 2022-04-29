@@ -1,18 +1,19 @@
 .label {
-    font-weight: inherit; /* bootstrap */
     margin-bottom: 0; /* bootstrap */
     padding: 0; /* bootstrap */
     display: table;
     vertical-align: top;
-    border-bottom: 14px solid transparent;
-    font-size: 13px;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 11px solid transparent;
+    font-weight: 600;  /* bootstrap */
+    font-size: 14px;
     line-height: 20px;
     color: #545454;
 }
-
-.label--larger {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    border-bottom: 11px solid transparent;
-}
+    .label__note {
+        margin-left: 14px;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 14px;
+    }

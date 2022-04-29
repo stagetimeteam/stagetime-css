@@ -1,0 +1,10 @@
+.circle-settings {
+    padding: 23px var(--modal-padding) 46px;
+}
+    .circle-settings__field {
+        margin-top: 26px;
+    }
+
+    .circle-settings__field:first-child {
+        margin-top: 0;
+    }

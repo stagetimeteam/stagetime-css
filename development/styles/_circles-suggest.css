@@ -4,7 +4,7 @@
     max-width: 100%;
     min-width: 204px;
     padding: 10px;
-    background-color: #FFFFFF;
+    background-color: #F4F4F4;
     border-radius: 20px;
 }
     .circles-suggest__preview {
@@ -17,7 +17,7 @@
         font-weight: 600;
         font-size: 11px;
         line-height: 20px;
-        color: #23282C;
+        color: #757575;
     }
         .circles-suggest__name .link {
             font-weight: 600;
@@ -40,11 +40,11 @@
     }
 
     .circles-suggest__cancel:hover {
-        background-color: var(--panel-hover);
+        background-color: var(--grey-panel-hover);
     }
 
     .circles-suggest__cancel:active {
-        background-color: var(--panel-active);
+        background-color: var(--grey-panel-active);
     }
 
         .circles-suggest__cross {
@@ -56,3 +56,66 @@
         .circles-suggest__cancel:hover .circles-suggest__cross {
 
         }
+
+
+
+.circles-suggest--inverted {
+    /*display: inline-flex;*/
+    /*align-items: center;*/
+    /*max-width: 100%;*/
+    /*min-width: 204px;*/
+    /*padding: 10px;*/
+    background-color: #FFFFFF;
+    /*border-radius: 20px;*/
+}
+    .circles-suggest--inverted .circles-suggest__preview {
+        /*flex-shrink: 0;*/
+        /*margin: -2px 10px -2px -2px*/
+    }
+
+    .circles-suggest--inverted .circles-suggest__name {
+        /*margin-right: auto;*/
+        /*font-weight: 600;*/
+        /*font-size: 11px;*/
+        /*line-height: 20px;*/
+        color: #23282C;
+    }
+        .circles-suggest--inverted .circles-suggest__name .link {
+            /*font-weight: 600;*/
+        }
+
+    .circles-suggest--inverted .circles-suggest__cancel {
+        /*flex-shrink: 0;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*width: 32px;*/
+        /*height: 32px;*/
+        /*margin: -6px -6px -6px 10px;*/
+        /*background-color: transparent;*/
+        /*padding: 0;*/
+        /*border: none;*/
+        /*border-radius: 50%;*/
+        /*cursor: pointer;*/
+        /*transition: background-color var(--transition-hover);*/
+    }
+
+    .circles-suggest--inverted .circles-suggest__cancel:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .circles-suggest--inverted .circles-suggest__cancel:active {
+        background-color: var(--panel-active);
+    }
+
+        .circles-suggest--inverted .circles-suggest__cross {
+            /*width: 12px;*/
+            /*height: 12px;*/
+            /*fill: #757575;*/
+        }
+
+        .circles-suggest--inverted .circles-suggest__cancel:hover .circles-suggest__cross {
+
+        }
+
+
