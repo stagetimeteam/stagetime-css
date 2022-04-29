@@ -8,3 +8,8 @@
     .circle-settings__field:first-child {
         margin-top: 0;
     }
+        .circle-settings__hint {
+            font-size: 11px;
+            line-height: 17px;
+            color: #545454;
+        }

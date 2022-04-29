@@ -3,8 +3,6 @@
     padding: 0; /* bootstrap */
     display: table;
     vertical-align: top;
-    border-left: 2px solid transparent;
-    border-right: 2px solid transparent;
     border-bottom: 11px solid transparent;
     font-weight: 600;  /* bootstrap */
     font-size: 14px;
