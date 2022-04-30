@@ -159,6 +159,15 @@
                     border-radius: 50%;
                 }
 
+            .crew__intro {
+                /*max-width: 440px;*/
+                margin-top: 0;
+                margin-left: 0;
+                /*font-size: 13px;*/
+                /*line-height: 20px;*/
+                /*color: #FFFFFF;*/
+            }
+
             .crew__head-texts {
                 padding-right: 16px;
             }
