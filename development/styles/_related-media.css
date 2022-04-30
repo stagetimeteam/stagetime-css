@@ -1,12 +1,15 @@
 .related-media {
     text-align: center;
 }
+    /* stylelint-disable */
     .related-media__list {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
         gap: 24px;
     }
+    /* stylelint-enable */
+
         .related-media__item {
             width: calc(50% - 12px);
         }

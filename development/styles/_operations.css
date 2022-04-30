@@ -158,7 +158,7 @@
             transition: background-color var(--transition-hover);
         }
 
-        .operations--for-player3 .operations__handler:hover::before  {
+        .operations--for-player3 .operations__handler:hover::before {
             background-color: #5D6162;
         }
 

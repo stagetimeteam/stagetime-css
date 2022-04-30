@@ -11,10 +11,7 @@
 
     .auth__alternative {
         order: 100;
-        margin-top: 68px;
-        margin-bottom: -60px;
-        margin-left: calc(-1 * var(--container-mobile-padding));
-        margin-right: calc(-1 * var(--container-mobile-padding));
+        margin: 68px calc(-1 * var(--container-mobile-padding)) -60px;
         background-color: #FFFFFF;
         padding: 23px var(--container-mobile-padding) 34px;
         text-align: center;

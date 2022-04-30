@@ -1,17 +1,17 @@
 .related-media {
-    /*text-align: center;*/
+
 }
+    /* stylelint-disable */
     .related-media__list {
-        /*display: flex;*/
-        /*flex-wrap: wrap;*/
-        /*align-items: flex-start;*/
         padding: 10px;
         gap: 10px;
     }
+    /* stylelint-enable */
+
         .related-media__item {
             width: calc(50% - 5px);
         }
 
     .related-media__refresh {
-        /*margin-top: 24px;*/
+
     }
