@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Circles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+        <!-- 1/3: .header, .search, .notifications -->
+        <header class="header">
+            <div class="header__detachable-panel">
+                <a class="header__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <!-- optional:
+                <div class="header__greetings">
+                    Good afternoon, <a class="link link--user-color" href="#">Jennie</a>.
+                </div>
+                -->
+                <!-- optional:
+                <div class="header__auth">
+                    <a class="header__login" href="#"><span class="header__label">Log In</span></a>
+                    <a class="header__join" href="#"><span class="header__label">Join Stagetime</span></a>
+                </div>
+                -->
+                <div class="header__menu">
+                    <button class="header__item search-button" type="button">
+                        <img class="search-button__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                    </button>
+                    <a class="header__item header-button header-button--messages" href="#">
+                        <img class="header-button__icon" src="../symbols/24-message.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--notifications" href="#">
+                        <img class="header-button__icon" src="../symbols/24-notification.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item profile-button" href="#">
+                        <span class="avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                 src="../temp/person-a-32x32.jpg"
+                                 width="32"
+                                 height="32"
+                                 alt=""
+                            >
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <form class="search">
+            <div class="search__bar">
+                <button class="search__close" type="button">
+                    <img class="search__arrow" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                </button>
+                <div class="search__body">
+                    <input class="search__widget" type="text" placeholder="Search Stagetime">
+                    <img class="search__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                </div>
+            </div>
+            <div class="search__dropdown">
+                <div class="search__scroll scrollbar scrollbar-macosx">
+                    <div class="search__section">
+                        <div class="search__separator section-separator">
+                            <div class="section-separator__heading">
+                                People
+                            </div>
+                            <a class="section-separator__action button button--another-faded" href="#">
+                                See All
+                            </a>
+                        </div>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-56x56@2x.jpg 2x"
+                                             src="../temp/person-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Houston, TX
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-56x56@2x.jpg 2x"
+                                             src="../temp/person-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Marlen Nahas
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Washington, DC
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-56x56@2x.jpg 2x"
+                                             src="../temp/person-d-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Shea Owens
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Salt Lake City, UT
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-56x56@2x.jpg 2x"
+                                             src="../temp/person-e-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Houston, TX
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="search__section">
+                        <div class="search__separator section-separator">
+                            <div class="section-separator__heading">
+                                Organizations
+                            </div>
+                            <a class="section-separator__action button button--another-faded" href="#">
+                                See All
+                            </a>
+                        </div>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                             src="../temp/organization-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-b-56x56@2x.jpg 2x"
+                                             src="../temp/organization-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                             src="../temp/organization-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-b-56x56@2x.jpg 2x"
+                                             src="../temp/organization-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="notifications">
+            <div class="notifications__head top-bar">
+                <div class="top-bar__heading">
+                    Notifications
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="notifications__scroll scrollbar scrollbar-macosx">
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Collaborator Requests
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+
+
+
+
+                <div class="simpler-null">
+                    You don’t currently have<br> any notifications.
+                </div>
+                <!-- temp -->
+                or:
+                <!--/temp -->
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Collaborator Requests
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                 src="../temp/person-f-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> is requesting to connect.
+                            </div>
+                            <div class="notice__bubble">
+                                Hi Terrence! It’s so great to see you here. Was lovely meeting you at Cardiff.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                 src="../temp/person-f-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> is requesting to connect.
+                            </div>
+                            <div class="notice__bubble">
+                                Hi Terrence! It’s so great to see you here. Was lovely meeting you at Cardiff.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Activity
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                 src="../temp/person-a-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> was live
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                 src="../temp/person-b-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has accepted your collaborator request.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Konstantin Konstantinopolsky</span> and <span class="link link--text-alike">Constantin Constantinopolsky</span>
+                                are now friends
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                Are you sure you want to confirm that you are on <span class="link link--text-alike">Justin Werner</span>’s roster at <span class="link">Stratagem Artists</span>?
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action notice__action--grow button button--submit" href="#">Confirm</a>
+                            <a class="notice__action button button--cancel" href="#">Back</a>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                 src="../temp/person-e-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has joined Stagetime.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="notice notice--success">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Andres Acosta</span> added you as management.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice notice--cancel">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                Request <strong>deleted</strong>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                 src="../temp/person-a-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> was live
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                 src="../temp/person-b-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has accepted your collaborator request.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Konstantin Konstantinopolsky</span> and <span class="link link--text-alike">Constantin Constantinopolsky</span>
+                                are now friends
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                Are you sure you want to confirm that you are on <span class="link link--text-alike">Justin Werner</span>’s roster at <span class="link">Stratagem Artists</span>?
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action notice__action--grow button button--submit" href="#">Confirm</a>
+                            <a class="notice__action button button--cancel" href="#">Back</a>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                 src="../temp/person-e-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has joined Stagetime.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="notice notice--success">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Andres Acosta</span> added you as management.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice notice--cancel">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                Request <strong>deleted</strong>.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__head top-bar">
+                <div class="top-bar__heading">
+                    Profile
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="profile__body">
+                <a class="profile__link user-link" href="#">
+                    <span class="user-link__preview avatar avatar--alt-hover">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-28x28@2x.jpg 2x"
+                             src="../temp/person-a-28x28.jpg"
+                             width="28"
+                             height="28"
+                             alt=""
+                        >
+                    </span>
+                    View Profile
+                </a>
+                <div class="profile__menu">
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-pencil.svg" width="16" height="16" alt="">
+                        Edit Profile
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-envelope-outline.svg" width="16" height="16" alt="">
+                        <img class="nav-link__sparkle" src="../symbols/16-sparkle.svg" width="16" height="16" alt="">
+                        Invite
+                        <span class="visuallyhidden">Explain meaning of sparkles here</span>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-question-spot.svg" width="16" height="16" alt="">
+                        Support
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-cog.svg" width="16" height="16" alt="">
+                        Settings
+                    </a>
+                </div>
+                <a class="profile__organisation button button--faded" href="#">
+                    <img class="button__icon button__icon--left" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                    Create Organization
+                </a>
+                <a class="profile__logout nav-link" href="#">
+                    <img class="nav-link__icon" src="../symbols/16-logout.svg" width="16" height="16" alt="">
+                    Log Out
+                </a>
+            </div>
+        </div>
+        <!-- 2/3: .page -->
+        <div class="page">
+
+
+
+            <div class="crew">
+                <div class="crew__sidebar">
+                    <div class="crew__side-head">
+                        <b class="crew__circles">
+                            My Circles
+                        </b>
+                        <div class="crew__updated">
+                            Last update 11h ago
+                        </div>
+                        <button class="crew__close-sidebar" type="button">
+                            <img class="crew__cross" src="../symbols/16-cross-rounder-corners.svg" width="16" height="16" alt="">
+                        </button>
+                    </div>
+                    <div class="crew__navigation scrollbar scrollbar-macosx">
+                        <div class="crew__latch">
+                            <div class="crew__pending">
+                                <a class="button button--side-submit button--black">
+                                    Pending Requests
+                                </a>
+                                <span class="crew__pending-counter counter counter--danger">3</span>
+                            </div>
+                            <div class="crew__list">
+                                <a class="circles-link" href="#">
+                                    <div class="circles-link__preview">
+                                        <div class="circles-link__abbreviation">Hu</div>
+                                    </div>
+                                    <div class="circles-link__label ellipsis">
+                                        Hungarian Dance Lorem ipsum
+                                    </div>
+                                </a>
+                                <a class="circles-link" href="#">
+                                    <div class="circles-link__preview">
+                                        <div class="circles-link__abbreviation">Ut</div>
+                                    </div>
+                                    <div class="circles-link__counter counter counter--danger">
+                                        2
+                                    </div>
+                                    <div class="circles-link__label ellipsis">
+                                        Utah Opera Barb Lorem Ipsum
+                                    </div>
+                                </a>
+                                <a class="circles-link circles-link--current" href="#">
+                                    <div class="circles-link__preview">
+                                        <div class="circles-link__abbreviation">Ta</div>
+                                    </div>
+                                    <div class="circles-link__label ellipsis">
+                                        Tanglewood 2022
+                                    </div>
+                                </a>
+                                <a class="circles-link" href="#">
+                                    <div class="circles-link__preview">
+                                        <div class="circles-link__abbreviation">Op</div>
+                                    </div>
+                                    <div class="circles-link__label ellipsis">
+                                        Opera Idaho EAs
+                                    </div>
+                                </a>
+                            </div>
+                            <button class="crew__add button button--black button--add-people" type="button">
+                                <img class="button__icon" src="../symbols/24-tiny-plus.svg" width="24" height="24" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="crew__content">
+                    <div class="crew__head">
+                        <button class="crew__show-sidebar crew__show-sidebar--has-updates" type="button">
+                            Show sidebar
+                        </button>
+                        <div class="crew__intro">
+                            Circles are a powerful way to create community, share work and resources, and stay connected to your colleagues.
+                        </div>
+                    </div>
+                    <div class="crew__new scrollbar scrollbar-macosx">
+                        <div class="new-circle">
+                            <img class="new-circle__icon" src="../symbols/larger-rings.svg" width="46" height="46" alt="">
+                            <div class="new-circle__prefix">
+                                Create a new circle
+                            </div>
+                            <h1 class="new-circle__heading">
+                                What’s the name of your Circle?
+                            </h1>
+                            <div class="new-circle__note">
+                                Once you’ve created your Circle, you can add colleagues and start collaborating.
+                            </div>
+                            <div class="new-circle__field">
+                                <div class="input input--large input--classic-font">
+                                    <input class="input__widget" type="text" placeholder="Ex: Arizona Violinists or Utah Opera Barber of Seville">
+                                </div>
+                            </div>
+                            <button class="new-circle__submit button button--submit-bar" type="submit">
+                                Create Circle
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 3/3 Modals: -->
+        <div class="modal fade" id="circles-settings" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <div class="modal-head__heading title title--small">
+                                Circle Settings
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="circle-settings">
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-name">
+                                        Circle Name
+                                    </label>
+                                    <div class="input input--larger-font">
+                                        <input class="input__widget" type="text" id="#circle-name" placeholder="Add Name...">
+                                    </div>
+                                </div>
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-admin">
+                                        Circle Admins
+                                        <span class="label__note">You can only make current Circle members admins.</span>
+                                    </label>
+                                    <div class="input input--classic-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Search on Stagetime">
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-40x40@2x.jpg 2x"
+                                                             src="../temp/person-a-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
+
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="circles-results">
+                                        <div class="circles-results__item circles-suggest">
+                                            <a class="circles-suggest__preview avatar avatar--alt-hover">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                     src="../temp/person-a-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </a>
+                                            <div class="circles-suggest__name ellipsis">
+                                                <a class="link link--fading" href="#">Elena Villalón</a>
+                                            </div>
+                                            <button class="circles-suggest__cancel" type="button">
+                                                <img class="circles-suggest__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                <p>or:</p>
+                                <!--/temp -->
+
+                                <div class="circle-settings__field">
+                                    <div class="label">
+                                        Circle Admins
+                                    </div>
+                                    <div class="circle-settings__hint">
+                                        Only Circle Admins can:<br>
+                                        &nbsp;&nbsp;•&nbsp; Rename the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Delete the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Information section<br>
+                                        &nbsp;&nbsp;•&nbsp; Invite/Approve Members to the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Resource section<br>
+                                        <br>
+                                        If you need to add another person as an Admin, send us a message here.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-secondary" type="button">
+                                    Delete
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player3.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_explore.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+        <script src="../scripts/_media-bar.js"></script>
+        <script src="../scripts/_settings.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_expandable-bio.js"></script>
+        <script src="../scripts/_parallax.js"></script>
+        <script src="../scripts/_simple-parallax.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_modal.js"></script>
+        <script src="../scripts/_full-media-card.js"></script>
+        <script src="../scripts/_color-selection.js"></script>
+        <script src="../scripts/_layout-type.js"></script>
+        <script src="../scripts/_sortable.js"></script>
+        <script src="../scripts/_biography.js"></script>
+        <script src="../scripts/_media-clip.js"></script>
+        <script src="../scripts/_typing.js"></script>
+        <script src="../scripts/_crew.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,48 @@
+.new-circle {
+    /*position: relative;*/
+    padding: 40px var(--container-mobile-padding) 60px;
+}
+    .new-circle__icon {
+        /*position: absolute;*/
+        /*left: 71px;*/
+        /*top: 62px;*/
+        display: none;
+    }
+
+    .new-circle__prefix {
+        /*font-weight: 600;*/
+        /*font-size: 15px;*/
+        /*line-height: 20px;*/
+        /*color: #23282C;*/
+        /*text-transform: uppercase;*/
+        /*letter-spacing: 2px;*/
+    }
+
+    .new-circle__heading {
+        /*margin-top: 25px;*/
+        /*margin-bottom: 0;*/
+        /*font-weight: normal;*/
+        /*font-size: 34px;*/
+        /*line-height: 34px;*/
+        /*color: #23282C;*/
+    }
+
+    .new-circle__note {
+        /*margin-top: 21px;*/
+        /*font-size: 14px;*/
+        /*line-height: 22px;*/
+        /*color: #23282C;*/
+    }
+
+    .new-circle__field {
+        margin-top: 40px;
+    }
+
+    .new-circle__submit {
+        /*margin-top: 24px;*/
+    }
+
+    .new-circle__submit.button,
+    .new-circle__submit .button {
+        width: 100%;
+    }

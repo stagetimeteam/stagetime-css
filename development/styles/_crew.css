@@ -89,6 +89,15 @@
                 display: none;
             }
 
+            .crew__intro {
+                max-width: 440px;
+                margin-top: 6px;
+                margin-left: 36px;
+                font-size: 13px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+
             .crew__head-texts {
                 padding-right: 20px;
             }
@@ -295,4 +304,8 @@
                     }
 
 
-
+        .crew__new {
+            height: calc(100% - var(--crew-head-height));
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+        }

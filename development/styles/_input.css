@@ -79,6 +79,16 @@
         pointer-events: none;
     }
 
+.input--large {
+
+}
+    .input--large .input__widget {
+        height: 50px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        border-radius: 10px;
+    }
+
 .input--area {
 
 }
