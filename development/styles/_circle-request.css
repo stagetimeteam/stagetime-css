@@ -1,6 +1,100 @@
 .circle-request {
-
+    padding: 26px 69px 47px;
 }
     .circle-request__pre-header {
-
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 11px;
+        line-height: 20px;
+        color: #757575;
+        text-align: center;
     }
+        .circle-request__rings {
+            vertical-align: top;
+            margin-right: 6px;
+            margin-top: 1px;
+            margin-bottom: -1px;
+            fill: #757575;
+        }
+
+    .circle-request__preview {
+        margin-top: 28px;
+        text-align: center;
+    }
+
+    .circle-request__heading {
+        margin-top: 18px;
+        margin-bottom: 0;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 26px;
+        color: #23282C;
+        text-align: center;
+    }
+
+    .circle-request__note {
+        margin-top: 13px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+        text-align: center;
+    }
+
+    .circle-request__label {
+        margin-top: 35px;
+        font-size: 11px;
+        line-height: 20px;
+        color: #23282C;
+    }
+
+    .circle-request__user {
+        margin-top: 8px;
+    }
+
+    .circle-request__submit {
+        margin-top: 65px;
+    }
+        .circle-request__submit.button,
+        .circle-request__submit .button {
+            width: 100%;
+        }
+
+
+
+    .circle-request__register-label {
+        margin-top: 32px;
+        margin-left: -20px;
+        margin-right: -20px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #44474A;
+        text-align: center;
+    }
+
+    .circle-request__register-action {
+        margin-top: 38px;
+    }
+
+    .circle-request__register-action + .circle-request__register-action {
+        margin-top: 11px;
+    }
+
+    .circle-request__register-action:first-child {
+        margin-top: 0;
+    }
+        .circle-request__register-action.button,
+        .circle-request__register-action .button {
+            width: 100%;
+        }
+
+    .circle-request__already {
+        margin-top: 39px;
+        margin-left: -20px;
+        margin-right: -20px;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+        .circle-request__already strong {
+            font-weight: 600;
+        }

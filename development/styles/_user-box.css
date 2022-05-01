@@ -1,0 +1,31 @@
+.user-box {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    padding: 14px 17px;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0 4px 4px rgba(214, 214, 214, 0.25);
+    border-radius: 2px;
+}
+    .user-box__preview {
+        flex-shrink: 0;
+        margin-right: 18px;
+    }
+
+    .user-box__body {
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+        .user-box__heading {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #1F1F1F;
+        }
+
+        .user-box__status {
+            margin-top: 2px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #545454;
+        }

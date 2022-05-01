@@ -1,0 +1,21 @@
+.abbreviation {
+    display: inline-flex;
+    vertical-align: top;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+    width: 36px;
+    height: 36px;
+    background-color: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #545454;
+}
+
+.abbreviation--larger {
+    width: 42px;
+    height: 42px;
+}
