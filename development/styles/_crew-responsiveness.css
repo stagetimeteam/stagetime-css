@@ -123,241 +123,244 @@
         width: auto;
         height: 100%;
     }
-        .crew__head {
-            padding: 20px 20px 20px 74px;
-            /*height: var(--crew-head-height);*/
-            /*background-color: #23282C;*/
+        .crew__inner-content {
+
         }
-            .crew__show-sidebar {
-                position: absolute;
-                left: 0;
-                top: 0;
-                display: block;
-                width: 72px;
-                height: 76px;
-                border: none;
-                padding: 0;
-                background-color: transparent;
-                background-image: url("../images/rings.svg");
-                background-size: 30px 30px;
-                background-repeat: no-repeat;
-                background-position: center center;
-                text-indent: 200%;
-                white-space: nowrap;
-                overflow: hidden;
-                cursor: pointer;
+            .crew__head {
+                padding: 20px 20px 20px 74px;
+                /*height: var(--crew-head-height);*/
+                /*background-color: #23282C;*/
             }
-                .crew__show-sidebar--has-updates::after {
-                    content: "";
+                .crew__show-sidebar {
                     position: absolute;
-                    right: 15px;
-                    top: 19px;
+                    left: 0;
+                    top: 0;
                     display: block;
-                    width: 8px;
-                    height: 8px;
-                    background-color: #EB5757;
-                    border-radius: 50%;
+                    width: 72px;
+                    height: 76px;
+                    border: none;
+                    padding: 0;
+                    background-color: transparent;
+                    background-image: url("../images/rings.svg");
+                    background-size: 30px 30px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    text-indent: 200%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                    .crew__show-sidebar--has-updates::after {
+                        content: "";
+                        position: absolute;
+                        right: 15px;
+                        top: 19px;
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        background-color: #EB5757;
+                        border-radius: 50%;
+                    }
+
+                .crew__intro {
+                    /*max-width: 440px;*/
+                    margin-top: 0;
+                    margin-left: 0;
+                    /*font-size: 13px;*/
+                    /*line-height: 20px;*/
+                    /*color: #FFFFFF;*/
                 }
 
-            .crew__intro {
-                /*max-width: 440px;*/
-                margin-top: 0;
-                margin-left: 0;
-                /*font-size: 13px;*/
-                /*line-height: 20px;*/
-                /*color: #FFFFFF;*/
-            }
-
-            .crew__head-texts {
-                padding-right: 16px;
-            }
-                .crew__heading {
-                    font-size: 18px;
-                    line-height: 24px;
+                .crew__head-texts {
+                    padding-right: 16px;
                 }
+                    .crew__heading {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
 
-                .crew__note {
-                    margin-top: 4px;
-                    font-size: 11px;
-                    line-height: 18px;
-                }
+                    .crew__note {
+                        margin-top: 4px;
+                        font-size: 11px;
+                        line-height: 18px;
+                    }
 
-            .crew__operations {
-
-            }
-                .crew__settings {
+                .crew__operations {
 
                 }
+                    .crew__settings {
 
-                .crew__head-add {
-                    display: none;
-                }
+                    }
 
-        .crew__body {
-            /*position: relative;*/
-            padding-right: 0;
-            height: calc(100% - var(--crew-head-height));
-        }
-            .crew__tabs {
-                position: static;
-                /*right: 0;*/
-                /*top: 0;*/
-                padding-bottom: 0;
-                width: auto;
-                border-bottom: 1px solid #E1E3E6;
-                /*display: flex;*/
-                /*align-items: stretch;*/
-                padding-left: 0;
+                    .crew__head-add {
+                        display: none;
+                    }
+
+            .crew__body {
+                /*position: relative;*/
                 padding-right: 0;
-                overflow: visible; /* to cut (1) and prevent horizontal scrollbar */
+                height: calc(100% - var(--crew-head-height));
             }
-                .crew__tabs::before {
-                    display: none;
-                    /*content: "";*/
-                    /*position: absolute;*/
-                    /*left: -1px;*/
-                    /*bottom: 0;*/
-                    /*right: -1px; !* (1) *!*/
-                    /*height: 30px;*/
-                    /*border-top-left-radius: 30px;*/
-                    /*border-top-right-radius: 30px;*/
-                    /*border-left: 1px solid #E1E3E6;*/
-                    /*border-top: 1px solid #E1E3E6;*/
-                    /*border-right: 1px solid #E1E3E6;*/
+                .crew__tabs {
+                    position: static;
+                    /*right: 0;*/
+                    /*top: 0;*/
+                    padding-bottom: 0;
+                    width: auto;
+                    border-bottom: 1px solid #E1E3E6;
+                    /*display: flex;*/
+                    /*align-items: stretch;*/
+                    padding-left: 0;
+                    padding-right: 0;
+                    overflow: visible; /* to cut (1) and prevent horizontal scrollbar */
                 }
-
-                .crew__tag {
-                    /*position: relative;*/
-                    /*background-color: transparent;*/
-                    /*flex-grow: 1;*/
-                    /*flex-basis: 0;*/
-                    /*border: none;*/
-                    /*padding: 15px 10px;*/
-                    /*text-align: center;*/
-                    /*font-weight: 600;*/
-                    /*font-size: 12px;*/
-                    /*line-height: 18px;*/
-                    /*color: #76797C;*/
-                    /*cursor: pointer;*/
-                    /*transition: color var(--transition-hover);*/
-                }
-
-                .crew__tag:hover {
-                    /*color: #23282C;*/
-                }
-
-                .crew__tag:active {
-                    /*color: #23282C;*/
-                    /*transition: none;*/
-                }
-
-                    /* hover background */
-                    .crew__tag::before {
+                    .crew__tabs::before {
                         display: none;
                         /*content: "";*/
                         /*position: absolute;*/
-                        /*left: 0;*/
-                        /*top: 0;*/
-                        /*right: 0;*/
+                        /*left: -1px;*/
                         /*bottom: 0;*/
-                        /*width: 100px;*/
-                        /*height: 64px;*/
-                        /*margin: auto;*/
-                        /*display: block;*/
-                        /*border-radius: 8px;*/
-                        /*transition: background-color var(--transition-hover);*/
+                        /*right: -1px; !* (1) *!*/
+                        /*height: 30px;*/
+                        /*border-top-left-radius: 30px;*/
+                        /*border-top-right-radius: 30px;*/
+                        /*border-left: 1px solid #E1E3E6;*/
+                        /*border-top: 1px solid #E1E3E6;*/
+                        /*border-right: 1px solid #E1E3E6;*/
                     }
 
-                    .crew__tag:hover::before {
-                        /*background-color: var(--panel-hover);*/
+                    .crew__tag {
+                        /*position: relative;*/
+                        /*background-color: transparent;*/
+                        /*flex-grow: 1;*/
+                        /*flex-basis: 0;*/
+                        /*border: none;*/
+                        /*padding: 15px 10px;*/
+                        /*text-align: center;*/
+                        /*font-weight: 600;*/
+                        /*font-size: 12px;*/
+                        /*line-height: 18px;*/
+                        /*color: #76797C;*/
+                        /*cursor: pointer;*/
+                        /*transition: color var(--transition-hover);*/
                     }
 
-                    .crew__tag:active::before {
-                        /*background-color: var(--panel-active);*/
+                    .crew__tag:hover {
+                        /*color: #23282C;*/
+                    }
+
+                    .crew__tag:active {
+                        /*color: #23282C;*/
                         /*transition: none;*/
                     }
 
-                    .crew__icon {
-                        /*position: relative;*/
-                        /*width: 20px;*/
-                        /*height: 20px;*/
-                        /*fill: currentColor;*/
+                        /* hover background */
+                        .crew__tag::before {
+                            display: none;
+                            /*content: "";*/
+                            /*position: absolute;*/
+                            /*left: 0;*/
+                            /*top: 0;*/
+                            /*right: 0;*/
+                            /*bottom: 0;*/
+                            /*width: 100px;*/
+                            /*height: 64px;*/
+                            /*margin: auto;*/
+                            /*display: block;*/
+                            /*border-radius: 8px;*/
+                            /*transition: background-color var(--transition-hover);*/
+                        }
+
+                        .crew__tag:hover::before {
+                            /*background-color: var(--panel-hover);*/
+                        }
+
+                        .crew__tag:active::before {
+                            /*background-color: var(--panel-active);*/
+                            /*transition: none;*/
+                        }
+
+                        .crew__icon {
+                            /*position: relative;*/
+                            /*width: 20px;*/
+                            /*height: 20px;*/
+                            /*fill: currentColor;*/
+                        }
+
+                        .crew__label {
+                            /*position: relative;*/
+                            /*display: block;*/
+                            /*margin-top: 4px;*/
+                        }
+
+                        /* line */
+                        .crew__tag::after {
+                            /*content: "";*/
+                            /*position: absolute;*/
+                            /*bottom: -2px;*/
+                            /*left: 50%;*/
+                            /*width: 52px;*/
+                            /*height: 3px;*/
+                            /*display: block;*/
+                            /*margin-left: -26px;*/
+                            /*border-radius: 2px;*/
+                        }
+
+
+                    .crew__tag--chat {
+                        display: block; /* was hidden on desktop */
                     }
 
-                    .crew__label {
-                        /*position: relative;*/
+                    .crew__tag--current {
+                        /*color: #23282C;*/
+                        /*cursor: default;*/
+                    }
+                        .crew__tag--current::before {
+                            /*display: none;*/
+                        }
+
+                        .crew__tag--current::after {
+                            /*background-color: currentColor;*/
+                        }
+
+                .crew__panel {
+                    position: static;
+                    /*right: 0;*/
+                    /*top: var(--crew-tabs-height);*/
+                    /*bottom: 0;*/
+                    width: auto;
+                    height: calc(100% - var(--crew-tabs-mobile-height));
+                    display: none; /* hide all panels again because .crew__panel--chat was always visible on desktop */
+                }
+
+                .crew__panel--visible {
+                    display: block;
+                }
+
+                .crew__panel--chat {
+                    /*display: block; !* always show on desktop *!*/
+                    /*position: static;*/
+                    /*width: auto;*/
+                    /*height: 100%;*/
+                    border-right: none;
+                }
+                    .crew__feed {
                         /*display: block;*/
-                        /*margin-top: 4px;*/
+                        /*flex-direction: column;*/
                     }
+                        .crew__messages {
+                            /*flex-grow: 1;*/
+                            /*overflow-y: visible;*/
+                            /*-webkit-overflow-scrolling: touch;*/
+                        }
 
-                    /* line */
-                    .crew__tag::after {
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*bottom: -2px;*/
-                        /*left: 50%;*/
-                        /*width: 52px;*/
-                        /*height: 3px;*/
-                        /*display: block;*/
-                        /*margin-left: -26px;*/
-                        /*border-radius: 2px;*/
-                    }
-
-
-                .crew__tag--chat {
-                    display: block; /* was hidden on desktop */
-                }
-
-                .crew__tag--current {
-                    /*color: #23282C;*/
-                    /*cursor: default;*/
-                }
-                    .crew__tag--current::before {
-                        /*display: none;*/
-                    }
-
-                    .crew__tag--current::after {
-                        /*background-color: currentColor;*/
-                    }
-
-            .crew__panel {
-                position: static;
-                /*right: 0;*/
-                /*top: var(--crew-tabs-height);*/
-                /*bottom: 0;*/
-                width: auto;
-                height: calc(100% - var(--crew-tabs-mobile-height));
-                display: none; /* hide all panels again because .crew__panel--chat was always visible on desktop */
-            }
-
-            .crew__panel--visible {
-                display: block;
-            }
-
-            .crew__panel--chat {
-                /*display: block; !* always show on desktop *!*/
-                /*position: static;*/
-                /*width: auto;*/
-                /*height: 100%;*/
-                border-right: none;
-            }
-                .crew__feed {
-                    /*display: block;*/
-                    /*flex-direction: column;*/
-                }
-                    .crew__messages {
-                        /*flex-grow: 1;*/
-                        /*overflow-y: visible;*/
-                        /*-webkit-overflow-scrolling: touch;*/
-                    }
-
-                    .crew__form {
-                        /*flex-shrink: 0;*/
-                        /*padding: var(--padding-under-chat) 36px;*/
-                        padding-left: 20px;
-                        padding-right: 20px;
-                        /*border-top: 1px solid #E1E3E6;*/
-                    }
+                        .crew__form {
+                            /*flex-shrink: 0;*/
+                            /*padding: var(--padding-under-chat) 36px;*/
+                            padding-left: 20px;
+                            padding-right: 20px;
+                            /*border-top: 1px solid #E1E3E6;*/
+                        }
 
 
 
