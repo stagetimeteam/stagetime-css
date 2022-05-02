@@ -192,7 +192,11 @@
 
                     }
 
-                    .crew__head-add {
+                    .crew__head-add-person {
+                        margin-top: 6px;
+                    }
+
+                    .crew__head-add-circle {
                         display: none;
                     }
 
