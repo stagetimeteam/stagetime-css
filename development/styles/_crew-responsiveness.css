@@ -364,3 +364,10 @@
 
 
 
+
+    .crew__modal {
+        margin: 0;
+        left: 20px;
+        right: 20px;
+        width: calc(100% - 40px);
+    }

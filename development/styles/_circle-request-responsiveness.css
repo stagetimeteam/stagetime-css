@@ -1,0 +1,14 @@
+.circle-request {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.circle-request__register-label {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.circle-request__already {
+    margin-left: 0;
+    margin-right: 0;
+}
