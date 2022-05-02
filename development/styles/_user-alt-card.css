@@ -1,0 +1,26 @@
+.user-alt-card {
+    display: flex;
+    align-items: center;
+}
+    .user-alt-card__preview {
+        flex-shrink: 0;
+        margin-right: 24px;
+    }
+
+    .user-alt-card__body {
+
+    }
+        .user-alt-card__heading {
+            font-size: 14px;
+            line-height: 20px;
+            color: #757575;
+        }
+            .user-alt-card__heading .link {
+                font-weight: normal;
+            }
+
+        .user-alt-card__note {
+            font-size: 11px;
+            line-height: 16px;
+            color: #757575;
+        }

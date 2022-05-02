@@ -1,0 +1,19 @@
+.icon-status {
+    display: inline-flex;
+    align-items: center;
+}
+    .icon-status__illustration {
+        vertical-align: top;
+        margin-left: 28px;
+        width: 26px;
+        height: 26px;
+    }
+
+    .icon-status__label {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #23282C;
+    }

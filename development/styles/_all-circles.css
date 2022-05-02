@@ -1,0 +1,86 @@
+.all-circles {
+
+}
+    .all-circles__head {
+        display: flex;
+        align-items: flex-start;
+        padding: 24px 46px 19px;
+        border-bottom: 2px solid #F3F3F3;
+    }
+        .all-circles__icon {
+            vertical-align: top;
+            fill: #23282C;
+            margin-top: 10px;
+            margin-right: 22px;
+        }
+
+        .all-circles__heading {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 28px;
+            color: #23282C;
+        }
+            .all-circles__counter {
+                margin-left: 4px;
+                margin-top: 3px;
+            }
+
+    .all-circles__list {
+
+    }
+        .all-circles__item {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #F3F3F3;
+            padding: 30px 46px;
+        }
+            .all-circles__company {
+                flex-grow: 1;
+                flex-basis: 0;
+                padding-right: 30px;
+                display: flex;
+                align-items: center;
+            }
+                .all-circles__preview {
+                    margin-top: 4px;
+                    margin-bottom: 4px;
+                    margin-right: 22px;
+                    flex-shrink: 0;
+                }
+
+                .all-circles__title {
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #23282C;
+                }
+
+            .all-circles__person {
+                flex-grow: 1;
+                flex-basis: 0;
+                padding-right: 30px;
+                margin-top: 4px;
+                margin-bottom: 4px;
+            }
+
+            .all-circles__menu {
+                width: 200px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+                .all-circles__operations {
+                    display: flex;
+                    align-items: flex-start;
+                }
+                    .all-circles__action {
+                        margin-left: 10px;
+                    }
+
+                    .all-circles__action:first-child {
+                        margin-left: 0;
+                    }
+
+                .all-circles__status {
+
+                }
