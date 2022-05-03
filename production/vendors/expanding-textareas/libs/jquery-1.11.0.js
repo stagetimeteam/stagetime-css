@@ -6220,7 +6220,7 @@ function addGetHookIf( conditionFn, hookFn ) {
       var condition = conditionFn();
 
       if ( condition == null ) {
-        // The test was not ready at this point; screw the hook this time
+        // The test was not ready at this point; scircles the hook this time
         // but check again when needed next time.
         return;
       }
@@ -9911,7 +9911,7 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 
       // Save back as free
       if ( s[ callbackName ] ) {
-        // make sure that re-using the options doesn't screw things around
+        // make sure that re-using the options doesn't scircles things around
         s.jsonpCallback = originalSettings.jsonpCallback;
 
         // save the callback name for future use
