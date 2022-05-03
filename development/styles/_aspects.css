@@ -83,3 +83,18 @@
     .aspects__item--in-your-habitat .aspects__activity {
         fill: #ADB7AC;
     }
+
+
+
+
+.aspects__item--beginning-graph {
+    width: 44%;
+    flex-shrink: 0;
+    padding-right: 24px;
+}
+
+.aspects__item--beginning-traction {
+    width: 56%;
+    padding-left: 0;
+    padding-right: 0;
+}

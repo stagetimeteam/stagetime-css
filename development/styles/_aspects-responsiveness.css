@@ -17,6 +17,15 @@
     .aspects__item:last-child {
         margin-right: 0;
     }
+
+
+    .aspects__item--beginning-graph {
+
+    }
+
+    .aspects__item--beginning-traction {
+        width: 314px;
+    }
         .aspects__heading {
             /*position: relative;*/
             /*padding-left: 30px;*/
@@ -77,4 +86,10 @@
             padding-left: 20px;
             padding-right: 20px;
         }
+
+        .aspects__item--beginning-traction {
+            width: 280px;
+        }
 }
+
+

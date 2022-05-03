@@ -1,0 +1,22 @@
+.traction {
+
+}
+    .traction__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #333333;
+    }
+
+    .traction__description {
+        margin-top: 10px;
+        font-size: 13px;
+        line-height: 19px;
+        color: #333333;
+    }
+
+    .traction__more {
+        margin-top: 20px;
+    }
