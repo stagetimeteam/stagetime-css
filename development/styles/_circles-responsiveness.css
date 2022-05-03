@@ -1,10 +1,10 @@
-.crew {
+.circles {
     position: relative;
     height: 100%;
     display: block;
     /*align-items: stretch;*/
 }
-    .crew__sidebar {
+    .circles__sidebar {
         position: absolute;
         z-index: 90;
         right: 100%;
@@ -17,20 +17,20 @@
         transition: margin-right var(--transition-long-show);
     }
 
-    .crew--expanded .crew__sidebar {
+    .circles--expanded .circles__sidebar {
         margin-right: -260px;
     }
-        .crew__side-head {
+        .circles__side-head {
             /*padding: 35px 0 0 76px;*/
             padding-right: 56px;
-            /*height: var(--crew-head-height);*/
+            /*height: var(--circles-head-height);*/
             /*background-color: #44474A;*/
             /*background-image: url("../images/rings.svg");*/
             /*background-size: 30px 30px;*/
             /*background-repeat: no-repeat;*/
             /*background-position: 28px 37px;*/
         }
-            .crew__circles {
+            .circles__circles {
                 /*display: block;*/
                 /*font-weight: 600;*/
                 /*font-size: 12px;*/
@@ -38,13 +38,13 @@
                 /*color: #FFFFFF;*/
             }
 
-            .crew__updated {
+            .circles__updated {
                 /*font-size: 11px;*/
                 /*line-height: 16px;*/
                 /*color: #FFFFFF;*/
             }
 
-            .crew__close-sidebar {
+            .circles__close-sidebar {
                 position: absolute;
                 right: 14px;
                 top: 31px;
@@ -58,7 +58,7 @@
                 background-color: transparent;
                 cursor: pointer;
             }
-                .crew__close-sidebar::before {
+                .circles__close-sidebar::before {
                     content: "";
                     position: absolute;
                     left: 0;
@@ -73,30 +73,30 @@
                     border-radius: 50%;
                 }
 
-                .crew__cross {
+                .circles__cross {
                     vertical-align: top;
                     fill: #FFFFFF;
                 }
 
-        .crew__navigation {
-            /*height: calc(100% - var(--crew-head-height));*/
+        .circles__navigation {
+            /*height: calc(100% - var(--circles-head-height));*/
             /*overflow-y: auto;*/
             /*-webkit-overflow-scrolling: touch;*/
             /*background-color: #EEF0F3;*/
         }
-            .crew__latch {
+            .circles__latch {
                 /*padding-top: 14px;*/
                 /*padding-bottom: 40px;*/
             }
-                .crew__pending {
+                .circles__pending {
                     /*position: relative;*/
                     /*margin: 14px 20px;*/
                 }
-                    .crew__pending .button {
+                    .circles__pending .button {
                         /*width: 100%;*/
                     }
 
-                    .crew__pending-counter {
+                    .circles__pending-counter {
                         /*position: absolute;*/
                         /*right: -8px;*/
                         /*top: -8px;*/
@@ -105,33 +105,33 @@
                         /*pointer-events: none;*/
                     }
 
-            .crew__list {
+            .circles__list {
 
             }
 
-            .crew__add {
+            .circles__add {
                 /*margin-top: 12px;*/
                 /*margin-left: 20px;*/
             }
-            .crew__add.button,
-            .crew__add .button {
+            .circles__add.button,
+            .circles__add .button {
                 /*box-shadow: none;*/
             }
 
 
-    .crew__content {
+    .circles__content {
         width: auto;
         height: 100%;
     }
-        .crew__inner-content {
+        .circles__inner-content {
 
         }
-            .crew__head {
+            .circles__head {
                 padding: 20px 20px 20px 74px;
-                /*height: var(--crew-head-height);*/
+                /*height: var(--circles-head-height);*/
                 /*background-color: #23282C;*/
             }
-                .crew__show-sidebar {
+                .circles__show-sidebar {
                     position: absolute;
                     left: 0;
                     top: 0;
@@ -150,7 +150,7 @@
                     overflow: hidden;
                     cursor: pointer;
                 }
-                    .crew__show-sidebar--has-updates::after {
+                    .circles__show-sidebar--has-updates::after {
                         content: "";
                         position: absolute;
                         right: 15px;
@@ -162,7 +162,7 @@
                         border-radius: 50%;
                     }
 
-                .crew__intro {
+                .circles__intro {
                     /*max-width: 440px;*/
                     margin-top: 0;
                     margin-left: 0;
@@ -171,41 +171,41 @@
                     /*color: #FFFFFF;*/
                 }
 
-                .crew__head-texts {
-                    padding-right: 16px;
+                .circles__head-texts {
+                    display: none;
                 }
-                    .crew__heading {
+                    .circles__heading {
                         font-size: 18px;
                         line-height: 24px;
                     }
 
-                    .crew__note {
+                    .circles__note {
                         margin-top: 4px;
                         font-size: 11px;
                         line-height: 18px;
                     }
 
-                .crew__operations {
+                .circles__operations {
 
                 }
-                    .crew__settings {
+                    .circles__settings {
 
                     }
 
-                    .crew__head-add-person {
-                        margin-top: 6px;
+                    .circles__head-add-person {
+
                     }
 
-                    .crew__head-add-circle {
+                    .circles__head-add-circle {
                         display: none;
                     }
 
-            .crew__body {
+            .circles__body {
                 /*position: relative;*/
                 padding-right: 0;
-                height: calc(100% - var(--crew-head-height));
+                height: calc(100% - var(--circles-head-height));
             }
-                .crew__tabs {
+                .circles__tabs {
                     position: static;
                     /*right: 0;*/
                     /*top: 0;*/
@@ -218,7 +218,7 @@
                     padding-right: 0;
                     overflow: visible; /* to cut (1) and prevent horizontal scrollbar */
                 }
-                    .crew__tabs::before {
+                    .circles__tabs::before {
                         display: none;
                         /*content: "";*/
                         /*position: absolute;*/
@@ -233,7 +233,7 @@
                         /*border-right: 1px solid #E1E3E6;*/
                     }
 
-                    .crew__tag {
+                    .circles__tag {
                         /*position: relative;*/
                         /*background-color: transparent;*/
                         /*flex-grow: 1;*/
@@ -249,17 +249,17 @@
                         /*transition: color var(--transition-hover);*/
                     }
 
-                    .crew__tag:hover {
+                    .circles__tag:hover {
                         /*color: #23282C;*/
                     }
 
-                    .crew__tag:active {
+                    .circles__tag:active {
                         /*color: #23282C;*/
                         /*transition: none;*/
                     }
 
                         /* hover background */
-                        .crew__tag::before {
+                        .circles__tag::before {
                             display: none;
                             /*content: "";*/
                             /*position: absolute;*/
@@ -275,30 +275,30 @@
                             /*transition: background-color var(--transition-hover);*/
                         }
 
-                        .crew__tag:hover::before {
+                        .circles__tag:hover::before {
                             /*background-color: var(--panel-hover);*/
                         }
 
-                        .crew__tag:active::before {
+                        .circles__tag:active::before {
                             /*background-color: var(--panel-active);*/
                             /*transition: none;*/
                         }
 
-                        .crew__icon {
+                        .circles__icon {
                             /*position: relative;*/
                             /*width: 20px;*/
                             /*height: 20px;*/
                             /*fill: currentColor;*/
                         }
 
-                        .crew__label {
+                        .circles__label {
                             /*position: relative;*/
                             /*display: block;*/
                             /*margin-top: 4px;*/
                         }
 
                         /* line */
-                        .crew__tag::after {
+                        .circles__tag::after {
                             /*content: "";*/
                             /*position: absolute;*/
                             /*bottom: -2px;*/
@@ -311,54 +311,54 @@
                         }
 
 
-                    .crew__tag--chat {
+                    .circles__tag--chat {
                         display: block; /* was hidden on desktop */
                     }
 
-                    .crew__tag--current {
+                    .circles__tag--current {
                         /*color: #23282C;*/
                         /*cursor: default;*/
                     }
-                        .crew__tag--current::before {
+                        .circles__tag--current::before {
                             /*display: none;*/
                         }
 
-                        .crew__tag--current::after {
+                        .circles__tag--current::after {
                             /*background-color: currentColor;*/
                         }
 
-                .crew__panel {
+                .circles__panel {
                     position: static;
                     /*right: 0;*/
-                    /*top: var(--crew-tabs-height);*/
+                    /*top: var(--circles-tabs-height);*/
                     /*bottom: 0;*/
                     width: auto;
-                    height: calc(100% - var(--crew-tabs-mobile-height));
-                    display: none; /* hide all panels again because .crew__panel--chat was always visible on desktop */
+                    height: calc(100% - var(--circles-tabs-mobile-height));
+                    display: none; /* hide all panels again because .circles__panel--chat was always visible on desktop */
                 }
 
-                .crew__panel--visible {
+                .circles__panel--visible {
                     display: block;
                 }
 
-                .crew__panel--chat {
+                .circles__panel--chat {
                     /*display: block; !* always show on desktop *!*/
                     /*position: static;*/
                     /*width: auto;*/
                     /*height: 100%;*/
                     border-right: none;
                 }
-                    .crew__feed {
+                    .circles__feed {
                         /*display: block;*/
                         /*flex-direction: column;*/
                     }
-                        .crew__messages {
+                        .circles__messages {
                             /*flex-grow: 1;*/
                             /*overflow-y: visible;*/
                             /*-webkit-overflow-scrolling: touch;*/
                         }
 
-                        .crew__form {
+                        .circles__form {
                             /*flex-shrink: 0;*/
                             /*padding: var(--padding-under-chat) 36px;*/
                             padding-left: 20px;
@@ -369,7 +369,7 @@
 
 
 
-    .crew__modal {
+    .circles__modal {
         margin: 0;
         left: 20px;
         right: 20px;

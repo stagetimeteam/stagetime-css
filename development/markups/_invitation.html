@@ -3,91 +3,90 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.clip</title>
+        <title>.invitation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
         <link rel="stylesheet" href="../styles/style.css">
         <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
     </head>
-    <body>
+    <body style="background-color: #F6F6F6;">
 
 
 
-        <div style="width: 622px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.clip</h1>
-            <p>
-                <a href="_play.html">.play</a> component inside:
-            </p>
+            <h1>.invitation</h1>
 
-            <a class="clip" href="#">
-                <div class="clip__stage">
-                    <img class="clip__image"
-                         srcset="../temp/clip-a@2x.jpg 2x"
-                         src="../temp/clip-a.jpg"
-                         width="310"
-                         height="220"
+
+            <div class="invitation">
+                <a class="invitation__preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-48x48@2x.jpg 2x"
+                         src="../temp/person-a-48x48.jpg"
+                         width="48"
+                         height="48"
                          alt=""
                     >
-                </div>
-                <div class="clip__action play">
-                    <img class="play__icon" src="../symbols/32-play.svg" width="32" height="32" alt="">
-                </div>
-            </a>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>Upcoming case</h2>
-            <p>
-                Use <a href="_staple.html">.staple</a> instead of <b>.play</b>
-            </p>
-
-            <a class="clip" href="#">
-                <div class="clip__stage">
-                    <img class="clip__image"
-                         srcset="../temp/clip-a@2x.jpg 2x"
-                         src="../temp/clip-a.jpg"
-                         width="310"
-                         height="220"
-                         alt=""
-                    >
-                </div>
-                <div class="clip__action staple staple--play-alike">
-                    <div class="staple__frame">
-                        <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                </a>
+                <div class="invitation__body">
+                    <div class="invitation__heading">
+                        <a class="link link--fading" href="#">Colin Knapp</a>
+                    </div>
+                    <div class="invitation__note">
+                        Director of Marketing
                     </div>
                 </div>
-            </a>
+            </div>
 
 
-
-            <br>
-            <br>
-            <br>
-            <h2>Activity feed case</h2>
-            <p>
-                Use larger version of <b>.play</b> here (<b>.play--larger</b> modifier and 38x38 icon size).
-            </p>
-
-            <a class="clip" href="#">
-                <div class="clip__stage">
-                    <img class="clip__image"
-                         srcset="../temp/clip-entry@2x.jpg 2x"
-                         src="../temp/clip-entry.jpg"
-                         width="622"
-                         height="285"
+            <div class="invitation">
+                <a class="invitation__preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-b-48x48@2x.jpg 2x"
+                         src="../temp/person-b-48x48.jpg"
+                         width="48"
+                         height="48"
                          alt=""
                     >
+                </a>
+                <div class="invitation__body">
+                    <div class="invitation__heading">
+                        <a class="link link--fading" href="#">Brandon Bell</a>
+                    </div>
+                    <div class="invitation__note">
+                        Baritone
+                    </div>
                 </div>
-                <div class="clip__action play play--larger">
-                    <img class="play__icon" src="../symbols/32-play.svg" width="38" height="38" alt="">
-                </div>
-            </a>
+                <button class="invitation__status button button--accept" type="button">
+                    Grant Access
+                </button>
+            </div>
 
+
+
+
+            <div class="invitation">
+                <a class="invitation__preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-c-48x48@2x.jpg 2x"
+                         src="../temp/person-c-48x48.jpg"
+                         width="48"
+                         height="48"
+                         alt=""
+                    >
+                </a>
+                <div class="invitation__body">
+                    <div class="invitation__heading">
+                        <a class="link link--fading" href="#">brandonbell@iu.edu</a>
+                    </div>
+                </div>
+                <div class="invitation__status pending">
+                    Pending
+                    <img class="pending__icon" src="../symbols/24-close-square.svg" width="24" height="24" alt="">
+                </div>
+            </div>
 
 
             <br>

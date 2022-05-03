@@ -67,7 +67,6 @@
 @import url("_user-link.css");
 @import url("_dashboard.css");
 @import url("_navigation.css");
-@import url("_circles.css");
 @import url("_side.css");
 @import url("_dash-intro.css");
 @import url("_carousel.css");
@@ -343,7 +342,6 @@
 @import url("_full-line.css");
 @import url("_updates-line.css");
 @import url("_typing.css");
-@import url("_my-circles.css");
 @import url("_workspace.css");
 @import url("_panel-button.css");
 @import url("_members.css");
@@ -358,7 +356,7 @@
 @import url("_file.css");
 @import url("_resources.css");
 @import url("_add-resource.css");
-@import url("_crew.css");
+@import url("_circles.css");
 @import url("_circles-link.css");
 @import url("_circle-settings.css");
 @import url("_new-circle.css");
