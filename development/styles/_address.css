@@ -1,0 +1,28 @@
+.address {
+
+}
+    .address__line {
+        margin-top: 10px;
+    }
+
+    .address__location {
+        margin-top: 10px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .address__city {
+            flex-grow: 190;
+            flex-basis: 0;
+        }
+
+        .address__state {
+            margin-left: 16px;
+            flex-grow: 70;
+            flex-basis: 0;
+        }
+
+        .address__zip {
+            flex-grow: 109;
+            flex-basis: 0;
+            margin-left: 16px;
+        }
