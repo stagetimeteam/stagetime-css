@@ -69,15 +69,15 @@
 
 
         .player3__controls {
-            padding-top: 18px;
+            padding-top: 6px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
             .player3__action {
                 position: relative;
-                width: 40px;
-                height: 40px;
+                width: 56px;
+                height: 64px;
                 padding: 8px;
                 background-color: transparent;
                 border: 0;
@@ -93,17 +93,10 @@
                     right: 0;
                     bottom: 0;
                     margin: auto;
-                    width: 24px;
-                    height: 24px;
+                    width: 36px;
+                    height: 36px;
                     border-radius: 4px;
                     transition: background-color var(--transition-hover);
-                }
-
-                .player3__action--play::before {
-                    width: 40px;
-                    height: 40px;
-                    background-color: #FFFFFF;
-                    border-radius: 50%;
                 }
 
                 .player3__icon {
@@ -114,6 +107,8 @@
                     right: 0;
                     bottom: 0;
                     margin: auto;
+                    width: 20px;
+                    height: 20px;
                     vertical-align: top;
                     fill: #FFFFFF;
                     transition: fill var(--transition-hover),
@@ -122,7 +117,20 @@
                     user-select: none;
                 }
 
+
+            .player3__action--play {
+                width: 64px;
+            }
+                .player3__action--play::before {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #FFFFFF;
+                    border-radius: 50%;
+                }
+
                 .player3__action--play .player3__icon {
+                    width: 16px;
+                    height: 16px;
                     fill: #1F1F1F;
                 }
 

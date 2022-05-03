@@ -97,7 +97,7 @@
 }
 
 .has-player3 .home__content {
-    padding-bottom: 100px;
+    padding-bottom: var(--player3-mobile-height);
 }
 
 .has-player3 .home__aside {

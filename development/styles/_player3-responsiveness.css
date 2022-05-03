@@ -1,0 +1,188 @@
+.player3 {
+    /*position: fixed;*/
+    /*z-index: 1000;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+    height: var(--player3-mobile-height);
+    /*opacity: 0;*/
+    /*visibility: visible;*/
+    /*transition: opacity var(--transition-long-show),*/
+    /*            visibility var(--transition-long-show);*/
+}
+
+.has-player3 .player3 {
+    /*opacity: 1;*/
+    /*visibility: visible;*/
+}
+    .player3__progress {
+        /*height: 48px;*/
+        /*padding-top: 10px;*/
+        /*background-color: #F7F7F7;*/
+    }
+        .player3__indicator {
+
+        }
+
+    .player3__body {
+        /*position: relative;*/
+        height: 170px;
+        /*background-color: #1F1F1F;*/
+    }
+        .player3__widget {
+            /*position: fixed;*/
+            /*right: 100%;*/
+            /*bottom: 100%;*/
+        }
+
+        .player3__viewport {
+            /*position: absolute;*/
+            top: 19px;
+            left: 20px;
+        }
+            .player3__preview {
+                /*vertical-align: top;*/
+                /*width: 50px;*/
+                /*height: 50px;*/
+                /*background-color: var(--image-fallback);*/
+            }
+
+
+        .player3__data {
+            /*position: absolute;*/
+            top: 23px;
+            left: 90px;
+            max-width: calc(100% - 254px);
+        }
+            .player3__song {
+                /*font-weight: 600;*/
+                /*font-size: 14px;*/
+                /*line-height: 22px;*/
+                /*color: #FFFFFF;*/
+            }
+
+            .player3__artist {
+                /*font-size: 13px;*/
+                /*line-height: 22px;*/
+                /*color: #C4C4C4;*/
+            }
+
+
+        .player3__controls {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 82px;
+            border-top: 1px solid #757575;
+            padding-top: 0;
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+        }
+            .player3__action {
+                /*position: relative;*/
+                width: 60px;
+                /*padding: 8px;*/
+                /*background-color: transparent;*/
+                /*border: 0;*/
+                /*cursor: pointer;*/
+                /*user-select: none;*/
+            }
+                .player3__action::before {
+                    /*content: "";*/
+                    /*position: absolute;*/
+                    /*z-index: 10; !* lower than icon *!*/
+                    /*left: 0;*/
+                    /*top: 0;*/
+                    /*right: 0;*/
+                    /*bottom: 0;*/
+                    /*margin: auto;*/
+                    /*width: 24px;*/
+                    /*height: 24px;*/
+                    /*border-radius: 4px;*/
+                    /*transition: background-color var(--transition-hover);*/
+                }
+
+                .player3__icon {
+                    /*position: absolute;*/
+                    /*z-index: 30; !* higher than buttons background *!*/
+                    /*left: 0;*/
+                    /*top: 0;*/
+                    /*right: 0;*/
+                    /*bottom: 0;*/
+                    /*margin: auto;*/
+                    /*vertical-align: top;*/
+                    /*fill: #FFFFFF;*/
+                    /*transition: fill var(--transition-hover),*/
+                    /*            opacity var(--transition-show),*/
+                    /*            visibility var(--transition-show);*/
+                    /*user-select: none;*/
+                }
+
+            .player3__action--play {
+                width: 74px;
+            }
+                .player3__action--play::before {
+                    /*width: 40px;*/
+                    /*height: 40px;*/
+                    /*background-color: #FFFFFF;*/
+                    /*border-radius: 50%;*/
+                }
+
+                .player3__action--play .player3__icon {
+                    /*fill: #1F1F1F;*/
+                }
+
+
+            .player3__action:hover {
+
+            }
+                .player3__action:hover::before {
+                    /*background-color: #5D6162;*/
+                }
+
+                .player3__action--play:hover::before {
+                    /*background-color: rgba(255, 255, 255, 0.9);*/
+                }
+
+
+            .player3__action--play:active {
+
+            }
+                .player3__action--play:active .player3__action--play::before {
+                    /*transition: none;*/
+                }
+
+            .player3__action--disabled,
+            .player3__action--disabled:hover {
+                /*cursor: default;*/
+            }
+                .player3__action--disabled .player3__icon,
+                .player3__action--disabled:hover .player3__icon {
+                    /*fill: #757575;*/
+                }
+
+                .player3__action--disabled::before,
+                .player3__action--disabled:hover::before {
+                    /*background-color: transparent;*/
+                }
+
+
+        .player3__like {
+            /*position: absolute;*/
+            right: 58px;
+            top: 27px;
+        }
+        .player3__like.react,
+        .player3__like .react {
+            width: 82px;
+            /*padding-top: 7px;*/
+            /*padding-bottom: 7px;*/
+        }
+
+        .player3__menu {
+            /*position: absolute;*/
+            right: 10px;
+            top: 24px;
+        }
