@@ -4,374 +4,377 @@
     display: block;
     /*align-items: stretch;*/
 }
-    .circles__sidebar {
-        position: absolute;
-        z-index: 90;
-        right: 100%;
-        margin-right: 11px;
-        top: 0;
-        bottom: 0;
-        width: 260px;
-        overflow-y: visible;
-        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
-        transition: margin-right var(--transition-long-show);
+    .circles__inner {
+        display: block;
     }
-
-    .circles--expanded .circles__sidebar {
-        margin-right: -260px;
-    }
-        .circles__side-head {
-            /*padding: 35px 0 0 76px;*/
-            padding-right: 56px;
-            /*height: var(--circles-head-height);*/
-            /*background-color: #44474A;*/
-            /*background-image: url("../images/rings.svg");*/
-            /*background-size: 30px 30px;*/
-            /*background-repeat: no-repeat;*/
-            /*background-position: 28px 37px;*/
+        .circles__sidebar {
+            position: absolute;
+            z-index: 90;
+            right: 100%;
+            margin-right: 11px;
+            top: 0;
+            bottom: 0;
+            width: 260px;
+            overflow-y: visible;
+            box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+            transition: margin-right var(--transition-long-show);
         }
-            .circles__circles {
-                /*display: block;*/
-                /*font-weight: 600;*/
-                /*font-size: 12px;*/
-                /*line-height: 18px;*/
-                /*color: #FFFFFF;*/
-            }
 
-            .circles__updated {
-                /*font-size: 11px;*/
-                /*line-height: 16px;*/
-                /*color: #FFFFFF;*/
-            }
-
-            .circles__close-sidebar {
-                position: absolute;
-                right: 14px;
-                top: 31px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 44px;
-                height: 44px;
-                padding: 0;
-                border: none;
-                background-color: transparent;
-                cursor: pointer;
-            }
-                .circles__close-sidebar::before {
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: auto;
-                    display: block;
-                    width: 32px;
-                    height: 32px;
-                    border: 1px solid #FFFFFF;
-                    border-radius: 50%;
-                }
-
-                .circles__cross {
-                    vertical-align: top;
-                    fill: #FFFFFF;
-                }
-
-        .circles__navigation {
-            /*height: calc(100% - var(--circles-head-height));*/
-            /*overflow-y: auto;*/
-            /*-webkit-overflow-scrolling: touch;*/
-            /*background-color: #EEF0F3;*/
+        .circles--expanded .circles__sidebar {
+            margin-right: -260px;
         }
-            .circles__latch {
-                /*padding-top: 14px;*/
-                /*padding-bottom: 40px;*/
-            }
-                .circles__pending {
-                    /*position: relative;*/
-                    /*margin: 14px 20px;*/
-                }
-                    .circles__pending .button {
-                        /*width: 100%;*/
-                    }
-
-                    .circles__pending-counter {
-                        /*position: absolute;*/
-                        /*right: -8px;*/
-                        /*top: -8px;*/
-                        /*box-shadow: 0 0 0 1px #FFFFFF;*/
-                        /*font-weight: bold;*/
-                        /*pointer-events: none;*/
-                    }
-
-            .circles__list {
-
-            }
-
-            .circles__add {
-                /*margin-top: 12px;*/
-                /*margin-left: 20px;*/
-            }
-            .circles__add.button,
-            .circles__add .button {
-                /*box-shadow: none;*/
-            }
-
-
-    .circles__content {
-        width: auto;
-        height: 100%;
-    }
-        .circles__inner-content {
-
-        }
-            .circles__head {
-                padding: 20px 20px 20px 74px;
+            .circles__side-head {
+                /*padding: 35px 0 0 76px;*/
+                padding-right: 56px;
                 /*height: var(--circles-head-height);*/
-                /*background-color: #23282C;*/
+                /*background-color: #44474A;*/
+                /*background-image: url("../images/rings.svg");*/
+                /*background-size: 30px 30px;*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: 28px 37px;*/
             }
-                .circles__show-sidebar {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    display: block;
-                    width: 72px;
-                    height: 76px;
-                    border: none;
-                    padding: 0;
-                    background-color: transparent;
-                    background-image: url("../images/rings.svg");
-                    background-size: 30px 30px;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                    text-indent: 200%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    cursor: pointer;
-                }
-                    .circles__show-sidebar--has-updates::after {
-                        content: "";
-                        position: absolute;
-                        right: 15px;
-                        top: 19px;
-                        display: block;
-                        width: 8px;
-                        height: 8px;
-                        background-color: #EB5757;
-                        border-radius: 50%;
-                    }
-
-                .circles__intro {
-                    /*max-width: 440px;*/
-                    margin-top: 0;
-                    margin-left: 0;
-                    /*font-size: 13px;*/
-                    /*line-height: 20px;*/
+                .circles__circles {
+                    /*display: block;*/
+                    /*font-weight: 600;*/
+                    /*font-size: 12px;*/
+                    /*line-height: 18px;*/
                     /*color: #FFFFFF;*/
                 }
 
-                .circles__head-texts {
-                    display: none;
+                .circles__updated {
+                    /*font-size: 11px;*/
+                    /*line-height: 16px;*/
+                    /*color: #FFFFFF;*/
                 }
-                    .circles__heading {
-                        font-size: 18px;
-                        line-height: 24px;
-                    }
 
-                    .circles__note {
-                        margin-top: 4px;
-                        font-size: 11px;
-                        line-height: 18px;
-                    }
-
-                .circles__operations {
-
+                .circles__close-sidebar {
+                    position: absolute;
+                    right: 14px;
+                    top: 31px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 44px;
+                    height: 44px;
+                    padding: 0;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
                 }
-                    .circles__settings {
-
+                    .circles__close-sidebar::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        margin: auto;
+                        display: block;
+                        width: 32px;
+                        height: 32px;
+                        border: 1px solid #FFFFFF;
+                        border-radius: 50%;
                     }
 
-                    .circles__head-add-person {
-
+                    .circles__cross {
+                        vertical-align: top;
+                        fill: #FFFFFF;
                     }
 
-                    .circles__head-add-circle {
-                        display: none;
-                    }
-
-            .circles__body {
-                /*position: relative;*/
-                padding-right: 0;
-                height: calc(100% - var(--circles-head-height));
+            .circles__navigation {
+                /*height: calc(100% - var(--circles-head-height));*/
+                /*overflow-y: auto;*/
+                /*-webkit-overflow-scrolling: touch;*/
+                /*background-color: #EEF0F3;*/
             }
-                .circles__tabs {
-                    position: static;
-                    /*right: 0;*/
-                    /*top: 0;*/
-                    padding-bottom: 0;
-                    width: auto;
-                    border-bottom: 1px solid #E1E3E6;
-                    /*display: flex;*/
-                    /*align-items: stretch;*/
-                    padding-left: 0;
-                    padding-right: 0;
-                    overflow: visible; /* to cut (1) and prevent horizontal scrollbar */
+                .circles__latch {
+                    /*padding-top: 14px;*/
+                    /*padding-bottom: 40px;*/
                 }
-                    .circles__tabs::before {
-                        display: none;
-                        /*content: "";*/
-                        /*position: absolute;*/
-                        /*left: -1px;*/
-                        /*bottom: 0;*/
-                        /*right: -1px; !* (1) *!*/
-                        /*height: 30px;*/
-                        /*border-top-left-radius: 30px;*/
-                        /*border-top-right-radius: 30px;*/
-                        /*border-left: 1px solid #E1E3E6;*/
-                        /*border-top: 1px solid #E1E3E6;*/
-                        /*border-right: 1px solid #E1E3E6;*/
-                    }
-
-                    .circles__tag {
+                    .circles__pending {
                         /*position: relative;*/
-                        /*background-color: transparent;*/
-                        /*flex-grow: 1;*/
-                        /*flex-basis: 0;*/
-                        /*border: none;*/
-                        /*padding: 15px 10px;*/
-                        /*text-align: center;*/
-                        /*font-weight: 600;*/
-                        /*font-size: 12px;*/
-                        /*line-height: 18px;*/
-                        /*color: #76797C;*/
-                        /*cursor: pointer;*/
-                        /*transition: color var(--transition-hover);*/
+                        /*margin: 14px 20px;*/
+                    }
+                        .circles__pending .button {
+                            /*width: 100%;*/
+                        }
+
+                        .circles__pending-counter {
+                            /*position: absolute;*/
+                            /*right: -8px;*/
+                            /*top: -8px;*/
+                            /*box-shadow: 0 0 0 1px #FFFFFF;*/
+                            /*font-weight: bold;*/
+                            /*pointer-events: none;*/
+                        }
+
+                .circles__list {
+
+                }
+
+                .circles__add {
+                    /*margin-top: 12px;*/
+                    /*margin-left: 20px;*/
+                }
+                .circles__add.button,
+                .circles__add .button {
+                    /*box-shadow: none;*/
+                }
+
+
+        .circles__content {
+            width: auto;
+            height: 100%;
+        }
+            .circles__inner-content {
+
+            }
+                .circles__head {
+                    padding: 20px 20px 20px 74px;
+                    /*height: var(--circles-head-height);*/
+                    /*background-color: #23282C;*/
+                }
+                    .circles__show-sidebar {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        display: block;
+                        width: 72px;
+                        height: 76px;
+                        border: none;
+                        padding: 0;
+                        background-color: transparent;
+                        background-image: url("../images/rings.svg");
+                        background-size: 30px 30px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        text-indent: 200%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+                        .circles__show-sidebar--has-updates::after {
+                            content: "";
+                            position: absolute;
+                            right: 15px;
+                            top: 19px;
+                            display: block;
+                            width: 8px;
+                            height: 8px;
+                            background-color: #EB5757;
+                            border-radius: 50%;
+                        }
+
+                    .circles__intro {
+                        /*max-width: 440px;*/
+                        margin-top: 0;
+                        margin-left: 0;
+                        /*font-size: 13px;*/
+                        /*line-height: 20px;*/
+                        /*color: #FFFFFF;*/
                     }
 
-                    .circles__tag:hover {
-                        /*color: #23282C;*/
+                    .circles__head-texts {
+                        display: none;
                     }
+                        .circles__heading {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
 
-                    .circles__tag:active {
-                        /*color: #23282C;*/
-                        /*transition: none;*/
+                        .circles__note {
+                            margin-top: 4px;
+                            font-size: 11px;
+                            line-height: 18px;
+                        }
+
+                    .circles__operations {
+
                     }
+                        .circles__settings {
 
-                        /* hover background */
-                        .circles__tag::before {
+                        }
+
+                        .circles__head-add-person {
+
+                        }
+
+                        .circles__head-add-circle {
+                            display: none;
+                        }
+
+                .circles__body {
+                    /*position: relative;*/
+                    padding-right: 0;
+                    height: calc(100% - var(--circles-head-height));
+                }
+                    .circles__tabs {
+                        position: static;
+                        /*right: 0;*/
+                        /*top: 0;*/
+                        padding-bottom: 0;
+                        width: auto;
+                        border-bottom: 1px solid #E1E3E6;
+                        /*display: flex;*/
+                        /*align-items: stretch;*/
+                        padding-left: 0;
+                        padding-right: 0;
+                        overflow: visible; /* to cut (1) and prevent horizontal scrollbar */
+                    }
+                        .circles__tabs::before {
                             display: none;
                             /*content: "";*/
                             /*position: absolute;*/
-                            /*left: 0;*/
-                            /*top: 0;*/
-                            /*right: 0;*/
+                            /*left: -1px;*/
                             /*bottom: 0;*/
-                            /*width: 100px;*/
-                            /*height: 64px;*/
-                            /*margin: auto;*/
-                            /*display: block;*/
-                            /*border-radius: 8px;*/
-                            /*transition: background-color var(--transition-hover);*/
+                            /*right: -1px; !* (1) *!*/
+                            /*height: 30px;*/
+                            /*border-top-left-radius: 30px;*/
+                            /*border-top-right-radius: 30px;*/
+                            /*border-left: 1px solid #E1E3E6;*/
+                            /*border-top: 1px solid #E1E3E6;*/
+                            /*border-right: 1px solid #E1E3E6;*/
                         }
 
-                        .circles__tag:hover::before {
-                            /*background-color: var(--panel-hover);*/
+                        .circles__tag {
+                            /*position: relative;*/
+                            /*background-color: transparent;*/
+                            /*flex-grow: 1;*/
+                            /*flex-basis: 0;*/
+                            /*border: none;*/
+                            /*padding: 15px 10px;*/
+                            /*text-align: center;*/
+                            /*font-weight: 600;*/
+                            /*font-size: 12px;*/
+                            /*line-height: 18px;*/
+                            /*color: #76797C;*/
+                            /*cursor: pointer;*/
+                            /*transition: color var(--transition-hover);*/
                         }
 
-                        .circles__tag:active::before {
-                            /*background-color: var(--panel-active);*/
+                        .circles__tag:hover {
+                            /*color: #23282C;*/
+                        }
+
+                        .circles__tag:active {
+                            /*color: #23282C;*/
                             /*transition: none;*/
                         }
 
-                        .circles__icon {
-                            /*position: relative;*/
-                            /*width: 20px;*/
-                            /*height: 20px;*/
-                            /*fill: currentColor;*/
+                            /* hover background */
+                            .circles__tag::before {
+                                display: none;
+                                /*content: "";*/
+                                /*position: absolute;*/
+                                /*left: 0;*/
+                                /*top: 0;*/
+                                /*right: 0;*/
+                                /*bottom: 0;*/
+                                /*width: 100px;*/
+                                /*height: 64px;*/
+                                /*margin: auto;*/
+                                /*display: block;*/
+                                /*border-radius: 8px;*/
+                                /*transition: background-color var(--transition-hover);*/
+                            }
+
+                            .circles__tag:hover::before {
+                                /*background-color: var(--panel-hover);*/
+                            }
+
+                            .circles__tag:active::before {
+                                /*background-color: var(--panel-active);*/
+                                /*transition: none;*/
+                            }
+
+                            .circles__icon {
+                                /*position: relative;*/
+                                /*width: 20px;*/
+                                /*height: 20px;*/
+                                /*fill: currentColor;*/
+                            }
+
+                            .circles__label {
+                                /*position: relative;*/
+                                /*display: block;*/
+                                /*margin-top: 4px;*/
+                            }
+
+                            /* line */
+                            .circles__tag::after {
+                                /*content: "";*/
+                                /*position: absolute;*/
+                                /*bottom: -2px;*/
+                                /*left: 50%;*/
+                                /*width: 52px;*/
+                                /*height: 3px;*/
+                                /*display: block;*/
+                                /*margin-left: -26px;*/
+                                /*border-radius: 2px;*/
+                            }
+
+
+                        .circles__tag--chat {
+                            display: block; /* was hidden on desktop */
                         }
 
-                        .circles__label {
-                            /*position: relative;*/
+                        .circles__tag--current {
+                            /*color: #23282C;*/
+                            /*cursor: default;*/
+                        }
+                            .circles__tag--current::before {
+                                /*display: none;*/
+                            }
+
+                            .circles__tag--current::after {
+                                /*background-color: currentColor;*/
+                            }
+
+                    .circles__panel {
+                        position: static;
+                        /*right: 0;*/
+                        /*top: var(--circles-tabs-height);*/
+                        /*bottom: 0;*/
+                        width: auto;
+                        height: calc(100% - var(--circles-tabs-mobile-height));
+                        display: none; /* hide all panels again because .circles__panel--chat was always visible on desktop */
+                    }
+
+                    .circles__panel--visible {
+                        display: block;
+                    }
+
+                    .circles__panel--chat {
+                        /*display: block; !* always show on desktop *!*/
+                        /*position: static;*/
+                        /*width: auto;*/
+                        /*height: 100%;*/
+                        border-right: none;
+                    }
+                        .circles__feed {
                             /*display: block;*/
-                            /*margin-top: 4px;*/
+                            /*flex-direction: column;*/
                         }
+                            .circles__messages {
+                                /*flex-grow: 1;*/
+                                /*overflow-y: visible;*/
+                                /*-webkit-overflow-scrolling: touch;*/
+                            }
 
-                        /* line */
-                        .circles__tag::after {
-                            /*content: "";*/
-                            /*position: absolute;*/
-                            /*bottom: -2px;*/
-                            /*left: 50%;*/
-                            /*width: 52px;*/
-                            /*height: 3px;*/
-                            /*display: block;*/
-                            /*margin-left: -26px;*/
-                            /*border-radius: 2px;*/
-                        }
-
-
-                    .circles__tag--chat {
-                        display: block; /* was hidden on desktop */
-                    }
-
-                    .circles__tag--current {
-                        /*color: #23282C;*/
-                        /*cursor: default;*/
-                    }
-                        .circles__tag--current::before {
-                            /*display: none;*/
-                        }
-
-                        .circles__tag--current::after {
-                            /*background-color: currentColor;*/
-                        }
-
-                .circles__panel {
-                    position: static;
-                    /*right: 0;*/
-                    /*top: var(--circles-tabs-height);*/
-                    /*bottom: 0;*/
-                    width: auto;
-                    height: calc(100% - var(--circles-tabs-mobile-height));
-                    display: none; /* hide all panels again because .circles__panel--chat was always visible on desktop */
-                }
-
-                .circles__panel--visible {
-                    display: block;
-                }
-
-                .circles__panel--chat {
-                    /*display: block; !* always show on desktop *!*/
-                    /*position: static;*/
-                    /*width: auto;*/
-                    /*height: 100%;*/
-                    border-right: none;
-                }
-                    .circles__feed {
-                        /*display: block;*/
-                        /*flex-direction: column;*/
-                    }
-                        .circles__messages {
-                            /*flex-grow: 1;*/
-                            /*overflow-y: visible;*/
-                            /*-webkit-overflow-scrolling: touch;*/
-                        }
-
-                        .circles__form {
-                            /*flex-shrink: 0;*/
-                            /*padding: var(--padding-under-chat) 36px;*/
-                            padding-left: 20px;
-                            padding-right: 20px;
-                            /*border-top: 1px solid #E1E3E6;*/
-                        }
+                            .circles__form {
+                                /*flex-shrink: 0;*/
+                                /*padding: var(--padding-under-chat) 36px;*/
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                /*border-top: 1px solid #E1E3E6;*/
+                            }
 
 
 
 
-    .circles__modal {
-        margin: 0;
-        left: 20px;
-        right: 20px;
-        width: calc(100% - 40px);
-    }
+        .circles__modal {
+            margin: 0;
+            left: 20px;
+            right: 20px;
+            width: calc(100% - 40px);
+        }
