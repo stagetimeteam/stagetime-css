@@ -1,0 +1,119 @@
+.module-head {
+
+}
+    .module-head__back {
+        /*float: left;*/
+        /*margin-top: 2px;*/
+        /*padding-right: 26px;*/
+        /*margin-left: -6px;*/
+    }
+
+    .module-head__heading {
+        /*margin-top: 0;*/
+        /*margin-bottom: 0;*/
+        /*color: #757575;*/
+    }
+
+    .module-head__control-panel {
+        display: none;
+        /*position: relative;*/
+        /*margin-top: 25px;*/
+        /*height: 50px;*/
+        /*padding-bottom: 10px; !* line *!*/
+    }
+        .module-head__control-panel::before { /* line */
+            /*content: "";*/
+            /*display: block;*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*right: 0;*/
+            /*bottom: 10px; !* 10px instead of 0px to make sure things with white background will be over this line, even when zooming *!*/
+            /*height: 1px;*/
+            /*background-color: #C4C4C4;*/
+        }
+
+        .module-head__left-slot {
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*bottom: 10px; !* 10px instead of 0px to make sure this is over bottom line, even while zooming *!*/
+            /*padding-right: 20px;*/
+            /*background-color: #FFFFFF;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+
+
+        .module-head__right-slot {
+            /*position: absolute;*/
+            /*right: 0;*/
+            /*bottom: 10px; !* 10px instead of 0px to make sure this is over bottom line, even while zooming *!*/
+            /*padding-left: 20px;*/
+            /*background-color: #FFFFFF;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+            .module-head__right-slot .query {
+                /*width: 298px;*/
+            }
+
+            .module-head__right-slot .action,
+            .module-head__right-slot .operations {
+                /*margin-top: -12px;*/
+                /*margin-bottom: -8px;*/
+            }
+
+            .module-head__right-slot .action:first-child,
+            .module-head__right-slot .operations:first-child {
+                /*margin-left: -8px;*/
+            }
+
+            .module-head__right-slot .action:not(.action--simplified):last-child,
+            .module-head__right-slot .operations:last-child {
+                /*margin-right: -16px;*/
+            }
+
+    .module-head__search-notice {
+        display: none;
+        /*margin-top: 19px;*/
+        /*margin-left: 15px;*/
+    }
+
+
+
+.module-head--based-on-heading .module-head {
+
+}
+    .module-head--based-on-heading .module-head__back {
+        /*position: relative;*/
+        /*z-index: 10;*/
+        /*background-color: #FFFFFF;*/
+    }
+
+    .module-head--based-on-heading .module-head__heading {
+        /*position: relative;*/
+        /*z-index: 10;*/
+        /*display: inline-block;*/
+        /*vertical-align: top;*/
+        /*padding-bottom: 10px;*/
+        /*padding-right: 20px;*/
+        /*background-color: #FFFFFF;*/
+    }
+
+    .module-head--based-on-heading .module-head__control-panel {
+        /*margin-top: -57px;*/
+    }
+        .module-head--based-on-heading .module-head__control-panel::before {
+
+        }
+
+        .module-head--based-on-heading .module-head__left-slot {
+
+        }
+
+        .module-head--based-on-heading .module-head__right-slot {
+
+        }
+
+    .module-head--based-on-heading .module-head__search-notice {
+
+    }
