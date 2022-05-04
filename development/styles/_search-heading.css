@@ -1,6 +1,6 @@
 .search-heading {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     font-size: 12px;
     line-height: 20px;
     color: #757575;
@@ -9,7 +9,7 @@
     .search-heading__cancel {
         width: 40px;
         height: 40px;
-        margin: -11px -10px -9px -2px;
+        margin: -9px -10px -11px -2px;
         display: flex;
         align-items: center;
         justify-content: center;

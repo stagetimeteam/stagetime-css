@@ -11,3 +11,9 @@
 .container--setting {
 
 }
+
+.container--organisation {
+    width: auto;
+    border-left-width: var(--container-mobile-padding);
+    border-right-width: var(--container-mobile-padding);
+}

@@ -19,7 +19,51 @@
             <br>
             <h1>.user-card</h1>
 
+            <p>
+                Default version:
+            </p>
+
             <div class="user-card">
+                <a class="user-card__preview avatar avatar--squared" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-c-146x146@2x.jpg 2x"
+                         src="../temp/person-c-146x146.jpg"
+                         width="146"
+                         height="146"
+                         alt=""
+                    >
+                </a>
+                <div class="user-card__data">
+                    <h4 class="user-card__name">
+                        <a class="user-card__link" href="#">
+                            Zoey Preston
+                        </a>
+                    </h4>
+                    <div class="user-card__note">
+                        Soprano
+                    </div>
+                </div>
+            </div>
+
+
+            <p>
+                Default version isn't used anymore but beware of editing its style because
+                many of these styles are base for modifiers below.
+            </p>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.user-card--group</h2>
+            <p>
+                This is what originally was the default card. There is no CSS code for desktop
+                version of this modifier. But at one point of time this card has become responsive,
+                and this is where we got mobile styles for this modifier.
+            </p>
+
+
+            <div class="user-card user-card--group">
                 <a class="user-card__preview avatar avatar--squared" href="#">
                     <img class="avatar__image"
                          srcset="../temp/person-c-146x146@2x.jpg 2x"

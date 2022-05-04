@@ -76,6 +76,34 @@
         }
 
 
+.user-card--group {
+
+}
+    .user-card--side .user-card__preview.avatar,
+    .user-card--side .user-card__preview .avatar {
+
+    }
+
+    .user-card--side .user-card__data {
+
+    }
+        .user-card--side .user-card__name {
+
+        }
+            .user-card--side .user-card__link {
+
+            }
+
+            .user-card--side .user-card:hover .user-card__link,
+            .user-card--side .user-card__link:hover {
+
+            }
+
+        .user-card--side .user-card__note {
+
+        }
+
+
 .user-card--side {
     width: 104px;
     padding: 0;
