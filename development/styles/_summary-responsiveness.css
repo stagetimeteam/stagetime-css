@@ -2,8 +2,8 @@
     /*position: relative;*/
     /*display: flex;*/
     /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*height: 467px;*/
+    justify-content: flex-end;
+    height: 238px;
     /*padding-top: 22px;*/
     /*color: #FFFFFF;*/
 }
@@ -32,35 +32,41 @@
         }
 
     .summary__wrap {
-        /*position: relative;*/
+
     }
         .summary__brand {
             /*display: flex;*/
             /*align-items: flex-end;*/
         }
             .summary__logo {
-
+                width: 74px;
+                height: 74px;
+                border-radius: 2px;
+                padding: 1px;
+                margin: 0 17px 0 0;
             }
                 .summary__emblem {
+                    width: 72px;
+                    height: 72px;
                     /*flex-shrink: 0;*/
-                    /*margin-right: 40px;*/
                     /*margin-top: 9px;*/
                     /*margin-bottom: 10px;*/
-                    /*border-radius: 8px;*/
+                    border-radius: 2px;
                     /*box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);*/
                 }
 
             .summary__title {
-                /*width: 308px;*/
+                width: auto;
                 /*margin-top: 0;*/
                 /*margin-bottom: 0;*/
                 /*font-weight: 300;*/
-                /*font-size: 50px;*/
-                /*line-height: 66px;*/
+                font-size: 30px;
+                line-height: 36px;
                 /*letter-spacing: -1.36px;*/
             }
 
         .summary__location {
+            display: none;
             /*margin-top: 38px;*/
             /*position: relative;*/
             /*font-weight: bold;*/
@@ -81,6 +87,10 @@
         .summary__actions {
 
         }
+            .summary__contacts {
+                display: flex;
+                align-items: flex-end;
+            }
 
 
 .summary--as-card {

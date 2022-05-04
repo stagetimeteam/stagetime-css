@@ -42,7 +42,7 @@
 
         .summary__brand {
             display: flex;
-            align-items: flex-end;
+            align-items: center;
         }
             .summary__logo {
                 flex-shrink: 0;
@@ -93,9 +93,17 @@
             }
 
         .summary__actions {
-
+            display: flex;
+            align-items: flex-start;
         }
+            .summary__contacts {
+                display: none;
+            }
 
+            .summary__addition {
+                display: flex;
+                align-items: flex-end;
+            }
 
 .summary--as-card {
     /*position: relative;*/
@@ -194,6 +202,4 @@
             z-index: 50;
             right: 26px;
             top: 43px;
-            display: flex;
-            align-items: flex-start;
         }

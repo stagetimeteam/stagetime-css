@@ -11,6 +11,10 @@
     .module-head__heading {
         margin-top: 0;
         margin-bottom: 0;
+        font-weight: 300;
+        font-size: 35px;
+        line-height: 40px;
+        letter-spacing: -0.8px;
         color: #757575;
     }
 

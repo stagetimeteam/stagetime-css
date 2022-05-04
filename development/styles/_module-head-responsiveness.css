@@ -1,16 +1,35 @@
 .module-head {
-
+    position: relative;
 }
+    .module-head::before {
+        content: "";
+        position: absolute;
+        left: 60px;
+        right: 0;
+        bottom: 15px;
+        display: block;
+        height: 1px;
+        background-color: #E8E8E8;
+    }
     .module-head__back {
         /*float: left;*/
         /*margin-top: 2px;*/
-        /*padding-right: 26px;*/
+        padding-right: 8px;
         /*margin-left: -6px;*/
     }
 
     .module-head__heading {
-        /*margin-top: 0;*/
-        /*margin-bottom: 0;*/
+        position: relative;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-right: 28px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0;
+        background-color: #FFFFFF;
         /*color: #757575;*/
     }
 
