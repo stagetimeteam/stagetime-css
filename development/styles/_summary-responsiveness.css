@@ -99,6 +99,7 @@
 
             .summary__addition {
                 margin-left: auto;
+                margin-right: -12px;
                 display: flex;
                 align-items: flex-start;
             }

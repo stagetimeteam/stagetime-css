@@ -235,14 +235,18 @@
 .operations--white {
 
 }
+    .operations--white .operations__handler {
+        color: #FFFFFF;
+    }
+
     .operations--white .operations__handler:hover {
         color: #AAAAAA;
     }
-        .operations--white:hover .operations__icon {
-            fill: #AAAAAA;
+        .operations--white .operations__icon {
+            fill: #FFFFFF;
         }
 
-        .operations--white:hover .operations__handler:hover .operations__icon {
+        .operations--white .operations__handler:hover .operations__icon {
             fill: #AAAAAA;
         }
 

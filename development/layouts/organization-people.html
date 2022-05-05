@@ -721,6 +721,14 @@
                     </style>
                 </div>
                 <div class="summary__wrap container container--organisation">
+                    <a class="summary__edit action action--simplified action--faded" data-toggle="modal" data-target="#edit-organization">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Edit
+                        </span>
+                    </a>
                     <div class="summary__brand">
                         <div class="summary__logo">
                             <img class="summary__emblem"
@@ -734,6 +742,44 @@
                         <h1 class="summary__title">
                             Indiana University
                         </h1>
+                    </div>
+                    <div class="summary__operations">
+                        <div class="summary__contacts">
+                            <a class="summary__channel" href="#">Call</a>
+                            <a class="summary__channel" href="#">Website</a>
+                        </div>
+                        <div class="summary__addition">
+                            <a class="action action--alternate action--inverted" href="#">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-plus.svg" width="16" height="16" alt="">
+                                </span>
+                                <span class="action__label">
+                                    Follow
+                                </span>
+                            </a>
+                            <div class="operations operations--white">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-lock.svg" width="24" height="24" alt="">
+                                            Request Admin Access
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                            Report
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -788,8 +834,8 @@
                     </div>
                     <div class="group group--preview">
                         <div class="group__listing">
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-a-146x146@2x.jpg 2x"
                                          src="../temp/person-a-146x146.jpg"
@@ -798,19 +844,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Deniz Uzun
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Mezzo-soprano
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-b-146x146@2x.jpg 2x"
                                          src="../temp/person-b-146x146.jpg"
@@ -819,19 +865,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Alyssa Dessoye
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Soprano
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-c-146x146@2x.jpg 2x"
                                          src="../temp/person-c-146x146.jpg"
@@ -840,19 +886,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Konstantin Konstantinopolsky
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Tenor
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-a-146x146@2x.jpg 2x"
                                          src="../temp/person-a-146x146.jpg"
@@ -861,19 +907,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Deniz Uzun
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Mezzo-soprano
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-b-146x146@2x.jpg 2x"
                                          src="../temp/person-b-146x146.jpg"
@@ -882,13 +928,13 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Alyssa Dessoye
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Soprano
                                     </div>
                                 </div>
@@ -943,8 +989,8 @@
                     </div>
                     <div class="group group--preview">
                         <div class="group__listing">
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-a-146x146@2x.jpg 2x"
                                          src="../temp/person-a-146x146.jpg"
@@ -953,19 +999,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Deniz Uzun
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Mezzo-soprano
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-b-146x146@2x.jpg 2x"
                                          src="../temp/person-b-146x146.jpg"
@@ -974,19 +1020,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Alyssa Dessoye
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Soprano
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-c-146x146@2x.jpg 2x"
                                          src="../temp/person-c-146x146.jpg"
@@ -995,19 +1041,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Konstantin Konstantinopolsky
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Tenor
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-a-146x146@2x.jpg 2x"
                                          src="../temp/person-a-146x146.jpg"
@@ -1016,19 +1062,19 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Deniz Uzun
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Mezzo-soprano
                                     </div>
                                 </div>
                             </div>
-                            <div class="group__item user-card user-card--group">
-                                <a class="user-card__preview avatar avatar--squared" href="#">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
                                     <img class="avatar__image"
                                          srcset="../temp/person-b-146x146@2x.jpg 2x"
                                          src="../temp/person-b-146x146.jpg"
@@ -1037,13 +1083,13 @@
                                          alt=""
                                     >
                                 </a>
-                                <div class="user-card__data">
-                                    <h4 class="user-card__name">
-                                        <a class="user-card__link" href="#">
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
                                             Alyssa Dessoye
                                         </a>
                                     </h4>
-                                    <div class="user-card__note">
+                                    <div class="group__note">
                                         Soprano
                                     </div>
                                 </div>
