@@ -13,7 +13,7 @@
 }
 
 .container--organisation {
-    width: auto;
+    width: 100%;
     border-left-width: var(--container-mobile-padding);
     border-right-width: var(--container-mobile-padding);
 }
