@@ -32,12 +32,17 @@
     }
         .media__icon {
             vertical-align: top;
-            fill: #C4C4C4;
+            fill: #545454;
             transition: fill var(--transition-hover);
         }
 
         .media__link:hover .media__icon {
-            fill: #757575;
+            fill: #7E7E7E;
+        }
+
+        .media__link:active .media__icon {
+            fill: #333333;
+            transition: none;
         }
 
     .media__footer {

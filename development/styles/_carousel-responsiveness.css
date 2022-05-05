@@ -57,65 +57,6 @@
 
 
 
-.carousel--for-user-card {
-
-}
-    .carousel--for-user-card .carousel__container {
-        padding-left: 20px;
-        padding-right: 15px;
-    }
-
-        .carousel--for-user-card .carousel__item {
-
-        }
-
-        .carousel--for-user-card .carousel__item:last-child {
-
-        }
-
-
-    .carousel--for-user-card .carousel__control {
-        display: none;
-    }
-
-    .carousel--for-user-card .carousel__control--prev {
-
-    }
-
-    .carousel--for-user-card .carousel__control--next {
-
-    }
-
-.carousel--for-user-card.carousel--faded-right::after {
-    display: none;
-}
-
-
-@media (min-width: 376px) and (max-width: 420px) {
-
-    .carousel--for-user-card {
-
-    }
-        .carousel--for-user-card .carousel__item {
-            margin-right: 2px;
-        }
-
-        .carousel--for-user-card .carousel__item:last-child {
-            margin-right: 0;
-        }
-
-            .carousel--for-user-card .carousel__item .user-card--org-card {
-                width: 108px;
-            }
-                .carousel--for-user-card .avatar__image {
-                    width: 98px;
-                    height: 98px;
-                }
-}
-
-
-
-
 .carousel--for-updates {
 
 }

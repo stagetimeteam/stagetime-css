@@ -35,13 +35,6 @@
         /*margin-right: -4px;*/
     }
 
-    .button__logo {
-        /*vertical-align: top;*/
-        /*border-radius: 50%;*/
-        /*margin: 1px 4px 1px -8px;*/
-        /*box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.13);*/
-    }
-
 
 .button:hover {
     /*background: #757575;*/
@@ -52,12 +45,6 @@
     /*color: #333333;*/
     /*box-shadow: none;*/
     /*transition: none !important;*/
-}
-
-.button--smaller {
-    /*padding-top: 6px;*/
-    /*padding-bottom: 6px;*/
-    /*font-size: 9px;*/
 }
 
 

@@ -15,11 +15,6 @@
     word-wrap: break-word;
 }
 
-.wysiwyg--smaller {
-    font-size: var(--wysiwyg-smaller-font);
-    line-height: var(--wysiwyg-smaller-line);
-}
-
 .wysiwyg--larger {
     font-size: var(--wysiwyg-larger-font);
     line-height: var(--wysiwyg-larger-line);

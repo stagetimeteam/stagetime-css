@@ -121,54 +121,6 @@
     }
 
 
-.carousel--for-user-card {
-
-}
-    .carousel--for-user-card .carousel__container {
-        padding-right: 40px;
-    }
-        .carousel--for-user-card .carousel__item {
-
-        }
-
-        .carousel--for-user-card .carousel__item:last-child {
-
-        }
-
-
-    .carousel--for-user-card .carousel__control {
-        position: absolute;
-        z-index: 100;
-        right: -12px;
-    }
-
-    .carousel--for-user-card .carousel__control--prev {
-        top: 48px;
-    }
-
-    .carousel--for-user-card .carousel__control--next {
-        top: 10px;
-    }
-
-    .carousel--for-user-card.carousel--scrolled-to-right::before,
-    .carousel--for-user-card.carousel--scrolled-to-right::after {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-
-    /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
-    .carousel--for-user-card.carousel--faded-right::before {
-        width: 24px;
-    }
-
-    /* this is gradient itself, you can click through and scroll over */
-    .carousel--for-user-card.carousel--faded-right::after {
-        right: 24px;
-        width: 144px;
-        background-image: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.48) 56.25%, rgba(255, 255, 255, 0) 100%);
-    }
-
 
 .carousel--for-profile-media {
     padding-right: 144px;
