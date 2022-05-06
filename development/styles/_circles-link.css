@@ -62,7 +62,7 @@
 
 
 .circles-link--placeholder {
-
+    pointer-events: none;
 }
     .circles-link--placeholder .circles-link__preview {
 
