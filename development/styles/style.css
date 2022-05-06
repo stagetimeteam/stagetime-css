@@ -38,9 +38,6 @@
 @import url("_group.css");
 @import url("_events.css");
 @import url("_organization.css");
-@import url("_channels.css");
-@import url("_location.css");
-@import url("_brief.css");
 @import url("_wysiwyg.css");
 @import url("_events-calendar.css");
 @import url("_activity-feed.css");
@@ -364,3 +361,4 @@
 @import url("_user-alt-card.css");
 @import url("_traction.css");
 @import url("_address.css");
+@import url("_brief.css");

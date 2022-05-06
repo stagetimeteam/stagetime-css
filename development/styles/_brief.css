@@ -1,24 +1,47 @@
 .brief {
-    display: flex;
-    align-items: flex-start;
+
 }
-    .brief__address {
-        flex-shrink: 0;
-        width: 168px;
-    }
+    .brief__about {
 
-    .brief__description {
-        flex-shrink: 0;
-        margin-top: 1px;
-        margin-left: 40px;
-        width: 514px;
-        color: #757575;
     }
+        .brief__about-text {
 
-    .brief__contacts {
-        flex-shrink: 0;
-        margin-top: 2px;
-        margin-left: 40px;
-        width: 268px;
+        }
+
+        .brief__about-handler {
+
+        }
+
+    .brief__information {
+
     }
+        .brief__information-handler {
 
+        }
+            .brief__angle {
+
+            }
+
+        .brief__information-dropdown {
+
+        }
+            .brief__location {
+
+            }
+                .brief__geo {
+
+                }
+
+            .brief__contacts {
+
+            }
+                .brief__channel {
+
+                }
+                    .brief__channel-icon {
+
+                    }
+
+            .brief__social-networks {
+
+            }
