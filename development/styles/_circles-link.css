@@ -58,3 +58,25 @@
         font-weight: 600;
         color: #333333;
     }
+
+
+
+.circles-link--placeholder {
+
+}
+    .circles-link--placeholder .circles-link__preview {
+
+    }
+        .circles-link--placeholder .abbreviation {
+
+        }
+
+    .circles-link--placeholder .circles-link__counter {
+
+    }
+
+    .circles-link--placeholder .circles-link__label {
+        width: 100%;
+        height: 11px;
+        background-color: #44474A;
+    }
