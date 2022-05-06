@@ -1,35 +1,3 @@
-.user-card--group {
-    width: 98px;
-    padding-top: 5px;
-    padding-bottom: 9px;
-}
-    .user-card--group .user-card__preview.avatar,
-    .user-card--group .user-card__preview .avatar {
-        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.13);
-    }
-        .user-card--group .user-card__preview .avatar__image {
-            width: 88px;
-            height: 88px;
-        }
-
-    .user-card--group .user-card__data {
-        margin-top: 9px;
-        min-height: 0;
-    }
-        .user-card--group .user-card__name {
-            font-size: 11px;
-            line-height: 15px;
-        }
-
-        .user-card--group .user-card__note {
-            margin-top: 1px;
-            font-size: 10px;
-            line-height: 15px;
-            color: #AAAAAA;
-        }
-
-
-
 .user-card--home {
     padding-bottom: 10px;
 }

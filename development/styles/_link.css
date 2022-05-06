@@ -63,13 +63,14 @@
     color: #AAAAAA;
 }
 
-
+w
 .link--user-color {
     color: var(--theme-main);
 }
 
 
 .link--fading {
+    font-weight: inherit;
     color: inherit;
     transition: opacity;
 }

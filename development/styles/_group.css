@@ -1,5 +1,5 @@
 .group {
-    padding-top: 10px;
+    padding-top: 15px;
     position: relative;
 }
     .group__listing {
@@ -9,8 +9,41 @@
         flex-wrap: wrap;
     }
         .group__item {
-
+            width: 188px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            text-align: center;
         }
+            .group__preview {
+
+            }
+                .group__preview.avatar,
+                .group__preview .avatar {
+                    border-radius: 11px;
+                    box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.15);
+                }
+
+            .group__user-data {
+                margin-top: 17px;
+                min-height: 70px;
+            }
+                .group__name {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 19px;
+                    line-height: 22px;
+                    color: #757575;
+                    text-align: center;
+                }
+
+                .group__note {
+                    margin-top: 5px;
+                    font-size: 11px;
+                    line-height: 16px;
+                    color: #757575;
+                    text-align: center;
+                }
 
     .group__more {
         position: absolute;

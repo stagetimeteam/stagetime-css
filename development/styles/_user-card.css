@@ -26,7 +26,7 @@
         margin-top: 18px;
         padding-left: 10px;
         padding-right: 10px;
-        min-height: 67px; /* two lines of .user-card__name plus one line of .user-card__note */
+        min-height: 67px; /* two lines of .user-card__name plus one line of .group__note */
     }
         .user-card__name {
             margin-top: 0;
@@ -37,16 +37,15 @@
             color: #757575;
         }
             .user-card__link {
-                padding-top: 8px; /* expand clickable area */
+                padding-top: 8px;
                 padding-bottom: 8px;
                 color: inherit;
                 text-decoration: none;
+                -webkit-transition: color var(--transition-hover);
                 transition: color var(--transition-hover);
             }
+            .user-card__name .link {
 
-            .user-card:hover .user-card__link,
-            .user-card__link:hover {
-                color: #C4C4C4;
             }
 
         .user-card__note {
@@ -76,32 +75,6 @@
         }
 
 
-.user-card--group {
-
-}
-    .user-card--side .user-card__preview.avatar,
-    .user-card--side .user-card__preview .avatar {
-
-    }
-
-    .user-card--side .user-card__data {
-
-    }
-        .user-card--side .user-card__name {
-
-        }
-            .user-card--side .user-card__link {
-
-            }
-
-            .user-card--side .user-card:hover .user-card__link,
-            .user-card--side .user-card__link:hover {
-
-            }
-
-        .user-card--side .user-card__note {
-
-        }
 
 
 .user-card--side {
@@ -124,14 +97,10 @@
             font-weight: bold;
             color: #545454;
         }
-            .user-card--side .user-card__link {
+            .user-card--side .user-card__link,
+            .user-card--side .user-card__name .link {
                 font-size: 12px;
                 line-height: 16px;
-            }
-
-            .user-card--side .user-card:hover .user-card__link,
-            .user-card--side .user-card__link:hover {
-
             }
 
         .user-card--side .user-card__note {
@@ -166,14 +135,6 @@
             line-height: 16px;
             color: #545454;
         }
-            .user-card--collection .user-card__link {
-
-            }
-
-            .user-card--collection .user-card:hover .user-card__link,
-            .user-card--collection .user-card__link:hover {
-
-            }
 
         .user-card--collection .user-card__note {
             margin-top: 0;
@@ -208,14 +169,6 @@
             line-height: 24px;
             color: #545454;
         }
-            .user-card--roster .user-card__link {
-
-            }
-
-            .user-card--roster .user-card:hover .user-card__link,
-            .user-card--roster .user-card__link:hover {
-
-            }
 
         .user-card--roster .user-card__note {
             margin-top: 4px;
@@ -249,17 +202,9 @@
             line-height: 16px;
             color: #333333;
         }
-            .user-card--home .user-card__link {
-
-            }
-
-            .user-card--home .user-card:hover .user-card__link,
-            .user-card--home .user-card__link:hover {
-
-            }
 
         .user-card--home .user-card__note {
-            margin-top: 1;
+            margin-top: 1px;
             font-weight: normal;
             font-size: 12px;
             line-height: 16px;

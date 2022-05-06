@@ -34,6 +34,9 @@
         .aspects__graph {
             margin-top: 10px;
         }
+            .aspects__demo {
+                vertical-align: top;
+            }
 
         .aspects__footer {
             margin-top: 10px;

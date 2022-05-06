@@ -2,7 +2,7 @@
     --user-color: #9CB2BE; /* default value */
     --easeOutCirc: cubic-bezier(0, 0.55, 0.45, 1);
     --org-pages-top-padding: 35px;
-    --org-pages-mobile-top-padding: 10px;
+    --org-pages-mobile-top-padding: 9px;
     --image-fallback: #C4C4C4;
     --transition-show: 0.1s ease;
     --transition-long-show: 0.3s ease;

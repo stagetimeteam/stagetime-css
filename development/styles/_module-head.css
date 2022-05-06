@@ -4,6 +4,7 @@
     .module-head__back {
         float: left;
         margin-top: 2px;
+        margin-bottom: -2px;
         padding-right: 26px;
         margin-left: -6px;
     }
@@ -78,6 +79,7 @@
     .module-head__search-notice {
         margin-top: 19px;
         margin-left: 15px;
+        padding-bottom: 15px;
     }
 
 
