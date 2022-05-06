@@ -63,6 +63,7 @@
 
 .group--preview {
     /*padding-top: 20px;*/
+    text-align: center;
 }
     .group--preview .group__listing {
         /*justify-content: flex-start;*/
@@ -72,6 +73,12 @@
 
         }
 
-    .group--preview .group__more {
+        .group--preview .group__item:nth-child(n+4) {
+            display: none;
+        }
 
+    .group--preview .group__more {
+        position: static;
+        margin-top: 8px;
+        width: 140px;
     }

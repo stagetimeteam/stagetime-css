@@ -3,5 +3,9 @@
     padding-bottom: 80px;
 }
     .people__department {
+        margin-top: 30px;
+    }
 
+    .people__department:first-child {
+        margin-top: 0;
     }
