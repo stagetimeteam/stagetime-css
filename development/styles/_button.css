@@ -218,14 +218,18 @@
 
 
 .button--darker {
-    background-color: #E8E8E8;
+    background-color: var(--light-panel);
     color: #757575;
     box-shadow: none;
 }
 
-.button--darker:hover,
+.button--darker:hover {
+    background-color: var(--light-panel-hover);
+    color: #757575;
+}
+
 .button--darker:active {
-    background-color: #C4C4C4;
+    background-color: var(--light-panel-active);
     color: #757575;
 }
 

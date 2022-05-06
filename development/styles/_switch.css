@@ -49,7 +49,7 @@
                 display: block;
                 padding: 10px 15px;
                 min-width: 100px;
-                background-color: #F1F1F1;
+                background-color: var(--light-panel);
                 border-radius: 20px;
                 font-weight: 600;
                 font-size: 10px;
@@ -63,7 +63,12 @@
             }
 
             .switch__label:hover {
-                background-color: #C4C4C4;
+                background-color: var(--light-panel-hover);
+                color: #757575;
+            }
+
+            .switch__label:active {
+                background-color: var(--light-panel-active);
                 color: #757575;
             }
 

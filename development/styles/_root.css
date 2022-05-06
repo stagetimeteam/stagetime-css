@@ -23,10 +23,6 @@
     --profile-sidebar: 152px;
     --profile-gap: 26px;
     --profile-mobile-border: 10px solid var(--theme-light);
-    --panel-hover: #F2F2F2;
-    --panel-active: #EAEAEA;
-    --grey-panel-hover: #DFDFDF;
-    --grey-panel-active: #D4D4D4;
     --user-pane-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
     --modal-padding: 34px;
     --container-mobile-padding: 20px;
@@ -41,6 +37,17 @@
     --circles-head-height: 106px;
     --padding-under-chat: 24px;
     --red: #EB5757;
+
+
+    --panel-hover: #F2F2F2;
+    --panel-active: #EAEAEA;
+
+    --grey-panel-hover: #DFDFDF;
+    --grey-panel-active: #D4D4D4;
+
+    --light-panel: #F1F1F1;
+    --light-panel-hover: #E1E1E1;
+    --light-panel-active: #D1D1D1;
 
     /* default theme: */
     --theme-main: #C6B1A6;
