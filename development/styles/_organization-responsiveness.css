@@ -1,0 +1,35 @@
+.organization {
+    padding-top: var(--org-pages-mobile-top-padding);
+    /*padding-bottom: 50px;*/
+}
+    .organization__head {
+        /*position: relative;*/
+        /*z-index: 100; !* to make operations dropdown higher than the rest of the page *!*/
+    }
+
+    .organization__about {
+        margin-top: 2px;
+    }
+
+    .organization__section {
+        /*margin-top: 45px;*/
+    }
+
+    .organization__about + .organization__section {
+        /*margin-top: 26px;*/
+    }
+
+        .organization__sub-head {
+
+        }
+
+        .organization__widget {
+            /*margin-top: 20px;*/
+        }
+
+        .organization__posting {
+            /*margin-bottom: 20px;*/
+            /*width: 750px;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+        }

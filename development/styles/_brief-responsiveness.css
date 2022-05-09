@@ -1,0 +1,168 @@
+.brief {
+    /*position: relative;*/
+    padding-left: 0;
+    padding-right: 0;
+    min-height: auto;
+}
+    .brief__about {
+
+    }
+        .brief__about-text {
+            /*color: #757575;*/
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        .brief__about--expanded .brief__about-text {
+            -webkit-line-clamp: unset;
+        }
+
+        .brief__about-handler {
+            margin-top: -4px;
+            margin-left: -20px;
+            display: inline-block;
+            vertical-align: top;
+            padding: 13px 20px;
+            border: none;
+            background-color: transparent;
+            font-family: inherit;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 26px;
+            color: #757575;
+            cursor: pointer;
+        }
+            .brief__more {
+
+            }
+
+            .brief__about--expanded .brief__more {
+                display: none;
+            }
+
+            .brief__less {
+                display: none;
+            }
+
+            .brief__about--expanded .brief__less {
+                display: inline;
+            }
+
+    .brief__information {
+        margin-top: 6px;
+        border: 1px solid #E8E8E8;
+        border-radius: 4px;
+    }
+        .brief__information-handler {
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            padding: 9px 100px 9px 27px;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #545454;
+            text-align: left;
+            cursor: pointer;
+        }
+            .brief__angle {
+                position: absolute;
+                right: 27px;
+                top: 50%;
+                margin-top: -8px;
+                fill: currentColor;
+            }
+
+            .brief__information--expanded .brief__angle {
+                transform: scaleY(-1);
+            }
+
+        .brief__information-dropdown {
+            border-top: 1px solid #E8E8E8;
+            padding: 17px 42px 4px;
+            display: none;
+        }
+
+        .brief__information--expanded .brief__information-dropdown {
+            display: block;
+        }
+
+        @media (max-width: 359px) {
+            .brief__information-dropdown {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+        }
+
+            .brief__location {
+                position: relative;
+                left: auto;
+                top: auto;
+                width: auto;
+                padding-right: 0;
+                /*font-weight: bold;*/
+                /*font-size: 12px;*/
+                /*line-height: 26px;*/
+                /*color: #757575;*/
+            }
+                .brief__geo {
+                    /*position: absolute;*/
+                    /*left: 0;*/
+                    /*top: 8px;*/
+                    /*width: 20px;*/
+                    /*height: 20px;*/
+                    /*fill: currentColor;*/
+                }
+
+            .brief__contacts {
+                margin-top: 17px;
+                padding-top: 24px;
+                position: relative;
+                right: auto;
+                top: auto;
+                width: auto;
+                padding-left: 0;
+            }
+                .brief__contacts::before {
+                    content: "";
+                    position: absolute;
+                    left: -16px;
+                    right: -16px;
+                    top: 0;
+                    height: 1px;
+                    background-color: #E8E8E8;
+                }
+                .brief__data {
+
+                }
+                    .brief__channel {
+                        /*position: relative;*/
+                        /*margin-top: 13px;*/
+                        /*padding-left: 49px;*/
+                        /*font-weight: bold;*/
+                        /*font-size: 12px;*/
+                        /*line-height: 26px;*/
+                        /*color: #757575;*/
+                    }
+
+                    .brief__channel:first-child {
+                        /*margin-top: 0;*/
+                    }
+                        .brief__channel-icon {
+                            /*position: absolute;*/
+                            /*left: 0;*/
+                            /*top: 0;*/
+                            /*fill: currentColor;*/
+                        }
+
+
+            .brief__social-networks {
+                /*margin-top: 18px;*/
+            }

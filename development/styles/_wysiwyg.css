@@ -1,36 +1,51 @@
 :root {
-    --wysiwyg-font: 12px;
-    --wysiwyg-line: 26px;
-
-    --wysiwyg-smaller-font: 11px;
-    --wysiwyg-smaller-line: 24px;
-
     --wysiwyg-larger-font: 13px;
     --wysiwyg-larger-line: 24px;
 }
 
 .wysiwyg {
-    font-size: var(--wysiwyg-font);
-    line-height: var(--wysiwyg-line);
-    word-wrap: break-word;
+    word-wrap: break-word; /* for long links inside */
 }
 
+
+
+
+/* Larger */
 .wysiwyg--larger {
-    font-size: var(--wysiwyg-larger-font);
-    line-height: var(--wysiwyg-larger-line);
+    font-size: 13px;
+    line-height: 24px;
 }
 
-/* stylelint-disable function-parentheses-space-inside */
-.wysiwyg p,
-.wysiwyg ul,
-.wysiwyg ol,
-.wysiwyg hr,
-.wysiwyg figure,
-.wysiwyg blockquote {
-    margin-top: var(--wysiwyg-line);
-    margin-bottom: var(--wysiwyg-line);
+.wysiwyg--larger p,
+.wysiwyg--larger ul,
+.wysiwyg--larger ol,
+.wysiwyg--larger hr,
+.wysiwyg--larger figure,
+.wysiwyg--larger blockquote {
+    margin-top: 26px;
+    margin-bottom: 26px;
 }
-/* stylelint-enable */
+/* /Larger */
+
+
+/* Classic */
+.wysiwyg--description {
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.wysiwyg--description p,
+.wysiwyg--description ul,
+.wysiwyg--description ol,
+.wysiwyg--description hr,
+.wysiwyg--description figure,
+.wysiwyg--description blockquote {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+/* /Classic */
+
+
 
 .wysiwyg p:first-child,
 .wysiwyg ul:first-child,
@@ -51,20 +66,24 @@
 }
 
 
+.wysiwyg h2:first-child,
+.wysiwyg h3:first-child,
+.wysiwyg h4:first-child {
+    margin-top: 0;
+}
+
+.wysiwyg h2:last-child,
+.wysiwyg h3:last-child,
+.wysiwyg h4:last-child {
+    margin-bottom: 0;
+}
+
+
+
 .wysiwyg ul {
     padding-left: 40px;
-    /*list-style: none;*/
 }
-    /*.wysiwyg ul li {*/
-    /*    position: relative;*/
-    /*}*/
-    /*    .wysiwyg ul li::before {*/
-    /*        position: absolute;*/
-    /*        right: 100%;*/
-    /*        margin-right: 5px;*/
-    /*        top: 0;*/
-    /*        content: "—";*/
-    /*    }*/
+
 
 .wysiwyg ol {
     counter-reset: wysiwyg-ordered-list;
@@ -112,43 +131,6 @@
     }
 
 
-
-.wysiwyg h2 {
-
-}
-
-.wysiwyg h3 {
-
-}
-
-.wysiwyg h4 {
-
-}
-
-.wysiwyg h2:first-child,
-.wysiwyg h3:first-child,
-.wysiwyg h4:first-child {
-    margin-top: 0;
-}
-
-.wysiwyg h2:last-child,
-.wysiwyg h3:last-child,
-.wysiwyg h4:last-child {
-    margin-bottom: 0;
-}
-
-
-
-.wysiwyg a {
-    /* see .link component */
-}
-
-
-
-.wysiwyg b,
-.wysiwyg strong {
-
-}
 
 
 

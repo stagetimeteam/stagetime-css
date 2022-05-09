@@ -1,0 +1,36 @@
+/* Classic */
+.wysiwyg--classis {
+    font-size: 11px;
+    line-height: 24px;
+}
+
+.wysiwyg--classis p,
+.wysiwyg--classis ul,
+.wysiwyg--classis ol,
+.wysiwyg--classis hr,
+.wysiwyg--classis figure,
+.wysiwyg--classis blockquote {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+/* /Classic */
+
+
+
+/*.wysiwyg p:first-child,*/
+/*.wysiwyg ul:first-child,*/
+/*.wysiwyg ol:first-child,*/
+/*.wysiwyg hr:first-child,*/
+/*.wysiwyg figure:first-child,*/
+/*.wysiwyg blockquote:first-child {*/
+/*    margin-top: 0;*/
+/*}*/
+
+/*.wysiwyg p:last-child,*/
+/*.wysiwyg ul:last-child,*/
+/*.wysiwyg ol:last-child,*/
+/*.wysiwyg hr:last-child,*/
+/*.wysiwyg figure:last-child,*/
+/*.wysiwyg blockquote:last-child {*/
+/*    margin-bottom: 0;*/
+/*}*/
