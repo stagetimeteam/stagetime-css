@@ -1,22 +1,25 @@
 .brief {
-
+    position: relative;
+    padding-left: 205px;
+    padding-right: 345px;
+    min-height: 205px; /* based on right column */
 }
     .brief__about {
 
     }
         .brief__about-text {
-
+            color: #757575;
         }
 
         .brief__about-handler {
-
+            display: none;
         }
 
     .brief__information {
 
     }
         .brief__information-handler {
-
+            display: none;
         }
             .brief__angle {
 
@@ -26,22 +29,57 @@
 
         }
             .brief__location {
-
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 205px;
+                padding-left: 32px;
+                padding-right: 40px;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 26px;
+                color: #757575;
             }
                 .brief__geo {
-
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                    width: 20px;
+                    height: 20px;
+                    fill: currentColor;
                 }
 
             .brief__contacts {
-
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 345px;
+                padding-left: 80px;
             }
-                .brief__channel {
+                .brief__data {
 
                 }
-                    .brief__channel-icon {
-
+                    .brief__channel {
+                        position: relative;
+                        margin-top: 13px;
+                        padding-left: 49px;
+                        font-weight: bold;
+                        font-size: 12px;
+                        line-height: 26px;
+                        color: #757575;
                     }
 
-            .brief__social-networks {
+                    .brief__channel:first-child {
+                        margin-top: 0;
+                    }
+                        .brief__channel-icon {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            fill: currentColor;
+                        }
 
+
+            .brief__social-networks {
+                margin-top: 18px;
             }
