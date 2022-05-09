@@ -11,6 +11,14 @@
         margin-top: 25px;
     }
 
+
+    .organization__team {
+        margin-top: 35px;
+        border-top: 1px solid #C4C4C4;
+        padding-top: 40px;
+    }
+
+
     .organization__section {
         margin-top: 45px;
     }

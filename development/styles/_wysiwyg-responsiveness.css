@@ -1,15 +1,15 @@
 /* Classic */
-.wysiwyg--classis {
+.wysiwyg--classic {
     font-size: 11px;
     line-height: 24px;
 }
 
-.wysiwyg--classis p,
-.wysiwyg--classis ul,
-.wysiwyg--classis ol,
-.wysiwyg--classis hr,
-.wysiwyg--classis figure,
-.wysiwyg--classis blockquote {
+.wysiwyg--classic p,
+.wysiwyg--classic ul,
+.wysiwyg--classic ol,
+.wysiwyg--classic hr,
+.wysiwyg--classic figure,
+.wysiwyg--classic blockquote {
     margin-top: 24px;
     margin-bottom: 24px;
 }

@@ -29,17 +29,17 @@
 
 
 /* Classic */
-.wysiwyg--description {
+.wysiwyg--classic {
     font-size: 12px;
     line-height: 26px;
 }
 
-.wysiwyg--description p,
-.wysiwyg--description ul,
-.wysiwyg--description ol,
-.wysiwyg--description hr,
-.wysiwyg--description figure,
-.wysiwyg--description blockquote {
+.wysiwyg--classic p,
+.wysiwyg--classic ul,
+.wysiwyg--classic ol,
+.wysiwyg--classic hr,
+.wysiwyg--classic figure,
+.wysiwyg--classic blockquote {
     margin-top: 26px;
     margin-bottom: 26px;
 }
