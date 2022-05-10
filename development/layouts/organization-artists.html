@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Org People</title>
+        <title>Org Artists</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -721,14 +721,6 @@
                     </style>
                 </div>
                 <div class="summary__wrap container container--organisation">
-                    <a class="summary__edit action action--simplified action--faded" data-toggle="modal" data-target="#edit-organization">
-                        <span class="action__image">
-                            <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
-                        </span>
-                        <span class="action__label">
-                            Edit
-                        </span>
-                    </a>
                     <div class="summary__brand">
                         <div class="summary__logo">
                             <img class="summary__emblem"
@@ -784,321 +776,317 @@
                 </div>
             </div>
             <div class="people container container--organisation">
-                <div class="people__department">
-                    <div class="module-head">
-                        <!-- optional:
-                        <div class="module-head__back">
-                            <a class="action action--simplified action--alternate" href="organization-people.html">
-                                <span class="action__image">
-                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
-                                </span>
-                                <span class="action__label">
-                                    Back
-                                </span>
-                            </a>
-                        </div>
-                        -->
-                        <h3 class="module-head__heading">
-                            Artists <i>&nbsp;or:&nbsp;</i> Artists (#), Staff (#)
-                        </h3>
-                        <div class="module-head__control-panel">
-                            <div class="module-head__left-slot">
-                                <div class="switch">
-                                    <b class="switch__heading">
-                                        Sort by
-                                    </b>
-                                    <div class="switch__body">
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Year</span>
-                                        </label>
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Instrument</span>
-                                        </label>
-                                    </div>
+                <div class="module-head">
+                    <!-- optional:
+                    <div class="module-head__back">
+                        <a class="action action--simplified action--alternate" href="organization-people.html">
+                            <span class="action__image">
+                                <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                            </span>
+                            <span class="action__label">
+                                Back
+                            </span>
+                        </a>
+                    </div>
+                    -->
+                    <h3 class="module-head__heading">
+                        Artists <i>&nbsp;or:&nbsp;</i> Artists (#), Staff (#)
+                    </h3>
+                    <div class="module-head__control-panel">
+                        <div class="module-head__left-slot">
+                            <div class="switch">
+                                <b class="switch__heading">
+                                    Sort by
+                                </b>
+                                <div class="switch__body">
+                                    <label class="switch__option">
+                                        <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
+                                        <span class="switch__label">Year</span>
+                                    </label>
+                                    <label class="switch__option">
+                                        <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
+                                        <span class="switch__label">Instrument</span>
+                                    </label>
                                 </div>
                             </div>
-                            <div class="module-head__right-slot">
-                                <input class="query" type="text" placeholder="Search all…">
-                            </div>
                         </div>
-                        <div class="module-head__search-notice search-heading">
-                            <div class="search-heading__message">
-                                <i>Search page only:</i> You are viewing search results containing keyword <strong>“Sarah”</strong>
-                            </div>
-                            <button class="search-heading__cancel" type="button">
-                                <img class="search-heading__cross" src="../symbols/20-rounded-cross.svg" width="20" height="20" alt="">
-                            </button>
+                        <div class="module-head__right-slot">
+                            <input class="query" type="text" placeholder="Search all…">
                         </div>
                     </div>
-                    <div class="group group--preview">
-                        <div class="group__listing">
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
-                                         src="../temp/person-b-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Alyssa Dessoye
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
-                                         src="../temp/person-c-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Konstantin Konstantinopolsky
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Tenor
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
-                                         src="../temp/person-b-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Alyssa Dessoye
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Soprano
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="module-head__search-notice search-heading">
+                        <div class="search-heading__message">
+                            <i>Search page only:</i> You are viewing search results containing keyword <strong>“Sarah”</strong>
                         </div>
-                        <a class="group__more button button--darker" href="#">
-                            See More
-                        </a>
+                        <button class="search-heading__cancel" type="button">
+                            <img class="search-heading__cross" src="../symbols/20-rounded-cross.svg" width="20" height="20" alt="">
+                        </button>
                     </div>
                 </div>
-                <div class="people__department">
-                    <div class="module-head">
-                        <!-- optional:
-                        <div class="module-head__back">
-                            <a class="action action--simplified action--alternate" href="organization-people.html">
-                                <span class="action__image">
-                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
-                                </span>
-                                <span class="action__label">
-                                    Back
-                                </span>
+                <div class="group group--preview">
+                    <div class="group__listing">
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                     src="../temp/person-a-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
                             </a>
-                        </div>
-                        -->
-                        <h3 class="module-head__heading">
-                            Staff
-                        </h3>
-                        <div class="module-head__control-panel">
-                            <div class="module-head__left-slot">
-                                <div class="switch">
-                                    <b class="switch__heading">
-                                        Sort by
-                                    </b>
-                                    <div class="switch__body">
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Current</span>
-                                        </label>
-                                        <label class="switch__option">
-                                            <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
-                                            <span class="switch__label">Past</span>
-                                        </label>
-                                    </div>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Deniz Uzun
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Mezzo-soprano
                                 </div>
                             </div>
-                            <!-- Optional:
-                            <div class="group__filtering">
-                                <input class="query" type="text" placeholder="Search Artists…">
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                     src="../temp/person-b-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Alyssa Dessoye
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Soprano
+                                </div>
                             </div>
-                            -->
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-146x146@2x.jpg 2x"
+                                     src="../temp/person-c-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Konstantin Konstantinopolsky
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Tenor
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                     src="../temp/person-a-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Deniz Uzun
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Mezzo-soprano
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                     src="../temp/person-b-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Alyssa Dessoye
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Soprano
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="group group--preview">
-                        <div class="group__listing">
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
-                                         src="../temp/person-b-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Alyssa Dessoye
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
-                                         src="../temp/person-c-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Konstantin Konstantinopolsky
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Tenor
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
-                                         src="../temp/person-a-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Deniz Uzun
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Mezzo-soprano
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="group__item">
-                                <a class="group__preview avatar" href="#">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
-                                         src="../temp/person-b-146x146.jpg"
-                                         width="146"
-                                         height="146"
-                                         alt=""
-                                    >
-                                </a>
-                                <div class="group__user-data">
-                                    <h4 class="group__name">
-                                        <a class="link link--fading" href="#">
-                                            Alyssa Dessoye
-                                        </a>
-                                    </h4>
-                                    <div class="group__note">
-                                        Soprano
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a class="group__more button button--darker" href="#">
-                            See More
+                    <a class="group__more button button--darker" href="#">
+                        See More
+                    </a>
+                </div>
+                <div class="module-head">
+                    <!-- optional:
+                    <div class="module-head__back">
+                        <a class="action action--simplified action--alternate" href="organization-people.html">
+                            <span class="action__image">
+                                <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                            </span>
+                            <span class="action__label">
+                                Back
+                            </span>
                         </a>
                     </div>
+                    -->
+                    <h3 class="module-head__heading">
+                        Staff
+                    </h3>
+                    <div class="module-head__control-panel">
+                        <div class="module-head__left-slot">
+                            <div class="switch">
+                                <b class="switch__heading">
+                                    Sort by
+                                </b>
+                                <div class="switch__body">
+                                    <label class="switch__option">
+                                        <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
+                                        <span class="switch__label">Current</span>
+                                    </label>
+                                    <label class="switch__option">
+                                        <input class="switch__widget" type="radio" name="any-temp-name-for-sort-a">
+                                        <span class="switch__label">Past</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Optional:
+                        <div class="group__filtering">
+                            <input class="query" type="text" placeholder="Search Artists…">
+                        </div>
+                        -->
+                    </div>
+                </div>
+                <div class="group group--preview">
+                    <div class="group__listing">
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                     src="../temp/person-a-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Deniz Uzun
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Mezzo-soprano
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                     src="../temp/person-b-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Alyssa Dessoye
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Soprano
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-c-146x146@2x.jpg 2x"
+                                     src="../temp/person-c-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Konstantin Konstantinopolsky
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Tenor
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                     src="../temp/person-a-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Deniz Uzun
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Mezzo-soprano
+                                </div>
+                            </div>
+                        </div>
+                        <div class="group__item">
+                            <a class="group__preview avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                     src="../temp/person-b-146x146.jpg"
+                                     width="146"
+                                     height="146"
+                                     alt=""
+                                >
+                            </a>
+                            <div class="group__user-data">
+                                <h4 class="group__name">
+                                    <a class="link link--fading" href="#">
+                                        Alyssa Dessoye
+                                    </a>
+                                </h4>
+                                <div class="group__note">
+                                    Soprano
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="group__more button button--darker" href="#">
+                        See More
+                    </a>
                 </div>
             </div>
         </div>

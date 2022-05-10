@@ -32,6 +32,11 @@
         background-color: #FFFFFF;
         /*color: #757575;*/
     }
+        .module-head__edit {
+            display: inline-block;
+            vertical-align: top;
+            margin: -7px -10px -13px 4px;
+        }
 
     .module-head__control-panel {
         display: none;

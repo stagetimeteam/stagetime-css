@@ -1,0 +1,33 @@
+.viewer-role {
+    /*position: relative;*/
+    float: right;
+    width: auto;
+    margin-left: auto;
+    text-align: center;
+    /*z-index: 300;*/
+    height: 60px;
+    margin-bottom: -60px;
+    /*background-color: rgba(255, 255, 255, 0.37);*/
+}
+    .viewer-role__wrap {
+        /*height: 100%;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: space-between;*/
+    }
+        .viewer-role__heading {
+            display: none;
+            /*font-weight: bold;*/
+            /*font-size: 14px;*/
+            /*line-height: 18px;*/
+            /*color: #FFFFFF;*/
+        }
+
+        .viewer-role__action {
+
+        }
+
+        .viewer-role__action.button,
+        .viewer-role__action .button {
+            /*width: 169px;*/
+        }

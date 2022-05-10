@@ -18,6 +18,9 @@
         letter-spacing: -0.8px;
         color: #757575;
     }
+        .module-head__edit {
+            display: none;
+        }
 
     .module-head__control-panel {
         position: relative;
@@ -75,6 +78,18 @@
             .module-head__right-slot .operations:last-child {
                 margin-right: -16px;
             }
+
+
+        .module-head__desktop-actions {
+            position: absolute;
+            right: 0;
+            bottom: 10px; /* 10px instead of 0px to make sure this is over bottom line, even while zooming */
+            padding-left: 20px;
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: flex-start;
+        }
+
 
     .module-head__search-notice {
         margin-top: 19px;
