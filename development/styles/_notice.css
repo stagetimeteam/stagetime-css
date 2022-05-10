@@ -43,6 +43,25 @@
         top: 21px;
     }
 
+    .notice__heart {
+        position: absolute;
+        z-index: 20;
+        pointer-events: none;
+        fill: #EB5757;
+    }
+
+    .notice__heart--inner {
+        left: 51px;
+        top: 20px;
+        opacity: 0.6;
+    }
+
+    .notice__heart--outer {
+        left: 57px;
+        top: 14px;
+        opacity: 0.8;
+    }
+
     .notice__wrapper {
         position: relative;
         display: flex;
