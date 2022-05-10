@@ -5,3 +5,8 @@
     user-select: none;
     transition: background-color var(--transition-hover);
 }
+
+
+.dummy--dark {
+    background-color: #44474A;
+}
