@@ -66,13 +66,18 @@
                 }
 
             .summary__title {
-                width: 308px;
+                width: 600px;
                 margin-top: 0;
                 margin-bottom: 0;
                 font-weight: 300;
                 font-size: 50px;
                 line-height: 66px;
                 letter-spacing: -1.36px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
             }
 
         .summary__operations {

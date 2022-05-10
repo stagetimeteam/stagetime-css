@@ -26,6 +26,8 @@
             .group__user-data {
                 margin-top: 17px;
                 min-height: 70px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
                 .group__name {
                     margin-top: 0;
