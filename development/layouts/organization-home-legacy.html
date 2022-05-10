@@ -1,0 +1,2178 @@
+<!DOCTYPE html>
+<html class="has-sub-header" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Org Home</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+        <!-- 1/3: .header, .search, .notifications -->
+        <header class="header">
+            <div class="header__detachable-panel">
+                <a class="header__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <div class="header__greetings">
+                    Good afternoon, <a class="link link--user-color" href="#">Jennie</a>.
+                </div>
+                <!-- optional:
+                <div class="header__auth">
+                    <a class="header__login" href="#"><span class="header__label">Log In</span></a>
+                    <a class="header__join" href="#"><span class="header__label">Join Stagetime</span></a>
+                </div>
+                -->
+                <div class="header__menu">
+                    <button class="header__item search-button" type="button">
+                        <img class="search-button__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                    </button>
+                    <a class="header__item header-button header-button--messages" href="#">
+                        <img class="header-button__icon" src="../symbols/24-message.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--notifications" href="#">
+                        <img class="header-button__icon" src="../symbols/24-notification.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item profile-button" href="#">
+                        <span class="avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                 src="../temp/person-a-32x32.jpg"
+                                 width="32"
+                                 height="32"
+                                 alt=""
+                            >
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="sub-header">
+            <div class="sub-header__detachable-panel">
+                <div class="sub-header__desktop-content">
+                    <img class="sub-header__icon" src="../symbols/16-globe-half.svg" width="16" height="16" alt="">
+                    You are viewing <a class="link link--text-alike" href="#">Nate Fearing</a>’s public Stagetime profile. To access the network and connect with Nate, <a class="link link--text-alike" href="#">join Stagetime here</a>.
+                </div>
+                <div class="sub-header__smartphone-content">
+                    <img class="sub-header__icon" src="../symbols/16-globe-half.svg" width="16" height="16" alt="">
+                    <a class="link link--text-alike" href="#">Join Stagetime</a> to access network.
+                </div>
+            </div>
+        </div>
+        <form class="search">
+            <div class="search__bar">
+                <button class="search__close" type="button">
+                    <img class="search__arrow" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                </button>
+                <div class="search__body">
+                    <input class="search__widget" type="text" placeholder="Search Stagetime">
+                    <img class="search__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                </div>
+            </div>
+            <div class="search__dropdown">
+                <div class="search__scroll scrollbar scrollbar-macosx">
+                    <div class="search__section">
+                        <div class="search__separator section-separator">
+                            <div class="section-separator__heading">
+                                People
+                            </div>
+                            <a class="section-separator__action button button--another-faded" href="#">
+                                See All
+                            </a>
+                        </div>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-56x56@2x.jpg 2x"
+                                             src="../temp/person-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Houston, TX
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-56x56@2x.jpg 2x"
+                                             src="../temp/person-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Marlen Nahas
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Washington, DC
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-56x56@2x.jpg 2x"
+                                             src="../temp/person-d-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Shea Owens
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Salt Lake City, UT
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-56x56@2x.jpg 2x"
+                                             src="../temp/person-e-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                                <div class="user-badge__note">
+                                    Soprano, Houston, TX
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="search__section">
+                        <div class="search__separator section-separator">
+                            <div class="section-separator__heading">
+                                Organizations
+                            </div>
+                            <a class="section-separator__action button button--another-faded" href="#">
+                                See All
+                            </a>
+                        </div>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                             src="../temp/organization-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-b-56x56@2x.jpg 2x"
+                                             src="../temp/organization-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
+                                             src="../temp/organization-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/organization-b-56x56@2x.jpg 2x"
+                                             src="../temp/organization-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                    Aspen Music Festival & School
+                                </div>
+                                <div class="user-badge__note">
+                                    Aspen, CO
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="notifications">
+            <div class="notifications__head top-bar">
+                <div class="top-bar__heading">
+                    Notifications
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="notifications__scroll scrollbar scrollbar-macosx">
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Collaborator Requests
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+
+
+
+
+                <div class="simpler-null">
+                    You don’t currently have<br> any notifications.
+                </div>
+                <!-- temp -->
+                or:
+                <!--/temp -->
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Collaborator Requests
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                 src="../temp/person-f-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> is requesting to connect.
+                            </div>
+                            <div class="notice__bubble">
+                                Hi Terrence! It’s so great to see you here. Was lovely meeting you at Cardiff.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                 src="../temp/person-f-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> is requesting to connect.
+                            </div>
+                            <div class="notice__bubble">
+                                Hi Terrence! It’s so great to see you here. Was lovely meeting you at Cardiff.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Activity
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                 src="../temp/person-a-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> was live
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                 src="../temp/person-b-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has accepted your collaborator request.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Konstantin Konstantinopolsky</span> and <span class="link link--text-alike">Constantin Constantinopolsky</span>
+                                are now friends
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                Are you sure you want to confirm that you are on <span class="link link--text-alike">Justin Werner</span>’s roster at <span class="link">Stratagem Artists</span>?
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action notice__action--grow button button--submit" href="#">Confirm</a>
+                            <a class="notice__action button button--cancel" href="#">Back</a>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                 src="../temp/person-e-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has joined Stagetime.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="notice notice--success">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Andres Acosta</span> added you as management.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice notice--cancel">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                Request <strong>deleted</strong>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                 src="../temp/person-a-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> was live
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                 src="../temp/person-b-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has accepted your collaborator request.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Konstantin Konstantinopolsky</span> and <span class="link link--text-alike">Constantin Constantinopolsky</span>
+                                are now friends
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                Are you sure you want to confirm that you are on <span class="link link--text-alike">Justin Werner</span>’s roster at <span class="link">Stratagem Artists</span>?
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action notice__action--grow button button--submit" href="#">Confirm</a>
+                            <a class="notice__action button button--cancel" href="#">Back</a>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                 src="../temp/person-e-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Jennie Moser</span> has joined Stagetime.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                        <div class="notice__operations">
+                            <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
+                            <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                        </div>
+                    </div>
+                    <div class="notice notice--success">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Andres Acosta</span> added you as management.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice notice--cancel">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                 src="../temp/person-d-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="notice__wrapper">
+                            <div class="notice__body">
+                                Request <strong>deleted</strong>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notice">
+                        <a class="notice__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                 src="../temp/person-c-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <img class="notice__heart notice__heart--inner" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
+                        <img class="notice__heart notice__heart--outer" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
+                        <a class="notice__wrapper" href="#">
+                            <div class="notice__body">
+                                <span class="link link--text-alike">Andres Acosta</span> reacted to your video Etude in e minor.
+                            </div>
+                            <div class="notice__time">
+                                1h
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__head top-bar">
+                <div class="top-bar__heading">
+                    Profile
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="profile__body">
+                <a class="profile__link user-link" href="#">
+                    <span class="user-link__preview avatar avatar--alt-hover">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-28x28@2x.jpg 2x"
+                             src="../temp/person-a-28x28.jpg"
+                             width="28"
+                             height="28"
+                             alt=""
+                        >
+                    </span>
+                    View Profile
+                </a>
+                <div class="profile__menu">
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-pencil.svg" width="16" height="16" alt="">
+                        Edit Profile
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-envelope-outline.svg" width="16" height="16" alt="">
+                        <img class="nav-link__sparkle" src="../symbols/16-sparkle.svg" width="16" height="16" alt="">
+                        Invite
+                        <span class="visuallyhidden">Explain meaning of sparkles here</span>
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-question-spot.svg" width="16" height="16" alt="">
+                        Support
+                    </a>
+                    <a class="nav-link" href="#">
+                        <img class="nav-link__icon" src="../symbols/16-cog.svg" width="16" height="16" alt="">
+                        Settings
+                    </a>
+                </div>
+                <a class="profile__organisation button button--faded" href="#">
+                    <img class="button__icon button__icon--left" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                    Create Organization
+                </a>
+                <a class="profile__logout nav-link" href="#">
+                    <img class="nav-link__icon" src="../symbols/16-logout.svg" width="16" height="16" alt="">
+                    Log Out
+                </a>
+            </div>
+        </div>
+        <!-- 2/3: .page -->
+        <div class="page">
+            <div class="viewer-role">
+                <div class="viewer-role__wrap container container--organisation">
+                    <div class="viewer-role__heading">
+                        You are viewing this page as a page manager.
+                    </div>
+                    <a class="viewer-role__action button" href="#">
+                        View as Page Visitor
+                    </a>
+                </div>
+            </div>
+            <div class="summary">
+                <div class="summary__background" role="presentation" aria-hidden="true">
+                    <style>
+                        .summary__background {
+                            background-image: url(../temp/summary-1440x467.jpg)
+                        }
+                        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                            .summary__background {
+                                background-image: url(../temp/summary-1440x467@2x.jpg);
+                            }
+                        }
+
+                        @media (max-width: 900px) {
+                            .summary__background {
+                                background-image: url(../temp/summary-768x467.jpg)
+                            }
+                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                                .summary__background {
+                                    background-image: url(../temp/summary-768x467@2x.jpg);
+                                }
+                            }
+                        }
+                    </style>
+                </div>
+                <div class="summary__wrap container container--organisation">
+                    <a class="summary__edit action action--simplified action--faded" data-toggle="modal" data-target="#edit-organization">
+                        <span class="action__image">
+                            <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                        </span>
+                        <span class="action__label">
+                            Edit
+                        </span>
+                    </a>
+                    <div class="summary__brand">
+                        <div class="summary__logo">
+                            <img class="summary__emblem"
+                                 srcset="../temp/org-logo-109x109@2x.jpg 2x"
+                                 src="../temp/org-logo-109x109.jpg"
+                                 width="109"
+                                 height="109"
+                                 alt=""
+                            >
+                        </div>
+                        <h1 class="summary__title">
+                            Indiana University
+                        </h1>
+                    </div>
+                    <div class="summary__operations">
+                        <div class="summary__contacts">
+                            <a class="summary__channel" href="#">Call</a>
+                            <a class="summary__channel" href="#">Website</a>
+                        </div>
+                        <div class="summary__addition">
+                            <a class="action action--alternate action--inverted" href="#">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-plus.svg" width="16" height="16" alt="">
+                                </span>
+                                <span class="action__label">
+                                    Follow
+                                </span>
+                            </a>
+                            <div class="operations operations--white">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-lock.svg" width="24" height="24" alt="">
+                                            Request Admin Access
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                            Report
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="organization container container--organisation">
+                <div class="organization__head module-head module-head--based-on-heading">
+                    <h2 class="module-head__heading">
+                        Jacobs School of Music
+                        <a class="module-head__edit action action--grey action--simplified" data-toggle="modal" data-target="#edit-contacts">
+                            <span class="action__image">
+                                <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                            </span>
+                            <span class="action__label">
+                                Edit
+                            </span>
+                        </a>
+                    </h2>
+                    <div class="module-head__control-panel">
+                        <div class="module-head__right-slot">
+                            <a class="action action--alternate" data-toggle="modal" data-target="#edit-contacts">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                                </span>
+                                <span class="action__label">
+                                    Edit
+                                </span>
+                            </a>
+                            <a class="action action--alternate" href="#">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-plus.svg" width="16" height="16" alt="">
+                                </span>
+                                <span class="action__label">
+                                    Follow
+                                </span>
+                            </a>
+                            <div class="operations">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                            Add to Calendar
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                            Report
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="organization__about brief">
+                    <div class="brief__about">
+                        <div class="brief__about-text wysiwyg wysiwyg--classic">
+                            <p>Founded in 1820, Indiana University Bloomington is the flagship campus of IU’s seven campuses and two regional centers statewide. Innovation, creativity, and academic freedom are hallmarks of our world-class contributions in research and the arts. As one of the most comprehensive and acclaimed institutions for the study of music, the IU Jacobs School of Music plays a key role in educating performers, scholars, and music educators who influence music performance and education around the globe.</p>
+                        </div>
+                        <button class="brief__about-handler" type="button">
+                            <span class="brief__more">More</span>
+                            <span class="brief__less">See less</span>
+                        </button>
+                    </div>
+                    <div class="brief__information">
+                        <button class="brief__information-handler" type="button">
+                            Information
+                            <img class="brief__angle" src="../symbols/16-down-angle-thick.svg" width="16" height="16" alt="">
+                        </button>
+                        <div class="brief__information-dropdown">
+                            <div class="brief__location">
+                                <img class="brief__geo" src="../symbols/24-location.svg" width="24" height="24" alt="">
+                                322 S. Woodscrest Dr.
+                                Bloomington, IN 47401
+                            </div>
+                            <div class="brief__contacts">
+                                <div class="brief__data channels">
+                                    <div class="brief__channel ellipsis">
+                                        <img class="brief__channel-icon" src="../symbols/22-bottom-staple.svg" width="22" height="22" alt="">
+                                        <a class="link link--text-alike" href="https://music.indiana.edu">www.music.indiana.edu</a>
+                                    </div>
+                                    <div class="brief__channel ellipsis">
+                                        <img class="brief__channel-icon" src="../symbols/22-bottom-phone.svg" width="22" height="22" alt="">
+                                        <a class="link link--fake" href="tel:+18128554848">+1 (812) 855-4848</a>
+                                    </div>
+                                    <div class="brief__channel ellipsis">
+                                        <img class="brief__channel-icon" src="../symbols/22-bottom-buildings.svg" width="22" height="22" alt="">
+                                        Educational Institution
+                                    </div>
+                                    <div class="brief__channel ellipsis">
+                                        <img class="brief__channel-icon" src="../symbols/22-bottom-crowd.svg" width="22" height="22" alt="">
+                                        85 affiliates on Stagetime
+                                    </div>
+                                </div>
+                                <div class="brief__social-networks media">
+                                    <a class="media__link" href="#">
+                                        <img class="media__icon" src="../symbols/28-media-instagram.svg" width="28" height="28" alt="">
+                                    </a>
+                                    <a class="media__link" href="#">
+                                        <img class="media__icon" src="../symbols/28-media-facebook.svg" width="28" height="28" alt="">
+                                    </a>
+                                    <a class="media__link" href="#">
+                                        <img class="media__icon" src="../symbols/28-media-twitter.svg" width="28" height="28" alt="">
+                                    </a>
+                                    <a class="media__link" href="#">
+                                        <img class="media__icon" src="../symbols/28-media-link.svg" width="28" height="28" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="organization__team">
+                    <div class="module-head">
+                        <h3 class="module-head__heading">
+                            Artists <i>&nbsp;or:&nbsp;</i> Artists (#), Staff (#)
+                        </h3>
+                    </div>
+                    <div class="group group--preview">
+                        <div class="group__listing">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                         src="../temp/person-a-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Deniz Uzun
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Mezzo-soprano
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                         src="../temp/person-b-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Alyssa Dessoye
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Soprano
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
+                                         src="../temp/person-c-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Konstantin Konstantinopolsky
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Tenor
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                         src="../temp/person-a-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Deniz Uzun
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Mezzo-soprano
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                         src="../temp/person-b-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Alyssa Dessoye
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Soprano
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="group__more button button--darker" href="#">
+                            See More
+                        </a>
+                    </div>
+                    <div class="module-head">
+                        <h3 class="module-head__heading">
+                            Staff
+                        </h3>
+                    </div>
+                    <div class="group group--preview">
+                        <div class="group__listing">
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                         src="../temp/person-a-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Deniz Uzun
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Mezzo-soprano
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                         src="../temp/person-b-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Alyssa Dessoye
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Soprano
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-c-146x146@2x.jpg 2x"
+                                         src="../temp/person-c-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Konstantin Konstantinopolsky
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Tenor
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-146x146@2x.jpg 2x"
+                                         src="../temp/person-a-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Deniz Uzun
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Mezzo-soprano
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="group__item">
+                                <a class="group__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-b-146x146@2x.jpg 2x"
+                                         src="../temp/person-b-146x146.jpg"
+                                         width="146"
+                                         height="146"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="group__user-data">
+                                    <h4 class="group__name">
+                                        <a class="link link--fading" href="#">
+                                            Alyssa Dessoye
+                                        </a>
+                                    </h4>
+                                    <div class="group__note">
+                                        Soprano
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="group__more button button--darker" href="#">
+                            See More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3/3 Modals: -->
+        <div class="modal modal--skeleton fade" id="post-form" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="post-form">
+                        <div class="post-form__header">
+                            <div class="post-form__heading">
+                                Create a post
+                            </div>
+                            <button class="post-form__close action action--flipped mfp-cancel" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="post-form__body">
+
+                            <div class="post-form__screen post-form__screen--current" id="temp-main-screen">
+                                <div class="edit-post">
+                                    <div class="edit-post__header">
+                                        <a class="edit-post__person avatar" href="#">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-a-40x40@2x.jpg 2x"
+                                                 src="../temp/person-a-40x40.jpg"
+                                                 width="40"
+                                                 height="40"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </a>
+                                        <div class="edit-post__option input input--adjustable input--bold input--no-icon-on-320-smartphone input--select input--rounded">
+                                            <img class="input__icon" src="../symbols/16-crowd.svg" width="16" height="16" alt="">
+                                            <select class="input__widget">
+                                                <option>Ben Bliss</option>
+                                                <option>Mark Zuckerberg</option>
+                                                <option>Tim Cook</option>
+                                            </select>
+                                        </div>
+                                        <div class="edit-post__option input input--adjustable input--bold input--no-icon-on-320-smartphone input--select input--rounded">
+                                            <img class="input__icon" src="../symbols/16-globe-full.svg" width="16" height="16" alt="">
+                                            <select class="input__widget">
+                                                <option>Anyone</option>
+                                                <option>Friends</option>
+                                                <option>Friends of Friends</option>
+                                                <option>Friends except...</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="edit-post__content">
+                                        <div class="edit-post__area">
+                                            <textarea class="edit-post__message edit-post__message--extendable-via-plugin" rows="2" placeholder="What do you want to talk about?">Things move a lot faster than they used to in terms of the implementation of Web Platform features, and this post is a round-up of news about CSS features that are making up with additional space to account for at the start and end of the grid. Adding margins has typically been how we have created space between flex items. To create a regular space between flex items, we use a margin. If we do not want a margin at the start and end, we have to use a negative margin on the container to remove it. It would be really nice to have that gap feature in as well, wouldn’t it? The good news is that we do have — it’s already implemented in Firefox and is in the Beta version of Chrome.</textarea>
+                                        </div>
+                                        <div class="edit-post__attachment attachment">
+                                            <div class="attachment__preview">
+                                                <img class="attachment__image"
+                                                     srcset="../temp/attachment--image@2x.jpg 2x"
+                                                     src="../temp/attachment--image.jpg"
+                                                     width="540"
+                                                     height="470"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="attachment__operations">
+                                                <a class="attachment__action action action--white" href="#">
+                                                    <span class="action__image">
+                                                        <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- temp -->
+                                        <br>or:
+                                        <!--/temp -->
+
+                                        <div class="edit-post__attachment attachment">
+                                            <div class="attachment__preview">
+                                                <img class="attachment__image"
+                                                     srcset="../temp/attachment--video@2x.jpg 2x"
+                                                     src="../temp/attachment--video.jpg"
+                                                     width="540"
+                                                     height="316"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="attachment__title ellipsis">
+                                                CATS ARE JERKS! Try Not to Laugh - Hilarious Grumpy Cats Compilation April 2018 | Funny Pets Videos
+                                            </div>
+                                            <div class="attachment__sub-title ellipsis">
+                                                Hilarious Grumpy Cats Compilation April 2018 Hilarious Grumpy Cats Compilation April 2018
+                                            </div>
+                                            <div class="attachment__operations">
+                                                <a class="attachment__action action action--white" href="#">
+                                                    <span class="action__image">
+                                                        <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                                                    </span>
+                                                </a>
+                                                <a class="attachment__action action action--white" href="#">
+                                                    <span class="action__image">
+                                                        <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- temp -->
+                                        <br>or:
+                                        <!--/temp -->
+
+                                        <div class="edit-post__attachment attachment attachment--link">
+                                            <a class="attachment__summary parsed-link parsed-link--smaller" href="#">
+                                                <div class="parsed-link__icon staple staple--smaller staple--pale">
+                                                    <div class="staple__frame">
+                                                        <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="parsed-link__heading">
+                                                    “What shall we do with this waiting time?” by Louisa Muller
+                                                </div>
+                                                <div class="parsed-link__url">
+                                                    www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                                                </div>
+                                            </a>
+                                            <div class="attachment__preview">
+                                                <img class="attachment__image"
+                                                     srcset="../temp/attachment--link@2x.jpg 2x"
+                                                     src="../temp/attachment--link.jpg"
+                                                     width="540"
+                                                     height="284"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="attachment__operations">
+                                                <a class="attachment__action action action--grey" href="#">
+                                                    <span class="action__image">
+                                                        <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                                                    </span>
+                                                </a>
+                                                <a class="attachment__action action action--grey" href="#">
+                                                    <span class="action__image">
+                                                        <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <!-- temp -->
+                                        <br>or:
+                                        <!--/temp -->
+
+                                        <div class="edit-post__attachment attachment attachment--link">
+                                            <a class="attachment__summary parsed-link" href="#">
+                                                <div class="parsed-link__icon staple staple--pale">
+                                                    <div class="staple__frame">
+                                                        <img class="staple__icon" src="../symbols/32-staple.svg" width="32" height="32" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="parsed-link__heading">
+                                                    “What shall we do with this waiting time?” by Louisa Muller
+                                                </div>
+                                                <div class="parsed-link__url">
+                                                    www.stagetimearts.com/what-shall-we-do-with-this-waiting-time
+                                                </div>
+                                            </a>
+                                            <div class="attachment__operations">
+                                                <a class="attachment__action action action--grey" href="#">
+                                                    <span class="action__image">
+                                                        <img class="action__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16" alt="">
+                                                    </span>
+                                                </a>
+                                                <a class="attachment__action action action--grey" href="#">
+                                                    <span class="action__image">
+                                                        <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-form__screen" id="temp-add-video-screen">
+                                <div class="add">
+                                    <div class="add__visualisation">
+                                        <button class="add__preview cover cover--full-width-on-smartphone cover--clickable" type="button">
+                                            <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+                                        </button>
+                                        <div class="add__note">
+                                            Add a video cover image.
+                                        </div>
+                                    </div>
+                                    <div class="add__content">
+                                        <div class="add__field input input--bold">
+                                            <input class="input__widget" type="url" placeholder="Video Link">
+                                        </div>
+                                        <div class="add__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Video Title">
+                                        </div>
+                                        <div class="add__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Subtitle">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-form__screen" id="temp-add-link-screen">
+                                <div class="add">
+                                    <div class="add__visualisation">
+                                        <button class="add__preview cover cover--full-width-on-smartphone cover--clickable" type="button">
+                                            <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+                                        </button>
+                                        <div class="add__note">
+                                            Add an image with your link (optional).
+                                        </div>
+                                    </div>
+                                    <div class="add__content">
+                                        <div class="add__field input input--bold">
+                                            <input class="input__widget" type="url" placeholder="Link URL">
+                                        </div>
+                                        <div class="add__field input input--bold">
+                                            <input class="input__widget" type="text" placeholder="Link Title">
+                                        </div>
+                                        <div class="add__sub-action">
+                                            <button class="add__parse link link--classic" type="button">
+                                                Test this link
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="post-form__screen" id="temp-add-tag-screen">
+                                <div class="tag-people">
+                                    <div class="tag-people__header">
+                                        <div class="tag-people__search search-bar">
+                                            <input class="search-bar__widget" type="text" placeholder="Search to tag collaborators or organizations">
+                                            <img class="search__icon" src="../symbols/16-magnifier.svg" width="16" height="16" alt="">
+                                        </div>
+                                        <div class="tag-people__selection party party--browsing">
+                                            <img class="party__icon" src="../symbols/24-tag.svg" width="24" height="24" alt="">
+                                            <div class="party__list">
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                                         src="../temp/organization-a-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                                         src="../temp/organization-b-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                         src="../temp/person-a-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-b-24x24@2x.jpg 2x"
+                                                         src="../temp/person-b-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-c-24x24@2x.jpg 2x"
+                                                         src="../temp/person-c-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-d-24x24@2x.jpg 2x"
+                                                         src="../temp/person-d-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-e-24x24@2x.jpg 2x"
+                                                         src="../temp/person-e-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                                <div class="party__item avatar avatar--non-clickable">
+                                                    <img class="avatar__image"
+                                                         srcset="../temp/person-f-24x24@2x.jpg 2x"
+                                                         src="../temp/person-f-24x24.jpg"
+                                                         width="24"
+                                                         height="24"
+                                                         alt="Indiana University"
+                                                    >
+                                                    <button class="avatar__cancel" type="button">
+                                                        <img class="avatar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tag-people__content">
+                                        <a class="tag-people__suggest" href="#">
+                                            <div class="user-badge user-badge--search">
+                                                <div class="user-badge__preview">
+                                                    <div class="avatar avatar--non-clickable">
+                                                        <img class="avatar__image" srcset="../temp/person-a-56x56@2x.jpg 2x" src="../temp/person-a-56x56.jpg" width="56" height="56" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="user-badge__heading">
+                                                    Elena Villalón
+                                                </div>
+                                                <div class="user-badge__note">
+                                                    Soprano, Houston, TX
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="tag-people__suggest" href="#">
+                                            <div class="user-badge user-badge--search">
+                                                <div class="user-badge__preview">
+                                                    <div class="avatar avatar--non-clickable">
+                                                        <img class="avatar__image" srcset="../temp/person-b-56x56@2x.jpg 2x" src="../temp/person-b-56x56.jpg" width="56" height="56" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="user-badge__heading">
+                                                    Marlen Nahas
+                                                </div>
+                                                <div class="user-badge__note">
+                                                    Soprano, Washington, DC
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="tag-people__suggest" href="#">
+                                            <div class="user-badge user-badge--search">
+                                                <div class="user-badge__preview">
+                                                    <div class="avatar avatar--non-clickable">
+                                                        <img class="avatar__image" srcset="../temp/person-c-56x56@2x.jpg 2x" src="../temp/person-c-56x56.jpg" width="56" height="56" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="user-badge__heading">
+                                                    Adelaide Boedecker
+                                                </div>
+                                                <div class="user-badge__note">
+                                                    Soprano, Houston, TX
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="tag-people__suggest" href="#">
+                                            <div class="user-badge user-badge--search">
+                                                <div class="user-badge__preview">
+                                                    <div class="avatar avatar--squared avatar--non-clickable">
+                                                        <img class="avatar__image" srcset="../temp/organization-a-56x56@2x.jpg 2x" src="../temp/organization-a-56x56.jpg" width="56" height="56" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="user-badge__heading">
+                                                    <img class="icon" src="../symbols/16-city.svg" width="16" height="16" alt="">
+                                                    Aspen Music Festival &amp; School
+                                                </div>
+                                                <div class="user-badge__note">
+                                                    Aspen, CO
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="tag-people__suggest" href="#">
+                                            <div class="user-badge user-badge--search">
+                                                <div class="user-badge__preview">
+                                                    <div class="avatar avatar--non-clickable">
+                                                        <img class="avatar__image" srcset="../temp/person-d-56x56@2x.jpg 2x" src="../temp/person-d-56x56.jpg" width="56" height="56" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="user-badge__heading">
+                                                    Shea Owens
+                                                </div>
+                                                <div class="user-badge__note">
+                                                    Soprano, Salt Lake City, UT
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="tag-people__suggest" href="#">
+                                            <div class="user-badge user-badge--search">
+                                                <div class="user-badge__preview">
+                                                    <div class="avatar avatar--non-clickable">
+                                                        <img class="avatar__image" srcset="../temp/person-e-56x56@2x.jpg 2x" src="../temp/person-e-56x56.jpg" width="56" height="56" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="user-badge__heading">
+                                                    Elena Villalón
+                                                </div>
+                                                <div class="user-badge__note">
+                                                    Soprano, Houston, TX
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a class="tag-people__suggest" href="#">
+                                            <div class="user-badge user-badge--search">
+                                                <div class="user-badge__preview">
+                                                    <div class="avatar avatar--non-clickable">
+                                                        <img class="avatar__image" srcset="../temp/person-f-56x56@2x.jpg 2x" src="../temp/person-f-56x56.jpg" width="56" height="56" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="user-badge__heading">
+                                                    Adelaide Boedecker
+                                                </div>
+                                                <div class="user-badge__note">
+                                                    Soprano, Washington, DC
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="post-form__footer">
+                            <div class="post-form__menu">
+                                <label class="post-form__item action action--flipped" for="image-upload"><!-- If you can please use <button> here, it's easier to navigate via keyboard -->
+                                    <span class="action__image">
+                                        <img class="action__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+                                    </span>
+                                    <input class="visuallyhidden" type="file" id="image-upload">
+                                </label>
+                                <button class="post-form__item action action--flipped" type="button" id="temp-add-video-handler">
+                                    <span class="action__image">
+                                        <img class="action__icon" src="../symbols/24-cinema.svg" width="24" height="24" alt="">
+                                    </span>
+                                </button>
+                                <button class="post-form__item action action--flipped" type="button" id="temp-add-link-handler">
+                                    <span class="action__image">
+                                        <img class="action__icon" src="../symbols/24-staple-horizontal.svg" width="24" height="24" alt="">
+                                    </span>
+                                </button>
+                                <div class="post-form__item">
+                                    <button class="action action--flipped" type="button" id="temp-add-tag-handler">
+                                        <span class="action__image">
+                                            <img class="action__icon" src="../symbols/24-tag.svg" width="24" height="24" alt="">
+                                        </span>
+                                    </button>
+                                    <!-- or: -->
+                                    <a class="party party--on-smartphone-only-icon party--tagging" href="#" id="temp-add-tag-alternate-handler">
+                                        <img class="party__icon" src="../symbols/24-tag.svg" width="24" height="24" alt="">
+                                        <div class="party__list">
+                                            <div class="party__item avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-24x24@2x.jpg 2x"
+                                                     src="../temp/organization-a-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Indiana University"
+                                                >
+                                            </div>
+                                            <div class="party__item avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-b-24x24@2x.jpg 2x"
+                                                     src="../temp/organization-b-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Indiana University"
+                                                >
+                                            </div>
+                                        </div>
+                                        <div class="party__more">
+                                            + 6 more
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="post-form__operations">
+                                <button class="post-form__action post-form__action--secondary button button--secondary" type="button" id="temp-main-handler">
+                                    Back
+                                </button>
+                                <button class="post-form__action post-form__action--primary button" type="button">
+                                    Done
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--skeleton modal--296px fade" id="detailed-event-popup" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="event-card event-card--detailed">
+                        <div class="event-card__link">
+                            <div class="event-card__date">
+                                <div class="event-card__month">May</div>
+                                <div class="event-card__day">11</div>
+                            </div>
+                            <h3 class="event-card__heading">
+                                Bethel Music’s Heaven Come Conference 2021
+                            </h3>
+                            <div class="event-card__body">
+                                <div class="event-card__note">
+                                    University Orchestra and London Philharmonic Orchestra
+                                </div>
+                                <div class="event-card__note">
+                                    Auer Hall
+                                </div>
+                                <div class="event-card__note">
+                                    <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
+                                </div>
+                                <button class="event-card__add-to-calendar" type="button">
+                                    <img class="event-card__calendar" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                </button>
+                            </div>
+                            <div class="event-card__artists set">
+                                <div class="set__heading">
+                                    <img class="set__icon" src="../symbols/32-crowd.svg" width="32" height="32" alt="">
+                                    Artists
+                                </div>
+                                <div class="set__list">
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                             src="../temp/person-a-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                             src="../temp/person-b-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                             src="../temp/person-c-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                             src="../temp/person-d-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                             src="../temp/person-e-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                             src="../temp/person-f-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                             src="../temp/person-a-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                             src="../temp/person-b-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                             src="../temp/person-c-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-44x44@2x.jpg 2x"
+                                             src="../temp/person-d-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-44x44@2x.jpg 2x"
+                                             src="../temp/person-e-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                    <a class="set__item avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-f-44x44@2x.jpg 2x"
+                                             src="../temp/person-f-44x44.jpg"
+                                             width="44"
+                                             height="44"
+                                             alt=""
+                                        >
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="event-card__actions">
+                            <div class="operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-calendar.svg" width="24" height="24" alt="">
+                                            Add to Calendar
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
+                                            Report
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--skeleton modal--380px fade" id="edit-contacts" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="org-edit">
+                        <div class="org-edit__head">
+                            <div class="org-edit__preview">
+                                <img class="org-edit__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16">
+                            </div>
+                            <div class="org-edit__heading">
+                                Editing <span class="org-edit__info">contact info</span>
+                            </div>
+                        </div>
+                        <div class="org-edit__body">
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Secondary Name (optional)">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Address Line 1">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Address Line 2">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Website">
+                            </div>
+                            <div class="org-edit__field input input--bold">
+                                <input class="input__widget" type="text" placeholder="Phone">
+                            </div>
+                            <div class="org-edit__field merge">
+                                <div class="input input--select input--placeholder-is-chosen input--bold">
+                                    <select class="input__widget">
+                                        <option>Organization Type</option>
+                                        <option>Agency/Management</option>
+                                        <option>College Program</option>
+                                        <option>Conservatory</option>
+                                        <option>Dance Company</option>
+                                        <option>Opera</option>
+                                        <option>Orchestra</option>
+                                        <option>Podcast</option>
+                                        <option>PR Firm</option>
+                                        <option>Summer Festival</option>
+                                        <option>Theater</option>
+                                        <option>Training</option>
+                                        <option>Program</option>
+                                        <option>Vendor (Offers services/products for the arts)</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="input input--bold">
+                                    <input class="input__widget" type="text" placeholder="Enter Organization Type here">
+                                </div>
+                            </div>
+                            <div class="org-edit__field input input--bold input--area input--extendable-via-plugin">
+                                <textarea class="input__widget" placeholder="Description" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="org-edit__footer">
+                            <button class="org-edit__submit button" type="button">Save Changes</button>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <img class="overlay__icon" src="../symbols/16-success.svg" width="16" height="16" alt="">
+                        <div class="overlay__heading">
+                            Success!
+                        </div>
+                        <div class="overlay__description">
+                            Your organization page information has been<br> updated on the profile.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--skeleton modal--380px fade" id="edit-media" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="org-edit">
+                        <div class="org-edit__head">
+                            <div class="org-edit__preview">
+                                <img class="org-edit__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16">
+                            </div>
+                            <div class="org-edit__heading">
+                                Editing <span class="org-edit__info">social links</span>
+                            </div>
+                        </div>
+                        <div class="org-edit__body">
+                            <div class="edit-media">
+                                <div class="edit-media__note">
+                                    All links are optional.
+                                </div>
+                                <div class="edit-media__item">
+                                    <img class="edit-media__icon" src="../symbols/28-media-link.svg" width="28" height="28" alt="">
+                                    <div class="edit__field input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Website">
+                                    </div>
+                                </div>
+                                <div class="edit-media__item">
+                                    <img class="edit-media__icon" src="../symbols/28-media-instagram.svg" width="28" height="28" alt="">
+                                    <div class="edit__field input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Instagram">
+                                    </div>
+                                </div>
+                                <div class="edit-media__item">
+                                    <img class="edit-media__icon" src="../symbols/28-media-facebook.svg" width="28" height="28" alt="">
+                                    <div class="edit__field input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Facebook">
+                                    </div>
+                                </div>
+                                <div class="edit-media__item">
+                                    <img class="edit-media__icon" src="../symbols/28-media-twitter.svg" width="28" height="28" alt="">
+                                    <div class="edit__field input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Twitter">
+                                    </div>
+                                </div>
+                                <div class="edit-media__item">
+                                    <img class="edit-media__icon" src="../symbols/28-media-youtube.svg" width="28" height="28" alt="">
+                                    <div class="edit__field input input--bold">
+                                        <input class="input__widget" type="text" placeholder="YouTube">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="org-edit__footer">
+                            <button class="org-edit__submit button" type="button">Save Changes</button>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <img class="overlay__icon" src="../symbols/16-success.svg" width="16" height="16" alt="">
+                        <div class="overlay__heading">
+                            Success!
+                        </div>
+                        <div class="overlay__description">
+                            Your organization page information has been<br> updated on the profile.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--skeleton modal--380px fade" id="edit-organization" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="org-edit">
+                        <div class="org-edit__head">
+                            <div class="org-edit__preview">
+                                <img class="org-edit__icon" src="../symbols/16-pencil-tiny.svg" width="16" height="16">
+                            </div>
+                            <div class="org-edit__heading">
+                                Editing your <span class="org-edit__info">general info</span>
+                            </div>
+                        </div>
+                        <div class="org-edit__body">
+                            <div class="org-edit__fieldset">
+                                <div class="org-edit__logo">
+                                    <button class="img-pad" type="button">Upload Logo</button>
+
+                                    <!-- temp -->
+                                    or:<br>
+                                    <!--/temp -->
+
+                                    <div class="selected">
+                                        <button class="selected__handler" type="button">
+                                            <img class="selected__file"
+                                                 srcset="../temp/org-logo-96x96@2x.jpg 2x"
+                                                 src="../temp/org-logo-96x96.jpg"
+                                                 width="96"
+                                                 height="96"
+                                                 alt=""
+                                            >
+                                        </button>
+                                        <button class="selected__delete">
+                                            <img class="selected__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="org-edit__naming">
+                                    <div class="org-edit__field input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Organization Name">
+                                    </div>
+                                    <div class="org-edit__field input input--bold">
+                                        <input class="input__widget" type="text" placeholder="Location">
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="org-edit__cover-handler button button--another-darker" type="submit">
+                                Change Cover Photo
+                            </button>
+
+                            <!-- temp -->
+                            <br>
+                            <br>
+                            <br>
+                            Another screen:
+                            <br>
+                            <br>
+                            <!--/temp -->
+
+                            <div class="org__cover">
+
+                                <button class="img-pad img-pad--cover" type="button">Click to change image</button>
+
+                                <!-- temp -->
+                                or:
+                                <!--/temp -->
+
+                                <div class="selected">
+                                    <button class="selected__handler" type="button">
+                                        <img class="selected__file"
+                                             srcset="../temp/selected-preview@2x.jpg 2x"
+                                             src="../temp/selected-preview.jpg"
+                                             width="310"
+                                             height="177"
+                                             alt=""
+                                        >
+                                        <span class="selected__overlay">
+
+                                        </span>
+                                        <span class="selected__label">
+                                            Click to change image
+                                        </span>
+                                    </button>
+                                    <button class="selected__delete">
+                                        <img class="selected__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                    </button>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="org-edit__footer">
+                            <button class="org-edit__submit button" type="button">Save Changes</button>
+
+                            <!-- temp -->
+                            <br><br>Another screen:<br><br>
+                            <!--/temp -->
+
+                            <a class="action action--horizontal" href="#">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                </span>
+                                <span class="action__label">
+                                    Go back to finish editing your general info.
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="overlay">
+                        <img class="overlay__icon" src="../symbols/16-success.svg" width="16" height="16" alt="">
+                        <div class="overlay__heading">
+                            Success!
+                        </div>
+                        <div class="overlay__description">
+                            Your organization page information has been<br> updated on the profile.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player3.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_explore.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+        <script src="../scripts/_media-bar.js"></script>
+        <script src="../scripts/_settings.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_expandable-bio.js"></script>
+        <script src="../scripts/_parallax.js"></script>
+        <script src="../scripts/_simple-parallax.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_modal.js"></script>
+        <script src="../scripts/_full-media-card.js"></script>
+        <script src="../scripts/_color-selection.js"></script>
+        <script src="../scripts/_layout-type.js"></script>
+        <script src="../scripts/_sortable.js"></script>
+        <script src="../scripts/_biography.js"></script>
+        <script src="../scripts/_media-clip.js"></script>
+        <script src="../scripts/_typing.js"></script>
+        <script src="../scripts/_circles.js"></script>
+        <script src="../scripts/_brief.js"></script>
+
+
+    </body>
+</html>
