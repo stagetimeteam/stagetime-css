@@ -2,6 +2,15 @@
     position: relative;
     text-align: center;
 }
+
+.full-line:first-child {
+    margin-top: 27px;
+}
+
+.updates-line + .full-line {
+    margin-top: 27px;
+}
+
     .full-line::before {
         content: "";
         position: absolute;

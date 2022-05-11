@@ -7,6 +7,12 @@
     line-height: 18px;
     color: #757575;
 }
+
+
+.full-line + .updates-line {
+    margin-top: 27px;
+}
+
     .updates-line__heading {
         font-weight: 600;
         color: #23282C;
