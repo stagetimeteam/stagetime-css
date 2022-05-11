@@ -81,3 +81,19 @@
     .media--user-color .media__link:active .media__icon {
         fill: var(--theme-main-press);
     }
+
+
+.media--inverted {
+
+}
+    .media--inverted .media__icon {
+        fill: #EEF0F3;
+    }
+
+    .media--inverted .media__link:hover .media__icon {
+        fill: #FFFFFF;
+    }
+
+    .media--inverted .media__link:active .media__icon {
+        fill: #DADCE0;
+    }
