@@ -921,10 +921,25 @@
                                             </div>
                                         </div>
                                         <div class="circles__form">
-                                            <div class="typing">
+                                            <div class="typing typing--has-attachment">
                                                 <textarea class="typing__message" rows="1" placeholder="Aa"></textarea>
                                                 <div class="typing__attachment">
-
+                                                    <div class="typing__item file">
+                                                        <a class="file__preview-link" href="#">
+                                                            <!-- Height is always 70. Width can be any.
+                                                            If width is known (after image was resized) set it as width="106".
+                                                            Otherwise don't use width attribute like below -->
+                                                            <img class="file__image"
+                                                                 srcset="../temp/thumb@2x.jpg 2x"
+                                                                 src="../temp/thumb.jpg"
+                                                                 height="70"
+                                                                 alt=""
+                                                            >
+                                                        </a>
+                                                        <button class="file__delete" type="button">
+                                                            <img class="file__cross" src="../symbols/24-close-square.svg" width="24" height="24" alt="">
+                                                        </button>
+                                                    </div>
                                                 </div>
                                                 <div class="typing__operations">
                                                     <button class="typing__attach" type="button">

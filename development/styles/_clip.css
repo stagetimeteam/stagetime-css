@@ -8,11 +8,12 @@
         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
         border-radius: 24px;
         overflow: hidden;
+        -webkit-transform: translate3d(0, 0, 0); /* make transition works in safari: https://stackoverflow.com/questions/48470833/overflow-not-hidden-while-css-animation-in-safari */
     }
         .clip__image {
             vertical-align: top;
             background-color: var(--image-fallback);
-            transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+            transition: transform 0.3s var(--easeOutCirc);
         }
 
         .clip:hover .clip__image {

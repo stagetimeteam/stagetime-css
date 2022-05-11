@@ -10,3 +10,8 @@
         left: 0;
         top: 100%;
     }
+
+    .tagging--up .tagging__dropdown {
+        top: auto;
+        bottom: 100%;
+    }

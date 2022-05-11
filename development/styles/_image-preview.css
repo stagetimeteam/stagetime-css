@@ -10,7 +10,7 @@
     .image-preview__image {
         vertical-align: top;
         background-color: var(--image-fallback);
-        transition: transform 0.3s cubic-bezier(0, 0.55, 0.45, 1);
+        transition: transform 0.3s var(--easeOutCirc);
     }
 
     @supports (object-fit: cover) {

@@ -24,7 +24,6 @@
         background-color: var(--panel-active);
         transition: none;
     }
-
         .file__icon {
             margin-right: 9px;
             flex-shrink: 0;
@@ -42,6 +41,25 @@
             color: #333333;
             text-align: left;
         }
+
+
+    .file__preview-link {
+        display: inline-block;
+        vertical-align: top;
+        border-radius: 5px;
+        overflow: hidden;
+        -webkit-transform: translate3d(0, 0, 0); /* make transition works in safari: https://stackoverflow.com/questions/48470833/overflow-not-hidden-while-css-animation-in-safari */
+    }
+        .file__image {
+            vertical-align: top;
+            background-color: var(--image-fallback);
+            transition: transform 0.3s var(--easeOutCirc);
+        }
+
+        .file__preview-link:hover .file__image {
+            transform: scale(1.05);
+        }
+
 
     .file__delete {
         position: absolute;

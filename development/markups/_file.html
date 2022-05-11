@@ -38,6 +38,35 @@
                 </a>
             </div>
 
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Image attachment</h2>
+            <p>
+                Layout is slightly different in case of an image.
+            </p>
+            <p>
+                Image height is always <b>70px</b> and it is set as <b>height="70"</b>. Width can be any.
+                If width is known (after image was resized and cut) set it as <b>width="106"</b>.
+                Otherwise don't use width attribute at all and set height only.
+            </p>
+
+            <div class="file">
+                <a class="file__preview-link" href="#">
+                    <!-- Height is always 70. Width can be any.
+                    If width is known (after image was resized) set it as width="106".
+                    Otherwise don't use width attribute like below -->
+                    <img class="file__image"
+                         srcset="../temp/thumb@2x.jpg 2x"
+                         src="../temp/thumb.jpg"
+                         height="70"
+                         alt=""
+                    >
+                </a>
+            </div>
+
+
 
 
             <br>
@@ -50,6 +79,27 @@
                 <a class="file__link" href="#">
                     <img class="file__icon" src="../symbols/24-document.svg" width="24" height="24" alt="">
                     <span class="file__label">Comp Ticket Policy.docx</span>
+                </a>
+                <button class="file__delete" type="button">
+                    <img class="file__cross" src="../symbols/24-close-square.svg" width="24" height="24" alt="">
+                </button>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div class="file">
+                <a class="file__preview-link" href="#">
+                    <!-- Height is always 70. Width can be any.
+                    If width is known (after image was resized) set it as width="106".
+                    Otherwise don't use width attribute like below -->
+                    <img class="file__image"
+                         srcset="../temp/thumb@2x.jpg 2x"
+                         src="../temp/thumb.jpg"
+                         height="70"
+                         alt=""
+                    >
                 </a>
                 <button class="file__delete" type="button">
                     <img class="file__cross" src="../symbols/24-close-square.svg" width="24" height="24" alt="">

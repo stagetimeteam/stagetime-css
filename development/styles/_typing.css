@@ -39,10 +39,6 @@
     .typing__message:-ms-input-placeholder      { font-style: normal; color: #6C727A; }
     /* stylelint-enable */
 
-    .typing__attachment {
-
-    }
-
     .typing__operations {
         position: absolute;
         right: 0;
@@ -168,46 +164,19 @@
 
 
 
-.typing--side {
-    /*padding: 20px 28px;*/
+.typing--has-attachment {
+
 }
-    .typing--side .typing__message {
-        /*background-color: #FFFFFF;*/
+    .typing--has-attachment .typing__message {
+        padding-bottom: 106px;
     }
 
-
-    /* stylelint-disable block-opening-brace-space-before */
-    /*.typing--side .typing__message::-webkit-input-placeholder { color: #AAAAAA; }*/
-    /*.typing--side .typing__message::-moz-placeholder          { color: #AAAAAA; }*/
-    /*.typing--side .typing__message:-ms-input-placeholder      { color: #AAAAAA; }*/
-    /* stylelint-enable */
-
-    .typing--side .typing__send {
-        /*position: absolute;*/
-        /*right: 28px;*/
-        /*top: 20px;*/
-        /*width: 54px;*/
-        /*background-color: transparent;*/
+    .typing__attachment {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        max-width: calc(100% - 154px); /* 154px is for buttons on the right */
+        padding: 0 20px 16px;
     }
-
-    .typing--side .typing__send:hover {
-        /*background-color: transparent;*/
-    }
-        .typing--side .typing__plane {
-            /*fill: #C4C4C4;*/
-        }
-
-        .typing--side .typing__send:hover .typing__plane {
-            /*fill: #545454;*/
-        }
-
-
-    .typing--side .typing__send--disabled,
-    .typing--side .typing__send--disabled:hover {
-        /*background-color: transparent;*/
-        /*cursor: default;*/
-    }
-        .typing--side .typing__send--disabled .typing__plane,
-        .typing--side .typing__send--disabled:hover .typing__plane {
-            /*fill: #E8E8E8;*/
+        .typing__item {
         }
