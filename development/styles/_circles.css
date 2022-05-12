@@ -16,19 +16,31 @@
             .circles__side-head {
                 padding: 35px 16px 0 68px;
                 height: var(--circles-head-height);
-                background-color: #44474A;
+                background-color: #23282C;
+                box-shadow: inset -1px 0 0 #FFFFFF;
                 background-image: url("../images/rings.svg");
                 background-size: 30px 30px;
                 background-repeat: no-repeat;
                 background-position: 20px center;
             }
                 .circles__circles {
-                    display: block;
+                    display: flex;
+                    align-items: flex-start;
                     font-weight: 600;
                     font-size: 12px;
                     line-height: 18px;
                     color: #FFFFFF;
                 }
+                    .circles__beta {
+                        margin-left: 5px;
+                        margin-top: -5px;
+                        font-weight: bold;
+                        font-size: 7px;
+                        line-height: 12px;
+                        color: #FFFFFF;
+                        text-transform: uppercase;
+                        letter-spacing: 0.4px;
+                    }
 
                 .circles__updated {
                     font-size: 11px;
