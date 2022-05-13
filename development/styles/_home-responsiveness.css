@@ -4,7 +4,7 @@
     padding-left: 0;
     padding-right: 0;
     /*position: relative;*/
-    /*padding-left: var(--home-sidebar);*/
+    /*padding-left: var(--page-sidebar);*/
     /*padding-right: var(--home-aside);*/
 }
     .home__sidebar {

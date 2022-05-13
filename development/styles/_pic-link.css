@@ -16,7 +16,7 @@
         color: #545454;
     }
 
-@media (min-height: 680px) {
+@media (min-height: 800px) {
 
     .pic-link {
         padding-top: 14px;
@@ -27,7 +27,7 @@
         }
 }
 
-@media (min-height: 780px) {
+@media (min-height: 900px) {
 
     .pic-link {
         padding-top: 14px;
@@ -106,7 +106,7 @@
     .pic-link--current::after {
         content: "";
         position: absolute;
-        right: -3px;
+        right: -2px;
         top: 50%;
         height: 32px;
         margin-top: -16px;
