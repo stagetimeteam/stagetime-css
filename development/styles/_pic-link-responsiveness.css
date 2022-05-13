@@ -1,0 +1,106 @@
+.pic-link {
+    /*position: relative;*/
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    /*padding: 12px 22px 12px 32px;*/
+    /*font-weight: 600;*/
+    /*font-size: 13px;*/
+    /*line-height: 24px;*/
+    /*color: #545454;*/
+    /*text-decoration: none;*/
+    /*margin-right: -2px; !* for .pic-link--current::after *!*/
+    /*box-shadow: inset -2px 0 0 #E8E8E8;*/
+    /*overflow: hidden; !* cut for .sidebar-collapsed *!*/
+    /*transition: background-color var(--transition-hover);*/
+}
+    .pic-link__beta {
+        /*margin-left: 5px;*/
+        /*margin-top: -2px;*/
+        /*color: #545454;*/
+    }
+
+    .pic-link__label {
+        /*white-space: nowrap;*/
+    }
+
+@media (min-height: 800px) {
+
+    .pic-link {
+        /*padding-top: 14px;*/
+        /*padding-bottom: 14px;*/
+    }
+        .pic-link + .pic-link {
+            /*margin-top: 5px;*/
+        }
+}
+
+@media (min-height: 900px) {
+
+    .pic-link {
+        /*padding-top: 14px;*/
+        /*padding-bottom: 14px;*/
+    }
+        .pic-link + .pic-link {
+            /*margin-top: 17px;*/
+        }
+}
+
+    .pic-link__icon {
+        /*position: relative;*/
+        /*vertical-align: top;*/
+        /*fill: #545454;*/
+        /*margin: 2px 9px 2px 0;*/
+        /*flex-shrink: 0;*/
+    }
+
+    .pic-link__icon--photo {
+        /*border-radius: 2px;*/
+    }
+
+    .pic-link__counter {
+        /*position: absolute;*/
+        /*left: 45px;*/
+        /*top: 7px;*/
+        /*box-shadow: 0 0 0 1px #FFFFFF;*/
+    }
+
+
+.pic-link:hover {
+    /*background-color: var(--panel-hover);*/
+}
+
+.pic-link:active {
+    /*background-color: var(--panel-active);*/
+    /*transition: none;*/
+}
+
+
+
+.pic-link--current {
+    /*font-weight: bold;*/
+    /*color: #39606C;*/
+}
+    .pic-link--current::after {
+        /*content: "";*/
+        /*position: absolute;*/
+        /*right: 0;*/
+        /*top: 50%;*/
+        /*height: 32px;*/
+        /*margin-top: -16px;*/
+        /*width: 3px;*/
+        /*background-color: #39606C;*/
+        /*border-radius: 4px;*/
+    }
+
+    .pic-link--current .pic-link__icon {
+        /*fill: #545454;*/
+    }
+
+
+
+.sidebar-collapsed {
+
+}
+    .sidebar-collapsed .pic-link__label {
+        opacity: 1;
+    }

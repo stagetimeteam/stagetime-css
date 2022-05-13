@@ -1,0 +1,15 @@
+.page {
+    /*height: calc(100% - var(--header-height));*/
+}
+
+.has-sub-header .page {
+    /*height: calc(100% - var(--header-height) - var(--sub-header-height));*/
+}
+
+.has-sidebar .page {
+    margin-left: 0;
+}
+
+.has-sidebar.sidebar-collapsed .page {
+    margin-left: 0;
+}

@@ -1,6 +1,6 @@
 .sidebar {
     position: absolute;
-    z-index: 500;
+    z-index: 600; /* higher than .home__aside on smartphone */
     left: 0;
     top: var(--header-height);
     width: var(--page-sidebar);

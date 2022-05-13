@@ -1,0 +1,31 @@
+.sidebar {
+    position: fixed;
+    top: var(--header-height);
+    bottom: 0;
+    width: var(--page-sidebar-mobile);
+}
+
+
+.has-sub-header .sidebar {
+    top: calc(100% - var(--header-height) - var(--sub-header-height));
+}
+
+.has-player3 .sidebar {
+    bottom: var(--player3-height);
+}
+
+    .sidebar__scroll {
+        height: 100%;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+        .sidebar__inner {
+            height: 100%;        }
+
+.sidebar-collapsed .sidebar {
+    width: var(--page-sidebar-mobile);
+}
+
+.sidebar-collapsed .sidebar:hover {
+    width: var(--page-sidebar-mobile);
+}
