@@ -1,18 +1,7 @@
 .home {
     position: relative;
-    padding-left: var(--home-sidebar);
     padding-right: var(--home-aside-shortened);
 }
-    .home__sidebar {
-        position: absolute;
-        z-index: 500;
-        width: var(--home-sidebar);
-        background-color: #FFFFFF;
-        left: 0;
-        top: 0;
-        border-right: 2px solid #E8E8E8;
-    }
-
     .home__content {
         box-shadow: -2px 0 0 #E8E8E8,
                      2px 0 0 #E8E8E8;
@@ -83,12 +72,6 @@
         height: 100%;
         padding-right: var(--home-aside-full);
     }
-        .home__sidebar {
-            position: fixed;
-            top: var(--header-height);
-            bottom: 0;
-        }
-
         .home__content {
             min-height: 100%;
             padding-left: 6.72%;  /* there was small 24px padding */

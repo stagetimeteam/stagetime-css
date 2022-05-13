@@ -1,0 +1,8 @@
+.sidebar {
+    z-index: 500;
+    width: var(--home-sidebar);
+    background-color: #FFFFFF;
+    left: 0;
+    top: 0;
+    border-right: 2px solid #E8E8E8;
+}
