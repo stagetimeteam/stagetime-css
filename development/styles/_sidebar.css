@@ -4,6 +4,8 @@
     left: 0;
     top: var(--header-height);
     width: var(--page-sidebar);
+    background-color: #FFFFFF;
+    transition: width var(--transition-long-show);
 }
     .sidebar__scroll {
 
@@ -32,6 +34,16 @@
             -webkit-overflow-scrolling: touch;
         }
             .sidebar__inner {
-
+                height: 100%;
             }
 }
+
+
+.sidebar-collapsed .sidebar {
+    width: var(--page-sidebar-collapsed);
+}
+
+.sidebar-collapsed .sidebar:hover {
+    width: var(--page-sidebar);
+}
+

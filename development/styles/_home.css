@@ -92,7 +92,6 @@
 .has-player3 {
 
 }
-    .has-player3 .home__sidebar,
     .has-player3 .home__content,
     .has-player3 .home__aside {
         padding-bottom: var(--player3-height);

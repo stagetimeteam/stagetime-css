@@ -7,10 +7,6 @@
     /*padding-left: var(--page-sidebar);*/
     /*padding-right: var(--home-aside);*/
 }
-    .home__sidebar {
-        display: none;
-    }
-
     .home__content {
         border: none;
         border-top: 4px solid #F6F6F6;

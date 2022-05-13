@@ -9,3 +9,7 @@
 .has-sidebar .page {
     margin-left: var(--page-sidebar);
 }
+
+.has-sidebar.sidebar-collapsed .page {
+    margin-left: var(--page-sidebar-collapsed);
+}
