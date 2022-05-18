@@ -153,6 +153,10 @@
         display: none;
     }
 
+    .search-visible .sidebar {
+        display: none;
+    }
+
     .search-visible .player3 {
         display: none;
     }
