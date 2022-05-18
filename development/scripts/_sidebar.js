@@ -10,4 +10,12 @@
     // });
 
 
+    /* hide profile dropdown by Esc press */
+
+    $(document).on('keyup', function(event) {
+        if (event.keyCode === 27) {
+            $('html').removeClass('sidebar-visible');
+        }
+    });
+
 })(jQuery);

@@ -39,7 +39,7 @@
 
     .header-button__icon {
         position: relative;
-        vertical-align: top;
+        display: block;
         fill: #000000;
     }
 

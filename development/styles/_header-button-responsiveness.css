@@ -5,8 +5,25 @@
 
     }
 
-    .header-button__updates {
-        right: 10px;
+    .header-button__icon--burger {
+
+    }
+
+    .header-button__icon--close-burger {
+        display: none;
+    }
+
+    .header-button__icon--burger {
+        display: block;
+    }
+
+
+    .sidebar-visible .header-button__icon--burger {
+        display: none;
+    }
+
+    .sidebar-visible .header-button__icon--close-burger {
+        display: block;
     }
 
 

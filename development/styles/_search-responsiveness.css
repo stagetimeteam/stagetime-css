@@ -152,3 +152,7 @@
     .search-visible .page {
         display: none;
     }
+
+    .search-visible .player3 {
+        display: none;
+    }

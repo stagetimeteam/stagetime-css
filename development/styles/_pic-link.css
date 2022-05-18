@@ -60,7 +60,8 @@
     .pic-link__counter {
         position: absolute;
         left: 45px;
-        top: 7px;
+        top: 50%;
+        margin-top: -17px;
         box-shadow: 0 0 0 1px #FFFFFF;
     }
 
