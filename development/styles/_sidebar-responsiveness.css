@@ -2,6 +2,8 @@
     position: fixed;
     top: var(--header-height);
     bottom: 0;
+    left: auto;
+    right: 0;
     width: var(--page-sidebar-mobile);
 }
 
@@ -20,7 +22,10 @@
         -webkit-overflow-scrolling: touch;
     }
         .sidebar__inner {
-            height: 100%;        }
+            height: 100%;
+            border-right: none;
+            border-left: 2px solid #E8E8E8;
+        }
 
 .sidebar-collapsed .sidebar {
     width: var(--page-sidebar-mobile);
