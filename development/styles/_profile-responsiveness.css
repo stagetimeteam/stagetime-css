@@ -36,10 +36,6 @@
             padding-top: 0;
         }
 
-        .profile__organisation {
-            display: none;
-        }
-
         .profile__logout {
             margin-top: 0;
             box-shadow: none;

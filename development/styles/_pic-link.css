@@ -14,10 +14,22 @@
     transition: background-color var(--transition-hover);
 }
     .pic-link__beta {
+        vertical-align: top;
         margin-left: 5px;
         margin-top: -2px;
         color: #545454;
     }
+
+    .pic-link__sparkle {
+        position: absolute;
+        left: 28px;
+        top: 50%;
+        margin-top: -21px;
+        vertical-align: top;
+        fill: #9CB2BE;
+        pointer-events: none; /* don't overlay neighbours */
+    }
+
 
     .pic-link__label {
         white-space: nowrap;

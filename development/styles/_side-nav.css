@@ -21,7 +21,7 @@
         }
     }
 
-    .side-nav__section::before {
+        .side-nav__section::before {
             content: "";
             position: absolute;
             top: -1px;
@@ -36,3 +36,7 @@
             display: none;
         }
 
+
+    .side-nav__section--smartphone-only {
+        display: none;
+    }

@@ -113,7 +113,6 @@
 @import url("_expandable-bio-responsiveness.css");
 @import url("_detailed-project-responsiveness.css");
 @import url("_panels-responsiveness.css");
-@import url("_user-link-responsiveness.css");
 @import url("_bar-responsiveness.css");
 @import url("_gate-responsiveness.css");
 @import url("_circles-responsiveness.css");
@@ -139,3 +138,4 @@
 @import url("_page-responsiveness.css");
 @import url("_sidebar-responsiveness.css");
 @import url("_pic-link-responsiveness.css");
+@import url("_side-nav-responsiveness.css");

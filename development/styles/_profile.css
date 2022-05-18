@@ -47,3 +47,19 @@
         .profile__menu + .profile__logout {
             margin-top: 10px;
         }
+
+
+.profile .pic-link {
+    padding: 8px 16px; /* originally it was used in sidebar and paddings there are flexible. Fix them in dropdown. */
+}
+
+.profile .pic-link + .pic-link {
+    margin-top: 0; /* originally it was used in sidebar and paddings there are flexible. Fix them in dropdown. */
+}
+    .profile .pic-link__icon {
+        margin-right: 16px;
+    }
+
+    .profile .pic-link__counter {
+        left: 29px;
+    }
