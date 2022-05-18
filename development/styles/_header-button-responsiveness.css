@@ -9,3 +9,7 @@
         right: 10px;
     }
 
+
+.header-button--sidebar {
+    display: flex;
+}

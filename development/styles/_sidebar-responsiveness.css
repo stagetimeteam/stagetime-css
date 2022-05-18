@@ -3,8 +3,13 @@
     top: var(--header-height);
     bottom: 0;
     left: auto;
-    right: 0;
+    right: calc(-1 * var(--page-sidebar-mobile));
     width: var(--page-sidebar-mobile);
+}
+
+.sidebar-visible .sidebar {
+    right: 0; /* slide */
+    transition: right 0.3s var(--ease-out-circ);
 }
 
 
@@ -13,7 +18,7 @@
 }
 
 .has-player3 .sidebar {
-    bottom: var(--player3-height);
+    bottom: 0; /* over the player */
 }
 
     .sidebar__scroll {

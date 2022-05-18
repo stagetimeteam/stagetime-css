@@ -1,9 +1,10 @@
-.header { /* This always stays on the page and reserves height for the header */
+.header { /* (1) This always stays on the page and reserves height for the header */
     position: relative;
-    z-index: 1000;
+    z-index: 1000; /* .header is 1000, .sidebar is 950, .player3 is 900
+                    It make sense only on smartphones when .sidebar is under the header (shadow) but over the .player3 */
     height: var(--header-height);
 }
-    .header__detachable-panel { /* This is inside of .header by default or can be position:fixed on 1240+ */
+    .header__detachable-panel { /* (1) This is inside of .header by default or can be position:fixed on 1240+ */
         position: fixed;
         left: 0;
         top: 0;

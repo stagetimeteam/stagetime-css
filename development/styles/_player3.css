@@ -1,6 +1,7 @@
 .player3 {
     position: fixed;
-    z-index: 1000;
+    z-index: 900; /* .header is 1000, .sidebar is 950, .player3 is 900
+                     It make sense only on smartphones when .sidebar is under the header (shadow) but over the .player3 */
     left: 0;
     right: 0;
     bottom: 0;

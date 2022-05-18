@@ -43,23 +43,34 @@
         fill: #000000;
     }
 
-    .header-button--messages .header-button__icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .header-button--notifications .header-button__icon {
-        width: 16px;
-        height: 16px;
-    }
-
-
-
     .header-button__updates {
         position: absolute;
         right: 9px;
         top: 12px;
     }
+
+
+.header-button--messages {
+
+}
+    .header-button--messages .header-button__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+.header-button--notifications {
+
+}
+    .header-button--notifications .header-button__icon {
+        width: 16px;
+        height: 16px;
+    }
+
+.header-button--sidebar {
+    display: none; /* will be show on smartphones */
+}
+
+
 
 
 .header-button--dark {
