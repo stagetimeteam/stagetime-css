@@ -11,9 +11,3 @@
     white-space: nowrap;
     overflow: hidden;
 }
-
-@media (max-width: 413px) {
-    .logo {
-        width: 40px;
-    }
-}

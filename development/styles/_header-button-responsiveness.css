@@ -1,6 +1,11 @@
 .header-button {
     width: 56px;
 }
+
+.header-button--messages {
+    display: none;
+}
+
     .header-button__icon {
 
     }
