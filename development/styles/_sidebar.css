@@ -9,6 +9,10 @@
     background-color: #FFFFFF;
     transition: width var(--transition-long-show);
 }
+    .sidebar__overlay {
+        display: none;
+    }
+
     .sidebar__scroll {
 
     }

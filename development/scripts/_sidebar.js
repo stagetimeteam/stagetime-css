@@ -4,13 +4,9 @@
         $('html').toggleClass('sidebar-visible');
     });
 
-    // make closing overlay under sidebar to close it
-    // $('???').on('click', function () {
-    //     $('html').removeClass('profile-visible');
-    // });
-
-
-    /* hide profile dropdown by Esc press */
+    $('.sidebar__overlay').on('click', function () {
+        $('html').removeClass('sidebar-visible');
+    });
 
     $(document).on('keyup', function(event) {
         if (event.keyCode === 27) {
