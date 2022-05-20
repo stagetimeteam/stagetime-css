@@ -40,54 +40,6 @@
             }
 
 
-.header--dark {
-
-}
-    .header--dark .header__detachable-panel {
-        /*background-color: #333333;*/
-        /*box-shadow: none;*/
-    }
-        .header--dark .header__branding {
-
-        }
-
-        .header--dark .header__dropdown {
-
-        }
-
-        .header--dark .header__private-area {
-
-        }
-            .header--dark .header__greetings {
-
-            }
-
-            .header--dark .header__menu {
-
-            }
-                .header--dark .header__item {
-
-                }
-
-                .header--dark .header__item:first-child {
-
-                }
-
-
-                .header--dark .header__login {
-                    color: #C4C4C4;
-                }
-
-                .header--dark .header__join {
-                    /*background-color: transparent;*/
-                    /*border-color: #AAAAAA;*/
-                    color: #C4C4C4;
-                }
-
-                .header--dark .header__join:hover {
-                    background-color: transparent;
-                }
-
 .playlist-expanded .header {
     display: none;
 }

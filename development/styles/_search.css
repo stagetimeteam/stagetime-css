@@ -149,25 +149,6 @@
                     background-color: #F6F6F6;
                 }
 
-
-.search--dark {
-
-}
-    .search--dark .search__widget {
-        background-color: transparent;
-        border-color: #AAAAAA;
-        color: #FFFFFF;
-    }
-
-    .search--dark .search__widget:hover {
-        background-color: #4E4E4E;
-    }
-
-    .search--dark .search__widget:focus {
-        background-color: transparent;
-    }
-
-
 .search-visible {
 
 }

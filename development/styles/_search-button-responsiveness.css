@@ -31,15 +31,3 @@
         height: 16px;
         fill: #AAAAAA;
     }
-
-
-.search-button--dark {
-
-}
-    .search-button--dark::before {
-
-    }
-
-    .search-button--dark .search-button__icon {
-        fill: #333333;
-    }
