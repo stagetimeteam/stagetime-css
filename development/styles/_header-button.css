@@ -50,6 +50,10 @@
     }
 
 
+.header-button--search {
+    display: none;
+}
+
 .header-button--messages {
 
 }
