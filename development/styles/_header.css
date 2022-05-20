@@ -90,6 +90,9 @@
                 .header__label {
                     position: relative;
                 }
+                    .header__stagetime-label {
+
+                    }
 
         .header__greetings {
             position: absolute;
