@@ -4,7 +4,7 @@
         $('html').addClass('search-visible');
     });
 
-    $('.search-button').on('click', function () {
+    $('.header-button--search').on('click', function () {
         $('html').addClass('search-visible');
     });
 
@@ -16,7 +16,7 @@
     /* hide popup by click outside ( goo.gl/SJG2Hw ) */
 
     $(document).on('click', function(event) {
-        if (!$(event.target).closest('.search, .search-button').length) {
+        if (!$(event.target).closest('.search, .header-button--search').length) {
             $('html').removeClass('search-visible');
         }
     });
