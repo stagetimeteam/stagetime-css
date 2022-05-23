@@ -13,3 +13,8 @@
 .has-sidebar.sidebar-collapsed .page {
     margin-left: var(--page-sidebar-collapsed);
 }
+
+
+.has-sidebar.sidebar-hidden-on-desktop .page {
+    margin-left: 0;
+}

@@ -60,3 +60,14 @@
 .sidebar-collapsed .sidebar:hover {
     width: var(--page-sidebar-mobile);
 }
+
+
+
+.sidebar-hidden-on-desktop .sidebar {
+    width: var(--page-sidebar-mobile);
+    opacity: 1;
+}
+
+.sidebar-hidden-on-desktop .sidebar:hover {
+    width: var(--page-sidebar-mobile);
+}

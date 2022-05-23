@@ -7,7 +7,8 @@
     top: var(--header-height);
     width: var(--page-sidebar);
     background-color: #FFFFFF;
-    transition: width var(--transition-long-show);
+    transition: width var(--transition-long-show),
+                opacity var(--transition-long-show);
 }
     .sidebar__overlay {
         display: none;
@@ -51,5 +52,17 @@
 
 .sidebar-collapsed .sidebar:hover {
     width: var(--page-sidebar);
+}
+
+
+
+.sidebar-hidden-on-desktop .sidebar {
+    width: 10px;
+    opacity: 0;
+}
+
+.sidebar-hidden-on-desktop .sidebar:hover {
+    width: var(--page-sidebar);
+    opacity: 1;
 }
 
