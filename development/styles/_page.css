@@ -15,6 +15,6 @@
 }
 
 
-.has-sidebar.sidebar-hidden-on-desktop .page {
+.has-sidebar.sidebar-hidden .page {
     margin-left: 0;
 }

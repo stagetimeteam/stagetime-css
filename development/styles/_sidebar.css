@@ -22,6 +22,7 @@
         }
 
 @media (min-width: 1240px) {
+
     .sidebar {
         position: fixed;
         top: var(--header-height);
@@ -29,7 +30,7 @@
     }
 
     .has-sub-header .sidebar {
-        top: calc(100% - var(--header-height) - var(--sub-header-height));
+        top: calc(var(--header-height) + var(--sub-header-height));
     }
 
     .has-player3 .sidebar {
@@ -56,12 +57,12 @@
 
 
 
-.sidebar-hidden-on-desktop .sidebar {
+.sidebar-hidden .sidebar {
     width: 10px;
     opacity: 0;
 }
 
-.sidebar-hidden-on-desktop .sidebar:hover {
+.sidebar-hidden .sidebar:hover {
     width: var(--page-sidebar);
     opacity: 1;
 }

@@ -63,11 +63,11 @@
 
 
 
-.sidebar-hidden-on-desktop .sidebar {
+.sidebar-hidden .sidebar {
     width: var(--page-sidebar-mobile);
     opacity: 1;
 }
 
-.sidebar-hidden-on-desktop .sidebar:hover {
+.sidebar-hidden .sidebar:hover {
     width: var(--page-sidebar-mobile);
 }
