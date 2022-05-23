@@ -1,21 +1,9 @@
 .dashboard {
     position: relative;
-    padding-left: var(--sidebar-width);
     padding-right: var(--aside-width);
 }
-    .dashboard__sidebar {
-        position: absolute;
-        z-index: 500;
-        width: var(--sidebar-width);
-        background-color: #FFFFFF;
-        box-shadow: inset -1px 0 0 #E8E8E8;
-        left: 0;
-        top: 0;
-    }
-
     .dashboard__content {
-        box-shadow: -1px 0 0 #E8E8E8,
-                    1px 0 0 #E8E8E8;
+        box-shadow: 1px 0 0 #E8E8E8;
     }
 
     .dashboard__aside {
@@ -39,14 +27,6 @@
 
 
 
-.dashboard--collapsed-sidebar {
-    padding-left: var(--sidebar-collapsed-width);
-}
-    .dashboard--collapsed-sidebar .dashboard__sidebar {
-        width: var(--sidebar-collapsed-width);
-    }
-
-
 
 
 
@@ -55,12 +35,6 @@
     .dashboard {
         height: 100%;
     }
-        .dashboard__sidebar {
-            position: fixed;
-            bottom: 0;
-            top: var(--header-height);
-        }
-
         .dashboard__content {
             height: 100%;
         }
@@ -78,10 +52,6 @@
 .has-player3 {
 
 }
-    .has-player3 .dashboard__sidebar {
-        padding-bottom: 179px;
-    }
-
     .has-player3 .dashboard__aside {
         padding-bottom: var(--player3-height);
     }
