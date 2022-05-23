@@ -8,8 +8,8 @@
 }
 
 .has-player3 .notification-center {
-    bottom: calc(var(--player3-height) + 107px);
-    max-height: calc(100vh - var(--header-height) - var(--player3-height) - 107px);
+    bottom: calc(var(--player3-height));
+    max-height: calc(100vh - var(--header-height) - var(--player3-height));
 }
     .notification-center__item {
         margin: 22px;

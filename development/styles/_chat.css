@@ -11,6 +11,10 @@
         overflow-y: auto;
     }
 
+    .sidebar-collapsed .chat__list {
+        left: var(--page-sidebar-collapsed);
+    }
+
     @media (min-width: 1240px) {
         .chat__list {
             position: fixed;
@@ -89,6 +93,7 @@
         .chat__body {
             flex-grow: 1;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
             .chat__ribbon {
                 min-height: 100%;

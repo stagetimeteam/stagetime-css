@@ -23,6 +23,10 @@
                 left: var(--page-sidebar);
                 right: var(--aside-width);
             }
+
+            .sidebar-collapsed .dash-tiles__summary {
+                left: var(--page-sidebar-collapsed);
+            }
     }
 
 
