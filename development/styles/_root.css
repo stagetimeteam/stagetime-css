@@ -11,8 +11,6 @@
     --transition-slide: 0.5s ease;
     --header-height: 64px;
     --sub-header-height: 32px;
-    --sidebar-width: 192px;
-    --sidebar-collapsed-width: 82px;
     --dialogs-width: 360px;
     --aside-width: 306px;
     --ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);

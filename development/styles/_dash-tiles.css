@@ -20,7 +20,7 @@
                 z-index: 100;
                 background-color: #FFFFFF;
                 top: var(--header-height);
-                left: var(--sidebar-width);
+                left: var(--page-sidebar);
                 right: var(--aside-width);
             }
     }

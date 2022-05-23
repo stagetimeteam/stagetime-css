@@ -5,7 +5,7 @@
     .chat__list {
         display: none;
         position: static;
-        /*left: var(--sidebar-width);*/
+        /*left: var(--page-sidebar);*/
         /*top: var(--header-height);*/
         /*bottom: 0;*/
         width: auto;

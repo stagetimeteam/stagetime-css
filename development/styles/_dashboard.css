@@ -43,6 +43,8 @@
             position: fixed;
             bottom: 0;
             top: var(--header-height);
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
         }
 }
 
