@@ -1,9 +1,11 @@
 .all-connections {
     display: block;
     padding: 10px 13px;
+    background-color: transparent;
     border-radius: 8px;
     text-decoration: none;
     transition: background-color var(--transition-hover);
+    text-align: left;
     cursor: pointer;
 }
 

@@ -1,0 +1,5 @@
+/* sames as in bootsrap (sometimes programmers use this
+class so it will be needed after we get rid of Bootstrap) */
+.hidden {
+    display: none !important;
+}

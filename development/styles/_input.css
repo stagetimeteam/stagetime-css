@@ -396,6 +396,7 @@
     display: none;
 }
 
+/* use similar selector once again to take back show/hide functionallity */
 .input--expanded .input__dropdown {
     display: block;
 }

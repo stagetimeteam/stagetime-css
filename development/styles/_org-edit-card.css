@@ -27,7 +27,7 @@
     }
 
     .org-edit-card__body {
-
+        flex-grow: 1;
     }
         .org-edit-card__head {
             position: relative;
