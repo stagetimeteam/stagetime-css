@@ -66,9 +66,14 @@
                     .non-performer__upload-photo {
                         /*position: absolute;*/
                         /*right: 0;*/
-                        /*bottom: 0;*/
+                        bottom: auto;
+                        top: 0;
                         /*border-bottom-right-radius: 4px;*/
                     }
+                        .non-performer__upload-photo.edit-photo,
+                        .non-performer__upload-photo .edit-photo {
+                            border-radius: 0 0 0 4px;
+                        }
 
                     .non-performer__photo ~ .non-performer__upload-photo {
                         /*right: 3px;*/
@@ -198,5 +203,5 @@
                 }
 
                 .non-performer__null:first-child {
-
+                    margin-top: 40px;
                 }
