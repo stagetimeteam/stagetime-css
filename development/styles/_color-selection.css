@@ -5,14 +5,15 @@
         margin-left: 13px;
         font-weight: bold;
         font-size: 13px;
-        line-height: 22px;
+        line-height: 18px;
         color: #545454;
     }
 
     .color-selection__note {
         margin-left: 13px;
+        margin-top: 5px;
         font-size: 12px;
-        line-height: 20px;
+        line-height: 16px;
         color: #545454;
     }
 

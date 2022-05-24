@@ -45,6 +45,11 @@
         padding: 17px 16px 20px;
         border-radius: 5px;
     }
+
+    .customize__options--non-performer {
+        justify-content: flex-start;
+    }
+
         .customize__section {
             margin-left: 10px;
             margin-right: 10px;
