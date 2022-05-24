@@ -35,6 +35,9 @@
                 .artist__connections {
                     padding-top: 10px;
                 }
+                    .artist__connections.find-connections {
+                        margin: -70px 0 20px;
+                    }
 
                 .artist__event {
 
@@ -84,20 +87,21 @@
                 }
 
                 .artist__edits {
-
+                    /*margin-top: 29px;*/
+                    display: block;
                 }
                     .artist__editing-handler {
-
+                        margin-left: 0;
+                        margin-top: 20px;
                     }
 
                     .artist__editing-handler:first-child {
-                        /*margin-left: 0;*/
+                        margin-left: 0;
+                        margin-top: 0;
                     }
 
-                    .artist__editing-handler.button,
-                    .artist__editing-handler .button {
-                        /*padding-left: 40px;*/
-                        /*padding-right: 40px;*/
-                    }
-
-
+                    /*.artist__editing-handler.button,*/
+                    /*.artist__editing-handler .button {*/
+                    /*    padding-left: 40px;*/
+                    /*    padding-right: 40px;*/
+                    /*}*/

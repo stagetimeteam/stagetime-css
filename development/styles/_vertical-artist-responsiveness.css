@@ -78,10 +78,12 @@
                     padding-top: 0;
                 }
                     .vertical-artist__connections {
-                        /*margin: -10px -13px;*/
                         margin-top: 0;
                         padding-top: 10px;
                     }
+                        .vertical-artist__connections.find-connections {
+                            margin: 0;
+                        }
 
                     .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {
                         /*margin-top: 10px;*/
