@@ -120,8 +120,8 @@
                         white-space: nowrap;
                         opacity: 0;
                         visibility: hidden;
-                        transition: opacity var(--transition-show),
-                                    visibility var(--transition-show);
+                        transition: opacity var(--transition-long-show),
+                                    visibility var(--transition-long-show);
                     }
 
                     .color-selection__item:hover .color-selection__leaf {
