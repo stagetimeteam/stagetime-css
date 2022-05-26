@@ -34,7 +34,7 @@
         .non-performer__body {
             margin-top: 14px;
             display: flex;
-            align-items: flex-start;
+            align-items: stretch;
         }
             .non-performer__sidebar {
                 width: 330px;
@@ -42,86 +42,90 @@
                 box-shadow: inset -2px 0 0 var(--theme-light);
                 padding-right: 50px;
             }
-                .non-performer__preview {
-                    position: relative;
-                    width: 280px;
-                    height: 280px;
-                    padding: 3px;
-                    background-color: var(--theme-light);
-                    border-radius: 4px;
+                .non-performer__detachable-area {
+                    position: sticky;
+                    top: -400px;
                 }
-                    .non-performer__photo {
-                        vertical-align: top;
-                        background-color: var(--image-fallback);
+                    .non-performer__preview {
+                        position: relative;
+                        width: 280px;
+                        height: 280px;
+                        padding: 3px;
+                        background-color: var(--theme-light);
+                        border-radius: 4px;
+                    }
+                        .non-performer__photo {
+                            vertical-align: top;
+                            background-color: var(--image-fallback);
+                        }
+
+                        .non-performer__upload-photo {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            border-bottom-right-radius: 4px;
+                        }
+
+                        .non-performer__photo ~ .non-performer__upload-photo {
+                            right: 3px;
+                            bottom: 3px;
+                            border-bottom-right-radius: 0;
+                        }
+
+                    .non-performer__mobile-bio {
+                        display: none;
                     }
 
-                    .non-performer__upload-photo {
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        border-bottom-right-radius: 4px;
+                    .non-performer__mobile-career-heading {
+                        display: none;
                     }
 
-                    .non-performer__photo ~ .non-performer__upload-photo {
-                        right: 3px;
-                        bottom: 3px;
-                        border-bottom-right-radius: 0;
+                    .non-performer__career {
+                        margin: 22px -24px 0 -16px;
                     }
 
-                .non-performer__mobile-bio {
-                    display: none;
-                }
+                    .non-performer__connections {
+                        margin-top: 17px;
+                        border-top: 1px solid var(--theme-light);
+                        padding-top: 24px;
+                    }
+                        .non-performer__connections .all-connections {
+                            margin: -10px -13px;
+                        }
 
-                .non-performer__mobile-career-heading {
-                    display: none;
-                }
-
-                .non-performer__career {
-                    margin: 22px -24px 0 -16px;
-                }
-
-                .non-performer__connections {
-                    margin-top: 17px;
-                    border-top: 1px solid var(--theme-light);
-                    padding-top: 24px;
-                }
-                    .non-performer__connections .all-connections {
-                        margin: -10px -13px;
+                    .non-performer__tags {
+                        margin-top: 31px;
+                        border-top: 1px solid var(--theme-light);
+                        padding-top: 26px;
                     }
 
-                .non-performer__tags {
-                    margin-top: 31px;
-                    border-top: 1px solid var(--theme-light);
-                    padding-top: 26px;
-                }
+                    .non-performer__highlights {
+                        margin-top: 29px;
+                        border-top: 1px solid var(--theme-light);
+                        padding-top: 21px;
+                    }
 
-                .non-performer__highlights {
-                    margin-top: 29px;
-                    border-top: 1px solid var(--theme-light);
-                    padding-top: 21px;
-                }
+                    .non-performer__social {
+                        margin-top: 27px;
+                        border-top: 1px solid var(--theme-light);
+                        padding-top: 20px;
+                    }
 
-                .non-performer__social {
-                    margin-top: 27px;
-                    border-top: 1px solid var(--theme-light);
-                    padding-top: 20px;
-                }
+                    .non-performer__add-info {
+                        margin-bottom: 30px;
+                    }
 
-                .non-performer__add-info {
-                    margin-bottom: 30px;
-                }
+                    .non-performer__add-connections {
+                        margin-top: 30px;
+                    }
 
-                .non-performer__add-connections {
-                    margin-top: 30px;
-                }
+                    .non-performer__add-highlight {
+                        margin-top: 30px;
+                    }
 
-                .non-performer__add-highlight {
-                    margin-top: 30px;
-                }
-
-                .non-performer__add-social {
-                    margin-top: 20px;
-                }
+                    .non-performer__add-social {
+                        margin-top: 20px;
+                    }
 
             .non-performer__content {
                 width: calc(100% - 330px);
