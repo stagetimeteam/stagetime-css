@@ -47,7 +47,6 @@
             .player__background {
                 position: relative;
                 display: block;
-                border-radius: 4px;
                 overflow: hidden;
             }
                 .player__image {

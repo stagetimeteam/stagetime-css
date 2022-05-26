@@ -18,6 +18,7 @@
         margin-left: 9px;
         margin-right: 9px;
         height: 28px;
+        cursor: pointer;
     }
         .playthrough__bar::before {
             content: "";
@@ -62,15 +63,13 @@
         }
 
         .playthrough__reactions {
-            position: absolute;
+            position: absolute !important; /* !important is fot the case when conlicted with .hearts */
             left: 0;
             right: 0;
             bottom: 100%;
             margin: auto;
         }
-            .playthrough__reactions.hearts {
-                position: absolute;
-            }
+
 
 
 

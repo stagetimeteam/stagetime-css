@@ -1,5 +1,6 @@
 .all-connections {
     display: block;
+    border: none;
     padding: 10px 13px;
     background-color: transparent;
     border-radius: 8px;

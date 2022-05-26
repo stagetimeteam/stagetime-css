@@ -56,31 +56,31 @@
 }
 
 .hearts__item--a {
-    animation: hearts-translate 2s linear 3s forwards,
-               hearts-opacity 2s linear 3s forwards,
-               hearts-movement-a 2s linear 3s forwards;
+    animation: hearts-translate 2s linear 0s forwards,
+               hearts-opacity 2s linear 0s forwards,
+               hearts-movement-a 2s linear 0s forwards;
 }
 
 .hearts__item--b {
-    animation: hearts-translate 2s linear 3.5s forwards,
-               hearts-opacity 2s linear 3.5s forwards,
-               hearts-movement-b 2s linear 3.5s forwards;
+    animation: hearts-translate 2s linear 0.5s forwards,
+               hearts-opacity 2s linear 0.5s forwards,
+               hearts-movement-b 2s linear 0.5s forwards;
 }
 
 .hearts__item--c {
-    animation: hearts-translate 2s linear 4s forwards,
-               hearts-opacity 2s linear 4s forwards,
-               hearts-movement-c 2s linear 4s forwards;
+    animation: hearts-translate 2s linear 1s forwards,
+               hearts-opacity 2s linear 1s forwards,
+               hearts-movement-c 2s linear 1s forwards;
 }
 
 .hearts__item--d {
-    animation: hearts-translate 2s linear 4.5s forwards,
-               hearts-opacity 2s linear 4.5s forwards,
-               hearts-movement-d 2s linear 4.5s forwards;
+    animation: hearts-translate 2s linear 1.5s forwards,
+               hearts-opacity 2s linear 1.5s forwards,
+               hearts-movement-d 2s linear 1.5s forwards;
 }
 
 .hearts__item--e {
-    animation: hearts-translate 2s linear 5s forwards,
-               hearts-opacity 2s linear 5s forwards,
-               hearts-movement-e 2s linear 5s forwards;
+    animation: hearts-translate 2s linear 2s forwards,
+               hearts-opacity 2s linear 2s forwards,
+               hearts-movement-e 2s linear 2s forwards;
 }

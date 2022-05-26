@@ -32,7 +32,7 @@
 
             .vertical-artist__gallery.carousel--for-profile-projects,
             .vertical-artist__gallery .carousel--for-profile-projects {
-                /*border-radius: 0;*/
+
             }
 
             .vertical-artist__content {
@@ -41,8 +41,6 @@
                 align-items: stretch;
             }
                 .vertical-artist__primary {
-                    /*flex-basis: 48.44%;*/
-                    /*flex-shrink: 0;*/
                     margin-right: 0;
                     padding-top: 0;
                 }
@@ -51,25 +49,19 @@
                     }
 
                     .vertical-artist__management {
-                        /*margin-top: 32px;*/
-                        /*padding-top: 25px;*/
+
                     }
 
                     .vertical-artist__social {
-                        /*margin-top: 32px;*/
-                        /*padding-top: 25px;*/
+
                     }
 
                     .vertical-artist__register {
-                        /*margin-top: 30px;*/
-                        /*border-top: 1px solid #F2F2F2;*/
-                        /*padding-top: 30px;*/
+
                     }
 
                 .vertical-artist__secondary {
                     order: -1;
-                    /*flex-grow: 1;*/
-                    /*flex-basis: 0;*/
                     overflow: visible;
                     margin-left: 0;
                     margin-right: 0;
@@ -86,12 +78,11 @@
                         }
 
                     .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {
-                        /*margin-top: 10px;*/
+
                     }
 
                     .vertical-artist__performing {
-                        /*margin-top: 31px;*/
-                        /*padding-top: 21px;*/
+
                     }
 
                     .vertical-artist__highlights {
@@ -99,21 +90,17 @@
                     }
 
             .vertical-artist__edits {
-                /*margin-top: 24px;*/
-                /*display: flex;*/
-                /*flex-direction: column;*/
-                /*align-items: flex-start;*/
+                padding-bottom: 30px;
             }
                 .vertical-artist__editing-handler {
-                    /*margin-top: 24px;*/
+
                 }
 
                 .vertical-artist__editing-handler:first-child {
-                    /*margin-top: 0;*/
+
                 }
 
                 .vertical-artist__edits.button,
                 .vertical-artist__edits .button {
-                    /*padding-left: 40px;*/
-                    /*padding-right: 40px;*/
+
                 }

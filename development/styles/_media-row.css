@@ -2,7 +2,12 @@
     position: relative;
     display: block;
     padding: 13px 57px 13px 108px;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-weight: inherit;
     text-decoration: none;
+    cursor: pointer;
 }
     .media-row::before {
         content: "";
