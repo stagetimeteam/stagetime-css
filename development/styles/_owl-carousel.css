@@ -90,10 +90,16 @@
 
 .owl-carousel--profile-media {
     width: 904px;
-    /*margin-left: calc(-1 * var(--container-mobile-padding));*/
-    /*margin-right: calc(-1 * var(--container-mobile-padding));*/
 }
     .owl-carousel--profile-media .owl-nav button.owl-prev,
     .owl-carousel--profile-media .owl-nav button.owl-next {
-        right: -80px;
+        right: -62px;
+    }
+
+    @media (min-width: 1240px) {
+
+        .owl-carousel--profile-media .owl-nav button.owl-prev,
+        .owl-carousel--profile-media .owl-nav button.owl-next {
+            right: -80px;
+        }
     }
