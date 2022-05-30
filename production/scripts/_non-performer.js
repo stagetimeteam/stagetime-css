@@ -5,11 +5,12 @@
 
     var viewportHeight;
     var sidebarHeight;
+    var padding = 40;
 
     function init() {
         viewportHeight = $(window).height() - $header.outerHeight();
         sidebarHeight = stickyPart.outerHeight();
-        if(viewportHeight - sidebarHeight < 0) {
+        if(viewportHeight - sidebarHeight - padding < 0) {
             stickyPart.css({
                 'position': 'sticky',
                 'top': (viewportHeight - sidebarHeight) + 'px'
@@ -17,7 +18,7 @@
         } else {
             stickyPart.css({
                 'position': 'sticky',
-                'top': ($header.outerHeight() + 40) + 'px'
+                'top': ($header.outerHeight() + padding) + 'px'
             });
         }
     }
