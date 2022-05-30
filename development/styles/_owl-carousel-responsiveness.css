@@ -3,7 +3,16 @@
 }
 
 
+
+.owl-carousel--profile-projects.owl-carousel--faded-on-the-right::before,
+.owl-carousel--profile-projects.owl-carousel--faded-on-the-right::after {
+    display: none;
+}
+
+
+
 .owl-carousel--profile-media {
+    width: auto;
     display: flex;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -28,4 +37,12 @@
     .owl-carousel--profile-media .owl-carousel__item {
         margin-right: 10px;
     }
+}
+
+
+
+
+.owl-carousel--profile-projects {
+    padding: 0;
+    border-radius: 0;
 }

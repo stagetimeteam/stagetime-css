@@ -2,6 +2,41 @@
 
 }
 
+/* faded-right */
+.owl-carousel--faded-on-the-right {
+
+}
+    /* white 60px white bar to the right of gradient (under arrows). Can't click through or scroll over */
+    .owl-carousel--faded-on-the-right::before {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: -10px;    /* to cover tiles shadows */
+        bottom: -10px; /* if there are any */
+        width: 60px;
+        background-color: #FFFFFF;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+
+
+    /* this is gradient itself, you can click through and scroll over */
+    .owl-carousel--faded-on-the-right::after {
+        content: "";
+        position: absolute;
+        z-index: 10;
+        right: 60px;
+        top: -10px;     /* to cover tiles shadows */
+        bottom: -10px;  /* if there are any */
+        width: 152px;
+        background-image: linear-gradient(to left, #FFFFFF 0%, rgba(255, 255, 255, 0.9) 25%, rgba(255, 255, 255, 0.48) 56.25%, rgba(255, 255, 255, 0) 100%);
+        pointer-events: none;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+
+
 
 
 /* arrows-on-the-right */
@@ -12,6 +47,7 @@
     .owl-carousel--arrows-on-the-right .owl-nav button.owl-prev,
     .owl-carousel--arrows-on-the-right .owl-nav button.owl-next {
         position: absolute;
+        z-index: 10;
         right: 0;
         top: 50%;
         width: 36px;
@@ -102,4 +138,42 @@
         .owl-carousel--profile-media .owl-nav button.owl-next {
             right: -80px;
         }
+    }
+
+
+
+
+/* profile-projects */
+
+.owl-carousel--profile-projects {
+    padding: 18px;
+    background-color: var(--theme-light);
+    border-radius: 5px;
+}
+    .owl-carousel--profile-projects .owl-nav button.owl-prev,
+    .owl-carousel--profile-projects .owl-nav button.owl-next {
+        right: 11px;
+    }
+
+
+    .owl-carousel--profile-projects.owl-carousel--faded-on-the-right::before {
+        background-color: var(--theme-light);
+        top: 0;
+        bottom: 0;
+    }
+
+    .owl-carousel--profile-projects.owl-carousel--faded-on-the-right::after {
+        top: 0;
+        bottom: 0;
+        background-image: linear-gradient(to left, rgba(var(--theme-light-rgb), 1) 0%, rgba(var(--theme-light-rgb), 0.9) 25%, rgba(var(--theme-light-rgb), 0.48) 56.25%, rgba(var(--theme-light-rgb), 0) 100%);
+    }
+
+
+    .owl-carousel--profile-projects.owl-carousel--arrows-on-the-right .owl-nav button.owl-prev:hover::before,
+    .owl-carousel--profile-projects.owl-carousel--arrows-on-the-right .owl-nav button.owl-next:hover::before {
+        background-color: #FFFFFF;
+    }
+    .owl-carousel--profile-projects.owl-carousel--arrows-on-the-right .owl-nav button.owl-prev:active::before,
+    .owl-carousel--profile-projects.owl-carousel--arrows-on-the-right .owl-nav button.owl-next:active::before {
+        background-color: rgba(255, 255, 255, 0.7);
     }
