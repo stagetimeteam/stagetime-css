@@ -4,5 +4,6 @@
 
 
 .owl-carousel--profile-media {
-
+    /*margin-left: calc(-1 * var(--container-mobile-padding));*/
+    /*margin-right: calc(-1 * var(--container-mobile-padding));*/
 }
