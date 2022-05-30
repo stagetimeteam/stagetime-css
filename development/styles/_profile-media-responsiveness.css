@@ -8,7 +8,7 @@
     }
 
     .profile-media__edit {
-        display: none;
+        display: none !important;
     }
 
     .profile-media__data {
