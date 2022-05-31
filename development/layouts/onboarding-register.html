@@ -12,15 +12,22 @@
     </head>
     <body>
 
-        <div class="gate">
+        <div class="gate gate--white-on-smartphone">
             <div class="gate__cell">
                 <!-- editable background -->
-                <picture>
-                    <source srcset="../temp/gate-desktop@2x.jpg 2x, ../temp/gate-desktop.jpg 1x" media="(min-width: 768px)">
-                    <source srcset="../temp/gate-mobile@2x.jpg 2x,  ../temp/gate-mobile.jpg 1x"  media="(max-width: 767px)">
-                    <img class="gate__background" src="../temp/gate-desktop.jpg" alt="">
-                </picture>
-                <div class="gate__overlay" style="background-color: rgba(51, 51, 51, 0.8);"></div>
+                <div class="gate__background">
+                    <img class="gate__photo"
+                         srcset="../temp/gate@2x.jpg"
+                         src="../temp/gate.jpg"
+                         width="1440"
+                         height="767"
+                         alt=""
+                    >
+                    <div class="gate__overlay" style="background-color: rgba(51, 51, 51, 0.8);"></div>
+                    <div class="gate__credits">
+                        Photo by <a class="link" href="#">Model Name</a>
+                    </div>
+                </div>
                 <!--/editable background -->
                 <div class="gate__wrap container container--auth">
                     <div class="gate__intro">
@@ -72,9 +79,6 @@
                             By signing up, you are agreeing to Stagetime’s <a class="link" href="#">Privacy Policy</a> and <a class="link" href="#">Terms of Use</a>.
                         </div>
                     </form>
-                </div>
-                <div class="gate__credits">
-                    Photo by <a class="link" href="#">Model Name</a>
                 </div>
             </div>
         </div>
