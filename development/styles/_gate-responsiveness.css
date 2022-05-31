@@ -1,5 +1,5 @@
 .gate {
-
+    background-color: #FFFFFF;
 }
     .gate__cell {
 
@@ -25,7 +25,7 @@
                     width: auto;
                     /*font-size: 12px;*/
                     /*line-height: 20px;*/
-                    /*color: #FFFFFF;*/
+                    color: #333333;
                 }
                     .gate__highlight {
                         /*font-weight: bold;*/
@@ -40,34 +40,51 @@
             }
 
 
-.gate--white-on-smartphone {
-    background-color: #FFFFFF;
-    color: #333333;
+
+
+.gate--inverted {
+    background-color: #404041;
 }
-    .gate--white-on-smartphone .gate__cell {
+.gate--inverted .gate__cell {
 
-    }
-        .gate--white-on-smartphone .gate__wrap {
+}
+.gate--inverted .gate__background {
 
-        }
-            .gate--white-on-smartphone .gate__intro {
+}
+.gate--inverted .gate__photo {
 
-            }
-                .gate--white-on-smartphone .gate__branding {
+}
 
-                }
+.gate--inverted .gate__overlay {
 
-                .gate--white-on-smartphone .gate__slogan {
-                    color: #333333;
-                }
-                    .gate--white-on-smartphone .gate__highlight {
-                        /*font-weight: bold;*/
-                    }
+}
 
-            .gate--white-on-smartphone .gate__form {
-                /*width: auto;*/
-                /*margin-top: 50px;*/
-                /*max-width: 380px;*/
-                /*margin-left: auto;*/
-                /*margin-right: auto;*/
-            }
+.gate--inverted .gate__credits {
+
+}
+.gate--inverted .gate__credits .link {
+
+}
+
+
+.gate--inverted .gate__wrap {
+
+}
+.gate--inverted .gate__intro {
+
+}
+.gate--inverted .gate__branding {
+
+}
+
+.gate--inverted .gate__slogan {
+    color: #FFFFFF;
+}
+.gate--inverted .gate__highlight {
+
+}
+
+.gate--inverted .gate__form {
+
+}
+

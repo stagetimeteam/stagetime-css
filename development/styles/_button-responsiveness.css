@@ -149,9 +149,9 @@
 
 
 
-.button--auth-primary,
-.button--auth-primary:hover,
-.button--auth-primary:active {
+.gate--inverted .button--auth-primary,
+.gate--inverted .button--auth-primary:hover,
+.gate--inverted .button--auth-primary:active {
     background-color: #8B8B8B;
     border-radius: 4px;
     font-weight: 600;
@@ -161,9 +161,9 @@
 }
 
 
-.button--auth-secondary,
-.button--auth-secondary:hover,
-.button--auth-secondary:active {
+.gate--inverted .button--auth-secondary,
+.gate--inverted .button--auth-secondary:hover,
+.gate--inverted .button--auth-secondary:active {
     background-color: #FFFFFF;
     box-shadow: none;
     border-radius: 4px;
@@ -172,7 +172,7 @@
     /*line-height: 20px;*/
     /*color: #AFAFAF;*/
 }
-    .button--auth-secondary .button__icon {
+    .gate--inverted .button--auth-secondary .button__icon {
         /*width: 28px;*/
         /*height: 28px;*/
         /*margin-top: -4px;*/
