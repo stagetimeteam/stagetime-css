@@ -41,8 +41,8 @@
 
 
 .gate--white-on-smartphone {
-    background-color: pink;
-    color: #333234;
+    background-color: #FFFFFF;
+    color: #333333;
 }
     .gate--white-on-smartphone .gate__cell {
 
@@ -58,7 +58,7 @@
                 }
 
                 .gate--white-on-smartphone .gate__slogan {
-                    color: #333234;
+                    color: #333333;
                 }
                     .gate--white-on-smartphone .gate__highlight {
                         /*font-weight: bold;*/
