@@ -17,14 +17,14 @@
         smartSpeed: 500,
         dots: false,
         loop: false,
-        responsive:{
-            0:{
+        responsive: {
+            0: {
                 margin: 0,
                 nav: false,
                 autoWidth: false,
                 items: 1
             },
-            768:{
+            768: {
                 margin: 25,
                 nav: true,
                 autoWidth: true,
