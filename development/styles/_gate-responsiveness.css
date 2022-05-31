@@ -4,6 +4,10 @@
     .gate__cell {
 
     }
+        .gate__background {
+            display: none;
+        }
+
         .gate__wrap {
             display: block;
         }
@@ -35,15 +39,35 @@
                 margin-right: auto;
             }
 
-        .gate__credits {
-            display: none;
-        }
 
-
-.gate--simpler {
-
+.gate--white-on-smartphone {
+    background-color: pink;
+    color: #333234;
 }
-    .gate--simpler .gate__form {
-        /*margin-left: auto;*/
-        /*margin-right: auto;*/
+    .gate--white-on-smartphone .gate__cell {
+
     }
+        .gate--white-on-smartphone .gate__wrap {
+
+        }
+            .gate--white-on-smartphone .gate__intro {
+
+            }
+                .gate--white-on-smartphone .gate__branding {
+
+                }
+
+                .gate--white-on-smartphone .gate__slogan {
+                    color: #333234;
+                }
+                    .gate--white-on-smartphone .gate__highlight {
+                        /*font-weight: bold;*/
+                    }
+
+            .gate--white-on-smartphone .gate__form {
+                /*width: auto;*/
+                /*margin-top: 50px;*/
+                /*max-width: 380px;*/
+                /*margin-left: auto;*/
+                /*margin-right: auto;*/
+            }
