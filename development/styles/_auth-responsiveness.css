@@ -106,11 +106,11 @@
     /*border-radius: 0;*/
 }
     .gate--inverted .auth__heading {
-
+        color: #FFFFFF;
     }
 
     .gate--inverted .auth__alternative {
-
+        color: #FFFFFF;
     }
         .gate--inverted .auth__alt-action,
         .gate--inverted .auth__alt-action:hover,

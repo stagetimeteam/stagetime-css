@@ -14,7 +14,7 @@
         display: block;
         width: 53px;
         height: 53px;
-        background-image: url("../images/responsive-logo-emblem.svg");
+        background-image: url("../images/auth-logo-emblem.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;
@@ -28,7 +28,7 @@
         display: block;
         width: 203px;
         height: 53px;
-        background-image: url("../images/responsive-logo-title.svg");
+        background-image: url("../images/auth-logo-title.svg");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center center;

@@ -13,15 +13,17 @@
         }
             .gate__intro {
                 padding-bottom: 0;
+                max-width: 380px;
+                margin-left: auto;
+                margin-right: auto;
             }
                 .gate__branding {
-                    margin-left: auto;
-                    margin-right: auto;
+
                 }
 
                 .gate__slogan {
                     margin: 19px 0 0;
-                    text-align: center;
+                    text-align: left;
                     width: auto;
                     /*font-size: 12px;*/
                     /*line-height: 20px;*/
@@ -74,10 +76,12 @@
 
 }
 .gate--inverted .gate__branding {
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gate--inverted .gate__slogan {
+    text-align: center;
     color: #FFFFFF;
 }
 .gate--inverted .gate__highlight {

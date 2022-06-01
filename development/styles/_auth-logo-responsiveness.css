@@ -1,0 +1,30 @@
+.auth-logo {
+    width: 200px;
+    height: 39px;
+}
+    .auth-logo::before {
+        width: 39px;
+        height: 39px;
+    }
+
+    .auth-logo::after {
+        width: 148px;
+        height: 39px;
+        background-image: url("../images/auth-logo-inverted-title.svg");
+    }
+
+
+
+.gate--inverted .auth-logo {
+
+}
+    .gate--inverted .auth-logo::before {
+
+    }
+
+    .gate--inverted .auth-logo::after {
+        background-image: url("../images/auth-logo-title.svg");
+    }
+
+
+
