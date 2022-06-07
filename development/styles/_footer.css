@@ -4,6 +4,10 @@
     background-color: #23282C;
     color: #FFFFFF;
 }
+
+.has-player3 .footer {
+    border-bottom: var(--player3-height) solid #23282C;
+}
     .footer__wrap {
         display: flex;
         align-items: flex-start;

@@ -11,67 +11,70 @@
     .referral__wrap {
         display: flex;
         align-items: flex-start;
+        flex-direction: row-reverse;
     }
-        .referral__panel {
-            padding: 32px 29px 39px;
+        .referral__sidebar {
             width: 338px;
             flex-shrink: 0;
-            margin-right: 28px;
-            text-align: center;
+            margin-left: 28px;
         }
-            .referral__heading {
-                position: relative;
-                margin-top: 0;
-                margin-bottom: 0;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-weight: inherit;
-                font-size: 15px;
-                line-height: 18px;
-                color: #545454;
+            .referral__panel {
+                padding: 32px 29px 39px;
+                text-align: center;
             }
-                .referral__icon {
-                    margin-top: 2px;
-                    vertical-align: top;
-                    width: 18px;
-                    height: 18px;
-                    fill: #8B8B8B;
+                .referral__heading {
+                    position: relative;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: inherit;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #545454;
+                }
+                    .referral__icon {
+                        margin-top: 2px;
+                        vertical-align: top;
+                        width: 18px;
+                        height: 18px;
+                        fill: #8B8B8B;
+                    }
+
+                    .referral__sparkle {
+                        margin-left: -8px;
+                        margin-top: -15px;
+                        margin-right: 4px;
+                        width: 19px;
+                        height: 19px;
+                        fill: #9CB2BE;
+                    }
+
+                .referral__description {
+                    max-width: 474px;
+                    margin-top: 16px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    font-size: 13px;
+                    line-height: 23px;
+                    color: #545454;
                 }
 
-                .referral__sparkle {
-                    margin-left: -8px;
-                    margin-top: -15px;
-                    margin-right: 4px;
-                    width: 19px;
-                    height: 19px;
-                    fill: #9CB2BE;
+                .referral__account {
+                    margin-top: 19px;
                 }
 
-            .referral__description {
-                max-width: 474px;
-                margin-top: 16px;
-                margin-left: auto;
-                margin-right: auto;
-                font-size: 13px;
-                line-height: 23px;
-                color: #545454;
-            }
+                .referral__update {
+                    margin-top: 21px;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #757575;
+                }
 
-            .referral__account {
-                margin-top: 19px;
+            .referral__invite {
+                margin-top: 28px;
             }
-
-            .referral__update {
-                margin-top: 21px;
-                font-size: 13px;
-                line-height: 18px;
-                color: #757575;
-            }
-
-        .referral__mobile-invite {
-            display: none;
-        }
 
         .referral__list {
             text-align: left;

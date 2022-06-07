@@ -3,85 +3,89 @@
     padding-bottom: 0;
     /*text-align: center;*/
 }
+
+.has-player3 .referral {
+    padding-bottom: calc(80px + var(--player3-mobile-height));
+}
+
     .referral__wrap {
         display: block;
     }
-        .referral__panel {
+        .referral__sidebar {
             width: auto;
-            margin-right: 0;
+            margin-left: 0;
         }
-            .referral__heading {
-                /*position: relative;*/
-                /*margin-top: 0;*/
-                /*margin-bottom: 0;*/
-                /*display: flex;*/
-                /*align-items: center;*/
-                /*justify-content: center;*/
-                /*font-weight: inherit;*/
-                /*font-size: 17px;*/
-                /*line-height: 20px;*/
-                /*color: #757575;*/
-            }
-                .referral__icon {
-                    /*margin-top: 1px;*/
-                    /*vertical-align: top;*/
-                    /*width: 20px;*/
-                    /*height: 20px;*/
-                    /*fill: #8B8B8B;*/
-                }
-
-                .referral__sparkle {
-                    /*margin-left: -10px;*/
-                    /*margin-top: -17px;*/
-                    /*margin-right: 10px;*/
-                    /*width: 22px;*/
-                    /*height: 22px;*/
-                    /*fill: #9CB2BE;*/
-                }
-
-        .referral__description {
-            /*max-width: 474px;*/
-            /*margin-top: 22px;*/
-            /*margin-left: auto;*/
-            /*margin-right: auto;*/
-            /*font-size: 12px;*/
-            /*line-height: 23px;*/
-            /*color: #757575;*/
-        }
-
-        .referral__start-syncing {
-            /*margin-top: 30px;*/
-        }
-
-        .referral__account {
-            /*margin-top: 24px;*/
-        }
-            .referral__account.button,
-            .referral__account .button {
+            .referral__panel {
                 width: auto;
+                margin-right: 0;
+            }
+                .referral__heading {
+                    /*position: relative;*/
+                    /*margin-top: 0;*/
+                    /*margin-bottom: 0;*/
+                    /*display: flex;*/
+                    /*align-items: center;*/
+                    /*justify-content: center;*/
+                    /*font-weight: inherit;*/
+                    /*font-size: 17px;*/
+                    /*line-height: 20px;*/
+                    /*color: #757575;*/
+                }
+                    .referral__icon {
+                        /*margin-top: 1px;*/
+                        /*vertical-align: top;*/
+                        /*width: 20px;*/
+                        /*height: 20px;*/
+                        /*fill: #8B8B8B;*/
+                    }
+
+                    .referral__sparkle {
+                        /*margin-left: -10px;*/
+                        /*margin-top: -17px;*/
+                        /*margin-right: 10px;*/
+                        /*width: 22px;*/
+                        /*height: 22px;*/
+                        /*fill: #9CB2BE;*/
+                    }
+
+                .referral__description {
+                    /*max-width: 474px;*/
+                    /*margin-top: 22px;*/
+                    /*margin-left: auto;*/
+                    /*margin-right: auto;*/
+                    /*font-size: 12px;*/
+                    /*line-height: 23px;*/
+                    /*color: #757575;*/
+                }
+
+            .referral__account {
+                /*margin-top: 24px;*/
+            }
+                .referral__account.button,
+                .referral__account .button {
+                    width: auto;
+                }
+
+            .referral__update {
+                /*margin-top: 17px;*/
+                /*font-weight: bold;*/
+                /*font-size: 10px;*/
+                /*line-height: 18px;*/
+                /*color: #C4C4C4;*/
             }
 
-        .referral__update {
-            /*margin-top: 17px;*/
-            /*font-weight: bold;*/
-            /*font-size: 10px;*/
-            /*line-height: 18px;*/
-            /*color: #C4C4C4;*/
-        }
+            .referral__invite {
+                margin-top: 28px;
+            }
 
-    .referral__mobile-invite {
-        display: block;
-        margin-top: 28px;
-    }
-
-    .referral__list {
-        margin-top: 28px;
-        /*text-align: left;*/
-    }
-        .referral__item {
-            /*border-top: 1px solid #E8E8E8;*/
+        .referral__list {
+            margin-top: 28px;
+            /*text-align: left;*/
         }
+            .referral__item {
+                /*border-top: 1px solid #E8E8E8;*/
+            }
 
-        .referral__item:first-child {
-            /*border-top: none;*/
-        }
+            .referral__item:first-child {
+                /*border-top: none;*/
+            }
