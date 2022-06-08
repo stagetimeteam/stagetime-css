@@ -149,4 +149,11 @@
     });
 
 
+    /* Errors demo */
+
+    $('.input__widget').on('focus', function () {
+        $(this).parents('.input').removeClass('input--error')
+        $(this).parents('.input').siblings('.output').remove();
+    });
+
 })(jQuery);

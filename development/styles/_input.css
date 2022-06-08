@@ -333,6 +333,12 @@
     }
 
 
+.input--error .input__widget {
+    border-color: var(--red2);
+    color: var(--red2);
+}
+
+
 .merge {
 
 }
@@ -345,10 +351,9 @@
     z-index: 100;
 }
 
-/* potentional error inptuts */
-/*.merge .input--error {*/
-/*    z-index: 200;*/
-/*}*/
+.merge .input--error {
+    z-index: 200;
+}
 
 .merge .input__widget:focus {
     z-index: 300; /* more than hover cause case _focus + :hover and hover won */
