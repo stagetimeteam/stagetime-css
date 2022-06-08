@@ -1,7 +1,7 @@
 (function($) {
 
     if(desktopMediaQuery.matches) {
-        $('.owl-carousel--profile-media').owlCarousel({
+        var owlProjectsMedia = $('.owl-carousel--profile-media').owlCarousel({
             items: 4,
             slideBy: 3,
             margin: 56,
@@ -9,6 +9,17 @@
             dots: false,
             loop: false
         });
+
+        owlProjectsMedia.each(function () {
+            $(this).on('mousewheel', '.owl-stage', function (e) {
+                if (e.deltaX > 0) {
+                    $(this).trigger('next.owl');
+                } else {
+                    $(this).trigger('prev.owl');
+                }
+                e.preventDefault();
+            });
+        })
     }
 
 
@@ -31,6 +42,7 @@
             }
         }
     });
+
 
 
 
