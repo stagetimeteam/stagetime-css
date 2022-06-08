@@ -76,6 +76,10 @@
                 margin-top: 28px;
             }
 
+            .referral__invite:first-child {
+                margin-top: 0;
+            }
+
         .referral__list {
             text-align: left;
             flex-grow: 1;

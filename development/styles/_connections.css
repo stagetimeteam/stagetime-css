@@ -1,8 +1,8 @@
 .connections {
-
+    min-height: 204px;
 }
     .connections__head {
-        padding: 25px 40px;
+        padding: 26px 40px;
         display: flex;
         align-items: center;
     }

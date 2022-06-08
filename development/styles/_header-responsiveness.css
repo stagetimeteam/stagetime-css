@@ -32,8 +32,8 @@
                 .header__label {
 
                 }
-                    @media (max-width: 399px) {
 
+                    @media (max-width: 399px) {
                         .header__stagetime-label {
                             display: none;
                         }
