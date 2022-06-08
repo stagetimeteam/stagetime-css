@@ -20,3 +20,8 @@
     .traction__more {
         margin-top: 20px;
     }
+
+    .traction__more.button,
+    .traction__more .button {
+        width: 160px;
+    }

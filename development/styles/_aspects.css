@@ -31,6 +31,11 @@
                 top: 0;
             }
 
+            .aspects__icon[width="16"] {
+                margin-left: 4px;
+                margin-top: 4px;
+            }
+
         .aspects__graph {
             margin-top: 10px;
             min-height: 60px; /* 3 lines of text */
@@ -41,6 +46,15 @@
             .aspects__demo {
                 vertical-align: top;
             }
+
+        .aspects__more {
+            margin-top: 10px;
+        }
+
+        .aspects__more.button,
+        .aspects__more .button {
+            min-width: 160px;
+        }
 
         .aspects__footer {
             margin-top: 10px;
