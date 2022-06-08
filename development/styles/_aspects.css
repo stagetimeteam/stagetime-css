@@ -33,6 +33,10 @@
 
         .aspects__graph {
             margin-top: 10px;
+            min-height: 60px; /* 3 lines of text */
+            font-size: 13px;
+            line-height: 20px;
+            color: #333333;
         }
             .aspects__demo {
                 vertical-align: top;
