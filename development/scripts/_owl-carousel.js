@@ -36,7 +36,6 @@
 
     owls.push(owlProfileProjects);
 
-
     owls.each(function () {
         $(this).on('mousewheel', '.owl-stage', function (e) {
             if (e.deltaX > 0) {
