@@ -115,11 +115,11 @@
             }
 
         .results__media {
-
+            margin-top: 24px;
         }
 
         .results__more-media {
-
+            margin-top: 31px;
         }
         .results__more-media.button,
         .results__more-media .button {
