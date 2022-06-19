@@ -2,17 +2,41 @@
 
 }
     .playlist__head {
+        display: flex;
+        align-items: flex-start;
 
     }
 
     .playlist__body {
-
+        display: flex;
+        align-items: flex-start;
     }
         .playlist__cell {
-
+            padding-left: 40px;
         }
 
-        .playlist__cell--person { width:  }
+        .playlist__cell:first-child {
+            padding-left: 0;
+        }
+
+
+        .playlist__cell--person { width: 378px; }
+        .playlist__cell--show   { width: 308px; }
+        .playlist__cell--length { width: 308px; }
+        .playlist__cell--type   { width: 308px; }
+
+
+        .playlist__head .playlist__cell {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 18px;
+            color: #8B8B8B;
+        }
+
+        .playlist__body .playlist__cell--person {  }
+        .playlist__body .playlist__cell--show   { font-size: 12px; line-height: 18px; }
+        .playlist__body .playlist__cell--length { font-weight: 600; font-size: 12px; line-height: 18px; }
+        .playlist__body .playlist__cell--type   { font-size: 11px; line-height: 18px; text-transform: uppercase; }
 
 
 
