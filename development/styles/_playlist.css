@@ -1,0 +1,46 @@
+.playlist {
+
+}
+    .playlist__head {
+
+    }
+
+    .playlist__body {
+
+    }
+        .playlist__cell {
+
+        }
+
+        .playlist__cell--person { width:  }
+
+
+
+    .playlist__card {
+        position: relative;
+        padding-left: 80px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+    }
+        .media-summary__preview {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+            .media-summary__box-art {
+                border-radius: 2px;
+                vertical-align: top;
+            }
+
+        .media-summary__performer {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #333333;
+        }
+
+        .media-summary__title {
+            font-size: 12px;
+            line-height: 18px;
+            color: #545454;
+        }

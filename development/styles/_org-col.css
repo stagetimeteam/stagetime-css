@@ -1,0 +1,37 @@
+.org-col {
+    position: relative;
+    width: 134px;
+    padding-top: 19px;
+    text-align: center; /* align photo to center (card itself is larger than photo) */
+    cursor: pointer;
+}
+    .org-col__preview {
+
+    }
+
+    .org-col__preview.avatar,
+    .org-col__preview .avatar {
+        border-radius: 6px;
+    }
+
+    .org-col__data {
+        margin-top: 15px;
+        min-height: 72px; /* 4 lines of .org-col__name or .org-col__note */
+    }
+        .org-col__name {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 18px;
+            color: #333333;
+        }
+            .org-col__name .link {
+
+            }
+
+        .org-col__note {
+            font-size: 12px;
+            line-height: 18px;
+            color: #545454;
+        }

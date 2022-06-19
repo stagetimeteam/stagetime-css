@@ -1,0 +1,29 @@
+.user-col {
+    position: relative;
+    width: 156px;
+    padding-top: 19px;
+    margin-top: 19px;
+    text-align: center; /* align photo to center (card itself is larger than photo) */
+    cursor: pointer;
+}
+    .user-col__data {
+        margin-top: 15px;
+        min-height: 72px; /* 4 lines of .user-col__name or .user-col__note */
+    }
+        .user-col__name {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 18px;
+            color: #333333;
+        }
+            .user-col__name .link {
+
+            }
+
+        .user-col__note {
+            font-size: 12px;
+            line-height: 18px;
+            color: #545454;
+        }

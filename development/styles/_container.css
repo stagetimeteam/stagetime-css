@@ -6,6 +6,10 @@
     border-right: 40px solid transparent;
 }
 
+.container--results {
+    width: 1160px;
+}
+
 .container--organisation {
     width: 1110px;
     padding-left: 0;  /* override bootstrap */
