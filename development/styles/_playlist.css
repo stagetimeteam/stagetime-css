@@ -9,6 +9,8 @@
 
     .playlist__body {
         margin-top: 26px;
+        margin-left: -13px;
+        margin-right: -13px;
     }
         .playlist__row {
             padding: 13px;
@@ -16,11 +18,18 @@
             align-items: center;
             text-decoration: none;
             color: inherit;
+            border-radius: 4px;
+            transition: background-color var(--transition-hover);
         }
 
         .playlist__row:first-child {
             margin-top: 0;
         }
+
+        .playlist__row:hover {
+            background-color: var(--panel-hover);
+        }
+
             .playlist__cell {
                 padding-left: 40px;
                 flex-shrink: 0;
@@ -31,10 +40,10 @@
             }
 
 
-            .playlist__cell--person { width: 378px; }
-            .playlist__cell--show   { width: 308px; }
-            .playlist__cell--length { width: 308px; }
-            .playlist__cell--type   { width: 308px; }
+            .playlist__cell--person { width: 380px; }
+            .playlist__cell--show   { width: 306px; }
+            .playlist__cell--length { width: 208px; }
+            .playlist__cell--type   { width: 186px; }
 
 
             .playlist__head .playlist__cell {
