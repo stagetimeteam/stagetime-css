@@ -8,6 +8,7 @@
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
         <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -772,6 +773,17 @@
                         <img class="results__icon" src="../symbols/16-search-light.svg" width="16" height="16" alt="">
                         <div class="results__query">You searched “AJ O’Reilly”</div>
                     </div>
+
+                    <div class="results__nothing">
+                        No results found
+                    </div>
+
+                    <!-- temp -->
+                    <p>
+                        or:
+                    </p>
+                    <!--/temp -->
+
                     <div class="results__section">
                         <h2 class="results__sub-heading">
                             People
@@ -1039,7 +1051,7 @@
                         <h2 class="results__sub-heading">
                             Organizations
                         </h2>
-                        <div class="results__organisations">
+                        <div class="results__organisations hide-scrollbar">
                             <div class="results__org-item">
                                 <div class="org-col">
                                     <a class="org-col__preview avatar" href="#">

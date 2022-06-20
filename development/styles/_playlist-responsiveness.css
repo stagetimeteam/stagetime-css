@@ -1,0 +1,82 @@
+.playlist {
+
+}
+    .playlist__head {
+        display: none;
+    }
+
+    .playlist__body {
+        margin-top: 0;
+        /*margin-left: -16px;*/
+        /*margin-right: -16px;*/
+    }
+        .playlist__row {
+            /*padding: 13px 16px;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*text-decoration: none;*/
+            /*color: inherit;*/
+            /*border-radius: 4px;*/
+            /*transition: background-color var(--transition-hover);*/
+        }
+
+        .playlist__row:first-child {
+            /*margin-top: 0;*/
+        }
+
+        .playlist__row:hover {
+            /*background-color: var(--panel-hover);*/
+        }
+
+            .playlist__cell {
+                /*padding-left: 40px;*/
+                /*flex-shrink: 0;*/
+            }
+
+            .playlist__cell:first-child {
+                /*padding-left: 0;*/
+            }
+
+
+            .playlist__cell--person { width: auto; }
+            .playlist__cell--show   { display: none; }
+            .playlist__cell--length { display: none; }
+            .playlist__cell--type   { display: none; }
+
+
+            .playlist__head .playlist__cell {
+                /*font-weight: 600;*/
+                /*font-size: 11px;*/
+                /*line-height: 18px;*/
+                /*color: #8B8B8B;*/
+            }
+
+
+        .playlist__card {
+            /*position: relative;*/
+            padding-left: 60px;
+            /*padding-top: 2px;*/
+            /*padding-bottom: 2px;*/
+        }
+            .media-summary__preview {
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 0;*/
+            }
+                .media-summary__box-art {
+                    /*border-radius: 2px;*/
+                    /*vertical-align: top;*/
+                }
+
+            .media-summary__performer {
+                /*font-weight: 600;*/
+                /*font-size: 13px;*/
+                /*line-height: 20px;*/
+                /*color: #333333;*/
+            }
+
+            .media-summary__title {
+                /*font-size: 12px;*/
+                /*line-height: 18px;*/
+                /*color: #545454;*/
+            }
