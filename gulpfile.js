@@ -1,5 +1,5 @@
 var del          = require('del');
-var run          = require('run-sequence');
+var run          = require('gulp4-run-sequence');
 
 var gulp         = require('gulp');
 var plumber      = require('gulp-plumber');
