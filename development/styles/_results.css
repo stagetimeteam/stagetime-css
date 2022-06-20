@@ -58,6 +58,34 @@
             color: #44474A;
         }
 
+    .results__head {
+        padding-top: 22px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .results__back {
+            margin-left: -12px;
+            margin-right: 4px;
+            flex-shrink: 0;
+        }
+
+        .results__back-heading {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #44474A;
+        }
+
+    .results__note {
+        margin-top: 10px;
+        padding-bottom: 12px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
     .results__section {
         margin-top: 26px;
     }
@@ -66,6 +94,7 @@
             margin-bottom: 0;
             font-size: 16px;
             line-height: 20px;
+            color: #44474A;
         }
 
         .results__people {

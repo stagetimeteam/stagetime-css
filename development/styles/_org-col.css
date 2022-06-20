@@ -2,6 +2,7 @@
     position: relative;
     width: 134px;
     padding-top: 19px;
+    padding-bottom: 19px;
     text-align: center; /* align photo to center (card itself is larger than photo) */
     cursor: pointer;
 }
