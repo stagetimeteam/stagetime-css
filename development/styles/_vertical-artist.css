@@ -1,7 +1,5 @@
 .vertical-artist {
     position: relative;
-    display: flex;
-    align-items: stretch;
     padding-top: 20px;
     border-bottom: 26px solid var(--theme-light);
 }
@@ -17,124 +15,148 @@
         box-shadow: 0 3px 3px rgba(0, 0, 0, 0.09);
     }
 
-    .vertical-artist__left {
-        width: 50%;
-        flex-shrink: 0;
-    }
-
-    .vertical-artist__mobile-bio {
-        display: none;
-    }
-
-    .vertical-artist__right {
+    .vertical-artist__stripe {
         position: relative;
-        width: 50%;
-        flex-shrink: 0;
-        padding-top: 262px;
     }
-
-    .vertical-artist__right--padding-for-editable-media {
-        padding-top: 338px;
-    }
-
-        .vertical-artist__body {
-            padding: 27px 36px 29px;
+        .vertical-artist__stripe::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--theme-light);
+            opacity: 0.5;
         }
-            .vertical-artist__header {
 
+        .vertical-artist__jumbotron {
+            position: relative;
+            display: flex;
+            align-items: stretch;
+            max-width: 1600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+        }
+
+            .vertical-artist__left {
+                width: 50%;
+                flex-shrink: 0;
             }
 
-            .vertical-artist__gallery {
-                position: absolute;
-                left: 0;
-                top: 0;
-                right: 0;
+            .vertical-artist__mobile-bio {
+                display: none;
             }
 
-            .vertical-artist__gallery.carousel--for-profile-projects,
-            .vertical-artist__gallery .carousel--for-profile-projects {
-                border-radius: 0;
+            .vertical-artist__right {
+                position: relative;
+                width: 50%;
+                flex-shrink: 0;
+                padding-top: 262px;
             }
 
-            .vertical-artist__content {
-                display: flex;
-                align-items: flex-start;
+            .vertical-artist__right--padding-for-editable-media {
+                padding-top: 338px;
             }
-                .vertical-artist__primary {
-                    flex-basis: 48.44%;
-                    flex-shrink: 0;
-                    margin-right: 8.08%;
-                    padding-top: 16px;
+
+                .vertical-artist__body {
+                    padding: 27px 36px 29px;
                 }
-                    .vertical-artist__description {
+                    .vertical-artist__header {
 
                     }
 
-                    .vertical-artist__management {
-                        margin-top: 32px;
-                        border-top: 1px solid var(--theme-light);
-                        padding-top: 25px;
+                    .vertical-artist__gallery {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
                     }
 
-                    .vertical-artist__social {
-                        margin-top: 32px;
-                        border-top: 1px solid var(--theme-light);
-                        padding-top: 25px;
+                    .vertical-artist__gallery.carousel--for-profile-projects,
+                    .vertical-artist__gallery .carousel--for-profile-projects {
+                        border-radius: 0;
                     }
 
-                    .vertical-artist__register {
-                        margin-top: 30px;
-                        border-top: 1px solid #F2F2F2;
-                        padding-top: 30px;
-                        padding-bottom: 30px;
+                    .vertical-artist__content {
+                        display: flex;
+                        align-items: flex-start;
                     }
+                        .vertical-artist__primary {
+                            flex-basis: 48.44%;
+                            flex-shrink: 0;
+                            margin-right: 8.08%;
+                            padding-top: 16px;
+                        }
+                            .vertical-artist__description {
 
-                .vertical-artist__secondary {
-                    flex-grow: 1;
-                    flex-basis: 0;
-                    overflow: hidden; /* make ellipsis inside work */
-                    margin-left: -13px;
-                    margin-right: -13px;
-                    padding-left: 13px;
-                    padding-right: 13px;
-                    padding-top: 16px;
-                }
-                    .vertical-artist__connections {
-                        margin: -10px -13px;
+                            }
+
+                            .vertical-artist__management {
+                                margin-top: 32px;
+                                border-top: 1px solid var(--theme-light);
+                                padding-top: 25px;
+                            }
+
+                            .vertical-artist__social {
+                                margin-top: 32px;
+                                border-top: 1px solid var(--theme-light);
+                                padding-top: 25px;
+                            }
+
+                            .vertical-artist__register {
+                                margin-top: 30px;
+                                border-top: 1px solid #F2F2F2;
+                                padding-top: 30px;
+                                padding-bottom: 30px;
+                            }
+
+                        .vertical-artist__secondary {
+                            flex-grow: 1;
+                            flex-basis: 0;
+                            overflow: hidden; /* make ellipsis inside work */
+                            margin-left: -13px;
+                            margin-right: -13px;
+                            padding-left: 13px;
+                            padding-right: 13px;
+                            padding-top: 16px;
+                        }
+                            .vertical-artist__connections {
+                                margin: -10px -13px;
+                            }
+
+                            .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {
+                                margin-top: 10px;
+                            }
+
+                            .vertical-artist__performing {
+                                margin-top: 31px;
+                                border-top: 1px solid var(--theme-light);
+                                padding-top: 21px;
+                            }
+
+                            .vertical-artist__highlights {
+                                margin-top: 26px;
+                                border-top: 1px solid var(--theme-light);
+                                padding-top: 21px;
+                            }
+
+                    .vertical-artist__edits {
+                        margin-top: 24px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
                     }
+                        .vertical-artist__editing-handler {
+                            margin-top: 24px;
+                        }
 
-                    .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {
-                        margin-top: 10px;
-                    }
+                        .vertical-artist__editing-handler:first-child {
+                            margin-top: 0;
+                        }
 
-                    .vertical-artist__performing {
-                        margin-top: 31px;
-                        border-top: 1px solid var(--theme-light);
-                        padding-top: 21px;
-                    }
-
-                    .vertical-artist__highlights {
-                        margin-top: 26px;
-                        border-top: 1px solid var(--theme-light);
-                        padding-top: 21px;
-                    }
-
-            .vertical-artist__edits {
-                margin-top: 24px;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-            }
-                .vertical-artist__editing-handler {
-                    margin-top: 24px;
-                }
-
-                .vertical-artist__editing-handler:first-child {
-                    margin-top: 0;
-                }
-
-                .vertical-artist__edits.button,
-                .vertical-artist__edits .button {
-                    padding-left: 40px;
-                    padding-right: 40px;
-                }
+                        .vertical-artist__edits.button,
+                        .vertical-artist__edits .button {
+                            padding-left: 40px;
+                            padding-right: 40px;
+                        }
