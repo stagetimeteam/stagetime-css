@@ -58,6 +58,14 @@
             color: #44474A;
         }
 
+    .results__nothing {
+        margin-top: 25px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #44474A;
+    }
+
     .results__head {
         padding-top: 22px;
         display: flex;
@@ -156,3 +164,162 @@
             font-size: 11px;
             line-height: 16px;
         }
+
+
+
+@media (max-width: 639px) {
+    
+    .results {
+        /*padding-top: 33px;*/
+        /*padding-bottom: 73px;*/
+    }
+        .results__bar {
+            /*position: relative;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            /*background-color: #F3F4F6;*/
+            /*padding: 20px;*/
+            /*border-radius: 6px;*/
+        }
+            .results__search {
+                /*position: relative;*/
+                /*width: 288px;*/
+                /*height: 40px;*/
+                /*vertical-align: top;*/
+                /*padding: 9px 19px 9px 40px;*/
+                /*background-color: #FFFFFF;*/
+                /*border: none;*/
+                /*outline: none;*/
+                /*background-clip: padding-box; !* reset iOS default shadow *!*/
+                /*border-radius: 3px; !* reset iOS default border-radius *!*/
+                /*font-family: inherit;*/
+                /*font-weight: inherit;*/
+                /*font-size: 13px;*/
+                /*line-height: 20px;*/
+                /*color: #333333;*/
+            }
+
+            .results__icon {
+                /*position: absolute;*/
+                /*left: 32px;*/
+                /*top: 32px;*/
+                /*fill: #333333;*/
+            }
+
+            .results__query {
+                /*margin-left: 20px;*/
+                /*margin-top: 10px;*/
+                /*font-weight: 600;*/
+                /*font-size: 13px;*/
+                /*line-height: 18px;*/
+                /*color: #44474A;*/
+            }
+
+        .results__nothing {
+            /*margin-top: 25px;*/
+            /*font-weight: 600;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #44474A;*/
+        }
+
+        .results__head {
+            /*padding-top: 22px;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+        }
+            .results__back {
+                /*margin-left: -12px;*/
+                /*margin-right: 4px;*/
+                /*flex-shrink: 0;*/
+            }
+
+            .results__back-heading {
+                /*margin-top: 10px;*/
+                /*font-weight: bold;*/
+                /*font-size: 16px;*/
+                /*line-height: 20px;*/
+                /*color: #44474A;*/
+            }
+
+        .results__note {
+            /*margin-top: 10px;*/
+            /*padding-bottom: 12px;*/
+            /*font-weight: 600;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #757575;*/
+        }
+
+        .results__section {
+            /*margin-top: 26px;*/
+        }
+            .results__sub-heading {
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-size: 16px;*/
+                /*line-height: 20px;*/
+                /*color: #44474A;*/
+            }
+
+            .results__people {
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                /*flex-wrap: wrap;*/
+                /*margin-top: -14px;*/
+                /*margin-left: -36px;*/
+                /*margin-right: -36px;*/
+            }
+                .results__person {
+                    /*margin-left: 18px;*/
+                    /*margin-right: 18px;*/
+                }
+
+                .results__more-people {
+                    /*margin-top: 59px;*/
+                    /*margin-left: 46px;*/
+                }
+                .results__more-people.button,
+                .results__more-people .button {
+                    /*width: 100px;*/
+                    /*font-size: 11px;*/
+                    /*line-height: 16px;*/
+                }
+
+            .results__organisations {
+                overflow-x: auto;
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                /*margin-top: 6px;*/
+                /*margin-left: -24px;*/
+                /*margin-right: -24px;*/
+            }
+                .results__org-item {
+
+                }
+
+                .results__more-organisations {
+                    /*margin-left: 40px;*/
+                    /*margin-top: 45px;*/
+                }
+                .results__more-organisations.button,
+                .results__more-organisations .button {
+                    /*width: 100px;*/
+                    /*font-size: 11px;*/
+                    /*line-height: 16px;*/
+                }
+
+            .results__media {
+                /*margin-top: 24px;*/
+            }
+
+            .results__more-media {
+                /*margin-top: 31px;*/
+            }
+            .results__more-media.button,
+            .results__more-media .button {
+                /*width: 100px;*/
+                /*font-size: 11px;*/
+                /*line-height: 16px;*/
+            }
+}
