@@ -116,3 +116,69 @@
                 /*margin-left: 16px;*/
                 /*flex-shrink: 0;*/
             }
+
+
+
+
+.player--standalone {
+
+}
+    .player--standalone .player__viewport {
+        /*width: 100%;*/
+    }
+        .player--standalone .player__image {
+            /*height: auto;*/
+        }
+
+        .player--standalone .player__navigation {
+            /*margin-top: 33px;*/
+        }
+
+
+.player__summary {
+    /*margin-top: 23px;*/
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+}
+    .player__preview {
+        /*flex-shrink: 0;*/
+    }
+
+    .player__data {
+
+    }
+        .player__song {
+            /*font-weight: 600;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #23282C;*/
+        }
+
+        .player__artist {
+            /*margin-top: 4px;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #23282C;*/
+        }
+
+    .player__person {
+        display: none;
+    }
+        .player__name {
+            /*font-weight: 600;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #23282C;*/
+            /*text-align: right;*/
+        }
+
+        .player__instrument {
+            /*font-size: 12px;*/
+            /*line-height: 20px;*/
+            /*color: #545454;*/
+            /*text-align: right;*/
+        }
+
+    .player__avatar {
+        display: none;
+    }

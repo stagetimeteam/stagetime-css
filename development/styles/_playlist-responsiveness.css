@@ -37,12 +37,12 @@
                 /*padding-left: 0;*/
             }
 
-
+            /* stylelint-disable */
             .playlist__cell--person { width: auto; }
             .playlist__cell--show   { display: none; }
             .playlist__cell--length { display: none; }
             .playlist__cell--type   { display: none; }
-
+            /* stylelint-enable */
 
             .playlist__head .playlist__cell {
                 /*font-weight: 600;*/
