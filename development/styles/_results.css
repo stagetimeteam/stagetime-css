@@ -164,3 +164,11 @@
             font-size: 11px;
             line-height: 16px;
         }
+
+
+        .results__item {
+            max-width: 640px;
+            padding-top: 11px;
+            margin-left: auto;
+            margin-right: auto;
+        }
