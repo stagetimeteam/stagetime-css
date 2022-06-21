@@ -2,6 +2,11 @@
     /*padding-top: 33px;*/
     /*padding-bottom: 73px;*/
 }
+
+
+.has-player3 .results {
+    padding-bottom: calc(var(--player3-mobile-height) + 73px);
+}
     .results__bar {
         /*position: relative;*/
         display: block;

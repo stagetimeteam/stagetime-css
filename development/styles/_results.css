@@ -6,8 +6,6 @@
 .has-player3 .results {
     padding-bottom: calc(var(--player3-height) + 73px);
 }
-
-
     .results__bar {
         position: relative;
         display: flex;
