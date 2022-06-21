@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="has-sidebar sidebar-collapsed" lang="en-US">
+<html class="has-sidebar sidebar-collapsed has-player3" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Search results</title>
+        <title>Search item</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1655809914">
@@ -831,605 +831,263 @@
         <div class="page">
             <div class="results">
                 <div class="results__wrap container container--results">
-                    <h1 class="visuallyhidden">Search</h1>
-                    <div class="results__bar">
-                        <input class="results__search" type="text" placeholder="Search Stagetime">
-                        <svg class="results__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1655809914#16-search-light"></use>
-                        </svg>
-                        <div class="results__query">You searched “AJ O’Reilly”</div>
-                    </div>
-
-                    <div class="results__nothing">
-                        No results found
-                    </div>
-
-                    <!-- temp -->
-                    <p>
-                        or:
-                    </p>
-                    <!--/temp -->
-
-                    <div class="results__section">
-                        <h2 class="results__sub-heading">
-                            People
-                        </h2>
-                        <div class="results__people">
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-a-120x120@2x.jpg 2x"
-                                             src="../temp/person-a-120x120.jpg"
-                                             width="120"
-                                             height="120"
+                    <div class="results__item">
+                        <div class="player player--standalone">
+                            <div class="player__viewport">
+                                <button class="player__scene" type="button">
+                                    <span class="player__background">
+                                        <img class="player__image"
+                                             srcset="../temp/player@2x.jpg 2x"
+                                             src="../temp/player.jpg"
+                                             width="425"
+                                             height="262"
                                              alt=""
                                         >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h4 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoie Middle Name Is Long Reams
-                                            </a>
-                                        </h4>
-                                        <div class="user-col__note">
-                                            Soprano
+                                    </span>
+                                    <svg class="player__grid" width="32" height="32">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#grid"></use>
+                                    </svg>
+                                    <svg class="player__progress round-loading round-loading--animated" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <circle id="random-offset" stroke="#FFFFFF" stroke-dashoffset="47.15" stroke-dasharray="188.5" stroke-width="3" cx="32" cy="32" r="30" transform="rotate(-90)" transform-origin="32 32"></circle>
+                                    </svg>
+                                </button>
+                                <div class="player__navigation">
+                                    <div class="player__bar playthrough">
+                                        <div class="playthrough__time">
+                                            48:48
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-b-120x120@2x.jpg 2x"
-                                             src="../temp/person-b-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoie Middle Name Is Long Reams
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-c-120x120@2x.jpg 2x"
-                                             src="../temp/person-c-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-d-120x120@2x.jpg 2x"
-                                             src="../temp/person-d-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-e-120x120@2x.jpg 2x"
-                                             src="../temp/person-e-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-a-120x120@2x.jpg 2x"
-                                             src="../temp/person-a-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-b-120x120@2x.jpg 2x"
-                                             src="../temp/person-b-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-c-120x120@2x.jpg 2x"
-                                             src="../temp/person-c-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-d-120x120@2x.jpg 2x"
-                                             src="../temp/person-d-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-a-120x120@2x.jpg 2x"
-                                             src="../temp/person-a-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__person">
-                                <div class="user-col">
-                                    <a class="user-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-e-120x120@2x.jpg 2x"
-                                             src="../temp/person-e-120x120.jpg"
-                                             width="120"
-                                             height="120"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="user-col__data">
-                                        <h3 class="user-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Zoey Preston
-                                            </a>
-                                        </h3>
-                                        <div class="user-col__note">
-                                            Soprano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="results__more-people button button--modal-secondary" href="#">
-                                See more
-                            </a>
-                        </div>
-                    </div>
-                    <div class="results__section">
-                        <h2 class="results__sub-heading">
-                            Organizations
-                        </h2>
-                        <div class="results__organisations hide-scrollbar">
-                            <div class="results__org-item">
-                                <div class="org-col">
-                                    <a class="org-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-a-86x86@2x.jpg 2x"
-                                             src="../temp/organization-a-86x86.jpg"
-                                             width="86"
-                                             height="86"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="org-col__data">
-                                        <h3 class="org-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Opera Delaware
-                                            </a>
-                                        </h3>
-                                        <div class="org-col__note">
-                                            Piano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__org-item">
-                                <div class="org-col">
-                                    <a class="org-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-b-86x86@2x.jpg 2x"
-                                             src="../temp/organization-b-86x86.jpg"
-                                             width="86"
-                                             height="86"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="org-col__data">
-                                        <h3 class="org-col__name">
-                                            <a class="link link--fading" href="#">
-                                                London Philharmonic Orchestra
-                                            </a>
-                                        </h3>
-                                        <div class="org-col__note">
-                                            Piano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__org-item">
-                                <div class="org-col">
-                                    <a class="org-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-c-86x86@2x.jpg 2x"
-                                             src="../temp/organization-c-86x86.jpg"
-                                             width="86"
-                                             height="86"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="org-col__data">
-                                        <h3 class="org-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Chicago Opera Theatre
-                                            </a>
-                                        </h3>
-                                        <div class="org-col__note">
-                                            Piano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__org-item">
-                                <div class="org-col">
-                                    <a class="org-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-d-86x86@2x.jpg 2x"
-                                             src="../temp/organization-d-86x86.jpg"
-                                             width="86"
-                                             height="86"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="org-col__data">
-                                        <h3 class="org-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Opera Delaware
-                                            </a>
-                                        </h3>
-                                        <div class="org-col__note">
-                                            Piano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__org-item">
-                                <div class="org-col">
-                                    <a class="org-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-a-86x86@2x.jpg 2x"
-                                             src="../temp/organization-a-86x86.jpg"
-                                             width="86"
-                                             height="86"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="org-col__data">
-                                        <h3 class="org-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Opera Delaware
-                                            </a>
-                                        </h3>
-                                        <div class="org-col__note">
-                                            Piano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__org-item">
-                                <div class="org-col">
-                                    <a class="org-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-b-86x86@2x.jpg 2x"
-                                             src="../temp/organization-b-86x86.jpg"
-                                             width="86"
-                                             height="86"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="org-col__data">
-                                        <h3 class="org-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Opera Delaware
-                                            </a>
-                                        </h3>
-                                        <div class="org-col__note">
-                                            Piano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="results__org-item">
-                                <div class="org-col">
-                                    <a class="org-col__preview avatar" href="#">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-a-86x86@2x.jpg 2x"
-                                             src="../temp/organization-a-86x86.jpg"
-                                             width="86"
-                                             height="86"
-                                             alt=""
-                                        >
-                                    </a>
-                                    <div class="org-col__data">
-                                        <h3 class="org-col__name">
-                                            <a class="link link--fading" href="#">
-                                                Opera Delaware
-                                            </a>
-                                        </h3>
-                                        <div class="org-col__note">
-                                            Piano
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <a class="results__more-organisations button button--modal-secondary" href="#">
-                                See more
-                            </a>
-                        </div>
-                    </div>
-                    <div class="results__section">
-                        <h2 class="results__sub-heading">
-                            Media
-                        </h2>
-                        <div class="results__media">
-                            <div class="results__data">
-
-                                <div class="playlist">
-                                    <div class="playlist__head">
-                                        <div class="playlist__cell playlist__cell--person">Person</div>
-                                        <div class="playlist__cell playlist__cell--show">Show</div>
-                                        <div class="playlist__cell playlist__cell--length">Length</div>
-                                        <div class="playlist__cell playlist__cell--type">Media Type</div>
-                                    </div>
-                                    <div class="playlist__body">
-                                        <a class="playlist__row" href="#">
-                                            <div class="playlist__cell playlist__cell--person">
-                                                <div class="playlist__card">
-                                                    <div class="media-summary__preview">
-                                                        <img class="media-summary__box-art"
-                                                             srcset="../temp/media-preview-a@2x.jpg 2x"
-                                                             src="../temp/media-preview-a.jpg"
-                                                             width="42"
-                                                             height="42"
-                                                             alt=""
-                                                        >
-                                                    </div>
-                                                    <div class="media-summary__performer">
-                                                        Elena Villalón
-                                                    </div>
-                                                    <div class="media-summary__title">
-                                                        Deh shorter
-                                                    </div>
+                                        <div class="playthrough__bar"><!-- catch clicks here -->
+                                            <div class="playthrough__progress" style="width: 50%;"></div>
+                                            <div class="playthrough__likes" style="left: 50%; width: 34px; height: 34px;">
+                                                34
+                                                <div class="playthrough__reactions hearts">
+                                                    <svg class="hearts__item hearts__item--a" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--b" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--c" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--d" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--e" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
                                                 </div>
                                             </div>
-                                            <div class="playlist__cell playlist__cell--show">
-                                                L’amico Fritz
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--length">
-                                                0:44
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--type">
-                                                Audio
-                                            </div>
-                                        </a>
-                                        <a class="playlist__row" href="#">
-                                            <div class="playlist__cell playlist__cell--person">
-                                                <div class="playlist__card">
-                                                    <div class="media-summary__preview">
-                                                        <img class="media-summary__box-art"
-                                                             srcset="../temp/media-preview-c@2x.jpg 2x"
-                                                             src="../temp/media-preview-c.jpg"
-                                                             width="42"
-                                                             height="42"
-                                                             alt=""
-                                                        >
-                                                    </div>
-                                                    <div class="media-summary__performer">
-                                                        Sergey Tkachenko
-                                                    </div>
-                                                    <div class="media-summary__title">
-                                                        Piano concerto No. 2 in Eb minor, movement I
-                                                    </div>
+                                            <div class="playthrough__likes" style="left: 75%; width: 20px; height: 20px;">
+                                                7
+                                                <div class="playthrough__reactions hearts">
+                                                    <svg class="hearts__item hearts__item--a" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--b" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--c" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--d" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
+                                                    <svg class="hearts__item hearts__item--e" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                                    </svg>
                                                 </div>
                                             </div>
-                                            <div class="playlist__cell playlist__cell--show">
-                                                L’amico Fritz
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--length">
-                                                0:44
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--type">
-                                                Audio
-                                            </div>
-                                        </a>
-                                        <a class="playlist__row" href="#">
-                                            <div class="playlist__cell playlist__cell--person">
-                                                <div class="playlist__card">
-                                                    <div class="media-summary__preview">
-                                                        <img class="media-summary__box-art"
-                                                             srcset="../temp/media-preview-d@2x.jpg 2x"
-                                                             src="../temp/media-preview-d.jpg"
-                                                             width="42"
-                                                             height="42"
-                                                             alt=""
-                                                        >
-                                                    </div>
-                                                    <div class="media-summary__performer">
-                                                        Jennie Moser
-                                                    </div>
-                                                    <div class="media-summary__title">
-                                                        Großmächtige Prinzessin
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--show">
-                                                L’amico Fritz
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--length">
-                                                0:44
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--type">
-                                                Audio
-                                            </div>
-                                        </a>
-                                        <a class="playlist__row" href="#">
-                                            <div class="playlist__cell playlist__cell--person">
-                                                <div class="playlist__card">
-                                                    <div class="media-summary__preview">
-                                                        <img class="media-summary__box-art"
-                                                             srcset="../temp/media-preview-a@2x.jpg 2x"
-                                                             src="../temp/media-preview-a.jpg"
-                                                             width="42"
-                                                             height="42"
-                                                             alt=""
-                                                        >
-                                                    </div>
-                                                    <div class="media-summary__performer">
-                                                        Bailey Cates
-                                                    </div>
-                                                    <div class="media-summary__title">
-                                                        Etude in e minor
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--show">
-                                                L’amico Fritz
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--length">
-                                                0:44
-                                            </div>
-                                            <div class="playlist__cell playlist__cell--type">
-                                                Audio
-                                            </div>
-                                        </a>
+                                        </div>
+                                        <div class="playthrough__time">
+                                            48:48
+                                        </div>
+                                    </div>
+                                    <div class="player__like react">
+                                        <svg class="react__icon" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                        </svg>
+                                        React
                                     </div>
                                 </div>
-
+                                <div class="player__summary">
+                                    <div class="player__data">
+                                        <div class="player__song">
+                                            La fleur que tu m’avais jetée
+                                        </div>
+                                        <div class="player__artist">
+                                            Carmen
+                                        </div>
+                                    </div>
+                                    <div class="player__person">
+                                        <div class="player__name ellipsis">
+                                            Brandon Bell
+                                        </div>
+                                        <div class="player__instrument ellipsis">
+                                            Tenor
+                                        </div>
+                                    </div>
+                                    <a class="player__avatar avatar" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                             src="../temp/person-d-40x40.jpg"
+                                             width="40" height="40"
+                                             alt=""
+                                        >
+                                    </a>
+                                </div>
                             </div>
-                            <a class="results__more-media button button--modal-secondary" href="#">
-                                See more
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <section class="player3">
+                <div class="player3__progress">
+                    <div class="player3__indicator playthrough playthrough--full-width">
+                        <div class="playthrough__time">
+                            88:88
+                        </div>
+                        <div class="playthrough__bar"><!-- catch clicks here -->
+                            <div class="playthrough__progress" style="width: 0;"></div>
+                            <div class="playthrough__likes" style="left: 50%; width: 34px; height: 34px;">
+                                34
+                                <div class="playthrough__reactions hearts">
+                                    <svg class="hearts__item hearts__item--a" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--b" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--c" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--d" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--e" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="playthrough__likes" style="left: 75%; width: 20px; height: 20px;">
+                                7
+                                <div class="playthrough__reactions hearts">
+                                    <svg class="hearts__item hearts__item--a" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--b" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--c" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--d" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                    <svg class="hearts__item hearts__item--e" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playthrough__time">
+                            88:88
+                        </div>
+                    </div>
+                </div>
+                <div class="player3__body">
+                    <audio class="player3__widget" src="../temp/audio/epic.mp3"></audio>
+                    <div class="player3__viewport">
+                        <img class="player3__preview"
+                             srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
+                             src="../temp/brandon-bell-when-the-air.jpg"
+                             width="50"
+                             height="50"
+                             alt=""
+                        >
+                        <!-- or:
+                        <iframe class="player3__preview" width="48" height="94" src="https://www.youtube.com/embed/&#45;&#45;A_89lTuiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        -->
+                    </div>
+                    <div class="player3__data">
+                        <div class="player3__song ellipsis">
+                            Brandon Bell
+                        </div>
+                        <div class="player3__artist ellipsis">
+                            “When the air sings of summer” from The Old Maid and the Thief
+                        </div>
+                    </div>
+                    <div class="player3__controls">
+                        <button class="player3__action player3__action--bookmark" type="button">
+                            <svg class="player3__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1655809914#16-smaller-heart-outline"></use>
+                            </svg>
+                        </button>
+                        <button class="player3__action player3__action--backward player3__action--disabled" type="button">
+                            <svg class="player3__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1655809914#16-backward"></use>
+                            </svg>
+                        </button>
+                        <button class="player3__action player3__action--play" type="button">
+                            <svg class="player3__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1655809914#16-play-2"></use>
+                            </svg>
+                        </button>
+                        <button class="player3__action player3__action--forward" type="button">
+                            <svg class="player3__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1655809914#16-forward"></use>
+                            </svg>
+                        </button>
+                        <button class="player3__action player3__action--shuffle" type="button">
+                            <svg class="player3__icon" width="16" height="16">
+                                <use xlink:href="../symbols/symbols.svg?1655809914#16-shuffle"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="player3__like react">
+                        <svg class="react__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1655809914#16-heart-wide"></use>
+                        </svg>
+                        React
+                    </div>
+                    <div class="player3__menu operations operations--simplified-handler operations--for-player3">
+                        <button class="operations__handler" type="button">
+                            <svg class="operations__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1655809914#24-more-circle"></use>
+                            </svg>
+                            More
+                        </button>
+                        <div class="operations__dropdown">
+                            <div class="menu">
+                                <a class="menu__link" href="#">
+                                    <svg class="menu__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#24-share"></use>
+                                    </svg>
+                                    Share
+                                </a>
+                                <a class="menu__link" href="#">
+                                    <svg class="menu__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#24-bookmark"></use>
+                                    </svg>
+                                    Favorite
+                                </a>
+                                <a class="menu__link" href="#">
+                                    <svg class="menu__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#24-report"></use>
+                                    </svg>
+                                    Report
+                                </a>
+                                <a class="menu__link menu__link--close-player" href="#">
+                                    <svg class="menu__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1655809914#24-close"></use>
+                                    </svg>
+                                    Close player
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <!-- 3/3 Modals: -->
