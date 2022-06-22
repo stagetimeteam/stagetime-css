@@ -44,10 +44,14 @@
 
 
 .user-badge--search {
-
+    padding-left: 56px;
+    min-height: 40px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
-    .user-badge--search .avatar {
-        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.11);
+    .user-badge--search .avatar__image {
+        width: 40px;
+        height: 40px;
     }
 
     .user-badge--search .user-badge__heading {
