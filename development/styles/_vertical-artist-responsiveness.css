@@ -6,101 +6,108 @@
 
     }
 
-    .vertical-artist__left {
-        width: auto;
-    }
+    .vertical-artist__stripe {
 
-    .vertical-artist__mobile-bio {
-        display: block;
     }
-
-    .vertical-artist__right {
-        width: auto;
-        position: static;
-        padding-top: 0;
-    }
-        .vertical-artist__body {
-            padding: 0 var(--container-mobile-padding);
+        .vertical-artist__jumbotron {
+            display: block;
         }
-            .vertical-artist__header {
-                display: none;
+
+            .vertical-artist__left {
+                width: auto;
             }
 
-            .vertical-artist__gallery {
+            .vertical-artist__mobile-bio {
+                display: block;
+            }
+
+            .vertical-artist__right {
+                width: auto;
                 position: static;
+                padding-top: 0;
             }
-
-            .vertical-artist__gallery.carousel--for-profile-projects,
-            .vertical-artist__gallery .carousel--for-profile-projects {
-
-            }
-
-            .vertical-artist__content {
-                display: flex;
-                flex-direction: column;
-                align-items: stretch;
-            }
-                .vertical-artist__primary {
-                    margin-right: 0;
-                    padding-top: 0;
+                .vertical-artist__body {
+                    padding: 0 var(--container-mobile-padding);
                 }
-                    .vertical-artist__description {
+                    .vertical-artist__header {
                         display: none;
                     }
 
-                    .vertical-artist__management {
+                    .vertical-artist__gallery {
+                        position: static;
+                    }
+
+                    .vertical-artist__gallery.carousel--for-profile-projects,
+                    .vertical-artist__gallery .carousel--for-profile-projects {
 
                     }
 
-                    .vertical-artist__social {
-
+                    .vertical-artist__content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: stretch;
                     }
+                        .vertical-artist__primary {
+                            margin-right: 0;
+                            padding-top: 0;
+                        }
+                            .vertical-artist__description {
+                                display: none;
+                            }
 
-                    .vertical-artist__register {
+                            .vertical-artist__management {
 
+                            }
+
+                            .vertical-artist__social {
+
+                            }
+
+                            .vertical-artist__register {
+
+                            }
+
+                        .vertical-artist__secondary {
+                            order: -1;
+                            overflow: visible;
+                            margin-left: 0;
+                            margin-right: 0;
+                            padding-left: 0;
+                            padding-right: 0;
+                            padding-top: 0;
+                        }
+                            .vertical-artist__connections {
+                                margin-top: 0;
+                                padding-top: 10px;
+                            }
+                                .vertical-artist__connections.find-connections {
+                                    margin: 0;
+                                }
+
+                            .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {
+
+                            }
+
+                            .vertical-artist__performing {
+
+                            }
+
+                            .vertical-artist__highlights {
+
+                            }
+
+                    .vertical-artist__edits {
+                        padding-bottom: 30px;
                     }
+                        .vertical-artist__editing-handler {
 
-                .vertical-artist__secondary {
-                    order: -1;
-                    overflow: visible;
-                    margin-left: 0;
-                    margin-right: 0;
-                    padding-left: 0;
-                    padding-right: 0;
-                    padding-top: 0;
-                }
-                    .vertical-artist__connections {
-                        margin-top: 0;
-                        padding-top: 10px;
-                    }
-                        .vertical-artist__connections.find-connections {
-                            margin: 0;
                         }
 
-                    .vertical-artist__secondary .find-connections:not(.find-connections--horizontal) {
+                        .vertical-artist__editing-handler:first-child {
 
-                    }
+                        }
 
-                    .vertical-artist__performing {
+                        .vertical-artist__edits.button,
+                        .vertical-artist__edits .button {
 
-                    }
-
-                    .vertical-artist__highlights {
-
-                    }
-
-            .vertical-artist__edits {
-                padding-bottom: 30px;
-            }
-                .vertical-artist__editing-handler {
-
-                }
-
-                .vertical-artist__editing-handler:first-child {
-
-                }
-
-                .vertical-artist__edits.button,
-                .vertical-artist__edits .button {
-
-                }
+                        }
