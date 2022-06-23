@@ -4,6 +4,7 @@
     background-color: #000000;
 }
     .video__widget {
+        width: 100%;
         vertical-align: top;
         border: none;
     }
