@@ -13,26 +13,57 @@
         transition: height 0.23s ease;
     }
 
+
+.alt-playback--animated {
+
+}
+
     .alt-playback__bar:nth-child(1) {
+        left: 0;
+        height: 22px;
+    }
+
+    .alt-playback__bar:nth-child(2) {
+        left: 8px;
+        height: 14px;
+        opacity: 0.6;
+    }
+
+    .alt-playback__bar:nth-child(3) {
+        left: 16px;
+        height: 28px;
+    }
+
+    .alt-playback__bar:nth-child(4) {
+        left: 24px;
+        height: 18px;
+        opacity: 0.6;
+    }
+
+
+.alt-playback--animated {
+
+}
+    .alt-playback--animated .alt-playback__bar:nth-child(1) {
         left: 0;
         height: 20%;
         animation: alt-playback 2.8s ease 0.2s infinite alternate;
     }
 
-    .alt-playback__bar:nth-child(2) {
+    .alt-playback--animated .alt-playback__bar:nth-child(2) {
         left: 8px;
         height: 45%;
         opacity: 0.6;
         animation: alt-playback 2.2s ease 0.1s infinite alternate;
     }
 
-    .alt-playback__bar:nth-child(3) {
+    .alt-playback--animated .alt-playback__bar:nth-child(3) {
         left: 16px;
         height: 8%;
         animation: alt-playback 2.6s ease 0.1s infinite alternate;
     }
 
-    .alt-playback__bar:nth-child(4) {
+    .alt-playback--animated .alt-playback__bar:nth-child(4) {
         left: 24px;
         opacity: 0.6;
         animation: alt-playback 2.7s ease 0.4s infinite alternate;
