@@ -52,6 +52,9 @@
                 position: relative;
                 width: 50%;
                 flex-shrink: 0;
+            }
+
+            .vertical-artist__right--padding-for-media {
                 padding-top: 262px;
             }
 

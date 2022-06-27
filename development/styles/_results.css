@@ -176,3 +176,11 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+
+.results--details {
+
+}
+    .results--details .results__organisations {
+        flex-wrap: wrap;
+    }
