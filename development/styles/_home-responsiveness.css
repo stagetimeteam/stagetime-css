@@ -18,6 +18,11 @@
             display: none;
         }
 
+        .home__jumbotron {
+            padding-bottom: 20px;
+            border-bottom-width: 4px;
+        }
+
         .home__stats {
             /*margin-top: 22px;*/
         }
