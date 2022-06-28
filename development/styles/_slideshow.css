@@ -236,7 +236,7 @@
             .slideshow--jumbotron .slideshow__dot--current:hover::before {
                 background-color: #757575;
             }
-            
+
 
     .slideshow--jumbotron .slideshow__control {
         position: absolute;

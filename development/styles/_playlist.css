@@ -38,11 +38,12 @@
                 padding-left: 0;
             }
 
-
+            /* stylelint-disable */
             .playlist__cell--person { width: 380px; }
             .playlist__cell--show   { width: 306px; }
             .playlist__cell--length { width: 208px; }
             .playlist__cell--type   { width: 186px; }
+            /* stylelint-enable */
 
 
             .playlist__head .playlist__cell {
@@ -52,12 +53,12 @@
                 color: #8B8B8B;
             }
 
+            /* stylelint-disable */
             .playlist__body .playlist__cell--person {  }
             .playlist__body .playlist__cell--show   { font-size: 12px; line-height: 18px; color: #545454; }
             .playlist__body .playlist__cell--length { font-weight: 600; font-size: 12px; line-height: 18px; color: #757575; }
             .playlist__body .playlist__cell--type   { font-size: 11px; line-height: 18px; text-transform: uppercase; color: #8B8B8B; }
-
-
+            /* stylelint-enable */
 
         .playlist__card {
             position: relative;
