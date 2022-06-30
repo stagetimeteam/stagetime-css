@@ -13,8 +13,8 @@
         padding: 0;
         box-shadow: none;
     }
-        .home__desktop-access.access-panel,
-        .home__desktop-access .access-panel {
+        .home__desktop-access.notification-bar,
+        .home__desktop-access .notification-bar {
             display: none;
         }
 
@@ -73,7 +73,7 @@
         }
 
             .home__smartphone-access,
-            .home__smartphone-access.access-panel {
+            .home__smartphone-access.notification-bar {
                 display: block;
             }
 
