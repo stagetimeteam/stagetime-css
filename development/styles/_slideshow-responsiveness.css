@@ -171,3 +171,32 @@
             /*transition: background-color var(--transition-slide),*/
             /*            border-color var(--transition-slide);*/
         }
+
+
+
+
+.slideshow--jumbotron {
+
+}
+
+    .slideshow--jumbotron .slideshow__control--prev {
+        left: 0;
+        margin-left: 25px;
+    }
+
+    .slideshow--jumbotron .slideshow__control--next {
+        right: 0;
+        margin-right: 25px;
+    }
+
+
+@media (max-width: 359px) {
+
+    .slideshow--jumbotron .slideshow__control--prev {
+        margin-left: 15px;
+    }
+
+    .slideshow--jumbotron .slideshow__control--next {
+        margin-right: 15px;
+    }
+}
