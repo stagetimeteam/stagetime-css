@@ -1,15 +1,13 @@
 .notification-bar {
     display: flex;
-    align-items: flex-start;
-    padding: 11px 13px;
+    padding: 12px 14px;
     background-color: #EBEFF4;
-    border: 1px solid #C4C4C4;
     border-radius: 4px;
 }
     .notification-bar__preview {
         flex-shrink: 0;
-        margin-right: 14px;
-        padding: 6px;
+        margin-right: 15px;
+        padding: 7px;
         background-color: #FFFFFF;
         border-radius: 2px;
         line-height: 16px;
@@ -17,14 +15,14 @@
         .notification-bar__icon {
             vertical-align: top;
             fill: #39606C;
-            width: 16px;
-            height: 16px;
+            width: 18px;
+            height: 18px;
         }
 
     .notification-bar__message {
-        padding: 3px 20px 5px 0;
+        padding: 4px 20px 6px 0;
         margin-right: auto;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 20px;
         color: #333333;
     }
@@ -39,10 +37,10 @@
 
     .notification-bar__close {
         position: relative;
-        width: 48px;
-        height: 48px;
-        padding: 16px;
-        margin: -10px -10px -10px 0;
+        width: 44px;
+        height: 44px;
+        padding: 14px;
+        margin: -6px -14px -6px 0;
         background-color: transparent;
         border: none;
         cursor: pointer;
