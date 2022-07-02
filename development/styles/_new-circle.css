@@ -1,16 +1,16 @@
-.new-circle {
+.new {
     position: relative;
     max-width: 870px;
     padding: 72px 142px 120px;
 }
-    .new-circle__icon {
+    .new__icon {
         position: absolute;
         left: 71px;
         top: 62px;
         fill: #23282C;
     }
 
-    .new-circle__prefix {
+    .new__prefix {
         font-weight: 600;
         font-size: 15px;
         line-height: 20px;
@@ -19,7 +19,7 @@
         letter-spacing: 2px;
     }
 
-    .new-circle__heading {
+    .new__heading {
         margin-top: 25px;
         margin-bottom: 0;
         font-weight: normal;
@@ -28,22 +28,22 @@
         color: #23282C;
     }
 
-    .new-circle__note {
+    .new__note {
         margin-top: 21px;
         font-size: 14px;
         line-height: 22px;
         color: #23282C;
     }
 
-    .new-circle__field {
+    .new__field {
         margin-top: 116px;
     }
 
-    .new-circle__submit {
+    .new__submit {
         margin-top: 24px;
     }
 
-    .new-circle__submit.button,
-    .new-circle__submit .button {
+    .new__submit.button,
+    .new__submit .button {
         width: 287px;
     }
