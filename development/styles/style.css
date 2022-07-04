@@ -142,7 +142,7 @@
 @import url("_create-org.css");
 @import url("_choice.css");
 @import url("_alert.css");
-@import url("_collections.css");
+@import url("_collection.css");
 @import url("_side-chat.css");
 @import url("_activity.css");
 @import url("_side-collection-name.css");
@@ -368,3 +368,4 @@
 @import url("_org-col.css");
 @import url("_playlist.css");
 @import url("_preview.css");
+@import url("_collections.css");
