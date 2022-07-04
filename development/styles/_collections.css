@@ -35,6 +35,27 @@
                 margin-bottom: -2px;
             }
 
+        .collections__heading {
+            margin-top: 2px;
+            margin-bottom: 0;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+            .collections__icon {
+                float: left;
+                margin-top: 6px;
+                margin-right: 12px;
+                width: 20px;
+                height: 20px;
+                fill: #FFFFFF;
+            }
+
+        .collections__filter {
+            margin-top: 18px;
+        }
+
     .collections__body {
         height: calc(100% - var(--collections-head-height));
         overflow-y: auto;
@@ -46,6 +67,8 @@
         align-items: flex-start;
         flex-wrap: wrap;
         padding: 24px 24px 60px;
+        margin-left: -4px;
+        margin-right: -4px;
     }
 
         .collections__list .simpler-null {

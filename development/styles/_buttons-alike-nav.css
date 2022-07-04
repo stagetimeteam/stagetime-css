@@ -5,15 +5,15 @@
     .buttons-alike-nav__item {
         margin-left: 15px;
         padding: 7px 30px;
-        background-color: #E8E8E8;
+        background-color: #44474A;
         border-radius: 17px;
         border: none;
         flex-shrink: 0;
         font-family: inherit;
         font-weight: 600;
-        font-size: 11px;
+        font-size: 12px;
         line-height: 20px;
-        color: #545454;
+        color: #FFFFFF;
         text-decoration: none;
         transition: background-color var(--transition-hover),
                     color var(--transition-hover);
@@ -24,14 +24,14 @@
     }
 
     .buttons-alike-nav__item:hover {
-        background-color: #C4C4C4;
-        color: #757575;
+        background-color: #FFFFFF;
+        color: #23282C;
     }
 
 
     .buttons-alike-nav__item--current,
     .buttons-alike-nav__item--current:hover {
-        background-color: #545454;
-        color: #FFFFFF;
+        background-color: #FFFFFF;
+        color: #23282C;
         cursor: default;
     }
