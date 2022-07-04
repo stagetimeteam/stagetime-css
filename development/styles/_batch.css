@@ -15,10 +15,10 @@
     }
         .batch__gallery {
             position: relative;
-            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
             border-radius: 15px;
         }
             .batch__photo {
+                background-color: var(--image-fallback);
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center center;
@@ -57,29 +57,28 @@
             }
 
         .batch__body {
-            margin-top: 12px;
+            margin-top: 16px;
             padding-right: 30px;
             padding-left: 6px;
             padding-bottom: 8px;
         }
             .batch__heading {
                 font-weight: 600;
-                font-size: 23px;
-                line-height: 30px;
-                color: #545454;
+                font-size: 18px;
+                line-height: 24px;
+                color: #23282C;
             }
 
             .batch__note {
-                margin-top: 6px;
-                font-weight: bold;
+                margin-top: 4px;
                 font-size: 11px;
                 line-height: 20px;
-                color: rgba(105, 105, 105, 0.7);
+                color: rgba(68, 71, 74, 0.7);
             }
 
     .batch__actions {
         position: absolute;
         z-index: 100;
         right: 11px;
-        bottom: 43px;
+        bottom: 39px;
     }

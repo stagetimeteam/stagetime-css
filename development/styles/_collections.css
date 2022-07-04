@@ -35,20 +35,45 @@
                 margin-bottom: -2px;
             }
 
-    .collections__new {
+    .collections__body {
         height: calc(100% - var(--collections-head-height));
         overflow-y: auto;
         -webkit-overflow-scrolling: touch;
     }
 
+    .collections__list {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 24px 24px 60px;
+    }
 
-        .collections__modal {
-            position: absolute;
-            left: 50%;
-            top: 10vh;
-            width: 380px;
-            margin-left: -190px;
-            background-color: #FFFFFF;
-            border: 1px solid #E8E8E8;
-            border-radius: 13px;
+        .collections__list .simpler-null {
+            width: 100%;
+        }
+            .collections__list .simpler-null__action,
+            .collections__list .simpler-null__action.button {
+                width: 342px;
+            }
+
+        .collections__item {
+
+        }
+
+        .collections__item {
+            width: 33.3333%;
+            flex-shrink: 0;
+        }
+
+        @media (min-width: 1500px) {
+            .collections__item {
+                width: 25%;
+            }
+        }
+
+
+        @media (min-width: 1900px) {
+            .collections__item {
+                width: 20%;
+            }
         }
