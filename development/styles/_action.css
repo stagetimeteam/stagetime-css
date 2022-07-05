@@ -247,6 +247,38 @@
         }
 
 
+.action--darkest-grey {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+}
+    .action--darkest-grey .action__image {
+        margin: auto;
+        width: 28px;
+        height: 28px;
+        background-color: #44474A;
+        border-color: transparent;
+    }
+        .action--darkest-grey .action__icon {
+            fill: #FFFFFF;
+        }
+
+        .action--darkest-grey .action__label {
+            font-size: 8px;
+            color: #FFFFFF;
+        }
+
+.action--darkest-grey:hover {
+
+}
+    .action--darkest-grey:hover .action__image {
+        background-color: #333333;
+    }
+        .action--darkest-grey:hover .action__icon {
+
+        }
+
+
 .action--white {
     width: 40px;
     height: 40px;
