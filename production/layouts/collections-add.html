@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html class="has-sidebar" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Auth</title>
+        <title>Collections</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1656992168">
         <link rel="stylesheet" href="../styles/style.css?1656992168">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1656992168" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -23,11 +22,12 @@
                     Good afternoon, <a class="link link--user-color" href="#">Jennie</a>.
                 </div>
                 -->
+                <!-- optional:
                 <div class="header__auth">
                     <a class="header__login" href="#"><span class="header__label">Log In</span></a>
                     <a class="header__join" href="#"><span class="header__label">Join <span class="header__stagetime-label">Stagetime</span></span></a>
                 </div>
-                <!-- optional:
+                -->
                 <div class="header__menu">
                     <button class="header__item header-button header-button--search" type="button">
                         <svg class="header-button__icon" width="24" height="24">
@@ -50,6 +50,17 @@
                         <span class="visuallyhidden">New:</span>
                         <span class="header-button__updates counter counter--danger">4</span>
                     </a>
+                    <button class="header__item header-button header-button--sidebar" type="button">
+                        <svg class="header-button__icon header-button__icon--burger" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-burger"></use>
+                        </svg>
+                        <svg class="header-button__icon header-button__icon--close-burger" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-close-burger"></use>
+                        </svg>
+                        <span class="visuallyhidden">Toggle sidebar</span>
+                        <span class="visuallyhidden">Notifications:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </button>
                     <a class="header__item profile-button" href="#">
                         <span class="avatar avatar--alt-hover">
                             <img class="avatar__image"
@@ -62,10 +73,8 @@
                         </span>
                     </a>
                 </div>
-                -->
             </div>
         </header>
-        <!--
         <form class="search">
             <div class="search__bar">
                 <button class="search__close" type="button">
@@ -156,6 +165,7 @@
                                 <svg class="search__more-icon" width="24" height="24">
                                     <use xlink:href="../symbols/symbols.svg?1656992168#24-magnifier"></use>
                                 </svg>
+                                     alt="">
                             </div>
                             More results for “aj o’rei”
                         </a>
@@ -163,8 +173,6 @@
                 </div>
             </div>
         </form>
-        -->
-        <!-- optional:
         <div class="notifications">
             <div class="notifications__head top-bar">
                 <div class="top-bar__heading">
@@ -192,7 +200,9 @@
                 <div class="simpler-null">
                     You don’t currently have<br> any notifications.
                 </div>
+                <!-- temp -->
                 or:
+                <!--/temp -->
                 <div class="notifications__separator section-separator">
                     <div class="section-separator__heading">
                         Collaborator Requests
@@ -539,8 +549,6 @@
                 </div>
             </div>
         </div>
-        -->
-        <!-- optional:
         <div class="profile">
             <div class="profile__head top-bar">
                 <div class="top-bar__heading">
@@ -566,116 +574,442 @@
                     View Profile
                 </a>
                 <div class="profile__menu">
-                    <a class="nav-link" href="#">
-                        <svg class="nav-link__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1656992168#16-pencil"></use>
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-envelope"></use>
                         </svg>
-                        Edit Profile
-                    </a>
-                    <a class="nav-link" href="#">
-                        <svg class="nav-link__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1656992168#16-envelope-outline"></use>
-                        </svg>
-                        <svg class="nav-link__sparkle" width="16" height="16">
+                        <svg class="pic-link__sparkle" width="16" height="16">
                             <use xlink:href="../symbols/symbols.svg?1656992168#16-sparkle"></use>
                         </svg>
-                        Invite
-                        <span class="visuallyhidden">Explain meaning of sparkles here</span>
+                        <div class="pic-link__label">Invite</div>
                     </a>
-                    <a class="nav-link" href="#">
-                        <svg class="nav-link__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1656992168#16-question-spot"></use>
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-pawprint"></use>
                         </svg>
-                        Support
+                        <div class="pic-link__label">Report an Issue</div>
                     </a>
-                    <a class="nav-link" href="#">
-                        <svg class="nav-link__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1656992168#16-cog"></use>
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-info-square"></use>
                         </svg>
-                        Settings
+                        <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-cogwheel"></use>
+                        </svg>
+                        <div class="pic-link__label">Settings</div>
                     </a>
                 </div>
-                <a class="profile__organisation button button--faded" href="#">
-                    <svg class="button__icon button__icon--left" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1656992168#16-city"></use>
-                    </svg>
-                    Create Organization
-                </a>
-                <a class="profile__logout nav-link" href="#">
-                    <svg class="nav-link__icon" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1656992168#16-logout"></use>
-                    </svg>
-                    Log Out
-                </a>
+                <div class="profile__logout">
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-2-user"></use>
+                        </svg>
+                        <div class="pic-link__label">Log Out</div>
+                    </a>
+                </div>
             </div>
         </div>
-        -->
+        <div class="sidebar">
+            <button class="sidebar__overlay" type="button"></button>
+            <div class="sidebar__scroll scrollbar scrollbar-macosx">
+                <div class="sidebar__inner">
+                    <nav class="side-nav">
+                        <div class="side-nav__section">
+                            <a class="pic-link pic-link--current" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-home"></use>
+                                </svg>
+                                <div class="pic-link__label">Home</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-edit2"></use>
+                                </svg>
+                                <div class="pic-link__label">Edit My Profile</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-envelope"></use>
+                                </svg>
+                                <div class="pic-link__label">Messages <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-2-user"></use>
+                                </svg>
+                                <div class="pic-link__label">My Network</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section">
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-paper"></use>
+                                </svg>
+                                <div class="pic-link__label">Jobs</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-category"></use>
+                                </svg>
+                                <div class="pic-link__label">Collections</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-thick-rings"></use>
+                                </svg>
+                                <span class="pic-link__counter counter counter--danger">4</span>
+                                <div class="pic-link__label">Circles <span class="pic-link__beta beta">beta</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-3-user-2"></use>
+                                </svg>
+                                <div class="pic-link__label">Groups</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon pic-link__icon--photo"
+                                     srcset="../temp/person-a-20x20@2x.jpg 2x"
+                                     src="../temp/person-a-20x20.jpg"
+                                     width="20"
+                                     height="20"
+                                     alt=""
+                                >
+                                <div class="pic-link__label">Manage</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section side-nav__section--smartphone-only">
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-envelope"></use>
+                                </svg>
+                                <svg class="pic-link__sparkle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#16-sparkle"></use>
+                                </svg>
+                                <div class="pic-link__label">Invite</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-pawprint"></use>
+                                </svg>
+                                <div class="pic-link__label">Report an Issue</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-info-square"></use>
+                                </svg>
+                                <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1656992168#24-cogwheel"></use>
+                                </svg>
+                                <div class="pic-link__label">Settings</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="gate">
-                <div class="gate__cell">
-                    <div class="gate__wrap container container--auth">
-                        <div class="gate__intro">
-                            <div class="gate__branding auth-logo">
-                                STAGETIME
-                            </div>
-                            <div class="gate__slogan">
-                                the <strong class="gate__highlight">professional network</strong> for the performing arts
-                            </div>
-                            <div class="gate__mobile-slogan">
-                                Log in to your professional network
+            <div class="collections">
+                <div class="collections__head">
+                    <div class="collections__intro">
+                        Collections allow you and your team members, in house or across the globe, to collaborate for sourcing, evaluating, and tracking talent groups. Use Collections to hire one soloist or to keep track of your top candidates over time.
+                    </div>
+                    <a class="collections__add button button--accept" href="#">
+                        <svg class="button__icon button__icon--left" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-plus-frame"></use>
+                        </svg>
+                        Create New Collection
+                    </a>
+                </div>
+                <div class="collections__body scrollbar scrollbar-macosx">
+                    <div class="new new--category">
+                        <svg class="new__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1656992168#24-category"></use>
+                        </svg>
+                        <div class="new__prefix">
+                            Create a new collection
+                        </div>
+                        <h1 class="new__heading">
+                            What’s the name of your Collection?
+                        </h1>
+                        <div class="new__note">
+                            Once you’ve created your Collection, you can add talent and team members and start collaborating.
+                        </div>
+                        <div class="new__field">
+                            <div class="input input--large input--classic-font">
+                                <input class="input__widget" type="text" placeholder="Ex: Arizona Violinists or Utah Opera Barber of Seville">
                             </div>
                         </div>
-                        <form class="gate__form auth">
-                            <div class="auth__heading">
-                                Log in to your account
-                            </div>
-                            <div class="auth__fieldset">
-                                <div class="auth__field input input--auth">
-                                    <input class="input__widget" type="email" placeholder="Email">
-                                </div>
-                                <div class="auth__field input input--auth">
-                                    <input class="input__widget" type="password" placeholder="Password">
-                                </div>
-                            </div>
-                            <div class="auth__password">
-                                <a class="link link--text-alike" href="#">
-                                    Forgot password?
-                                </a>
-                            </div>
-                            <button class="auth__submit button button--auth-primary" type="submit">
-                                Log In
-                            </button>
-                            <div class="auth__separator bar">
-                                <div class="bar__label">or</div>
-                            </div>
-                            <div class="auth__social-networks">
-                                <a class="auth__net button button--auth-secondary" href="#">
-                                    <svg class="button__icon button__icon--left" width="20" height="20">
-                                        <use xlink:href="../symbols/symbols.svg?1656992168#24-google-color"></use>
-                                    </svg>
-                                    Sign in with Google
-                                </a>
-                                <a class="auth__net button button--auth-secondary" href="#">
-                                    <svg class="button__icon button__icon--left" width="20" height="20">
-                                        <use xlink:href="../symbols/symbols.svg?1656992168#24-apple-color"></use>
-                                    </svg>
-                                    Sign up with Apple
-                                </a>
-                            </div>
-                            <div class="auth__alternative">
-                                Don’t have an account? <a class="link link--text-alike" href="#">Sign up</a>.
-                            </div>
-                        </form>
+                        <button class="new__submit button button--submit-bar" type="submit">
+                            Create Collection
+                        </button>
                     </div>
                 </div>
             </div>
+
         </div>
 
 
         <!-- 3/3 Modals: -->
-        <!-- No modal windows on this page -->
+        <div class="modal fade" id="circles-settings" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <div class="modal-head__heading title title--small">
+                                Circle Settings
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <svg class="action__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1656992168#16-cross"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="circle-settings">
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-name">
+                                        Circle Name
+                                    </label>
+                                    <div class="input input--larger-font">
+                                        <input class="input__widget" type="text" id="#circle-name" placeholder="Add Name...">
+                                    </div>
+                                </div>
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-admin">
+                                        Circle Admins
+                                        <span class="label__note">You can only make current Circle members admins.</span>
+                                    </label>
+                                    <div class="input input--classic-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Search on Stagetime">
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-40x40@2x.jpg 2x"
+                                                             src="../temp/person-a-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
 
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
+
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="circles-results">
+                                        <div class="circles-results__item circles-suggest">
+                                            <a class="circles-suggest__preview avatar avatar--alt-hover">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                     src="../temp/person-a-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </a>
+                                            <div class="circles-suggest__name ellipsis">
+                                                <a class="link link--fading" href="#">Elena Villalón</a>
+                                            </div>
+                                            <button class="circles-suggest__cancel" type="button">
+                                                <svg class="circles-suggest__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1656992168#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                <p>or:</p>
+                                <!--/temp -->
+
+                                <div class="circle-settings__field">
+                                    <div class="label">
+                                        Circle Admins
+                                    </div>
+                                    <div class="circle-settings__hint">
+                                        Only Circle Admins can:<br>
+                                        &nbsp;&nbsp;•&nbsp; Rename the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Delete the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Information section<br>
+                                        &nbsp;&nbsp;•&nbsp; Invite/Approve Members to the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Resource section<br>
+                                        <br>
+                                        If you need to add another person as an Admin, send us a message here.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-secondary" type="button">
+                                    Delete
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
