@@ -669,32 +669,9 @@
                                     Back
                                 </span>
                             </a>
-                            <div class="collections__select operations operations--select">
-                                <button class="operations__handler" type="button">
-                                    Glimmerglass 2022
-                                    <img class="operations__icon" src="../symbols/16-arrow-drop-down.svg" width="16" height="16" alt="">
-                                </button>
-                                <div class="operations__dropdown">
-                                    <div class="menu">
-                                        <a class="menu__link menu__link--disabled" href="#">
-                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                            View
-                                        </a>
-                                        <a class="menu__link" href="#">
-                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                            Share
-                                        </a>
-                                        <a class="menu__link" href="#" data-toggle="modal" data-target="#edit-collection">
-                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                            Rename
-                                        </a>
-                                        <a class="menu__link" href="#" data-toggle="modal" data-target="#delete">
-                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                            Delete
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <h1 class="collection__heading">
+                                Glimmerglass 2022
+                            </h1>
                             <a class="collection__share sharing-crowd" data-toggle="modal" data-target="#share-collection">
                                 <div class="sharing-crowd__item avatar avatar--non-clickable">
                                     <img class="avatar__image"
@@ -729,30 +706,27 @@
                             </a>
                         </div>
                         <div class="collection__head-secondary">
-                            <div class="collection__sort operations operations--sort">
+                            <div class="collections__options operations operations--icon-button">
                                 <button class="operations__handler" type="button">
-                                    <img class="operations__icon" src="../symbols/16-sort-descending.svg" width="16" height="16" alt="">
-                                    Sort: Location
+                                    <img class="operations__icon" src="../symbols/24-cogwheel.svg" width="24" height="24" alt="">
                                 </button>
                                 <div class="operations__dropdown">
-                                    <div class="menu menu--checklist">
-                                        <a class="menu__link" href="#">
-                                            None
+                                    <div class="menu">
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                            View
                                         </a>
                                         <a class="menu__link" href="#">
-                                            Name
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
                                         </a>
-                                        <a class="menu__link" href="#">
-                                            Status/Position
+                                        <a class="menu__link" href="#" data-toggle="modal" data-target="#edit-collection">
+                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                            Rename
                                         </a>
-                                        <a class="menu__link" href="#">
-                                            Instrument/Position
-                                        </a>
-                                        <a class="menu__link menu__link--selected" href="#">
-                                            Location
-                                        </a>
-                                        <a class="menu__link" href="#">
-                                            Favorited
+                                        <a class="menu__link" href="#" data-toggle="modal" data-target="#delete">
+                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                            Delete
                                         </a>
                                     </div>
                                 </div>
@@ -769,9 +743,35 @@
                                 <div class="collection__people-heading thead">
                                     People in Collection
                                 </div>
-                                <a class="collection__status-heading thead thead--clickable" height="#">
-                                    Sort: Name
-                                </a>
+                                <div class="collection__status-heading">
+                                    <div class="collection__sort operations operations--sort">
+                                        <button class="operations__handler" type="button">
+                                            Sort: Name
+                                        </button>
+                                        <div class="operations__dropdown">
+                                            <div class="menu menu--checklist">
+                                                <a class="menu__link" href="#">
+                                                    None
+                                                </a>
+                                                <a class="menu__link" href="#">
+                                                    Name
+                                                </a>
+                                                <a class="menu__link" href="#">
+                                                    Status/Position
+                                                </a>
+                                                <a class="menu__link" href="#">
+                                                    Instrument/Position
+                                                </a>
+                                                <a class="menu__link menu__link--selected" href="#">
+                                                    Location
+                                                </a>
+                                                <a class="menu__link" href="#">
+                                                    Favorited
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="collection__sidebar-body">
                                 <div class="collection__sidebar-body-scroll scrollbar scrollbar-macosx">

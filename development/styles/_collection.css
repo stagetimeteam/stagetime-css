@@ -24,11 +24,17 @@
                 align-items: center;
             }
                 .collection__back {
-
+                    margin-left: -3px;
                 }
 
-                .collections__select {
+                .collection__heading {
                     margin-left: 15px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 30px;
+                    color: #23282C;
                 }
 
                 .collection__share {
@@ -40,11 +46,7 @@
                 align-items: center;
                 margin-left: auto;
             }
-                .collection__sort {
-
-                }
-
-                .collection__add {
+                .collection__options {
 
                 }
 
