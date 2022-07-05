@@ -26,5 +26,7 @@
 
     .simpler-null__action.button,
     .simpler-null__action > .button {
-        font-size: 11px;
+        border-radius: 2px;
+        font-size: 13px;
+        box-shadow: none;
     }

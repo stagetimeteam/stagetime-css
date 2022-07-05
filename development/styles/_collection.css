@@ -97,8 +97,10 @@
                             padding-right: 25px;
                         }
                             .collection__sidebar-body .simpler-null__action .button__icon {
-                                width: 16px;
-                                height: 16px;
+                                width: 24px;
+                                height: 24px;
+                                margin-left: -11px;
+                                margin-right: 5px;
                             }
 
             .collection__content {

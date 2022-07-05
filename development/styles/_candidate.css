@@ -77,7 +77,7 @@
                 }
 
     .candidate__navigation {
-        margin-top: 29px;
+        margin-top: 25px;
         overflow-x: auto;
     }
         .candidate__ribbon {
@@ -85,22 +85,28 @@
             align-items: flex-start;
         }
             .candidate__link {
-                padding: 7px 15px;
+                padding: 7px 20px;
                 min-width: 77px;
                 margin-left: 14px;
                 background-color: #E8E8E8;
                 border-radius: 17px;
-                font-weight: 600;
                 font-size: 11px;
                 line-height: 20px;
                 color: #545454;
                 text-align: center;
                 white-space: nowrap;
                 text-decoration: none;
+                transition: background-color var(--transition-hover),
+                            color var(--transition-hover);
             }
 
             .candidate__link:first-child {
                 margin-left: 0;
+            }
+
+            .candidate__link:hover {
+                background-color: #545454;
+                color: #FFFFFF;
             }
 
             .candidate__link--current {
