@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html class="has-sidebar has-player3" lang="en-US">
+<html class="has-sidebar sidebar-collapsed" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Dashboard</title>
+        <title>Collections</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1657134823">
         <link rel="stylesheet" href="../styles/style.css?1657134823">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1657134823" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -716,380 +715,476 @@
         </div>
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="dashboard">
-                <div class="dashboard__content">
-                    <form class="create-org container container--org-creating">
-                        <h1 class="create-org__heading">
-                            <svg class="create-org__icon" width="16" height="16">
-                                <use xlink:href="../symbols/symbols.svg?1657134823#16-city"></use>
-                            </svg>
-                            Create an Organization Page
-                        </h1>
-                        <div class="create-org__note">
-                            You can request administrator access for pre-existing entries, or create a new organization if yours is not yet on Stagetime.
-                        </div>
-                        <div class="create-org__form">
-                            <div class="create-org__field input input--bold">
-                                <input class="input__widget" type="text" placeholder="Organization Name">
-                            </div>
-                            <div class="create-org__field input input--bold">
-                                <input class="input__widget" type="text" placeholder="Secondary Name (Optional)">
-                            </div>
-                            <div class="create-org__field input input--bold input--select input--placeholder-is-chosen">
-                                <select class="input__widget">
-                                    <option value="placeholder">Organization Type</option>
-                                    <option>United States</option>
-                                    <option>Russia</option>
-                                    <option>Vietnam</option>
-                                    <option>Thailand</option>
-                                </select>
-                            </div>
-                            <div class="create-org__field create-org__field--images">
-                                <button class="create-org__logo cover cover--bold cover--input-alike cover--clickable" type="button">
-                                    Upload Logo
-                                </button>
-                                <button class="create-org__cover-photo cover cover--bold cover--input-alike cover--clickable" type="button">
-                                    Upload Cover Photo
-                                </button>
-                            </div>
-                            <div class="create-org__field create-org__field--images">
-                                <div class="create-org__logo selected">
-                                    <button class="selected__handler" type="button">
-                                        <img class="selected__file"
-                                             srcset="../temp/org-logo-96x96@2x.jpg 2x"
-                                             src="../temp/org-logo-96x96.jpg"
-                                             width="96"
-                                             height="96"
-                                             alt=""
-                                        >
-                                    </button>
-                                    <button class="selected__delete">
-                                        <svg class="selected__cross" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-cross"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                                <div class="create-org__cover-photo selected">
-                                    <button class="selected__handler" type="button">
-                                        <img class="selected__file"
-                                             srcset="../temp/selected-preview@2x.jpg 2x"
-                                             src="../temp/selected-preview.jpg"
-                                             width="310"
-                                             height="177"
-                                             alt=""
-                                        >
-                                        <span class="selected__overlay">
-
-                                        </span>
-                                        <span class="selected__label">
-                                            Click to change image
-                                        </span>
-                                    </button>
-                                    <button class="selected__delete">
-                                        <svg class="selected__cross" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-cross"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="create-org__field input input--bold">
-                                <input class="input__widget" type="url" placeholder="Website">
-                            </div>
-                            <div class="create-org__field input input--bold">
-                                <input class="input__widget" type="text" placeholder="Location (City, State, Country)">
-                            </div>
-                            <label class="create-org__agreement choice choice--checkbox choice--full-width">
-                                <input class="choice__widget" type="checkbox">
-                                <i class="choice__icon" role="presentation"></i>
-                                <span class="choice__label">I verify that I am currently employed by this organization and/or authorized to manage this page.</span>
-                            </label>
-                            <button class="create-org__submit button button--larger" type="submit">
-                                Create Organization
-                            </button>
-                        </div>
-                    </form>
-
-                    or:
-
-                    <div class="alert container container--org-creating">
-                        <svg class="alert__icon" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1657134823#16-success"></use>
-                        </svg>
-                        <h1 class="alert__message">Thank you!</h1>
-                        <div class="alert__description">Thanks for requesting to create an organization page. Our team has received your request and will get back to you within 1-2 business days. Once approved, you’ll gain access to continue editing the page. If you have any questions in the meantime, reach out to <a class="link link--faded" href="mailto:support@stagetimearts.com">support@stagetimearts.com</a>.</div>
-                        <a class="alert__action button button--larger" href="#">Home</a>
-                    </div>
-                </div>
-                <div class="dashboard__aside">
-                    <div class="scrollbar scrollbar-macosx">
-                        <div class="side">
-                            <div class="side__location currently-in">
-                                <div class="currently-in__list">
-                                    <div class="currently-in__item venue">
-                                        <img class="venue__background"
-                                             srcset="../temp/venue-background-a@2x.jpg 2x"
-                                             src="../temp/venue-background-a.jpg"
-                                             width="100"
-                                             height="100"
-                                             alt=""
-                                        >
-                                        <img class="venue__logo"
-                                             srcset="../temp/venue-logo-a@2x.jpg 2x"
-                                             src="../temp/venue-logo-a.jpg"
-                                             width="66"
-                                             height="66"
-                                             alt=""
-                                        >
-                                        <div class="venue__heading">
-                                            The Metropolitan Opera
-                                        </div>
-                                        <div class="venue__note ellipsis">
-                                            New York, NY
-                                        </div>
-                                        <a class="venue__follow button button--alt-darker" href="#">
-                                            <svg class="button__icon button__icon--follow" width="16" height="16">
-                                                <use xlink:href="../symbols/symbols.svg?1657134823#16-plus-micro"></use>
-                                            </svg>
-                                            Follow
-                                        </a>
-                                    </div>
-                                    <div class="currently-in__item venue">
-                                        <img class="venue__background"
-                                             srcset="../temp/venue-background-a@2x.jpg 2x"
-                                             src="../temp/venue-background-a.jpg"
-                                             width="100"
-                                             height="100"
-                                             alt=""
-                                        >
-                                        <img class="venue__logo"
-                                             srcset="../temp/venue-logo-a@2x.jpg 2x"
-                                             src="../temp/venue-logo-a.jpg"
-                                             width="66"
-                                             height="66"
-                                             alt=""
-                                        >
-                                        <div class="venue__heading">
-                                            The Metropolitan Opera
-                                        </div>
-                                        <div class="venue__note ellipsis">
-                                            New York, NY
-                                        </div>
-                                        <a class="venue__follow button button--alt-darker" href="#">
-                                            <svg class="button__icon button__icon--follow" width="16" height="16">
-                                                <use xlink:href="../symbols/symbols.svg?1657134823#16-plus-micro"></use>
-                                            </svg>
-                                            Follow
-                                        </a>
-                                    </div>
-                                    <div class="currently-in__item venue">
-                                        <img class="venue__background"
-                                             srcset="../temp/venue-background-a@2x.jpg 2x"
-                                             src="../temp/venue-background-a.jpg"
-                                             width="100"
-                                             height="100"
-                                             alt=""
-                                        >
-                                        <img class="venue__logo"
-                                             srcset="../temp/venue-logo-a@2x.jpg 2x"
-                                             src="../temp/venue-logo-a.jpg"
-                                             width="66"
-                                             height="66"
-                                             alt=""
-                                        >
-                                        <div class="venue__heading">
-                                            The Metropolitan Opera
-                                        </div>
-                                        <div class="venue__note ellipsis">
-                                            New York, NY
-                                        </div>
-                                        <a class="venue__follow button button--alt-darker" href="#">
-                                            <svg class="button__icon button__icon--follow" width="16" height="16">
-                                                <use xlink:href="../symbols/symbols.svg?1657134823#16-plus-micro"></use>
-                                            </svg>
-                                            Follow
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="currently-in__more action action--simplified action--grey">
+            <div class="collection">
+                <div class="collection__wrapper">
+                    <div class="collection__head">
+                        <div class="collection__summary">
+                            <div class="collection__head-primary">
+                                <a class="collection__back action action--darkest-grey" href="#">
                                     <span class="action__image">
                                         <svg class="action__icon" width="16" height="16">
-                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-down"></use>
+                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-left"></use>
                                         </svg>
                                     </span>
                                     <span class="action__label">
-                                        See more
+                                        Back
                                     </span>
-                                </div>
+                                </a>
+                                <h1 class="collection__heading">
+                                    Glimmerglass 2022
+                                </h1>
                             </div>
-                            <div class="side__people side__people--with-separator">
-                                <section class="people-circles">
-                                    <h2 class="people-circles__heading">
-                                        People you may know
-                                    </h2>
-                                    <div class="people-circles__list hide-scrollbar">
-                                        <div class="people-circles__item user-card user-card--home">
-                                            <a class="user-card__preview avatar" href="#">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
-                                                     src="../temp/person-a-104x104.jpg"
-                                                     width="104"
-                                                     height="104"
-                                                     alt=""
-                                                >
-                                            </a>
-                                            <div class="user-card__data">
-                                                <h3 class="user-card__name">
-                                                    <a class="link link--fading" href="#">
-                                                        Zoey Preston
-                                                    </a>
-                                                </h3>
-                                                <div class="user-card__note">
-                                                    Soprano
-                                                </div>
-                                            </div>
-                                            <button class="user-card__add button button--purple button--add-people" type="button">
-                                                <svg class="button__icon" width="24" height="24">
-                                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-add-user"></use>
+                            <div class="collection__head-secondary">
+                                <div class="collections__options operations operations--icon-button">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1657134823#24-cogwheel"></use>
+                                        </svg>
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link menu__link--disabled" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1657134823#16-eye"></use>
                                                 </svg>
-                                            </button>
-                                        </div>
-                                        <div class="people-circles__item user-card user-card--home">
-                                            <a class="user-card__preview avatar" href="#">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-b-104x104@2x.jpg 2x"
-                                                     src="../temp/person-b-104x104.jpg"
-                                                     width="104"
-                                                     height="104"
-                                                     alt=""
-                                                >
+                                                View
                                             </a>
-                                            <div class="user-card__data">
-                                                <h3 class="user-card__name">
-                                                    <a class="link link--fading" href="#">
-                                                        Austin Lewellen Lipsum
-                                                    </a>
-                                                </h3>
-                                                <div class="user-card__note">
-                                                    Double Bassist
-                                                </div>
-                                            </div>
-                                            <button class="user-card__add button button--purple button--add-people" type="button">
-                                                <svg class="button__icon" width="24" height="24">
-                                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-add-user"></use>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-share"></use>
                                                 </svg>
-                                            </button>
-                                        </div>
-                                        <div class="people-circles__item user-card user-card--home">
-                                            <a class="user-card__preview avatar" href="#">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-c-104x104@2x.jpg 2x"
-                                                     src="../temp/person-c-104x104.jpg"
-                                                     width="104"
-                                                     height="104"
-                                                     alt=""
-                                                >
+                                                Share
                                             </a>
-                                            <div class="user-card__data">
-                                                <h3 class="user-card__name">
-                                                    <a class="link link--fading" href="#">
-                                                        Leah Hawkins
-                                                    </a>
-                                                </h3>
-                                                <div class="user-card__note">
-                                                    Soprano
-                                                </div>
-                                            </div>
-                                            <button class="user-card__add button button--purple button--add-people" type="button">
-                                                <svg class="button__icon" width="24" height="24">
-                                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-add-user"></use>
+                                            <a class="menu__link" href="#" data-toggle="modal" data-target="#edit-collection">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1657134823#16-pencil-tiny"></use>
                                                 </svg>
-                                            </button>
-                                        </div>
-                                        <div class="people-circles__item user-card user-card--home">
-                                            <a class="user-card__preview avatar" href="#">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-d-104x104@2x.jpg 2x"
-                                                     src="../temp/person-d-104x104.jpg"
-                                                     width="104"
-                                                     height="104"
-                                                     alt=""
-                                                >
+                                                Rename
                                             </a>
-                                            <div class="user-card__data">
-                                                <h3 class="user-card__name">
-                                                    <a class="link link--fading" href="#">
-                                                        Peter Volpe
-                                                    </a>
-                                                </h3>
-                                                <div class="user-card__note">
-                                                    Bass
-                                                </div>
-                                            </div>
-                                            <button class="user-card__add button button--purple button--add-people" type="button">
-                                                <svg class="button__icon" width="24" height="24">
-                                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-add-user"></use>
+                                            <a class="menu__link" href="#" data-toggle="modal" data-target="#delete">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1657134823#16-bin"></use>
                                                 </svg>
-                                            </button>
-                                        </div>
-                                        <div class="people-circles__item user-card user-card--home">
-                                            <a class="user-card__preview avatar" href="#">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-e-104x104@2x.jpg 2x"
-                                                     src="../temp/person-e-104x104.jpg"
-                                                     width="104"
-                                                     height="104"
-                                                     alt=""
-                                                >
+                                                Delete
                                             </a>
-                                            <div class="user-card__data">
-                                                <h3 class="user-card__name">
-                                                    <a class="link link--fading" href="#">
-                                                        Zoey Preston
-                                                    </a>
-                                                </h3>
-                                                <div class="user-card__note">
-                                                    Soprano
-                                                </div>
-                                            </div>
-                                            <button class="user-card__add button button--purple button--add-people" type="button">
-                                                <svg class="button__icon" width="24" height="24">
-                                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-add-user"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                        <div class="people-circles__item user-card user-card--home">
-                                            <a class="user-card__preview avatar" href="#">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-f-104x104@2x.jpg 2x"
-                                                     src="../temp/person-f-104x104.jpg"
-                                                     width="104"
-                                                     height="104"
-                                                     alt=""
-                                                >
-                                            </a>
-                                            <div class="user-card__data">
-                                                <h3 class="user-card__name">
-                                                    <a class="link link--fading" href="#">
-                                                        Zoey Preston
-                                                    </a>
-                                                </h3>
-                                                <div class="user-card__note">
-                                                    Soprano
-                                                </div>
-                                            </div>
-                                            <button class="user-card__add button button--purple button--add-people" type="button">
-                                                <svg class="button__icon" width="24" height="24">
-                                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-add-user"></use>
-                                                </svg>
-                                            </button>
                                         </div>
                                     </div>
-                                    <a class="people-circles__details button button--purple button--notification" href="#">
-                                        See More
-                                    </a>
-                                </section>
+                                </div>
+                                <a class="collection__share button button--darkest-gray" data-toggle="modal" data-target="#add-people">
+                                    <svg class="button__icon button__icon--left" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1657134823#16-share-wide"></use>
+                                    </svg>
+                                    Share Collection
+                                </a>
                             </div>
                         </div>
+                        <div class="collection__nav icon-nav">
+                            <a class="icon-nav__link" href="#">
+                                <svg class="icon-nav__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-category"></use>
+                                </svg>
+                                Overview
+                            </a>
+                            <a class="icon-nav__link" href="#">
+                                <svg class="icon-nav__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-magnifier-wider"></use>
+                                </svg>
+                                Search/Add
+                            </a>
+                            <a class="icon-nav__link icon-nav__link--current" href="#">
+                                <svg class="icon-nav__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1657134823#24-3-user-2-wide"></use>
+                                </svg>
+                                Team
+                            </a>
+                        </div>
+                    </div>
+                    <div class="collection__body">
+                        <div class="collections__team">
+                            <div class="team">
+                                <h2 class="team__heading">
+                                    Team
+                                </h2>
+                                <div class="team__row team__row--heading">
+                                    <div class="team__cell team__cell--person">Person / Instrument or Title</div>
+                                    <div class="team__cell team__cell--location">Location</div>
+                                    <div class="team__cell team__cell--mutual">Mutual</div>
+                                    <div class="team__cell team__cell--actions"></div>
+                                </div>
+                                <a class="team__row" href="#">
+                                    <div class="team__cell team__cell--person">
+                                        <div class="team__card">
+                                            <div class="team__photo avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                     src="../temp/person-a-44x44.jpg"
+                                                     width="44"
+                                                     height="44"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="team__name">
+                                                Elena Villalón
+                                            </div>
+                                            <div class="team__instrument">
+                                                Soprano
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__cell team__cell--location">
+                                        Houston, TX
+                                    </div>
+                                    <div class="team__cell team__cell--mutual">
+                                        <div class="snake">
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                                     src="../temp/person-a-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                                     src="../temp/person-b-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                                     src="../temp/person-c-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__counter" tabindex="0">
+                                                +99
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__cell team__cell--actions">
+                                        <div class="button button--border" tabindex="0">Remove</div>
+                                    </div>
+                                </a>
+                                <a class="team__row" href="#">
+                                    <div class="team__cell team__cell--person">
+                                        <div class="team__card">
+                                            <div class="team__photo avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-b-44x44@2x.jpg 2x"
+                                                     src="../temp/person-b-44x44.jpg"
+                                                     width="44"
+                                                     height="44"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="team__name">
+                                                Sergey Tkachenko
+                                            </div>
+                                            <div class="team__instrument">
+                                                Piano
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__cell team__cell--location">
+                                        Bloomington, IN
+                                    </div>
+                                    <div class="team__cell team__cell--mutual">
+                                        <div class="snake">
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                                     src="../temp/person-a-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                                     src="../temp/person-b-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                                     src="../temp/person-c-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__counter" tabindex="0">
+                                                +99
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__cell team__cell--actions">
+                                        <div class="button button--border" tabindex="0">Remove</div>
+                                    </div>
+                                </a>
+                                <a class="team__row" href="#">
+                                    <div class="team__cell team__cell--person">
+                                        <div class="team__card">
+                                            <div class="team__photo avatar">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-c-44x44@2x.jpg 2x"
+                                                     src="../temp/person-c-44x44.jpg"
+                                                     width="44"
+                                                     height="44"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="team__name">
+                                                Jennie Moser
+                                            </div>
+                                            <div class="team__instrument">
+                                                Soprano
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__cell team__cell--location">
+                                        Salt Lake City, UT
+                                    </div>
+                                    <div class="team__cell team__cell--mutual">
+                                        <div class="snake">
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-28x28@2x.jpg 2x"
+                                                     src="../temp/person-a-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-b-28x28@2x.jpg 2x"
+                                                     src="../temp/person-b-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-c-28x28@2x.jpg 2x"
+                                                     src="../temp/person-c-28x28.jpg"
+                                                     width="28"
+                                                     height="28"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="snake__counter" tabindex="0">
+                                                +99
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="team__cell team__cell--actions">
+                                        <div class="button button--border" tabindex="0">Remove</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection__aside">
+                    <div class="collection__sub-nav">
+                        <button class="collection__sub-link collection__sub-link--current" type="button">
+                            Collection Activity
+                        </button>
+                        <button class="collection__sub-link" type="button">
+                            Candidate Activity
+                        </button>
+                    </div>
+                    <div class="collection__chat side-chat">
+                        <div class="side-chat__body scrollbar scrollbar-macosx">
+                            <div class="side-chat__ribbon">
+                                <div class="side-collection-name">
+                                    Glimmerglass 2021
+                                </div>
+                                <div class="beginning beginning--side">
+                                    This is the beginning of all activity.
+                                    <br>Allen Perriello created this collection on
+                                    <br>July 13, 2021.
+                                </div>
+                                <div class="activity activity--dummy">
+                                    Start the conversation about Glimmerglass 2021 by adding comments. Others who are added to this collection as team members will be able to view your collections activity.
+                                </div>
+                                <!-- temp -->
+                                <br>or:
+                                <!-- temp -->
+                                <div class="activity">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                    <div class="activity__note">
+                                        I’m liking this group a lot. How many mezzos are there so far?
+                                    </div>
+                                </div>
+                                <div class="line">
+                                    <div class="line__heading">Today</div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                    <div class="activity__note">
+                                        I’m liking this group a lot. How many mezzos are there so far?
+                                    </div>
+                                </div>
+                                <div class="activity activity--alternate">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        added Brandon Bell to this collection
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                </div>
+                                <a class="activity activity--alternate activity--clickable" href="#">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        added Brandon Bell to this collection
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                </a>
+                                <div class="activity">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                    <div class="activity__note">
+                                        I’m liking this group a lot. How many mezzos are there so far?
+                                    </div>
+                                </div>
+                                <div class="activity">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                    <div class="activity__note">
+                                        I’m liking this group a lot. How many mezzos are there so far?
+                                    </div>
+                                </div>
+                                <div class="activity activity--alternate">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        added Brandon Bell to this collection
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                </div>
+                                <a class="activity activity--alternate activity--clickable" href="#">
+                                    <div class="activity__preview avatar avatar--alt-hover">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                             src="../temp/person-a-32x32.jpg"
+                                             width="32"
+                                             height="32"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="activity__head">
+                                        <span class="link link--text-alike">Allen Perriello</span>
+                                        added Brandon Bell to this collection
+                                        <span class="activity__time">10:12 AM</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="side-chat__foot">
+                            <div class="enter enter--side">
+                                <textarea class="enter__message" rows="1" placeholder="Add comment"></textarea>
+                                <button class="enter__send enter__send--disabled" type="button" disabled>
+                                    <svg class="enter__plane" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1657134823#20-paper-plane-simple"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection__player">
+                        <button class="player-placeholder" type="button">
+                            <span class="player-placeholder__play">
+                                <svg class="player-placeholder__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1657134823#16-play"></use>
+                                </svg>
+                            </span>
+                            Select media to begin listening or press play for a recommendation.
+                        </button>
                     </div>
                 </div>
             </div>
@@ -1243,6 +1338,293 @@
         </div>
 
         <!-- 3/3 Modals: -->
+        <div class="modal modal--skeleton modal--500px fade" id="add-people" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="add-people">
+                        <div class="add-people__head">
+                            <svg class="add-people__icon" width="32" height="32">
+                                <use xlink:href="../symbols/symbols.svg?1657134823#32-add-rounded"></use>
+                            </svg>
+                            <div class="add-people__heading">
+                                <span class="add-people__highlight">Adding</span> people
+                            </div>
+                        </div>
+                        <div class="add-people__body">
+                            <div class="add-people__search input input--bold input--content-width-dropdown input--larger input--scanner">
+                                <input class="input__widget" type="text" placeholder="Add team members by name or location...">
+                                <div class="input__dropdown">
+                                    <div class="input__options">
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                     src="../temp/person-a-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Elena Villalón
+                                            </div>
+                                        </a>
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-b-24x24@2x.jpg 2x"
+                                                     src="../temp/person-b-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Alexandra Urquiola
+                                            </div>
+                                        </a>
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-c-24x24@2x.jpg 2x"
+                                                     src="../temp/person-c-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Konstantin Konstantinopolsky
+                                            </div>
+                                        </a>
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-d-24x24@2x.jpg 2x"
+                                                     src="../temp/person-d-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Kunal Lahiry
+                                            </div>
+                                        </a>
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                     src="../temp/person-a-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Elena Villalón
+                                            </div>
+                                        </a>
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-b-24x24@2x.jpg 2x"
+                                                     src="../temp/person-b-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Alexandra Urquiola
+                                            </div>
+                                        </a>
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-c-24x24@2x.jpg 2x"
+                                                     src="../temp/person-c-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Konstantin Konstantinopolsky
+                                            </div>
+                                        </a>
+                                        <a class="user-suggest" href="#">
+                                            <div class="user-suggest__preview avatar avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-d-24x24@2x.jpg 2x"
+                                                     src="../temp/person-d-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </div>
+                                            <div class="user-suggest__name">
+                                                Kunal Lahiry
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <!-- temp -->
+                                    <br>
+                                    or:
+                                    <br>
+                                    <!--/temp -->
+
+                                    <div class="input__no-matches even-simpler-null">
+                                        Nothing is found
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add-people__output">
+                                <div class="add-people__item added-person">
+                                    <div class="added-person__preview avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                             src="../temp/person-a-24x24.jpg"
+                                             width="24"
+                                             height="24"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="added-person__name">
+                                        Mark Zuckerberg
+                                    </div>
+                                    <button class="added-person__delete" type="button">
+                                        <svg class="added-person__cross" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-cross-airy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="add-people__item added-person">
+                                    <div class="added-person__preview avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-24x24@2x.jpg 2x"
+                                             src="../temp/person-b-24x24.jpg"
+                                             width="24"
+                                             height="24"
+                                             alt="Joe Biden"
+                                        >
+                                    </div>
+                                    <div class="added-person__name">
+                                        Joe Biden
+                                    </div>
+                                    <button class="added-person__delete" type="button">
+                                        <svg class="added-person__cross" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-cross-airy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="add-people__item added-person">
+                                    <div class="added-person__preview avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-c-24x24@2x.jpg 2x"
+                                             src="../temp/person-c-24x24.jpg"
+                                             width="24"
+                                             height="24"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="added-person__name">
+                                        Elon Musk
+                                    </div>
+                                    <button class="added-person__delete" type="button">
+                                        <svg class="added-person__cross" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-cross-airy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="add-people__item added-person">
+                                    <div class="added-person__preview avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-24x24@2x.jpg 2x"
+                                             src="../temp/person-d-24x24.jpg"
+                                             width="24"
+                                             height="24"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="added-person__name">
+                                        Tim Cook
+                                    </div>
+                                    <button class="added-person__delete" type="button">
+                                        <svg class="added-person__cross" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-cross-airy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="add-people__item added-person">
+                                    <div class="added-person__preview avatar">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-24x24@2x.jpg 2x"
+                                             src="../temp/person-e-24x24.jpg"
+                                             width="24"
+                                             height="24"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </div>
+                                    <div class="added-person__name">
+                                        Angela Merkel
+                                    </div>
+                                    <button class="added-person__delete" type="button">
+                                        <svg class="added-person__cross" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1657134823#16-cross-airy"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="add-people__foot">
+                            <div class="add-people__note">People added to the collection will not be notified. </div>
+                            <button class="add-people__submit button button--larger button--disabled" type="button" disabled>Add People</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--skeleton modal--500px fade" id="edit-collection" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="edit-collection">
+                        <div class="edit-collection__head">
+                            <svg class="edit-collection__icon" width="32" height="32">
+                                <use xlink:href="../symbols/symbols.svg?1657134823#32-folder-person"></use>
+                            </svg>
+                            <div class="edit-collection__heading">
+                                <span class="edit-collection__highlight">Creating/Renaming a</span> collection
+                            </div>
+                        </div>
+                        <div class="edit-collection__body">
+                            <div class="input input--bold">
+                                <input class="input__widget" type="text" placeholder="Collection Title">
+                            </div>
+                        </div>
+                        <div class="edit-collection__foot">
+                            <button class="edit-collection__submit button button--larger button--disabled" type="button" disabled>
+                                Create/Save Collection
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal modal--skeleton modal--380px fade" id="delete" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="delete">
+                        <svg class="delete__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1657134823#16-danger"></use>
+                        </svg>
+                        <div class="delete__message">Are you sure you want to delete this collection / remove this artist from your collection? This step cannot be undone.</div>
+                        <button class="delete__submit button button--larger" type="button">Delete / Remove</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
