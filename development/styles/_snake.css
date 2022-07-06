@@ -31,6 +31,23 @@
     /* stylelint-enable */
 
 
+    .snake__counter {
+        margin-left: 5px;
+        min-width: 30px;
+        padding: 5px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 20px;
+        color: #8B8B8B;
+        text-decoration: none;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .snake__counter:hover {
+        background-color: var(--panel-hover);
+    }
+
 .snake--larger-border {
 
 }
@@ -44,4 +61,8 @@
 
     .snake--larger-border .snake__item:last-child {
         margin-right: -2px;
+    }
+
+    .snake--larger-border .snake__counter {
+        margin-top: 1px;
     }

@@ -1,0 +1,97 @@
+.team {
+    padding: 28px 40px 60px;
+}
+    .team__heading {
+        margin-top: 0;
+        margin-bottom: 5px;
+        margin-left: 16px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #44474A;
+    }
+
+    .team__row {
+        padding: 13px 15px;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: inherit;
+    }
+        .team__cell {
+            font-size: 12px;
+            line-height: 20px;
+            color: #545454;
+        }
+
+        .team__cell--person {
+            flex-basis: 0;
+            flex-grow: 350;
+        }
+            .team__card {
+                position: relative;
+                padding-left: 80px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+            }
+                .team__photo {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+
+                .team__name {
+                    font-weight: 600;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #333333;
+                }
+
+                .team__instrument {
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #545454;
+                }
+
+            .team__cell--location {
+                flex-basis: 0;
+                flex-grow: 230;
+            }
+
+            .team__cell--mutual {
+                flex-basis: 0;
+                flex-grow: 190;
+            }
+
+            .team__cell--actions {
+                flex-basis: 128px;
+            }
+                .team__cell--actions .button {
+                    width: 100%;
+                }
+                .team__cell--actions .button:not(:hover):not(:active) {
+                    background-color: #FFFFFF;
+                }
+
+
+    .team__row:hover {
+        background-color: rgba(243, 244, 247, 0.4);
+    }
+
+    .team__row:nth-child(even) {
+        background-color: #F3F4F7;
+    }
+
+    .team__row:nth-child(even):hover {
+        background-color: #F0F1F4;
+    }
+
+    .team__row--heading {
+        background-color: transparent !important;
+    }
+        .team__row--heading .team__cell {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 20px;
+            color: #8B8B8B;
+        }

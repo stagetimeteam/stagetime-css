@@ -146,6 +146,11 @@
                             margin-right: auto;
                         }
 
+
+            .collections__team {
+                width: 100%;
+            }
+
     .collection__aside {
         flex-shrink: 0;
         width: 343px;
