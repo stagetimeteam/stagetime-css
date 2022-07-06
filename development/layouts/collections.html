@@ -660,81 +660,65 @@
             <div class="collection">
                 <div class="collection__wrapper">
                     <div class="collection__head">
-                        <div class="collection__head-primary">
-                            <a class="collection__back action action--darkest-grey" href="#">
-                                <span class="action__image">
-                                    <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
-                                </span>
-                                <span class="action__label">
-                                    Back
-                                </span>
-                            </a>
-                            <h1 class="collection__heading">
-                                Glimmerglass 2022
-                            </h1>
-                            <a class="collection__share sharing-crowd" data-toggle="modal" data-target="#share-collection">
-                                <div class="sharing-crowd__item avatar avatar--non-clickable">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-20x20@2x.jpg 2x"
-                                         src="../temp/person-a-20x20.jpg"
-                                         width="20"
-                                         height="20"
-                                         alt="Mark Zuckerberg"
-                                    >
-                                </div>
-                                <div class="sharing-crowd__item avatar avatar--non-clickable">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-20x20@2x.jpg 2x"
-                                         src="../temp/person-a-20x20.jpg"
-                                         width="20"
-                                         height="20"
-                                         alt="Mark Zuckerberg"
-                                    >
-                                </div>
-                                <div class="sharing-crowd__item avatar avatar--non-clickable">
-                                    <img class="avatar__image"
-                                         srcset="../temp/person-a-20x20@2x.jpg 2x"
-                                         src="../temp/person-a-20x20.jpg"
-                                         width="20"
-                                         height="20"
-                                         alt="Mark Zuckerberg"
-                                    >
-                                </div>
-                                <div class="sharing-crowd__label">
-                                    Share
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection__head-secondary">
-                            <div class="collections__options operations operations--icon-button">
-                                <button class="operations__handler" type="button">
-                                    <img class="operations__icon" src="../symbols/24-cogwheel.svg" width="24" height="24" alt="">
-                                </button>
-                                <div class="operations__dropdown">
-                                    <div class="menu">
-                                        <a class="menu__link menu__link--disabled" href="#">
-                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                            View
-                                        </a>
-                                        <a class="menu__link" href="#">
-                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                            Share
-                                        </a>
-                                        <a class="menu__link" href="#" data-toggle="modal" data-target="#edit-collection">
-                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                            Rename
-                                        </a>
-                                        <a class="menu__link" href="#" data-toggle="modal" data-target="#delete">
-                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                            Delete
-                                        </a>
+                        <div class="collection__summary">
+                            <div class="collection__head-primary">
+                                <a class="collection__back action action--darkest-grey" href="#">
+                                    <span class="action__image">
+                                        <img class="action__icon" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                                    </span>
+                                    <span class="action__label">
+                                        Back
+                                    </span>
+                                </a>
+                                <h1 class="collection__heading">
+                                    Glimmerglass 2022
+                                </h1>
+                            </div>
+                            <div class="collection__head-secondary">
+                                <div class="collections__options operations operations--icon-button">
+                                    <button class="operations__handler" type="button">
+                                        <img class="operations__icon" src="../symbols/24-cogwheel.svg" width="24" height="24" alt="">
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link menu__link--disabled" href="#">
+                                                <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                                View
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#" data-toggle="modal" data-target="#edit-collection">
+                                                <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                                Rename
+                                            </a>
+                                            <a class="menu__link" href="#" data-toggle="modal" data-target="#delete">
+                                                <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                                Delete
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
+                                <a class="collection__share button button--darkest-gray" data-toggle="modal" data-target="#add-people">
+                                    <img class="button__icon button__icon--left" src="../symbols/16-share-wide.svg" width="20" height="20" alt="">
+                                    Share Collection
+                                </a>
                             </div>
-                            <button class="collection__add dash" type="button" data-toggle="modal" data-target="#add-people">
-                                <img class="dash__icon" src="../symbols/16-add-member-alternate.svg" width="16" height="16" alt="">
-                                <span class="dash__label">Add People</span>
-                            </button>
+                        </div>
+                        <div class="collection__nav icon-nav">
+                            <a class="icon-nav__link" href="#">
+                                <img class="icon-nav__icon" src="../symbols/24-category.svg" alt="">
+                                Overview
+                            </a>
+                            <a class="icon-nav__link" href="#">
+                                <img class="icon-nav__icon" src="../symbols/24-magnifier-wider.svg" alt="">
+                                Search/Add
+                            </a>
+                            <a class="icon-nav__link" href="#">
+                                <img class="icon-nav__icon" src="../symbols/24-3-user-2.svg" alt="">
+                                Team
+                            </a>
                         </div>
                     </div>
                     <div class="collection__body">
@@ -3291,327 +3275,6 @@
                             <div class="add-people__note">People added to the collection will not be notified. </div>
                             <button class="add-people__submit button button--larger button--disabled" type="button" disabled>Add People</button>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal modal--skeleton modal--500px fade" id="share-collection" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="add-people">
-                        <div class="add-people__head">
-                            <img class="add-people__icon" src="../symbols/32-folder-person.svg" width="32" height="32" alt="">
-                            <div class="add-people__heading">
-                                Share collection
-                            </div>
-                        </div>
-                        <div class="add-people__body">
-                            <div class="add-people__search input input--bold input--content-width-dropdown input--larger input--scanner">
-                                <input class="input__widget" type="text" placeholder="Add team members by name or location...">
-                                <div class="input__dropdown">
-                                    <div class="input__options">
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
-                                                     src="../temp/person-a-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Elena Villalón
-                                            </div>
-                                        </a>
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-b-24x24@2x.jpg 2x"
-                                                     src="../temp/person-b-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Alexandra Urquiola
-                                            </div>
-                                        </a>
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-c-24x24@2x.jpg 2x"
-                                                     src="../temp/person-c-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Konstantin Konstantinopolsky
-                                            </div>
-                                        </a>
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-d-24x24@2x.jpg 2x"
-                                                     src="../temp/person-d-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Kunal Lahiry
-                                            </div>
-                                        </a>
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
-                                                     src="../temp/person-a-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Elena Villalón
-                                            </div>
-                                        </a>
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-b-24x24@2x.jpg 2x"
-                                                     src="../temp/person-b-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Alexandra Urquiola
-                                            </div>
-                                        </a>
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-c-24x24@2x.jpg 2x"
-                                                     src="../temp/person-c-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Konstantin Konstantinopolsky
-                                            </div>
-                                        </a>
-                                        <a class="user-suggest" href="#">
-                                            <div class="user-suggest__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-d-24x24@2x.jpg 2x"
-                                                     src="../temp/person-d-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <div class="user-suggest__name">
-                                                Kunal Lahiry
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <!-- temp -->
-                                    <br>
-                                    or:
-                                    <br>
-                                    <!--/temp -->
-
-                                    <div class="input__no-matches even-simpler-null">
-                                        Nothing is found
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="add-people__output">
-                                <div class="add-people__item added-person">
-                                    <div class="added-person__preview avatar">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-a-24x24@2x.jpg 2x"
-                                             src="../temp/person-a-24x24.jpg"
-                                             width="24"
-                                             height="24"
-                                             alt="Mark Zuckerberg"
-                                        >
-                                    </div>
-                                    <div class="added-person__name">
-                                        Mark Zuckerberg
-                                    </div>
-                                    <button class="added-person__delete" type="button">
-                                        <img class="added-person__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                                    </button>
-                                </div>
-                                <div class="add-people__item added-person">
-                                    <div class="added-person__preview avatar">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-b-24x24@2x.jpg 2x"
-                                             src="../temp/person-b-24x24.jpg"
-                                             width="24"
-                                             height="24"
-                                             alt="Joe Biden"
-                                        >
-                                    </div>
-                                    <div class="added-person__name">
-                                        Joe Biden
-                                    </div>
-                                    <button class="added-person__delete" type="button">
-                                        <img class="added-person__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                                    </button>
-                                </div>
-                                <div class="add-people__item added-person">
-                                    <div class="added-person__preview avatar">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-c-24x24@2x.jpg 2x"
-                                             src="../temp/person-c-24x24.jpg"
-                                             width="24"
-                                             height="24"
-                                             alt="Mark Zuckerberg"
-                                        >
-                                    </div>
-                                    <div class="added-person__name">
-                                        Elon Musk
-                                    </div>
-                                    <button class="added-person__delete" type="button">
-                                        <img class="added-person__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                                    </button>
-                                </div>
-                                <div class="add-people__item added-person">
-                                    <div class="added-person__preview avatar">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-d-24x24@2x.jpg 2x"
-                                             src="../temp/person-d-24x24.jpg"
-                                             width="24"
-                                             height="24"
-                                             alt="Mark Zuckerberg"
-                                        >
-                                    </div>
-                                    <div class="added-person__name">
-                                        Tim Cook
-                                    </div>
-                                    <button class="added-person__delete" type="button">
-                                        <img class="added-person__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                                    </button>
-                                </div>
-                                <div class="add-people__item added-person">
-                                    <div class="added-person__preview avatar">
-                                        <img class="avatar__image"
-                                             srcset="../temp/person-e-24x24@2x.jpg 2x"
-                                             src="../temp/person-e-24x24.jpg"
-                                             width="24"
-                                             height="24"
-                                             alt="Mark Zuckerberg"
-                                        >
-                                    </div>
-                                    <div class="added-person__name">
-                                        Angela Merkel
-                                    </div>
-                                    <button class="added-person__delete" type="button">
-                                        <img class="added-person__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="add-people__foot">
-                            <div class="add-people__note">People you share your collection with will be able to add, edit, comment, and delete anything in the collection.</div>
-                            <button class="add-people__submit button button--larger button--disabled" type="button" disabled>Share Collection</button>
-                        </div>
-                        <div class="add-people__foot">
-                            <div class="add-people__team team-members">
-                                <b class="team-members__heading">
-                                    Team members
-                                </b>
-                                <div class="team-members__list">
-                                    <div class="team-members__item">
-                                        <div class="team-members__person">
-                                            <div class="team-members__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-a-40x40@2x.jpg 2x"
-                                                     src="../temp/person-a-40x40.jpg"
-                                                     width="40"
-                                                     height="40"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <button class="team-members__delete" type="button">
-                                                <img class="team-members__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
-                                            </button>
-                                        </div>
-                                        <div class="team-members__body">
-                                            <div class="team-members__name">
-                                                Jennie Moser
-                                            </div>
-                                            <div class="team-members__note">
-                                                Soprano, Bloomington, IN
-                                            </div>
-                                        </div>
-                                        <div class="team-members__status">
-                                            Owner
-                                        </div>
-                                    </div>
-                                    <div class="team-members__item">
-                                        <div class="team-members__person">
-                                            <div class="team-members__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-b-40x40@2x.jpg 2x"
-                                                     src="../temp/person-b-40x40.jpg"
-                                                     width="40"
-                                                     height="40"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <button class="team-members__delete" type="button">
-                                                <img class="team-members__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
-                                            </button>
-                                        </div>
-                                        <div class="team-members__body">
-                                            <div class="team-members__name">
-                                                Jennie Moser
-                                            </div>
-                                            <div class="team-members__note">
-                                                Soprano, Bloomington, IN
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="team-members__item">
-                                        <div class="team-members__person">
-                                            <div class="team-members__preview avatar avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-c-40x40@2x.jpg 2x"
-                                                     src="../temp/person-c-40x40.jpg"
-                                                     width="40"
-                                                     height="40"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </div>
-                                            <button class="team-members__delete" type="button">
-                                                <img class="team-members__bin" src="../symbols/16-bin.svg" width="16" height="16" alt="">
-                                            </button>
-                                        </div>
-                                        <div class="team-members__body">
-                                            <div class="team-members__name">
-                                                Jennie Moser
-                                            </div>
-                                            <div class="team-members__note">
-                                                Soprano, Bloomington, IN
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>

@@ -153,7 +153,6 @@
 @import url("_even-simpler-null.css");
 @import url("_upcoming.css");
 @import url("_collection-crowd.css");
-@import url("_sharing-crowd.css");
 @import url("_dash.css");
 @import url("_buttons-alike-nav.css");
 @import url("_batch.css");
@@ -162,7 +161,6 @@
 @import url("_modal.css");
 @import url("_add-people.css");
 @import url("_added-person.css");
-@import url("_team-members.css");
 @import url("_edit-collection.css");
 @import url("_delete.css");
 @import url("_toast.css");
@@ -368,3 +366,4 @@
 @import url("_playlist.css");
 @import url("_preview.css");
 @import url("_collections.css");
+@import url("_icon-nav.css");

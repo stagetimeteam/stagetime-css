@@ -13,46 +13,58 @@
             position: relative;
             z-index: 100; /* dropdowns inside of header should fly higher than page */
             flex-shrink: 0;
-            height: 94px;
-            border-bottom: 1px solid #E8E8E8;
+            height: 146px;
             padding: 0 28px 0 16px;
-            display: flex;
-            align-items: center;
+            border-bottom: 1px solid #E8E8E8;
         }
-            .collection__head-primary {
+            .collection__summary {
                 display: flex;
                 align-items: center;
             }
-                .collection__back {
-                    margin-left: -3px;
+                .collection__head-primary {
+                    display: flex;
+                    align-items: center;
                 }
+                    .collection__back {
+                        margin-left: -3px;
+                    }
 
-                .collection__heading {
-                    margin-left: 15px;
-                    margin-top: 0;
-                    margin-bottom: 0;
-                    font-weight: 600;
-                    font-size: 22px;
-                    line-height: 30px;
-                    color: #23282C;
+                    .collection__heading {
+                        margin-left: 15px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 30px;
+                        color: #23282C;
+                    }
+
+
+                .collection__head-secondary {
+                    display: flex;
+                    align-items: center;
+                    margin-left: auto;
                 }
+                    .collection__options {
 
-                .collection__share {
-                    margin-left: 21px;
-                }
+                    }
 
-            .collection__head-secondary {
-                display: flex;
-                align-items: center;
-                margin-left: auto;
+                    .collection__share {
+                        margin-left: 10px;
+                    }
+                        .collection__share.button,
+                        .collection__share .button {
+                            width: 196px;
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+
+            .collection__nav {
+
             }
-                .collection__options {
-
-                }
-
 
         .collection__body {
-            height: calc(100% - 94px);
+            height: calc(100% - 146px);
             display: flex;
             align-items: stretch;
         }
@@ -99,8 +111,8 @@
                             padding-right: 25px;
                         }
                             .collection__sidebar-body .simpler-null__action .button__icon {
-                                width: 24px;
-                                height: 24px;
+                                width: 20px !important;
+                                height: 20px !important;
                                 margin-left: -11px;
                                 margin-right: 5px;
                             }

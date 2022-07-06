@@ -396,7 +396,9 @@
         font-size: 12px;
         line-height: 20px;
         color: #757575;
+        text-align: left;
         white-space: nowrap;
+        text-transform: none;
         /*transition: background-color var(--transition-hover),*/
         /*            color var(--transition-hover);*/
     }

@@ -201,6 +201,25 @@
 }
 
 
+.button--darkest-gray {
+    padding: 12px 20px;
+    background-color: #44474A;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #FFFFFF;
+    box-shadow: none;
+    letter-spacing: -0.1px;
+}
+
+.button--darkest-gray:hover {
+
+}
+
+.button--darkest-gray:active {
+
+}
+
+
 
 
 .button--lighter {
