@@ -23,7 +23,6 @@
             padding: 10px 18px;
             font-size: 13px;
             line-height: 20px;
-
             margin-left: auto;
             margin-top: 7px;
             flex-shrink: 0;
@@ -70,7 +69,6 @@
         margin-left: -4px;
         margin-right: -4px;
     }
-
         .collections__list .simpler-null {
             width: 100%;
         }
