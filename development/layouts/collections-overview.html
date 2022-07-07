@@ -675,31 +675,9 @@
                                 </h1>
                             </div>
                             <div class="collection__head-secondary">
-                                <div class="collections__options operations operations--icon-button">
-                                    <button class="operations__handler" type="button">
-                                        <img class="operations__icon" src="../symbols/24-cogwheel.svg" width="24" height="24" alt="">
-                                    </button>
-                                    <div class="operations__dropdown">
-                                        <div class="menu">
-                                            <a class="menu__link menu__link--disabled" href="#">
-                                                <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                                View
-                                            </a>
-                                            <a class="menu__link" href="#">
-                                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                                Share
-                                            </a>
-                                            <a class="menu__link" href="#" data-toggle="modal" data-target="#edit-collection">
-                                                <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                                Rename
-                                            </a>
-                                            <a class="menu__link" href="#" data-toggle="modal" data-target="#delete">
-                                                <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                                Delete
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="collection__settings button button--darkest-gray" data-toggle="modal" data-target="#collection-settings">
+                                    <img class="button__icon" src="../symbols/24-cogwheel.svg" width="24" height="24" alt="">
+                                </a>
                                 <a class="collection__share button button--darkest-gray" data-toggle="modal" data-target="#share-collection">
                                     <img class="button__icon button__icon--left" src="../symbols/16-share-wide.svg" width="20" height="20" alt="">
                                     Share Collection
@@ -3042,6 +3020,44 @@
         </div>
 
         <!-- 3/3 Modals: -->
+        <div class="modal modal--skeleton modal--748px fade" id="collection-settings" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <div class="modal-head__heading title title--small">
+                                Collection Settings
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="collection-settings">
+                                <div class="input input--larger-font input--scanner">
+                                    <label class="label" for="collection-name">Collection Name</label>
+                                    <input class="input__widget" type="text" placeholder="Collection Name" id="collection-name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-secondary" type="button" data-toggle="modal" data-target="#delete-collection" data-dismiss="modal">
+                                    Delete Collection
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal modal--skeleton modal--500px fade" id="share-collection" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
