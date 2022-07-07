@@ -18,28 +18,42 @@
             font-size: 12px;
             line-height: 20px;
             color: #545454;
+            text-align: center;
         }
 
     .add-people__body {
-        padding: 18px 38px 30px;
+        padding: 18px 38px 33px;
     }
         .add-people__search {
 
         }
 
-        .add-people__output {
-            margin-left: -16px;
-            display: flex;
-            flex-wrap: wrap;
+        .add-people__submit {
+            margin-top: 13px;
         }
-            .add-people__item {
-                margin-left: 16px;
-                margin-top: 12px;
-            }
+        .add-people__submit.button,
+        .add-people__submit .button {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 2px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .add-people__alternation {
+            padding-top: 12px;
+            padding-bottom: 3px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            color: #44474A;
+            text-align: center;
+        }
 
     .add-people__shared {
         border-top: 1px solid #E8E8E8;
-        padding: 31px 17px 32px;
+        padding: 23px 17px 32px;
     }
         .add-people__sub-heading {
             margin-left: 20px;
