@@ -45,9 +45,15 @@
                     align-items: center;
                     margin-left: auto;
                 }
-                    .collection__options {
+                    .collection__settings {
 
                     }
+                        .collection__settings.button,
+                        .collection__settings .button {
+                            width: 40px;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
 
                     .collection__share {
                         margin-left: 10px;
