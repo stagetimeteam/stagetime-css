@@ -1,0 +1,38 @@
+.filter {
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 2px 2px 2px 15px;
+    background-color: #44474A;
+    border-radius: 16px;
+}
+    .filter__label {
+        margin-top: -1px;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    .filter__cancel {
+        margin-left: 4px;
+        border: none;
+        padding: 6px;
+        line-height: 16px;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    .filter__cancel:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .filter__cancel:active {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+        .filter__cross {
+            vertical-align: top;
+            width: 16px;
+            height: 16px;
+        }

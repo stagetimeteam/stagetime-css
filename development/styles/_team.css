@@ -95,3 +95,8 @@
             line-height: 20px;
             color: #8B8B8B;
         }
+
+    .team__more {
+        margin-left: 9px;
+        margin-top: 18px;
+    }

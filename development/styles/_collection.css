@@ -155,7 +155,21 @@
 
             .collections__team {
                 width: 100%;
+                height: 100%;
+                overflow-y: auto;
             }
+                .collections__team-inner {
+                    padding-bottom: var(--player3-height);
+                }
+
+            .collections__search {
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+            }
+                .collections__search-inner {
+                    padding-bottom: var(--player3-height);
+                }
 
     .collection__aside {
         flex-shrink: 0;

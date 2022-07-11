@@ -689,212 +689,292 @@
                                 <img class="icon-nav__icon" src="../symbols/24-category.svg" width="24" height="24" alt="">
                                 Overview
                             </a>
-                            <a class="icon-nav__link" href="#">
+                            <a class="icon-nav__link icon-nav__link--current" href="#">
                                 <img class="icon-nav__icon" src="../symbols/24-magnifier-wider.svg" width="24" height="24" alt="">
                                 Search/Add
                             </a>
-                            <a class="icon-nav__link icon-nav__link--current" href="#">
+                            <a class="icon-nav__link" href="#">
                                 <img class="icon-nav__icon" src="../symbols/24-3-user-2-wide.svg" width="24" height="24" alt="">
                                 Team
                             </a>
                         </div>
                     </div>
                     <div class="collection__body">
-                        <div class="collections__team scrollbar scrollbar-macosx">
-                            <div class="collections__team-inner">
-                                <div class="team">
-                                    <h2 class="team__heading">
-                                        Team
-                                    </h2>
-                                    <div class="team__row team__row--heading">
-                                        <div class="team__cell team__cell--person">Person / Instrument or Title</div>
-                                        <div class="team__cell team__cell--location">Location</div>
-                                        <div class="team__cell team__cell--mutual">Mutual</div>
-                                        <div class="team__cell team__cell--actions"></div>
+                        <div class="collections__search scrollbar scrollbar-macosx">
+                            <div class="collections__search-inner">
+                                <div class="collection-search">
+                                    <div class="collection-search__head">
+                                        <div class="collection-search__field">
+                                            <input class="collection-search__widget" type="text" placeholder="Search Stagetime">
+                                            <img class="collection-search__icon" src="../symbols/24-magnifier.svg" width="24" height="24" alt="">
+                                        </div>
+                                        <div class="collection-search__filters">
+                                            <div class="collection-search__filters-heading">
+                                                You searched
+                                            </div>
+                                            <div class="collection-search__applied-filter filter">
+                                                <div class="filter__label">
+                                                    aj o’reilly
+                                                </div>
+                                                <button class="filter__cancel" type="button">
+                                                    <img class="filter__cross" src="../symbols/24-close-square.svg" width="24" height="24" alt="">
+                                                </button>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <a class="team__row" href="#">
-                                        <div class="team__cell team__cell--person">
-                                            <div class="team__card">
-                                                <div class="team__photo avatar">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-a-44x44@2x.jpg 2x"
-                                                         src="../temp/person-a-44x44.jpg"
-                                                         width="44"
-                                                         height="44"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="team__name">
-                                                    Elena Villalón
-                                                </div>
-                                                <div class="team__instrument">
-                                                    Soprano
-                                                </div>
+                                    <div class="collection-search__body">
+                                        <div class="collection-search__section team">
+                                            <h2 class="team__heading">
+                                                People
+                                            </h2>
+                                            <div class="team__row team__row--heading">
+                                                <div class="team__cell team__cell--person">Person / Instrument or Title</div>
+                                                <div class="team__cell team__cell--location">Location</div>
+                                                <div class="team__cell team__cell--mutual">Mutual</div>
+                                                <div class="team__cell team__cell--actions"></div>
                                             </div>
+                                            <a class="team__row" href="#">
+                                                <div class="team__cell team__cell--person">
+                                                    <div class="team__card">
+                                                        <div class="team__photo avatar">
+                                                            <img class="avatar__image" srcset="../temp/person-a-44x44@2x.jpg 2x" src="../temp/person-a-44x44.jpg" width="44" height="44" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="team__name">
+                                                            Elena Villalón
+                                                        </div>
+                                                        <div class="team__instrument">
+                                                            Soprano
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--location">
+                                                    Houston, TX
+                                                </div>
+                                                <div class="team__cell team__cell--mutual">
+                                                    <div class="snake">
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-a-28x28@2x.jpg 2x" src="../temp/person-a-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-b-28x28@2x.jpg 2x" src="../temp/person-b-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-c-28x28@2x.jpg 2x" src="../temp/person-c-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__counter" tabindex="0">
+                                                            +99
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--actions">
+                                                    <div class="button button--border" tabindex="0">Remove</div>
+                                                </div>
+                                            </a>
+                                            <a class="team__row" href="#">
+                                                <div class="team__cell team__cell--person">
+                                                    <div class="team__card">
+                                                        <div class="team__photo avatar">
+                                                            <img class="avatar__image" srcset="../temp/person-b-44x44@2x.jpg 2x" src="../temp/person-b-44x44.jpg" width="44" height="44" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="team__name">
+                                                            Sergey Tkachenko
+                                                        </div>
+                                                        <div class="team__instrument">
+                                                            Piano
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--location">
+                                                    Bloomington, IN
+                                                </div>
+                                                <div class="team__cell team__cell--mutual">
+                                                    <div class="snake">
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-a-28x28@2x.jpg 2x" src="../temp/person-a-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-b-28x28@2x.jpg 2x" src="../temp/person-b-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-c-28x28@2x.jpg 2x" src="../temp/person-c-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__counter" tabindex="0">
+                                                            +99
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--actions">
+                                                    <div class="button button--border" tabindex="0">Remove</div>
+                                                </div>
+                                            </a>
+                                            <a class="team__row" href="#">
+                                                <div class="team__cell team__cell--person">
+                                                    <div class="team__card">
+                                                        <div class="team__photo avatar">
+                                                            <img class="avatar__image" srcset="../temp/person-c-44x44@2x.jpg 2x" src="../temp/person-c-44x44.jpg" width="44" height="44" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="team__name">
+                                                            Jennie Moser
+                                                        </div>
+                                                        <div class="team__instrument">
+                                                            Soprano
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--location">
+                                                    Salt Lake City, UT
+                                                </div>
+                                                <div class="team__cell team__cell--mutual">
+                                                    <div class="snake">
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-a-28x28@2x.jpg 2x" src="../temp/person-a-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-b-28x28@2x.jpg 2x" src="../temp/person-b-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-c-28x28@2x.jpg 2x" src="../temp/person-c-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__counter" tabindex="0">
+                                                            +99
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--actions">
+                                                    <div class="button button--border" tabindex="0">Remove</div>
+                                                </div>
+                                            </a>
+                                            <a class="team__more button button--border" href="#">
+                                                See more
+                                            </a>
                                         </div>
-                                        <div class="team__cell team__cell--location">
-                                            Houston, TX
-                                        </div>
-                                        <div class="team__cell team__cell--mutual">
-                                            <div class="snake">
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-a-28x28@2x.jpg 2x"
-                                                         src="../temp/person-a-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-b-28x28@2x.jpg 2x"
-                                                         src="../temp/person-b-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-c-28x28@2x.jpg 2x"
-                                                         src="../temp/person-c-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__counter" tabindex="0">
-                                                    +99
-                                                </div>
+                                        <div class="collection-search__section team">
+                                            <h2 class="team__heading">
+                                                Media
+                                            </h2>
+                                            <div class="team__row team__row--heading">
+                                                <div class="team__cell team__cell--person">Person / Instrument or Title</div>
+                                                <div class="team__cell team__cell--location">Location</div>
+                                                <div class="team__cell team__cell--mutual">Mutual</div>
+                                                <div class="team__cell team__cell--actions"></div>
                                             </div>
+                                            <a class="team__row" href="#">
+                                                <div class="team__cell team__cell--person">
+                                                    <div class="team__card">
+                                                        <div class="team__photo avatar">
+                                                            <img class="avatar__image" srcset="../temp/person-a-44x44@2x.jpg 2x" src="../temp/person-a-44x44.jpg" width="44" height="44" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="team__name">
+                                                            Elena Villalón
+                                                        </div>
+                                                        <div class="team__instrument">
+                                                            Soprano
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--location">
+                                                    Houston, TX
+                                                </div>
+                                                <div class="team__cell team__cell--mutual">
+                                                    <div class="snake">
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-a-28x28@2x.jpg 2x" src="../temp/person-a-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-b-28x28@2x.jpg 2x" src="../temp/person-b-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-c-28x28@2x.jpg 2x" src="../temp/person-c-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__counter" tabindex="0">
+                                                            +99
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--actions">
+                                                    <div class="button button--border" tabindex="0">Remove</div>
+                                                </div>
+                                            </a>
+                                            <a class="team__row" href="#">
+                                                <div class="team__cell team__cell--person">
+                                                    <div class="team__card">
+                                                        <div class="team__photo avatar">
+                                                            <img class="avatar__image" srcset="../temp/person-b-44x44@2x.jpg 2x" src="../temp/person-b-44x44.jpg" width="44" height="44" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="team__name">
+                                                            Sergey Tkachenko
+                                                        </div>
+                                                        <div class="team__instrument">
+                                                            Piano
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--location">
+                                                    Bloomington, IN
+                                                </div>
+                                                <div class="team__cell team__cell--mutual">
+                                                    <div class="snake">
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-a-28x28@2x.jpg 2x" src="../temp/person-a-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-b-28x28@2x.jpg 2x" src="../temp/person-b-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-c-28x28@2x.jpg 2x" src="../temp/person-c-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__counter" tabindex="0">
+                                                            +99
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--actions">
+                                                    <div class="button button--border" tabindex="0">Remove</div>
+                                                </div>
+                                            </a>
+                                            <a class="team__row" href="#">
+                                                <div class="team__cell team__cell--person">
+                                                    <div class="team__card">
+                                                        <div class="team__photo avatar">
+                                                            <img class="avatar__image" srcset="../temp/person-c-44x44@2x.jpg 2x" src="../temp/person-c-44x44.jpg" width="44" height="44" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="team__name">
+                                                            Jennie Moser
+                                                        </div>
+                                                        <div class="team__instrument">
+                                                            Soprano
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--location">
+                                                    Salt Lake City, UT
+                                                </div>
+                                                <div class="team__cell team__cell--mutual">
+                                                    <div class="snake">
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-a-28x28@2x.jpg 2x" src="../temp/person-a-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-b-28x28@2x.jpg 2x" src="../temp/person-b-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__item avatar avatar--alt-hover" tabindex="0">
+                                                            <img class="avatar__image" srcset="../temp/person-c-28x28@2x.jpg 2x" src="../temp/person-c-28x28.jpg" width="28" height="28" alt="Mark Zuckerberg">
+                                                        </div>
+                                                        <div class="snake__counter" tabindex="0">
+                                                            +99
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="team__cell team__cell--actions">
+                                                    <div class="button button--border" tabindex="0">Remove</div>
+                                                </div>
+                                            </a>
+                                            <a class="team__more button button--border" href="#">
+                                                See more
+                                            </a>
                                         </div>
-                                        <div class="team__cell team__cell--actions">
-                                            <div class="button button--border" tabindex="0">Remove</div>
-                                        </div>
-                                    </a>
-                                    <a class="team__row" href="#">
-                                        <div class="team__cell team__cell--person">
-                                            <div class="team__card">
-                                                <div class="team__photo avatar">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-b-44x44@2x.jpg 2x"
-                                                         src="../temp/person-b-44x44.jpg"
-                                                         width="44"
-                                                         height="44"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="team__name">
-                                                    Sergey Tkachenko
-                                                </div>
-                                                <div class="team__instrument">
-                                                    Piano
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="team__cell team__cell--location">
-                                            Bloomington, IN
-                                        </div>
-                                        <div class="team__cell team__cell--mutual">
-                                            <div class="snake">
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-a-28x28@2x.jpg 2x"
-                                                         src="../temp/person-a-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-b-28x28@2x.jpg 2x"
-                                                         src="../temp/person-b-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-c-28x28@2x.jpg 2x"
-                                                         src="../temp/person-c-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__counter" tabindex="0">
-                                                    +99
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="team__cell team__cell--actions">
-                                            <div class="button button--border" tabindex="0">Remove</div>
-                                        </div>
-                                    </a>
-                                    <a class="team__row" href="#">
-                                        <div class="team__cell team__cell--person">
-                                            <div class="team__card">
-                                                <div class="team__photo avatar">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-c-44x44@2x.jpg 2x"
-                                                         src="../temp/person-c-44x44.jpg"
-                                                         width="44"
-                                                         height="44"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="team__name">
-                                                    Jennie Moser
-                                                </div>
-                                                <div class="team__instrument">
-                                                    Soprano
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="team__cell team__cell--location">
-                                            Salt Lake City, UT
-                                        </div>
-                                        <div class="team__cell team__cell--mutual">
-                                            <div class="snake">
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-a-28x28@2x.jpg 2x"
-                                                         src="../temp/person-a-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-b-28x28@2x.jpg 2x"
-                                                         src="../temp/person-b-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__item avatar avatar--alt-hover" tabindex="0">
-                                                    <img class="avatar__image"
-                                                         srcset="../temp/person-c-28x28@2x.jpg 2x"
-                                                         src="../temp/person-c-28x28.jpg"
-                                                         width="28"
-                                                         height="28"
-                                                         alt="Mark Zuckerberg"
-                                                    >
-                                                </div>
-                                                <div class="snake__counter" tabindex="0">
-                                                    +99
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="team__cell team__cell--actions">
-                                            <div class="button button--border" tabindex="0">Remove</div>
-                                        </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
