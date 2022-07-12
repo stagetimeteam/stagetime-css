@@ -214,32 +214,32 @@
                             }
 
 
-                    .collection__filtering {
-                        margin-top: 23px;
-                        display: flex;
-                        align-items: center;
-                    }
-                        .collection__filters-heading {
-                            margin-right: 18px;
-                            font-weight: 600;
-                            font-size: 13px;
-                            line-height: 20px;
-                            color: #44474A;
+                        .collection__filtering {
+                            margin-top: 23px;
+                            display: flex;
+                            align-items: center;
                         }
+                            .collection__filters-heading {
+                                margin-right: 18px;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #44474A;
+                            }
 
-                        .collection__current-filter {
-                            margin-right: 11px;
+                            .collection__current-filter {
+                                margin-right: 11px;
+                            }
+
+                        .collection__categories {
+
                         }
 
                     .collection__results {
-                        margin-top: 18px;
+
                     }
                         .collection__section {
                             margin-top: 40px;
-                        }
-
-                        .collection__section:first-child {
-                            margin-top: 0;
                         }
 
                         .collection__section.team,
