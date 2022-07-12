@@ -220,6 +220,7 @@
                         align-items: center;
                     }
                         .collection__filters-heading {
+                            margin-right: 18px;
                             font-weight: 600;
                             font-size: 13px;
                             line-height: 20px;
@@ -227,7 +228,7 @@
                         }
 
                         .collection__current-filter {
-
+                            margin-right: 11px;
                         }
 
                     .collection__results {

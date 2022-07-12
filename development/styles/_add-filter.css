@@ -40,6 +40,15 @@
         background-color: #FFFFFF;
         box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+
+    .add-filter--expanded .add-filter__dropdown {
+        opacity: 1;
+        visibility: visible;
     }
         .add-filter__item {
             position: relative;
