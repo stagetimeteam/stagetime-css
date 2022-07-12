@@ -1,16 +1,89 @@
 .add-filter {
-
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
     .add-filter__handler {
+        display: inline-block;
+        vertical-align: top;
+        height: 32px;
+        border: 1px solid #8B8B8B;
+        background-color: #FFFFFF;
+        border-radius: 16px;
+        padding: 5px 20px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 20px;
+        color: #44474A;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
 
+    .add-filter__handler:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .add-filter__handler:active {
+        background-color: var(--panel-active);
+        transition: none;
     }
 
     .add-filter__dropdown {
-
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        top: 100%;
+        margin-top: 2px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+        background-color: #FFFFFF;
+        box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
     }
         .add-filter__item {
+            position: relative;
+            width: 100%;
+            vertical-align: top;
+            border: none;
+            background-color: transparent;
+            padding: 8px 27px;
+            font-weight: 600;
+            font-family: inherit;
+            font-size: 11px;
+            line-height: 20px;
+            color: #8B8B8B;
+            text-align: left;
+            cursor: pointer;
+            transition: background-color var(--transition-hover);
+        }
+
+        .add-filter__item:hover {
+            background-color: var(--panel-hover);
+        }
+
+        .add-filter__item:active {
+            background-color: var(--panel-active);
+            transition: none;
+        }
+            .add-filter__label {
+                display: block;
+                min-width: 128px;
+                height: 32px;
+                padding: 5px 30px 5px 17px;
+                border: 1px solid #8B8B8B;
+                background-color: #FFFFFF;
+                border-radius: 16px;
+                font-size: 11px;
+                line-height: 20px;
+            }
+
+        .add-filter__item--unset {
 
         }
-            .add-filter__button {
-
+            .add-filter__item--unset .add-filter__label {
+                padding-left: 0;
+                background-color: transparent;
+                border-color: transparent;
+                color: #C4C4C4;
             }

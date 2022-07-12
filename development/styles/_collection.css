@@ -153,21 +153,21 @@
                         }
 
 
-            .collections__team {
+            .collection__team {
                 width: 100%;
                 height: 100%;
                 overflow-y: auto;
             }
-                .collections__team-inner {
+                .collection__team-inner {
                     padding-bottom: var(--player3-height);
                 }
 
-            .collections__search {
+            .collection__search {
                 width: 100%;
                 height: 100%;
                 overflow-y: auto;
             }
-                .collections__search-inner {
+                .collection__search-inner {
                     padding: 30px 40px 60px;
                     border-bottom: var(--player3-height) solid transparent;
                 }

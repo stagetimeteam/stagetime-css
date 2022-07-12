@@ -1,5 +1,6 @@
 .filter {
     display: inline-flex;
+    vertical-align: top;
     align-items: center;
     height: 32px;
     padding: 2px 2px 2px 15px;
