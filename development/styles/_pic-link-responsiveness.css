@@ -105,6 +105,6 @@
 .sidebar-collapsed {
 
 }
-    .sidebar-collapsed .pic-link__label {
+    .sidebar-collapsed .sidebar .pic-link__label {
         opacity: 1;
     }
