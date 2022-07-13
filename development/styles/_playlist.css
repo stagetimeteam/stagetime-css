@@ -57,7 +57,7 @@
             .playlist__body .playlist__cell--person {  }
             .playlist__body .playlist__cell--show   { font-size: 12px; line-height: 18px; color: #545454; }
             .playlist__body .playlist__cell--length { font-weight: 600; font-size: 12px; line-height: 18px; color: #757575; }
-            .playlist__body .playlist__cell--type   { font-size: 11px; line-height: 18px; text-transform: uppercase; color: #8B8B8B; }
+            .playlist__body .playlist__cell--type   { font-weight: 600; font-size: 11px; line-height: 18px; text-transform: uppercase; color: #8B8B8B; }
             /* stylelint-enable */
 
         .playlist__card {
