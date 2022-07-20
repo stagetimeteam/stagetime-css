@@ -1,0 +1,67 @@
+.share-collection {
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+    .share-collection__head {
+        padding: 36px 38px 0;
+    }
+        .share-collection__heading {
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 18px;
+            color: #333333;
+            text-align: center;
+        }
+
+        .share-collection__note {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 20px;
+            color: #545454;
+            text-align: center;
+        }
+
+    .share-collection__body {
+        padding: 18px 38px 33px;
+    }
+        .share-collection__search {
+
+        }
+
+        .share-collection__submit {
+            margin-top: 13px;
+        }
+        .share-collection__submit.button,
+        .share-collection__submit .button {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 2px;
+            font-size: 13px;
+            line-height: 20px;
+        }
+
+        .share-collection__alternation {
+            padding-top: 12px;
+            padding-bottom: 3px;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            color: #44474A;
+            text-align: center;
+        }
+
+    .share-collection__shared {
+        border-top: 1px solid #E8E8E8;
+        padding: 23px 17px 32px;
+    }
+        .share-collection__sub-heading {
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #333333;
+        }
+

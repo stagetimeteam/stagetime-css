@@ -12,10 +12,10 @@
     }
 
     .added-person__name {
-        font-weight: bold;
+        font-weight: 600;
         font-size: 11px;
         line-height: 18px;
-        color: #757575;
+        color: #23282C;
     }
 
     .added-person__delete {
@@ -24,7 +24,7 @@
         flex-shrink: 0;
         border: none;
         padding: 12px;
-        margin: -8px;
+        margin: -8px -8px -8px auto;
         background-color: transparent;
         cursor: pointer;
     }

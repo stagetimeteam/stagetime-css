@@ -657,288 +657,294 @@
         </div>
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="collections-index">
-                <div class="collections-index__head">
-                    <h1 class="collections-index__heading">
-                        Collections
-                    </h1>
-                    <div class="collections-index__navigation buttons-alike-nav">
-                        <a class="buttons-alike-nav__item buttons-alike-nav__item--current" href="#">My Collections</a>
-                        <a class="buttons-alike-nav__item" href="#">Shared with Me</a>
+            <div class="collections">
+                <div class="collections__head">
+                    <div class="collections__summary">
+                        <h1 class="collections__heading">
+                            <img class="collections__icon" src="../symbols/24-category.svg" width="24" height="24" alt="">
+                            Collections
+                        </h1>
+                        <div class="collections__filter buttons-alike-nav">
+                            <a class="buttons-alike-nav__item buttons-alike-nav__item--current" href="#">All</a>
+                            <a class="buttons-alike-nav__item" href="#">My Collections</a>
+                            <a class="buttons-alike-nav__item" href="#">Shared with Me</a>
+                        </div>
                     </div>
-                    <button class="collections__new button button--add" type="button">
-                        <img class="button__icon button__icon--left" src="../symbols/20-add-circle.svg" width="16" height="16" alt="">
+                    <a class="collections__add button button--accept" href="#">
+                        <img class="button__icon button__icon--left" src="../symbols/24-plus-frame.svg" width="24" height="24" alt="">
                         Create New Collection
-                    </button>
+                    </a>
                 </div>
-                <div class="collections-index__body">
+                <div class="collections__body">
+                    <div class="collections__list">
 
-                    <div class="simpler-null">
-                        There are no collections to show. To get started, create your<br> first collection, or select from the suggestions below.
-                        <a class="simpler-null__action button" href="#">
-                            <img class="button__icon button__icon--left" src="../symbols/20-add-circle.svg" width="20" height="20" alt="">
-                            Create Collection
-                        </a>
-                    </div>
+                        <div class="simpler-null">
+                            There are no collections to show. To get started, create your<br> first collection, or select from the suggestions below.
+                            <a class="simpler-null__action button" href="#">
+                                <img class="button__icon button__icon--left" src="../symbols/20-add-circle.svg" width="20" height="20" alt="">
+                                Create Collection
+                            </a>
+                        </div>
 
-                    <!-- temp -->
-                    <div style="width: 100%; flex-shrink: 0">or:</div>
-                    <!--/temp -->
+                        <!-- temp -->
+                        <div style="width: 100%; flex-shrink: 0">or:</div>
+                        <!--/temp -->
 
-                    <div class="collections-index__item batch">
-                        <a class="batch__link" href="#">
-                            <div class="batch__gallery">
-                                <div class="batch__photo batch__photo-1st" style="background-color: #EAEAEA;"></div>
-                                <div class="batch__photo batch__photo-2nd" style="background-color: #FFFFFF;"></div>
-                                <div class="batch__photo batch__photo-3rd" style="background-color: #878787;"></div>
-                            </div>
-                            <div class="batch__body">
-                                <div class="batch__heading ellipsis">
-                                    West Coast Artists
+                        <div class="collections__item batch">
+                            <a class="batch__link" href="#">
+                                <div class="batch__gallery">
+                                    <div class="batch__photo batch__photo-1st" style="background-color: #EAEAEA;"></div>
+                                    <div class="batch__photo batch__photo-2nd" style="background-color: #FFFFFF;"></div>
+                                    <div class="batch__photo batch__photo-3rd" style="background-color: #878787;"></div>
                                 </div>
-                                <div class="batch__note ellipsis">
-                                    Last Updated Oct 3, 2020
+                                <div class="batch__body">
+                                    <div class="batch__heading ellipsis">
+                                        West Coast Artists
+                                    </div>
+                                    <div class="batch__note ellipsis">
+                                        Last Updated Oct 3, 2020
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="batch__actions operations operations--simplified-handler">
-                            <button class="operations__handler" type="button">
-                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                More
-                            </button>
-                            <div class="operations__dropdown">
-                                <div class="menu">
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                        View
-                                    </a>
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                        Share
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                        Rename
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                        Delete
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collections-index__item batch">
-                        <a class="batch__link" href="#">
-                            <div class="batch__gallery">
-                                <div class="batch__photo batch__photo-1st" style="background-image: url(http://lorempixel.com/280/280/people/1);"></div>
-                                <div class="batch__photo batch__photo-2nd" style="background-image: url(http://lorempixel.com/110/110/people/2);"></div>
-                                <div class="batch__photo batch__photo-3rd" style="background-image: url(http://lorempixel.com/110/110/people/3);"></div>
-                            </div>
-                            <div class="batch__body">
-                                <div class="batch__heading ellipsis">
-                                    West Coast Artists
-                                </div>
-                                <div class="batch__note ellipsis">
-                                    Last Updated Oct 3, 2020
-                                </div>
-                            </div>
-                        </a>
-                        <div class="batch__actions operations operations--simplified-handler">
-                            <button class="operations__handler" type="button">
-                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                More
-                            </button>
-                            <div class="operations__dropdown">
-                                <div class="menu">
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                        View
-                                    </a>
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                        Share
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                        Rename
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                        Delete
-                                    </a>
+                            </a>
+                            <div class="batch__actions operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                            View
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                            Rename
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                            Delete
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="collections-index__item batch">
-                        <a class="batch__link" href="#">
-                            <div class="batch__gallery">
-                                <div class="batch__photo batch__photo-1st" style="background-image: url(http://lorempixel.com/280/280/people/4);"></div>
-                                <div class="batch__photo batch__photo-2nd" style="background-image: url(http://lorempixel.com/110/110/people/5);"></div>
-                                <div class="batch__photo batch__photo-3rd" style="background-image: url(http://lorempixel.com/110/110/people/6);"></div>
-                            </div>
-                            <div class="batch__body">
-                                <div class="batch__heading ellipsis">
-                                    Glimmerglass 2022
+                        <div class="collections__item batch">
+                            <a class="batch__link" href="#">
+                                <div class="batch__gallery">
+                                    <div class="batch__photo batch__photo-1st" style="background-image: url(https://placekitten.com/280/280/);"></div>
+                                    <div class="batch__photo batch__photo-2nd" style="background-image: url(https://placekitten.com/110/110/);"></div>
+                                    <div class="batch__photo batch__photo-3rd" style="background-image: url(https://placekitten.com/110/110/);"></div>
                                 </div>
-                                <div class="batch__note ellipsis">
-                                    Last Updated Oct 3, 2020
+                                <div class="batch__body">
+                                    <div class="batch__heading ellipsis">
+                                        West Coast Artists
+                                    </div>
+                                    <div class="batch__note ellipsis">
+                                        Last Updated Oct 3, 2020
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="batch__actions operations operations--simplified-handler">
-                            <button class="operations__handler" type="button">
-                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                More
-                            </button>
-                            <div class="operations__dropdown">
-                                <div class="menu">
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                        View
-                                    </a>
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                        Share
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                        Rename
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                        Delete
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="collections-index__item batch">
-                        <a class="batch__link" href="#">
-                            <div class="batch__gallery">
-                                <div class="batch__photo batch__photo-1st" style="background-image: url(http://lorempixel.com/280/280/people/7);"></div>
-                                <div class="batch__photo batch__photo-2nd" style="background-image: url(http://lorempixel.com/110/110/people/8);"></div>
-                                <div class="batch__photo batch__photo-3rd" style="background-image: url(http://lorempixel.com/110/110/people/9);"></div>
-                            </div>
-                            <div class="batch__body">
-                                <div class="batch__heading ellipsis">
-                                    MNO Figaro 2023
-                                </div>
-                                <div class="batch__note ellipsis">
-                                    Last Updated Oct 3, 2020
-                                </div>
-                            </div>
-                        </a>
-                        <div class="batch__actions operations operations--simplified-handler">
-                            <button class="operations__handler" type="button">
-                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                More
-                            </button>
-                            <div class="operations__dropdown">
-                                <div class="menu">
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                        View
-                                    </a>
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                        Share
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                        Rename
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                        Delete
-                                    </a>
+                            </a>
+                            <div class="batch__actions operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                            View
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                            Rename
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                            Delete
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="collections-index__item batch">
-                        <a class="batch__link" href="#">
-                            <div class="batch__gallery">
-                                <div class="batch__photo batch__photo-1st" style="background-image: url(http://lorempixel.com/280/280/people/10);"></div>
-                                <div class="batch__photo batch__photo-2nd" style="background-image: url(http://lorempixel.com/110/110/people/1);"></div>
-                                <div class="batch__photo batch__photo-3rd" style="background-image: url(http://lorempixel.com/110/110/people/2);"></div>
-                            </div>
-                            <div class="batch__body">
-                                <div class="batch__heading ellipsis">
-                                    Conductors
+                        <div class="collections__item batch">
+                            <a class="batch__link" href="#">
+                                <div class="batch__gallery">
+                                    <div class="batch__photo batch__photo-1st" style="background-image: url(https://placekitten.com/280/280/);"></div>
+                                    <div class="batch__photo batch__photo-2nd" style="background-image: url(https://placekitten.com/110/110/);"></div>
+                                    <div class="batch__photo batch__photo-3rd" style="background-image: url(https://placekitten.com/110/110/);"></div>
                                 </div>
-                                <div class="batch__note ellipsis">
-                                    Last Updated Oct 3, 2020
+                                <div class="batch__body">
+                                    <div class="batch__heading ellipsis">
+                                        Glimmerglass 2022
+                                    </div>
+                                    <div class="batch__note ellipsis">
+                                        Last Updated Oct 3, 2020
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <div class="batch__actions operations operations--simplified-handler">
-                            <button class="operations__handler" type="button">
-                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                More
-                            </button>
-                            <div class="operations__dropdown">
-                                <div class="menu">
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                        View
-                                    </a>
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                        Share
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                        Rename
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                        Delete
-                                    </a>
+                            </a>
+                            <div class="batch__actions operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                            View
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                            Rename
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                            Delete
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="collections-index__item batch">
-                        <a class="batch__link" href="#">
-                            <div class="batch__gallery">
-                                <div class="batch__photo batch__photo-1st" style="background-image: url(http://lorempixel.com/280/280/people/3);"></div>
-                                <div class="batch__photo batch__photo-2nd" style="background-image: url(http://lorempixel.com/110/110/people/4);"></div>
-                                <div class="batch__photo batch__photo-3rd" style="background-image: url(http://lorempixel.com/110/110/people/5);"></div>
-                            </div>
-                            <div class="batch__body">
-                                <div class="batch__heading ellipsis">
-                                    Conductors
+                        <div class="collections__item batch">
+                            <a class="batch__link" href="#">
+                                <div class="batch__gallery">
+                                    <div class="batch__photo batch__photo-1st" style="background-image: url(https://placekitten.com/280/280/);"></div>
+                                    <div class="batch__photo batch__photo-2nd" style="background-image: url(https://placekitten.com/110/110/);"></div>
+                                    <div class="batch__photo batch__photo-3rd" style="background-image: url(https://placekitten.com/110/110/);"></div>
                                 </div>
-                                <div class="batch__note ellipsis">
-                                    Last Updated Oct 3, 2020
+                                <div class="batch__body">
+                                    <div class="batch__heading ellipsis">
+                                        MNO Figaro 2023
+                                    </div>
+                                    <div class="batch__note ellipsis">
+                                        Last Updated Oct 3, 2020
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="batch__actions operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                            View
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                            Rename
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                            Delete
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </a>
-                        <div class="batch__actions operations operations--simplified-handler">
-                            <button class="operations__handler" type="button">
-                                <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
-                                More
-                            </button>
-                            <div class="operations__dropdown">
-                                <div class="menu">
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
-                                        View
-                                    </a>
-                                    <a class="menu__link" href="#">
-                                        <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                        Share
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
-                                        Rename
-                                    </a>
-                                    <a class="menu__link menu__link--disabled" href="#">
-                                        <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
-                                        Delete
-                                    </a>
+                        </div>
+                        <div class="collections__item batch">
+                            <a class="batch__link" href="#">
+                                <div class="batch__gallery">
+                                    <div class="batch__photo batch__photo-1st" style="background-image: url(https://placekitten.com/280/280/);"></div>
+                                    <div class="batch__photo batch__photo-2nd" style="background-image: url(https://placekitten.com/110/110/);"></div>
+                                    <div class="batch__photo batch__photo-3rd" style="background-image: url(https://placekitten.com/110/110/);"></div>
+                                </div>
+                                <div class="batch__body">
+                                    <div class="batch__heading ellipsis">
+                                        Conductors
+                                    </div>
+                                    <div class="batch__note ellipsis">
+                                        Last Updated Oct 3, 2020
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="batch__actions operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                            View
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                            Rename
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                            Delete
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collections__item batch">
+                            <a class="batch__link" href="#">
+                                <div class="batch__gallery">
+                                    <div class="batch__photo batch__photo-1st" style="background-image: url(https://placekitten.com/280/280/);"></div>
+                                    <div class="batch__photo batch__photo-2nd" style="background-image: url(https://placekitten.com/110/110/);"></div>
+                                    <div class="batch__photo batch__photo-3rd" style="background-image: url(https://placekitten.com/110/110/);"></div>
+                                </div>
+                                <div class="batch__body">
+                                    <div class="batch__heading ellipsis">
+                                        Conductors
+                                    </div>
+                                    <div class="batch__note ellipsis">
+                                        Last Updated Oct 3, 2020
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="batch__actions operations operations--simplified-handler">
+                                <button class="operations__handler" type="button">
+                                    <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                                    More
+                                </button>
+                                <div class="operations__dropdown">
+                                    <div class="menu">
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/16-eye.svg" width="24" height="24" alt="">
+                                            View
+                                        </a>
+                                        <a class="menu__link" href="#">
+                                            <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
+                                            Share
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-pencil-tiny.svg" width="24" height="24" alt="">
+                                            Rename
+                                        </a>
+                                        <a class="menu__link menu__link--disabled" href="#">
+                                            <img class="menu__icon" src="../symbols/16-bin.svg" width="24" height="24" alt="">
+                                            Delete
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1007,6 +1013,7 @@
         <script src="../scripts/_brief.js"></script>
         <script src="../scripts/_non-performer.js"></script>
         <script src="../scripts/_owl-carousel.js"></script>
+        <script src="../scripts/_add-filter.js"></script>
 
 
     </body>

@@ -1,0 +1,41 @@
+.confirmation {
+    padding: 48px 40px 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .confirmation__icon {
+        vertical-align: top;
+        width: 34px;
+        height: 34px;
+        fill: #44474A;
+    }
+
+    .confirmation__message {
+        margin-top: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        color: #23282C;
+        text-align: center;
+    }
+
+    .confirmation__submit {
+        margin-top: 30px;
+    }
+        .confirmation__submit.button,
+        .confirmation__submit .button {
+            width: 152px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 13px;
+            line-height: 20px;
+            border-radius: 2px;
+        }
+
+    .confirmation__close {
+        margin-top: 20px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }

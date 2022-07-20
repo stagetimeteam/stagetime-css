@@ -1,0 +1,317 @@
+.collection {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+}
+    .collection__wrapper {
+        width: calc(100% - 343px);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+        .collection__head {
+            position: relative;
+            z-index: 100; /* dropdowns inside of header should fly higher than page */
+            flex-shrink: 0;
+            height: 146px;
+            padding: 28px 28px 0 16px;
+            border-bottom: 1px solid #E8E8E8;
+        }
+            .collection__summary {
+                display: flex;
+                align-items: center;
+            }
+                .collection__head-primary {
+                    display: flex;
+                    align-items: center;
+                }
+                    .collection__back {
+                        margin-left: -3px;
+                    }
+
+                    .collection__heading {
+                        margin-left: 15px;
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-weight: 600;
+                        font-size: 22px;
+                        line-height: 30px;
+                        color: #23282C;
+                    }
+
+
+                .collection__head-secondary {
+                    display: flex;
+                    align-items: center;
+                    margin-left: auto;
+                }
+                    .collection__settings {
+
+                    }
+                        .collection__settings.button,
+                        .collection__settings .button {
+                            width: 40px;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+
+                    .collection__share {
+                        margin-left: 10px;
+                    }
+                        .collection__share.button,
+                        .collection__share .button {
+                            width: 196px;
+                            font-weight: 600;
+                            font-size: 13px;
+                        }
+
+            .collection__nav {
+                margin-top: 27px;
+                margin-left: -16px;
+            }
+
+        .collection__body {
+            height: calc(100% - 146px);
+            display: flex;
+            align-items: stretch;
+        }
+            .collection__sidebar {
+                width: 42.5%;
+                height: 100%;
+                flex-shrink: 0;
+            }
+                .collection__sidebar-head {
+                    flex-shrink: 0;
+                    display: flex;
+                    align-items: flex-start;
+                }
+                    .collection__people-heading.thead,
+                    .collection__people-heading > .thead {
+                        flex-grow: 1;
+                    }
+
+                    .collection__status-heading.thead,
+                    .collection__status-heading > .thead {
+                        flex-shrink: 0;
+                        width: 124px;
+                        border-left: 1px solid #E8E8E8;
+                    }
+
+                .collection__sidebar-body {
+                    height: calc(100% - 30px);
+                }
+
+                .has-player3 .collection__sidebar-body {
+                    padding-bottom: var(--player3-height);
+                }
+                    .collection__sidebar-body-scroll {
+                        height: 100%;
+                        overflow-y: auto;
+                    }
+
+                    .collection__sidebar-body .simpler-null {
+                        height: auto;
+                        padding-top: 47px;
+                    }
+                        .collection__sidebar-body .simpler-null__action {
+                            padding-left: 25px;
+                            padding-right: 25px;
+                        }
+                            .collection__sidebar-body .simpler-null__action .button__icon {
+                                width: 20px !important;
+                                height: 20px !important;
+                                margin-left: -11px;
+                                margin-right: 5px;
+                            }
+
+            .collection__content {
+                border-left: 1px solid #E8E8E8;
+                width: 57.5%;
+                height: 100%;
+            }
+                .collection__content-head {
+
+                }
+
+                .collection__content-body {
+                    height: calc(100% - 30px);
+                }
+
+                .has-player3 .collection__content-body {
+                    padding-bottom: var(--player3-height);
+                }
+                    .collection__content-body-scroll {
+                        height: 100%;
+                        overflow-y: auto;
+                    }
+                        .collection__content-body-scroll .simpler-null {
+                            max-width: 340px;
+                            height: auto;
+                            padding-top: 47px;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+
+
+            .collection__team {
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+            }
+                .collection__team-inner {
+                    padding-bottom: var(--player3-height);
+                }
+
+            .collection__search {
+                width: 100%;
+                height: 100%;
+                overflow-y: auto;
+            }
+                .collection__search-inner {
+                    padding: 30px 40px 60px;
+                    border-bottom: var(--player3-height) solid transparent;
+                }
+                    .collection__search-head {
+                        padding: 20px 20px 25px;
+                        background-color: #F3F4F6;
+                        border-radius: 6px;
+                    }
+                        .collection__search-field {
+                            position: relative;
+                        }
+                            .collection__search-widget {
+                                position: relative;
+                                width: 100%;
+                                height: 40px;
+                                vertical-align: top;
+                                padding: 10px 20px 10px 40px;
+                                background-color: #FFFFFF;
+                                border: none;
+                                outline: none;
+                                background-clip: padding-box; /* reset iOS default shadow */
+                                border-radius: 3px; /* reset iOS default border-radius */
+                                font-family: inherit;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #44474A;
+                                transition: background-color var(--transition-hover),
+                                            border-color var(--transition-hover),
+                                            box-shadow var(--transition-hover);
+                            }
+
+                            /* stylelint-disable block-opening-brace-space-before */
+                            .collection__search-widget::-webkit-input-placeholder { font-style: normal; color: #8B8B8B; }
+                            .collection__search-widget::-moz-placeholder          { font-style: normal; color: #8B8B8B; opacity: 1; }
+                            .collection__search-widget:-ms-input-placeholder      { font-style: normal; color: #8B8B8B; }
+                            /* stylelint-enable */
+
+                            .collection__magnifier {
+                                position: absolute;
+                                left: 8px;
+                                top: 8px;
+                                fill: #333333;
+                            }
+
+
+                        .collection__filtering {
+                            margin-top: 23px;
+                            display: flex;
+                            align-items: center;
+                        }
+                            .collection__filters-heading {
+                                margin-right: 18px;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: #44474A;
+                            }
+
+                            .collection__current-filter {
+                                margin-right: 11px;
+                            }
+
+                        .collection__categories {
+                            margin-top: 25px;
+                        }
+
+                    .collection__results {
+
+                    }
+                        .collection__section {
+                            margin-top: 40px;
+                        }
+
+                        .collection__section.team,
+                        .collection__section .team {
+                            padding: 0;
+                        }
+
+    .collection__aside {
+        flex-shrink: 0;
+        width: 343px;
+        border-left: 1px solid #E8E8E8;
+        background-color: #F4F4F4;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden; /* just to cut shadow .collections__sub-nav */
+    }
+
+    .has-player3 .collection__aside {
+        padding-bottom: var(--player3-height);
+    }
+
+        .collection__sub-nav {
+            display: flex;
+            align-items: stretch;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.12);
+        }
+            .collection__sub-link {
+                position: relative;
+                z-index: 10;
+                width: 50%;
+                border: none;
+                padding: 13px 20px 10px;
+                background-color: transparent;
+                font-family: inherit;
+                font-weight: bold;
+                font-size: 11px;
+                line-height: 18px;
+                color: #8B8B8B;
+                text-align: center;
+                cursor: pointer;
+                transition: color var(--transition-hover);
+            }
+
+            .collection__sub-link:hover {
+                color: #545454;
+            }
+
+                .collection__sub-link::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: -1px;
+                    height: 2px;
+                    background-color: transparent;
+                    transition: background-color var(--transition-hover);
+                }
+
+            .collection__sub-link--current {
+                color: #545454;
+                cursor: default;
+            }
+                .collection__sub-link--current::after {
+                    background-color: currentColor;
+                }
+
+        .collection__chat {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .collection__player {
+            padding: 25px 28px 52px;
+            background-color: #FFFFFF;
+        }

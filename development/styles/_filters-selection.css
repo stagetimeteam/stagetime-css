@@ -1,0 +1,27 @@
+.filters-selection {
+    padding: 18px 27px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+    .filters-selection__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #333333;
+    }
+
+    .filters-selection__null {
+        margin-top: 15px;
+        padding-bottom: 5px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #44474A;
+    }
+
+    .filters-selection__body {
+        margin-top: 5px;
+        column-count: 4;
+        column-gap: 40px;
+    }

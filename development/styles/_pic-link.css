@@ -151,7 +151,7 @@
             /*box-shadow: 0 0 0 1px #FFFFFF;*/
         }
 
-        .sidebar-collapsed .pic-link__label {
+        .sidebar-collapsed .sidebar .pic-link__label {
             opacity: 0;
             transition: opacity var(--transition-long-show);
         }
