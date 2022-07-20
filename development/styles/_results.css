@@ -99,7 +99,7 @@
     }
 
     .results__section {
-        margin-top: 26px;
+        margin-top: 50px;
     }
         .results__sub-heading {
             margin-top: 0;
@@ -120,6 +120,7 @@
             .results__person {
                 margin-left: 18px;
                 margin-right: 18px;
+                margin-top: 22px;
             }
 
             .results__more-people {
