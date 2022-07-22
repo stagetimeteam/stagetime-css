@@ -180,6 +180,13 @@
 
     }
 
+.avatar--border {
+    border: 1px solid #E8E8E8;
+}
+    .avatar--border .avatar--image {
+
+    }
+
 
 .avatar--non-clickable {
     cursor: inherit;
