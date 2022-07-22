@@ -104,6 +104,7 @@
         .results__sub-heading {
             margin-top: 0;
             margin-bottom: 0;
+            font-weight: bold;
             font-size: 16px;
             line-height: 20px;
             color: #44474A;
