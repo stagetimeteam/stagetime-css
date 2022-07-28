@@ -1,0 +1,47 @@
+.profile-theme {
+    position: relative;
+    display: block;
+}
+    .profile-theme__widget {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .profile-theme__body {
+        display: block;
+        height: 100%;
+        border: 1px solid #E8E8E8;
+        padding: 15px 24px 18px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .profile-theme__body:hover {
+        background-color: #F9F9F9;
+    }
+
+    .profile-theme__widget:checked ~ .profile-theme__body {
+        border-color: #8DC990;
+        cursor: default;
+    }
+
+        .profile-theme__heading {
+            display: block;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 21px;
+            color: #545454;
+            text-align: center;
+        }
+
+        .profile-theme__description {
+            display: block;
+            margin-top: 6px;
+            font-size: 13px;
+            line-height: 21px;
+            color: #757575;
+            text-align: center;
+        }

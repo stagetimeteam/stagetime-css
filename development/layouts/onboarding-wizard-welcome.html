@@ -25,7 +25,41 @@
                 </div>
             </div>
             <div class="wizard__body">
-asdfasf2
+                <div class="welcome">
+                    <h1 class="welcome__heading">
+                        Welcome to Stagetime! Let’s create your profile.
+                    </h1>
+                    <div class="welcome__fieldset">
+                        <div class="welcome__field input input--larger-font">
+                            <input class="input__widget" type="text" placeholder="First Name *" required>
+                        </div>
+                        <div class="welcome__field input input--larger-font">
+                            <input class="input__widget" type="text" placeholder="Last Name *" required>
+                        </div>
+                        <div class="welcome__field input input--larger-font">
+                            <input class="input__widget" type="text" placeholder="Instrument or Discipline *" required>
+                        </div>
+                    </div>
+                    <div class="welcome__sub-heading">
+                        Select profile theme <span class="required required--faded">*</span>
+                    </div>
+                    <div class="welcome__options">
+                        <label class="welcome__theme profile-theme">
+                            <input class="profile-theme__widget" type="radio" name="profile-theme">
+                            <span class="profile-theme__body">
+                                <span class="profile-theme__heading">The Artist Theme</span>
+                                <span class="profile-theme__description">Good for performers and artists — highlight your headshot, media, press, calendar, and work.</span>
+                            </span>
+                        </label>
+                        <label class="welcome__theme profile-theme">
+                            <input class="profile-theme__widget" type="radio" name="profile-theme">
+                            <span class="profile-theme__body">
+                                <span class="profile-theme__heading">The Classic Theme</span>
+                                <span class="profile-theme__description">Good for administrators, managers, designers, and production staff — highlight work experience and something else.</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
             </div>
             <div class="wizard__footer">
                 <div class="wizard__navigation">
@@ -54,6 +88,7 @@ asdfasf2
         <script src="../vendors/sortable/Sortable.min.js"></script>
         <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
         <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../vendors/selectize/js/selectize.min.js"></script>
         <script src="../scripts/_global.js"></script>
         <script src="../scripts/_operations.js"></script>
         <script src="../scripts/_profile.js"></script>
