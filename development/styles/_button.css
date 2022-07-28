@@ -343,6 +343,25 @@
 }
 
 
+.button--transparent-black {
+    background-color: transparent;
+    box-shadow: none;
+    color: #44474A;
+}
+
+.button--transparent-black:hover {
+    background-color: #343C42;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+.button--transparent-black:active {
+    background-color: #111416;
+    box-shadow: none;
+    color: #FFFFFF;
+}
+
+
 .button--purple {
     box-shadow: none;
     background-color: #1D4451;

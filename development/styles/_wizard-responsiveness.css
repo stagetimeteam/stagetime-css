@@ -1,0 +1,73 @@
+:root {
+    --wizard-mobile-footer: 80px;
+}
+
+.wizard {
+    padding-top: var(--wizard-header);
+    padding-bottom: var(--wizard-footer);
+}
+    .wizard__header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        height: var(--wizard-header);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+    }
+        .wizard__branding {
+            position: absolute;
+            left: 20px;
+            top: 9px;
+        }
+
+        .wizard__progress {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 13px;
+            padding-top: 25px;
+        }
+            .wizard__bar {
+                display: block;
+                width: 186px;
+                height: 10px;
+                background-color: #EEF0F3;
+                border: none;
+                padding: 0;
+                border-radius: 2px;
+            }
+
+            .wizard__bar--passed {
+                background-color: #23282C;
+            }
+
+    .wizard__body {
+        padding-top: 54px;
+        padding-bottom: 45px;
+    }
+
+    .wizard__footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        min-height: var(--wizard-footer);
+        background-color: #EEF0F3;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+        .wizard__navigation {
+            position: relative;
+        }
+            .wizard__continue.button,
+            .wizard__continue .button {
+                width: 150px;
+            }
+
+            .wizard__skip {
+                position: absolute;
+                left: 100%;
+                top: 0;
+                margin-left: 6px;
+            }
