@@ -17,6 +17,7 @@
         padding: 15px 24px 18px;
         border-radius: 8px;
         cursor: pointer;
+        transition: background-color var(--transition-hover);
     }
 
     .profile-theme__body:hover {

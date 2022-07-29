@@ -13,6 +13,7 @@
         top: 0;
         right: 0;
         height: var(--wizard-header);
+        background-color: #FFFFFF;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
     }
         .wizard__branding {
@@ -72,3 +73,26 @@
                 top: 0;
                 margin-left: 6px;
             }
+
+
+
+.wizard--match {
+    padding-bottom: 113px;
+}
+    .wizard--match .wizard__footer {
+        height: 113px;
+    }
+
+    .wizard--match .wizard__continue.button,
+    .wizard--match .wizard__continue .button {
+        width: 240px;
+    }
+
+    .wizard__question {
+        margin-top: -6px;
+        margin-bottom: 11px;
+        font-size: 14px;
+        line-height: 26px;
+        color: #545454;
+        text-align: center;
+    }

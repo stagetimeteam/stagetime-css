@@ -1,0 +1,43 @@
+.match {
+    text-align: center;
+}
+    .match__heading {
+        max-width: 452px;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .match__description {
+        max-width: 560px;
+        margin: 13px auto 0;
+        font-size: 14px;
+        line-height: 26px;
+        color: #545454;
+        text-align: center;
+    }
+
+    .match__list {
+        width: 240px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+        .match__item {
+            margin-top: 17px;
+        }
+
+        .match__item:first-child {
+            margin-top: 0;
+        }
+
+    .match__submit {
+        margin-top: 31px;
+    }
+        .match__submit.button,
+        .match__submit .button {
+            width: 240px;
+        }
