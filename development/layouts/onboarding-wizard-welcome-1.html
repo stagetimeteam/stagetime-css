@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.cover</title>
+        <title>Welcome</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -12,87 +12,66 @@
     </head>
     <body>
 
-
-
-        <div style="width: 600px; margin: 0 auto;">
-            <br>
-            <br>
-            <h1>.cover</h1>
-            <p>
-                See also <a href="_img-pad.html">.img-pad</a> and <a href="_selected.html">.selected</a>
-            </p>
-            <p>
-                See also <a href="_re-upload.html">.re-upload</a>
-            </p>
-            <br>
-
-            <div class="cover">
-                <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+        <div class="wizard">
+            <div class="wizard__header">
+                <a class="wizard__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <div class="wizard__progress">
+                    <a class="wizard__bar wizard__bar--passed" href="#"></a>
+                    <a class="wizard__bar wizard__bar--passed" href="#"></a>
+                    <div class="wizard__bar"></div>
+                    <div class="wizard__bar"></div>
+                </div>
             </div>
-
-
-            <br>
-            <br>
-            <h2>.cover--clickable</h2>
-
-            <button class="cover cover--clickable" type="button">
-                <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
-            </button>
-
-
-            <br>
-            <br>
-            <h2>.cover--clickable</h2>
-
-            <button class="cover cover--full-width-on-smartphone cover--clickable" type="button">
-                <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
-            </button>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>.cover--input-alike</h2>
-
-            <div class="cover cover--input-alike">
-                Upload Logo
+            <div class="wizard__body">
+                <div class="welcome">
+                    <h1 class="welcome__heading">
+                        Welcome to Stagetime! Let’s create your profile.
+                    </h1>
+                    <div class="welcome__fieldset">
+                        <div class="welcome__field input input--larger-font">
+                            <input class="input__widget" type="text" placeholder="First Name *" required>
+                        </div>
+                        <div class="welcome__field input input--larger-font">
+                            <input class="input__widget" type="text" placeholder="Last Name *" required>
+                        </div>
+                        <div class="welcome__field input input--larger-font">
+                            <input class="input__widget" type="text" placeholder="Instrument or Discipline *" required>
+                        </div>
+                    </div>
+                    <div class="welcome__sub-heading">
+                        Select profile theme <span class="required required--faded">*</span>
+                    </div>
+                    <div class="welcome__options">
+                        <label class="welcome__theme profile-theme">
+                            <input class="profile-theme__widget" type="radio" name="profile-theme">
+                            <span class="profile-theme__body">
+                                <span class="profile-theme__heading">The Artist Theme</span>
+                                <span class="profile-theme__description">Good for performers and artists — highlight your headshot, media, press, calendar, and work.</span>
+                            </span>
+                        </label>
+                        <label class="welcome__theme profile-theme">
+                            <input class="profile-theme__widget" type="radio" name="profile-theme">
+                            <span class="profile-theme__body">
+                                <span class="profile-theme__heading">The Classic Theme</span>
+                                <span class="profile-theme__description">Good for administrators, managers, designers, and production staff — highlight work experience and something else.</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
             </div>
-
-            <br>
-
-            <button class="cover cover--input-alike cover--clickable" type="button">
-                Upload Logo
-            </button>
-
-
-            <br>
-            <br>
-            <p>with <b>.cover--bold</b> (similar to inputs)</p>
-
-            <div class="cover cover--bold cover--input-alike">
-                Upload Logo
+            <div class="wizard__footer">
+                <div class="wizard__navigation">
+                    <a class="wizard__continue button button--side-submit button--black" href="#">Continue</a>
+                    <a class="wizard__skip button button--side-submit button--transparent-black" href="#">Skip</a>
+                </div>
             </div>
-
-            <br>
-
-            <button class="cover cover--bold cover--input-alike cover--clickable" type="button">
-                Upload Logo
-            </button>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
         </div>
+
+
+        <!-- 3/3 Modals: -->
+        <!-- No modal windows on this page -->
 
 
 

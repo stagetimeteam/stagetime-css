@@ -1,0 +1,31 @@
+.design-and-image {
+    width: 262px;
+    position: relative;
+    padding-left: 63px;
+}
+    .design-and-image__preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 8px;
+        background-color: #EDF1F3;
+        border-radius: 4px;
+    }
+        .design-and-image__icon {
+            vertical-align: top;
+            fill: #333333;
+        }
+
+    .design-and-image__heading {
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        color: #545454;
+    }
+
+    .design-and-image__description {
+        margin-top: 3px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #545454;
+    }

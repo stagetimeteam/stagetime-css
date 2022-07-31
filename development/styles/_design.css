@@ -1,0 +1,26 @@
+.design {
+
+}
+    .design__heading {
+        max-width: 452px;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .design__body {
+        margin-top: 38px;
+        text-align: center;
+    }
+        .design__panel {
+            display: inline-flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 17px;
+            border: 1px solid #E8E8E8;
+            padding: 19px 29px;
+            border-radius: 5px;
+            text-align: left;
+        }

@@ -343,6 +343,16 @@
 }
 
 
+.button--black.button--disabled,
+.button--black.button--disabled:hover,
+.button--black.button--disabled:active {
+    background-color: #E8E8E8;
+    box-shadow: none;
+    color: #C4C4C4;
+    cursor: default;
+}
+
+
 .button--transparent-black {
     background-color: transparent;
     box-shadow: none;

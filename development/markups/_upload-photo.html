@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.cover</title>
+        <title>.upload-photo</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -17,69 +17,37 @@
         <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.cover</h1>
-            <p>
-                See also <a href="_img-pad.html">.img-pad</a> and <a href="_selected.html">.selected</a>
-            </p>
-            <p>
-                See also <a href="_re-upload.html">.re-upload</a>
-            </p>
-            <br>
+            <h1>.upload-photo</h1>
 
-            <div class="cover">
-                <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
-            </div>
-
-
-            <br>
-            <br>
-            <h2>.cover--clickable</h2>
-
-            <button class="cover cover--clickable" type="button">
-                <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
-            </button>
-
-
-            <br>
-            <br>
-            <h2>.cover--clickable</h2>
-
-            <button class="cover cover--full-width-on-smartphone cover--clickable" type="button">
-                <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+            <button class="upload-photo" type="button">
+                <span class="upload-photo__preview cover">
+                    <img class="cover__icon" src="../symbols/24-picture.svg" width="24" height="24" alt="">
+                </span>
+                <span class="upload-photo__heading">Upload photo</span>
+                <span class="upload-photo__description">Go ahead, add your favorite photo. You’ll be able to crop it perfrectly on your profile later.</span>
             </button>
 
 
             <br>
             <br>
             <br>
-            <br>
-            <h2>.cover--input-alike</h2>
+            <h2>When uploaded</h2>
 
-            <div class="cover cover--input-alike">
-                Upload Logo
-            </div>
-
-            <br>
-
-            <button class="cover cover--input-alike cover--clickable" type="button">
-                Upload Logo
+            <button class="upload-photo" type="button">
+                <span class="upload-photo__preview re-upload">
+                    <img class="re-upload__image"
+                         srcset="../temp/upload-photo@2x.jpg"
+                         src="../temp/upload-photo.jpg"
+                         width="121"
+                         height="94"
+                         alt=""
+                    >
+                    <img class="re-upload__icon" src="../symbols/32-edit-photo.svg" width="32" height="32" alt="">
+                    <span class="re-upload__label">Edit</span>
+                </span>
+                <span class="upload-photo__heading">Upload photo</span>
+                <span class="upload-photo__description">Go ahead, add your favorite photo. You’ll be able to crop it perfrectly on your profile later.</span>
             </button>
-
-
-            <br>
-            <br>
-            <p>with <b>.cover--bold</b> (similar to inputs)</p>
-
-            <div class="cover cover--bold cover--input-alike">
-                Upload Logo
-            </div>
-
-            <br>
-
-            <button class="cover cover--bold cover--input-alike cover--clickable" type="button">
-                Upload Logo
-            </button>
-
 
             <br>
             <br>
