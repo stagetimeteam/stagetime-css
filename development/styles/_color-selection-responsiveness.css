@@ -29,18 +29,16 @@
             /*align-items: flex-start;*/
         }
             .color-selection__sub-heading {
-                position: static;
-                margin-top: 20px;
+                /*position: absolute;*/
                 /*left: 0;*/
                 /*top: -15px;*/
                 /*right: 0;*/
                 /*margin: auto;*/
-                width: auto;
-                justify-content: center;
+                /*width: 98px;*/
                 /*padding: 4px;*/
                 /*display: flex;*/
                 /*align-items: flex-start;*/
-                border: none;
+                /*border: 1px solid #E4CFC3;*/
                 /*background-color: #FFFFFF;*/
                 /*border-radius: 8px;*/
                 /*font-weight: 600;*/
@@ -57,10 +55,13 @@
             .color-selection__list {
                 display: block;
                 /*align-items: flex-start;*/
-                padding: 0;
-                border: none;
-                margin: -5px;
+                margin: 16px -9px;
+                padding: 16px 4px 5px;
                 /*border-radius: 8px;*/
+            }
+
+            .color-selection__list:first-child {
+                margin-top: 0   ;
             }
 
             .color-selection__section--premium .color-selection__list {
@@ -71,7 +72,7 @@
                     height: 60px;
                     /*padding: 0;*/
                     margin-left: 0;
-                    margin-top: 2px;
+                    margin-right: 0;
                     /*border: 5px solid #FFFFFF;*/
                     /*background-clip: border-box;*/
                     /*background-size: 100%;*/
@@ -83,7 +84,7 @@
                 }
 
                 .color-selection__item:first-child {
-                    /*margin-left: 0;*/
+                    margin-top: 0;
                 }
 
                 .color-selection__item:not(.color-selection__item--disabled):hover {
@@ -109,6 +110,7 @@
                     }
 
                     .color-selection__leaf {
+                        display: none;
                         /*position: absolute;*/
                         /*z-index: 10;*/
                         /*left: 50%;*/
