@@ -1,0 +1,30 @@
+.design-and-image {
+    width: auto;
+    /*position: relative;*/
+    padding-left: 0;
+}
+    .design-and-image__preview {
+        display: none;
+    }
+        .design-and-image__icon {
+            /*vertical-align: top;*/
+            /*fill: #333333;*/
+        }
+
+    .design-and-image__heading {
+        display: none;
+        /*font-weight: bold;*/
+        /*font-size: 13px;*/
+        /*line-height: 18px;*/
+        /*color: #545454;*/
+    }
+
+    .design-and-image__description {
+        max-width: 280px;
+        margin: 0 auto;
+        /*margin-top: 3px;*/
+        /*font-size: 12px;*/
+        /*line-height: 20px;*/
+        /*color: #545454;*/
+        text-align: center;
+    }

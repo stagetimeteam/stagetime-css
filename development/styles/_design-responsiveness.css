@@ -1,0 +1,26 @@
+.design {
+
+}
+    .design__heading {
+        max-width: available;
+        /*margin: 0 auto;*/
+        /*font-weight: 600;*/
+        /*font-size: 26px;*/
+        /*line-height: 38px;*/
+        /*text-align: center;*/
+    }
+
+    .design__body {
+        /*margin-top: 38px;*/
+        /*text-align: center;*/
+    }
+        .design__panel {
+            display: block;
+            /*align-items: flex-start;*/
+            /*justify-content: space-between;*/
+            /*gap: 17px;*/
+            border: none;
+            padding: 0;
+            /*border-radius: 5px;*/
+            /*text-align: left;*/
+        }
