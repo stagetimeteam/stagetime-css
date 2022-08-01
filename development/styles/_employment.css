@@ -1,6 +1,10 @@
 .employment {
-    padding: 32px var(--modal-padding) 34px;
+
 }
+    .popup .employment {
+        padding: 32px var(--modal-padding) 34px;
+    }
+
     .employment__hints {
         margin-top: -10px;
         font-size: 13px;
