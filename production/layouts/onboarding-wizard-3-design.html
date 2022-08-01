@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Welcome</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1659366374">
+        <link rel="stylesheet" href="../styles/style.css?1659366374">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1659366374" media="(max-width: 767px)">
+    </head>
+    <body>
+
+        <div class="wizard wizard--design">
+            <div class="wizard__header">
+                <a class="wizard__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <div class="wizard__progress">
+                    <a class="wizard__bar wizard__bar--passed" href="#"></a>
+                    <a class="wizard__bar wizard__bar--passed" href="#"></a>
+                    <a class="wizard__bar wizard__bar--passed" href="#"></a>
+                    <div class="wizard__bar"></div>
+                </div>
+            </div>
+            <div class="wizard__body">
+                <div class="design">
+                    <h1 class="design__heading">
+                        Make some design choices.
+                    </h1>
+                    <div class="design__body">
+                        <div class="design__panel">
+                            <div class="design__section design-and-image">
+                                <div class="design-and-image__preview">
+                                    <svg class="design-and-image__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1659366374#24-category"></use>
+                                    </svg>
+                                </div>
+                                <div class="design-and-image__heading">
+                                    Design and image
+                                </div>
+                                <div class="design-and-image__description">
+                                    Upload an image and select your profile color.
+                                    <br class="hide-on-smartphone">
+                                    <br class="hide-on-smartphone">
+                                    <em>You can always change this later.</em>
+                                </div>
+                            </div>
+                            <button class="design__section upload-photo" type="button">
+                                <span class="upload-photo__preview cover">
+                                    <svg class="cover__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1659366374#24-picture"></use>
+                                    </svg>
+                                </span>
+                                <span class="upload-photo__heading">Upload photo</span>
+                                <span class="upload-photo__description">Go ahead, add your favorite photo. You’ll be able to crop it perfrectly on your profile later.</span>
+                            </button>
+                            or:
+                            <button class="design__section upload-photo" type="button">
+                                <span class="upload-photo__preview re-upload">
+                                    <img class="re-upload__image" srcset="../temp/upload-photo@2x.jpg"
+                                         src="../temp/upload-photo.jpg"
+                                         width="400"
+                                         height="310"
+                                         alt=""
+                                    >
+                                    <svg class="re-upload__icon" width="32" height="32">
+                                        <use xlink:href="../symbols/symbols.svg?1659366374#32-edit-photo"></use>
+                                    </svg>
+                                    <span class="re-upload__label">Edit</span>
+                                </span>
+                                <span class="upload-photo__heading">Upload photo</span>
+                                <span class="upload-photo__description">Go ahead, add your favorite photo. You’ll be able to crop it perfrectly on your profile later.</span>
+                            </button>
+                            <div class="design__section color-selection">
+                                <div class="color-selection__heading">
+                                    Select color
+                                </div>
+                                <div class="color-selection__note">
+                                    Go ahead, try ‘em all.
+                                </div>
+                                <div class="color-selection__body">
+                                    <div class="color-selection__section">
+                                        <div class="color-selection__list">
+                                            <button class="color-selection__item color-selection__item--current" data-theme="thank-you-five" type="button" style="background-color: #C6B1A6;">
+                                    <span class="color-selection__leaf">
+                                        <span class="color-selection__circle" style="background-color: #C6B1A6;"></span>
+                                        Thank You Five
+                                    </span>
+                                            </button>
+                                            <button class="color-selection__item" data-theme="in-your-habitat" type="button" style="background-color: #ADB7AC;">
+                                    <span class="color-selection__leaf">
+                                        <span class="color-selection__circle" style="background-color: #ADB7AC;"></span>
+                                        In Your Habitat
+                                    </span>
+                                            </button>
+                                            <button class="color-selection__item" data-theme="swim-test" type="button" style="background-color: #9CB2BE;">
+                                    <span class="color-selection__leaf">
+                                        <span class="color-selection__circle" style="background-color: #9CB2BE;"></span>
+                                        Swim Test
+                                    </span>
+                                            </button>
+                                            <button class="color-selection__item" data-theme="light-grey" type="button" style="background-color: #C0C0C0;">
+                                    <span class="color-selection__leaf">
+                                        <span class="color-selection__circle" style="background-color: #C0C0C0;"></span>
+                                        Light Grey
+                                    </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="color-selection__section color-selection__section--premium">
+                                        <div class="color-selection__sub-heading">
+                                            <svg class="color-selection__crown" width="20" height="20">
+                                                <use xlink:href="../symbols/symbols.svg?1659366374#20-crown"></use>
+                                            </svg>
+                                            Premium
+                                        </div>
+                                        <div class="color-selection__list">
+                                            <button class="color-selection__item color-selection__item--disabled" type="button" style="background-color: #C3BECC;" title="Please consider upgrading to premium">
+
+                                            </button>
+                                            <button class="color-selection__item color-selection__item--disabled" type="button" style="background-color: #254547;" title="Please consider upgrading to premium">
+
+                                            </button>
+                                            <button class="color-selection__item color-selection__item--disabled" type="button" style="background-color: #C2CDE3;" title="Please consider upgrading to premium">
+
+                                                <span class="color-selection__gradient" style="background-image: linear-gradient(135.24deg, #A8B1D5 2.08%, #DDEAF1 100%);"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wizard__footer">
+                <div class="wizard__navigation">
+                    <a class="wizard__continue button button--side-submit button--black" href="#">Continue Building</a>
+                    <a class="wizard__skip button button--side-submit button--transparent-black" href="#">Skip</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3/3 Modals: -->
+        <!-- No modal windows on this page -->
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../scripts/_global.js?1659366374"></script>
+        <script src="../scripts/_operations.js?1659366374"></script>
+        <script src="../scripts/_profile.js?1659366374"></script>
+        <script src="../scripts/_sidebar.js?1659366374"></script>
+        <script src="../scripts/_mfp.js?1659366374"></script>
+        <script src="../scripts/_search.js?1659366374"></script>
+        <script src="../scripts/_carousel.js?1659366374"></script>
+        <script src="../scripts/_player3.js?1659366374"></script>
+        <script src="../scripts/_updates.js?1659366374"></script>
+        <script src="../scripts/_side.js?1659366374"></script>
+        <script src="../scripts/_happening.js?1659366374"></script>
+        <script src="../scripts/_input.js?1659366374"></script>
+        <script src="../scripts/_edit-post.js?1659366374"></script>
+        <script src="../scripts/_post-form.js?1659366374"></script>
+        <script src="../scripts/_button.js?1659366374"></script>
+        <script src="../scripts/_quick-message.js?1659366374"></script>
+        <script src="../scripts/_explore.js?1659366374"></script>
+        <script src="../scripts/_shortcut.js?1659366374"></script>
+        <script src="../scripts/_scrollbar.js?1659366374"></script>
+        <script src="../scripts/_overlay.js?1659366374"></script>
+        <script src="../scripts/_notifications.js?1659366374"></script>
+        <script src="../scripts/_enter.js?1659366374"></script>
+        <script src="../scripts/_suggesting.js?1659366374"></script>
+        <script src="../scripts/_chat.js?1659366374"></script>
+        <script src="../scripts/_badge.js?1659366374"></script>
+        <script src="../scripts/_media-bar.js?1659366374"></script>
+        <script src="../scripts/_settings.js?1659366374"></script>
+        <script src="../scripts/_slideshow.js?1659366374"></script>
+        <script src="../scripts/_expandable-bio.js?1659366374"></script>
+        <script src="../scripts/_parallax.js?1659366374"></script>
+        <script src="../scripts/_simple-parallax.js?1659366374"></script>
+        <script src="../scripts/_anchor.js?1659366374"></script>
+        <script src="../scripts/_modal.js?1659366374"></script>
+        <script src="../scripts/_full-media-card.js?1659366374"></script>
+        <script src="../scripts/_color-selection.js?1659366374"></script>
+        <script src="../scripts/_layout-type.js?1659366374"></script>
+        <script src="../scripts/_sortable.js?1659366374"></script>
+        <script src="../scripts/_biography.js?1659366374"></script>
+        <script src="../scripts/_media-clip.js?1659366374"></script>
+        <script src="../scripts/_typing.js?1659366374"></script>
+        <script src="../scripts/_circles.js?1659366374"></script>
+        <script src="../scripts/_brief.js?1659366374"></script>
+        <script src="../scripts/_non-performer.js?1659366374"></script>
+        <script src="../scripts/_owl-carousel.js?1659366374"></script>
+        <script src="../scripts/_add-filter.js?1659366374"></script>
+
+
+    </body>
+</html>
+
+
+
