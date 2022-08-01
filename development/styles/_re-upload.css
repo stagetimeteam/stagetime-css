@@ -1,5 +1,6 @@
 .re-upload {
     position: relative;
+    display: block;
     padding: 0;
     border: none;
     border-radius: 4px;
@@ -9,6 +10,7 @@
     .re-upload__image {
         vertical-align: top;
         background-color: var(--image-fallback);
+        object-fit: cover;
     }
 
     .re-upload::before {

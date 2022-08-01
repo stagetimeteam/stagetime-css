@@ -152,3 +152,6 @@
 @import url("_design-responsiveness.css");
 @import url("_design-and-image-responsiveness.css");
 @import url("_color-selection-responsiveness.css");
+@import url("_match-responsiveness.css");
+@import url("_upload-photo-responsiveness.css");
+@import url("_re-upload-responsiveness.css");

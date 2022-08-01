@@ -2,16 +2,16 @@
 
 }
     .design__heading {
-        max-width: available;
+        max-width: 300px;
         /*margin: 0 auto;*/
-        /*font-weight: 600;*/
-        /*font-size: 26px;*/
-        /*line-height: 38px;*/
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
         /*text-align: center;*/
     }
 
     .design__body {
-        /*margin-top: 38px;*/
+        margin-top: 21px;
         /*text-align: center;*/
     }
         .design__panel {
@@ -24,3 +24,10 @@
             /*border-radius: 5px;*/
             /*text-align: left;*/
         }
+            .design__section {
+                margin-top: 33px;
+            }
+
+            .design__section:first-child {
+                margin-top: 0;
+            }
