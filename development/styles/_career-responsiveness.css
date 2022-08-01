@@ -1,0 +1,27 @@
+.career {
+
+}
+    .career__heading {
+        /*max-width: 560px;*/
+        /*margin: 0 auto;*/
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 36px;
+        /*text-align: center;*/
+    }
+
+    .career__description {
+        /*max-width: 560px;*/
+        /*margin: 13px auto 0;*/
+        font-size: 13px;
+        line-height: 22px;
+        /*color: #545454;*/
+        /*text-align: center;*/
+    }
+
+    .career__form {
+        width: auto;
+        /*margin-top: 30px;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
