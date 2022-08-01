@@ -62,10 +62,13 @@
         .wizard__navigation {
             position: relative;
         }
-            .wizard__continue.button,
-            .wizard__continue .button {
-                width: 150px;
+            .wizard__continue {
+
             }
+                .wizard__continue.button,
+                .wizard__continue .button {
+                    width: 150px;
+                }
 
             .wizard__skip {
                 position: absolute;
@@ -73,26 +76,45 @@
                 top: 0;
                 margin-left: 6px;
             }
+                .wizard__skip.button,
+                .wizard__skip .button {
+
+                }
 
 
 
+/* 1 */
+.wizard--welcome {
+
+}
+
+
+/* 2 */
 .wizard--match {
     padding-bottom: 113px;
 }
     .wizard--match .wizard__footer {
         height: 113px;
     }
+        .wizard--match .wizard__continue {
 
-    .wizard--match .wizard__continue.button,
-    .wizard--match .wizard__continue .button {
-        width: 240px;
-    }
+        }
+            .wizard--match .wizard__continue.button,
+            .wizard--match .wizard__continue .button {
+                width: 240px;
+            }
 
-    .wizard__question {
-        margin-top: -6px;
-        margin-bottom: 11px;
-        font-size: 14px;
-        line-height: 26px;
-        color: #545454;
-        text-align: center;
-    }
+        .wizard__question {
+            margin-top: -6px;
+            margin-bottom: 11px;
+            font-size: 14px;
+            line-height: 26px;
+            color: #545454;
+            text-align: center;
+        }
+
+
+/* 3 */
+.wizard--design {
+
+}

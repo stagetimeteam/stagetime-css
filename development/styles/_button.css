@@ -360,15 +360,15 @@
 }
 
 .button--transparent-black:hover {
-    background-color: #343C42;
+    background-color: rgba(0, 0, 0, 0.05);
     box-shadow: none;
-    color: #FFFFFF;
+    color: #44474A;
 }
 
 .button--transparent-black:active {
-    background-color: #111416;
+    background-color: rgba(0, 0, 0, 0.1);
     box-shadow: none;
-    color: #FFFFFF;
+    color: #44474A;
 }
 
 
