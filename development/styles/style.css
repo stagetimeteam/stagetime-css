@@ -3,6 +3,7 @@
 @import url("../vendors/jquery-scrollbar/jquery.scrollbar.css");
 @import url("../vendors/bootstrap/bootstrap-modal-only.css");
 @import url("../vendors/owl-carousel/assets/owl.carousel.css");
+@import url("../vendors/select2/css/select2.min.css");
 @import url("_root.css");
 @import url("_universal.css");
 @import url("_visuallyhidden.css");

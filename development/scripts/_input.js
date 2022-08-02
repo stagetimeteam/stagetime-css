@@ -156,4 +156,10 @@
         $(this).parents('.input').siblings('.output').remove();
     });
 
+
+    /* select2 init */
+
+    $('.js-example-basic-multiple').select2();
+
+
 })(jQuery);
