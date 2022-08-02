@@ -169,16 +169,12 @@
             }
         },
         templateResult: function (data) {
-            var $result = $("<div></div>");
-
-            $result.text(data.text);
-
             if (data.newOption) {
-                $result.prepend('Create “');
-                $result.append('”');
+                var $result = $('<div>Create “' + data.text + '”</div>');
+                return $result;
             }
 
-            return $result;
+            return data.text;
         }
     });
 
