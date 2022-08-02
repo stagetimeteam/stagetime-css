@@ -159,7 +159,28 @@
 
     /* select2 init */
 
-    $('.js-example-basic-multiple').select2();
+    $('.js-example-basic-multiple').select2({
+        tags: true,
+        createTag: function (params) {
+            return {
+                id: params.term,
+                text: params.term,
+                newOption: true
+            }
+        },
+        templateResult: function (data) {
+            var $result = $("<div></div>");
+
+            $result.text(data.text);
+
+            if (data.newOption) {
+                $result.prepend('Create “');
+                $result.append('”');
+            }
+
+            return $result;
+        }
+    });
 
 
 })(jQuery);
