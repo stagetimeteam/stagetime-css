@@ -7,7 +7,7 @@
     }
         .select2-selection {
             position: relative;
-            height: 40px;
+            /*min-height: 40px;*/
             /*z-index: 1000;*/
             border-radius: 5px !important;
             border-color: #E8E8E8 !important;
@@ -44,8 +44,8 @@
                     /*margin: 0 !important;*/
                     /*height: 40px !important;*/
                     /*padding: 9px 19px !important;*/
-                    margin-left: 19px !important;
-                    margin-top: 9px !important;
+                    vertical-align: top !important;
+                    margin-top: 0 !important;
                     font-family: inherit !important;
                     font-weight: normal !important;
                     font-size: 13px !important;
