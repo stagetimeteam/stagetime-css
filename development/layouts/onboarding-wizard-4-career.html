@@ -69,12 +69,7 @@
                                 creating new organization:
                                 <div class="management-suggest management-suggest--selected">
                                     <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
-                                        <img class="avatar__image"
-                                             src="../symbols/org-placeholder.svg"
-                                             width="44"
-                                             height="44"
-                                             alt="Mark Zuckerberg"
-                                        >
+                                        <img class="avatar__image" src="../symbols/org-placeholder.svg" width="44" height="44" alt="">
                                     </div>
                                     <div class="management-suggest__name">
                                         <strong>My New Organization Name</strong>
@@ -103,31 +98,18 @@
                                 </div>
                             </div>
                             <div class="employment__row">
-                                <div class="input input--larger-font input--scanner">
-                                    <input class="input__widget" type="text" placeholder="Role, Title, or Position *">
-                                    <div class="input__dropdown">
-                                        <div class="input__options">
-                                            <a class="input__suggest" href="#">Bass</a>
-                                            <a class="input__suggest" href="#">Bass-baritone</a>
-                                            <a class="input__suggest" href="#">Bass Guitar - Hover effect</a>
-                                            <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dictionary">
-                                    <div class="dictionary__item word">
-                                        <button class="word__delete" type="button">
-                                            <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
-                                        </button>
-                                        Lead singer
-                                    </div>
-                                    <div class="dictionary__item word">
-                                        <button class="word__delete" type="button">
-                                            <img class="word__cross" src="../symbols/close-square.svg" width="16" height="16" alt="">
-                                        </button>
-                                        Concerts
-                                    </div>
-                                </div>
+                                <select class="select2--init select2-tagging" multiple="multiple">
+                                    <option value="1">Bass</option>
+                                    <option value="2">Bass-baritone</option>
+                                    <option value="3">Bass Guitar</option>
+                                    <option value="4">Bass 101</option>
+                                    <option value="5">Bass-baritone lorem</option>
+                                    <option value="6">More bass Bass Guitar effect</option>
+                                    <option value="7">Even more Bass</option>
+                                    <option value="8">Another Bass-baritone</option>
+                                    <option value="9">Just Bass Guitar 2</option>
+                                    <option value="10">Yet another bass</option>
+                                </select>
                             </div>
                             <div class="employment__row">
                                 <div class="input input--larger-font">
