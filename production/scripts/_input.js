@@ -157,26 +157,4 @@
     });
 
 
-    /* select2 init */
-
-    $('.js-example-basic-multiple').select2({
-        tags: true,
-        createTag: function (params) {
-            return {
-                id: params.term,
-                text: params.term,
-                newOption: true
-            }
-        },
-        templateResult: function (data) {
-            if (data.newOption) {
-                var $result = $('<div>Create “' + data.text + '”</div>');
-                return $result;
-            }
-
-            return data.text;
-        }
-    });
-
-
 })(jQuery);
