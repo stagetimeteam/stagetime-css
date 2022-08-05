@@ -7,7 +7,7 @@
 
     /* tagging: */
 
-    $('.select2-tagging').select2({
+    $('.select2--tagging').select2({
         tags: true,
         placeholder: "Role, Title, or Position *",
         createTag: function (params) {
