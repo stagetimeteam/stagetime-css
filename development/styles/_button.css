@@ -450,10 +450,10 @@
 
 .button--submit {
     background-color: #545454;
-    border-radius: 7px;
+    border-radius: 5px;
     box-shadow: none;
-    font-weight: bold;
-    font-size: 12px;
+    font-weight: 600;
+    font-size: 13px;
     color: #FFFFFF;
 }
 
@@ -471,18 +471,23 @@
 
 
 .button--cancel {
-    background-color: #E1E1E1;
-    color: #545454;
-    box-shadow: none;
-    border-radius: 7px;
-    font-weight: bold;
-    font-size: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 0 1px #44474A;
+    color: #44474A;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 13px;
 }
 
-.button--cancel:hover,
+.button--cancel:hover {
+    background-color: #E8E8E8;
+    box-shadow: none;
+    color: #44474A;
+}
 .button--cancel:active {
-    background-color: #757575;
-    color: #E8E8E8;
+    background-color: #E8E8E8;
+    box-shadow: none;
+    color: #44474A;
 }
 
 
