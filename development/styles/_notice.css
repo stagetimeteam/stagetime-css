@@ -6,10 +6,6 @@
     transition: background-color var(--transition-hover);
 }
 
-.notice {
-    margin-top: -1px;
-}
-
 .notice:first-child {
     margin-top: 0;
 }
@@ -17,29 +13,10 @@
 .notice:not(.notice--success):not(.notice--cancel):hover {
     background-color: #F5F5F5;
 }
-    .notice::before {
-        content: "";
-        position: absolute;
-        left: 24px;
-        right: 24px;
-        top: 0;
-        height: 1px;
-        background-color: #E8E8E8;
-        transition: background-color var(--transition-hover);
-    }
-
-    .notice:not(.notice--success):not(.notice--cancel):hover::before {
-        background-color: transparent;
-    }
-
-    .notice:not(.notice--success):not(.notice--cancel):hover + .notice::before {
-        background-color: transparent;
-    }
-
     .notice__preview {
         position: absolute;
         z-index: 10;
-        left: 24px;
+        left: 37px;
         top: 21px;
     }
 
@@ -69,16 +46,18 @@
         justify-content: center;
         flex-grow: 1;
         min-height: 84px; /* 40px without paddings, 2 lines of text */
-        padding: 22px 50px 22px 85px;
-        font-size: 12px;
+        padding: 22px 33px 22px 105px;
+        font-size: 13px;
         line-height: 20px;
-        color: #545454;
+        color: #696A6B;
         text-decoration: none;
     }
         .notice__body {
             position: relative;
         }
             .notice__body .link--text-alike {
+                font-weight: 600;
+                color: #23282C;
                 transition: opacity var(--transition-hover);
             }
             .notice__body .link--text-alike:hover {
@@ -102,12 +81,9 @@
         }
 
         .notice__time {
-            position: absolute;
-            right: 24px;
-            top: 24px;
             font-size: 12px;
             line-height: 16px;
-            color: #AAAAAA;
+            color: #A7A8AB;
         }
 
     .notice__operations {
