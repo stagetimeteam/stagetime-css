@@ -11,6 +11,10 @@
     transition: background-color var(--transition-hover);
 }
 
+.notice:hover {
+    background-color: #F5F5F5;
+}
+
 .notice:first-child {
     margin-top: 0;
 }
