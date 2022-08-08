@@ -1,5 +1,8 @@
 .link,
 .wysiwyg a {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     display: inline;
     vertical-align: baseline;
     padding: 4px 0 0; /* 4px solves two problems:

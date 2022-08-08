@@ -127,7 +127,7 @@
                     </div>
                 </a>
                 <div class="notice__operations">
-                    <a class="notice__action notice__action--grow button button--submit" href="#">Confirm</a>
+                    <a class="notice__action button button--submit" href="#">Confirm</a>
                     <a class="notice__action button button--cancel" href="#">Back</a>
                 </div>
             </div>
@@ -156,16 +156,15 @@
                     </div>
                 </a>
                 <div class="notice__operations">
-                    <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Accept</a>
-                    <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Delete</a>
+                    <a class="notice__action  button  button--submit" href="#">Accept</a>
+                    <a class="notice__action  button  button--cancel" href="#">Delete</a>
                 </div>
             </div>
 
-
             <br>
-            <br>
-            <br>
-            Add <b>.notice__bubble</b>
+            <p>
+                When action pressed add <a href="_icon-status.html">.icon-status</a> with additional <b>.notice__output</b> class:
+            </p>
 
             <div class="notice">
                 <a class="notice__preview avatar avatar--alt-hover" href="#">
@@ -179,30 +178,33 @@
                 </a>
                 <a class="notice__wrapper" href="#">
                     <div class="notice__body">
-                        <span class="link link--text-alike">Jennie Moser</span> is requesting to connect.
-                    </div>
-                    <div class="notice__bubble">
-                        Hi Terrence! It’s so great to see you here. Was lovely meeting you at Cardiff.
+                        You’ve been invited to Circle <span class="link link--text-alike">Opera Idaho EAs</span> by AJ O’Reilly
                         <span class="notice__time">1h</span>
                     </div>
                 </a>
                 <div class="notice__operations">
-                    <a class="notice__action  notice__action--50pct  button  button--submit" href="#">Connect</a>
-                    <a class="notice__action  notice__action--50pct  button  button--cancel" href="#">Connect</a>
+                    <div class="notice__output icon-status icon-status--alternate">
+                        <img class="icon-status__illustration" src="../symbols/30-check.svg" width="30" height="30" alt="">
+                        <div class="icon-status__label">Request accepted.</div>
+                    </div>
+                    or:
+                    <div class="notice__output icon-status icon-status--alternate">
+                        <img class="icon-status__illustration" src="../symbols/30-none.svg" width="30" height="30" alt="">
+                        <div class="icon-status__label">Request deleted.</div>
+                    </div>
                 </div>
             </div>
 
 
-
-
-
             <br>
             <br>
             <br>
-            <h2>.notice--success</h2>
-            Aso use <b>.notice__wrapper</b> as &lt;div&gt;
+            Add:
+            <br><b>.notice__name</b>
+            <br><b>.notice__note</b>
+            <br><b>.notice__intro</b>
 
-            <div class="notice notice--success">
+            <div class="notice">
                 <a class="notice__preview avatar avatar--alt-hover" href="#">
                     <img class="avatar__image"
                          srcset="../temp/person-a-54x54@2x.jpg 2x"
@@ -212,35 +214,29 @@
                          alt="Mark Zuckerberg"
                     >
                 </a>
-                <div class="notice__wrapper">
+                <a class="notice__wrapper" href="#">
                     <div class="notice__body">
-                        <span class="link link--text-alike">Andres Acosta</span> added you as management.
+                        <div class="notice__name">
+                            Elena Villalón
+                        </div>
+                        <div class="notice__note">
+                            Soprano, Houston, TX
+                        </div>
+                        <div class="notice__intro multiline multiline--notification">
+                            <div class="multiline__content">
+                                Hey, was great meeting you last night! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt djdj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptatum!
+                            </div>
+                            <span class="multiline__handler link">
+                                <span class="multiline__read-more">Read More</span>
+                                <span class="visuallyhidden">or</span>
+                                <span class="multiline__close">Read Less</span>
+                            </span>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-
-
-            <br>
-            <br>
-            <br>
-            <h2>.notice__cancel</h2>
-            Aso use <b>.notice__cancel</b> as &lt;div&gt;
-
-            <div class="notice notice--cancel">
-                <a class="notice__preview avatar avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-a-54x54@2x.jpg 2x"
-                         src="../temp/person-a-54x54.jpg"
-                         width="54"
-                         height="54"
-                         alt="Mark Zuckerberg"
-                    >
                 </a>
-                <div class="notice__wrapper">
-                    <div class="notice__body">
-                        Request <strong>deleted</strong>.
-                    </div>
+                <div class="notice__operations">
+                    <a class="notice__action  button  button--submit" href="#">Connect</a>
+                    <a class="notice__action  button  button--cancel" href="#">Connect</a>
                 </div>
             </div>
 
@@ -321,6 +317,7 @@
         <script src="../scripts/_owl-carousel.js"></script>
         <script src="../scripts/_add-filter.js"></script>
         <script src="../scripts/_select2.js"></script>
+        <script src="../scripts/_multiline.js"></script>
 
 
     </body>

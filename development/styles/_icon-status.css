@@ -17,3 +17,18 @@
         line-height: 20px;
         color: #23282C;
     }
+
+
+.icon-status--alternate {
+
+}
+    .icon-status--alternate .icon-status__illustration {
+        margin-left: 0;
+        margin-right: 14px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .icon-status--alternate .icon-status__label {
+
+    }

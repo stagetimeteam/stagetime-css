@@ -14,14 +14,10 @@
 .notice:first-child {
     margin-top: 0;
 }
-
-.notice:not(.notice--success):not(.notice--cancel):hover {
-    background-color: #F5F5F5;
-}
     .notice__preview {
         position: absolute;
         z-index: 10;
-        left: 37px;
+        left: 32px;
         top: 13px;
     }
 
@@ -69,30 +65,38 @@
                 opacity: 0.6;
             }
 
-        .notice__bubble {
-            margin: 12px -26px 3px 0;
-            position: relative;
-            padding: 18px 22px 15px;
-            background-color: #F8F8F8;
-            border-radius: 11px;
-            font-size: 12px;
-            line-height: 20px;
-            color: #545454;
-            transition: background-color var(--transition-hover);
-        }
+            .notice__name {
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 20px;
+                color: #23282C;
+            }
 
-        .notice:hover .notice__bubble {
-            background-color: #FFFFFF;
-        }
+            .notice__note {
+                margin-bottom: 9px;
+                font-size: 13px;
+                line-height: 20px;
+                color: #757575;
+            }
 
-        .notice__time {
-            font-size: 12px;
-            line-height: 16px;
-            color: #A7A8AB;
-        }
+            .notice__content {
+
+            }
+
+            .notice__intro {
+                margin-top: 8px;
+            }
+
+            .notice__time {
+                font-size: 12px;
+                line-height: 16px;
+                color: #A7A8AB;
+            }
+
 
     .notice__operations {
         width: calc(100% - 19px - 80px);
+        margin-top: -6px;
         padding: 0 var(--notice-right) 16px var(--notice-left);
         position: relative;
         display: flex;
@@ -101,84 +105,18 @@
         flex-grow: 1;
     }
         .notice__action {
-
-        }
-
-        .notice__action--50pct {
-            width: 50%;
-        }
-
-        .notice__action--grow {
             flex-grow: 1;
+            flex-basis: 0;
         }
 
-        /* in case but is inside (not on the same node) */
+        /* in case but is inside (not mixed on the same node) */
         .notice__action .button {
             width: 100%;
         }
 
-
-
-.notice--success {
-
-}
-
-.notice--success:hover {
-
-}
-    .notice--success .notice__wrapper {
-        background-color: #F4F4F4;
-        border-radius: 8px;
-        margin: 22px 24px;
-    }
-        .notice--success .notice__wrapper::after {
-            content: "";
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
-            display: block;
-            width: 15px;
-            height: 15px;
-            background-image: url("../vectors/notification-success.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center center;
+        .notice__output {
+            padding-top: 4px;
+            padding-bottom: 4px;
         }
-
-
-    .notice--success .notice__preview {
-        margin-left: 24px;
-        margin-top: 22px;
-    }
-
-
-
-.notice--cancel {
-
-}
-
-.notice--cancel:hover {
-
-}
-    .notice--cancel .notice__wrapper {
-
-    }
-        .notice--cancel .notice__body::after {
-            content: "";
-            display: inline-block;
-            vertical-align: top;
-            width: 26px;
-            height: 26px;
-            margin: -3px 0 -3px 16px;
-            background-image: url("../vectors/notification-cancel.svg");
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
-
-    .notice--cancel .notice__preview {
-
-    }
 
 

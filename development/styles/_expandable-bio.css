@@ -38,8 +38,6 @@
 
     .expandable-bio--expanded .expandable-bio__handler {
         margin-top: 25px;
-        font-size: 12px;
-        line-height: 18px;
     }
         .expandable-bio--expanded .expandable-bio__read-more {
             display: none;
