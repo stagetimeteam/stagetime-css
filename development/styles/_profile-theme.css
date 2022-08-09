@@ -41,6 +41,7 @@
         .profile-theme__description {
             display: block;
             margin-top: 6px;
+            font-weight: normal;
             font-size: 13px;
             line-height: 21px;
             color: #757575;
