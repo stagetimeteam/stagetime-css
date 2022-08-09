@@ -1,0 +1,13 @@
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    box-shadow: inset 0 0 0 1px #CFD1D4;
+    border-radius: 50%;
+}
+    .circle__icon {
+        vertical-align: top;
+        fill: #23282C;
+    }
