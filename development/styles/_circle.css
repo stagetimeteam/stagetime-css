@@ -5,6 +5,7 @@
     width: 54px;
     height: 54px;
     box-shadow: inset 0 0 0 1px #CFD1D4;
+    background-color: #FFFFFF;
     border-radius: 50%;
 }
     .circle__icon {
