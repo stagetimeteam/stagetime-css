@@ -32,3 +32,10 @@
         .notifications__section {
             margin-top: 5px;
         }
+
+
+@media (min-width: 1500px) {
+    .notifications {
+        width: 780px;
+    }
+}
