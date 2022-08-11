@@ -34,8 +34,12 @@
         }
 
 
+/* Remove this if you don't want it wide on big screens: */
 @media (min-width: 1500px) {
     .notifications {
         width: 780px;
     }
+        .notice__action {
+            max-width: 104px;
+        }
 }

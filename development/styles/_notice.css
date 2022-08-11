@@ -109,12 +109,6 @@
             width: 100%;
         }
 
-        @media (min-width: 1500px) {
-            .notice__action {
-                max-width: 104px;
-            }
-        }
-
 
     .notice__output {
             padding-top: 4px;
