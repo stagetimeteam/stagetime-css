@@ -2,7 +2,7 @@
 
     /* default: */
 
-    $('.select2--init--default').select2();
+    $('.select2--default').select2();
 
 
     /* tagging: */
