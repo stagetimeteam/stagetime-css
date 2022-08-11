@@ -1,7 +1,8 @@
 .employment {
 
 }
-    .popup .employment {
+    .popup .employment,
+    .modal .employment {
         padding: 32px var(--modal-padding) 34px;
     }
 
