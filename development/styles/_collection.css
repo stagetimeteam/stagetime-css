@@ -274,10 +274,10 @@
                 padding: 13px 20px 10px;
                 background-color: transparent;
                 font-family: inherit;
-                font-weight: bold;
+                font-weight: 600;
                 font-size: 11px;
                 line-height: 18px;
-                color: #8B8B8B;
+                color: #76797C;
                 text-align: center;
                 cursor: pointer;
                 transition: color var(--transition-hover);
@@ -299,7 +299,7 @@
                 }
 
             .collection__sub-link--current {
-                color: #545454;
+                color: #44474A;
                 cursor: default;
             }
                 .collection__sub-link--current::after {

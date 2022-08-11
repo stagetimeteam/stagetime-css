@@ -7,7 +7,7 @@
     border-radius: 10px;
     font-size: 12px;
     line-height: 20px;
-    color: #545454;
+    color: #44474A;
     text-decoration: none;
     transition: background-color var(--transition-hover);
 }
@@ -29,6 +29,7 @@
         }
 
         .activity__time {
+            margin-left: 4px;
             font-weight: normal;
             font-size: 10px;
             color: #AAAAAA;
