@@ -1,0 +1,50 @@
+.user-connect {
+    position: relative;
+    text-align: center; /* align photo to center (card itself is larger than photo) */
+}
+    .user-connect__preview {
+
+    }
+        .user-connect__preview.avatar,
+        .user-connect__preview .avatar {
+            width: 100%;
+            height: auto;
+        }
+            .user-connect__preview .avatar__image {
+                width: 100%;
+                height: auto;
+            }
+
+    .user-connect__data {
+        margin-top: 15px;
+        min-height: 48px;
+    }
+        .user-connect__name {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 16px;
+            color: #23282C;
+        }
+            .user-connect__name .link {
+                transition: opacity var(--transition-hover);
+            }
+
+            .user-connect__name .link:hover {
+                opacity: 0.7;
+            }
+
+        .user-connect__note {
+            font-size: 12px;
+            line-height: 16px;
+            color: #44474A;
+        }
+
+    .user-connect__connect {
+        margin-top: 16px;
+    }
+        .user-connect__connect.button,
+        .user-connect__connect .button {
+            width: 100%;
+        }

@@ -17,7 +17,7 @@
             }
 
             .home__jumbotron {
-                margin-top: 18px;
+                margin-top: 43px;
                 padding-bottom: 27px;
                 border-bottom: 2px solid #F6F6F6;
                 margin-bottom: 35px;
@@ -25,6 +25,10 @@
 
             .home__updates {
                 margin-top: 13px;
+            }
+
+            .home__new {
+                margin-top: 30px;
             }
 
             .home__stats {
