@@ -23,6 +23,10 @@
                 margin-bottom: 35px;
             }
 
+            .home__updates {
+                margin-top: 13px;
+            }
+
             .home__stats {
                 margin-top: 26px;
             }
@@ -41,11 +45,6 @@
                 display: flex;
                 align-items: flex-start;
             }
-                .home__updates {
-                    width: calc(100% - 352px);
-                    padding-right: 24px;
-                }
-
                 .home__media {
                     width: 352px;
                 }
