@@ -21,44 +21,46 @@
         }
 
     .new-users__body {
-        position: relative;
         margin-top: 21px;
-        padding-right: 101px;
     }
-        .new-users__list {
-            display: flex;
-            align-items: flex-start;
-            gap: 32px;
+        .new-users__ribbon {
+            position: relative;
+            padding-right: 101px;
         }
-            .new-users__item {
-                flex-grow: 1;
+            .new-users__list {
+                display: flex;
+                align-items: flex-start;
+                gap: 32px;
             }
-
-
-            /* 4 items */
-            @media (max-width: 1399px) {
-
-                .new-users__item:nth-child(n+5) {
-                    display: none;
+                .new-users__item {
+                    flex-grow: 1;
                 }
-            }
 
-            /* 5 items */
-            @media (min-width: 1400px) and (max-width: 1539px) {
-                .new-users__item:nth-child(n+6) {
-                    display: none;
+
+                /* 4 items */
+                @media (max-width: 1399px) {
+
+                    .new-users__item:nth-child(n+5) {
+                        display: none;
+                    }
                 }
-            }
 
-            /* 6 items */
-            @media (min-width: 1540px) {
-                .new-users__item:nth-child(n+7) {
-                    display: none;
+                /* 5 items */
+                @media (min-width: 1400px) and (max-width: 1539px) {
+                    .new-users__item:nth-child(n+6) {
+                        display: none;
+                    }
                 }
-            }
 
-        .new-users__refresh {
-            position: absolute;
-            right: 11px;
-            top: calc(((100% - 103px) / 2) - 16px);
-        }
+                /* 6 items */
+                @media (min-width: 1540px) {
+                    .new-users__item:nth-child(n+7) {
+                        display: none;
+                    }
+                }
+
+            .new-users__refresh {
+                position: absolute;
+                right: 11px;
+                top: calc(((100% - 116px) / 2) - 16px);
+            }

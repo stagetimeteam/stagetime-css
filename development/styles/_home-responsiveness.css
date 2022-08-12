@@ -37,20 +37,13 @@
             /*padding-top: 32px;*/
         }
 
-        .home__feeds {
+        .home__media {
             /*margin-top: 32px;*/
             border-top-width: 4px;
             /*padding-top: 32px;*/
             /*padding-bottom: 80px;*/
-            display: block;
             /*align-items: flex-start;*/
         }
-            .home__media {
-                margin-top: 32px;
-                border-top: 4px solid #F6F6F6;
-                padding-top: 32px;
-                width: auto;
-            }
 
 
     .home__aside {

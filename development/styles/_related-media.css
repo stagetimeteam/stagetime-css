@@ -4,14 +4,15 @@
     /* stylelint-disable */
     .related-media__list {
         display: flex;
-        flex-wrap: wrap;
         align-items: flex-start;
         gap: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
     /* stylelint-enable */
 
         .related-media__item {
-            width: calc(50% - 12px);
+            width: 25%;
         }
 
     .related-media__refresh {
