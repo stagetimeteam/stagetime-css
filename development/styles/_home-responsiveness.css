@@ -23,6 +23,10 @@
             border-bottom-width: 4px;
         }
 
+        .home__mobile-people {
+            display: block;
+        }
+
         .home__updates {
 
         }
@@ -78,10 +82,8 @@
                 }
             }
 
-        .home__people {
-            border-top: 4px solid #F6F6F6;
-            padding-top: 26px;
-            padding-bottom: 26px;
+        .home__desktop-people {
+            display: none;
         }
 
 

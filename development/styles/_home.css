@@ -23,6 +23,10 @@
                 margin-bottom: 35px;
             }
 
+            .home__mobile-people {
+                display: none;
+            }
+
             .home__updates {
                 margin-top: 13px;
             }
@@ -70,7 +74,7 @@
 
             }
 
-        .home__people {
+        .home__desktop-people {
             padding-top: 7px;
             padding-bottom: 80px;
         }
