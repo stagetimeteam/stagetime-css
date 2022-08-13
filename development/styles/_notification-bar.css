@@ -1,7 +1,7 @@
 .notification-bar {
     display: flex;
     align-items: center;
-    padding: 12px 14px;
+    padding: 9px 14px;
     background-color: #EBEFF4;
     border-radius: 4px;
 }
@@ -12,7 +12,7 @@
     .notification-bar__preview {
         flex-shrink: 0;
         margin-right: 15px;
-        padding: 7px;
+        padding: 5px;
         background-color: #FFFFFF;
         border-radius: 2px;
         line-height: 16px;
@@ -20,8 +20,8 @@
         .notification-bar__icon {
             vertical-align: top;
             fill: #39606C;
-            width: 18px;
-            height: 18px;
+            width: 16px;
+            height: 16px;
         }
 
     .notification-bar__message {
@@ -45,7 +45,7 @@
         width: 44px;
         height: 44px;
         padding: 14px;
-        margin: -6px -13px -6px 0;
+        margin: -6px -16px -6px -3px;
         background-color: transparent;
         border: none;
         cursor: pointer;
