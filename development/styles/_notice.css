@@ -51,6 +51,7 @@
         position: relative;
         font-size: 13px;
         line-height: 20px;
+        letter-spacing: -0.02em;
         color: #696A6B;
         text-decoration: none;
     }
@@ -94,8 +95,9 @@
 
     .notice__operations {
         margin-top: 16px;
-        display: flex;
-        align-items: flex-start;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(0, 1fr);
         gap: 10px;
         width: 100%;
     }
@@ -103,16 +105,15 @@
             flex-grow: 1;
             flex-basis: 0;
         }
+            /* in case button is inside (not mixed on the same node) */
+            .notice__action .button {
+                width: 100%;
+            }
 
-        /* in case but is inside (not mixed on the same node) */
-        .notice__action .button {
-            width: 100%;
-        }
 
-
-    .notice__output {
+        .notice__output {
+            flex-grow: 1;
+            flex-basis: 0;
             padding-top: 4px;
             padding-bottom: 4px;
         }
-
-

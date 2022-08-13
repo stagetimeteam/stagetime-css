@@ -3,7 +3,7 @@
     z-index: 1020;
     right: 91px;
     top: 54px;
-    width: 350px;
+    width: 375px;
     background-color: #FFFFFF;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -32,14 +32,3 @@
         .notifications__section {
             margin-top: 5px;
         }
-
-
-/* Remove this if you don't want it wide on big screens: */
-@media (min-width: 1500px) {
-    .notifications {
-        width: 780px;
-    }
-        .notice__action {
-            max-width: 104px;
-        }
-}
