@@ -11,8 +11,10 @@
         text-align: center;
     }
         .network-news__icon {
-            margin: -2px 5px -2px -2px;
+            margin: 0 5px 0 -2px;
             vertical-align: top;
+            width: 20px;
+            height: 20px;
             fill: currentColor;
         }
 
