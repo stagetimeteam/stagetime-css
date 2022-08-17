@@ -1,0 +1,80 @@
+.close-account {
+
+}
+    .close-account__description {
+        /*font-size: 13px;*/
+        /*line-height: 20px;*/
+        /*color: #757575;*/
+    }
+
+    .close-account__reason {
+        /*margin-top: 20px;*/
+        /*max-width: var(--form-width);*/
+    }
+
+    .close-account__feedback {
+        /*margin-top: 22px;*/
+    }
+        .close-account__feedback-description {
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #757575;*/
+        }
+
+        .close-account__feedback-field {
+            /*margin-top: 9px;*/
+            /*max-width: var(--form-width);*/
+        }
+
+    .close-account__footer {
+        /*margin-top: 23px;*/
+        /*display: flex;*/
+        /*align-self: flex-start;*/
+    }
+        .close-account__submit {
+
+        }
+
+        .close-account__submit.button,
+        .close-account__submit .button {
+            padding-left: 24px;
+            padding-right: 24px;
+            font-size: 13px;
+        }
+
+        .close-account__cancel {
+            /*margin-left: 16px;*/
+        }
+
+        .close-account__cancel.button,
+        .close-account__cancel .button {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+
+    @media (max-width: 359px) {
+
+        .close-account__footer {
+            display: block;
+        }
+
+        .close-account__submit {
+
+        }
+
+        .close-account__submit.button,
+        .close-account__submit .button {
+            width: 100%;
+        }
+
+        .close-account__cancel {
+            margin-top: 16px;
+            margin-left: 0;
+        }
+
+        .close-account__cancel.button,
+        .close-account__cancel .button {
+            width: 100%;
+        }
+    }

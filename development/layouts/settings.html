@@ -925,6 +925,132 @@
                         </button>
                     </div>
                 </div>
+                <div class="settings__section">
+                    <div class="settings__preview" style="background-image: linear-gradient(180deg, #A8B1D5 4.69%, #DDEAF1 100%);">
+                        <img class="settings__icon" src="../symbols/20-lock.svg" width="20" height="20" alt="">
+                    </div>
+                    <h2 class="settings__sub-heading">
+                        URLs and Domains <span class="settings__note">Connect a domain and update your Stagetime URL.</span>
+                    </h2>
+                    <div class="settings__item">
+                        <button class="settings__handler" type="button">
+                            Change my Stagetime URL
+                        </button>
+                        <button class="settings__edit button button--update-form" type="button">
+                            Edit
+                        </button>
+                        <div class="settings__dropdown">
+                            <div class="form">
+                                <div class="form__item">
+                                    <label class="label" for="url">Change my friendly URL</label>
+                                    <div class="prefixing">
+                                        <div class="prefixing__prefix">
+                                            stagetime.com/admin/
+                                        </div>
+                                        <div class="prefixing__field input input--semi-bold">
+                                            <input class="input__widget" type="url" id="url" value="aj-oreilly">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__footer">
+                                    <button class="form__submit button button--submit-form" type="button">
+                                        Save
+                                    </button>
+                                    <button class="form__cancel button button--update-form" type="button">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                            <button class="settings__close action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="settings__item">
+                        <button class="settings__handler" type="button">
+                            Add custom domain
+                        </button>
+                        <button class="settings__edit button button--update-form" type="button">
+                            Edit
+                        </button>
+                        <div class="settings__dropdown">
+                            <div class="domain">
+                                <div class="domain__summary">
+                                    <div class="domain__field input input--semi-bold">
+                                        <input class="input__widget" type="text" placeholder="Custom domain URL" value="www.ajoreilly.com">
+                                    </div>
+                                    <div class="domain__status">
+                                        <img class="domain__icon-status domain__icon-status--danger" src="../symbols/16-danger-triangle.svg" width="16" height="16" alt="">
+                                        Not connected.
+                                    </div>
+                                    <button class="domain__remove button button--update-form" type="button">
+                                        Remove
+                                    </button>
+                                </div>
+                                <div class="domain__body">
+                                    <div class="domain__intro-note">
+                                        Visit the admin console of your domain registrar (the website you brought your domain from) and create two&nbsp;A&nbsp;Records:
+                                    </div>
+                                    <div class="domain__data">
+                                        <table class="panel-table">
+                                            <thead class="panel-table__section">
+                                                <tr class="panel-table__row">
+                                                    <th class="panel-table__cell panel-table__cell--head">Type</th>
+                                                    <th class="panel-table__cell panel-table__cell--head">Name</th>
+                                                    <th class="panel-table__cell panel-table__cell--head">Value</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="panel-table__section">
+                                                <tr class="panel-table__row">
+                                                    <td class="panel-table__cell panel-table__cell--body">
+                                                        <span class="panel-table__bar">A</span>
+                                                    </td>
+                                                    <td class="panel-table__cell panel-table__cell--body">
+                                                        <span class="panel-table__bar">@</span>
+                                                    </td>
+                                                    <td class="panel-table__cell panel-table__cell--body">
+                                                        <span class="panel-table__bar">11.1.11.11</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="panel-table__row">
+                                                    <td class="panel-table__cell panel-table__cell--body">
+                                                        <span class="panel-table__bar">A</span>
+                                                    </td>
+                                                    <td class="panel-table__cell panel-table__cell--body">
+                                                        <span class="panel-table__bar">@</span>
+                                                    </td>
+                                                    <td class="panel-table__cell panel-table__cell--body">
+                                                        <span class="panel-table__bar">11.11.111.111</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="domain__footer">
+                                    <button class="domain__submit button button--submit-form" type="button">
+                                        <img class="button__icon button__icon--left" src="../symbols/16-check-status.svg" width="16" height="16" alt="">
+                                        Check Status
+                                    </button>
+                                    <div class="domain__connection-note">
+                                        <img class="domain__refresh" src="../symbols/24-refresh.svg" width="24" height="24" alt="">
+                                        Domain connection in process. Your domain should be live with 48 hours.
+                                    </div>
+                                </div>
+                                <div class="domain__support-note">
+                                    Having trouble or just want help with this part? <a class="link link--text-alike" href="#">Reach out to our team</a> and we’ll help you get set up.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="settings__close action action--flipped" type="button">
+                            <span class="action__image">
+                                <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                            </span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 

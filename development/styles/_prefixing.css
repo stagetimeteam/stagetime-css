@@ -1,0 +1,17 @@
+.prefixing {
+    display: flex;
+    align-items: center;
+}
+    .prefixing__prefix {
+        margin-right: 13px;
+        flex-shrink: 0;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #8B8B8B;
+        white-space: nowrap;
+    }
+
+    .prefixing__field {
+        flex-grow: 1;
+    }
