@@ -4,13 +4,23 @@
     padding: 10px 24px;
 }
     .section-separator__heading {
+        display: flex;
+        align-items: flex-start;
         padding-top: 3px;
         padding-bottom: 5px;
-        font-weight: bold;
-        font-size: 15px;
+        font-weight: 600;
+        font-size: 13px;
         line-height: 22px;
-        color: #757575;
+        color: #23282C;
+        white-space: nowrap;
     }
+        .section-separator__icon {
+            margin: 1px 8px 1px 7px;
+            vertical-align: top;
+            width: 20px;
+            height: 20px;
+            color: #23282C;
+        }
 
     .section-separator__action {
         margin-left: auto;
