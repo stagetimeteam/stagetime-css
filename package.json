@@ -1,6 +1,11 @@
 {
-  "name": "template",
-  "dependencies": {
+  "name": "stagetime-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stagetimeteam/stagetime-css.git"
+  },
+  "private": true,
+  "devDependencies": {
     "del": "2.2.0",
     "gulp": "4.0.2",
     "gulp-base64": "0.1.3",
@@ -9,7 +14,7 @@
     "gulp-plumber": "1.1.0",
     "gulp-postcss": "6.1.0",
     "gulp-size": "2.1.0",
-    "gulp-stylelint": "3.9.0",
+    "gulp-stylelint": "13.0.0",
     "gulp-svgmin": "1.2.2",
     "gulp-svgstore": "6.0.0",
     "postcss-cssnext": "3.1.1",
