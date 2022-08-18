@@ -22,6 +22,11 @@
         .user-connect__name {
             margin-top: 0;
             margin-bottom: 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
             font-weight: 600;
             font-size: 13px;
             line-height: 16px;
@@ -39,6 +44,14 @@
             font-size: 12px;
             line-height: 16px;
             color: #44474A;
+            /*overflow: hidden;*/
+            /*text-overflow: ellipsis;*/
+            /*display: -webkit-box;*/
+            /*-webkit-box-orient: vertical;*/
+            /*-webkit-line-clamp: 2;*/
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
     .user-connect__connect {

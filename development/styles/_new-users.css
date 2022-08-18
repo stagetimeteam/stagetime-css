@@ -35,6 +35,7 @@
                 .new-users__item {
                     flex-grow: 1;
                     flex-basis: 0;
+                    min-width: 0; /* keep columns equal https://stackoverflow.com/questions/38223879/white-space-nowrap-breaks-flexbox-layout */
                 }
 
 

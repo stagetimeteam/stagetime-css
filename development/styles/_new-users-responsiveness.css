@@ -57,6 +57,7 @@
             }
                 .new-users__item {
                     flex-grow: 0;
+                    flex-basis: auto;
                     width: 106px;
                     display: block !important;
                 }
