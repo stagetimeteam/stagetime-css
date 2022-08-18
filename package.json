@@ -1,5 +1,10 @@
 {
-  "name": "template",
+  "name": "stagetime-css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stagetimeteam/stagetime-css.git"
+  },
+  "private": true,
   "devDependencies": {
     "del": "2.2.0",
     "gulp": "4.0.2",
