@@ -131,21 +131,20 @@
         .full-media-card__content {
             position: absolute;
             left: 26px;
-            right: 26px;
+            right: 150px;
             bottom: 25px;
+            min-height: 44px;
         }
-            .full-media-card__company {
-                position: absolute;
-                left: 3px;
-                top: 24px;
-            }
 
             .full-media-card__heading {
-                margin-top: 18px;
                 font-weight: bold;
                 font-size: 14px;
                 line-height: 20px;
                 color: #FFFFFF;
+            }
+
+            .full-media-card__heading:last-child {
+                margin-top: 11px;
             }
 
             .full-media-card__name {
@@ -154,6 +153,18 @@
                 line-height: 20px;
                 color: #FFFFFF;
             }
+
+            .full-media-card__company {
+                position: absolute;
+                left: 3px;
+                top: 6px;
+            }
+
+            .full-media-card__company ~ .full-media-card__heading,
+            .full-media-card__company ~ .full-media-card__name {
+                margin-left: 51px;
+            }
+
 
         .full-media-card__details {
             position: absolute;
@@ -220,7 +231,7 @@
     .full-media-card__info {
         position: absolute;
         right: 29px;
-        bottom: 35px;
+        bottom: 27px;
     }
         .full-media-card__info.button,
         .full-media-card__info .button {
@@ -245,6 +256,7 @@
 
     .full-media-card--audio .full-media-card__content {
         left: 81px;
+        right: 220px;
     }
 
 
@@ -258,7 +270,7 @@
     }
 
     .full-media-card--project .full-media-card__content {
-        padding-left: 51px;
+        right: 200px;
     }
 
 

@@ -1,9 +1,11 @@
 .notification-bar {
     position: relative;
-    padding-bottom: 78px;
+    padding: 14px 37px 72px 55px;
 }
     .notification-bar__preview {
-
+        position: absolute;
+        left: 13px;
+        top: 13px;
     }
         .notification-bar__icon {
 
@@ -25,14 +27,18 @@
         position: absolute;
         left: 55px;
         right: 55px;
-        bottom: 26px;
+        bottom: 20px;
         padding-top: 9px;
         padding-bottom: 9px;
         width: auto;
+        font-size: 14px;
     }
 
     .notification-bar__close {
-
+        position: absolute;
+        right: 0;
+        top: 5px;
+        margin: 0;
     }
         .notification-bar__close::before {
 

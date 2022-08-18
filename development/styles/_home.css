@@ -17,10 +17,22 @@
             }
 
             .home__jumbotron {
-                margin-top: 18px;
+                margin-top: 43px;
                 padding-bottom: 27px;
                 border-bottom: 2px solid #F6F6F6;
                 margin-bottom: 35px;
+            }
+
+            .home__mobile-people {
+                display: none;
+            }
+
+            .home__updates {
+                margin-top: 13px;
+            }
+
+            .home__new {
+                margin-top: 30px;
             }
 
             .home__stats {
@@ -33,22 +45,12 @@
                 padding-top: 32px;
             }
 
-            .home__feeds {
-                margin-top: 32px;
+            .home__media {
+                margin-top: 40px;
                 border-top: 2px solid #F6F6F6;
-                padding-top: 32px;
+                padding-top: 40px;
                 padding-bottom: 80px;
-                display: flex;
-                align-items: flex-start;
             }
-                .home__updates {
-                    width: calc(100% - 352px);
-                    padding-right: 24px;
-                }
-
-                .home__media {
-                    width: 352px;
-                }
 
     .home__aside {
         flex-shrink: 0;
@@ -72,7 +74,7 @@
 
             }
 
-        .home__people {
+        .home__desktop-people {
             padding-top: 7px;
             padding-bottom: 80px;
         }
@@ -96,6 +98,10 @@
             bottom: 0;
             width: var(--home-aside-full);
         }
+            .home__aside-scroll {
+                height: 100%;
+                overflow-y: auto;
+            }
 }
 
 

@@ -4,16 +4,35 @@
     /* stylelint-disable */
     .related-media__list {
         display: flex;
-        flex-wrap: wrap;
         align-items: flex-start;
         gap: 24px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
     /* stylelint-enable */
 
         .related-media__item {
-            width: calc(50% - 12px);
+            width: 25%;
         }
 
     .related-media__refresh {
         margin-top: 24px;
     }
+
+
+
+/* 4 items */
+@media (max-width: 1539px) {
+
+    .related-media__item:nth-child(n+5) {
+        display: none;
+    }
+}
+
+/* 5 items */
+@media (min-width: 1540px) {
+    .related-media__item:nth-child(n+6) {
+        display: none;
+    }
+}
+

@@ -23,6 +23,14 @@
             border-bottom-width: 4px;
         }
 
+        .home__mobile-people {
+            display: block;
+        }
+
+        .home__updates {
+
+        }
+
         .home__stats {
             /*margin-top: 22px;*/
         }
@@ -33,26 +41,13 @@
             /*padding-top: 32px;*/
         }
 
-        .home__feeds {
+        .home__media {
             /*margin-top: 32px;*/
             border-top-width: 4px;
             /*padding-top: 32px;*/
             /*padding-bottom: 80px;*/
-            display: block;
             /*align-items: flex-start;*/
         }
-            .home__updates {
-                width: auto;
-                padding-right: 0;
-                margin-top: 0;
-            }
-
-            .home__media {
-                margin-top: 32px;
-                border-top: 4px solid #F6F6F6;
-                padding-top: 32px;
-                width: auto;
-            }
 
 
     .home__aside {
@@ -87,10 +82,8 @@
                 }
             }
 
-        .home__people {
-            border-top: 4px solid #F6F6F6;
-            padding-top: 26px;
-            padding-bottom: 26px;
+        .home__desktop-people {
+            display: none;
         }
 
 
