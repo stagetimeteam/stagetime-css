@@ -1,6 +1,6 @@
 {
   "name": "template",
-  "dependencies": {
+  "devDependencies": {
     "del": "2.2.0",
     "gulp": "4.0.2",
     "gulp-base64": "0.1.3",
