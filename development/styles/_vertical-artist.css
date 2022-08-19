@@ -44,6 +44,11 @@
                 flex-shrink: 0;
             }
 
+                                         .vertical-artist__left { height: max(650px, 100vh - 84px); max-height: 850px; }
+            @media (min-width: 1400px) { .vertical-artist__left { height: max(700px, 100vh - 84px); max-height: 900px; } }
+            @media (min-width: 1600px) { .vertical-artist__left { height: max(750px, 100vh - 84px); max-height: 950px; } }
+
+
             .vertical-artist__mobile-bio {
                 display: none;
             }
