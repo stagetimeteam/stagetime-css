@@ -245,6 +245,35 @@
         top: 15px;
     }
 
+
+    .full-media-card__skip {
+        position: absolute;
+        right: 30px;
+        top: 25px;
+    }
+
+    .full-media-card__skip.button,
+    .full-media-card__skip .button {
+        font-size: 12px;
+        background-color: #181A30;
+        padding: 7px 18px;
+    }
+
+    .full-media-card__skip.button:hover,
+    .full-media-card__skip .button:hover {
+        background-color: #242747;
+        color: #FFFFFF;
+    }
+
+    .full-media-card__skip.button:active,
+    .full-media-card__skip .button:active {
+        background-color: #131627;
+        color: #FFFFFF;
+    }
+
+
+
+
 .full-media-card--audio {
 
 }
@@ -257,6 +286,14 @@
     .full-media-card--audio .full-media-card__content {
         left: 81px;
         right: 220px;
+    }
+
+
+.full-media-card--video {
+
+}
+    .full-media-card--video .full-media-card__overlay {
+        background-image: linear-gradient(32.38deg, rgba(51, 51, 51, 0.89) 25.89%, rgba(51, 51, 51, 0.4094) 42.15%, rgba(255, 255, 255, 0) 71.61%);
     }
 
 
