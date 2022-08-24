@@ -45,7 +45,6 @@
         }
             .alt-media-card__type {
                 margin-left: -1px;
-                padding-left: 40px;
                 font-weight: 600;
                 font-size: 11px;
                 line-height: 18px;
@@ -94,22 +93,3 @@
         background-color: #131627;
         color: #FFFFFF;
     }
-
-    .alt-media-card__favorite {
-        position: absolute;
-        left: 16px;
-        bottom: 75px;
-        padding: 8px;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-        .alt-media-card__heart {
-            vertical-align: top;
-            fill: #FFFFFF;
-            transition: transform 0.3s var(--ease-out-circ);
-        }
-
-        .alt-media-card__favorite:hover .alt-media-card__heart {
-            transform: scale(1.2);
-        }
