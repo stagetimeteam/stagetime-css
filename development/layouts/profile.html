@@ -808,7 +808,7 @@
                                         Profile last updated October 23, 2021
                                     </div>
                                 </div>
-                                <button class="artist-card__edit edit-photo" type="button">
+                                <button class="artist-card__edit edit-photo" type="button" data-toggle="modal" data-target="#edit-profile-picture">
                                     <img class="edit-photo__icon" src="../symbols/32-edit-photo.svg" width="32" height="32" alt="">
                                     <span class="edit-photo__label">Edit</span>
                                 </button>
@@ -1423,7 +1423,7 @@
                                             Profile last updated October 23, 2021
                                         </div>
                                     </div>
-                                    <button class="artist-card__edit edit-photo" type="button">
+                                    <button class="artist-card__edit edit-photo" type="button" data-toggle="modal" data-target="#edit-profile-picture">
                                         <img class="edit-photo__icon" src="../symbols/32-edit-photo.svg" width="32" height="32" alt="">
                                         <span class="edit-photo__label">Edit</span>
                                     </button>
@@ -3366,6 +3366,57 @@
         </section>
 
         <!-- 3/3 Modals: -->
+        <div class="modal modal--688px modal--skeleton fade" id="edit-profile-picture" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <div class="modal-head__heading title title--small">
+                                Edit profile Picture
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="edit-profile-picture">
+                                <div class="edit-profile-picture__note">
+                                    To upload a new file, click on the photo.
+                                </div>
+                                <a class="edit-profile-picture__photo avatar avatar--a-bit-squared avatar--shadow" href="#">
+                                    <div class="avatar__placeholder" style="width: 212px; height: 212px;"></div>
+                                </a>
+                                or:
+                                <a class="edit-profile-picture__photo avatar avatar--shadow avatar--a-bit-squared" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-a-212x212@2x.jpg 2x"
+                                         src="../temp/person-a-212x212.jpg"
+                                         width="212"
+                                         height="212"
+                                         alt="Mark Zuckerberg"
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-secondary" type="button">
+                                    Crop current photo
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit button--disabled" type="button" disabled>
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="modal modal--688px modal--skeleton fade" id="edit-info" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">

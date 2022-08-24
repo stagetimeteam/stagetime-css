@@ -1,0 +1,14 @@
+.edit-profile-picture {
+    padding: 24px var(--modal-padding) 34px;
+}
+    .edit-profile-picture__note {
+        margin-bottom: 22px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .edit-profile-picture__photo {
+
+    }
