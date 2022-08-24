@@ -79,6 +79,50 @@
             height: 20px;
         }
 
+
+
+
+
+    .avatar__upload {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #C4C4C4;
+        padding: 0;
+        border: none;
+        cursor: pointer;
+        transition: background-color var(--transition-hover);
+    }
+
+    .avatar__upload:hover {
+        background-color: #CCCCCC;
+    }
+        .avatar__circle {
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 66px;
+            height: 66px;
+            padding: 14px 16px 18px;
+            background-color: #FFFFFF;
+            border-radius: 50%;
+            transition: opacity var(--transition-hover);
+        }
+
+        .avatar__upload:hover .avatar__circle {
+            opacity: 1;
+        }
+            .avatar__arrow {
+                vertical-align: top;
+                fill: #333333;
+                width: 34px;
+                height: 34px;
+            }
+
+
+
+
     .avatar__re-upload {
         position: absolute;
         left: 0;
@@ -200,14 +244,3 @@
     .avatar--panel .avatar__image {
 
     }
-
-
-
-.avatar__placeholder {
-    background-color: #C4C4C4;
-    transition: background-color var(--transition-hover);
-}
-
-.avatar__placeholder:hover {
-    background-color: #CCCCCC;
-}
