@@ -202,8 +202,7 @@
     background-color: #FFFFFF; /* half white on hover */
 }
     .avatar--alt-hover .avatar__image {
-        transition: opacity var(--transition-hover),
-                    background-color var(--transition-hover); /* in case of dummy */
+        transition: opacity var(--transition-hover), background-color var(--transition-hover); /* in case of dummy */
         transform: none !important;
     }
 

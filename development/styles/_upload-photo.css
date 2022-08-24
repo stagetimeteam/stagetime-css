@@ -18,7 +18,7 @@
     .upload-photo__preview {
         position: absolute;
         left: 17px;
-        top: 13px
+        top: 13px;
     }
         .upload-photo__preview.cover,
         .upload-photo__preview .cover {
