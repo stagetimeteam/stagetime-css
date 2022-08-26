@@ -8,6 +8,7 @@
     font-size: 14px;
     line-height: 18px;
     color: var(--theme-text);
+    white-space: nowrap;
     text-decoration: none;
     transition: background-color var(--transition-hover);
 }
