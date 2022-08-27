@@ -1,11 +1,13 @@
 .output {
     padding: 6px 20px 0;
-    font-weight: bold;
-    font-size: 10px;
-    line-height: 14px;
-    color: var(--red2);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--red);
 }
 
 .output + .output {
     padding-top: 2px;
 }
+
+

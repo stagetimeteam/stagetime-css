@@ -40,6 +40,9 @@
     --red: #EB5757;
     --red2: #EA4524;
 
+    --red-20pct: rgba(235, 87, 87, 0.2);
+    --red-30pct: rgba(235, 87, 87, 0.3);
+
 
     --panel-hover: #F2F2F2;
     --panel-active: #EAEAEA;

@@ -29,3 +29,13 @@
         font-size: 13px;
         line-height: 20px;
     }
+
+
+
+.upload-bar--error {
+    background-color: var(--red-30pct);
+}
+.upload-bar--error:hover,
+.upload-bar--error:active {
+    background-color: var(--red-20pct);
+}
