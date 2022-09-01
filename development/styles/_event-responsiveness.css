@@ -1,14 +1,16 @@
+/* This is original and outdated piece of code that makes news to be a horizontal carousel.
+   Also check _network-news-responsiveness.css
+
+   Scroll down to see actual version.
+   http://joxi.ru/MAjlv11FjnGeJm
+
 .event {
-    /*position: relative;*/
-    /*display: block;*/
     padding-left: 84px;
     padding-right: 16px;
     margin-left: 0;
     margin-right: 0;
     border: 1px solid #E8E8E8;
-    /*text-decoration: none;*/
     border-radius: 3px;
-    /*transition: background-color var(--transition-hover);*/
 }
 
 .event + .event {
@@ -20,9 +22,59 @@
 
     .event__preview,
     .event__preview.avatar {
-        /*position: absolute;*/
         left: 17px;
-        /*top: 19px;*/
+    }
+*/
+
+
+/* This is more recent stylefile update that makes it simpler: no scrollbar and no carousel */
+
+.event {
+    /*position: relative;*/
+    /*display: block;*/
+    /*padding: 12px 30px 12px 91px;*/
+    padding-left: 71px;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    /*text-decoration: none;*/
+    /*border-radius: 8px;*/
+    /*transition: background-color var(--transition-hover);*/
+}
+
+.event:hover {
+    background-color: transparent;
+}
+
+.event:active {
+    background-color: transparent;
+}
+
+.event + .event {
+    /*margin-top: -1px;*/
+}
+    .event + .event::before {
+        /*content: "";*/
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*right: 0;*/
+        /*height: 1px;*/
+        /*background-color: #E8E8E8;*/
+        /*transition: opacity var(--transition-hover);*/
+    }
+
+    .event:hover::before,
+    .event:hover + .event::before {
+        /*opacity: 0;*/
+    }
+
+
+    .event__preview,
+    .event__preview.avatar {
+        /*position: absolute;*/
+        left: 0;
+        /*top: 12px;*/
     }
 
     .event__head {

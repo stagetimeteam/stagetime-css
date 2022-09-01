@@ -9,7 +9,6 @@
 }
     .home__content {
         border: none;
-        border-top: 4px solid #F6F6F6;
         padding: 0;
         box-shadow: none;
     }
@@ -28,7 +27,8 @@
         }
 
         .home__updates {
-
+            padding-bottom: 41px;
+            border-bottom: 4px solid #F6F6F6;
         }
 
         .home__stats {
@@ -57,7 +57,7 @@
         border-left: none;
     }
         .home__summary {
-            padding: 20px 30px 40px;
+            padding: 20px 30px;
         }
 
         @media (max-width: 359px) {

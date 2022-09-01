@@ -60,3 +60,8 @@
             border-top: none;
             padding-top: 0;
         }
+
+
+    .network-news__more {
+        display: none;
+    }

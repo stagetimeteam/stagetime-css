@@ -1,13 +1,14 @@
+/* This is original and outdated piece of code that makes news to be a horizontal carousel.
+   Also check _event-responsiveness.css
+
+   Scroll down to see actual version.
+   http://joxi.ru/MAjlv11FjnGeJm
+
 .network-news {
     border: none;
 }
     .network-news__heading {
-        /*margin-top: 0;*/
         margin-bottom: 18px;
-        /*font-weight: 600;*/
-        /*font-size: 13px;*/
-        /*line-height: 20px;*/
-        /*color: #333333;*/
         padding-left: 30px;
         padding-right: 30px;
         text-align: left;
@@ -20,16 +21,7 @@
         }
     }
 
-        .network-news__icon {
-            /*margin-right: 5px;*/
-            /*margin-top: -2px;*/
-            /*margin-bottom: -2px;*/
-            /*vertical-align: top;*/
-            /*fill: currentColor;*/
-        }
-
     .network-news__list {
-        /*margin-top: 2px;*/
         padding-left: 30px;
         padding-right: 30px;
         display: flex;
@@ -76,3 +68,91 @@
             width: 276px;
         }
 }
+ */
+
+
+
+/* This is more recent stylefile update that makes it simpler: no scrollbar and no carousel */
+
+.network-news {
+    /*position: relative;*/
+    border: none;
+    max-height: none;
+    overflow-y: visible;
+    /*border-radius: 2px;*/
+}
+    .network-news__heading {
+        /*margin-top: 16px;*/
+        /*margin-bottom: 16px;*/
+        /*font-weight: 600;*/
+        /*font-size: 13px;*/
+        /*line-height: 20px;*/
+        /*color: #333333;*/
+        /*text-align: center;*/
+    }
+        .network-news__icon {
+            /*margin: 0 5px 0 -2px;*/
+            /*vertical-align: top;*/
+            /*width: 20px;*/
+            /*height: 20px;*/
+            /*fill: currentColor;*/
+        }
+
+    .network-news__info,
+    .network-news__info.action {
+        /*position: absolute;*/
+        /*right: 7px;*/
+        /*top: 6px;*/
+        top: -10px;
+    }
+
+    .network-news__updates {
+        /*position: absolute;*/
+        /*z-index: 10;*/
+        /*left: 50%;*/
+        /*margin-left: -115px;*/
+        /*top: 30px;*/
+        /*width: 230px;*/
+    }
+
+    .network-news__updates.button,
+    .network-news__updates .button {
+        /*width: 230px;*/
+        /*font-size: 13px;*/
+    }
+
+    .network-news__list {
+        padding-left: 20px;
+        padding-right: 20px;
+        /*padding-bottom: 14px;*/
+    }
+        .network-news__item {
+            /*margin-top: 9px;*/
+            /*border-top: 1px solid #E8E8E8;*/
+            /*padding-top: 9px;*/
+        }
+
+        .network-news__item:first-child {
+            /*margin-top: 0;*/
+            /*border-top: none;*/
+            /*padding-top: 0;*/
+        }
+
+
+        .network-news--limited .network-news__item:nth-child(n+5) {
+            display: none;
+        }
+
+
+    .network-news__more {
+        margin-top: 10px;
+        display: block;
+    }
+        .network-news__more.button,
+        .network-news__more .button {
+            width: 188px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 13px;
+        }
