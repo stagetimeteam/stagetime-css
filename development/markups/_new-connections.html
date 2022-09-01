@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.find-connections</title>
+        <title>.new-connections</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -14,49 +14,102 @@
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="max-width: 50%; margin: 0 auto;">
             <br>
             <br>
-            <h1>.find-connections</h1>
+            <h1>.new-connections</h1>
 
-            <div class="find-connections">
-                <div class="find-connections__body">
-                    <div class="find-connections__heading">
-                        <img class="find-connections__icon" src="../symbols/24-2-user.svg" width="24" height="24" alt="">
-                        <div class="find-connections__heading">0 Connections</div>
+
+            <a class="new-connections" href="#" data-toggle="modal" data-target="#connections">
+                <div class="new-connections__preview">
+                    <div class="new-connections__people snake snake--larger-border">
+                        <div class="snake__item avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-30x30@2x.jpg 2x"
+                                 src="../temp/person-a-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-30x30@2x.jpg 2x"
+                                 src="../temp/person-b-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-30x30@2x.jpg 2x"
+                                 src="../temp/person-c-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
                     </div>
-                    <div class="find-connections__description">
-                        A healthy network is comprised of colleagues, collaborators, and partners you connected with throughout your career. You'll find them here.
+                    <div class="new-connections__heading">
+                        345 Connections
                     </div>
                 </div>
-                <a class="find-connections__action button button--alt-submit" href="#">
-                    <img class="button__icon button__icon--left" src="../symbols/24-add-user.svg" width="24" height="24" alt="">
-                    Find connections
-                </a>
-            </div>
+                <div class="new-connections__details">
+                    You and Ben both know <span class="link link--inherit">Lachlan Glen</span>, <span class="link link--inherit">Madison Leonard</span>, <span class="new-connections__more link link--user-color">and&nbsp;58&nbsp;more</span>
+                </div>
+            </a>
 
 
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>.find-connections--horizontal</h2>
 
-            <div class="find-connections find-connections--horizontal">
-                <div class="find-connections__body">
-                    <div class="find-connections__heading">
-                        <img class="find-connections__icon" src="../symbols/24-2-user.svg" width="24" height="24" alt="">
-                        <div class="find-connections__heading">0 Connections</div>
+            <br>
+            <br>
+            <br>
+            <h2>.new-connections--faded</h2>
+            <p>
+                In addition to <b>.all-connections--faded</b> class we also need to disable avatars inside:
+                change &lt;a&gt; to &lt;div&gt; and replace <b>.avatar--alt-hover</b> with <b>.avatar--non-clickable</b>.
+            </p>
+
+            <a class="new-connections new-connections--faded" href="#" data-toggle="modal" data-target="#connections">
+                <div class="new-connections__preview">
+                    <div class="new-connections__people snake snake--larger-border">
+                        <div class="snake__item avatar avatar--non-clickable">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-30x30@2x.jpg 2x"
+                                 src="../temp/person-a-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--non-clickable">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-30x30@2x.jpg 2x"
+                                 src="../temp/person-b-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--non-clickable">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-30x30@2x.jpg 2x"
+                                 src="../temp/person-c-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
                     </div>
-                    <div class="find-connections__description">
-                        A healthy network is comprised of colleagues, collaborators, and partners you connected with throughout your career. You'll find them here.
+                    <div class="new-connections__heading">
+                        345 Connections
                     </div>
                 </div>
-                <a class="find-connections__action button button--alt-submit" href="#">
-                    <img class="button__icon button__icon--left" src="../symbols/24-add-user.svg" width="24" height="24" alt="">
-                    Find connections
-                </a>
-            </div>
+                <div class="new-connections__details">
+                    To view Ben’s connections, <span class="new-connections__more link link--user-color">join Stagetime to connect</span>.
+                </div>
+            </a>
 
             <br>
             <br>

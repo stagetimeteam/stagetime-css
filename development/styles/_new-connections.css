@@ -1,6 +1,8 @@
 .new-connections {
     display: block;
     border: none;
+    margin-left: -14px;
+    margin-right: -14px;
     padding: 10px 13px 8px;
     background-color: transparent;
     border-radius: 8px;
@@ -19,8 +21,10 @@
     transition: none;
 }
     .new-connections__preview {
-        display: flex;
+        display: inline-flex;
+        vertical-align: middle;
         align-items: flex-start;
+        margin-right: 21px;
     }
         .new-connections__people {
             flex-shrink: 0;
@@ -37,6 +41,8 @@
         }
 
     .new-connections__details {
+        display: inline-block;
+        vertical-align: middle;
         font-size: 11px;
         line-height: 18px;
         color: #44474A;
@@ -46,15 +52,6 @@
             font-style: italic;
         }
 
-
-
-.new-connections--full-width {
-    display: flex;
-    align-items: center;
-}
-    .new-connections--full-width .new-connections__details {
-        margin-left: 24px;
-    }
 
 
 
