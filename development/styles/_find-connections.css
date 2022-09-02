@@ -1,4 +1,10 @@
 .find-connections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, max-content)); /* this solution works only with specific widths: when parental
+                                                                             widths is limited by 2 columns of 220px. If parent will be 660+
+                                                                             3rd column will appear because of repeat thing */
+    align-items: center;
+    gap: 12px 24px;
     padding: 16px 24px 24px;
     background-color: var(--theme-light);
     border-radius: 4px;
@@ -32,67 +38,11 @@
         }
 
     .find-connections__action {
-        margin-top: 12px;
+
     }
-
-    .find-connections__action.button,
-    .find-connections__action .button {
-        width: 100%;
-    }
-
-
-
-.find-connections--horizontal {
-    /*background-color: #F2F2F2;*/
-    /*border-radius: 4px;*/
-    padding: 20px 24px;
-    display: flex;
-    align-items: center;
-}
-    .find-connections--horizontal .find-connections__body {
-        flex-grow: 1;
-        margin-right: 60px;
-        margin-top: -8px;
-    }
-        .find-connections--horizontal .find-connections__heading {
-            /*display: flex;*/
-            /*align-items: flex-start;*/
+        .find-connections__action.button,
+        .find-connections__action .button {
+            width: 100%;
+            padding-left: 40px;
+            padding-right: 40px;
         }
-            .find-connections--horizontal .find-connections__icon {
-                /*margin-left: -2px;*/
-                /*margin-right: 11px;*/
-                /*fill: #545454;*/
-            }
-
-            .find-connections--horizontal .find-connections__heading {
-                /*margin-top: 5px;*/
-                /*font-weight: 600;*/
-                /*font-size: 14px;*/
-                /*line-height: 22px;*/
-                /*color: #545454;*/
-            }
-
-    .find-connections--horizontal .find-connections__description {
-        /*margin-top: 9px;*/
-        /*font-size: 13px;*/
-        /*line-height: 25px;*/
-        /*color: #545454;*/
-    }
-
-    .find-connections--horizontal .find-connections__action {
-        margin-top: 0;
-        width: 200px;
-        flex-shrink: 0;
-    }
-
-    @media (min-width: 1240px) {
-        .find-connections--horizontal .find-connections__action {
-            margin-top: 0;
-            width: 260px;
-        }
-    }
-
-    .find-connections--horizontal .find-connections__action.button,
-    .find-connections--horizontal .find-connections__action .button {
-        /*width: 100%;*/
-    }
