@@ -109,6 +109,15 @@
                                 visibility var(--transition-show);
                 }
 
+                .settings__hint {
+                    margin-top: -8px;
+                    padding-bottom: 20px;
+                    font-size: 13px;
+                    line-height: 27px;
+                    color: #545454;
+                }
+
+
         .settings__item--expanded {
 
         }

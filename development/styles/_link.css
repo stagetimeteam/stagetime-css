@@ -40,6 +40,10 @@
 }
 
 
+.link--text-color {
+    color: inherit;
+}
+
 
 .link--text-alike {
     border-bottom-color: transparent;

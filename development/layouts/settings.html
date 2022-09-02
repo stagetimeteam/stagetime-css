@@ -934,15 +934,17 @@
                     </h2>
                     <div class="settings__item">
                         <button class="settings__handler" type="button">
-                            Change my Stagetime URL
+                            Change the URL for your profile.
                         </button>
                         <button class="settings__edit button button--update-form" type="button">
                             Edit
                         </button>
                         <div class="settings__dropdown">
+                            <div class="settings__hint">
+                                Note: Your URL must contain 3-100 letters or numbers. Do not use spaces, symbols, or special characters. <a class="link link--text-color link--classic" href="#">Reach out to our team</a> if you’re having any issues.
+                            </div>
                             <div class="form">
                                 <div class="form__item">
-                                    <label class="label" for="url">Change my friendly URL</label>
                                     <div class="prefixing">
                                         <div class="prefixing__prefix">
                                             stagetime.com/admin/
@@ -976,71 +978,14 @@
                             Edit
                         </button>
                         <div class="settings__dropdown">
-                            <div class="domain">
-                                <div class="domain__summary">
-                                    <div class="domain__field input input--semi-bold">
+                            <div class="settings__hint">
+                                If you already own a domain, like myname.com, enter it below and a member of our team will reach out shortly to help connect your domain to your stagetime URL. If you need help purchasing your own domain, <a class="link link--text-color link--classic" href="#">reach out to our team</a> and we’ll help you get set up.
+                            </div>
+                            <div class="form">
+                                <div class="form__item">
+                                    <div class="input input--semi-bold">
                                         <input class="input__widget" type="text" placeholder="Custom domain URL" value="www.ajoreilly.com">
                                     </div>
-                                    <div class="domain__status">
-                                        <img class="domain__icon-status domain__icon-status--danger" src="../symbols/16-danger-triangle.svg" width="16" height="16" alt="">
-                                        Not connected.
-                                    </div>
-                                    <button class="domain__remove button button--update-form" type="button">
-                                        Remove
-                                    </button>
-                                </div>
-                                <div class="domain__body">
-                                    <div class="domain__intro-note">
-                                        Visit the admin console of your domain registrar (the website you brought your domain from) and create two&nbsp;A&nbsp;Records:
-                                    </div>
-                                    <div class="domain__data">
-                                        <table class="panel-table">
-                                            <thead class="panel-table__section">
-                                                <tr class="panel-table__row">
-                                                    <th class="panel-table__cell panel-table__cell--head">Type</th>
-                                                    <th class="panel-table__cell panel-table__cell--head">Name</th>
-                                                    <th class="panel-table__cell panel-table__cell--head">Value</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="panel-table__section">
-                                                <tr class="panel-table__row">
-                                                    <td class="panel-table__cell panel-table__cell--body">
-                                                        <span class="panel-table__bar">A</span>
-                                                    </td>
-                                                    <td class="panel-table__cell panel-table__cell--body">
-                                                        <span class="panel-table__bar">@</span>
-                                                    </td>
-                                                    <td class="panel-table__cell panel-table__cell--body">
-                                                        <span class="panel-table__bar">11.1.11.11</span>
-                                                    </td>
-                                                </tr>
-                                                <tr class="panel-table__row">
-                                                    <td class="panel-table__cell panel-table__cell--body">
-                                                        <span class="panel-table__bar">A</span>
-                                                    </td>
-                                                    <td class="panel-table__cell panel-table__cell--body">
-                                                        <span class="panel-table__bar">@</span>
-                                                    </td>
-                                                    <td class="panel-table__cell panel-table__cell--body">
-                                                        <span class="panel-table__bar">11.11.111.111</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="domain__footer">
-                                    <button class="domain__submit button button--submit-form" type="button">
-                                        <img class="button__icon button__icon--left" src="../symbols/16-check-status.svg" width="16" height="16" alt="">
-                                        Check Status
-                                    </button>
-                                    <div class="domain__connection-note">
-                                        <img class="domain__refresh" src="../symbols/24-refresh.svg" width="24" height="24" alt="">
-                                        Domain connection in process. Your domain should be live with 48 hours.
-                                    </div>
-                                </div>
-                                <div class="domain__support-note">
-                                    Having trouble or just want help with this part? <a class="link link--text-alike" href="#">Reach out to our team</a> and we’ll help you get set up.
                                 </div>
                             </div>
                         </div>
