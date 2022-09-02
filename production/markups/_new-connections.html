@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.select2</title>
+        <title>.new-connections</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1662146207">
@@ -14,44 +14,102 @@
 
 
 
-        <div style="width: 622px; margin: 0 auto;">
+        <div style="max-width: 50%; margin: 0 auto;">
             <br>
             <br>
-            <h1>.select2</h1>
+            <h1>.new-connections</h1>
+
+
+            <a class="new-connections" href="#" data-toggle="modal" data-target="#connections">
+                <div class="new-connections__preview">
+                    <div class="new-connections__people snake snake--larger-border">
+                        <div class="snake__item avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-30x30@2x.jpg 2x"
+                                 src="../temp/person-a-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-30x30@2x.jpg 2x"
+                                 src="../temp/person-b-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-30x30@2x.jpg 2x"
+                                 src="../temp/person-c-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                    </div>
+                    <div class="new-connections__heading">
+                        345 Connections
+                    </div>
+                </div>
+                <div class="new-connections__details">
+                    You and Ben both know <span class="link link--inherit">Lachlan Glen</span>, <span class="link link--inherit">Madison Leonard</span>, <span class="new-connections__more link link--user-color">and&nbsp;58&nbsp;more</span>
+                </div>
+            </a>
+
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.new-connections--faded</h2>
             <p>
-                Default version wasn't used so far so it's not styled:
+                In addition to <b>.all-connections--faded</b> class we also need to disable avatars inside:
+                change &lt;a&gt; to &lt;div&gt; and replace <b>.avatar--alt-hover</b> with <b>.avatar--non-clickable</b>.
             </p>
 
-            <select class="select2--default" style="width: 100%;">
-                <option value="AL">Alabama</option>
-                <option value="WY">Wyoming</option>
-            </select>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>select2--tagging</h2>
-
-            <select class="select2--tagging" multiple="multiple" style="width: 100%;">
-                <option value="1">Bass</option>
-                <option value="2">Bass-baritone</option>
-                <option value="3">Bass Guitar</option>
-                <option value="4">Bass 101</option>
-                <option value="5">Bass-baritone lorem</option>
-                <option value="6">More bass Bass Guitar effect</option>
-                <option value="7">Even more Bass</option>
-                <option value="8">Another Bass-baritone</option>
-                <option value="9">Just Bass Guitar 2</option>
-                <option value="10">Yet another bass</option>
-            </select>
-
-            <br>
-            <br>
-            <p>
-                Please note how to add custom template for user added option in:
-                <a href="../scripts/_select2.js">../scripts/_select2.js</a>
-            </p>
+            <a class="new-connections new-connections--faded" href="#" data-toggle="modal" data-target="#connections">
+                <div class="new-connections__preview">
+                    <div class="new-connections__people snake snake--larger-border">
+                        <div class="snake__item avatar avatar--non-clickable">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-30x30@2x.jpg 2x"
+                                 src="../temp/person-a-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--non-clickable">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-b-30x30@2x.jpg 2x"
+                                 src="../temp/person-b-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="snake__item avatar avatar--non-clickable">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-30x30@2x.jpg 2x"
+                                 src="../temp/person-c-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                    </div>
+                    <div class="new-connections__heading">
+                        345 Connections
+                    </div>
+                </div>
+                <div class="new-connections__details">
+                    To view Ben’s connections, <span class="new-connections__more link link--user-color">join Stagetime to connect</span>.
+                </div>
+            </a>
 
             <br>
             <br>
