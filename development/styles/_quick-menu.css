@@ -1,0 +1,14 @@
+.quick-menu {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+    .quick-menu__link {
+
+    }
+
+    .quick-menu__link.button,
+    .quick-menu__link .button {
+        color: #545454;
+    }
