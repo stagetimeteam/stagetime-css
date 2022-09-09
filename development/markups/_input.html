@@ -119,7 +119,11 @@
 
             <br>
             <p>
-                with <b>.input__counter--static-bottom</b> modifier:
+                with <b>.input__counter--static-bottom</b> modifier. Static in this context means not absolute.
+            </p>
+            <p>
+                Also note it can be conflicting with error message. So when this message is
+                presented <b>.input__counter--zero-height</b> class also required.
             </p>
             <div class="input input--area">
                 <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
