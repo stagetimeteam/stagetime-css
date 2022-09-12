@@ -48,3 +48,7 @@
     .career-highlights__edit {
         margin-top: 13px;
     }
+
+    .career-highlights__edit:first-child {
+        margin-top: 0;
+    }

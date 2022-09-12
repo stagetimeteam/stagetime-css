@@ -30,6 +30,11 @@
             width: 111px;
             padding: 7px;
         }
+
     .management-preview__edit {
-        margin-top: 26px;
+        margin-top: 22px;
+    }
+
+    .management-preview__edit:first-child {
+        margin-top: 0;
     }

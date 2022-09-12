@@ -46,9 +46,14 @@
         }
 
     .media__footer {
-        margin-top: 18px;
+        margin-top: 20px;
         width: 100%;
     }
+
+    .media__footer:first-child {
+        margin-top: 0;
+    }
+
         .media__edit {
 
         }
