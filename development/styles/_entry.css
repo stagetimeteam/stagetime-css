@@ -108,11 +108,13 @@
             width: 36px;
             height: 40px;
         }
-
-        .entry__reactions-dropdown .action__image {
-            width: 30px;
-            height: 30px;
-        }
+            .entry__reactions-dropdown .action__image {
+                width: 30px;
+                height: 30px;
+            }
+                .entry__reactions-dropdown .action__icon {
+                    fill: #000000;
+                }
 
     .entry__footer {
         margin-top: 5px;

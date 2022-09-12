@@ -551,6 +551,9 @@
     .operations--classics .operations__handler:active {
         background-color: var(--panel-active);
     }
+        .operations--classics .operations__icon {
+            fill: #000000;
+        }
 
     .operations--classics .operations__dropdown {
         top: 100%;
@@ -558,3 +561,10 @@
         margin-top: 8px;
         min-width: 140px;
     }
+
+    .operations--classics .menu__link {
+        color: #000000;
+    }
+        .operations--classics .menu__icon {
+            fill: #000000;
+        }
