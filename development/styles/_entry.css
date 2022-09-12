@@ -51,3 +51,65 @@
                 border-radius: 2px;
                 background-color: var(--image-fallback);
             }
+
+
+    .entry__actions {
+        position: absolute;
+        right: 10px;
+        top: -10px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+
+    .entry:hover .entry__actions {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .entry:focus-within .entry__actions {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .entry__reactions-dropdown {
+        position: absolute;
+        right: 10px;
+        top: -10px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+        display: flex;
+        align-items: flex-start;
+        padding-left: 7px;
+        padding-right: 7px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+
+    .entry__actions ~ .entry__reactions-dropdown {
+        right: 58px;
+    }
+
+    .entry:hover .entry__reactions-dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .entry:focus-within .entry__reactions-dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+        .entry__reactions-dropdown .action {
+            width: 36px;
+            height: 40px;
+        }
+
+        .entry__reactions-dropdown .action__image {
+            width: 30px;
+            height: 30px;
+        }

@@ -529,5 +529,32 @@
 
 
 
+.operations--classics {
 
+}
+    .operations--classics .operations__handler {
+        width: 40px;
+        height: 40px;
+        padding: 4px;
+        background-color: #FFFFFF;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 
+    .operations--classics .operations__handler:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .operations--classics .operations__handler:active {
+        background-color: var(--panel-active);
+    }
+
+    .operations--classics .operations__dropdown {
+        top: 100%;
+        right: 0;
+        margin-top: 8px;
+        min-width: 140px;
+    }
