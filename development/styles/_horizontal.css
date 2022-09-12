@@ -91,7 +91,6 @@
                     }
 
                 .vertical__edits {
-                    margin-top: var(--talent-gap);
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -101,7 +100,7 @@
                     }
 
                     .vertical__editing-handler:first-child {
-                        margin-top: 0;
+                        margin-top: var(--talent-gap);
                     }
 
                     .vertical__edits.button,
