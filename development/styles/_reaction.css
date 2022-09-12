@@ -1,0 +1,92 @@
+.reaction {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .reaction__handler {
+        padding: 5px 4px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+        .reaction__pill {
+            display: flex;
+            align-items: flex-start;
+            background-color: #EEF0F3;
+            border-radius: 15px;
+            padding: 5px 12px 5px 9px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .reaction__handler:hover .reaction__pill {
+            background-color: #E3E3E3;
+        }
+
+        .reaction__handler:active .reaction__pill {
+            background-color: #D8D8D8;
+        }
+            .reaction__icon {
+                vertical-align: top;
+                margin-right: 6px;
+                fill: #000000;
+            }
+
+    .reaction__dropdown {
+        position: absolute;
+        left: 50%;
+        bottom: 100%;
+        margin-bottom: 0;
+        padding-bottom: 9px;
+        transform: translateX(-50%);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity var(--transition-show),
+                    visibility var(--transition-show);
+    }
+        .reaction__bubble {
+            padding: 10px 19px 10px 12px;
+            background-color: #EEF0F3;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 6px;
+        }
+            .reaction__row {
+                margin-top: 4px;
+                white-space: nowrap;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #44474A;
+            }
+
+            .reaction__row:first-child {
+                margin-top: 0;
+            }
+                .reaction__row .link {
+                    font-weight: inherit;
+                }
+
+                .reaction__row .link:hover {
+                    border-bottom-color: currentColor;
+                }
+
+
+
+.reaction:hover {
+
+}
+    .reaction:hover .reaction__handler {
+
+    }
+        .reaction:hover .reaction__pill {
+
+        }
+            .reaction:hover .reaction__icon {
+
+            }
+
+    .reaction:hover .reaction__dropdown {
+        opacity: 1;
+        visibility: visible;
+    }

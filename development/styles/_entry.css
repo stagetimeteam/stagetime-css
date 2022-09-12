@@ -113,3 +113,12 @@
             width: 30px;
             height: 30px;
         }
+
+    .entry__footer {
+        margin-top: 5px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        margin-left: -6px;
+        margin-right: -6px;
+    }
