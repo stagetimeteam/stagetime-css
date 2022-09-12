@@ -2,6 +2,11 @@
     position: relative;
     padding: 18px 36px 18px 108px;
 }
+
+.entry:hover {
+    background-color: #F6F9FC;
+}
+
     .entry__preview {
         position: absolute;
         left: 36px;
