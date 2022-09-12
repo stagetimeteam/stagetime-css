@@ -90,3 +90,21 @@
         opacity: 1;
         visibility: visible;
     }
+
+
+.reaction--selected {
+
+}
+
+    .reaction--selected .reaction__handler .reaction__pill,
+    .reaction--selected .reaction__handler:hover .reaction__pill,
+    .reaction--selected .reaction__handler:active .reaction__pill {
+        background-color: #23282C;
+        color: #FFFFFF;
+    }
+
+    .reaction--selected .reaction__handler .reaction__icon,
+    .reaction--selected .reaction__handler:hover .reaction__icon,
+    .reaction--selected .reaction__handler:active .reaction__icon {
+            fill: #FFFFFF;
+        }

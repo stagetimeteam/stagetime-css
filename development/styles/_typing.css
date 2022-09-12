@@ -179,4 +179,47 @@
         padding: 0 20px 16px;
     }
         .typing__item {
+
+        }
+
+
+
+.typing--has-editing-header {
+
+}
+    .typing--has-editing-header .typing__message {
+        padding-top: 56px;
+    }
+
+    .typing__editing-header {
+        position: absolute;
+        left: -1px;
+        top: 20px;
+        max-width: calc(100% - 154px); /* 154px is for buttons on the right */
+        padding: 0 20px 16px;
+        display: flex;
+        align-items: flex-start;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: #44474A;
+        pointer-events: none;
+    }
+        .typing__pencil {
+            vertical-align: top;
+            margin-right: 11px;
+            width: 18px;
+            height: 18px;
+            fill: #44474A;
+        }
+
+    .typing__cancel-editing {
+        position: absolute;
+        z-index: 10;
+        right: 9px;
+        top: 5px;
+    }
+        .typing__cancel-editing .action__icon {
+            width: 14px;
+            height: 14px;
         }
