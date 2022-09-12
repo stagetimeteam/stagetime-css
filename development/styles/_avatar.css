@@ -121,6 +121,19 @@
             }
 
 
+    .avatar__upload--again {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+    }
+
+    .avatar__upload--again:hover {
+        background-color: rgba(204, 204, 204, 0.4);
+    }
+
 
 
     .avatar__re-upload {

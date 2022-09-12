@@ -302,7 +302,28 @@
             </p>
 
             <div class="avatar avatar--a-bit-squared avatar--shadow">
-                <button class="avatar__upload" style="width: 212px; height: 212px;">
+                <button class="avatar__upload" style="width: 176px; height: 176px;">
+                    <span class="avatar__circle">
+                        <img class="avatar__arrow" src="../symbols/24-upload.svg" width="24" height="24" alt="">
+                    </span>
+                </button>
+            </div>
+
+            <br>
+            <br>
+            <p>
+                We can keep using the same element after avatar was uploaded, but with <b>.avatar__upload--again</b> modifier:
+            </p>
+
+            <div class="avatar avatar--a-bit-squared avatar--shadow">
+                <img class="avatar__image"
+                     srcset="../temp/person-b-128x128@2x.jpg 2x"
+                     src="../temp/person-b-176x176.jpg"
+                     width="176"
+                     height="176"
+                     alt=""
+                >
+                <button class="avatar__upload avatar__upload--again" style="width: 176px; height: 176px;">
                     <span class="avatar__circle">
                         <img class="avatar__arrow" src="../symbols/24-upload.svg" width="24" height="24" alt="">
                     </span>
@@ -316,13 +337,14 @@
             <br>
             <h2>.avatar__re-upload</h2>
             <p>
-                Hover these:
+                This partly repeats functionality from above, but it was written earlier and in use at the time.
+                Maybe it should be refactored someday.
             </p>
 
             <div class="avatar">
                 <img class="avatar__image"
                      srcset="../temp/person-b-128x128@2x.jpg 2x"
-                     src="../temp/person-b-128x128.jpg"
+                     src="../temp/person-b-176x176.jpg"
                      width="128"
                      height="128"
                      alt=""
