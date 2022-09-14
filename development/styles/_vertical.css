@@ -42,6 +42,10 @@
                 width: 50%;
                 flex-shrink: 0;
             }
+                .vertical__preview .artist-card {
+                    min-height: 700px;
+                    max-height: 920px;
+                }
 
             .vertical__content {
                 width: 50%;
@@ -63,7 +67,7 @@
                     margin-top: 19px;
                 }
 
-                .vertical__summary {
+                .vertical__currently {
                     display: flex;
                     align-items: flex-start;
                     gap: var(--talent-gap);
