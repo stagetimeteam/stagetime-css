@@ -45,6 +45,10 @@
                 .classic__detachable-area {
 
                 }
+                    .classic__edit-bio {
+                        margin-bottom: 24px;
+                    }
+
                     .classic__preview {
                         position: relative;
                         width: 280px;
@@ -71,6 +75,38 @@
                             border-bottom-right-radius: 0;
                         }
 
+                        .classic__edit-preview {
+                            position: absolute;
+                            right: 3px;
+                            bottom: 3px;
+                        }
+
+                    .classic__position {
+
+                    }
+
+                    .classic__currently {
+
+                    }
+                        .classic__position {
+                            margin-top: 17px;
+                        }
+
+                        .classic__connections {
+                            margin-top: 17px;
+                            border-top: 1px solid var(--theme-light);
+                            padding-top: 24px;
+                        }
+
+                    .classic__region {
+
+                    }
+                        .classic__widget {
+                            margin-top: var(--talent-gap);
+                            border-top: 1px solid var(--theme-light);
+                            padding-top: 24px;
+                        }
+
                     .classic__mobile-bio {
                         display: none;
                     }
@@ -83,14 +119,6 @@
                         margin: 22px -24px 0 -16px;
                     }
 
-                    .classic__connections {
-                        margin-top: 17px;
-                        border-top: 1px solid var(--theme-light);
-                        padding-top: 24px;
-                    }
-                        .classic__connections .all-connections {
-                            margin: -10px -13px;
-                        }
 
                     .classic__tags {
                         margin-top: 31px;
