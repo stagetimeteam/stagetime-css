@@ -4,7 +4,18 @@
 
     if(desktopMediaQuery.matches) {
         owls = $('.owl-carousel--profile-media').owlCarousel({
-            items: 4,
+            items: 3,
+            slideBy: 2,
+            margin: 44,
+            nav: true,
+            dots: false,
+            loop: false
+        });
+    }
+
+    if(desktopMediaQuery.matches) {
+        owls = $('.owl-carousel--classic-projects').owlCarousel({
+            items: 3,
             slideBy: 3,
             margin: 56,
             nav: true,
