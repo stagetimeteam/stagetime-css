@@ -1,0 +1,35 @@
+.full-user-media {
+    padding-top: 57px;
+    border: 1px solid var(--theme-light);
+}
+    .full-user-media__heading {
+
+    }
+
+    .full-user-media__null {
+        margin-top: 24px;
+    }
+
+    .full-user-media__body {
+        padding: 70px 15px 37px;
+    }
+        .full-user-media__section {
+            margin-top: 32px;
+            display: flex;
+            align-items: flex-start;
+        }
+            .full-user-media__sidebar {
+                flex-shrink: 0;
+                width: 70px;
+                margin-right: var(--profile-gap);
+            }
+
+            .full-user-media__content {
+                flex-shrink: 0;
+                width: calc(100% - var(--profile-gap) - 70px);
+                padding-right: 105px;
+            }
+
+            .full-user-media__content {
+
+            }
