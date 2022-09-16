@@ -164,6 +164,11 @@
                     padding-top: 35px;
                 }
 
+                .non-performer__bio {
+                    margin-top: 43px;
+                }
+
+
                 .non-performer__activity {
                     margin-top: 43px;
                     border-top: 1px solid var(--theme-light);

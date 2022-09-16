@@ -20,7 +20,7 @@
             box-sizing: content-box;
             border-top: 12px solid transparent; /* expand clickable area using borders */
             border-bottom: 12px solid transparent;
-            border-left: 10px solid transparent;
+            border-left: 31px solid transparent;
             border-right: 10px solid transparent;
         }
 

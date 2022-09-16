@@ -1,0 +1,83 @@
+.full-biography {
+    padding-top: 57px;
+    border: 1px solid var(--theme-light);
+}
+    .full-biography__head {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+        .full-biography__heading {
+
+
+        }
+
+        .full-biography__edit {
+
+        }
+
+    .full-biography__mobile-heading {
+        display: none;
+    }
+
+    .full-biography__mobile-footer {
+        display: none;
+    }
+
+    .full-biography__null {
+        margin-top: 24px;
+    }
+
+    .full-biography__body {
+        margin-top: 49px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .full-biography__sidebar {
+            flex-shrink: 0;
+            width: var(--profile-sidebar);
+            margin-right: var(--profile-gap);
+            margin-top: 2px;
+        }
+            .full-biography__sub-heading {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+        .full-biography__content {
+            flex-shrink: 0;
+            width: calc(100% - var(--profile-sidebar) - var(--profile-gap));
+        }
+            .full-biography__wrapper {
+                display: flex;
+                align-items: flex-start;
+            }
+                .full-biography__about {
+                    width: 484px;
+                    margin-right: 64px;
+                    color: #545454;
+                }
+
+                .full-biography__expand {
+                    display: none;
+                }
+
+                .full-biography__comments {
+                    margin-top: 4px;
+                    width: calc(100% - 484px - 64px);
+                }
+                    .full-biography__comments-heading {
+                        display: none;
+                    }
+
+            .full-biography__footer {
+                margin-top: 48px;
+                display: flex;
+                align-items: flex-start;
+                margin-left: -38px;
+                margin-right: -38px;
+            }
+                .full-biography__action {
+                    width: calc(33.3333% - 76px);
+                    margin-left: 38px;
+                    margin-right: 38px;
+                }

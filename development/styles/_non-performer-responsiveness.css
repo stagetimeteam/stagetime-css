@@ -193,6 +193,10 @@
                     padding-top: 27px;
                 }
 
+                .non-performer__bio {
+                    margin-top: 27px;
+                }
+
                 .non-performer__recommendations {
                     display: none;
                 }
