@@ -71,6 +71,10 @@
                             border-bottom-right-radius: 0;
                         }
 
+                    .non-performer__position {
+                        margin-top: 18px;
+                    }
+
                     .non-performer__mobile-bio {
                         display: none;
                     }
