@@ -177,8 +177,6 @@
 
                 .non-performer__recommendations {
                     margin-top: 43px;
-                    border-top: 1px solid var(--theme-light);
-                    padding-top: 35px;
                 }
 
                 .non-performer__null {
