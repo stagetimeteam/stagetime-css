@@ -126,17 +126,17 @@
                         margin-bottom: 30px;
                     }
 
-                    .non-performer__add-connections {
-                        margin-top: 30px;
+                    .non-performer__edits {
+                        margin-top: 6px;
                     }
+                        .non-performer__edit-handler {
+                            margin-top: 24px;
+                        }
 
-                    .non-performer__add-highlight {
-                        margin-top: 30px;
-                    }
+                        .non-performer__edit-handler:first-child {
+                            margin-top: 0;
+                        }
 
-                    .non-performer__add-social {
-                        margin-top: 20px;
-                    }
 
             .non-performer__content {
                 width: calc(100% - 330px);

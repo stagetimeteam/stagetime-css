@@ -112,9 +112,6 @@
                 .non-performer__connections {
 
                 }
-                    .non-performer__connections .all-connections {
-                        /*margin: -10px -13px;*/
-                    }
 
                 .non-performer__highlights {
                     /*margin-top: 29px;*/
@@ -136,17 +133,13 @@
                     /*margin-bottom: 30px;*/
                 }
 
-                .non-performer__add-connections {
-                    /*margin-top: 30px;*/
-                }
+                .non-performer__edits {
 
-                .non-performer__add-highlight {
-                    /*margin-top: 30px;*/
                 }
+                    .non-performer__edit-handler {
 
-                .non-performer__add-social {
-                    /*margin-top: 20px;*/
-                }
+                    }
+
 
             .non-performer__content {
                 width: auto;
