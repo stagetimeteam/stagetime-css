@@ -5,20 +5,21 @@
 
     var viewportHeight;
     var sidebarHeight;
-    var padding = 40;
+    var paddingTop = 40;
+    var spacingBottom = 40;
 
     function init() {
         viewportHeight = $(window).height() - $header.outerHeight();
         sidebarHeight = stickyPart.outerHeight();
-        if(viewportHeight - sidebarHeight - padding < 0) {
+        if(viewportHeight - sidebarHeight - paddingTop - spacingBottom < 0) {
             stickyPart.css({
                 'position': 'sticky',
-                'top': (viewportHeight - sidebarHeight) + 'px'
+                'top': (viewportHeight - sidebarHeight + 20) + 'px' /* 20px is a little correction for spacing at the bottom */
             });
         } else {
             stickyPart.css({
                 'position': 'sticky',
-                'top': ($header.outerHeight() + padding) + 'px'
+                'top': ($header.outerHeight() + paddingTop) + 'px'
             });
         }
     }

@@ -96,12 +96,6 @@
                             margin: -10px -13px;
                         }
 
-                    .non-performer__tags {
-                        margin-top: 31px;
-                        border-top: 1px solid var(--theme-light);
-                        padding-top: 26px;
-                    }
-
                     .non-performer__highlights {
                         margin-top: 29px;
                         border-top: 1px solid var(--theme-light);

@@ -15,7 +15,7 @@
 
     .non-performer__wrap {
         position: relative;
-        padding-bottom: 339px;
+        padding-bottom: 140px;
         padding-top: 20px;
     }
         .non-performer__header {
@@ -117,15 +117,6 @@
                     .non-performer__connections .all-connections {
                         /*margin: -10px -13px;*/
                     }
-
-                .non-performer__tags {
-                    position: absolute; /* move it to the bottom of the page */
-                    left: 0;
-                    bottom: 129px;
-                    right: 0;
-                    padding-bottom: 35px;
-                    border-bottom: 1px solid #F2F2F2;
-                }
 
                 .non-performer__highlights {
                     /*margin-top: 29px;*/
