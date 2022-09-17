@@ -5,14 +5,6 @@
         margin-top: 0;
         margin-bottom: 0;
     }
-        .full-biography__heading {
-
-
-        }
-
-        .full-biography__edit {
-
-        }
 
     .full-biography__mobile-footer {
         display: none;
@@ -24,6 +16,8 @@
         border-left: 1px solid var(--theme-light);
         border-right: 1px solid var(--theme-light);
         border-bottom: 1px solid var(--theme-light);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         padding: 34px 21px 29px;
     }
         .full-biography__content {

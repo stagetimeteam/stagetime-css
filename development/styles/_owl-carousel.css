@@ -143,6 +143,26 @@
 
 
 
+/* full-profile-media */
+
+.owl-carousel--full-profile-media {
+    width: 100%
+}
+    .owl-carousel--full-profile-media {
+
+    }
+        .owl-carousel--full-profile-media .avatar__image {
+            height: auto;
+        }
+
+
+    .owl-carousel--full-profile-media .owl-nav button.owl-prev,
+    .owl-carousel--full-profile-media .owl-nav button.owl-next {
+        right: -76px;
+    }
+
+
+
 /* profile-projects */
 
 .owl-carousel--profile-projects {

@@ -1,0 +1,30 @@
+.full-user-media {
+    padding-top: 0;
+}
+    .full-user-media__head {
+
+    }
+
+    .full-user-media__body {
+        margin-top: 0;
+        padding: 0;
+        border: none
+    }
+        .full-user-media__section {
+            display: block;
+        }
+            .full-user-media__sidebar {
+                width: auto;
+                margin-right: 0;
+            }
+                .full-user-media__sub-heading {
+                    margin-bottom: 14px;
+                }
+
+            .full-user-media__content {
+                margin-left: -20px;
+                margin-right: -20px;
+                width: auto;
+                padding-right: 0;
+            }
+

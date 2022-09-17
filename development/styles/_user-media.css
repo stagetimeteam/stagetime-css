@@ -22,6 +22,10 @@
                 width: var(--profile-sidebar);
                 margin-right: var(--profile-gap);
             }
+                .user-media__sub-heading {
+                    margin-top: 4px;
+                    margin-bottom: 0;
+                }
 
             .user-media__content {
                 flex-shrink: 0;

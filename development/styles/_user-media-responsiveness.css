@@ -19,6 +19,9 @@
                 width: auto;
                 margin-right: 0;
             }
+                .user-media__sub-heading {
+                    margin-bottom: 14px;
+                }
 
             .user-media__content {
                 width: auto;

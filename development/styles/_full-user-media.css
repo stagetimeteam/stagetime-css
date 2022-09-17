@@ -1,17 +1,17 @@
 .full-user-media {
     padding-top: 57px;
-    border: 1px solid var(--theme-light);
 }
-    .full-user-media__heading {
+    .full-user-media__head {
 
-    }
-
-    .full-user-media__null {
-        margin-top: 24px;
     }
 
     .full-user-media__body {
-        padding: 70px 15px 37px;
+        padding: 34px 15px 37px;
+        border-left: 1px solid var(--theme-light);
+        border-right: 1px solid var(--theme-light);
+        border-bottom: 1px solid var(--theme-light);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
     }
         .full-user-media__section {
             margin-top: 32px;
@@ -23,6 +23,10 @@
                 width: 70px;
                 margin-right: var(--profile-gap);
             }
+                .full-user-media__sub-heading {
+                    margin-top: 4px;
+                    margin-bottom: 0;
+                }
 
             .full-user-media__content {
                 flex-shrink: 0;
