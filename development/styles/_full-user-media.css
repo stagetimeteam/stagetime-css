@@ -1,12 +1,12 @@
 .full-user-media {
-    padding-top: 57px;
+
 }
     .full-user-media__head {
 
     }
 
     .full-user-media__body {
-        padding: 34px 15px 37px;
+        padding: 8px 15px 37px;
         border-left: 1px solid var(--theme-light);
         border-right: 1px solid var(--theme-light);
         border-bottom: 1px solid var(--theme-light);
