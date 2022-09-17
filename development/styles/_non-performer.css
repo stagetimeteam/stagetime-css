@@ -84,28 +84,42 @@
                     }
 
                     .non-performer__career {
-                        margin: 22px -24px 0 -16px;
+                        padding-top: var(--profile-widget-padding);
+                        padding-bottom: var(--profile-widget-padding);
                     }
 
                     .non-performer__connections {
-                        margin-top: 17px;
                         border-top: 1px solid var(--theme-light);
-                        padding-top: 24px;
+                        padding-top: var(--profile-widget-padding);
+                        padding-bottom: var(--profile-widget-padding);
                     }
-                        .non-performer__connections .all-connections {
-                            margin: -10px -13px;
-                        }
+
+                    .non-performer__performing {
+                        border-top: 1px solid var(--theme-light);
+                        padding-top: var(--profile-widget-padding);
+                        padding-bottom: var(--profile-widget-padding);
+                        border-bottom: 12px solid transparent;
+                    }
 
                     .non-performer__highlights {
-                        margin-top: 29px;
                         border-top: 1px solid var(--theme-light);
-                        padding-top: 21px;
+                        padding-top: var(--profile-widget-padding);
+                        padding-bottom: var(--profile-widget-padding);
+                        border-bottom: 12px solid transparent;
+                    }
+
+                    .non-performer__management {
+                        border-top: 1px solid var(--theme-light);
+                        padding-top: var(--profile-widget-padding);
+                        padding-bottom: var(--profile-widget-padding);
+                        border-bottom: 12px solid transparent;
                     }
 
                     .non-performer__social {
-                        margin-top: 27px;
                         border-top: 1px solid var(--theme-light);
-                        padding-top: 20px;
+                        padding-top: var(--profile-widget-padding);
+                        padding-bottom: var(--profile-widget-padding);
+                        border-bottom: 12px solid transparent;
                     }
 
                     .non-performer__add-info {
