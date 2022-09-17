@@ -2,19 +2,11 @@
 
     if (desktopMediaQuery.matches) {
 
+        /* Performer profile media */
         var owlProjectsMedia = $('.owl-carousel--profile-media').owlCarousel({
             items: 4,
             slideBy: 3,
             margin: 56,
-            nav: true,
-            dots: false,
-            loop: false
-        });
-
-        var owlFullProjectsMedia = $('.owl-carousel--full-profile-media').owlCarousel({
-            items: 3,
-            slideBy: 2,
-            margin: 36,
             nav: true,
             dots: false,
             loop: false
@@ -31,6 +23,18 @@
             });
         });
 
+
+
+        /* Performer profile media */
+        var owlFullProjectsMedia = $('.owl-carousel--full-profile-media').owlCarousel({
+            items: 3,
+            slideBy: 2,
+            margin: 36,
+            nav: true,
+            dots: false,
+            loop: false
+        });
+
         owlFullProjectsMedia.each(function () {
             $(this).on('mousewheel', '.owl-stage', function (e) {
                 if (e.deltaX > 0) {
@@ -41,6 +45,8 @@
                 e.preventDefault();
             });
         });
+
+
     }
 
 
