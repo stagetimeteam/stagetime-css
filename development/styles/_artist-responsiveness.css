@@ -33,10 +33,10 @@
                 margin-right: 0;
             }
                 .artist__connections {
-                    padding-top: 10px;
+
                 }
-                    .artist__connections.find-connections {
-                        margin: -70px 0 20px;
+                    .artist__connections .find-connections {
+                        margin-top: 20px;
                     }
 
                 .artist__event {
@@ -49,6 +49,7 @@
 
             .artist__content {
                 width: auto;
+                margin-top: 32px;
             }
                 .artist__description {
                     display: none;

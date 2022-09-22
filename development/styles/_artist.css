@@ -63,26 +63,40 @@
                         margin-right: 60px;
                     }
                         .artist__connections {
-                            margin: -10px -13px;
+                            padding-bottom: 20px;
                         }
 
-                        .artist__event {
-                            margin-top: 31px;
+                        .artist__career {
                             border-top: 1px solid var(--theme-light);
-                            padding-top: 20px;
+                            padding-top: var(--profile-widget-padding);
+                            padding-bottom: var(--profile-widget-padding);
                         }
 
                         .artist__highlights {
-                            margin-top: 26px;
                             border-top: 1px solid var(--theme-light);
-                            padding-top: 21px;
+                            padding-top: var(--profile-widget-padding);
+                            padding-bottom: var(--profile-widget-padding);
+                        }
+
+                        .artist__event {
+                            border-top: 1px solid var(--theme-light);
+                            padding-top: var(--profile-widget-padding);
+                            padding-bottom: var(--profile-widget-padding);
                         }
 
                     .artist__content {
                         width: calc(100% - 280px - 60px);
                     }
-                        .artist__description {
+                        .artist__menu {
 
+                        }
+
+                        .artist__description {
+                            margin-top: 22px;
+                        }
+
+                        .artist__description:first-child {
+                            margin-top: 0;
                         }
 
                         .artist__gallery {
@@ -103,15 +117,17 @@
                             .artist__management {
                                 width: 308px;
                                 border-top: 1px solid var(--theme-light);
-                                padding-top: 25px;
+                                padding-top: var(--profile-widget-padding);
+                                padding-bottom: var(--profile-widget-padding);
                             }
 
                             .artist__social {
                                 margin-top: 0; /* bootstrap conflict */
                                 margin-left: 58px;
-                                border-top: 1px solid var(--theme-light);
-                                padding-top: 25px;
                                 flex-grow: 1;
+                                border-top: 1px solid var(--theme-light);
+                                padding-top: var(--profile-widget-padding);
+                                padding-bottom: var(--profile-widget-padding);
                             }
 
                         .artist__register {

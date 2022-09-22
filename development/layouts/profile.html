@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="has-sidebar has-player3 sidebar-hidden" lang="en-US">
+<html class="has-sidebar sidebar-hidden" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -921,15 +921,9 @@
                         <div class="artist__data">
                             <div class="artist__sidebar">
                                 <div class="artist__connections mobile-separator">
-                                    <a class="all-connections" href="#" data-toggle="modal" data-target="#connections">
-                                        <div class="all-connections__head">
-                                            <img class="all-connections__icon" src="../symbols/16-crowd.svg" width="16" height="16" alt="">
-                                            <div class="all-connections__heading title title--smaller">
-                                                345 Connections
-                                            </div>
-                                        </div>
-                                        <div class="all-connections__body">
-                                            <div class="all-connections__people snake snake--larger-border">
+                                    <a class="new-connections" href="#" data-toggle="modal" data-target="#connections">
+                                        <div class="new-connections__preview">
+                                            <div class="new-connections__people snake snake--larger-border">
                                                 <div class="snake__item avatar avatar--alt-hover">
                                                     <img class="avatar__image"
                                                          srcset="../temp/person-a-30x30@2x.jpg 2x"
@@ -958,12 +952,76 @@
                                                     >
                                                 </div>
                                             </div>
-                                            <div class="all-connections__details">
-                                                <div class="all-connections__description">
-                                                    You and Ben both know Lachlan Glen, Madison Leonard, and <span class="link link--user-color">58&nbsp;more</span>
-                                                </div>
+                                            <div class="new-connections__heading">
+                                                345 Connections
                                             </div>
                                         </div>
+                                        <div class="new-connections__details">
+                                            You and Ben both know <span class="link link--inherit">Lachlan Glen</span>, <span class="link link--inherit">Madison Leonard</span>, <span class="new-connections__more link link--user-color">and&nbsp;58&nbsp;more</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="artist__career"><!-- optional -->
+                                    <div class="current-position">
+                                        <a class="alt-org-panel" href="#">
+                                            <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                <img class="avatar__image" srcset="../temp/organization-b-42x42@2x.jpg 2x" src="../temp/organization-b-42x42.jpg" width="42" height="42" alt="">
+                                            </div>
+                                            <div class="alt-org-panel__heading ellipsis">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="alt-org-panel__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="artist__highlights career-highlights mobile-separator">
+                                    <div class="career-highlights__heading title title--smaller">
+                                        Career Highlights
+                                    </div>
+                                    <a class="career-highlights__details" href="#" data-toggle="modal" data-target="#career-highlights">
+                                        See More
+                                    </a>
+                                    <div class="career-highlights__list">
+                                        <a class="career-highlights__item alt-org-panel" href="#">
+                                            <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-a-42x42@2x.jpg 2x"
+                                                     src="../temp/organization-a-42x42.jpg"
+                                                     width="42"
+                                                     height="42"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="alt-org-panel__heading ellipsis">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="alt-org-panel__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                        <a class="career-highlights__item alt-org-panel" href="#">
+                                            <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/organization-b-42x42@2x.jpg 2x"
+                                                     src="../temp/organization-b-42x42.jpg"
+                                                     width="42"
+                                                     height="42"
+                                                     alt=""
+                                                >
+                                            </div>
+                                            <div class="alt-org-panel__heading ellipsis">
+                                                Washington Concert Opera
+                                            </div>
+                                            <div class="alt-org-panel__note">
+                                                Executive Director
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a class="career-highlights__edit button button--alt-secondary button--edit" href="#" data-toggle="modal" data-target="#edit-career">
+                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
+                                        Edit Career Highlights
                                     </a>
                                 </div>
                                 <div class="artist__event performing mobile-separator">
@@ -1032,56 +1090,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="artist__highlights career-highlights mobile-separator">
-                                    <div class="career-highlights__heading title title--smaller">
-                                        Career Highlights
-                                    </div>
-                                    <a class="career-highlights__details" href="#" data-toggle="modal" data-target="#career-highlights">
-                                        See More
-                                    </a>
-                                    <div class="career-highlights__list">
-                                        <a class="career-highlights__item alt-org-panel" href="#">
-                                            <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/organization-a-42x42@2x.jpg 2x"
-                                                     src="../temp/organization-a-42x42.jpg"
-                                                     width="42"
-                                                     height="42"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="alt-org-panel__heading ellipsis">
-                                                Washington Concert Opera
-                                            </div>
-                                            <div class="alt-org-panel__note">
-                                                Executive Director
-                                            </div>
-                                        </a>
-                                        <a class="career-highlights__item alt-org-panel" href="#">
-                                            <div class="alt-org-panel__preview avatar avatar--a-bit-squared avatar--non-clickable">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/organization-b-42x42@2x.jpg 2x"
-                                                     src="../temp/organization-b-42x42.jpg"
-                                                     width="42"
-                                                     height="42"
-                                                     alt=""
-                                                >
-                                            </div>
-                                            <div class="alt-org-panel__heading ellipsis">
-                                                Washington Concert Opera
-                                            </div>
-                                            <div class="alt-org-panel__note">
-                                                Executive Director
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <a class="career-highlights__edit button button--alt-secondary button--edit" href="#" data-toggle="modal" data-target="#edit-career">
-                                        <img class="button__icon button__icon--left" src="../symbols/24-edit.svg" width="24" height="24" alt="">
-                                        Edit Career Highlights
-                                    </a>
-                                </div>
                             </div>
                             <div class="artist__content">
+                                <div class="artist__menu"><!-- optional -->
+                                    <div class="quick-menu">
+                                        <a class="quick-menu__link button button--alt-secondary" href="#">Schedule</a>
+                                        <a class="quick-menu__link button button--alt-secondary" href="#">Biography</a>
+                                        <a class="quick-menu__link button button--alt-secondary" href="#">Media</a>
+                                        <a class="quick-menu__link button button--alt-secondary" href="#">Recommendations</a>
+                                        <a class="quick-menu__link button button--alt-secondary" href="#">Activity</a>
+                                        <a class="quick-menu__link button button--alt-secondary" href="#">Agency &amp; Roster</a>
+                                        <a class="quick-menu__link button button--alt-secondary" href="#">Experience</a>
+                                    </div>
+                                </div>
                                 <div class="artist__description bio">
                                     <div class="bio__content">
                                         <div class="wysiwyg wysiwyg--larger">
@@ -3259,112 +3280,6 @@
                 </div>
             </footer>
         </div>
-
-        <section class="player3">
-            <div class="player3__progress">
-                <div class="player3__indicator playthrough playthrough--full-width">
-                    <div class="playthrough__time">
-                        88:88
-                    </div>
-                    <div class="playthrough__bar"><!-- catch clicks here -->
-                        <div class="playthrough__progress" style="width: 0;"></div>
-                        <div class="playthrough__likes" style="left: 50%; width: 34px; height: 34px;">
-                            34
-                            <div class="playthrough__reactions hearts">
-                                <img class="hearts__item hearts__item--a" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--b" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--c" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--d" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--e" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                            </div>
-                        </div>
-                        <div class="playthrough__likes" style="left: 75%; width: 20px; height: 20px;">
-                            7
-                            <div class="playthrough__reactions hearts">
-                                <img class="hearts__item hearts__item--a" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--b" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--c" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--d" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                                <img class="hearts__item hearts__item--e" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="playthrough__time">
-                        88:88
-                    </div>
-                </div>
-            </div>
-            <div class="player3__body">
-                <audio class="player3__widget" src="../temp/audio/epic.mp3"></audio>
-                <div class="player3__viewport">
-                    <img class="player3__preview"
-                         srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
-                         src="../temp/brandon-bell-when-the-air.jpg"
-                         width="50"
-                         height="50"
-                         alt=""
-                    >
-                    <!-- or:
-                    <iframe class="player3__preview" width="48" height="94" src="https://www.youtube.com/embed/&#45;&#45;A_89lTuiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    -->
-                </div>
-                <div class="player3__data">
-                    <div class="player3__song ellipsis">
-                        Brandon Bell
-                    </div>
-                    <div class="player3__artist ellipsis">
-                        “When the air sings of summer” from The Old Maid and the Thief
-                    </div>
-                </div>
-                <div class="player3__controls">
-                    <button class="player3__action player3__action--bookmark" type="button">
-                        <img class="player3__icon" src="../symbols/16-smaller-heart-outline.svg" width="16" height="16" alt="">
-                    </button>
-                    <button class="player3__action player3__action--backward player3__action--disabled" type="button">
-                        <img class="player3__icon" src="../symbols/16-backward.svg" width="16" height="16" alt="">
-                    </button>
-                    <button class="player3__action player3__action--play" type="button">
-                        <img class="player3__icon" src="../symbols/16-play-2.svg" width="16" height="16" alt="">
-                    </button>
-                    <button class="player3__action player3__action--forward" type="button">
-                        <img class="player3__icon" src="../symbols/16-forward.svg" width="16" height="16" alt="">
-                    </button>
-                    <button class="player3__action player3__action--shuffle" type="button">
-                        <img class="player3__icon" src="../symbols/16-shuffle.svg" width="16" height="16" alt="">
-                    </button>
-                </div>
-                <div class="player3__like react">
-                    <img class="react__icon" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
-                    React
-                </div>
-                <div class="player3__menu operations operations--simplified-handler operations--for-player3">
-                    <button class="operations__handler" type="button">
-                        <img class="operations__icon" src="../symbols/24-more-circle.svg" width="24" height="24" alt="">
-                        More
-                    </button>
-                    <div class="operations__dropdown">
-                        <div class="menu">
-                            <a class="menu__link" href="#">
-                                <img class="menu__icon" src="../symbols/24-share.svg" width="24" height="24" alt="">
-                                Share
-                            </a>
-                            <a class="menu__link" href="#">
-                                <img class="menu__icon" src="../symbols/24-bookmark.svg" width="24" height="24" alt="">
-                                Favorite
-                            </a>
-                            <a class="menu__link" href="#">
-                                <img class="menu__icon" src="../symbols/24-report.svg" width="24" height="24" alt="">
-                                Report
-                            </a>
-                            <a class="menu__link menu__link--close-player" href="#">
-                                <img class="menu__icon" src="../symbols/24-close.svg" width="24" height="24" alt="">
-                                Close player
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- 3/3 Modals: -->
         <div class="modal modal--688px modal--skeleton fade" id="edit-profile-picture" tabindex="-1">
