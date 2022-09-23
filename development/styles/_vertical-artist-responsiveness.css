@@ -27,7 +27,7 @@
                 padding-top: 0;
             }
                 .vertical-artist__body {
-                    padding: 0 var(--container-mobile-padding);
+                    padding: 0 var(--container-mobile-padding) var(--profile-gap);
                 }
                     .vertical-artist__header {
                         display: none;
@@ -37,60 +37,47 @@
                         position: static;
                     }
 
-                    .vertical-artist__gallery.carousel--for-profile-projects,
-                    .vertical-artist__gallery .carousel--for-profile-projects {
-
+                    .vertical-artist__description {
+                        display: none;
                     }
 
-                    .vertical-artist__content {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: stretch;
+                    .vertical-artist__currently {
+                        display: block;
                     }
-                        .vertical-artist__primary {
-                            margin-right: 0;
-                            padding-top: 0;
+                        .vertical-artist__position {
+
                         }
-                            .vertical-artist__description {
-                                display: none;
-                            }
 
-                            .vertical-artist__management {
-
-                            }
-
-                            .vertical-artist__social {
-
-                            }
-
-                            .vertical-artist__register {
-
-                            }
-
-                        .vertical-artist__secondary {
-                            order: -1;
-                            overflow: visible;
-                            margin-left: 0;
-                            margin-right: 0;
-                            padding-left: 0;
-                            padding-right: 0;
-                            padding-top: 0;
+                        .vertical-artist__connections {
+                            margin-top: 16px;
                         }
-                            .vertical-artist__connections {
-                                margin-top: 0;
-                                padding-top: 10px;
-                            }
-                                .vertical-artist__connections.find-connections {
-                                    margin: 0;
-                                }
 
-                            .vertical-artist__performing {
+                        .vertical-artist__connections .find-connections {
+                            margin: 0;
+                        }
 
-                            }
+                    .vertical-artist__summary {
+                        display: block;
+                    }
+                        .vertical-artist__management {
+                            width: auto;
+                        }
 
-                            .vertical-artist__highlights {
+                        .vertical-artist__social {
+                            width: auto;
+                        }
 
-                            }
+                        .vertical-artist__register {
+                            width: auto;
+                        }
+
+                        .vertical-artist__performing {
+                            width: auto;
+                        }
+
+                        .vertical-artist__highlights {
+                            width: auto;
+                        }
 
                     .vertical-artist__edits {
                         padding-bottom: 30px;
