@@ -73,6 +73,9 @@
 
                     .non-performer__position {
                         margin-top: 18px;
+                        display: flex;
+                        align-items: flex-start;
+                        gap: 8px;
                     }
 
                     .non-performer__mobile-bio {
