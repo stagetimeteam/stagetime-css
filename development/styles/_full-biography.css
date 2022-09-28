@@ -53,9 +53,11 @@
                 margin-top: 39px;
                 display: flex;
                 align-items: flex-start;
-                gap: 62px;
+                margin-left: -20px;
+                margin-right: -20px;
             }
                 .full-biography__action {
-                    flex-grow: 1;
-                    flex-basis: 0;
+                    width: calc(33.3333% - 40px);
+                    margin-left: 20px;
+                    margin-right: 20px;
                 }
