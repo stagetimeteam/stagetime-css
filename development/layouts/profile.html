@@ -527,7 +527,7 @@
                 </div>
             </div>
         </div>
-        <div class="customize container container--profile">
+        <div class="customize container container--theming">
             <div class="customize__head">
                 <div class="customize__greetings">
                     Welcome back, <a class="link link--user-color" href="#">Ben</a>.
@@ -584,74 +584,51 @@
                             Select your profile layout and color.
                         </div>
                     </div>
-                    <button class="design-and-layout__save button button--design-submit button--disabled" type="button">
-                        Save changes
-                    </button>
+                    <div class="customize__color color-selection">
+                        <div class="color-selection__body">
+                            <div class="color-selection__section">
+                                <div class="color-selection__list">
+                                    <button class="color-selection__item color-selection__item--current" data-theme="thank-you-five" type="button" style="background-color: #C6B1A6;">
+                                        <span class="color-selection__leaf">
+                                            <span class="color-selection__circle" style="background-color: #C6B1A6;"></span>
+                                            Thank You Five
+                                        </span>
+                                    </button>
+                                    <button class="color-selection__item" data-theme="in-your-habitat" type="button" style="background-color: #ADB7AC;">
+                                        <span class="color-selection__leaf">
+                                            <span class="color-selection__circle" style="background-color: #ADB7AC;"></span>
+                                            In Your Habitat
+                                        </span>
+                                    </button>
+                                    <button class="color-selection__item" data-theme="swim-test" type="button" style="background-color: #9CB2BE;">
+                                        <span class="color-selection__leaf">
+                                            <span class="color-selection__circle" style="background-color: #9CB2BE;"></span>
+                                            Swim Test
+                                        </span>
+                                    </button>
+                                    <button class="color-selection__item" data-theme="light-grey" type="button" style="background-color: #C0C0C0;">
+                                        <span class="color-selection__leaf">
+                                            <span class="color-selection__circle" style="background-color: #C0C0C0;"></span>
+                                            Light Grey
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="customize__section layout-type layout-type--horizontal" type="button">
+                <button class="customize__section layout-type layout-type--horizontal layout-type--current" type="button">
                     <span class="layout-type__heading">Horizontal</span>
                     <span class="layout-type__description">Best for showcasing wide, high resolution landscape photos.</span>
                 </button>
-                <button class="customize__section layout-type layout-type--vertical layout-type--current" type="button">
+                <button class="customize__section layout-type layout-type--vertical" type="button">
                     <span class="layout-type__heading">Vertical</span>
-                    <span class="layout-type__description">Best for showcasing the classic, vertical headshot, or full body promotional photos.</span>
+                    <span class="layout-type__description">Best for showcasing vertical headshot, or full body promotional photos.</span>
                 </button>
-                <div class="customize__section color-selection">
-                    <div class="color-selection__heading">
-                        Select color
-                    </div>
-                    <div class="color-selection__note">
-                        Go ahead, try ‘em all.
-                    </div>
-                    <div class="color-selection__body">
-                        <div class="color-selection__section">
-                            <div class="color-selection__list">
-                                <button class="color-selection__item color-selection__item--current" data-theme="thank-you-five" type="button" style="background-color: #C6B1A6;">
-                                    <span class="color-selection__leaf">
-                                        <span class="color-selection__circle" style="background-color: #C6B1A6;"></span>
-                                        Thank You Five
-                                    </span>
-                                </button>
-                                <button class="color-selection__item" data-theme="in-your-habitat" type="button" style="background-color: #ADB7AC;">
-                                    <span class="color-selection__leaf">
-                                        <span class="color-selection__circle" style="background-color: #ADB7AC;"></span>
-                                        In Your Habitat
-                                    </span>
-                                </button>
-                                <button class="color-selection__item" data-theme="swim-test" type="button" style="background-color: #9CB2BE;">
-                                    <span class="color-selection__leaf">
-                                        <span class="color-selection__circle" style="background-color: #9CB2BE;"></span>
-                                        Swim Test
-                                    </span>
-                                </button>
-                                <button class="color-selection__item" data-theme="light-grey" type="button" style="background-color: #C0C0C0;">
-                                    <span class="color-selection__leaf">
-                                        <span class="color-selection__circle" style="background-color: #C0C0C0;"></span>
-                                        Light Grey
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="color-selection__section color-selection__section--premium">
-                            <div class="color-selection__sub-heading">
-                                <img class="color-selection__crown" src="../symbols/20-crown.svg" width="20" height="20" alt="">
-                                Premium
-                            </div>
-                            <div class="color-selection__list">
-                                <button class="color-selection__item color-selection__item--disabled" type="button" style="background-color: #C3BECC;" title="Please consider upgrading to premium">
-
-                                </button>
-                                <button class="color-selection__item color-selection__item--disabled" type="button" style="background-color: #254547;" title="Please consider upgrading to premium">
-
-                                </button>
-                                <button class="color-selection__item color-selection__item--disabled" type="button" style="background-color: #C2CDE3;" title="Please consider upgrading to premium">
-
-                                    <span class="color-selection__gradient" style="background-image: linear-gradient(135.24deg, #A8B1D5 2.08%, #DDEAF1 100%);"></span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <button class="customize__section layout-type layout-type--classic" type="button">
+                    <span class="layout-type__heading">Classic</span>
+                    <span class="layout-type__description">Best for getting as much information to people viewing your profile.</span>
+                </button>
             </div>
         </div>
         <div class="profile">
@@ -1106,7 +1083,7 @@
                                 <div class="artist__description bio">
                                     <div class="bio__content">
                                         <div class="wysiwyg wysiwyg--larger">
-                                            <p>Ben Bliss began his 2019-2020 season with <strong>Lyric Opera of Kansas City</strong> in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and The Metropolitan Opera, respectively. Also this season, Mr. Bliss appears on the concert stage with The San Francisco Opera, and returns to Ben Bliss began his 2019-2020 season with Lyric Opera of…</p>
+                                            <p>Ben Bliss <a class="link link--text-color" href="#">mentioned profile</a> began his 2019-2020 season with <strong>Lyric Opera of Kansas City</strong> in the role of Belmonte in Mozart's The Abduction from the Seraglio. Other season highlights include numerous concert appearances and a return to the roles of Don Ottavio and Ferrando with Lyric Opera of Chicago and The Metropolitan Opera, respectively. Also this season, Mr. Bliss appears on the concert stage with The San Francisco Opera, and returns to Ben Bliss began his 2019-2020 season with Lyric Opera of…</p>
                                         </div>
                                     </div>
                                     <a class="bio__handler link link--user-color anchor" href="#bio">

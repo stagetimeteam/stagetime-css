@@ -56,6 +56,10 @@
     background-image: url("../images/layout-type-vertical.png");
 }
 
+.layout-type--classic::before {
+    background-image: url("../images/layout-type-classic.png");
+}
+
 @media (min-resolution: 2dppx) {
 
     .layout-type--horizontal::before {
@@ -64,6 +68,10 @@
 
     .layout-type--vertical::before {
         background-image: url("../images/layout-type-vertical@2x.png");
+    }
+
+    .layout-type--classic::before {
+        background-image: url("../images/layout-type-classic@2x.png");
     }
 }
 

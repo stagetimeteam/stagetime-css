@@ -31,26 +31,31 @@
 }
 
 
-.link--classic {
+.link--classic,
+.wysiwyg .link--classic {
     border-bottom-color: currentColor;
 }
 
-.link--classic:hover {
+.link--classic:hover,
+.wysiwyg .link--classic:hover {
     border-bottom-color: transparent;
 }
 
 
-.link--text-color {
+.link--text-color,
+.wysiwyg .link--text-color {
     color: inherit;
 }
 
 
-.link--text-alike {
+.link--text-alike,
+.wysiwyg .link--text-alike {
     border-bottom-color: transparent;
     color: inherit;
 }
 
-.link--text-alike:hover {
+.link--text-alike:hover,
+.wysiwyg .link--text-alike:hover {
     border-bottom-color: transparent;
 }
 
@@ -58,64 +63,76 @@
 
 
 .link--fake,
-.link--fake:hover {
+.link--fake:hover,
+.wysiwyg .link--fake,
+.wysiwyg .link--fake:hover {
     border-bottom-color: transparent;
     color: inherit;
     cursor: inherit;
 }
 
 
-.link--faded {
+.link--faded,
+.wysiwyg .link--faded {
     font-weight: normal;
     color: #AAAAAA;
 }
 
-.link--user-color {
+.link--user-color,
+.wysiwyg .link--user-color {
     color: var(--theme-main);
 }
 
 
-.link--fading {
+.link--fading,
+.wysiwyg .link--fading {
     font-weight: inherit;
     color: inherit;
     transition: opacity;
 }
 
-.link--fading:hover {
+.link--fading:hover,
+.wysiwyg .link--fading:hover {
     opacity: 0.7;
     border-bottom-color: transparent;
 }
 
-.link--inherit {
+.link--inherit,
+.wysiwyg .link--inherit {
     font-weight: inherit;
     color: inherit;
 }
 
 
-.link--mention {
+.link--mention,
+.wysiwyg .link--mention {
     font-weight: 600;
     color: #23282C;
     transition: opacity;
 }
 
-.link--mention:hover {
+.link--mention:hover,
+.wysiwyg .link--mention:hover {
     opacity: 0.7;
     border-bottom-color: transparent;
 }
 
 
-.link--black {
+.link--black,
+.wysiwyg .link--black {
     color: #23282C;
     transition: opacity;
 }
 
-.link--mention:hover {
+.link--mention:hover,
+.wysiwyg .link--mention:hover {
     opacity: 0.7;
     border-bottom-color: transparent;
 }
 
 
-.link--url {
+.link--url,
+.wysiwyg .link--url {
     font-weight: 600;
     color: #325F84;
 }

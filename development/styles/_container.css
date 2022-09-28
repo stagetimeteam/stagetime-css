@@ -97,6 +97,11 @@
     max-width: 1306px;
 }
 
+.container--theming {
+    width: 100%;
+    max-width: 1520px;
+}
+
 .container--alt-profile {
     width: 100%;
     max-width: 1304px;

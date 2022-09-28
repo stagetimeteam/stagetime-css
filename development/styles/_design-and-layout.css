@@ -31,11 +31,8 @@
             color: #545454;
         }
 
-    .design-and-layout__save {
-        margin-top: 20px;
-    }
 
-    .design-and-layout__save.button,
-    .design-and-layout__save .button {
-        width: 100%;
+    .customize__color {
+        margin-left: -10px;
+        margin-right: -10px;
     }
