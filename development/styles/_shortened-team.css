@@ -1,0 +1,46 @@
+.shortened-team {
+    padding-top: 57px;
+}
+    .shortened-team__heading {
+
+    }
+
+    .shortened-team__body {
+        display: flex;
+        align-items: flex-start;
+    }
+        .shortened-team__sidebar {
+            flex-shrink: 0;
+            width: var(--profile-sidebar);
+            margin-right: var(--profile-gap);
+            margin-top: 2px;
+        }
+            .shortened-team__sub-heading {
+                margin-top: 30px;
+            }
+
+            .shortened-team__sub-heading--has-bar {
+                margin-top: 13px;
+            }
+                .shortened-team__sub-heading--has-bar::before {
+                    content: '';
+                    display: block;
+                    margin-bottom: 16px;
+                    width: 1px;
+                    height: 82px;
+                    background-color: #E3EDF3;
+                }
+
+        .shortened-team__content {
+            margin-top: 27px;
+        }
+            .shortened-team__summary {
+
+            }
+
+            .shortened-team__people {
+                margin-top: 33px;
+            }
+                .shortened-team__people .roster__item {
+                    width: 20%;
+                }
