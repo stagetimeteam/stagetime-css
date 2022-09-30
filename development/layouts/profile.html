@@ -1388,30 +1388,32 @@
                     <div class="vertical-artist__stripe">
                         <div class="vertical-artist__jumbotron">
                             <div class="vertical-artist__left">
-                                <div class="artist-card artist-card--alternate">
-                                    <img class="artist-card__preview"
-                                         srcset="../temp/artist-card-vertical@2x.jpg 2x"
-                                         src="../temp/artist-card-vertical.jpg"
-                                         width="720"
-                                         height="918"
-                                         alt=""
-                                    >
-                                    <div class="artist-card__content">
-                                        <h1 class="artist-card__heading">
-                                            Ben<br>
-                                            Bliss
-                                        </h1>
-                                        <div class="artist-card__position">
-                                            Tenor
+                                <div class="vertical-artist__detachable-area">
+                                    <div class="artist-card artist-card--alternate">
+                                        <img class="artist-card__preview"
+                                             srcset="../temp/artist-card-vertical@2x.jpg 2x"
+                                             src="../temp/artist-card-vertical.jpg"
+                                             width="720"
+                                             height="918"
+                                             alt=""
+                                        >
+                                        <div class="artist-card__content">
+                                            <h1 class="artist-card__heading">
+                                                Ben<br>
+                                                Bliss
+                                            </h1>
+                                            <div class="artist-card__position">
+                                                Tenor
+                                            </div>
+                                            <div class="artist-card__last-updated">
+                                                Profile last updated October 23, 2021
+                                            </div>
                                         </div>
-                                        <div class="artist-card__last-updated">
-                                            Profile last updated October 23, 2021
-                                        </div>
+                                        <button class="artist-card__edit edit-photo" type="button" data-toggle="modal" data-target="#edit-profile-picture">
+                                            <img class="edit-photo__icon" src="../symbols/32-edit-photo.svg" width="32" height="32" alt="">
+                                            <span class="edit-photo__label">Edit</span>
+                                        </button>
                                     </div>
-                                    <button class="artist-card__edit edit-photo" type="button" data-toggle="modal" data-target="#edit-profile-picture">
-                                        <img class="edit-photo__icon" src="../symbols/32-edit-photo.svg" width="32" height="32" alt="">
-                                        <span class="edit-photo__label">Edit</span>
-                                    </button>
                                 </div>
                             </div>
                             <div class="vertical-artist__mobile-bio mobile-profile" role="presentation" aria-hidden="true">
@@ -6705,6 +6707,7 @@
         <script src="../scripts/_select2.js"></script>
         <script src="../scripts/_multiline.js"></script>
         <script src="../scripts/_network-news.js"></script>
+        <script src="../scripts/_vertical-artist.js"></script>
 
 
     </body>

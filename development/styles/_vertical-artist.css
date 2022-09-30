@@ -32,7 +32,7 @@
         .vertical-artist__jumbotron {
             position: relative;
             display: flex;
-            align-items: flex-start;
+            align-items: stretch;
             max-width: 1600px;
             margin-left: auto;
             margin-right: auto;
