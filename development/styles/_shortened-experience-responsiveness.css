@@ -1,0 +1,11 @@
+.shortened-experience {
+    /*padding-top: 57px;*/
+}
+    .shortened-experience__heading {
+        display: none;
+    }
+
+    .shortened-experience__body {
+        margin-top: 0;
+        margin-left: 0;
+    }
