@@ -32,17 +32,19 @@
         .vertical-artist__jumbotron {
             position: relative;
             display: flex;
-            align-items: stretch;
+            align-items: flex-start;
             max-width: 1600px;
             margin-left: auto;
             margin-right: auto;
             background-color: #FFFFFF;
         }
-
             .vertical-artist__left {
                 width: 50%;
                 flex-shrink: 0;
             }
+                .vertical-artist__left .artist-card {
+                    height: 920px;
+                }
 
             .vertical-artist__mobile-bio {
                 display: none;
