@@ -11,8 +11,6 @@
     }
 
     .full-biography__body {
-        display: flex;
-        align-items: flex-start;
         border-left: 1px solid var(--theme-light);
         border-right: 1px solid var(--theme-light);
         border-bottom: 1px solid var(--theme-light);
@@ -26,10 +24,10 @@
             .full-biography__wrapper {
                 display: flex;
                 align-items: flex-start;
-                gap: 50px;
             }
                 .full-biography__about {
                     width: 50%;
+                    padding-right: 25px;
                     color: #545454;
                     margin-top: 2px;
                 }
@@ -44,6 +42,7 @@
 
                 .full-biography__comments {
                     width: 50%;
+                    padding-left: 25px;
                 }
                     .full-biography__comments-heading {
                         display: none;
