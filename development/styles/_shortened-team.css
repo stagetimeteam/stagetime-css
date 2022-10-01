@@ -33,6 +33,8 @@
 
         .shortened-team__content {
             margin-top: 27px;
+            flex-shrink: 0;
+            width: calc(100% - var(--profile-gap) - var(--profile-sidebar));
         }
             .shortened-team__summary {
 
