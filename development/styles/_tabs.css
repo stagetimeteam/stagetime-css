@@ -1,0 +1,107 @@
+/*
+  In this components we will see selectors such as:
+  .tabs--skin-default > .tabs__nav .tabs__tag
+  It has to be done to avoid case of when tabs placed inside of tabs
+*/
+
+
+.tabs {
+
+}
+    .tabs__nav {
+
+    }
+        .tabs__ribbon {
+
+        }
+            .tabs__tag {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            .tabs__tag--current {
+                cursor: default;
+            }
+
+    .tabs__bodies {
+
+    }
+        .tabs__item {
+            display: none;
+        }
+
+        .tabs__item--current {
+            display: block;
+        }
+
+
+
+
+
+.tabs--skin-default {
+
+}
+    .tabs--skin-default > .tabs__nav {
+        text-align: center;
+        font-weight: bold;
+        overflow-y: auto;
+    }
+        .tabs--skin-default > .tabs__nav > .tabs__ribbon {
+            display: inline-flex;
+            align-items: flex-start;
+            margin-left: var(--container-mobile-padding);
+            margin-right: var(--container-mobile-padding);
+            box-shadow: inset 0 0 0 1px #E8E8E8;
+            border-radius: 20px;
+        }
+            .tabs--skin-default > .tabs__nav .tabs__tag {
+                flex-shrink: 0;
+                display: inline-flex;
+                align-items: flex-start;
+                border: none;
+                background-color: transparent;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                white-space: nowrap;
+                color: #545454;
+                cursor: pointer;
+            }
+
+            .tabs--skin-default > .tabs__nav .tabs__tag:hover {
+                background-color: var(--panel-hover);
+            }
+
+            .tabs--skin-default > .tabs__nav .tabs__tag:active {
+                background-color: var(--panel-active);
+            }
+
+            .tabs--skin-default > .tabs__nav .tabs__tag:first-child {
+
+            }
+
+            .tabs--skin-default > .tabs__nav .tabs__tag:hover {
+
+            }
+
+            .tabs--skin-default > .tabs__nav .tabs__tag--current,
+            .tabs--skin-default > .tabs__nav .tabs__tag--current:hover {
+                background-color: #333333;
+                color: #FFFFFF;
+                cursor: default;
+            }
+
+
+    .tabs--skin-default > .tabs__bodies {
+        margin-top: 24px;
+    }
+        .tabs--skin-default > .tabs__bodies > .tabs__item {
+
+        }
+
+        .tabs--skin-default > .tabs__bodies > .tabs__item--current {
+
+        }
+

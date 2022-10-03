@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.user-suggest</title>
+        <title>.tabs</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -14,65 +14,51 @@
 
 
 
-        <div style="width: 444px; margin: 0 auto;">
+        <div style="max-width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.user-suggest</h1>
-            <p>
-                See also <a href="_management-suggest.html">.management-suggest</a>
-            </p>
-            <p>
-                Can be used in dropdown to search for user:
-            </p>
+            <h1>.tabs</h1>
 
-            <a class="user-suggest" href="#">
-                <div class="user-suggest__preview avatar avatar--non-clickable">
-                    <img class="avatar__image"
-                         srcset="../temp/person-d-24x24@2x.jpg 2x"
-                         src="../temp/person-d-24x24.jpg"
-                         width="24"
-                         height="24"
-                         alt="Mark Zuckerberg"
-                    >
+            <div class="tabs">
+                <div class="tabs__nav hide-scrollbar">
+                    <div class="tabs__ribbon">
+                        <button class="tabs__tag tabs__tag--current" type="button">Lorem</button>
+                        <button class="tabs__tag" type="button">Ipsum</button>
+                        <button class="tabs__tag" type="button">Dolor</button>
+                        <button class="tabs__tag" type="button">Amen</button>
+                    </div>
                 </div>
-                <div class="user-suggest__name">
-                    Kunal Lahiry
+                <div class="tabs__bodies">
+                    <div class="tabs__item tabs__item--current">Lorem consectetur adipiscing elit consectetur adipiscing elit</div>
+                    <div class="tabs__item">Ipsum volutpat odio lectus, in facilisis mi sollicitudin sed</div>
+                    <div class="tabs__item">Dolor aliquet ante ligula, vel pharetra justo tincidunt nec</div>
+                    <div class="tabs__item">Amen justo lectus, tempus accumsan porttitor in, volutpat quis ante</div>
                 </div>
-            </a>
-
-
-            <br>
-            <br>
-            <br>
-            <h2>.user-suggest--selected</h2>
-            <p>
-                When user was found add <b>.user-suggest__delete</b>
-                and use this <b>.user-suggest--selected</b> modifier.
-            </p>
-            <p>
-                Also change link tag to div. And since the bar isn't clickable anymore
-                we can make avatar inside clickable. Just in case user wants to preview opponent.
-            </p>
-
-            <div class="user-suggest user-suggest--selected">
-                <a class="user-suggest__preview avatar avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-b-24x24@2x.jpg 2x"
-                         src="../temp/person-b-24x24.jpg"
-                         width="24"
-                         height="24"
-                         alt="Mark Zuckerberg"
-                    >
-                </a>
-                <div class="user-suggest__name">
-                    Alexandra Urquiola
-                </div>
-                <button class="user-suggest__delete" type="button">
-                    <img class="user-suggest__cross" src="../symbols/16-cross-airy.svg" width="16" height="16" alt="">
-                </button>
             </div>
 
 
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.tabs--skin-default</h2>
+
+            <div class="tabs tabs--skin-default">
+                <div class="tabs__nav hide-scrollbar">
+                    <div class="tabs__ribbon">
+                        <button class="tabs__tag tabs__tag--current" type="button">Single day</button>
+                        <button class="tabs__tag" type="button">Multi Days</button>
+                        <button class="tabs__tag" type="button">Date Range</button>
+                        <button class="tabs__tag" type="button">Season</button>
+                    </div>
+                </div>
+                <div class="tabs__bodies">
+                    <div class="tabs__item tabs__item--current">Lorem consectetur adipiscing elit consectetur adipiscing elit</div>
+                    <div class="tabs__item">Ipsum volutpat odio lectus, in facilisis mi sollicitudin sed</div>
+                    <div class="tabs__item">Dolor aliquet ante ligula, vel pharetra justo tincidunt nec</div>
+                    <div class="tabs__item">Amen justo lectus, tempus accumsan porttitor in, volutpat quis ante</div>
+                </div>
+            </div>
 
 
             <br>
