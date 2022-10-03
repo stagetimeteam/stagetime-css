@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.counter</title>
+        <title>.tabs</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1664817926">
@@ -14,39 +14,50 @@
 
 
 
-        <div style="width:600px; margin: 0 auto;">
+        <div style="max-width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.counter</h1>
-            <p>
-                Default color wasn't set up yet:
-            </p>
+            <h1>.tabs</h1>
 
-            <div class="counter">
-                4
+            <div class="tabs">
+                <div class="tabs__nav hide-scrollbar">
+                    <div class="tabs__ribbon">
+                        <button class="tabs__tag tabs__tag--current" type="button">Lorem</button>
+                        <button class="tabs__tag" type="button">Ipsum</button>
+                        <button class="tabs__tag" type="button">Dolor</button>
+                        <button class="tabs__tag" type="button">Amen</button>
+                    </div>
+                </div>
+                <div class="tabs__bodies">
+                    <div class="tabs__item tabs__item--current">Lorem consectetur adipiscing elit consectetur adipiscing elit</div>
+                    <div class="tabs__item">Ipsum volutpat odio lectus, in facilisis mi sollicitudin sed</div>
+                    <div class="tabs__item">Dolor aliquet ante ligula, vel pharetra justo tincidunt nec</div>
+                    <div class="tabs__item">Amen justo lectus, tempus accumsan porttitor in, volutpat quis ante</div>
+                </div>
             </div>
 
 
-
             <br>
             <br>
             <br>
-            <h2>.counter--danger</h2>
+            <br>
+            <h2>.tabs--skin-default</h2>
 
-            <div class="counter counter--danger">
-                4
-            </div>
-
-            <div class="counter counter--danger">
-                88
-            </div>
-
-            <div class="counter counter--danger">
-                100
-            </div>
-
-            <div class="counter counter--danger">
-                100500
+            <div class="tabs tabs--skin-default">
+                <div class="tabs__nav hide-scrollbar">
+                    <div class="tabs__ribbon">
+                        <button class="tabs__tag tabs__tag--current" type="button">Single day</button>
+                        <button class="tabs__tag" type="button">Multi Days</button>
+                        <button class="tabs__tag" type="button">Date Range</button>
+                        <button class="tabs__tag" type="button">Season</button>
+                    </div>
+                </div>
+                <div class="tabs__bodies">
+                    <div class="tabs__item tabs__item--current">Lorem consectetur adipiscing elit consectetur adipiscing elit</div>
+                    <div class="tabs__item">Ipsum volutpat odio lectus, in facilisis mi sollicitudin sed</div>
+                    <div class="tabs__item">Dolor aliquet ante ligula, vel pharetra justo tincidunt nec</div>
+                    <div class="tabs__item">Amen justo lectus, tempus accumsan porttitor in, volutpat quis ante</div>
+                </div>
             </div>
 
 
