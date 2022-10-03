@@ -224,6 +224,30 @@
     }
 
 
+/* Right icon */
+    .input__right-icon {
+        position: absolute;
+        z-index: 10;
+        right: 18px;
+        top: 12px;
+    }
+
+    .input__right-icon[width="20"] {
+        margin-right: -2px;
+        margin-top: -2px;
+    }
+
+    .input__right-icon[width="24"] {
+        margin-right: -4px;
+        margin-top: -4px;
+    }
+
+    .input__right-icon ~ .input__widget {
+        padding-right: 44px;
+        background-image: none !important; /* remove select arrow */
+    }
+
+
 /* Author */
     .input__author {
         position: absolute;

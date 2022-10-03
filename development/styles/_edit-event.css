@@ -17,8 +17,12 @@
             margin-right: 20px;
         }
 
-        .edit-event__by-day {
-            margin-top: 26px;
+        .edit-event__date {
+            margin-top: 23px;
+        }
+
+        /* 2nd tab contains: */
+        .edit-event__multiple-dates {
             padding-left: 20px;
             padding-right: 20px;
             display: flex;
@@ -50,49 +54,28 @@
                     color: #545454;
                 }
 
-                .edit-event__add-by-day {
-                    margin-top: 25px;
-                }
-
-                .edit-event__add-by-day.button,
-                .edit-event__add-by-day .button {
-                    min-width: 266px;
-                }
-
-        .edit-event__by-year {
-            margin-top: 20px;
+        /* 4th tab */
+        .edit-event__season {
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
         }
-            .edit-event__row {
-                margin-top: 20px;
-                display: flex;
-                align-items: flex-start;
-                margin-left: -10px;
-                margin-right: -10px;
+            .edit-event__season-column {
+                flex-grow: 1;
             }
 
-            .edit-event__row:first-child {
-                margin-top: 0;
-            }
-                .edit-event__tile {
-                    margin-left: 10px;
-                    margin-right: 10px;
-                    flex-grow: 1;
-                }
 
-            .edit-event__add-by-year {
-                margin-top: 32px;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-
-        .edit-event__passing {
-            margin-top: 23px;
-            margin-left: 20px;
-            margin-right: 20px;
-            font-size: 13px;
-            line-height: 20px;
-            color: #545454;
-        }
+    .edit-event__passing {
+        margin-top: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #545454;
+    }
 
     .edit-event__sharing {
         margin-top: 23px;

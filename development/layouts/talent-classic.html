@@ -4767,6 +4767,9 @@
                                 <div class="edit-event__field input input--larger-font">
                                     <input class="input__widget" type="text" placeholder="Role or Composer *">
                                 </div>
+                                <div class="edit-event__field input input--area input--larger-font">
+                                    <textarea class="input__widget" placeholder="Info (optional)" rows="4"></textarea>
+                                </div>
                                 <div class="edit-event__schedule">
                                     <label class="edit-event__option choice choice--checkbox choice--slim">
                                         <input class="choice__widget" type="checkbox">
@@ -4778,92 +4781,74 @@
                                         <i class="choice__icon" role="presentation"></i>
                                         <span class="choice__label"><span>Display this as the event at which I am <strong>Currently Performing</strong> (only one event can be listed here).</span></span>
                                     </label>
-                                    <div class="edit-event__multiple-dates">
-                                        <div class="edit-event__calendar">
-
-                                            <!-- temp -->
-                                            <div style="height: 206px; background: purple; color: white; display: flex; align-items: center; justify-content: center;">Calendar widget</div>
-                                            <!--/temp -->
-
-                                        </div>
-                                        <div class="edit-event__notes">
-                                            <div class="edit-event__sub-heading">
-                                                Schedule Dates
+                                    <div class="edit-event__date">
+                                        <div class="tabs tabs--skin-default">
+                                            <div class="tabs__nav hide-scrollbar">
+                                                <div class="tabs__ribbon">
+                                                    <button class="tabs__tag tabs__tag--current" type="button">Single day</button>
+                                                    <button class="tabs__tag" type="button">Multi Days</button>
+                                                    <button class="tabs__tag" type="button">Date Range</button>
+                                                    <button class="tabs__tag" type="button">Season</button>
+                                                </div>
                                             </div>
-                                            <div class="edit-event__description">
-                                                Display this as the event at which I am <strong>Currently Performing</strong> (only one event can be listed here).
+                                            <div class="tabs__bodies">
+                                                <div class="tabs__item tabs__item--current">
+                                                    <div class="input input--larger-font">
+                                                        <img class="input__right-icon" src="../symbols/24-calendar-2.svg" width="20" height="20" alt="">
+                                                        <input class="input__widget" type="text" placeholder="Date">
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__item">
+                                                    <div class="edit-event__multiple-dates">
+                                                        <div class="edit-event__calendar">
+
+                                                            <!-- temp -->
+                                                            <div style="height: 206px; background: purple; color: white; display: flex; align-items: center; justify-content: center;">Calendar widget</div>
+                                                            <!--/temp -->
+
+                                                        </div>
+                                                        <div class="edit-event__notes">
+                                                            <div class="edit-event__sub-heading">
+                                                                Schedule Dates
+                                                            </div>
+                                                            <div class="edit-event__description">
+                                                                Some Gigs are multiple days at different times of the week. Select the dates of your gig.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__item">
+                                                    <div class="input input--larger-font">
+                                                        <img class="input__right-icon" src="../symbols/24-calendar-2.svg" width="20" height="20" alt="">
+                                                        <input class="input__widget" type="text" placeholder="Dates range">
+                                                    </div>
+                                                </div>
+                                                <div class="tabs__item">
+                                                    <div class="edit-event__season">
+                                                        <div class="edit-event__season-column input input--select input--larger-font">
+                                                            <select class="input__widget">
+                                                                <option>Fall</option>
+                                                                <option>Fall</option>
+                                                                <option>Fall</option>
+                                                                <option>Fall</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="edit-event__season-column input input--select input--larger-font">
+                                                            <select class="input__widget">
+                                                                <option>2022</option>
+                                                                <option>2022</option>
+                                                                <option>2022</option>
+                                                                <option>2022</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <p>or:</p>
-
-                                    <div class="edit-event__by-year">
-                                        <div class="edit-event__row">
-                                            <div class="edit-event__tile input input--select input--larger-font">
-                                                <select class="input__widget">
-                                                    <option value="placeholder">Start day</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>...</option>
-                                                    <option>3</option>
-                                                </select>
-                                            </div>
-                                            <div class="edit-event__tile input input--select input--larger-font">
-                                                <select class="input__widget">
-                                                    <option value="placeholder">Start month *</option>
-                                                    <option>January</option>
-                                                    <option>February</option>
-                                                    <option>...</option>
-                                                    <option>December</option>
-                                                </select>
-                                            </div>
-                                            <div class="edit-event__tile input input--select input--larger-font">
-                                                <select class="input__widget">
-                                                    <option value="placeholder">Start year *</option>
-                                                    <option>2022</option>
-                                                    <option>2021</option>
-                                                    <option>...</option>
-                                                    <option>2000</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="edit-event__row">
-                                            <div class="edit-event__tile input input--select input--larger-font">
-                                                <select class="input__widget">
-                                                    <option value="placeholder">End day</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>...</option>
-                                                    <option>3</option>
-                                                </select>
-                                            </div>
-                                            <div class="edit-event__tile input input--select input--larger-font">
-                                                <select class="input__widget">
-                                                    <option value="placeholder">End month *</option>
-                                                    <option>January</option>
-                                                    <option>February</option>
-                                                    <option>...</option>
-                                                    <option>December</option>
-                                                </select>
-                                            </div>
-                                            <div class="edit-event__tile input input--select input--larger-font">
-                                                <select class="input__widget">
-                                                    <option value="placeholder">End year *</option>
-                                                    <option>2022</option>
-                                                    <option>2021</option>
-                                                    <option>...</option>
-                                                    <option>2000</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <button class="edit-event__add-by-year button button--modal-submit" type="button">
-                                            Add by month and year
-                                        </button>
-                                    </div>
-                                    <div class="edit-event__passing">
-                                        Once the event passes, it will be moved to your Recent Highlights.
-                                    </div>
+                                </div>
+                                <div class="edit-event__passing">
+                                    Once the event passes, it will be moved to your Recent Highlights.
                                 </div>
                                 <div class="edit-event__sharing input input--select input--larger-font">
                                     <select class="input__widget">
