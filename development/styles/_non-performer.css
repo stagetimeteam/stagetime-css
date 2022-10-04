@@ -89,7 +89,12 @@
                     }
 
                     .non-performer__career {
+                        padding-top: var(--profile-widget-padding);
                         padding-bottom: var(--profile-widget-padding);
+                    }
+
+                    .non-performer__position ~ .non-performer__career {
+                        padding-top: 0;
                     }
 
                     .non-performer__connections {
