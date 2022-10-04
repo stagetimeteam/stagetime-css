@@ -108,6 +108,11 @@
                         flex-wrap: wrap;
                         column-gap: var(--talent-gap);
                     }
+
+                    .vertical-artist__summary:empty {
+                        margin-top: 0;
+                    }
+
                         .vertical-artist__management {
                             width: calc(50% - calc(var(--talent-gap) / 2));
                             margin-top: var(--talent-gap);
@@ -117,7 +122,7 @@
 
                         .vertical-artist__social {
                             width: calc(50% - calc(var(--talent-gap) / 2));
-                            margin-top: var(--talent-gap);
+                            margin-top: var(--talent-gap) !important; /* !important is because of conflict with bootstrap's .media:first-child */
                             border-top: 1px solid var(--theme-light);
                             padding-top: 24px;
                         }
