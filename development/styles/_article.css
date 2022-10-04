@@ -1,0 +1,27 @@
+.article {
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+    .article__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+        color: #23282C;
+        text-align: center;
+    }
+
+    .article__updates {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 18px;
+        color: #76797C;
+        text-align: center;
+    }
+
+
+    .article__body {
+        margin-top: 26px;
+    }

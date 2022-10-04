@@ -106,3 +106,8 @@
     width: 100%;
     max-width: 1304px;
 }
+
+.container--text {
+    width: 100%;
+    max-width: 880px;
+}
