@@ -3,6 +3,12 @@
     border: 1px solid #D9D9D9;
     border-radius: 6px;
 }
+
+    /* conflict with library for mentioning */
+    .typing .mentions-input-box {
+        background-color: transparent !important;
+    }
+
     .typing__message {
         width: 100%;
         vertical-align: top;
@@ -10,11 +16,13 @@
         min-height: 114px;
         max-height: 256px;
         padding: 16px 20px 74px;
-        background-color: transparent;
-        border: none;
+        background-color: transparent !important; /* !important is because of conflict with ".mentions-input-box textarea" */
+        -webkit-box-shadow: none !important; /* because of conflict with ".mention" */
+                box-shadow: none !important; /* because of conflict with ".mention" */
+        border: none !important; /* !important is because of conflict with ".mentions-input-box textarea" */
         outline: none;
         background-clip: padding-box; /* reset iOS default shadow */
-        border-radius: 6px; /* reset iOS default border-radius */
+        border-radius: 6px !important; /* !important is because of conflict with ".mentions-input-box textarea" */
         font-family: inherit;
         font-weight: inherit;
         font-size: 14px;
