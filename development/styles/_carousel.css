@@ -421,3 +421,52 @@
     .carousel--arrows-behind-edit-button .carousel__control {
         margin-right: 190px;
     }
+
+
+
+.carousel--for-news-and-features {
+    margin-top: -42px; /* because of bubble inside of .performance__dates */
+}
+    .carousel--for-news-and-features .carousel__container {
+        padding-top: 42px; /* because of bubble inside of .performance__dates */
+    }
+        .carousel--for-news-and-features .carousel__item {
+            width: 336px;
+            margin-right: 20px;
+        }
+
+        .carousel--for-news-and-features .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+
+    .carousel--for-news-and-features::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        margin-bottom: -7px;
+        width: 80px;
+        height: 10px;
+        background-color: #FFFFFF;
+    }
+
+    .carousel--for-news-and-features .carousel__control {
+        margin-bottom: -25px;
+    }
+
+
+.carousel--for-news-and-features.carousel--arrows-behind-edit-button {
+
+}
+
+    .carousel--for-news-and-features.carousel--arrows-behind-edit-button::before {
+        margin-right: 230px;
+    }
+
+    .carousel--for-news-and-features.carousel--arrows-behind-edit-button .carousel__control {
+        margin-right: 230px;
+    }
+
+
+
