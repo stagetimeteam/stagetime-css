@@ -190,14 +190,18 @@
                     display: none;
                 }
 
+                .non-performer__news-and-features {
+                    margin-top: 40px;
+                }
+
+                .non-performer__speciality {
+
+                }
+
                 .non-performer__null {
 
                 }
 
                 .non-performer__null:first-child {
                     margin-top: 40px;
-                }
-
-                .non-performer__speciality {
-
                 }

@@ -1,0 +1,18 @@
+.full-news-features {
+
+}
+    .full-news-features__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+        display: flex;
+        align-items: flex-start;
+    }
+        .full-news-features__edit {
+            margin-left: auto;
+            margin-top: -17px;
+            margin-bottom: -3px;
+        }
+
+    .full-news-features__list {
+        margin-top: -12px;
+    }
