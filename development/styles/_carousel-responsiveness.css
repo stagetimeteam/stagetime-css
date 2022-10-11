@@ -259,14 +259,25 @@
 .carousel--for-news-and-features {
 
 }
-    .carousel--for-news-and-features .carousel__item {
 
+    .carousel--for-news-and-features.carousel--arrows-behind-edit-button::before {
+        display: none;
     }
-
-
-    @media (max-width: 399px) {
 
         .carousel--for-news-and-features .carousel__item {
-            width: 280px;
+
         }
-    }
+
+        @media (max-width: 399px) {
+
+            .carousel--for-news-and-features .carousel__item {
+                width: 280px;
+            }
+        }
+
+        @media (max-width: 359px) {
+
+            .carousel--for-news-and-features .carousel__item {
+                width: 270px;
+            }
+        }
