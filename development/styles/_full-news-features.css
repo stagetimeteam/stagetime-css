@@ -8,6 +8,8 @@
         align-items: flex-start;
     }
         .full-news-features__edit {
+            position: relative;
+            z-index: 10;
             margin-left: auto;
             margin-top: -17px;
             margin-bottom: -3px;

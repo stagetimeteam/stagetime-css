@@ -1,0 +1,50 @@
+.edit-materials {
+    padding: 24px var(--modal-padding) 34px;
+}
+    .edit-materials__note {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .edit-materials__menu {
+        margin-top: 35px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+        .edit-materials__action {
+
+        }
+
+        .edit-materials__action.button,
+        .edit-materials__action .button {
+            width: 194px;
+            padding: 12px 20px;
+            font-size: 13px;
+        }
+
+    .edit-materials__list {
+        margin-top: 50px;
+    }
+        .edit-materials__item {
+            margin-top: 12px;
+        }
+
+        .edit-materials__item:first-child {
+            margin-top: 0;
+        }
+
+
+    .edit-materials__form {
+
+    }
+        .edit-materials__field {
+            margin-top: 22px;
+        }
+
+        .edit-materials__preview {
+            margin-top: 35px;
+            width: 280px;
+        }

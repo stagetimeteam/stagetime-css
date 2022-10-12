@@ -1,30 +1,59 @@
 .landscape-document {
-    display: flex;
-    align-items: center;
+    position: relative;
+    display: inline-block;
     max-width: 300px;
-    height: 72px;
-    border: 1px solid #E8E8E8;
-    border-radius: 5px;
-    padding: 15px 20px 15px 12px;
-    text-decoration: none;
-    transition: background-color var(--transition-hover);
 }
-
-.landscape-document:hover {
-    background-color: var(--panel-hover);
-}
-
-.landscape-document:active {
-    background-color: var(--panel-active);
-    transition: none;
-}
-
-    .landscape-document__icon {
-        margin-right: 9px;
+    .landscape-document__bar {
+        display: flex;
+        align-items: center;
+        height: 72px;
+        border: 1px solid #E8E8E8;
+        border-radius: 5px;
+        padding: 15px 20px 15px 12px;
+        text-decoration: none;
+        transition: background-color var(--transition-hover);
     }
 
-    .landscape-document__label {
-        font-size: 13px;
-        line-height: 16px;
-        color: #333333;
+    .landscape-document__bar:hover {
+        background-color: var(--panel-hover);
     }
+
+    .landscape-document__bar:active {
+        background-color: var(--panel-active);
+        transition: none;
+    }
+
+        .landscape-document__icon {
+            margin-right: 9px;
+        }
+
+        .landscape-document__label {
+            font-size: 13px;
+            line-height: 16px;
+            color: #333333;
+        }
+
+
+    .landscape-document__delete {
+        position: absolute;
+        right: -10px;
+        top: -10px;
+        background-color: #FFFFFF;
+        padding: 0;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .landscape-document__delete:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .landscape-document__delete:active {
+        background-color: var(--panel-active);
+    }
+
+        .landscape-document__cross {
+            vertical-align: top;
+            fill: #333333;
+        }
