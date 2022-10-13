@@ -6,7 +6,7 @@
     }
 
     .shortened-team__body {
-        /*display: flex;*/
+        display: block;
         /*align-items: flex-start;*/
     }
         .shortened-team__sidebar {
@@ -34,10 +34,14 @@
 
         .shortened-team__content {
             /*margin-top: 27px;*/
+            width: auto;
         }
             .shortened-team__summary {
                 padding-top: 25px;
             }
+                .shortened-team__people .roster__item {
+                    width: 50%;
+                }
 
             .shortened-team__people {
                 /*margin-top: 33px;*/

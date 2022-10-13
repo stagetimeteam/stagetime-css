@@ -55,7 +55,7 @@
         .roster__list {
             /*display: flex;*/
             /*align-items: flex-start;*/
-            /*flex-wrap: wrap;*/
+            flex-wrap: wrap;
         }
             .roster__item {
                 width: 50%;
