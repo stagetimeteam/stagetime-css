@@ -5,6 +5,7 @@
 }
     .workspace__body {
         flex-grow: 1;
+        overflow-y: auto;
         display: flex;
         flex-direction: column;
     }
