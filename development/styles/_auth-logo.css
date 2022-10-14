@@ -1,35 +1,12 @@
 .auth-logo {
     position: relative;
-    width: 274px;
-    height: 53px;
+    width: 226px;
+    height: 59px;
+    background-image: url("../images/logo-dark.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
     text-indent: 200%;
     white-space: nowrap;
     overflow: hidden;
 }
-    .auth-logo::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        display: block;
-        width: 53px;
-        height: 53px;
-        background-image: url("../images/auth-logo-emblem.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }
-
-    .auth-logo::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        display: block;
-        width: 203px;
-        height: 53px;
-        background-image: url("../images/auth-logo-title.svg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center center;
-    }

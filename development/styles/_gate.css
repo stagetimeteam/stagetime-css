@@ -66,12 +66,12 @@
                 padding-bottom: 34px;
             }
                 .gate__branding {
-
+                    margin-left: auto;
+                    margin-right: auto;
                 }
 
                 .gate__slogan {
                     margin-top: 19px;
-                    margin-left: 2px;
                     width: 286px;
                     font-size: 12px;
                     line-height: 20px;
