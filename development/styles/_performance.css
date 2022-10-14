@@ -8,7 +8,7 @@
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
     }
         .performance__close {
             position: absolute;
