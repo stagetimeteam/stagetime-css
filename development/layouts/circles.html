@@ -2322,11 +2322,8 @@
                                                             <img class="file__icon" src="../symbols/24-document.svg" width="24" height="24" alt="">
                                                             <span class="file__label">Comp Ticket Policy.docx</span>
                                                         </a>
-                                                        <button class="file__re-upload" type="button">
-                                                            <img class="file__swap" src="../symbols/24-swap.svg" width="24" height="24" alt="">
-                                                        </button>
-                                                        <button class="file__delete" type="button">
-                                                            <img class="file__cross" src="../symbols/24-close-square.svg" width="24" height="24" alt="">
+                                                        <button class="file__re-upload" type="button" data-toggle="modal" data-target="#resources-reupload">
+                                                            <img class="file__swap" src="../symbols/24-swap-frame.svg" width="24" height="24" alt="">
                                                         </button>
                                                     </div>
                                                     <div class="add-resource__attachment file">
@@ -2334,11 +2331,8 @@
                                                             <img class="file__icon" src="../symbols/24-document.svg" width="24" height="24" alt="">
                                                             <span class="file__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, soluta dolor sit amet, consectetur adipisicing elit. Rem, soluta.docx</span>
                                                         </a>
-                                                        <button class="file__re-upload" type="button">
-                                                            <img class="file__swap" src="../symbols/24-swap.svg" width="24" height="24" alt="">
-                                                        </button>
-                                                        <button class="file__delete" type="button">
-                                                            <img class="file__cross" src="../symbols/24-close-square.svg" width="24" height="24" alt="">
+                                                        <button class="file__re-upload" type="button" data-toggle="modal" data-target="#resources-reupload">
+                                                            <img class="file__swap" src="../symbols/24-swap-frame.svg" width="24" height="24" alt="">
                                                         </button>
                                                     </div>
                                                 </div>
@@ -2625,8 +2619,6 @@
             </div>
         </div>
 
-
-        <!-- 3/3 Modals: -->
         <div class="modal modal--380px fade" id="resources-delete" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -2637,6 +2629,23 @@
                                 Are you sure you want to delete this resource? This step cannot be undone.
                             </div>
                             <button class="confirmation__submit button button--black" type="button">Delete</button>
+                            <button class="confirmation__close link link--fading" type="button" data-dismiss="modal">Go back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--380px fade" id="resources-reupload" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="confirmation">
+                            <img class="confirmation__icon" src="../symbols/24-swap.svg" width="24" height="24" alt="">
+                            <div class="confirmation__message">
+                                Are you sure you want to change this resource? This step cannot be undone.
+                            </div>
+                            <button class="confirmation__submit button button--black" type="button">Change</button>
                             <button class="confirmation__close link link--fading" type="button" data-dismiss="modal">Go back</button>
                         </div>
                     </div>

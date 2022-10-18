@@ -63,7 +63,7 @@
 
     .file__re-upload {
         position: absolute;
-        right: 18px;
+        right: -10px;
         top: -10px;
         background-color: #FFFFFF;
         padding: 0;
@@ -83,6 +83,10 @@
             vertical-align: top;
             fill: #333333;
         }
+
+    .file__delete + .file__re-upload {
+        right: 18px;
+    }
 
 
 
