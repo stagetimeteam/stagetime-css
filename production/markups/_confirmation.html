@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.media-row</title>
+        <title>.confirmation</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1666096855">
@@ -14,44 +14,21 @@
 
 
 
-        <div style="width: 444px; margin: 0 auto;">
+        <div style="width: 380px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.media-row</h1>
+            <h1>.confirmation</h1>
 
-            <a class="media-row" href="#">
-                <img class="media-row__image"
-                     srcset="../temp/media-row-a@2x.jpg 2x"
-                     src="../temp/media-row-a.jpg"
-                     width="80"
-                     height="42"
-                     alt=""
-                >
-                <div class="media-row__name">Sergey Tkachenko</div>
-                <div class="media-row__title ellipsis">Piano concerto No. 2 in Lorem Ipsum dolor sit amen</div>
-                <div class="media-row__time ellipsis">3:16</div>
-            </a>
-
-            <br>
-            <br>
-            <br>
-            <h2>.media-row--current</h2>
-
-            <a class="media-row media-row--current" href="#">
-                <img class="media-row__image"
-                     srcset="../temp/media-row-a@2x.jpg 2x"
-                     src="../temp/media-row-a.jpg"
-                     width="80"
-                     height="42"
-                     alt=""
-                >
-                <div class="media-row__name">Sergey Tkachenko</div>
-                <div class="media-row__title ellipsis">Piano concerto No. 2 in Lorem Ipsum dolor sit amen</div>
-                <div class="media-row__time ellipsis">3:16</div>
-            </a>
-
-
-
+            <div class="confirmation">
+                <svg class="confirmation__icon" width="24" height="24">
+                    <use xlink:href="../symbols/symbols.svg?1666096855#24-category"></use>
+                </svg>
+                <div class="confirmation__message">
+                    Are you sure you want to delete this Collection? This step cannot be undone.
+                </div>
+                <button class="confirmation__submit button button--black" type="button">Delete</button>
+                <button class="confirmation__close link link--fading" type="button" data-dismiss="modal">Go back</button>
+            </div>
 
             <br>
             <br>
