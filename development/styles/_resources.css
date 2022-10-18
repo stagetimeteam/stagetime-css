@@ -4,39 +4,27 @@
     -webkit-overflow-scrolling: touch;
 }
     .resources__inner {
-        padding: 0 40px var(--padding-under-chat);
+        padding: 0 20px var(--padding-under-chat);
     }
         .resources__edit {
-            margin: 0 -20px 18px;
+            margin-bottom: 18px;
         }
 
         .resources__list {
-            padding-top: 11px;
+
         }
             .resources__item {
                 position: relative;
-                margin-top: 38px;
-                padding-top: 38px;
+                margin-top: 12px;
+                border-top: 1px solid #E1E3E6;
+                padding-top: 12px;
             }
 
             .resources__item:first-child {
                 margin-top: 0;
+                border-top: none;
                 padding-top: 0;
             }
-                .resources__item::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: -20px;
-                    right: -20px;
-                    height: 1px;
-                    background-color: #E1E3E6;
-                }
-
-                .resources__item:first-child::before {
-                    display: none;
-                }
-
 
         .resources__form {
             margin-top: -5px;

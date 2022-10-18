@@ -3,14 +3,14 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #F6F6F6;
+    background-color: #F2F2F2;
     border-radius: 4px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 20px;
-    color: #23282C;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    color: #545454;
     border: none;
-    padding: 20px;
+    padding: 22px;
     cursor: pointer;
     transition: background-color var(--transition-hover);
 }

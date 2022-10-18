@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.panel-button</title>
+        <title>.dictionary</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -14,14 +14,17 @@
 
 
 
-        <div style="width: 444px; margin: 0 auto;">
+        <div style="width: 380px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.panel-button</h1>
+            <h1>.delete</h1>
+            <p><b style="color: red;">Outdated</b>. See <a href="_confirmation.html">.confirmation</a></p>
 
-            <button class="panel-button" type="button">
-                + Add new resource
-            </button>
+            <div class="delete">
+                <img class="delete__icon" src="../symbols/16-danger.svg" width="16" height="16" alt="">
+                <div class="delete__message">Are you sure you want to delete this collection / remove this artist from your collection? This step cannot be undone.</div>
+                <button class="delete__submit button button--larger" type="button">Delete / Remove</button>
+            </div>
 
 
             <br>

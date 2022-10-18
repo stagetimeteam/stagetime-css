@@ -8,7 +8,7 @@
         align-items: center;
         min-height: 70px;
         padding: 14px 16px 14px 12px;
-        background-color: transparent;
+        background-color: #FFFFFF;
         border: 1px solid #E1E3E6;
         border-radius: 5px;
         text-decoration: none;
@@ -59,6 +59,31 @@
         .file__preview-link:hover .file__image {
             transform: scale(1.05);
         }
+
+
+    .file__re-upload {
+        position: absolute;
+        right: 18px;
+        top: -10px;
+        background-color: #FFFFFF;
+        padding: 0;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+    .file__re-upload:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .file__re-upload:active {
+        background-color: var(--panel-active);
+    }
+        .file__swap {
+            vertical-align: top;
+            fill: #333333;
+        }
+
 
 
     .file__delete {

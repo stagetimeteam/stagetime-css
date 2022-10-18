@@ -1,5 +1,7 @@
 .resources-post {
-
+    position: relative;
+    padding: 20px;
+    border-radius: 4px;
 }
     .resources-post__head {
         position: relative;
@@ -33,3 +35,32 @@
             margin-top: 12px;
             margin-left: 12px;
         }
+
+    .resources-post__actions {
+        position: absolute;
+        right: 13px;
+        top: -12px;
+        opacity: 0;
+        transition: opacity var(--transition-hover);
+    }
+
+
+
+.resources-post--editable {
+    transition: background-color var(--transition-hover);
+}
+
+.resources-post--editable:hover {
+
+}
+    .resources-post--editable:hover {
+        background-color: #EEF0F3;
+    }
+
+    .resources-post--editable:hover .resources-post__actions {
+        opacity: 1;
+    }
+
+    .resources-post--editable:focus-within .resources-post__actions {
+        opacity: 1;
+    }
