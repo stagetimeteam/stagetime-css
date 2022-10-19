@@ -11,6 +11,10 @@
         margin-top: 13px;
     }
 
+    .form__item--less-margin {
+        margin-top: 5px;
+    }
+
     .form__item:first-child {
         margin-top: 0;
     }
