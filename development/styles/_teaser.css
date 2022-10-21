@@ -8,6 +8,7 @@
         position: relative;
         height: 130px;
         background-color: #E8E8E8;
+        border-bottom: 1px solid #E8E8E8;
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
         text-align: center;
