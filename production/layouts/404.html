@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="has-sub-header" lang="en-US">
+<html class="has-sidebar" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Anonymous Responsive Page</title>
+        <title>404</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1666374212">
@@ -23,11 +23,12 @@
                     Good afternoon, <a class="link link--user-color" href="#">Jennie</a>.
                 </div>
                 -->
+                <!-- optional:
                 <div class="header__auth">
                     <a class="header__login" href="#"><span class="header__label">Log In</span></a>
                     <a class="header__join" href="#"><span class="header__label">Join <span class="header__stagetime-label">Stagetime</span></span></a>
                 </div>
-                <!-- optional:
+                -->
                 <div class="header__menu">
                     <button class="header__item header-button header-button--search" type="button">
                         <svg class="header-button__icon" width="24" height="24">
@@ -50,6 +51,17 @@
                         <span class="visuallyhidden">New:</span>
                         <span class="header-button__updates counter counter--danger">4</span>
                     </a>
+                    <button class="header__item header-button header-button--sidebar" type="button">
+                        <svg class="header-button__icon header-button__icon--burger" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1666374212#24-burger"></use>
+                        </svg>
+                        <svg class="header-button__icon header-button__icon--close-burger" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1666374212#24-close-burger"></use>
+                        </svg>
+                        <span class="visuallyhidden">Toggle sidebar</span>
+                        <span class="visuallyhidden">Notifications:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </button>
                     <a class="header__item profile-button" href="#">
                         <span class="avatar avatar--alt-hover">
                             <img class="avatar__image"
@@ -62,10 +74,8 @@
                         </span>
                     </a>
                 </div>
-                -->
             </div>
         </header>
-        <!-- optional:
         <form class="search">
             <div class="search__bar">
                 <button class="search__close" type="button">
@@ -156,6 +166,7 @@
                                 <svg class="search__more-icon" width="24" height="24">
                                     <use xlink:href="../symbols/symbols.svg?1666374212#24-magnifier"></use>
                                 </svg>
+                                     alt="">
                             </div>
                             More results for “aj o’rei”
                         </a>
@@ -163,8 +174,6 @@
                 </div>
             </div>
         </form>
-        -->
-        <!-- optional:
         <div class="notifications">
             <div class="notifications__head top-bar">
                 <div class="top-bar__heading">
@@ -179,7 +188,11 @@
             <div class="notifications__scroll scrollbar scrollbar-macosx">
                 <div class="notifications__separator section-separator">
                     <div class="section-separator__heading">
-                        Collaborator Requests
+                        <svg class="section-separator__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1666374212#24-2-user"></use>
+                        </svg>
+                        New Requests (2)
+                        <div class="section-separator__updates dot"></div>
                     </div>
                     <a class="section-separator__action button button--another-faded" href="#">
                         See All
@@ -190,10 +203,16 @@
                 <div class="simpler-null">
                     You don’t currently have<br> any notifications.
                 </div>
+                <!-- temp -->
                 or:
+                <!--/temp -->
                 <div class="notifications__separator section-separator">
                     <div class="section-separator__heading">
-                        Collaborator Requests
+                        <svg class="section-separator__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1666374212#24-globe"></use>
+                        </svg>
+                        Activity
+                        <div class="section-separator__updates dot"></div>
                     </div>
                     <a class="section-separator__action button button--another-faded" href="#">
                         See All
@@ -377,10 +396,10 @@
                                     Hey, was great meeting you last night! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt djdj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptatum!
                                 </div>
                                 <span class="multiline__handler link">
-                                    <span class="multiline__read-more">Read More</span>
-                                    <span class="visuallyhidden">or</span>
-                                    <span class="multiline__close">Read Less</span>
-                                </span>
+                            <span class="multiline__read-more">Read More</span>
+                            <span class="visuallyhidden">or</span>
+                            <span class="multiline__close">Read Less</span>
+                        </span>
                             </div>
                         </div>
                         <div class="notice__operations">
@@ -441,10 +460,8 @@
                         </div>
                     </a>
                 </div>
-                </div>
+            </div>
         </div>
-        -->
-        <!-- optional:
         <div class="profile">
             <div class="profile__head top-bar">
                 <div class="top-bar__heading">
@@ -508,36 +525,395 @@
                 </div>
             </div>
         </div>
-        -->
+        <div class="sidebar">
+            <button class="sidebar__overlay" type="button"></button>
+            <div class="sidebar__scroll scrollbar scrollbar-macosx">
+                <div class="sidebar__inner">
+                    <nav class="side-nav">
+                        <div class="side-nav__section">
+                            <a class="pic-link pic-link--current" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-home"></use>
+                                </svg>
+                                <div class="pic-link__label">Home</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-edit2"></use>
+                                </svg>
+                                <div class="pic-link__label">Edit My Profile</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-envelope"></use>
+                                </svg>
+                                <div class="pic-link__label">Messages <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-2-user"></use>
+                                </svg>
+                                <div class="pic-link__label">My Network</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section">
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-paper"></use>
+                                </svg>
+                                <div class="pic-link__label">Jobs</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-category"></use>
+                                </svg>
+                                <div class="pic-link__label">Collections</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-thick-rings"></use>
+                                </svg>
+                                <span class="pic-link__counter counter counter--danger">4</span>
+                                <div class="pic-link__label">Circles <span class="pic-link__beta beta">beta</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-3-user-2"></use>
+                                </svg>
+                                <div class="pic-link__label">Groups</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon pic-link__icon--photo"
+                                     srcset="../temp/person-a-20x20@2x.jpg 2x"
+                                     src="../temp/person-a-20x20.jpg"
+                                     width="20"
+                                     height="20"
+                                     alt=""
+                                >
+                                <div class="pic-link__label">Manage</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section side-nav__section--smartphone-only">
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-envelope"></use>
+                                </svg>
+                                <svg class="pic-link__sparkle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#16-sparkle"></use>
+                                </svg>
+                                <div class="pic-link__label">Invite</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-pawprint"></use>
+                                </svg>
+                                <div class="pic-link__label">Report an Issue</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-info-square"></use>
+                                </svg>
+                                <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1666374212#24-cogwheel"></use>
+                                </svg>
+                                <div class="pic-link__label">Settings</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
         <!-- 2/3: .page -->
         <div class="page">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto blanditiis consectetur consequuntur debitis, deserunt eligendi eos explicabo fugit in ipsam iusto nihil quaerat quidem quisquam ullam veritatis vero voluptas voluptate voluptatibus. A atque earum eum, nemo quas veritatis! Fugit minima, quidem. Aut, maiores modi nostrum placeat porro sint voluptates. Ab aut libero non quidem vel? Accusamus impedit molestiae nostrum sit suscipit. Accusamus adipisci, amet atque beatae commodi consequatur delectus dignissimos earum est eveniet exercitationem facere fugit in iste iure laudantium magni, modi molestias nihil nisi nulla odit perferendis quae quis quo repellat repellendus, sapiente suscipit tempora tenetur veniam veritatis.
-
-            <!-- temp -->
-            <img src="../temp/footer.jpg" alt="" style="width: 100%; vertical-align: top;">
-            <!--/temp -->
+            <div class="error-code container">
+                <div class="error-code__cell">
+                    <img class="error-code__image"
+                         src="../content/error-code-dummy.svg"
+                         width="108" height="170"
+                         alt=""
+                    >
+                    <h2 class="error-code__heading">
+                        This page is feeling ill
+                    </h2>
+                    <div class="error-code__note">
+                        Please excuse it while we find its understudy
+                    </div>
+                    <div class="error-code__description">
+                        This page can’t be found. We’re sorry for the inconvience but hopefully these links might help.
+                    </div>
+                    <div class="error-code__search search-bar">
+                        <input class="search-bar__widget" type="text" placeholder="Search Stagetime">
+                        <svg class="search-bar__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1666374212#24-magnifier"></use>
+                        </svg>
+                    </div>
+                    <div class="error-code__operations">
+                        <a class="error-code__action button button--large-submit" href="#">Go to homepage</a>
+                        <a class="error-code__action button button--large-submit" href="#">Contact support</a>
+                        <a class="error-code__action button button--large-submit" href="#">Go back</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
         <!-- 3/3 Modals: -->
-        <!-- No modal windows on this page -->
+        <div class="modal fade" id="circles-settings" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <div class="modal-head__heading title title--small">
+                                Circle Settings
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <svg class="action__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1666374212#16-cross"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="circle-settings">
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-name">
+                                        Circle Name
+                                    </label>
+                                    <div class="input input--larger-font">
+                                        <input class="input__widget" type="text" id="#circle-name" placeholder="Add Name...">
+                                    </div>
+                                </div>
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-admin">
+                                        Circle Admins
+                                        <span class="label__note">You can only make current Circle members admins.</span>
+                                    </label>
+                                    <div class="input input--classic-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Search on Stagetime">
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-40x40@2x.jpg 2x"
+                                                             src="../temp/person-a-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
 
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
+
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="circles-results">
+                                        <div class="circles-results__item circles-suggest">
+                                            <a class="circles-suggest__preview avatar avatar--alt-hover">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                     src="../temp/person-a-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </a>
+                                            <div class="circles-suggest__name ellipsis">
+                                                <a class="link link--fading" href="#">Elena Villalón</a>
+                                            </div>
+                                            <button class="circles-suggest__cancel" type="button">
+                                                <svg class="circles-suggest__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1666374212#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                <p>or:</p>
+                                <!--/temp -->
+
+                                <div class="circle-settings__field">
+                                    <div class="label">
+                                        Circle Admins
+                                    </div>
+                                    <div class="circle-settings__hint">
+                                        Only Circle Admins can:<br>
+                                        &nbsp;&nbsp;•&nbsp; Rename the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Delete the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Information section<br>
+                                        &nbsp;&nbsp;•&nbsp; Invite/Approve Members to the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Resource section<br>
+                                        <br>
+                                        If you need to add another person as an Admin, send us a message here.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-secondary" type="button">
+                                    Delete
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
