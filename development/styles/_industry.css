@@ -1,19 +1,7 @@
 .industry {
 
 }
-    .industry__heading {
-        display: block;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 18px;
-        color: #686868;
-    }
-        .industry__optional {
-            font-weight: normal;
-        }
-
     .industry__hint {
-        margin-top: 6px;
         font-size: 14px;
         line-height: 19px;
         color: #44474A;

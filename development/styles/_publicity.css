@@ -1,8 +1,14 @@
 .publicity {
 
 }
+
+.publicity + .publicity {
+    margin-top: 30px;
+}
+
     .publicity__heading {
         display: block;
+        margin-bottom: 2px;
         font-weight: normal;
         font-size: 14px;
         line-height: 20px;
@@ -11,11 +17,18 @@
     .publicity__widget {
 
     }
+        .publicity__widget .toggler__label {
+            font-weight: normal;
+            font-size: 12px;
+        }
+        .publicity__widget .toggler__control {
+            margin-left: 6px;
+            margin-right: 6px;
+        }
 
     .publicity__hint {
-        margin-top: 6px;
         font-style: italic;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 12px;
+        line-height: 20px;
         color: #757575;
     }
