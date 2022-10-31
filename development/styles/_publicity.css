@@ -1,0 +1,21 @@
+.publicity {
+
+}
+    .publicity__heading {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .publicity__widget {
+
+    }
+
+    .publicity__hint {
+        margin-top: 6px;
+        font-style: italic;
+        font-size: 14px;
+        line-height: 19px;
+        color: #757575;
+    }
