@@ -1,0 +1,147 @@
+.circle-card {
+    position: relative;
+    border: 1px solid #E8E8E8;
+    padding: 9px 14px 17px;
+    border-radius: 4px;
+}
+    .circle-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 39px;
+        background-image: linear-gradient(to right, #F3F5F8, #FBFCFC);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+
+    .circle-card__head {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+    }
+        .circle-card__logo {
+            position: relative;
+            width: 55px;
+            height: 55px;
+            margin-left: -7px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #44474A;
+            border-radius: 50%;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .circle-card__logo:hover {
+            background-color: #636972;
+        }
+
+        .circle-card__bookmark {
+            position: absolute;
+            left: 37px;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            padding: 2px;
+            border: 1px solid #FFFFFF;
+            background-color: #9CB2BE;
+            border-radius: 50%;
+            text-align: center;
+        }
+            .circle-card__star {
+                vertical-align: top;
+                width: 10px;
+                height: 10px;
+                fill: #FFFFFF;
+            }
+
+        .circle-card__people {
+            position: relative;
+            margin-left: 8px;
+            margin-top: 16px;
+        }
+
+        .circle-card__counter {
+            position: relative;
+            margin-left: 10px;
+            margin-top: 30px;
+            padding-top: 1px;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 12px;
+            color: #757575;
+        }
+            .circle-card__crowd {
+                margin-top: -1px;
+                vertical-align: top;
+                width: 14px;
+                height: 14px;
+                fill: #000000;
+            }
+
+    .circle-card__close {
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        background-color: transparent;
+        border: none;
+        padding: 9px;
+        line-height: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .circle-card__close:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .circle-card__close:active {
+        background-color: var(--panel-active);
+    }
+
+        .circle-card__cross {
+            vertical-align: top;
+            fill: #333333;
+        }
+
+    .circle-card__heading {
+        margin-top: 3px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #545454;
+    }
+
+    .circle-card__footer {
+        margin-top: 5px;
+        display: flex;
+        align-items: flex-start;
+    }
+        .circle-card__summary {
+            padding-right: 12px;
+            font-size: 11px;
+            line-height: 18px;
+            color: #44474A;
+        }
+            .circle-card__summary .link {
+                font-style: italic;
+                color: #39606C;
+            }
+
+        .circle-card__join {
+            margin-top: -1px;
+            margin-left: auto;
+        }
+
+        .circle-card__join.button,
+        .circle-card__join .button {
+
+        }

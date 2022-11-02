@@ -367,6 +367,29 @@
 
 
 
+.carousel--for-public-circles {
+
+}
+    .carousel--for-public-circles .carousel__container {
+
+    }
+        .carousel--for-public-circles .carousel__item {
+            width: 276px;
+            margin-right: 26px;
+        }
+
+        .carousel--for-public-circles .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel--for-public-circles .carousel__control {
+            margin-bottom: 18px;
+            margin-right: 88px;
+        }
+
+
+
+
 
 
 .carousel--for-profile-schedule {
