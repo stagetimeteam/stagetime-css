@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.user-badge</title>
+        <title>.state-toggler</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1667398186">
@@ -14,117 +14,31 @@
 
 
 
-        <div style="width: 800px; margin: 0 auto;">
+        <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.user-badge</h1>
+            <h1>.state-toggler</h1>
             <p>
-                Default case is being used in the feed. As a header of a post.
+                Unlike default <a href="_toggler.html">.toggler</a> that switchs on/off states
+                this one made for switching of equal left and right items:
             </p>
-
-            <div class="user-badge">
-                <div class="user-badge__preview">
-                    <a class="avatar avatar--alt-hover" href="#">
-                        <img class="avatar__image"
-                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
-                             src="../temp/organization-a-56x56.jpg"
-                             width="56" height="56"
-                             alt=""
-                        >
-                    </a>
-                </div>
-                <div class="user-badge__heading">
-                    <a class="link link--text-alike" href="#">
-                        Indiana University
-                    </a>
-                </div>
-                <div class="user-badge__note">
-                    <time datetime="2021-12-31T20:59+03:00">December 31, 2021, 23:59pm</time>
-                </div>
-            </div>
-
-
             <br>
-            <br>
-            <p>
-                Same card also used in search dropdown. Just replace text.<br> You may also want to use
-                <b>.avatar--non-clickable</b> and remove <b>.link</b>
-                from the text name:
-            </p>
-
-            <div class="user-badge">
-                <div class="user-badge__preview">
-                    <div class="avatar avatar--non-clickable">
-                        <img class="avatar__image"
-                             srcset="../temp/person-c-56x56@2x.jpg 2x"
-                             src="../temp/person-c-56x56.jpg"
-                             width="56" height="56"
-                             alt=""
-                        >
-                    </div>
-                </div>
-                <div class="user-badge__heading">
-                    Adelaide Boedecker
-                </div>
-                <div class="user-badge__note">
-                    Soprano, Houston, TX
-                </div>
-            </div>
-
-            <br>
-            <br>
-            <p>
-                In case of organization please use <b>.avatar--squared</b> inside.<br>
-                Also add <b>.icon</b> with id: <b>16-city</b><br> right before the organization title.
-            </p>
-
-            <div class="user-badge">
-                <div class="user-badge__preview">
-                    <div class="avatar avatar--squared avatar--non-clickable">
-                        <img class="avatar__image"
-                             srcset="../temp/organization-a-56x56@2x.jpg 2x"
-                             src="../temp/organization-a-56x56.jpg"
-                             width="56" height="56"
-                             alt=""
-                        >
-                    </div>
-                </div>
-                <div class="user-badge__heading">
-                    <svg class="icon" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1667398186#16-city"></use>
-                    </svg>
-                    Indiana University
-                </div>
-                <div class="user-badge__note">
-                    Aspen, CO
-                </div>
-            </div>
 
 
-            <br>
-            <br>
-            <h2>.user-badge--search</h2>
-
-            <div class="user-badge user-badge--search">
-                <div class="user-badge__preview">
-                    <div class="avatar avatar--non-clickable">
-                        <img class="avatar__image"
-                             srcset="../temp/person-c-56x56@2x.jpg 2x"
-                             src="../temp/person-c-56x56.jpg"
-                             width="56" height="56"
-                             alt=""
-                        >
-                    </div>
-                </div>
-                <div class="user-badge__heading">
-                    Adelaide Boedecker
-                </div>
-                <div class="user-badge__note">
-                    Soprano, Houston, TX
-                </div>
-            </div>
-
-
+            <label class="state-toggler">
+                <span class="state-toggler__label">
+                    Private
+                </span>
+                <span class="state-toggler__control">
+                    <input class="state-toggler__widget" type="checkbox">
+                    <span class="state-toggler__body">
+                        <i class="state-toggler__knob"></i>
+                    </span>
+                </span>
+                <span class="state-toggler__label">
+                    Public
+                </span>
+            </label>
 
             <br>
             <br>
