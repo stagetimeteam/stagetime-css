@@ -17,14 +17,6 @@
     .publicity__widget {
 
     }
-        .publicity__widget .toggler__label {
-            font-weight: normal;
-            font-size: 12px;
-        }
-        .publicity__widget .toggler__control {
-            margin-left: 6px;
-            margin-right: 6px;
-        }
 
     .publicity__hint {
         font-style: italic;

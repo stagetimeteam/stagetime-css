@@ -1,0 +1,74 @@
+.state-toggler {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    cursor: pointer;
+}
+    .state-toggler__label {
+        font-size: 12px;
+        line-height: 24px;
+        color: #545454;
+    }
+
+    .state-toggler__control {
+        position: relative;
+        margin-left: 6px;
+        margin-right: 6px;
+        display: inline-flex;
+        align-items: center;
+    }
+        .state-toggler__body {
+            position: relative;
+            width: 34px;
+            height: 24px;
+            background-color: #C4C4C4;
+            border: 1px solid #C4C4C4;
+            box-shadow: inset 0 0 0 3px #FFFFFF;
+            border-radius: 17px;
+        }
+            .state-toggler__widget {
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                cursor: inherit;
+            }
+
+            .state-toggler__knob {
+                position: absolute;
+                left: 3px;
+                top: 3px;
+                bottom: 3px;
+                display: block;
+                width: 16px;
+                height: 16px;
+                background-color: #333333;
+                border-radius: 50%;
+                transition: left 0.3s var(--ease-out-circ),
+                            background-color var(--transition-hover);
+            }
+
+.state-toggler:hover {
+
+}
+    .state-toggler:hover .state-toggler__body {
+        box-shadow: inset 0 0 0 3px #FFFFFF,
+                          0 0 0 2px #C4C4C4
+    }
+
+
+.state-toggler__widget:checked {
+
+}
+    .state-toggler__widget:checked ~ .state-toggler__body {
+
+    }
+        .state-toggler__widget:checked ~ .state-toggler__body .state-toggler__knob {
+            left: 13px;
+        }
+
+    .state-toggler__widget:focus ~ .state-toggler__body .state-toggler__knob {
+        outline: auto;
+        outline-offset: 4px;
+    }
