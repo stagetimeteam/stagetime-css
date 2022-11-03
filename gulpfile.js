@@ -245,7 +245,7 @@ gulp.task('scripts', function() {
 gulp.task('symbols', function() {
     return gulp.src('development/symbols/*.svg')
         .pipe(plumber())
-        .pipe(svgmin())
+        // .pipe(svgmin()) breaks sprite after package update to 4.1.0
         .pipe(svgstore())
         .pipe(gulp.dest('production/symbols/'));
 });
