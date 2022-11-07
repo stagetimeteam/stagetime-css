@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="has-sidebar" lang="en-US">
+<html class="has-sidebar sidebar-collapsed" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>404</title>
+        <title>Circles</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1667819755">
@@ -526,7 +526,6 @@
             </div>
         </div>
         <div class="sidebar">
-            <button class="sidebar__overlay" type="button"></button>
             <div class="sidebar__scroll scrollbar scrollbar-macosx">
                 <div class="sidebar__inner">
                     <nav class="side-nav">
@@ -593,35 +592,6 @@
                                 <div class="pic-link__label">Manage</div>
                             </a>
                         </div>
-                        <div class="side-nav__section side-nav__section--smartphone-only">
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1667819755#24-envelope"></use>
-                                </svg>
-                                <svg class="pic-link__sparkle" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-sparkle"></use>
-                                </svg>
-                                <div class="pic-link__label">Invite</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1667819755#24-pawprint"></use>
-                                </svg>
-                                <div class="pic-link__label">Report an Issue</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1667819755#24-info-square"></use>
-                                </svg>
-                                <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1667819755#24-cogwheel"></use>
-                                </svg>
-                                <div class="pic-link__label">Settings</div>
-                            </a>
-                        </div>
                     </nav>
                 </div>
             </div>
@@ -629,35 +599,416 @@
 
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="error-code container">
-                <div class="error-code__cell">
-                    <img class="error-code__image"
-                         src="../content/error-code-dummy.svg"
-                         width="108" height="170"
-                         alt=""
-                    >
-                    <h2 class="error-code__heading">
-                        This page is feeling ill
-                    </h2>
-                    <div class="error-code__note">
-                        Please excuse it while we find its understudy
+            <div class="circles">
+                <div class="circles__inner">
+                    <div class="circles__sidebar">
+                        <div class="circles__side-head">
+                            <b class="circles__circles">
+                                My Circles
+                                <span class="circles__beta beta">beta</span>
+                            </b>
+                            <div class="circles__updated">
+                                Last update 11h ago
+                            </div>
+                            <button class="circles__close-sidebar" type="button">
+                                <svg class="circles__cross" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-cross-rounder-corners"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="circles__navigation scrollbar scrollbar-macosx">
+                            <div class="circles__latch">
+                                <div class="circles__pending">
+                                    <a class="button button--side-submit button--black">
+                                        Pending Requests
+                                    </a>
+                                    <span class="circles__pending-counter counter counter--danger">3</span>
+                                </div>
+                                <div class="circles__list">
+                                    <a class="circles-link" href="#">
+                                        <div class="circles-link__preview">
+                                            <div class="abbreviation">Hu</div>
+                                        </div>
+                                        <div class="circles-link__label ellipsis">
+                                            Hungarian Dance Lorem ipsum
+                                        </div>
+                                    </a>
+                                    <a class="circles-link" href="#">
+                                        <div class="circles-link__preview">
+                                            <div class="abbreviation">Ut</div>
+                                        </div>
+                                        <div class="circles-link__counter counter counter--danger">
+                                            2
+                                        </div>
+                                        <div class="circles-link__label ellipsis">
+                                            Utah Opera Barb Lorem Ipsum
+                                        </div>
+                                    </a>
+                                    <a class="circles-link circles-link--current" href="#">
+                                        <div class="circles-link__preview">
+                                            <div class="abbreviation">Ta</div>
+                                        </div>
+                                        <div class="circles-link__label ellipsis">
+                                            Tanglewood 2022
+                                        </div>
+                                    </a>
+                                    <a class="circles-link" href="#">
+                                        <div class="circles-link__preview">
+                                            <div class="abbreviation">Op</div>
+                                        </div>
+                                        <div class="circles-link__label ellipsis">
+                                            Opera Idaho EAs
+                                        </div>
+                                    </a>
+                                </div>
+                                <button class="circles__add button button--black button--add-people" type="button">
+                                    <svg class="button__icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-tiny-plus"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="error-code__description">
-                        This page can’t be found. We’re sorry for the inconvience but hopefully these links might help.
-                    </div>
-                    <div class="error-code__search search-bar">
-                        <input class="search-bar__widget" type="text" placeholder="Search Stagetime">
-                        <svg class="search-bar__icon" width="24" height="24">
-                            <use xlink:href="../symbols/symbols.svg?1667819755#24-magnifier"></use>
-                        </svg>
-                    </div>
-                    <div class="error-code__operations">
-                        <a class="error-code__action button button--large-submit" href="#">Go to homepage</a>
-                        <a class="error-code__action button button--large-submit" href="#">Contact support</a>
-                        <a class="error-code__action button button--large-submit" href="#">Go back</a>
+                    <div class="circles__content">
+                        <div class="circles__inner-content">
+                            <div class="circles__head">
+                                <button class="circles__show-sidebar circles__show-sidebar--has-updates" type="button">
+                                    Show sidebar
+                                </button>
+                                <div class="circles__head-texts">
+                                    <h1 class="circles__heading">
+                                        Tanglewood 2022
+                                    </h1>
+                                    <div class="circles__note">
+                                        Created by Samantha Hankey on April 8, 2022, 3:15pm
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="circles__public scrollbar scrollbar-macosx">
+                                <div class="public">
+                                    <div class="public__intro wysiwyg wysiwyg--smaller">
+                                        <p>Circles provide a place for industry professionals with similar passions and interests to share their insights, experiences and resources, ask for guidance, and build valuable connections.</p>
+                                        <p>Join any of the public Circles below or create your own.</p>
+                                    </div>
+                                    <button class="public__add button button--card-submit" type="button">
+                                        <svg class="button__icon button__icon--left">
+                                            <use xlink:href="../symbols/symbols.svg?1667819755#16-plus"></use>
+                                        </svg>
+                                        Create Circle
+                                    </button>
+                                    <h1 class="public__heading">
+                                        All Public Circles
+                                    </h1>
+                                    <div class="public__list">
+                                        <div class="public__item circle-card">
+                                            <div class="circle-card__head">
+                                                <a class="circle-card__logo" href="#">
+                                                    Hu
+                                                </a>
+                                                <div class="circle-card__bookmark">
+                                                    <svg class="circle-card__star" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="circle-card__people snake snake--larger-border">
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                </div>
+                                                <div class="circle-card__counter">
+                                                    <svg class="circle-card__crowd">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-3-user-2"></use>
+                                                    </svg>
+                                                    151 Members
+                                                </div>
+                                            </div>
+                                            <button class="circle-card__close" type="button">
+                                                <svg class="circle-card__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-long-cross-rounder-corners"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="circle-card__heading">
+                                                Hungarian Dance (Miami)
+                                            </div>
+                                            <div class="circle-card__footer">
+                                                <div class="circle-card__summary">
+                                                    Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                                                </div>
+                                                <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                                            </div>
+                                        </div>
+                                        <div class="public__item circle-card">
+                                            <div class="circle-card__head">
+                                                <a class="circle-card__logo" href="#">
+                                                    Hu
+                                                </a>
+                                                <div class="circle-card__bookmark">
+                                                    <svg class="circle-card__star" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="circle-card__people snake snake--larger-border">
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                </div>
+                                                <div class="circle-card__counter">
+                                                    <svg class="circle-card__crowd">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-3-user-2"></use>
+                                                    </svg>
+                                                    151 Members
+                                                </div>
+                                            </div>
+                                            <button class="circle-card__close" type="button">
+                                                <svg class="circle-card__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-long-cross-rounder-corners"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="circle-card__heading">
+                                                Hungarian Dance (Miami)
+                                            </div>
+                                            <div class="circle-card__footer">
+                                                <div class="circle-card__summary">
+                                                    Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                                                </div>
+                                                <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                                            </div>
+                                        </div>
+                                        <div class="public__item circle-card">
+                                            <div class="circle-card__head">
+                                                <a class="circle-card__logo" href="#">
+                                                    Hu
+                                                </a>
+                                                <div class="circle-card__bookmark">
+                                                    <svg class="circle-card__star" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="circle-card__people snake snake--larger-border">
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                </div>
+                                                <div class="circle-card__counter">
+                                                    <svg class="circle-card__crowd">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-3-user-2"></use>
+                                                    </svg>
+                                                    151 Members
+                                                </div>
+                                            </div>
+                                            <button class="circle-card__close" type="button">
+                                                <svg class="circle-card__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-long-cross-rounder-corners"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="circle-card__heading">
+                                                Hungarian Dance (Miami)
+                                            </div>
+                                            <div class="circle-card__footer">
+                                                <div class="circle-card__summary">
+                                                    Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                                                </div>
+                                                <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                                            </div>
+                                        </div>
+                                        <div class="public__item circle-card">
+                                            <div class="circle-card__head">
+                                                <a class="circle-card__logo" href="#">
+                                                    Hu
+                                                </a>
+                                                <div class="circle-card__bookmark">
+                                                    <svg class="circle-card__star" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="circle-card__people snake snake--larger-border">
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                </div>
+                                                <div class="circle-card__counter">
+                                                    <svg class="circle-card__crowd">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-3-user-2"></use>
+                                                    </svg>
+                                                    151 Members
+                                                </div>
+                                            </div>
+                                            <button class="circle-card__close" type="button">
+                                                <svg class="circle-card__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-long-cross-rounder-corners"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="circle-card__heading">
+                                                Hungarian Dance (Miami)
+                                            </div>
+                                            <div class="circle-card__footer">
+                                                <div class="circle-card__summary">
+                                                    Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                                                </div>
+                                                <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                                            </div>
+                                        </div>
+                                        <div class="public__item circle-card">
+                                            <div class="circle-card__head">
+                                                <a class="circle-card__logo" href="#">
+                                                    Hu
+                                                </a>
+                                                <div class="circle-card__bookmark">
+                                                    <svg class="circle-card__star" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="circle-card__people snake snake--larger-border">
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                </div>
+                                                <div class="circle-card__counter">
+                                                    <svg class="circle-card__crowd">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-3-user-2"></use>
+                                                    </svg>
+                                                    151 Members
+                                                </div>
+                                            </div>
+                                            <button class="circle-card__close" type="button">
+                                                <svg class="circle-card__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-long-cross-rounder-corners"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="circle-card__heading">
+                                                Hungarian Dance (Miami)
+                                            </div>
+                                            <div class="circle-card__footer">
+                                                <div class="circle-card__summary">
+                                                    Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                                                </div>
+                                                <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                                            </div>
+                                        </div>
+                                        <div class="public__item circle-card">
+                                            <div class="circle-card__head">
+                                                <a class="circle-card__logo" href="#">
+                                                    Hu
+                                                </a>
+                                                <div class="circle-card__bookmark">
+                                                    <svg class="circle-card__star" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="circle-card__people snake snake--larger-border">
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                </div>
+                                                <div class="circle-card__counter">
+                                                    <svg class="circle-card__crowd">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-3-user-2"></use>
+                                                    </svg>
+                                                    151 Members
+                                                </div>
+                                            </div>
+                                            <button class="circle-card__close" type="button">
+                                                <svg class="circle-card__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-long-cross-rounder-corners"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="circle-card__heading">
+                                                Hungarian Dance (Miami)
+                                            </div>
+                                            <div class="circle-card__footer">
+                                                <div class="circle-card__summary">
+                                                    Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                                                </div>
+                                                <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                                            </div>
+                                        </div>
+                                        <div class="public__item circle-card">
+                                            <div class="circle-card__head">
+                                                <a class="circle-card__logo" href="#">
+                                                    Hu
+                                                </a>
+                                                <div class="circle-card__bookmark">
+                                                    <svg class="circle-card__star" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-star"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="circle-card__people snake snake--larger-border">
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                    <a class="snake__item avatar avatar--alt-hover" href="#">
+                                                        <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                                                    </a>
+                                                </div>
+                                                <div class="circle-card__counter">
+                                                    <svg class="circle-card__crowd">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#24-3-user-2"></use>
+                                                    </svg>
+                                                    151 Members
+                                                </div>
+                                            </div>
+                                            <button class="circle-card__close" type="button">
+                                                <svg class="circle-card__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1667819755#16-long-cross-rounder-corners"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="circle-card__heading">
+                                                Hungarian Dance (Miami)
+                                            </div>
+                                            <div class="circle-card__footer">
+                                                <div class="circle-card__summary">
+                                                    Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                                                </div>
+                                                <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
 
 
@@ -686,6 +1037,55 @@
                                     </label>
                                     <div class="input input--larger-font">
                                         <input class="input__widget" type="text" id="#circle-name" placeholder="Add Name...">
+                                    </div>
+                                </div>
+                                <div class="circle-settings__field">
+                                    <label class="label">
+                                        Visibility
+                                    </label>
+                                    <div class="publicity">
+                                        <b class="publicity__heading">
+                                            Would you like this circle to be private or public?
+                                        </b>
+                                        <label class="publicity__widget toggler">
+                                            <span class="toggler__label">
+                                                Private
+                                            </span>
+                                            <span class="toggler__control">
+                                                <input class="toggler__widget" type="checkbox">
+                                                <span class="toggler__body">
+                                                    <i class="toggler__knob"></i>
+                                                </span>
+                                            </span>
+                                            <span class="toggler__label">
+                                                Public
+                                            </span>
+                                        </label>
+                                        <div class="publicity__hint">
+                                            *Public - we may promote the Circle, display the Circle on our dashboard, and make the Circle searchable. People request to join or are invited to the Circle.
+                                        </div>
+                                    </div>
+                                    <div class="publicity">
+                                        <b class="publicity__heading">
+                                            Who can invite others to this Circle?
+                                        </b>
+                                        <label class="publicity__widget toggler">
+                                            <span class="toggler__label">
+                                                Admin Only
+                                            </span>
+                                            <span class="toggler__control">
+                                                <input class="toggler__widget" type="checkbox">
+                                                <span class="toggler__body">
+                                                    <i class="toggler__knob"></i>
+                                                </span>
+                                            </span>
+                                            <span class="toggler__label">
+                                                All Members
+                                            </span>
+                                        </label>
+                                        <div class="publicity__hint">
+                                            This will allow members to invite others to this Circle but they won’t be able to grant access for requests to join the Circle. This will be done by Circle admins.
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="circle-settings__field">
@@ -896,6 +1296,53 @@
                                         If you need to add another person as an Admin, send us a message here.
                                     </div>
                                 </div>
+                                <div class="circle-settings__field industry">
+                                    <b class="label">
+                                        Industry & Specialty Tags <span class="label__note">(optional)</span>
+                                    </b>
+                                    <div class="industry__hint">
+                                        Add up to four Industry & Specialty tags. Adding Tags will improve search results and recommendations
+                                    </div>
+                                    <div class="industry__widget">
+                                        <div class="input input--large input--classic-font input--scanner">
+                                            <input class="input__widget" type="text" placeholder="Industry or Specialty">
+                                            <div class="input__dropdown">
+                                                <div class="input__options">
+                                                    <a class="input__suggest" href="#">Academic</a>
+                                                    <a class="input__suggest" href="#">Example of longer</a>
+                                                    <a class="input__suggest" href="#">Short</a>
+                                                    <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Bass</span>”</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dictionary">
+                                            <div class="dictionary__item word">
+                                                <button class="word__delete" type="button">
+                                                    <svg class="word__cross" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#close-square"></use>
+                                                    </svg>
+                                                </button>
+                                                Academic
+                                            </div>
+                                            <div class="dictionary__item word">
+                                                <button class="word__delete" type="button">
+                                                    <svg class="word__cross" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#close-square"></use>
+                                                    </svg>
+                                                </button>
+                                                Example of longer
+                                            </div>
+                                            <div class="dictionary__item word">
+                                                <button class="word__delete" type="button">
+                                                    <svg class="word__cross" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1667819755#close-square"></use>
+                                                    </svg>
+                                                </button>
+                                                Short
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="modal-foot">
@@ -909,6 +1356,44 @@
                                     Save
                                 </button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--380px fade" id="resources-delete" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="confirmation">
+                            <svg class="confirmation__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1667819755#24-delete2"></use>
+                            </svg>
+                            <div class="confirmation__message">
+                                Are you sure you want to delete this resource? This step cannot be undone.
+                            </div>
+                            <button class="confirmation__submit button button--black" type="button">Delete</button>
+                            <button class="confirmation__close link link--fading" type="button" data-dismiss="modal">Go back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--380px fade" id="resources-reupload" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="confirmation">
+                            <svg class="confirmation__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1667819755#24-swap"></use>
+                            </svg>
+                            <div class="confirmation__message">
+                                Are you sure you want to change this resource? This step cannot be undone.
+                            </div>
+                            <button class="confirmation__submit button button--black" type="button">Change</button>
+                            <button class="confirmation__close link link--fading" type="button" data-dismiss="modal">Go back</button>
                         </div>
                     </div>
                 </div>
