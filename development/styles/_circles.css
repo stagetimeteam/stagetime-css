@@ -348,6 +348,12 @@
                 -webkit-overflow-scrolling: touch;
             }
 
+            .circles__public {
+                height: calc(100% - var(--circles-head-height));
+                overflow-y: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+
 
             .circles__modal {
                 position: absolute;

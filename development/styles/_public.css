@@ -1,0 +1,52 @@
+.public {
+    padding: 15px 24px 40px;
+}
+    .public__intro {
+        max-width: 550px;
+    }
+
+    .public__add {
+        margin-top: 15px;
+    }
+        .public__add.button,
+        .public__add .button {
+
+        }
+
+    .public__heading {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #23282C;
+    }
+
+    .public__list {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 24px;
+    }
+
+    @media (min-width: 1600px) {
+        .public__list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    @media (min-width: 1900px) {
+        .public__list {
+            grid-template-columns: repeat(5, 1fr);
+        }
+    }
+
+    @media (max-width: 639px) {
+        .public__list {
+            grid-template-columns: 1fr;
+        }
+    }
+
+        .public__item {
+
+        }

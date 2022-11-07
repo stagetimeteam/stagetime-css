@@ -28,6 +28,25 @@
 /* /Larger */
 
 
+
+/* Larger */
+.wysiwyg--smaller {
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.wysiwyg--smaller p,
+.wysiwyg--smaller ul,
+.wysiwyg--smaller ol,
+.wysiwyg--smaller hr,
+.wysiwyg--smaller figure,
+.wysiwyg--smaller blockquote {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+/* /Larger */
+
+
 /* Classic */
 .wysiwyg--classic {
     font-size: 12px;
