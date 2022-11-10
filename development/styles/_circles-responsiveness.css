@@ -145,10 +145,6 @@
                         border: none;
                         padding: 0;
                         background-color: transparent;
-                        background-image: url("../images/rings.svg");
-                        background-size: 30px 30px;
-                        background-repeat: no-repeat;
-                        background-position: center center;
                         text-indent: 200%;
                         white-space: nowrap;
                         overflow: hidden;
@@ -157,8 +153,8 @@
                         .circles__show-sidebar--has-updates::after {
                             content: "";
                             position: absolute;
-                            right: 15px;
-                            top: 19px;
+                            right: 28px;
+                            top: 20px;
                             display: block;
                             width: 8px;
                             height: 8px;
