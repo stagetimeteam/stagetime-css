@@ -40,13 +40,14 @@
 
 
 .circles-link--current {
-
+    background-color: #F3F5F8;
 }
     .circles-link--current .circles-link__preview {
 
     }
         .circles-link--current .abbreviation {
             background-color: #23282C;
+            border-color: transparent;
             color: #FFFFFF;
         }
 
