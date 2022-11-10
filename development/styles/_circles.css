@@ -14,33 +14,38 @@
             flex-shrink: 0;
         }
             .circles__side-head {
-                padding: 35px 16px 0 68px;
+                position: relative;
+                padding: 18px 16px 0 52px;
                 height: var(--circles-head-height);
-                background-color: #23282C;
-                box-shadow: inset -1px 0 0 #FFFFFF;
-                background-image: url("../images/rings.svg");
-                background-size: 30px 30px;
-                background-repeat: no-repeat;
-                background-position: 20px center;
+                background-color: #F3F5F8;
+                box-shadow: inset -1px 0 0 #E1E3E6;
             }
+                .circles__rings {
+                    position: absolute;
+                    left: 17px;
+                    top: 24px;
+                    width: 22px;
+                    height: 22px;
+                }
+
                 .circles__circles {
                     display: flex;
                     align-items: flex-start;
                     font-weight: 600;
                     font-size: 12px;
                     line-height: 18px;
-                    color: #FFFFFF;
+                    color: #23282C;
                 }
                     .circles__beta {
                         margin-left: 5px;
                         margin-top: -5px;
-                        color: #FFFFFF;
+                        color: #23282C;
                     }
 
                 .circles__updated {
                     font-size: 11px;
                     line-height: 16px;
-                    color: #FFFFFF;
+                    color: #23282C;
                 }
 
                 .circles__close-sidebar {
@@ -51,7 +56,7 @@
                 height: calc(100% - var(--circles-head-height));
                 overflow-y: auto;
                 -webkit-overflow-scrolling: touch;
-                background-color: #EEF0F3;
+                box-shadow: inset -1px 0 0 #E1E3E6;
             }
                 .circles__latch {
                     padding-top: 14px;
@@ -98,9 +103,9 @@
                 .circles__head {
                     display: flex;
                     align-items: flex-start;
-                    padding: 26px 36px;
+                    padding: 17px 34px 0 20px;
                     height: var(--circles-head-height);
-                    background-color: #23282C;
+                    background-color: #F3F5F8;
                 }
                     .circles__show-sidebar {
                         display: none;
@@ -121,22 +126,21 @@
                         .circles__heading {
                             margin-top: 0;
                             margin-bottom: 0;
-                            font-weight: normal;
-                            font-size: 22px;
-                            line-height: 26px;
-                            color: #FFFFFF;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #23282C;
                         }
 
                         .circles__note {
-                            margin-top: 8px;
+                            margin-top: 1px;
                             font-size: 11px;
                             line-height: 20px;
-                            color: #C4C4C4;
+                            color: #44474A;
                         }
 
                     .circles__operations {
                         margin-left: auto;
-                        margin-top: 7px;
                         flex-shrink: 0;
                         display: flex;
                         align-items: flex-start;
