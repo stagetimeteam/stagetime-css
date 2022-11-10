@@ -49,13 +49,14 @@
 
                 .circles__close-sidebar {
                     position: absolute;
-                    right: 14px;
-                    top: 31px;
+                    right: 10px;
+                    top: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     width: 44px;
                     height: 44px;
+                    margin-top: -22px;
                     padding: 0;
                     border: none;
                     background-color: transparent;
@@ -72,13 +73,13 @@
                         display: block;
                         width: 32px;
                         height: 32px;
-                        border: 1px solid #FFFFFF;
+                        border: 1px solid #23282c;
                         border-radius: 50%;
                     }
 
                     .circles__cross {
                         vertical-align: top;
-                        fill: #FFFFFF;
+                        fill: #23282c;
                     }
 
             .circles__navigation {
