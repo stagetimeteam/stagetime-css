@@ -105,7 +105,7 @@
 
             }
                 .circles__head {
-                    padding: 20px 20px 20px 74px;
+                    padding-right: 20px;
                     /*height: var(--circles-head-height);*/
                     /*background-color: #23282C;*/
                 }

@@ -53,3 +53,9 @@
                 /*border-radius: 2px;*/
                 /*background-color: var(--image-fallback);*/
             }
+
+
+.entry--current,
+.entry--current:hover {
+    padding-left: 71px;
+}
