@@ -145,6 +145,9 @@
 
 .entry--current,
 .entry--current:hover {
+    padding-left: 71px;
     background-color: transparent;
 }
-    
+    .entry--current .entry__preview {
+        left: 16px;
+    }
