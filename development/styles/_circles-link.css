@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    padding: 14px 20px;
+    padding: 14px 16px 14px 15px;
     text-decoration: none;
     transition: background-color var(--transition-hover);
 }
@@ -10,6 +10,7 @@
 .circles-link:hover {
     background-color: var(--grey-panel-hover);
 }
+
 .circles-link:active {
     background-color: var(--grey-panel-active);
     transition: none;

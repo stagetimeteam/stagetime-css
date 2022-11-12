@@ -60,39 +60,55 @@
                 box-shadow: inset -1px 0 0 #E1E3E6;
             }
                 .circles__latch {
-                    padding-top: 14px;
                     padding-bottom: 40px;
                 }
-                    .circles__pending {
-                        position: relative;
-                        margin: 14px 20px;
+                    .circles__administrating {
+                        padding: 17px 16px 11px;
+                        display: flex;
+                        align-items: flex-start;
                     }
-                        .circles__pending .button {
-                            width: 100%;
+                        .circles__public-circles {
+                            flex-grow: 1;
                         }
-
-                        .circles__pending-counter {
-                            position: absolute;
-                            right: -8px;
-                            top: -8px;
-                            box-shadow: 0 0 0 1px #FFFFFF;
-                            font-weight: bold;
-                            pointer-events: none;
-                        }
-
-                        .circles__list {
-
-                        }
-
-                        .circles__add {
-                            margin-top: 12px;
-                            margin-left: 20px;
-                        }
-                            .circles__add.button,
-                            .circles__add .button {
-                                box-shadow: none;
+                            .circles__public-circles .button {
+                                width: 100%;
+                                padding: 8px 18px;
                             }
 
+                        .circles__pendings {
+                            position: relative;
+                            margin-left: 6px;
+                            flex-shrink: 0;
+                        }
+                            .circles__pendings .button {
+                                width: 32px;
+                                height: 32px;
+                                padding: 6px;
+                                border-radius: 50%;
+                            }
+                            .circles__counter {
+                                position: absolute;
+                                right: -7px;
+                                top: -7px;
+                                box-shadow: 0 0 0 1px #FFFFFF;
+                                font-weight: bold;
+                                pointer-events: none;
+                            }
+
+                    .circles__add {
+                        padding: 0 16px;
+                    }
+                        .circles__add.button,
+                        .circles__add .button {
+                            width: 100%;
+                            padding: 8px 18px;
+                            font-size: 12px;
+                        }
+
+
+                    .circles__list {
+                        margin-top: 10px;
+                    }
 
         .circles__content {
             position: relative;

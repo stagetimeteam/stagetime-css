@@ -92,36 +92,10 @@
                     /*padding-top: 14px;*/
                     /*padding-bottom: 40px;*/
                 }
-                    .circles__pending {
-                        /*position: relative;*/
-                        /*margin: 14px 20px;*/
-                    }
-                        .circles__pending .button {
-                            /*width: 100%;*/
-                        }
-
-                        .circles__pending-counter {
-                            /*position: absolute;*/
-                            /*right: -8px;*/
-                            /*top: -8px;*/
-                            /*box-shadow: 0 0 0 1px #FFFFFF;*/
-                            /*font-weight: bold;*/
-                            /*pointer-events: none;*/
-                        }
 
                 .circles__list {
 
                 }
-
-                .circles__add {
-                    /*margin-top: 12px;*/
-                    /*margin-left: 20px;*/
-                }
-                .circles__add.button,
-                .circles__add .button {
-                    /*box-shadow: none;*/
-                }
-
 
         .circles__content {
             width: auto;
