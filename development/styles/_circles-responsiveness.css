@@ -115,7 +115,7 @@
                         top: 0;
                         display: block;
                         width: 72px;
-                        height: 76px;
+                        height: var(--circles-head-height);
                         border: none;
                         padding: 0;
                         background-color: transparent;
