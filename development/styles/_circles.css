@@ -192,6 +192,26 @@
                                 line-height: 20px;
                             }
 
+                    .circles__public-head {
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                        .circles__public-rings {
+                            vertical-align: top;
+                            margin-top: 7px;
+                            margin-right: 10px;
+                            fill: #23282C;
+                        }
+
+                        .circles__public-heading {
+                            margin-top: 7px;
+                            margin-bottom: 0;
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            color: #23282C;
+                        }
+
                 .circles__body {
                     position: relative;
                     padding-right: var(--circles-aside-width);
