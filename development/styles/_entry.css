@@ -1,6 +1,6 @@
 .entry {
     position: relative;
-    padding: 18px 36px 18px 108px;
+    padding: 18px 36px 18px 84px;
 }
 
 .entry:hover {
@@ -9,7 +9,7 @@
 
     .entry__preview {
         position: absolute;
-        left: 36px;
+        left: 29px;
         top: 18px;
     }
 
@@ -147,3 +147,4 @@
 .entry--current:hover {
     background-color: transparent;
 }
+    
