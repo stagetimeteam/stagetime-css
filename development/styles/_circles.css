@@ -127,6 +127,9 @@
                     .circles__show-sidebar {
                         display: none;
                     }
+                        .circles__burger {
+
+                        }
 
                     .circles__intro {
                         max-width: 440px;

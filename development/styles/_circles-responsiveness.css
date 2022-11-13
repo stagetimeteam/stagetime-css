@@ -124,11 +124,20 @@
                         overflow: hidden;
                         cursor: pointer;
                     }
+                        .circles__burger {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            right: 0;
+                            bottom: 0;
+                            margin: auto;
+                        }
+
                         .circles__show-sidebar--has-updates::after {
                             content: "";
                             position: absolute;
-                            right: 28px;
-                            top: 20px;
+                            right: 14px;
+                            top: 14px;
                             display: block;
                             width: 8px;
                             height: 8px;
@@ -175,15 +184,15 @@
                         }
 
                     .circles__public-head {
-                        margin-left: 34px;
+                        margin-left: 54px;
                     }
 
                         .circles__public-rings {
-                            display: none;
+
                         }
 
                         .circles__public-heading {
-                            margin-top: 9px;
+                            margin-top: 10px;
                             font-size: 14px;
                             line-height: 18px;
                         }
