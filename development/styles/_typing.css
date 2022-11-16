@@ -148,7 +148,7 @@
                 background-color: #EAEAEA;
             }
 
-            .typing__send:hover:active::before {
+            .typing__send:active::before {
                 background-color: #E1E1E1;
                 transition: none;
             }
@@ -161,13 +161,21 @@
 
 
     .typing__send--disabled,
-    .typing__send--disabled:hover {
-        /*background-color: #F2F2F2;*/
-        /*cursor: default;*/
+    .typing__send--disabled:hover,
+    .typing__send--disabled:active {
+        cursor: default;
     }
+
+        .typing__send--disabled::before,
+        .typing__send--disabled:hover::before,
+        .typing__send--disabled:active::before {
+            background-color: #EEF0F3;
+        }
+
         .typing__send--disabled .typing__plane,
-        .typing__send--disabled:hover .typing__plane {
-            /*fill: #C4C4C4;*/
+        .typing__send--disabled:hover .typing__plane,
+        .typing__send--disabled:active .typing__plane {
+            fill: #C4C4C4;
         }
 
 
