@@ -5,7 +5,7 @@
         display: flex;
         align-items: flex-start;
         padding: 24px 46px 19px;
-        border-bottom: 2px solid #F3F3F3;
+        border-bottom: 1px solid #F3F3F3;
     }
         .all-circles__icon {
             vertical-align: top;
@@ -31,7 +31,7 @@
         .all-circles__item {
             display: flex;
             align-items: center;
-            border-bottom: 2px solid #F3F3F3;
+            border-bottom: 1px solid #F3F3F3;
             padding: 30px 46px;
         }
             .all-circles__company {
