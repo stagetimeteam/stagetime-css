@@ -52,6 +52,7 @@
     }
         .file__image {
             vertical-align: top;
+            object-fit: cover;
             background-color: var(--image-fallback);
             transition: transform 0.3s var(--easeOutCirc);
         }
