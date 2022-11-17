@@ -26,8 +26,11 @@
     .workspace__footer {
         flex-shrink: 0;
         position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 12px; /* same as .add-resource__operations */
         padding: 22px 20px;
-        text-align: right;
     }
         .workspace__footer::before {
             content: "";
@@ -39,11 +42,12 @@
             background-color: #E1E3E6;
         }
 
-        .workspace__save {
-
+        .workspace__cancel.button,
+        .workspace__cancel .button {
+            min-width: 90px; /* same as .add-resource__action */
         }
 
         .workspace__save.button,
         .workspace__save .button {
-            width: 142px;
+            min-width: 130px;
         }
