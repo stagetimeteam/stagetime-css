@@ -166,6 +166,23 @@
 
 
 
+.button--blue {
+    background-color: #BFCCDE;
+    box-shadow: none;
+    color: #23282C;
+}
+
+.button--blue:hover {
+    background-color: #C8D6E9;
+    color: #23282C;
+}
+.button--blue:active {
+    background-color: #BFCBDD;
+    color: #23282C;
+}
+
+
+
 .button--gray {
     background-color: #C4C4C4;
     font-weight: bold;

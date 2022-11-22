@@ -1,46 +1,144 @@
 .connect-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 19px 18px 13px;
+    background-color: #F8F8F9;
+    border-radius: 5px;
     text-align: center;
 }
+    .connect-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 51px;
+        background-color: #E7EDF5;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
     .connect-card__preview {
-
+        align-self: center;
     }
 
-    .connect-card__name {
-        margin-top: 10px;
-        margin-bottom: 0;
-        font-size: 13px;
-        line-height: 16px;
-        color: #23282C;
+    .connect-card__body {
+        padding-bottom: 18px;
+        margin-bottom: auto;
     }
-        .connect-card__name .link {
-            transition: opacity;
+        .connect-card__name {
+            margin-top: 10px;
+            margin-bottom: 0;
+            font-size: 13px;
+            line-height: 16px;
+            color: #23282C;
         }
-
-        .connect-card__name .link:hover {
-            opacity: 0.7;
-        }
-
-    .connect-card__note {
-        font-size: 12px;
-        line-height: 16px;
-        color: #44474A;
-    }
-
-    .connect-card__worked-at {
-        font-size: 9px;
-        line-height: 13px;
-    }
-
-    .connect-card__new {
-
-    }
-        .connect-card__star {
-
-        }
-            .connect-card__star-icon {
-
+            .connect-card__name .link {
+                transition: opacity var(--transition-hover);
             }
 
-    .connect-card__connect {
+            .connect-card__name .link:hover {
+                opacity: 0.7;
+            }
+
+        .connect-card__note {
+            font-size: 12px;
+            line-height: 16px;
+            color: #44474A;
+        }
+
+        .connect-card__worked-at {
+            margin-top: 7px;
+            font-size: 9px;
+            line-height: 13px;
+        }
+            .connect-card__worked-at .link {
+                transition: opacity var(--transition-hover);
+            }
+
+            .connect-card__worked-at .link:hover {
+                opacity: 0.7;
+            }
+
+        .connect-card__crowd {
+            margin-top: 8px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+            .connect-card__people {
+
+            }
+                .connect-card__people .snake__item {
+                    z-index: auto;
+                }
+
+            .connect-card__counter {
+                position: relative;
+                margin-left: -7px;
+                display: block;
+                width: 28px;
+                height: 28px;
+                padding-top: 5px;
+                background-color: #E8EDF4;
+                border: 2px solid #FFFFFF;
+                border-radius: 50%;
+                font-weight: 600;
+                font-size: 8px;
+                line-height: 14px;
+                color: #23282C;
+                text-decoration: none;
+            }
+
+            .connect-card__counter:hover {
+                background-color: var(--panel-hover);
+            }
+
+        .connect-card__new {
+            margin-top: 15px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            font-style: italic;
+            font-size: 8px;
+            line-height: 14px;
+            color: #23282C;
+        }
+            .connect-card__star {
+                width: 18px;
+                height: 18px;
+                margin: -2px 4px -2px 0;
+                border: 1px solid #FFFFFF;
+                background-color: #9CB2BE;
+                border-radius: 50%;
+                padding: 2px;
+            }
+                .connect-card__star-icon {
+                    fill: #FFFFFF;
+                }
+
+
+    .connect-card__view-profile {
+        margin-bottom: 11px;
+    }
+        .connect-card__view-profile.button,
+        .connect-card__view-profile .button {
+            width: 100%;
+            padding: 7px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+    .connect-card__submit {
 
     }
+        .connect-card__submit.button,
+        .connect-card__submit .button {
+            width: 100%;
+            padding: 7px;
+            border-radius: 4px;
+            font-size: 12px;
+        }

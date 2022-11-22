@@ -8,7 +8,6 @@
         scrollbar-width: none; /* hide scrollbar in Firefox */
         -ms-overflow-style: none; /* hide scrollbar in Edge */
         display: flex;
-        align-items: flex-start;
         scroll-snap-type: x proximity;
     }
     /* stylelint-enable */
