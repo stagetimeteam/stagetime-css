@@ -388,6 +388,27 @@
         }
 
 
+.carousel--for-new-for-you {
+
+}
+    .carousel--for-new-for-you .carousel__container {
+
+    }
+        .carousel--for-new-for-you .carousel__item {
+            width: 171px;
+            margin-right: 24px;
+        }
+
+        .carousel--for-new-for-you .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel--for-new-for-you .carousel__control {
+            margin-bottom: 18px;
+            margin-right: 88px;
+        }
+
+
 
 
 

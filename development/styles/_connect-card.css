@@ -1,0 +1,46 @@
+.connect-card {
+    text-align: center;
+}
+    .connect-card__preview {
+
+    }
+
+    .connect-card__name {
+        margin-top: 10px;
+        margin-bottom: 0;
+        font-size: 13px;
+        line-height: 16px;
+        color: #23282C;
+    }
+        .connect-card__name .link {
+            transition: opacity;
+        }
+
+        .connect-card__name .link:hover {
+            opacity: 0.7;
+        }
+
+    .connect-card__note {
+        font-size: 12px;
+        line-height: 16px;
+        color: #44474A;
+    }
+
+    .connect-card__worked-at {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+    .connect-card__new {
+
+    }
+        .connect-card__star {
+
+        }
+            .connect-card__star-icon {
+
+            }
+
+    .connect-card__connect {
+
+    }
