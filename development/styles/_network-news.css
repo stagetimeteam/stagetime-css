@@ -3,7 +3,7 @@
     border: 1px solid #E8E8E8;
     max-height: 360px;
     overflow-y: auto;
-    border-radius: 2px;
+    border-radius: 3px;
 }
     .network-news__heading {
         margin-top: 16px;
@@ -45,8 +45,8 @@
     }
 
     .network-news__list {
-        padding-left: 26px;
-        padding-right: 26px;
+        padding-left: 24px;
+        padding-right: 24px;
         padding-bottom: 14px;
     }
         .network-news__item {

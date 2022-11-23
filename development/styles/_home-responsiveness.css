@@ -57,7 +57,7 @@
         border-left: none;
     }
         .home__summary {
-            padding: 20px 30px;
+            padding: 20px var(--container-mobile-padding);
         }
 
         @media (max-width: 359px) {

@@ -1,7 +1,12 @@
+:root {
+    --public-circles-padding: 24px;
+}
+
 .public-circles {
     position: relative;
     border: 1px solid #E8E8E8;
-    padding: 21px 30px 25px;
+    padding: 21px var(--public-circles-padding) 25px;
+    border-radius: 3px;
 }
     .public-circles__heading {
         margin-top: 0;
@@ -19,7 +24,7 @@
 
     .public-circles__more {
         position: absolute;
-        right: 30px;
+        right: var(--public-circles-padding);
         top: 15px;
     }
         .public-circles__more.button,
@@ -28,6 +33,22 @@
         }
 
     .public-circles__body {
-        margin-top: 26px;
+        margin-top: 17px;
     }
-        .public-circles__body
+        .public-circles__body .carousel__container {
+            margin-left: calc(-1 * var(--public-circles-padding));
+            margin-right: calc(-1 * var(--public-circles-padding));
+        }
+            .public-circles__body .carousel__item {
+                box-sizing: content-box;
+                padding-left: var(--public-circles-padding); /* it's made so complicated because of carousel scroll snapping on the left */
+                margin: 0;
+            }
+
+            .public-circles__body .carousel__container::after {
+                content: "";
+                display: block;
+                flex-shrink: 0;
+                width: var(--public-circles-padding);
+                height: 1px;
+            }

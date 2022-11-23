@@ -2,8 +2,8 @@
 
 }
     .new-users__heading {
-        margin-left: 30px;
-        margin-right: 30px;
+        margin-left: var(--container-mobile-padding);
+        margin-right: var(--container-mobile-padding);
         /*margin-top: 0;*/
         /*margin-bottom: 0;*/
         /*position: relative;*/
@@ -13,14 +13,6 @@
         /*line-height: 20px;*/
         /*color: #23282C;*/
     }
-
-    @media (max-width: 359px) {
-        .new-users__heading {
-            margin-left: 20px;
-            margin-right: 20px;
-        }
-    }
-
         .new-users__icon {
             /*position: absolute;*/
             /*left: -1px;*/
@@ -39,17 +31,9 @@
         .new-users__ribbon {
             display: inline-flex;
             align-items: flex-start;
-            padding-left: 30px;
+            padding-left: var(--container-mobile-padding);
             border-right: 15px solid transparent;
         }
-
-        @media (max-width: 359px) {
-            .new-users__ribbon {
-                padding-left: 20px;
-            }
-        }
-
-
             .new-users__list {
                 /*display: flex;*/
                 /*align-items: flex-start;*/

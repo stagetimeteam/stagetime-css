@@ -1,0 +1,58 @@
+.public-circles {
+    /*position: relative;*/
+    /*border: 1px solid #E8E8E8;*/
+    /*padding: 21px var(--public-circles-padding) 25px;*/
+    padding-left: var(--container-mobile-padding);
+    padding-right: var(--container-mobile-padding);
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+    .public-circles__heading {
+        /*margin-top: 0;*/
+        /*margin-bottom: 0;*/
+        /*font-weight: 600;*/
+        /*font-size: 13px;*/
+        /*line-height: 20px;*/
+    }
+        .public-circles__ring {
+            /*vertical-align: top;*/
+            /*margin-right: 4px;*/
+            /*margin-top: -2px;*/
+            /*margin-left: -2px;*/
+        }
+
+    .public-circles__more {
+        /*position: absolute;*/
+        right: var(--container-mobile-padding);
+        /*top: 15px;*/
+    }
+        .public-circles__more.button,
+        .public-circles__more .button {
+            /*border-radius: 4px;*/
+        }
+
+    .public-circles__body {
+        /*margin-top: 17px;*/
+    }
+        .public-circles__body .carousel__container {
+            margin-left: calc(-1 * var(--container-mobile-padding));
+            margin-right: calc(-1 * var(--container-mobile-padding));
+        }
+            .public-circles__body .carousel__item {
+                padding-left: 0;
+                /*margin: 0;*/
+            }
+
+            .public-circles__body .carousel__container {
+                gap: var(--container-mobile-padding);
+            }
+
+            .public-circles__body .carousel__container::after {
+                display: none;
+                /*content: "";*/
+                /*display: block;*/
+                /*flex-shrink: 0;*/
+                /*width: var(--public-circles-padding);*/
+                /*height: 1px;*/
+            }
