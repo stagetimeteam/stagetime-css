@@ -15,7 +15,7 @@
         height: auto; /* user rows="" attribute */
         min-height: 114px;
         max-height: 256px;
-        padding: 16px 20px 74px;
+        padding: 16px 20px 74px !important; /* !important is because of conflict with ".mentions-input-box textarea" */
         background-color: transparent !important; /* !important is because of conflict with ".mentions-input-box textarea" */
         -webkit-box-shadow: none !important; /* because of conflict with ".mention" */
                 box-shadow: none !important; /* because of conflict with ".mention" */
@@ -184,7 +184,7 @@
 
 }
     .typing--has-attachment .typing__message {
-        padding-bottom: 106px;
+        padding-bottom: 106px !important; /* !important is because of conflict with ".mentions-input-box textarea" */
     }
 
     .typing__attachment {
@@ -204,7 +204,7 @@
 
 }
     .typing--has-editing-header .typing__message {
-        padding-top: 56px;
+        padding-top: 56px !important; /* !important is because of conflict with ".mentions-input-box textarea" */
     }
 
     .typing__editing-header {
