@@ -2,6 +2,7 @@
     position: relative;
     border: 1px solid #D9D9D9;
     border-radius: 6px;
+    padding: 16px 20px 74px;
 }
 
     /* conflict with library for mentioning */
@@ -15,7 +16,7 @@
         height: auto; /* user rows="" attribute */
         min-height: 114px;
         max-height: 256px;
-        padding: 16px 20px 74px !important; /* !important is because of conflict with ".mentions-input-box textarea" */
+        padding: 0;
         background-color: transparent !important; /* !important is because of conflict with ".mentions-input-box textarea" */
         -webkit-box-shadow: none !important; /* because of conflict with ".mention" */
                 box-shadow: none !important; /* because of conflict with ".mention" */
@@ -30,6 +31,14 @@
         color: #1F1F1F;
         transition: box-shadow var(--transition-hover);
         resize: none;
+    }
+
+    .scroll-textarea > .scroll-content > textarea.typing__message {
+        padding: 0;
+    }
+
+    .expanding-wrapper .typing__message {
+
     }
 
     .typing__message:hover {
@@ -181,10 +190,10 @@
 
 
 .typing--has-attachment {
-
+    padding-bottom: 106px;
 }
     .typing--has-attachment .typing__message {
-        padding-bottom: 106px !important; /* !important is because of conflict with ".mentions-input-box textarea" */
+
     }
 
     .typing__attachment {
@@ -201,10 +210,10 @@
 
 
 .typing--has-editing-header {
-
+    padding-top: 56px;
 }
     .typing--has-editing-header .typing__message {
-        padding-top: 56px !important; /* !important is because of conflict with ".mentions-input-box textarea" */
+
     }
 
     .typing__editing-header {
