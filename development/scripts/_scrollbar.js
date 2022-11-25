@@ -3,7 +3,7 @@
     if( ! mobileMediaQuery.matches ) {
         $('.scrollbar').scrollbar();
     } else {
-        $('.scrollbar').scrollbar('destroy')
+        $('.scrollbar').scrollbar('destroy');
     }
 
 })(jQuery);
