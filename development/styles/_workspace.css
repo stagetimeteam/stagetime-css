@@ -21,7 +21,17 @@
 
             .workspace__content {
                 flex-grow: 1;
+                min-height: 200px;
             }
+                .workspace__data {
+
+                }
+
+                .workspace__editor {
+                    height: 100%;
+                    margin-left: -20px;
+                    margin-right: -20px;
+                }
 
     .workspace__footer {
         flex-shrink: 0;
@@ -51,3 +61,11 @@
         .workspace__save .button {
             min-width: 130px;
         }
+
+
+.workspace {
+
+}
+    .workspace {
+
+    }

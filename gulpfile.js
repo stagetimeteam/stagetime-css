@@ -180,6 +180,16 @@ gulp.task('images', function() {
 });
 
 
+// CKEditor overrides: copy
+
+gulp.task('ckeditor', function() {
+  return gulp.src('development/styles/ckeditor-overrides.css')
+      .pipe(plumber())
+      .pipe(gulp.dest('production/styles/'))
+  ;
+});
+
+
 // Themes: copy
 
 gulp.task('themes', function() {
@@ -315,7 +325,7 @@ gulp.task('library', function() {
 
 
 gulp.task('default', function (fn) {
-  run('clean', 'temp', 'content', 'images', 'themes', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', 'library', fn);
+  run('clean', 'temp', 'content', 'images', 'ckeditor', 'themes', 'markups', 'layouts', 'vendors', 'scripts', 'symbols', 'styles', 'lint', 'library', fn);
 });
 
 

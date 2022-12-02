@@ -1,0 +1,15 @@
+/* These styles applies to the UI of CKEditor and it doesn't affect typing area itself.
+   Typing area done using iframe so it has it's own stylefile.
+ */
+
+.cke {
+    border: none;
+}
+
+.cke_top {
+    margin-bottom: 24px;
+    background-color: #eef0f3;
+    border-radius: 4px;
+    border-bottom: none;
+}
+

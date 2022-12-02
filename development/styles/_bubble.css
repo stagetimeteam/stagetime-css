@@ -188,3 +188,22 @@
         .bubble--leaf .bubble__peak {
             display: none;
         }
+
+
+.bubble--right-leaf {
+    position: absolute;
+    z-index: 4000;
+    right: 13px;
+    bottom: 11px;
+}
+    .bubble--right-leaf .bubble__body {
+        background-color: rgba(255, 255, 255, 0.92);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.22);
+        border-radius: 20px 20px 0 20px;
+        font-size: 13px;
+        line-height: 18px;
+        color: #545454;
+    }
+        .bubble--right-leaf .bubble__peak {
+            display: none;
+        }
