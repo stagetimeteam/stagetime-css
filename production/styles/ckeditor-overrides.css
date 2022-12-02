@@ -1,0 +1,121 @@
+/* All styles are similar to .wysiwyg--large */
+
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    word-wrap: break-word;
+}
+
+
+p,
+ul,
+ol,
+hr,
+figure,
+blockquote {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+hr:first-child,
+figure:first-child,
+blockquote:first-child {
+    margin-top: 0;
+}
+
+p:last-child,
+ul:last-child,
+ol:last-child,
+hr:last-child,
+figure:last-child,
+blockquote:last-child {
+    margin-bottom: 0;
+}
+
+h2:first-child,
+h3:first-child,
+h4:first-child {
+    margin-top: 0;
+}
+
+h2:last-child,
+h3:last-child,
+h4:last-child {
+    margin-bottom: 0;
+}
+
+
+ul {
+    padding-left: 40px;
+}
+
+
+ol {
+    counter-reset: wysiwyg-ordered-list;
+    padding-left: 40px;
+    list-style: none;
+}
+
+ol li {
+    counter-increment: wysiwyg-ordered-list;
+    position: relative;
+}
+
+ol li::before {
+    content: counter(wysiwyg-ordered-list) ") ";
+    position: absolute;
+    right: 100%;
+    margin-right: 5px;
+    top: 0;
+}
+
+
+blockquote {
+    margin-left: 40px;
+    margin-right: 40px;
+    font-style: italic;
+}
+
+hr {
+    height: 0;
+    border-top: 1px solid;
+}
+
+img {
+    vertical-align: top;
+    background-color: var(--image-fallback);
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    margin-top: 4px;
+    text-align: center;
+}
+
+a {
+    padding-top: 4px;
+    /* 4px solves two problems:
+                            a) expands clickable area
+                            b) solves multi-link case problem when hovering between lines changes from pointer to arrow */
+    border-bottom: 1px solid transparent;
+    font-weight: 600;
+    color: #9CB2BE;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    border-bottom-color: currentColor;
+}
