@@ -3,13 +3,13 @@
  */
 
 .cke {
-    border: none;
+    border: none !important;
 }
 
 .cke_top {
-    margin-bottom: 24px;
-    background-color: #eef0f3;
-    border-radius: 4px;
-    border-bottom: none;
+    margin-bottom: 12px !important;
+    background-color: #F3F5F8 !important;
+    border-radius: 4px !important;
+    border-bottom: none !important;
 }
 
