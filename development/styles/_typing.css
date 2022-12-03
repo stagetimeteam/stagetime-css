@@ -44,26 +44,29 @@
         transition: box-shadow var(--transition-hover);
         resize: none;
     }
+    /* stylelint-enable */
 
+
+    /* inside of jquery.scrollbar plugin (probably won't be used anymore) */
     .scroll-textarea textarea.typing__message {
         padding: 0;
         scrollbar-width: none; /* hide scrollbar in Firefox */
         -ms-overflow-style: none; /* hide scrollbar in Edge */
     }
 
-    .mentions-input-box textarea.typing__message {
-        padding: 0;
-    }
-
-    /* stylelint-enable */
-
     .scroll-textarea textarea.typing__message::-webkit-scrollbar { /* hide scrollbar in webkit based browsers */
         display: none;
     }
 
-    .expanding-wrapper .typing__message {
-
+    /* inside of mentions plugin */
+    .mentions-input-box textarea.typing__message {
+        padding: 0;
     }
+
+    .typing__message.css-scrollbar::-webkit-scrollbar {
+        width: 20px;
+    }
+
 
     .typing__message:hover {
         box-shadow: 0 0 0 1px #C0C0C0;
@@ -265,7 +268,7 @@
     .typing__cancel-editing {
         position: absolute;
         z-index: 10;
-        right: 9px;
+        right: 5px;
         top: 5px;
     }
         .typing__cancel-editing .action__icon {
