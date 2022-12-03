@@ -1,0 +1,40 @@
+/*.css-scrollbar {*/
+/*    scrollbar-color: #C2C2C2 transparent;*/
+/*}*/
+
+
+.css-scrollbar::-webkit-scrollbar {
+    /*width: 8px;*/
+    background-color: transparent;
+}
+
+
+.css-scrollbar::-webkit-scrollbar {
+    width: 17px;
+    background: #FFFFFF;
+}
+
+.css-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #C2C2C2;
+    border-radius: 4px;
+}
+
+.css-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color: #7D7D7D;
+}
+
+.css-scrollbar::-webkit-scrollbar-thumb {
+    background: #C2C2C2;
+    background: linear-gradient(to right, #FFFFFF,                                                                                                                                                                                  #FFFFFF),
+                linear-gradient(to right, #FFFFFF,                                                                                                                                                                                  #FFFFFF),
+                linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #FBFBFB 5px, #FBFBFB 6px, #E0E0E0 6px, #E0E0E0 7px, #D1D1D1 7px, #D1D1D1 8px, #C2C2C2 8px, #C2C2C2  9px, #D1D1D1 9px, #D1D1D1 10px, #E0E0E0 10px, #E0E0E0 11px, #FBFBFB 11px, #FBFBFB 12px, #FFFFFF 12px, #FFFFFF),
+                linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #FBFBFB 5px, #FBFBFB 6px, #E0E0E0 6px, #E0E0E0 7px, #D1D1D1 7px, #D1D1D1 8px, #C2C2C2 8px, #C2C2C2  9px, #D1D1D1 9px, #D1D1D1 10px, #E0E0E0 10px, #E0E0E0 11px, #FBFBFB 11px, #FBFBFB 12px, #FFFFFF 12px, #FFFFFF),
+                linear-gradient(to right, #FFFFFF, #FFFFFF 5px,                       #E0E0E0 5px, #E0E0E0 6px, #D1D1D1 6px, #D1D1D1 7px, #C2C2C2 7px, #C2C2C2 10px, #D1D1D1 10px, #D1D1D1 11px, #E0E0E0 11px, #E0E0E0 12px,                        #FFFFFF 12px, #FFFFFF),
+                linear-gradient(to right, #FFFFFF, #FFFFFF 5px,                       #E0E0E0 5px, #E0E0E0 6px, #D1D1D1 6px, #D1D1D1 7px, #C2C2C2 7px, #C2C2C2 10px, #D1D1D1 10px, #D1D1D1 11px, #E0E0E0 11px, #E0E0E0 12px,                        #FFFFFF 12px, #FFFFFF),
+                linear-gradient(to right, #FFFFFF, #FFFFFF 5px,                                               #D1D1D1 5px, #D1D1D1 6px, #C2C2C2 6px, #C2C2C2 11px, #D1D1D1 11px, #D1D1D1 12px,                                                  #FFFFFF 12px, #FFFFFF),
+                linear-gradient(to right, #FFFFFF, #FFFFFF 5px,                                               #D1D1D1 5px, #D1D1D1 6px, #C2C2C2 6px, #C2C2C2 11px, #D1D1D1 11px, #D1D1D1 12px,                                                  #FFFFFF 12px, #FFFFFF),
+                linear-gradient(to right, #FFFFFF, #FFFFFF 5px,                                                                   #C2C2C2 5px, #C2C2C2 12px,                                                                        #FFFFFF 12px, #FFFFFF);
+    background-size: 100% 5px, 100% 5px, 100% 6px, 100% 6px, 100% 7px, 100% 7px, 100% 8px, 100% 8px, 100%;
+    background-position: center top, center bottom, center top, center bottom, center top, center bottom, center top, center bottom, center center;
+    background-repeat: no-repeat;
+}
