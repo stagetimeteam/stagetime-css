@@ -6,22 +6,27 @@
     }
 
 
-
     /* All other browsers */
 
     .css-scrollbar::-webkit-scrollbar {
         width: 11px;
-        background-color: transparent; /* must be white color because white will be used later in gradient */
+        cursor: auto;
+        background-color: transparent;
     }
 
 
     .css-scrollbar::-webkit-scrollbar-thumb {
         background-color: #C2C2C2;
-        border-radius: 4px;
+        border-radius: 3px; /* to visually cut corners so it won't overlap borders of textarea */
     }
 
     .css-scrollbar::-webkit-scrollbar-thumb:hover {
         background-color: #7D7D7D;
+    }
+
+    /* There was a bug that cursor becomes to be text cursor if applied to textarea. This line fixes it. */
+    textarea.css-scrollbar {
+        cursor: auto;
     }
 
 
