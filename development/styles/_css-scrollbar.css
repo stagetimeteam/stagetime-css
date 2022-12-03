@@ -10,7 +10,7 @@
 
 
 .css-scrollbar::-webkit-scrollbar {
-    width: 15px;
+    width: 11px;
     background: #FFFFFF;
 }
 
@@ -26,15 +26,15 @@
 /* stylelint-disable */
 .css-scrollbar::-webkit-scrollbar-thumb {
     background-color:    #C2C2C2;
-    background-image:    linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                       #FFFFFF),
-                         linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                       #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #FBFBFB 4px, #FBFBFB 5px, #E0E0E0 5px, #E0E0E0 6px, #D1D1D1 6px, #D1D1D1 7px, #C2C2C2 7px, #C2C2C2  8px, #D1D1D1  8px, #D1D1D1 9px, #E0E0E0 9px, #E0E0E0 10px, #FBFBFB 10px, #FBFBFB 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #FBFBFB 4px, #FBFBFB 5px, #E0E0E0 5px, #E0E0E0 6px, #D1D1D1 6px, #D1D1D1 7px, #C2C2C2 7px, #C2C2C2  8px, #D1D1D1  8px, #D1D1D1 9px, #E0E0E0 9px, #E0E0E0 10px, #FBFBFB 10px, #FBFBFB 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #E0E0E0 4px, #E0E0E0 5px, #D1D1D1 5px, #D1D1D1 6px, #C2C2C2 6px,                                                       #C2C2C2 9px, #D1D1D1 9px, #D1D1D1 10px, #E0E0E0 10px, #E0E0E0 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #E0E0E0 4px, #E0E0E0 5px, #D1D1D1 5px, #D1D1D1 6px, #C2C2C2 6px,                                                       #C2C2C2 9px, #D1D1D1 9px, #D1D1D1 10px, #E0E0E0 10px, #E0E0E0 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #D1D1D1 4px, #D1D1D1 5px, #C2C2C2 5px,                                                                                                           #C2C2C2 10px, #D1D1D1 10px, #D1D1D1 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #D1D1D1 4px, #D1D1D1 5px, #C2C2C2 5px,                                                                                                           #C2C2C2 10px, #D1D1D1 10px, #D1D1D1 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #C2C2C2 4px,                                                                                                                                                                 #C2C2C2 11px, #FFFFFF 11px, #FFFFFF);
+    background-image:    linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                 #FFFFFF),
+                         linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                 #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #FBFBFB 2px, #FBFBFB 3px, #E0E0E0 3px, #E0E0E0 4px, #D1D1D1 4px, #D1D1D1 5px, #C2C2C2 5px, #C2C2C2 6px, #D1D1D1 6px, #D1D1D1 7px, #E0E0E0 7px, #E0E0E0 8px, #FBFBFB 8px, #FBFBFB 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #FBFBFB 2px, #FBFBFB 3px, #E0E0E0 3px, #E0E0E0 4px, #D1D1D1 4px, #D1D1D1 5px, #C2C2C2 5px, #C2C2C2 6px, #D1D1D1 6px, #D1D1D1 7px, #E0E0E0 7px, #E0E0E0 8px, #FBFBFB 8px, #FBFBFB 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #E0E0E0 2px, #E0E0E0 3px, #D1D1D1 3px, #D1D1D1 4px, #C2C2C2 4px,                                                     #C2C2C2 7px, #D1D1D1 7px, #D1D1D1 8px, #E0E0E0 8px, #E0E0E0 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #E0E0E0 2px, #E0E0E0 3px, #D1D1D1 3px, #D1D1D1 4px, #C2C2C2 4px,                                                     #C2C2C2 7px, #D1D1D1 7px, #D1D1D1 8px, #E0E0E0 8px, #E0E0E0 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #D1D1D1 2px, #D1D1D1 3px, #C2C2C2 3px,                                                                                                         #C2C2C2 8px, #D1D1D1 8px, #D1D1D1 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #D1D1D1 2px, #D1D1D1 3px, #C2C2C2 3px,                                                                                                         #C2C2C2 8px, #D1D1D1 8px, #D1D1D1 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #C2C2C2 2px,                                                                                                                                                             #C2C2C2 9px, #FFFFFF 9px, #FFFFFF);
     background-size:     100% 1px,
                          100% 1px,
                          100% 2px,
@@ -56,18 +56,18 @@
     background-repeat:   no-repeat;
 }
 
+
 .css-scrollbar::-webkit-scrollbar-thumb:hover {
     background-color:    #7D7D7D;
-    background-image:    linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                       #FFFFFF),
-                         linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                       #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #F7F7F7 4px, #F7F7F7 5px, #BEBEBE 5px, #BEBEBE 6px, #9D9D9D 6px, #9D9D9D 7px, #7D7D7D 7px, #7D7D7D  8px, #9D9D9D  8px, #9D9D9D 9px, #BEBEBE 9px, #BEBEBE 10px, #F7F7F7 10px, #F7F7F7 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #F7F7F7 4px, #F7F7F7 5px, #BEBEBE 5px, #BEBEBE 6px, #9D9D9D 6px, #9D9D9D 7px, #7D7D7D 7px, #7D7D7D  8px, #9D9D9D  8px, #9D9D9D 9px, #BEBEBE 9px, #BEBEBE 10px, #F7F7F7 10px, #F7F7F7 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #BEBEBE 4px, #BEBEBE 5px, #9D9D9D 5px, #9D9D9D 6px, #7D7D7D 6px,                                                       #7D7D7D 9px, #9D9D9D 9px, #9D9D9D 10px, #BEBEBE 10px, #BEBEBE 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #BEBEBE 4px, #BEBEBE 5px, #9D9D9D 5px, #9D9D9D 6px, #7D7D7D 6px,                                                       #7D7D7D 9px, #9D9D9D 9px, #9D9D9D 10px, #BEBEBE 10px, #BEBEBE 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #9D9D9D 4px, #9D9D9D 5px, #7D7D7D 5px,                                                                                                           #7D7D7D 10px, #9D9D9D 10px, #9D9D9D 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #9D9D9D 4px, #9D9D9D 5px, #7D7D7D 5px,                                                                                                           #7D7D7D 10px, #9D9D9D 10px, #9D9D9D 11px, #FFFFFF 11px, #FFFFFF),
-                         linear-gradient(to right, #FFFFFF, #FFFFFF 4px, #7D7D7D 4px,                                                                                                                                                                 #7D7D7D 11px, #FFFFFF 11px, #FFFFFF);
+    background-image:    linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                 #FFFFFF),
+                         linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                 #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #F7F7F7 2px, #F7F7F7 3px, #BEBEBE 3px, #BEBEBE 4px, #9D9D9D 4px, #9D9D9D 5px, #7D7D7D 5px, #7D7D7D 6px, #9D9D9D 6px, #9D9D9D 7px, #BEBEBE 7px, #BEBEBE 8px, #F7F7F7 8px, #F7F7F7 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #F7F7F7 2px, #F7F7F7 3px, #BEBEBE 3px, #BEBEBE 4px, #9D9D9D 4px, #9D9D9D 5px, #7D7D7D 5px, #7D7D7D 6px, #9D9D9D 6px, #9D9D9D 7px, #BEBEBE 7px, #BEBEBE 8px, #F7F7F7 8px, #F7F7F7 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #BEBEBE 2px, #BEBEBE 3px, #9D9D9D 3px, #9D9D9D 4px, #7D7D7D 4px,                                                     #7D7D7D 7px, #9D9D9D 7px, #9D9D9D 8px, #BEBEBE 8px, #BEBEBE 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #BEBEBE 2px, #BEBEBE 3px, #9D9D9D 3px, #9D9D9D 4px, #7D7D7D 4px,                                                     #7D7D7D 7px, #9D9D9D 7px, #9D9D9D 8px, #BEBEBE 8px, #BEBEBE 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #9D9D9D 2px, #9D9D9D 3px, #7D7D7D 3px,                                                                                                         #7D7D7D 8px, #9D9D9D 8px, #9D9D9D 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #9D9D9D 2px, #9D9D9D 3px, #7D7D7D 3px,                                                                                                         #7D7D7D 8px, #9D9D9D 8px, #9D9D9D 9px, #FFFFFF 9px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 2px, #7D7D7D 2px,                                                                                                                                                             #7D7D7D 9px, #FFFFFF 9px, #FFFFFF);
 
 }
-
 /* stylelint-enable */
