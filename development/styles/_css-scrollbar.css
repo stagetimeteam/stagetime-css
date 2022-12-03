@@ -25,8 +25,7 @@
 
 /* stylelint-disable */
 .css-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #C2C2C2;
-    background-repeat: no-repeat;
+    background-color:    #C2C2C2;
     background-image:    linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                         #FFFFFF),
                          linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                         #FFFFFF),
                          linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #FBFBFB 5px, #FBFBFB 6px, #E0E0E0 6px, #E0E0E0 7px, #D1D1D1 7px, #D1D1D1 8px, #C2C2C2 8px, #C2C2C2  9px, #D1D1D1  9px, #D1D1D1 10px, #E0E0E0 10px, #E0E0E0 11px, #FBFBFB 11px, #FBFBFB 12px, #FFFFFF 12px, #FFFFFF),
@@ -54,6 +53,20 @@
                          center top,
                          center bottom,
                          center center;
+    background-repeat:   no-repeat;
+}
+
+.css-scrollbar::-webkit-scrollbar-thumb:hover {
+    background-color:    #7D7D7D;
+    background-image:    linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                         #FFFFFF),
+                         linear-gradient(to right, #FFFFFF,                                                                                                                                                                                                                         #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #F7F7F7 5px, #F7F7F7 6px, #BEBEBE 6px, #BEBEBE 7px, #9D9D9D 7px, #9D9D9D 8px, #7D7D7D 8px, #7D7D7D  9px, #9D9D9D  9px, #9D9D9D 10px, #BEBEBE 10px, #BEBEBE 11px, #F7F7F7 11px, #F7F7F7 12px, #FFFFFF 12px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #F7F7F7 5px, #F7F7F7 6px, #BEBEBE 6px, #BEBEBE 7px, #9D9D9D 7px, #9D9D9D 8px, #7D7D7D 8px, #7D7D7D  9px, #9D9D9D  9px, #9D9D9D 10px, #BEBEBE 10px, #BEBEBE 11px, #F7F7F7 11px, #F7F7F7 12px, #FFFFFF 12px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #BEBEBE 5px, #BEBEBE 6px, #9D9D9D 6px, #9D9D9D 7px, #7D7D7D 7px,                                                       #7D7D7D 10px, #9D9D9D 10px, #9D9D9D 11px, #BEBEBE 11px, #BEBEBE 12px, #FFFFFF 12px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #BEBEBE 5px, #BEBEBE 6px, #9D9D9D 6px, #9D9D9D 7px, #7D7D7D 7px,                                                       #7D7D7D 10px, #9D9D9D 10px, #9D9D9D 11px, #BEBEBE 11px, #BEBEBE 12px, #FFFFFF 12px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #9D9D9D 5px, #9D9D9D 6px, #7D7D7D 6px,                                                                                                             #7D7D7D 11px, #9D9D9D 11px, #9D9D9D 12px, #FFFFFF 12px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #9D9D9D 5px, #9D9D9D 6px, #7D7D7D 6px,                                                                                                             #7D7D7D 11px, #9D9D9D 11px, #9D9D9D 12px, #FFFFFF 12px, #FFFFFF),
+                         linear-gradient(to right, #FFFFFF, #FFFFFF 5px, #7D7D7D 5px,                                                                                                                                                                   #7D7D7D 12px, #FFFFFF 12px, #FFFFFF);
 
 }
 
