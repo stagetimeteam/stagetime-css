@@ -11,7 +11,7 @@
 
     .css-scrollbar::-webkit-scrollbar {
         width: 11px;
-        background-color: #FFFFFF; /* must be white color because white will be used later in gradient */
+        background-color: transparent; /* must be white color because white will be used later in gradient */
     }
 
 
