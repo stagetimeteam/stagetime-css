@@ -56,6 +56,12 @@
                 background-color: #DDDDDD;
             }
 
+            .update-card__reaction .reaction__dropdown {
+                left: auto;
+                right: 0;
+                transform: none;
+            }
+
         .update-card__date {
             margin-left: auto;
         }
