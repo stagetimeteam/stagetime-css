@@ -108,3 +108,22 @@
     .reaction--selected .reaction__handler:active .reaction__icon {
             fill: #FFFFFF;
         }
+
+
+.reaction--circle {
+
+}
+    .reaction--circle .reaction__handler {
+        padding: 0;
+    }
+        .reaction--circle .reaction__pill {
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            border-radius: 50%;
+        }
+            .reaction--circle .reaction__icon {
+                margin-right: 0;
+                width: 16px;
+                height: 16px;
+            }

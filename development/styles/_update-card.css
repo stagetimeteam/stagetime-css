@@ -36,6 +36,30 @@
         font-size: 13px;
         line-height: 24px;
     }
+        .update-card__reaction {
+            position: absolute;
+            right: 14px;
+            top: 12px;
+        }
+            .update-card__reaction.reaction:not(.reaction--selected) .reaction__pill,
+            .update-card__reaction .reaction:not(.reaction--selected) .reaction__pill {
+                background-color: transparent;
+            }
+
+            .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill,
+            .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill {
+                background-color: #E9E9E9;
+            }
+
+            .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill,
+            .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill {
+                background-color: #DDDDDD;
+            }
+
+        .update-card__date {
+            margin-left: auto;
+        }
+
 
     .update-card__footer {
         margin-top: 4px;
@@ -47,21 +71,12 @@
             margin-top: 10px;
         }
 
-        .update-card__reaction {
-            position: absolute;
-            right: 14px;
-            top: 12px;
-        }
-            .update-card__reaction .action__image:hover {
-                background-color: #E9E9E9;
-            }
-
-            .update-card__reaction .action__image:active {
-                background-color: #DDDDDD;
-            }
-
         .update-card__date {
-            margin-left: auto;
+            margin-top: 4px;
+            margin-bottom: -4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
         }
 
 
@@ -81,10 +96,13 @@
         border-bottom-left-radius: 4px;
     }
 
-    .update-card--highlighted .update-card__reaction .action__image:hover {
+
+    .update-card--highlighted .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill,
+    .update-card--highlighted .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill {
         background-color: #FAFAFA;
     }
 
-    .update-card--highlighted .update-card__reaction .action__image:active {
+    .update-card--highlighted .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill,
+    .update-card--highlighted .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill {
         background-color: #FFFFFF;
     }
