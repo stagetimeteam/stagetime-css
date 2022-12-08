@@ -1,0 +1,30 @@
+.org-card {
+    position: relative;
+    padding-left: 44px;
+}
+    .org-card__preview {
+        position: absolute;
+        left: 0;
+        top: 3px;
+    }
+        .org-card__preview {
+            border-radius: 3px;
+        }
+
+    .org-card__heading {
+        font-size: 12px;
+        line-height: 18px;
+        color: #44474A;
+    }
+        .org-card__heading .link {
+            transition: opacity var(--transition-hover);
+        }
+        .org-card__heading .link:hover {
+            opacity: 0.7;
+        }
+
+    .org-card__note {
+        font-size: 12px;
+        line-height: 18px;
+        color: #44474A;
+    }

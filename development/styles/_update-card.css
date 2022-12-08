@@ -1,5 +1,40 @@
 .update-card {
-    height: 133px;
+    position: relative;
+    padding: 13px 72px 20px 77px;
     background-color: #F8F8F9;
     border-radius: 4px;
 }
+    .update-card__preview {
+        position: absolute;
+        left: 16px;
+        top: 12px;
+    }
+
+    .update-card__heading {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 21px;
+    }
+        .update-card__heading .link {
+            transition: opacity var(--transition-hover);
+        }
+        .update-card__heading .link:hover {
+            opacity: 0.7;
+        }
+
+        .update-card__time {
+            margin-left: 8px;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 21px;
+            color: #44474A;
+        }
+
+    .update-card__content {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .update-card__footer {
+        margin-top: 10px;
+    }
