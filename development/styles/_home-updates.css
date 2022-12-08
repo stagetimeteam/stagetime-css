@@ -3,7 +3,7 @@
     border: 1px solid #E8E8E8;
     border-radius: 3px;
 }
-    .home-updates__tabs {
+    .home-updates__options {
         position: relative;
         z-index: 10;
         display: flex;
@@ -11,7 +11,7 @@
         justify-content: center;
         box-shadow: inset 0 -1px 0 #E8E8E8;
     }
-        .home-updates__tag {
+        .home-updates__filter {
             position: relative;
             flex-shrink: 0;
             width: 210px;
@@ -35,10 +35,10 @@
                 display: block;
             }
 
-        .home-updates__tag--current {
+        .home-updates__filter--current {
             color: #23282C;
         }
-            .home-updates__tag--current::after {
+            .home-updates__filter--current::after {
                 content: "";
                 position: absolute;
                 left: 50%;
@@ -51,7 +51,7 @@
                 border-radius: 2px;
             }
 
-    .home-updates__updates {
+    .home-updates__counter {
         position: absolute;
         z-index: 20;
         left: 50%;
@@ -59,32 +59,22 @@
         top: 90px;
         width: 230px;
     }
-        .home-updates__updates.button {
+        .home-updates__counter.button {
             width: 230px;
             font-size: 13px;
         }
 
-    .home-updates__bodies {
-
-    }
-        .home-updates__column {
-            display: none;
+        .home-updates__body {
+            height: 358px;
+            overflow-y: auto;
         }
-
-        .home-updates__column--current {
-            display: block;
-        }
-            .home-updates__list {
-                height: 358px;
-                overflow-y: auto;
+            .home-updates__ribbon {
+                padding: 36px 20px;
             }
-                .home-updates__ribbon {
-                    padding: 36px 20px;
+                .home-updates__item {
+                    margin-top: 12px;
                 }
-                    .home-updates__item {
-                        margin-top: 12px;
-                    }
 
-                    .home-updates__item:first-child {
-                        margin-top: 0;
-                    }
+                .home-updates__item:first-child {
+                    margin-top: 0;
+                }
