@@ -1,0 +1,90 @@
+.home-updates {
+    position: relative;
+    border: 1px solid #E8E8E8;
+    border-radius: 3px;
+}
+    .home-updates__tabs {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        align-self: stretch;
+        justify-content: center;
+        box-shadow: inset 0 -1px 0 #E8E8E8;
+    }
+        .home-updates__tag {
+            position: relative;
+            flex-shrink: 0;
+            width: 210px;
+            padding: 14px 4px;
+            border: none;
+            background-color: transparent;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            color: #808386;
+            cursor: pointer;
+        }
+            .home-updates__icon {
+                vertical-align: top;
+                fill: currentColor;
+            }
+
+            .home-updates__label {
+                margin-top: 6px;
+                display: block;
+            }
+
+        .home-updates__tag--current {
+            color: #23282C;
+        }
+            .home-updates__tag--current::after {
+                content: "";
+                position: absolute;
+                left: 50%;
+                bottom: -2px;
+                display: block;
+                width: 180px;
+                margin-left: -90px;
+                height: 4px;
+                background-color: currentColor;
+                border-radius: 2px;
+            }
+
+    .home-updates__updates {
+        position: absolute;
+        z-index: 20;
+        left: 50%;
+        margin-left: -115px;
+        top: 90px;
+        width: 230px;
+    }
+        .home-updates__updates.button {
+            width: 230px;
+            font-size: 13px;
+        }
+
+    .home-updates__bodies {
+
+    }
+        .home-updates__column {
+            display: none;
+        }
+
+        .home-updates__column--current {
+            display: block;
+        }
+            .home-updates__list {
+                height: 358px;
+                overflow-y: auto;
+            }
+                .home-updates__ribbon {
+                    padding: 36px 20px;
+                }
+                    .home-updates__item {
+                        margin-top: 12px;
+                    }
+
+                    .home-updates__item:first-child {
+                        margin-top: 0;
+                    }
