@@ -38,6 +38,7 @@
     }
         .update-card__reaction {
             position: absolute;
+            z-index: 10; /* higher than .more-cards */
             right: 14px;
             top: 12px;
         }

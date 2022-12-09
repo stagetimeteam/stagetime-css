@@ -65,3 +65,10 @@
             line-height: 18px;
             color: #545454;
         }
+
+        .more-cards .bubble {
+            right: 9px;
+        }
+            .more-cards .bubble__peak {
+                right: 17px;
+            }

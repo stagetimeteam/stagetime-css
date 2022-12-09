@@ -45,6 +45,14 @@
         transition: opacity var(--transition-show),
                     visibility var(--transition-show);
     }
+
+    .home-updates__item:first-child .reaction__dropdown {
+        bottom: auto;
+        padding-bottom: 0;
+        top: 100%;
+        padding-top: 9px;
+    }
+
         .reaction__bubble {
             padding: 10px 19px 10px 12px;
             background-color: #EEF0F3;
