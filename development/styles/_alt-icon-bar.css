@@ -34,6 +34,10 @@
             fill: #333333;
         }
 
+        .alt-icon-bar--swim-test .alt-icon-bar__image {
+            fill: #76797C;
+        }
+
 
     .alt-icon-bar__content {
         overflow: hidden; /* cut progress bar corners */
