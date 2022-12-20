@@ -2,10 +2,7 @@
    Typing area done using iframe so it has it's own stylefile.
  */
 
-.cke {
-    border: none !important;
-}
-
+/* instruments panel appearance */
 .cke_top {
     margin-bottom: 12px !important;
     background-color: #F3F5F8 !important;
@@ -13,3 +10,14 @@
     border-bottom: none !important;
 }
 
+
+.cke {
+    border: 1px solid #E8E8E8;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+/* Optional class to be used in circles */
+.cke_no-border {
+    border: none !important;
+}
