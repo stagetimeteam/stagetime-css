@@ -42,21 +42,6 @@
             right: 14px;
             top: 12px;
         }
-            .update-card__reaction.reaction:not(.reaction--selected) .reaction__pill,
-            .update-card__reaction .reaction:not(.reaction--selected) .reaction__pill {
-                background-color: transparent;
-            }
-
-            .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill,
-            .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill {
-                background-color: #E9E9E9;
-            }
-
-            .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill,
-            .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill {
-                background-color: #DDDDDD;
-            }
-
             .update-card__reaction .reaction__dropdown {
                 left: auto;
                 right: 0;

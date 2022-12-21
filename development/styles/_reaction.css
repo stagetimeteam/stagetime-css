@@ -15,9 +15,6 @@
             background-color: #EEF0F3;
             border-radius: 15px;
             padding: 5px 12px 5px 9px;
-            font-weight: 600;
-            font-size: 14px;
-            line-height: 20px;
         }
 
         .reaction__handler:hover .reaction__pill {
@@ -31,6 +28,14 @@
                 vertical-align: top;
                 margin-right: 6px;
                 fill: #000000;
+                color: transparent;
+            }
+
+            .reaction__counter {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                color: #000000;
             }
 
     .reaction__dropdown {
@@ -50,7 +55,6 @@
         bottom: auto;
         padding-bottom: 0;
         top: 100%;
-        padding-top: 9px;
     }
 
         .reaction__bubble {
@@ -114,8 +118,14 @@
     .reaction--selected .reaction__handler .reaction__icon,
     .reaction--selected .reaction__handler:hover .reaction__icon,
     .reaction--selected .reaction__handler:active .reaction__icon {
-            fill: #FFFFFF;
-        }
+        fill: #FFFFFF;
+    }
+
+    .reaction--selected .reaction__handler .reaction__counter,
+    .reaction--selected .reaction__handler:hover .reaction__counter,
+    .reaction--selected .reaction__handler:active .reaction__counter {
+        color: #FFFFFF;
+    }
 
 
 .reaction--circle {
@@ -125,13 +135,67 @@
         padding: 0;
     }
         .reaction--circle .reaction__pill {
+            display: block; /* not a flex */
             width: 32px;
-            height: 32px;
+            /*height: 32px;*/
             padding: 8px;
             border-radius: 50%;
+            background-color: transparent !important;
         }
+            .reaction--circle .reaction__pill::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 50%;
+                margin-left: -16px;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+            }
+
+            .reaction--circle .reaction__handler:hover .reaction__pill::before {
+                background-color: #E9E9E9;
+            }
+
+            .reaction--circle .reaction__handler:active .reaction__pill::before {
+                background-color: #DDDDDD;
+            }
+
             .reaction--circle .reaction__icon {
+                position: relative;
                 margin-right: 0;
                 width: 16px;
                 height: 16px;
+                display: block;
+                fill: #585B5E;
+                color: transparent;
             }
+
+            .reaction--circle .reaction__counter {
+                position: relative;
+                display: block;
+                margin-top: 2px;
+                font-size: 9px;
+                line-height: 12px;
+                color: #23282C !important;
+            }
+
+.reaction--circle.reaction--selected {
+
+}
+    .reaction--circle.reaction--selected .reaction__handler .reaction__pill,
+    .reaction--circle.reaction--selected .reaction__handler:hover .reaction__pill,
+    .reaction--circle.reaction--selected .reaction__handler:active .reaction__pill {
+        background-color: transparent;
+    }
+        .reaction--circle.reaction--selected .reaction__handler .reaction__icon,
+        .reaction--circle.reaction--selected .reaction__handler:hover .reaction__icon,
+        .reaction--circle.reaction--selected .reaction__handler:active .reaction__icon {
+            fill: transparent;
+            color: #23282C;
+        }
+
+
+        .reaction--circle.reaction--selected .reaction__handler .reaction__counter {
+
+        }
