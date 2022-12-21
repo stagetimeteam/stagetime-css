@@ -27,12 +27,21 @@
 
     .public-circles__more {
         position: absolute;
-        right: var(--public-circles-padding);
+        right: 60px;
         top: 15px;
     }
         .public-circles__more.button,
         .public-circles__more .button {
             border-radius: 4px;
+        }
+
+    .public-circles__hint {
+        position: absolute;
+        top: 17px;
+        right: 22px;
+    }
+        .public-circles__hint.explainer {
+            position: absolute;
         }
 
     .public-circles__body {
