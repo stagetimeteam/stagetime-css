@@ -88,7 +88,6 @@
             </div>
 
 
-
             <br>
             <br>
             <br>
@@ -260,6 +259,29 @@
                     <i class="bubble__peak"></i>
                 </span>
             </span>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>.bubble--normal-hover</h2>
+            <p>
+                By default bubbles are traparent to pointer (pointer-events: none). But in some cases
+                we still need to hover it or something. For example if there is a link inside. In this
+                case we can take back normal behavior of hovering by using <b>.bubble--normal-hover</b>:
+            </p>
+
+            <button class="bubble-trigger" type="button" style="position: relative">
+                Random button
+                <div class="bubble bubble--top bubble--normal-hover">
+                    <div class="bubble__body">
+                        View mutual connections<br> by growing <a class="link link--classic" href="#">your network</a>.
+                    </div>
+                </div>
+            </button>
+
 
 
 

@@ -29,6 +29,10 @@
                 visibility 0.1s ease 0.1s; /* with delay */
 }
 
+.bubble--normal-hover {
+    pointer-events: auto;
+}
+
     .bubble__body {
         position: relative;
         display: inline-block;
