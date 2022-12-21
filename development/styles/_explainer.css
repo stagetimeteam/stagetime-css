@@ -5,6 +5,7 @@
 }
     .explainer__icon {
         vertical-align: top;
+        fill: #979797;
     }
 
     .explainer .bubble--top {
