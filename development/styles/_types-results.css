@@ -1,0 +1,7 @@
+.types-results {
+    padding-top: 13px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 7px;
+}

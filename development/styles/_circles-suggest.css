@@ -46,7 +46,6 @@
     .circles-suggest__cancel:active {
         background-color: var(--grey-panel-active);
     }
-
         .circles-suggest__cross {
             width: 12px;
             height: 12px;
