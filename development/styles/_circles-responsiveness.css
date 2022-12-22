@@ -73,13 +73,13 @@
                         display: block;
                         width: 32px;
                         height: 32px;
-                        border: 1px solid #23282c;
+                        border: 1px solid #23282C;
                         border-radius: 50%;
                     }
 
                     .circles__cross {
                         vertical-align: top;
-                        fill: #23282c;
+                        fill: #23282C;
                     }
 
             .circles__navigation {

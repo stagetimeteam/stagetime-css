@@ -6,7 +6,6 @@
 
 .ellipsis--2-lines {
     white-space: normal;
-
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

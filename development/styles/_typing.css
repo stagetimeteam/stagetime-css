@@ -22,6 +22,7 @@
         overflow: hidden;
     }
 
+    /* stylelint-disable */
     .typing__message {
         width: 100%;
         vertical-align: top;

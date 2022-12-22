@@ -23,7 +23,7 @@
                 margin-top: 13px;
             }
                 .shortened-team__sub-heading--has-bar::before {
-                    content: '';
+                    content: "";
                     display: block;
                     margin-bottom: 16px;
                     width: 1px;
