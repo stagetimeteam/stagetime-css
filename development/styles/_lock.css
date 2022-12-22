@@ -82,3 +82,14 @@
             }
 
 
+.lock .bubble--right-leaf {
+    right: 43px;
+    bottom: 100%;
+    margin-bottom: 5px;
+}
+
+/* we not gonna use .bubble-trigger here because of focus-within that happens on checkbox */
+.lock:hover .bubble--right-leaf {
+    opacity: 1;
+    visibility: visible;
+}
