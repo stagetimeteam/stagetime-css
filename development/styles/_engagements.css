@@ -1,0 +1,24 @@
+.engagements {
+    padding: 22px var(--modal-padding) 49px;
+}
+    .engagements__description {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 20px;
+        color: #757575;
+    }
+
+    .engagements__navigation {
+
+    }
+
+    .engagements__list {
+        margin-top: 20px;
+    }
+        .engagements__item {
+            margin-top: 14px;
+        }
+
+        .engagements__item:first-child {
+            margin-top: 0;
+        }
