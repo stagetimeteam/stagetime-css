@@ -129,11 +129,18 @@
         }
 
 
-    .performance__description {
+    .performance__extension {
         background-color: #FFFFFF;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
     }
+        .performance__description {
+
+        }
+
+        .performance__types {
+            margin-top: 4px;
+        }
 
 
 .performance--full {
@@ -148,6 +155,6 @@
         padding: 12px 52px 42px;
     }
 
-    .performance--full .performance__description {
+    .performance--full .performance__extension {
         padding: 36px 52px 48px;
     }
