@@ -12,7 +12,12 @@
         margin-bottom: 10px;
     }
 
-
     .explainer .bubble--leaf {
         margin-bottom: 3px;
+    }
+
+
+    .explainer .bubble--right-leaf {
+        bottom: 50%;
+        right: 50%;
     }
