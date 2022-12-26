@@ -5873,10 +5873,312 @@
                                     <input class="input__widget" type="text" placeholder="Show/Event Title *">
                                 </div>
                                 <div class="edit-event__field input input--larger-font">
-                                    <input class="input__widget" type="text" placeholder="Role or Composer *">
+                                    <input class="input__widget" type="text" placeholder="Role *">
                                 </div>
-                                <div class="edit-event__field input input--area input--larger-font">
-                                    <textarea class="input__widget" placeholder="Info (optional)" rows="4"></textarea>
+                                <div class="edit-event__field input input--larger-font">
+                                    <input class="input__widget" type="text" placeholder="Composer">
+                                </div>
+                                <div class="edit-event__field">
+                                    <label class="label label--placeholder-alike">
+                                        Info
+                                        <span class="label__note">(optional)</span>
+                                    </label>
+                                    <!-- temp -->
+                                    <div style="height: 128px; background: #F1F1F1; border-radius: 5px; color: #8B8B8B; display: flex; align-items: center; justify-content: center;">WYSIWYG</div>
+                                    <!--/temp -->
+                                </div>
+                                <div class="edit-event__field">
+                                    <div class="input input--larger-font input--picker input--content-width-dropdown">
+                                        <input class="input__widget" type="text" placeholder="Anything else to note about this event?" readonly>
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <div class="types-suggests">
+                                                    <div class="types-suggests__hint">
+                                                        (Check all that apply)
+                                                    </div>
+                                                    <div class="types-suggests__list">
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #E8EDF4; color: #333333;">
+                                                                    <div class="type__label">
+                                                                        Canceled due to COVID-19
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #C9D4E3; color: #333333;">
+                                                                    <div class="type__label">
+                                                                        Chorus
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #ACC0D5; color: #333333;">
+                                                                    <div class="type__label">
+                                                                        Commermercial/recorded music
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #90ADC8; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Cover
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #65758A; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Film/TV
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #3F4A5A; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Partial role, scenes, or excepts
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #1D2634; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Performed
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #3E373E; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Premiere
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #5F4847; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Recital
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #845C4F; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Soloist
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #936954; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Standby
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #A3775A; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Substitue
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #B4875F; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Swing
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #B8906E; color: #FFFFFF;">
+                                                                    <div class="type__label">
+                                                                        Understudy
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #BC997D; color: #333333;">
+                                                                    <div class="type__label">
+                                                                        Virtual performance
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                        <label class="choice choice--checkbox">
+                                                            <input class="choice__widget" type="checkbox">
+                                                            <i class="choice__icon" role="presentation"></i>
+                                                            <div class="choice__label">
+                                                                <div class="type" style="background-color: #C1A48F; color: #333333;">
+                                                                    <div class="type__label">
+                                                                        Workshop
+                                                                    </div>
+                                                                    <button class="type__cancel" type="button">
+                                                                        <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                                                    <div class="types-suggests__support">
+                                                        Want us to add something?<br> <a class="link" href="#">Contact support</a> to let us know.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="types-results">
+                                        <div class="type" style="background-color: #E8EDF4; color: #333333;">
+                                            <div class="type__label">
+                                                Canceled due to COVID-19
+                                            </div>
+                                            <button class="type__cancel" type="button">
+                                                <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="type" style="background-color: #C9D4E3; color: #333333;">
+                                            <div class="type__label">
+                                                Chorus
+                                            </div>
+                                            <button class="type__cancel" type="button">
+                                                <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="type" style="background-color: #ACC0D5; color: #333333;">
+                                            <div class="type__label">
+                                                Commermercial/recorded music
+                                            </div>
+                                            <button class="type__cancel" type="button">
+                                                <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="type" style="background-color: #90ADC8; color: #FFFFFF;">
+                                            <div class="type__label">
+                                                Cover
+                                            </div>
+                                            <button class="type__cancel" type="button">
+                                                <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="type" style="background-color: #65758A; color: #FFFFFF;">
+                                            <div class="type__label">
+                                                Film/TV
+                                            </div>
+                                            <button class="type__cancel" type="button">
+                                                <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </button>
+                                        </div>
+                                        <div class="type" style="background-color: #3F4A5A; color: #FFFFFF;">
+                                            <div class="type__label">
+                                                Partial role, scenes, or excepts
+                                            </div>
+                                            <button class="type__cancel" type="button">
+                                                <img class="type__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="edit-event__schedule">
                                     <label class="edit-event__option choice choice--checkbox choice--slim">
@@ -5981,6 +6283,26 @@
                             </button>
 
                             <div class="modal-foot__operations">
+                                <label class="lock">
+                                    <input class="lock__widget" type="checkbox">
+                                    <span class="lock__status">
+                                        <span class="lock__unlocked">Unlocked</span>
+                                        <span class="lock__locked">Locked</span>
+                                    </span>
+                                    <span class="lock__preview">
+                                        <svg class="lock__icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                            <path id="handler" d="m14.7755 8.9144h-1.0021v-2.13778c0-2.07098-1.7035-3.77453-3.77449-3.77453-2.07098 0-3.77453 1.70355-3.77453 3.77453v2.13778h-1.00209v-2.13778c0-2.63883 2.13779-4.77662 4.77662-4.77662 2.63879 0 4.77659 2.13779 4.77659 4.77662z"/>
+                                            <path d="m14.2745 18h-8.55116c-.86848 0-1.60334-.7349-1.60334-1.6033v-6.4134c0-.86848.73486-1.60334 1.60334-1.60334h8.55116c.8685 0 1.6033.73486 1.6033 1.60334v6.4134c0 .9018-.7348 1.6033-1.6033 1.6033zm-8.55116-8.55115c-.30063 0-.53445.23382-.53445.53445v6.4134c0 .3006.23382.5344.53445.5344h8.55116c.3006 0 .5344-.2338.5344-.5344v-6.4134c0-.30063-.2338-.53445-.5344-.53445z"/>
+                                            <path d="m11.0678 11.5866c0 .6013-.4676 1.0689-1.06889 1.0689-.60125 0-1.06889-.4676-1.06889-1.0689 0-.6012.46764-1.0689 1.06889-1.0689.60129 0 1.06889.5011 1.06889 1.0689z"/>
+                                            <path d="m10.2661 11.5866h-.53441l-.53445 3.2067h1.60336z"/>
+                                        </svg>
+                                    </span>
+                                    <div class="bubble bubble--right-leaf">
+                                        <div class="bubble__body">
+                                            This is an example of what this would look like with text.<br> that goes more than one sentence.
+                                        </div>
+                                    </div>
+                                </label>
                                 <button class="button button--modal-submit button--disabled" type="button" disabled>
                                     Save
                                 </button>

@@ -41,7 +41,7 @@
         .type__cross {
             width: 10px;
             height: 10px;
-            fill: #757575;
+            fill: #000000;
         }
 
         .type__cancel:hover .type__cross {

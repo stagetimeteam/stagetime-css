@@ -10,6 +10,9 @@
 
     .modal-foot__operations {
         margin-left: auto;
+        display: flex; /* in case if there is 2 items */
+        align-items: flex-end;
+        gap: 10px;
     }
         .modal-foot__operations .button {
             min-width: 100px;

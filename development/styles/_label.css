@@ -10,8 +10,13 @@
     color: #545454;
 }
     .label__note {
-        margin-left: 14px;
+        margin-left: 10px;
         font-weight: normal;
         font-size: 11px;
         line-height: 14px;
     }
+
+
+.label--placeholder-alike {
+    color: #8B8B8B;
+}
