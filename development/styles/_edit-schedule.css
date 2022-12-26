@@ -10,47 +10,7 @@
 
     .edit-schedule__navigation {
         margin-top: 19px;
-        margin-left: -2px;
-        margin-right: -2px;
-        display: flex;
-        align-items: flex-start;
     }
-        .edit-schedule__interval {
-            margin-left: 20px;
-            padding: 9px 22px;
-            border: 1px solid #E8E8E8;
-            border-radius: 20px;
-            font-family: inherit;
-            font-weight: 600;
-            font-size: 13px;
-            line-height: 20px;
-            color: #545454;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color var(--transition-hover),
-                        border-color var(--transition-hover);
-        }
-
-        .edit-schedule__interval:first-child {
-            margin-left: 0;
-        }
-
-        .edit-schedule__interval:hover {
-            background-color: #E8E8E8;
-            border-color: transparent;
-        }
-
-        .edit-schedule__interval:active {
-            background-color: #CCCCCC;
-            transition: none;
-        }
-
-        .edit-schedule__interval--current,
-        .edit-schedule__interval--current:hover,
-        .edit-schedule__interval--current:active {
-            background-color: #E8E8E8;
-            border-color: transparent;
-        }
 
     .edit-schedule__current {
         margin-top: 40px;
