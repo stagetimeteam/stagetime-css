@@ -14,11 +14,8 @@
 
     .engagements__list {
         margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
     }
-        .engagements__item {
-            margin-top: 14px;
-        }
 
-        .engagements__item:first-child {
-            margin-top: 0;
-        }

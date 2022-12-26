@@ -220,8 +220,8 @@
 .bubble--right-leaf {
     position: absolute;
     z-index: 4000;
-    right: 13px;
-    bottom: 11px;
+    right: 100%;
+    bottom: 100%;
 }
     .bubble--right-leaf .bubble__body {
         background-color: rgba(255, 255, 255, 0.92);
