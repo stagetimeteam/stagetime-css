@@ -1,10 +1,10 @@
-.opportunity {
+.opportunity-card {
     position: relative;
     padding: 13px 16px 16px;
     border: 1px solid #E8E8E8;
     border-radius: 5px;
 }
-    .opportunity::before {
+    .opportunity-card::before {
         content: "";
         position: absolute;
         left: 0;
@@ -17,78 +17,78 @@
         border-top-right-radius: 5px;
     }
 
-    .opportunity__preview {
+    .opportunity-card__preview {
 
     }
 
-    .opportunity__menu {
+    .opportunity-card__menu {
         position: absolute;
         right: 0;
         top: 0;
     }
-        .opportunity__menu .operations__icon {
+        .opportunity-card__menu .operations__icon {
             width: 20px;
             height: 20px;
         }
 
-        .opportunity__menu .operations__dropdown {
+        .opportunity-card__menu .operations__dropdown {
             top: calc(100% - 4px);
             min-width: 123px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-    .opportunity__heading {
+    .opportunity-card__heading {
         margin-top: 8px;
         font-size: 14px;
         line-height: 16px;
         color: #23282C;
     }
 
-    .opportunity__location {
+    .opportunity-card__location {
         margin-top: 5px;
         font-size: 12px;
         line-height: 16px;
         color: #44474A;
     }
 
-    .opportunity__host {
+    .opportunity-card__host {
         font-weight: 600;
         font-size: 12px;
         line-height: 16px;
         color: #44474A;
     }
 
-    .opportunity__params {
+    .opportunity-card__params {
         margin-top: 11px;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
     }
-        .opportunity__stat {
+        .opportunity-card__stat {
             font-weight: 600;
             font-size: 10px;
             line-height: 16px;
             color: #23282C;
             white-space: nowrap;
         }
-            .opportunity__stat::after {
+            .opportunity-card__stat::after {
                 content: "|";
                 margin-left: 7px;
                 margin-right: 7px;
             }
 
-            .opportunity__stat:last-child::after {
+            .opportunity-card__stat:last-child::after {
                 display: none;
             }
 
-    .opportunity__description {
+    .opportunity-card__description {
         margin-top: 19px;
         font-size: 12px;
         line-height: 18px;
         color: #23282C;
     }
 
-    .opportunity__summary {
+    .opportunity-card__summary {
         margin-top: 18px;
         display: flex;
         align-items: flex-start;
@@ -96,14 +96,14 @@
         gap: 7px;
     }
 
-    .opportunity__operations {
+    .opportunity-card__operations {
         margin-top: 17px;
         display: grid;
         grid-auto-flow: column;
         grid-auto-columns: minmax(0, 1fr);
         gap: 8px;
     }
-        .opportunity__operations .button {
+        .opportunity-card__operations .button {
             padding-top: 7px;
             padding-bottom: 7px;
         }
