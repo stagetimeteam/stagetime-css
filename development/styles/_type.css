@@ -47,3 +47,9 @@
         .type__cancel:hover .type__cross {
 
         }
+
+
+
+.type--smaller {
+    padding: 2px 10px;
+}
