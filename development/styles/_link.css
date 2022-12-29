@@ -18,6 +18,7 @@
     color: #9CB2BE;
     text-decoration: none;
     cursor: pointer;
+    transition: border-bottom-color var(--transition-hover);
 }
 
 .link:hover,
@@ -52,11 +53,13 @@
 .wysiwyg .link--text-alike {
     border-bottom-color: transparent;
     color: inherit;
+    transition: opacity var(--transition-hover);
 }
 
 .link--text-alike:hover,
 .wysiwyg .link--text-alike:hover {
     border-bottom-color: transparent;
+    opacity: 0.7;
 }
 
 

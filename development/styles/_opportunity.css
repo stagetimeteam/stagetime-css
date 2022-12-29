@@ -1,0 +1,72 @@
+.opportunity {
+    position: relative;
+    padding: 13px 16px 16px;
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+}
+    .opportunity::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        display: block;
+        height: 43px;
+        background-image: linear-gradient(73.88deg, #F3F5F8 20.66%, rgba(242, 242, 242, 0) 100%);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .opportunity__preview {
+
+    }
+
+    .opportunity__menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+        .opportunity__menu .operations__icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        .opportunity__menu .operations__dropdown {
+            top: calc(100% - 4px);
+            min-width: 123px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+    .opportunity__heading {
+
+    }
+
+    .opportunity__location {
+
+    }
+
+    .opportunity__host {
+
+    }
+
+    .opportunity__params {
+
+    }
+        .opportunity__stat {
+
+        }
+
+    .opportunity__description {
+
+    }
+
+    .opportunity__summary {
+
+    }
+
+    .opportunity__operations {
+
+    }
+        .opportunity__action {
+
+        }

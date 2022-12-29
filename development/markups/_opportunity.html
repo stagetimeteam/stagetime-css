@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.badge</title>
+        <title>.opportunity</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -14,48 +14,77 @@
 
 
 
-        <div style="width: 600px; margin: 0 auto;">
+        <div style="width: 300px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.badge</h1>
-            <p>
-                See also <a href="_tag.html">.tag</a>, See also <a href="_type.html">.type</a>,
-            </p>
-            <br>
+            <h1>.opportunity</h1>
 
-            <div class="badge">
-                <button class="badge__body" style="background-color: #CEDBE1; color: #545454;" title="Audition Granted" type="button">
-                    Audition Granted
-                    <img class="badge__angle" src="../symbols/16-triangle-down.svg" width="16" height="16" alt="">
-                </button>
-                <div class="badge__dropdown">
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item badge__item--bulk">—</span>
+            <div class="opportunity">
+                <div class="opportunity__preview">
+                    <a class="avatar avatar--alt-hover" href="#">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                             src="../temp/person-a-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt="Mark Zuckerberg"
+                        >
+                    </a>
+                </div>
+                <div class="opportunity__menu operations operations--simplified-handler">
+                    <button class="operations__handler" type="button">
+                        <img class="operations__icon" src="../symbols/32-more.svg" width="32" height="32" alt="">
+                        More
                     </button>
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item" style="background-color: #CEDBE1; color: #545454;">Audition Granted</span>
-                    </button>
-                    <button class="badge__choice badge__choice--selected" type="button">
-                        <span class="badge__item" style="background-color: #CBC6D3; color: #545454;">Available</span>
-                    </button>
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item" style="background-color: #C0A2A2; color: #FFFFFF;">Finalist</span>
-                    </button>
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item" style="background-color: #AFA8AB; color: #FFFFFF;">Future Seasons</span>
-                    </button>
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item" style="background-color: #91A3A3; color: #FFFFFF;">No Audition</span>
-                    </button>
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item" style="background-color: #E0E0DA; color: #545454;">Not Under Consideration</span>
-                    </button>
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item" style="background-color: #EEE6D6; color: #545454;">Unavailable</span>
-                    </button>
-                    <button class="badge__choice" type="button">
-                        <span class="badge__item" style="background-color: #CED4D7; color: #545454;">Under Consideration</span>
-                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-edit2.svg" width="24" height="24" alt="">
+                                Edit
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-share-2.svg" width="24" height="24" alt="">
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <img class="menu__icon" src="../symbols/24-shield-failed.svg" width="24" height="24" alt="">
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="opportunity__heading">
+                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                </div>
+                <div class="opportunity__location">
+                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                </div>
+                <div class="opportunity__host">
+                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                </div>
+                <div class="opportunity__params">
+                    <div class="opportunity__stat">Posted 2h ago</div>
+                    <div class="opportunity__stat">Deadline November 16</div>
+                    <div class="opportunity__stat">Part-Time</div>
+                </div>
+                <div class="opportunity__description ellipsis ellipsis--2-lines">
+                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                </div>
+                <div class="opportunity__summary">
+                    <div class="type" style="background-color: #DBE2EB; color: #44474A;">
+                        <div class="type__label">
+                            Academic
+                        </div>
+                    </div>
+                    <div class="type" style="background-color: #DBE2EB; color: #44474A;">
+                        <div class="type__label">
+                            Academic
+                        </div>
+                    </div>
+                </div>
+                <div class="opportunity__operations">
+                    <a class="opportunity__action button button--submit" href="#">More info</a>
+                    <a class="opportunity__action button button--cancel" href="#">Message</a>
                 </div>
             </div>
 
