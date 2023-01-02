@@ -209,6 +209,11 @@
         fill: #545454;
     }
 
+    .input__icon[width="18"] {
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+
     .input__icon[width="24"] {
         margin-left: -4px;
         margin-top: -4px;
@@ -320,6 +325,25 @@
     .input--alt-border .input__widget:focus {
         border-color: #757575;
         box-shadow: 0 0 0 1px #757575;
+    }
+
+
+.input--alt-background {
+
+}
+    .input--alt-background .input__widget {
+        background-color: #F0F0F0;
+        border-color: #F0F0F0;
+    }
+
+    .input--alt-background .input__widget:hover {
+        background-color: #F6F6F6;
+        border-color: #757575;
+    }
+
+    .input--alt-background .input__widget:focus {
+        background-color: #F6F6F6;
+        border-color: #757575;
     }
 
 

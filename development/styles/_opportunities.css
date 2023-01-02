@@ -52,11 +52,72 @@
                 padding-right: 10px;
             }
 
+    .opportunities__body {
+        padding: 30px 30px 60px;
+        display: grid;
+        grid-template-columns: 222px 1fr;
+        gap: 20px;
+    }
+        .opportunities__sidebar {
+
+        }
+
+        .opportunities__content {
+
+        }
+            .opportunities__search-head {
+                display: flex;
+                align-items: flex-start;
+                gap: 16px;
+            }
+                .opportunities__param {
+                    width: 287px;
+                }
+
+                .opportunities__search-submit.button,
+                .opportunities__search-submit .button {
+                    width: 127px;
+                }
+
+            .opportunities__results-head {
+                margin-top: 15px;
+                display: flex;
+                align-items: flex-start;
+                gap: 40px;
+            }
+                .opportunities__findings {
+                    margin-top: 7px;
+                    margin-bottom: 0;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #23282C;
+                }
+
+                .opportunities__sort {
+                    margin-left: auto;
+                    display: flex;
+                    align-items: flex-start;
+                }
+                    .opportunities__sort-label {
+                        margin-right: 10px;
+                        margin-top: 11px;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #23282C;
+                    }
+
+                    .opportunities__sort .input {
+                        width: 115px;
+                    }
+
+
     .opportunities__list {
-        margin-top: 40px;
-        margin-bottom: 40px;
-        padding: 40px;
+        margin-top: 15px;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 20px 40px;
+        grid-gap: 20px;
+    }
+
+    .opportunities__footer {
+        margin-top: 28px;
     }
