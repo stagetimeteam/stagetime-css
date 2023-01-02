@@ -1,5 +1,7 @@
 .opportunity-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
     padding: 13px 16px 16px;
     border: 1px solid #E8E8E8;
     border-radius: 5px;
@@ -38,14 +40,14 @@
         }
 
     .opportunity-card__heading {
-        margin-top: 8px;
+        margin-top: 7px;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 20px;
         color: #23282C;
     }
 
     .opportunity-card__location {
-        margin-top: 5px;
+        margin-top: 4px;
         font-size: 12px;
         line-height: 16px;
         color: #44474A;
@@ -82,14 +84,16 @@
             }
 
     .opportunity-card__description {
-        margin-top: 19px;
+        margin-top: 12px;
+        margin-bottom: auto;
         font-size: 12px;
         line-height: 18px;
         color: #23282C;
     }
 
     .opportunity-card__summary {
-        margin-top: 18px;
+        margin-top: auto;
+        padding-top: 18px;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
