@@ -5,9 +5,9 @@
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 14px 20px;
 }
     .filtering__item {
-        margin-left: 20px;
         padding: 9px 22px;
         border: 1px solid #E8E8E8;
         border-radius: 20px;
@@ -16,6 +16,7 @@
         font-size: 13px;
         line-height: 20px;
         color: #545454;
+        white-space: nowrap;
         text-decoration: none;
         cursor: pointer;
         transition: background-color var(--transition-hover),
