@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.venue</title>
+        <title>.opportunity</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1672747183">
@@ -17,37 +17,84 @@
         <div style="width: 300px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.venue</h1>
+            <h1>.opportunity</h1>
 
-            <div class="venue">
-                <img class="venue__background"
-                     srcset="../temp/venue-background-a@2x.jpg 2x"
-                     src="../temp/venue-background-a.jpg"
-                     width="100"
-                     height="100"
-                     alt=""
-                >
-                <img class="venue__logo"
-                     srcset="../temp/venue-logo-a@2x.jpg 2x"
-                     src="../temp/venue-logo-a.jpg"
-                     width="66"
-                     height="66"
-                     alt=""
-                >
-                <div class="venue__heading">
-                    The Metropolitan Opera
+            <div class="opportunity-card">
+                <div class="opportunity-card__preview">
+                    <a class="avatar avatar--alt-hover" href="#">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                             src="../temp/person-a-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt="Mark Zuckerberg"
+                        >
+                    </a>
                 </div>
-                <div class="venue__note ellipsis">
-                    New York, NY
+                <div class="opportunity-card__menu operations operations--simplified-handler">
+                    <button class="operations__handler" type="button">
+                        <svg class="operations__icon" width="32" height="32">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                        </svg>
+                        More
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                </svg>
+                                Edit
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                </svg>
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                </svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <a class="venue__follow button button--alt-darker" href="#">
-                    <svg class="button__icon button__icon--follow" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1672747183#16-plus-micro"></use>
-                    </svg>
-                    Follow
-                </a>
+                <div class="opportunity-card__heading">
+                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                </div>
+                <div class="opportunity-card__location">
+                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                </div>
+                <div class="opportunity-card__host">
+                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                </div>
+                <div class="opportunity-card__params">
+                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                    <div class="opportunity-card__stat">Deadline November 16</div>
+                    <div class="opportunity-card__stat">Part-Time</div>
+                </div>
+                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                </div>
+                <div class="opportunity-card__summary">
+                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                        <div class="type__label">
+                            Academic
+                        </div>
+                    </div>
+                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                        <div class="type__label">
+                            Academic
+                        </div>
+                    </div>
+                </div>
+                <div class="opportunity-card__operations">
+                    <a class="button button--submit" href="#">More info</a>
+                    <a class="button button--cancel" href="#">Message</a>
+                </div>
             </div>
-
 
 
             <br>

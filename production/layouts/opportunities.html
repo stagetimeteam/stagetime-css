@@ -1,0 +1,2660 @@
+<!DOCTYPE html>
+<html class="has-sidebar sidebar-collapsed" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Circles</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1672747183">
+        <link rel="stylesheet" href="../styles/style.css?1672747183">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1672747183" media="(max-width: 767px)">
+    </head>
+    <body>
+
+        <!-- 1/3: .header, .search, .notifications, .profile, .sidebar -->
+        <header class="header">
+            <div class="header__detachable-panel">
+                <a class="header__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <!-- optional:
+                <div class="header__greetings">
+                    Good afternoon, <a class="link link--user-color" href="#">Jennie</a>.
+                </div>
+                -->
+                <!-- optional:
+                <div class="header__auth">
+                    <a class="header__login" href="#"><span class="header__label">Log In</span></a>
+                    <a class="header__join" href="#"><span class="header__label">Join <span class="header__stagetime-label">Stagetime</span></span></a>
+                </div>
+                -->
+                <div class="header__menu">
+                    <button class="header__item header-button header-button--search" type="button">
+                        <svg class="header-button__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                        </svg>
+                    </button>
+                    <a class="header__item header-button header-button--messages" href="#">
+                        <svg class="header-button__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-envelope"></use>
+                        </svg>
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--notifications" href="#">
+                        <svg class="header-button__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-notification"></use>
+                        </svg>
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <button class="header__item header-button header-button--sidebar" type="button">
+                        <svg class="header-button__icon header-button__icon--burger" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-burger"></use>
+                        </svg>
+                        <svg class="header-button__icon header-button__icon--close-burger" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-close-burger"></use>
+                        </svg>
+                        <span class="visuallyhidden">Toggle sidebar</span>
+                        <span class="visuallyhidden">Notifications:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </button>
+                    <a class="header__item profile-button" href="#">
+                        <span class="avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                 src="../temp/person-a-32x32.jpg"
+                                 width="32"
+                                 height="32"
+                                 alt=""
+                            >
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <form class="search">
+            <div class="search__bar">
+                <button class="search__close" type="button">
+                    <svg class="search__arrow" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1672747183#16-left"></use>
+                    </svg>
+                </button>
+                <div class="search__body">
+                    <input class="search__widget" type="text" placeholder="Search Stagetime">
+                    <svg class="search__icon" width="24" height="24">
+                        <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="search__dropdown">
+                <div class="search__scroll scrollbar scrollbar-macosx">
+                    <div class="search__section">
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-56x56@2x.jpg 2x"
+                                             src="../temp/person-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-56x56@2x.jpg 2x"
+                                             src="../temp/person-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Marlen Nahas
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-56x56@2x.jpg 2x"
+                                             src="../temp/person-d-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Shea Owens
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-56x56@2x.jpg 2x"
+                                             src="../temp/person-e-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__more" href="#">
+                            <div class="search__more-wrap">
+                                <svg class="search__more-icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                                </svg>
+                                     alt="">
+                            </div>
+                            More results for “aj o’rei”
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="notifications">
+            <div class="notifications__head top-bar">
+                <div class="top-bar__heading">
+                    Notifications
+                </div>
+                <button class="top-bar__close" type="button">
+                    <svg class="top-bar__cross" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1672747183#16-cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="notifications__scroll scrollbar scrollbar-macosx">
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        <svg class="section-separator__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-2-user"></use>
+                        </svg>
+                        New Requests (2)
+                        <div class="section-separator__updates dot"></div>
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+
+
+                <div class="simpler-null">
+                    You don’t currently have<br> any notifications.
+                </div>
+                <!-- temp -->
+                or:
+                <!--/temp -->
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        <svg class="section-separator__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-globe"></use>
+                        </svg>
+                        Activity
+                        <div class="section-separator__updates dot"></div>
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Jennie Moser</span> was live
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            New update to the information section of <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            A new resource titled <span class="link link--text-alike">Daily Schedule Version 6, July 6, 2022</span> been added to <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Activity
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <svg class="circle__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1672747183#24-category"></use>
+                            </svg>
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">AJ O’Reilly</span> has shared collection <span class="link link--text-alike">Santa Fe Oboes 2022</span> with you.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-54x54@2x.jpg 2x"
+                                 src="../temp/person-c-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <svg class="notice__heart notice__heart--inner" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#16-heart-wide"></use>
+                        </svg>
+                        <svg class="notice__heart notice__heart--outer" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#16-heart-wide"></use>
+                        </svg>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Andres Acosta</span> reacted to your video Etude in e minor.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            Are you sure you want to confirm that you are on <span class="link link--text-alike">Justin Werner</span>’s roster at <span class="link">Stratagem Artists</span>?
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action button button--submit">Confirm</div>
+                            <div class="notice__action button button--cancel">Back</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            You’ve been invited to Circle <span class="link link--text-alike">Opera Idaho EAs</span> by AJ O’Reilly
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action  button  button--submit">Accept</div>
+                            <div class="notice__action  button  button--cancel">Delete</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            You’ve been invited to Circle <span class="link link--text-alike">Opera Idaho EAs</span> by AJ O’Reilly
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__output icon-status icon-status--alternate">
+                                <svg class="icon-status__illustration" width="30" height="30">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#30-check"></use>
+                                </svg>
+                                <div class="icon-status__label">Request accepted.</div>
+                            </div>
+                            or:
+                            <div class="notice__output icon-status icon-status--alternate">
+                                <svg class="icon-status__illustration" width="30" height="30">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#30-none"></use>
+                                </svg>
+                                <div class="icon-status__label">Request deleted.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            <div class="notice__name">
+                                Elena Villalón
+                            </div>
+                            <div class="notice__note">
+                                Soprano, Houston, TX
+                            </div>
+                            <div class="notice__intro multiline multiline--notification">
+                                <div class="multiline__content">
+                                    Hey, was great meeting you last night! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt djdj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptatum!
+                                </div>
+                                <span class="multiline__handler link">
+                            <span class="multiline__read-more">Read More</span>
+                            <span class="visuallyhidden">or</span>
+                            <span class="multiline__close">Read Less</span>
+                        </span>
+                            </div>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action  button  button--submit">Connect</div>
+                            <div class="notice__action  button  button--cancel">Connect</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <svg class="circle__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1672747183#24-category"></use>
+                            </svg>
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">AJ O’Reilly</span> has shared collection <span class="link link--text-alike">Santa Fe Oboes 2022</span> with you.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <svg class="circle__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1672747183#24-thick-rings"></use>
+                            </svg>
+                        </div>
+                        <div class="notice__body">
+                            New update to the information section of <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <svg class="circle__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1672747183#24-stagetime"></use>
+                            </svg>
+                        </div>
+                        <div class="notice__body">
+                            Learn how to increase your profile views. This can be up to 3 lines just in case it is longer.
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <svg class="circle__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1672747183#24-volume-up"></use>
+                            </svg>
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Piano concerto No. 2 in Eb Major</span> now has 17 plays.
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <svg class="circle__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1672747183#24-video"></use>
+                            </svg>
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Piano concerto No. 2 in Eb Major</span> now has 17 plays.
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__head top-bar">
+                <div class="top-bar__heading">
+                    Profile
+                </div>
+                <button class="top-bar__close" type="button">
+                    <svg class="top-bar__cross" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1672747183#16-cross"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="profile__body">
+                <a class="profile__link user-link" href="#">
+                    <span class="user-link__preview avatar avatar--alt-hover">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-28x28@2x.jpg 2x"
+                             src="../temp/person-a-28x28.jpg"
+                             width="28"
+                             height="28"
+                             alt=""
+                        >
+                    </span>
+                    View Profile
+                </a>
+                <div class="profile__menu">
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-envelope"></use>
+                        </svg>
+                        <svg class="pic-link__sparkle" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#16-sparkle"></use>
+                        </svg>
+                        <div class="pic-link__label">Invite</div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-pawprint"></use>
+                        </svg>
+                        <div class="pic-link__label">Report an Issue</div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-info-square"></use>
+                        </svg>
+                        <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-cogwheel"></use>
+                        </svg>
+                        <div class="pic-link__label">Settings</div>
+                    </a>
+                </div>
+                <div class="profile__logout">
+                    <a class="pic-link" href="#">
+                        <svg class="pic-link__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1672747183#24-2-user"></use>
+                        </svg>
+                        <div class="pic-link__label">Log Out</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <button class="sidebar__overlay" type="button"></button>
+            <div class="sidebar__scroll scrollbar scrollbar-macosx">
+                <div class="sidebar__inner">
+                    <nav class="side-nav">
+                        <div class="side-nav__section">
+                            <a class="pic-link pic-link--current" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-home"></use>
+                                </svg>
+                                <div class="pic-link__label">Home</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit3"></use>
+                                </svg>
+                                <div class="pic-link__label">Edit My Profile</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-envelope"></use>
+                                </svg>
+                                <div class="pic-link__label">Messages <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-2-user"></use>
+                                </svg>
+                                <div class="pic-link__label">My Network</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section">
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-paper"></use>
+                                </svg>
+                                <div class="pic-link__label">Jobs</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-category"></use>
+                                </svg>
+                                <div class="pic-link__label">Collections</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-thick-rings"></use>
+                                </svg>
+                                <span class="pic-link__counter counter counter--danger">4</span>
+                                <div class="pic-link__label">Circles <span class="pic-link__beta beta">beta</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-3-user-2"></use>
+                                </svg>
+                                <div class="pic-link__label">Groups</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon pic-link__icon--photo"
+                                     srcset="../temp/person-a-20x20@2x.jpg 2x"
+                                     src="../temp/person-a-20x20.jpg"
+                                     width="20"
+                                     height="20"
+                                     alt=""
+                                >
+                                <div class="pic-link__label">Manage</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section side-nav__section--smartphone-only">
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-envelope"></use>
+                                </svg>
+                                <svg class="pic-link__sparkle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-sparkle"></use>
+                                </svg>
+                                <div class="pic-link__label">Invite</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-pawprint"></use>
+                                </svg>
+                                <div class="pic-link__label">Report an Issue</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-info-square"></use>
+                                </svg>
+                                <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <svg class="pic-link__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-cogwheel"></use>
+                                </svg>
+                                <div class="pic-link__label">Settings</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2/3: .page -->
+        <div class="page">
+            <div class="opportunities">
+                <div class="opportunities__head">
+                    <div class="opportunities__summary">
+                        <h1 class="opportunities__heading">
+                            <svg class="opportunities__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1672747183#24-bag-3"></use>
+                            </svg>
+                            Opportunities
+                        </h1>
+                        <div class="opportunities__note">
+                            Find your next opportunity or share one with our community of Stagetime members.
+                        </div>
+                    </div>
+                    <div class="opportunities__operations">
+                        <a class="button button--dark-secondary" href="#">+ Add</a>
+                        <a class="button button--dark-secondary" href="#">Manage Opportunities</a>
+                    </div>
+                </div>
+                <div class="opportunities__body">
+                    <div class="opportunities__sidebar">
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Date Posted
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__data">
+                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="date-posted" checked>
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">All Time</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="date-posted">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Last 24 hours</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="date-posted">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Last 7 days</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="date-posted">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Last 30 days</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Category
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__data">
+                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="category" checked>
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Performance Job</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="category">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Teaching Job</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="category">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Admin/Production Job</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="category">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Competition</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Type
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__data">
+                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="type" checked>
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Full-Time</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="type">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Part-Time</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="type">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Flat-Fee</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="type">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Per-Call</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="type">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Competition</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Deadline
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__data">
+                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="deadline" checked>
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Open</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="deadline">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Closed</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Posted By
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__data">
+                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="posted-by" checked>
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Organization</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="posted-by">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Individual</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Organization
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                        <svg class="input__icon" width="20" height="20">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                                        </svg>
+                                        <input class="input__widget" type="text" placeholder="Search Organization">
+                                    </div>
+                                    <div class="picking__data">
+                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Sarasota Orchestra</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Lyric Opera of Chicago</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Los Angeles Area Chamber of Commerce</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Rockwood Music Hall</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Northwestern University</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Lawrence University</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Tanglewood</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Sarasota Orchestra</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Lyric Opera of Chicago</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Los Angeles Area Chamber of Commerce</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Rockwood Music Hall</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Northwestern University</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Lawrence University</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="organization">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Tanglewood</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Individual
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                        <svg class="input__icon" width="20" height="20">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                                        </svg>
+                                        <input class="input__widget" type="text" placeholder="Search Individuals">
+                                    </div>
+                                    <div class="picking__data">
+                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Chris Penguin</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Rachel Lloyd</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Jennie Moser</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Sarah Kim</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Nate Fearing</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Tyler Kuehn</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Allie Miller</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Chris Penguin</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Rachel Lloyd</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Jennie Moser</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Sarah Kim</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Nate Fearing</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Tyler Kuehn</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="individual">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Allie Miller</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Industry & Specialty
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                        <svg class="input__icon" width="20" height="20">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                                        </svg>
+                                        <input class="input__widget" type="text" placeholder="Search">
+                                    </div>
+                                    <div class="picking__data">
+                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Recording</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Musical Theatre</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Orchestra</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Recording Artist</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Arranger</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">TV Film</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Orchestral Conducting</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Recording</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Musical Theatre</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Orchestra</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Recording Artist</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Arranger</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">TV Film</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Orchestral Conducting</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Instrument or Disciple
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                        <svg class="input__icon" width="20" height="20">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                                        </svg>
+                                        <input class="input__widget" type="text" placeholder="Search">
+                                    </div>
+                                    <div class="picking__data">
+                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Violin</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Bassoon</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Librarian</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Orchestrator</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Arranger</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Conductor</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Trumpet</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Violin</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Bassoon</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Librarian</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Orchestrator</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Arranger</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Conductor</span>
+                                                </label>
+                                                <label class="choice choice--checkbox choice--side">
+                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Trumpet</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="picking picking--expanded">
+                            <button class="picking__handler" type="button">
+                                Accepts Stagetime Profiles
+                                <svg class="picking__angle" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-select-down"></use>
+                                </svg>
+                            </button>
+                            <div class="picking__dropdown">
+                                <div class="picking__inner">
+                                    <div class="picking__data">
+                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                            <div class="picking__ribbon">
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="accepts-stagetime-profiles" checked>
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">Yes</span>
+                                                </label>
+                                                <label class="choice choice--radio choice--side">
+                                                    <input class="choice__widget" type="radio" name="accepts-stagetime-profiles">
+                                                    <i class="choice__icon" role="presentation"></i>
+                                                    <span class="choice__label">No</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opportunities__content">
+                        <div class="opportunities__search-head">
+                            <div class="opportunities__param input input--classic-font input--alt-background">
+                                <svg class="input__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-magnifier"></use>
+                                </svg>
+                                <input class="input__widget" type="text" placeholder="Search by title, role, or skill">
+                            </div>
+                            <div class="opportunities__param input input--classic-font input--alt-background">
+                                <svg class="input__icon" width="18" height="18">
+                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-location-outline"></use>
+                                </svg>
+                                <input class="input__widget" type="text" placeholder="City, State, or Zip Code">
+                            </div>
+                            <button class="opportunities__search-submit button button--submit-bar" type="button">
+                                Search
+                            </button>
+                        </div>
+                        <div class="opportunities__results-head">
+                            <h2 class="opportunities__findings">
+                                15 new opportunities in the last 7 days
+                            </h2>
+                            <div class="opportunities__sort">
+                                <div class="opportunities__sort-label">
+                                    Sort by
+                                </div>
+                                <div class="input input--larger-font input--picker">
+                                    <input class="input__widget" type="text" value="Newest" readonly>
+                                    <div class="input__dropdown">
+                                        <div class="input__options">
+                                            <button class="input__suggest" type="button">Newest</button>
+                                            <button class="input__suggest" type="button">Latest</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opportunities__empty no-opportunities">
+                            <h2 class="no-opportunities__heading">
+                                No results found
+                            </h2>
+                            <div class="no-opportunities__sub-heading">
+                                Browse by Category
+                            </div>
+                            <div class="no-opportunities__line">
+                                <a class="link" href="#">Performance Job</a>
+                                <a class="link" href="#">Non-Performance Job</a>
+                            </div>
+                            <div class="no-opportunities__line">
+                                <a class="link" href="#">Competition/Festival</a>
+                            </div>
+                        </div>
+
+                        <!-- temp -->
+                        <br>
+                        <br>
+                        or:
+                        <br>
+                        <br>
+                        <br>
+                        <!--/temp -->
+
+                        <div class="opportunities__list">
+                            <a class="add-opportunity" href="#">
+                                <div class="add-opportunity__inner">
+                                    <div class="add-opportunity__preview">
+                                        <svg class="add-opportunity__icon" width="24" height="24">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#24-sharp-plus"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="add-opportunity__heading">
+                                        Create a new listing
+                                    </div>
+                                    <div class="add-opportunity__note">
+                                        Post on behalf of yourself or an organization you represent
+                                    </div>
+                                    <div class="add-opportunity__button">
+                                        + Add opportunity
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Violin/Viola Recording Session Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 10 years ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16, 2023</div>
+                                    <div class="opportunity-card__stat">Part-Time or Full-time available</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                            <div class="opportunity-card">
+                                <div class="opportunity-card__preview">
+                                    <a class="avatar avatar--alt-hover" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-48x48@2x.jpg 2x"
+                                             src="../temp/person-a-48x48.jpg"
+                                             width="48"
+                                             height="48"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                </div>
+                                <div class="opportunity-card__menu operations operations--simplified-handler">
+                                    <button class="operations__handler" type="button">
+                                        <svg class="operations__icon" width="32" height="32">
+                                            <use xlink:href="../symbols/symbols.svg?1672747183#32-more"></use>
+                                        </svg>
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-edit2"></use>
+                                                </svg>
+                                                Edit
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-share-2"></use>
+                                                </svg>
+                                                Share
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <svg class="menu__icon" width="24" height="24">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#24-shield-failed"></use>
+                                                </svg>
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__heading">
+                                    <a class="link link--text-alike" href="#">Violin/Viola Recording Session</a>
+                                </div>
+                                <div class="opportunity-card__location">
+                                    <a class="link link--text-alike" href="#">New York City, NY, USA</a>
+                                </div>
+                                <div class="opportunity-card__host">
+                                    <a class="link link--text-alike" href="#">Chris Penguin</a>
+                                </div>
+                                <div class="opportunity-card__params">
+                                    <div class="opportunity-card__stat">Posted 2h ago</div>
+                                    <div class="opportunity-card__stat">Deadline November 16</div>
+                                    <div class="opportunity-card__stat">Part-Time</div>
+                                </div>
+                                <div class="opportunity-card__description ellipsis ellipsis--2-lines">
+                                    Short one sentence from the descriptions that will tell how awesome this opportunity is compared tort one sentence from the descriptions that will tell how awesome this opportunity is compared.
+                                </div>
+                                <div class="opportunity-card__summary">
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                    <div class="type type--smaller" style="background-color: #DBE2EB; color: #44474A;">
+                                        <div class="type__label">
+                                            Academic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opportunity-card__operations">
+                                    <a class="button button--submit" href="#">More info</a>
+                                    <a class="button button--cancel" href="#">Message</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="opportunities__footer pagination">
+                            <div class="pagination__body">
+                                <a class="pagination__item pagination__item--prev" href="#">
+                                    <svg class="pagination__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1672747183#16-pagination-left"></use>
+                                    </svg>
+                                </a>
+                                <a class="pagination__item" href="#">1</a>
+                                <a class="pagination__item pagination__item--current" href="#">2</a>
+                                <a class="pagination__item" href="#">3</a>
+                                <a class="pagination__item" href="#">4</a>
+                                <div class="pagination__item pagination__item--dots">...</div>
+                                <a class="pagination__item" href="#">7</a>
+                                <a class="pagination__item pagination__item--next" href="#">
+                                    <svg class="pagination__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1672747183#16-pagination-right"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="pagination__counter">
+                                1-15 of 233
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 3/3 Modals: -->
+        <div class="modal fade" id="circles-settings" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-head">
+                            <div class="modal-head__heading title title--small">
+                                Circle Settings
+                            </div>
+                            <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
+                                <span class="action__image">
+                                    <svg class="action__icon" width="16" height="16">
+                                        <use xlink:href="../symbols/symbols.svg?1672747183#16-cross"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="circle-settings">
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-name">
+                                        Circle Name
+                                    </label>
+                                    <div class="input input--larger-font">
+                                        <input class="input__widget" type="text" id="#circle-name" placeholder="Add Name...">
+                                    </div>
+                                </div>
+                                <div class="circle-settings__field">
+                                    <label class="label" for="#circle-admin">
+                                        Circle Admins
+                                        <span class="label__note">You can only make current Circle members admins.</span>
+                                    </label>
+                                    <div class="input input--classic-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Search on Stagetime">
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-40x40@2x.jpg 2x"
+                                                             src="../temp/person-a-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
+                                                             src="../temp/person-b-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
+                                                             src="../temp/person-c-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
+                                                             src="../temp/person-d-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="connection-bar" href="#">
+                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
+                                                             src="../temp/person-e-40x40.jpg"
+                                                             width="40"
+                                                             height="40"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="connection-bar__body">
+                                                        <div class="connection-bar__heading">
+                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
+
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="circles-results">
+                                        <div class="circles-results__item circles-suggest">
+                                            <a class="circles-suggest__preview avatar avatar--alt-hover">
+                                                <img class="avatar__image"
+                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
+                                                     src="../temp/person-a-24x24.jpg"
+                                                     width="24"
+                                                     height="24"
+                                                     alt="Mark Zuckerberg"
+                                                >
+                                            </a>
+                                            <div class="circles-suggest__name ellipsis">
+                                                <a class="link link--fading" href="#">Elena Villalón</a>
+                                            </div>
+                                            <button class="circles-suggest__cancel" type="button">
+                                                <svg class="circles-suggest__cross" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1672747183#16-cross"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- temp -->
+                                <p>or:</p>
+                                <!--/temp -->
+
+                                <div class="circle-settings__field">
+                                    <div class="label">
+                                        Circle Admins
+                                    </div>
+                                    <div class="circle-settings__hint">
+                                        Only Circle Admins can:<br>
+                                        &nbsp;&nbsp;•&nbsp; Rename the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Delete the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Information section<br>
+                                        &nbsp;&nbsp;•&nbsp; Invite/Approve Members to the Circle<br>
+                                        &nbsp;&nbsp;•&nbsp; Edit the Resource section<br>
+                                        <br>
+                                        If you need to add another person as an Admin, send us a message here.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-foot">
+                            <div class="modal-foot__addition">
+                                <button class="button button--modal-secondary" type="button">
+                                    Delete
+                                </button>
+                            </div>
+                            <div class="modal-foot__operations">
+                                <button class="button button--modal-submit" type="button">
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+        <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../vendors/select2/js/select2.min.js"></script>
+        <script src="../scripts/_global.js?1672747183"></script>
+        <script src="../scripts/_operations.js?1672747183"></script>
+        <script src="../scripts/_profile.js?1672747183"></script>
+        <script src="../scripts/_sidebar.js?1672747183"></script>
+        <script src="../scripts/_mfp.js?1672747183"></script>
+        <script src="../scripts/_search.js?1672747183"></script>
+        <script src="../scripts/_carousel.js?1672747183"></script>
+        <script src="../scripts/_player3.js?1672747183"></script>
+        <script src="../scripts/_updates.js?1672747183"></script>
+        <script src="../scripts/_side.js?1672747183"></script>
+        <script src="../scripts/_happening.js?1672747183"></script>
+        <script src="../scripts/_input.js?1672747183"></script>
+        <script src="../scripts/_edit-post.js?1672747183"></script>
+        <script src="../scripts/_post-form.js?1672747183"></script>
+        <script src="../scripts/_button.js?1672747183"></script>
+        <script src="../scripts/_quick-message.js?1672747183"></script>
+        <script src="../scripts/_explore.js?1672747183"></script>
+        <script src="../scripts/_shortcut.js?1672747183"></script>
+        <script src="../scripts/_scrollbar.js?1672747183"></script>
+        <script src="../scripts/_overlay.js?1672747183"></script>
+        <script src="../scripts/_notifications.js?1672747183"></script>
+        <script src="../scripts/_enter.js?1672747183"></script>
+        <script src="../scripts/_suggesting.js?1672747183"></script>
+        <script src="../scripts/_chat.js?1672747183"></script>
+        <script src="../scripts/_badge.js?1672747183"></script>
+        <script src="../scripts/_media-bar.js?1672747183"></script>
+        <script src="../scripts/_settings.js?1672747183"></script>
+        <script src="../scripts/_slideshow.js?1672747183"></script>
+        <script src="../scripts/_expandable-bio.js?1672747183"></script>
+        <script src="../scripts/_parallax.js?1672747183"></script>
+        <script src="../scripts/_simple-parallax.js?1672747183"></script>
+        <script src="../scripts/_anchor.js?1672747183"></script>
+        <script src="../scripts/_modal.js?1672747183"></script>
+        <script src="../scripts/_full-media-card.js?1672747183"></script>
+        <script src="../scripts/_color-selection.js?1672747183"></script>
+        <script src="../scripts/_layout-type.js?1672747183"></script>
+        <script src="../scripts/_sortable.js?1672747183"></script>
+        <script src="../scripts/_biography.js?1672747183"></script>
+        <script src="../scripts/_full-biography.js?1672747183"></script>
+        <script src="../scripts/_media-clip.js?1672747183"></script>
+        <script src="../scripts/_typing.js?1672747183"></script>
+        <script src="../scripts/_circles.js?1672747183"></script>
+        <script src="../scripts/_brief.js?1672747183"></script>
+        <script src="../scripts/_non-performer.js?1672747183"></script>
+        <script src="../scripts/_classic.js?1672747183"></script>
+        <script src="../scripts/_owl-carousel.js?1672747183"></script>
+        <script src="../scripts/_add-filter.js?1672747183"></script>
+        <script src="../scripts/_select2.js?1672747183"></script>
+        <script src="../scripts/_multiline.js?1672747183"></script>
+        <script src="../scripts/_network-news.js?1672747183"></script>
+        <script src="../scripts/_vertical-artist.js?1672747183"></script>
+        <script src="../scripts/_tabs.js?1672747183"></script>
+        <script src="../scripts/_picking.js?1672747183"></script>
+
+
+    </body>
+</html>
+
+
+
