@@ -55,11 +55,14 @@
     .opportunities__body {
         padding: 30px 30px 100px;
         display: grid;
+        align-items: start;
         grid-template-columns: 222px 1fr;
         gap: 20px;
     }
         .opportunities__sidebar {
-
+            padding: 10px 20px;
+            border: 1px solid #E8E8E8;
+            border-radius: 3px;
         }
 
         .opportunities__content {

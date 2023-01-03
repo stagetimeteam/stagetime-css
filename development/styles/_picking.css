@@ -1,0 +1,96 @@
+.picking {
+
+}
+    .picking__handler {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        padding: 6px 20px 6px 10px;
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        margin-right: -10px;
+        border-radius: 3px;
+        font-family: inherit;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #44474A;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    .picking__handler:hover {
+        background-color: var(--panel-hover);
+    }
+
+    .picking__handler:active {
+        background-color: var(--panel-active);
+    }
+        .picking__angle {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            margin-top: -8px;
+            fill: #44474A;
+            transition: transform 200ms ease;
+        }
+
+        .picking--expanded .picking__angle {
+            transform: scaleY(-1);
+        }
+
+    .picking__dropdown {
+        /* this is sliding element, see JS */
+    }
+        .picking__inner {
+            padding-top: 5px;
+            padding-bottom: 24px;
+        }
+            .picking__filter {
+                margin-bottom: 8px;
+            }
+
+            .picking__data {
+                position: relative; /* for fader positioning */
+            }
+                .picking__list {
+
+                }
+                    .picking__ribbon {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 8px;
+                    }
+                        /* In case we need to add ellipsis to long names but so far it doesn't seems to be needed: */
+                        /*.picking__ribbon .choice__label {*/
+                        /*    display: block;*/
+                        /*    white-space: nowrap;*/
+                        /*    overflow: hidden;*/
+                        /*    text-overflow: ellipsis;*/
+                        /*}*/
+
+                .picking__list::after {
+                    content: "";
+                    position: absolute; /* notice it is being positioned one node higher. Not to .picking__list but to .picking__list where position relative is. It must be done to take it out of scrollable area. */
+                    z-index: 10;
+                    left: 0;
+                    bottom: 0;
+                    right: 11px;
+                    height: 36px;
+                    pointer-events: none;
+                    background: linear-gradient(0deg, #FFFFFF, rgba(255, 255, 255, 0));
+                    opacity: 0;
+                    transition: opacity var(--transition-show);
+                }
+
+
+
+.picking__list--scrollbar-needed {
+    max-height: 148px; /* we add this class on 10+ items, but max-height is oriented to cut it in the middle of 7th item. It is needed to avoid the cases when we have scrollbar but to scroll only half of item or one item. In other words if scroll appears there is a real reason for that. */
+    overflow-y: auto;
+}
+
+.picking__list--scrollbar-needed:not(.picking__list--scrolled-to-the-end)::after {
+    opacity: 1;
+}
+

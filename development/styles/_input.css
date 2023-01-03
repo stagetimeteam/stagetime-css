@@ -91,6 +91,15 @@
     }
 
 
+.input--smaller {
+
+}
+    .input--smaller .input__widget {
+        height: 32px;
+        padding: 5px 14px;
+    }
+
+
 .input--large {
 
 }
@@ -214,6 +223,11 @@
         margin-top: -1px;
     }
 
+    .input__icon[width="20"] {
+        margin-left: -2px;
+        margin-top: -2px;
+    }
+
     .input__icon[width="24"] {
         margin-left: -4px;
         margin-top: -4px;
@@ -227,6 +241,16 @@
     .input__icon ~ .input__widget {
         padding-left: 44px;
     }
+
+
+.input--smaller .input__icon {
+    top: 8px;
+    left: 13px;
+}
+    .input--smaller .input__icon ~ .input__widget {
+        padding-left: 39px;
+    }
+
 
 
 /* Right icon */
