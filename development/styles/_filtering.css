@@ -4,6 +4,7 @@
     margin-right: -2px;
     display: flex;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
     .filtering__item {
         margin-left: 20px;
