@@ -40,7 +40,11 @@
             }
 
             .home__circles {
-                margin-top: 18px;
+                margin-top: 20px;
+            }
+
+            .home__opportunities {
+                margin-top: 20px;
             }
 
             .home__stats {

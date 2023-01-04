@@ -387,6 +387,27 @@
         }
 
 
+.carousel--for-opportunities {
+
+}
+    .carousel--for-opportunities .carousel__container {
+
+    }
+        .carousel--for-opportunities .carousel__item {
+            width: 303px;
+            margin-right: 20px;
+        }
+
+        .carousel--for-opportunities .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel--for-opportunities .carousel__control {
+            margin-bottom: 9px;
+            margin-right: 124px;
+        }
+
+
 .carousel--for-new-for-you {
 
 }

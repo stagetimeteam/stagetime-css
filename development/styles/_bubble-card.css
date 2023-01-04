@@ -1,0 +1,26 @@
+.bubble-card {
+    margin: -2px 0 -2px -4px;
+    position: relative;
+    padding-top: 4px;
+    min-height: 30px;
+    padding-left: 40px;
+}
+    .bubble-card__preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .bubble-card__heading {
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 11px;
+        color: #39606C;
+    }
+
+    .bubble-card__note {
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 11px;
+        color: #757575;
+    }
