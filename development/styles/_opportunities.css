@@ -3,9 +3,9 @@
 }
     .opportunities__head {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         gap: 40px;
-        padding: 23px 30px 20px;
+        padding: 18px 30px;
         background-color: #F3F5F8;
     }
         .opportunities__summary {
@@ -39,7 +39,6 @@
             }
 
         .opportunities__operations {
-            margin-top: 20px;
             margin-left: auto;
             display: flex;
             align-items: flex-start;
@@ -48,8 +47,8 @@
             .opportunities__operations .button {
                 border-radius: 2px;
                 min-width: 68px;
-                padding-left: 10px;
-                padding-right: 10px;
+                padding-left: 18px;
+                padding-right: 18px;
             }
 
     .opportunities__body {
@@ -123,4 +122,11 @@
 
     .opportunities__footer {
         margin-top: 28px;
+    }
+
+
+
+    .opportunities__detailed-item {
+        padding: 34px 30px 100px;
+        max-width: 731px;
     }

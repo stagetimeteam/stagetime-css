@@ -90,11 +90,34 @@
         color: #44474A;
     }
 
+    .opportunity-card__message {
+        margin-top: 13px;
+        align-self: flex-start;
+    }
+        .opportunity-card__message.button,
+        .opportunity-card__message .button {
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+    .opportunity-card__description-heading {
+        margin-top: 20px;
+        margin-bottom: -4px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: #686868;
+    }
+
     .opportunity-card__params {
         margin-top: 11px;
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
+    }
+
+    .opportunity-card__params + .opportunity-card__params {
+        margin-top: 0;
     }
         .opportunity-card__stat {
             font-weight: 600;
@@ -121,6 +144,15 @@
         color: #23282C;
     }
 
+    .opportunity-card__types-heading {
+        margin-top: 20px;
+        margin-bottom: -9px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: #686868;
+    }
+
     .opportunity-card__summary {
         margin-top: auto;
         padding-top: 18px;
@@ -141,3 +173,29 @@
             padding-top: 7px;
             padding-bottom: 7px;
         }
+
+
+.opportunity-card--full {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+}
+    .opportunity-card--full .opportunity-card__author {
+        left: 86px;
+    }
+
+    .opportunity-card--full .opportunity-card__stat {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .opportunity-card--full .opportunity-card__description {
+        padding-bottom: 10px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+
+
+
+
