@@ -43,8 +43,14 @@
             height: 12px;
         }
 
-        .opportunity-card__author .bubble {
-            margin-bottom: -4px;
+        .opportunity-card__author .bubble--leaf {
+            left: 10px;
+            bottom: 7px;
+        }
+
+        .opportunity-card__author .bubble--right-leaf {
+            right: calc(100% - 10px);
+            bottom: 7px;
         }
 
     .opportunity-card__menu {
