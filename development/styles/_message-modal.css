@@ -1,0 +1,55 @@
+.message-modal {
+    border-left: 16px solid #E8EDF4;
+    padding: 20px 46px 20px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: grid;
+    grid-template-columns: 118px 1fr;
+}
+    .message-modal__person {
+        text-align: center;
+    }
+        .message-modal__preview {
+
+        }
+
+        .message-modal__name {
+            width: 95px;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 13px;
+            line-height: 16px;
+            color: #23282C;
+            text-align: center;
+        }
+
+        .message-modal__note {
+            font-size: 12px;
+            line-height: 16px;
+            color: #44474A;
+            text-align: center;
+        }
+
+    .message-modal__close {
+        position: absolute;
+        right: 5px;
+        top: 8px;
+    }
+
+    .message-modal__form {
+
+    }
+        .message-modal__field {
+
+        }
+
+        .message-modal__submit {
+            margin-top: 16px;
+        }
+            .message-modal__submit.button,
+            .message-modal__submit .button {
+                display: block;
+                width: 138px;
+                margin-left: auto;
+            }

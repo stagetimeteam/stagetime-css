@@ -639,7 +639,7 @@
                             <div class="opportunity-card__stat">Part-Time</div>
                             <div class="opportunity-card__stat">$55,000 - 65,000 an hour</div>
                         </div>
-                        <a class="opportunity-card__message button button--card-submit" href="#">
+                        <a class="opportunity-card__message button button--card-submit" href="#" data-toggle="modal" data-target="#message">
                             Message
                         </a>
                         <div class="opportunity-card__description-heading">
@@ -960,6 +960,49 @@
                                 <button class="button button--modal-submit" type="button">
                                     Save
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--588px fade" id="message" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-body">
+                            <div class="message-modal">
+                                <div class="message-modal__person">
+                                    <a class="message-modal__preview avatar avatar--less-squared" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-80x80@2x.jpg 2x"
+                                             src="../temp/person-a-80x80.jpg"
+                                             width="80"
+                                             height="80"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                    <div class="message-modal__name">
+                                        <a class="link link--text-alike" href="#">Leah Hawkins</a>
+                                    </div>
+                                    <div class="message-modal__note">
+                                        Soprano
+                                    </div>
+                                </div>
+                                <button class="message-modal__close action action--flipped" type="button" data-dismiss="modal">
+                                    <span class="action__image">
+                                        <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                    </span>
+                                </button>
+                                <div class="message-modal__form">
+                                    <div class="message-modal__field input input--larger-font input--area">
+                                        <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
+                                    </div>
+                                    <button class="message-modal__submit button button--card-submit" type="button">
+                                        Send
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
