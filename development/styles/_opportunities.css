@@ -6,6 +6,7 @@
         align-items: center;
         gap: 40px;
         padding: 18px 30px;
+        min-height: 76px;
         background-color: #F3F5F8;
     }
         .opportunities__summary {
