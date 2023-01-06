@@ -125,9 +125,11 @@
         margin-top: 28px;
     }
 
-
-
     .opportunities__detailed-item {
         padding: 34px 30px 100px;
         max-width: 731px;
+    }
+
+    .opportunities__form {
+        padding: 21px 30px 100px;
     }
