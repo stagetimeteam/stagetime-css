@@ -51,7 +51,7 @@
         }
 
 
-    .lock__preview {
+    .lock__handler {
         position: absolute;
         left: 87px;
         top: 6px;
@@ -65,7 +65,7 @@
         transition: left 0.5s var(--ease-out-circ);
     }
 
-    .lock__widget:not(:checked) ~ .lock__preview {
+    .lock__widget:not(:checked) ~ .lock__handler {
         left: 6px;
     }
         .lock__icon {
@@ -77,7 +77,7 @@
                 transition: transform 0.2s ease;
             }
 
-            .lock__widget:not(:checked) ~ .lock__preview #handler {
+            .lock__widget:not(:checked) ~ .lock__handler #handler {
                 transform: rotate(-18deg);
             }
 
