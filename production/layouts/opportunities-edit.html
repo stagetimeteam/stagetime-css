@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html class="has-sidebar" lang="en-US">
+<html class="has-sidebar sidebar-collapsed" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Collections</title>
+        <title>Opportunities</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1673014930">
         <link rel="stylesheet" href="../styles/style.css?1673014930">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1673014930" media="(max-width: 767px)">
     </head>
     <body>
 
@@ -628,44 +629,343 @@
 
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="collections">
-                <div class="collections__head">
-                    <div class="collections__intro">
-                        Collections allow you and your team members, in house or across the globe, to collaborate for sourcing, evaluating, and tracking talent groups. Use Collections to hire one soloist or to keep track of your top candidates over time.
-                    </div>
-                    <a class="collections__add button button--accept" href="#">
-                        <svg class="button__icon button__icon--left" width="24" height="24">
-                            <use xlink:href="../symbols/symbols.svg?1673014930#24-plus-frame"></use>
-                        </svg>
-                        Create New Collection
-                    </a>
-                </div>
-                <div class="collections__body scrollbar scrollbar-macosx">
-                    <div class="new new--category">
-                        <svg class="new__icon" width="24" height="24">
-                            <use xlink:href="../symbols/symbols.svg?1673014930#24-category"></use>
-                        </svg>
-                        <div class="new__prefix">
-                            Create a new collection
-                        </div>
-                        <h1 class="new__heading">
-                            What’s the name of your Collection?
+            <div class="opportunities">
+                <div class="opportunities__head">
+                    <div class="opportunities__summary">
+                        <h1 class="opportunities__heading">
+                            <svg class="opportunities__icon" width="24" height="24">
+                                <use xlink:href="../symbols/symbols.svg?1673014930#24-bag-3"></use>
+                            </svg>
+                            Add an Opportunity
                         </h1>
-                        <div class="new__note">
-                            Once you’ve created your Collection, you can add talent and team members and start collaborating.
+                    </div>
+                </div>
+                <div class="opportunities__form edit-opportunity">
+                    <div class="edit-opportunity__head">
+                        <div class="edit-opportunity__note">
+                            Complete the information below to add an opportunity from yourself or on behalf of an organization. If you have any questions or would like to suggest an additional field, contact us at <a class="link link--text-color" href="mailto:support@stagetime.com">support@stagetime.com</a>.
                         </div>
-                        <div class="new__field">
-                            <div class="input input--large input--classic-font">
-                                <input class="input__widget" type="text" placeholder="Ex: Arizona Violinists or Utah Opera Barber of Seville">
+                        <div class="edit-opportunity__operations">
+                            <label>
+                                <input type="checkbox" checked>
+                                Open
+                            </label>
+                            <button type="button">
+                                Delete
+                            </button>
+                        </div>
+                    </div>
+                    <div class="edit-opportunity__body">
+                        <div class="edit-opportunity__primary">
+                            <div class="edit-opportunity__summary">
+                                <div class="edit-opportunity__type">
+                                    <label class="choice choice--radio choice--alternate">
+                                        <input class="choice__widget" type="radio" name="type" checked>
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label">Organization</span>
+                                    </label>
+                                    <label class="choice choice--radio choice--alternate">
+                                        <input class="choice__widget" type="radio" name="type">
+                                        <i class="choice__icon" role="presentation"></i>
+                                        <span class="choice__label">Individual</span>
+                                    </label>
+                                </div>
+                                <div class="edit-opportunity__title">
+                                    <div class="input input--larger-font input--scanner">
+                                        <input class="input__widget" type="text" placeholder="Agency* or Manager">
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                                             src="../temp/organization-a-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/organization-b-44x44@2x.jpg 2x"
+                                                             src="../temp/organization-b-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/organization-c-44x44@2x.jpg 2x"
+                                                             src="../temp/organization-c-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                             src="../temp/person-a-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="The Dallas Opera"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>The Lyric Opera of Chicago</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                             src="../temp/person-a-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="The Dallas Opera"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>The Dallas Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                             src="../temp/person-a-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>Cicely Parnas</strong>, Associate Manager
+                                                    </div>
+                                                </a>
+                                                <a class="management-suggest" href="#">
+                                                    <div class="management-suggest__preview avatar avatar--non-clickable">
+                                                        <img class="avatar__image"
+                                                             srcset="../temp/person-a-44x44@2x.jpg 2x"
+                                                             src="../temp/person-a-44x44.jpg"
+                                                             width="44"
+                                                             height="44"
+                                                             alt="Mark Zuckerberg"
+                                                        >
+                                                    </div>
+                                                    <div class="management-suggest__name">
+                                                        <strong>Ben Bliss</strong>, Associate Manager
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <!-- temp -->
+                                            <br>
+                                            or:
+                                            <br>
+                                            <!--/temp -->
+
+                                            <div class="input__no-matches even-simpler-null">
+                                                Nothing is found
+                                            </div>
+                                            <div class="input__alt-matches null-join">
+                                                <div class="null-join__message">
+                                                    <strong>Don’t see who you’re looking for?</strong> Add this organization to Stagetime.
+                                                </div>
+                                                <button class="null-join__action button button--dropdown-submit" type="button">
+                                                    <svg class="button__icon" width="16" height="16">
+                                                        <use xlink:href="../symbols/symbols.svg?1673014930#16-plus-tiny"></use>
+                                                    </svg>
+                                                    Add
+                                                </button>
+                                            </div>
+                                            <div class="input__alt-matches null-join">
+                                                <div class="null-join__message">
+                                                    <strong>Don’t see who you’re looking for?</strong> Invite your manager to join Stagetime.
+                                                </div>
+                                                <button class="null-join__action button button--dropdown-submit" type="button">
+                                                    <svg class="button__icon" width="24" height="24">
+                                                        <use xlink:href="../symbols/symbols.svg?1673014930#24-envelope"></use>
+                                                    </svg>
+                                                    Invite
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    when selected replace with:
+                                    <div class="management-suggest management-suggest--selected">
+                                        <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                                 src="../temp/organization-a-44x44.jpg"
+                                                 width="44"
+                                                 height="44"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </div>
+                                        <div class="management-suggest__name">
+                                            <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                        </div>
+                                        <button class="management-suggest__delete action action--flipped" type="button">
+                                            <span class="action__image">
+                                                <svg class="action__icon" width="16" height="16">
+                                                    <use xlink:href="../symbols/symbols.svg?1673014930#16-cross"></use>
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <label class="edit-opportunity__currently choice choice--checkbox choice--alternate">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">I am currently affiliated with this organization</span>
+                                </label>
+                                <div class="edit-opportunity__are-not-hint">
+                                    It’s alright if you aren’t. The Opportunity will still be listed.
+                                </div>
+                            </div>
+                            <div class="edit-opportunity__data">
+                                <div class="edit-opportunity__field input input--classic-font">
+                                    <input class="input__widget" type="text" placeholder="Opportunity Title*">
+                                </div>
+                                <div class="edit-opportunity__field input input--classic-font">
+                                    <input class="input__widget" type="url" placeholder="Application URL*">
+                                </div>
+                                <div class="edit-opportunity__field input input--classic-font input--scanner">
+                                    <input class="input__widget" type="text" placeholder="Location*">
+                                    <div class="input__dropdown">
+                                        <div class="input__options">
+                                            <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                                            <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                                            <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                                            <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                                            <a class="input__suggest input__suggest--location" href="#">Paris, France</a>
+                                            <a class="input__suggest input__suggest--location" href="#">Paris, Texas</a>
+                                        </div>
+
+                                        <!-- temp -->
+                                        <br>
+                                        or:
+                                        <br>
+                                        <!--/temp -->
+
+                                        <div class="input__no-matches even-simpler-null">
+                                            Nothing is found
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-opportunity__field input input--classic-font input--content-width-dropdown">
+                                    <svg class="input__right-icon" width="20" height="20">
+                                        <use xlink:href="../symbols/symbols.svg?1673014930#24-calendar-2"></use>
+                                    </svg>
+                                    <input class="input__widget" type="text" placeholder="Deadline*">
+                                    <div class="input__dropdown">
+                                        Calendar plugin here
+                                    </div>
+                                </div>
+                                <div class="edit-opportunity__field input input--classic-font input--picker">
+                                    <input class="input__widget" type="text" placeholder="Opportunity category*" readonly>
+                                    <div class="input__dropdown">
+                                        <div class="input__options">
+                                            <button class="input__suggest" type="button">Performance Job</button>
+                                            <button class="input__suggest" type="button">Non-performance Job</button>
+                                            <button class="input__suggest" type="button">Competition/Festival</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-opportunity__field input input--classic-font input--picker">
+                                    <input class="input__widget" type="text" placeholder="Contract type*" readonly>
+                                    <div class="input__dropdown">
+                                        <div class="input__options">
+                                            <button class="input__suggest" type="button">Full-time</button>
+                                            <button class="input__suggest" type="button">Part-time</button>
+                                            <button class="input__suggest" type="button">Per call</button>
+                                            <button class="input__suggest" type="button">Flat fee</button>
+                                            <button class="input__suggest" type="button">Extra work/substitute</button>
+                                            <button class="input__suggest" type="button">Other</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="edit-opportunity__field edit-opportunity__field--rate">
+                                    <div class="input input--larger-font input--classic-font">
+                                        <input class="input__widget" type="text" placeholder="Compensation rate or range*">
+                                    </div>
+                                    <div class="input input--larger-font input--picker input--classic-font">
+                                        <input class="input__widget" type="text" placeholder="Type*" readonly>
+                                        <div class="input__dropdown">
+                                            <div class="input__options">
+                                                <button class="input__suggest" type="button">Per hour</button>
+                                                <button class="input__suggest" type="button">Per call</button>
+                                                <button class="input__suggest" type="button">Salary</button>
+                                                <button class="input__suggest" type="button">Flat free</button>
+                                                <button class="input__suggest" type="button">Prize</button>
+                                                <button class="input__suggest" type="button">Unpaid</button>
+                                                <button class="input__suggest" type="button">TBD</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <label class="edit-opportunity__field choice choice--checkbox choice--alternate">
+                                    <input class="choice__widget" type="checkbox">
+                                    <i class="choice__icon" role="presentation"></i>
+                                    <span class="choice__label">Accept Stagetime profiles as application</span>
+                                </label>
                             </div>
                         </div>
-                        <button class="new__submit button button--submit-bar" type="submit">
-                            Create Collection
-                        </button>
+                        <div class="edit-opportunity__secondary">
+                            <div class="edit-opportunity__description input input--classic-font input--area">
+                                <textarea class="input__widget" placeholder="Description *" rows="13"></textarea>
+                            </div>
+                            <div class="edit-opportunity__tags">
+                                <div class="edit-opportunity__section">
+                                    <b class="edit-opportunity__sub-section-heading">
+                                        Industry & Specialty Tags
+                                    </b>
+                                    <div class="edit-opportunity__sub-section-note">
+                                        Add up to four Industry & Specialty tags. Adding Tags will improve search results.
+                                    </div>
+                                    <div class="edit-opportunity__sub-section-field">
+                                        <!-- temp -->
+                                        <div style="height: 40px; background: purple;"></div>
+                                        <!--/temp -->
+                                    </div>
+                                </div>
+                                <div class="edit-opportunity__section">
+                                    <b class="edit-opportunity__sub-section-heading">
+                                        Instrument or Discipline
+                                    </b>
+                                    <div class="edit-opportunity__sub-section-note">
+                                        Add up to four instruments or disciplines. Adding these will improve search results.
+                                    </div>
+                                    <div class="edit-opportunity__sub-section-field input input--larger-font input--classic-font">
+                                        <input class="input__widget" type="text" placeholder="Instrument or Discipline">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-opportunity__footer">
+                                <button class="button button--frame-bar" type="button">Cancel</button>
+                                <button class="button button--side-submit" type="button">Add Opportunity</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
 
@@ -916,6 +1216,51 @@
                                 <button class="button button--modal-submit" type="button">
                                     Save
                                 </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal--588px fade" id="message" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="modal-body">
+                            <div class="message-modal">
+                                <div class="message-modal__person">
+                                    <a class="message-modal__preview avatar avatar--less-squared" href="#">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-80x80@2x.jpg 2x"
+                                             src="../temp/person-a-80x80.jpg"
+                                             width="80"
+                                             height="80"
+                                             alt="Mark Zuckerberg"
+                                        >
+                                    </a>
+                                    <div class="message-modal__name">
+                                        <a class="link link--text-alike" href="#">Leah Hawkins</a>
+                                    </div>
+                                    <div class="message-modal__note">
+                                        Soprano
+                                    </div>
+                                </div>
+                                <button class="message-modal__close action action--flipped" type="button" data-dismiss="modal">
+                                    <span class="action__image">
+                                        <svg class="action__icon" width="16" height="16">
+                                            <use xlink:href="../symbols/symbols.svg?1673014930#16-cross"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                                <div class="message-modal__form">
+                                    <div class="message-modal__field input input--larger-font input--area">
+                                        <textarea class="input__widget" placeholder="Message" rows="3"></textarea>
+                                    </div>
+                                    <button class="message-modal__submit button button--card-submit" type="button">
+                                        Send
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
