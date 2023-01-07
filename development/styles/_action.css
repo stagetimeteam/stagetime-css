@@ -513,3 +513,14 @@
         color: #AAAAAA;
     }
 
+
+
+.action--largest.action--flipped {
+    width: 54px;
+    height: 54px;
+}
+    .action--largest .action__image {
+        width: 54px;
+        height: 54px;
+    }
+

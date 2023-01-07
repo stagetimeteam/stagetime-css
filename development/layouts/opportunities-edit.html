@@ -562,13 +562,19 @@
                             Complete the information below to add an opportunity from yourself or on behalf of an organization. If you have any questions or would like to suggest an additional field, contact us at <a class="link link--text-color" href="mailto:support@stagetime.com">support@stagetime.com</a>.
                         </div>
                         <div class="edit-opportunity__operations">
-                            <label>
-                                <input type="checkbox" checked>
-                                Open
+                            <label class="lock">
+                                <input class="lock__widget" type="checkbox">
+                                <span class="lock__status">
+                                    <span class="lock__unlocked">Open</span>
+                                    <span class="lock__locked">Closed</span>
+                                </span>
+                                <span class="lock__handler"></span>
                             </label>
-                            <button type="button">
-                                Delete
-                            </button>
+                            <a class="action action--flipped action--largest" href="#">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/24-delete.svg" width="36" height="36" alt="">
+                                </span>
+                            </a>
                         </div>
                     </div>
                     <div class="edit-opportunity__body">

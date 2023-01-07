@@ -3,6 +3,7 @@
 }
     .edit-opportunity__head {
         position: relative;
+        max-width: 1200px;
     }
         .edit-opportunity__note {
             max-width: 679px;
@@ -16,6 +17,9 @@
             position: absolute;
             right: 0;
             top: 0;
+            display: flex;
+            align-items: center;
+            gap: 23px;
         }
 
     .edit-opportunity__body {
