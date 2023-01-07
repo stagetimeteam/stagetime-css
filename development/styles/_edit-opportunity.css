@@ -3,7 +3,7 @@
 }
     .edit-opportunity__head {
         position: relative;
-        max-width: 1200px;
+        max-width: 1240px;
     }
         .edit-opportunity__note {
             max-width: 679px;
@@ -25,16 +25,15 @@
     .edit-opportunity__body {
         margin-top: 29px;
         border-top: 1px solid #E8E8E8;
+        max-width: 1228px;
         padding-top: 24px;
-        display: flex;
-        align-self: flex-start;
+        display: grid;
+        grid-template-columns: 35fr 65fr;
         gap: 40px;
     }
 
     .edit-opportunity__primary {
-        width: 31.3225%;
         flex-shrink: 0;
-        max-width: 405px;
     }
         .edit-opportunity__summary {
             padding: 17px 30px 23px;
@@ -83,8 +82,6 @@
             }
 
     .edit-opportunity__secondary {
-        width: 57.2312%;
-        max-width: 740px;
         flex-shrink: 0;
     }
         .edit-opportunity__description {

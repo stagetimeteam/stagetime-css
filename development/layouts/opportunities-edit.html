@@ -570,7 +570,7 @@
                                 </span>
                                 <span class="lock__handler"></span>
                             </label>
-                            <a class="action action--flipped action--largest" href="#">
+                            <a class="action action--flipped action--largest" href="#" data-toggle="modal" data-target="#opportunity-delete">
                                 <span class="action__image">
                                     <img class="action__icon" src="../symbols/24-delete.svg" width="36" height="36" alt="">
                                 </span>
@@ -879,6 +879,28 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- temp -->
+                <center>or:</center>
+                <!--/temp -->
+
+                <div class="opportunities__added">
+                    <div class="added">
+                        <div class="added__preview">
+                            <img class="added__icon" src="../symbols/24-check-rounded-corners.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="added__heading">
+                            Opportunity Successfully Added
+                        </div>
+                        <div class="added__note">
+                            Good luck on your search for the perfect candidate.
+                        </div>
+                        <div class="added__operations">
+                            <a class="button button--white" href="#">View opportunity</a>
+                            <a class="button button--white" href="#">View opportunity</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -1176,6 +1198,22 @@
             </div>
         </div>
 
+        <div class="modal modal--380px fade" id="opportunity-delete" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-window">
+                        <div class="confirmation">
+                            <img class="confirmation__icon" src="../symbols/24-delete2.svg" width="24" height="24" alt="">
+                            <div class="confirmation__message">
+                                Are you sure you want to delete this opportunity? This step cannot be undone.
+                            </div>
+                            <button class="confirmation__submit button button--black" type="button">Delete</button>
+                            <button class="confirmation__close link link--fading" type="button" data-dismiss="modal">Go back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
