@@ -610,16 +610,17 @@
             fill: #FFFFFF;
         }
 
+        .operations--user-primary .operations__handler:hover .operations__icon {
+            fill: #FFFFFF;
+        }
+
+        .operations--user-primary .operations__handler:active .operations__icon {
+            fill: #FFFFFF;
+        }
+
     .operations--user-primary .operations__dropdown {
         top: 100%;
         right: 0;
         margin-top: 6px;
         min-width: 140px;
     }
-
-    .operations--user-primary .menu__link {
-        /*color: #000000;*/
-    }
-        .operations--user-primary .menu__icon {
-            /*fill: #000000;*/
-        }
