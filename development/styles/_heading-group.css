@@ -1,12 +1,12 @@
 .heading-group {
     display: flex;
     align-items: flex-start;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 29px, var(--theme-light) 29px, var(--theme-light) 30px, rgba(0, 0, 0, 0) 30px, rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 32px, var(--theme-light) 32px, var(--theme-light) 33px, rgba(0, 0, 0, 0) 33px, rgba(0, 0, 0, 0));
 }
     .heading-group__heading {
         display: inline-block;
         vertical-align: top;
-        margin-top: 2px;
+        margin-top: 5px;
         padding-right: 24px;
         background-color: #FFFFFF;
         font-weight: normal;
@@ -29,31 +29,16 @@
         padding-left: 20px;
         gap: 6px;
     }
-        .heading-group__action {
-            margin-left: 8px;
+
+        .heading-group__join {
+            margin-top: 3px;
         }
 
-        .heading-group__action:first-child {
-            margin-left: 0;
-        }
-            .heading-group__action.button,
-            .heading-group__action .button {
-                min-width: 114px;
-            }
-
-            .heading-group__join {
-
-            }
-
-            .heading-group__join.button,
-            .heading-group__join .button {
-                width: 201px;
-            }
-
-        .heading-group__dropdown-actions {
-
+        .heading-group__join.button,
+        .heading-group__join .button {
+            width: 201px;
         }
 
         .heading-group__edit {
-            margin-top: -10px;
+
         }
