@@ -1,11 +1,9 @@
 .invite {
-    width: 588px;
-    background-color: #FFFFFF;
-    border-radius: 13px;
+
 }
     .invite__head {
         position: relative;
-        padding: 27px 33px 24px 162px;
+        padding: 21px 33px 24px 102px;
         border-bottom: 1px solid #E8E8E8;
     }
         .invite__photo {
@@ -13,12 +11,20 @@
             left: 33px;
             top: 24px;
         }
+            .invite__photo .avatar__image {
+                width: 48px;
+                height: 48px;
+            }
 
         .invite__name {
             font-weight: 600;
             font-size: 21px;
-            color: #9CB2BE;
+            color: #757575;
         }
+            .invite__connect {
+                display: none;
+            }
+
             .invite__name .link--text-alike {
                 transition: opacity var(--transition-hover);
             }
@@ -27,7 +33,15 @@
                 opacity: 0.7;
             }
 
+        .invite__customizing {
+            margin-top: 9px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #545454;
+        }
+
         .invite__calling {
+            display: none;
             margin-top: 9px;
             font-size: 16px;
             line-height: 20px;
@@ -35,13 +49,32 @@
         }
 
         .invite__note {
+            display: none;
             margin-top: 28px;
             font-size: 13px;
             line-height: 20px;
             color: #757575;
         }
 
+        .invite__hint {
+            display: flex;
+            align-items: center;
+            padding: 21px 32px 24px;
+        }
+            .invite__check {
+                margin-right: 17px;
+                vertical-align: top;
+                fill: #333333;
+            }
+
+            .invite__hint-message {
+                font-size: 13px;
+                line-height: 18px;
+                color: #757575;
+            }
+
         .invite__body {
+            display: none;
             padding: 16px 33px 26px;
         }
             .invite__field {
@@ -55,22 +88,74 @@
                 color: #757575;
             }
 
-        .invite__footer {
-            border-top: 1px solid #E8E8E8;
-            padding: 15px 33px 19px;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-end;
+
+
+
+.invite--expanded {
+    /*width: 588px;*/
+    /*background-color: #FFFFFF;*/
+    /*border-radius: 13px;*/
+}
+    .invite--expanded .invite__head {
+        /*position: relative;*/
+        padding-left: 162px;
+        /*border-bottom: 1px solid #E8E8E8;*/
+    }
+        .invite--expanded .invite__photo {
+            /*position: absolute;*/
+            /*left: 33px;*/
+            /*top: 24px;*/
         }
-            .invite__action {
-                margin-left: 8px;
+            .invite--expanded .invite__photo .avatar__image {
+                width: 104px;
+                height: 104px;
             }
 
-            .invite__action:first-child {
-                margin-left: 0;
+        .invite--expanded .invite__name {
+            /*font-weight: 600;*/
+            /*font-size: 21px;*/
+            /*color: #757575;*/
+        }
+            .invite--expanded .invite__connect {
+                display: inline;
             }
 
-            .invite__action.button,
-            .invite__action .button {
-                font-size: 16px;
+            .invite--expanded .invite__name .link--text-alike {
+                /*transition: opacity var(--transition-hover);*/
+            }
+
+            .invite--expanded .invite__name .link--text-alike:hover {
+                /*opacity: 0.7;*/
+            }
+
+        .invite--expanded .invite__customizing {
+            display: none;
+        }
+
+        .invite--expanded .invite__calling {
+            display: block;
+        }
+
+        .invite--expanded .invite__note {
+            display: block;
+        }
+
+        .invite--expanded .invite__hint {
+            display: none;
+            /*padding: 16px 33px 26px;*/
+        }
+
+        .invite--expanded .invite__body {
+            display: block;
+            /*padding: 16px 33px 26px;*/
+        }
+            .invite--expanded .invite__field {
+                /*margin-top: 4px;*/
+            }
+
+            .invite--expanded .invite__knowing {
+                /*margin-top: 27px;*/
+                /*font-size: 13px;*/
+                /*line-height: 20px;*/
+                /*color: #757575;*/
             }
