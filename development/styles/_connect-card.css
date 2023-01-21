@@ -156,3 +156,23 @@
             flex-shrink: 0;
             margin-left: 6px;
         }
+
+
+        /* first item in the list being cut by overflow */
+        .carousel__item:first-child .operations__dropdown {
+            right: auto;
+            left: -110px;
+        }
+
+
+        /* second row cards are being cut by overflow so we drop them up */
+        .connect-card + .connect-card .operations__dropdown {
+            top: auto;
+            bottom: 100%;
+            margin-bottom: 4px;
+        }
+
+        /* also flip arrow */
+        .connect-card + .connect-card .operations--arrow.operations--expanded .operations__icon {
+            transform: scaleY(-1);
+        }
