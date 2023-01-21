@@ -155,6 +155,7 @@
         .connect-card__operations {
             flex-shrink: 0;
             margin-left: 6px;
+<<<<<<< HEAD
         }
 
 
@@ -175,4 +176,6 @@
         /* also flip arrow */
         .connect-card + .connect-card .operations--arrow.operations--expanded .operations__icon {
             transform: scaleY(-1);
+=======
+>>>>>>> d719be9859342a7d9b170d18ec80b146f6fb9842
         }

@@ -556,12 +556,20 @@
             width: 16px;
             height: 16px;
             margin: 7px;
+<<<<<<< HEAD
             fill: #FFFFFF !important;
+=======
+            fill: #FFFFFF;
+>>>>>>> d719be9859342a7d9b170d18ec80b146f6fb9842
         }
 
     .operations--arrow .operations__dropdown {
         top: 100%;
+<<<<<<< HEAD
         min-width: 140px;
+=======
+        min-width: 174px;
+>>>>>>> d719be9859342a7d9b170d18ec80b146f6fb9842
         margin-top: 4px;
         right: 0;
         white-space: nowrap;
