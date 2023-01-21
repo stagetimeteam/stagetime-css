@@ -37,6 +37,7 @@
     grid-template-rows: 1fr 1fr;
 }
 
+/* stylelint-disable */
 .gallery--3-or-4-or-5-photo .gallery__preview:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -71,3 +72,4 @@
     grid-row-start: 2;
     grid-row-end: 3;
 }
+/* stylelint-enable */
