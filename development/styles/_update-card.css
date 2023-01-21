@@ -72,6 +72,10 @@
         }
 
     .update-card__attachment {
+        margin-top: 10px;
+    }
+
+    .update-card__footer + .update-card__attachment {
         margin-top: 18px;
     }
 
