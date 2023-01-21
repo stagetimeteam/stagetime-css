@@ -71,6 +71,10 @@
             gap: 6px;
         }
 
+    .update-card__attachment {
+        margin-top: 18px;
+    }
+
 
 .update-card--highlighted {
     background-color: #E8EDF4;
