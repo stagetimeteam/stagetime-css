@@ -24,6 +24,38 @@
 
             <button class="button" type="button">Add new</button>
 
+
+            <br>
+            <br>
+            <br>
+            <h2>.button--disabled</h2>
+            <p>
+                Make sure to also add attribute <b>disabled</b>:
+            </p>
+
+            <button class="button button--disabled" type="button" disabled>Add new</button>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.button--inactive</h2>
+            <p>
+                This is very tricky case. This is kind of disabled button that doesn't look disabled.
+                It may happen when <b>Connect</b> button changes to <b>Connected</b> or something alike.
+            </p>
+            <p>
+                This can either be done via normal <b>div</b> tag:
+            </p>
+
+            <div class="button button--inactive">Connected</div>
+
+            <p>
+                Or button with <b>disabled</b> attribute:
+            </p>
+
+            <button class="button button--inactive" type="button" disabled>Connected</button>
+
             <br>
             <br>
             <br>

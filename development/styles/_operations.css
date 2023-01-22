@@ -556,12 +556,12 @@
             width: 16px;
             height: 16px;
             margin: 7px;
-            fill: #FFFFFF;
+            fill: #FFFFFF !important;
         }
 
     .operations--arrow .operations__dropdown {
         top: 100%;
-        min-width: 174px;
+        min-width: 140px;
         margin-top: 4px;
         right: 0;
         white-space: nowrap;
@@ -609,3 +609,59 @@
         .operations--classics .menu__icon {
             fill: #000000;
         }
+
+
+.operations--user-primary {
+
+}
+    .operations--user-primary .operations__handler {
+        /*width: 40px;*/
+        /*height: 40px;*/
+        /*padding: 4px;*/
+        /*background-color: #FFFFFF;*/
+        /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
+        /*border-radius: 50%;*/
+        /*text-indent: 200%;*/
+        /*white-space: nowrap;*/
+        /*overflow: hidden;*/
+        width: 24px;
+        height: 40px;
+        background-color: var(--theme-main);
+        border-radius: 4px;
+        padding: 0;
+        text-indent: 200%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .operations--user-primary .operations__handler:hover {
+        background-color: var(--theme-main-hover);
+    }
+
+    .operations--user-primary .operations__handler:active {
+        background-color: var(--theme-main-press);
+    }
+        .operations--user-primary .operations__icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            fill: #FFFFFF;
+        }
+
+        .operations--user-primary .operations__handler:hover .operations__icon {
+            fill: #FFFFFF;
+        }
+
+        .operations--user-primary .operations__handler:active .operations__icon {
+            fill: #FFFFFF;
+        }
+
+    .operations--user-primary .operations__dropdown {
+        top: 100%;
+        right: 0;
+        margin-top: 6px;
+        min-width: 140px;
+    }

@@ -9,7 +9,7 @@
         font-weight: 600;
         font-size: 13px;
         line-height: 18px;
-        color: #545454;
+        color: #44474A;
         text-align: left;
         white-space: nowrap;
         text-decoration: none;
@@ -27,7 +27,7 @@
             top: 12px;
             width: 16px;
             height: 16px;
-            fill: #C5C5C5;
+            fill: currentColor;
             transition: fill var(--transition-hover);
         }
 
