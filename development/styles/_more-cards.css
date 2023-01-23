@@ -20,6 +20,7 @@
         font-size: 16px;
         line-height: 18px;
         color: #545454;
+        text-decoration: none;
     }
         .more-cards__handler {
             position: relative;
