@@ -8,7 +8,13 @@
         .gallery__preview {
             display: inline-block;
             vertical-align: top;
+            transition: opacity var(--transition-hover);
         }
+
+        .gallery__preview:hover {
+            opacity: 0.8;
+        }
+
             .gallery__image {
                 width: 100%;
                 height: auto;
