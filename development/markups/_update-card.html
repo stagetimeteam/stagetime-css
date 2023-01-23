@@ -165,9 +165,80 @@
             <br>
             <br>
             <br>
-            <h2>Card for user</h2>
+            <h2>Affiliation cards</h2>
             <p>
                 Remove <b>.avatar--less-squared</b> from avatar. Add <b>.update-card__footer</b>:
+            </p>
+
+            <div class="update-card">
+                <a class="update-card__preview avatar avatar--alt-hover" href="#">
+                    <img class="avatar__image"
+                         srcset="../temp/person-a-48x48@2x.jpg 2x"
+                         src="../temp/person-a-48x48.jpg"
+                         width="48"
+                         height="48"
+                         alt="Mark Zuckerberg"
+                    >
+                </a>
+                <div class="update-card__heading">
+                    <a class="link link--text-alike" href="#">Elena Villalón</a>
+                    <span class="update-card__time">1h</span>
+                </div>
+                <div class="update-card__content">
+                    Added new education to their profile / Added a new career highlight.
+                </div>
+                <div class="update-card__reaction reaction reaction--circle">
+                    <button class="reaction__handler" type="button">
+                        <span class="reaction__pill">
+                            <img class="reaction__icon" src="../symbols/20-fire-with-background.svg" width="20" height="20" alt="">
+                            <span class="reaction__counter">4</span>
+                        </span>
+                    </button>
+                    <div class="reaction__dropdown">
+                        <div class="reaction__bubble">
+                            <div class="reaction__row">
+                                <a class="link link--text-alike" href="#">Gretchen Krupp</a>
+                            </div>
+                            <div class="reaction__row">
+                                <a class="link link--text-alike" href="#">Michael Shell</a>
+                            </div>
+                            <div class="reaction__row">
+                                <a class="link link--text-alike" href="#">AJ O’Reilly</a>
+                            </div>
+                            <div class="reaction__row">
+                                <a class="link link--text-alike" href="#">Gretchen Krupp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="update-card__footer">
+                    <div class="update-card__organisation org-card">
+                        <a class="org-card__preview avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image"
+                                 srcset="../temp/organization-a-30x30@2x.jpg 2x"
+                                 src="../temp/organization-a-30x30.jpg"
+                                 width="30"
+                                 height="30"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </a>
+                        <div class="org-card__heading">
+                            <a class="link link--text-alike" href="#">Ferrando</a>, Le nozze di Figaro
+                        </div>
+                        <div class="org-card__note">
+                            Lyric Opera of Chicago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <br>
+            <br>
+            <h2>Schedule cards</h2>
+            <p>
+                Case with <b>.update-card__date</b>
             </p>
 
             <div class="update-card">
@@ -256,14 +327,16 @@
             </div>
 
             <p>
-                See variations for calendar in <a href="_event-date.html">.event-date</a>
+                Date can be presented in many different formats. See variations for calendar in <a href="_event-date.html">.event-date</a>
             </p>
 
-            <br>
             <br>
             <h3>
                 Card for user with multiple dates
             </h3>
+            <p>
+                Add a series of <b>.event-date</b> and add <b>.more-cards</b> in the end if needed.
+            </p>
 
             <div class="update-card">
                 <a class="update-card__preview avatar avatar--alt-hover" href="#">
@@ -396,10 +469,16 @@
             </div>
 
 
+
+
+
+
+
+
             <br>
             <br>
             <br>
-            <h2>With gallery</h2>
+            <h2>Photos cards</h2>
             <p>
                 Please add <b>.update-card__attachment</b> element and <a href="_gallery.html">.gallery</a> as a component inside.
                 Make sure to see <a href="_gallery.html">.gallery</a> doc file because there are different cases.
