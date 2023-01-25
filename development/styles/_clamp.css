@@ -1,0 +1,14 @@
+.clamp {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.clamp--2-rows {
+    -webkit-line-clamp: 2;
+}
+
+.clamp--3-rows {
+    -webkit-line-clamp: 3;
+}
