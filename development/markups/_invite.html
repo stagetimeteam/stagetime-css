@@ -18,47 +18,130 @@
             <br>
             <br>
             <h1>.invite</h1>
+            <p>
+                Use it inside of <b>.modal--588px</b>
+            </p>
+            <br>
 
 
-            <div class="invite">
-                <div class="invite__head">
-                    <a class="invite__photo avatar" href="#">
-                        <img class="avatar__image"
-                             srcset="../temp/person-a-104x104@2x.jpg 2x"
-                             src="../temp/person-a-104x104.jpg"
-                             width="104"
-                             height="104"
-                             alt="Mark Zuckerberg"
-                        >
-                    </a>
-                    <div class="invite__name">
-                        <a class="link link--text-alike" href="#">Jonathan Bryan</a>
-                    </div>
-                    <div class="invite__calling">Invite Jonathan to connect</div>
-                    <div class="invite__note">Build a quality netowrk by connecting with people you know.</div>
-                </div>
-                <div class="invite__body">
-                    <div class="invite__field">
-                        <label class="label" for="#temp-invite">
-                            Message (required)
-                        </label>
-                        <div class="input input--area input--extendable-via-plugin">
-                            <textarea class="input__widget" placeholder="Ex: We know each other from..." rows="5" id="temp-invite"></textarea>
+            <div class="modal-window">
+                <div class="modal-body">
+                    <div class="invite">
+                        <div class="invite__head">
+                            <a class="invite__photo avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                            <div class="invite__name">
+                                <span class="invite__connect">Connect with</span> <a class="link" href="#">Jonathan Bryan</a>
+                            </div>
+                            <div class="invite__customizing">You can customize this invitation</div>
+                            <div class="invite__calling">Invite Jonathan to connect</div>
+                            <div class="invite__note">Build a quality netowrk by connecting with people you know.</div>
+                        </div>
+                        <div class="invite__hint">
+                            <img class="invite__check" src="../symbols/30-check-outline.svg" width="30" height="30" alt="">
+                            <div class="invite__hint-message">
+                                You can <a class="link link--inherit" href="#">add a note</a> to personalize your invitation to <a class="link link--text-color" href="#">Jonathan Bryan</a>.
+                            </div>
+                        </div>
+                        <div class="invite__body">
+                            <div class="invite__field">
+                                <label class="label" for="#temp-invite">
+                                    Message (required)
+                                </label>
+                                <div class="input input--area input--extendable-via-plugin">
+                                    <textarea class="input__widget" placeholder="Ex: We know each other from..." rows="5" id="temp-invite"></textarea>
+                                </div>
+                            </div>
+                            <div class="invite__knowing">
+                                Don’t know Jonathan? Send a <a class="link link--text-alike" href="#">Message Request</a> to introduce yourself.
+                            </div>
                         </div>
                     </div>
-                    <div class="invite__knowing">
-                        Don’t know Jonathan? Send a <a class="link link--text-alike" href="#">Message Request</a> to introduce yourself.
+                </div>
+                <div class="modal-foot">
+                    <div class="modal-foot__operations">
+                        <button class="button button--modal-secondary" type="button">
+                            Add a message
+                        </button>
+                        <button class="button button--modal-submit" type="button">
+                            Send
+                        </button>
                     </div>
                 </div>
-                <div class="invite__footer">
-                    <button class="invite__action button button--link-alike" type="button">
-                        Cancel
-                    </button>
-                    <button class="invite__action button button--darker" type="button">
-                        Send
-                    </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.invite--expanded</h2>
+            <p>
+                Clicking <b>add a note</b> or <b>Add a message</b> toggles class <b>.invite--expanded</b>.
+                This will changes all necessary layouts inside of the <b>.invite</b> component. But
+                we still need to change modal-foot buttons on the level of modal (add cancel button).
+            </p>
+            <br>
+
+            <div class="modal-window">
+                <div class="modal-body">
+                    <div class="invite invite--expanded">
+                        <div class="invite__head">
+                            <a class="invite__photo avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                            <div class="invite__name">
+                                <span class="invite__connect">Connect with</span> <a class="link" href="#">Jonathan Bryan</a>
+                            </div>
+                            <div class="invite__customizing">You can customize this invitation</div>
+                            <div class="invite__calling">Invite Jonathan to connect</div>
+                            <div class="invite__note">Build a quality netowrk by connecting with people you know.</div>
+                        </div>
+                        <div class="invite__hint">
+                            <img class="invite__check" src="../symbols/30-check-outline.svg" width="30" height="30" alt="">
+                            <div class="invite__hint-message">
+                                You can <a class="link link--inherit" href="#">add a note</a> to personalize your invitation to <a class="link link--text-color" href="#">Jonathan Bryan</a>.
+                            </div>
+                        </div>
+                        <div class="invite__body">
+                            <div class="invite__field">
+                                <label class="label" for="#temp-invite">
+                                    Message (required)
+                                </label>
+                                <div class="input input--area input--extendable-via-plugin">
+                                    <textarea class="input__widget" placeholder="Ex: We know each other from..." rows="5" id="temp-invite"></textarea>
+                                </div>
+                            </div>
+                            <div class="invite__knowing">
+                                Don’t know Jonathan? Send a <a class="link link--text-alike" href="#">Message Request</a> to introduce yourself.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <div class="modal-foot__operations">
+                        <button class="button button--modal-cancel" type="button">
+                            Cancel
+                        </button>
+                        <button class="button button--modal-submit" type="button">
+                            Send
+                        </button>
+                    </div>
                 </div>
             </div>
+
 
 
             <br>

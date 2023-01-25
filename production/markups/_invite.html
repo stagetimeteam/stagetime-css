@@ -6,9 +6,9 @@
         <title>.invite</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1674662362">
-        <link rel="stylesheet" href="../styles/style.css?1674662362">
-        <link rel="stylesheet" href="../styles/responsiveness.css?1674662362" media="(max-width: 767px)">
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1674662723">
+        <link rel="stylesheet" href="../styles/style.css?1674662723">
+        <link rel="stylesheet" href="../styles/responsiveness.css?1674662723" media="(max-width: 767px)">
     </head>
     <body style="background-color: #F6F6F6;">
 
@@ -18,47 +18,134 @@
             <br>
             <br>
             <h1>.invite</h1>
+            <p>
+                Use it inside of <b>.modal--588px</b>
+            </p>
+            <br>
 
 
-            <div class="invite">
-                <div class="invite__head">
-                    <a class="invite__photo avatar" href="#">
-                        <img class="avatar__image"
-                             srcset="../temp/person-a-104x104@2x.jpg 2x"
-                             src="../temp/person-a-104x104.jpg"
-                             width="104"
-                             height="104"
-                             alt="Mark Zuckerberg"
-                        >
-                    </a>
-                    <div class="invite__name">
-                        <a class="link link--text-alike" href="#">Jonathan Bryan</a>
-                    </div>
-                    <div class="invite__calling">Invite Jonathan to connect</div>
-                    <div class="invite__note">Build a quality netowrk by connecting with people you know.</div>
-                </div>
-                <div class="invite__body">
-                    <div class="invite__field">
-                        <label class="label" for="#temp-invite">
-                            Message (required)
-                        </label>
-                        <div class="input input--area input--extendable-via-plugin">
-                            <textarea class="input__widget" placeholder="Ex: We know each other from..." rows="5" id="temp-invite"></textarea>
+            <div class="modal-window">
+                <div class="modal-body">
+                    <div class="invite">
+                        <div class="invite__head">
+                            <a class="invite__photo avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                            <div class="invite__name">
+                                <span class="invite__connect">Connect with</span> <a class="link" href="#">Jonathan Bryan</a>
+                            </div>
+                            <div class="invite__customizing">You can customize this invitation</div>
+                            <div class="invite__calling">Invite Jonathan to connect</div>
+                            <div class="invite__note">Build a quality netowrk by connecting with people you know.</div>
+                        </div>
+                        <div class="invite__hint">
+                            <svg class="invite__check" width="30" height="30">
+                                <use xlink:href="../symbols/symbols.svg?1674662723#30-check-outline"></use>
+                            </svg>
+                            <div class="invite__hint-message">
+                                You can <a class="link link--inherit" href="#">add a note</a> to personalize your invitation to <a class="link link--text-color" href="#">Jonathan Bryan</a>.
+                            </div>
+                        </div>
+                        <div class="invite__body">
+                            <div class="invite__field">
+                                <label class="label" for="#temp-invite">
+                                    Message (required)
+                                </label>
+                                <div class="input input--area input--extendable-via-plugin">
+                                    <textarea class="input__widget" placeholder="Ex: We know each other from..." rows="5" id="temp-invite"></textarea>
+                                </div>
+                            </div>
+                            <div class="invite__knowing">
+                                Don’t know Jonathan? Send a <a class="link link--text-alike" href="#">Message Request</a> to introduce yourself.
+                            </div>
                         </div>
                     </div>
-                    <div class="invite__knowing">
-                        Don’t know Jonathan? Send a <a class="link link--text-alike" href="#">Message Request</a> to introduce yourself.
+                </div>
+                <div class="modal-foot">
+                    <div class="modal-foot__operations">
+                        <button class="button button--modal-secondary" type="button">
+                            Add a message
+                        </button>
+                        <button class="button button--modal-submit" type="button">
+                            Send
+                        </button>
                     </div>
                 </div>
-                <div class="invite__footer">
-                    <button class="invite__action button button--link-alike" type="button">
-                        Cancel
-                    </button>
-                    <button class="invite__action button button--darker" type="button">
-                        Send
-                    </button>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <h2>.invite--expanded</h2>
+            <p>
+                Clicking <b>add a note</b> or <b>Add a message</b> toggles class <b>.invite--expanded</b>.
+                This will changes all necessary layouts inside of the <b>.invite</b> component. But
+                we still need to change modal-foot buttons on the level of modal (add cancel button).
+            </p>
+            <br>
+
+            <div class="modal-window">
+                <div class="modal-body">
+                    <div class="invite invite--expanded">
+                        <div class="invite__head">
+                            <a class="invite__photo avatar" href="#">
+                                <img class="avatar__image"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt="Mark Zuckerberg"
+                                >
+                            </a>
+                            <div class="invite__name">
+                                <span class="invite__connect">Connect with</span> <a class="link" href="#">Jonathan Bryan</a>
+                            </div>
+                            <div class="invite__customizing">You can customize this invitation</div>
+                            <div class="invite__calling">Invite Jonathan to connect</div>
+                            <div class="invite__note">Build a quality netowrk by connecting with people you know.</div>
+                        </div>
+                        <div class="invite__hint">
+                            <svg class="invite__check" width="30" height="30">
+                                <use xlink:href="../symbols/symbols.svg?1674662723#30-check-outline"></use>
+                            </svg>
+                            <div class="invite__hint-message">
+                                You can <a class="link link--inherit" href="#">add a note</a> to personalize your invitation to <a class="link link--text-color" href="#">Jonathan Bryan</a>.
+                            </div>
+                        </div>
+                        <div class="invite__body">
+                            <div class="invite__field">
+                                <label class="label" for="#temp-invite">
+                                    Message (required)
+                                </label>
+                                <div class="input input--area input--extendable-via-plugin">
+                                    <textarea class="input__widget" placeholder="Ex: We know each other from..." rows="5" id="temp-invite"></textarea>
+                                </div>
+                            </div>
+                            <div class="invite__knowing">
+                                Don’t know Jonathan? Send a <a class="link link--text-alike" href="#">Message Request</a> to introduce yourself.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-foot">
+                    <div class="modal-foot__operations">
+                        <button class="button button--modal-cancel" type="button">
+                            Cancel
+                        </button>
+                        <button class="button button--modal-submit" type="button">
+                            Send
+                        </button>
+                    </div>
                 </div>
             </div>
+
 
 
             <br>
@@ -91,59 +178,59 @@
         <script src="../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
         <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
         <script src="../vendors/select2/js/select2.min.js"></script>
-        <script src="../scripts/_global.js?1674662362"></script>
-        <script src="../scripts/_operations.js?1674662362"></script>
-        <script src="../scripts/_profile.js?1674662362"></script>
-        <script src="../scripts/_sidebar.js?1674662362"></script>
-        <script src="../scripts/_mfp.js?1674662362"></script>
-        <script src="../scripts/_search.js?1674662362"></script>
-        <script src="../scripts/_carousel.js?1674662362"></script>
-        <script src="../scripts/_player3.js?1674662362"></script>
-        <script src="../scripts/_updates.js?1674662362"></script>
-        <script src="../scripts/_side.js?1674662362"></script>
-        <script src="../scripts/_happening.js?1674662362"></script>
-        <script src="../scripts/_input.js?1674662362"></script>
-        <script src="../scripts/_edit-post.js?1674662362"></script>
-        <script src="../scripts/_post-form.js?1674662362"></script>
-        <script src="../scripts/_button.js?1674662362"></script>
-        <script src="../scripts/_quick-message.js?1674662362"></script>
-        <script src="../scripts/_explore.js?1674662362"></script>
-        <script src="../scripts/_shortcut.js?1674662362"></script>
-        <script src="../scripts/_scrollbar.js?1674662362"></script>
-        <script src="../scripts/_overlay.js?1674662362"></script>
-        <script src="../scripts/_notifications.js?1674662362"></script>
-        <script src="../scripts/_enter.js?1674662362"></script>
-        <script src="../scripts/_suggesting.js?1674662362"></script>
-        <script src="../scripts/_chat.js?1674662362"></script>
-        <script src="../scripts/_badge.js?1674662362"></script>
-        <script src="../scripts/_media-bar.js?1674662362"></script>
-        <script src="../scripts/_settings.js?1674662362"></script>
-        <script src="../scripts/_slideshow.js?1674662362"></script>
-        <script src="../scripts/_expandable-bio.js?1674662362"></script>
-        <script src="../scripts/_parallax.js?1674662362"></script>
-        <script src="../scripts/_simple-parallax.js?1674662362"></script>
-        <script src="../scripts/_anchor.js?1674662362"></script>
-        <script src="../scripts/_modal.js?1674662362"></script>
-        <script src="../scripts/_full-media-card.js?1674662362"></script>
-        <script src="../scripts/_color-selection.js?1674662362"></script>
-        <script src="../scripts/_layout-type.js?1674662362"></script>
-        <script src="../scripts/_sortable.js?1674662362"></script>
-        <script src="../scripts/_biography.js?1674662362"></script>
-        <script src="../scripts/_full-biography.js?1674662362"></script>
-        <script src="../scripts/_media-clip.js?1674662362"></script>
-        <script src="../scripts/_typing.js?1674662362"></script>
-        <script src="../scripts/_circles.js?1674662362"></script>
-        <script src="../scripts/_brief.js?1674662362"></script>
-        <script src="../scripts/_non-performer.js?1674662362"></script>
-        <script src="../scripts/_classic.js?1674662362"></script>
-        <script src="../scripts/_owl-carousel.js?1674662362"></script>
-        <script src="../scripts/_add-filter.js?1674662362"></script>
-        <script src="../scripts/_select2.js?1674662362"></script>
-        <script src="../scripts/_multiline.js?1674662362"></script>
-        <script src="../scripts/_network-news.js?1674662362"></script>
-        <script src="../scripts/_vertical-artist.js?1674662362"></script>
-        <script src="../scripts/_tabs.js?1674662362"></script>
-        <script src="../scripts/_picking.js?1674662362"></script>
+        <script src="../scripts/_global.js?1674662723"></script>
+        <script src="../scripts/_operations.js?1674662723"></script>
+        <script src="../scripts/_profile.js?1674662723"></script>
+        <script src="../scripts/_sidebar.js?1674662723"></script>
+        <script src="../scripts/_mfp.js?1674662723"></script>
+        <script src="../scripts/_search.js?1674662723"></script>
+        <script src="../scripts/_carousel.js?1674662723"></script>
+        <script src="../scripts/_player3.js?1674662723"></script>
+        <script src="../scripts/_updates.js?1674662723"></script>
+        <script src="../scripts/_side.js?1674662723"></script>
+        <script src="../scripts/_happening.js?1674662723"></script>
+        <script src="../scripts/_input.js?1674662723"></script>
+        <script src="../scripts/_edit-post.js?1674662723"></script>
+        <script src="../scripts/_post-form.js?1674662723"></script>
+        <script src="../scripts/_button.js?1674662723"></script>
+        <script src="../scripts/_quick-message.js?1674662723"></script>
+        <script src="../scripts/_explore.js?1674662723"></script>
+        <script src="../scripts/_shortcut.js?1674662723"></script>
+        <script src="../scripts/_scrollbar.js?1674662723"></script>
+        <script src="../scripts/_overlay.js?1674662723"></script>
+        <script src="../scripts/_notifications.js?1674662723"></script>
+        <script src="../scripts/_enter.js?1674662723"></script>
+        <script src="../scripts/_suggesting.js?1674662723"></script>
+        <script src="../scripts/_chat.js?1674662723"></script>
+        <script src="../scripts/_badge.js?1674662723"></script>
+        <script src="../scripts/_media-bar.js?1674662723"></script>
+        <script src="../scripts/_settings.js?1674662723"></script>
+        <script src="../scripts/_slideshow.js?1674662723"></script>
+        <script src="../scripts/_expandable-bio.js?1674662723"></script>
+        <script src="../scripts/_parallax.js?1674662723"></script>
+        <script src="../scripts/_simple-parallax.js?1674662723"></script>
+        <script src="../scripts/_anchor.js?1674662723"></script>
+        <script src="../scripts/_modal.js?1674662723"></script>
+        <script src="../scripts/_full-media-card.js?1674662723"></script>
+        <script src="../scripts/_color-selection.js?1674662723"></script>
+        <script src="../scripts/_layout-type.js?1674662723"></script>
+        <script src="../scripts/_sortable.js?1674662723"></script>
+        <script src="../scripts/_biography.js?1674662723"></script>
+        <script src="../scripts/_full-biography.js?1674662723"></script>
+        <script src="../scripts/_media-clip.js?1674662723"></script>
+        <script src="../scripts/_typing.js?1674662723"></script>
+        <script src="../scripts/_circles.js?1674662723"></script>
+        <script src="../scripts/_brief.js?1674662723"></script>
+        <script src="../scripts/_non-performer.js?1674662723"></script>
+        <script src="../scripts/_classic.js?1674662723"></script>
+        <script src="../scripts/_owl-carousel.js?1674662723"></script>
+        <script src="../scripts/_add-filter.js?1674662723"></script>
+        <script src="../scripts/_select2.js?1674662723"></script>
+        <script src="../scripts/_multiline.js?1674662723"></script>
+        <script src="../scripts/_network-news.js?1674662723"></script>
+        <script src="../scripts/_vertical-artist.js?1674662723"></script>
+        <script src="../scripts/_tabs.js?1674662723"></script>
+        <script src="../scripts/_picking.js?1674662723"></script>
 
 
     </body>

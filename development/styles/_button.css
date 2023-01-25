@@ -1030,6 +1030,29 @@
 }
 
 
+.button--modal-cancel {
+    padding: 12px 26px;
+    background-color: transparent;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+}
+
+.button--modal-cancel:hover {
+    box-shadow: none;
+    background-color: var(--panel-hover);
+    color: #757575;
+}
+
+.button--modal-cancel:active {
+    box-shadow: none;
+    background-color: var(--panel-active);
+    color: #757575;
+}
+
+
 
 
 .button--modal-action {
