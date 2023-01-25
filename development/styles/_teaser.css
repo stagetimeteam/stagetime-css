@@ -87,6 +87,7 @@
             color: #545454;
         }
             .teaser__icon {
+                flex-shrink: 0;
                 width: 24px;
                 height: 24px;
                 margin-left: -2px;
