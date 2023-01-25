@@ -1,0 +1,112 @@
+.update-card {
+    /*position: relative;*/
+    /*padding: 13px 72px 20px 77px;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    /*min-height: 72px;*/
+    /*background-color: #F8F8F9;*/
+    /*border-radius: 4px;*/
+}
+    .update-card__preview {
+        position: static;
+        margin-bottom: 8px;
+        /*left: 16px;*/
+        /*top: 12px;*/
+    }
+
+    .update-card__heading {
+        /*font-weight: 600;*/
+        /*font-size: 13px;*/
+        /*line-height: 21px;*/
+    }
+        .update-card__heading .link {
+            /*transition: opacity var(--transition-hover);*/
+        }
+        .update-card__heading .link:hover {
+            /*opacity: 0.7;*/
+        }
+
+        .update-card__time {
+            /*margin-left: 8px;*/
+            /*font-weight: normal;*/
+            /*font-size: 13px;*/
+            /*line-height: 21px;*/
+            /*color: #44474A;*/
+        }
+
+    .update-card__content {
+        /*margin-top: 1px;*/
+        /*font-size: 13px;*/
+        /*line-height: 24px;*/
+    }
+        .update-card__reaction {
+            /*position: absolute;*/
+            /*z-index: 10; !* higher than .more-cards *!*/
+            /*right: 14px;*/
+            /*top: 12px;*/
+        }
+            .update-card__reaction .reaction__dropdown {
+                /*left: auto;*/
+                /*right: 0;*/
+                /*transform: none;*/
+            }
+
+        .update-card__date {
+            margin-top: 12px;
+            /*margin-left: auto;*/
+        }
+
+
+    .update-card__footer {
+        /*margin-top: 4px;*/
+        display: block;
+        /*align-items: flex-start;*/
+    }
+        .update-card__organisation {
+            /*padding-right: 24px;*/
+            /*margin-top: 10px;*/
+        }
+
+        .update-card__date {
+            /*margin-top: 4px;*/
+            /*margin-bottom: -4px;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            /*gap: 6px;*/
+        }
+
+    .update-card__attachment {
+        /*margin-top: 10px;*/
+    }
+
+    .update-card__footer + .update-card__attachment {
+        /*margin-top: 18px;*/
+    }
+
+
+.update-card--highlighted {
+    /*background-color: #E8EDF4;*/
+}
+    .update-card--highlighted::before {
+        /*content: "";*/
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*bottom: 0;*/
+        /*display: block;*/
+        /*width: 9px;*/
+        /*background-color: #BDCCE0;*/
+        /*border-top-left-radius: 4px;*/
+        /*border-bottom-left-radius: 4px;*/
+    }
+
+
+    .update-card--highlighted .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill,
+    .update-card--highlighted .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:hover .reaction__pill {
+        /*background-color: #FAFAFA;*/
+    }
+
+    .update-card--highlighted .update-card__reaction.reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill,
+    .update-card--highlighted .update-card__reaction .reaction:not(.reaction--selected) .reaction__handler:active .reaction__pill {
+        /*background-color: #FFFFFF;*/
+    }

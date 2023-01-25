@@ -4,6 +4,13 @@
     background-color: #FFFFFF;
     border-radius: 10px;
     text-decoration: none;
+    transition: background-color var(--transition-hover),
+                border-color var(--transition-hover);
+}
+
+.teaser:hover {
+    background-color: #FCFCFC;
+    border-color: #E0E0E0;
 }
     .teaser__preview {
         position: relative;
@@ -13,7 +20,13 @@
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
         text-align: center;
+        transition: opacity var(--transition-hover);
     }
+
+        .teaser:hover .teaser__preview {
+            opacity: 0.9;
+        }
+
         .teaser__photo {
             vertical-align: top;
             border-top-left-radius: 9px;
@@ -143,6 +156,7 @@
 
 .teaser--horizontal {
     display: flex;
+    max-width: 700px; /* it doesn't look good if it's too wide */
     min-height: 62px;
     align-items: center;
     /*border: 1px solid #E8E8E8;*/
@@ -175,7 +189,6 @@
             /*object-fit: cover;*/
         }
             .teaser--horizontal .teaser__illustration {
-                margin-top: 0;
                 position: absolute;
                 left: 0;
                 top: 0;
