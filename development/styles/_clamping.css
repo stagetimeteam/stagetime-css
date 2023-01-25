@@ -1,0 +1,15 @@
+.clamping {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.clamping--2-rows {-webkit-line-clamp: 2; }
+.clamping--3-rows {-webkit-line-clamp: 3; }
+.clamping--4-rows {-webkit-line-clamp: 4; }
+.clamping--5-rows {-webkit-line-clamp: 5; }
+.clamping--6-rows {-webkit-line-clamp: 6; }
+.clamping--7-rows {-webkit-line-clamp: 7; }
+.clamping--8-rows {-webkit-line-clamp: 8; }
+.clamping--9-rows {-webkit-line-clamp: 9; }

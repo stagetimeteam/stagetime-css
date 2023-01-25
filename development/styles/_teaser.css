@@ -97,12 +97,9 @@
             }
 
             .teaser__text {
-                width: calc(100% - 36px);
-                overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
+                display: flex;
+                align-items: center;
+                min-height: 24px;
             }
 
 
