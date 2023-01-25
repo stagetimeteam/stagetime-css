@@ -137,13 +137,54 @@
             font-size: 12px;
         }
 
-    .connect-card__submit {
 
+    .connect-card__footer {
+        display: flex;
     }
-        .connect-card__submit.button,
-        .connect-card__submit .button {
-            width: 100%;
-            padding: 7px;
-            border-radius: 4px;
-            font-size: 12px;
+        .connect-card__submit {
+            flex-grow: 1;
         }
+            .connect-card__submit.button,
+            .connect-card__submit .button {
+                width: 100%;
+                padding: 7px;
+                border-radius: 4px;
+                font-size: 12px;
+            }
+
+        .connect-card__operations {
+            flex-shrink: 0;
+            margin-left: 6px;
+        }
+
+
+        /* first item in the list being cut by overflow */
+        .carousel__item:first-child .operations__dropdown {
+            right: auto;
+            left: -110px;
+        }
+
+
+        /* second row cards are being cut by overflow so we drop them up */
+        .connect-card:last-child .operations__dropdown {
+            top: auto;
+            bottom: 100%;
+            margin-bottom: 4px;
+        }
+
+        /* also flip arrow */
+        .connect-card:last-child .operations--arrow.operations--expanded .operations__icon {
+            transform: scaleY(-1);
+        }
+            .connect-card__submit.button,
+            .connect-card__submit .button {
+                width: 100%;
+                padding: 7px;
+                border-radius: 4px;
+                font-size: 12px;
+            }
+
+        .connect-card__operations {
+            flex-shrink: 0;
+            margin-left: 6px;
+}

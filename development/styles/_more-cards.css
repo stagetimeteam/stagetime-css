@@ -20,7 +20,17 @@
         font-size: 16px;
         line-height: 18px;
         color: #545454;
+        text-decoration: none;
     }
+
+    .more-cards--clickable .more-cards__handler:hover .more-cards__panel:nth-child(3) {
+        background-color: #FAFAFA;
+    }
+
+    .more-cards--clickable .more-cards__handler:active .more-cards__panel:nth-child(3) {
+        background-color: #F5F5F5;
+    }
+
         .more-cards__handler {
             position: relative;
             z-index: 2;

@@ -65,11 +65,11 @@
         }
 
         .home-updates__body {
-            height: 358px;
+            height: 487px;
             overflow-y: auto;
         }
             .home-updates__ribbon {
-                padding: 36px 20px;
+                padding: 18px 20px 36px;
             }
                 .home-updates__item {
                     margin-top: 12px;
