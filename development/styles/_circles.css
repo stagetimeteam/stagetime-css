@@ -133,11 +133,9 @@
 
                     .circles__intro {
                         max-width: 440px;
-                        margin-top: 6px;
-                        margin-left: 36px;
                         font-size: 13px;
                         line-height: 20px;
-                        color: #FFFFFF;
+                        color: #23282C;
                     }
 
                     .circles__head-texts {
