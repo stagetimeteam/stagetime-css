@@ -592,11 +592,8 @@
                             <div class="circles__new scrollbar scrollbar-macosx">
                                 <div class="new">
                                     <img class="new__icon" src="../symbols/larger-rings.svg" width="46" height="46" alt="">
-                                    <div class="new__prefix">
+                                    <h1 class="new__prefix">
                                         Create a new circle
-                                    </div>
-                                    <h1 class="new__heading">
-
                                     </h1>
                                     <div class="new__field">
                                         <label class="label label--thin" for="circle-name">What’s the name of your Circle?</label>
@@ -604,26 +601,66 @@
                                             <input class="input__widget" type="text" id="circle-name" placeholder="Ex: Arizona Violinists or Utah Opera Barber of Seville">
                                         </div>
                                     </div>
-                                    <div class="new__visibility publicity">
-                                        <b class="publicity__heading">
-                                            Would you like this circle to be private or public?
-                                        </b>
-                                        <label class="publicity__widget state-toggler">
-                                            <span class="state-toggler__label">
-                                                Private
-                                            </span>
-                                            <span class="state-toggler__control">
-                                                <input class="state-toggler__widget" type="checkbox">
-                                                <span class="state-toggler__body">
-                                                    <i class="state-toggler__knob"></i>
+                                    <div class="new__options">
+                                        <div class="option">
+                                            <b class="option__heading">
+                                                Is this Circle affiliated with an organization?
+                                            </b>
+                                            <label class="option__widget state-toggler">
+                                                <span class="state-toggler__label">
+                                                    Yes
                                                 </span>
-                                            </span>
-                                            <span class="state-toggler__label">
-                                                Public
-                                            </span>
-                                        </label>
-                                        <div class="publicity__hint">
-                                            *Public - we may promote the Circle, display the Circle on our dashboard, and make the Circle searchable. People request to join or are invited to the Circle.
+                                                <span class="state-toggler__control">
+                                                    <input class="state-toggler__widget" type="checkbox">
+                                                    <span class="state-toggler__body">
+                                                        <i class="state-toggler__knob"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="state-toggler__label">
+                                                    No
+                                                </span>
+                                            </label>
+                                            <div class="option__hint explainer explainer--less-accent bubble-trigger">
+                                                <img class="explainer__icon" src="../symbols/24-danger-circle.svg" width="24" height="24" alt="">
+                                                <div class="bubble bubble--right-leaf">
+                                                    <div class="bubble__body">
+                                                        <div class="wysiwyg wysiwyg--for-bubbles">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Integer sed congue leo. Etiam bibendum metus quis sem<br> tincidunt, sed ornare est pharetra.</p>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Integer sed congue leo. Etiam bibendum metus quis sem<br> tincidunt, sed ornare est pharetra.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="option">
+                                            <b class="option__heading">
+                                                Would you like this circle to be private or public?
+                                            </b>
+                                            <label class="option__widget state-toggler">
+                                                <span class="state-toggler__label">
+                                                    Private
+                                                </span>
+                                                <span class="state-toggler__control">
+                                                    <input class="state-toggler__widget" type="checkbox">
+                                                    <span class="state-toggler__body">
+                                                        <i class="state-toggler__knob"></i>
+                                                    </span>
+                                                </span>
+                                                <span class="state-toggler__label">
+                                                    Public
+                                                </span>
+                                            </label>
+                                            <div class="option__hint explainer explainer--less-accent bubble-trigger">
+                                                <img class="explainer__icon" src="../symbols/24-danger-circle.svg" width="24" height="24" alt="">
+                                                <div class="bubble bubble--right-leaf">
+                                                    <div class="bubble__body">
+                                                        <div class="wysiwyg wysiwyg--for-bubbles">
+                                                            <p>Public - we may promote the Circle, display the Circle<br> on our dashboard, and make the Circle searchable.<br> People request to join or are invited to the Circle.</p>
+                                                            <p>Private - we won't promote, display or make your<br> circle searchable. People are invited to join or could<br> request if they got access to the link.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="new__industry industry">

@@ -47,6 +47,26 @@
 /* /Larger */
 
 
+
+
+/* Larger */
+.wysiwyg--for-bubbles {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.wysiwyg--for-bubbles p,
+.wysiwyg--for-bubbles ul,
+.wysiwyg--for-bubbles ol,
+.wysiwyg--for-bubbles hr,
+.wysiwyg--for-bubbles figure,
+.wysiwyg--for-bubbles blockquote {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* /Larger */
+
+
 /* Classic */
 .wysiwyg--classic {
     font-size: 12px;

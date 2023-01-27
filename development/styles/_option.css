@@ -1,0 +1,23 @@
+.option {
+    position: relative;
+    padding: 15px 54px 15px 24px;
+    background-color: #EEF0F3;
+    border-radius: 4px;
+}
+    .option__heading {
+        display: block;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #23282C;
+    }
+
+    .option__widget {
+        margin-top: 2px;
+    }
+
+    .option__hint {
+        position: absolute;
+        right: 9px;
+        top: 6px;
+    }

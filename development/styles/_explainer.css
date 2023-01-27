@@ -1,6 +1,8 @@
 .explainer {
     position: relative;
     display: inline-block;
+    min-width: 24px;
+    height: 24px;
     vertical-align: top;
 }
     .explainer__icon {
@@ -20,4 +22,14 @@
     .explainer .bubble--right-leaf {
         bottom: 50%;
         right: 50%;
+    }
+
+
+.explainer--less-accent {
+    padding: 2px;
+}
+    .explainer--less-accent .explainer__icon {
+        width: 20px;
+        height: 20px;
+        fill: #585B5E;
     }

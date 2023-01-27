@@ -17,6 +17,8 @@
     }
 
     .new__prefix {
+        margin-top: 0;
+        margin-bottom: 0;
         font-weight: 600;
         font-size: 15px;
         line-height: 20px;
@@ -45,12 +47,13 @@
         margin-top: 20px;
     }
 
-    .new__visibility {
-        margin-top: 17px;
+    .new__options {
+        max-width: 396px;
+        margin-top: 24px;
+        display: grid;
+        gap: 12px;
     }
-        .new__publicity-question {
 
-        }
 
     .new__industry {
         margin-top: 30px;
