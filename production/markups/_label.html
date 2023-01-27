@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.manager-card</title>
+        <title>.label</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1674843672">
@@ -17,105 +17,38 @@
         <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.manager-card</h1>
+            <h1>.label</h1>
+            <br>
+
+            <div class="label">
+                Your name:
+            </div>
+
+            <br>
             <p>
-                Height is always 40px:
+                Usually it is being placed right before input, so it has
+                bottom padding included.
             </p>
-            <br>
+            <p>
+                Also notice it is being <b>display: table;</b> -- it is intentional hack
+                to make sure line break happens after label.
+            </p>
 
-            <div class="manager-card">
-                <a class="manager-card__preview avatar avatar--less-squared avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/organization-a-40x40@2x.jpg 2x"
-                         src="../temp/organization-a-40x40.jpg"
-                         width="40"
-                         height="40"
-                         alt="">
-                </a>
-                <a class="manager-card__preview avatar avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-a-40x40@2x.jpg 2x"
-                         src="../temp/person-a-40x40.jpg"
-                         width="40"
-                         height="40"
-                         alt="">
-                </a>
-                <a class="manager-card__preview avatar avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-b-40x40@2x.jpg 2x"
-                         src="../temp/person-b-40x40.jpg"
-                         width="40"
-                         height="40"
-                         alt="">
-                </a>
-                <div class="manager-card__content">
-                    <div class="manager-card__about ellipsis">
-                        <strong>IMG Artists</strong>, New York, NY
-                    </div>
-                    <div class="manager-card__note ellipsis">Sam Snook</div>
-                </div>
-            </div>
 
             <br>
+            <br>
+            <h2>Case with .label__note</h2>
 
-            <div class="manager-card">
-                <a class="manager-card__preview avatar avatar--less-squared avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/organization-a-40x40@2x.jpg 2x"
-                         src="../temp/organization-a-40x40.jpg"
-                         width="40"
-                         height="40"
-                         alt="">
-                </a>
-                <a class="manager-card__preview avatar avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-a-40x40@2x.jpg 2x"
-                         src="../temp/person-a-40x40.jpg"
-                         width="40"
-                         height="40"
-                         alt="">
-                </a>
-                <div class="manager-card__content">
-                    <div class="manager-card__about ellipsis">
-                        <strong>IMG Artists</strong>, New York, NY
-                    </div>
-                    <div class="manager-card__note ellipsis">Sam Snook</div>
-                </div>
-            </div>
+            <b class="label">
+                Industry & Specialty Tags <span class="label__note">(optional)</span>
+            </b>
+
 
             <br>
-
-            <div class="manager-card">
-                <a class="manager-card__preview avatar avatar--alt-hover" href="#">
-                    <img class="avatar__image"
-                         srcset="../temp/person-a-40x40@2x.jpg 2x"
-                         src="../temp/person-a-40x40.jpg"
-                         width="40"
-                         height="40"
-                         alt="">
-                </a>
-                <div class="manager-card__content">
-                    <div class="manager-card__about ellipsis">
-                        <strong>IMG Artists</strong>, New York, NY
-                    </div>
-                    <div class="manager-card__note ellipsis">Sam Snook</div>
-                </div>
-            </div>
-
             <br>
+            <h2>.label--thin</h2>
 
-            <div class="manager-card">
-                <div class="manager-card__content">
-                    <div class="manager-card__about ellipsis">
-                        <strong>IMG Artists</strong>, New York, NY
-                    </div>
-                    <div class="manager-card__note ellipsis">Sam Snook</div>
-                </div>
-            </div>
-
-
-
-
+            <label class="label label--thin">What’s the name of your Circle?</label>
 
 
             <br>
