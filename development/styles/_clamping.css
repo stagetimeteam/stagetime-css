@@ -5,6 +5,7 @@
     -webkit-box-orient: vertical;
 }
 
+/* stylelint-disable */
 .clamping--2-rows {-webkit-line-clamp: 2; }
 .clamping--3-rows {-webkit-line-clamp: 3; }
 .clamping--4-rows {-webkit-line-clamp: 4; }
@@ -13,3 +14,4 @@
 .clamping--7-rows {-webkit-line-clamp: 7; }
 .clamping--8-rows {-webkit-line-clamp: 8; }
 .clamping--9-rows {-webkit-line-clamp: 9; }
+/* stylelint-enable */

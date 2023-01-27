@@ -140,7 +140,6 @@
 
     .connect-card__footer {
         display: flex;
-        height: 30px; /*  */
     }
         .connect-card__submit {
             flex-grow: 1;
