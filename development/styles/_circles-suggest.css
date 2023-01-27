@@ -12,6 +12,11 @@
         margin: -2px 10px -2px -2px;
     }
 
+        .circles-suggest .avatar--slightly-squared {
+            position: relative;
+            left: 3px; /* a bit of dirty hack for a bit of better look */
+        }
+
     .circles-suggest__name {
         margin-right: auto;
         font-weight: 600;

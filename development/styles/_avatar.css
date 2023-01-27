@@ -210,6 +210,10 @@
     border-radius: 4px;
 }
 
+.avatar--slightly-squared {
+    border-radius: 2px;
+}
+
 
 .avatar--alt-hover {
     background-color: #FFFFFF; /* half white on hover */
