@@ -1,0 +1,25 @@
+.alt-org-card {
+    display: flex;
+    align-items: center;
+}
+    .alt-org-card__preview {
+        margin-right: 12px;
+        align-self: flex-start;
+    }
+
+    .alt-org-card__body {
+
+    }
+        .alt-org-card__heading {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px;
+            color: #23282C;
+        }
+
+        .alt-org-card__note {
+            margin-top: 2px;
+            font-size: 11px;
+            line-height: 18px;
+            color: #44474A;
+        }
