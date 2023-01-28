@@ -170,6 +170,20 @@
                         display: flex;
                         align-items: flex-start;
                     }
+                        .circles__super-admin {
+                            position: relative;
+                            margin-top: 10px;
+                            margin-right: 13px;
+                        }
+                            .circles__key {
+                                vertical-align: top;
+                                fill: #23282C;
+                            }
+
+                            .circles__super-admin .bubble {
+                                margin-bottom: 10px;
+                            }
+
                         .circles__settings {
 
                         }

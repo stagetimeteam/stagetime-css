@@ -21,3 +21,6 @@
             line-height: 20px;
             color: #757575;
         }
+            .circle-settings__note .link {
+                font-weight: 600;
+            }
