@@ -13,3 +13,11 @@
             line-height: 17px;
             color: #545454;
         }
+
+        .circle-settings__note {
+            margin-top: 8px;
+            font-style: italic;
+            font-size: 12px;
+            line-height: 20px;
+            color: #757575;
+        }
