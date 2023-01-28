@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.media-bar</title>
+        <title>.circle-card</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1674928014">
@@ -14,77 +14,112 @@
 
 
 
-        <div style="width: 622px; margin: 0 auto;">
+        <div style="width: 322px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.media-bar</h1>
-            <p>
-                See also <a href="_media-panel.html">.media-panel</a>
-            </p>
+            <h1>.circle-card</h1>
 
-
-            <div class="media-bar">
-                <a class="media-bar__link" href="#">
-                    <img class="media-bar__image"
-                         srcset="../temp/media-bar-a@2x.jpg 2x"
-                         src="../temp/media-bar-a.jpg"
-                         width="60"
-                         height="60"
-                         alt=""
-                    >
-                    <div class="media-bar__name">
-                        "La fleur que tu m’avais jetée dans ma prison, m'était restée”
-                    </div>
-                    <div class="media-bar__heading">
-                        <svg class="media-bar__type" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1674928014#16-cinema"></use>
+            <div class="circle-card">
+                <div class="circle-card__head">
+                    <a class="circle-card__logo" href="#">
+                        Hu
+                    </a>
+                    <div class="circle-card__bookmark">
+                        <svg class="circle-card__star" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1674928014#24-star"></use>
                         </svg>
-                        <div class="media-bar__title">“Deh vieni non tardar” — Le nozze di Figaro</div>
                     </div>
-                </a>
-                <button class="media-bar__favorite" type="button">
-                    <svg class="media-bar__heart media-bar__heart--outline" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1674928014#16-heart-outline"></use>
+                    <div class="circle-card__people snake snake--larger-border">
+                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                        </a>
+                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                        </a>
+                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                        </a>
+                    </div>
+                    <div class="circle-card__counter">
+                        <svg class="circle-card__crowd">
+                            <use xlink:href="../symbols/symbols.svg?1674928014#24-3-user-2"></use>
+                        </svg>
+                        151 Members
+                    </div>
+                </div>
+                <button class="circle-card__close" type="button">
+                    <svg class="circle-card__cross" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1674928014#16-long-cross-rounder-corners"></use>
                     </svg>
                 </button>
+                <div class="circle-card__heading">
+                    Hungarian Dance (Miami)
+                </div>
+                <div class="circle-card__footer">
+                    <div class="circle-card__summary">
+                        Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                    </div>
+                    <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                </div>
             </div>
 
 
-
             <br>
             <br>
             <br>
-            <h2>Favorited</h2>
+            <p>If affiliated with an organization</p>
             <p>
-                When favorited please change:
-                <br>icon from <b>16-heart-outline</b> to <b>16-heart.svg</b>
-                <br><b>.media-bar__heart--outline</b> to <b>.media-bar__heart--full</b>
+                Replace <b>.circle-card__logo</b> with <b>.circle-card__org</b>
             </p>
 
-            <div class="media-bar media-bar--favorite">
-                <a class="media-bar__link" href="#">
-                    <img class="media-bar__image"
-                         srcset="../temp/media-bar-a@2x.jpg 2x"
-                         src="../temp/media-bar-a.jpg"
-                         width="60"
-                         height="60"
-                         alt=""
-                    >
-                    <div class="media-bar__name">
-                        "La fleur que tu m’avais jetée dans ma prison, m'était restée”
-                    </div>
-                    <div class="media-bar__heading">
-                        <svg class="media-bar__type" width="16" height="16">
-                            <use xlink:href="../symbols/symbols.svg?1674928014#16-cinema"></use>
+            <div class="circle-card">
+                <div class="circle-card__head">
+                    <a class="circle-card__org avatar avatar--less-squared avatar--alt-hover" href="#">
+                        <img class="avatar__image"
+                             srcset="../temp/organization-a-48x48@2x.jpg 2x"
+                             src="../temp/organization-a-48x48.jpg"
+                             width="48"
+                             height="48"
+                             alt=""
+                        >
+                    </a>
+                    <div class="circle-card__bookmark">
+                        <svg class="circle-card__star" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1674928014#24-star"></use>
                         </svg>
-                        <div class="media-bar__title">“Deh vieni non tardar” — Le nozze di Figaro</div>
                     </div>
-                </a>
-                <button class="media-bar__favorite" type="button">
-                    <svg class="media-bar__heart media-bar__heart--full" width="16" height="16">
-                        <use xlink:href="../symbols/symbols.svg?1674928014#16-heart"></use>
+                    <div class="circle-card__people snake snake--larger-border">
+                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image" srcset="../temp/person-a-30x30@2x.jpg 2x" src="../temp/person-a-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                        </a>
+                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image" srcset="../temp/person-b-30x30@2x.jpg 2x" src="../temp/person-b-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                        </a>
+                        <a class="snake__item avatar avatar--alt-hover" href="#">
+                            <img class="avatar__image" srcset="../temp/person-c-30x30@2x.jpg 2x" src="../temp/person-c-30x30.jpg" width="30" height="30" alt="Mark Zuckerberg">
+                        </a>
+                    </div>
+                    <div class="circle-card__counter">
+                        <svg class="circle-card__crowd">
+                            <use xlink:href="../symbols/symbols.svg?1674928014#24-3-user-2"></use>
+                        </svg>
+                        151 Members
+                    </div>
+                </div>
+                <button class="circle-card__close" type="button">
+                    <svg class="circle-card__cross" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1674928014#16-long-cross-rounder-corners"></use>
                     </svg>
                 </button>
+                <div class="circle-card__heading">
+                    Hungarian Dance (Miami)
+                </div>
+                <div class="circle-card__footer">
+                    <div class="circle-card__summary">
+                        Lachlan Glen, Madison Leonard, <a class="link" href="#">and 58 of your connections</a>
+                    </div>
+                    <a class="circle-card__join button button--large-submit" type="button">Join</a>
+                </div>
             </div>
 
 
