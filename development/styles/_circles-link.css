@@ -1,8 +1,7 @@
 .circles-link {
     position: relative;
-    display: flex;
-    align-items: center;
-    padding: 14px 16px 14px 15px;
+    display: block;
+    padding: 23px 16px 23px 63px;
     text-decoration: none;
     transition: background-color var(--transition-hover);
 }
@@ -15,9 +14,11 @@
     background-color: var(--grey-panel-active);
     transition: none;
 }
-
     .circles-link__preview {
         flex-shrink: 0;
+        position: absolute;
+        left: 15px;
+        top: 14px;
         margin-right: 12px;
         width: 36px;
         height: 36px;
@@ -34,6 +35,19 @@
 
     .circles-link__label {
         font-size: 13px;
+        line-height: 18px;
+        color: #545454;
+    }
+
+    .circles-link__label--highlighted-with-note {
+        margin-top: -9px;
+        font-weight: 600;
+        color: #333333;
+    }
+
+    .circles-link__note {
+        margin-bottom: -9px;
+        font-size: 9px;
         line-height: 18px;
         color: #545454;
     }
@@ -79,6 +93,7 @@
 
     .circles-link--placeholder .circles-link__label {
         width: 100%;
+        margin-top: 3px;
         height: 11px;
         background-color: #44474A;
     }
