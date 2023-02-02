@@ -33,21 +33,22 @@
         width: 134px;
         height: 134px;
         margin: 6px auto 0;
-        box-shadow: inset 0 0 0 3px #E7EDF5;
+        background-color: #E7EDF5;
+        border: 3px solid transparent;
         border-radius: 50%;
         overflow: hidden;
     }
         .admin-card__members {
-            padding-top: 34px;
-            padding-bottom: 5px;
+            height: 68px;
+            padding-top: 30px;
+            background-color: #FFFFFF;
             display: flex;
             justify-content: center;
         }
 
         .admin-card__counter {
+            height: 60px;
             padding-top: 13px;
-            height: 72px;
-            background-color: #E7EDF5;
             border-bottom-left-radius: 30px;
             border-bottom-right-radius: 30px;
             font-weight: 600;
@@ -61,7 +62,7 @@
                 vertical-align: top;
                 width: 16px;
                 height: 16px;
-                fill: #44474A;
+                fill: currentColor;
             }
 
     .admin-card__heading {

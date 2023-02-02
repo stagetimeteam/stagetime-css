@@ -157,6 +157,10 @@
                     .circles__head-texts {
                         display: none;
                     }
+                        .circles__org {
+                            display: none;
+                        }
+
                         .circles__heading {
                             font-size: 18px;
                             line-height: 24px;
