@@ -1,0 +1,16 @@
+.public__list {
+    grid-template-columns: 1fr;
+    max-width: 380px;
+}
+
+.public__list--more-items {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: none;
+}
+
+@media (max-width: 467px) {
+
+    .public__list--more-items {
+        grid-template-columns: 1fr;
+    }
+}
