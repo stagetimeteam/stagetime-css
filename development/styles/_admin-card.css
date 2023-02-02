@@ -1,0 +1,77 @@
+.admin-card {
+    padding-bottom: 14px;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+}
+    .admin-card__head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: 32px;
+        background-image: linear-gradient(to right, #F3F5F8, #FBFCFC);
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+    }
+        .admin-card__role {
+            padding-top: 7px;
+            padding-left: 12px;
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 14px;
+            color: #39606C;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        .admin-card__menu {
+            display: flex;
+            align-items: flex-start;
+            padding-right: 5px;
+        }
+
+    .admin-card__body {
+        width: 134px;
+        height: 134px;
+        margin: 6px auto 0;
+        box-shadow: inset 0 0 0 3px #E7EDF5;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+        .admin-card__members {
+            padding-top: 34px;
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .admin-card__counter {
+            padding-top: 13px;
+            height: 72px;
+            background-color: #E7EDF5;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 12px;
+            color: #44474A;
+            text-align: center;
+        }
+            .admin-card__crowd {
+                margin-top: -3px;
+                vertical-align: top;
+                width: 16px;
+                height: 16px;
+                fill: #44474A;
+            }
+
+    .admin-card__heading {
+        max-width: 160px;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: #44474A;
+        text-align: center;
+    }

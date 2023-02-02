@@ -322,6 +322,38 @@
         }
 
 
+.action--black {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+}
+    .action--black .action__image {
+        margin: auto;
+        width: 28px;
+        height: 28px;
+        background-color: #23282C;
+        border-color: transparent;
+    }
+        .action--black .action__icon {
+            fill: #FFFFFF;
+        }
+
+        .action--black .action__label {
+            font-size: 8px;
+            color: #FFFFFF;
+        }
+
+.action--black:hover {
+
+}
+    .action--black:hover .action__image {
+        background-color: #000000;
+    }
+        .action--black:hover .action__icon {
+
+        }
+
+
 .action--white {
     width: 40px;
     height: 40px;
@@ -523,4 +555,22 @@
         width: 54px;
         height: 54px;
     }
+
+
+.action--dot-menu {
+    width: 26px;
+    height: 32px;
+    padding: 6px 3px;
+}
+    .action--dot-menu .action__image {
+        width: 20px;
+        height: 20px;
+    }
+        .action--dot-menu .action__icon {
+            width: 14px;
+            height: 14px;
+        }
+            .action--dot-menu .action__label {
+                display: none;
+            }
 
