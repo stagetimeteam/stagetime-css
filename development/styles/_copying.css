@@ -32,6 +32,7 @@
         font-size: 12px;
         line-height: 16px;
         color: #23282C;
+        transition: opacity var(--transition-show);
     }
 
         .copying__icon {
@@ -49,6 +50,7 @@
         font-size: 12px;
         line-height: 16px;
         color: #FFFFFF;
+        transition: opacity var(--transition-show);
     }
 
 
