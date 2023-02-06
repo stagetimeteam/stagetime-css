@@ -11,9 +11,13 @@
     transition: background-color var(--transition-hover);
 }
 
-.copying:hover {
+.copying:not(.copying--activated):hover {
     background-color: #C9D6E8;
     transition: none;
+}
+
+.copying--activated {
+    cursor: default;
 }
     .copying__label {
         position: absolute;
@@ -41,4 +45,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
     }
+
+
+
+.copying--activated .copying__label {
+    opacity: 0;
+}
+.copying--activated .copying__copied {
+    opacity: 1;
+}
