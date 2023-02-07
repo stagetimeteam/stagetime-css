@@ -192,6 +192,18 @@
                                 padding: 12px 8px;
                             }
 
+                        .circles__admin-handler {
+
+                        }
+                            .circles__admin-handler.button,
+                            .circles__admin-handler .button {
+                                position: relative;
+                                padding: 12px 10px;
+                            }
+                                .circles__admin-handler .bubble {
+                                    margin-bottom: 8px;
+                                }
+
                         .circles__head-add-person {
                             margin-left: 11px;
                         }
