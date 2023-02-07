@@ -68,3 +68,44 @@
             .send-invitation__share .media {
                 justify-content: center;
             }
+
+
+.send-invitation--enlarged {
+
+}
+
+    .send-invitation--enlarged .send-invitation__heading {
+
+    }
+
+    .send-invitation--enlarged .send-invitation__body {
+
+    }
+        .send-invitation--enlarged .send-invitation__description {
+
+        }
+
+        .send-invitation--enlarged .send-invitation__form {
+
+        }
+            .send-invitation--enlarged .send-invitation__field {
+
+            }
+
+            .send-invitation--enlarged .send-invitation__handler {
+
+            }
+                .send-invitation--enlarged .send-invitation__handler.copying,
+                .send-invitation--enlarged .send-invitation__handler .copying {
+
+                }
+
+        .send-invitation--enlarged .send-invitation__share {
+
+        }
+            .send-invitation--enlarged .send-invitation__share.media,
+            .send-invitation--enlarged .send-invitation__share .media {
+              
+            }
+
+
