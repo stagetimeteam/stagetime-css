@@ -105,12 +105,12 @@
 
 
 .media--share {
-
+    gap: 12px;
 }
     .media--share .media__link {
         position: relative;
-        width: 44px;
-        height: 44px;
+        width: 34px;
+        height: 34px;
         margin: 0;
     }
         .media--share .media__link::before {
@@ -140,6 +140,7 @@
         }
 
     .media--share .media__icon {
+        transform: scale(0.9);
         position: relative;
         fill: #23282C !important; /* !important is to cancel hover and active */
     }
@@ -151,7 +152,7 @@
         background-color: transparent;
         border-radius: 5px;
         font-weight: 600;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 24px;
         color: #39606C;
         cursor: pointer;
@@ -167,4 +168,44 @@
         background-color: #FBFBFB;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         transition: none;
+    }
+
+
+
+
+.media--share.media--desktop-enlarged {
+    gap: 16px;
+}
+    .media--share.media--desktop-enlarged .media__link {
+        width: 44px;
+        height: 44px;
+    }
+        .media--share.media--desktop-enlarged .media__link::before {
+
+        }
+
+        .media--share.media--desktop-enlarged .media__link:hover::before {
+
+        }
+
+        .media--share.media--desktop-enlarged .media__link:active::before {
+
+        }
+
+    .media--share.media--desktop-enlarged .media__icon {
+        transform: none;
+    }
+
+
+    .media--share.media--desktop-enlarged .media__more {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .media--share.media--desktop-enlarged .media__more:hover {
+
+    }
+
+    .media--share.media--desktop-enlarged .media__more:active {
+
     }
