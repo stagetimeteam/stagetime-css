@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html class="has-sidebar" lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+        <!-- 1/3: .header, .search, .notifications, .profile, .sidebar -->
+        <header class="header">
+            <div class="header__detachable-panel">
+                <a class="header__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <!-- optional:
+                <div class="header__greetings">
+                    Good afternoon, <a class="link link--user-color" href="#">Jennie</a>.
+                </div>
+                -->
+                <!-- optional:
+                <div class="header__auth">
+                    <a class="header__login" href="#"><span class="header__label">Log In</span></a>
+                    <a class="header__join" href="#"><span class="header__label">Join <span class="header__stagetime-label">Stagetime</span></span></a>
+                </div>
+                -->
+                <div class="header__menu">
+                    <button class="header__item header-button header-button--search" type="button">
+                        <img class="header-button__icon" src="../symbols/24-magnifier.svg" width="24" height="24" alt="">
+                    </button>
+                    <a class="header__item header-button header-button--messages" href="#">
+                        <img class="header-button__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--notifications" href="#">
+                        <img class="header-button__icon" src="../symbols/24-notification.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <button class="header__item header-button header-button--sidebar" type="button">
+                        <img class="header-button__icon header-button__icon--burger" src="../symbols/24-burger.svg" width="24" height="24" alt="">
+                        <img class="header-button__icon header-button__icon--close-burger" src="../symbols/24-close-burger.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Toggle sidebar</span>
+                        <span class="visuallyhidden">Notifications:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </button>
+                    <a class="header__item profile-button" href="#">
+                        <span class="avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                 src="../temp/person-a-32x32.jpg"
+                                 width="32"
+                                 height="32"
+                                 alt=""
+                            >
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <form class="search">
+            <div class="search__bar">
+                <button class="search__close" type="button">
+                    <img class="search__arrow" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                </button>
+                <div class="search__body">
+                    <input class="search__widget" type="text" placeholder="Search Stagetime">
+                    <img class="search__icon" src="../symbols/24-magnifier.svg" width="24" height="24" alt="">
+                </div>
+            </div>
+            <div class="search__dropdown">
+                <div class="search__scroll scrollbar scrollbar-macosx">
+                    <div class="search__section">
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-56x56@2x.jpg 2x"
+                                             src="../temp/person-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-56x56@2x.jpg 2x"
+                                             src="../temp/person-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Marlen Nahas
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-56x56@2x.jpg 2x"
+                                             src="../temp/person-d-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Shea Owens
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-56x56@2x.jpg 2x"
+                                             src="../temp/person-e-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__more" href="#">
+                            <div class="search__more-wrap">
+                                <img class="search__more-icon" src="../symbols/24-magnifier.svg" width="24" height="24"
+                                     alt="">
+                            </div>
+                            More results for “aj o’rei”
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="notifications">
+            <div class="notifications__head top-bar">
+                <div class="top-bar__heading">
+                    Notifications
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="notifications__scroll scrollbar scrollbar-macosx">
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        <img class="section-separator__icon" src="../symbols/24-2-user.svg" width="24" height="24" alt="">
+                        New Requests (2)
+                        <div class="section-separator__updates dot"></div>
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+
+
+                <div class="simpler-null">
+                    You don’t currently have<br> any notifications.
+                </div>
+                <!-- temp -->
+                or:
+                <!--/temp -->
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        <img class="section-separator__icon" src="../symbols/24-globe.svg" width="24" height="24" alt="">
+                        Activity
+                        <div class="section-separator__updates dot"></div>
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Jennie Moser</span> was live
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            New update to the information section of <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            A new resource titled <span class="link link--text-alike">Daily Schedule Version 6, July 6, 2022</span> been added to <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Activity
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-category.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">AJ O’Reilly</span> has shared collection <span class="link link--text-alike">Santa Fe Oboes 2022</span> with you.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-54x54@2x.jpg 2x"
+                                 src="../temp/person-c-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <img class="notice__heart notice__heart--inner" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
+                        <img class="notice__heart notice__heart--outer" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Andres Acosta</span> reacted to your video Etude in e minor.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            Are you sure you want to confirm that you are on <span class="link link--text-alike">Justin Werner</span>’s roster at <span class="link">Stratagem Artists</span>?
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action button button--submit">Confirm</div>
+                            <div class="notice__action button button--cancel">Back</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            You’ve been invited to Circle <span class="link link--text-alike">Opera Idaho EAs</span> by AJ O’Reilly
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action  button  button--submit">Accept</div>
+                            <div class="notice__action  button  button--cancel">Delete</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            You’ve been invited to Circle <span class="link link--text-alike">Opera Idaho EAs</span> by AJ O’Reilly
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__output icon-status icon-status--alternate">
+                                <img class="icon-status__illustration" src="../symbols/30-check.svg" width="30" height="30" alt="">
+                                <div class="icon-status__label">Request accepted.</div>
+                            </div>
+                            or:
+                            <div class="notice__output icon-status icon-status--alternate">
+                                <img class="icon-status__illustration" src="../symbols/30-none.svg" width="30" height="30" alt="">
+                                <div class="icon-status__label">Request deleted.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            <div class="notice__name">
+                                Elena Villalón
+                            </div>
+                            <div class="notice__note">
+                                Soprano, Houston, TX
+                            </div>
+                            <div class="notice__intro multiline multiline--notification">
+                                <div class="multiline__content">
+                                    Hey, was great meeting you last night! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt djdj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptatum!
+                                </div>
+                                <span class="multiline__handler link">
+                            <span class="multiline__read-more">Read More</span>
+                            <span class="visuallyhidden">or</span>
+                            <span class="multiline__close">Read Less</span>
+                        </span>
+                            </div>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action  button  button--submit">Connect</div>
+                            <div class="notice__action  button  button--cancel">Connect</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-category.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">AJ O’Reilly</span> has shared collection <span class="link link--text-alike">Santa Fe Oboes 2022</span> with you.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-thick-rings.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            New update to the information section of <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-stagetime.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            Learn how to increase your profile views. This can be up to 3 lines just in case it is longer.
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-volume-up.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Piano concerto No. 2 in Eb Major</span> now has 17 plays.
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-video.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Piano concerto No. 2 in Eb Major</span> now has 17 plays.
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__head top-bar">
+                <div class="top-bar__heading">
+                    Profile
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="profile__body">
+                <a class="profile__link user-link" href="#">
+                    <span class="user-link__preview avatar avatar--alt-hover">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-28x28@2x.jpg 2x"
+                             src="../temp/person-a-28x28.jpg"
+                             width="28"
+                             height="28"
+                             alt=""
+                        >
+                    </span>
+                    View Profile
+                </a>
+                <div class="profile__menu">
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-envelope.svg" width="20" height="20" alt="">
+                        <img class="pic-link__sparkle" src="../symbols/16-sparkle.svg" width="16" height="16" alt="">
+                        <div class="pic-link__label">Invite</div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-pawprint.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Report an Issue</div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-info-square.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-cogwheel.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Settings</div>
+                    </a>
+                </div>
+                <div class="profile__logout">
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-2-user.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Log Out</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <button class="sidebar__overlay" type="button"></button>
+            <div class="sidebar__scroll scrollbar scrollbar-macosx">
+                <div class="sidebar__inner">
+                    <nav class="side-nav">
+                        <div class="side-nav__section">
+                            <a class="pic-link pic-link--current" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-home.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Home</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-edit3.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Edit My Profile</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-envelope.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Messages <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-2-user.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">My Network</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section">
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-paper.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Jobs</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-category.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Collections</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-thick-rings.svg" width="20" height="20" alt="">
+                                <span class="pic-link__counter counter counter--danger">4</span>
+                                <div class="pic-link__label">Circles <span class="pic-link__beta beta">beta</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-3-user-2.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Groups</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon pic-link__icon--photo"
+                                     srcset="../temp/person-a-20x20@2x.jpg 2x"
+                                     src="../temp/person-a-20x20.jpg"
+                                     width="20"
+                                     height="20"
+                                     alt=""
+                                >
+                                <div class="pic-link__label">Manage</div>
+                            </a>
+                        </div>
+                        <div class="side-nav__section side-nav__section--smartphone-only">
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-envelope.svg" width="20" height="20" alt="">
+                                <img class="pic-link__sparkle" src="../symbols/16-sparkle.svg" width="16" height="16" alt="">
+                                <div class="pic-link__label">Invite</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-pawprint.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Report an Issue</div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-info-square.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                            </a>
+                            <a class="pic-link" href="#">
+                                <img class="pic-link__icon" src="../symbols/24-cogwheel.svg" width="20" height="20" alt="">
+                                <div class="pic-link__label">Settings</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- 2/3: .page -->
+        <div class="page">
+            <div class="referrals-form container container--refs">
+                <div class="send-invitation">
+                    <h2 class="send-invitation__heading">
+                        Send an invitation
+                    </h2>
+                    <div class="send-invitation__body">
+                        <div class="send-invitation__description">
+                            Build your network. Invite industry friends to become part of the Stagetime community.
+                        </div>
+                        <div class="send-invitation__form">
+                            <input class="send-invitation__field" type="url" value="www.natereferedme.com">
+                            <button class="send-invitation__handler copying" type="button">
+                            <span class="copying__label">
+                                <img class="copying__icon" src="../symbols/16-copy.svg" width="16" height="16" alt="">
+                                Copy link
+                            </span>
+                                <span class="copying__copied" role="presentation" aria-hidden="true">
+                                Copied
+                            </span>
+                            </button>
+                        </div>
+                        <div class="send-invitation__share media media--share">
+                            <a class="media__link" href="#">
+                                <img class="media__icon" src="../symbols/24-whatsapp-color.svg" width="24" height="24" alt="">
+                            </a>
+                            <a class="media__link" href="#">
+                                <svg class="media__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <radialGradient id="a" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(6.00835 21.2603) scale(19.7563)">
+                                            <stop stop-color="#0099FF"/>
+                                            <stop offset="0.6" stop-color="#A033FF"/>
+                                            <stop offset="0.9" stop-color="#FF5280"/>
+                                            <stop offset="1" stop-color="#FF7061"/>
+                                        </radialGradient>
+                                    </defs>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 12.0107C3 7.00656 6.92208 3.3 11.9802 3.3C17.0382 3.3 20.9603 7.00881 20.9603 12.013C20.9603 17.0172 17.0382 20.7237 11.9802 20.7237C11.0709 20.7237 10.1998 20.6025 9.3804 20.378C9.221 20.3353 9.05038 20.3466 8.89996 20.4139L7.1174 21.1997C7.00974 21.2472 6.89207 21.2675 6.77471 21.2589C6.65736 21.2502 6.54393 21.2129 6.44439 21.1501C6.34484 21.0874 6.26223 21.0012 6.20382 20.899C6.1454 20.7969 6.11297 20.682 6.10938 20.5643L6.05999 18.9659C6.0555 18.7683 5.9657 18.5842 5.81977 18.454C4.07313 16.8915 3 14.6285 3 12.0107ZM9.22548 10.3741L6.58756 14.5589C6.33387 14.9607 6.82778 15.412 7.20495 15.1246L10.0382 12.9739C10.1314 12.9031 10.2452 12.8645 10.3622 12.8641C10.4793 12.8637 10.5933 12.9015 10.687 12.9716L12.7861 14.5454C12.935 14.6572 13.1055 14.7369 13.2867 14.7796C13.468 14.8222 13.6561 14.8268 13.8392 14.793C14.0223 14.7593 14.1965 14.6879 14.3506 14.5835C14.5047 14.479 14.6356 14.3437 14.7348 14.1862L17.375 10.0037C17.6264 9.60182 17.1325 9.14833 16.7553 9.43569L13.9221 11.5864C13.8289 11.6572 13.7151 11.6958 13.5981 11.6962C13.481 11.6966 13.367 11.6588 13.2733 11.5887L11.1742 10.0149C11.0253 9.90309 10.8548 9.82336 10.6736 9.78074C10.4923 9.73812 10.3042 9.73355 10.1211 9.7673C9.93796 9.80105 9.76384 9.87241 9.60969 9.97685C9.45554 10.0813 9.32472 10.2166 9.22548 10.3741Z" fill="url(#a)"/>
+                                </svg>
+                            </a>
+                            <a class="media__link" href="#">
+                                <img class="media__icon" src="../symbols/24-gmail-color.svg" width="24" height="24" alt="">
+                            </a>
+                            <a class="media__link" href="#">
+                                <svg class="media__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="a" x1="20.3477" y1="20.6767" x2="2.99604" y2="3.31528" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FBE18A"/>
+                                            <stop offset="0.21" stop-color="#FCBB45"/>
+                                            <stop offset="0.38" stop-color="#F75274"/>
+                                            <stop offset="0.52" stop-color="#D53692"/>
+                                            <stop offset="0.74" stop-color="#8F39CE"/>
+                                            <stop offset="1" stop-color="#5B4FE9"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M9.10784 12.0008C9.10784 10.4037 10.403 9.10866 12.0011 9.10866C13.5991 9.10866 14.895 10.4037 14.895 12.0008C14.895 13.598 13.5991 14.893 12.0011 14.893C10.403 14.893 9.10784 13.598 9.10784 12.0008ZM7.54344 12.0008C7.54344 14.4613 9.53911 16.4558 12.0011 16.4558C14.463 16.4558 16.4587 14.4613 16.4587 12.0008C16.4587 9.54037 14.463 7.5459 12.0011 7.5459C9.53911 7.5459 7.54344 9.54037 7.54344 12.0008ZM15.5934 7.36926C15.5933 7.57517 15.6543 7.77648 15.7687 7.94773C15.8831 8.11899 16.0458 8.25249 16.2361 8.33137C16.4264 8.41024 16.6359 8.43094 16.838 8.39085C17.0401 8.35076 17.2257 8.25168 17.3715 8.10614C17.5172 7.9606 17.6165 7.77513 17.6568 7.57319C17.697 7.37125 17.6765 7.16192 17.5977 6.97165C17.519 6.78138 17.3855 6.61873 17.2142 6.50426C17.043 6.3898 16.8416 6.32866 16.6356 6.32857H16.6351C16.359 6.3287 16.0941 6.43837 15.8988 6.6335C15.7035 6.82863 15.5937 7.09325 15.5934 7.36926V7.36926ZM8.49391 19.0628C7.64754 19.0242 7.18752 18.8834 6.88181 18.7643C6.47651 18.6066 6.18732 18.4188 5.88328 18.1154C5.57923 17.8119 5.39103 17.5232 5.23394 17.1181C5.11476 16.8127 4.97378 16.3529 4.93531 15.507C4.89322 14.5925 4.88482 14.3178 4.88482 12.0009C4.88482 9.68404 4.89392 9.41009 4.93531 8.49483C4.97385 7.64897 5.11587 7.18998 5.23394 6.88369C5.39172 6.47863 5.57965 6.18962 5.88328 5.88576C6.18691 5.5819 6.47581 5.3938 6.88181 5.23681C7.18738 5.1177 7.64754 4.97681 8.49391 4.93836C9.40896 4.8963 9.68384 4.8879 12.0011 4.8879C14.3183 4.8879 14.5934 4.89699 15.5092 4.93836C16.3556 4.97688 16.8149 5.11881 17.1213 5.23681C17.5266 5.3938 17.8158 5.58231 18.1199 5.88576C18.4239 6.1892 18.6114 6.47863 18.7692 6.88369C18.8884 7.18908 19.0294 7.64897 19.0678 8.49483C19.1099 9.41009 19.1183 9.68404 19.1183 12.0009C19.1183 14.3178 19.1099 14.5917 19.0678 15.507C19.0293 16.3529 18.8876 16.8126 18.7692 17.1181C18.6114 17.5232 18.4235 17.8122 18.1199 18.1154C17.8162 18.4185 17.5266 18.6066 17.1213 18.7643C16.8158 18.8834 16.3556 19.0243 15.5092 19.0628C14.5942 19.1048 14.3193 19.1132 12.0011 19.1132C9.6828 19.1132 9.40869 19.1048 8.49391 19.0628V19.0628ZM8.42203 3.37754C7.49788 3.4196 6.86639 3.56605 6.3149 3.78051C5.74376 4.00199 5.26026 4.29912 4.7771 4.78122C4.29395 5.26332 3.99741 5.74729 3.7758 6.31809C3.5612 6.8696 3.41467 7.50037 3.37258 8.42396C3.3298 9.34902 3.32001 9.64476 3.32001 12.0008C3.32001 14.3569 3.3298 14.6527 3.37258 15.5777C3.41467 16.5014 3.5612 17.1321 3.7758 17.6836C3.99741 18.254 4.29402 18.7386 4.7771 19.2205C5.26019 19.7023 5.74376 19.9991 6.3149 20.2212C6.86743 20.4356 7.49788 20.5821 8.42203 20.6241C9.34813 20.6662 9.64356 20.6767 12.0011 20.6767C14.3586 20.6767 14.6545 20.6669 15.5801 20.6241C16.5043 20.5821 17.1354 20.4356 17.6872 20.2212C18.258 19.9991 18.7419 19.7026 19.225 19.2205C19.7082 18.7384 20.0041 18.254 20.2263 17.6836C20.4409 17.1321 20.5881 16.5013 20.6295 15.5777C20.6716 14.652 20.6814 14.3569 20.6814 12.0008C20.6814 9.64476 20.6716 9.34902 20.6295 8.42396C20.5874 7.5003 20.4409 6.86925 20.2263 6.31809C20.0041 5.74764 19.7074 5.26408 19.225 4.78122C18.7426 4.29836 18.258 4.00199 17.6879 3.78051C17.1354 3.56605 16.5042 3.4189 15.5808 3.37754C14.6552 3.33548 14.3592 3.325 12.0017 3.325C9.64425 3.325 9.34813 3.33478 8.42203 3.37754Z" fill="url(#a)"/>
+                                </svg>
+                            </a>
+                            <a class="media__link" href="#">
+                                <img class="media__icon" src="../symbols/20-upload-solid.svg" width="20" height="20" alt="">
+                            </a>
+                            <button class="media__more" type="button">
+                                See all
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3/3 Modals: -->
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+        <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../vendors/select2/js/select2.min.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_sidebar.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player3.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_explore.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+        <script src="../scripts/_media-bar.js"></script>
+        <script src="../scripts/_settings.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_expandable-bio.js"></script>
+        <script src="../scripts/_parallax.js"></script>
+        <script src="../scripts/_simple-parallax.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_modal.js"></script>
+        <script src="../scripts/_full-media-card.js"></script>
+        <script src="../scripts/_color-selection.js"></script>
+        <script src="../scripts/_layout-type.js"></script>
+        <script src="../scripts/_sortable.js"></script>
+        <script src="../scripts/_biography.js"></script>
+        <script src="../scripts/_full-biography.js"></script>
+        <script src="../scripts/_media-clip.js"></script>
+        <script src="../scripts/_typing.js"></script>
+        <script src="../scripts/_circles.js"></script>
+        <script src="../scripts/_brief.js"></script>
+        <script src="../scripts/_non-performer.js"></script>
+        <script src="../scripts/_classic.js"></script>
+        <script src="../scripts/_owl-carousel.js"></script>
+        <script src="../scripts/_add-filter.js"></script>
+        <script src="../scripts/_select2.js"></script>
+        <script src="../scripts/_multiline.js"></script>
+        <script src="../scripts/_network-news.js"></script>
+        <script src="../scripts/_vertical-artist.js"></script>
+        <script src="../scripts/_tabs.js"></script>
+        <script src="../scripts/_picking.js"></script>
+        <script src="../scripts/_copying.js"></script>
+
+
+    </body>
+</html>
