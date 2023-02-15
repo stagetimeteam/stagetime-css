@@ -11,11 +11,16 @@
     cursor: pointer;
 }
 
-.all-connections:hover {
+
+.all-connections--no-hover {
+    cursor: auto;
+}
+
+.all-connections:not(.all-connections--no-hover):hover {
     background-color: var(--theme-light);
 }
 
-.all-connections:active {
+.all-connections:not(.all-connections--no-hover):active {
     background-color: var(--theme-light);
     transition: none;
 }
@@ -28,6 +33,15 @@
         color: #545454;
         white-space: nowrap;
     }
+        .all-connections__icon {
+            vertical-align: top;
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin-left: -4px;
+            margin-right: 8px;
+            fill: currentColor;
+        }
 
     .all-connections__body {
         margin-top: 7px;
@@ -52,6 +66,7 @@
                 .all-connections__more {
                     font-style: italic;
                 }
+
 
 
 .all-connections--faded {

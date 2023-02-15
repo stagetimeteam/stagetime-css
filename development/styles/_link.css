@@ -139,3 +139,11 @@
     font-weight: 600;
     color: #325F84;
 }
+
+.link--bold {
+    font-weight: 600;
+}
+
+.link--brand {
+    color: #39606C;
+}

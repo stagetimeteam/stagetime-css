@@ -29,7 +29,7 @@
 
 
 
-/* Larger */
+/* smaller */
 .wysiwyg--smaller {
     font-size: 13px;
     line-height: 21px;
@@ -44,12 +44,12 @@
     margin-top: 21px;
     margin-bottom: 21px;
 }
-/* /Larger */
+/* /smaller */
 
 
 
 
-/* Larger */
+/* for-bubbles */
 .wysiwyg--for-bubbles {
     font-size: 13px;
     line-height: 18px;
@@ -64,7 +64,7 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
-/* /Larger */
+/* /for-bubbles */
 
 
 /* Classic */
@@ -81,6 +81,24 @@
 .wysiwyg--classic blockquote {
     margin-top: 26px;
     margin-bottom: 26px;
+}
+/* /Classic */
+
+
+/* Classic */
+.wysiwyg--description {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.wysiwyg--description p,
+.wysiwyg--description ul,
+.wysiwyg--description ol,
+.wysiwyg--description hr,
+.wysiwyg--description figure,
+.wysiwyg--description blockquote {
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 /* /Classic */
 

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Org</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
+        <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/responsiveness.css" media="(max-width: 767px)">
+    </head>
+    <body>
+
+        <!-- 1/3: .header, .search, .notifications, .profile, .sidebar -->
+        <header class="header">
+            <div class="header__detachable-panel">
+                <a class="header__branding logo" href="#">
+                    STAGETIME
+                </a>
+                <!-- optional:
+                <div class="header__greetings">
+                    Good afternoon, <a class="link link--user-color" href="#">Jennie</a>.
+                </div>
+                -->
+                <!-- optional:
+                <div class="header__auth">
+                    <a class="header__login" href="#"><span class="header__label">Log In</span></a>
+                    <a class="header__join" href="#"><span class="header__label">Join <span class="header__stagetime-label">Stagetime</span></span></a>
+                </div>
+                -->
+                <div class="header__menu">
+                    <button class="header__item header-button header-button--search" type="button">
+                        <img class="header-button__icon" src="../symbols/24-magnifier.svg" width="24" height="24" alt="">
+                    </button>
+                    <a class="header__item header-button header-button--messages" href="#">
+                        <img class="header-button__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Messages</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <a class="header__item header-button header-button--notifications" href="#">
+                        <img class="header-button__icon" src="../symbols/24-notification.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Notifications</span>
+                        <span class="visuallyhidden">New:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </a>
+                    <button class="header__item header-button header-button--sidebar" type="button">
+                        <img class="header-button__icon header-button__icon--burger" src="../symbols/24-burger.svg" width="24" height="24" alt="">
+                        <img class="header-button__icon header-button__icon--close-burger" src="../symbols/24-close-burger.svg" width="24" height="24" alt="">
+                        <span class="visuallyhidden">Toggle sidebar</span>
+                        <span class="visuallyhidden">Notifications:</span>
+                        <span class="header-button__updates counter counter--danger">4</span>
+                    </button>
+                    <a class="header__item profile-button" href="#">
+                        <span class="avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-32x32@2x.jpg 2x"
+                                 src="../temp/person-a-32x32.jpg"
+                                 width="32"
+                                 height="32"
+                                 alt=""
+                            >
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <form class="search">
+            <div class="search__bar">
+                <button class="search__close" type="button">
+                    <img class="search__arrow" src="../symbols/16-left.svg" width="16" height="16" alt="">
+                </button>
+                <div class="search__body">
+                    <input class="search__widget" type="text" placeholder="Search Stagetime">
+                    <img class="search__icon" src="../symbols/24-magnifier.svg" width="24" height="24" alt="">
+                </div>
+            </div>
+            <div class="search__dropdown">
+                <div class="search__scroll scrollbar scrollbar-macosx">
+                    <div class="search__section">
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-a-56x56@2x.jpg 2x"
+                                             src="../temp/person-a-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-b-56x56@2x.jpg 2x"
+                                             src="../temp/person-b-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Marlen Nahas
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-d-56x56@2x.jpg 2x"
+                                             src="../temp/person-d-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Shea Owens
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__suggest" href="#">
+                            <div class="user-badge user-badge--search">
+                                <div class="user-badge__preview">
+                                    <div class="avatar avatar--non-clickable">
+                                        <img class="avatar__image"
+                                             srcset="../temp/person-e-56x56@2x.jpg 2x"
+                                             src="../temp/person-e-56x56.jpg"
+                                             width="56" height="56"
+                                             alt=""
+                                        >
+                                    </div>
+                                </div>
+                                <div class="user-badge__heading">
+                                    Elena Villalón
+                                </div>
+                            </div>
+                        </a>
+                        <a class="search__more" href="#">
+                            <div class="search__more-wrap">
+                                <img class="search__more-icon" src="../symbols/24-magnifier.svg" width="24" height="24"
+                                     alt="">
+                            </div>
+                            More results for “aj o’rei”
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="notifications">
+            <div class="notifications__head top-bar">
+                <div class="top-bar__heading">
+                    Notifications
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="notifications__scroll scrollbar scrollbar-macosx">
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        <img class="section-separator__icon" src="../symbols/24-2-user.svg" width="24" height="24" alt="">
+                        New Requests (2)
+                        <div class="section-separator__updates dot"></div>
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+
+
+                <div class="simpler-null">
+                    You don’t currently have<br> any notifications.
+                </div>
+                <!-- temp -->
+                or:
+                <!--/temp -->
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        <img class="section-separator__icon" src="../symbols/24-globe.svg" width="24" height="24" alt="">
+                        Activity
+                        <div class="section-separator__updates dot"></div>
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Jennie Moser</span> was live
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            New update to the information section of <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            A new resource titled <span class="link link--text-alike">Daily Schedule Version 6, July 6, 2022</span> been added to <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="notifications__separator section-separator">
+                    <div class="section-separator__heading">
+                        Activity
+                    </div>
+                    <a class="section-separator__action button button--another-faded" href="#">
+                        See All
+                    </a>
+                </div>
+                <div class="notifications__section">
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-category.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">AJ O’Reilly</span> has shared collection <span class="link link--text-alike">Santa Fe Oboes 2022</span> with you.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-c-54x54@2x.jpg 2x"
+                                 src="../temp/person-c-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <img class="notice__heart notice__heart--inner" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
+                        <img class="notice__heart notice__heart--outer" src="../symbols/16-heart-wide.svg" width="16" height="16" alt="">
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Andres Acosta</span> reacted to your video Etude in e minor.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            Are you sure you want to confirm that you are on <span class="link link--text-alike">Justin Werner</span>’s roster at <span class="link">Stratagem Artists</span>?
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action button button--submit">Confirm</div>
+                            <div class="notice__action button button--cancel">Back</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            You’ve been invited to Circle <span class="link link--text-alike">Opera Idaho EAs</span> by AJ O’Reilly
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action  button  button--submit">Accept</div>
+                            <div class="notice__action  button  button--cancel">Delete</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            You’ve been invited to Circle <span class="link link--text-alike">Opera Idaho EAs</span> by AJ O’Reilly
+                            <span class="notice__time">1h</span>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__output icon-status icon-status--alternate">
+                                <img class="icon-status__illustration" src="../symbols/30-check.svg" width="30" height="30" alt="">
+                                <div class="icon-status__label">Request accepted.</div>
+                            </div>
+                            or:
+                            <div class="notice__output icon-status icon-status--alternate">
+                                <img class="icon-status__illustration" src="../symbols/30-none.svg" width="30" height="30" alt="">
+                                <div class="icon-status__label">Request deleted.</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview avatar avatar--alt-hover">
+                            <img class="avatar__image"
+                                 srcset="../temp/person-a-54x54@2x.jpg 2x"
+                                 src="../temp/person-a-54x54.jpg"
+                                 width="54"
+                                 height="54"
+                                 alt="Mark Zuckerberg"
+                            >
+                        </div>
+                        <div class="notice__body">
+                            <div class="notice__name">
+                                Elena Villalón
+                            </div>
+                            <div class="notice__note">
+                                Soprano, Houston, TX
+                            </div>
+                            <div class="notice__intro multiline multiline--notification">
+                                <div class="multiline__content">
+                                    Hey, was great meeting you last night! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt djdj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptatum!
+                                </div>
+                                <span class="multiline__handler link">
+                            <span class="multiline__read-more">Read More</span>
+                            <span class="visuallyhidden">or</span>
+                            <span class="multiline__close">Read Less</span>
+                        </span>
+                            </div>
+                        </div>
+                        <div class="notice__operations">
+                            <div class="notice__action  button  button--submit">Connect</div>
+                            <div class="notice__action  button  button--cancel">Connect</div>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-category.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">AJ O’Reilly</span> has shared collection <span class="link link--text-alike">Santa Fe Oboes 2022</span> with you.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-thick-rings.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            New update to the information section of <span class="link link--text-alike">Opera Idaho EAs</span>.
+                            <span class="notice__time">1h</span>
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-stagetime.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            Learn how to increase your profile views. This can be up to 3 lines just in case it is longer.
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-volume-up.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Piano concerto No. 2 in Eb Major</span> now has 17 plays.
+                        </div>
+                    </a>
+                    <a class="notice" href="#">
+                        <div class="notice__preview circle">
+                            <img class="circle__icon" src="../symbols/24-video.svg" width="24" height="24" alt="">
+                        </div>
+                        <div class="notice__body">
+                            <span class="link link--text-alike">Piano concerto No. 2 in Eb Major</span> now has 17 plays.
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile__head top-bar">
+                <div class="top-bar__heading">
+                    Profile
+                </div>
+                <button class="top-bar__close" type="button">
+                    <img class="top-bar__cross" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                </button>
+            </div>
+            <div class="profile__body">
+                <a class="profile__link user-link" href="#">
+                    <span class="user-link__preview avatar avatar--alt-hover">
+                        <img class="avatar__image"
+                             srcset="../temp/person-a-28x28@2x.jpg 2x"
+                             src="../temp/person-a-28x28.jpg"
+                             width="28"
+                             height="28"
+                             alt=""
+                        >
+                    </span>
+                    View Profile
+                </a>
+                <div class="profile__menu">
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-envelope.svg" width="20" height="20" alt="">
+                        <img class="pic-link__sparkle" src="../symbols/16-sparkle.svg" width="16" height="16" alt="">
+                        <div class="pic-link__label">Invite</div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-pawprint.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Report an Issue</div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-info-square.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
+                    </a>
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-cogwheel.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Settings</div>
+                    </a>
+                </div>
+                <div class="profile__logout">
+                    <a class="pic-link" href="#">
+                        <img class="pic-link__icon" src="../symbols/24-2-user.svg" width="20" height="20" alt="">
+                        <div class="pic-link__label">Log Out</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 2/3: .page -->
+        <div class="page">
+            <div class="org2">
+                <div class="org2__head container container--org">
+                    <div class="org2__ribbon">
+                        <nav class="org2__nav">
+                            <a class="org2__link" href="#">About</a>
+                            <a class="org2__link" href="#">Schedule</a>
+                            <a class="org2__link" href="#">Opportunitites</a>
+                            <a class="org2__link" href="#">Public Circles</a>
+                            <a class="org2__link org2__link--current" href="#">People</a>
+                        </nav>
+                        <div class="org2__institution type" style="background-color: #C9D4E3; color: #333333;">
+                            Education institution
+                        </div>
+                    </div>
+                </div>
+                <div class="org2__preview">
+                    <div class="org2__background" role="presentation" aria-hidden="true">
+                        <style>
+                            .org2__background {
+                                background-image: url(../temp/org/org-1440x247.jpg)
+                            }
+
+                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                                .org2__background {
+                                    background-image: url(../temp/org/org-1440x247@2x.jpg);
+                                }
+                            }
+
+                            @media (max-width: 900px) {
+                                .org2__background {
+                                    background-image: url(../temp/org/org-828x142.jpg)
+                                }
+
+                                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                                    .org2__background {
+                                        background-image: url(../temp/org/org-828x142@2x.jpg);
+                                    }
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="org2__body container container--org">
+                    <div class="org2__first-row">
+                        <div class="org2__brand">
+                            <div class="org2__logo">
+                                <picture>
+                                    <source srcset="../temp/organization-a-116x116@2x.jpg 2x, ../temp/organization-a-116x116.jpg 1x" media="(min-width: 768px)">
+                                    <source srcset="../temp/organization-a-56x56@2x.jpg 2x, ../temp/organization-a-56x56.jpg 1x" media="(max-width: 767px)">
+                                    <img class="org2__emblem" src="../temp/organization-a-116x116.jpg" alt="">
+                                </picture>
+                            </div>
+                            <h1 class="org2__heading">
+                                Indiana University
+                            </h1>
+                        </div>
+                        <div class="org2__follower">
+                            <div class="org2__connections all-connections all-connections--no-hover">
+                                <div class="all-connections__heading">
+                                    <img class="all-connections__icon" src="../symbols/24-2-user.svg" width="24" height="24" alt="">
+                                    1,345 Followers
+                                </div>
+                                <div class="all-connections__body">
+                                    <div class="all-connections__people snake snake--larger-border">
+                                        <div class="snake__item avatar avatar--alt-hover">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-a-30x30@2x.jpg 2x"
+                                                 src="../temp/person-a-30x30.jpg"
+                                                 width="30"
+                                                 height="30"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </div>
+                                        <div class="snake__item avatar avatar--alt-hover">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-b-30x30@2x.jpg 2x"
+                                                 src="../temp/person-b-30x30.jpg"
+                                                 width="30"
+                                                 height="30"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </div>
+                                        <div class="snake__item avatar avatar--alt-hover">
+                                            <img class="avatar__image"
+                                                 srcset="../temp/person-c-30x30@2x.jpg 2x"
+                                                 src="../temp/person-c-30x30.jpg"
+                                                 width="30"
+                                                 height="30"
+                                                 alt="Mark Zuckerberg"
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="all-connections__details">
+                                        <div class="all-connections__description">
+                                            <span class="link link--inherit">Lachlan Glen</span>, <span class="link link--inherit">Madison Leonard</span>, <span class="all-connections__more link link--inherit link--bold">and 5 other connections</span> are also following.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="org2__operations">
+                                <a class="org2__action button button--submit-bar button--black" href="#">Follow</a>
+                                <a class="org2__action button button--frame-bar" href="#">Add to profile</a>
+                                <div class="operations operations--org">
+                                    <button class="operations__handler" type="button">
+                                        <img class="operations__icon" src="../symbols/16-down-angle.svg" width="16" height="16" alt="">
+                                        More
+                                    </button>
+                                    <div class="operations__dropdown">
+                                        <div class="menu">
+                                            <a class="menu__link" href="#">
+                                                <img class="menu__icon" src="../symbols/16-elegant-plus.svg" width="16" height="16" alt="">
+                                                Follow
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <img class="menu__icon" src="../symbols/16-elegant-cross.svg" width="16" height="16" alt="">
+                                                Unfollow
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <img class="menu__icon" src="../symbols/16-remove-user.svg" width="16" height="16" alt="">
+                                                Remove Connection
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <img class="menu__icon" src="../symbols/24-envelope.svg" width="24" height="24" alt="">
+                                                Message
+                                            </a>
+                                            <a class="menu__link" href="#">
+                                                <img class="menu__icon" src="../symbols/24-shield-failed.svg" width="24" height="24" alt="">
+                                                Report
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org2__second-row">
+                        <div class="org2__about">
+                            <h2 class="org2__sub-heading">
+                                <img class="org2__info-icon" src="../symbols/24-info-square-2.svg" width="24" height="24" alt="">
+                                About
+                            </h2>
+                            <div class="org2__description wysiwyg wysiwyg--description">
+                                <p>Founded in 1820, Indiana University Bloomington is the flagship campus of IU’s seven campuses and two regional centers statewide. Innovation, creativity, and academic freedom are hallmarks of our world-class contributions in research and the arts. As one of the most comprehensive and acclaimed institutions for the study of music, the IU Jacobs School of Music plays a key role in educating performers, scholars, and music educators who influence music performance and education around the globe. </p>
+                            </div>
+                        </div>
+                        <div class="org2__contacts">
+                            <div class="org2__channels tabs tabs--skin-channels">
+                                <div class="tabs__nav hide-scrollbar">
+                                    <div class="tabs__ribbon">
+                                        <button class="tabs__tag tabs__tag--current" type="button">
+                                            <img class="tabs__icon" src="../symbols/20-geo.svg" width="20" height="20" alt="">
+                                            <span class="tabs__label">Website</span>
+                                        </button>
+                                        <button class="tabs__tag" type="button">
+                                            <img class="tabs__icon" src="../symbols/20-call.svg" width="20" height="20" alt="">
+                                            <span class="tabs__label">Phone</span>
+                                        </button>
+                                        <button class="tabs__tag" type="button">
+                                            <img class="tabs__icon" src="../symbols/20-globe-thin.svg" width="20" height="20" alt="">
+                                            <span class="tabs__label">Website</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tabs__bodies">
+                                    <div class="tabs__item tabs__item--current">
+                                        <div class="org-channel">
+                                            <div class="org-channel__inner">
+                                                322 S. Woodcrest Dr.<br>
+                                                Bloomington, IN 47401, USA
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__item">
+                                        <div class="org-channel">
+                                            <div class="org-channel__inner">
+                                                <a class="link link--inherit" href="tel:+18012502872">+1 (801) 250 - 2872</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tabs__item">
+                                        <div class="org-channel">
+                                            <div class="org-channel__inner">
+                                                <a class="link link--brand" href="https://www.indianauniversity.com">https://www.indianauniversity.com</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="org2__social media media--panel">
+                                <a class="media__link" href="#">
+                                    <img class="media__icon" src="../symbols/24-instagram-frame.svg" width="24" height="24" alt="">
+                                </a>
+                                <a class="media__link" href="#">
+                                    <img class="media__icon" src="../symbols/24-facebook-frame.svg" width="24" height="24" alt="">
+                                </a>
+                                <a class="media__link" href="#">
+                                    <img class="media__icon" src="../symbols/24-twitter-frame.svg" width="24" height="24" alt="">
+                                </a>
+                                <a class="media__link" href="#">
+                                    <img class="media__icon" src="../symbols/24-youtube-frame.svg" width="24" height="24" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="org2__section">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam facilis ipsam iure numquam, pariatur sequi voluptatem? Architecto doloremque dolorum error facere harum pariatur quas sunt. A blanditiis consectetur corporis dignissimos est explicabo iste labore, magnam, maxime molestias nemo placeat quam sed sunt ut voluptas voluptatem voluptatibus? Ex neque porro quam quis. A architecto modi quae quis rem! Ad aliquam aliquid commodi cupiditate deleniti dolorum earum enim, harum in incidunt, inventore ipsam itaque laborum magni odit quasi repudiandae sapiente tenetur vel vero! Ab aliquam amet consequatur cupiditate debitis deleniti eaque eligendi eos fugiat illum ipsam iure maxime molestias mollitia nam nemo nesciunt nihil nostrum praesentium quam reiciendis sit tenetur totam vel veniam voluptas voluptatem, voluptatum. Amet consectetur distinctio earum eius esse, est harum illo ipsum, minus optio, pariatur quaerat qui recusandae repudiandae ut! Aut corporis doloremque, dolores, dolorum earum, id nam neque nobis officia praesentium quaerat reiciendis totam veritatis? Aut debitis dolorem nobis non rerum. Accusantium aliquid asperiores at atque blanditiis deleniti dignissimos enim fuga harum illum maxime omnis perspiciatis, quibusdam recusandae tempore ut veniam voluptatibus. Earum explicabo id mollitia quo rerum sunt, veritatis. Architecto, dolores error esse expedita iste iusto laboriosam laudantium, obcaecati officia porro, possimus quisquam quos sit.
+                    </div>
+                    <div class="org2__section">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam facilis ipsam iure numquam, pariatur sequi voluptatem? Architecto doloremque dolorum error facere harum pariatur quas sunt. A blanditiis consectetur corporis dignissimos est explicabo iste labore, magnam, maxime molestias nemo placeat quam sed sunt ut voluptas voluptatem voluptatibus? Ex neque porro quam quis. A architecto modi quae quis rem! Ad aliquam aliquid commodi cupiditate deleniti dolorum earum enim, harum in incidunt, inventore ipsam itaque laborum magni odit quasi repudiandae sapiente tenetur vel vero! Ab aliquam amet consequatur cupiditate debitis deleniti eaque eligendi eos fugiat illum ipsam iure maxime molestias mollitia nam nemo nesciunt nihil nostrum praesentium quam reiciendis sit tenetur totam vel veniam voluptas voluptatem, voluptatum. Amet consectetur distinctio earum eius esse, est harum illo ipsum, minus optio, pariatur quaerat qui recusandae repudiandae ut! Aut corporis doloremque, dolores, dolorum earum, id nam neque nobis officia praesentium quaerat reiciendis totam veritatis? Aut debitis dolorem nobis non rerum. Accusantium aliquid asperiores at atque blanditiis deleniti dignissimos enim fuga harum illum maxime omnis perspiciatis, quibusdam recusandae tempore ut veniam voluptatibus. Earum explicabo id mollitia quo rerum sunt, veritatis. Architecto, dolores error esse expedita iste iusto laboriosam laudantium, obcaecati officia porro, possimus quisquam quos sit.
+                    </div>
+                    <div class="org2__section">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam facilis ipsam iure numquam, pariatur sequi voluptatem? Architecto doloremque dolorum error facere harum pariatur quas sunt. A blanditiis consectetur corporis dignissimos est explicabo iste labore, magnam, maxime molestias nemo placeat quam sed sunt ut voluptas voluptatem voluptatibus? Ex neque porro quam quis. A architecto modi quae quis rem! Ad aliquam aliquid commodi cupiditate deleniti dolorum earum enim, harum in incidunt, inventore ipsam itaque laborum magni odit quasi repudiandae sapiente tenetur vel vero! Ab aliquam amet consequatur cupiditate debitis deleniti eaque eligendi eos fugiat illum ipsam iure maxime molestias mollitia nam nemo nesciunt nihil nostrum praesentium quam reiciendis sit tenetur totam vel veniam voluptas voluptatem, voluptatum. Amet consectetur distinctio earum eius esse, est harum illo ipsum, minus optio, pariatur quaerat qui recusandae repudiandae ut! Aut corporis doloremque, dolores, dolorum earum, id nam neque nobis officia praesentium quaerat reiciendis totam veritatis? Aut debitis dolorem nobis non rerum. Accusantium aliquid asperiores at atque blanditiis deleniti dignissimos enim fuga harum illum maxime omnis perspiciatis, quibusdam recusandae tempore ut veniam voluptatibus. Earum explicabo id mollitia quo rerum sunt, veritatis. Architecto, dolores error esse expedita iste iusto laboriosam laudantium, obcaecati officia porro, possimus quisquam quos sit.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="size-checker" role="presentation" aria-hidden="true"></div>
+
+        <!-- Scripts -->
+        <script src="../vendors/jquery/jquery-3.6.0.min.js"></script>
+        <script src="../vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+        <script src="../vendors/outline/outline.js"></script>
+        <script src="../vendors/wavesurfer/wavesurfer.js"></script>
+        <script src="../vendors/expanding-textareas/dist/expanding.jquery.js"></script>
+        <script src="../vendors/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+        <script src="../vendors/sortable/Sortable.min.js"></script>
+        <script src="../vendors/bootstrap/bootstrap-modal-only.js"></script>
+        <script src="../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+        <script src="../vendors/owl-carousel/owl.carousel.min.js"></script>
+        <script src="../vendors/select2/js/select2.min.js"></script>
+        <script src="../scripts/_global.js"></script>
+        <script src="../scripts/_operations.js"></script>
+        <script src="../scripts/_profile.js"></script>
+        <script src="../scripts/_sidebar.js"></script>
+        <script src="../scripts/_mfp.js"></script>
+        <script src="../scripts/_search.js"></script>
+        <script src="../scripts/_carousel.js"></script>
+        <script src="../scripts/_player3.js"></script>
+        <script src="../scripts/_updates.js"></script>
+        <script src="../scripts/_side.js"></script>
+        <script src="../scripts/_happening.js"></script>
+        <script src="../scripts/_input.js"></script>
+        <script src="../scripts/_edit-post.js"></script>
+        <script src="../scripts/_post-form.js"></script>
+        <script src="../scripts/_button.js"></script>
+        <script src="../scripts/_quick-message.js"></script>
+        <script src="../scripts/_explore.js"></script>
+        <script src="../scripts/_shortcut.js"></script>
+        <script src="../scripts/_scrollbar.js"></script>
+        <script src="../scripts/_overlay.js"></script>
+        <script src="../scripts/_notifications.js"></script>
+        <script src="../scripts/_enter.js"></script>
+        <script src="../scripts/_suggesting.js"></script>
+        <script src="../scripts/_chat.js"></script>
+        <script src="../scripts/_badge.js"></script>
+        <script src="../scripts/_media-bar.js"></script>
+        <script src="../scripts/_settings.js"></script>
+        <script src="../scripts/_slideshow.js"></script>
+        <script src="../scripts/_expandable-bio.js"></script>
+        <script src="../scripts/_parallax.js"></script>
+        <script src="../scripts/_simple-parallax.js"></script>
+        <script src="../scripts/_anchor.js"></script>
+        <script src="../scripts/_modal.js"></script>
+        <script src="../scripts/_full-media-card.js"></script>
+        <script src="../scripts/_color-selection.js"></script>
+        <script src="../scripts/_layout-type.js"></script>
+        <script src="../scripts/_sortable.js"></script>
+        <script src="../scripts/_biography.js"></script>
+        <script src="../scripts/_full-biography.js"></script>
+        <script src="../scripts/_media-clip.js"></script>
+        <script src="../scripts/_typing.js"></script>
+        <script src="../scripts/_circles.js"></script>
+        <script src="../scripts/_brief.js"></script>
+        <script src="../scripts/_non-performer.js"></script>
+        <script src="../scripts/_classic.js"></script>
+        <script src="../scripts/_owl-carousel.js"></script>
+        <script src="../scripts/_add-filter.js"></script>
+        <script src="../scripts/_select2.js"></script>
+        <script src="../scripts/_multiline.js"></script>
+        <script src="../scripts/_network-news.js"></script>
+        <script src="../scripts/_vertical-artist.js"></script>
+        <script src="../scripts/_tabs.js"></script>
+        <script src="../scripts/_picking.js"></script>
+        <script src="../scripts/_copying.js"></script>
+
+
+    </body>
+</html>

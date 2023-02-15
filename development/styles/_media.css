@@ -104,6 +104,35 @@
     }
 
 
+.media--panel {
+    border: 1px solid #E8E8E8;
+    border-radius: 5px;
+    padding: 10px 11px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3%;
+}
+    .media--panel .media__link {
+        flex-grow: 1;
+        width: auto;
+        background-color: #F3F5F8;
+        border-radius: 4px;
+        margin: 0;
+    }
+
+    .media--panel .media__link:hover {
+        background-color: #E9EBEE;
+    }
+
+    .media--panel .media__link:active {
+        background-color: #DFE1E4;
+    }
+        .media--panel .media__icon {
+            fill: #000000;
+        }
+
+
 .media--share {
     gap: 12px;
 }

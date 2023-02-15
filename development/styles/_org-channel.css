@@ -1,0 +1,14 @@
+.org-channel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+}
+    .org-channel__inner {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        color: #23282C;
+        text-align: center;
+    }
+
