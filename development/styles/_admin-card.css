@@ -30,6 +30,7 @@
         }
 
     .admin-card__body {
+        display: block;
         width: 134px;
         height: 134px;
         margin: 6px auto 0;
@@ -37,7 +38,15 @@
         border: 3px solid transparent;
         border-radius: 50%;
         overflow: hidden;
+        color: inherit;
+        text-decoration: none;
+        transition: filter var(--transition-hover);
     }
+
+    .admin-card__body:hover {
+        filter: contrast(1.05);
+    }
+
         .admin-card__members {
             height: 68px;
             padding-top: 30px;
