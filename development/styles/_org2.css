@@ -205,4 +205,6 @@
 
         .org2__section {
             margin-top: 40px;
+            margin-left: calc(-1 * var(--container-mobile-padding));
+            margin-right: calc(-1 * var(--container-mobile-padding));
         }
