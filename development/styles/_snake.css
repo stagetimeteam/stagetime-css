@@ -1,5 +1,5 @@
 .snake {
-    display: flex;
+    display: inline-flex;
     align-items: flex-start;
 }
     .snake__item {

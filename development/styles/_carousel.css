@@ -441,6 +441,33 @@
         }
 
 
+.carousel--for-connections {
+
+}
+    .carousel--for-connections .carousel__container {
+
+    }
+        .carousel--for-connections .carousel__item {
+            width: 260px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 399px) {
+            .carousel--for-connections .carousel__item {
+                width: 244px;
+            }
+        }
+
+        .carousel--for-connections .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel--for-connections .carousel__control {
+            margin-bottom: 9px;
+            margin-right: 124px;
+        }
+
+
 .carousel--for-new-for-you {
 
 }
