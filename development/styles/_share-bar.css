@@ -1,0 +1,87 @@
+.share-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 8px;
+    gap: 14px;
+    background-color: #F8F8F9;
+    border-radius: 4px;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color var(--transition-hover);
+}
+
+.share-bar:hover {
+    background-color: #F2F2F3;
+    transition: background-color var(--transition-hover);
+}
+
+    .share-bar::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 30px;
+        background-color: #E8EDF4;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .share-bar:hover::before {
+        background-color: #E3E8F0;
+    }
+
+    .share-bar__photo {
+        position: relative;
+        flex-shrink: 0;
+        border-radius: 4px;
+    }
+
+    .share-bar__body {
+        overflow: hidden;
+        flex-grow: 1;
+        padding-bottom: 6px;
+    }
+        .share-bar__heading {
+            position: relative;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
+            color: #23282C;
+        }
+
+        .share-bar__link {
+            margin-top: 1px;
+            position: relative;
+            word-wrap: break-word;
+            font-size: 9px;
+            line-height: 12px;
+            color: #44474A;
+        }
+
+    .share-bar__action {
+        position: relative;
+        flex-shrink: 0;
+        width: 32px;
+        height: 100%;
+        background-color: #23282C;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        .share-bar__icon {
+            vertical-align: top;
+            fill: #FFFFFF;
+            width: 16px;
+            height: 16px;
+        }
+
+
+    .share-bar .bubble {
+        margin-bottom: 10px;
+    }
