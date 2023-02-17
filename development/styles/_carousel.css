@@ -387,6 +387,39 @@
         }
 
 
+.carousel--for-events {
+
+}
+    .carousel--for-events .carousel__container {
+
+    }
+        .carousel--for-events .carousel__item {
+            width: 335px;
+            margin-right: 20px;
+        }
+
+        @media (max-width: 399px) {
+            .carousel--for-events .carousel__item {
+                width: 310px;
+                margin-right: 20px;
+            }
+        }
+
+        .carousel--for-events .carousel__item:last-child {
+            margin-right: 0;
+        }
+
+        .carousel--for-events .carousel__control {
+            margin-bottom: 9px;
+            margin-right: 124px;
+        }
+
+.carousel--for-events.carousel--arrows-on-top .carousel__control--prev,
+.carousel--for-events.carousel--arrows-on-top .carousel__control--next {
+    margin-bottom: 76px;
+}
+
+
 .carousel--for-opportunities {
 
 }

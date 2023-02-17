@@ -58,19 +58,34 @@
                 color: #545454;
             }
 
+            .performance__addition {
+                font-weight: normal;
+            }
+
             .performance__note + .performance__note {
                 margin-top: 4px;
             }
 
     .performance__footer {
+        position: relative;
         display: flex;
         align-items: center;
-        border-top: 1px solid #E8E8E8;
         background-color: #F2F2F2;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        padding: 12px 16px;
+        padding: 13px 16px 12px;
     }
+        .performance__footer::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            display: block;
+            height: 1px;
+            background-color: #E8E8E8;
+        }
+
         .performance__dates {
             position: relative;
             padding: 6px 6px 8px 0;

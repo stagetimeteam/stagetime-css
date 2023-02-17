@@ -8,6 +8,7 @@
     border-radius: 0;
 }
     .data-section__heading {
+        margin-right: 80px;
         /*margin-top: 0;*/
         /*margin-bottom: 0;*/
         /*font-weight: 600;*/
@@ -24,7 +25,7 @@
     .data-section__more {
         /*position: absolute;*/
         right: var(--container-mobile-padding);
-        /*top: 15px;*/
+        top: 15px;
     }
         .data-section__more.button,
         .data-section__more .button {
