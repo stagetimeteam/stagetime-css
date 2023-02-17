@@ -2,9 +2,12 @@
     position: relative;
     display: flex;
     align-items: center;
+    gap: 14px;
+    width: 100%;
     height: 80px;
     padding: 8px;
-    gap: 14px;
+    text-align: left;
+    border: none;
     background-color: #F8F8F9;
     border-radius: 4px;
     font-family: inherit;
