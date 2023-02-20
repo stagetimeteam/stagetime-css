@@ -108,12 +108,12 @@
                 height: 118px;
                 position: relative;
                 flex-grow: 1;
-                margin-left: var(--org2-gap);
                 width: var(--org2-right);
             }
 
-            .org2__brand:last-child {
-                margin-left: 0;
+            .org2__search {
+                margin-top: 66px;
+                width: 287px;
             }
                 .org2__logo {
                     position: absolute;
@@ -149,6 +149,7 @@
                 }
 
             .org2__follower {
+                margin-right: var(--org2-gap);
                 order: -1;
                 width: var(--org2-left);
                 padding: 9px 16px 15px;
