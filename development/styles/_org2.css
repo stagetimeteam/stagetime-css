@@ -110,6 +110,11 @@
                 margin-left: var(--org2-gap);
                 width: var(--org2-right);
             }
+
+            .org2__brand:last-child {
+                margin-left: 0;
+            }
+
                 .org2__logo {
                     display: inline-block;
                     vertical-align: top;
@@ -208,3 +213,14 @@
             margin-left: calc(-1 * var(--container-mobile-padding));
             margin-right: calc(-1 * var(--container-mobile-padding));
         }
+
+
+        .org2__people {
+            margin-top: 70px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 27px 53px;
+        }
+            .org-people__item {
+
+            }
