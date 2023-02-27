@@ -8,25 +8,31 @@
     /*padding-bottom: 80px;*/
 }
     .org2__head {
-
+        overflow-y: auto;
+        border-left: none;
+        border-right: none;
     }
         .org2__ribbon {
             /*position: relative;*/
+            padding-left: 10px;
+            padding-right: 20px;
+            display: inline-flex;
+            align-items: center;
         }
             .org2__nav {
                 /*display: flex;*/
                 /*align-items: flex-start;*/
                 /*padding-top: 14px;*/
                 /*padding-bottom: 14px;*/
-                /*margin-left: -20px;*/
+                margin-left: 0;
             }
                 .org2__link {
                     /*position: relative;*/
-                    /*padding: 13px 20px;*/
-                    /*margin-left: 18px;*/
+                    padding: 8px 11px;
+                    margin-left: 0;
                     /*font-weight: 600;*/
-                    /*font-size: 13px;*/
-                    /*line-height: 16px;*/
+                    font-size: 12px;
+                    line-height: 16px;
                     /*color: #545454;*/
                     /*text-decoration: none;*/
                     /*border-radius: 4px;*/
@@ -49,9 +55,9 @@
                     .org2__link::after {
                         /*content: "";*/
                         /*position: absolute;*/
-                        /*left: 16px;*/
-                        /*right: 16px;*/
-                        /*bottom: 6px;*/
+                        left: 10px;
+                        right: 10px;
+                        bottom: 1px;
                         /*height: 3px;*/
                         /*border-radius: 2px;*/
                     }
@@ -61,14 +67,15 @@
                     }
 
         .org2__institution {
-            /*position: absolute;*/
+            margin-left: 10px;
+            position: static;
             /*right: 0;*/
             /*top: 20px;*/
         }
 
     .org2__preview {
         /*position: relative;*/
-        /*height: 247px;*/
+        height: 142px;
     }
         .org2__background {
             /*position: absolute;*/
@@ -96,7 +103,7 @@
             }
 
     .org2__body {
-        /*margin-top: -41px;*/
+        margin-top: -29px;
         /*position: relative;*/
     }
         .org2__first-row {
@@ -104,19 +111,18 @@
             /*align-items: flex-start;*/
         }
             .org2__brand {
+                padding-left: 0;
+                height: auto;
                 /*display: flex;*/
                 /*align-items: flex-start;*/
                 /*flex-grow: 1;*/
                 /*margin-left: var(--org2-gap);*/
-                /*width: var(--org2-right);*/
+                width: auto;
             }
                 .org2__logo {
-                    /*display: inline-block;*/
-                    /*vertical-align: top;*/
-                    /*margin-right: 27px;*/
-                    /*padding: 1px;*/
-                    /*background-color: #CACACA;*/
-                    /*border-radius: 4px;*/
+                    position: static;
+                    display: inline-block;
+                    vertical-align: top;
                 }
                     .org2__emblem {
                         /*vertical-align: top;*/
@@ -124,17 +130,19 @@
                     }
 
                 .org2__heading {
-                    /*margin-top: 62px;*/
+                    margin-top: 8px;
                     /*margin-bottom: 0;*/
                     /*font-weight: 600;*/
-                    /*font-size: 30px;*/
-                    /*line-height: 34px;*/
+                    font-size: 16px;
+                    line-height: 24px;
                     /*color: #23282C;*/
                 }
 
             .org2__follower {
+                margin-top: 10px;
+                margin-right: 0;
                 /*order: -1;*/
-                /*width: var(--org2-left);*/
+                width: auto;
                 /*padding: 9px 16px 15px;*/
                 /*background-color: #F3F5F8;*/
                 /*border-top: 6px solid #ACC0D5;*/
@@ -162,14 +170,14 @@
                     }
 
         .org2__second-row {
-            /*margin-top: 12px;*/
+            margin-top: 56px;
             display: block;
             /*align-items: flex-start;*/
         }
             .org2__about {
                 /*margin-top: -30px;*/
-                /*margin-left: var(--org2-gap);*/
-                /*width: var(--org2-right);*/
+                margin-left: 0;
+                width: auto;
             }
                 .org2__sub-heading {
                     /*font-weight: 600;*/
@@ -190,8 +198,9 @@
                 }
 
             .org2__contacts {
+                margin-top: 20px;
                 /*order: -1;*/
-                /*width: var(--org2-left);*/
+                width: auto;
             }
                 .org2__channels {
                     /*background-color: #F3F5F8;*/

@@ -28,6 +28,7 @@
                     font-size: 13px;
                     line-height: 16px;
                     color: #545454;
+                    white-space: nowrap;
                     text-decoration: none;
                     border-radius: 4px;
                     transition: background-color var(--transition-hover);
@@ -64,6 +65,8 @@
             position: absolute;
             right: 0;
             top: 20px;
+            white-space: nowrap;
+            margin-left: 40px;
         }
 
     .org2__preview {
@@ -189,6 +192,8 @@
                 width: var(--org2-right);
             }
                 .org2__sub-heading {
+                    margin-top: 11px;
+                    margin-bottom: 0;
                     font-weight: 600;
                     font-size: 13px;
                     line-height: 20px;

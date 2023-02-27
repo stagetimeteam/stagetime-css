@@ -34,3 +34,9 @@
 /*.wysiwyg blockquote:last-child {*/
 /*    margin-bottom: 0;*/
 /*}*/
+
+
+.wysiwyg--description {
+    font-size: 16px;
+    line-height: 30px;
+}
