@@ -129,6 +129,10 @@
                         /*border-radius: 3px;*/
                     }
 
+                .org2__pre-heading {
+                    margin-top: 10px;
+                }
+
                 .org2__heading {
                     margin-top: 8px;
                     /*margin-bottom: 0;*/
@@ -137,6 +141,10 @@
                     line-height: 24px;
                     /*color: #23282C;*/
                 }
+
+            .org2__search {
+                margin-top: 20px;
+            }
 
             .org2__follower {
                 margin-top: 10px;
@@ -219,5 +227,14 @@
         }
 
     .org2__people {
+        margin-top: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 27px 20px;
+    }
 
+    @media (max-width: 639px) {
+
+        .org2__people {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
