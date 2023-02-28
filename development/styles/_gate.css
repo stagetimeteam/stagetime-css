@@ -81,7 +81,54 @@
                         font-weight: bold;
                     }
 
+
+                .gate__org {
+
+                }
+                    .gate__org-summary {
+                        display: flex;
+                        align-items: flex-start;
+                    }
+                        .gate__preview {
+                            position: relative;
+                            flex-shrink: 0;
+                            margin-left: -5px;
+                        }
+                            .gate__preview::after {
+                                content: "";
+                                position: absolute;
+                                left: 100%;
+                                margin-left: 32px;
+                                top: 47px;
+                                width: 1px;
+                                height: 49px;
+                                background-color: #FFFFFF;
+                            }
+
+                        .gate__org-branding {
+                            margin-left: 54px;
+                            margin-top: 41px;
+                        }
+
+
+                    .gate__org-slogan {
+                        margin-top: 23px;
+                        width: 377px;
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 26px;
+                        color: #FFFFFF;
+                        letter-spacing: -0.3px;
+                    }
+                        .gate__org-highlight {
+                            font-weight: 600;
+                        }
+
+
+
+
             .gate__form {
                 width: 380px;
+                flex-shrink: 0;
             }
 

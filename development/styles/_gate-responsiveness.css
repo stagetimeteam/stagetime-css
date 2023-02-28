@@ -33,6 +33,61 @@
                         /*font-weight: bold;*/
                     }
 
+
+                .gate__org {
+
+                }
+                    .gate__org-summary {
+                    /*    display: flex;*/
+                    /*    align-items: flex-start;*/
+                    }
+                        .gate__preview {
+                            /*position: relative;*/
+                            /*flex-shrink: 0;*/
+                            /*margin-left: -5px;*/
+                        }
+                            .gate__preview::after {
+                                /*content: "";*/
+                                /*position: absolute;*/
+                                /*left: 100%;*/
+                                margin-left: 22px;
+                                top: 31px;
+                                /*width: 1px;*/
+                                height: 32px;
+                                background-color: #202427;
+                            }
+
+                            .gate--inverted .gate__preview::after {
+                                background-color: #FFFFFF;
+                            }
+
+                        .gate__org-branding {
+                            margin-left: 34px;
+                            margin-top: 17px;
+                        }
+                            .gate__org-branding.auth-logo,
+                            .gate__org-branding.auth-logo {
+                                width: 154px;
+                            }
+
+                    .gate__org-slogan {
+                        /*margin-top: 23px;*/
+                        /*width: 377px;*/
+                        /*font-weight: 300;*/
+                        /*font-size: 16px;*/
+                        /*line-height: 26px;*/
+                        color: #333234;
+                        /*letter-spacing: -0.3px;*/
+                    }
+
+                    .gate--inverted .gate__org-slogan {
+                        color: #FFFFFF;
+                    }
+
+                        .gate__org-highlight {
+                            /*font-weight: 600;*/
+                        }
+
             .gate__form {
                 width: auto;
                 margin-top: 50px;
