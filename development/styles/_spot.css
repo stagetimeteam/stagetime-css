@@ -1,5 +1,6 @@
 .spot {
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     width: 134px;
     height: 134px;
     background-color: #E7EDF5;

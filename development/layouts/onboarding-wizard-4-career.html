@@ -12,7 +12,7 @@
     </head>
     <body>
 
-        <div class="wizard wizard--career">
+        <div class="wizard wizard--building">
             <div class="wizard__header">
                 <a class="wizard__branding logo" href="#">
                     STAGETIME
@@ -25,166 +25,497 @@
                 </div>
             </div>
             <div class="wizard__body">
-                <div class="career">
-                    <h1 class="career__heading">
+                <div class="building">
+                    <h1 class="building__heading">
                         Where have you worked and learned?
                     </h1>
-                    <div class="career__description">
-                        Workplace, educational institutions, resident artist and training programs, and houses where you’ve performed.
-                    </div>
-                    <div class="career__form">
-                        <div class="employment">
-                            <div class="employment__row">
-                                <div class="input input--larger-font input--scanner">
-                                    <input class="input__widget" type="text" placeholder="Organization">
-                                    <div class="input__dropdown">
-                                        <div class="input__options">
-                                            <a class="input__suggest" href="#">Lyric Opera of Chicago</a>
-                                            <a class="input__suggest" href="#">The Dallas Opera</a>
-                                            <a class="input__suggest" href="#">Opera Theatre of Saint Louis</a>
-                                            <a class="input__suggest input__suggest--add" href="#">Create “<span class="dark">Oper Zurich</span>”</a>
-                                        </div>
-                                    </div>
+                    <div class="building__list">
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
                                 </div>
-                                when selected:
-                                <div class="management-suggest management-suggest--selected">
-                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-a-44x44@2x.jpg 2x"
-                                             src="../temp/organization-a-44x44.jpg"
-                                             width="44"
-                                             height="44"
-                                             alt="Mark Zuckerberg"
-                                        >
-                                    </div>
-                                    <div class="management-suggest__name">
-                                        <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
-                                    </div>
-                                    <button class="management-suggest__delete action action--flipped" type="button">
-                                            <span class="action__image">
-                                                <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
-                                            </span>
-                                    </button>
+                                <div class="building__note">
+                                    Bass-baritone
                                 </div>
-                                creating new organization:
-                                <div class="management-suggest management-suggest--selected">
-                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
-                                        <img class="avatar__image" src="../symbols/org-placeholder.svg" width="44" height="44" alt="">
-                                    </div>
-                                    <div class="management-suggest__name">
-                                        <strong>My New Organization Name</strong>
-                                    </div>
-                                    <button class="management-suggest__delete action action--flipped" type="button">
-                                        <span class="action__image">
-                                            <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
-                                        </span>
-                                    </button>
-                                </div>
-                                onboarding with organization:
-                                <div class="management-suggest management-suggest--selected">
-                                    <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
-                                        <img class="avatar__image"
-                                             srcset="../temp/organization-a-44x44@2x.jpg 2x"
-                                             src="../temp/organization-a-44x44.jpg"
-                                             width="44"
-                                             height="44"
-                                             alt="Mark Zuckerberg"
-                                        >
-                                    </div>
-                                    <div class="management-suggest__name">
-                                        <strong>The Metropolitan Opera</strong>
-                                    </div>
-                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
                             </div>
-                            <div class="employment__row employment__row--has-columns employment__row--has-checkboxes">
-                                <div class="employment__col employment__col--narrow">
-                                    <label class="employment__option choice choice--radio choice--larger-font choice--full-width">
-                                        <input class="choice__widget" type="radio" name="career-or-education">
-                                        <i class="choice__icon" role="presentation"></i>
-                                        <span class="choice__label">Career Highlight</span>
-                                    </label>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-b-104x104@2x.jpg 2x"
+                                     src="../temp/person-b-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
                                 </div>
-                                <div class="employment__col employment__col--narrow">
-                                    <label class="employment__option choice choice--radio choice--larger-font choice--full-width">
-                                        <input class="choice__widget" type="radio" name="career-or-education">
-                                        <i class="choice__icon" role="presentation"></i>
-                                        <span class="choice__label">Education</span>
-                                    </label>
+                                <div class="building__note">
+                                    Cello
                                 </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
                             </div>
-                            <div class="employment__row">
-                                <select class="select2--init select2--tagging" multiple="multiple" style="width: 100%;">
-                                    <option value="1">Bass</option>
-                                    <option value="2">Bass-baritone</option>
-                                    <option value="3">Bass Guitar</option>
-                                    <option value="4">Bass 101</option>
-                                    <option value="5">Bass-baritone lorem</option>
-                                    <option value="6">More bass Bass Guitar effect</option>
-                                    <option value="7">Even more Bass</option>
-                                    <option value="8">Another Bass-baritone</option>
-                                    <option value="9">Just Bass Guitar 2</option>
-                                    <option value="10">Yet another bass</option>
-                                </select>
-                            </div>
-                            <div class="employment__row">
-                                <div class="input input--larger-font">
-                                    <input class="input__widget" type="text" placeholder="Production, Show, or Work">
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-c-104x104@2x.jpg 2x"
+                                     src="../temp/person-c-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
                                 </div>
-                            </div>
-                            <div class="employment__row employment__row--has-checkboxes">
-                                <label class="choice choice--checkbox choice--larger-font">
-                                    <input class="choice__widget" type="checkbox">
-                                    <i class="choice__icon" role="presentation"></i>
-                                    <span class="choice__label">I am currently affiliated with this organization</span>
-                                </label>
-                            </div>
-                            <div class="employment__row employment__row--has-columns">
-                                <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
-                                    <select class="input__widget">
-                                        <option value="placeholder">Start month</option>
-                                        <option>January</option>
-                                        <option>February</option>
-                                        <option>...</option>
-                                        <option>December</option>
-                                    </select>
+                                <div class="building__note">
+                                    Cello
                                 </div>
-                                <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
-                                    <select class="input__widget" required>
-                                        <option value="placeholder">Start year *</option>
-                                        <option>1950</option>
-                                        <option>1951</option>
-                                        <option>...</option>
-                                        <option>2021</option>
-                                    </select>
-                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
                             </div>
-                            <div class="employment__row employment__row--has-columns">
-                                <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
-                                    <select class="input__widget">
-                                        <option value="placeholder">End month (or expected)</option>
-                                        <option>January</option>
-                                        <option>February</option>
-                                        <option>...</option>
-                                        <option>December</option>
-                                    </select>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-d-104x104@2x.jpg 2x"
+                                     src="../temp/person-d-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
                                 </div>
-                                <div class="employment__col input input--select input--larger-font input--placeholder-is-chosen">
-                                    <select class="input__widget" required>
-                                        <option value="placeholder">Start year *</option>
-                                        <option>1950</option>
-                                        <option>1951</option>
-                                        <option>...</option>
-                                        <option>2021</option>
-                                    </select>
+                                <div class="building__note">
+                                    Bass-baritone
                                 </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
                             </div>
-                        </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-e-104x104@2x.jpg 2x"
+                                     src="../temp/person-e-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-f-104x104@2x.jpg 2x"
+                                     src="../temp/person-f-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
+                                </div>
+                                <div class="building__note">
+                                    Bass-baritone
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-b-104x104@2x.jpg 2x"
+                                     src="../temp/person-b-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-c-104x104@2x.jpg 2x"
+                                     src="../temp/person-c-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-d-104x104@2x.jpg 2x"
+                                     src="../temp/person-d-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
+                                </div>
+                                <div class="building__note">
+                                    Bass-baritone
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-e-104x104@2x.jpg 2x"
+                                     src="../temp/person-e-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-f-104x104@2x.jpg 2x"
+                                     src="../temp/person-f-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
+                                </div>
+                                <div class="building__note">
+                                    Bass-baritone
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-b-104x104@2x.jpg 2x"
+                                     src="../temp/person-b-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-c-104x104@2x.jpg 2x"
+                                     src="../temp/person-c-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-d-104x104@2x.jpg 2x"
+                                     src="../temp/person-d-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
+                                </div>
+                                <div class="building__note">
+                                    Bass-baritone
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-e-104x104@2x.jpg 2x"
+                                     src="../temp/person-e-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-f-104x104@2x.jpg 2x"
+                                     src="../temp/person-f-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-a-104x104@2x.jpg 2x"
+                                     src="../temp/person-a-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
+                                </div>
+                                <div class="building__note">
+                                    Bass-baritone
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-b-104x104@2x.jpg 2x"
+                                     src="../temp/person-b-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-c-104x104@2x.jpg 2x"
+                                     src="../temp/person-c-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-d-104x104@2x.jpg 2x"
+                                     src="../temp/person-d-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Calvin Griffin
+                                </div>
+                                <div class="building__note">
+                                    Bass-baritone
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox">
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-e-104x104@2x.jpg 2x"
+                                     src="../temp/person-e-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Alyssa Dessoye
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
+                        <label class="building__item">
+                            <input class="building__widget" type="checkbox" checked>
+                            <div class="building__body">
+                                <img class="building__preview"
+                                     srcset="../temp/person-f-104x104@2x.jpg 2x"
+                                     src="../temp/person-f-104x104.jpg"
+                                     width="104"
+                                     height="104"
+                                     alt=""
+                                >
+                                <div class="building__name">
+                                    Konstantin Konstantinipolsky
+                                </div>
+                                <div class="building__note">
+                                    Cello
+                                </div>
+                                <img class="building__add" src="../symbols/label-add.svg" width="35" height="35" alt="">
+                                <img class="building__check" src="../symbols/label-check.svg" width="35" height="35" alt="">
+                            </div>
+                        </label>
                     </div>
                 </div>
             </div>
             <div class="wizard__footer">
                 <div class="wizard__navigation">
-                    <a class="wizard__continue button button--side-submit button--black" href="#">Continue Building</a>
+                    <a class="wizard__continue button button--side-submit button--black" href="#">Add 3 connections</a>
                     <a class="wizard__skip button button--side-submit button--transparent-black" href="#">Skip</a>
                 </div>
             </div>
