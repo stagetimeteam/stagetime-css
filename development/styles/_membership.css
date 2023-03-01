@@ -1,0 +1,17 @@
+.membership {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+    .membership__handler {
+        width: 26px;
+        height: 26px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #E8E8E8;
+        border-radius: 50%;
+    }
+        .membership__icon {
+            vertical-align: top;
+        }
