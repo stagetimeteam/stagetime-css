@@ -1,10 +1,58 @@
 .all-set {
-
+    position: relative;
+    min-height: 100%;
 }
+    .all-set__backgrounds {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-image: url("../images/org-set-desktop.jpg");
+        background-size: 78px 263px;
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .all-set__backgrounds {
+            background-image: url("../images/org-set-desktop@2x.jpg");
+        }
+    }
+
+        .all-set__backgrounds::before {
+            content: "";
+            position: absolute;
+            right: -116px;
+            top: -153px;
+            display: block;
+            width: 292px;
+            height: 292px;
+            background-image: linear-gradient(135deg, #C6B1A6 0%, rgba(198, 177, 166, 0) 100%);
+            border-radius: 50%;
+        }
+
+        .all-set__backgrounds::after {
+            content: "";
+            position: absolute;
+            left: 62px;
+            bottom: -166px;
+            display: block;
+            width: 160px;
+            height: 329px;
+            background-image: linear-gradient(225.92deg, rgba(157, 178, 190, 0.6) 0%, rgba(174, 184, 173, 0.078) 96.09%);
+            border-top-left-radius: 59px;
+            border-top-right-radius: 15px;
+        }
+
     .all-set__wrap {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 40px;
+        padding-bottom: 107px;
     }
         .all-set__preview {
             text-align: center;
@@ -35,10 +83,12 @@
         }
             .all-set__action.button,
             .all-set__action .button {
-                width: 316px;
+                width: 100%;
+                max-width: 316px;
                 padding: 16px;
                 font-size: 18px;
                 line-height: 24px;
+                border-radius: 6px;
             }
 
         .all-set__table {
@@ -79,7 +129,7 @@
                     .all-set__index {
                         position: absolute;
                         left: 0;
-                        top: 0;
+                        top: 8px;
                         width: 42px;
                         height: 42px;
                         border: 2px solid #FFFFFF;

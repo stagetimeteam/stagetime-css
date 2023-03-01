@@ -131,3 +131,14 @@
 .wizard--building {
 
 }
+
+/* 6 */
+.wizard--org-set {
+    height: 100%;
+    padding-bottom: 0;
+}
+    .wizard--org-set .wizard__body {
+        height: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
