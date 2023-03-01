@@ -15,3 +15,21 @@
         .membership__icon {
             vertical-align: top;
         }
+
+        .membership .bubble {
+            left: 25px;
+            bottom: 25px;
+        }
+
+
+@media (min-width: 639px) {
+
+    body:not(:has(.customize)) .page .non-performer__header .membership .bubble {
+        bottom: auto;
+        top: 25px;
+    }
+        body:not(:has(.customize)) .page .non-performer__header .membership .bubble--leaf .bubble__body {
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 0;
+        }
+}

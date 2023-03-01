@@ -13,6 +13,7 @@
         font-size: 30px;
         line-height: 34px;
         color: var(--theme-main);
+        white-space: nowrap;
         letter-spacing: -0.8px;
     }
         .heading-group__heading .membership {
