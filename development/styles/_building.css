@@ -84,6 +84,14 @@
                     color: #8B8B8B;
                 }
 
+                .building__org {
+                    font-style: italic;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #23282C;
+                }
+
                 .building__add {
                     position: absolute;
                     right: 16px;
