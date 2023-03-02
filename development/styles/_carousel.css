@@ -416,7 +416,8 @@
 
 .carousel--for-events.carousel--arrows-on-top .carousel__control--prev,
 .carousel--for-events.carousel--arrows-on-top .carousel__control--next {
-    margin-bottom: 76px;
+    margin-bottom: 24px;
+    margin-right: 36px;
 }
 
 
