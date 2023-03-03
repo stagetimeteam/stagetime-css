@@ -17,6 +17,7 @@
         }
 
         .membership .bubble {
+            z-index: 50; /* higher than .vertical-artist::before */
             left: 25px;
             bottom: 25px;
         }
@@ -24,11 +25,13 @@
 
 @media (min-width: 639px) {
 
-    body:not(:has(.customize)) .page .non-performer__header .membership .bubble {
+    body:not(:has(.customize)) .page .non-performer__header .membership .bubble,
+    body:not(:has(.vertical-artist__gallery)) .vertical-artist__body .vertical-artist__header .membership .bubble {
         bottom: auto;
         top: 25px;
     }
-        body:not(:has(.customize)) .page .non-performer__header .membership .bubble--leaf .bubble__body {
+        body:not(:has(.customize)) .page .non-performer__header .membership .bubble--leaf .bubble__body,
+        body:not(:has(.vertical-artist__gallery)) .vertical-artist__body .vertical-artist__header .membership .bubble--leaf .bubble__body {
             border-bottom-left-radius: 20px;
             border-top-left-radius: 0;
         }
