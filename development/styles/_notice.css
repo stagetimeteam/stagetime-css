@@ -1,31 +1,49 @@
-:root {
-    --notice-left: 105px;
-    --notice-right: 33px;
-}
-
 .notice {
     position: relative;
     display: flex; /* flexbug #3 */
     flex-wrap: wrap;
     align-items: center;
-    min-height: 80px;
-    padding: 10px var(--notice-right) 10px var(--notice-left);
+    min-height: 74px;
+    padding: 17px 16px 17px 82px;
+    background-color: #F8F8F9;
     text-decoration: none;
     transition: background-color var(--transition-hover);
 }
 
 .notice:hover {
-    background-color: #F5F5F5;
+    background-color: #EEEEEF;
+}
+
+
+.notice--unread {
+    background-color: #E8EDF4;
+    box-shadow: inset 9px 0 0 #C0CCDE;
+}
+
+.notice--unread:hover {
+    background-color: #DEE3EA;
+    box-shadow: inset 9px 0 0 #B6C2D4;
 }
 
 .notice:first-child {
     margin-top: 0;
 }
+
+.notice + .notice {
+    margin-top: 4px;
+}
     .notice__preview {
         position: absolute;
         z-index: 10;
-        left: 32px;
-        top: 13px;
+        left: 21px;
+        top: 15px;
+    }
+
+    .notice__org {
+        position: absolute;
+        z-index: 10;
+        left: 55px;
+        top: 40px;
     }
 
     .notice__heart {
@@ -36,23 +54,23 @@
     }
 
     .notice__heart--inner {
-        left: 76px;
+        left: 56px;
         top: 16px;
         opacity: 0.6;
     }
 
     .notice__heart--outer {
-        left: 82px;
+        left: 62px;
         top: 10px;
         opacity: 0.8;
     }
 
     .notice__body {
-        position: relative;
+        padding-right: 40px;
         font-size: 13px;
         line-height: 20px;
         letter-spacing: -0.02em;
-        color: #696A6B;
+        color: #23282C;
         text-decoration: none;
     }
         .notice__body .link--text-alike {
@@ -63,7 +81,6 @@
         .notice__body .link--text-alike:hover {
             opacity: 0.6;
         }
-
             .notice__name {
                 font-weight: 600;
                 font-size: 13px;
@@ -87,21 +104,24 @@
             }
 
             .notice__time {
-                font-size: 12px;
-                line-height: 16px;
-                color: #A7A8AB;
+                position: absolute;
+                right: 16px;
+                top: 10px;
+                font-size: 13px;
+                line-height: 20px;
+                color: #44474A;
             }
 
 
     .notice__operations {
         margin-top: 16px;
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: minmax(0, 1fr);
+        display: flex;
+        align-items: flex-start;
         gap: 10px;
         width: 100%;
     }
-        .notice__action {
+        .notice__action,
+        .notice__action.button {
             flex-grow: 1;
             flex-basis: 0;
         }
@@ -109,6 +129,12 @@
             .notice__action .button {
                 width: 100%;
             }
+
+        .notice__action:only-child,
+        .notice__action .button:only-child {
+            flex-grow: 0;
+            width: auto;
+        }
 
 
         .notice__output {
