@@ -61,7 +61,7 @@
 
 .bubble--top {
     position: absolute;
-    z-index: 4000;
+    z-index: 4000; /* why higher than header? */
     right: 50%;
     bottom: 100%;
     transform: translateX(50%);
@@ -85,7 +85,7 @@
 
 .bubble--top-left {
     position: absolute;
-    z-index: 4000;
+    z-index: 4000; /* why higher than header? */
     right: 0;
     bottom: 100%;
     margin-bottom: 5px;
@@ -200,7 +200,7 @@
 
 .bubble--leaf {
     position: absolute;
-    z-index: 4000;
+    z-index: 4000; /* why higher than header? */
     left: 13px;
     bottom: 11px;
 }
@@ -219,7 +219,7 @@
 
 .bubble--right-leaf {
     position: absolute;
-    z-index: 4000;
+    z-index: 4000; /* why higher than header? */
     right: 100%;
     bottom: 100%;
 }
