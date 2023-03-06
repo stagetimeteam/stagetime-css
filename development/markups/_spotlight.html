@@ -25,32 +25,35 @@
             <br>
             <br>
 
-            <style>
-                .foobar {
-                    display: inline-block;
-                    vertical-align: top;
-                    position: relative;
-                }
+            <div class="foobar">
 
-                .foobar__body {
-                    position: relative;
-                    width: 50px;
-                    height: 50px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                }
+                <style>
+                    .foobar {
+                        display: inline-block;
+                        vertical-align: top;
+                        position: relative;
+                    }
 
-                .foobar__help {
-                    position: absolute !important; /* .spotlight */
-                    left: 50%;
-                    top: 50%;
-                    width: 80px;
-                    height: 80px;
-                    margin-top: -40px;
-                    margin-left: -40px;
-                }
+                    .foobar__body {
+                        position: relative;
+                        width: 50px;
+                        height: 50px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    .foobar__help {
+                        position: absolute !important; /* .spotlight */
+                        left: 50%;
+                        top: 50%;
+                        width: 80px;
+                        height: 80px;
+                        margin-top: -40px;
+                        margin-left: -40px;
+                    }
+
                     .foobar__help .spotlight__beam {
                         border-radius: 50%;
                     }
@@ -59,9 +62,7 @@
                         margin-left: 40px;
                     }
 
-            </style>
-
-            <div class="foobar">
+                </style>
 
                 <div class="foobar__body" id="foo-spot">
                     Lorem Ipsum
@@ -93,11 +94,21 @@
 
             </div>
 
+
             <br>
             <br>
             <br>
+            <h2>Intro</h2>
+            <p>
+                Whole mechanism is based on 3 layers:<br>
+                1) Website layer.<br>
+                2) <b>.spotlight</b> component that lies overlaps whole website. This component includes fading overlay, light beam and tooltip.<br>
+                3) <b>.under-the-spotlight</b> class that is being added to the thing we want to highlight lifting up it's z-index.
+            </p>
+
             <br>
-            <h2>Details</h2>
+            <br>
+            <h2>.spotlight</h2>
 
             <p>
                 We add spotlights manually. No libraries are being used. Each component is responsible for positioning of spotlight itself.
@@ -106,20 +117,23 @@
             </p>
             <p>
                 Also this component is responsible for how the spotlight beam is going to look. In this example it is 80x80 white circle.
+                See style of .foobar component on this page.
             </p>
             <p>
-                Fading curtain is being positioned via <b>position: fixed</b>. It's also inside of <b>.spotlight</b>.
+                All of the elements including fading curtain, beam and tooltip are packed inside of <b>.spotlight</b> component.
+                To show/hide one or jump to the next one we only need to manipulate <b>.spotlight--current</b> class.
+                Just add and remove it.
+                See <a href="../scripts/_spotlight.js">../scripts/_spotlight.js</a>
             </p>
+
+
+            <br>
+            <br>
+            <h2>.under-the-spotlight</h2>
             <p>
-                All of the elements described above are inside of <b>.spotlight</b> component. To show/hide it or to jump to the next hint
-                we need to manipulate <b>.spotlight--current</b> class. Just add and remove it when we are in need to show the hint.
-                See <a href="../scripts/_spotlight.js">.spotlight</a>
-            </p>
-            <p>
-                But there is an issue. This whole spotlight thing lies on top of the entire website, <b><i>including</i></b> the element
-                we want to highlight. If nothing is done, then the white beam will also overlap that element.
-                So we need to do one more thing. Let's take the element we want to highlight and add <b>.under-the-spotlight</b>
-                at the moment of highlighting.
+                But there is an issue. This spotlight component lies on top of the entire website creating the second layer.
+                It overlaps everything on the first level <b><i>including</i></b> the thing we want to highlight.
+                So we need to take that thing to the third level adding <b>.under-the-spotlight</b> class.
             </p>
 
 
