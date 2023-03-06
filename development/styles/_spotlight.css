@@ -1,0 +1,86 @@
+.spotlight {
+    display: none;
+    position: relative;
+}
+    .spotlight__curtain {
+        position: fixed;
+        z-index: 60000;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .spotlight__beam {
+        content: "";
+        position: absolute;
+        z-index: 70000;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #FFFFFF;
+    }
+
+    .spotlight__tooltip {
+        position: absolute;
+        z-index: 80000;
+        left: 0;
+        bottom: 100%;
+        margin-bottom: 21px;
+        width: 260px;
+        padding: 10px 20px 14px;
+        border-top: 9px solid #BFCCDE;
+        background-color: #FFFFFF;
+        border-radius: 3px 3px 3px 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+        .spotlight__tooltip::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 100%;
+            border-top: 8px solid #FFFFFF;
+            border-right: 8px solid transparent;
+        }
+
+        .spotlight__close {
+            position: absolute;
+            right: -6px;
+            top: -6px;
+            width: 60px;
+            height: 60px;
+        }
+
+        .spotlight__icon {
+            vertical-align: top;
+            fill: #979797;
+        }
+
+        .spotlight__description {
+            margin-top: 2px;
+            font-size: 13px;
+            line-height: 22px;
+        }
+
+        .spotlight__footer {
+            margin-top: 17px;
+            display: flex;
+            justify-content: flex-end;
+        }
+            .spotlight__counter {
+                margin-top: 6px;
+                margin-right: 16px;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 22px;
+                color: #23282C;
+            }
+
+            .spotlight__footer .button {
+                padding: 9px 18px;
+                font-size: 12px;
+                line-height: 16px;
+                border-radius: 4px;
+            }
