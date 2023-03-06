@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.modal-foot</title>
+        <title>.spotlight</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1678116168">
@@ -17,60 +17,108 @@
         <div style="width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.modal-foot</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            <h1>.spotlight</h1>
 
-
-            <div class="modal-foot">
-                <div class="modal-foot__addition">
-                    <button class="button button--modal-secondary" type="button">
-                        Delete
-                    </button>
-                </div>
-                <div class="modal-foot__operations">
-                    <button class="button button--modal-submit" type="button">
-                        Save
-                    </button>
-                </div>
-            </div>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
             <p>
-                Normally used inside of popup with <a href="_modal-window.html">.modal-window</a> inside, <a data-toggle="modal" data-target="#sample" href="#">like this</a>.
+                This component darken everything and show the spot of light at selected element that we wish to highlight.
             </p>
 
+            <button type="button" data-spotlight="#random-spotlight-01">See example</button>
+            <br>
+            <br>
 
+            <style>
+                .foobar {
+                    display: inline-block;
+                    vertical-align: top;
+                    position: relative;
+                }
 
+                .foobar__body {
+                    position: relative;
+                    width: 50px;
+                    height: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                }
 
-            <div class="modal modal--skeleton fade" id="sample" tabindex="-1">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-window">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ea facere harum, magni, maxime nam nesciunt nihil nulla omnis quae quidem quod voluptates! Accusamus beatae commodi eaque eum eveniet ex, expedita hic illum ipsa, ipsum iste iure libero magnam molestiae natus necessitatibus nisi officiis provident qui recusandae repellat sit tenetur, voluptate voluptates voluptatibus. Alias aut cum debitis exercitationem obcaecati omnis, perspiciatis quos rem repellendus voluptatibus? Consequuntur corporis dicta distinctio, dolorem exercitationem facere hic in laboriosam laudantium minima molestiae mollitia necessitatibus nisi nobis, nostrum odio pariatur porro quam quasi quia quis reprehenderit sed similique vel veritatis. Aliquam dolorum et id nesciunt ut. Autem iusto reprehenderit sed.
-                            <div class="modal-foot">
-                                <div class="modal-foot__addition">
-                                    <button class="button button--modal-secondary" type="button">
-                                        Delete
-                                    </button>
-                                </div>
-                                <div class="modal-foot__operations">
-                                    <button class="button button--modal-submit" type="button">
-                                        Save
-                                    </button>
-                                </div>
-                            </div>
+                .foobar__help {
+                    position: absolute !important; /* .spotlight */
+                    left: 50%;
+                    top: 50%;
+                    width: 80px;
+                    height: 80px;
+                    margin-top: -40px;
+                    margin-left: -40px;
+                }
+            </style>
+
+            <div class="foobar">
+
+                <div class="foobar__body under-the-spotlight">
+                    Lorem Ipsum
+                </div>
+
+                <div class="foobar__help spotlight" id="random-spotlight-01">
+                    <div class="spotlight__curtain">
+                        <!-- This is curtain -->
+                    </div>
+                    <div class="spotlight__beam">
+                        <!-- This is beam spot -->
+                    </div>
+                    <div class="spotlight__tooltip">
+                        <button class="spotlight__close action action--flipped">
+                            <span class="action__image">
+                                <svg class="action__icon" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1678116168#16-long-cross-rounder-corners"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <svg class="spotlight__icon" width="20" height="20">
+                            <use xlink:href="../symbols/symbols.svg?1678116168#20-info-circle"></use>
+                        </svg>
+                        <div class="spotlight__description">
+                            Connect with colleagues who will also be in Aspen this summer
+                        </div>
+                        <div class="spotlight__footer">
+                            <div class="spotlight__counter">1/3</div>
+                            <button class="button button--blue" type="button">Next</button>
                         </div>
                     </div>
                 </div>
+
             </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <h2>Details</h2>
+
+            <p>
+                We add spotlights manually. So each component is responsible for positioning of spotlight itself.
+                In the example above we have <b>.spotlight</b> is mixed to <b>.foobar__help</b> and this
+                element creates the area where spotlight will be stretched. In this example it is 80x80 circle.
+            </p>
+            <p>
+                Once the area for set light is set the beam with white background will be stretched to it.
+                Tooltip is also being added on top.
+            </p>
+            <p>
+                Fading curtain is being positioned via <b>position: fixed</b>. It's also inside of <b>.spotlight</b>.
+            </p>
+            <p>
+                All of the elements described are inside of <b>.spotlight</b>. What we need to do is just to fadeIn() or fadeOut()
+                the whole things. By default, there is <b>display: none;</b>. See <a href="../scripts/_spotlight.js">.spotlight</a>
+            </p>
+            <p>
+                But there is an issue. All this spotlight thing lies on top of the entire website, <b>including</b> the element
+                we want to highlight. If nothing is done, then the white spot of spotlight beam will also overlap that element.
+                So we need to do one more thing. Let's take the element we want to highlight and add <b>.under-the-spotlight</b>
+                at the moment of highlighting.
+            </p>
 
 
 
