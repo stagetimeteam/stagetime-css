@@ -23,7 +23,7 @@
                 This component darken everything and show the spot of light at selected element that we wish to highlight.
             </p>
 
-            <button type="button" data-spotlight="#random-spotlight-01">See example</button>
+            <button type="button" data-spotlight="#foo-light" data-underspotlight="#foo-spot">See example</button>
             <br>
             <br>
 
@@ -57,11 +57,11 @@
 
             <div class="foobar">
 
-                <div class="foobar__body under-the-spotlight">
+                <div class="foobar__body" id="foo-spot">
                     Lorem Ipsum
                 </div>
 
-                <div class="foobar__help spotlight" id="random-spotlight-01">
+                <div class="foobar__help spotlight" id="foo-light">
                     <div class="spotlight__curtain">
                         <!-- This is curtain -->
                     </div>
