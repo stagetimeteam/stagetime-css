@@ -2,6 +2,10 @@
     display: none;
     position: relative;
 }
+
+.spotlight--current {
+    display: block;
+}
     .spotlight__curtain {
         position: fixed;
         z-index: 60000;

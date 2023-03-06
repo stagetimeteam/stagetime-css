@@ -1,11 +1,11 @@
 (function($) {
 
-    function spotlightShow(spotlight){
+    function spotlightShow(spotlight) {
         spotlight.fadeIn(150);
     }
 
     function spotlightHide(){
-        $('.spotlight').fadeOut();
+        $('.spotlight').fadeOut(100);
     }
 
 

@@ -4,73 +4,91 @@
 
 .data-section {
     position: relative;
-    border: 1px solid #E8E8E8;
-    padding: 21px var(--data-section) 25px;
-    border-radius: 3px;
 }
-    .data-section__heading {
-        margin-top: 0;
-        margin-bottom: 0;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 20px;
+    .data-section__inner {
+        border: 1px solid #E8E8E8;
+        padding: 21px var(--data-section) 25px;
+        border-radius: 3px;
     }
-        .data-section__icon {
-            vertical-align: top;
-            margin-right: 4px;
-            margin-top: -2px;
-        }
-
-        .data-section__icon[width="20"] {
+        .data-section__heading {
             margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 13px;
+            line-height: 20px;
         }
+            .data-section__icon {
+                vertical-align: top;
+                margin-right: 4px;
+                margin-top: -2px;
+            }
 
-        .data-section__icon[width="16"] {
-            margin-top: 2px;
-        }
+            .data-section__icon[width="20"] {
+                margin-top: 0;
+            }
 
-    .data-section__more {
-        position: absolute;
-        right: 60px;
-        top: 15px;
-    }
-        .data-section__more.button,
-        .data-section__more .button {
-            border-radius: 4px;
-        }
+            .data-section__icon[width="16"] {
+                margin-top: 2px;
+            }
 
-    .data-section__hint {
-        position: absolute;
-        top: 17px;
-        right: 22px;
-    }
-        .data-section__hint.explainer {
+        .data-section__more {
             position: absolute;
+            right: 60px;
+            top: 15px;
         }
-
-    .data-section__filters {
-        margin-top: 22px;
-        padding-bottom: 8px;
-        padding-right: 130px;
-    }
-
-    .data-section__body {
-        margin-top: 17px;
-    }
-        .data-section__body .carousel__container {
-            margin-left: calc(-1 * var(--data-section));
-            margin-right: calc(-1 * var(--data-section));
-        }
-            .data-section__body .carousel__item {
-                box-sizing: content-box;
-                padding-left: var(--data-section); /* it's made so complicated because of carousel scroll snapping on the left */
-                margin: 0;
+            .data-section__more.button,
+            .data-section__more .button {
+                border-radius: 4px;
             }
 
-            .data-section__body .carousel__container::after {
-                content: "";
-                display: block;
-                flex-shrink: 0;
-                width: var(--data-section);
-                height: 1px;
+        .data-section__hint {
+            position: absolute;
+            top: 17px;
+            right: 22px;
+        }
+            .data-section__hint.explainer {
+                position: absolute;
             }
+
+        .data-section__filters {
+            margin-top: 22px;
+            padding-bottom: 8px;
+            padding-right: 130px;
+        }
+
+        .data-section__body {
+            margin-top: 17px;
+        }
+            .data-section__body .carousel__container {
+                margin-left: calc(-1 * var(--data-section));
+                margin-right: calc(-1 * var(--data-section));
+            }
+                .data-section__body .carousel__item {
+                    box-sizing: content-box;
+                    padding-left: var(--data-section); /* it's made so complicated because of carousel scroll snapping on the left */
+                    margin: 0;
+                }
+
+                .data-section__body .carousel__container::after {
+                    content: "";
+                    display: block;
+                    flex-shrink: 0;
+                    width: var(--data-section);
+                    height: 1px;
+                }
+
+    .data-section__help {
+        position: absolute !important; /* .spotlight */
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+        .data-section__help .spotlight__tooltip {
+            margin-left: 35px;
+        }
+
+        .data-section__help .spotlight__beam {
+            border-radius: 3px;
+
+        }

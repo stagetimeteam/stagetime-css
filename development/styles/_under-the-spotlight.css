@@ -1,3 +1,4 @@
 .under-the-spotlight {
+    position: relative;
     z-index: 90000;
 }
