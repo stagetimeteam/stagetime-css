@@ -19,11 +19,9 @@
             <br>
             <h1>.spotlight</h1>
 
-            <p>
-                This component darken everything and show the spot of light at selected element that we wish to highlight.
-            </p>
-
-            <button type="button" data-spotlight="#foo-light" data-underspotlight="#foo-spot">See example</button>
+            <br>
+            <br>
+            <button type="button" data-spotlight="#foo-light" data-underspotlight="#foo-spot">Click here</button>
             <br>
             <br>
 
@@ -53,6 +51,14 @@
                     margin-top: -40px;
                     margin-left: -40px;
                 }
+                    .foobar__help .spotlight__beam {
+                        border-radius: 50%;
+                    }
+
+                    .foobar__help .spotlight__tooltip {
+                        margin-left: 40px;
+                    }
+
             </style>
 
             <div class="foobar">
@@ -94,24 +100,24 @@
             <h2>Details</h2>
 
             <p>
-                We add spotlights manually. So each component is responsible for positioning of spotlight itself.
-                In the example above we have <b>.spotlight</b> is mixed to <b>.foobar__help</b> and this
-                element creates the area where spotlight will be stretched. In this example it is 80x80 circle.
+                We add spotlights manually. No libraries are being used. Each component is responsible for positioning of spotlight itself.
+                In the example we have <b>.foobar</b> component and inside of it we have <b>.foobar__help</b> responsible for <b>.spotlight</b>
+                positioning.
             </p>
             <p>
-                Once the area for set light is set the beam with white background will be stretched to it.
-                Tooltip is also being added on top.
+                Also this component is responsible for how the spotlight beam is going to look. In this example it is 80x80 white circle.
             </p>
             <p>
                 Fading curtain is being positioned via <b>position: fixed</b>. It's also inside of <b>.spotlight</b>.
             </p>
             <p>
-                All of the elements described are inside of <b>.spotlight</b>. What we need to do is just to fadeIn() or fadeOut()
-                the whole things. By default, there is <b>display: none;</b>. See <a href="../scripts/_spotlight.js">.spotlight</a>
+                All of the elements described above are inside of <b>.spotlight</b> component. To show/hide it or to jump to the next hint
+                we need to manipulate <b>.spotlight--current</b> class. Just add and remove it when we are in need to show the hint.
+                See <a href="../scripts/_spotlight.js">.spotlight</a>
             </p>
             <p>
-                But there is an issue. All this spotlight thing lies on top of the entire website, <b>including</b> the element
-                we want to highlight. If nothing is done, then the white spot of spotlight beam will also overlap that element.
+                But there is an issue. This whole spotlight thing lies on top of the entire website, <b><i>including</i></b> the element
+                we want to highlight. If nothing is done, then the white beam will also overlap that element.
                 So we need to do one more thing. Let's take the element we want to highlight and add <b>.under-the-spotlight</b>
                 at the moment of highlighting.
             </p>
