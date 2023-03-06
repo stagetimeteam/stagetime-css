@@ -6,6 +6,7 @@
 
     function spotlightHide(){
         $('.spotlight').fadeOut(100);
+        $('.under-the-spotlight').removeClass('under-the-spotlight');
     }
 
 
