@@ -1,18 +1,22 @@
 (function($) {
 
-    function spotlightShow(spotlight) {
+    function spotlightShow(spotlight, underspotlight) {
         spotlight.fadeIn(150);
+        underspotlight.addClass('under-the-spotlight');
     }
 
     function spotlightHide(){
-        $('.spotlight').fadeOut(100);
-        $('.under-the-spotlight').removeClass('under-the-spotlight');
+        $('.spotlight').fadeOut(150, function () {
+            $('.under-the-spotlight').removeClass('under-the-spotlight'); /* remove .under-the-spotlight only when animation is over */
+        });
+
     }
 
 
     $('[data-spotlight]').on('click', function(event) {
         event.preventDefault();
-        spotlightShow( $($(this).data('spotlight')) );
+        console.log( $($(this).data('spotlight')), $($(this).data('underspotlight')) );
+        spotlightShow( $($(this).data('spotlight')), $($(this).data('underspotlight')) );
     });
 
     $('.spotlight__close').on('click', function(event) {
