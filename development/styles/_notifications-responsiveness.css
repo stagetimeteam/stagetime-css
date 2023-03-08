@@ -1,15 +1,19 @@
 .notifications {
     position: static;
     width: auto;
-    box-shadow: none;
-    border-radius: 0;
-    overflow: visible;
-    opacity: 1;
-    visibility: visible;
-    display: none;
 }
+    .notifications__strut {
+        position: static;
+        width: auto;
+        background-color: #FFFFFF;
+        box-shadow: none;
+        pointer-events: auto;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
 
-.notifications-visible .notifications {
+.notifications-visible .notifications__strut {
     display: block;
 }
     .notifications__scroll {

@@ -1,29 +1,44 @@
 .notifications {
     position: fixed;
-    z-index: 1020;
-    right: 91px;
-    top: 54px;
-    width: 375px;
-    background-color: #FFFFFF;
-    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    overflow: hidden; /* cut corners (hovers inside for example) */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity var(--transition-show),
-                visibility var(--transition-show);
+    z-index: 960;
+    right: 0;
+    top: var(--header-height);
+    bottom: 0;
+    width: 390px; /* 375px of sidebar plus shadow */
+    pointer-events: none;
+    overflow: hidden;
 }
+    .notifications__strut {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -375px;
+        width: 375px;
+        background-color: #FFFFFF;
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.06);
+        pointer-events: auto;
+        opacity: 0;
+        visibility: hidden;
+    }
 
 .notifications-visible .notifications {
+
+}
+
+.notifications-visible .notifications__strut {
     opacity: 1;
     visibility: visible;
+    right: 0;
+    transition: opacity var(--transition-long-show),
+                visibility var(--transition-long-show),
+                right var(--transition-long-show);
 }
     .notifications__head {
-        display: none;
+
     }
 
     .notifications__scroll {
-        max-height: 75vh;
+        height: calc(100% - var(--header-height)); /* top bar same as header */
     }
         .notifications__separator {
             margin-top: 5px;
