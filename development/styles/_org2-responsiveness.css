@@ -151,6 +151,7 @@
                 margin-right: 0;
                 /*order: -1;*/
                 width: auto;
+                min-height: 0;
                 /*padding: 9px 16px 15px;*/
                 /*background-color: #F3F5F8;*/
                 /*border-top: 6px solid #ACC0D5;*/
