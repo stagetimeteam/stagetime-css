@@ -59,6 +59,7 @@
         }
 
             .all-connections__description {
+                min-height: 36px;
                 font-size: 11px;
                 line-height: 18px;
                 color: #545454;
