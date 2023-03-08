@@ -155,6 +155,7 @@
                 margin-right: var(--org2-gap);
                 order: -1;
                 width: var(--org2-left);
+                min-height: 150px;
                 padding: 9px 16px 15px;
                 background-color: #F3F5F8;
                 border-top: 6px solid #ACC0D5;
