@@ -17,3 +17,7 @@
         right: 12px;
         top: 12px;
     }
+        .top-bar__close .action__image {
+            width: 36px;
+            height: 36px;
+        }
