@@ -5,6 +5,7 @@
     height: 100%;
     background-color: #F8F8F9;
     border-radius: 6px;
+    overflow: hidden; /* cut badge */
 }
     .org-connect-card__preview {
 
@@ -22,7 +23,21 @@
         background-color: #E8E8E8;
         border-radius: 50%;
     }
+        .org-connect-card__angle::before {
+            content: "";
+            display: block;
+            position: absolute;
+            right: -31px;
+            top: -61px;
+            width: 69px;
+            height: 134px;
+            background-color: rgba(84, 84, 84, 0.75);
+            transform: rotate(-45deg);
+            transform-origin: 50% 50%;
+        }
+
         .org-connect-card__org-icon {
+            position: relative;
             vertical-align: top;
             border-radius: 50%;
         }
