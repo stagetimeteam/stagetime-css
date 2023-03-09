@@ -1,28 +1,22 @@
 .top-bar {
     position: relative;
     height: var(--header-height);
-    padding: 17px 60px 17px 20px;
+    padding: 22px 60px 22px 20px;
 }
     .top-bar__heading {
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 22px;
-        line-height: 26px;
-        color: #757575;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #23282C;
     }
 
     .top-bar__close {
         position: absolute;
-        right: 0;
-        top: 0;
-        width: var(--header-height);
-        height: var(--header-height);
-        background-color: transparent;
-        padding: 0;
-        border: none;
-        cursor: pointer;
+        right: 12px;
+        top: 12px;
     }
         .top-bar__cross {
-            vertical-align: top;
-            fill: #8B8B8B;
+
         }
