@@ -17,7 +17,7 @@
             peak.css({
                 'bottom': '9px',
                 'left': '60px'
-            })
+            });
         }
 
         if( target.hasClass('flyover--side-card') ) {
@@ -29,7 +29,19 @@
             peak.css({
                 'top': '9px',
                 'right': '46px'
-            })
+            });
+        }
+
+        if (target.hasClass('flyover--org-angle')) {
+            target.css({
+                'top': $(this)[0].getBoundingClientRect().top + 36,
+                'right': $(window).outerWidth() - $(this)[0].getBoundingClientRect().left - 26,
+                'padding-bottom': '15px'
+            });
+            peak.css({
+                'top': '-4px',
+                'right': '7px'
+            });
         }
 
         target.addClass('flyover--visible');
@@ -43,7 +55,12 @@
     $(window).on('scroll', function () {
         $('.flyover').removeClass('flyover--visible');
     });
+
     $('.scrollbar').on('scroll', function () {
+        $('.flyover').removeClass('flyover--visible');
+    });
+
+    $('.carousel__container').on('scroll', function () {
         $('.flyover').removeClass('flyover--visible');
     });
 
