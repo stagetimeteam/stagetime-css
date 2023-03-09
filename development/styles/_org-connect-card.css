@@ -1,4 +1,5 @@
 .org-connect-card {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -11,6 +12,19 @@
         .org-connect-card__preview .avatar__image {
             width: 100%;
             height: auto;
+        }
+
+    .org-connect-card__angle {
+        position: absolute;
+        right: 11px;
+        top: 11px;
+        padding: 1px;
+        background-color: #E8E8E8;
+        border-radius: 50%;
+    }
+        .org-connect-card__org-icon {
+            vertical-align: top;
+            border-radius: 50%;
         }
 
     .org-connect-card__body {
