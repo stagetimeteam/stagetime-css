@@ -21,3 +21,6 @@
             width: 36px;
             height: 36px;
         }
+            .top-bar__close .action__icon {
+                fill: #23282C;
+            }
