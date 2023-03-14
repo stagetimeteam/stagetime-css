@@ -160,3 +160,13 @@
                         line-height: 20px;
                         color: #000000;
                     }
+
+                    .all-set__additional-action {
+                        margin-top: 14px;
+                    }
+
+
+                    .all-set__additional-action.button,
+                    .all-set__additional-action .button {
+                        padding: 6px 28px;
+                    }
