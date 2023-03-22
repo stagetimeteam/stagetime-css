@@ -91,32 +91,29 @@
         transition: opacity var(--transition-show),
                     visibility var(--transition-show);
     }
-        .search__scroll {
-            max-height: 75vh;
+        .search__section {
+            padding-top: 12px;
+            padding-bottom: 7px;
         }
-            .search__section {
-                padding-top: 12px;
-                padding-bottom: 7px;
+            .search__suggest {
+                display: block;
+                padding: 10px 24px;
+                color: inherit;
+                text-decoration: none;
             }
-                .search__suggest {
-                    display: block;
-                    padding: 9px 22px;
-                    color: inherit;
-                    text-decoration: none;
-                }
 
-                .search__suggest:hover {
-                    background-color: #F6F6F6;
-                }
+            .search__suggest:hover {
+                background-color: #F6F6F6;
+            }
 
 
     .search__more {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         font-weight: 600;
         font-size: 13px;
         line-height: 16px;
-        padding: 17px 20px 17px 22px;
+        padding: 10px 20px 10px 22px;
         color: #8B8B8B;
         text-decoration: none;
         transition: background-color var(--transition-hover);
@@ -131,18 +128,19 @@
         transition: none;
     }
         .search__more-wrap {
-            width: 22px;
-            height: 22px;
-            padding: 2px;
-            margin-top: -3px;
-            margin-bottom: -3px;
+            width: 40px;
+            height: 40px;
+            padding: 6px;
+            /*margin-top: -3px;*/
+            /*margin-bottom: -3px;*/
             margin-right: 14px;
             background-color: #8B8B8B;
             border-radius: 50%;
         }
             .search__more-icon {
-                width: 18px;
-                height: 18px;
+                vertical-align: top;
+                width: 28px;
+                height: 28px;
                 fill: #FFFFFF;
             }
 
