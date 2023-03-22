@@ -50,8 +50,7 @@
     padding-bottom: 0;
 }
     .user-badge--search .avatar__image {
-        width: 40px;
-        height: 40px;
+
     }
 
     .user-badge--search .user-badge__heading {
@@ -64,3 +63,5 @@
         margin-top: 2px;
         color: #545454;
     }
+
+
