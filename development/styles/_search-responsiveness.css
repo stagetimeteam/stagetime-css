@@ -56,27 +56,36 @@
         border-radius: 0;
         padding-top: var(--header-height);
     }
-        .search__scroll {
-            max-height: none;
+        .search__separator {
+
         }
-            .search__separator {
+
+        .search__results {
+
+        }
+            .search__suggest {
 
             }
 
-            .search__section {
+            .search__suggest:first-child {
 
             }
-                .search__suggest {
 
-                }
+            .search__suggest:hover {
 
-                .search__suggest:first-child {
+            }
 
-                }
+        .search__footer {
 
-                .search__suggest:hover {
+        }
+            .search__industry-heading {
 
-                }
+            }
+
+            .search__tags {
+
+            }
+
 
 .search-visible {
 

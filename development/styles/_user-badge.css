@@ -44,20 +44,24 @@
 
 
 .user-badge--search {
-    padding-left: 56px;
+    padding-left: 64px;
     min-height: 40px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
     .user-badge--search .avatar__image {
-        width: 40px;
-        height: 40px;
+
     }
 
     .user-badge--search .user-badge__heading {
-        color: #545454;
+        font-size: 13px;
+        line-height: 20px;
+        color: #333333;
     }
 
     .user-badge--search .user-badge__note {
-        color: #AAAAAA;
+        margin-top: 2px;
+        color: #545454;
     }
+
+
