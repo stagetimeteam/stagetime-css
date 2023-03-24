@@ -211,6 +211,40 @@
                     margin-top: 12px;
                 }
 
+                .org3__request-edit {
+                    margin-top: 12px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: 13px;
+                    border: 1px solid #E8E8E8;
+                    border-radius: 5px;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #39606C;
+                    text-align: center;
+                    text-decoration: none;
+                }
+
+                .org3__request-edit:hover {
+                    border-color: #E0E0E0;
+                    background-color: var(--panel-hover);
+                }
+
+                .org3__request-edit:active {
+                    border-color: #D8D8D8;
+                    background-color: var(--panel-active);
+                }
+
+                    .org3__pencil {
+                        vertical-align: top;
+                        margin-right: 13px;
+                        width: 18px;
+                        height: 18px;
+                        fill: #39606C;
+                    }
 
 
 
