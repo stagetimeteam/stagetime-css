@@ -137,6 +137,11 @@
                             color: #23282C;
                         }
 
+                        .org3__connections,
+                        .org3__connections.all-connections {
+                            margin-top: -1px;
+                        }
+
                     .org3__follow {
                         margin-top: 86px;
                         flex-shrink: 0;

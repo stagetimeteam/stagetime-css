@@ -61,7 +61,6 @@
         }
 
             .all-connections__description {
-                min-height: 36px;
                 font-size: 11px;
                 line-height: 18px;
                 color: #545454;
@@ -69,7 +68,6 @@
                 .all-connections__more {
                     font-style: italic;
                 }
-
 
 
 .all-connections--faded {
@@ -89,3 +87,24 @@
         transform: translateZ(0);
     }
     /* stylelint-enable */
+
+
+.all-connections--horizontal {
+    display: flex;
+    align-items: center;
+    margin-top: -6px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: -6px;
+}
+    .all-connections--horizontal .all-connections__heading {
+        margin-right: 19px;
+        margin-top: 0;
+    }
+
+    .all-connections--horizontal .all-connections__body {
+        margin-top: 0;
+    }
+        .all-connections--horizontal .all-connections__more {
+            font-style: italic;
+        }

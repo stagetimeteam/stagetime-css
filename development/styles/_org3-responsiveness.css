@@ -157,26 +157,6 @@
                 /*border-top: 6px solid #ACC0D5;*/
                 /*border-radius: 5px;*/
             }
-                .org3__connections {
-
-                }
-                    .org3__connections .all-connections__heading {
-                        /*color: #44474A;*/
-                    }
-
-                    .org3__connections .all-connections__description {
-                        /*color: #44474A;*/
-                    }
-
-                .org3__operations {
-                    /*margin-top: 10px;*/
-                    /*display: flex;*/
-                    /*gap: 8px;*/
-                }
-                    .org3__action {
-                        /*flex-grow: 1;*/
-                        /*flex-basis: 0;*/
-                    }
 
         .org3__second-row {
             margin-top: 56px;
