@@ -208,6 +208,10 @@
                 background-color: #23282C;
             }
 
+            .tabs--skin-channels > .tabs__nav .tabs__tag--current:only-child::after {
+                display: none;
+            }
+
 
     .tabs--skin-channels > .tabs__bodies {
 
