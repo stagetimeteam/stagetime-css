@@ -1,0 +1,266 @@
+.org3 {
+    /*padding-bottom: 120px;*/
+}
+    .org3__head {
+
+    }
+        .org3__ribbon {
+            /*position: relative;*/
+        }
+            .org3__nav {
+                /*display: flex;*/
+                /*align-items: flex-start;*/
+                /*padding-top: 14px;*/
+                /*padding-bottom: 14px;*/
+                /*margin-left: -20px;*/
+            }
+                .org3__link {
+                    /*position: relative;*/
+                    /*padding: 13px 20px;*/
+                    /*margin-left: 18px;*/
+                    /*font-weight: 600;*/
+                    /*font-size: 13px;*/
+                    /*line-height: 16px;*/
+                    /*color: #545454;*/
+                    /*white-space: nowrap;*/
+                    /*text-decoration: none;*/
+                    /*border-radius: 4px;*/
+                    /*transition: background-color var(--transition-hover);*/
+                }
+
+                .org3__link:first-child {
+                    /*margin-left: 0;*/
+                }
+
+                .org3__link:hover {
+                    /*background-color: var(--panel-hover);*/
+                }
+
+                .org3__link:active {
+                    /*background-color: var(--panel-active);*/
+                    /*transition: none;*/
+                }
+
+                    .org3__link::after {
+                        /*content: "";*/
+                        /*position: absolute;*/
+                        /*left: 16px;*/
+                        /*right: 16px;*/
+                        /*bottom: 6px;*/
+                        /*height: 3px;*/
+                        /*border-radius: 2px;*/
+                    }
+
+                    .org3__link--current::after {
+                        /*background-color: #ACC0D5;*/
+                    }
+
+        .org3__institution {
+            /*position: absolute;*/
+            /*right: 0;*/
+            /*top: 20px;*/
+            /*white-space: nowrap;*/
+            /*margin-left: 40px;*/
+        }
+
+    .org3__preview {
+        /*position: relative;*/
+        /*height: 247px;*/
+    }
+        .org3__background {
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top: 0;*/
+            /*right: 0;*/
+            /*bottom: 0;*/
+            /*background-color: #2E2A29;*/
+            /*background-size: cover;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;*/
+        }
+            /* Gradient overlay */
+            .org3__background::before {
+                /*content: "";*/
+                /*position: absolute;*/
+                /*left: 0;*/
+                /*top: 0;*/
+                /*right: 0;*/
+                /*bottom: 0;*/
+                /*background-image: linear-gradient(64.12deg, rgba(51, 51, 51, 0.8) 34.6%, rgba(255, 255, 255, 0) 100%);*/
+                /*background-repeat: no-repeat;*/
+                /*background-position: center center;*/
+                /*opacity: 0.8;*/
+            }
+
+    .org3__body {
+        /*margin-top: -41px;*/
+        /*position: relative;*/
+    }
+        .org3__summary {
+            display: block;
+            /*align-items: flex-start;*/
+            /*flex-direction: row-reverse;*/
+            /*gap: 70px;*/
+        }
+            .org3__content {
+                /*flex-grow: 1;*/
+            }
+                .org3__brand {
+                    display: block;
+                    /*align-items: flex-start;*/
+                }
+                    .org3__logo {
+                        /*margin-right: 27px;*/
+                        /*flex-shrink: 0;*/
+                        width: 58px;
+                        height: 58px;
+                        /*padding: 1px;*/
+                        /*background-color: #CACACA;*/
+                        /*border-radius: 4px;*/
+                    }
+                        .org3__emblem {
+                            /*vertical-align: top;*/
+                            /*border-radius: 3px;*/
+                        }
+
+                    .org3__info {
+                        margin-top: 8px;
+                        /*flex-grow: 1;*/
+                    }
+                        .org3__heading {
+                            /*margin-top: 0;*/
+                            /*margin-bottom: 0;*/
+                            /*font-weight: 600;*/
+                            font-size: 16px;
+                            line-height: 24px;
+                            /*color: #23282C;*/
+                        }
+
+                        .org3__connections,
+                        .org3__connections.all-connections {
+                            /*margin-top: -1px;*/
+                        }
+
+                    .org3__follow {
+                        /*margin-top: 86px;*/
+                        /*flex-shrink: 0;*/
+                        /*margin-left: 27px;*/
+                    }
+                        .org3__follow.button,
+                        .org3__follow .button {
+                            /*width: 95px;*/
+                        }
+
+
+                    .org3__pre-heading {
+                        /*font-size: 14px;*/
+                        /*line-height: 20px;*/
+                        /*color: #23282C;*/
+                    }
+
+                    .org3__pre-heading + .org3__heading {
+                        /*margin-top: 4px;*/
+                    }
+
+
+                .org3__about {
+
+                }
+                    .org3__sub-heading {
+                        /*margin-top: 11px;*/
+                        /*margin-bottom: 0;*/
+                        /*font-weight: 600;*/
+                        /*font-size: 13px;*/
+                        /*line-height: 20px;*/
+                        /*color: #23282C;*/
+                    }
+                        .org3__info-icon {
+                            /*float: left;*/
+                            /*margin: -2px 10px -2px -2px;*/
+                            /*vertical-align: top;*/
+                            /*fill: currentColor;*/
+                        }
+
+                    .org3__description {
+                        /*margin-top: 17px;*/
+                        /*margin-bottom: 9px;*/
+                        /*color: #44474A;*/
+                    }
+
+                    .org3__read-more {
+
+                    }
+                        .org3__read-more.link,
+                        .org3__read-more .link {
+                            /*font-size: 13px;*/
+                            /*color: #38606C;*/
+                        }
+
+            .org3__sidebar {
+                /*flex-shrink: 0;*/
+                /*width: 334px;*/
+            }
+                .org3__channels {
+                    /*background-color: #F3F5F8;*/
+                    /*border-radius: 5px;*/
+                }
+
+                .org3__social {
+                    /*margin-top: 12px;*/
+                }
+
+                .org3__request-edit {
+                    /*margin-top: 12px;*/
+                    /*display: inline-flex;*/
+                    /*justify-content: center;*/
+                    /*align-items: center;*/
+                    /*width: 100%;*/
+                    /*padding: 13px;*/
+                    /*border: 1px solid #E8E8E8;*/
+                    /*border-radius: 5px;*/
+                    /*font-weight: 600;*/
+                    /*font-size: 12px;*/
+                    /*line-height: 16px;*/
+                    /*color: #39606C;*/
+                    /*text-align: center;*/
+                    /*text-decoration: none;*/
+                }
+
+                .org3__request-edit:hover {
+                    /*border-color: #E0E0E0;*/
+                    /*background-color: var(--panel-hover);*/
+                }
+
+                .org3__request-edit:active {
+                    /*border-color: #D8D8D8;*/
+                    /*background-color: var(--panel-active);*/
+                }
+
+                    .org3__pencil {
+                        /*vertical-align: top;*/
+                        /*margin-right: 13px;*/
+                        /*width: 18px;*/
+                        /*height: 18px;*/
+                        /*fill: #39606C;*/
+                    }
+
+            .org3__search {
+                /*margin-top: 66px;*/
+                /*width: 287px;*/
+            }
+
+
+        .org3__section {
+            /*margin-top: 40px;*/
+        }
+
+
+        .org3__people {
+            /*margin-top: 70px;*/
+            /*display: grid;*/
+            /*grid-template-columns: repeat(4, 1fr);*/
+            /*gap: 27px 53px;*/
+        }
+            .org-people__item {
+
+            }
