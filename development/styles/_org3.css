@@ -152,18 +152,17 @@
                         }
 
 
-                    /*.org3__pre-heading {*/
-                    /*    margin-top: 55px;*/
-                    /*    font-size: 14px;*/
-                    /*    line-height: 20px;*/
-                    /*    color: #23282C;*/
-                    /*}*/
+                    .org3__pre-heading {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #23282C;
+                    }
 
+                    .org3__pre-heading + .org3__heading {
+                        margin-top: 4px;
+                    }
 
-                    /*.org3__pre-heading + .org3__heading {*/
-                    /*    margin-top: 4px;*/
-                    /*}*/
-
+                    
                 .org3__about {
 
                 }
