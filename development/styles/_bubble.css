@@ -58,6 +58,13 @@
     }
 
 
+.bubble--center {
+
+}
+    .bubble--center .bubble__body {
+        text-align: center;
+    }
+
 
 .bubble--top {
     position: absolute;

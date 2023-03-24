@@ -20,6 +20,9 @@
         justify-content: center;
         width: 44px;
         height: 44px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
     }
 
     .media__link:first-child,
@@ -114,6 +117,7 @@
     gap: 3%;
 }
     .media--panel .media__link {
+        position: relative; /* for bubbles */
         flex-grow: 1;
         width: auto;
         background-color: #F3F5F8;
@@ -130,6 +134,10 @@
     }
         .media--panel .media__icon {
             fill: #000000;
+        }
+
+        .media--panel .bubble--top {
+            margin-bottom: 8px;
         }
 
 
