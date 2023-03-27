@@ -121,6 +121,8 @@
                         .org3__emblem {
                             vertical-align: top;
                             border-radius: 3px;
+                            width: 116px;
+                            height: 116px;
                         }
 
                     .org3__info {
