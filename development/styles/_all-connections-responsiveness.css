@@ -1,0 +1,19 @@
+.all-connections--horizontal {
+    display: block;
+    /*align-items: center;*/
+    margin-top: -14px;
+    margin-bottom: -14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+    .all-connections--horizontal .all-connections__heading {
+        /*margin-right: 19px;*/
+        /*margin-top: 0;*/
+    }
+
+    .all-connections--horizontal .all-connections__body {
+        margin-top: 7px;
+    }
+        .all-connections--horizontal .all-connections__more {
+            /*font-style: italic;*/
+        }

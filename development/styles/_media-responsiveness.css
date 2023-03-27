@@ -64,3 +64,18 @@
     .media--user-color .media__link:active .media__icon {
         fill: var(--theme-main-press);
     }
+
+
+.media--panel {
+
+}
+    .media--panel .bubble--top {
+        left: auto;
+        transform: none;
+        right: 0;
+    }
+
+        .media--panel .bubble--top .bubble__peak {
+            left: auto;
+            right: 10px;
+        }

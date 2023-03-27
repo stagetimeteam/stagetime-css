@@ -93,9 +93,9 @@
     display: flex;
     align-items: center;
     margin-top: -6px;
+    margin-bottom: -6px;
     padding-top: 6px;
     padding-bottom: 6px;
-    margin-bottom: -6px;
 }
     .all-connections--horizontal .all-connections__heading {
         margin-right: 19px;
