@@ -6041,12 +6041,7 @@
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <p>
-                                            If only one item needs to be selected (one person or one organization), just
-                                            replace whole input component with <b>.management-suggest--selected</b> modifier:
-                                        </p>
-
+                                        When organization is selected remove the field above and output:
                                         <div class="management-suggest management-suggest--selected">
                                             <div class="management-suggest__preview avatar avatar--a-bit-squared avatar--non-clickable">
                                                 <img class="avatar__image"
@@ -6058,7 +6053,10 @@
                                                 >
                                             </div>
                                             <div class="management-suggest__name">
-                                                <strong>The Metropolitan Opera</strong>, Chicago, IL, 13 people on Stagetime
+                                                <strong>The Metropolitan Opera</strong>
+                                                <div class="management-suggest__addition">
+                                                    <a class="link link--fading" href="#">Back to all events</a>
+                                                </div>
                                             </div>
                                             <button class="management-suggest__delete action action--flipped" type="button">
                                                 <span class="action__image">
@@ -6066,10 +6064,29 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        <div class="management-more">
-                                            <a class="management-more__link" href="#" data-dismiss="modal" data-toggle="modal" data-target="#engagements">
-                                                View engagements on Stagetime Beta
-                                            </a>
+                                        <div class="management-lock">
+                                            <div class="management-lock__button">
+                                                <label class="lock">
+                                                    <input class="lock__widget" type="checkbox">
+                                                    <span class="lock__status">
+                                                        <span class="lock__unlocked">Unlocked</span>
+                                                        <span class="lock__locked">Locked</span>
+                                                    </span>
+                                                    <span class="lock__handler">
+                                                        <svg class="lock__icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
+                                                            <path id="handler" d="m14.7755 8.9144h-1.0021v-2.13778c0-2.07098-1.7035-3.77453-3.77449-3.77453-2.07098 0-3.77453 1.70355-3.77453 3.77453v2.13778h-1.00209v-2.13778c0-2.63883 2.13779-4.77662 4.77662-4.77662 2.63879 0 4.77659 2.13779 4.77659 4.77662z"/>
+                                                            <path d="m14.2745 18h-8.55116c-.86848 0-1.60334-.7349-1.60334-1.6033v-6.4134c0-.86848.73486-1.60334 1.60334-1.60334h8.55116c.8685 0 1.6033.73486 1.6033 1.60334v6.4134c0 .9018-.7348 1.6033-1.6033 1.6033zm-8.55116-8.55115c-.30063 0-.53445.23382-.53445.53445v6.4134c0 .3006.23382.5344.53445.5344h8.55116c.3006 0 .5344-.2338.5344-.5344v-6.4134c0-.30063-.2338-.53445-.5344-.53445z"/>
+                                                            <path d="m11.0678 11.5866c0 .6013-.4676 1.0689-1.06889 1.0689-.60125 0-1.06889-.4676-1.06889-1.0689 0-.6012.46764-1.0689 1.06889-1.0689.60129 0 1.06889.5011 1.06889 1.0689z"/>
+                                                            <path d="m10.2661 11.5866h-.53441l-.53445 3.2067h1.60336z"/>
+                                                        </svg>
+                                                    </span>
+                                                    <div class="bubble bubble--right-leaf">
+                                                        <div class="bubble__body">
+                                                            This is an example of what this would look like with text.<br> that goes more than one sentence.
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="edit-event__field input input--larger-font">
@@ -6521,26 +6538,6 @@
                             </button>
 
                             <div class="modal-foot__operations">
-                                <label class="lock">
-                                    <input class="lock__widget" type="checkbox">
-                                    <span class="lock__status">
-                                        <span class="lock__unlocked">Unlocked</span>
-                                        <span class="lock__locked">Locked</span>
-                                    </span>
-                                    <span class="lock__handler">
-                                        <svg class="lock__icon" fill="none" height="20" viewBox="0 0 20 20" width="20" xmlns="http://www.w3.org/2000/svg">
-                                            <path id="handler" d="m14.7755 8.9144h-1.0021v-2.13778c0-2.07098-1.7035-3.77453-3.77449-3.77453-2.07098 0-3.77453 1.70355-3.77453 3.77453v2.13778h-1.00209v-2.13778c0-2.63883 2.13779-4.77662 4.77662-4.77662 2.63879 0 4.77659 2.13779 4.77659 4.77662z"/>
-                                            <path d="m14.2745 18h-8.55116c-.86848 0-1.60334-.7349-1.60334-1.6033v-6.4134c0-.86848.73486-1.60334 1.60334-1.60334h8.55116c.8685 0 1.6033.73486 1.6033 1.60334v6.4134c0 .9018-.7348 1.6033-1.6033 1.6033zm-8.55116-8.55115c-.30063 0-.53445.23382-.53445.53445v6.4134c0 .3006.23382.5344.53445.5344h8.55116c.3006 0 .5344-.2338.5344-.5344v-6.4134c0-.30063-.2338-.53445-.5344-.53445z"/>
-                                            <path d="m11.0678 11.5866c0 .6013-.4676 1.0689-1.06889 1.0689-.60125 0-1.06889-.4676-1.06889-1.0689 0-.6012.46764-1.0689 1.06889-1.0689.60129 0 1.06889.5011 1.06889 1.0689z"/>
-                                            <path d="m10.2661 11.5866h-.53441l-.53445 3.2067h1.60336z"/>
-                                        </svg>
-                                    </span>
-                                    <div class="bubble bubble--right-leaf">
-                                        <div class="bubble__body">
-                                            This is an example of what this would look like with text.<br> that goes more than one sentence.
-                                        </div>
-                                    </div>
-                                </label>
                                 <button class="button button--modal-submit button--disabled" type="button" disabled>
                                     Save
                                 </button>
