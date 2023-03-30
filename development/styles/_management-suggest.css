@@ -14,8 +14,6 @@
     }
 
     .management-suggest__name {
-        padding-top: 10px;
-        padding-bottom: 10px;
         font-size: 13px;
         line-height: 20px;
         color: #545454;
@@ -23,6 +21,12 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+        .management-suggest__addition {
+            font-weight: 600;
+            font-size: 11px;
+            line-height: 16px;
+            color: #39606C;
+        }
 
     .management-suggest__delete {
         margin-left: auto;

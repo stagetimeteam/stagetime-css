@@ -427,7 +427,6 @@
 @import url("_types-results.css");
 @import url("_types-suggests.css");
 @import url("_engagement-card.css");
-@import url("_management-more.css");
 @import url("_engagements.css");
 @import url("_filtering.css");
 @import url("_opportunity-card.css");
@@ -463,3 +462,4 @@
 @import url("_under-the-spotlight.css");
 @import url("_user-tile.css");
 @import url("_org3.css");
+@import url("_management-lock.css");
