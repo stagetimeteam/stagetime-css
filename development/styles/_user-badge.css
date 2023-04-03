@@ -1,6 +1,8 @@
 .user-badge {
     position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding-left: 76px;
     padding-top: 9px;
     padding-bottom: 9px;
@@ -62,6 +64,7 @@
 
     .user-badge--search .user-badge__note {
         margin-top: 2px;
+        margin-bottom: 2px;
         color: #545454;
     }
 
