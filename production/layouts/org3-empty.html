@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="has-sidebar sidebar-collapsed" lang="en-US">
+<html class="has-player3" lang="en-US">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Circles</title>
+        <title>Org</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css?1680639425">
@@ -666,381 +666,474 @@
                 </div>
             </div>
         </div>
-        <div class="sidebar">
-            <button class="sidebar__overlay" type="button"></button>
-            <div class="sidebar__scroll scrollbar scrollbar-macosx">
-                <div class="sidebar__inner">
-                    <nav class="side-nav">
-                        <div class="side-nav__section">
-                            <a class="pic-link pic-link--current" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-home"></use>
-                                </svg>
-                                <div class="pic-link__label">Home</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-edit3"></use>
-                                </svg>
-                                <div class="pic-link__label">Edit My Profile</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-envelope"></use>
-                                </svg>
-                                <div class="pic-link__label">Messages <span class="pic-link__counter counter counter--danger">4</span></div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-2-user"></use>
-                                </svg>
-                                <div class="pic-link__label">My Network</div>
-                            </a>
-                        </div>
-                        <div class="side-nav__section">
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-paper"></use>
-                                </svg>
-                                <div class="pic-link__label">Jobs</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-category"></use>
-                                </svg>
-                                <div class="pic-link__label">Collections</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-thick-rings"></use>
-                                </svg>
-                                <span class="pic-link__counter counter counter--danger">4</span>
-                                <div class="pic-link__label">Circles <span class="pic-link__beta beta">beta</span></div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-3-user-2"></use>
-                                </svg>
-                                <div class="pic-link__label">Groups</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <img class="pic-link__icon pic-link__icon--photo"
-                                     srcset="../temp/person-a-20x20@2x.jpg 2x"
-                                     src="../temp/person-a-20x20.jpg"
-                                     width="20"
-                                     height="20"
-                                     alt=""
-                                >
-                                <div class="pic-link__label">Manage</div>
-                            </a>
-                        </div>
-                        <div class="side-nav__section side-nav__section--smartphone-only">
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-envelope"></use>
-                                </svg>
-                                <svg class="pic-link__sparkle" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-sparkle"></use>
-                                </svg>
-                                <div class="pic-link__label">Invite</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-pawprint"></use>
-                                </svg>
-                                <div class="pic-link__label">Report an Issue</div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-info-square"></use>
-                                </svg>
-                                <div class="pic-link__label">Support <span class="pic-link__counter counter counter--danger">4</span></div>
-                            </a>
-                            <a class="pic-link" href="#">
-                                <svg class="pic-link__icon" width="20" height="20">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-cogwheel"></use>
-                                </svg>
-                                <div class="pic-link__label">Settings</div>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
         <!-- 2/3: .page -->
         <div class="page">
-            <div class="circles">
-                <div class="circles__inner">
-                    <div class="circles__sidebar">
-                        <div class="circles__side-head">
-                            <svg class="circles__rings" width="22" height="22">
-                                <use xlink:href="../symbols/symbols.svg?1680639425#22-rings"></use>
-                            </svg>
-                            <b class="circles__circles">
-                                My Circles
-                                <span class="circles__beta beta">beta</span>
-                            </b>
-                            <div class="circles__updated">
-                                Last update 11h ago
-                            </div>
-                            <button class="circles__close-sidebar" type="button">
-                                <svg class="circles__cross" width="16" height="16">
-                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-cross-rounder-corners"></use>
-                                </svg>
-                            </button>
+            <div class="org3">
+                <div class="org3__head container container--org hide-scrollbar">
+                    <div class="org3__ribbon">
+                        <nav class="org3__nav">
+                            <a class="org3__link" href="#">About</a>
+                            <a class="org3__link" href="#">Schedule</a>
+                            <a class="org3__link" href="#">Opportunitites</a>
+                            <a class="org3__link" href="#">Public Circles</a>
+                            <a class="org3__link org3__link--current" href="#">People</a>
+                        </nav>
+                        <div class="org3__institution type" style="background-color: #C9D4E3; color: #333333;">
+                            Education institution
                         </div>
-                        <div class="circles__navigation scrollbar scrollbar-macosx">
-                            <div class="circles__latch">
-                                <div class="circles__administrating">
-                                    <div class="circles__public-circles">
-                                        <a class="button button--side-submit button--black">
-                                            <svg class="button__icon button__icon--left" width="16" height="16">
-                                                <use xlink:href="../symbols/symbols.svg?1680639425#16-globe-outlines"></use>
-                                            </svg>
-                                            Public Circles
-                                        </a>
-                                    </div>
-                                    <div class="circles__pendings">
-                                        <a class="button button--black">
-                                            <svg class="button__icon" width="20" height="20">
-                                                <use xlink:href="../symbols/symbols.svg?1680639425#20-rings-thick"></use>
-                                            </svg>
-                                            <span class="visuallyhidden">Pending Requests</span>
-                                            <span class="circles__counter counter counter--danger">3</span>
-                                        </a>
+                    </div>
+                </div>
+                <div class="org3__preview">
+                    <div class="org3__background" role="presentation" aria-hidden="true">
+                        <style>
+                            .org3__background {
+                                background-image: url(../temp/org/org-1440x247.jpg)
+                            }
+
+                            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                                .org3__background {
+                                    background-image: url(../temp/org/org-1440x247@2x.jpg);
+                                }
+                            }
+
+                            @media (max-width: 900px) {
+                                .org3__background {
+                                    background-image: url(../temp/org/org-828x142.jpg)
+                                }
+
+                                @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+                                    .org3__background {
+                                        background-image: url(../temp/org/org-828x142@2x.jpg);
+                                    }
+                                }
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="org3__body container container--org">
+                    <div class="org3__summary">
+                        <div class="org3__content">
+                            <div class="org3__brand">
+                                <div class="org3__logo">
+                                    <picture>
+                                        <source srcset="../temp/organization-a-116x116@2x.jpg 2x, ../temp/organization-a-116x116.jpg 1x" media="(min-width: 768px)">
+                                        <source srcset="../temp/organization-a-56x56@2x.jpg 2x, ../temp/organization-a-56x56.jpg 1x" media="(max-width: 767px)">
+                                        <img class="org3__emblem" src="../temp/organization-a-116x116.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="org3__info">
+                                    <h1 class="org3__heading">
+                                        Indiana University
+                                    </h1>
+                                    <div class="org3__connections all-connections all-connections--horizontal all-connections--no-hover">
+                                        <div class="all-connections__heading">
+                                            0 Followers
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="circles__add">
-                                    <a class="button button--accept-border" href="#">
-                                        <svg class="button__icon button__icon--left" width="20" height="20">
-                                            <use xlink:href="../symbols/symbols.svg?1680639425#24-tiny-plus"></use>
-                                        </svg>
-                                        Create Circle
-                                    </a>
+                                <a class="org3__follow button button--submit-bar button--black" href="#">
+                                    Follow
+                                </a>
+                            </div>
+                            <div class="org3__about">
+                                <h2 class="org3__sub-heading">
+                                    <svg class="org3__info-icon" width="24" height="24">
+                                        <use xlink:href="../symbols/symbols.svg?1680639425#24-info-square-2"></use>
+                                    </svg>
+                                    About
+                                </h2>
+                                <div class="org3__description">
+                                    <div class="null null--larger">
+                                        <div class="null__inner">
+                                            There are currently no about information to show
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="circles__list">
-                                    <a class="circles-link" href="#">
-                                        <div class="circles-link__preview">
-                                            <div class="avatar avatar--non-clickable avatar--slightly-squared">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/organization-a-36x36@2x.jpg 2x"
-                                                     src="../temp/organization-a-36x36.jpg"
-                                                     width="36"
-                                                     height="36"
-                                                     alt=""
-                                                >
+                            </div>
+                        </div>
+                        <div class="org3__sidebar">
+                            <div class="org3__channels tabs tabs--skin-channels">
+                                <div class="tabs__nav hide-scrollbar">
+                                    <div class="tabs__ribbon">
+                                        <button class="tabs__tag tabs__tag--current" type="button">
+                                            <svg class="tabs__icon" width="20" height="20">
+                                                <use xlink:href="../symbols/symbols.svg?1680639425#20-globe-thin"></use>
+                                            </svg>
+                                            <span class="tabs__label">Website</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tabs__bodies">
+                                    <div class="tabs__item tabs__item--current">
+                                        <div class="org-channel">
+                                            <div class="org-channel__inner">
+                                                <a class="link link--brand" href="https://www.indianauniversity.com">https://www.indianauniversity.com</a>
                                             </div>
                                         </div>
-                                        <div class="circles-link__label ellipsis">
-                                            Hungarian Dance Lorem ipsum
-                                        </div>
-                                    </a>
-                                    <a class="circles-link" href="#">
-                                        <div class="circles-link__preview">
-                                            <div class="avatar avatar--non-clickable avatar--slightly-squared">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/organization-a-36x36@2x.jpg 2x"
-                                                     src="../temp/organization-a-36x36.jpg"
-                                                     width="36"
-                                                     height="36"
-                                                     alt=""
-                                                >
-                                            </div>
-                                        </div>
-                                        <div class="circles-link__label circles-link__label--highlighted-with-note ellipsis">
-                                            2022 Festival
-                                        </div>
-                                        <div class="circles-link__note ellipsis">
-                                            Owned by Tanglewood
-                                        </div>
-                                    </a>
-                                    <a class="circles-link" href="#">
-                                        <div class="circles-link__preview">
-                                            <div class="abbreviation">Ut</div>
-                                        </div>
-                                        <div class="circles-link__counter counter counter--danger">
-                                            2
-                                        </div>
-                                        <div class="circles-link__label ellipsis">
-                                            Utah Opera Barb Lorem Ipsum
-                                        </div>
-                                    </a>
-                                    <a class="circles-link circles-link--current" href="#">
-                                        <div class="circles-link__preview">
-                                            <div class="abbreviation">Ta</div>
-                                        </div>
-                                        <div class="circles-link__label ellipsis">
-                                            Tanglewood 2022
-                                        </div>
-                                    </a>
-                                    <a class="circles-link" href="#">
-                                        <div class="circles-link__preview">
-                                            <div class="abbreviation">Op</div>
-                                        </div>
-                                        <div class="circles-link__label ellipsis">
-                                            Opera Idaho EAs
-                                        </div>
-                                    </a>
+                                    </div>
                                 </div>
+                            </div>
+                            <a class="org3__request-edit" href="#">
+                                <svg class="org3__pencil" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-edit3"></use>
+                                </svg>
+                                Request to edit page
+                            </a>
+                        </div>
+                    </div>
+                    <section class="org3__section data-section">
+                        <div class="data-section__inner">
+                            <h2 class="data-section__heading">
+                                <svg class="data-section__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-2-user"></use>
+                                </svg>
+                                Stagetime connections from Indiana University Jacobs School of Music
+                            </h2>
+                            <div class="data-section__hint explainer bubble-trigger">
+                                <svg class="explainer__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-danger-circle"></use>
+                                </svg>
+                                <div class="bubble bubble--right-leaf">
+                                    <div class="bubble__body">
+                                        This is an example of what this would look like with text.<br> that goes more than one sentence.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-section__body">
+                                <div class="null null--larger">
+                                    <div class="null__inner">
+                                        There are currently no connections to show
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="org3__section data-section">
+                        <div class="data-section__inner">
+                            <h2 class="data-section__heading">
+                                <svg class="data-section__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-calendar-2"></use>
+                                </svg>
+                                Indiana University Schedule of Events
+                            </h2>
+                            <div class="data-section__hint explainer bubble-trigger">
+                                <svg class="explainer__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-danger-circle"></use>
+                                </svg>
+                                <div class="bubble bubble--right-leaf">
+                                    <div class="bubble__body">
+                                        This is an example of what this would look like with text.<br> that goes more than one sentence.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-section__body">
+                                <div class="null null--larger">
+                                    <div class="null__inner">
+                                        There is currently no schedule to show
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="org3__section data-section">
+                        <div class="data-section__inner">
+                            <h2 class="data-section__heading">
+                                <svg class="data-section__icon" width="20" height="20">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-bag-3"></use>
+                                </svg>
+                                Opportunities with Indiana University
+                            </h2>
+                            <div class="data-section__hint explainer bubble-trigger">
+                                <svg class="explainer__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-danger-circle"></use>
+                                </svg>
+                                <div class="bubble bubble--right-leaf">
+                                    <div class="bubble__body">
+                                        This is an example of what this would look like with text.<br> that goes more than one sentence.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-section__body">
+                                <div class="null null--larger">
+                                    <div class="null__inner">
+                                        There are currently no opportunities to show
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="org3__section data-section">
+                        <div class="data-section__inner">
+                            <h2 class="data-section__heading">
+                                <svg class="data-section__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-thick-rings"></use>
+                                </svg>
+                                Public Circles Indiana University is associated with
+                            </h2>
+                            <div class="data-section__hint explainer bubble-trigger">
+                                <svg class="explainer__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-danger-circle"></use>
+                                </svg>
+                                <div class="bubble bubble--right-leaf">
+                                    <div class="bubble__body">
+                                        This is an example of what this would look like with text.<br> that goes more than one sentence.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-section__body">
+                                <div class="null null--larger">
+                                    <div class="null__inner">
+                                        There are currently no circles to show
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__wrap container">
+                    <div class="footer__summary">
+                        <a class="footer__logo" href="#">
+                            STAGETIME
+                        </a>
+                        <div class="footer__slogan">
+                            The professional network for the performing arts
+                        </div>
+                        <div class="footer__operations">
+                            <a class="footer__action footer__action--register" href="#">Sign up for Stagetime</a>
+                            <a class="footer__action footer__action--login" href="#">Sign In</a>
+                        </div>
+                        <div class="footer__copyright">
+                            Ⓒ All Rights Reserved 2022 Stagetime Inc.
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <a class="footer__email" href="mailto:team@stagetime.com">
+                            team@stagetime.com
+                        </a>
+                        <div class="footer__address">
+                            642 N. Madison St., Bloomington, IN 47401
+                        </div>
+                        <div class="footer__social-networks media media--inverted">
+                            <a class="media__link" href="#">
+                                <svg class="media__icon" width="28" height="28">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#28-media-instagram"></use>
+                                </svg>
+                            </a>
+                            <a class="media__link" href="#">
+                                <svg class="media__icon" width="28" height="28">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#28-media-facebook"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__navigation">
+                        <b class="footer__nav-heading">
+                            Menu
+                        </b>
+                        <div class="footer__menu">
+                            <div class="footer__column">
+                                <a class="footer__link" href="#">Stagetime.com</a>
+                                <a class="footer__link" href="#">Support</a>
+                                <a class="footer__link" href="#">FAQ</a>
+                            </div>
+                            <div class="footer__column">
+                                <a class="footer__link" href="#">Careers</a>
+                                <a class="footer__link" href="#">Articles</a>
+                                <a class="footer__link" href="#">Press</a>
+                            </div>
+                        </div>
+                        <a class="footer__policies" href="#">
+                            Privacy Policy/Terms of Use
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <section class="player3">
+            <div class="player3__progress">
+                <div class="player3__indicator playthrough playthrough--full-width">
+                    <div class="playthrough__time">
+                        88:88
+                    </div>
+                    <div class="playthrough__bar"><!-- catch clicks here -->
+                        <div class="playthrough__progress" style="width: 0;"></div>
+                        <div class="playthrough__likes" style="left: 50%; width: 34px; height: 34px;">
+                            34
+                            <div class="playthrough__reactions hearts">
+                                <svg class="hearts__item hearts__item--a" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--b" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--c" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--d" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--e" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="playthrough__likes" style="left: 75%; width: 20px; height: 20px;">
+                            7
+                            <div class="playthrough__reactions hearts">
+                                <svg class="hearts__item hearts__item--a" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--b" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--c" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--d" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
+                                <svg class="hearts__item hearts__item--e" width="16" height="16">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                                </svg>
                             </div>
                         </div>
                     </div>
-                    <div class="circles__content">
-                        <div class="circles__inner-content">
-                            <div class="circles__head">
-                                <button class="circles__show-sidebar circles__show-sidebar--has-updates" type="button">
-                                    <svg class="circles__burger" width="40" height="40">
-                                        <use xlink:href="../symbols/symbols.svg?1680639425#40-circles-burger"></use>
-                                    </svg>
-                                    Show sidebar
-                                </button>
-                                <div class="circles__operations">
-                                    <a class="circles__head-add-person button button--accept-border" href="circles-add.html">
-                                        Create a Circle
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="circles__list">
-                                <div class="circles__inner-list scrollbar scrollbar-macosx">
-                                    <div class="all-circles">
-                                        <div class="all-circles__head">
-                                            <svg class="all-circles__icon" width="30" height="30">
-                                                <use xlink:href="../symbols/symbols.svg?1680639425#30-rings"></use>
-                                            </svg>
-                                            <h1 class="all-circles__heading">Your new requests</h1>
-                                            <span class="all-circles__counter counter counter--danger">3</span>
-                                        </div>
-                                        <div class="all-circles__list">
-                                            <div class="all-circles__item">
-                                                <div class="all-circles__company">
-                                                    <div class="all-circles__preview abbreviation">
-                                                        Hu
-                                                    </div>
-                                                    <div class="all-circles__title">
-                                                        Hungarian Dance No. 5 (Miami)
-                                                    </div>
-                                                </div>
-                                                <div class="all-circles__person user-alt-card">
-                                                    <a class="user-alt-card__preview avatar avatar--alt-hover" href="#">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-a-36x36@2x.jpg 2x"
-                                                             src="../temp/person-a-36x36.jpg"
-                                                             width="36" height="36"
-                                                             alt=""
-                                                        >
-                                                    </a>
-                                                    <div class="user-alt-card__body">
-                                                        <div class="user-alt-card__heading">
-                                                            Invited by <a class="link link--black" href="#">AJ O’Reilly</a>
-                                                        </div>
-                                                        <div class="user-alt-card__note">
-                                                            1hr ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="all-circles__menu">
-                                                    <div class="all-circles__operations">
-                                                        <button class="all-circles__action button button--transparent-bar" type="button">Delete</button>
-                                                        <button class="all-circles__action button button--submit-bar" type="button">Join Circle</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="all-circles__item">
-                                                <div class="all-circles__company">
-                                                    <div class="all-circles__preview abbreviation">
-                                                        Op
-                                                    </div>
-                                                    <div class="all-circles__title">
-                                                        Opera Idaho EAs
-                                                    </div>
-                                                </div>
-                                                <div class="all-circles__person user-alt-card">
-                                                    <a class="user-alt-card__preview avatar avatar--alt-hover" href="#">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-b-36x36@2x.jpg 2x"
-                                                             src="../temp/person-b-36x36.jpg"
-                                                             width="36" height="36"
-                                                             alt=""
-                                                        >
-                                                    </a>
-                                                    <div class="user-alt-card__body">
-                                                        <div class="user-alt-card__heading">
-                                                            Invited by <a class="link link--black" href="#">AJ O’Reilly</a>
-                                                        </div>
-                                                        <div class="user-alt-card__note">
-                                                            1hr ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="all-circles__menu">
-                                                    <div class="all-circles__status">
-                                                        <div class="icon-status">
-                                                            <div class="icon-status__label">Request deleted.</div>
-                                                            <svg class="icon-status__illustration" width="30" height="30">
-                                                                <use xlink:href="../symbols/symbols.svg?1680639425#30-none"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="all-circles__item">
-                                                <div class="all-circles__company">
-                                                    <div class="all-circles__preview abbreviation">
-                                                        Ut
-                                                    </div>
-                                                    <div class="all-circles__title">
-                                                        Utah Opera Barber of Seville April 2022, Lorem Ipsum Dolor Sit Amen
-                                                    </div>
-                                                </div>
-                                                <div class="all-circles__person user-alt-card">
-                                                    <a class="user-alt-card__preview avatar avatar--alt-hover" href="#">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-c-36x36@2x.jpg 2x"
-                                                             src="../temp/person-c-36x36.jpg"
-                                                             width="36" height="36"
-                                                             alt=""
-                                                        >
-                                                    </a>
-                                                    <div class="user-alt-card__body">
-                                                        <div class="user-alt-card__heading">
-                                                            Invited by <a class="link link--black" href="#">AJ O’Reilly</a>
-                                                        </div>
-                                                        <div class="user-alt-card__note">
-                                                            1hr ago
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="all-circles__menu">
-                                                    <div class="all-circles__status">
-                                                        <div class="icon-status">
-                                                            <div class="icon-status__label">Request accepted.</div>
-                                                            <svg class="icon-status__illustration" width="30" height="30">
-                                                                <use xlink:href="../symbols/symbols.svg?1680639425#30-check"></use>
-                                                            </svg>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="playthrough__time">
+                        88:88
+                    </div>
+                </div>
+            </div>
+            <div class="player3__body">
+                <audio class="player3__widget" src="../temp/audio/epic.mp3"></audio>
+                <div class="player3__viewport">
+                    <img class="player3__preview"
+                         srcset="../temp/brandon-bell-when-the-air@2x.jpg 2x"
+                         src="../temp/brandon-bell-when-the-air.jpg"
+                         width="50"
+                         height="50"
+                         alt=""
+                    >
+                    <!-- or:
+                    <iframe class="player3__preview" width="48" height="94" src="https://www.youtube.com/embed/&#45;&#45;A_89lTuiA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    -->
+                </div>
+                <div class="player3__data">
+                    <div class="player3__song ellipsis">
+                        Brandon Bell
+                    </div>
+                    <div class="player3__artist ellipsis">
+                        “When the air sings of summer” from The Old Maid and the Thief
+                    </div>
+                </div>
+                <div class="player3__controls">
+                    <button class="player3__action player3__action--bookmark" type="button">
+                        <svg class="player3__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1680639425#16-smaller-heart-outline"></use>
+                        </svg>
+                    </button>
+                    <button class="player3__action player3__action--backward player3__action--disabled" type="button">
+                        <svg class="player3__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1680639425#16-backward"></use>
+                        </svg>
+                    </button>
+                    <button class="player3__action player3__action--play" type="button">
+                        <svg class="player3__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1680639425#16-play-2"></use>
+                        </svg>
+                    </button>
+                    <button class="player3__action player3__action--forward" type="button">
+                        <svg class="player3__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1680639425#16-forward"></use>
+                        </svg>
+                    </button>
+                    <button class="player3__action player3__action--shuffle" type="button">
+                        <svg class="player3__icon" width="16" height="16">
+                            <use xlink:href="../symbols/symbols.svg?1680639425#16-shuffle"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="player3__like react">
+                    <svg class="react__icon" width="16" height="16">
+                        <use xlink:href="../symbols/symbols.svg?1680639425#16-heart-wide"></use>
+                    </svg>
+                    React
+                </div>
+                <div class="player3__menu operations operations--simplified-handler operations--for-player3">
+                    <button class="operations__handler" type="button">
+                        <svg class="operations__icon" width="24" height="24">
+                            <use xlink:href="../symbols/symbols.svg?1680639425#24-more-circle"></use>
+                        </svg>
+                        More
+                    </button>
+                    <div class="operations__dropdown">
+                        <div class="menu">
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-share"></use>
+                                </svg>
+                                Share
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-bookmark"></use>
+                                </svg>
+                                Favorite
+                            </a>
+                            <a class="menu__link" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-report"></use>
+                                </svg>
+                                Report
+                            </a>
+                            <a class="menu__link menu__link--close-player" href="#">
+                                <svg class="menu__icon" width="24" height="24">
+                                    <use xlink:href="../symbols/symbols.svg?1680639425#24-close"></use>
+                                </svg>
+                                Close player
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
+
+        <div class="flyover flyover--org-angle" id="fkeprkdlap">
+            <i class="flyover__peak flyover__peak--shadow" role="presentation" aria-hidden="true"></i>
+            <div class="flyover__bubble">
+                <div class="member-bubble">
+                    <div class="member-bubble__preview spot spot--smaller-on-mobile" style="background-color: #65758A;">
+                        <div class="spot__members">
+                            <img class="spot__logo"
+                                 srcset="../temp/organization-a-44x44@2x.jpg 2x"
+                                 src="../temp/organization-a-44x44.jpg"
+                                 width="44"
+                                 height="44"
+                                 alt=""
+                            >
+                        </div>
+                        <div class="spot__data" style="color: #FFFFFF;">
+                            <div class="spot__year">2023</div>
+                            <div class="spot__class">AMFS Class</div>
+                        </div>
+                    </div>
+                    <div class="member-bubble__description">
+                        This member is part of the class of 2023 Aspen Music Festival and School students, faculty, and staff.
+                    </div>
+                </div>
+            </div>
+            <i class="flyover__peak flyover__peak--background" role="presentation" aria-hidden="true"></i>
         </div>
 
-
-        <!-- 3/3 Modals: -->
-        <div class="modal fade" id="circles-settings" tabindex="-1">
+        <div class="modal modal--748px modal--skeleton fade" id="connections" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-window">
                         <div class="modal-head">
                             <div class="modal-head__heading title title--small">
-                                Circle Settings
+                                Connections (37)
                             </div>
                             <button class="modal-head__close action action--flipped" type="button" data-dismiss="modal">
                                 <span class="action__image">
@@ -1050,243 +1143,99 @@
                                 </span>
                             </button>
                         </div>
-                        <div class="modal-body">
-                            <div class="circle-settings">
-                                <div class="circle-settings__field">
-                                    <label class="label" for="#circle-name">
-                                        Circle Name
-                                    </label>
-                                    <div class="input input--larger-font">
-                                        <input class="input__widget" type="text" id="#circle-name" placeholder="Add Name...">
-                                    </div>
+                        <div class="full-connections">
+                            <div class="full-connections__item">
+                                <a class="full-connections__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-f-64x64@2x.jpg 2x"
+                                         src="../temp/person-f-64x64.jpg"
+                                         width="64"
+                                         height="64"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="full-connections__heading">
+                                    <a class="link link--text-alike" href="#">Kunal Lahiry</a>
                                 </div>
-                                <div class="circle-settings__field">
-                                    <label class="label" for="#circle-admin">
-                                        Circle Admins
-                                        <span class="label__note">You can only make current Circle members admins.</span>
-                                    </label>
-                                    <div class="input input--classic-font input--scanner">
-                                        <input class="input__widget" type="text" placeholder="Search on Stagetime">
-                                        <div class="input__dropdown">
-                                            <div class="input__options">
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-a-40x40@2x.jpg 2x"
-                                                             src="../temp/person-a-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
-                                                             src="../temp/person-b-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
-                                                             src="../temp/person-c-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
-                                                             src="../temp/person-d-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
-                                                             src="../temp/person-e-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-b-40x40@2x.jpg 2x"
-                                                             src="../temp/person-b-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-c-40x40@2x.jpg 2x"
-                                                             src="../temp/person-c-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-d-40x40@2x.jpg 2x"
-                                                             src="../temp/person-d-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <a class="connection-bar" href="#">
-                                                    <div class="connection-bar__preview avatar avatar--non-clickable">
-                                                        <img class="avatar__image"
-                                                             srcset="../temp/person-e-40x40@2x.jpg 2x"
-                                                             src="../temp/person-e-40x40.jpg"
-                                                             width="40"
-                                                             height="40"
-                                                             alt="Mark Zuckerberg"
-                                                        >
-                                                    </div>
-                                                    <div class="connection-bar__body">
-                                                        <div class="connection-bar__heading">
-                                                            <strong class="connection-bar__name">Madison Leonard</strong>, Soprano, 38 mutual connections
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <!-- temp -->
-                                            <br>
-                                            or:
-                                            <br>
-                                            <!--/temp -->
-
-                                            <div class="input__no-matches even-simpler-null">
-                                                Nothing is found
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="circles-results">
-                                        <div class="circles-results__item circles-suggest">
-                                            <a class="circles-suggest__preview avatar avatar--alt-hover">
-                                                <img class="avatar__image"
-                                                     srcset="../temp/person-a-24x24@2x.jpg 2x"
-                                                     src="../temp/person-a-24x24.jpg"
-                                                     width="24"
-                                                     height="24"
-                                                     alt="Mark Zuckerberg"
-                                                >
-                                            </a>
-                                            <div class="circles-suggest__name ellipsis">
-                                                <a class="link link--fading" href="#">Elena Villalón</a>
-                                            </div>
-                                            <button class="circles-suggest__cancel" type="button">
-                                                <svg class="circles-suggest__cross" width="16" height="16">
-                                                    <use xlink:href="../symbols/symbols.svg?1680639425#16-cross"></use>
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="full-connections__instrument">
+                                    Piano, recently at <strong>Carnegie Hall</strong>
                                 </div>
-
-                                <!-- temp -->
-                                <p>or:</p>
-                                <!--/temp -->
-
-                                <div class="circle-settings__field">
-                                    <div class="label">
-                                        Circle Admins
-                                    </div>
-                                    <div class="circle-settings__hint">
-                                        Only Circle Admins can:<br>
-                                        &nbsp;&nbsp;•&nbsp; Rename the Circle<br>
-                                        &nbsp;&nbsp;•&nbsp; Delete the Circle<br>
-                                        &nbsp;&nbsp;•&nbsp; Edit the Information section<br>
-                                        &nbsp;&nbsp;•&nbsp; Invite/Approve Members to the Circle<br>
-                                        &nbsp;&nbsp;•&nbsp; Edit the Resource section<br>
-                                        <br>
-                                        If you need to add another person as an Admin, send us a message here.
-                                    </div>
+                                <div class="full-connections__location">
+                                    Berlin, DE
                                 </div>
+                                <div class="full-connections__circles">
+                                    <svg class="full-connections__crowd-icon">
+                                        <use xlink:href="../symbols/symbols.svg?1680639425#24-2-user"></use>
+                                    </svg>
+                                    <a class="link link--text-alike" href="#">Maya Voelk</a> and <a class="link link--text-alike" href="#">Jennie Moser</a> are shared connections
+                                </div>
+                                <a class="full-connections__actions button button--alt-secondary" href="#">
+                                    Message
+                                </a>
                             </div>
-                        </div>
-                        <div class="modal-foot">
-                            <div class="modal-foot__addition">
-                                <button class="button button--modal-secondary" type="button">
-                                    Delete
-                                </button>
+                            <div class="full-connections__item">
+                                <a class="full-connections__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-f-64x64@2x.jpg 2x"
+                                         src="../temp/person-f-64x64.jpg"
+                                         width="64"
+                                         height="64"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="full-connections__heading">
+                                    <a class="link link--text-alike" href="#">Kunal Lahiry</a>
+                                </div>
+                                <div class="full-connections__instrument">
+                                    Piano
+                                </div>
+                                <div class="full-connections__location">
+                                    Berlin, DE
+                                </div>
+                                <div class="full-connections__circles">
+                                    <svg class="full-connections__crowd-icon">
+                                        <use xlink:href="../symbols/symbols.svg?1680639425#24-2-user"></use>
+                                    </svg>
+                                    <a class="link link--text-alike" href="#">Maya Voelk</a> and <a class="link link--text-alike" href="#">Jennie Moser</a> are shared connections
+                                </div>
+                                <a class="full-connections__actions button button--info" href="#">
+                                    Connect
+                                </a>
                             </div>
-                            <div class="modal-foot__operations">
-                                <button class="button button--modal-submit" type="button">
-                                    Save
-                                </button>
+                            <div class="full-connections__item">
+                                <a class="full-connections__preview avatar" href="#">
+                                    <img class="avatar__image"
+                                         srcset="../temp/person-f-64x64@2x.jpg 2x"
+                                         src="../temp/person-f-64x64.jpg"
+                                         width="64"
+                                         height="64"
+                                         alt=""
+                                    >
+                                </a>
+                                <div class="full-connections__heading">
+                                    <a class="link link--text-alike" href="#">Kunal Lahiry</a>
+                                </div>
+                                <div class="full-connections__instrument">
+                                    Piano
+                                </div>
+                                <div class="full-connections__location">
+                                    Berlin, DE
+                                </div>
+                                <div class="full-connections__circles">
+                                    <svg class="full-connections__crowd-icon">
+                                        <use xlink:href="../symbols/symbols.svg?1680639425#24-2-user"></use>
+                                    </svg>
+                                    <a class="link link--text-alike" href="#">Maya Voelk</a> and <a class="link link--text-alike" href="#">Jennie Moser</a> are shared connections
+                                </div>
+                                <a class="full-connections__actions button button--info" href="#">
+                                    Connect
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
