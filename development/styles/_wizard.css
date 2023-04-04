@@ -24,7 +24,7 @@
         }
 
         .wizard__progress {
-            width: 786px;
+            width: 1182px;
             display: flex;
             align-items: flex-start;
             justify-content: center;
@@ -34,7 +34,13 @@
             padding-top: 25px;
         }
 
-        @media (min-width: 768px) and (max-width: 1240px) {
+        @media (min-width: 768px) and (max-width: 1599px) {
+            .wizard__progress {
+                width: 786px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 1239px) {
             .wizard__progress {
                 width: auto;
                 margin-left: 194px;
