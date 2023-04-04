@@ -27,12 +27,13 @@
             /*display: flex;*/
             /*align-items: flex-start;*/
             /*justify-content: center;*/
+            max-width: 478px;
             gap: 6px;
             padding-top: 33px;
+            width: auto;
         }
             .wizard__bar {
                 /*display: block;*/
-                width: 68px;
                 height: 6px;
                 /*background-color: #EEF0F3;*/
                 /*border: none;*/

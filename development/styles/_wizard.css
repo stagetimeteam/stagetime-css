@@ -24,15 +24,27 @@
         }
 
         .wizard__progress {
+            width: 786px;
             display: flex;
             align-items: flex-start;
             justify-content: center;
-            gap: 13px;
+            margin-left: auto;
+            margin-right: auto;
+            gap: 10px;
             padding-top: 25px;
         }
+
+        @media (min-width: 768px) and (max-width: 1240px) {
+            .wizard__progress {
+                width: auto;
+                margin-left: 194px;
+                margin-right: 20px;
+            }
+        }
+
             .wizard__bar {
                 display: block;
-                width: 186px;
+                flex-grow: 1;
                 height: 10px;
                 background-color: #EEF0F3;
                 border: none;
