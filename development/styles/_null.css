@@ -25,3 +25,14 @@
             margin-top: 22px;
             padding-bottom: 6px;
         }
+
+
+
+.null--larger {
+
+}
+    .null--larger .null__inner {
+        min-height: 252px;
+        font-size: 16px;
+        line-height: 28px;
+    }
