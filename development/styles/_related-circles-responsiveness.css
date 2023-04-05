@@ -12,8 +12,14 @@
         /*text-align: center;*/
     }
 
+    .related-circles__note {
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 22px;
+    }
+
     .related-circles__list {
-        margin-top: 26px;
+        margin-top: 34px;
         display: block;
         /*gap: 10px;*/
     }
