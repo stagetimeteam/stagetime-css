@@ -2,6 +2,7 @@
     width: 786px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
     .building__heading {
         margin: 0 auto;
@@ -13,15 +14,17 @@
 
     .building__list {
         margin-top: 41px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: inline-flex;
+        align-items: stretch;
+        flex-wrap: wrap;
         gap: 10px;
     }
         .building__item {
             position: relative;
             display: block;
-            height: 100%;
+            width: 189px;
             overflow: hidden; /* cut long names such as "Konstantinopolsky */
+            text-align: left;
         }
             .building__widget {
                 position: absolute;
