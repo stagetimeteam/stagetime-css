@@ -163,11 +163,14 @@
                 margin-top: 10px;
                 display: flex;
                 align-items: flex-start;
-                gap: 30px;
+                gap: 20px;
                 overflow-x: auto;
-                padding-left: 24px;
-                padding-right: 24px;
+                padding-left: 19px;
+                padding-right: 19px;
             }
+                .search__recent .user-tile {
+                    flex-shrink: 0;
+                }
 
         .search__text-guesses {
             padding-top: 12px;

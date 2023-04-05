@@ -1,10 +1,12 @@
 .user-tile {
-    width: 56px;
+    width: 66px;
     text-align: center;
 }
     .user-tile__preview {
         width: 56px;
         height: 56px;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
         align-items: center;
         justify-content: center;
