@@ -1,5 +1,6 @@
 .circle-card {
     position: relative;
+    height: 100%;
     border: 1px solid #E8E8E8;
     padding: 9px 14px 17px;
     border-radius: 4px;

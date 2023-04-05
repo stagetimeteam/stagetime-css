@@ -21,6 +21,8 @@
             margin-top: 20px;
             /*position: relative;*/
             /*display: block;*/
+            margin-left: auto;
+            margin-right: auto;
             /*height: 100%;*/
         }
             .related-circles__widget {

@@ -2,6 +2,7 @@
     width: 1182px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
     .related-circles__heading {
         margin: 0 auto;
@@ -14,14 +15,16 @@
 
     .related-circles__list {
         margin-top: 41px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: inline-flex;
+        align-items: stretch;
+        flex-wrap: wrap;
         gap: 10px;
     }
         .related-circles__item {
             position: relative;
             display: block;
-            height: 100%;
+            width: 288px;
             overflow: hidden; /* cut long names such as "Konstantinopolsky */
+            text-align: left;
         }
 
