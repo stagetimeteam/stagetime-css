@@ -4,7 +4,7 @@
     vertical-align: top;
     padding: 0;
     border: none;
-    background-color: transparent;
+    background-color: var(--image-fallback);
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
@@ -12,9 +12,10 @@
 }
     .avatar__image {
         vertical-align: top;
-        background-color: var(--image-fallback);
+        background-color: #FFFFFF; /* let's make transparent PNGs and SVGs to be white. It is the must. Otherwise grey fallback from a parent will be seen through */
         transition: transform 0.3s var(--easeOutCirc);
     }
+
 
     .avatar__cancel {
         position: absolute;
@@ -216,8 +217,29 @@
 
 
 .avatar--alt-hover {
-    background-color: #FFFFFF; /* half white on hover */
+
 }
+    /* white background under image (otherwise image will become half transparent over gray fallback background on the parent) */
+    .avatar--alt-hover::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #FFFFFF;
+        visibility: hidden;
+        transition: visibility var(--transition-hover); /* while animation of transparency is happening we still need to keep this white background. Otherwise grey fallback background from parent will appear */
+    }
+
+    .avatar--alt-hover:hover::before {
+        visibility: visible;
+    }
+    /* /white... */
+
+
+    /* half transparent hover */
     .avatar--alt-hover .avatar__image {
         transition: opacity var(--transition-hover), background-color var(--transition-hover); /* in case of dummy */
         transform: none !important;
@@ -227,10 +249,14 @@
     .avatar--alt-hover:hover .avatar__image {
         opacity: 0.5; /* half white on hover */
     }
+    /*/half... */
 
+
+    /* don't touch dummies since they already have a color change on hover */
     .avatar--alt-hover .dummy {
         opacity: 1 !important;
     }
+    /*/don't touch dummies */
 
 
 .avatar--shadow {
