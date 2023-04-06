@@ -17,12 +17,18 @@
                 line-height: 28px;
                 color: #333333;
             }
+                .mobile-profile__heading .membership {
+                    margin-top: -6px;
+                    margin-bottom: -12px;
+                }
+
                 .mobile-profile__heading .verified {
                     margin-left: 10px;
                     margin-top: 8px;
                 }
 
             .mobile-profile__position {
+                margin-top: 6px;
                 font-weight: 600;
                 font-size: 13px;
                 line-height: 20px;
