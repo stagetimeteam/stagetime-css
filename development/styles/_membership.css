@@ -4,8 +4,8 @@
     vertical-align: top;
 }
     .membership__handler {
-        width: 30px;
-        height: 30px;
+        width: 36px;
+        height: 36px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -14,6 +14,8 @@
     }
         .membership__icon {
             vertical-align: top;
+            width: 20px;
+            height: 20px;
         }
 
         .membership .bubble {

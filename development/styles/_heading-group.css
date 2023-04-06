@@ -17,8 +17,9 @@
         letter-spacing: -0.8px;
     }
         .heading-group__heading .membership {
+            margin-top: 1px;
+            margin-bottom: -3px;
             margin-left: 3px;
-            margin-top: 5px;
             line-height: 16px;
         }
 
