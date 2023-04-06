@@ -20,11 +20,17 @@
                 .mobile-profile__heading .membership {
                     margin-top: -6px;
                     margin-bottom: -12px;
+                    margin-left: 8px;
+                    line-height: 16px;
+                }
+
+                .mobile-profile__heading .membership + .membership {
+                    margin-left: 4px;
                 }
 
                 .mobile-profile__heading .verified {
-                    margin-left: 10px;
-                    margin-top: 8px;
+                    margin-left: 2px;
+                    margin-top: 9px;
                 }
 
             .mobile-profile__position {
