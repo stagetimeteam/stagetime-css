@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>.video</title>
+        <title>.image</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">-->
         <link rel="stylesheet" href="../vendors/bootstrap/bootstrap-modal-only.css">
@@ -13,100 +13,44 @@
     <body>
 
 
-        <div style="width: 560px; margin: 0 auto;">
+
+        <div style="max-width: 600px; margin: 0 auto;">
             <br>
             <br>
-            <h1>.video</h1>
+            <h1>.image</h1>
             <p>
-                See also <a href="_image.html">.image</a>
+                As a reflection of <a href="_video.html">.video</a> component here is the similar class for images.
             </p>
             <p>
-                Default video based just on <b>width=""</b> and <b>height=""</b>. Pretty straightforward but doesn't make
-                any sense in responsive layout.
+                There is no much code and no conditions. Just full width image, properly aligned, with fallback color and so on.
+            </p>
+            <p>
+                Stretch browser to smartphone size to see effect:
             </p>
 
-            <div class="video">
-                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/EqLyNGrBUDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+            <img class="image"
+                 srcset="../temp/16x9-sample@2x.jpg 2x"
+                 src="../temp/16x9-sample.jpg"
+                 width="670"
+                 height="376"
+                 alt=""
+            >
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
 
-        <div style="width: 50%; margin: 0 auto;">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Ratio</h2>
-            <p>
-                What we need to do is to let video to stretch and to fill parental element completely while keeping it's ratio.
-                Unfortunately it is impossible via &lt;iframe&gt; or &lt;video&gt; tag. There are only two things
-                in CSS that can keep ratio why width is changing: &lt;img&gt; tag and vertical padding.
-            </p>
-            <p>
-                Using <b>padding-bottom</b> we can set up element ratio to this component.
-                So first you check upcoming video ratio and then choose one of following modifiers.
-            </p>
-            <p>
-                Change browser size to see how it works in different context.
-            </p>
 
-            <br>
-            <h3>.video--16x9</h3>
-
-            <div class="video video--16x9">
-                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/m5pdHxapXK4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br>
-            <h3>.video--4x3</h3>
-
-            <div class="video video--4x3">
-                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/_OVRNbJGGTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br>
-            <h3>.video--1x1</h3>
-
-            <div class="video video--1x1">
-                <iframe class="video__widget" width="560" height="315" src="https://www.youtube.com/embed/_PUUmb9EWFE" allowfullscreen></iframe>
-            </div>
-
-            <br>
-            <br>
-            <br>
-            <h2>Any other ratio</h2>
-            <p>
-                Ratio can be set manually. Do calculation:<br>
-                <b>padding</b> = <b>height</b> / <b>width</b> * <b>100</b>
-            </p>
-            <p>
-                For example if we facing 21:9 vide calculations will be:<br>
-                <b>padding</b> = <b>9</b> / <b>21</b> * <b>100</b> = <b>42.8571</b>
-            </p>
-            <p>
-                Set this radio as: <b>style="padding-bottom: 42.8571%;"</b> to <b>.video</b><br>
-                Add these additional styles to <b>.video__widget</b>:<br> <b>style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;"</b>
-            </p>
-
-            <div class="video" style="padding-bottom: 42.8571%;">
-                <iframe class="video__widget" style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;" width="560" height="315" src="https://www.youtube.com/embed/xXiSN8Tftjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-        </div>
 
 
         <div class="size-checker" role="presentation" aria-hidden="true"></div>
