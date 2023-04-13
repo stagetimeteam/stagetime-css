@@ -1,0 +1,22 @@
+.tag-page {
+    padding-bottom: 120px;
+}
+    .tag-page__head {
+        padding: 46px 50px 27px;
+        display: flex;
+        align-items: center;
+    }
+        .tag-page__heading {
+
+        }
+
+        .tag-page__hint {
+            margin-left: 30px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .tag-page__body {
+            padding-left: 10px;
+            padding-right: 10px;
+        }

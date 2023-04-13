@@ -5,6 +5,11 @@
 .data-section {
     position: relative;
 }
+
+.data-section + .data-section {
+    margin-top: 20px;
+}
+
     .data-section__inner {
         border: 1px solid #E8E8E8;
         padding: 21px var(--data-section) 25px;

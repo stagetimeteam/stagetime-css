@@ -1,6 +1,7 @@
 .type {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     max-width: 100%;
     padding: 5px 18px;
     background-color: #F4F4F4;
@@ -21,6 +22,14 @@
 .type--larger {
     padding: 10px 20px;
     font-size: 14px;
+}
+
+.type--largest {
+    min-width: 180px;
+    border-radius: 31px;
+    padding: 16px 24px;
+    font-size: 30px;
+    line-height: 40px;
 }
 
 

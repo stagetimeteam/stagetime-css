@@ -6,6 +6,10 @@
     border-right: 40px solid transparent;
 }
 
+.container--full-width {
+    width: 100%;
+}
+
 .container--results {
     width: 1160px;
 }
