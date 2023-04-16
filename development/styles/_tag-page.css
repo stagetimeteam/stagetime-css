@@ -6,6 +6,12 @@
         display: flex;
         align-items: center;
     }
+        .tag-page__back {
+            margin-right: 25px;
+            font-size: 40px;
+            line-height: 40px;
+        }
+
         .tag-page__heading {
 
         }
@@ -20,3 +26,20 @@
             padding-left: 10px;
             padding-right: 10px;
         }
+            .tag-page__list {
+                padding-left: 25px;
+                padding-right: 25px;
+                display: grid;
+                gap: 24px;
+            }
+
+            .tag-page__list--opportunities {
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            }
+
+            /
+            @media (min-width: 1300px) {
+                .tag-page__list--opportunities {
+                    grid-template-columns: repeat(auto-fill, minmax(327px, 1fr));
+                }
+            }
