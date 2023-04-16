@@ -7,7 +7,8 @@
         align-items: center;
     }
         .tag-page__back {
-            margin-right: 25px;
+            margin-left: -18px;
+            margin-right: 20px;
             font-size: 40px;
             line-height: 40px;
         }
@@ -37,9 +38,14 @@
                 grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             }
 
-            /
             @media (min-width: 1300px) {
                 .tag-page__list--opportunities {
                     grid-template-columns: repeat(auto-fill, minmax(327px, 1fr));
                 }
             }
+
+
+            .tag-page__list--circles {
+                grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));
+            }
+
