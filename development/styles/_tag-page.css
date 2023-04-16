@@ -50,7 +50,7 @@
             }
 
 
-            .tag-page__list--members {
+            .tag-page__list--people {
                 grid-template-columns: repeat(auto-fill, minmax(266px, 1fr));
             }
 
