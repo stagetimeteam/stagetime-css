@@ -1,0 +1,60 @@
+.tag-page {
+    /*padding-bottom: 120px;*/
+}
+    .tag-page__head {
+        padding: 46px var(--container-mobile-padding) 27px;
+        /*display: block;*/
+        /*align-items: center;*/
+        flex-wrap: wrap;
+    }
+        .tag-page__back {
+            margin-left: 0;
+            /*margin-right: 20px;*/
+            /*font-size: 40px;*/
+            /*line-height: 40px;*/
+        }
+
+        .tag-page__heading {
+
+        }
+
+        .tag-page__hint {
+            margin-left: 0;
+            margin-top: 20px;
+            width: 100%;
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        .tag-page__body {
+            padding-left: 0;
+            padding-right: 0;
+        }
+            .tag-page__list {
+                padding-left: var(--container-mobile-padding);
+                padding-right: var(--container-mobile-padding);
+                /*display: grid;*/
+                /*gap: 24px;*/
+            }
+
+            /*.tag-page__list--opportunities {*/
+            /*    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+            /*}*/
+
+            /*@media (min-width: 1300px) {*/
+            /*    .tag-page__list--opportunities {*/
+            /*        grid-template-columns: repeat(auto-fill, minmax(327px, 1fr));*/
+            /*    }*/
+            /*}*/
+
+
+            .tag-page__list--circles {
+                /*grid-template-columns: repeat(auto-fill, minmax(276px, 1fr));*/
+            }
+
+
+            .tag-page__list--people {
+                grid-template-columns: repeat(auto-fill, minmax(266px, 340px));
+                justify-content: center;
+            }
+

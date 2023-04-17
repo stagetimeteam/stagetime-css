@@ -1,14 +1,15 @@
+:root {
+    --data-section: var(--container-mobile-padding);
+}
+
 .data-section {
-    /*position: relative;*/
-    /*border: 1px solid #E8E8E8;*/
-    padding-left: var(--container-mobile-padding);
-    padding-right: var(--container-mobile-padding);
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
+
 }
     .data-section__inner {
         position: relative;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
     }
         .data-section__heading {
             margin-right: 80px;
@@ -47,8 +48,7 @@
             /*margin-top: 17px;*/
         }
             .data-section__body .carousel__container {
-                margin-left: -24px;
-                margin-right: -24px;
+
             }
                 .data-section__body .carousel__item {
                     padding-left: 0;

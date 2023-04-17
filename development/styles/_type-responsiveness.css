@@ -1,0 +1,7 @@
+.type--largest {
+    min-width: 140px;
+    border-radius: 23px;
+    padding: 10px 14px;
+    font-size: 20px;
+    line-height: 26px;
+}
