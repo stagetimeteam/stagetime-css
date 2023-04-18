@@ -1,0 +1,18 @@
+.complex-null {
+    padding: 120px 40px;
+}
+    .complex-null__heading {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #333234;
+        text-align: center;
+    }
+
+    .complex-null__description {
+        margin-top: 18px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #76797C;
+        text-align: center;
+    }
