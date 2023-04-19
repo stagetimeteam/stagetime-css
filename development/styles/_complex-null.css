@@ -1,5 +1,5 @@
 .complex-null {
-    padding: 120px 40px;
+    padding: 120px 80px;
 }
     .complex-null__heading {
         font-weight: 600;
@@ -10,7 +10,7 @@
     }
 
     .complex-null__description {
-        margin-top: 18px;
+        margin-top: 14px;
         font-size: 15px;
         line-height: 24px;
         color: #76797C;
