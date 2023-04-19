@@ -55,7 +55,7 @@
 
     .opportunities__body {
         /*padding: 30px 30px 100px;*/
-        padding: 0 var(--container-mobile-padding) 37px;
+        padding: var(--container-mobile-padding) var(--container-mobile-padding) 40px;
         display: block;
         /*align-items: start;*/
         /*grid-template-columns: 222px 1fr;*/
@@ -93,6 +93,11 @@
                 /*align-items: flex-start;*/
                 gap: 0;
             }
+
+            .opportunities__empty {
+                
+            }
+
                 .opportunities__findings {
                     margin-top: 10px;
                     /*margin-bottom: 0;*/
