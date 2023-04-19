@@ -715,556 +715,574 @@
                 </div>
                 <div class="opportunities__body">
                     <div class="opportunities__sidebar">
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Date Posted
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                        <div class="opportunities__side-head">
+                            <div class="opportunities__filters-hint">
+                                Filters apply immediately once selected. Close the window to see results.
+                            </div>
+                            <button class="opportunities__top-close action action--flipped" type="button">
+                                <span class="action__image">
+                                    <img class="action__icon" src="../symbols/16-cross.svg" width="16" height="16" alt="">
+                                </span>
                             </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__data">
-                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="date-posted" checked>
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">All Time</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="date-posted">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Last 24 hours</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="date-posted">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Last 7 days</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="date-posted">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Last 30 days</span>
-                                                </label>
+                        </div>
+                        <div class="opportunities__side-frame">
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Date Posted
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__data">
+                                            <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="date-posted" checked>
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">All Time</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="date-posted">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Last 24 hours</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="date-posted">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Last 7 days</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="date-posted">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Last 30 days</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Category
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__data">
+                                            <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="category" checked>
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Performance Job</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="category">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Teaching Job</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="category">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Admin/Production Job</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="category">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Competition</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Type
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__data">
+                                            <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="type" checked>
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Full-Time</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="type">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Part-Time</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="type">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Flat-Fee</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="type">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Per-Call</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="type">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Competition</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Deadline
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__data">
+                                            <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="deadline" checked>
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Open</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="deadline">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Closed</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Posted By
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__data">
+                                            <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="posted-by" checked>
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Organization</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="posted-by">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Individual</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Organization
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                            <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
+                                            <input class="input__widget" type="text" placeholder="Search Organization">
+                                        </div>
+                                        <div class="picking__data">
+                                            <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Sarasota Orchestra</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Lyric Opera of Chicago</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Los Angeles Area Chamber of Commerce</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Rockwood Music Hall</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Northwestern University</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Lawrence University</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Tanglewood</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Sarasota Orchestra</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Lyric Opera of Chicago</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Los Angeles Area Chamber of Commerce</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Rockwood Music Hall</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Northwestern University</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Lawrence University</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="organization">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Tanglewood</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Individual
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                            <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
+                                            <input class="input__widget" type="text" placeholder="Search Individuals">
+                                        </div>
+                                        <div class="picking__data">
+                                            <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Chris Penguin</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Rachel Lloyd</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Jennie Moser</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Sarah Kim</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Nate Fearing</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Tyler Kuehn</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Allie Miller</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Chris Penguin</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Rachel Lloyd</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Jennie Moser</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Sarah Kim</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Nate Fearing</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Tyler Kuehn</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="individual">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Allie Miller</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Industry & Specialty
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                            <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
+                                            <input class="input__widget" type="text" placeholder="Search">
+                                        </div>
+                                        <div class="picking__data">
+                                            <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Recording</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Musical Theatre</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Orchestra</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Recording Artist</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Arranger</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">TV Film</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Orchestral Conducting</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Recording</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Musical Theatre</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Orchestra</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Recording Artist</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Arranger</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">TV Film</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="industry-and-specialty">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Orchestral Conducting</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Instrument or Disciple
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__filter input input--classic-font input--alt-background input--smaller">
+                                            <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
+                                            <input class="input__widget" type="text" placeholder="Search">
+                                        </div>
+                                        <div class="picking__data">
+                                            <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Violin</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Bassoon</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Librarian</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Orchestrator</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Arranger</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Conductor</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Trumpet</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Violin</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Bassoon</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Librarian</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Orchestrator</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Arranger</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Conductor</span>
+                                                    </label>
+                                                    <label class="choice choice--checkbox choice--side">
+                                                        <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Trumpet</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="picking picking--expanded">
+                                <button class="picking__handler" type="button">
+                                    Accepts Stagetime Profiles
+                                    <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                                </button>
+                                <div class="picking__dropdown">
+                                    <div class="picking__inner">
+                                        <div class="picking__data">
+                                            <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
+                                                <div class="picking__ribbon">
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="accepts-stagetime-profiles" checked>
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">Yes</span>
+                                                    </label>
+                                                    <label class="choice choice--radio choice--side">
+                                                        <input class="choice__widget" type="radio" name="accepts-stagetime-profiles">
+                                                        <i class="choice__icon" role="presentation"></i>
+                                                        <span class="choice__label">No</span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Category
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
+                        <div class="opportunities__side-footer">
+                            <button class="opportunities__bottom-close button button--darker" type="button">
+                                <img class="button__icon button__icon--left" src="../symbols/24-back-tiny.svg" width="12" height="12" alt="">
+                                Back to opportunities
                             </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__data">
-                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="category" checked>
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Performance Job</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="category">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Teaching Job</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="category">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Admin/Production Job</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="category">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Competition</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Type
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__data">
-                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="type" checked>
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Full-Time</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="type">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Part-Time</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="type">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Flat-Fee</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="type">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Per-Call</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="type">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Competition</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Deadline
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__data">
-                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="deadline" checked>
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Open</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="deadline">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Closed</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Posted By
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__data">
-                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="posted-by" checked>
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Organization</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="posted-by">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Individual</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Organization
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
-                                        <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
-                                        <input class="input__widget" type="text" placeholder="Search Organization">
-                                    </div>
-                                    <div class="picking__data">
-                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Sarasota Orchestra</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Lyric Opera of Chicago</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Los Angeles Area Chamber of Commerce</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Rockwood Music Hall</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Northwestern University</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Lawrence University</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Tanglewood</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Sarasota Orchestra</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Lyric Opera of Chicago</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Los Angeles Area Chamber of Commerce</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Rockwood Music Hall</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Northwestern University</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Lawrence University</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="organization">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Tanglewood</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Individual
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
-                                        <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
-                                        <input class="input__widget" type="text" placeholder="Search Individuals">
-                                    </div>
-                                    <div class="picking__data">
-                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Chris Penguin</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Rachel Lloyd</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Jennie Moser</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Sarah Kim</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Nate Fearing</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Tyler Kuehn</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Allie Miller</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Chris Penguin</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Rachel Lloyd</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Jennie Moser</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Sarah Kim</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Nate Fearing</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Tyler Kuehn</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="individual">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Allie Miller</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Industry & Specialty
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
-                                        <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
-                                        <input class="input__widget" type="text" placeholder="Search">
-                                    </div>
-                                    <div class="picking__data">
-                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Recording</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Musical Theatre</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Orchestra</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Recording Artist</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Arranger</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">TV Film</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Orchestral Conducting</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Recording</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Musical Theatre</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Orchestra</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Recording Artist</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Arranger</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">TV Film</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="industry-and-specialty">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Orchestral Conducting</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Instrument or Disciple
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__filter input input--classic-font input--alt-background input--smaller">
-                                        <img class="input__icon" src="../symbols/24-magnifier.svg" width="20" height="20" alt="">
-                                        <input class="input__widget" type="text" placeholder="Search">
-                                    </div>
-                                    <div class="picking__data">
-                                        <div class="picking__list picking__list--scrollbar-needed css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Violin</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Bassoon</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Librarian</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Orchestrator</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Arranger</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Conductor</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Trumpet</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Violin</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Bassoon</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Librarian</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Orchestrator</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Arranger</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Conductor</span>
-                                                </label>
-                                                <label class="choice choice--checkbox choice--side">
-                                                    <input class="choice__widget" type="checkbox" name="instrument-or-disciple">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Trumpet</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="picking picking--expanded">
-                            <button class="picking__handler" type="button">
-                                Accepts Stagetime Profiles
-                                <img class="picking__angle" src="../symbols/16-select-down.svg" width="16" height="16" alt="">
-                            </button>
-                            <div class="picking__dropdown">
-                                <div class="picking__inner">
-                                    <div class="picking__data">
-                                        <div class="picking__list css-scrollbar"><!-- if more than 10 item please add:  picking__list--scrollbar-needed  -->
-                                            <div class="picking__ribbon">
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="accepts-stagetime-profiles" checked>
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">Yes</span>
-                                                </label>
-                                                <label class="choice choice--radio choice--side">
-                                                    <input class="choice__widget" type="radio" name="accepts-stagetime-profiles">
-                                                    <i class="choice__icon" role="presentation"></i>
-                                                    <span class="choice__label">No</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="opportunities__content">
@@ -1285,6 +1303,10 @@
                             <h2 class="opportunities__findings">
                                 15 new opportunities in the last 7 days
                             </h2>
+                            <button class="opportunities__show-filters" type="button">
+                                <img class="opportunities__filters-icon" src="../symbols/settings.svg" alt="">
+                                <span class="opportunities__applied-filters">(3)</span>
+                            </button>
                             <div class="opportunities__sort">
                                 <div class="opportunities__sort-label">
                                     Sort by
@@ -2617,6 +2639,7 @@
         <script src="../scripts/_spotlight.js"></script>
         <script src="../scripts/_flyover.js"></script>
         <script src="../scripts/_org3.js"></script>
+        <script src="../scripts/_opportunities.js"></script>
 
 
     </body>

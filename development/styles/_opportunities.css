@@ -60,10 +60,21 @@
         gap: 20px;
     }
         .opportunities__sidebar {
-            padding: 10px 20px;
-            border: 1px solid #E8E8E8;
-            border-radius: 3px;
+
         }
+            .opportunities__side-head {
+                display: none;
+            }
+
+            .opportunities__side-frame {
+                padding: 10px 20px;
+                border: 1px solid #E8E8E8;
+                border-radius: 3px;
+            }
+
+            .opportunities__side-footer {
+                display: none;
+            }
 
         .opportunities__content {
 
@@ -94,6 +105,10 @@
                     font-size: 18px;
                     line-height: 24px;
                     color: #23282C;
+                }
+
+                .opportunities__show-filters {
+                    display: none;
                 }
 
                 .opportunities__sort {
