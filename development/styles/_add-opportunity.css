@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px 20px;
     background-color: #E8ECF0;
     border-radius: 5px;
     overflow: hidden; /* cut gradient */

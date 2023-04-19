@@ -1,0 +1,91 @@
+.add-opportunity {
+    /*position: relative;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: center;*/
+    padding: 24px 0;
+    /*background-color: #E8ECF0;*/
+    /*border-radius: 5px;*/
+    /*overflow: hidden; !* cut gradient *!*/
+    /*text-decoration: none;*/
+    /*text-align: center;*/
+}
+    .add-opportunity::before {
+        /*content: "";*/
+        /*position: absolute;*/
+        /*left: 0;*/
+        /*top: 0;*/
+        /*right: 0;*/
+        /*bottom: 0;*/
+        /*background: linear-gradient(73.88deg, #DCE2EA 20.66%, rgba(242, 242, 242, 0.51) 100%);*/
+        /*transition: filter var(--transition-hover);*/
+    }
+
+    .add-opportunity:hover::before {
+        /*filter: contrast(1.05) brightness(1.025);*/
+    }
+
+    .add-opportunity__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*position: relative;*/
+        /*width: 100%;*/
+        /*max-width: 230px;*/
+    }
+        .add-opportunity__preview {
+            margin-left: 0;
+            margin-right: 12px;
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: center;*/
+            width: 20px;
+            height: 20px;
+            /*background-color: #FFFFFF;*/
+            /*border-radius: 50%;*/
+        }
+
+        .add-opportunity__preview:hover {
+            /*background-color: #DBE2EB;*/
+        }
+            .add-opportunity__icon {
+                width: 12px;
+                height: 12px;
+                /*vertical-align: top;*/
+                /*fill: #23282C;*/
+            }
+
+        .add-opportunity__heading {
+            margin-top: 0;
+            /*font-weight: 600;*/
+            /*font-size: 14px;*/
+            /*line-height: 20px;*/
+            /*color: #23282C;*/
+            /*text-align: center;*/
+        }
+
+        .add-opportunity__note {
+            display: none;
+            /*font-size: 12px;*/
+            /*line-height: 18px;*/
+            /*color: #23282C;*/
+        }
+
+        .add-opportunity__button {
+            display: none;
+            /*display: inline-block;*/
+            /*vertical-align: top;*/
+            /*margin-top: 23px;*/
+            /*padding: 10px;*/
+            /*width: 100%;*/
+            /*background-color: #FFFFFF;*/
+            /*border-radius: 4px;*/
+            /*font-weight: 600;*/
+            /*font-size: 13px;*/
+            /*line-height: 20px;*/
+            /*color: #23282C;*/
+        }
+
+        .add-opportunity__button:hover {
+            /*background-color: #DBE2EB;*/
+        }
