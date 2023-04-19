@@ -1,0 +1,145 @@
+.opportunities {
+
+}
+    .opportunities__head {
+        display: block;
+        /*align-items: center;*/
+        /*gap: 40px;*/
+        /*padding: 18px 30px;*/
+        /*min-height: 76px;*/
+        /*background-color: #F3F5F8;*/
+    }
+        .opportunities__summary {
+
+        }
+            .opportunities__heading {
+                /*position: relative;*/
+                /*padding-left: 30px;*/
+                /*margin-top: 0;*/
+                /*margin-bottom: 0;*/
+                /*font-weight: 600;*/
+                /*font-size: 18px;*/
+                /*line-height: 24px;*/
+                /*color: #23282C;*/
+            }
+                .opportunities__icon {
+                    /*position: absolute;*/
+                    /*left: 0;*/
+                    /*top: 0;*/
+                    /*vertical-align: top;*/
+                    /*width: 20px;*/
+                    /*height: 20px;*/
+                    /*fill: #44474A;*/
+                }
+
+            .opportunities__note {
+                /*margin-top: 12px;*/
+                /*font-size: 13px;*/
+                /*line-height: 21px;*/
+                /*color: #23282C;*/
+            }
+
+        .opportunities__operations {
+            margin-top: 14px;
+            /*margin-left: auto;*/
+            /*display: flex;*/
+            /*align-items: flex-start;*/
+            /*gap: 7px;*/
+        }
+            .opportunities__operations .button {
+                /*border-radius: 2px;*/
+                /*min-width: 68px;*/
+                /*padding-left: 18px;*/
+                /*padding-right: 18px;*/
+            }
+
+    .opportunities__body {
+        /*padding: 30px 30px 100px;*/
+        padding: 0 var(--container-mobile-padding) 37px;
+        display: block;
+        /*align-items: start;*/
+        /*grid-template-columns: 222px 1fr;*/
+        /*gap: 20px;*/
+    }
+        .opportunities__sidebar {
+            display: none;
+            /*padding: 10px 20px;*/
+            /*border: 1px solid #E8E8E8;*/
+            /*border-radius: 3px;*/
+        }
+
+        .opportunities__content {
+
+        }
+            .opportunities__search-head {
+                display: block;
+                /*align-items: flex-start;*/
+                /*gap: 16px;*/
+            }
+                .opportunities__param {
+                    width: auto;
+                    margin-bottom: 9px;
+                }
+
+                .opportunities__search-submit.button,
+                .opportunities__search-submit .button {
+                    width: 100%;
+                }
+
+            .opportunities__results-head {
+                /*margin-top: 15px;*/
+                display: flex;
+                flex-direction: column-reverse;
+                /*align-items: flex-start;*/
+                gap: 0;
+            }
+                .opportunities__findings {
+                    margin-top: 10px;
+                    /*margin-bottom: 0;*/
+                    font-size: 15px;
+                    line-height: 18px;
+                    /*color: #23282C;*/
+                }
+
+                .opportunities__sort {
+                    /*margin-left: auto;*/
+                    /*display: flex;*/
+                    /*align-items: flex-start;*/
+                }
+                    .opportunities__sort-label {
+                        /*margin-right: 10px;*/
+                        /*margin-top: 11px;*/
+                        /*font-size: 12px;*/
+                        /*line-height: 18px;*/
+                        /*color: #23282C;*/
+                    }
+
+                    .opportunities__sort .input {
+                        /*width: 115px;*/
+                    }
+
+
+    .opportunities__list {
+        margin-top: 13px;
+        display: grid;
+        /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+        grid-gap: 13px;
+    }
+
+    .opportunities__footer {
+        /*margin-top: 28px;*/
+    }
+
+    .opportunities__detailed-item {
+        /*padding: 34px 30px 100px;*/
+        /*max-width: 731px;*/
+    }
+
+    .opportunities__form {
+        /*padding: 21px 30px 100px;*/
+    }
+
+    .opportunities__added {
+        /*padding-top: 85px;*/
+        /*padding-bottom: 100px;*/
+    }
