@@ -6,6 +6,7 @@
         /*align-items: center;*/
         /*gap: 40px;*/
         /*padding: 18px 30px;*/
+        padding: 14px var(--container-mobile-padding) 18px;
         /*min-height: 76px;*/
         /*background-color: #F3F5F8;*/
     }
@@ -205,7 +206,7 @@
     }
 
     .opportunities__detailed-item {
-        /*padding: 34px 30px 100px;*/
+        padding: var(--container-mobile-padding) var(--container-mobile-padding) 40px;
         /*max-width: 731px;*/
     }
 
