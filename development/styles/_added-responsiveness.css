@@ -1,0 +1,62 @@
+.added {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*max-width: 687px;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*border-radius: 4px;*/
+    /*background-image: linear-gradient(73.88deg, #DCE2EA 20.66%, rgba(242, 242, 242, 0.51) 100%);*/
+    /*padding: 53px 60px 60px;*/
+    padding: 40px 32px;
+}
+    .added__preview {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*width: 48px;*/
+        /*height: 48px;*/
+        /*background-color: #FFFFFF;*/
+        /*border-radius: 50%;*/
+        /*margin-left: auto;*/
+        /*margin-right: auto;*/
+    }
+        .added__icon {
+            /*fill: #000000;*/
+        }
+
+    .added__heading {
+        /*margin-top: 17px;*/
+        /*font-weight: 600;*/
+        /*font-size: 14px;*/
+        /*line-height: 16px;*/
+        /*color: #23282C;*/
+        /*text-align: center;*/
+    }
+
+    .added__note {
+        /*margin-top: 11px;*/
+        /*font-size: 12px;*/
+        /*line-height: 18px;*/
+        /*text-align: center;*/
+    }
+
+    .added__operations {
+        /*margin-top: 40px;*/
+        display: block;
+        /*align-items: flex-start;*/
+        /*justify-content: center;*/
+        /*gap: 17px;*/
+    }
+        .added__operations .button {
+            /*padding-top: 10px;*/
+            /*padding-bottom: 10px;*/
+            /*min-width: 174px;*/
+            margin-top: 14px;
+            width: 100%;
+        }
+
+        .added__operations .button:first-child {
+            margin-top: 0;
+        }

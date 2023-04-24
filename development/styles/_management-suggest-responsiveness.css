@@ -1,0 +1,45 @@
+.management-suggest {
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*text-decoration: none;*/
+    /*padding: 10px 20px;*/
+}
+
+.management-suggest:hover {
+    /*background-color: var(--panel-hover);*/
+}
+    .management-suggest__preview {
+        /*flex-shrink: 0;*/
+        /*margin-right: 12px;*/
+    }
+
+    .management-suggest__name {
+        /*font-size: 13px;*/
+        /*line-height: 20px;*/
+        /*color: #545454;*/
+        /*white-space: nowrap;*/
+        /*overflow: hidden;*/
+        /*text-overflow: ellipsis;*/
+    }
+        .management-suggest__addition {
+            /*font-weight: 600;*/
+            /*font-size: 11px;*/
+            /*line-height: 16px;*/
+            /*color: #39606C;*/
+        }
+
+    .management-suggest__delete {
+        /*margin-left: auto;*/
+        /*margin-right: -9px;*/
+        /*flex-shrink: 0;*/
+    }
+
+.management-suggest--selected {
+    width: 100%;
+    /*padding: 6px 0;*/
+    /*background-color: transparent;*/
+}
+
+.management-suggest--selected:hover {
+    /*background-color: transparent;*/
+}
