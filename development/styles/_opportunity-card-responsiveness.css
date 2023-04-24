@@ -200,3 +200,188 @@
 
 
 
+.opportunity-card--responsive {
+    /*position: relative;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    padding: 5px 13px 14px;
+    /*border: 1px solid #E8E8E8;*/
+    /*border-radius: 5px;*/
+}
+    .opportunity-card--responsive::before {
+        display: none;
+    }
+
+    .opportunity-card--responsive .opportunity-card__preview {
+        position: absolute;
+        left: 13px;
+        top: 13px;
+    }
+        .opportunity-card--responsive .opportunity-card__preview .avatar__image {
+            width: 34px;
+            height: 34px;
+        }
+
+    .opportunity-card--responsive .opportunity-card__author {
+        /*position: absolute;*/
+        /*left: 70px;*/
+        /*top: 35px;*/
+        /*width: 22px;*/
+        /*height: 22px;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*background-color: #9CB2BE;*/
+        /*border: 1px solid #FFFFFF;*/
+        /*border-radius: 50%;*/
+    }
+        .opportunity-card--responsive .opportunity-card__user {
+            /*vertical-align: top;*/
+            /*fill: #44474A;*/
+            /*width: 12px;*/
+            /*height: 12px;*/
+        }
+
+        .opportunity-card--responsive .opportunity-card__author .bubble--leaf {
+            /*left: 10px;*/
+            /*bottom: 7px;*/
+        }
+
+        .opportunity-card--responsive .opportunity-card__author .bubble--right-leaf {
+            /*right: calc(100% - 10px);*/
+            /*bottom: 7px;*/
+        }
+
+    .opportunity-card--responsive .opportunity-card__menu {
+        /*position: absolute;*/
+        right: 0;
+        top: 3px;
+    }
+        .opportunity-card--responsive .opportunity-card__menu .operations__icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .opportunity-card--responsive .opportunity-card__menu .operations__dropdown {
+            /*top: calc(100% - 4px);*/
+            /*min-width: 123px;*/
+            /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
+        }
+
+    .opportunity-card--responsive .opportunity-card__heading {
+        margin-left: 51px;
+        margin-right: 20px;
+        /*margin-top: 7px;*/
+        /*font-size: 14px;*/
+        /*line-height: 20px;*/
+        /*color: #23282C;*/
+    }
+
+    .opportunity-card--responsive .opportunity-card__location {
+        margin-left: 51px;
+        margin-right: 20px;
+        /*margin-top: 4px;*/
+        /*font-size: 12px;*/
+        /*line-height: 16px;*/
+        /*color: #44474A;*/
+    }
+
+    .opportunity-card--responsive .opportunity-card__host {
+        margin-left: 51px;
+        margin-right: 20px;
+        /*font-weight: 600;*/
+        /*font-size: 12px;*/
+        /*line-height: 16px;*/
+        /*color: #44474A;*/
+    }
+
+    .opportunity-card--responsive .opportunity-card__message {
+        /*margin-top: 13px;*/
+        /*align-self: flex-start;*/
+    }
+        .opportunity-card--responsive .opportunity-card__message.button,
+        .opportunity-card--responsive .opportunity-card__message .button {
+            /*padding-top: 8px;*/
+            /*padding-bottom: 8px;*/
+        }
+
+    .opportunity-card--responsive .opportunity-card__description {
+        display: none;
+    }
+
+    .opportunity-card--responsive .opportunity-card__params {
+        position: absolute;
+        right: 13px;
+        bottom: 17px;
+    }
+
+    .opportunity-card--responsive .opportunity-card__params + .opportunity-card__params {
+        /*margin-top: 0;*/
+    }
+        .opportunity-card--responsive .opportunity-card__stat {
+            /*font-weight: 600;*/
+            /*font-size: 10px;*/
+            /*line-height: 16px;*/
+            /*color: #23282C;*/
+            /*white-space: nowrap;*/
+        }
+
+        .opportunity-card--responsive .opportunity-card__stat:not(:first-child) {
+            display: none;
+        }
+
+            .opportunity-card--responsive .opportunity-card__stat::after {
+                /*content: "|";*/
+                /*margin-left: 7px;*/
+                /*margin-right: 7px;*/
+            }
+
+            .opportunity-card--responsive .opportunity-card__stat:last-child::after {
+                /*display: none;*/
+            }
+
+    .opportunity-card--responsive .opportunity-card__description {
+        /*margin-top: 12px;*/
+        /*margin-bottom: auto;*/
+        /*font-size: 12px;*/
+        /*line-height: 18px;*/
+        /*color: #23282C;*/
+    }
+
+    .opportunity-card--responsive .opportunity-card__types-heading {
+        /*margin-top: 20px;*/
+        /*margin-bottom: -9px;*/
+        /*font-weight: 600;*/
+        /*font-size: 13px;*/
+        /*line-height: 18px;*/
+        /*color: #686868;*/
+    }
+
+    .opportunity-card--responsive .opportunity-card__summary {
+        margin-right: 80px;
+    }
+
+    .opportunity-card--responsive .opportunity-card__operations {
+        display: none;
+    }
+
+
+.opportunity-card--full {
+    padding: var(--container-mobile-padding);
+}
+    .opportunity-card--full .opportunity-card__author {
+
+    }
+
+    .opportunity-card--full .opportunity-card__stat {
+
+    }
+
+    .opportunity-card--full .opportunity-card__description {
+
+    }
+
+
+
+
+

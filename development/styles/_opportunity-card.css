@@ -126,13 +126,13 @@
             color: #23282C;
             white-space: nowrap;
         }
-            .opportunity-card__stat::after {
+            .opportunity-card__stat::before {
                 content: "|";
                 margin-left: 7px;
                 margin-right: 7px;
             }
 
-            .opportunity-card__stat:last-child::after {
+            .opportunity-card__stat:first-child::before {
                 display: none;
             }
 
