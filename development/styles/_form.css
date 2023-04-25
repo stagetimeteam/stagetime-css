@@ -1,10 +1,26 @@
 .form {
-    max-width: var(--form-width);
+
 }
+    .form__heading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
     .form__description {
+        margin-top: 13px;
+        padding-bottom: 2px;
+        font-weight: 600;
         font-size: 13px;
         line-height: 20px;
         color: #757575;
+    }
+
+    .form__heading + .form__description {
+        margin-top: 8px;
+    }
+
+    .form__description:first-child {
+        margin-top: 0;
     }
 
     .form__item {
@@ -43,3 +59,12 @@
             padding-left: 35px;
             padding-right: 35px;
         }
+
+
+
+.form--in-popup {
+    padding: var(--modal-padding);
+}
+    .form--in-popup .form__description:first-child {
+        margin-top: -12px;
+    }

@@ -103,6 +103,10 @@
                 border-bottom: 2px solid transparent;
                 display: none;
             }
+                .settings__dropdown .form {
+                    max-width: var(--form-width);
+                }
+
                 .settings__close {
                     position: absolute;
                     right: 0;

@@ -5,6 +5,10 @@
         margin-top: 10px;
     }
 
+    .address__line:first-child {
+        margin-top: 0;
+    }
+
     .address__location {
         margin-top: 10px;
         display: flex;
